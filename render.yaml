@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: youtube-qa-backend
+    runtime: docker
+    healthCheckPath: /healthz
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: DEMO_PASSWORD
+        generateValue: true
+      - key: LANGSMITH_TRACING
+        value: "false"
