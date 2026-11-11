@@ -1,0 +1,16 @@
+# Keeps the free Render service from falling asleep (Render stops it after ~15 minutes without requests).
+# Calls the public health check every 10 minutes. Delete this file to stop it.
+name: Keep Render awake
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Ping the app's health check
+        run: curl --fail --silent --show-error --max-time 120 --retry 2 --retry-delay 20 https://youtube-qa-od4a.onrender.com/healthz
