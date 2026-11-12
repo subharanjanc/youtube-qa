@@ -1,0 +1,1490 @@
+[
+  {
+    "id": "f14b563da8369f7829ef302b4e4c6348be66c65f776d31d829f97d4614412bc9",
+    "text": "Alright. So hey everyone welcome back. Welcome to another exciting video. And in this video, we are going to create a rag system. So how can we build an end-to-end scalable rag system, we will see in this video. In this video, we will create a simple chart with a PDF application. But in a scalable manner. We will use vector embeddings, how to use vector store queues for asynchronous processing. So all that stuff in this particular video. Highly knowledge-packed video. So let's talk about our text stack and then we will step by step code this particular application. So with that let's start with the video. Alright. So let's talk about our text stack. First, let's talk about the most important piece that is authentication. So for authentication, we will use Clerk. Because our AI application should not be misused. For this, we need an authentication layer. And Clerk provides the simplest authentication layer for Next.js, React, and all your applications. So we will use Clerk here. And Clerk provides special support for AI applications. So Clerk is the best authentication system for our AI applications. So we will use Clerk for authentication and user management. And for the front end, we will code in Next.js which is a React framework. In the back end, we will use a vector database. That is",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 0.4,
+      "end_seconds": 80.64,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=0s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "3b3d2a578a484d32b270de33182b7cb734c4da7510e849b669e7298dae179903",
+    "text": "support for AI applications. So Clerk is the best authentication system for our AI applications. So we will use Clerk for authentication and user management. And for the front end, we will code in Next.js which is a React framework. In the back end, we will use a vector database. That is Quadrant DB QRD. So I personally like Quadrant DB a lot because it is very lightweight and its spinning time is very fast. Okay. So we will use Quadrant DB for our vector store. Now what are these vectors? No worries. I will explain you. And we will use LangChain here to build this rag with Quadrant. So this will be our overall text stack. Other things will also come. For example, Tailwind CSS, Shad CSS, so all those things will also come. But that's fine. So this is our main text stack. First, let's talk about system design. What will our overall system design be? What are we building? How will we process this? Because more text tags will come. So let's talk about our text tag. And first, let's go on to the dark mode. So what will be inside the text tag? First, if we take a browser, how will our application look? Right? So first, what will we do for the user? We will show the user an authentication screen. Right? So our authentication screen which will be managed by Clerk will look something like this where we can show them some sign-in buttons. So username password",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 62.239,
+      "end_seconds": 146.56,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=62s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "6ed143dc295c61befc9b2a49af43efb1a64400f0068ff901ae0944d9ac59ff72",
+    "text": "a browser, how will our application look? Right? So first, what will we do for the user? We will show the user an authentication screen. Right? So our authentication screen which will be managed by Clerk will look something like this where we can show them some sign-in buttons. So username password and here there could be a button that you can sign in here and here will be our application branding. Right? So this particular process will be handled by Clerk itself. Okay? So, we don't need to worry much about this. After that when the user authenticates, what will we do? We will show the user an interface like this. Okay? Look, wireframing is very important. If you are building any project, wireframing solves 80% of your problems. So wireframing is very important. Our UI will look something like this where we will divide the user screen into 50-50 where on one side we will give the user the capability that they can upload their PDF files, for now, we will build on PDF files that you can upload your PDF files here. स्क्रीन है जो यूजर स्क्रीन है उसको हम यू नो 50-50 कुछ ऐसे डिवाइड करेंगे जिसमें एक साइड के ऊपर हम यूजर को कैपेबिलिटी देंगे दैट वो आपकी जो पीडीएफ फाइल्स हैं अभी के लिए हम पीडीएफ फाइल्स के ऊपर बनाएंगे कि आप अपने यहां पर पीडीएफ फाइल्स को अपलोड",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 127.439,
+      "end_seconds": 195.2,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=127s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "fdb6d3ed4ae79d9c566d867cbc3de8cd141d915fad0a28f05a00fb8d593c10f5",
+    "text": "स्क्रीन है जो यूजर स्क्रीन है उसको हम यू नो 50-50 कुछ ऐसे डिवाइड करेंगे जिसमें एक साइड के ऊपर हम यूजर को कैपेबिलिटी देंगे दैट वो आपकी जो पीडीएफ फाइल्स हैं अभी के लिए हम पीडीएफ फाइल्स के ऊपर बनाएंगे कि आप अपने यहां पर पीडीएफ फाइल्स को अपलोड You can do it. So, we can provide an upload button here. Right? An upload button or I can actually use an upload icon here. So, let's search for upload. Yes, so here we can use this icon that you can upload your PDF here. And when your PDF is uploaded, you will have a chat agent here. So, let's say this is your chat agent. And then let us say the user has sent some message here. And then you have rendered the message here like this. And based on whatever PDF data he has, your agent will respond with a message. So this is going to be my screen. Right? Nice. So this is our overall wireframe of the UI where we will have two screens. Now how will the backend work? When the user uploads a PDF. So what will we do? As soon as the user uploads the PDF in the backend, what will we do? First of all, our backend, let's say this backend storage. We need to upload this PDF and save it on our backend storage. So let's say this is our storage. So we will write that PDF file on the storage.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 177.2,
+      "end_seconds": 245.67999999999998,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=177s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "b8efd335256cc641fc66aac04b49b784c308f511ba26ab804438090885066799",
+    "text": "with a message. So this is going to be my screen. Right? Nice. So this is our overall wireframe of the UI where we will have two screens. Now how will the backend work? When the user uploads a PDF. So what will we do? As soon as the user uploads the PDF in the backend, what will we do? First of all, our backend, let's say this backend storage. We need to upload this PDF and save it on our backend storage. So let's say this is our storage. So we will write that PDF file on the storage. Correct? So a route went inside the backend. Let's say we created a route slash upload. So inside slash upload, you know you uploaded the file. You downloaded it. As soon as this file is uploaded, what will we do? We are going to use a queue system. Okay? Any queue system can be used. Alright? So it is not necessary which queue system we will use. But let's say this is our queue. Okay? This is our queue. So we will publish an event inside it. That you know a file has been uploaded. Okay? So a PDF file has been uploaded. And the path of that file we can drop that message here. So, if the user has uploaded many PDF files in our queue, then these messages will come into our queue. Right? Which is nice. Now what can we do? We can put a worker on it. We can put a consumer. So",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 226.319,
+      "end_seconds": 293.52,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=226s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "5ef23a9869794bbc18abce617d9fd1f91b2a1852f6f0ba509d5417459f90aa9b",
+    "text": "we can drop that message here. So, if the user has uploaded many PDF files in our queue, then these messages will come into our queue. Right? Which is nice. Now what can we do? We can put a worker on it. We can put a consumer. So it can be a note-like application. So let us say this is our worker. Okay? So we will name it worker. So what will this worker do? It can poll this queue. Okay? It can poll. It can subscribe to whatever queue system you are using. You can use Kafka. You can use Redis. You can use a simple queue system. You can use a simple queue service from AWS. You can use Rabbit MQ. You can basically use any kind of queue system here. Okay? So we are not going into that detail. What will this worker do? This worker will pick up a message. Okay? So let’s say it reads a message and what does this message have to do? It has to do some kind of processing. So what will processing be? Look, we will take this PDF file, let’s say the PDF file in reality. It is a very large PDF file. Correct? So we will first need to convert the entire PDF file into chunks. So let’s say",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 276.08,
+      "end_seconds": 341.68,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=276s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "e1e44ded3e26640be67c125487724da661306b80b3138d16bdd01e8cedb8603d",
+    "text": "message and what does this message have to do? It has to do some kind of processing. So what will processing be? Look, we will take this PDF file, let’s say the PDF file in reality. It is a very large PDF file. Correct? So we will first need to convert the entire PDF file into chunks. So let’s say if this is my PDF file. Okay? And this PDF file is you know my original PDF file. So we will first split it. Okay? Split into chunks. So this PDF file will become small chunks like this. Right? So let’s say I have done the chunking. So how will we do chunking? We can use long chain here. Or you can write your custom logic as well. Not a big deal. Then what can we do? For every chunk. Okay? For every chunk we can make an OpenAI call here. Okay? OpenAI OpenAI embedding. करेंगे? हम यहां पे लॉन्ग चेन को यूज़ कर सकते हैं। या फिर आप अपना कस्टम लॉजिक भी लिख सकते हो। नॉट अ बिग डील। फिर हम क्या कर सकते हैं? फॉर एव्री चंक। ओके? फॉर एव्री चंक हम यहां पर एक ओपन एआई कॉल कर सकते हैं। ओके? ओपन एआई ओपन एआई एंबेडिंग What will we do with the model? We will use an embedding model to create vector embeddings for it. Okay? So we can use a small model here. We can also use a large model. So this will create vector embeddings. And once the vector embeddings are done, what will we do with it? We will store it in our Quadrant DB.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 322.8,
+      "end_seconds": 406.08,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=322s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "67fc91ec8141561e9c7ca9929f68f86acfee2cd3b645a8c27bdc71023745921c",
+    "text": "What will we do with the model? We will use an embedding model to create vector embeddings for it. Okay? So we can use a small model here. We can also use a large model. So this will create vector embeddings. And once the vector embeddings are done, what will we do with it? We will store it in our Quadrant DB. Okay? Quadrant DB. So let's do one thing here. For now, I will take the logo of the post. Alright? But because you can also use PG vector. You can also use Pinecone. So understand that this can be any vector database. Okay? Any vector database can be fine. So Pinecone comes under vector DB. There is a Pinecone DB. You have V8. You have Chroma DB. You have Quadrant. So I am going to use Quadrant but you can use any vector database. Okay? There is also a PG vector. So we will store these vector embeddings here for every chunk. So our pipeline is complete. Correct? This was our pipeline which is completed. Now what do we need to do? When our vector embeddings are complete, what will the user do? The user will give us a message. So let's say the user asked something that you know what, so let's say if we uploaded a document of movies, there were many movies. So we can ask it what are all the movies which have ratings. Okay? Which have ratings more than",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 386.72,
+      "end_seconds": 469.28,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=386s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "05e54e47881f186f3c256282710fb5264767a7b845800a2a541f0b9c7355d742",
+    "text": "that you know what, so let's say if we uploaded a document of movies, there were many movies. So we can ask it what are all the movies which have ratings. Okay? Which have ratings more than let's say eight. So, we asked something like that. Okay? So, what is this? This is the user's query. This is called a query. So the user gave us a query. What will we do? We will also create vector embeddings for this query. Okay? Because we need to understand this query. We need to understand it semantically what the user wants to ask. So using the same model, we will create vector embeddings for this query. And now the vector embeddings that we will have, we need to retrieve relevant documents from our database Okay? Look, in reality, the user might have uploaded 100 documents. We are not interested in 100 documents. Here we only need to read relevant relevant documents. We need to read relevant chunks. So once you have retrieved the relevant documents, you got some context. Okay? We will consider that I have got the context. Now based on the user query, we will actually make an LLM call. Okay? An LLM call means we will run an OpenAI model, let's say GPT 4.1, GPT 4.5, GPT 4, or any Open",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 451.039,
+      "end_seconds": 537.519,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=451s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "0fa3cb6b03335acc065fdfa5fe0e010a71a4dc902ec7cf1ac6b6e64cae85914d",
+    "text": "you got some context. Okay? We will consider that I have got the context. Now based on the user query, we will actually make an LLM call. Okay? An LLM call means we will run an OpenAI model, let's say GPT 4.1, GPT 4.5, GPT 4, or any Open AI chat model. Let's take 4.1. Okay? Which was released. I think it was released yesterday or the day before. So we will ask it, brother, the user asked us this query and we will also feed our context into it. Okay? So I said, look, OpenAI GPT 4.1. This is the user's query. This is the relevant context. Based on this, whatever answer it gives, we will render it on our front end. So this is going to be our entire process of RAG. Okay? So what are we basically doing in RAG? We have two phases. Number one is the ingestion phase where we basically accept a PDF and create its vector embeddings and store it in this database. The second phase is our retrieval phase where the user gives a query, we create its vector embeddings, and we retrieve relevant from our database. Documents. And then based on this context, what documents might the user be interested in? What have users asked? We call that an open or LLM call. And whatever answer we get, we render it on the front end. So that is basically how a typical rag",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 514.719,
+      "end_seconds": 601.36,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=514s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "0ce336af6cc2056e4376e38083524d4ea3fc26b1fdc7441daf5e0af98692d462",
+    "text": "Documents. And then based on this context, what documents might the user be interested in? What have users asked? We call that an open or LLM call. And whatever answer we get, we render it on the front end. So that is basically how a typical rag application that is like chatting with PDFs works. So this is our entire system designer that we need to code here. So I hope a background has been set. Now let's code this. Okay? So let's start setting up. First, we need to set up the next chair. Right? So npx create next app. So I would like to use PNP here. It will be. So, let me just copy the command and spin up my terminal. Okay? So, my terminal has opened here. So, this is our terminal. I will zoom in so that you can see it clearly. Now inside this terminal, we need to write PNP cd into the coding folder. Okay? So, PNP DLX you can also use npx. You can use it here too. But I prefer PNP more. So PNP MDLX okay let's do one thing here actually I want to create a folder MKDIR a PDF rack okay cd into the PDF rack and let's open this in our favorite editor okay so you can see that I have opened the PDF rack now what we will do here is we will create a folder let's say a server so here my",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 583.839,
+      "end_seconds": 668.0790000000001,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=583s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "5512f2e85876e3e5febf487788165948602a7ede574ca2a94cd3907d4f1dffd0",
+    "text": "create a folder MKDIR a PDF rack okay cd into the PDF rack and let's open this in our favorite editor okay so you can see that I have opened the PDF rack now what we will do here is we will create a folder let's say a server so here my all server code will go okay so what is the server basically look at this particular part this is all the server code right what is all this? This is our server code. So the server will be an express application. A simple express application and here we also need to create a client. So inside the client, all our client code will go. Okay? We could have used Monorepo here too. But okay? Right now we are not going into the difficulties or complexities of Monorepo. And let's use this thing. Okay? So, here we cd into our client. And here we will do PNPM DLX. Okay? And what was the command? Ah create next app at latest. Okay? So create next app at latest and enter. So as soon as we enter here we need to give it a dot. Okay? Because I want to create it in the current directory. I am currently inside the client directory. So here we do enter and we will update later. I want to use TypeScript. I definitely want to use TypeScript. Ah after that we can also use ESLint. I want to use Tailwind CSS. Ah I do not want to use the source directory. I want to use the app router. Let's use Turbo Pack",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 649.12,
+      "end_seconds": 733.12,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=649s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "54251fbf563a41267de15ccc43dda43be0fb23c002c328faa3d8847d4ce52679",
+    "text": "directory. I am currently inside the client directory. So here we do enter and we will update later. I want to use TypeScript. I definitely want to use TypeScript. Ah after that we can also use ESLint. I want to use Tailwind CSS. Ah I do not want to use the source directory. I want to use the app router. Let's use Turbo Pack Ah import ah okay? Let's use import ls. Whatever is the default and enter. So, you can see that what this will do? It will spin up a next chess application for me. Right? A next chess boilerplate code is ready. So, you can see that this is our next chess boilerplate code. And nice. Okay? Cool. Now we will run a command here. PNPM dev. Okay? So that my dev server will be running. So, let's open the dev server once and see if our development server is running? Absolutely. So, this is our development server. You can see that this is our next is inside a development server and a boilerplate code is ready. Okay. Now we need to implement authentication in it. So what are we going to use for authentication? We are going to use Clerk. So, what I will do is here we click on start building. Okay? So, how to use this? Let's accept it. So, how to use it? First, ah we need to here.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 712.8,
+      "end_seconds": 784.0,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=712s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "6ed464ea615b7f35285a711d6b7b1f6a314d997e9768cc6625c1d8c64138787b",
+    "text": "is ready. Okay. Now we need to implement authentication in it. So what are we going to use for authentication? We are going to use Clerk. So, what I will do is here we click on start building. Okay? So, how to use this? Let's accept it. So, how to use it? First, ah we need to here. We need to use the app router and PNPM. So, we have already done this. Right? This step has been done PNP add clerk @ next years so we need to run this command. So control C and PNP add okay just a second let me just clear the terminal. So PNP add @ clerk nextjs will do what? It will install clerk for you. So you can see that clerk at version 6.15 has been installed. Okay, what do we need to do next? We need to create a middleware .ts file. Look, I really like the clerk documentation. Personally, this documentation is the best. Everything is very well organized here. And it is written in a very good way. It doesn't feel like a hassle. Okay? So, here I need to create a middleware .ts file. Right? You have to create it outside. Middleware .ts. So, let's create a middleware .ts file. Okay? Nice. So, what will we do inside the middleware? We will import clerk middleware. Okay? So let's import clerk middleware. And what do we need to do? We need to export default clerk middleware here. And this particular middleware",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 764.079,
+      "end_seconds": 847.68,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=764s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "c2542574d3481515a9d77d2c473e84bcd35713ab9eaef36c85571b63781bf7a0",
+    "text": "let's create a middleware .ts file. Okay? Nice. So, what will we do inside the middleware? We will import clerk middleware. Okay? So let's import clerk middleware. And what do we need to do? We need to export default clerk middleware here. And this particular middleware will run for which routes? It will run for API routes. It can also run for TRPC. So, always run for the API routes. So, let's copy this. And we will paste it here. Look, I am not doing anything. I am just copying it from the documentation. Okay? So, this is our authentication middleware set up. Now what do we need to do? We need to implement the clerk provider in the layouts file here. Okay? So if you look here we will have to go to the layout .ts file which is inside the app. So app layouts file. So here we need to import these things. Sign in button sign up button sign in sign sign in sign out user button. Okay? So what do they mean? First, we will import the clerk provider here. Then I will explain to you slowly how it works. Okay? So let's import a clerk provider okay and we need to import it from @ clerk next and let me just snooze the cursor for a second let me just snooze it for you know 3 hours otherwise it will annoy me okay so I have snoozed the cursor and so the clerk provider has arrived and we need to implement the clerk provider.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 830.48,
+      "end_seconds": 913.04,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=830s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "b0f6d4870c001dd3fe8ab514e8514e1cc62e82d0f0d7f38274add43d3c3338e9",
+    "text": "from @ clerk next and let me just snooze the cursor for a second let me just snooze it for you know 3 hours otherwise it will annoy me okay so I have snoozed the cursor and so the clerk provider has arrived and we need to implement the clerk provider. So what do we need to do with the clerk provider? Here we will do clerk provider. Okay? So paste clerk provider and a closing tag. Now the best part is sorry this had to be moved up. This needs to be at the top as the documentation says. Okay? So we will remove it from here and here is the clerk provider. Now my entire application is wrapped with clerk. So it means it will get the complete context. Now what can we do here? We can do a conditional rendering here that if the user is signed out then I want to show them a sign in button and a sign up button. If the user is signed in then I want to show them a user button. So what is this? This does conditional rendering. Okay? So let me take a sign sign out first. Okay? That if the user is signed out. So if the user is signed out then what do I want to show them? I want to show them the sign in button. Correct? So let's import the sign in button. So here we will do sign out and here we will import the sign in button that if the user is signed out then I want to render this thing but if.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 894.48,
+      "end_seconds": 962.8000000000001,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=894s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "d0b60bdaf80cafba53fc49282c104a4d4f236b020be5e6fef9bb695d94a67b99",
+    "text": "in button and a sign up button. If the user is signed in then I want to show them a user button. So what is this? This does conditional rendering. Okay? So let me take a sign sign out first. Okay? That if the user is signed out. So if the user is signed out then what do I want to show them? I want to show them the sign in button. Correct? So let's import the sign in button. So here we will do sign out and here we will import the sign in button that if the user is signed out then I want to render this thing but if. क्या दिखाना है? मुझे उसको साइन इन बटन दिखाना है। करेक्ट? सो साइन इन बटन को कर लेते हैं इंपोर्ट। सो यहां पे हम कर लेते हैं साइन आउट एंड यहां पे इंपोर्ट कर लेते हैं साइन इन बटन कि अगर यूजर साइन आउट है तो आई वांट टू रेंडर अ दिस थिंग लेकिन अगर The user is signed in. Where is the sign-in? If the user is signed in, then we will do this here. If the user is signed in, then do one thing for me, render the children. Now if I run my application, let's do npm dev. So, okay, cd into the. Client and do npm dev. So you can see that everything is running good. And if we refresh here, let's see what do I get. Okay, so I am getting a sign-in button, right? So a clerk is in the keyless mode. So",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 944.48,
+      "end_seconds": 1013.279,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=944s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "c08c695f79c9b39dfa6749f2657e9a07111774e14b0ce0730f6d63101e286fb4",
+    "text": "Client and do npm dev. So you can see that everything is running good. And if we refresh here, let's see what do I get. Okay, so I am getting a sign-in button, right? So a clerk is in the keyless mode. So What is it now? The clerk is in our keyless mode. So you can see that it is showing us sign in to my application here. Okay? Ah, we can make this a little better. How? If we go back to the clerk documentation, we can set up our clerk account first. Okay? So, let me just sign up for a new clerk account. Let's sign in with Google. Sign in with Google. A sign up with Google basically. And here I will select my account and continue. Okay? So, my account has been set up. Now here I need to design this. Okay? Let's give the application name. PDF Rag. Okay? Sign in to PDF Rag. We need to provide an email. Okay? We won't provide an email. You can only sign in with Google and create an application. So this is our preview. And I have only implemented Google sign-in. So we have done these things. We need to add this thing inside us. So here, let's create a .env file. Yes, it hasn't been created yet. So let me just create a .env file.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 994.079,
+      "end_seconds": 1078.08,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=994s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "8f2d432f6ba609c718efcb110a1f986d01e5b8fa3703fd55cd3950721a03de79",
+    "text": "I have only implemented Google sign-in. So we have done these things. We need to add this thing inside us. So here, let's create a .env file. Yes, it hasn't been created yet. So let me just create a .env file. You need to create this in the root of your client folder. And here you need to copy this thing. So, copy and paste. Okay? So, this has become our client secret. So, let's restart the server once. And after that, we have already done this thing. And in the app router we have also done this particular thing. Sign in button, sign up button, and user button. And here they are entering the children. So, now if we go back to our localhost and refresh. Let's see what do we get. Okay? You are refreshing. You can see I have a sign-in button here. And as soon as we click this sign-in button, you can see that I will be redirected to where. I am going to be redirected to clerk here. So we have only enabled Google authentication. So as soon as I do continue with Google here, we do piyush.def. I select my account and I just do a continue. So what will happen is that now I will be signed in. Right? Okay. Here, let's wait for a while. Okay. Okay. So you can see now I am signed in. Correct. Earlier I was not signed in. If we refresh here, now",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1057.679,
+      "end_seconds": 1139.2,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1057s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "fe0af8830afada037da671f3faea40dd0d8416632af4f440c7ee9292abc2f901",
+    "text": "and I just do a continue. So what will happen is that now I will be signed in. Right? Okay. Here, let's wait for a while. Okay. Okay. So you can see now I am signed in. Correct. Earlier I was not signed in. If we refresh here, now that I am signed in, I am seeing the next year's page. So if we go back to our layout. And here what I will do is, wait a second, this sign-in button. Let's do this thing. What can we do here? Instead of children, we render something that you are signed in. Okay? So, let's say if the user is already signed in, then let me just render a span tag. Okay? Can I say you are signed in? Okay, so you can see that I am getting you are signed in. So instead of sign in, what else can we actually do? Okay, so this is my dashboard if we Let's go back to the documentation, that is the app router documentation, so we can actually render the user button here. So let me just import the user button from Clerk and instead of rendering this thing, let's render the user button here as well. So if we go back now. You can see that I actually have a complete user button here. That is Piyush, with a manage account, this thing secured by Clerk. So this is showing me a user button. Really, really, really cool. Correct. Very nice. Okay. So, let's also create a sign-up button. So, let's render a sign-up button here",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1122.64,
+      "end_seconds": 1206.0,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1122s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "09ba1f74adc099e50453adc20a6b696710c5c3615e00bf7c232858c038a6feb7",
+    "text": "go back now. You can see that I actually have a complete user button here. That is Piyush, with a manage account, this thing secured by Clerk. So this is showing me a user button. Really, really, really cool. Correct. Very nice. Okay. So, let's also create a sign-up button. So, let's render a sign-up button here as well. Don't forget to import the sign-up button. Sign-in button, sign-up button. Very nice. And what else do we need to do here? If you see here, there is a header we are implementing. So you can do that. I mean if you want, the entire design is in our hands right now. Okay? So, what else can we do here? I know these buttons might not look that good. Right? So, instead of rendering the sign-in button, we can actually render a complete sign-in or we can also render a sign-up. So, what I can do is instead of rendering this thing, we can render a complete component here. So, you can see that now I am getting a very nice component. Right? And what I can do is, we can wrap this in a section. So, let me just take a section here. And this is our section. And we can give this section a class name that height we give it screen. Width we give it screen. And what can we do with this? Create a flexbox and center items. Okay? And justify center. So what will happen is that everything will be centered. So you see that everything is centered on the screen?",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1187.2,
+      "end_seconds": 1270.3200000000002,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1187s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "0c1edc71ca6bb2c71a8c1e24fa63844f940adef09019bd2e9f8e1a14145ffa0f",
+    "text": "that height we give it screen. Width we give it screen. And what can we do with this? Create a flexbox and center items. Okay? And justify center. So what will happen is that everything will be centered. So you see that everything is centered on the screen? Items center, justify center. We gave width screen, height we also gave screen. Okay? So, main height screen. So, you can see that in the center I am having this sign-in button. Okay? So, now what can the user do? They can continue with Google. And right now we are in development mode, that is fine. When you change your API keys to production, then this particular thing will be a production key. Right? So, after that this particular thing will not come. If you need to sign in, you can also click on the sign-in. Nice. So, our authentication is set up. Let's continue with Google. And let's render the children. Okay? So, continue with Google. And now where have we reached? Let me just do a continue with Google. Yeah, so you can see that we are logged in here and we are not rendering anything on the login. Okay? So when you are logged in once, now what do I need to do? I need to create this UI. Right? The part we discussed that the Clerk part is done. Now we need to create this particular UI. So let's start creating this UI. So look, if the user is signed in. I don't want to render this user button right now. I want to render the children. Okay? So here",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1250.799,
+      "end_seconds": 1315.36,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1250s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "4084f2a4267f54b7310b823c76d60136ab783dc109a9976985068861e49723fa",
+    "text": "Okay? So, continue with Google. And now where have we reached? Let me just do a continue with Google. Yeah, so you can see that we are logged in here and we are not rendering anything on the login. Okay? So when you are logged in once, now what do I need to do? I need to create this UI. Right? The part we discussed that the Clerk part is done. Now we need to create this particular UI. So let's start creating this UI. So look, if the user is signed in. I don't want to render this user button right now. I want to render the children. Okay? So here we set up the children. So if we go back here, you can see that now we will have children here. So where is my application? Ah yes, this is our application. So I am getting this now. So let's try to code here. Okay? So what will I do here? I will go inside the page and remove everything we have. So this is our main home page, this is our authenticated page. This is I am sure. Okay? So we will remove this and start with a div. So you can see everything is empty. So inside this I need two parts, right? One is our left part, one is",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1297.919,
+      "end_seconds": 1346.48,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1297s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "a2efea3a6c0a865dffe762ad157a6cba2e21ef7aff750bf2b0dccba0439b4de6",
+    "text": "and remove everything we have. So this is our main home page, this is our authenticated page. This is I am sure. Okay? So we will remove this and start with a div. So you can see everything is empty. So inside this I need two parts, right? One is our left part, one is जाऊंगा। एंड अभी हमारे पास जो भी है उन सब चीजों को कर दो रिमूव। सो ये हमारा जो मेन होम पेज है ये हमारा ऑथेंटिकेटेड पेज है। दिस इज़ आई एम श्योर। ठीक है? सो हम इसको कर देते हैं रिमूव एंड एक डिव से स्टार्ट करते हैं। सो यू कैन सी एवरीथिंग इज़ एम्प्टी। सो अ इसके अंदर आई नीड टू पार्ट्स राइट एक हमारा लेफ्ट पार्ट है, एक This is our right part. So that means this particular div will do what? It will divide the entire screen into two parts. So for now, what I will do is create another div inside it. You can create sections, you can create divs. That is fine. So, let's first give it a class that means height is a screen. Okay? So, the main height is your screen. And you can also give the width of the entire screen. And for now, I want to give a border here. Just to see what is happening. Okay? So let's give a border. Let's say we put a red border to see what is happening. So, right now we don't have any border or anything rendered here. Which is fine. If we put",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1328.799,
+      "end_seconds": 1397.1200000000001,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1328s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "da0bca23378a62bb13b0a2b7c73abf0501925f2d78858737cfa040bcaa0e4d20",
+    "text": "the main height is your screen. And you can also give the width of the entire screen. And for now, I want to give a border here. Just to see what is happening. Okay? So let's give a border. Let's say we put a red border to see what is happening. So, right now we don't have any border or anything rendered here. Which is fine. If we put any content inside it. Let's say Q, so if I do a refresh. You can ignore this error. Because we have some extensions installed, that's why this error is coming. So I have given here main height screen, main width screen. And inside this, let's do one thing, let's create a div and another div. Okay? And we will make this flex. So what will happen? My half part is with this and half part is with this. So here if I write one and here we write two. Okay? So you can see that I have one and two coming here which is fine. Okay? Now what do we need to do here? Flex has been done. Okay? So justify content and that we will set later. So main height is screen. We can also use grid here. Let's search for Tailwind grid and enter. So, if we look at Tailwind grid here. So, how can we set up Tailwind grid? So we can say grid here. How many columns",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1378.32,
+      "end_seconds": 1444.8799999999999,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1378s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "c585908ccfb03d36d07d52200e383ecaef5e7cadb70b34dde1d9a0d5a9be09f1",
+    "text": "we will set later. So main height is screen. We can also use grid here. Let's search for Tailwind grid and enter. So, if we look at Tailwind grid here. So, how can we set up Tailwind grid? So we can say grid here. How many columns do we need? We need two columns here. And after that we can also set medium here. So we can also use grid. We can also use flexbox. But I don't know why I prefer flexbox here. But you can also use grid. Okay? Now let's do one thing with this div. Let's give it a width of 50. Okay? So, we want to give this meaning 50% of the entire screen so that is width equals to 50 viewport width. Okay? And I want to give a similar thing to this. That is this thing. Okay? And we will give height full. So main height we will make it screen that you have full height. Okay? So now what if I go back you can see that this is our part two. This is our part one. Now we can also render a line in between. Right? We can also render a line in between. So what I can do is for the second one, if I give it a border on the, you know, left",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1427.76,
+      "end_seconds": 1494.64,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1427s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "47b685d349877f3a84d80efd58a129fd3456ca66c5681a2bd7003e00daee9f58",
+    "text": "So now what if I go back you can see that this is our part two. This is our part one. Now we can also render a line in between. Right? We can also render a line in between. So what I can do is for the second one, if I give it a border on the, you know, left side and let's call it as two. So you can see that we have rendered a border here. Okay? And I can also give this whole thing a padding. Just to make it look good. A padding we can give four. Or let's do one thing. Let's not give padding right now. So you can see that we have split our screen into two parts. Okay? In this part, we need to create a component that allows the user to upload their files on the backend. And here our chart will remain. Let's do one thing. Let's give this 30 and this 70. So because we need more space for the chart. We don't need much space for uploading. Okay? So first let's render the part here and code the part here. So for this, I would like to create a component. So let's create a components. Okay? So components, okay components and inside this we can create a component file upload. Okay? So file upload dot so this",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1476.08,
+      "end_seconds": 1544.24,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1476s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "b35b8380611ddd2ebf9973e51b8bcd1293b2386e6e77c39490653d8c4d3195b3",
+    "text": "and code the part here. So for this, I would like to create a component. So let's create a components. Okay? So components, okay components and inside this we can create a component file upload. Okay? So file upload dot so this is going to be our client component of course. And here we will do, you know, cost file upload component. Okay? Component. So this is going to be our React functional component. So I prefer a little old school. That import. Star age react from ok from react and we can give it a type. That is that brother you are a react dot functional component. Right? Then we can export default this file upload component from here. Now here we return let's do a you know a fragment. Okay? And inside this what do I need? I need a file upload card. So for the file upload card we will need icons here. So let's use lucid react for icons. So lucid react icons. So this is an icon library. So how to install it first? A guide. Okay? So to install this you need to install lucid react. So if you are using this in react. So PNP install lucid react. So let's do control C PNPM install lucid react. So lucid react has been installed. Now how to use it? If we go to icons then I need here an",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1526.799,
+      "end_seconds": 1610.3200000000002,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1526s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "eacac36c06b1499e4cd0f3ef3321902597192ea948a5eefbbd226d818789f0d7",
+    "text": "guide. Okay? So to install this you need to install lucid react. So if you are using this in react. So PNP install lucid react. So let's do control C PNPM install lucid react. So lucid react has been installed. Now how to use it? If we go to icons then I need here an upload icon. So you can use any. Like for example you can use this and copy JS6X. Okay? So here what I need to use is upload. Okay? Where will we get this upload from? So let's import it from lucid react. Okay? So from lucid react you will get upload. So, this has become your component. Okay? It currently doesn't have functionality. We will add that now. And let's do one thing. Let's make a div out of it. Okay? So this is a closing div. And here we have an upload component. So PNPM dev let's run it again. Now on this you need a little more of course I need some classes. So what do I need? I need a background color on this. Okay? A little gray. So we can take a little grayish background. Right? A little slate. So we take slate as the background. Okay? We take white for the text color. So we make the text white. And I also need shadows. Okay? So let's see a shadow. Which shadow should we take? Shadow",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1590.88,
+      "end_seconds": 1672.48,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1590s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "073821f9d2d48b17df50ac759e3717cf203a9e45a6039258e06c7d1be8cb1982",
+    "text": "slate. So we take slate as the background. Okay? We take white for the text color. So we make the text white. And I also need shadows. Okay? So let's see a shadow. Which shadow should we take? Shadow Okay. So let's take shadow 2 excel. Let's see how it looks I don't know yet. And yes one more thing we need to make it flex justify content center and items be center. Okay? And let's give padding a good four. So let's see how our file component looks. So inside the page okay? We don't need the image yet. Import file upload component from @ components sorry a components dot slash component slash file upload so I need to render the file upload component here. So let's see how the file upload component is looking. So let's refresh once. So this has become our file upload component. Okay? So this looks very bad. I know that is fine. You can make it good. How? By using classes. Right? So you can give this a border. So let's give border radius that rounded. Okay? Rounded border SM no LG let's give rounded LG okay? So with rounded LG you got a little rounding. Okay? And we make the border white. Border white. Okay? Border white. A okay. Border white and let's give border two. Two will be a little more but okay for now. And we can also write text here that upload your PDF. So here this is fine. And here I will use an H3 tag that upload PDF file. Okay? So",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1655.679,
+      "end_seconds": 1756.96,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1655s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "ffe134439fa786eb32fa6e1d9a21b749d6a127f2c3a4fa08f308ec9ca0852ebb",
+    "text": "Okay? Border white. A okay. Border white and let's give border two. Two will be a little more but okay for now. And we can also write text here that upload your PDF. So here this is fine. And here I will use an H3 tag that upload PDF file. Okay? So Upload a PDF file. And we wrap this whole thing inside a div. Okay? Upload PDF file. And we also make this a flex. And justify center items center. But what will we do with this? Flex on the column level. Alright? So Flex call upload PDF file. And what can we do? Why is there an error here? Cannot find div. Okay. This is running separately. Cannot find div. Nice. After that, what else will I have to do here? I need to give a little padding here, a padding we can give from outside. So we give this whole thing a padding. Four. Okay? Padding four. And we also make this a flex and justify center. Justify center and items center. Alright? So, this has become our upload button here. Okay? And a justify center items center is fine. So what will the user do here? They can upload their PDF files. Okay? Got it? So I know the UI doesn't look that good. But it's fine, you can tweak it according to your needs. You can actually make a very good UI. Now I",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1734.96,
+      "end_seconds": 1819.279,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1734s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "5ee3ddc69595144445c8a373d70b3251a3978bd22fcf20f166f7eeedcc662ebb",
+    "text": "here. Okay? And a justify center items center is fine. So what will the user do here? They can upload their PDF files. Okay? Got it? So I know the UI doesn't look that good. But it's fine, you can tweak it according to your needs. You can actually make a very good UI. Now I will focus more on functionality that when we select any file here. We need to read that file. We need to send that file to the backend and we need to code that whole pipeline. Okay? Although this upload file means you will also find ready-made components. But it's fine. Okay? So first we make this functional that when someone clicks on it, right, clicks on this div, what do we need to do? We need to open that dialog where the user can upload a file or okay you can also make drag and drop so to do that we can use an on-click listener on click handler file upload a button click okay button click a click so here I need to create a functional, a function. So because this equals to a function so how do we do it? Usually, if you have seen, you can create a dummy element. Okay, so here I will create an element that is document.createElement and I will create an element here. Okay, then on this element, we can set attributes, set attribute okay if you have seen that when you upload any file",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1802.08,
+      "end_seconds": 1884.08,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1802s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "22a092041e44a20222cb32bd5d905c32494ee4efae713f51c346ceb1016a0930",
+    "text": "dummy element. Okay, so here I will create an element that is document.createElement and I will create an element here. Okay, then on this element, we can set attributes, set attribute okay if you have seen that when you upload any file it’s an input sorry not an it’s an input so if I search here file ah select okay file select html okay? If you need to do it, you make input type file. Right? Something like this happens, right? Choose file, input type file. So what you can do is create an input element here and set an attribute on this element. What? Its type. So you can set its type. That is file. Okay? Then what can you do? You can set an attribute on it. That what kind of thing it can accept. So, I can just say el.setAttribute. Okay? And accept. So, here I will need PDF. So in the case of PDF, application slash application or what is it? Okay, we will see that later. And finally, what can I do? el.click. So make it click on el. That’s it. Right? So let’s see if this functionality is working or not. Okay? So if we click on upload here. So you can see that my dialog opens up. Right? You can see that clicking on this opens my dialog. Nice. Now we also need to put an event listener here. What kind of event listener? That whenever a user selects a file on it, you know file select.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1865.84,
+      "end_seconds": 1930.399,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1865s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "3d47cdd11b419d46db5d8c5d91f3eca03969000ae2db3c1730f10b46471607f4",
+    "text": "That’s it. Right? So let’s see if this functionality is working or not. Okay? So if we click on upload here. So you can see that my dialog opens up. Right? You can see that clicking on this opens my dialog. Nice. Now we also need to put an event listener here. What kind of event listener? That whenever a user selects a file on it, you know file select. दैट्स इट। राइट? सो लेट्स सी अगर ये फंक्शनैलिटी काम कर रही है या नहीं। ओके? सो अगर हम यहां पे अपलोड पे क्लिक करते हैं। सो यू कैन सी दैट मेरा डायलॉग ओपन हो जाता है। राइट? यू कैन सी इसको क्लिक करने पे मेरा डायलॉग ओपन हो रहा है। नाइस। अब हमें यहां पर एक इवेंट लिसनर भी लगाना होगा। कैसा इवेंट लिसनर? कि जब भी इसके ऊपर कोई यूजर फाइल अ यू नो फाइल सेलेक्ट So what happens if it does? So what can we do here? We will set up an event listener. Right? Alright. So let's search for how that will work? So here we can search that when you input type file, what event handlers can you attach to it. Okay? So I'm not sure if it's mentioned here or not. Okay? Let's search. Yes. That input type file has an event listener file select. Okay? So the event listener file select. So what event fires on it? On change or something, yes, it is on change. Right? So what can I do? I can attach an event listener here. So here",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1912.799,
+      "end_seconds": 1980.559,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1912s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "b17818d9b333dcabcc4bae0b2d6aa33953b83499d135d17fcafc2deceb40f314",
+    "text": "Yes. That input type file has an event listener file select. Okay? So the event listener file select. So what event fires on it? On change or something, yes, it is on change. Right? So what can I do? I can attach an event listener here. So here we attach an event listener. el.addEventListener. Okay? Variant. Which event? You need to listen for the change event. Right? And you will get the event here. Now whenever the user selects a file, you will have the files inside the event available to you. So event.target.files at zero. Okay? So, let's say I create const a file equals to this thing. Okay? So this is the event e, so what is this? This is our file. But what is the problem here? Event.target can also be null. Right? So event.target.files at zero. Okay? A file does not exist. One second event.this.files. So here we put an if. If event.target and event.you know target dot or element.files sorry my bad it should have been on element.files. Okay? So we will console.log here for now. So let's console.log. el.files. So let's see if our event listener is working or not. Okay? So what will we do here? We will go back here. So let's open the console inside inspect element. So currently we have nothing in the console. Let's remove everything and take a sample PDF here. Okay? Just pick any sample PDF for now because later we will work with a real PDF. So let's download this",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 1961.6,
+      "end_seconds": 2061.28,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=1961s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "be9b7ffc003fb1e8c723b2944d72439f0ae3706d1796f4372a700d5c343d62b3",
+    "text": "We will go back here. So let's open the console inside inspect element. So currently we have nothing in the console. Let's remove everything and take a sample PDF here. Okay? Just pick any sample PDF for now because later we will work with a real PDF. So let's download this sample. Okay? So, what I will do is come back here and select that sample. So sample open. So you can see that we have the file list here. Okay? So in the file list, you have the last modified name, size, and its type came application/pdf that is nice and what is this? This is your file. Okay? What do you need to do? You need to upload this file to the backend. You need to send this file to the backend. Okay? How will we do that? Let's see. So what we will do with these files? We will check the length. el.files.length. Okay? Must be greater than zero. So we will read the first file. const file equals to element.files am and we will take an item here. That is the zeroth item. Okay? So here I got the file. So if you see file, you have an array buffer you have byte size this thing this thing. So what do you need to do with this particular file? You need to send it to the backend. Okay? So how can we send this particular file to the backend? We need to see that. Okay? That we will use multer here. So if you know that if you use express on the backend, you can use the multer package",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2044.0,
+      "end_seconds": 2129.5989999999997,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2044s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "80bd2f1afa067f46289759a131823c2dd3f40437d48f2969e87c899551666695",
+    "text": "thing. So what do you need to do with this particular file? You need to send it to the backend. Okay? So how can we send this particular file to the backend? We need to see that. Okay? That we will use multer here. So if you know that if you use express on the backend, you can use the multer package to have the files uploaded. Okay? So we have done this thing here. So we need to set up an express application inside the backend. Okay? So let's do the setup. Not a difficult task. So we will leave this thing a little incomplete here. And let's do a parallel. Server setup also. Okay? So, to set up the parallel server we will do it here clear. Okay? So let's cd into our server, cd into the ah sorry cd dot dot cd into our server folder and npm init okay so npm init We are done you can see package.json npm install @types/node first okay @types/node and let's keep the backend in JavaScript, let's not add the complexity of TypeScript so npm install express At okay 4.x whatever the latest version of four is. So let's install that and we need to install @types/express at 4.x as a dev dependency. Okay? Actually, we need you know to add this as a dev",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2109.28,
+      "end_seconds": 2192.64,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2109s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "27194fade9581be92471016475e1234167aa16358edd8ce27eddae5b7248c86c",
+    "text": "At okay 4.x whatever the latest version of four is. So let's install that and we need to install @types/express at 4.x as a dev dependency. Okay? Actually, we need you know to add this as a dev dependency too. So let's cut this and put it here. Okay? So let's npm install back again. So that everything is good. Cool. So our express has arrived. Now we will create an index.js file here. Index.js. So let's set up an express application. Import express from a from and here we will do express and const app equals express. Okay? And we need to listen on a port here. So our backend is running on 3000. So let's run this on 8000. Okay? And here we can say console.log console.log let me zoom in. So that you can see the code well. So console.log server started on which port? Port 8000 okay? So this is our express application. Now see your frontend is on 3000. Your backend is on 8000. So here we also need to install cors. So npm install cors. Okay? So let's import cors too. Import cors okay from cors. Okay? CORS nice. So here we will do app.app.use(cors) okay and you can also provide origins here okay you can provide origin as an array but okay for now let's just do a cors so this will allow cors for everyone",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2174.64,
+      "end_seconds": 2272.64,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2174s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "3a2b3ba9a8d44bec22d1d2dcce602656116d80eba634285f2561327cca98c195",
+    "text": "from cors. Okay? CORS nice. So here we will do app.app.use(cors) okay and you can also provide origins here okay you can provide origin as an array but okay for now let's just do a cors so this will allow cors for everyone this is an important step remember this okay so now let's create an app.get route slash okay just a dummy route to see if everything is working so let's return response.json and here we will put status all good. Okay all good nice. So to run this let's write a script too. Okay? So in scripts we will write a dev script. So what will our dev script be? node huffn huffn watch index.js. Okay? So here we will do npm run dev. Enter Let's do it. You can see localhost 8000 the server is running. Nice. So try it. Local ah localhost 8000 and enter. So you can see all good coming. So our server setup is done. Now what do we need to do here? We need to create a file upload route. Okay? So app.post correct? We need to create a post. What do we need to create? Let's go to multer's documentation. So we will do app.post here. Okay? That is upload a PDF. Let's create a PDF route. Okay? slash upload PDF let's do slash upload PDF. Now",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2254.96,
+      "end_seconds": 2342.16,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2254s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "807b69fa1af775a71f272da7f57c3a8f302132cb007f1fbc8456fd55bc430cb0",
+    "text": "route. Okay? So app.post correct? We need to create a post. What do we need to create? Let's go to multer's documentation. So we will do app.post here. Okay? That is upload a PDF. Let's create a PDF route. Okay? slash upload PDF let's do slash upload PDF. Now How to use this? First, you need to install multer. I said okay, so let's install multer with PNPM. Nice, and type definitions are available inside multer. So we need to do PNPM install @types/multer here. Okay, so multer is done. Now we need to import it first. So let's import it here. So import multer from multer. Okay? Nice. Now we need to create an instance of upload here. So here we create an instance of upload. Okay? So what will be the destination? Upload. So let's create a folder for uploads here. Now what will we do? We will say upload.single. A single PDF file will come upload.single. And we will call it PDF. Okay? You need to give me a field for PDF on the front end. And then we will have a function here. That is this thing. Okay? So, here we have the request, response, and next. Okay? So right now I am not interested in that. So what will we do here? When we upload the file, the file of the PDF field will",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2322.56,
+      "end_seconds": 2410.0,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2322s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "dd075cbf75f1253afe16e1250024ab4b2fc072aa084b3f5e28da596c6552b570",
+    "text": "a field for PDF on the front end. And then we will have a function here. That is this thing. Okay? So, here we have the request, response, and next. Okay? So right now I am not interested in that. So what will we do here? When we upload the file, the file of the PDF field will come inside our uploads folder. So we will return from here return response.json. Right now, I mean we should process it basically. But here we will just send a message that uploaded. Okay? So this has become our upload route which is currently doing nothing. Which is a very dumb route. So what do we need to do? We need to create a component in our front end app, so technically we need to upload this file to this route by making a fetch call, making an API call. Got it? So how will that happen? Okay, let's see that. So what will we do here? We will create a form data first. Okay? So let's create a form data. So I will just say we got the file. We create formData equals new FormData. Okay? So form data is created. Very good. Now what will we do inside this form data? formData.append Okay if you remember what name we took here was PDF, okay so we will say PDF what to append this file to append it okay this file what is basically this file now see this file can also be null so we need to basically do it here that if the file exists then only this call goes okay this is a type",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2390.4,
+      "end_seconds": 2458.88,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2390s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "2bf6421908b77a224533f104c3e7c8871b76faba19daddd44d06fb2e664041a0",
+    "text": "you remember what name we took here was PDF, okay so we will say PDF what to append this file to append it okay this file what is basically this file now see this file can also be null so we need to basically do it here that if the file exists then only this call goes okay this is a type script check okay so this thing is done after that what we need to do here is we need to make a fetch call fetch http okay slash slash local post am 8000 your server is running. Okay? And we will copy this. So, here I need to make a fetch call. Very good. And after that, we need to give a method here. Okay? So, what will our method be? Post. And what do we need to put inside the body here? Our form data. So, what will this particular thing do? It will do the upload work. So, we will make this async. Here we will put await. And for now, we will just console.log. That file uploaded. Okay? That the file has been uploaded. So let's see how this particular thing is working. Okay? So this is our backend route method form data inside which we are sending PDF. So ideally if everything works. Okay? If everything works then what should happen? Inside my uploads folder, my server's code should be there? Ah yes, I should have a file inside uploads in my server. Right? And I will show you one more thing.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2439.839,
+      "end_seconds": 2523.44,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2439s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "068a3da8e78164d7bcd699f5eb4e87653d4378db48c719bf8b425b8274942a58",
+    "text": "inside which we are sending PDF. So ideally if everything works. Okay? If everything works then what should happen? Inside my uploads folder, my server's code should be there? Ah yes, I should have a file inside uploads in my server. Right? And I will show you one more thing. जिसके अंदर हम पीडीएफ सेंड कर रहे हैं। तो आइडली अगर हर चीज़ ने काम करा। ओके? अगर हर चीज़ ने काम करा तो क्या होना चाहिए? मेरे अपलोड फोल्डर के अंदर अ मेरा सर्वर का कोड किधर गया? अ हां मेरा सर्वर के अंदर अपलोड्स के अंदर मेरे पास एक फाइल होनी चाहिए। राइट? अ मैं आपको एक और चीज़ दिखाता I am. That when you create a matter, you can actually use a destination storage inside the matter. Okay? So how do you create storage inside the matter? You can just say matter. Okay? So this is fine. If we go down. Yes, matter.disk storage. We use this thing. Okay? So let me just copy this thing. Why? I will tell you right now. We will create a storage here that first I need to upload where. I need to upload inside our uploads. Whatever the file name will be, we will put a unique suffix on it. So that our files do not mismatch. Okay? So whatever the field name of our file is, we take the file name. Okay? Whatever our file name is, you put a unique suffix on it at the beginning. So usually this is what I do. Okay?",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2505.28,
+      "end_seconds": 2589.2,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2505s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "a6cb1fc257c8780f9f559e3439954f6d44ff45f7e1121bc8685078b22d7656eb",
+    "text": "suffix on it. So that our files do not mismatch. Okay? So whatever the field name of our file is, we take the file name. Okay? Whatever our file name is, you put a unique suffix on it at the beginning. So usually this is what I do. Okay? So we rename this file. Okay? I will show you how this works. So let me just say unique suffix and whatever our file name is. Okay and then what can we do here? We can give storage here. So let me just copy this and destination storage. So now what will this do? It has given the destination inside uploads. It will create with this file name inside uploads. Okay? Okay. Let's create two terminals. CD into server pm dev. So our backend is running and let's run the frontend too. CD .. CD into the client pm dev. So our frontend is also running. Nice. So this was our frontend. Okay? Let's zoom out a bit and refresh. So, let everything compile. Okay? So, you can see that our application is working. We will go into network calls. You can see no network calls. Okay? Select the file sample. Entered uploaded on PDF. Nice. If I go back, did a PDF file get created in our uploads? Absolutely. What happened here? Here undefined came. Why did this undefined come? Okay? Why did the file name come undefined?",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2570.56,
+      "end_seconds": 2654.1600000000003,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2570s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "c8e35a01dd2756aa6e38b4228f584914cc3194f28bd0dcf2d83a862d65b0507b",
+    "text": "calls. Okay? Select the file sample. Entered uploaded on PDF. Nice. If I go back, did a PDF file get created in our uploads? Absolutely. What happened here? Here undefined came. Why did this undefined come? Okay? Why did the file name come undefined? So what properties do we have inside file? Let's take the original name. Okay? Let's try with this. It means our file has been uploaded. But there is no extension on it. Okay? Now see yes. So you can see now this has become our PDF file. And if I open it in our you know, I mean our official previewer. Okay? Revilian finder. So I will show you how it looks. So this is our file uploaded. So you can see that the file has been uploaded on our server Very nice. Great. Our step one is complete that we are able to upload files from the frontend. Right? Now what do we need to do? Look, what are we doing here? We are uploading the file. Now we need to enqueue it. If we go back. The file has been uploaded. You have uploaded the file. Now you need to create a queue system in which you will enqueue it that we have an available file. So what can we use for the queue? We can use BullMQ. Okay? You can use any queue system. But I want to use BullMQ here. Because it works with Redis. Its setup is very easy. Okay? So, for this, we first",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2634.56,
+      "end_seconds": 2719.92,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2634s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "47f2a8d3a70284d695356b2c9973a0063946d5abd9b737268d7dbdbd002c2fb2",
+    "text": "uploaded the file. Now you need to create a queue system in which you will enqueue it that we have an available file. So what can we use for the queue? We can use BullMQ. Okay? You can use any queue system. But I want to use BullMQ here. Because it works with Redis. Its setup is very easy. Okay? So, for this, we first need to run Redis. Now you can also run Redis. But I will use V here. Okay? So let's search for Valk Docker. Valki Docker. So basically what is Valki? It is a drop-in Redis placement. Okay? So we are going to use this in this project. So let's just do one. Thing. So right now you will need a little knowledge of Docker here. If you don't know Docker, no problem, you can take my Docker course. And it's free on YouTube. You can watch that too. So, here we will create a Docker Compose file. So, Docker Compose. Okay? So here we will write services and here we will write A you know my tab okay tab okay here we will write valki okay so valki inside okay here we will give image alright so what is our image valki valki so this is our image and we need to expose some ports",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2700.079,
+      "end_seconds": 2771.04,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2700s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "c3ae95e66aeac73b7f567e5bf27f42d75ec63145947b4eb7f0edbf4403ee2cba",
+    "text": "A you know my tab okay tab okay here we will write valki okay so valki inside okay here we will give image alright so what is our image valki valki so this is our image and we need to expose some ports So what is the default port of Redis? Six a Redis default port okay ah 6379 so here we will expose the ports too. So I will just say expose port 6379 on 6379. Nice. And we need to mount this to some you know a directory. So let's see its mounting where do we mount this? Ah where did they mount? I don't need the config. I need the data of valki. Ah where do we mount this? I don't need to mount the config. Tell me the mount path brother. Okay? Okay? They haven't written the mounting in the documentation for some reason. But okay for now let's run it like this. So make sure your Docker is up and running. Okay? So your Docker should be up and running. We only need valki. That's it. So we will do Docker Compose up hfN T here so what will this do? It will pull valki first. You can see valki is being pulled. And after that, our Redis server will run on this port, our valki server. Okay? So you can see it is running perfectly fine. Okay",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2751.52,
+      "end_seconds": 2821.52,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2751s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "821d9146bbe2e756f445ccac6b74c281fc4bdaf3cecd3d3679aec467ddd83e84",
+    "text": "will do Docker Compose up hfN T here so what will this do? It will pull valki first. You can see valki is being pulled. And after that, our Redis server will run on this port, our valki server. Okay? So you can see it is running perfectly fine. Okay Nice. Now what do I need to do? Now I basically need to initialize BullMQ inside our server. Okay? So where are you BullMQ? BullMQ. Okay? So we will go into the server. We will do Control C. We will install BullMQ with PNP. Okay? So, BullMQ has been installed. Now first we need to create a Q. Then we need to create a worker for it. Okay? So we will import q here. So we will go into index and import q. So this is our queue. Nice. Then we need to create a queue here. Okay? So to create a queue we need to give a name to the queue. So I will call this a file upload q. Okay? file upload q nice. Then what will we do? We will just add this into the q. So q.add. Okay? So what do we need to give here? Here we need to give a name for this job Okay? This job can have any name. So let's give this job a name. That there is a file upload. Okay? file ready. Okay? file ready and here we need to give our data. So I will give json data here. So json.stringify so what can we give as data? We will give the file",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2800.8,
+      "end_seconds": 2885.04,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2800s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "d63b00978170fc91609f4eb7e6b471734cf4f84270f4d7faef5aeae0119974aa",
+    "text": "Okay? This job can have any name. So let's give this job a name. That there is a file upload. Okay? file ready. Okay? file ready and here we need to give our data. So I will give json data here. So json.stringify so what can we give as data? We will give the file name. Okay? We will give the file name. How will we get the file name? Request sorry a request.file. We will need to take the original file name here. A file name will be taken. And we will give its source here. Okay? So source. So what is the source? If you see file ah sorry ah request.file.destination I think it will be complete inside destination. So let's also give the destination. And let's do one more thing. Along with the destination, we will also give the path here. Okay? We will see later what else we need inside the worker. क्या है? अगर आप देखोगे फ़ाइल डॉट अह सॉरी अह रिक्वेस्ट डॉट फाइल डॉट डेस्टिनेशन आई थिंक डेस्टिनेशन के अंदर पूरा होगा। तो डेस्टिनेशन भी दे देते हैं। और एक काम करते हैं। डेस्टिनेशन के साथ-साथ हम यहां पे पाथ भी दे देते हैं। ठीक है? बाद में देखेंगे वर्कर के अंदर हमें क्या-क्या Required. Request dot file dot path. So what did we do? We added this thing inside the queue here. So look what you did? You uploaded the file. You enqueued an event and you said okay on the front end. So now what are those messages doing? They will keep getting enqueued.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2866.72,
+      "end_seconds": 2950.0,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2866s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "40f3a565090e052385c6ea8ad85b2769f29aed87a31abca9b5b21a411144c1e4",
+    "text": "Required. Request dot file dot path. So what did we do? We added this thing inside the queue here. So look what you did? You uploaded the file. You enqueued an event and you said okay on the front end. So now what are those messages doing? They will keep getting enqueued. You have enqueued the messages. Now you also need to create a worker. So okay? Let's create a worker. So worker dot js, so how will the worker be created? To create a worker, if we go back inside bull mq. So this way you will have to create a worker. So let's import the worker. Then we need to create a worker here. Okay? So this worker is created. Now which queue will the worker listen to? Okay? What was the name of your queue? The name of your queue was file upload q. So create a worker for file upload q and inside it whenever a job comes just console dot log it. So let's console dot log it. Job okay? A job and job's data. So job dot data. So, let's see you can remove concur. 100 is fine. So, this is the worker. Okay? So, what does the worker do? It automatically starts listening. It is on auto listen. But I think you can worker dot listen, worker dot close. Worker dot delay. Disconnect. And does worker dot start have something? And I forgot which method this was. I am sure it is running automatically",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2930.559,
+      "end_seconds": 3017.119,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2930s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "5ad808cb9c29c5d2d95897121f6260b6488eb51edcc7ade5a2044aa12c091eff",
+    "text": "do? It automatically starts listening. It is on auto listen. But I think you can worker dot listen, worker dot close. Worker dot delay. Disconnect. And does worker dot start have something? And I forgot which method this was. I am sure it is running automatically It is running its post keys. Worker dot once. Worker dot run. But by default it runs itself. Okay? By default it runs itself. So, let's do one thing. Now we need to write a command here. We need to write another command here. Okay? That is dev worker. Dev worker. The worker also needs to run, right? So here worker dot js, so look I will run the server here first. This is our server running. Then we will do cd into the server. And in this terminal we will do npm run dev worker. So this will run our worker. A worker requires a connection. Okay? Right. The worker also needs a connection. Okay? So let's give a connection. What does it need inside the connection? It doesn't need a database. It will need a host. One is Redis local host. Okay? And it will need a port. Okay? What is our port? 6379. Okay? 6379 and what does it need? That's it. Okay? Actually, we can give this same connection to our queue as well. You know we can give a connection here. Okay? So",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 2996.8,
+      "end_seconds": 3085.04,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=2996s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "6e074ea5354643dcfafe9850f63247a0ab8bedeac6d22d8a7c067db4b6453685",
+    "text": "host. Okay? And it will need a port. Okay? What is our port? 6379. Okay? 6379 and what does it need? That's it. Okay? Actually, we can give this same connection to our queue as well. You know we can give a connection here. Okay? So let's give a connection. Now see yes now the worker is running. And this is also running. This is also running and this is also running. Okay? So now what should happen? Our worker is running. Whenever I upload a file, console dot log should come inside the worker. Okay? Sample PDF run. Look the worker said job file name came destination came path came so basically I need the path the full path is inside the path okay so this is where the magic will go so what will the worker do so look inside the worker first you can js dot stringify json dot parse So cost data equals json dot parse okay and here you can put job dot data okay you have data inside which has a path if I zoom in to show you then you can see that this path is inside the path. This is the complete path where that file exists. So if we want to visualize this a bit, then write comments. Okay? Comments are variant. Ah yes. So first take the path. How will you get the path? data.path. Okay? Got it.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3064.559,
+      "end_seconds": 3154.2000000000003,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3064s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "c7254b4642120f06aa68b00e283b9f792ddf90dded116c205a229a3b692ee912",
+    "text": "This is the complete path where that file exists. So if we want to visualize this a bit, then write comments. Okay? Comments are variant. Ah yes. So first take the path. How will you get the path? data.path. Okay? Got it. Now what do you have to do? Read the PDF from the path. Okay? The PDF you need to read, you have to read it from the path. Okay? I have read it. Then you have to chunk it. Okay? Chunk the PDF. Let's go. This is done too. Then what do you have to do? Call the OpenAI embedding model. Okay? For every chunk. Okay? After that store the chunk in your Quadrant DB. So that's what you have to do. We. That's what we have to do. The whole process is just this. That's it. Okay? So alright. Let's start doing it. So for this, what will we use? We will use LangChain. We will use Quadrant DB. And we are going to use LangChain here. Okay? So how to use this? Let me tell you first. First, you need to create the Quadrant's URL. That is fine. We will look at this later. Ah, you need to add PNP. LangChain Quadrant LangChain LongChain Community. You need to install all these packages. So let's copy this command. And inside the server, we need to paste them. Okay? Let's add PNP. So if",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3133.359,
+      "end_seconds": 3216.72,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3133s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "cd70ca1b634ae1c9bbee01f174fbbc44ac369d8367e0dd0a435f18d3b8f81e77",
+    "text": "URL. That is fine. We will look at this later. Ah, you need to add PNP. LangChain Quadrant LangChain LongChain Community. You need to install all these packages. So let's copy this command. And inside the server, we need to paste them. Okay? Let's add PNP. So if Now you will see my package JSON. So what you will notice is that all these packages will be added. So let's wait a bit. It might take some time. You can see that it is also downloading this JS Tik token. Ah, it's 10 MB so it will take some time. So you can see all our packages have arrived. Nice. Okay. Now our installation is done. Now what do we have to do? Look, import OpenAI embeddings, import Quadrant, import Quadrant vector store, import document and import type. We don't need type here. Because we are not working in TypeScript. We are working in JavaScript. So let's import. Look, we need to copy from the documentation and paste it there. Okay? So inside the worker, we have done this Open embeddings. This is my vector store. Okay? This is our vector store and this is our document. Very good. Okay? Now we need to First, what do we need to do? We need to create a document from the PDF. We need to chunk this PDF. So for that, we will need a different documentation. Okay? So we will search here LangChain JavaScript PDF loader. Okay? So here",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3197.92,
+      "end_seconds": 3279.2799999999997,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3197s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "0d2cdc0b9177509dea854db2a643945f429c31849c3bf821fccce77ea507ae92",
+    "text": "First, what do we need to do? We need to create a document from the PDF. We need to chunk this PDF. So for that, we will need a different documentation. Okay? So we will search here LangChain JavaScript PDF loader. Okay? So here PDF loaders come from LangChain itself. So for this, we will also have to run this command Pnpm add. Okay? I know a little bit about what happens in LangChain? You have many packages that are very broken down. So you have to install these. So let's import the PDF loader. Okay? Here comes our PDF loader. So first of all, You need to load the PDF. Okay? So here we will say load the PDF. So to load the PDF, what do I need to say? loader equals new PDF loader. And I need to give the path here. Which PDF to load? So I will get that from data.path. Here you go, your PDF has been loaded. Now what do you have to do? You need to create its documents. You need to create its documents. So loader.load, your PDF docs have been created. Okay? Now what do you have to do? Once your documents are created. Okay? Documents are created. You can see what it did, the documents loaded inside. Okay, you need to chunk this. Okay, what it did is created a single document for you, but you want to chunk it. Okay, so here we will search for that PDF chunking language JavaScript. Okay, so we will use the text splitter here.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3261.68,
+      "end_seconds": 3349.7599999999998,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3261s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "82ea5d2fb8865666839e57e3ebefb97297264e118a5dded83d0014073c78e34d",
+    "text": "Okay, you need to chunk this. Okay, what it did is created a single document for you, but you want to chunk it. Okay, so here we will search for that PDF chunking language JavaScript. Okay, so we will use the text splitter here. Okay, so what we need to do with the documents is split them. So how will we do that? We will import the character splitter here. Okay? We will have to import the character splitter here. So, I have imported the character splitter. And what will this character splitter do? We have created a text splitter. Okay? So, here we have created a text splitter. We set the chunk size to 100. You can keep it a bit larger too. Let's say we set it to 500 here. Okay? You can keep it 100, 250, or we set a chunk size of 300. And we will split the text here. So, we did that, enter. So, what did it do now? Basically, what will the text become? It will become an array. Right? So, let's check the texts by logging to the console. So, console.log texts. Okay, so let's restart this again. pnp run worker and we got an error here. Okay, this needs to be installed separately. pnp install @langche text. Okay, now let's run the worker. The worker is running nice. Let's upload a PDF again from the front end. So you can see what it did?",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3331.359,
+      "end_seconds": 3418.319,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3331s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "702d6c2cfae9a8e7b1f27cf4f98740d0e6630c033545a26087a0c21e386da34e",
+    "text": "Basically, what will the text become? It will become an array. Right? So, let's check the texts by logging to the console. So, console.log texts. Okay, so let's restart this again. pnp run worker and we got an error here. Okay, this needs to be installed separately. pnp install @langche text. Okay, now let's run the worker. The worker is running nice. Let's upload a PDF again from the front end. So you can see what it did? It logged to the console, it did that, but so far our documents, sorry, here it will show docs. Okay? Here it will show docs. My bad, let's do it again. Okay. There is no break happening, but we don't have this console.log coming up here either. Why? Let's see. Nothing is breaking. There is no error, but we have nothing coming in the text. I think okay, we messed up something. Let's do one thing. For a second, I feel like there is some issue here. Let me console.log to see what is coming in docs. Okay? Docs. So let me just see docs. Okay? So what is coming inside docs? I want to see how many documents it is creating. So what I will do is, let's upload again. So let me just take a file and upload. So how many documents did it create? It created a single document. Can you see what it did? It created a single document.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3382.319,
+      "end_seconds": 3479.599,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3382s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "d59e5124bf7b519dab529826dd560c9002f26009344d0c2eb28701a065ea6ef9",
+    "text": "So what is coming inside docs? I want to see how many documents it is creating. So what I will do is, let's upload again. So let me just take a file and upload. So how many documents did it create? It created a single document. Can you see what it did? It created a single document. But of course, I don't need a single document. I don't want a single document. I need to further split this document down into chunks. Correct? Because what will happen? If this document is very large, then what will happen? Our program will crash. So we need to do some splitting here. We need to split here. We can split it paragraph by paragraph. Absolutely we can. Let's split it paragraph by paragraph. Right? Or we can also split at every dot. So let's do one thing. What we could do? If I show you an article here So how you can do a text splitting is, so here I was trying to use that you need a text splitter and you can split the text. Right? So you will get multiple texts. Then what can you do with this text? You can convert it back into a document. Right? And for some reasons, I feel like this is not working. I don't know why. I feel like it. But text platter dot text a particular document. Okay? So, let's do one thing. We take a docs at zero on the document. Alright? Docs I know",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3463.119,
+      "end_seconds": 3542.319,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3463s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "95e69a87db566f343d235a754e6b6241a832b003f71be862be0672885682522a",
+    "text": "Right? And for some reasons, I feel like this is not working. I don't know why. I feel like it. But text platter dot text a particular document. Okay? So, let's do one thing. We take a docs at zero on the document. Alright? Docs I know It will always create the same one. So, let's take the docs at zero. Okay? So, this is our single document. And now let's see if we can split it. So, let me just take this. Paste it here. And I will give docs zero here. So let's see what it has split. So console dot log n After. Okay? After split. So here we give the text. So let's see what it gives me. So we will go back to the front end. We will upload. This is our sample PDF. So did it split? A print did not happen What? Or maybe it is still splitting. Okay, let's wait for a while. Let's wait a little. Let's see what happens. Okay? So, for some reasons, this splitting code is either stuck or this is not working. So, let's do one thing. We will look at this a little later. Okay? We will handle this later. For now, let's Assume that our document is, we take the document. Okay? This splitting logic that we will add. So documents have been created for me. Documents I think it is creating page by page. Page one, page two, page three. So if I have some multi-page PDF, let's take a sample PDF",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3524.68,
+      "end_seconds": 3609.359,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3524s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "79aa23989ef0ed78ea6699b70aba724d95480136166d30e9adefc4796a8a5cb7",
+    "text": "Assume that our document is, we take the document. Okay? This splitting logic that we will add. So documents have been created for me. Documents I think it is creating page by page. Page one, page two, page three. So if I have some multi-page PDF, let's take a sample PDF Here. So I have a multi-page PDF file here. Okay? So you can see that yes, it will get a little bigger inside or not. Okay? So let's see this. Let's download it. So this is a multi-page PDF we have. A sample PDF and let's console dot log this. Console dot log docs docs docs. Okay? So let's see what is happening. So let's run the worker again. If I take this multi-page PDF, then what am I getting? Oh, now nothing came, did it? Why? Did a file upload? Yes, the file is uploading every time. Right? Okay. Oh wait. I think it has all images inside. Dude, we shouldn't take this file. We need A slightly better file. Okay? Which has text inside. It didn't have text. Yes, maybe this has text inside. They have put all images. Or this is nice. Okay? Now let's see So you can see what it did? It created a document. Yes. Okay? Technically what is it doing? It is creating a page by page document. You can see what it did? It created a page by page document. Which works which is okay. Okay? So we have multiple docs now. Now what do we need to do? For each doc, we need to create vector embedding. Okay? So",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3590.88,
+      "end_seconds": 3688.48,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3590s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "851d56db737f36d10b638d8335bbee164dbc488925fe594d29c78c233e25e254",
+    "text": "So you can see what it did? It created a document. Yes. Okay? Technically what is it doing? It is creating a page by page document. You can see what it did? It created a page by page document. Which works which is okay. Okay? So we have multiple docs now. Now what do we need to do? For each doc, we need to create vector embedding. Okay? So In that, we will also use long chain. So what does long chain do? If you go into long chain, you can convert the document into a vector embedding. Right? So how will you do that? Here you can see that if I don't want this here. You need to create a quadrant client. Okay? This quadrant client we will create Embedding model what do you need to do? You need to create a vector store. Okay? Client collection name this thing. And then what will we do here? We will say a query retriever here. Got it? So what will it automatically do? It will create a vector store for all docs. It will create. Nice. So now we initiate a vector store. This is where we store the embeddings of the document. We also need to provide an embedding object. Okay? So here we will create a Quadrant client. Let's copy the Quadrant client. So I need to create a Quadrant client here. Okay? Now Quadrant",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3669.64,
+      "end_seconds": 3737.1189999999997,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3669s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "2d6b3915635b17fbb579390c3f13842ffc443f8e739acaaa04a8890f795aedc0",
+    "text": "It will create. Nice. So now we initiate a vector store. This is where we store the embeddings of the document. We also need to provide an embedding object. Okay? So here we will create a Quadrant client. Let's copy the Quadrant client. So I need to create a Quadrant client here. Okay? Now Quadrant We also need the URL. Okay? How will we get the Quadrant URL? We will run Quadrant inside our Docker. So let's search for Quadrant Docker. Okay? So this is the Quadrant Docker and let's wait for its documentation to open. Let it open. So here you can see how we need to run this. Quadrant is the name of our image. So back to Docker Compose, we will say Q D R A N T and here we provide the image Quadrant and here we put the ports. Okay? So which port is ours? 633 633 so we need to create Quadrant. Okay? So now what will we do? We will run Docker Compose up -d. So what you will notice is that Quadrant is also up and running. Okay? Let's take it down once. Docker Compose down Docker Compose up. So you can see Quadrant is also running. Nice. So Quadrant is also running. Velki is also running. Okay? So let's see how the Quadrant URL is formed. So Quadrant client like this is how you basically create a Quadrant URL. Okay? So what is our worker Quadrant URL? We provide the Quadrant URL as local",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3718.799,
+      "end_seconds": 3806.6400000000003,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3718s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "cd81dece0b7057a83cb64fa851fba418ae27ab10091efbdd2517279d1636fb07",
+    "text": "Quadrant is also running. Velki is also running. Okay? So let's see how the Quadrant URL is formed. So Quadrant client like this is how you basically create a Quadrant URL. Okay? So what is our worker Quadrant URL? We provide the Quadrant URL as local host 3633. So this is our client created. Okay? Let's go back to the documentation. We also need embeddings. So cost embeddings equals to OpenAI embeddings. Now for this, you will also need the OpenAI API key. Okay? So let's go to platform.openai.com. Okay? So this is my personal account where I think I have 3 to $4. So here we had created this in Cohort. Let's revoke this. And let's create a new secret that is rack. Okay? So do not use my key because I will expire it after this video. So here in the process can we directly provide the API key? Yes. So this is our API key. Okay? Ideally it should come from. But okay for now let's load it like this. Embeddings nice. Okay? Now what do we need to do? Next what is our next step? We need to create a vector store here. So here I said vector store. So in the vector store we said Quadrant from document. We need to pass all the documents here. We need to pass embeddings. Client and collection name. We provide the collection name here",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3786.319,
+      "end_seconds": 3869.28,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3786s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "de03f17ae999e5680fb94f3069064a141f446c3bd9b6160986fee9fb1fba1552",
+    "text": "Next what is our next step? We need to create a vector store here. So here I said vector store. So in the vector store we said Quadrant from document. We need to pass all the documents here. We need to pass embeddings. Client and collection name. We provide the collection name here PDF docs. Okay? So let's do one thing. Let's go to localhost. Okay? Localhost 633 dashboard. Okay? Okay? So Quadrant has its own dashboard. You can see we currently have no data at all. Our collections are empty. So now what should happen? When we run this, the vector embeddings of the document we upload should be created. So let's do one thing. Let's download some sample PDFs on Node.js. Okay? We can also take sample PDFs on movies. Right? A movies let's take. If I can find something. Right? So there is a film script browse free or let's take Node.js. Okay? On Node.js we will definitely find something. Okay, I found a PDF here that has the rules of GST. I found a PDF on it. You can see that this is a PDF that has the GST rules on it. So let's download it. Okay? This is a nice one. So these are the rules in the PDF. Let's download it. And it's 1.7 MB which is really nice. So now we upload the PDF here and enter it.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3850.16,
+      "end_seconds": 3936.44,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3850s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "530a191461414859af3c14960f51185ad5ba68b3ae606b66ab3458ed3a9c8cf8",
+    "text": "I found a PDF on it. You can see that this is a PDF that has the GST rules on it. So let's download it. Okay? This is a nice one. So these are the rules in the PDF. Let's download it. And it's 1.7 MB which is really nice. So now we upload the PDF here and enter it. Let's see what happens. Is our worker running? Yes, the worker is working. So you can see that something is happening here. Right? You can see that something is happening here. So did it work properly? Let's see if I do a refresh. Okay? So far there is no collection. Right? There is no collection. So we have the documents now. Correct? And we have the documents now. What did it do? It gave an undefined function 32 for some reason I feel that the call up to here is not coming, so you know what we could do? Let me just search for LangChain JavaScript Quadrant. Okay, so you can see that we have the Quadrant vector store here which is good and we just followed this documentation. And here if you see we created an embedding heading model which is fine. We created a vector store here. I think I should do this. And here it is adding the document itself. Yes, I prefer to do this actually. So, let's delete this last code.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3916.799,
+      "end_seconds": 4005.039,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3916s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "834f584c1413bc7371c41efd0a63a285f31f9ceb43dfd0c91d3cc3b15a8ac277",
+    "text": "And here if you see we created an embedding heading model which is fine. We created a vector store here. I think I should do this. And here it is adding the document itself. Yes, I prefer to do this actually. So, let's delete this last code. Okay? So, we created an embedding model here. Okay? Then I need a vector store here. So, this is our vector store. Okay? Quadrant dot this thing. And here I will have to replace the URL myself. http sash slash local post. Okay, a 633 okay. LangChain JS testing is fine, I don't mind and here one more thing I will need my API back so the API we created was on platform dot OpenAI. Okay, let's recreate it, a wrap to okay. Create a secret. I should actually keep this in ENV but okay, I am feeling a bit lazy. So this is our API. Okay, so embedding model vector store is great. And now what do I need to do? Our vector store is ready. Now we need to create documents. Okay? My documents are ready. That I am sure my documents are ready. Inside the documents, one page content is needed and one metadata is needed. Okay? So if you look inside the documents, docs at zero dot page content and metadata is also ready. Nice. So now what can we",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 3984.559,
+      "end_seconds": 4076.799,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=3984s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "379a8a3e5b34ae6b0c5074c720f99a61ebe8128a9d56fd43aa9f2a8633735eb8",
+    "text": "to create documents. Okay? My documents are ready. That I am sure my documents are ready. Inside the documents, one page content is needed and one metadata is needed. Okay? So if you look inside the documents, docs at zero dot page content and metadata is also ready. Nice. So now what can we do? Await in documents. Okay, vector store dot our documents this thing. So we will say await vector store dot add all the docs here and then we will console dot log that all docs are added to vector store. Nice, so now we run the worker. Okay? Let's see what happens. So we will go back to the front end and let's upload. Yes, so I got a message. Nice now it is working right? So you can see LongChain testing. Inside LongChain testing, look at our documents. This is our page content. This is metadata and these are our vectors. So if you want to see the vectors here, you can see that these are our vectors now. Okay? So our document has been fully ingested. Now let's do one thing and upload the documents as well. Upload a big document. Let me just upload this document. So you will see that the warning is coming. You have to wait for a while. What will this do now? The GST vector has been added. Nice. So now",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4057.119,
+      "end_seconds": 4146.0,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4057s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "355c24a0753b04e020d7f9ab8c6620f174d8254cc990dcf5943c547c0f77fc67",
+    "text": "So our document has been fully ingested. Now let's do one thing and upload the documents as well. Upload a big document. Let me just upload this document. So you will see that the warning is coming. You have to wait for a while. What will this do now? The GST vector has been added. Nice. So now If we go back inside it, let's refresh. So, what you will notice is that we will also have GST vectors here. Okay? So, ah this is in some other language. Is the vector okay? Have the vectors been added? Let me just see. If we go here Let's go back. Okay? Long chain testing. So here we have our vectors. And load more. Okay? So let's load more. You can see that all our vectors have been created. Nice. So our vectors have been created. And look, this is our GST source, it's a PDF, this thing. So this is our context So our vector embeddings first part has been completed. We have completed this process. Upload queue worker PDF splitting vector embeddings and this thing. Now we need to create retrieval. So how will retrieval happen? Okay? We need to retrieve from this vector store. Correct? If we see, whatever query the user gives us, we need to retrieve from this vector store. So how will we use this particular vector store as a retriever? Let's look at its documentation. So if we need to use it as a read. How do we query? So how will we do similarity search?",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4127.759,
+      "end_seconds": 4213.1990000000005,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4127s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "07b54a340e01b7036cce877f4357b9b4084be949cc021a4f8090aeeeee23cb9c",
+    "text": "Correct? If we see, whatever query the user gives us, we need to retrieve from this vector store. So how will we use this particular vector store as a retriever? Let's look at its documentation. So if we need to use it as a read. How do we query? So how will we do similarity search? Vector store dot similarity search whatever query the user has given. Okay? And this is our vector ah this thing. Okay? And what are we giving in the filter? Match value on the source this thing. Okay? We don't need to give a filter. Okay Right? We don't want any filter. So, what will this do? It will bring us the similarity search. Nice. Okay? So, it will bring us the similarity search. Or we can create a retriever vector store dot as retriever optional filter K2 then we can invoke here using biology so let's try this. Okay? Let's try the retriever. So let's copy this thing and now we need to go back into our server index dot JS paste an instance of this vector store here as well. Okay? Same vector store and here we will say cost retriever. Okay? So let's create a route chart. Okay? app get chat and what will you do for me? You will give me a query here whatever the user has said. Okay? So request response. So",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4192.08,
+      "end_seconds": 4274.88,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4192s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "2fe171f57d578bca2d85ff56c1eff0c1a9af442d205460e05ff783e1437fe428",
+    "text": "we will say cost retriever. Okay? So let's create a route chart. Okay? app get chat and what will you do for me? You will give me a query here whatever the user has said. Okay? So request response. So what will I get here? A function request response. Let's say the user's query is something. Okay? Let's say the user has some query. So for now, let's hard code the user's query. I want to write that PDF file related to GST. Let's say I am interested in form GST this thing. Okay? The user asked what is this? So the user said what is this thing? So now what do we need to do? We need to create a retriever. Okay? Vector store dot as retriever. Good, the typings are not coming in this. Ah wait this is our vector store. Okay? So let me just save vector store. And we will make this async. Okay? Vector store dot as a yar typings are not here. Which is very bad. It should have provided this much. So let's go back to the documentation. So vector store dot as retriever so The vector store dot retrieve is fine and here is a k2 now what can we do? We can invoke on the retriever. Right? Okay? So cost result equals invoke on the retriever whatever the user",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4256.8,
+      "end_seconds": 4342.56,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4256s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "592ecfcf747be6261d36df8a40c0e3284d67b690ad44cfc9f7398ea15f53fe70",
+    "text": "The vector store dot retrieve is fine and here is a k2 now what can we do? We can invoke on the retriever. Right? Okay? So cost result equals invoke on the retriever whatever the user has queried. Okay? Whatever the user has queried. Okay? Here we missed one thing. Here when we provided embeddings we also need to copy these embeddings here. Okay? Ideally, what can you do with them? Separate you know functions can be created. But okay? For now, I am hard coding here. So now let's see what result it gives me. I need to see return here. Okay? Return response dot json has to be done. These are the results. I need to see what results it gives me. Okay? So everything is working good. Okay? A retriever dot invoke was supposed to be done. Retriever dot invoke. So let's do one thing here. Let's do a curl http s localhost 8000 chat enter. Empty response from server. Okay. Why? An empty response came. Nice. This shouldn't have happened. Is our server running? Okay okay Something broke. Open embeddings is not defined. Oh wait I forgot to import. Sorry my bad. We also need to import these things. My bad. Okay? Let's do it again. Nice. So look what it did? It brought me some documents which will have the word coming in which will have the context. Correct? So you can",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4322.96,
+      "end_seconds": 4439.759999999999,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4322s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "1c692aca34759568d6de8fe58cc2a0bba857c6c0ea0fc014d08eb44ba4e499d7",
+    "text": "Something broke. Open embeddings is not defined. Oh wait I forgot to import. Sorry my bad. We also need to import these things. My bad. Okay? Let's do it again. Nice. So look what it did? It brought me some documents which will have the word coming in which will have the context. Correct? So you can assume that it brought me page 14. Let me just see which page this is? This is page number 10. Okay? It brought me page number 14. Ah let me just see the metadata. Source is fine. Okay? PDF is fine. Version is there. Where is the page number? Total pages is 167. It brought me page number 17. So inside page number 17 it found something like this. Okay? So based on the user query means the vector embeddings created similarity search in page number 17 yes Okay. Inside page number 17 there was this thing right? So it brought me this thing. Now what will we do? Based on what we found? Okay? If you look at this text means inside it there is dot result. Okay? Okay? If you look at this result then inside every result there is page content Correct? Inside every result there is page content. So I know what I will do from here? I will make the page content a string here. So now see all the magic will start from here. Whatever the user asked me now what will we do here? One",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4406.4,
+      "end_seconds": 4504.32,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4406s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "84439aff6a9d7721810703bded9772595d2c0edca690430b1ef24163dc9f8f13",
+    "text": "Correct? Inside every result there is page content. So I know what I will do from here? I will make the page content a string here. So now see all the magic will start from here. Whatever the user asked me now what will we do here? One chart will start. Okay? Meaning that look we have fetched relevant documents from the vector store. Now what do I need to do? I need to call the user's query with context on OpenAI. So here let's create a system prompt. Okay? System prompt equals to so here I need to We need to create a system part that you are in your a helpful AI assistant who answers the user query based on the available context from the PDF file. Okay, and here I will feed it that context. So how will I feed the context? I will tell it that means what context we have available. Okay? So what I could ideally do is I can convert the whole into json.stringify. Okay? So this particular context will be json.stringify whatever result I got. Okay? So what did we do here? Based on the context we fed it. Now what do we need to do? We need to make an OpenAI call here. So let's do one thing. Let's cd into the server and install OpenAI using npm. Okay? So we have installed OpenAI. Now what will we do here? Import something from OpenAI that we installed",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4485.44,
+      "end_seconds": 4586.080000000001,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4485s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "27a6dda7f572848f03b244dbda6d48e8b991b4b5dcd0d03807e175fccbacf19f",
+    "text": "here. So let's do one thing. Let's cd into the server and install OpenAI using npm. Okay? So we have installed OpenAI. Now what will we do here? Import something from OpenAI that we installed let's wait for a while. OpenAI and here we will take the OpenAI client. Okay? OpenAI is here. So let's create a client equals OpenAI. Okay, OpenAI and here we can also provide the API. Is the typing not coming? Okay, npm install @types/openai should have been the typings I think. Okay, I think if we do it this way then I will get the typings right Why are the typings for OpenAI not coming? Sorry, my bad, I have been coding a lot in Python lately, so okay, let's copy this API here. So this is our API. So what will we do on the client now? Very simple, we will say cost chart result equals await client.completions.create. We will give it the model a gpt 4.1 Okay and we will give it the part, no, no, we will tell it messages. Okay, chat.client.chat.completions.create. So we will tell it messages. Okay, what will we give in messages? First we will give the role. Okay? Role system and content whatever our system part we created. Okay? Then we will give the role. Okay? User role a user and then we will give the content. And in content, we will put whatever the user asked. Okay? The user query will come from here. So this comes",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4568.48,
+      "end_seconds": 4689.28,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4568s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "320ce9fdc7d2668c6f0ca312ed7a41ec4a5fc247b746a135e2eb432f0e79f59a",
+    "text": "our system part we created. Okay? Then we will give the role. Okay? User role a user and then we will give the content. And in content, we will put whatever the user asked. Okay? The user query will come from here. So this comes the user query. And then what will we do? Based on whatever result it gives us, we will tell it. Look, we will give it a message that our AI gave us, so .choices[0].message.content Okay and then we can also provide relevant documents that how we got this, what relevant documents we took. So in that case, what will we do? We will give it this result. So what are we doing here? What message did AI give on the front end, we are also providing that, and we have also given the references we used in the documents. Okay? Nice. So let's do one thing. We are already inside the server. Let's just do a Pnpm run dev. Okay? I think my server is already running. This is our front end. Let's restart the back end once. Now if we do the curl command here again. Okay? So let's curl chat and hit enter. Let's see what happens. So we might have to wait a bit here because now it's a lengthy process. Okay? So the agent",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4671.04,
+      "end_seconds": 4752.76,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4671s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "71ae241905145f68f563ce5748bd6aaee61201a1be4f6ef55c9c2959d4920f73",
+    "text": "This is our front end. Let's restart the back end once. Now if we do the curl command here again. Okay? So let's curl chat and hit enter. Let's see what happens. So we might have to wait a bit here because now it's a lengthy process. Okay? So the agent is thinking basically. So let's see what we get. A very long response will come or. So you can see that these are our relevant documents. So based on the context provided this is not explicitly detailed the particular page. However, I can accurately explain this thing. I think our document said? One second. This is our message which is fine. Where is our document starting from? Our documents are starting from here. Actually, it's a bit difficult to visualize here. When we visualize this on the front end it will be really nice. Okay? So, now what can we do? We can also complete our chart part on the front end. Okay? I need a good PDF that contains not just text relevant text content. So let's say if we say that PDF on learning new. Ah, here is a PDF. Let's see. Is this text? No, look. Yes, this is text right? Ah yes, this is all text. So let's copy this. Let's download this. Okay? Okay? Let's do one thing.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4735.12,
+      "end_seconds": 4818.96,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4735s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "d5b5a025446d4a1435990925709284e29aa9d44dc637220f4b9e6984f13243bc",
+    "text": "Ah, here is a PDF. Let's see. Is this text? No, look. Yes, this is text right? Ah yes, this is all text. So let's copy this. Let's download this. Okay? Okay? Let's do one thing. I will go to the quadrant. Let me just clear everything. Okay? We have messed up quite a bit in the testing case. So let me delete everything. Now what will we do? We will upload the file. Okay? So PDF guide node open what is our worker running? Absolutely running. Now we have to wait for a while. Okay? So let's wait a bit here. So you can see that this PDF has come. Now these documents will be uploaded. It will take some time. Okay? You can see that Yes. Currently, no documents are available. So documents will also be available after a while. So we will have to wait a bit here. Because I think there are quite a few pages inside it. How many pages are there? Let me see. There are 125 pages. So 125 pages are going to take some time. And there is very good text content. If you see there is a little bit of text content on each page. Which is really nice. Nice. So, you can see that we have all the documents now. Okay? Now what do we have to do? Now we have to",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4801.28,
+      "end_seconds": 4888.8,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4801s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "7132a8ebc044f5f2751333c0f0f61a9ea5454eb4d36e9da2da569b46f1a99bdb",
+    "text": "time. And there is very good text content. If you see there is a little bit of text content on each page. Which is really nice. Nice. So, you can see that we have all the documents now. Okay? Now what do we have to do? Now we have to search for something here. If I search for npm here, ah sorry not here in curl. Okay? So what I will do is our index is how to use fs module. Let's see if the user has given such a query then do our relevant documents come out correctly? Okay? So let's see if it is working nice. So what did it do fs. I was told about the module which is nice. And if you see what it has done? Ah, this is our message. I will do one thing, I will print it out completely. Okay? Let me just print it and copy it out and I will show you this as a JSON in a new file. Okay? So what is our response? Let's format it. Look, it gave me a message about where the FS model is used? And it gave me the page content that I referenced it from and it must have also given me the page number inside the metadata, page number 10, so it directly took me to page",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4871.56,
+      "end_seconds": 4956.88,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4871s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "ee89fd805ff2d2126396a13dacff89be07cab9a95fad83e9e820dfe015cbc7cb",
+    "text": "Okay? So what is our response? Let's format it. Look, it gave me a message about where the FS model is used? And it gave me the page content that I referenced it from and it must have also given me the page number inside the metadata, page number 10, so it directly took me to page number 10. So if we open page number 10 here, then page number 10 is actually about the FS module. Nice. Okay? And it gave me another page. It also gave me page number 11. Why? Because it continued on 11. Look, importing your files and everything. So what are we doing here? We are fetching relevant documents. Which is really nice. Okay? This PDF is good. Now let's see what we will do on the front end? We will send this. So let me just do one thing. We will not take the user query like this. We will say request.query .message. So you have to give your message like this. Got it? So let's go back to the front end. Ah, we need to create a chart component now. Okay? Ah, because the part here is empty. So okay? Let's create a chart component. So chat page chat.jsx Okay, so use client first, so use client. Okay, and import React as React from 'react'. Okay, so cost ChartComponent = React.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4938.719,
+      "end_seconds": 5029.6,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4938s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "8b74087a77b8fcb2edff06a0778f9652040a3067b6923bdf0074ec6c7de192f9",
+    "text": ".message. So you have to give your message like this. Got it? So let's go back to the front end. Ah, we need to create a chart component now. Okay? Ah, because the part here is empty. So okay? Let's create a chart component. So chat page chat.jsx Okay, so use client first, so use client. Okay, and import React as React from 'react'. Okay, so cost ChartComponent = React. Okay, and let's return a default for now, we will see what to do later. Export default ChartComponent. Now we will import this ChartComponent here. So import ChartComponent and render it here in our ChartComponent. Okay? Nice. Now what to do? Let's code the ChartComponent. It's very simple. So we will make a very simple ChartComponent. So what do I need? First, I need an input field here. Correct? So, let's take one here. A div, okay? Def input type text, okay, and give a placeholder that says type your query here. Okay, did it render? Good, it's rendering here. It's rendering here, okay. Let me just go to components and search for the input. Okay, I think this is nice. Right? So let's copy its code. So where is the input coming from? @components this thing a PAP Dlx add input. First, we need to you know, also install these. So PNPM Dlx we have to do this too. Okay? So control C, let's install this in the client folder. Right? So here we will use Slate and installing",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 4986.88,
+      "end_seconds": 5114.32,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=4986s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "faa03f8b656fc2a45332a78b1fe0dfdf3154ec435abea76b55271c00321d9f60",
+    "text": "PAP Dlx add input. First, we need to you know, also install these. So PNPM Dlx we have to do this too. Okay? So control C, let's install this in the client folder. Right? So here we will use Slate and installing dependencies. Nice. Now we just have to do what? Add the input. So let's go back to the input component. So PNPM add input. Nice. So now we can directly use the input here. Input. Okay? Input placeholder at type your message here. Now see a PAPM run down. Okay? So let's wait for the compilation or so you can see that chat can add as soon as you know a different glow has come up. Okay? Over our entire application. You can see that this is your type your message here. Now here in the class name put P4. So that I have this padding here. And I know what to do with this div? I need to give it a fixed. I need to fix its position. So let's fix its position. Fixed and I want to fix its position at the bottom. So we will give it bottom. Let's set bottom to 2.5 where did it go? It has come here. Look it has come here. So try three or 4.5. A little bit up, one second. What are the values of bottom? Let's set bottom to four. Okay?",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5094.48,
+      "end_seconds": 5198.2390000000005,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5094s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "3ebb1928e1b4e0b46066b66290f58e34f39f6f3568201268cfb6a2f6b53a9e4c",
+    "text": "Let's set bottom to 2.5 where did it go? It has come here. Look it has come here. So try three or 4.5. A little bit up, one second. What are the values of bottom? Let's set bottom to four. Okay? So it is here and it will also need a width. Right? Width screen is not a little outside. Don't give screen. Let's set width to 100. Okay? So you can see that here our type your message here is here. Okay? It doesn't look that good. But okay? You got this just. And here I also need a send button. Okay? So that can be a button. So let's add a button. So NPX add button. Okay. The button has also been added. So let's take a button here. A button sent. So let's refresh and see if our button has come. Okay? The send button has also come. And we can give this whole a flex. So let's give flex and a gap of two. Okay? A gap of three or two. So okay? Our chart interface has been created. Okay? Now here we will render the chat message that the user has sent. So, for now, let's do one thing. We will see that later. So, from inside React first of all let's take a state. Okay? Const a message message whatever the current message is, set message. Okay? So, React dot use state. So, brother, you have typed a string. And by default this thing. So, we will give it an input value. That is the",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5176.96,
+      "end_seconds": 5281.52,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5176s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "f0aad6d850c21781904e1a9a4613d2a3cde6b80ec90bd202e8d3fa36cc1ba8a1",
+    "text": "let's take a state. Okay? Const a message message whatever the current message is, set message. Okay? So, React dot use state. So, brother, you have typed a string. And by default this thing. So, we will give it an input value. That is the message. And we will give it on change. Okay? So on change set message as event dot target dot value so this will become our controlled component. Right? We will keep send message disabled. Okay? When will we keep it disabled? If after trimming the message if it is still not there. Okay? So if you haven't written any message. Look it is disabled. As soon as you write a message it will come. What will we do on send? We will send this message to the backend. So on click handle send chat message. I like this kind of naming a bit more. So the rest you can use whatever naming you like. Whatever you like. Right? So inside this we will call our API later. Okay? Let's make it async. Our API call will go to chat message. So how will we make the API call? Very simple. So here we will say you know cost response equals to a wait fetch call. http localhost 8000 sash chat question mark and here our chat message will go. Correct here our message will go. So whatever our message is we will put it here. So chat question mark how were we taking the message? user.query.message. So message equals to this thing in this way. Okay? So this is going to be a get call. Nice. Then how will we take this data",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5261.04,
+      "end_seconds": 5347.04,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5261s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "e463d7797f1536537be915bf7df3487f93e8e54f4730a11493a4390fa2028e49",
+    "text": "So here we will say you know cost response equals to a wait fetch call. http localhost 8000 sash chat question mark and here our chat message will go. Correct here our message will go. So whatever our message is we will put it here. So chat question mark how were we taking the message? user.query.message. So message equals to this thing in this way. Okay? So this is going to be a get call. Nice. Then how will we take this data ? response.json. So we have to convert it back from json okay so a wait now what will be inside this data you know there will be a message inside the data which the AI has responded plus its references will be there so for now you can console.log it So that's it we will write it later okay right now we also need a message history cost messages set messages okay so react.useState so what is going to happen is there will be a message history. So here let's create an interface that I message. Okay? So inside each message there will be a role either assistant or user. So it can be assistant or it can be user and here there will be a content which is basically a string. Okay? And here I can also have document references. So, I will just say that document content. Okay? documents which is a which is a string. Okay? which is a string of strings. Okay? So here we will put the document's content",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5328.08,
+      "end_seconds": 5411.76,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5328s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "dbd97303fe7f5ab58081dbe2949d4d218704b3a154673ad10c14eecf5175ed2c",
+    "text": "basically a string. Okay? And here I can also have document references. So, I will just say that document content. Okay? documents which is a which is a string. Okay? which is a string of strings. Okay? So here we will put the document's content So some documents can basically be like this. So what is this basically? It is going to be an array of I messages. Okay? So as soon as you click on handle, what do I want to do here first? I will do set messages here. Okay? Whatever our previous messages are already there. Inside that we have set previous messages and I will add the new message here. So in the new message there will be a role that is a user role because this is the user's message. And we will put the content whatever the user told me that is the message. So this was our first state update and here ideally we should update the second state. But okay that's that we will look at later. So I think everything is set up right and let's see if everything is working fine. So right now we will get the message in the console. So let's do it here. Okay? What is fs module? Okay? And let's send it. Ah enter will not work. Of course I have to click on the send button. So, let's just do a send. So, I think the network call is going on. So, if I go into the network. Okay? So chat message call is pending and yes, I got a response. So, I will show you the response what does a response looks like. So,",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5394.159,
+      "end_seconds": 5479.76,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5394s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "7bd8fd067dc6ab8262491e1e1cad6f8faebcd0b8c56ce606fff02f0ea752161b",
+    "text": "let's send it. Ah enter will not work. Of course I have to click on the send button. So, let's just do a send. So, I think the network call is going on. So, if I go into the network. Okay? So chat message call is pending and yes, I got a response. So, I will show you the response what does a response looks like. So, this is our ah response. Let me just bring it here. So, inside the response we have two documents which contain a page content. Okay, you can see that we have a metadata and we have a page content. So let's do one thing. Let's create types for this too. Right now we have stringed it let me just create an interface doc. Okay? We will give this doc. So page content can be a string. Then we can have a lock. Okay? location that is the page number. So lock lock is an object inside which we can have the page number as a number. Okay? Let's create its type. इंटरफेस डॉक। ओके? इसको हम डॉक दे देते हैं। सो पेज कंटेंट एक स्ट्रिंग हो सकता है। देन वी कैन हैव अ लॉक। ओके? लोकेशन दैट इज़ द पेज नंबर। तो लॉक लॉक एक ऑब्जेक्ट है जिसके अंदर वी कैन हैव दी पेज नंबर एज़ अ नंबर। ठीक है? इसका टाइप बना",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5460.08,
+      "end_seconds": 5529.199,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5460s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "dccbcc15bf3fd1ea962b558c2a02f16eabe27d22f36dda3bcddb3bcaa6e97842",
+    "text": "इंटरफेस डॉक। ओके? इसको हम डॉक दे देते हैं। सो पेज कंटेंट एक स्ट्रिंग हो सकता है। देन वी कैन हैव अ लॉक। ओके? लोकेशन दैट इज़ द पेज नंबर। तो लॉक लॉक एक ऑब्जेक्ट है जिसके अंदर वी कैन हैव दी पेज नंबर एज़ अ नंबर। ठीक है? इसका टाइप बना Let's take it. The info of the PDF is here. Which PDF did we read? Right? Because there could be multiple PDFs. Okay? And we have the source and we have the page content. So metadata, oh wait, oh metadata, oh okay it was inside the metadata, my bad. So this will go inside the complete metadata. Page content and metadata, we have this lock inside. Okay? Location is there, PDF is there. So let's take the source. Alright? So let's also have the source which is a string. Alright? So this is our source. PDF you can take about. And we already have the page content. Even if you look inside the PDF, what do you have? Info is there. Which PDF is it? Who is the author? How many total pages are there? So all those things. I think this is fine. Alright? For now, let's take this much. So doc and here is an array of docs. Nice. So page content. So now what will we do? Whatever data came in the response, mark it. Alright? So we need to set this. Okay? So if you look at our data that the backend is throwing, what does it look like? It looks something like this. Correct? So dot data. So I will just set messages. Okay? Set messages, messages, whatever our",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5509.04,
+      "end_seconds": 5595.04,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5509s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "d7155ea373a1911bcbc6995b3433261ae0f9f5ff795f08d9093679f49ef1ffe9",
+    "text": "what will we do? Whatever data came in the response, mark it. Alright? So we need to set this. Okay? So if you look at our data that the backend is throwing, what does it look like? It looks something like this. Correct? So dot data. So I will just set messages. Okay? Set messages, messages, whatever our previous messages are, inside it dot dot dot previous messages and then I need to add a new message. Correct? So inside this, one role will go, assistant content will go, right? So how will we take that? Look, the data that came from the backend, inside the data, we have data. Alright? So data dot data dot okay, we will put a dot, dot message. So data a dot data dot message, okay? And inside this, we can also store documents here. Right? So how will that be obtained? Dot inside docs, so let's copy these docs. So here I can see a documents which is data dot a data dot docs. Nice. Cool. So I think our messages will be ready here. Now we just need to do what here? Here we need to put a div and I need to render these messages. So for now, I will just json dot stringify them here. We will render later. For now, let's do one thing. Let's iterate over every message, so messages a messages dot map for every message, okay?",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5574.08,
+      "end_seconds": 5662.32,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5574s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "2bf8616b9fe9044bba596ac86bf9cd40423bb9327dcded5eb5dd0d67955e7d66",
+    "text": "need to put a div and I need to render these messages. So for now, I will just json dot stringify them here. We will render later. For now, let's do one thing. Let's iterate over every message, so messages a messages dot map for every message, okay? For every message, a callback function. So for now, what will I do here? I will return a span tag here. Or let's return a pre tag. Pre, not prev, a pre tag. Alright? And inside this, there will be one message and one index. So I will use the index for the key. And here we will do json dot stringify message null to. Alright? So, let's see if it is working. Okay? And so zoom out and refresh the whole page once. So that will compile and we will keep our console open too. Okay? So, let me just open the network tab. Am what is FS module okay send so look here we will render such messages but alright now our chat message is pending so until then you can show some loading indicator that it's in a loading state and we got an error so what happened here hydration failed because the HTML didn't match. Okay? That is fine. Means, ah I think this message is not set correctly. Ah this is what my thinking is that the data that came is not set here.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5640.32,
+      "end_seconds": 5727.360000000001,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5640s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "704afdbd7c22232ea1e68ef3209e1e07e1a726facdea1672e989895620b0e315",
+    "text": "loading state and we got an error so what happened here hydration failed because the HTML didn't match. Okay? That is fine. Means, ah I think this message is not set correctly. Ah this is what my thinking is that the data that came is not set here. Didn’t happen. Correct? To debug this, the best is to lock the messages state in console. Okay? I feel like we must have missed something here. Alright? That’s fine. Let’s ask again. What is FS module? Okay? Send console. You can see in messages we currently have one message: cannot read properties of undefined reading docs. Alright? So this is the problem. Data.data.docs was not found. Why? Because if we look at our network call. That is this thing. Our backend did not respond at all. Oh, did the backend crash? The backend is working. Yes, this is also working. This is also working. It is running. So the backend did not crash. Actually, something else got crashed. Okay? We are fine, refresh the whole application, so this is the problem here that data.data.docs is causing the problem. Okay, let’s wait again, so let’s close everything. What is FS module? Let’s see if it works now. I don’t even know if my credits could be over. Alright? Working, right? The assistant came. Oh, we don’t need to do data.data. We need to do data.a data.message directly. Okay.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5708.239,
+      "end_seconds": 5809.679,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5708s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "1073314bee70c9f43b66d8ed394161ac4eaffc48c7cb6c0ccaaa2631bc1a5ed1",
+    "text": "module? Let’s see if it works now. I don’t even know if my credits could be over. Alright? Working, right? The assistant came. Oh, we don’t need to do data.data. We need to do data.a data.message directly. Okay. Is it? This is the problem. There’s no need to do data.data. Okay? Now let’s see. Okay. Now let’s do one thing. Let’s ask something else from the PDF. If I scroll down a bit. So what do we have here? Adding command and argument passing. Okay? And what else? Let’s see something nice. If we find something nice inside this PDF. How to make an API call. Okay? So this is our API call. Right? A library automatically how to make API call and making HTTP request. Okay? And how to make HTTP request. Okay. Send it. Let’s send it. How to make HTTP request. Let’s see if I get the response back. Let’s wait a bit. Nice. So look, what did I get now? Look, now it is working based on the provided context PDF, whatever your PDF file is. Okay? You can see that you can make the request this thing. So it gave me a very long content. Correct? Now this is scrabble. It’s a very long content. Actually, I should render it properly. And then it also brought me the page. Look at the page number.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5790.76,
+      "end_seconds": 5878.8,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5790s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "c207865f5953c001d38b956718df9ce18318864bbda0d72618bd596c68ecd59d",
+    "text": "provided context PDF, whatever your PDF file is. Okay? You can see that you can make the request this thing. So it gave me a very long content. Correct? Now this is scrabble. It’s a very long content. Actually, I should render it properly. And then it also brought me the page. Look at the page number. What came? If you look at the page number here. PDF is source, ah source, so that’s fine. If you look here, page number 29 came back to me. Is this page number 29? Absolutely, look, it’s mentioned above 27, 28, 29. It is exactly page number 29. Nice. Alright? It’s mentioned inside 29. And it also brought me the content that I am referencing from. So look at this document’s page content, and this page content. So, now what can you do? You can basically render this a bit like a rich input rich output. Correct? What can you do? Basically, the output you have coming, you can render it a bit like this assistant’s let’s say avatar. Okay? This assistant’s avatar, whatever message it gave, you can show it like this first. Then after that, what references were made, you can create an accordion here that will expand. Technically, you can show the PDF logo here and say, 'Hey, I took this reference and I took this reference.' And by clicking, you can also provide a download button here. How? Because if you look here, you have the source. The file name is on the backend. So you can also download that particular thing here.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5861.199,
+      "end_seconds": 5945.52,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5861s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "f8b44433e1565d7cc7c673a9c5d662021974b7dfcd48c5f55108581391662890",
+    "text": "Technically, you can show the PDF logo here and say, 'Hey, I took this reference and I took this reference.' And by clicking, you can also provide a download button here. How? Because if you look here, you have the source. The file name is on the backend. So you can also download that particular thing here. So basically, this is how a typical rag system works. So we had two things here, right? How we uploaded a PDF and ingested it. That was the part one of our pipeline. Second, we saw how we can retrieve it from the vector store. So this code has a lot of refactoring pending. But I understand that you can do it. So you can refactor this code a bit. Because the style of writing this code is not production-ready. But the code is very nice. Okay? We used the queue system. We used BullMQ. We used Docker Compose in Quadrant. We used Valk. We created a queue system. Using BullMQ, we also did authentication on the frontend using Clerk. We built this entire end-to-end application which you can now enhance on the UI level. And you can deploy this. So tell me how did you like this RA application? What are your thoughts on it? And if you liked this video, please make sure to like and subscribe. Let me know in the comments how you found the video. See you in the next video. Until then, bye-bye and take care.",
+    "metadata": {
+      "video_id": "2DXiOtEwWtU",
+      "title": "Build AI Chat with PDF App with Next.js and Vector DB",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "RAG",
+      "start_seconds": 5926.159,
+      "end_seconds": 6004.0,
+      "url": "https://www.youtube.com/watch?v=2DXiOtEwWtU&t=5926s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  }
+]

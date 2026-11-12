@@ -1,0 +1,850 @@
+[
+  {
+    "id": "19f4e15cd25ad17cefd409344962e262cc079a949329bafd6b7e03bab2b4a83f",
+    "text": "So, welcome to session one, cloud and Microsoft Azure 101. So, the goal of this session is to provide an introduction to the different types of cloud service, dive into specifics about Microsoft Azure and its offerings. What are as a service offerings? What do they mean? And then how I can actually acquire and leverage Azure services. That's the goal of this module. Now, if I think about cloud services, there are many different types of cloud service. Now, the definition of what they mean can vary based on well, where the services are hosted, who owns, who provides the service, maybe how I access the service. So, I can think about the first one is going to be a private cloud. So, with a private cloud, I have full access as a company to all of the different aspects, the hardware, the operating system, the applications. So, I'm going to have a certain amount of capacity that I then expose as different types of resource. Now, this might just be virtual machines, maybe it's containers, maybe it's different types of database service, but it's typically limited. And really what differentiates just how I'm running a hypervisor to I'm running a private cloud would be the management infrastructure that I put on top of it to provide services to the people in my",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 0.4,
+      "end_seconds": 93.24,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ad41a2e1562aa7fc513a3a498607eba9c0a1d80571f6aa2d46f42ed05d815903",
+    "text": "And really what differentiates just how I'm running a hypervisor to I'm running a private cloud would be the management infrastructure that I put on top of it to provide services to the people in my company. And so, if I think for a second about it, when I think private cloud, so this is my organization, so I'm on premises, and I have my various servers that can obviously host virtual machines, but maybe on top of that I then maybe host things like containers, but I'm going to have some management layer sitting on top of this that exposes capabilities to the people in my organization. So, they could then maybe via a portal go and provision services, consume the services, see what they're using, stop and start them, as opposed to just having to send a service ticket to the operations team say, \"Hey, please go and create this.\" So, this would be hey, I I've got a private cloud because it's things in my environment that I'm hosting um that my people in my company can then go and consume. Now, as we move on from that, the next thing we can have is the idea of a public cloud. So, with a public cloud, this is an external party providing the service, and primarily, it's available and accessed over the",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 78.64,
+      "end_seconds": 170.08,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=78s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4444ee1beef6cbcf905e81acb04ae45576b810c79bedc5d902d37a682cc7f0eb",
+    "text": "Now, as we move on from that, the next thing we can have is the idea of a public cloud. So, with a public cloud, this is an external party providing the service, and primarily, it's available and accessed over the internet. However, very often they'll also expose the ability to connect to it on a more private um type of connectivity. So, this would be an example of Microsoft Azure, obviously, which is our focus, Amazon Web Services, Google Cloud. And here, there's a shift in the responsibility for how I consume and how I leverage that service. And I'm going to be offered specific types of resource from that provider. So, I can't access everything. And the types of resource will vary by cloud provider, but typically they're far more diverse than what I would be able to offer on premises. There's typically a very powerful control plane and interaction that exposes a lot of capability. There'll be things like policy and governance, lots of security solutions just built into that. And of course, Azure is a public cloud solution. And so, if we jump back to our little picture, so from a public cloud, so this would be a public cloud solution, there still is infrastructure. Like this isn't magic, there's still infrastructure running here in the",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 151.56,
+      "end_seconds": 242.88,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=151s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6700a27bfbb5b422698c3e1702cea8d1c8596fd1831822c93e2ac59ab95c2a07",
+    "text": "And so, if we jump back to our little picture, so from a public cloud, so this would be a public cloud solution, there still is infrastructure. Like this isn't magic, there's still infrastructure running here in the clouds, but I don't see any of that. I have some control plane that I interact with, and I just see different types of resource. So, there's absolutely still capacity, servers, storage, but it's hidden from me. I get exposed types of resource. And yes, there's basic things like virtual machines, but I'll also see AI services and database services, all these different capabilities. And I'll have a really rich control plane through which I interact, maybe via APIs, maybe via command line interfaces, uh portals. I can do great things like infrastructure as code and declaratively state the resources I want. And I'm going to access it through different means. Yes, it may be internet facing, but maybe I do establish a a private connection between my locations and that cloud capability. So, the public cloud is obviously a big focus of what we're talking about right here. Now, moving on from that, we also have the idea of a community cloud. Now, here, some organizations may share a certain set of infrastructure. For example, governments. Governments commonly use community clouds for their",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 224.4,
+      "end_seconds": 324.68,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=224s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cd762b8ed574e40e21522142fa5cb0ebfb4a982cc04e8ca6f77378e7de1172ba",
+    "text": "Now, moving on from that, we also have the idea of a community cloud. Now, here, some organizations may share a certain set of infrastructure. For example, governments. Governments commonly use community clouds for their various agencies. So, it's not just one um entity, but there's a group of organizations will share that. And then finally, we have the option of hybrid cloud. And hybrid is where hey, I'm using some other cloud like the public cloud, but I also still have things on premises. And most companies are going to be in this state for quite some time. Now, it doesn't mean they're completely different control planes and ways I interact. One of the nice things that we'll see and we'll go through this in Azure, is I can extend that control plane from Azure and bring it to things in other clouds and on premises. This is called Azure Arc. There's also things like Azure local that gives me the ability to actually have certain Azure services running on my own premises. So, that can be very advantageous from that perspective. Now, when I think about um what is a cloud, there's always a a a funny thing here. There's a I had a customer once, and they said you can ask five different people for the definition of a cloud and",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 302.32,
+      "end_seconds": 389.88,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=302s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "407fb0f69bb889288acf5ea3a67be31f30f5d9cb99dce879e78855a77cefd5fc",
+    "text": "Now, when I think about um what is a cloud, there's always a a a funny thing here. There's a I had a customer once, and they said you can ask five different people for the definition of a cloud and you'll get seven different answers. So, there are many, many different definitions. But, the US NIST, National Institute of Standards and Technology, they have five specific characteristics that they talk about that something must be to have and be classified as a cloud. So, the first one is the idea of on-demand self-service. So, the goal here is as the consumer of a service, I can just on my own provision computing capabilities. Um provision storage without requiring some other human interaction. And this can actually be very scary for most organizations when they have now users doing self-service. Well, hey, how do I control them? Well, that's where governance comes in, and we're going to talk about that. But, that's a key aspect that hey, I have the ability to on-demand go and provision services within the budget, within the constraints that the governance has laid out for me. We then think about the idea of broad network access. So, capabilities are available over the network and accessed through standard mechanisms. So, once again, this could be via the internet.",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 379.12,
+      "end_seconds": 468.36,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=379s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "16faa70ada1a87c623a996c60f0717ac1afee139cd6c9153eeded87f249057c5",
+    "text": "governance has laid out for me. We then think about the idea of broad network access. So, capabilities are available over the network and accessed through standard mechanisms. So, once again, this could be via the internet. Many enterprises will establish private connectivity for some additional security, um more control over where the network is flowing, but the goal is this should be available to everyone. It's highly accessible. And then I can think about resource pooling. So, the provider, they have all these different uh I guess you would think islands of resource, but they're pulled together. They're shared by multiple different consumers in a multi-tenant model. So, as I as a company consuming the cloud, I may be actually using the same server as another company, but they use strong isolation technologies, hypervisors, uh other hardware based capabilities and software capabilities to ensure there's complete isolation between different tenants' resources. So, I have this pool of resources as the provider that my different customers can go and consume. And I don't really have to worry about well, which building is that in, which rack is that in. I just go and consume the services that I need. That's really a a key point to what we do within here. Then I can think about rapid elasticity. I want the ability to create new",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 448.44,
+      "end_seconds": 555.28,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=448s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5d42f245f8128313c922b3ef40fa8dc79a38e2f0d5d22d392de118ebe85ecad1",
+    "text": "rack is that in. I just go and consume the services that I need. That's really a a key point to what we do within here. Then I can think about rapid elasticity. I want the ability to create new instances of my service and remove them as I need to, automatically scale. I want the capacity that I have provisioned to match the workload that's coming in that they need to do. So, my capacity is matching the demand. I don't want to have to just have 10 instances of something running all the time and pay for that. Instead, I want to be able to maybe have three instances, then five, then seven, then three. It's going to be able to be very elastic, changing the amount of resource I'm consuming as I need to. And maybe that's based on the work that's coming in, maybe it's based on some schedule, but I essentially think of the cloud as this infinite amount of resource, and I can just go and provision what I want whenever I want. Now, there obviously is a finite amount of capacity, the more specific I am. If I say, \"Hey, I have to create in this particular region and this particular zone of this very specific VM type.\" Well, there might be a a certain limit",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 533.48,
+      "end_seconds": 615.6,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=533s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0aa151a17c6fe88a1723848f777d254245a0c2fdffcb17cd90bf375145a06db1",
+    "text": "capacity, the more specific I am. If I say, \"Hey, I have to create in this particular region and this particular zone of this very specific VM type.\" Well, there might be a a certain limit that's available. So, the more flexible you can be with regions and SKUs, the more realistic that infinite amount of capacity actually becomes. And then I can think about it's a measured service. So, the goal is there should be metering and even budgets that show me exactly what I am consuming within these services. I might be able to use things like tagging where I can add metadata to resources to know, \"Hey, a specific department has consumed this much and another application has consumed this much.\" As opposed to just getting one great big bill. So, I'll be able to see exactly what I have consumed cuz in these services, generally I I pay for what I consume. So, I'm going to be able to see that measured service. Now, as the user, we will have very limited interaction with the service provider. We'll have very limited access to the underlying resources. For example, in Azure, I can't go and look directly at physical host, nor would I want to. We're provided with a certain service, a particular type of resource. There's",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 602.52,
+      "end_seconds": 686.4,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=602s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3cec28f816c4d6af9b82f2591919f1cad5f8c72952d558c72965b2fc6e4e5e42",
+    "text": "very limited access to the underlying resources. For example, in Azure, I can't go and look directly at physical host, nor would I want to. We're provided with a certain service, a particular type of resource. There's abstraction, there's classification. I want to go and create a disk of a certain performance level. I want to go and create a virtual machine with this type of memory optimization or compute optimization of this size. I don't have to worry about the specifics of the node that's running it or the disk that's hosting that actual virtual resource that I'm trying to create. I don't worry particularly about, \"Well, how many VLANs are there on this network segment?\" So, let's dive in and think for a second about what do I mean by types of service? And we're going to start with types of service focusing on pizza. And when we think of these types of as a service, this is this is going to be common for everything we do in the cloud. It's all about shifting responsibility. Who is responsible for providing a certain aspect of the service? And as we move up the types of service, we're going to shift more and more responsibility. But typically, I might pay more as I shift bits of that responsibility. But",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 673.04,
+      "end_seconds": 755.1600000000001,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=673s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c17f5cd524277bd8bbf422197af8c710f39f96ab7e7abe2a66ec5ce7b06ae994",
+    "text": "certain aspect of the service? And as we move up the types of service, we're going to shift more and more responsibility. But typically, I might pay more as I shift bits of that responsibility. But that may be offset by the fact that I only pay for what I actually need. And so, if I think of pizza, well, pizza, there's the pizza dough, the sauce, the cheese, toppings. I need fire that runs inside the oven. I might need electric, uh gas. I might want drinks, I want table. At home, I have to provide all of that. So, I'm responsible for all of those things. I can do take and bake. I go somewhere, they give me the pizza. It's not cooked yet, but they've provided the dough, the sauce, the cheese, the toppings. I'm then responsible for actually cooking the thing, providing drinks to go with the thing, uh a table to eat it. So, there's a certain amount of I am now responsible for more aspects compared to some of the other things we're going to talk about. But I've not had to worry about all of the raw materials, provide that the underlying pizza infrastructure in a way. As you go up the levels, if a pizza's delivered, well, it's cooked. I can really",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 739.36,
+      "end_seconds": 821.8800000000001,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=739s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "90ffb63f4cf261672b9a33409f97a22d8bfc95899af1127cb5be001cd6c8499a",
+    "text": "we're going to talk about. But I've not had to worry about all of the raw materials, provide that the underlying pizza infrastructure in a way. As you go up the levels, if a pizza's delivered, well, it's cooked. I can really get a pizza based on what they offer. And now, all I'm responsible for is the drink and somewhere to eat it at. Compared to a restaurant, well, they do everything. And you can see, generally, it gets a little bit more expensive, but I've shifted responsibility to all I'm responsible for now is putting in my face and chewing. Um and generally in life, the less we are responsible for that's not key to our purpose, the better. So, all things equal, generally, hey, I'd rather go and eat a pizza out. So, now let's think about this in terms of for actual compute. Now, those layers, now we have networking, storage, servers, a virtualization layer like a hypervisor, the operating system that runs inside virtual machine, Windows, Linux, middleware. So, middleware could be and runtimes, things like Java Enterprise Edition, J2EE, .NET. The middleware could be a messaging. Then I have the application that's providing some business function, and then the data. And one of the big things when we talk about as a service and why we like these",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 803.839,
+      "end_seconds": 892.5600000000001,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=803s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b40e9476d2daeeaceec9e48b1f3c60092053311e2fe04b309a88238666ccfa29",
+    "text": "middleware could be a messaging. Then I have the application that's providing some business function, and then the data. And one of the big things when we talk about as a service and why we like these different things we're going to see is they're called the cloud cadence. It's a really big deal. The idea that in the cloud cadence, there's constant incremental new capabilities being introduced that give us new functionality, that makes something maybe more resilient. And it's not like the old days where every 3 years we got a new version of Windows Server and we got this huge amount of new capability. We get these constant small incremental changes, these constant small incremental new value added to what we're doing. And that that's a key thing we're trying to do. So, when I think about the types of as a service, we have infrastructure as a service. Easiest to think about something like a VM in the cloud. The provider, well, they're dealing with all the physical network, the physical storage, the physical servers, and the hypervisor. In Azure, it is Hyper-V. But then you get this VM in the cloud, and you're then responsible for the OS inside that virtual machine, any middleware updates, runtime updates, app updates, data. And when I think about responsibility,",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 878.76,
+      "end_seconds": 962.24,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=878s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "80a44ce2b0550dd8c4755724d3844d7976eebb24865b5229d1c722e31c91259f",
+    "text": "In Azure, it is Hyper-V. But then you get this VM in the cloud, and you're then responsible for the OS inside that virtual machine, any middleware updates, runtime updates, app updates, data. And when I think about responsibility, realize when I'm dealing with something like an operating system, when an operating system, obviously, there's things like patching, backup, antivirus, configuration, um high availability. There's lots of aspects to that. And things like Azure will give you things to help and perform those capabilities, but you're responsible for their deployment and their configuration to make sure you're actually providing those on the operating system. So, I'm responsible for that. Platform as a service, it's just providing me this place I can run my code. All I care about is my application and my data. There's still a probably a VM there in most of the cases. I don't see it. I don't worry about patching an operating system or antivirus or firewall rules. I don't worry about versions of runtimes and middlewares. It's just maintained for me. But it's not providing a business function, which is why it's platform as a service. I still have to provide the business function as part of my application. It's the same way when we think of databases, uh there are databases as a service.",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 945.4,
+      "end_seconds": 1033.56,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=945s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d0fbbb6f714ff569c3fa6832763147bacf7fc9bf199e23198d71f9a176cf7ded",
+    "text": "function, which is why it's platform as a service. I still have to provide the business function as part of my application. It's the same way when we think of databases, uh there are databases as a service. And even though you might argue, \"Well, that version of database, isn't that the application?\" It's not providing the business function. So, when we think about managed Postgres or managed Azure SQL database, they're still already considered a PaaS cuz I have to write my own business function that runs on top of that service that's provided for me. And then at the end, and this isn't really Azure at this point. Uh this would be things like Microsoft 365, Dynamics 365. It provides the business function. And in this case, what I'm trying to get to here is I'm not really responsible for anything except the data. And this is generally a shared responsibility. So, the provider would be responsible for the durability of the data, maybe replicating the data, but I would still have responsibility for things like classification of the data, uh applying labels to the data, data loss prevention, data retention, making sure data was deleted after a period of time, rights management. So, that's why it's this kind of idea of it's it's a shared responsibility because even here,",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1018.959,
+      "end_seconds": 1105.84,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1018s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1a0d500b1c8a776e799075e2fac2fcfa29c2fdd8f970c5ee151f8f7af7fd0bc9",
+    "text": "uh applying labels to the data, data loss prevention, data retention, making sure data was deleted after a period of time, rights management. So, that's why it's this kind of idea of it's it's a shared responsibility because even here, there are things that I would still be responsible for. Now, generally, just like pizza, if available, I'm going to try and use SaaS. If something is provided as a service that so I have almost no responsibility, I would probably go and use SaaS. It's why a lot of companies use Microsoft 365. They don't want to be patching Exchange servers. They don't want to be patching SharePoint servers. You get that cloud cadence, you get these constant new capabilities introduced that enhance your ability to do business. But if something isn't available as a SaaS solution, well, can I use PaaS? I don't want to have to worry about operating systems and middleware and runtime. Can I just run it on App Service? Can I run it on Azure Functions or Logic Apps, maybe even containers? But there might be some solutions that don't run in PaaS. I need more access to the operating system cuz remember, that's a big part as the responsibility shifts, I lose access to those things. On premises, I can access the physical",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1088.72,
+      "end_seconds": 1170.44,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1088s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "afc91408b1b70a38eaec8381ea2fa91f8ed3c6777a0e2738d3bd35d59ce3e0fb",
+    "text": "don't run in PaaS. I need more access to the operating system cuz remember, that's a big part as the responsibility shifts, I lose access to those things. On premises, I can access the physical servers. I can access the hypervisor. In the cloud, I never get that access. But in IaaS, I get direct control of the operating system. Maybe I'm running some service, some third-party app that requires direct interaction with the OS. So, that's maybe why I would use IaaS. Maybe I'm trying to just move something from on prem to the cloud, and so, hey, uh IaaS is the simplest instant migration. It's a like-for-like of VM on premises would be very similar to the IaaS of VM in the cloud. So, it's the simplest solution, but I'm also not taking advantage of shifting responsibilities, but maybe I would do that over time. Now, an important point here is I've not drawn on the idea of identity, of accounts, of devices. That would always be the customer's responsibility. Again, there might be services that help you with that. If it's client devices, there's things like Intune. If it's my accounts and identity, well, maybe I've got Active Directory Domain Services on premises, then I'm using Entra ID in the cloud. With Azure, you definitely are using Entra ID in the",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1155.84,
+      "end_seconds": 1240.48,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1155s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5d3aeb9e213cc3e9a4940caa4ffa9374e6d580b661ae0fe9d5ec1832579ddfca",
+    "text": "Intune. If it's my accounts and identity, well, maybe I've got Active Directory Domain Services on premises, then I'm using Entra ID in the cloud. With Azure, you definitely are using Entra ID in the cloud. And although for Entra ID, they're providing the capability, I'm still responsible for applying good practices, configuring, maybe passkeys, and multi-factor authentication, applying conditional access policies to control access to resources. So, I still have responsibility for those various things. And you are going to hear terms like desktop as a service. So, Windows 365, Windows and Azure Virtual Desktop, database as a service, artificial intelligence has similar ideas. There are co-pilots that just provide you a solution. Then you have things like Azure AI Foundry that would be more of a a PaaS. It's hosting the models for you that I then leverage as part of my application. Maybe I'm actually running my own model directly in a VM or container, well, that would be more of an IaaS type world. And again, it's what am I responsible for? Another nice thing, I remember think Minecraft. If I ran Minecraft in a VM, well, that I'm responsible for everything. Minecraft has a Realms concept where they just provide you with a world, that would be really the software as a service. But then I maybe have a a little less",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1227.72,
+      "end_seconds": 1322.88,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1227s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "46789a574827ad83cccc993cd5b50f89d8675c607d2cfae53f7eb89ab3bef07c",
+    "text": "well, that I'm responsible for everything. Minecraft has a Realms concept where they just provide you with a world, that would be really the software as a service. But then I maybe have a a little less control over all of the things I can do. So, sometimes that there's a balance to what I can do with the various types of service. Now, an important point in a real public cloud, you are not putting in an order for servers to be racked. That's a a colo, a hosting provider. If ever there's a racking time, it's not a true cloud. The whole point of the cloud is, \"Hey, I'm just going to go and consume the service that I want to use at that particular moment in time.\" There's never going to be a a racking of a server. So, when should we use public cloud solutions? And there's a huge shift in this, and a lot of companies, IT is not what they do. So, there is not a definite right or wrong answer. But as a typical company, IT is not my function. IT is there so I can run my business application, but they don't care about the IT. They don't want to be running IT. They don't want to be in the data center business.",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1309.48,
+      "end_seconds": 1393.52,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1309s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2bddaacab6f1d8d97a6d72308a6608d6220baff4804b8e381f2c550b4b8285c9",
+    "text": "function. IT is there so I can run my business application, but they don't care about the IT. They don't want to be running IT. They don't want to be in the data center business. And remember, a key goal of what we're trying to do here is I can shift responsibilities. Even if I just do that infrastructure as a service, I'm no longer worrying about physical servers, physical network, physical SANs, the hypervisor. I just start the most basic level, I have these virtual machines in the cloud, but I can also up-level and shift even more responsibility away. So, it lets me shift from those infrastructure type things and focus more on what matters to the business. It can also be a really nice catalyst to modernize. So, hey, I can start to shift to containers, to app service, to serverless. Maybe I want richer services. And again, I don't want to run data centers anymore. I don't want to worry about heating and ventilation and AC and powers and generators. Maybe I want proximity to my customers, and I can't run 10 different data centers. It's just not cost-effective. Uh maybe want better DR. I want better business continuity. Hybrid will be the norm for many customers. But the point is, different organizations will have different",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1379.12,
+      "end_seconds": 1466.4799999999998,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1379s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e6d24c47d7f0c608a7ebdaa71ea6cab16689ee1b6f4c4d8fc01f616433d999f2",
+    "text": "run 10 different data centers. It's just not cost-effective. Uh maybe want better DR. I want better business continuity. Hybrid will be the norm for many customers. But the point is, different organizations will have different priorities. Additionally, different companies can run services in data centers at different price points. Maybe they have different environmental goals. Now, the reality is with scales of economy, it's very unlikely, if you do like-for-like, if you really do consider all of the aspects of running a data center, the physical building, the physical security, the power bill, um the network coming in, the servers you buy, the licenses. When you actually start to think of all of those things, it's very unlikely you can run at the same efficiency and cost that these mega cloud operators can. I always think of the old days factories. Factories used to run their own generators to generate the power for the factory, but very quickly the power utility companies could provide the power cheaper and more reliably. And so, factories stopped producing their own power, they used utilities. I think honestly, compute is going or has gone that exact same way. There might also be environmental considerations. Azure runs at a very high PUE, power usage efficiency. So, that's the amount of power that's coming in,",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1451.04,
+      "end_seconds": 1547.7600000000002,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1451s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1596d0d183abb65acb7b52bdf9e43c94838857a995e18442601b8b4d2e8cb090",
+    "text": "think honestly, compute is going or has gone that exact same way. There might also be environmental considerations. Azure runs at a very high PUE, power usage efficiency. So, that's the amount of power that's coming in, how much of that is used to actually power the machines that provide the services instead of cooling and other systems. And so, Azure has a fantastic PUE, getting really as close to one. I nearly all of the power is actually being used to run compute compared to other things. I know for some companies I've worked with, their power bill alone is more than the actual cost of um the Azure bill that they would get. So, you may have those resiliency, proximity requirements, which the cloud is great for cuz there's regions all over the place. But the key point, they charge you based on what you use. If I'm consuming this amount of storage, I pay for that amount of storage. I'm not paying for the amount of storage I have to buy in advance because one day I may use it. If I'm running a VM for 12 hours a month, I pay for it for 12 hours a month, not because I bought the machine, it's sitting there, hey, I might as well just leave the VM running anyway.",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1527.32,
+      "end_seconds": 1612.72,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1527s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "53430212abaa1fa411e03524f5da27b2037bf82b8a2cc1a68fee6257d4b43404",
+    "text": "If I'm running a VM for 12 hours a month, I pay for it for 12 hours a month, not because I bought the machine, it's sitting there, hey, I might as well just leave the VM running anyway. And so, the fact that I pay for when it's needed, that consumption, it really opens up a lot of key scenarios for the cloud. And nearly every business you see, its workload that it needs to do varies over time. Very few companies have this constant stream of workload, of performance they need to meet. There are these fluctuations. So, if I can modify my resource based on the work coming in, that's the most efficient cost I can have. Additionally, my requirements may change. If I buy a server, I'm stuck with that server for 3 to 5 years. In the cloud, I can go and delete that type of resource and create a different type of resource. I can delete the VM and move to containers. I can delete the container, move to app services or serverless technologies. Again, it's phenomenal flexibility. So, let's look at that for me, that's really a great example of where public cloud shines. And it combines the idea of American football, uh the Super Bowl, and what I'm really passionate about, which is pizza.",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1599.2,
+      "end_seconds": 1678.1999999999998,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1599s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f5d086a86ee77ac2e5de1dcb56484ace6e24a4071b068017d92c31e0ce2158c4",
+    "text": "let's look at that for me, that's really a great example of where public cloud shines. And it combines the idea of American football, uh the Super Bowl, and what I'm really passionate about, which is pizza. Now, I'm English. I'm going to be very upfront. I don't understand American football. I tried to watch it. Uh I think I saw the 2006 Super Bowl when I first came to the country. It's like 5 hours. People did something for 2 minutes, they took a 5-minute break. I I really didn't enjoy it very much. But what's interesting about the Super Bowl is it has this perfect storm of pizza. Now, imagine I'm a pizza restaurant. So, as a pizza restaurant, one of the things I have is I have busy times. Friday night, for example, Saturday night. Might be three times busier than any other time of the week. So, as a pizza restaurant, ordinarily, I would have to have three times the infrastructure just to handle a few hour peak twice a week. Super Bowl is even worse. In Super Bowl, the amount of pizza ordered between those two breaks, between the various breaks you get, is an additional 50% busier even than a Friday night. So, now as a pizza company, I would have to have this huge",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1661.08,
+      "end_seconds": 1746.44,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1661s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "263ac6c18d0c5f5c417192b4aa939def208d346cee65675f92a263303a232019",
+    "text": "the amount of pizza ordered between those two breaks, between the various breaks you get, is an additional 50% busier even than a Friday night. So, now as a pizza company, I would have to have this huge amount of additional infrastructure for one time of the year, which is insanity. So, think about from that scenario, using the cloud makes total sense. That elasticity. So, that normally I have this amount of instances. They might be in the evenings during the week, it bumps up the number a little bit. Friday nights, it bumps it up more, then drops it down. Saturday night, bumps it up again, drops it down. Super Bowl, it can ramp right up. I'm only paying for that few hours of really busy for one time a year, and then it can scale back down again. So, that consumption-based purchasing is huge. The fact that I only have to pay for when I'm using it is a massive benefit. And remember, you could use the cloud to burst into. Maybe you still run it on premises for that baseline amount, but I burst to the cloud when it's the Super Bowl, or when it's Friday night, or Saturday night. What that really leads us to is a number of great scenarios for this. So, the first one we have is the idea of",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1729.12,
+      "end_seconds": 1810.52,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1729s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "570e2a2a9871ef91152817a610a1d0b46be4824f435053ddc0dbad9c2141a1d9",
+    "text": "when it's the Super Bowl, or when it's Friday night, or Saturday night. What that really leads us to is a number of great scenarios for this. So, the first one we have is the idea of predictable bursting, and the pizza is a good example of that. With the pizza, I know Friday night is busy. Saturday night is busy. Breakfast time, not busy at all. So, I have this change in amount of work, and so I know when I need to scale up the number of instances I have, and when I can scale them down. So, I'm only paying for the work I'm actually doing. Another one I have, well, hey, maybe I'm a startup, and one of the things as a startup, I don't want to have to do any huge initial outlay. It's hard to get the funding for that. If I use the cloud, as I get more successful, well, I can scale up the amount of resources. So, yes, my bill will increase, but my bill is increasing in proportion to the increase in the traffic, and hopefully the money that's coming in for my business. So, this is a really attractive use of the cloud that I'm only paying for what I'm doing. Additionally, if I'm not successful, the failing fast,",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1796.76,
+      "end_seconds": 1873.56,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1796s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ba2a700df67a44d6fac00adbc9e3e94f361e905d1e8fbdca8cc55d0ddb275e32",
+    "text": "increase in the traffic, and hopefully the money that's coming in for my business. So, this is a really attractive use of the cloud that I'm only paying for what I'm doing. Additionally, if I'm not successful, the failing fast, well, I've not done this huge upfront investment. If I fail, it doesn't work out, I've not lost this huge amount of money and equipment locked in that I had to go and buy all of this stuff upfront. So, that's a really nice thing to have. Another example would be unpredictable bursting. I don't know when I might get these big jumps. Maybe I'm a uh an online retailer, and some item I have is mentioned in the news and becomes the thing. Well, I can just scale up as suddenly I get all of that attention to my site. I don't have to again, have all this capacity just there. I can scale and respond as maybe the instance I have, the CPU usage goes above 80%. Hey, go and add an instance. Maybe I'm a a news site, and hey, again, there's some big occasion. I'm just modifying. Another thing could be I'm just on off. A tax office, they're really busy for a couple of months of the year. They're not doing anything. Um I'm hosting a big",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1856.56,
+      "end_seconds": 1937.32,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1856s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "446c3db4911ee706addd014a9632bcbafbcf1ae1dd6a4e3f0f34e4e97971786b",
+    "text": "there's some big occasion. I'm just modifying. Another thing could be I'm just on off. A tax office, they're really busy for a couple of months of the year. They're not doing anything. Um I'm hosting a big sporting event. Um lots of people streaming that while the sporting event's going on, then it's not doing anything. I could also use public cloud, remember, to supplement that on premises. But the point here is if there is a fluctuation in the amount of resource required, or any great flexibility, change the type of VM, change the type of service, change type of database, use AI services, then the cloud, and the fact that I'm paying for what I'm using, makes it very, very attractive to actually leverage. Now, if I think about, well, how do companies typically adopt the cloud, if you're not already? And very typically, they're going to start small, and they'll progressively use more and more. And also, they'll kind of you dip your toe in the water. You'll start with a less important workload, and then as you gain confidence, both in the platform, but also in your ability to use and operate the platform, you'll put more and more important services within that cloud. So, test and development is a great first use case for a lot of",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1922.32,
+      "end_seconds": 2007.679,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1922s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fdb33391090f3166c6e8c62bd0674b4fba2986a352c9c6faf412a07b6ad71a24",
+    "text": "the platform, but also in your ability to use and operate the platform, you'll put more and more important services within that cloud. So, test and development is a great first use case for a lot of companies. It also has very high churn. I people create environments, delete environments, create environments, delete environments. And I don't want that on premises. So, suddenly, this becomes a really nice option to not run on premises, I create it in the cloud. Now, you do want to be careful with this for final testing, remember, it should match the environment where it's actually going to run in production. So, if production is on premises, my final testing should be matching that type of deployment. I don't want a completely different hypervisor and operating model than production, but a lot of the initial development, the initial testing, hey, that high churn environment would be great to actually go and run in the cloud. Um disaster recovery. Many companies either don't have disaster recovery, or it's terrible, because it's expensive. Imagine on premises, I would have to have a second location with servers stood up that I hope I never, ever use. On the cloud, remember, most of the bill would be if it's actually running. So, it wouldn't really be costing me much",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1990.679,
+      "end_seconds": 2077.44,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=1990s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "972922d27d9ca47151b3cb51c2db4c7570c8c1cf70a14ae3b6dd991645092fa7",
+    "text": "have a second location with servers stood up that I hope I never, ever use. On the cloud, remember, most of the bill would be if it's actually running. So, it wouldn't really be costing me much money. Now, you should be testing your DR regularly. Every few months, you should do a DR test, make sure it runs successfully, but I'll only be paying while I'm actually running the compute for my failover. There's still probably going to be storage costs. There might be certain replication costs. It would depend on how long I have to failover, what my recovery point, how much data I could lose in an unplanned, but it's a very effective option to optimize my costs. It might be a DMZ, so a demilitarized zone. The idea is that, hey, I have my private network, and maybe I need to offer some stuff to the public. More and more companies today have to be able to offer things publicly. Well, I may not be very good at that. So, one option is the services that I want to offer out to the public, I run in Azure as a a separation from my network. Now, there's still probably is connectivity. I still need very good security. I should be using things like web application firewalls. I should be",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2062.32,
+      "end_seconds": 2140.64,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2062s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "18adcc7a68c6622b06a2649bd602159ef950f3f04d4660a146bfb0adfb8adbb4",
+    "text": "want to offer out to the public, I run in Azure as a a separation from my network. Now, there's still probably is connectivity. I still need very good security. I should be using things like web application firewalls. I should be reducing the types of traffic that's allowed through, but that can be a nice option. Also, I may have customers all throughout the world. Well, by using these scenarios, I can create instances of services in regions all throughout the world. I might use things like Azure Front Door and and have caches of content that's static close to all of my customers. I might also have the idea of just special projects. It's going to run for a limited amount of time. Maybe I want to use a certain type of service or hardware I don't have on premises. Maybe it's for AI. I want to be able to use this big large language model. That could be very hard to do on premises. In the cloud, it's super easy. I spin this up, run it for a few weeks, delete it. I just pay for those few weeks it was running. And realistically today, I mean, most organizations are just all in. Remember what I said, for most companies, they're providing a certain business. IT is not their business. IT is really a",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2124.4,
+      "end_seconds": 2206.1600000000003,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2124s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fb55fc7457f6c6e492c4a92b41fb37b3b5e39b5949436ee31990fdd4e442266b",
+    "text": "it. I just pay for those few weeks it was running. And realistically today, I mean, most organizations are just all in. Remember what I said, for most companies, they're providing a certain business. IT is not their business. IT is really a cost for them and an inconvenience that they have to run it to be able to offer the business function. They don't want to be in the IT business. And so, with those shifts in responsibilities, even if I just go IaaS, I've offloaded all of that physical compute, storage, network, hypervisor, that's huge. Then when I start to use things like, hey, managed databases, now I've offloaded that. I use container offerings, now I've offloaded worrying about Kubernetes and all of those aspects. The network solutions, I've offloaded those concerns. Now, I still have certain responsibilities, but I'm really moving a huge amount of the responsibility. And as a company, also, there's operational expense versus capital expenditure. So, OpEx versus CapEx. OpEx, I just pay for as I'm consuming something, the cloud bill, versus CapEx, I'm buying this big bit of infrastructure, and then maybe I write that off over a number of years. Customers don't like CapEx typically. And so, realized that these companies that are all in, they might start with virtual machines, but typically, they'll then advance as",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2184.16,
+      "end_seconds": 2276.48,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2184s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "dd4e62765601b9af4d68c5aae027ebe4d05478f748c10bc8fd9fd521ffeb47e6",
+    "text": "write that off over a number of years. Customers don't like CapEx typically. And so, realized that these companies that are all in, they might start with virtual machines, but typically, they'll then advance as they start to use the cloud to, oh, well, actually, I'm going to use containers. I'm going to use app services. I'm going to move from running this database in a VM to using a managed PostgreSQL or managed MySQL Azure SQL database, or Cosmos DB. And I'll start moving it, oh, I'll go and use some serverless technologies for this. And then, also, when you use these cloud solutions, they have fantastic governance. I can apply policies as the guardrails, budgets. I get great monitoring, security. And so, as companies just start to dip their toe into the cloud and see what it can offer, more and more, they'll then just start to move everything. What tends to happen is the on premises, you may still have some, but it's stuff that is anchored. And by anchor, I mean, there's some maybe it's a mainframe that today I can't move to the cloud, and I have a dependency on the mainframe. So, I don't want a large distance between my application and maybe that other service, latency. Latency is the in a product of distance between",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2258.359,
+      "end_seconds": 2337.56,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2258s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7c19dd803f256a2b04570d3773fae765fdf0ab5309848fb696376100274a417b",
+    "text": "the cloud, and I have a dependency on the mainframe. So, I don't want a large distance between my application and maybe that other service, latency. Latency is the in a product of distance between services. Light only travels so fast. It's even slower over fiber than a vacuum. And so, the bigger the distance between things, the higher the latency, which is the the time between, hey, I'm trying to do something and it gives me a response. So, if I had some component on prem and a piece in the cloud, well, it's going to be a higher latency than if they were both sitting on premises. And some things are latency sensitive, some are not. That's something I would have to understand. But that typically is why some things might be stuck on premises today, that I have some physical piece of hardware, some mainframe that I can't, maybe I don't have the time to get it to be able to move and transfer it into the cloud. So, when I think about the types of service that are available, well, there's just a massive number. There's compute services, storage, network, database, AI machine learning, analytics, security, DevOps, IoT. And one of the maybe the good things to do is if you just go and look at this",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2322.4,
+      "end_seconds": 2397.8399999999997,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2322s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "245c8e663825e6a4c83a8cbc623c9606d472d01bf37370acbfb67109950971ad",
+    "text": "that are available, well, there's just a massive number. There's compute services, storage, network, database, AI machine learning, analytics, security, DevOps, IoT. And one of the maybe the good things to do is if you just go and look at this super quickly, we can go and look at these. And it breaks it down into AI machine learning. There's bot services, AI search, which is great for creating these semantic indexes we use with large language models, regular machine learning, video indexer. I mean, there's just so open AI services. I mean, analytics capabilities, compute. So, you see Windows VMs, Linux VMs, even hey, I'm VMware. I can run uh VMware-based services in Azure. Virtual machine scale sets, container capabilities, container apps, container-specific services. Different types of database, different types of caching. There's just this huge, huge number of capabilities available to you in Azure. And so, one of those points here is to really go and understand, well, what's available and what should I actually be using as part of it. But that's going to take you some time. Okay, so how do we actually go and get Azure? And there there's different options available. For most of us, remember, if you want to learn something, you have to get hands-on Azure. There's no way you can learn Azure just by reading or watching",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2380.6,
+      "end_seconds": 2483.7999999999997,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2380s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "032e9a852a279c069ee34452732306335eec50e5716308d0c32c23f4abbbeaaf",
+    "text": "Azure? And there there's different options available. For most of us, remember, if you want to learn something, you have to get hands-on Azure. There's no way you can learn Azure just by reading or watching videos. You have to go and get hands-on. Now, a key point both for free services and everything else is remember, you pay for what you consume. Make sure you shut things down when they're not in use or scale them down. And there's lots of capabilities to be able to go and tag resources to see who's using them. And we get certain services free for certain amount of time. But one way to get started is there is just a a 1-month trial. You get $200 of credit. Let's just go and take a look at this. So, you get 100 $200 of credit. So, this is the free account. But additionally you also get, in addition, a certain amount of services free for 12 months. And there's also services that are free always. And what's interesting is a lot of these are also available on regular accounts. So, even if I create a regular account, I still get certain services free for 12 months and then certain amount that are always free. And if we scroll down we can go and see all the different",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2466.88,
+      "end_seconds": 2556.52,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2466s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1045aa60854c8c57bc245f9239e2940cc31e8232ae05123cb09b325f5c1bb406",
+    "text": "So, even if I create a regular account, I still get certain services free for 12 months and then certain amount that are always free. And if we scroll down we can go and see all the different types of free services. And some of them, as you can see, are free always. You can see this column over here. And some of them are for 12 months. So, for example, AI document intelligence gives you 500 pages OCR for 12 months. There are some things around databases. That's AI vision. But this is really nice. You can go and test certain things out. Cosmos DB. Hey, for 12 months, I can get this 400 request units per second with 25 GB of storage. So, it's a nice way to go and test and try things out. So, go and take advantage and look at these things cuz it can really save you uh a nice amount of money when I want to go and learn these capabilities. So, the the free trial, yes, it's $200 credit of nearly anything. There's some limitations on things like marketplace, etc. But for most part, I can go and consume those services. But you also get some things free for 12 months and then other things free always across all the different types of account.",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2542.16,
+      "end_seconds": 2625.52,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2542s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fa62ae01b53f4988a0db164cc260b97c31fa14d4bfcb04e666e5e080699ab736",
+    "text": "etc. But for most part, I can go and consume those services. But you also get some things free for 12 months and then other things free always across all the different types of account. For more regular companies, well, actually, another thing you have is you have the idea of if I have a Visual Studio Enterprise license you actually get Azure for free as part of that. So, if we go and look here at this link we'll see depending on which subscription I have you get a different amount of credit. So, if I've got the Enterprise, I get $150 a month. If I've got just a regular MSDN, it's 100. And for Visual Studio Professional or Test, I get 50. So, you can go and turn those things on. I shouldn't run production workloads in there. But it it's a nice thing that I can use if I just want to go and play around. Now, for a small organization what I'd probably go and do is I can create a pay-as-you-go. So, pay-as-you-go is when I create the subscription and I just pay for it as I consume the resource. Now, I can still have multiple different subscriptions, which we're going to talk about when we get into governance. I can still organize them into different",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2613.16,
+      "end_seconds": 2697.04,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2613s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "afe008ab7072a2cd8db5140345e9ce2e5fa871b04f289a98516cb1ede9bd0f7f",
+    "text": "subscription and I just pay for it as I consume the resource. Now, I can still have multiple different subscriptions, which we're going to talk about when we get into governance. I can still organize them into different groupings called management groups under my tenant. That's where my accounts live. So, I'll have an intra ID tenant, just like an old active directory domain, but it's all of my accounts and identities. My devices are known there. So, I can still do organization. But if I'm a large company I've lots of different subscriptions. Well, here what I can do is I can create an enterprise agreement, an EA. There's other vehicles available as well. And here I can have lots of subscriptions. I can organize them uh with departments and account owners to control who can go and create subscriptions for their things. I can have some additional roles. So, I have things like an enterprise uh admin. The enterprise administrator has the ability to create and add accounts to my involvement. And then the account owners can go and add subscriptions to their account. So, I have those different types of capabilities there. Um another option I can use a cloud service provider. So, this is almost like a reseller in a way. But they're an entity I work with who",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2682.48,
+      "end_seconds": 2767.0,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2682s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0f6e2b9d8c81b0e14dd71d33d58f0601e757476c7f6b6993101a35b74c70e5cf",
+    "text": "account. So, I have those different types of capabilities there. Um another option I can use a cloud service provider. So, this is almost like a reseller in a way. But they're an entity I work with who will provide Azure services. And then maybe I pay them and they may even add additional capabilities on top of that. Some some value add as part of those things. Now, when I think about if I'm using an enterprise agreement, how I would set this up well, there's lots of different options. But I think about creating different subscriptions for different units of work. Uh remember, for billing I can use tags for showback, chargeback. But I might have different options for creating those accounts, maybe based on functional teams. So, sales, legal, marketing, maybe business divisions, Windows, Bing. Um geographic. So, North America, Europe. So, I can break the things up and it's really a function for me on how I want to do business. That's the whole goal of this. It lets me organize my things based on, hey, you can create subscriptions for your group, uh your line of business. Um again, yes, visibility is some of the billing. But honestly, these days there's there's richer capabilities. For policy and governance, we don't use this. We use management groups, which we'll talk",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2750.0,
+      "end_seconds": 2836.96,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2750s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2e75b88c4eb35ebba119e1bade63256f326ae610107f26f633db452f65f726a3",
+    "text": "uh your line of business. Um again, yes, visibility is some of the billing. But honestly, these days there's there's richer capabilities. For policy and governance, we don't use this. We use management groups, which we'll talk about when we cover governance. So, there are limits. Uh there are quotas. Remember, be mindful of your spend. Shut down VMs we're not using. We're going to spend a whole bunch of time on this. But there are limits put in place and a lot of these are to help protect you from yourselves. So, there are soft limits and hard limits. Soft limits are things we can request to increase. Hard limits are, hey, this is the maximum. So, this might be the number of cores I can use in a subscription of VMs. It might be how big a storage account can be. It might be how many instances of a database I can have. So, additionally, a lot of subscriptions will have fairly low limits and it's just to protect you from yourselves. You may get go off and start playing. It's a way to try and limit the damage you can do to yourself in terms of how big your cloud bill will be. And those limits are documented. So, we can go and we can look at the",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2819.84,
+      "end_seconds": 2895.32,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2819s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "199acd6b4911029a68b72a8ef20ae321fdb742cb64cfe891cd33f293ecc69897",
+    "text": "way to try and limit the damage you can do to yourself in terms of how big your cloud bill will be. And those limits are documented. So, we can go and we can look at the limit pages and it will talk about all the different types of limits that are available. So, there's limits in management group subscription limits, how many subscriptions I can have, how many resource groups per subscription, resource groups limits, intra ID limits. There's going to be limits for every types of resource that exists. So, I can go and see these and notice the limits may change based on the type of SKU. There's different SKUs showing here. And that's often a reason why there are different types of the same service. So, for app service, for example, well, there's a free tier, a shared tier, a basic, standard, premium V1 to 3, isolated. And they have some different numbers based on which SKU I'm using. How many instances I can have. So, as they go up as I go up the SKUs. So, that's one of the reasons often we have these different SKUs. It might be how big they can be, how much compute they can use. It may be they actually add different specific capabilities as well to them. But some of these limits will be soft,",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2881.8,
+      "end_seconds": 2962.96,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2881s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "37b2b3614b1b27065a6028e00251dc3f37fe81e0a42ef9d08db2b2ab98caa627",
+    "text": "often we have these different SKUs. It might be how big they can be, how much compute they can use. It may be they actually add different specific capabilities as well to them. But some of these limits will be soft, some of them are hard. Again, if soft, I can go and request them to be increased by putting in a service ticket. So, we have all of these different capabilities. And those limits will vary. And you can increase them. If I go to my subscription page in the portal and I go to usage and quotas, there's a service request to go and request to increase that. And on your account, if I got that free account, I can always go and remove the spending limit. So, hey, I've used my $200. I want to keep doing other stuff. Then it's going to start billing to my credit card. I want to talk a quick bit about reliability because we think differently than historically how we may have thought about it on premises. Um we're going to talk about this a lot more in in future modules. But it it made sense to cover it really quickly. So, historically on premises, we always thought about reliability in the hardware. So, I would have this centralized storage of SAN.",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2947.64,
+      "end_seconds": 3029.6000000000004,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=2947s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "21c4cd6a98518c16e50888ad456523ac3d74e02afd5f754721fc70058fc58143",
+    "text": "more in in future modules. But it it made sense to cover it really quickly. So, historically on premises, we always thought about reliability in the hardware. So, I would have this centralized storage of SAN. And I had lots of resiliency built into my SAN, lots of disks, lots of replications. I would have clusters of hosts that would fail over VM. I would migrate VMs between those hosts when I had planned maintenance. So, it would do like a live migration or a V motion so I could patch the host without any downtime to the operating system. And very often we had these single instances of workloads. The challenge here is that only works for planned scenarios. If there's actually a a crash to the host, well, then yes, it would restart on another node. But imagine there's a crash inside the operating system. The OS crashes, the app crashes, some middleware component crashes. The VM is still running. Unless I'm doing more in-depth probing, I won't even know in it that element is just crashed inside. So, it doesn't help protect me from everything. And so, this idea of a single instance is is not a great thing. Now, that is starting to shift even on premises as we adopt things like containers. The idea of having multiple instances to meet",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3012.6,
+      "end_seconds": 3098.88,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=3012s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f16e75423fad52c23770598d52e09c13110119c7a4b60450f3a3aa61737fdb76",
+    "text": "And so, this idea of a single instance is is not a great thing. Now, that is starting to shift even on premises as we adopt things like containers. The idea of having multiple instances to meet higher resiliency, but also meet our scale is becoming more common. But in the cloud we use reliability in the software. That's really the focus. We have distributed I have constructs in the cloud that give us independent network calling um um fire suppression control plane elements. And we want instances of our app distributed over those isolation boundaries. So, we have multiple instances for both our compute and storage. And typically VMs are not migrated during maintenance activities. Now, there are certain things that like VM food to minimize the downtime. Sometimes it may move it. But our resiliency of the service is because we have multiple instances spread over update domains. So, our service is never down. We're resilient to any node failure or OS crash or app crash cuz we have multiple instances and that's a much higher reliability. So, we think very much from our app architecture of a shift from not thinking about a single instance to I want lots of instances. Now, that does not mean that Azure is not highly reliable. Those services we consume have service level",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3085.68,
+      "end_seconds": 3182.32,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=3085s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0ce0399a267bf07166f7dd5106f5e756f9caf224944dce4acfe1368d145d4cd9",
+    "text": "much from our app architecture of a shift from not thinking about a single instance to I want lots of instances. Now, that does not mean that Azure is not highly reliable. Those services we consume have service level agreements that that tell us what the availability should be. Those Azure data centers uh I've actually gone and done tours of those. They have amazing reliability built into them. They have these huge banks of batteries. They have huge generators. They have on-site fuel. They have huge water tanks for the cooling. So, they are highly reliable and resilient. But instead of just relying on that cuz things still happen, we think about well, they provide availability zones. So, that's within a particular region, but they have independent power cooling networking, independent control planes. And I want my service distributed over those. So, if even if a a whole building went down, my service is still available in another building. So, we think about leveraging those capabilities. And really the the goal of reliability is we want it in the software. Now, Microsoft are constantly adding new reliability features. There was a whole project tardigrade to increase reliability. They've changed how they do deployments with safe deployment practices. They can detect if there's a hardware failure imminent and will try and",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3164.28,
+      "end_seconds": 3254.7599999999998,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=3164s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "99c4f461af4e9f583c0aef343f86f681e1901a785b6251d48aa0dcfce75fabaa",
+    "text": "Microsoft are constantly adding new reliability features. There was a whole project tardigrade to increase reliability. They've changed how they do deployments with safe deployment practices. They can detect if there's a hardware failure imminent and will try and proactively do things. So, amazing things. But primarily, we don't want single instances. At the mega scale of a cloud, and this isn't just Azure, this is anyone, you focus on multiple instances distributed over these different in a way fault domains to give me my resiliency and give me my scale because then again, I don't want one big instance cuz then it's always running at that capacity. I want lots of smaller instances that I can stop and start or create and delete as my demand fluctuates. I want to be able to automatically scale based on what we really really need. And that's really a key point to this. So, I have to factor that as part of my architecture. I have to design around the fact that there will be multiple instances and I'll be able to react to fluctuations in the demand. So, why should you use Azure? Uh there are many different cloud solutions out there. And I'm going to partly refer to the Gartner has this magic quadrant idea. And it's the ability to execute and how",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3238.84,
+      "end_seconds": 3320.48,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=3238s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3999a09391cc4b20a307a2cda315434b67e841a3abfb18b81f6284cc2d484271",
+    "text": "So, why should you use Azure? Uh there are many different cloud solutions out there. And I'm going to partly refer to the Gartner has this magic quadrant idea. And it's the ability to execute and how complete the vision is. And you want to be in this leader magic quadrant. This is like you've got the most complete vision and the most complete ability to actually execute. And with this Gartner quadrant, Microsoft is in the leader magic quadrant for many many different scenarios. So, we can think about the strategic cloud platform services, so IaaS and PaaS capabilities, access management, cloud database management solutions, AI development services, lots of security things. I mean, they're they're a leader in a huge number of these. And they can also provide hybrid solutions. So, as a company, I probably don't want two completely separate monitoring and control planes. Microsoft obviously started with on-premises things, Windows Server, Hyper-V. Now, they have the cloud. But they have common solutions across this. Like the Azure control plane, a lot of the Azure capabilities and the governance, I can bring outside of Azure to other clouds, to on-premises using Azure Arc. There's things like Azure local to actually run hardware at your location that can run various Azure services being managed by Azure. It's security services. It's identity",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3305.68,
+      "end_seconds": 3397.96,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=3305s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "24b8c42f54f2e79d3f906d34d6cb1e8058ab95a2cba817e8e1a6b248b25babc1",
+    "text": "to other clouds, to on-premises using Azure Arc. There's things like Azure local to actually run hardware at your location that can run various Azure services being managed by Azure. It's security services. It's identity services. You can use those outside of Azure. So, that's really a huge capability to have that single solution being able to use in the cloud and in your own locations. But what about feature X? It always comes up. Um yeah, but I'm evaluating clouds and I care super much about this feature or this particular thing. And the way I like to think about this is looking at squiggle. So, this squiggle again, Gartner, it's called the Gartner hype cycle. And I actually love this. I think it applies yes to cloud, uh but it applies to AI. I think it applies to marriage, kids, really anything you can think of. Cuz the goal is initially you get some technology. So, there's a trigger. Like large language models would be a great current example of this. So, you get a trigger. Some new fantastic thing comes out. So, you get this peak of inflated expectations. It's going to do everything. It's going to solve all problems. This is the best thing ever. Again, why you can also relate this to marriage, kids, everything else.",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3378.92,
+      "end_seconds": 3465.2400000000002,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=3378s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ec1742f9c0bc3d938600c135f7f0f9e3eda0c0fedd67f3f8f1714b2c75916f5b",
+    "text": "So, you get this peak of inflated expectations. It's going to do everything. It's going to solve all problems. This is the best thing ever. Again, why you can also relate this to marriage, kids, everything else. And then you start using it. And it's like, well, hmm, it's actually not it's not as great as I thought it was going to be. This trough of disillusionment. It's not going to change everything. This is not the best thing ever. But you continue using it. You get this slope of enlightenment. So, actually, well, here's where it is useful. Here's where it does benefit things. And so, you get this plateau of productivity. It's actually useful. Now, the point of this squiggle might so useful is when you're in this peak of inflated expectations, all you care about is features. It's brand new. Does it do this? I think best of breed. I don't think about integration. I don't think about the rest of my environment. I just think about feature feature feature. But once it's actually really useful and you get more into this plateau of productivity, you focus on integration. How does it work with my other tech nologies? How does it work with my holistic complete solution? And obviously, features are important. But any particular feature you care",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3452.0,
+      "end_seconds": 3526.3999999999996,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=3452s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5e95f36f9c2866f1d722f7701917c1d7a35beaecce072bc94a8e656ad80e8c8a",
+    "text": "you get more into this plateau of productivity, you focus on integration. How does it work with my other tech nologies? How does it work with my holistic complete solution? And obviously, features are important. But any particular feature you care about today, you're probably not going to care about tomorrow. Any particular feature that maybe isn't in Azure today will probably be there tomorrow. It it's constantly evolving. So, when you're evaluating anything, I would always urge you to always think don't make decisions on this. How is it going to work with everything else? How is it going to work with my monitoring, with my security, with my provisioning, with my governance, with all of the other things I have? How is it going to work with that? So, what does all of this actually mean? Azure is one of the few realistic big players in the space. Obviously, AWS is another big one. Um there are other more regional offerings. Google Cloud to a less extent, but honestly, I hear a lot less about those today. It takes billions and billions of dollars to go and create these data centers, to populate with the service with AI, to buy all of the GPUs, and do the investment to secure them, and and add all the governance around them.",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3509.04,
+      "end_seconds": 3592.8,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=3509s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ee140a72f5eaed99488946787084434d9cb6980fe6577a66f788ccd28246e955",
+    "text": "dollars to go and create these data centers, to populate with the service with AI, to buy all of the GPUs, and do the investment to secure them, and and add all the governance around them. So, there's very few players that can really operate at that global scale that you're you're going to want. Everyone else will likely be a niche player. Uh they'll have some certain geographic market. They may play very well in a particular type of service. They'll have some specialist capability. But, it's really Azure and AWS, and again, to a less extent, I think GCP. They're the true global cloud players uh in the market today. So, you're betting on a good horse. That that's obviously an important thing. And if Azure does become self-aware, by adopting Azure and being one of those initial people, it will uh treat you nicely when it is your your overlord. So, if that actually comes to reality, at least it may treat you nicely. So, that was it. Uh that's the end of the module. This is actually a sprite my wife had made for me for my birthday, so I'm using it as the final slide. But, I hope that was useful. Now, we're going to start building on this knowledge and get into specifics uh around other constructs.",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3580.16,
+      "end_seconds": 3660.8,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=3580s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5c6bfbb43f28227262b3296761cbef0392a035996787689204c0a05bfc1821bf",
+    "text": "me for my birthday, so I'm using it as the final slide. But, I hope that was useful. Now, we're going to start building on this knowledge and get into specifics uh around other constructs. So, thank you for watching. See you on the next video.",
+    "metadata": {
+      "video_id": "BqNbzeuxTaE",
+      "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3648.92,
+      "end_seconds": 3663.48,
+      "url": "https://www.youtube.com/watch?v=BqNbzeuxTaE&t=3648s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

@@ -1,0 +1,2453 @@
+{
+  "video_id": "6SO-8FcSkz4",
+  "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+  "channel": "Krish Naik",
+  "trainer": "Krish Naik",
+  "topic": "RAG",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1067.0,
+  "segments": [
+    {
+      "start": 0.52,
+      "end": 4.08,
+      "text": "Hello, all. My name is Krish Naik, and"
+    },
+    {
+      "start": 2.24,
+      "end": 5.68,
+      "text": "uh welcome to my YouTube channel. So,"
+    },
+    {
+      "start": 4.08,
+      "end": 7.6,
+      "text": "guys, today in this particular video,"
+    },
+    {
+      "start": 5.68,
+      "end": 10.08,
+      "text": "I'm going to discuss about these three"
+    },
+    {
+      "start": 7.6,
+      "end": 12.0,
+      "text": "important terms, and also talk about the"
+    },
+    {
+      "start": 10.08,
+      "end": 13.56,
+      "text": "differences between them."
+    },
+    {
+      "start": 12.0,
+      "end": 16.32,
+      "text": "That is nothing but prompt engineering"
+    },
+    {
+      "start": 13.56,
+      "end": 18.48,
+      "text": "versus rag versus fine-tuning."
+    },
+    {
+      "start": 16.32,
+      "end": 21.08,
+      "text": "Now, all these three terms, you may have"
+    },
+    {
+      "start": 18.48,
+      "end": 22.76,
+      "text": "used it. You may have built You may have"
+    },
+    {
+      "start": 21.08,
+      "end": 25.159999999999997,
+      "text": "used different different prompts with"
+    },
+    {
+      "start": 22.76,
+      "end": 27.32,
+      "text": "the LLMs to get or develop generative AI"
+    },
+    {
+      "start": 25.16,
+      "end": 28.6,
+      "text": "application. You may have developed rag"
+    },
+    {
+      "start": 27.32,
+      "end": 30.88,
+      "text": "application. You may have developed"
+    },
+    {
+      "start": 28.6,
+      "end": 33.480000000000004,
+      "text": "fine-tuning techniques, right?"
+    },
+    {
+      "start": 30.88,
+      "end": 35.92,
+      "text": "But, our main aim is basically to"
+    },
+    {
+      "start": 33.48,
+      "end": 38.12,
+      "text": "understand the differences between them."
+    },
+    {
+      "start": 35.92,
+      "end": 40.400000000000006,
+      "text": "And also, I will be covering one very"
+    },
+    {
+      "start": 38.12,
+      "end": 43.64,
+      "text": "important thing, like which technique to"
+    },
+    {
+      "start": 40.4,
+      "end": 46.239999999999995,
+      "text": "use for which kind of use cases, which"
+    },
+    {
+      "start": 43.64,
+      "end": 47.88,
+      "text": "many people fail to understand."
+    },
+    {
+      "start": 46.24,
+      "end": 49.92,
+      "text": "So, please make sure that you watch this"
+    },
+    {
+      "start": 47.88,
+      "end": 52.96,
+      "text": "video till the end, because I am making"
+    },
+    {
+      "start": 49.92,
+      "end": 55.28,
+      "text": "similar kind of videos to make your"
+    },
+    {
+      "start": 52.96,
+      "end": 57.480000000000004,
+      "text": "basic concept"
+    },
+    {
+      "start": 55.28,
+      "end": 60.44,
+      "text": "very much crystal clear. And this will"
+    },
+    {
+      "start": 57.48,
+      "end": 62.64,
+      "text": "be super important even in interviews."
+    },
+    {
+      "start": 60.44,
+      "end": 64.44,
+      "text": "So, let me go ahead and explain you what"
+    },
+    {
+      "start": 62.64,
+      "end": 66.04,
+      "text": "are the differences between prompt"
+    },
+    {
+      "start": 64.44,
+      "end": 67.28,
+      "text": "engineering versus rag versus"
+    },
+    {
+      "start": 66.04,
+      "end": 68.80000000000001,
+      "text": "fine-tuning."
+    },
+    {
+      "start": 67.28,
+      "end": 71.8,
+      "text": "And I'll try to explain in such a way"
+    },
+    {
+      "start": 68.8,
+      "end": 73.96,
+      "text": "that even a 5-year-old kid should be"
+    },
+    {
+      "start": 71.8,
+      "end": 75.75999999999999,
+      "text": "able to understand. So, let me go ahead"
+    },
+    {
+      "start": 73.96,
+      "end": 77.36,
+      "text": "with one by one, okay?"
+    },
+    {
+      "start": 75.76,
+      "end": 79.2,
+      "text": "So, here I have"
+    },
+    {
+      "start": 77.36,
+      "end": 81.24,
+      "text": "taken the images from Google. Three"
+    },
+    {
+      "start": 79.2,
+      "end": 83.72,
+      "text": "robots are there. This is robot one,"
+    },
+    {
+      "start": 81.24,
+      "end": 86.03999999999999,
+      "text": "robot two, and this is Jarvis. I hope"
+    },
+    {
+      "start": 83.72,
+      "end": 87.72,
+      "text": "everybody knows who Jarvis is, right? If"
+    },
+    {
+      "start": 86.04,
+      "end": 89.80000000000001,
+      "text": "you are a Marvel fan, definitely you"
+    },
+    {
+      "start": 87.72,
+      "end": 91.88,
+      "text": "should know this, okay? So, let's talk"
+    },
+    {
+      "start": 89.8,
+      "end": 94.28,
+      "text": "about prompt engineering."
+    },
+    {
+      "start": 91.88,
+      "end": 96.32,
+      "text": "And again, I I'm just telling you that"
+    },
+    {
+      "start": 94.28,
+      "end": 98.32000000000001,
+      "text": "in a very much easier way, I will try to"
+    },
+    {
+      "start": 96.32,
+      "end": 100.32,
+      "text": "explain it to you what are the exact"
+    },
+    {
+      "start": 98.32,
+      "end": 101.83999999999999,
+      "text": "differences between these three. And by"
+    },
+    {
+      "start": 100.32,
+      "end": 103.32,
+      "text": "default, you'll understand when to use"
+    },
+    {
+      "start": 101.84,
+      "end": 105.32000000000001,
+      "text": "what, okay?"
+    },
+    {
+      "start": 103.32,
+      "end": 106.44,
+      "text": "So, let's say that here I have my first"
+    },
+    {
+      "start": 105.32,
+      "end": 107.67999999999999,
+      "text": "robot."
+    },
+    {
+      "start": 106.44,
+      "end": 109.6,
+      "text": "And uh"
+    },
+    {
+      "start": 107.68,
+      "end": 111.44000000000001,
+      "text": "let's say that I want to gift this robot"
+    },
+    {
+      "start": 109.6,
+      "end": 114.24,
+      "text": "to a child, okay?"
+    },
+    {
+      "start": 111.44,
+      "end": 118.24,
+      "text": "And this child ask a question, \"Hey,"
+    },
+    {
+      "start": 114.24,
+      "end": 120.57199999999999,
+      "text": "tell me something about cat.\" Okay? So,"
+    },
+    {
+      "start": 118.24,
+      "end": 122.732,
+      "text": "this is the basic question that we have"
+    },
+    {
+      "start": 120.572,
+      "end": 125.25200000000001,
+      "text": "asked or the child is basically asking,"
+    },
+    {
+      "start": 122.732,
+      "end": 127.652,
+      "text": "\"Hey, tell me Hey robot, tell me"
+    },
+    {
+      "start": 125.252,
+      "end": 130.53199999999998,
+      "text": "something about cats, okay?\""
+    },
+    {
+      "start": 127.652,
+      "end": 133.572,
+      "text": "Now, here when I probably get the"
+    },
+    {
+      "start": 130.532,
+      "end": 137.77200000000002,
+      "text": "response from the robot, it will be a"
+    },
+    {
+      "start": 133.572,
+      "end": 139.172,
+      "text": "generic response related to cat."
+    },
+    {
+      "start": 137.772,
+      "end": 141.052,
+      "text": "Related to"
+    },
+    {
+      "start": 139.172,
+      "end": 143.252,
+      "text": "cat, right? I will be getting a generic"
+    },
+    {
+      "start": 141.052,
+      "end": 145.25199999999998,
+      "text": "response. Hey, cat is this kind of"
+    },
+    {
+      "start": 143.252,
+      "end": 147.21200000000002,
+      "text": "animal, it likes to do this, it likes to"
+    },
+    {
+      "start": 145.252,
+      "end": 148.732,
+      "text": "do that. This kind of information will"
+    },
+    {
+      "start": 147.212,
+      "end": 150.492,
+      "text": "be getting. So,"
+    },
+    {
+      "start": 148.732,
+      "end": 153.452,
+      "text": "uh and if you use different different"
+    },
+    {
+      "start": 150.492,
+      "end": 155.052,
+      "text": "robots which are internally having"
+    },
+    {
+      "start": 153.452,
+      "end": 156.132,
+      "text": "different different LLM models, they'll"
+    },
+    {
+      "start": 155.052,
+      "end": 157.772,
+      "text": "give you different different kind of"
+    },
+    {
+      "start": 156.132,
+      "end": 160.572,
+      "text": "answers, okay?"
+    },
+    {
+      "start": 157.772,
+      "end": 163.612,
+      "text": "Now, let's say that now the child"
+    },
+    {
+      "start": 160.572,
+      "end": 167.212,
+      "text": "probably changes his or her question and"
+    },
+    {
+      "start": 163.612,
+      "end": 169.972,
+      "text": "says that, \"Hey, tell me one funny thing"
+    },
+    {
+      "start": 167.212,
+      "end": 172.41199999999998,
+      "text": "about cats.\""
+    },
+    {
+      "start": 169.972,
+      "end": 174.532,
+      "text": "Funny thing about"
+    },
+    {
+      "start": 172.412,
+      "end": 176.93200000000002,
+      "text": "cat. So, let's say here now I have"
+    },
+    {
+      "start": 174.532,
+      "end": 179.252,
+      "text": "changed my question"
+    },
+    {
+      "start": 176.932,
+      "end": 182.292,
+      "text": "and I'm asking, \"Hey, tell me something"
+    },
+    {
+      "start": 179.252,
+      "end": 186.05200000000002,
+      "text": "really one funny thing about cat.\""
+    },
+    {
+      "start": 182.292,
+      "end": 187.972,
+      "text": "And I may also give a kind of suggestion"
+    },
+    {
+      "start": 186.052,
+      "end": 190.772,
+      "text": "saying that,"
+    },
+    {
+      "start": 187.972,
+      "end": 193.252,
+      "text": "\"Do they like to play?\""
+    },
+    {
+      "start": 190.772,
+      "end": 195.292,
+      "text": "\"Do they like to play?\" So, this is the"
+    },
+    {
+      "start": 193.252,
+      "end": 196.412,
+      "text": "question that I have asked."
+    },
+    {
+      "start": 195.292,
+      "end": 198.572,
+      "text": "Now,"
+    },
+    {
+      "start": 196.412,
+      "end": 200.572,
+      "text": "based on the context information that I"
+    },
+    {
+      "start": 198.572,
+      "end": 203.332,
+      "text": "have actually given in the query, the"
+    },
+    {
+      "start": 200.572,
+      "end": 207.292,
+      "text": "robot will understand and it will try to"
+    },
+    {
+      "start": 203.332,
+      "end": 209.772,
+      "text": "give you a different response."
+    },
+    {
+      "start": 207.292,
+      "end": 211.092,
+      "text": "Right? Different response."
+    },
+    {
+      "start": 209.772,
+      "end": 213.612,
+      "text": "Right?"
+    },
+    {
+      "start": 211.092,
+      "end": 215.49200000000002,
+      "text": "Now, here one important thing that you"
+    },
+    {
+      "start": 213.612,
+      "end": 218.732,
+      "text": "will be seeing"
+    },
+    {
+      "start": 215.492,
+      "end": 221.37199999999999,
+      "text": "when you ask anything to the robot with"
+    },
+    {
+      "start": 218.732,
+      "end": 224.052,
+      "text": "clear instruction,"
+    },
+    {
+      "start": 221.372,
+      "end": 225.49200000000002,
+      "text": "it can help you with much more better"
+    },
+    {
+      "start": 224.052,
+      "end": 226.53199999999998,
+      "text": "response."
+    },
+    {
+      "start": 225.492,
+      "end": 228.81199999999998,
+      "text": "Okay?"
+    },
+    {
+      "start": 226.532,
+      "end": 230.572,
+      "text": "Now, here the robot is there. I'm"
+    },
+    {
+      "start": 228.812,
+      "end": 232.65200000000002,
+      "text": "changing the question. If I'm asking"
+    },
+    {
+      "start": 230.572,
+      "end": 235.052,
+      "text": "more clearer questions,"
+    },
+    {
+      "start": 232.652,
+      "end": 236.052,
+      "text": "then I'm able to get a better response"
+    },
+    {
+      "start": 235.052,
+      "end": 238.452,
+      "text": "itself."
+    },
+    {
+      "start": 236.052,
+      "end": 240.53199999999998,
+      "text": "So, this is just an example of prompt"
+    },
+    {
+      "start": 238.452,
+      "end": 242.974,
+      "text": "engineering. In prompt engineering, I"
+    },
+    {
+      "start": 240.532,
+      "end": 244.734,
+      "text": "will specifically be having an LLM,"
+    },
+    {
+      "start": 242.974,
+      "end": 245.73399999999998,
+      "text": "which is nothing but large language"
+    },
+    {
+      "start": 244.734,
+      "end": 248.174,
+      "text": "model."
+    },
+    {
+      "start": 245.734,
+      "end": 250.69400000000002,
+      "text": "And for this large language model,"
+    },
+    {
+      "start": 248.174,
+      "end": 253.054,
+      "text": "I will define a prompt. I will say,"
+    },
+    {
+      "start": 250.694,
+      "end": 254.934,
+      "text": "\"Hey, there is a prompt for this. Let's"
+    },
+    {
+      "start": 253.054,
+      "end": 259.414,
+      "text": "say one of the prompt is that"
+    },
+    {
+      "start": 254.934,
+      "end": 262.134,
+      "text": "I want you to act as a teacher,"
+    },
+    {
+      "start": 259.414,
+      "end": 265.094,
+      "text": "a physics teacher, or AI teacher,"
+    },
+    {
+      "start": 262.134,
+      "end": 267.974,
+      "text": "and answer the questions"
+    },
+    {
+      "start": 265.094,
+      "end": 269.854,
+      "text": "in detail to the questions that is given"
+    },
+    {
+      "start": 267.974,
+      "end": 271.014,
+      "text": "in the input."
+    },
+    {
+      "start": 269.854,
+      "end": 273.774,
+      "text": "Okay?"
+    },
+    {
+      "start": 271.014,
+      "end": 275.974,
+      "text": "So, this is a detailed question. Okay? I"
+    },
+    {
+      "start": 273.774,
+      "end": 278.094,
+      "text": "may also tell that, \"Hey, provide me a"
+    },
+    {
+      "start": 275.974,
+      "end": 280.37399999999997,
+      "text": "structured output in that specific"
+    },
+    {
+      "start": 278.094,
+      "end": 282.574,
+      "text": "prompt. I want a structured output in"
+    },
+    {
+      "start": 280.374,
+      "end": 283.454,
+      "text": "point-wise.\""
+    },
+    {
+      "start": 282.574,
+      "end": 285.774,
+      "text": "Right?"
+    },
+    {
+      "start": 283.454,
+      "end": 288.294,
+      "text": "So, there you'll be able to see that as"
+    },
+    {
+      "start": 285.774,
+      "end": 290.774,
+      "text": "we write more detailed prompt, this LLM"
+    },
+    {
+      "start": 288.294,
+      "end": 292.014,
+      "text": "will be able to give you more amazing"
+    },
+    {
+      "start": 290.774,
+      "end": 294.894,
+      "text": "answers."
+    },
+    {
+      "start": 292.014,
+      "end": 297.214,
+      "text": "Right? So, I hope just by seeing this"
+    },
+    {
+      "start": 294.894,
+      "end": 299.934,
+      "text": "example, you have understood what"
+    },
+    {
+      "start": 297.214,
+      "end": 304.094,
+      "text": "exactly prompt engineering is all about."
+    },
+    {
+      "start": 299.934,
+      "end": 306.774,
+      "text": "Here, we are trying to do our level best"
+    },
+    {
+      "start": 304.094,
+      "end": 310.614,
+      "text": "to do some kind of quick improvements,"
+    },
+    {
+      "start": 306.774,
+      "end": 313.454,
+      "text": "explore model capabilities, and task"
+    },
+    {
+      "start": 310.614,
+      "end": 316.054,
+      "text": "where the required knowledge is likely"
+    },
+    {
+      "start": 313.454,
+      "end": 318.974,
+      "text": "within the pre-trained LLM models. So,"
+    },
+    {
+      "start": 316.054,
+      "end": 320.33399999999995,
+      "text": "here, specifically, we are playing with"
+    },
+    {
+      "start": 318.974,
+      "end": 321.974,
+      "text": "the"
+    },
+    {
+      "start": 320.334,
+      "end": 324.094,
+      "text": "pre-trained"
+    },
+    {
+      "start": 321.974,
+      "end": 326.214,
+      "text": "LLM models."
+    },
+    {
+      "start": 324.094,
+      "end": 329.814,
+      "text": "LLM models, and we are trying our level"
+    },
+    {
+      "start": 326.214,
+      "end": 333.214,
+      "text": "best to explore its capabilities. Right?"
+    },
+    {
+      "start": 329.814,
+      "end": 334.97400000000005,
+      "text": "Here, we also say that prompt is just"
+    },
+    {
+      "start": 333.214,
+      "end": 337.174,
+      "text": "like"
+    },
+    {
+      "start": 334.974,
+      "end": 339.25399999999996,
+      "text": "we are trying to like we try to go ahead"
+    },
+    {
+      "start": 337.174,
+      "end": 341.174,
+      "text": "and write detailed prompts, detailed"
+    },
+    {
+      "start": 339.254,
+      "end": 342.934,
+      "text": "information, so that the LLM will be"
+    },
+    {
+      "start": 341.174,
+      "end": 346.01399999999995,
+      "text": "able to understand and provide a"
+    },
+    {
+      "start": 342.934,
+      "end": 349.29400000000004,
+      "text": "specific response out of it. Right?"
+    },
+    {
+      "start": 346.014,
+      "end": 351.574,
+      "text": "Now, the major advantages I told you why"
+    },
+    {
+      "start": 349.294,
+      "end": 353.414,
+      "text": "we specifically use prompt engineering,"
+    },
+    {
+      "start": 351.574,
+      "end": 355.094,
+      "text": "I will again repeat it as we go ahead."
+    },
+    {
+      "start": 353.414,
+      "end": 356.93399999999997,
+      "text": "Okay? Now, coming to the second one,"
+    },
+    {
+      "start": 355.094,
+      "end": 358.454,
+      "text": "that is called as the rag."
+    },
+    {
+      "start": 356.934,
+      "end": 359.97400000000005,
+      "text": "Now, just by seeing this robot, you'll"
+    },
+    {
+      "start": 358.454,
+      "end": 361.814,
+      "text": "be able to see that this robot has a"
+    },
+    {
+      "start": 359.974,
+      "end": 363.49399999999997,
+      "text": "backpack. Okay?"
+    },
+    {
+      "start": 361.814,
+      "end": 365.654,
+      "text": "Now, this backpack has some kind of"
+    },
+    {
+      "start": 363.494,
+      "end": 368.45500000000004,
+      "text": "books."
+    },
+    {
+      "start": 365.654,
+      "end": 370.615,
+      "text": "Right? It has some kind of books."
+    },
+    {
+      "start": 368.455,
+      "end": 373.53499999999997,
+      "text": "Now, if I ask a question, let's say,"
+    },
+    {
+      "start": 370.615,
+      "end": 375.495,
+      "text": "\"Hey, what is one funny thing about"
+    },
+    {
+      "start": 373.535,
+      "end": 377.055,
+      "text": "cat?\" Okay?"
+    },
+    {
+      "start": 375.495,
+      "end": 379.095,
+      "text": "Does it like to play to this particular"
+    },
+    {
+      "start": 377.055,
+      "end": 380.255,
+      "text": "robot? This robot knows some generic"
+    },
+    {
+      "start": 379.095,
+      "end": 383.495,
+      "text": "answer."
+    },
+    {
+      "start": 380.255,
+      "end": 385.935,
+      "text": "It knows some generic answer."
+    },
+    {
+      "start": 383.495,
+      "end": 389.095,
+      "text": "But, what this robot will do is that it"
+    },
+    {
+      "start": 385.935,
+      "end": 393.375,
+      "text": "will still go and refer this books"
+    },
+    {
+      "start": 389.095,
+      "end": 396.01500000000004,
+      "text": "because this books are all about cat."
+    },
+    {
+      "start": 393.375,
+      "end": 398.175,
+      "text": "Right? All about cat. Now, let's say"
+    },
+    {
+      "start": 396.015,
+      "end": 400.575,
+      "text": "that you ask me a question. I know about"
+    },
+    {
+      "start": 398.175,
+      "end": 402.735,
+      "text": "that particular topic, but before"
+    },
+    {
+      "start": 400.575,
+      "end": 405.215,
+      "text": "answering, I definitely want to confirm"
+    },
+    {
+      "start": 402.735,
+      "end": 408.415,
+      "text": "anything and provide a much more"
+    },
+    {
+      "start": 405.215,
+      "end": 410.97499999999997,
+      "text": "accurate answer by exploring all the"
+    },
+    {
+      "start": 408.415,
+      "end": 412.735,
+      "text": "books I have in my library. You ask me,"
+    },
+    {
+      "start": 410.975,
+      "end": 414.65500000000003,
+      "text": "\"Krish, what is machine learning?\" I may"
+    },
+    {
+      "start": 412.735,
+      "end": 416.535,
+      "text": "give you a two-line definition. But,"
+    },
+    {
+      "start": 414.655,
+      "end": 418.135,
+      "text": "what I will do? I will say that, \"Hey, I"
+    },
+    {
+      "start": 416.535,
+      "end": 420.77500000000003,
+      "text": "want to give a much more better"
+    },
+    {
+      "start": 418.135,
+      "end": 422.615,
+      "text": "response.\" So, I will go ahead and refer"
+    },
+    {
+      "start": 420.775,
+      "end": 424.575,
+      "text": "all the books that is available, the"
+    },
+    {
+      "start": 422.615,
+      "end": 425.975,
+      "text": "best books that are available in the"
+    },
+    {
+      "start": 424.575,
+      "end": 428.055,
+      "text": "internet. I will search for multiple"
+    },
+    {
+      "start": 425.975,
+      "end": 429.055,
+      "text": "blogs, and then I will summarize those"
+    },
+    {
+      "start": 428.055,
+      "end": 431.815,
+      "text": "data."
+    },
+    {
+      "start": 429.055,
+      "end": 433.495,
+      "text": "Okay? I will summarize those data with a"
+    },
+    {
+      "start": 431.815,
+      "end": 435.255,
+      "text": "prompt."
+    },
+    {
+      "start": 433.495,
+      "end": 438.615,
+      "text": "With a prompt"
+    },
+    {
+      "start": 435.255,
+      "end": 440.975,
+      "text": "and answer that particular question."
+    },
+    {
+      "start": 438.615,
+      "end": 442.33500000000004,
+      "text": "Right? So, this backpack that you are"
+    },
+    {
+      "start": 440.975,
+      "end": 445.055,
+      "text": "able to see,"
+    },
+    {
+      "start": 442.335,
+      "end": 446.29499999999996,
+      "text": "this backpack is some kind of external"
+    },
+    {
+      "start": 445.055,
+      "end": 449.935,
+      "text": "information."
+    },
+    {
+      "start": 446.295,
+      "end": 452.65500000000003,
+      "text": "Similarly, when we have an LLM,"
+    },
+    {
+      "start": 449.935,
+      "end": 454.215,
+      "text": "when we have an LLM, if we are giving"
+    },
+    {
+      "start": 452.655,
+      "end": 456.73499999999996,
+      "text": "any queries,"
+    },
+    {
+      "start": 454.215,
+      "end": 459.135,
+      "text": "if we are giving any queries, for this"
+    },
+    {
+      "start": 456.735,
+      "end": 462.21500000000003,
+      "text": "particular query, you'll be able to see"
+    },
+    {
+      "start": 459.135,
+      "end": 464.255,
+      "text": "that we will be referring some other"
+    },
+    {
+      "start": 462.215,
+      "end": 467.455,
+      "text": "vector database."
+    },
+    {
+      "start": 464.255,
+      "end": 469.815,
+      "text": "Some other vector database. Okay? Some"
+    },
+    {
+      "start": 467.455,
+      "end": 471.895,
+      "text": "other vector database."
+    },
+    {
+      "start": 469.815,
+      "end": 474.855,
+      "text": "We will be referring some vector"
+    },
+    {
+      "start": 471.895,
+      "end": 477.015,
+      "text": "database. And from this vector database,"
+    },
+    {
+      "start": 474.855,
+      "end": 479.57500000000005,
+      "text": "which is just like my backpack or"
+    },
+    {
+      "start": 477.015,
+      "end": 480.695,
+      "text": "external information, so this can be my"
+    },
+    {
+      "start": 479.575,
+      "end": 483.575,
+      "text": "DB."
+    },
+    {
+      "start": 480.695,
+      "end": 484.815,
+      "text": "Oops. Just a second. This can be my DB,"
+    },
+    {
+      "start": 483.575,
+      "end": 486.97499999999997,
+      "text": "which is having some kind of"
+    },
+    {
+      "start": 484.815,
+      "end": 489.497,
+      "text": "information. And from this particular"
+    },
+    {
+      "start": 486.975,
+      "end": 492.377,
+      "text": "information, I will be getting a context"
+    },
+    {
+      "start": 489.497,
+      "end": 493.817,
+      "text": "because in this vector DB you have"
+    },
+    {
+      "start": 492.377,
+      "end": 497.09700000000004,
+      "text": "everything"
+    },
+    {
+      "start": 493.817,
+      "end": 499.697,
+      "text": "related to cats stored in the form of"
+    },
+    {
+      "start": 497.097,
+      "end": 501.977,
+      "text": "vector embeddings."
+    },
+    {
+      "start": 499.697,
+      "end": 503.977,
+      "text": "Vector embeddings. So, what will happen?"
+    },
+    {
+      "start": 501.977,
+      "end": 507.61699999999996,
+      "text": "When you give a query, initially the"
+    },
+    {
+      "start": 503.977,
+      "end": 509.777,
+      "text": "query will be converted into vectors."
+    },
+    {
+      "start": 507.617,
+      "end": 511.77700000000004,
+      "text": "And this vector similarity search will"
+    },
+    {
+      "start": 509.777,
+      "end": 513.817,
+      "text": "be done in the DB and based on that you"
+    },
+    {
+      "start": 511.777,
+      "end": 516.177,
+      "text": "retrieve the context. And along with"
+    },
+    {
+      "start": 513.817,
+      "end": 519.097,
+      "text": "this context, you combine the prompt."
+    },
+    {
+      "start": 516.177,
+      "end": 523.577,
+      "text": "And finally, your LLM will be able to"
+    },
+    {
+      "start": 519.097,
+      "end": 524.617,
+      "text": "summarize the output and the response."
+    },
+    {
+      "start": 523.577,
+      "end": 526.897,
+      "text": "Okay?"
+    },
+    {
+      "start": 524.617,
+      "end": 528.737,
+      "text": "Output and the response. So, for a"
+    },
+    {
+      "start": 526.897,
+      "end": 530.697,
+      "text": "company, if I talk in terms of a"
+    },
+    {
+      "start": 528.737,
+      "end": 534.937,
+      "text": "real-world scenario,"
+    },
+    {
+      "start": 530.697,
+      "end": 538.297,
+      "text": "companies which has or whenever you need"
+    },
+    {
+      "start": 534.937,
+      "end": 540.297,
+      "text": "some access to specific up-to-date data,"
+    },
+    {
+      "start": 538.297,
+      "end": 542.577,
+      "text": "a proprietary information, company"
+    },
+    {
+      "start": 540.297,
+      "end": 544.697,
+      "text": "policies, right? There we can"
+    },
+    {
+      "start": 542.577,
+      "end": 546.417,
+      "text": "specifically use rag. Let's say"
+    },
+    {
+      "start": 544.697,
+      "end": 548.697,
+      "text": "companies having some kind of data which"
+    },
+    {
+      "start": 546.417,
+      "end": 550.897,
+      "text": "keeps on getting updated. What I can do?"
+    },
+    {
+      "start": 548.697,
+      "end": 553.177,
+      "text": "If I want probably create a chatbot"
+    },
+    {
+      "start": 550.897,
+      "end": 555.3770000000001,
+      "text": "assistant which will be able to retrieve"
+    },
+    {
+      "start": 553.177,
+      "end": 557.577,
+      "text": "all this information from a rag database"
+    },
+    {
+      "start": 555.377,
+      "end": 560.097,
+      "text": "and give me the response, that would be"
+    },
+    {
+      "start": 557.577,
+      "end": 561.977,
+      "text": "an amazing example with respect to rag."
+    },
+    {
+      "start": 560.097,
+      "end": 563.937,
+      "text": "Right? Let's say one more example. Let's"
+    },
+    {
+      "start": 561.977,
+      "end": 568.0169999999999,
+      "text": "say that I will go ahead and ask, \"Hey,"
+    },
+    {
+      "start": 563.937,
+      "end": 569.297,
+      "text": "tell me about tell me about"
+    },
+    {
+      "start": 568.017,
+      "end": 571.577,
+      "text": "about"
+    },
+    {
+      "start": 569.297,
+      "end": 575.417,
+      "text": "the leave policies"
+    },
+    {
+      "start": 571.577,
+      "end": 578.297,
+      "text": "leave policies in XYZ company.\""
+    },
+    {
+      "start": 575.417,
+      "end": 579.777,
+      "text": "XYZ company. So, in this case, the LLM"
+    },
+    {
+      "start": 578.297,
+      "end": 581.7370000000001,
+      "text": "will not be able to answer because it"
+    },
+    {
+      "start": 579.777,
+      "end": 583.017,
+      "text": "will not have that information out there"
+    },
+    {
+      "start": 581.737,
+      "end": 584.137,
+      "text": "because it is not trained with that"
+    },
+    {
+      "start": 583.017,
+      "end": 587.1370000000001,
+      "text": "data."
+    },
+    {
+      "start": 584.137,
+      "end": 588.8169999999999,
+      "text": "But this leave policies may get updated"
+    },
+    {
+      "start": 587.137,
+      "end": 590.0169999999999,
+      "text": "in a company time to time. So, what I"
+    },
+    {
+      "start": 588.817,
+      "end": 592.577,
+      "text": "can do?"
+    },
+    {
+      "start": 590.017,
+      "end": 594.8570000000001,
+      "text": "I can store all this information in my"
+    },
+    {
+      "start": 592.577,
+      "end": 596.377,
+      "text": "vector DB which will have all my policy"
+    },
+    {
+      "start": 594.857,
+      "end": 598.297,
+      "text": "document."
+    },
+    {
+      "start": 596.377,
+      "end": 601.457,
+      "text": "And this will basically be connected to"
+    },
+    {
+      "start": 598.297,
+      "end": 604.457,
+      "text": "my AI assistant wherein this will act"
+    },
+    {
+      "start": 601.457,
+      "end": 606.777,
+      "text": "like a backpack, right? Backpack or"
+    },
+    {
+      "start": 604.457,
+      "end": 608.537,
+      "text": "external data. Right? So, this can be a"
+    },
+    {
+      "start": 606.777,
+      "end": 610.8180000000001,
+      "text": "vector DB, it can be document database,"
+    },
+    {
+      "start": 608.537,
+      "end": 612.258,
+      "text": "it can be different different things,"
+    },
+    {
+      "start": 610.818,
+      "end": 614.658,
+      "text": "but I hope"
+    },
+    {
+      "start": 612.258,
+      "end": 616.818,
+      "text": "you are able to understand why do we"
+    },
+    {
+      "start": 614.658,
+      "end": 618.498,
+      "text": "specifically use rag. Yes, there are"
+    },
+    {
+      "start": 616.818,
+      "end": 619.698,
+      "text": "different types of rag, like agentic"
+    },
+    {
+      "start": 618.498,
+      "end": 621.3380000000001,
+      "text": "rags."
+    },
+    {
+      "start": 619.698,
+      "end": 623.6179999999999,
+      "text": "You have something like agentic rags,"
+    },
+    {
+      "start": 621.338,
+      "end": 626.2579999999999,
+      "text": "adaptive rag, corrective rag. Those are"
+    },
+    {
+      "start": 623.618,
+      "end": 628.0580000000001,
+      "text": "some different kind of rag data rag"
+    },
+    {
+      "start": 626.258,
+      "end": 629.898,
+      "text": "applications which can specifically use"
+    },
+    {
+      "start": 628.058,
+      "end": 632.778,
+      "text": "this rag database, but there we"
+    },
+    {
+      "start": 629.898,
+      "end": 634.818,
+      "text": "specifically create agents. Okay?"
+    },
+    {
+      "start": 632.778,
+      "end": 637.458,
+      "text": "Now, coming to the third type, which is"
+    },
+    {
+      "start": 634.818,
+      "end": 639.258,
+      "text": "called as fine-tuning."
+    },
+    {
+      "start": 637.458,
+      "end": 640.978,
+      "text": "Okay? Fine-tuning."
+    },
+    {
+      "start": 639.258,
+      "end": 643.658,
+      "text": "Now, just imagine this Jarvis robot,"
+    },
+    {
+      "start": 640.978,
+      "end": 647.218,
+      "text": "right? So, I am going on a party and I"
+    },
+    {
+      "start": 643.658,
+      "end": 650.818,
+      "text": "want to gift this robot to a kid."
+    },
+    {
+      "start": 647.218,
+      "end": 653.7379999999999,
+      "text": "Right? The kid name is, let's say,"
+    },
+    {
+      "start": 650.818,
+      "end": 655.3779999999999,
+      "text": "um the kid name is Tom."
+    },
+    {
+      "start": 653.738,
+      "end": 657.618,
+      "text": "So, I will what I will do, since I'm"
+    },
+    {
+      "start": 655.378,
+      "end": 660.418,
+      "text": "gifting this to a Tom, Tom is somewhere"
+    },
+    {
+      "start": 657.618,
+      "end": 662.6980000000001,
+      "text": "around 10 years old."
+    },
+    {
+      "start": 660.418,
+      "end": 663.538,
+      "text": "So, based on the features or based on"
+    },
+    {
+      "start": 662.698,
+      "end": 666.3779999999999,
+      "text": "the"
+    },
+    {
+      "start": 663.538,
+      "end": 668.378,
+      "text": "the age of the kid, whatever this robot"
+    },
+    {
+      "start": 666.378,
+      "end": 670.6980000000001,
+      "text": "whatever this kid likes, I will be"
+    },
+    {
+      "start": 668.378,
+      "end": 673.898,
+      "text": "training this robot to provide a"
+    },
+    {
+      "start": 670.698,
+      "end": 676.098,
+      "text": "response in such a way. Since he or she"
+    },
+    {
+      "start": 673.898,
+      "end": 677.9780000000001,
+      "text": "is a 10 years old kid,"
+    },
+    {
+      "start": 676.098,
+      "end": 680.058,
+      "text": "he should probably talk about, \"Hey Tom,"
+    },
+    {
+      "start": 677.978,
+      "end": 682.978,
+      "text": "how are you?\" He should try to provide"
+    },
+    {
+      "start": 680.058,
+      "end": 685.058,
+      "text": "this kind of response. Let's say, uh"
+    },
+    {
+      "start": 682.978,
+      "end": 686.7779999999999,
+      "text": "we should probably put what all things"
+    },
+    {
+      "start": 685.058,
+      "end": 690.058,
+      "text": "Tom's like. We know that particular"
+    },
+    {
+      "start": 686.778,
+      "end": 692.658,
+      "text": "data, so we will train this particular,"
+    },
+    {
+      "start": 690.058,
+      "end": 695.498,
+      "text": "um you know, robot with whatever things"
+    },
+    {
+      "start": 692.658,
+      "end": 697.538,
+      "text": "Tom's like. Let's say Tom's like, uh how"
+    },
+    {
+      "start": 695.498,
+      "end": 699.418,
+      "text": "to probably play cricket. If Tom's likes"
+    },
+    {
+      "start": 697.538,
+      "end": 702.258,
+      "text": "to hear the stories, which kind of"
+    },
+    {
+      "start": 699.418,
+      "end": 703.498,
+      "text": "stories, right? We will try to feed this"
+    },
+    {
+      "start": 702.258,
+      "end": 706.778,
+      "text": "particular,"
+    },
+    {
+      "start": 703.498,
+      "end": 708.9380000000001,
+      "text": "um robot with those kind of information."
+    },
+    {
+      "start": 706.778,
+      "end": 712.018,
+      "text": "So, here in a real-world scenario, what"
+    },
+    {
+      "start": 708.938,
+      "end": 713.898,
+      "text": "we do is that we take a LLM model."
+    },
+    {
+      "start": 712.018,
+      "end": 715.9780000000001,
+      "text": "We take a LLM model. This is a"
+    },
+    {
+      "start": 713.898,
+      "end": 717.258,
+      "text": "pre-trained LLM model."
+    },
+    {
+      "start": 715.978,
+      "end": 720.7379999999999,
+      "text": "And then, with respect to this"
+    },
+    {
+      "start": 717.258,
+      "end": 723.418,
+      "text": "pre-trained LLM model, what we do?"
+    },
+    {
+      "start": 720.738,
+      "end": 726.4580000000001,
+      "text": "We have our data,"
+    },
+    {
+      "start": 723.418,
+      "end": 728.898,
+      "text": "the data what this organization likes,"
+    },
+    {
+      "start": 726.458,
+      "end": 731.178,
+      "text": "what this organization wants, what this"
+    },
+    {
+      "start": 728.898,
+      "end": 733.419,
+      "text": "organization have. Because I want to"
+    },
+    {
+      "start": 731.178,
+      "end": 735.539,
+      "text": "make my chatbot"
+    },
+    {
+      "start": 733.419,
+      "end": 737.859,
+      "text": "talk about anything that is asked"
+    },
+    {
+      "start": 735.539,
+      "end": 740.819,
+      "text": "related to our application like how we"
+    },
+    {
+      "start": 737.859,
+      "end": 742.499,
+      "text": "want. Right? If I say, \"Hey, if I go"
+    },
+    {
+      "start": 740.819,
+      "end": 744.3789999999999,
+      "text": "ahead and ask this chatbot assistant,"
+    },
+    {
+      "start": 742.499,
+      "end": 746.059,
+      "text": "'Hi.'\" It should provide me the response"
+    },
+    {
+      "start": 744.379,
+      "end": 747.899,
+      "text": "saying that, \"Hello brother Hello"
+    },
+    {
+      "start": 746.059,
+      "end": 749.939,
+      "text": "brother, this is what it is.\" And I"
+    },
+    {
+      "start": 747.899,
+      "end": 752.539,
+      "text": "really want to welcome that particular"
+    },
+    {
+      "start": 749.939,
+      "end": 754.8589999999999,
+      "text": "person based on the information that I"
+    },
+    {
+      "start": 752.539,
+      "end": 756.779,
+      "text": "really want to put out there. Right? So,"
+    },
+    {
+      "start": 754.859,
+      "end": 758.4590000000001,
+      "text": "this LLM will be"
+    },
+    {
+      "start": 756.779,
+      "end": 759.459,
+      "text": "nothing but it will be a pre-trained"
+    },
+    {
+      "start": 758.459,
+      "end": 761.059,
+      "text": "model"
+    },
+    {
+      "start": 759.459,
+      "end": 763.6189999999999,
+      "text": "pre-trained model"
+    },
+    {
+      "start": 761.059,
+      "end": 766.9789999999999,
+      "text": "and this pre-trained model LLM will be"
+    },
+    {
+      "start": 763.619,
+      "end": 770.859,
+      "text": "fine-tuned with my data that I really"
+    },
+    {
+      "start": 766.979,
+      "end": 772.6990000000001,
+      "text": "want. With my data I really want."
+    },
+    {
+      "start": 770.859,
+      "end": 774.019,
+      "text": "Now, when we say fine-tuned, what does"
+    },
+    {
+      "start": 772.699,
+      "end": 775.819,
+      "text": "this basically mean? Let's say that we"
+    },
+    {
+      "start": 774.019,
+      "end": 779.579,
+      "text": "are using some kind of transformer. This"
+    },
+    {
+      "start": 775.819,
+      "end": 782.259,
+      "text": "LLM is a transformer model, right?"
+    },
+    {
+      "start": 779.579,
+      "end": 784.0989999999999,
+      "text": "Transformer model. Let's consider that."
+    },
+    {
+      "start": 782.259,
+      "end": 786.619,
+      "text": "And you know in transformer you have you"
+    },
+    {
+      "start": 784.099,
+      "end": 788.339,
+      "text": "may have neural networks. Right? This is"
+    },
+    {
+      "start": 786.619,
+      "end": 790.539,
+      "text": "how a neural network looks like, right?"
+    },
+    {
+      "start": 788.339,
+      "end": 792.2990000000001,
+      "text": "I'm just showing one example. And you"
+    },
+    {
+      "start": 790.539,
+      "end": 793.779,
+      "text": "know with respect to all these neural"
+    },
+    {
+      "start": 792.299,
+      "end": 796.2189999999999,
+      "text": "networks"
+    },
+    {
+      "start": 793.779,
+      "end": 798.059,
+      "text": "all these neural networks, there will be"
+    },
+    {
+      "start": 796.219,
+      "end": 799.4190000000001,
+      "text": "weights that will be associated. So,"
+    },
+    {
+      "start": 798.059,
+      "end": 801.0989999999999,
+      "text": "what we are going to do? We are going to"
+    },
+    {
+      "start": 799.419,
+      "end": 803.259,
+      "text": "fine-tune"
+    },
+    {
+      "start": 801.099,
+      "end": 807.499,
+      "text": "fine-tune"
+    },
+    {
+      "start": 803.259,
+      "end": 809.099,
+      "text": "this particular model with our new data."
+    },
+    {
+      "start": 807.499,
+      "end": 811.979,
+      "text": "Now, when we are fine-tuning, the"
+    },
+    {
+      "start": 809.099,
+      "end": 815.0590000000001,
+      "text": "weights will definitely change."
+    },
+    {
+      "start": 811.979,
+      "end": 817.139,
+      "text": "Weights will definitely change. Right?"
+    },
+    {
+      "start": 815.059,
+      "end": 819.699,
+      "text": "It will not be the same. So, here what"
+    },
+    {
+      "start": 817.139,
+      "end": 822.659,
+      "text": "we are basically doing is that we are"
+    },
+    {
+      "start": 819.699,
+      "end": 824.459,
+      "text": "just fine-tuning our models with the new"
+    },
+    {
+      "start": 822.659,
+      "end": 827.019,
+      "text": "data that we have related to any"
+    },
+    {
+      "start": 824.459,
+      "end": 829.179,
+      "text": "companies and we want our LLM model to"
+    },
+    {
+      "start": 827.019,
+      "end": 832.179,
+      "text": "behave in that specific way like how"
+    },
+    {
+      "start": 829.179,
+      "end": 835.0989999999999,
+      "text": "this Jarvis has trained for this"
+    },
+    {
+      "start": 832.179,
+      "end": 837.379,
+      "text": "particular person that is called as Tom."
+    },
+    {
+      "start": 835.099,
+      "end": 838.8190000000001,
+      "text": "Because Jarvis is created to satisfy the"
+    },
+    {
+      "start": 837.379,
+      "end": 841.6990000000001,
+      "text": "needs of Tom."
+    },
+    {
+      "start": 838.819,
+      "end": 843.939,
+      "text": "Okay? So, here whatever Tom likes, I"
+    },
+    {
+      "start": 841.699,
+      "end": 845.819,
+      "text": "will probably prepare that data."
+    },
+    {
+      "start": 843.939,
+      "end": 847.8589999999999,
+      "text": "And based on that particular data, I"
+    },
+    {
+      "start": 845.819,
+      "end": 849.139,
+      "text": "will go ahead and train this. I will"
+    },
+    {
+      "start": 847.859,
+      "end": 851.0590000000001,
+      "text": "tell the robot, \"Hey, you have to"
+    },
+    {
+      "start": 849.139,
+      "end": 853.059,
+      "text": "probably go ahead and do this.\""
+    },
+    {
+      "start": 851.059,
+      "end": 856.221,
+      "text": "Now, let's talk about the challenges"
+    },
+    {
+      "start": 853.059,
+      "end": 858.021,
+      "text": "from fine-tuning to rag to fro- prompt"
+    },
+    {
+      "start": 856.221,
+      "end": 860.021,
+      "text": "engineering. One of the major challenges"
+    },
+    {
+      "start": 858.021,
+      "end": 862.1809999999999,
+      "text": "with respect to fine tuning is that"
+    },
+    {
+      "start": 860.021,
+      "end": 864.1809999999999,
+      "text": "training the core data, right? Training"
+    },
+    {
+      "start": 862.181,
+      "end": 866.461,
+      "text": "a pre-trained model"
+    },
+    {
+      "start": 864.181,
+      "end": 869.101,
+      "text": "the cost is really high. Just imagine"
+    },
+    {
+      "start": 866.461,
+      "end": 871.261,
+      "text": "how many GPUs you'll be using in order"
+    },
+    {
+      "start": 869.101,
+      "end": 872.221,
+      "text": "to probably train these LLM models,"
+    },
+    {
+      "start": 871.261,
+      "end": 874.101,
+      "text": "right?"
+    },
+    {
+      "start": 872.221,
+      "end": 875.461,
+      "text": "With the new data, right? There will be"
+    },
+    {
+      "start": 874.101,
+      "end": 876.821,
+      "text": "cost that will be involved. There will"
+    },
+    {
+      "start": 875.461,
+      "end": 877.9010000000001,
+      "text": "be multiple things that will be"
+    },
+    {
+      "start": 876.821,
+      "end": 880.9010000000001,
+      "text": "involved. And again, you have to"
+    },
+    {
+      "start": 877.901,
+      "end": 882.901,
+      "text": "redeploy all those models into the"
+    },
+    {
+      "start": 880.901,
+      "end": 884.981,
+      "text": "cloud. You have to probably have a"
+    },
+    {
+      "start": 882.901,
+      "end": 885.981,
+      "text": "separate team for the entire management,"
+    },
+    {
+      "start": 884.981,
+      "end": 887.261,
+      "text": "for the verification, for the"
+    },
+    {
+      "start": 885.981,
+      "end": 889.741,
+      "text": "performance metrics, each and"
+    },
+    {
+      "start": 887.261,
+      "end": 891.8209999999999,
+      "text": "everything, right? So, this is the major"
+    },
+    {
+      "start": 889.741,
+      "end": 894.381,
+      "text": "cost with respect to fine tuning. The"
+    },
+    {
+      "start": 891.821,
+      "end": 896.501,
+      "text": "second cost is always related to data"
+    },
+    {
+      "start": 894.381,
+      "end": 898.981,
+      "text": "preparation. Because for this, we"
+    },
+    {
+      "start": 896.501,
+      "end": 901.341,
+      "text": "require some kind of data. And for"
+    },
+    {
+      "start": 898.981,
+      "end": 902.5409999999999,
+      "text": "without data, this will not be possible"
+    },
+    {
+      "start": 901.341,
+      "end": 904.381,
+      "text": "to probably go ahead and train this"
+    },
+    {
+      "start": 902.541,
+      "end": 906.701,
+      "text": "particular model."
+    },
+    {
+      "start": 904.381,
+      "end": 908.981,
+      "text": "Right? Now, coming to the rag part,"
+    },
+    {
+      "start": 906.701,
+      "end": 910.7810000000001,
+      "text": "right? Rag is really, really good. You"
+    },
+    {
+      "start": 908.981,
+      "end": 913.101,
+      "text": "have an external database, but again,"
+    },
+    {
+      "start": 910.781,
+      "end": 916.101,
+      "text": "remember there is some cost that is"
+    },
+    {
+      "start": 913.101,
+      "end": 918.101,
+      "text": "involved in hitting the database and"
+    },
+    {
+      "start": 916.101,
+      "end": 919.981,
+      "text": "getting the information."
+    },
+    {
+      "start": 918.101,
+      "end": 923.461,
+      "text": "Initially, when I talk about prompt"
+    },
+    {
+      "start": 919.981,
+      "end": 924.781,
+      "text": "engineering here, we are trying to"
+    },
+    {
+      "start": 923.461,
+      "end": 926.381,
+      "text": "directly use the LLM and get the"
+    },
+    {
+      "start": 924.781,
+      "end": 927.861,
+      "text": "response from the LLM. But here, what we"
+    },
+    {
+      "start": 926.381,
+      "end": 929.661,
+      "text": "are doing is that first of all, we are"
+    },
+    {
+      "start": 927.861,
+      "end": 931.4209999999999,
+      "text": "doing a vector search from the database."
+    },
+    {
+      "start": 929.661,
+      "end": 933.3009999999999,
+      "text": "I'm getting some kind of context, then"
+    },
+    {
+      "start": 931.421,
+      "end": 934.3810000000001,
+      "text": "combining to the system prompt, then"
+    },
+    {
+      "start": 933.301,
+      "end": 936.341,
+      "text": "along with that, we are getting the"
+    },
+    {
+      "start": 934.381,
+      "end": 938.741,
+      "text": "response. So, that cost is basically"
+    },
+    {
+      "start": 936.341,
+      "end": 940.181,
+      "text": "involved. Use case-wise, this is really,"
+    },
+    {
+      "start": 938.741,
+      "end": 942.021,
+      "text": "really good because you have all"
+    },
+    {
+      "start": 940.181,
+      "end": 944.301,
+      "text": "up-to-date information and you are able"
+    },
+    {
+      "start": 942.021,
+      "end": 947.0609999999999,
+      "text": "to probably get the response and satisfy"
+    },
+    {
+      "start": 944.301,
+      "end": 948.2610000000001,
+      "text": "the needs of the customers, right?"
+    },
+    {
+      "start": 947.061,
+      "end": 950.101,
+      "text": "And when I talk about prompt"
+    },
+    {
+      "start": 948.261,
+      "end": 952.901,
+      "text": "engineering, this is probably the best"
+    },
+    {
+      "start": 950.101,
+      "end": 954.541,
+      "text": "thing, I think, okay? But again, here,"
+    },
+    {
+      "start": 952.901,
+      "end": 956.501,
+      "text": "there are multiple challenges. We cannot"
+    },
+    {
+      "start": 954.541,
+      "end": 958.461,
+      "text": "do what all things we can actually do in"
+    },
+    {
+      "start": 956.501,
+      "end": 959.701,
+      "text": "rag and fine tuning. Here, we are just"
+    },
+    {
+      "start": 958.461,
+      "end": 961.501,
+      "text": "trying to explore the model"
+    },
+    {
+      "start": 959.701,
+      "end": 963.1410000000001,
+      "text": "capabilities. We are trying to see that"
+    },
+    {
+      "start": 961.501,
+      "end": 964.981,
+      "text": "whatever pre-trained model can actually"
+    },
+    {
+      "start": 963.141,
+      "end": 966.9409999999999,
+      "text": "do, we should be able to get it, right?"
+    },
+    {
+      "start": 964.981,
+      "end": 968.221,
+      "text": "One of the major challenges is that we"
+    },
+    {
+      "start": 966.941,
+      "end": 968.861,
+      "text": "have to"
+    },
+    {
+      "start": 968.221,
+      "end": 971.541,
+      "text": "uh"
+    },
+    {
+      "start": 968.861,
+      "end": 973.221,
+      "text": "keep on playing with the prompt, right?"
+    },
+    {
+      "start": 971.541,
+      "end": 976.7810000000001,
+      "text": "We have to hit and try. This is just"
+    },
+    {
+      "start": 973.221,
+      "end": 978.342,
+      "text": "like try and hit, hit and try, right? We"
+    },
+    {
+      "start": 976.781,
+      "end": 979.7819999999999,
+      "text": "have to keep on playing with the prompt."
+    },
+    {
+      "start": 978.342,
+      "end": 981.742,
+      "text": "We have We have to probably see the"
+    },
+    {
+      "start": 979.782,
+      "end": 983.302,
+      "text": "output. Then, if you are satisfied that"
+    },
+    {
+      "start": 981.742,
+      "end": 985.4219999999999,
+      "text": "particular output, then only we'll be"
+    },
+    {
+      "start": 983.302,
+      "end": 987.702,
+      "text": "using that particular prompt. So, this"
+    },
+    {
+      "start": 985.422,
+      "end": 989.422,
+      "text": "basically uh tells us that you have to"
+    },
+    {
+      "start": 987.702,
+      "end": 991.062,
+      "text": "keep on trying unless and until you get"
+    },
+    {
+      "start": 989.422,
+      "end": 993.782,
+      "text": "a suitable prompt, and it is probably"
+    },
+    {
+      "start": 991.062,
+      "end": 996.462,
+      "text": "approved by all the stakeholders. Right?"
+    },
+    {
+      "start": 993.782,
+      "end": 998.542,
+      "text": "So, this was all about the differences"
+    },
+    {
+      "start": 996.462,
+      "end": 1000.502,
+      "text": "between prompt engineering rag versus"
+    },
+    {
+      "start": 998.542,
+      "end": 1002.182,
+      "text": "fine-tuning. I hope you have heard about"
+    },
+    {
+      "start": 1000.502,
+      "end": 1004.6619999999999,
+      "text": "the challenges, things, and all. Now,"
+    },
+    {
+      "start": 1002.182,
+      "end": 1006.542,
+      "text": "when to use what? It is very simple. If"
+    },
+    {
+      "start": 1004.662,
+      "end": 1008.3820000000001,
+      "text": "you have up-to-date domain-specific"
+    },
+    {
+      "start": 1006.542,
+      "end": 1010.422,
+      "text": "information, you can definitely use rag."
+    },
+    {
+      "start": 1008.382,
+      "end": 1012.342,
+      "text": "If you want your entire AI assistant"
+    },
+    {
+      "start": 1010.422,
+      "end": 1014.3820000000001,
+      "text": "chatbot to work like how you"
+    },
+    {
+      "start": 1012.342,
+      "end": 1016.1419999999999,
+      "text": "specifically want with respect to each"
+    },
+    {
+      "start": 1014.382,
+      "end": 1017.7819999999999,
+      "text": "and every inputs that you specifically"
+    },
+    {
+      "start": 1016.142,
+      "end": 1020.3420000000001,
+      "text": "give. Right? From, let's say,"
+    },
+    {
+      "start": 1017.782,
+      "end": 1022.3820000000001,
+      "text": "introduction to probably greetings to to"
+    },
+    {
+      "start": 1020.342,
+      "end": 1023.942,
+      "text": "probably providing any specific company"
+    },
+    {
+      "start": 1022.382,
+      "end": 1025.782,
+      "text": "information. Let's say, I'm having an"
+    },
+    {
+      "start": 1023.942,
+      "end": 1027.582,
+      "text": "e-commerce website. I may want to"
+    },
+    {
+      "start": 1025.782,
+      "end": 1030.3419999999999,
+      "text": "probably go ahead and create a chatbot."
+    },
+    {
+      "start": 1027.582,
+      "end": 1032.2620000000002,
+      "text": "Whenever a person ask about anything"
+    },
+    {
+      "start": 1030.342,
+      "end": 1033.8220000000001,
+      "text": "related to any device, it should"
+    },
+    {
+      "start": 1032.262,
+      "end": 1035.702,
+      "text": "probably provide all the possible"
+    },
+    {
+      "start": 1033.822,
+      "end": 1037.782,
+      "text": "options. Uh let's say that I want to"
+    },
+    {
+      "start": 1035.702,
+      "end": 1039.582,
+      "text": "probably go ahead and buy iPhone. Right?"
+    },
+    {
+      "start": 1037.782,
+      "end": 1041.222,
+      "text": "So, my chatbot should provide all the"
+    },
+    {
+      "start": 1039.582,
+      "end": 1042.582,
+      "text": "options related to iPhone. Hey, do you"
+    },
+    {
+      "start": 1041.222,
+      "end": 1044.302,
+      "text": "want this specification, this"
+    },
+    {
+      "start": 1042.582,
+      "end": 1045.862,
+      "text": "specification, this specification?"
+    },
+    {
+      "start": 1044.302,
+      "end": 1048.062,
+      "text": "Right? And select one of the"
+    },
+    {
+      "start": 1045.862,
+      "end": 1050.0620000000001,
+      "text": "specification to go ahead and buy that"
+    },
+    {
+      "start": 1048.062,
+      "end": 1053.1019999999999,
+      "text": "particular product. Right? So, I want my"
+    },
+    {
+      "start": 1050.062,
+      "end": 1054.6219999999998,
+      "text": "chatbot to work based on my organization"
+    },
+    {
+      "start": 1053.102,
+      "end": 1056.9820000000002,
+      "text": "goals. At that point of time, I can"
+    },
+    {
+      "start": 1054.622,
+      "end": 1058.0220000000002,
+      "text": "definitely use fine-tuning. Right?"
+    },
+    {
+      "start": 1056.982,
+      "end": 1060.182,
+      "text": "So, I hope you like this particular"
+    },
+    {
+      "start": 1058.022,
+      "end": 1061.262,
+      "text": "video. Uh this was a quick video to make"
+    },
+    {
+      "start": 1060.182,
+      "end": 1062.382,
+      "text": "you understand between prompt"
+    },
+    {
+      "start": 1061.262,
+      "end": 1064.182,
+      "text": "engineering versus rag versus"
+    },
+    {
+      "start": 1062.382,
+      "end": 1065.182,
+      "text": "fine-tuning. This was it from my side. I"
+    },
+    {
+      "start": 1064.182,
+      "end": 1066.022,
+      "text": "hope you like this particular video."
+    },
+    {
+      "start": 1065.182,
+      "end": 1067.0,
+      "text": "I'll see you all in the next video."
+    },
+    {
+      "start": 1066.022,
+      "end": 1067.0,
+      "text": "Thank you. Take care. Bye-bye."
+    }
+  ]
+}

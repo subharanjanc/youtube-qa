@@ -1,0 +1,514 @@
+[
+  {
+    "id": "40f464eaa16cbe4d1aaae6a0a1a2b2077534cfe3d99a161be15244c20c09d83e",
+    "text": "hello guys welcome back let's talk about agents right I haven't created the video for quite a long about the agents and agent seems to be the top of the town right now right there are many agents out there or the let's say the platforms from where you can create the llm agents one as you can see on the screen it is the lcraft and to name some of those there is this autogen and open source programming framework for agentic AI and there is this crew AI I hope you know about this also AI agents for real use cases and there is also this introducing the Transformers agent from hugging face that is just to name some of those but then the focus of this video as well as some of the videos in the future will be related to The Lang graph this will be just the introductory video let's get started okay as you can see on the screen it is Lang graph so just to mention what is Lang graph here it says the gain precise and control with lra to build agents that reliably handle complex task at the end what agent does is because agents were there from for quite quite a long time now right what it does is it helps you to connect or",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 0.04,
+      "end_seconds": 74.52000000000001,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4d201700e016771e5f888c958f56b36dbf1d708643137f07e53f1b0cc40b912a",
+    "text": "build agents that reliably handle complex task at the end what agent does is because agents were there from for quite quite a long time now right what it does is it helps you to connect or let's say do different task at the same time let's say you have five different task to perform for the llm you can create agent and say okay these are the tools that you need to go and Source the information for it goes through these tools and you get the information that is how the high level agent uh works right here it says that which is just a program driven by an llm and the agent is empowered by tools to help to perform the actions right that's it so yeah for starting about the Lang graph what you can do if you want to explore more is this is the documentation you can see from here there are different things with the Lang graph and one exploration before going into this Lang graph video I just want to make sure there might be some questions okay and this Lang graph fq clearly answers those doubts which I had also before it says here do I need to use Lang chain to use the L graph one thing to remember is Lang graph Lang",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 56.44,
+      "end_seconds": 133.67999999999998,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=56s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "58276dc7aadff0d46c6b29b64d66a905c31b26a823a8e0de1f646dcf6a388c82",
+    "text": "some questions okay and this Lang graph fq clearly answers those doubts which I had also before it says here do I need to use Lang chain to use the L graph one thing to remember is Lang graph Lang Smith and Lang chain are from the same company Lang chain right so there might be some confusion okay do I need to learn Lang chain to use the Lang graph or not and so on no Lang graph is an orchestration framework for complex agentic systems and is a more low level and control level than L chain agents right we know that okay it is not uh we don't need to use the Lang chain and also how is Lang graph different from others so other agentic Frameworks can work for simple generic task but for but fall short for complex task so we'll we'll be going in the future let's see how how it goes I will try to create more complex agents also but yeah just go and look here is langra open source yes it is open source is lcraft cloud open source no it is not open source because they need to make some money and then they have this lcraft Cloud I will create more more videos into that in the future but now you can go just go",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 117.36,
+      "end_seconds": 188.55999999999997,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=117s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "43f18e74a8195a847ce653a9371974ed63e3e5832e8b06bc0859cd9f5db4105c",
+    "text": "open source no it is not open source because they need to make some money and then they have this lcraft Cloud I will create more more videos into that in the future but now you can go just go through this and there is this get started with python and get started with JavaScript I'm going to go with this python one if you want to follow along with me this is the place where I will be taking the examples from if you want to run this it's fine but how I will be doing is in my GitHub repository here you can see there is a folder called Lang graph and there is one I python or let's say jupyter notebook which is already here I already cloned this in my computer you can see here I'm inside this YouTube stuff if I do LS you can see that there is already the Lang graph folder I will go inside the Lang graph uh folder here and if I do lsli a I have already created the virtual environment but it is not activated yet right but if you want if you don't know how to create the virtual environment there is just one command that you can run so python 3-m V EnV and you you can give the name VNV",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 175.84,
+      "end_seconds": 246.95899999999997,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=175s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6faf0460096bff4e36fcd685c2febaa0ce32abd3b68ed74237829476af349b9b",
+    "text": "but it is not activated yet right but if you want if you don't know how to create the virtual environment there is just one command that you can run so python 3-m V EnV and you you can give the name VNV and Source being activate I have already created the virtual environment there I will just activate that virtual environment this is the good practice for you also always create the virtual environment before you do some python stuff the packages that you install will be just inside this virtual environment so yeah now what we can do is we can open this in uh vs code I will be opening this in vs code so it is opened here here I will just bring the vs code here so yeah this is the Jupiter notebook right for first thing first you need to attach this to the virtual environment that we just created it's already shown here vnb but for you if it's the first time you need there will be WR here Corel and you need to click here and choose the virtual environment that you want this is already here for the first time it might also need to install the carel so that's that so yeah now let's go through this through this Jupiter notebook what we will be doing",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 230.4,
+      "end_seconds": 301.639,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=230s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3b732004e261b86806e7dc89d0cf40ba7928d30f4852ec676804b3c0a7868819",
+    "text": "that you want this is already here for the first time it might also need to install the carel so that's that so yeah now let's go through this through this Jupiter notebook what we will be doing here right simple graph with two nodes connected by ages to get you started we need to know how the graph works first right and then we'll build a basic chatboard and then we will enhance the basic chatboard with the tools because agent uh is better with the tools right we can attach different tools and we will be using ol Lama in this case because what I try to do is here this is the basic uh Lang graph example we can use AMA and I'm going to use the Lama 3.18 B for basic testing before going through this what you need to do now is you need to have Ama installed in your machine you can see this is the AMA link you can go here and download it for your machine and open it once you open it on the on the top of the screen you will be seeing the AMA logo on the top then we we know that ama is there so if that is done then you are fine and also I will",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 288.44,
+      "end_seconds": 356.28,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=288s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5643806003bf807ff27bbdfc8ddb9ed642874c790c28e464977698d363b7a004",
+    "text": "the on the top of the screen you will be seeing the AMA logo on the top then we we know that ama is there so if that is done then you are fine and also I will show you from the terminal let me go to the terminal also if I do here AMA list it shows here different different llms that I have downloaded and I will be using the Lama 3 and if you are new to AMA again I have created the playlist already you can watch uh the videos there right now let's say that you have installed AMA and also you have pulled the Lama 3.18 or any llms you want what we can do now is we can install Lang Smith and langra L Smith is there because we want to have the traces into the into the langage Smith and it is recommended it's not mandatory but recommended and also the Lang CH open AI is there I will show you why it is there now we need to First install this and there is this Dash Das percentage percentage capture just it does not show the output of the installation this is a good uh way of writing in the Jupiter notebooks now let's go first with the simple example right from Lang graph do",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 343.84,
+      "end_seconds": 416.56,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=343s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "15d9aea779f743390d14f8f066dd4031ef694229a3769881cb5dbe813600af7e",
+    "text": "percentage capture just it does not show the output of the installation this is a good uh way of writing in the Jupiter notebooks now let's go first with the simple example right from Lang graph do graph we import the graph we need to import the graph and then we Define a lang chain graph so we say graph Builder equals to graph right when we do this now we can create a functions so here it says let's first understand how the graph things work right nodes act like functions that can be called as needed so two things that you need to be careful if you don't know already there is called there is a thing called nodes and there is a thing called ages in in graph and ages connects the nodes just remember this for now right now we have SIMPLE function here function that it takes input returns input plus High we have another function let's say another tool it it takes the input two and input two plus there here it says graph Builder this is what we have here do add node it is clear like we add the node and we say here node one as it is mentioned here and then function one which we created here this is the name",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 402.479,
+      "end_seconds": 479.08,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=402s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6ad9c96de74fe23c8e1123f792030638ff311aaa1007e7a4124310605edaeb3d",
+    "text": "Builder this is what we have here do add node it is clear like we add the node and we say here node one as it is mentioned here and then function one which we created here this is the name unique name that you can provide anything but this must be the function that you created once we run this we created two nodes right and now what we can do is we can we can create or let's say uh add the ages to connect the two nodes so here we are saying let me make this up here it's saying graph builder. add age so we are adding the age from node one to node two it is saying where to go right and then the graph Builder the set entry point let's say you you have your nodes and the edes but you need to provide the entry point let's say from where it needs to start and say where it needs to close so I'm saying here set entry point to node one so node one will be the entry point and node two will be our finish point right it's simple simple commands here and now we can say after we do all this we need to compile this this this is how it works",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 464.919,
+      "end_seconds": 538.1999999999999,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=464s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5feab96898a30d02c9d5d721410ab96177f6240fee2ac4e8175e60d14bf4fc79",
+    "text": "one will be the entry point and node two will be our finish point right it's simple simple commands here and now we can say after we do all this we need to compile this this this is how it works you can just write this do compile if I run this and then once this is compiled this is a simple code provided in the documentation which we can use to visualize the graph so yeah when we run this you can see this is good part of langra because whatever I have mentioned until now it might be okay what is going on here why are you saying this okay I still didn't get it but now the good part of graph things is now once you just look into this diagram or figure you understand okay there is a starting point there is a end point once we start there is node one and node one goes to the node two and there is the end so it's clear right that is the important or that's the good part of Lang graph also well that is the good part of graph but also in Lang graph you can know uh which uh nodes is going one after the another and so on now what we can do is",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 522.719,
+      "end_seconds": 593.519,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=522s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0dd3e49c1214014a4dcdfcca84a3041584ef92fdaca8d5e60800ccd2429f46b7",
+    "text": "also well that is the good part of graph but also in Lang graph you can know uh which uh nodes is going one after the another and so on now what we can do is we can invoke it right the main purpose of creating the graph is to invoke it isn't it we can just say here hello why is it here hello High there we have here in the beginning we have high and there is there right and now we are invoking with with the hello meaning that it goes hello High there so that is how the graph works so this is the simple example of of the graph which contains the node and edges now I hope you get little bit of the idea uh about the graph things and and the L graph how it works right now let's build a basic uh chat boo so for that as I said you I'll be using the Lang Smith for the debugging collaboration test and monitor your Alam applications you can go here and here you can you can go here and create uh account and so on so you can get a demo or just go here and and and see the things I will go back to the Jupiter notebook so here this is a thing",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 581.32,
+      "end_seconds": 656.48,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=581s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "96cbe5721d1eff88639804995a96f230700e8c82ce5b2f0940ec2e6db27f99b8",
+    "text": "and create uh account and so on so you can get a demo or just go here and and and see the things I will go back to the Jupiter notebook so here this is a thing a small small function which takes into the environment variable so it is not visible in the in the in the duper notebook so I will run this and once I run this as you can see here I have taken the environment variables from Lang Lang Smith although it is saying here Lang chain Lang chain it is the Lang Smith things right so these things you will get it from the Lang Smith project you can just give some name here it will be created there and we need to get the API key for example if I run this it will ask me here provide the API key right for that what I need to do is I need to go here and probably I have somewhere here upon Lang Smith so this is the Lang Smith it is reloading let's see so yeah this is the Lang graph tutorial the name that I have used right I'm going to use this and if you go to the settings and here are the API keys I have here Lang graph and Lang graph",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 641.639,
+      "end_seconds": 714.48,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=641s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ccd8209818f50e2d50e908885c91aca5f620a187a207ad1a7bb682458f0421a6",
+    "text": "see so yeah this is the Lang graph tutorial the name that I have used right I'm going to use this and if you go to the settings and here are the API keys I have here Lang graph and Lang graph Studio two API keys right I have already taken this but now I forget what it is so I will what I will do is I will create a new API key I will just say here test for now I will create it I'm showing you this because I'm going to roke it it once I create the video so what I do here I go here and I will paste it here right I will do enter okay now I'm I provided the langage Smith API key and these other things from where I get I will just quickly show you so here if you go to this let's go to back let's say you want to create a new project right you go to new project you can see these things are already being provided here you just copy these things I'm using the EU you might be using USA so the the inpoint might be different but you can provide different names here and just copy this you don't need to create the project here when you run the code",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 700.24,
+      "end_seconds": 769.6,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=700s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d65db15ac33cecbd7abeb682e794e685713ff6fe98c23ec4a10cc62bce7f2090",
+    "text": "using the EU you might be using USA so the the inpoint might be different but you can provide different names here and just copy this you don't need to create the project here when you run the code the project will be automatically created here right now let's get back here so yeah that is done and now as I said you before I'm not going to use the open a but I install the open AI Lang chain open a package why because there is a thing called AMA has now built in compatibility with the open a chat completions meaning that you can use this chat open AI but you can use the models from the AMA so you if you want to know more just go through this and here you can uh read about this but the good part here is what what we can do is we can import the chat open AI from Lang chain open AI right and then as I said you here you need to provide the base URL and that is where the AMA listens to make sure that you have Ama installed or not this will not work if you don't have the AMA already running you install that is one part and then you need to run",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 755.959,
+      "end_seconds": 829.519,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=755s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d31c3cf4c5d10312c0d8f6d650e93527c370547ce8ac81cc80c13f919afe3d3d",
+    "text": "URL and that is where the AMA listens to make sure that you have Ama installed or not this will not work if you don't have the AMA already running you install that is one part and then you need to run also if you click this if it shows AMA is running then it it is running so you make sure that it is running in this Local Host 11 1434 so yeah this is the simple thing chat open AI you can you don't need to provide API key because we are using local local model so you can just write here anything example for here I'm writing provide anything anything here so yeah anything here model is you can use the models the one that you downloaded from the olama and base URL is this one once I run this now I can use for example it say chat open AI okay I need to import this and then it's there meaning that now we have the model with this chat open a class right that's that's easier and now we need to start by creating the state graph our state graph object defines the structure of our chatbot as the state machine and we will be adding nodes to represent llm and functions and then as is to specify",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 812.199,
+      "end_seconds": 887.68,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=812s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "97f31a9281d631287e919b3c6a975fcbcbd4a6a891ce9570efbaccf0b65c0ae9",
+    "text": "start by creating the state graph our state graph object defines the structure of our chatbot as the state machine and we will be adding nodes to represent llm and functions and then as is to specify how the B should transition between these functions as I show you before also right this is the code that I have taken from the Lang and documentation it's just importing the things here you can see we import the state graph we need to start end and and there is a uh class called and this is the type dict messages annotated this is a list and we have this add message function so this is you can see here it is already being imported and if you want to know what is inside this add message what you can do let me first uh build this graph and I will just uh show you what is inside this add message you can just say add messages two question marks and shift enter you can see the documentation of add message here it says merge to list of messages updating existing ones by the ID right you can just go through this and see what is doing it under the hood this is the good way of how you can view the documentation let's go into the",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 873.88,
+      "end_seconds": 945.68,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=873s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "04621e8ef3ebe0f67fb37d00d7cef2ca8d481455bb3233136492848b6e367c1e",
+    "text": "of messages updating existing ones by the ID right you can just go through this and see what is doing it under the hood this is the good way of how you can view the documentation let's go into the next one now where was I I Was Here and Now our graph knows two things right every node we Define will receive the current state as input and return of value that updates that state right and there is the messages will be appended to to the current list rather than directly over written that's what I just showed you right this is communicated via the pre-built add messages function in the annotated syntax that's what I just uh showed you so yeah now what we can do is we need to create a function same as before now we need to create a function that function behaves as a node right here we says Define chatbot we have we Define the state messages llm local is what we created invo book and we provide the state and the messages right and now we can just say add node here this is the simple function and we add the node I will run this one now here we can say Okay add ages we want to add the ages I'm saying here start",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 929.72,
+      "end_seconds": 1007.72,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=929s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "70f83c1e62db039866dea4d47a5d065abb3ea6daef30f3bbe3187ca2684cfc33",
+    "text": "right and now we can just say add node here this is the simple function and we add the node I will run this one now here we can say Okay add ages we want to add the ages I'm saying here start because we want to start from that and into the chatbot and from chatbot we want to end so the flow is is there right and we need to compile after this this is what I just showed you and again the same code as before we can run this to see the flow or the graph there is the start we have one function in this case chatbot and then the end and now we can run this so this is just the code again to run it all the comment is written here we are calling the llm we are getting the answer there is assistant there is human and we go through the as a chatbot right there is nothing fancy here but you can go through each and every line if you feel if you feel confused so I will run this once that is run you can see here on the top there is this user it says please enter or uh to confirm or escape to cancel so I will say here just is a",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 992.279,
+      "end_seconds": 1061.96,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=992s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "409b5cdb81d54576336fa84fbcb65e40108435771fd5f06cfea56dbb80c5b726",
+    "text": "once that is run you can see here on the top there is this user it says please enter or uh to confirm or escape to cancel so I will say here just is a simple example I will say what okay I will say just hi let's see what happens when I say hi from the human now there will be the assistant part right so here in the in the beginning you can see yeah now there is the assistant because before there is the user and you can see user is here and how are you doing today is there something I want to help with our chart what I can do here is I will say what is the weather of hink key right I will type enter and now assistant is the llm that goes through and tries to get the answer for us right now let's wait for the answer this is I'm using local machine or local llm so it is taking some time right so here you can see as Helsinki the capital city of Finland has this this this and it says uh year round temperature and so on but it does not provide me the exact temperature because this is just the basic information from the llm right we haven't attached any",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1049.679,
+      "end_seconds": 1124.76,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1049s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "abb4679866d388b26ca5cdf5ff28482da4edbf2b98b69f758bef8112cd4a5536",
+    "text": "this this this and it says uh year round temperature and so on but it does not provide me the exact temperature because this is just the basic information from the llm right we haven't attached any tools into it so later we'll be using the same example but then we'll attach the tool to go and find from internet the latest information now I will just type here q and enter so now it says goodbye right it goes out and this is just the simple example I'm showing here the next or the final part now is enhancing the chart B with the tools right and one thing and then we'll be using the web search tool as I said you before and this one thing you need to be careful here is it relies on the llms tool calling support So if you are doing some let's say the advanced uh tool calling then you need to be careful in choosing the llms because it says here tool calling support which is available in anthropic opening Google JY and number of other llm providers when you test locally something might not work at some point if that doesn't work then switch into these these model providers then it should work right for us this is the normal simple thing so it will work",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1109.12,
+      "end_seconds": 1186.08,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1109s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ecaef6464306099635377a00b2a4af35c37a70f1cbeb39a39436cc659116cf2a",
+    "text": "test locally something might not work at some point if that doesn't work then switch into these these model providers then it should work right for us this is the normal simple thing so it will work what will be what will we be doing now is in order to connect to this internet we will be using the Tav search engine for that first we need to install necessary packages again and when this is installing okay it already installed I will go to this tavil sorts engine because we need to get this Tav API key so this is the link to the documentation into the Lang chain you can see here how to use this but in order to get the API key here is this T AI I will provide the link in the description so from here you need to create the API ke and you can see there is 1,000 request is free so this is the API key I will copy this one I will go back to to the Jupiter notebook and here I will run this Command right shift enter it ask me here the API key I will say contrl V enter and now I provided the API key meaning that whenever we call this it will now go and search uh into the internet and",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1172.159,
+      "end_seconds": 1249.2,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1172s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "bb6f4cead99fe2f9b372394966cfd6cd2047399a3a97025948ac71ce7ea276a2",
+    "text": "Command right shift enter it ask me here the API key I will say contrl V enter and now I provided the API key meaning that whenever we call this it will now go and search uh into the internet and we will create a tool for that so yeah let's define the tool so from Lang chain community. tools do table Source we import this table Source results that's it tool this is the table is for maximum result equals to two if you just want one then that's fine also and then tools equals to Tool this is as simple as it is and just to see if it works or not we can say tool. invo what is the weather of hinki in Celsius right I will run this it it must get the answer from the internet so you can see here it says location name hinki region Southern Finland this this this okay latitude longitude and so on right and then if you go here okay last updated 24811 today is 811 1105 when I record this video it says 11 temperature is 19.9 De right so yeah it provides the answer and it's correct now what we can do is the llm was before without the tools now we need to have the llm with tools so here",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1232.039,
+      "end_seconds": 1314.039,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1232s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3e05fd42d7f6dfa1e11f8b9f90e001290f9429832ac514460f46bf7c08547ecd",
+    "text": "video it says 11 temperature is 19.9 De right so yeah it provides the answer and it's correct now what we can do is the llm was before without the tools now we need to have the llm with tools so here is the llm local. bind tools and we just gave it the tools that's it now same as before we need to go through this this process of creating the node as you can see here we are using the llm with tools graph Builder we need to create the graph and same as before we need to create a function here and we need to add the node so I added the node here that is great now we create a function to actually run the tools if they are called before we just have the normal LM uh function but now we need to create the tool for that as you can see here this code might be a little bit long but then this is all because I have added the dock strings also there so a class representing a node that processes and executes the tool request embedded in the last AI message we have this basic Tool uh node right and we import the tool message here you can see here we have init function initializes the basic",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1295.559,
+      "end_seconds": 1369.3200000000002,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1295s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7e8d178078f7b6e782c4ec772c12104098a7b3969724085985598699aaf51145",
+    "text": "executes the tool request embedded in the last AI message we have this basic Tool uh node right and we import the tool message here you can see here we have init function initializes the basic tool node with a list of available tools right this is just the normal thing we are doing here and the second thing here is the same as before but what we are trying to do is we and it is mention here process the input data to extract the latest message and execute the responses tools so there are different arguments and it return something and if there is some error it raises the message error message and so on so the the code is quite straightforward so it first list list to accumulate the output of each tool iterate over each tool in the message invoking the corresponding tool and collecting the results right you can see for Tool call in messages message the tool calls and so we just have one tool now but imagine that might be many tools also provided and then here is the append into the tool message content name uh tool ID and so on and then last we just uh return the message output return so dictionary with the key message and then what we do is example",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1355.12,
+      "end_seconds": 1428.559,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1355s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "40b6bc0afd36b7cbb51153380f093732f0add1a27756e3e90498493fab01c3f6",
+    "text": "here is the append into the tool message content name uh tool ID and so on and then last we just uh return the message output return so dictionary with the key message and then what we do is example uses in instantiating the basic tool node with a list of tools but we just have one tool isn't it so we just pass that into the basic tool node and we add that at a node it seems to be little bit more or okay what is going on here but as I said you before also when you know the picture or diagram you know that we are just creating our tool which does the thing that we want right and then we have this add node uh tools so I run this one and now let's define the conditional ages there is now one additional thing that we need to do so we have the node right and there is this conditional ages meaning that we want the llm to go to that if needed only it's not mandatory that it needs to go to that particular tool but then if we have this conditional edes it says that if you need to go to that node please go there and return the answer right here you can see this is the conditional",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1411.76,
+      "end_seconds": 1489.559,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1411s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f801d12d9921a12f24d76eaae342f226b7bfcee19a48a890d75cf83dc22f28cf",
+    "text": "to that particular tool but then if we have this conditional edes it says that if you need to go to that node please go there and return the answer right here you can see this is the conditional things here we are saying Define the root tool so determines the next node in the processing graph based on the last AI message in the state so here also everything as you can see here it's the same right but then we need to not notify two things I think one this message makes it makes it clear this function is used as a in a conditional age to decide whether to Route the flow to the tools node if the last message contains the tool calls or the end node if no tool calls are present meaning that if it says okay go to the tools it will go to the tools and get the answer and go go to the end one otherwise it will just go to the end one again it seems to be confusing but then if you see the graph it will be it will be clear I will run this one and once this is done we add the conditional edges from the chart B the function determines the next node is the route tools and",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1475.039,
+      "end_seconds": 1548.3600000000001,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1475s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a62ef445c6899b641b8189b7dbfa64e682abd55aaae2fa9235206dec1fd00a64",
+    "text": "see the graph it will be it will be clear I will run this one and once this is done we add the conditional edges from the chart B the function determines the next node is the route tools and tools uh tools mapping the function return values to specific if the function returns tools route to the tools if the function Returns the end route to the end right and then we add the ages and tools from tools it goes to the uh chatbot start from the chatbot and so on and then we compile this if I run this and now this is the graph viewer I think this is what makes it easier now for you to understand so before what we had we had the start one chb one chatbot two and end it needs to go through one to two and then to the end right so here what we are doing is we said okay start it goes to the chatbot and here if it gets the answer it goes to the end that is what the agent uh building agent is all about right and then there this conditional things if it needs to go here into tools it goes to the tools it gets the answer and from the chatbot it goes to the end",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1534.84,
+      "end_seconds": 1615.12,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1534s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3ae574485c2d31337204c1721e95a5c10127d35fa4d0191f35a51142999d9518",
+    "text": "agent uh building agent is all about right and then there this conditional things if it needs to go here into tools it goes to the tools it gets the answer and from the chatbot it goes to the end right so meaning that because here we are going to ask the web sorts things so what it needs to do is first go to the chatbot it needs to call the tools get the answer and then end so that is how it works this figure might be complicated if you add more tools and how you want to behave the agent to perform right so now what we can do is the simple thing that this is the same code that I have shown you before also now we can ask the questions right so I will draun this one what I can do is the same question here okay what is the weather of H in key today let's say right and then I can say yeah provide in Celsius let's see so that is the that is the query that we provide for the LMS okay it says here this this this and then it should provide us the answer here okay temperature based on the tool call response the current weather in hingi today is temperature this feels like",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1598.559,
+      "end_seconds": 1674.08,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1598s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "56d7289904933157f9890d8d208ecba2a601422db17e215a9814013299ce17dc",
+    "text": "provide for the LMS okay it says here this this this and then it should provide us the answer here okay temperature based on the tool call response the current weather in hingi today is temperature this feels like 19.9 humidity this this let me know if you have any other further assistant so that's correct right so it just wait through this and finds the finds the correct correct answer and you can see here what it sorts into this query is also location name hinki region this and today is 2024 811 so yeah it goes through the 811 also the time is the same as what I asked uh currently right so it gets all the information from here so yeah that's how we can use the I'll will just quit it here that's how we can use the tools with the Lang graph okay so now quickly what I want to show you is how these all the traces is being logged into the Lang Smith because we configure the Lang Smith in order to have the traces into the Lang Smith for Clear visibility right I will go through the Lang Smith portal here and you can see this is this Lang graph tutorial that I provided when I initialize this or when I pasted the environment",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1659.32,
+      "end_seconds": 1730.159,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1659s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ffd05dd36b45ed5a5c762eab88dda8876c1d2ee4c12e77eb63d55c0f808d0473",
+    "text": "Clear visibility right I will go through the Lang Smith portal here and you can see this is this Lang graph tutorial that I provided when I initialize this or when I pasted the environment variables so if I go inside this you can see all the things that I have asked from the Lang graph so what is the wether inhal Sy key and all the things are being logged into the Lang so if I click inside one of this I will make this little bit bigger as you can see here all the steps that it goes through when answering the question is being provided here so here you can see I asked what is the weather of heny provid in Celsius there is the human part here and it goes through this T SS results right query and the query that it asked into that particular API was Helsinki weather today in Celsius and from here tool we have this um answer from it and if you scroll a little bit down and this is the AI based on this and that is the answer so it shows us step by step things how it goes and calls there and from here also you can see what is the number of tokens 767 promt tokens 103 completion tokens and",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1716.44,
+      "end_seconds": 1787.039,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1716s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0cc0c42f4cc6c7cc4c816a67a1647d64772946f60c6007f8bd3feb09acc2aba3",
+    "text": "and that is the answer so it shows us step by step things how it goes and calls there and from here also you can see what is the number of tokens 767 promt tokens 103 completion tokens and so on and yeah you can just scroll one one by one to see how it performs uh and you can see here this is the this is the tools and and so on I have already created videos long ago about the Lang Smith if you want to get started you can watch those videos but yeah just go through here provide those environment variables and you will see a good looking uh thing in the UI itself which helps you to uh see what is happening under the hood and also debug some things if necessary I hope by going through these simple examples you get to know how L graph works but one thing which might be difficult is you want to see the visualization of what is happening under the hood when the flow goes right let's say that for example in this simple example it it's it's better if we can know okay now it is going into the chatbot and then now it is going to call the tools getting the answer from the tools and going into the end uh node",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1770.799,
+      "end_seconds": 1843.96,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1770s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2e52ca15c1ab5ec7c823a611f6e51281390f9e0ba852cc951e4808a91c65d4d4",
+    "text": "example it it's it's better if we can know okay now it is going into the chatbot and then now it is going to call the tools getting the answer from the tools and going into the end uh node right end end part here so that is uh what I will be creating in the next video about this Lang graph Studio which helps you to visualize the things from the UI so that is the Lang graph UI until that thank you for watching and see you in the next video",
+    "metadata": {
+      "video_id": "eOhTv5WhvSM",
+      "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Agents",
+      "start_seconds": 1830.36,
+      "end_seconds": 1858.0,
+      "url": "https://www.youtube.com/watch?v=eOhTv5WhvSM&t=1830s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

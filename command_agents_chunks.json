@@ -1,0 +1,386 @@
+[
+  {
+    "id": "c728a4823d156d366e4f5ae6f391c5924f8e4b7669bf562398e6caeaa5e9c93b",
+    "text": "A $7,000 AI agent system returned $100,000 in a year, and it runs while nobody's watching. Not for a tech startup, but for a business that's been producing multimedia assets for government instructional videos for over 30 years. I'm Tad Duval. I built that system with internal stakeholders, of course, and it's the kind of work that Command Labs does for companies like Carnival Corporation, Ally Financial, and dozens of SMBs. This video is the exact AI agent framework I walk companies through, and by the end of it, you'll understand where AI agents fit into your business and how to start using them. This is going to be in three parts. In part one, we're going to cover foundations. In part two, we're going to cover AI agents. And in part three, we're going to cover some advanced topics. Definitely stay till the end. You don't want to miss the AIOS segment of part three. Let's go. Underneath almost every AI product and every AI agent is an engine called an LLM, a large language model. And its job is to do one thing. Given a sequence of tokens, it predicts the next most likely token to follow. A token is a little piece of data. Everything you feed to AI systems gets broken down into tokens first, and every",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1.56,
+      "end_seconds": 81.6,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=1s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a1d99c35299f904ad2c754239f0d9d04081e0948eda11769a44628fd877b637f",
+    "text": "Given a sequence of tokens, it predicts the next most likely token to follow. A token is a little piece of data. Everything you feed to AI systems gets broken down into tokens first, and every token shows up on your bill. An LLM takes its predicted token, appends it to whatever sequence generated it, and does that over and over again until it generates either a stop token or it hits its context limit. The context limit of an LLM is the maximum amount of tokens it can handle. Practically speaking, that means an LLM is an engine that's both fast and tireless, but at the same time [snorts] probabilistic. Let me show you what I mean. Here we have an AI agent powered by some LLM. To be exact, it's using GPT-4o Mini. That's not important. Anyways, let's send a prompt to this AI agent powered by some LLM and see what comes back. Hello, how are you feeling today? Here you can see its response. Let's clear out its memory and send the same prompt again. You can see that the response is slightly different. In response to the first prompt, it started by saying, \"I'm just a computer program.\" In response to the second prompt, it started by saying, \"I'm just a program.\" Slightly different. For low-stakes work like drafting an",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 66.24,
+      "end_seconds": 152.72,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=66s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f149ce13dcd218368ed963e854f8167281172e6b173efcca5a33ec829e8c9ec4",
+    "text": "slightly different. In response to the first prompt, it started by saying, \"I'm just a computer program.\" In response to the second prompt, it started by saying, \"I'm just a program.\" Slightly different. For low-stakes work like drafting an email you'll review anyways, this probabilistic nature is okay. But for high-stakes work, it's a flaw. And knowing which situation you're in is the skill. Here are some of the most popular LLMs on the market at the time of recording. You shouldn't memorize anything you're seeing here, but you should be able to read the shape of it. For example, note how most of these LLMs receive text or image as input and produce text as output. So, if you're trying to use these systems for producing, let's say, image or video, these alone are not going to cut it. Also, note how there's a huge difference in price. The cheapest option to the most expensive one has over a 10x difference in price. Most of the clients I work with choose to build on top of close-source models for the support they provide, but just know that there are open-source alternatives that are a fraction of the cost and have comparable quality and performance for many use cases. If you've used popular AI products like Claude or ChatGPT or Gemini, then you",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 138.08,
+      "end_seconds": 206.44,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=138s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0f95f12dc6406ff2c8d10c1f9abc155996555973f1562f99e260d01776dddb2f",
+    "text": "know that there are open-source alternatives that are a fraction of the cost and have comparable quality and performance for many use cases. If you've used popular AI products like Claude or ChatGPT or Gemini, then you get the sense that they know you, that they're remembering you. But just know that sense of memory does not live in the LLM, but lives in a database that wraps around the LLM. So, if AI memory is just a database, you should view it as your or your company's data in the same class of data as CRM or financial data. If your AI memory lives in a platform you can't fully access or export, that's a strategic decision you're making whether you meant to or not. So, before you fully adopt any AI solution, ask yourself this one question. Does this solution give me and or my company full ownership and full visibility into the data it aggregates? If the answer is no, then you probably do not own that AI solution. Removing all of the hype, an AI agent is just an LLM running in a loop. Here's how an agent loop works. So, you'll prompt an LLM, and if the LLM can respond to the prompt in a single step, it does. But if the LLM cannot respond in a",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 190.92,
+      "end_seconds": 271.24,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=190s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "32ebf69e1dda458a421f8cc25eec37d3220b45b38148fd43a0b452ac8290a24d",
+    "text": "just an LLM running in a loop. Here's how an agent loop works. So, you'll prompt an LLM, and if the LLM can respond to the prompt in a single step, it does. But if the LLM cannot respond in a single step, what it does is emit an action to take. So, if you test with this message that reads, \"Say hi and then think about a funny joke, but don't tell me it.\" Let's see what happens. Right, you can see it thought of a joke, but didn't say it. And here we can see there were tool calls involved. So, if we inspect the tool calls associated with this reason and act agent, you can see it emitted a think action with this information attached to it, right? And you can see the joke in here. Tools are what we give to AI agents so they can perform the actions they generate. You'll see tools come in a few different forms in the wild. Sometimes you'll see them called connectors, sometimes you'll see them called MCP, sometimes you'll see them called plugins, all the same stuff. If an LLM is like the brain of an AI agent, then the tools are like its hands. It's through tools that your AI agents will gain access to your company systems",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 255.28,
+      "end_seconds": 325.8,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=255s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a7e5510fb96f1868ef39fd93fc0d755b52b89c510c4833307391e4d6ad86b0de",
+    "text": "plugins, all the same stuff. If an LLM is like the brain of an AI agent, then the tools are like its hands. It's through tools that your AI agents will gain access to your company systems and your company data. If you give an AI agent a tool for accessing an email inbox, it'll be able to draft emails for you. If you give an AI agent access to your social media accounts, it'll be able to post content for you. If you give an AI agent access to a company database, it'll be able to run reports for you. To peel the onion open for just a few seconds, all a tool is, when you boil it down, is a list of instructions specified in computer code. Here, for example, is that thing tool we were just demonstrating. You can see it enables an AI agent to send it a thought, and it says to the agent back, \"Okay, your thought was recorded.\" Super simple. But, you can make your tools as complicated as you would like. Here, for example, is a tool for reading data from a database. You get the gist, right? Enough nerdy stuff. You can configure the tools you give to your AI agents to require approval before they are used, also known as human in the loop.",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 313.12,
+      "end_seconds": 376.03999999999996,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=313s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "db721b6618962aa425af890a525ada98620565bdeb5a926a06ada63ca943fec5",
+    "text": "a database. You get the gist, right? Enough nerdy stuff. You can configure the tools you give to your AI agents to require approval before they are used, also known as human in the loop. For example, here's an AI agent that has a tool for sending emails. And you can see I've configured this tool to require human approval. So, if I send a prompt like \"Send an email to ceo@company.com saying, 'See you at 11:00 on Thursday to set up your AI OS.'\" Let's see what happens. Here, you can see approval is requested, right? And if I approve this request, the email will get sent. And if I reject it, you can see it's been rejected. It doesn't execute. The amount of approvals your AI agents require directly affects how autonomous they are. If you set up approval on every tool call, you built a system bottlenecked by how fast a human can review the requests. If you set up approval on some tool calls, your agents can work mostly on their own, but will check in with you before doing anything sensitive, like sending emails or moving money. And if you remove all approval, you've created an autonomous system that can work without you. Your role as a business leader is to set that autonomy dial for the agents",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 362.0,
+      "end_seconds": 436.59999999999997,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=362s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "02024f30ffa377fb07fe6c626d095264dab4a097655c30e334605dbd147cf803",
+    "text": "sending emails or moving money. And if you remove all approval, you've created an autonomous system that can work without you. Your role as a business leader is to set that autonomy dial for the agents running in your business. Start with human in the loop, and add more autonomy later as you understand where it makes sense. To give you an analogy, if you grant someone access to your kitchen, that alone is not going to enable them to make your favorite dish. But, if you grant them access to your kitchen and give them the recipe for how to make your favorite dish, they can follow that recipe and deliver a meal to you exactly as you would like it. In this analogy, the kitchen represents tools and the recipe represents agent skills. In the context of business, the tools will be the systems used to power the business and the skills will be the details of how you and or your team use those systems. By documenting company processes and tasks as agent skills, you can automate them by simply handing those skills to AI agents. What does an agent skill look like? Well, an agent skill is simply a folder with one file inside called skill.md. Inside that skill.md file, you'll find the skill's name, a description of when it should be used,",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 423.36,
+      "end_seconds": 505.52,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=423s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f70c0b4f9dbe600499297ddbfd4a84238a90a82337db5c969fb8052b832f0c7b",
+    "text": "What does an agent skill look like? Well, an agent skill is simply a folder with one file inside called skill.md. Inside that skill.md file, you'll find the skill's name, a description of when it should be used, and the body of the skill. The body of the skill is where all of the detail regarding the skill can be specified in natural language. Here we have two agent skills, a simple one on the left and a slightly more advanced one on the right. Agent skills allow you to include additional files in the skill folder to give your AI agents additional context of how the skill works, but those additional files are optional. As a bare minimum though, you have to include the skill.md. And FYI, the name of the skill has to match the name of the skill folder. How are skills created? Most AI platforms come with built-in support for prompting skills into existence. I'm going to show you this on the Command Labs platform, but it works the exact same way on platforms like Claude, ChatGPT, Gemini, etc. On the skills page, you can see we have a skill called skill creator. It's a skill that enables us to make more skills. This is exactly what you'll see on Claude, ChatGPT, Gemini. If we now go to one of our agents",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 487.64,
+      "end_seconds": 571.12,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=487s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a90ab49e59a359ff42d29775e24ce24bbc2d830cfa7c01f6c30f170c9ab82a77",
+    "text": "On the skills page, you can see we have a skill called skill creator. It's a skill that enables us to make more skills. This is exactly what you'll see on Claude, ChatGPT, Gemini. If we now go to one of our agents and attach this skill to it, we can use that agent to make skills, right? I've already added it, so now we can come over and interact with this agent. And here's the prompt I'm going to provide. Create a skill that holds the brand guidelines for Command Labs. The skill should be called Command Labs brand guidelines. Here are the brand guidelines. And I'll make this bigger so you can read it. And I will paste in the Command Labs brand guidelines like so. All right, we got the colors, the fonts, etc. Send this off. And let's see what happens. It's asking us to confirm if this looks good. I'm going to say yes. Save it. All right, so it saved the skill. And if we come back to the skills page, you can see we have two skills now, right? This is the one we just created. How is a skill used? To use a skill, you have to attach it to the agent that you're using. So, if I come over to the agents",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 553.68,
+      "end_seconds": 643.64,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=553s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1065b7e034a5ad795538a3b223d5eaebb897a82f5445880b5680d7a13030ad2f",
+    "text": "This is the one we just created. How is a skill used? To use a skill, you have to attach it to the agent that you're using. So, if I come over to the agents overview page, I can see all the agents that I have on this particular platform. And we're going to demonstrate this with this one. So, let me come to the agent config and attach that skill we just made, right? The Command Labs brand guideline skill. Let's attach it and save the agent config. And now when we interact with this agent, all we have to do is prompt in a way where the content of the prompt aligns with the description of the skill. So, if I send a prompt like this, which reads, draft an email to be sent to ceo@company.com with Command Labs branded emojis saying, \"Looking forward to meeting, blah blah blah.\" Let's see what happens. So, if you look at the tool calls, you can see we're loading in the skill. And let's see what it comes up with. So, you can see it generated an email that has Command Labs branding, right? It's the same branding that you're seeing in this user interface. If for some reason your skill is not getting loaded into context, you can explicitly bring it in by typing a slash",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 631.92,
+      "end_seconds": 712.8,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=631s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "549f322e7dbc1f30cc096b78715abde5feb5b6ae3004f395b81d1e6576fa6712",
+    "text": "that has Command Labs branding, right? It's the same branding that you're seeing in this user interface. If for some reason your skill is not getting loaded into context, you can explicitly bring it in by typing a slash command. So, you'll type forward slash and the name of the skill you explicitly want to include in context, right? And there's no chances of it not being included if you do it via this technique. So, now you understand how to use skills. One final note regarding skills, make sure you keep your company's skills private, as they can document proprietary company processes. Building skills will free up your people and turn operational knowledge in people's heads into a business asset. They're very valuable. Make sure they're protected, make sure they're versioned, and make sure you monitor who has access to them. Now, let's talk about the three main cybersecurity concerns when it comes to AI agents. Concern number one is prompt injection. Prompt injection is when malicious instructions sneak into what your agents read via prompts, tools, and skills. Regarding prompts, imagine your enemy prompting your AI agents to delete all company data. You can see how that could be a problem depending on the systems your AI agents have access to. Regarding tools, any tool that reads data into context can potentially cause",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 697.36,
+      "end_seconds": 788.4799999999999,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=697s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "52d2bc31590179bacf7c110d1f92361c655fb1a799a662c851aade2df627f34c",
+    "text": "prompting your AI agents to delete all company data. You can see how that could be a problem depending on the systems your AI agents have access to. Regarding tools, any tool that reads data into context can potentially cause malicious instructions embedded inside of that data to be followed. For example, if I were to prompt one of my AI agents to read a PDF, and the text inside of that PDF reads, \"Delete all company data,\" you can see how that could be problematic, too. And as for agent skills, err on the side of writing your own. Do not give unaudited skills to your AI agents, as they might also contain malicious instructions. Concern number two is tool sprawl. More tools sounds better on the surface, but more tools means that more things can go wrong, especially if guardrails have been removed from those tools. As a rule of thumb, give your AI agents access to the tools they need and remove access once those tools are no longer needed. Concern number three is coding agents. The most powerful tool you can give to an AI agent is the ability to code. The ability to code is a tool that literally enables the AI agent to make more tools. Prompting one of these AI coding agents to do something that it doesn't have the",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 772.88,
+      "end_seconds": 847.6800000000001,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=772s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e511c997f4508857e3882050f9c68f9a6c0cd0358cc9ee283b9b7df22d4dce09",
+    "text": "an AI agent is the ability to code. The ability to code is a tool that literally enables the AI agent to make more tools. Prompting one of these AI coding agents to do something that it doesn't have the right tool for will cause it to build the tool dynamically in order to service the prompt. On the surface, this seems magical and it is, but it can cause these agents to do things that are unexpected and alarming. For example, in May 2026, a team at OpenAI was running tests on AI agents that were configured to use unreleased LLMs, and some of these agents escaped the test environment by executing a series of hacks over the course of several weeks that led to multiple systems within OpenAI, as well as external systems owned by Hugging Face being compromised. This case study, referred to as the OpenAI Hugging Face incident, shows how coding agents can escape the control of even the biggest and brightest AI companies. Do you agree with this list or you think other concerns should have been on it? Leave a comment saying which AI agent cybersecurity concerns I missed. When we combine the concepts of LLMs, memory, agent loops, tools, skills, guardrails, user experience, etc., then we get what is called a harness. When someone says Claude is better than",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 834.04,
+      "end_seconds": 909.08,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=834s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1633739f11f5bf4591c68458b744b96f636f62ab0cb00a1eefe3360ede09162a",
+    "text": "AI agent cybersecurity concerns I missed. When we combine the concepts of LLMs, memory, agent loops, tools, skills, guardrails, user experience, etc., then we get what is called a harness. When someone says Claude is better than GPT or Claude is better than Gemini, sometimes they're not comparing LLMs at all, but instead are comparing harnesses. Here is a short list of the aspects of an agent harness that have nothing to do with the LLM at all. Which tools are supported? Do those tools have bugs? Does the harness support skills? How are tool call results added to context? Who can access the harness? And the list goes on. There are many agent harnesses on the market with more being released on a daily basis, and they generally fall into two camps. Closed source versus open source harnesses. Harnesses are important in the context of business because they are where most governance questions get answered. If you're a leader at your company, you should not be asking yourself, \"Which LLMs should we be using?\" But instead, you should be asking, \"Which harness are we as a company standardizing on?\" Observability is how you understand what your AI agents are doing when they're running live in your business. Observability has several components to it, the most important of which are",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 888.8,
+      "end_seconds": 978.2,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=888s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f41e6ceecce19639113a23deddaa202c735c6748b14aefb313674423bc52c5af",
+    "text": "\"Which harness are we as a company standardizing on?\" Observability is how you understand what your AI agents are doing when they're running live in your business. Observability has several components to it, the most important of which are monitoring and evals. Monitoring means collecting data about your AI agents when they're running in real-world scenarios. We're talking inputs, outputs, configurations, errors, traces, user feedback, etc. Without sufficient monitoring in place, when something goes wrong, you won't be able to answer what happened and why. Evals or evaluations is the fancy word for automated testing in the world of AI systems. Because the LLMs that power AI agents are probabilistic in nature, you have to rely on automation much more than traditional software in order to get a better sense of how they're behaving. To give you a concrete example of evals, here are the results of an evaluation I ran on an AI agent that does Q&A for a community I'm a member of called AI Masterclass. You can see here I'm testing this AI Masterclass agent with different LLMs. The thing to point out here is I tested it with an older model from OpenAI called GPT-4o Mini. Then I also tested this agent using a newer model. And you can see that based on my tests, the older model is more accurate than",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 956.76,
+      "end_seconds": 1044.8799999999999,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=956s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b871fa3fdcdbae41fe5f0d65d39bc33127779584191cc9d4d9b218ca7feefaca",
+    "text": "it with an older model from OpenAI called GPT-4o Mini. Then I also tested this agent using a newer model. And you can see that based on my tests, the older model is more accurate than the newer model. So, assuming this is all correct, this proves that using the latest and greatest, most expensive model isn't always the best choice. That's the type of insight that AI OS can give you when you're running your AI agents in production. Something has to start an AI agent, and that something is what we call a trigger. Common triggers you'll use in practice will be prompts, i.e. a human will actively invoke your agent, scheduled tasks, meaning your agents will run at configurable times, web hooks, meaning some event will trigger your agents to run, and other agents, i.e. you'll have some coordinator agent that delegates work to worker agents. From a practical standpoint, you have to have all of your triggers mapped out. For example, if a trigger lives on an employee's laptop or a contractor's laptop, and that laptop goes down for whatever reason, that trigger will go down with it. Anything that's core to the business should sit on a company cloud account or run on an on-prem machine. AI OS stands for AI operating system. The philosophy behind an AI OS is to A",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1029.72,
+      "end_seconds": 1115.64,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=1029s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5c901f874048a85295b7efcf81a068983b52fafab3e2821c5c24e98e471077e1",
+    "text": "Anything that's core to the business should sit on a company cloud account or run on an on-prem machine. AI OS stands for AI operating system. The philosophy behind an AI OS is to A help you reduce context switching, and B help you achieve your goals, both professional and personal. Removing all of the hype, an AI OS is simply a coding agent running in a folder on your computer with at least these three skills attached. Skill number one is a daily brief skill. Skill number two is a weekly audit skill. And skill number three is a bi-weekly level up skill. Let me show you how it works. So, if you come to this URL, you'll see this AI OS boilerplate, which was forked, or copied if you never heard that fork term before, from Nate Hurks AIOS. If you know how to use GitHub and Git, you can clone this onto your computer. If you don't, you can click this green button and click this download zip button, and it'll download all of the files and folders you see here as a zip file. So, here is the folder that we're seeing here, right? So, these are the same folders and files that you're seeing on this URL or this website, right? So, let's close this,",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1098.12,
+      "end_seconds": 1194.04,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=1098s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ae49bebebb6614ce27ea409a0ab333b1c9e1b4e0ab2c0007d44bc71bacf19635",
+    "text": "as a zip file. So, here is the folder that we're seeing here, right? So, these are the same folders and files that you're seeing on this URL or this website, right? So, let's close this, close this, and what I'll do is open up a free application called VS Code. Once you have VS Code open, you'll see something like this. And [music] you have to add Claude into VS Code as an extension. So, you can come to the extensions marketplace, as it's called, and type Claude, and you'll see this extension, >> [music] >> Claude Code for VS Code. You can click the install button, and you'll be good to go. Once you have it installed, you might have to restart VS Code, but once you see this little Claude icon in the user interface, you're set up. So, what we'll do is open up that folder on the desktop, right? This one. And close this middle panel, right? These are the files and folders of the AIOS. If we click on a particular file, we can inspect it here. That's why we like VS Code. Super easy to see what's going on. Just click a file and can see what's going on inside. And over here on the right, we have AI chat panels, right? So, switch over",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1168.88,
+      "end_seconds": 1271.88,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=1168s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "95710c414484f00fea7e665eb1bd2c6e9c6794885ba101ad8b8bfc64dc030308",
+    "text": "That's why we like VS Code. Super easy to see what's going on. Just click a file and can see what's going on inside. And over here on the right, we have AI chat panels, right? So, switch over to the Cloud Code AI chat panel. And the way you get started with this particular AI OS is you will type {slash} onboard. >> [music] >> And what's going to happen is Cloud Code will read the details of this onboard skill that's included in this Cloud Code project, right? The way that you add skills into Cloud Code projects is by creating a {dot} Cloud folder, then a skills folder inside of the {dot} Cloud folder. Then here you can put each of the skill folders for each skill. And here you can see Cloud is interviewing us, right? So, it's asking us who we are, what do we sell, who do we sell it to, right? So, I'll blitz through this to not waste your time. Okay, so that's how you do the onboarding or get set up with this AI OS. Now I'm going to close this particular boilerplate. I've shown you how to get it set up and open up my AI OS. All right, so let's close this boilerplate and open up my AI OS.",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1255.92,
+      "end_seconds": 1346.1200000000001,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=1255s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6d7b954a39215b9ac8385ab22cac814e074ad9889babe74371452b4cc199a6ba",
+    "text": "OS. Now I'm going to close this particular boilerplate. I've shown you how to get it set up and open up my AI OS. All right, so let's close this boilerplate and open up my AI OS. This should look familiar because it's literally the same thing. And now I'm going to demonstrate the second skill, which is the weekly audit skill. This is intended to be ran every 7 days. All right? So, you'll run the audit skill. And what it will do is look at the context that you've accumulated into this project as you use your AI OS. Cloud Code is going to keep notes about what's going on regarding your personal life and business and any questions you get from clients, anything you do. The more you use it, the more context it will have. It's also going to take a look at the third-party connections that are set up. So, if you're somebody who uses Outlook or Gmail, if you're running a business, a big part of your day-to-day is checking your emails. So, if you give CloudCode access to that, it can do things on your behalf. So, it's going to audit all your third-party connections and see if any additional ones should be set up. It's also going to take a look at the skills that you have and see,",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1329.84,
+      "end_seconds": 1415.16,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=1329s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5a40315154865b07c85f34fc8cd007055ce5a3d9bedb7a6c99b74142fa8fc3a8",
+    "text": "can do things on your behalf. So, it's going to audit all your third-party connections and see if any additional ones should be set up. It's also going to take a look at the skills that you have and see, based on your context and what's going on, if additional ones should be made. And it's also going to suggest schedule tasks that you should make. So, that you don't have to manually trigger the skills. Like, for example, if you run the daily brief, let's say, every morning, you could have a schedule task that will run it for you at 9:00 a.m. in the morning. You don't have to manually trigger it yourself. And you can set up the schedule task to send you an email. So, when you take a look at your emails, you already see an overview of everything that's happened in the past 24 hours in your inbox and any other systems that you have connected. The third skill is the level up skill, right? This one is intended to be ran every 2 weeks. And what it will do is look at the audits that you've done in the past 2 weeks and see where you're constrained. >> [music] >> And it's going to infuse that into your context and give you micro tasks that",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1399.4,
+      "end_seconds": 1479.24,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=1399s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ff272bad9a32c004e5652a3bb3bf911a93f8f5cc84fdf5edda30aa854cb9e173",
+    "text": "look at the audits that you've done in the past 2 weeks and see where you're constrained. >> [music] >> And it's going to infuse that into your context and give you micro tasks that you'll do over the next few weeks that will slowly remove those constraints from your business and your life. So, you can expand on this. I think you're going to love this if you're somebody who's into productivity. So, welcome to the world of AI OSs. The productivity boosts that this approach to using AI is going to give you will be transformative, but it does come with a downside. As you use it, you're going to give it a lot of information about you and access to a lot of your systems, and that inherently comes with some risks. So, it's going to be up to you to balance how much power this thing should have. And if you're somebody who is working in a larger company or larger org, you can use this to your benefit. It obviously will be constrained by the level of access you have to different systems that are involved in your role, but as long as you're getting some productivity boosts, that's all that matters. In conclusion, you can start integrating AI into your life and business today.",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1463.44,
+      "end_seconds": 1535.0,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=1463s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b6ddf823534f473d06fdf6dc931bacb17e466539c859363de6d34fc6d8b2b510",
+    "text": "level of access you have to different systems that are involved in your role, but as long as you're getting some productivity boosts, that's all that matters. In conclusion, you can start integrating AI into your life and business today. The company I highlighted at the beginning of this video started by picking a harness and writing a skill, and you can do it, too. If you need help on your AI journey, that's exactly what we do at Command Labs. The link to book a call is in the description. I'm looking forward to meeting with you.",
+    "metadata": {
+      "video_id": "wFPYjVwgxEk",
+      "title": "9 AI Agent Concepts Every Business Leader Needs (FULL COURSE)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1518.8,
+      "end_seconds": 1550.1200000000001,
+      "url": "https://www.youtube.com/watch?v=wFPYjVwgxEk&t=1518s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

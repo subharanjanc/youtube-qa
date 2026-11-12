@@ -1,0 +1,226 @@
+[
+  {
+    "id": "4fe48e342d6528f77a736b64d2cbf49daf8115762dbb56c88598e960fef2ddbc",
+    "text": "Hello all, my name is Krishna and welcome to my YouTube channel. So guys, today in this particular video we are going to discuss about the basic differences between a traditional rag system versus agentic rag. I hope you have heard about agentic AI applications, you have heard about AI agents, you may have also heard about rag. Many people have this specific confusion because now the recent trend is moving towards agentic rag. Many people know how to develop traditional rag. So in this particular video I will be showcasing you one complete end to- end example but before that we'll try to find out the basic differences between both of them. Please make sure that you watch this video till the end because these all videos are super important because at the end of the day you will be able to understand many things. It will be helpful for your interview also. Okay. So let's first of all I I'll draw a lot of diagrams so that you know your understanding will be super super clear. Okay. So first of all what I am actually going to do is that let's say that uh there is an user over here. Okay. And when we talk about user let's say that we are trying to develop some kind of",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 0.48,
+      "end_seconds": 69.19999999999999,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "501841706b03bfb078ac9dd92a7d7d8604b2a5813f60a04ccc83712d2d35b469",
+    "text": "Okay. So first of all what I am actually going to do is that let's say that uh there is an user over here. Okay. And when we talk about user let's say that we are trying to develop some kind of generative AI application. Okay. And if you don't know what is rag rag basically means retrieval augumented generation. Why do we use rag? Please write down in the comment section and then I will also explain you in the specific video. Okay. So let's say this is a user. So a user is over here. Okay. and user is making a query. Okay, so let's say this is my query that is basically happening. Okay, I will just go ahead and click create some dots. So this is a query, right? As soon as a query is basically given by the user here we have something called as LLM application, right? So this is my LLM because whenever we talk about a generative AI application in short here we have a query this can be a chatbot this can be anything as such right. So based on this particular query here along with this particular query we also combine some kind of prompt right some kind of prompt and based on this particular prompt we give it along with",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 57.039,
+      "end_seconds": 136.56,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=57s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6add87bbfe21cfc25de69c68066a3d41b138aeeea185d26ca43dc7916ba3aad4",
+    "text": "right. So based on this particular query here along with this particular query we also combine some kind of prompt right some kind of prompt and based on this particular prompt we give it along with this particular query we combine this prompt and this prompt is nothing but it is a kind of instruction how the LLM should behave I can say that hey um act like a data scientist and probably take an interview right ask interview questions that may be related to data science so that can be a prompt So whenever I probably try to add a query along with this prompt we integrate it and we send it to the LLM and finally LLM provides us some kind of output. So this is a normal generative AI application gen AI application right now we'll try to understand if I want to probably convert this generative AI application into a rag system then what I will do I will first of all go ahead and use some kind of vector database it can be a vector store it can be a vector database now when we add this vector store or vector database let's say this is my DB okay this is my database itself right I can also say it as vector DB okay let's say in this particular vector",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 120.479,
+      "end_seconds": 199.11999999999998,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=120s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e5fe74a18b7ea4dfa622f5698a8e9711b563eed483b7340a1e842ff39a3de00e",
+    "text": "database now when we add this vector store or vector database let's say this is my DB okay this is my database itself right I can also say it as vector DB okay let's say in this particular vector DB and if I probably consider let's say that u this vector DB has some information related to let's say my YouTube videos okay if I have any questions to ask related to my YouTube videos so that that YouTube video content content is available inside this particular vector database not only that let's say that I I have some of the Udemy courses information right courses information right and I'm trying to create a chatbot this chatbot what it does is that whenever you ask him hey Chris uh hey is there any Udemy coupons available for crush courses so that particular information will be available in this particular vector DB okay or what all new courses are there with for generative AI you can basically ask this chatbot assistant okay now in this particular scenario obviously the LLM want to be able to answer right llm do not has that specific information. Now if I want to probably convert this generative AI application into a traditional rag then what I will do I will put this DB and this DB will have",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 183.8,
+      "end_seconds": 264.24,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=183s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c184b5263c46ccc64d8d19644e975f350feb05eb67c433118c2ba57557376179",
+    "text": "not has that specific information. Now if I want to probably convert this generative AI application into a traditional rag then what I will do I will put this DB and this DB will have all the data that data is basically converted from text to vectors text to vectors you can use any DB Astra DB MongoDB whatever and that vectors are basically stored over here. Now in a traditional rack whenever a query comes first of all that queries request will go to this particular DB and from this DB I get a specific response or context right we get some kind of response or context and this context is combined along with this prompt along with this prompt and sent to this particular LLM. So when we add a rags rag uh when we add a vector database the main aim over here is to probably provide information which my LLM cannot do it right my LLM do not has any information regarding my Udemy courses it may be trained in the future with the recent data but this kind of data is only specific to my use case right to my use case it is specific so what it will do it will take a probably a query get the context combine with the prompt give the",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 251.2,
+      "end_seconds": 327.84,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=251s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "58328c548f3887c522e84647f0e66d4859f3eda1c53a4b20cabc627c1877b15a",
+    "text": "data but this kind of data is only specific to my use case right to my use case it is specific so what it will do it will take a probably a query get the context combine with the prompt give the LLM and then the LLM will finally give me output. So this is nothing but this is a traditional rag system. traditional rag right here precisely I'm able to get the right context precisely I'll be getting the good output right accurate output right and that is what is the meaning of rag by that is the reason we have this external database you know which has specific information and from this information I want a specific information to be given or displayed to the front end users right so this becomes a traditional rag now understand in this traditional rag there's some very important properties that you need to keep a note on. First of all, the LLM is only used once right here. Why is LLM used? Just to probably summarize the output, right? Summarize the output. That is why it is specifically used. Don't you see that I have a query this query is going to the database it is being retrieved. So that is the reason we say this as retrieval, right? We also say whenever we are using some",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 314.639,
+      "end_seconds": 391.59999999999997,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=314s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "da6db9a0cbfa21d6afb71de993715d116b660b028d32f0bbb216297df0a81c88",
+    "text": "used. Don't you see that I have a query this query is going to the database it is being retrieved. So that is the reason we say this as retrieval, right? We also say whenever we are using some kind of rag database it becomes a retriever tool and from that retriever we get a context we combine with the prompt then we send it to the LLM and finally we get the output here only LLM is used specifically to summarize the output but LLM has much more capabilities that is the reason and you need to understand this point LLM has huge capabilities now what capabilities I'm talking about now if I want convert this traditional rag into agentic rag then how do I do this okay here in agentic rag the llm can be used for some other capabilities also so now what I will do let's say I have a use case in this use case I have one of the vector database let's say in my company I have a requirement now I will just not use only one vector database I will use two vector database let's say this is my one vector database this is my another vector ve vector database okay Let's say since I have been uploading continuously YouTube videos also I haven't also uploading new Udemy",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 378.96,
+      "end_seconds": 456.4,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=378s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fa526d819bda13c2cb0c6ce613acd200cd9837e511a822c70574c91e81ee0d37",
+    "text": "will use two vector database let's say this is my one vector database this is my another vector ve vector database okay Let's say since I have been uploading continuously YouTube videos also I haven't also uploading new Udemy courses I've been also uploading I have also been coming up with live courses on agentki so this vector database let's consider that this is my DB2 I will just go ahead and write it as DB2 this will have my Udemy information let's say Udemy information okay this will be having my Udemy information This DB3 will have my live courses information. Live courses information. Okay, live courses information. Now you'll be able to see that once whenever we give a query let's say if I ask this chatbot hey provide recent recent Udemy courses by crush or provide Udemy courses on generative AI or agentic AI let's say my question is provide Udemy courses on agentic AI okay agentic AI now as soon as the query comes Now the question arises should we go ahead and hit DB2 or DB3? Obviously by seeing this you can understand that Udemy information is present in DB2. So we have to probably go ahead and hit DB2. But here who will be taking this particular decision. Do you think that we have to go ahead and",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 439.599,
+      "end_seconds": 537.04,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=439s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3b51ad2392d54f65debe8814d63c05262a20db9df6fd1cc11147a14adb8b0a89",
+    "text": "understand that Udemy information is present in DB2. So we have to probably go ahead and hit DB2. But here who will be taking this particular decision. Do you think that we have to go ahead and write some manual code? No. We can use this same LLM. We can use the capabilities of the same LLM and this LLM capabilities we can convert this in the form of agents. Okay, I will convert this in the form of agents. Right now what happens is that when we convert this into agent whenever a user query comes the agent will have the cap capability to route the query either to DB1 or DB2 or DB3. It has this particular capability. Okay. Because this agent is already integrated with this specific tools. These are called as retriever tools. Retriever tools. Okay. So if you are probably developing with the help of lang or lang graph sorry lang graph at that point of time you can create this independent agents and you can add this as tools. So when you add this as a tools agent will have the information that whenever we have this kind of information coming from Udemy we need to route the query to DB2. Otherwise if it is coming from live courses we need to route the query to",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 523.36,
+      "end_seconds": 615.04,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=523s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "71e6d737be03892ddafa694efdb75e91641732072f2ce6c0dd9f1cb04ce53759",
+    "text": "the information that whenever we have this kind of information coming from Udemy we need to route the query to DB2. Otherwise if it is coming from live courses we need to route the query to DB3. Now what happens if I am trying to route this query to this specific DB2 my context which will be much more accurate. So my context the information that is coming from the DB2 which matches this particular query will be much more accurate and then my LLM will summarize otherwise it'll go to DB3 and again from here also it is possible that I will be able to get my context right but the best thing over here is that the agent is specifically taking this particular decision and it is also using rag in between. So similarly tomorrow you try to develop any kind of use cases right there may be more databases that you can add there will be one vector database let's say this is for company policy information it may be for other information now you may be thinking kish can't we just only use one vector database and put all the information out there you can but here I'm trying to probably get much more accurate result right because if I have a specific vector database let's say this is",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 598.8,
+      "end_seconds": 679.6,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=598s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "52e5f9b352a07f7db8a7c06fc7e06cf833fbb69ed70827abebc5b5b9c54f7623",
+    "text": "can't we just only use one vector database and put all the information out there you can but here I'm trying to probably get much more accurate result right because if I have a specific vector database let's say this is another database another database another database and we have those specific information those specific information my agent is basic uh is taking that decision what I should basically call right which vector database we should specifically call to get the context and more accurately if you get the context then we will also be able to get the output much more accurately right and this is what is all about agentic rag right agentic rag here the agents are taking that particular decision right agents are specifically taking the decision so if I probably go ahead and explain you it is a framework that enhances traditional rack system by interpolating inter sorry in incorporating intelligent agents to handle complex task and make decision dynamically right and uh if you see I was uh you know preparing lot of materials for my class students and all right and that is where we have to make sure to teach in such a way so that everybody understands right so if you see over here right see uh this is the code okay here uh what I have done is",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 664.399,
+      "end_seconds": 755.6800000000001,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=664s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "41023436b955e20c43c570b780d293398a333a2529b7d6c19365647a9758818b",
+    "text": "right and that is where we have to make sure to teach in such a way so that everybody understands right so if you see over here right see uh this is the code okay here uh what I have done is that you'll be able to see I have some langraph blogs okay this is inserted in one vector database then I have some langin blogs which is inserted in some vector database vector control then what we have done is that we have created this kind of workflow see this workflow now this agent is connected to DB1 DB2 and when DB1 let's say one once a request is coming what is lang graph it will redirect or route to DB1 because DB1 has that particular information and then you can see that the entire workflow is designed in this specific way and just to show you give you an idea how it works right let's say I ask a question over here what is lang chain this is present in one vector database so if I just go ahead and execute it you can see agent is basically getting called then it is checking the relevance whether it matches the input it finds the docs relevant and then it is generating this entire content right let's say that if some of the data is",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 739.519,
+      "end_seconds": 817.279,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=739s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "bee0b68fdbfae1705b859da2418c41d400d12611bdea05d8a64e7e20b06edf84",
+    "text": "called then it is checking the relevance whether it matches the input it finds the docs relevant and then it is generating this entire content right let's say that if some of the data is not present in my vector database how does it work so I'll just go ahead and ask what is machine learning right and here you'll be able to see that it'll it'll just go ahead and call the agent but it sees that the vector database does not have this particular data. So it will just continue with the execution and the LLM will be giving it. If the LLM does not know that also we can specifically handle. So we can add any number of conditions over here and this is nothing but this is called as routing. Okay. So routing you can add any number of routers. Right? So I hope you understood this amazing explanation about traditional rag versus a gentic rag. Super amazing. Now tomorrow you build a use case of your own any number of vector databases you can probably create add create it as a retriever tool and try to integrate as a tools to this particular agent the agent will be able to handle that particular task of routing your query and getting the response and from the LLM you'll be able",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 804.0,
+      "end_seconds": 874.88,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=804s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c13949d63f8e2367035065e4f6266039532519c6709d71cf4ab67090e9bac83e",
+    "text": "and try to integrate as a tools to this particular agent the agent will be able to handle that particular task of routing your query and getting the response and from the LLM you'll be able to get the output right so I hope you like this particular video this was it from my side I'll see you all in the next video have a great day thank you one and all take care and these all videos are specifically created to make your basics really really strong. So yes, this was it for my side. I'll see you in the next video. Thank you.",
+    "metadata": {
+      "video_id": "HodCjnGv8Ag",
+      "title": "What Is Agentic RAG?",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 862.88,
+      "end_seconds": 890.0,
+      "url": "https://www.youtube.com/watch?v=HodCjnGv8Ag&t=862s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

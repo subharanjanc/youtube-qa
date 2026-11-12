@@ -1,0 +1,1248 @@
+{
+  "video_id": "vJOGC8QJZJQ",
+  "title": "LangChain vs LangGraph vs LangSmith",
+  "channel": "codebasics",
+  "trainer": "Dhaval Patel",
+  "topic": "LangChain",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 616.0,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 4.24,
+      "text": "When you start learning about agentic AI"
+    },
+    {
+      "start": 2.0,
+      "end": 7.359,
+      "text": "frameworks, you come across so many"
+    },
+    {
+      "start": 4.24,
+      "end": 9.440000000000001,
+      "text": "terms that it's easy to get confused. In"
+    },
+    {
+      "start": 7.359,
+      "end": 12.16,
+      "text": "this video, I will make an attempt to"
+    },
+    {
+      "start": 9.44,
+      "end": 14.879999999999999,
+      "text": "give a very simple explanation of the"
+    },
+    {
+      "start": 12.16,
+      "end": 17.44,
+      "text": "difference between these three. So let's"
+    },
+    {
+      "start": 14.88,
+      "end": 21.359,
+      "text": "start with the basics. When you take any"
+    },
+    {
+      "start": 17.44,
+      "end": 23.359,
+      "text": "LLM, GPD, claim etc., it is trained on"
+    },
+    {
+      "start": 21.359,
+      "end": 25.199,
+      "text": "some huge volume of internet data. So if"
+    },
+    {
+      "start": 23.359,
+      "end": 26.880000000000003,
+      "text": "you ask a general question like this, it"
+    },
+    {
+      "start": 25.199,
+      "end": 28.720000000000002,
+      "text": "will be able to answer. But let's say"
+    },
+    {
+      "start": 26.88,
+      "end": 30.4,
+      "text": "you have this clothing store called"
+    },
+    {
+      "start": 28.72,
+      "end": 32.719,
+      "text": "Surma E-commerce for which you're"
+    },
+    {
+      "start": 30.4,
+      "end": 35.04,
+      "text": "building a chatboard which is powered by"
+    },
+    {
+      "start": 32.719,
+      "end": 36.88,
+      "text": "LLM and if you ask a question what is a"
+    },
+    {
+      "start": 35.04,
+      "end": 38.399,
+      "text": "refund policy on t-shirt it won't be"
+    },
+    {
+      "start": 36.88,
+      "end": 40.719,
+      "text": "able to answer it because it doesn't"
+    },
+    {
+      "start": 38.399,
+      "end": 42.719,
+      "text": "have access to your private"
+    },
+    {
+      "start": 40.719,
+      "end": 44.800000000000004,
+      "text": "organizational data to solve this"
+    },
+    {
+      "start": 42.719,
+      "end": 46.64,
+      "text": "problem you build a rag chatbot which is"
+    },
+    {
+      "start": 44.8,
+      "end": 50.31999999999999,
+      "text": "retrieval augmented generation where you"
+    },
+    {
+      "start": 46.64,
+      "end": 54.0,
+      "text": "provide your policy documents to LLM and"
+    },
+    {
+      "start": 50.32,
+      "end": 57.36,
+      "text": "it will be able to then fetch the answer"
+    },
+    {
+      "start": 54.0,
+      "end": 59.359,
+      "text": "out of those documents. ments. So here"
+    },
+    {
+      "start": 57.36,
+      "end": 62.16,
+      "text": "step by step what you're doing is you"
+    },
+    {
+      "start": 59.359,
+      "end": 64.4,
+      "text": "are first retrieving the documents then"
+    },
+    {
+      "start": 62.16,
+      "end": 67.52,
+      "text": "you're splitting it into chunks to take"
+    },
+    {
+      "start": 64.4,
+      "end": 70.479,
+      "text": "care of the context window for llm then"
+    },
+    {
+      "start": 67.52,
+      "end": 72.79899999999999,
+      "text": "you store it in vector database for"
+    },
+    {
+      "start": 70.479,
+      "end": 76.56,
+      "text": "semantic search later on then you"
+    },
+    {
+      "start": 72.799,
+      "end": 78.96000000000001,
+      "text": "retrieve and call llm and so on. Now you"
+    },
+    {
+      "start": 76.56,
+      "end": 82.32000000000001,
+      "text": "can do all of this in Python but lang"
+    },
+    {
+      "start": 78.96,
+      "end": 85.36,
+      "text": "chain is a beautiful framework that"
+    },
+    {
+      "start": 82.32,
+      "end": 87.75899999999999,
+      "text": "makes these things easier by providing"
+    },
+    {
+      "start": 85.36,
+      "end": 90.0,
+      "text": "readymade classes. So for this it will"
+    },
+    {
+      "start": 87.759,
+      "end": 93.36,
+      "text": "have text loader. These are all the"
+    },
+    {
+      "start": 90.0,
+      "end": 97.28,
+      "text": "classes from lang chain library. If you"
+    },
+    {
+      "start": 93.36,
+      "end": 100.96,
+      "text": "categorize LLM powered application into"
+    },
+    {
+      "start": 97.28,
+      "end": 103.52,
+      "text": "two groups then those two groups uh as"
+    },
+    {
+      "start": 100.96,
+      "end": 107.439,
+      "text": "per anthropics building effective agent"
+    },
+    {
+      "start": 103.52,
+      "end": 109.67999999999999,
+      "text": "guide are workflows and agents."
+    },
+    {
+      "start": 107.439,
+      "end": 111.67999999999999,
+      "text": "Workflows is basically a software where"
+    },
+    {
+      "start": 109.68,
+      "end": 113.84,
+      "text": "one of the component is LLM and"
+    },
+    {
+      "start": 111.68,
+      "end": 116.24000000000001,
+      "text": "remaining things are joined by a"
+    },
+    {
+      "start": 113.84,
+      "end": 118.799,
+      "text": "predefined core path just like any usual"
+    },
+    {
+      "start": 116.24,
+      "end": 120.56,
+      "text": "software. So let's say you might be"
+    },
+    {
+      "start": 118.799,
+      "end": 123.36000000000001,
+      "text": "loading data from somewhere. Then you're"
+    },
+    {
+      "start": 120.56,
+      "end": 125.84,
+      "text": "doing some pre-processing and then you"
+    },
+    {
+      "start": 123.36,
+      "end": 127.52,
+      "text": "use LLM let's say to extract information"
+    },
+    {
+      "start": 125.84,
+      "end": 130.16,
+      "text": "out of that text or to do something"
+    },
+    {
+      "start": 127.52,
+      "end": 132.319,
+      "text": "else. Okay. Then you have one other"
+    },
+    {
+      "start": 130.16,
+      "end": 135.599,
+      "text": "step. Then you might have another LLM"
+    },
+    {
+      "start": 132.319,
+      "end": 138.64,
+      "text": "call. So this is like a usual software."
+    },
+    {
+      "start": 135.599,
+      "end": 141.92,
+      "text": "It is just that LLM is one or more"
+    },
+    {
+      "start": 138.64,
+      "end": 144.95899999999997,
+      "text": "component in in that software ecosystem."
+    },
+    {
+      "start": 141.92,
+      "end": 147.28,
+      "text": "This kind of uh thing is called chain"
+    },
+    {
+      "start": 144.959,
+      "end": 150.16,
+      "text": "and lang chain is a framework that makes"
+    },
+    {
+      "start": 147.28,
+      "end": 152.319,
+      "text": "building llm powered application easy."
+    },
+    {
+      "start": 150.16,
+      "end": 155.12,
+      "text": "Especially it is used mainly to build"
+    },
+    {
+      "start": 152.319,
+      "end": 157.35999999999999,
+      "text": "straightforward chains whatever we saw."
+    },
+    {
+      "start": 155.12,
+      "end": 159.44,
+      "text": "So there are steps that you follow to"
+    },
+    {
+      "start": 157.36,
+      "end": 162.08,
+      "text": "build your application and one of the"
+    },
+    {
+      "start": 159.44,
+      "end": 164.07999999999998,
+      "text": "step is LLM. So here LLM is not making"
+    },
+    {
+      "start": 162.08,
+      "end": 167.04000000000002,
+      "text": "any autonomous decision. It is given a"
+    },
+    {
+      "start": 164.08,
+      "end": 169.04000000000002,
+      "text": "predefined task that okay from this text"
+    },
+    {
+      "start": 167.04,
+      "end": 171.04,
+      "text": "extract this information or summarize"
+    },
+    {
+      "start": 169.04,
+      "end": 172.72,
+      "text": "this information and remaining thing is"
+    },
+    {
+      "start": 171.04,
+      "end": 174.79999999999998,
+      "text": "all your Python or whatever programming"
+    },
+    {
+      "start": 172.72,
+      "end": 176.959,
+      "text": "language you're using is just code."
+    },
+    {
+      "start": 174.8,
+      "end": 178.87900000000002,
+      "text": "Okay. Now let's say you want to build a"
+    },
+    {
+      "start": 176.959,
+      "end": 180.48,
+      "text": "complex chatboard where customer is"
+    },
+    {
+      "start": 178.879,
+      "end": 183.04,
+      "text": "asking I want to exchange my t-shirt for"
+    },
+    {
+      "start": 180.48,
+      "end": 185.11999999999998,
+      "text": "a different item and you will then ask"
+    },
+    {
+      "start": 183.04,
+      "end": 186.72,
+      "text": "for order ID. Right? This is not"
+    },
+    {
+      "start": 185.12,
+      "end": 188.879,
+      "text": "something you can just answer in one"
+    },
+    {
+      "start": 186.72,
+      "end": 191.519,
+      "text": "shot. Then they will provide order ID."
+    },
+    {
+      "start": 188.879,
+      "end": 194.159,
+      "text": "Now you'll say okay now with which item"
+    },
+    {
+      "start": 191.519,
+      "end": 196.87900000000002,
+      "text": "you want to replace. So they provide SKU"
+    },
+    {
+      "start": 194.159,
+      "end": 199.519,
+      "text": "and there is some interaction there is"
+    },
+    {
+      "start": 196.879,
+      "end": 201.51899999999998,
+      "text": "some kind of a multi-turn approach here"
+    },
+    {
+      "start": 199.519,
+      "end": 203.59900000000002,
+      "text": "to summarize the steps you have to check"
+    },
+    {
+      "start": 201.519,
+      "end": 205.44,
+      "text": "first the refund policy for the item"
+    },
+    {
+      "start": 203.599,
+      "end": 207.599,
+      "text": "that they are returning then you check"
+    },
+    {
+      "start": 205.44,
+      "end": 210.07999999999998,
+      "text": "order details in the database to make"
+    },
+    {
+      "start": 207.599,
+      "end": 212.0,
+      "text": "sure that you know uh the item is"
+    },
+    {
+      "start": 210.08,
+      "end": 213.92000000000002,
+      "text": "eligible and what was the price and so"
+    },
+    {
+      "start": 212.0,
+      "end": 216.56,
+      "text": "on. Then you check availability of the"
+    },
+    {
+      "start": 213.92,
+      "end": 219.28,
+      "text": "new item order new item print shipping"
+    },
+    {
+      "start": 216.56,
+      "end": 221.04,
+      "text": "label for old item. So this is not like"
+    },
+    {
+      "start": 219.28,
+      "end": 224.4,
+      "text": "a simple question okay what is my refund"
+    },
+    {
+      "start": 221.04,
+      "end": 226.48,
+      "text": "policy 30 days this requires multiple"
+    },
+    {
+      "start": 224.4,
+      "end": 229.76000000000002,
+      "text": "steps multiple clarification it's a"
+    },
+    {
+      "start": 226.48,
+      "end": 231.51899999999998,
+      "text": "complex flow and in each of the flow for"
+    },
+    {
+      "start": 229.76,
+      "end": 234.159,
+      "text": "refund policy you might have to access"
+    },
+    {
+      "start": 231.519,
+      "end": 235.519,
+      "text": "your policy documents for checking order"
+    },
+    {
+      "start": 234.159,
+      "end": 237.2,
+      "text": "details you might have to hit some"
+    },
+    {
+      "start": 235.519,
+      "end": 238.799,
+      "text": "database for checking availability of a"
+    },
+    {
+      "start": 237.2,
+      "end": 241.51899999999998,
+      "text": "new item you might be calling some"
+    },
+    {
+      "start": 238.799,
+      "end": 243.84,
+      "text": "micros service some API and to print"
+    },
+    {
+      "start": 241.519,
+      "end": 246.87900000000002,
+      "text": "label or you might be using some other"
+    },
+    {
+      "start": 243.84,
+      "end": 250.0,
+      "text": "software and in each of these steps LLM"
+    },
+    {
+      "start": 246.879,
+      "end": 252.56,
+      "text": "will be involved Okay. So, LLM either in"
+    },
+    {
+      "start": 250.0,
+      "end": 255.599,
+      "text": "all the steps or some of the steps LLM"
+    },
+    {
+      "start": 252.56,
+      "end": 257.919,
+      "text": "will be there and along with LLM you"
+    },
+    {
+      "start": 255.599,
+      "end": 261.12,
+      "text": "have documents, database, API etc. which"
+    },
+    {
+      "start": 257.919,
+      "end": 262.71999999999997,
+      "text": "will help you perform all these task."
+    },
+    {
+      "start": 261.12,
+      "end": 265.12,
+      "text": "So, you are essentially doing goal"
+    },
+    {
+      "start": 262.72,
+      "end": 266.8,
+      "text": "oriented planning for a return that"
+    },
+    {
+      "start": 265.12,
+      "end": 269.36,
+      "text": "customer want to perform in the exchange"
+    },
+    {
+      "start": 266.8,
+      "end": 272.24,
+      "text": "of a new item. You first figure out all"
+    },
+    {
+      "start": 269.36,
+      "end": 274.639,
+      "text": "these four steps. Then you do multi-step"
+    },
+    {
+      "start": 272.24,
+      "end": 278.0,
+      "text": "reasoning, multi-step planning. You"
+    },
+    {
+      "start": 274.639,
+      "end": 279.919,
+      "text": "perform these steps uh one by one. Now"
+    },
+    {
+      "start": 278.0,
+      "end": 281.36,
+      "text": "let's say some of the steps might fail."
+    },
+    {
+      "start": 279.919,
+      "end": 283.12,
+      "text": "Okay. So check the availability of new"
+    },
+    {
+      "start": 281.36,
+      "end": 286.32,
+      "text": "item. Let's say it fails. You might have"
+    },
+    {
+      "start": 283.12,
+      "end": 288.08,
+      "text": "to hit different API different color"
+    },
+    {
+      "start": 286.32,
+      "end": 290.24,
+      "text": "something something like that. You know"
+    },
+    {
+      "start": 288.08,
+      "end": 292.08,
+      "text": "then you have access to tools, right?"
+    },
+    {
+      "start": 290.24,
+      "end": 294.96000000000004,
+      "text": "These are tools. Knowledge knowledge is"
+    },
+    {
+      "start": 292.08,
+      "end": 297.84,
+      "text": "all PDF and database knowledge API etc."
+    },
+    {
+      "start": 294.96,
+      "end": 300.08,
+      "text": "are called tools. All right. So this is"
+    },
+    {
+      "start": 297.84,
+      "end": 302.4,
+      "text": "an agentic chatboard. Agentic chatboard"
+    },
+    {
+      "start": 300.08,
+      "end": 305.44,
+      "text": "works on a complex task. It will divide"
+    },
+    {
+      "start": 302.4,
+      "end": 307.19899999999996,
+      "text": "it into multiple subtask. Then it will"
+    },
+    {
+      "start": 305.44,
+      "end": 309.68,
+      "text": "perform them one by one. Let's say"
+    },
+    {
+      "start": 307.199,
+      "end": 311.84000000000003,
+      "text": "second step fails. It will retry it."
+    },
+    {
+      "start": 309.68,
+      "end": 314.56,
+      "text": "Okay. So there is a component of retry,"
+    },
+    {
+      "start": 311.84,
+      "end": 316.479,
+      "text": "feedback, etc. Just like how as humans"
+    },
+    {
+      "start": 314.56,
+      "end": 319.68,
+      "text": "we do the work. Let's say you are doing"
+    },
+    {
+      "start": 316.479,
+      "end": 322.479,
+      "text": "coding. You run the code, you find an"
+    },
+    {
+      "start": 319.68,
+      "end": 325.84000000000003,
+      "text": "error, then you fix the error, you know,"
+    },
+    {
+      "start": 322.479,
+      "end": 328.32,
+      "text": "you again run the code, then you find"
+    },
+    {
+      "start": 325.84,
+      "end": 330.88,
+      "text": "let's say another issue, then you fix"
+    },
+    {
+      "start": 328.32,
+      "end": 332.88,
+      "text": "that. So it's iterative approach."
+    },
+    {
+      "start": 330.88,
+      "end": 335.199,
+      "text": "Agentic chatboard has some kind of"
+    },
+    {
+      "start": 332.88,
+      "end": 337.36,
+      "text": "autonomy and it will do this kind of"
+    },
+    {
+      "start": 335.199,
+      "end": 339.52000000000004,
+      "text": "multi-step iterative approach to"
+    },
+    {
+      "start": 337.36,
+      "end": 342.08000000000004,
+      "text": "accomplish a goal. Now one of the"
+    },
+    {
+      "start": 339.52,
+      "end": 345.68,
+      "text": "popular design for building agentic"
+    },
+    {
+      "start": 342.08,
+      "end": 347.59999999999997,
+      "text": "application is graph based stateful"
+    },
+    {
+      "start": 345.68,
+      "end": 350.32,
+      "text": "workflow. What I mean by that is let's"
+    },
+    {
+      "start": 347.6,
+      "end": 354.0,
+      "text": "say you start somewhere and you are"
+    },
+    {
+      "start": 350.32,
+      "end": 356.88,
+      "text": "making an LLM call. Okay. And then LLM"
+    },
+    {
+      "start": 354.0,
+      "end": 358.32,
+      "text": "will decide what to do as a next step."
+    },
+    {
+      "start": 356.88,
+      "end": 361.919,
+      "text": "So let's say there is some conditional"
+    },
+    {
+      "start": 358.32,
+      "end": 365.919,
+      "text": "logic and LLM might decide to perform"
+    },
+    {
+      "start": 361.919,
+      "end": 368.56,
+      "text": "step A or step B or it might decide to"
+    },
+    {
+      "start": 365.919,
+      "end": 371.12,
+      "text": "make another call to a different LLM and"
+    },
+    {
+      "start": 368.56,
+      "end": 373.44,
+      "text": "same way when you're here this LLM can"
+    },
+    {
+      "start": 371.12,
+      "end": 375.68,
+      "text": "also autonomously I mean there will be"
+    },
+    {
+      "start": 373.44,
+      "end": 378.4,
+      "text": "some kind of prompt that will be given"
+    },
+    {
+      "start": 375.68,
+      "end": 381.84000000000003,
+      "text": "but the actual decision is made by this"
+    },
+    {
+      "start": 378.4,
+      "end": 385.67999999999995,
+      "text": "LLM in autonomous way it can perform"
+    },
+    {
+      "start": 381.84,
+      "end": 388.08,
+      "text": "either step C D E etc or it can actually"
+    },
+    {
+      "start": 385.68,
+      "end": 391.12,
+      "text": "call back to the original LLM. So there"
+    },
+    {
+      "start": 388.08,
+      "end": 396.0,
+      "text": "are four possible core paths. So this is"
+    },
+    {
+      "start": 391.12,
+      "end": 398.4,
+      "text": "a stateful workflow represented as a"
+    },
+    {
+      "start": 396.0,
+      "end": 401.28,
+      "text": "graph and langraph is a framework to"
+    },
+    {
+      "start": 398.4,
+      "end": 404.88,
+      "text": "orchestrate multi-step"
+    },
+    {
+      "start": 401.28,
+      "end": 407.11999999999995,
+      "text": "stateful workflows using graph-based"
+    },
+    {
+      "start": 404.88,
+      "end": 408.639,
+      "text": "structure. Here I'm showing you a code"
+    },
+    {
+      "start": 407.12,
+      "end": 410.319,
+      "text": "of"
+    },
+    {
+      "start": 408.639,
+      "end": 412.96000000000004,
+      "text": "one of the graphs we built in in"
+    },
+    {
+      "start": 410.319,
+      "end": 415.84000000000003,
+      "text": "Langraph. So you import all these"
+    },
+    {
+      "start": 412.96,
+      "end": 418.08,
+      "text": "libraries. Okay. And then uh you have a"
+    },
+    {
+      "start": 415.84,
+      "end": 420.79999999999995,
+      "text": "this tool. So tool is a dummy python"
+    },
+    {
+      "start": 418.08,
+      "end": 424.56,
+      "text": "tool. It just gets the latest price of"
+    },
+    {
+      "start": 420.8,
+      "end": 427.759,
+      "text": "any stock Microsoft, Apple etc. And then"
+    },
+    {
+      "start": 424.56,
+      "end": 430.72,
+      "text": "uh you design the graph like this. So if"
+    },
+    {
+      "start": 427.759,
+      "end": 432.8,
+      "text": "I show you the graph is nothing but you"
+    },
+    {
+      "start": 430.72,
+      "end": 436.319,
+      "text": "start then there's a chatboard and as a"
+    },
+    {
+      "start": 432.8,
+      "end": 439.44,
+      "text": "tool you have that function the you know"
+    },
+    {
+      "start": 436.319,
+      "end": 441.12,
+      "text": "get stock price function. Okay. So when"
+    },
+    {
+      "start": 439.44,
+      "end": 442.71999999999997,
+      "text": "you perform all these steps eventually"
+    },
+    {
+      "start": 441.12,
+      "end": 444.319,
+      "text": "when you say I want to buy 20 Amazon"
+    },
+    {
+      "start": 442.72,
+      "end": 447.12,
+      "text": "stocks it will be able to call that"
+    },
+    {
+      "start": 444.319,
+      "end": 450.0,
+      "text": "function get the price and then you know"
+    },
+    {
+      "start": 447.12,
+      "end": 452.96,
+      "text": "it's performing those steps to kind of"
+    },
+    {
+      "start": 450.0,
+      "end": 455.68,
+      "text": "call the tool multiple times and then"
+    },
+    {
+      "start": 452.96,
+      "end": 458.15999999999997,
+      "text": "give you a total amount for your entire"
+    },
+    {
+      "start": 455.68,
+      "end": 461.36,
+      "text": "stock transaction. If you want to learn"
+    },
+    {
+      "start": 458.16,
+      "end": 463.36,
+      "text": "lang graph in detail then I have this uh"
+    },
+    {
+      "start": 461.36,
+      "end": 465.44,
+      "text": "tutorial. It's like more than 1 hour"
+    },
+    {
+      "start": 463.36,
+      "end": 468.0,
+      "text": "tutorial which will walk you through the"
+    },
+    {
+      "start": 465.44,
+      "end": 469.199,
+      "text": "entire framework from the very"
+    },
+    {
+      "start": 468.0,
+      "end": 471.199,
+      "text": "beginning. Let's summarize the"
+    },
+    {
+      "start": 469.199,
+      "end": 473.039,
+      "text": "difference between these two. So lang"
+    },
+    {
+      "start": 471.199,
+      "end": 475.759,
+      "text": "chain is a toolkit that allows you to"
+    },
+    {
+      "start": 473.039,
+      "end": 478.56,
+      "text": "build llm apps chains tools agents."
+    },
+    {
+      "start": 475.759,
+      "end": 480.639,
+      "text": "Whereas lang graph is a framework that"
+    },
+    {
+      "start": 478.56,
+      "end": 483.52,
+      "text": "is used mainly for agent. So just"
+    },
+    {
+      "start": 480.639,
+      "end": 486.319,
+      "text": "remember if you are writing a simple"
+    },
+    {
+      "start": 483.52,
+      "end": 488.24,
+      "text": "linear workflows you use lang chain but"
+    },
+    {
+      "start": 486.319,
+      "end": 490.639,
+      "text": "if you want to build complex agents use"
+    },
+    {
+      "start": 488.24,
+      "end": 493.039,
+      "text": "lang graph. style for lang chain is"
+    },
+    {
+      "start": 490.639,
+      "end": 495.599,
+      "text": "linear and reactive. Reactive means like"
+    },
+    {
+      "start": 493.039,
+      "end": 498.31899999999996,
+      "text": "you give some task it will return the"
+    },
+    {
+      "start": 495.599,
+      "end": 500.8,
+      "text": "response okay input output whereas lang"
+    },
+    {
+      "start": 498.319,
+      "end": 502.96000000000004,
+      "text": "graph has a graph base supports it"
+    },
+    {
+      "start": 500.8,
+      "end": 505.68,
+      "text": "supports loops retries you know it will"
+    },
+    {
+      "start": 502.96,
+      "end": 508.79999999999995,
+      "text": "retry to fix the error and kind of get"
+    },
+    {
+      "start": 505.68,
+      "end": 510.479,
+      "text": "the thing done it also has a memory base"
+    },
+    {
+      "start": 508.8,
+      "end": 513.36,
+      "text": "use case for lang chain is simple"
+    },
+    {
+      "start": 510.479,
+      "end": 516.399,
+      "text": "chatboard rag etc lang graph is as I"
+    },
+    {
+      "start": 513.36,
+      "end": 519.279,
+      "text": "said multi-step workflows complex agents"
+    },
+    {
+      "start": 516.399,
+      "end": 522.159,
+      "text": "and lang chain is partially stateful"
+    },
+    {
+      "start": 519.279,
+      "end": 524.0,
+      "text": "where lang graph has a state in that"
+    },
+    {
+      "start": 522.159,
+      "end": 525.279,
+      "text": "graph. So if you refer to my lang graph"
+    },
+    {
+      "start": 524.0,
+      "end": 526.56,
+      "text": "tutorial, you will get better"
+    },
+    {
+      "start": 525.279,
+      "end": 529.36,
+      "text": "understanding just in case if you don't"
+    },
+    {
+      "start": 526.56,
+      "end": 532.0,
+      "text": "know about graphs and states. Uh and"
+    },
+    {
+      "start": 529.36,
+      "end": 534.9590000000001,
+      "text": "here are the example use cases. Now what"
+    },
+    {
+      "start": 532.0,
+      "end": 538.0,
+      "text": "is lang? Well, lang is a debugging and"
+    },
+    {
+      "start": 534.959,
+      "end": 540.7199999999999,
+      "text": "observability platform folks. So if you"
+    },
+    {
+      "start": 538.0,
+      "end": 543.44,
+      "text": "look at the architecture,"
+    },
+    {
+      "start": 540.72,
+      "end": 546.1600000000001,
+      "text": "see this is an entire like ecosystem"
+    },
+    {
+      "start": 543.44,
+      "end": 549.44,
+      "text": "where you have lang and langraph they"
+    },
+    {
+      "start": 546.16,
+      "end": 552.56,
+      "text": "both are open source. Okay. Then you"
+    },
+    {
+      "start": 549.44,
+      "end": 554.9590000000001,
+      "text": "have langsmith which is uh doing the"
+    },
+    {
+      "start": 552.56,
+      "end": 557.279,
+      "text": "work of debugging playground prompt"
+    },
+    {
+      "start": 554.959,
+      "end": 559.1999999999999,
+      "text": "management monitoring you know so let's"
+    },
+    {
+      "start": 557.279,
+      "end": 560.64,
+      "text": "say if you deploy the aentki system in"
+    },
+    {
+      "start": 559.2,
+      "end": 562.6400000000001,
+      "text": "the production you want to monitor"
+    },
+    {
+      "start": 560.64,
+      "end": 564.8,
+      "text": "whether it's performing well you want to"
+    },
+    {
+      "start": 562.64,
+      "end": 567.12,
+      "text": "monitor your token cost okay it's not"
+    },
+    {
+      "start": 564.8,
+      "end": 570.0799999999999,
+      "text": "like you're spending millions of dollars"
+    },
+    {
+      "start": 567.12,
+      "end": 572.9590000000001,
+      "text": "in your token cost so all of those"
+    },
+    {
+      "start": 570.08,
+      "end": 575.0400000000001,
+      "text": "failures evaluation all of those things"
+    },
+    {
+      "start": 572.959,
+      "end": 578.64,
+      "text": "are done through langmmith so here is a"
+    },
+    {
+      "start": 575.04,
+      "end": 580.8,
+      "text": "lang UI where there's this demo demo app"
+    },
+    {
+      "start": 578.64,
+      "end": 583.279,
+      "text": "and really here you can see all the"
+    },
+    {
+      "start": 580.8,
+      "end": 586.4799999999999,
+      "text": "individual calls right you called vector"
+    },
+    {
+      "start": 583.279,
+      "end": 589.36,
+      "text": "database then you called chat GPT okay"
+    },
+    {
+      "start": 586.48,
+      "end": 592.08,
+      "text": "what was the input what was the output"
+    },
+    {
+      "start": 589.36,
+      "end": 594.24,
+      "text": "how many tokens did you use 390 what was"
+    },
+    {
+      "start": 592.08,
+      "end": 596.08,
+      "text": "the latency so you can monitor all of"
+    },
+    {
+      "start": 594.24,
+      "end": 597.76,
+      "text": "that this is just tracing but you can do"
+    },
+    {
+      "start": 596.08,
+      "end": 599.76,
+      "text": "much more than this if you want to learn"
+    },
+    {
+      "start": 597.76,
+      "end": 601.4399999999999,
+      "text": "these things in detail once again I have"
+    },
+    {
+      "start": 599.76,
+      "end": 603.68,
+      "text": "complete tutorials if you have any"
+    },
+    {
+      "start": 601.44,
+      "end": 606.08,
+      "text": "questions please post in the comment box"
+    },
+    {
+      "start": 603.68,
+      "end": 608.88,
+      "text": "below I hope you got some understanding"
+    },
+    {
+      "start": 606.08,
+      "end": 610.24,
+      "text": "of lang lang graph and Lang Smith. If"
+    },
+    {
+      "start": 608.88,
+      "end": 614.07,
+      "text": "you like this video, give it a thumbs up"
+    },
+    {
+      "start": 610.24,
+      "end": 616.0,
+      "text": "and share it with your friends."
+    },
+    {
+      "start": 614.07,
+      "end": 616.0,
+      "text": "[Music]"
+    }
+  ]
+}

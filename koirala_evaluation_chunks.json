@@ -1,0 +1,434 @@
+[
+  {
+    "id": "807bd9f9b6ed0211d45fafdada5a057e64079c4467d09f99484a38b398653b72",
+    "text": "hello guys welcome back in this video let's go through the rag evaluation in Amazon Bedrock you create a rag application and until you know how the rag application is behaving you cannot be sure that okay this rag application is is Top Notch right in this video let's go through how to create that step by step we are going to use llm to compute The Matrix we are going to choose the metrix that we want because not all metrics might be essential for your application you can even compare different configurations when you create the evaluations I will be walking you step by step we'll be creating a knowledge base we'll be creating a golden data set because there is some formats that you need to follow to create the golden data set you need to provide some permissions for that bucket in order to work for the evaluations we will be evaluate the responses with that golden data set and you can even compare let's say you create application change some configurations you have two evaluations and you can see which one performs the best so you can use the one that performs the best in your production environment by the end of the video you will see something like this let me load it again here so this is one of the",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 0.04,
+      "end_seconds": 76.6,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a3b7f41efbcc233c7a41c8138547ebc4da589efcd552acd71252612bfd6663b9",
+    "text": "best so you can use the one that performs the best in your production environment by the end of the video you will see something like this let me load it again here so this is one of the example that I have already already run here so this is the correctness one I have created three different question answering pairs to check you can see the correctness is one helpfulness is 0.83 and harmfulness is zero if you go down you can see a graph or let's say the diagram here which says there are total number of prompt is three average score is this and if you click on this one it shows for each and every questions how many of those are correct and how many are not if you scroll it down there is this correctness zore if you click here you can see different things if I scroll little bit here you can see you can even open it in a bigger window and you can see how many uh retried sources are are there for this question this is the answer being reported from the rag applications it retrieves five different sources from where the answer was taken and this is the ground truth that we provided when we create the golden data set and then",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 62.719,
+      "end_seconds": 139.56,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=62s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "736dbc3165883470c10ce821bd8ff08ca4847162f7043ab31bace7315b04482e",
+    "text": "question this is the answer being reported from the rag applications it retrieves five different sources from where the answer was taken and this is the ground truth that we provided when we create the golden data set and then llm the one that you choose will provide the score for us this is how we can create a rag evaluation in Amazon Bedrock now let's get into it first let's go into amazoned Rock in order to create the rag applications you need to go to this knowledge basis and before that what I want to mention is when you create the knowledge base it throws the error if you are a root user so you need to be not or root user to create the knowledge base please uh keep that into account and I'm now in North Virginia as you can see here you can choose different reasons but not all reasons support the evaluations that's the reason I'm going through North Virginia for now I will go in the knowledge basis you can see this is the one that I have already created but I will create a new one you can see there are different knowledge bases with Vector store knowledge based with structure data store and knowledge based with Kendra gen index not all these are available in",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 121.24,
+      "end_seconds": 200.72,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=121s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "91cedbbb76ad2750dbf351ab2a829b2104b7aeb26d4797712f0312d9d2a3ab57",
+    "text": "already created but I will create a new one you can see there are different knowledge bases with Vector store knowledge based with structure data store and knowledge based with Kendra gen index not all these are available in all regions but we are going to go with the vectory store you can give uh some random name here I can say YouTube Bedrock uh just an example this is optional uh we don't need to provide it and this is the IIM permissions you can use the existing one or create one for me to know that I am creating for this one I will just give Here YouTube there are different data sources that you can provide Amazon S3 wave crawler also custom and there are also the third party which are SharePoint Salesforce and Confluence which needs extra configurations but for this case we are going to go with Amazon S3 in order to go with the Amazon s 3 you need to create a bucket and then upload your uh data set we can go to the S3 bucket for that you can just go into the search bar here and type is S3 I'll open in a new tab here I have already created the uh folder here you can see I have this test",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 186.0,
+      "end_seconds": 261.199,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=186s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5379a4e4acfc293c4b322a0e2f3a6b74eb76b3f2919a760bc0687cc9e19dd0fd",
+    "text": "that you can just go into the search bar here and type is S3 I'll open in a new tab here I have already created the uh folder here you can see I have this test data science Basics and inside there I already have this attention all you need PDF but for this case what I will do is create a new one I will create a bucket I can give a new name I can say bedrock YouTube then I create a bucket so now here is the Bedrock YouTube I will go inside this and here I will upload a file and what I'm going to upload is attention is all you need PDF right the data set is now provided remember that this is not the golden data set but this is the data set that is going to be fed for the rag application so we have our data set here now I will go back into to this one where we have this knowledge base being created Amazon S3 we go down here it says next say YouTube uh bedro data source and I will say here from this AWS account we are not going to go with other AWS account and from here we can choose which data set I will click this browse S3 and here you can",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 248.599,
+      "end_seconds": 327.199,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=248s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9f1cbc8b0e8cc6366486b2e381f110639ca924be71251a00ece0ff5f15ce16b5",
+    "text": "bedro data source and I will say here from this AWS account we are not going to go with other AWS account and from here we can choose which data set I will click this browse S3 and here you can see there is this bedrock YouTube SK that is what we created and I'll go inside inside this and here is the attention all you need I will choose this one so this is the data set that is going to be provided for this knowledge base I'm not going to go through the advanced parsing things I can create a new video for you because there is llm parsing and data automation all the different things here but we are going to go with the Amazon bedrocks default parel in this case chunking strategy also there are different chunking strategies but we are going to go with the default chunking and now I can I can can just uh leave as it is here I will go next and now if you know what rag applications we have the data set we have the parer and everything and we need to have the embedding model to embed that uh particular uh chunks from the bedro right so here if you click the select model you can choose either cair",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 310.6,
+      "end_seconds": 382.319,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=310s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2a4c4f305a430d58ac820c9ccfeba3a61d171657ccc9b477ea9c4d840dc07a8f",
+    "text": "have the parer and everything and we need to have the embedding model to embed that uh particular uh chunks from the bedro right so here if you click the select model you can choose either cair or Amazon for this case I will just go with the Titan text eding version two on demand uh one I will apply and once this is applied you can go and see the additional configurations you don't need to do anything here you can choose the vector Dimensions let's just go with the default ones and now the vector store right we need to store that somewhere right and Amazon uh Bedrock provides you all the different things here but we are going to go with the Amazon open S server list we don't need to do anything we'll go next this is the review and create everything looks fine I will say create knowledge base if you were using the root user when you create the knowledge base then it would show you the error here that okay you cannot create the knowledge base when uh you are the root user so it will take some time to create because it needs to go through the open source create the collection create the vector uh store for us now I'll go to this uh blog post",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 368.0,
+      "end_seconds": 445.639,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=368s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8e5bb126a013ca097aa432f02f2c1ab27ae5bf9ca043f16dac4e03a7188af08e",
+    "text": "are the root user so it will take some time to create because it needs to go through the open source create the collection create the vector uh store for us now I'll go to this uh blog post which is provided by the Amazon this is the new rag evaluations and llm as a JW capabilities in Amazon Bedrock I will provide the link in the description you can go through this but what we need to do now is in order to go into the evaluation part we need to create a golden data set and that golden data set is in the jonl file format and then we need to have certain uh things like this there is certain format that you need to follow right let me go now it says knowledge base is created that's fine fine and now once it is created this is the most important thing that you need to click the one that is being created and you need to sync it meaning that once you sync you can see here the system is syncing your data source first you just pointed which data you want to use and now it is synced if I Now quickly go here anthropic I can choose the model maybe 3.5 on demand or inference profiles on demand I will say",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 432.28,
+      "end_seconds": 510.44,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=432s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "814213750fe4db32bfe6f8a0c18bc5b7d9ef785e7db0cf7e768255238d64edb8",
+    "text": "you just pointed which data you want to use and now it is synced if I Now quickly go here anthropic I can choose the model maybe 3.5 on demand or inference profiles on demand I will say apply and here here I can ask the questions right so maybe let's say what is the paper about if I ask uh this question it already provides the answer okay uh because if you are too fast sometimes the the vector is store or the collection is not being created but in this case it's already created it says okay the authors introduce a model that relies on self attention layers and all the different things yes now we can ask the questions for this particular knowledge base so I have already created some of the questions here but I will first ask the question right this is the golden data set I will show you how you can do that but I will just ask here how many identical layers does the decoder has right I will go here I will go to the knowledge base and ask the question it will go through that document we provided and provide the answer for us let's see what will be the answer here your request uh rate is too high reduce",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 495.479,
+      "end_seconds": 569.88,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=495s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "13e9b2ebe947603bb63059a7255306bbd18b6195f56a45febc6e692a284f727f",
+    "text": "the knowledge base and ask the question it will go through that document we provided and provide the answer for us let's see what will be the answer here your request uh rate is too high reduce the frequency of request I don't know sometimes I face this issue also in Bedrock although I'm not using any concurrent questions and so on right but for this we can just refresh the page that's what I do and now I go here select the model I will go to anthropic and when you go to the anthropy 3.5 it says that error but if you go with high it will not just play around with it for some weird reason that is the error that I also get so I go here apply I will ask the question how many identical layers I will run this and let's see now it says the decoder in the Transformer model is composed of a stack of six identical years that's correct and it even provides us the resources from where it is taken you can click this s details and here this is the chunk one and there's the metadata associated with that it says here this is the S3 location from where the PDF or the document was taken the answer is in the",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 556.56,
+      "end_seconds": 628.92,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=556s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d8854bb3212108487638596199c0bd531943e3a4e12fb914f0c76af7070fd87a",
+    "text": "and here this is the chunk one and there's the metadata associated with that it says here this is the S3 location from where the PDF or the document was taken the answer is in the page number three and other different meod data information that you need because this is really important when you create your applications and if you want to show the page numbers and other stops for your uh users so yeah this looks great we created the knowledge base right if you go back to our uh diagram here we created the knowledge base we uploaded the data we created the knowledge base now let's go and create the golden data set because now we are going into the evaluation part right yeah we tried this here and it says six right when you are going into the users they can ask as many questions as they want from that particular document and you don't know uh if that is correct or not before rolling into production you need to make sure that some threshold has been achieved so that you are confident to roll the applications to the IND user for this there is the evaluations and again this evaluation is not in all regions so you need to be careful but now I am in North Virginia",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 613.44,
+      "end_seconds": 690.279,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=613s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6c6f7b39061c2d632fd2ff5f09ea1b5553a1eae8264b7e3f15d1df4a06a15c2b",
+    "text": "confident to roll the applications to the IND user for this there is the evaluations and again this evaluation is not in all regions so you need to be careful but now I am in North Virginia it is showing here I can go to the evaluations right I can cancel this and here there is two evaluations model evaluations and rag evaluations we are going to go with the rag evaluations I have already created one uh and we are going to create the uh new one here so I'll say create and you can give the name here I will say YouTube and description uh latest uh eval just a sample name here you can choose the evaluator model IU mol Lama 3.1 3 Sonet whatever you want I will go with 3.5 Sonet and the tax it's up to you if you want to give or not and choose a knowledge base so we created a knowledge base now we need to provide the knowledge base here we have two knowledge bases this is the one that I created before and this is the one that I created just now I will choose the one that I want uh to do the evaluations and there is also the retrieval only or retrieval and response Generations I will go with the retrial",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 675.2,
+      "end_seconds": 753.04,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=675s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f2f7b1c979f6378800f97eaf310272bc55bcbec6eb550f8da993b0e91f5477b6",
+    "text": "I created just now I will choose the one that I want uh to do the evaluations and there is also the retrieval only or retrieval and response Generations I will go with the retrial and response generations and now here is the response generator model right so there is two things here one which does the evaluation one which generates the uh response for your question so I will choose again the same one that I used before anthropic 3.5 Sonet apply you can choose whatever you want there as you can see I said compare different configurations and so on right so what you can do here is by default there is some configurations there but you can even go here in and click this configurations and already here you can go and change the temperature topy top K length maximum length and so on you can provide the guard rails if you want what is the search type override the default search how many Source chunks you want to have by default it's five you can provide two three whatever you want right and there's the filters you can provide the filters also query modifications do you want to break down the queries you can even break down the queries uh so split complex queries into multiple parts to get more relevant",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 738.24,
+      "end_seconds": 816.839,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=738s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c7935223884203c827c4c6fffd719bac5ab0b9657c22455666b70c53a89daca1",
+    "text": "right and there's the filters you can provide the filters also query modifications do you want to break down the queries you can even break down the queries uh so split complex queries into multiple parts to get more relevant responses you can even do that knowledge based prompt template you can provide the system prompt uh for you I'm just going to use the normal one in this case and there is the guard drills you can create the guard because I haven't created any guardrails here so these are the things that you can change when you do the evaluations but I'm going to use the template or the one that is being provided by default right this is now the part where I said you can choose the metrix right so here there is the helpfulness you can choose the correctness faithfulness logical coherence completeness whatever you want to do but for me I will just choose the helpfulness and the correctness that's enough for me for this demo and in the responsible AI part you can choose refusal stereotyping or harmfulness I will choose the humbleness for now this is done and now is the part where you need to provide uh the data set uh for the evaluations and there is the results for the evaluations so data set for the",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 801.0,
+      "end_seconds": 879.12,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=801s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3f5468042846233a235f0f94876161348f20c6719fb8406022f67576dfddbff6",
+    "text": "will choose the humbleness for now this is done and now is the part where you need to provide uh the data set uh for the evaluations and there is the results for the evaluations so data set for the evaluation meaning the golden data set and the results for the evaluation meaning once the evaluation is done it needs to store somewhere right these are the two things which you need to provide and it has to be certain formats and permissions needs to be provided if you go to this blog post again as you can see here this is the example that is being provided right and what I have already done is I have already created this is the uh PDF that I'm going to use attention is all you need right from here I have chosen random three different questions and answer pair which I just showed you before but here you can see I'm saying here rag evaluator Json Y and this is the same copy pasted but I replace the question and answer so conversation turns reference response text and so this is the answer the recorder is composed of stack of n equals to six identical layers that is the answer and here you can see this is the prompt this is the",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 862.759,
+      "end_seconds": 936.8,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=862s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "86d90742722de40e3845e9a37a59409e4c47cb258487ad75a494a816466392d2",
+    "text": "reference response text and so this is the answer the recorder is composed of stack of n equals to six identical layers that is the answer and here you can see this is the prompt this is the content what questions you ask right so then here is how many identical layers does the decoder has you can provide as many uh question pairs uh as you want I have now this right and one thing is also that I have already uploaded this in my GitHub for you to go through it so if you go inside the YouTube stuffs and here I have this Bedrock rag eval that set I will provide the link in the description inside here is the PDF that I have been using this is the rag evaluator J L you can take this or go into the blog post and take this now let's go to the S3 bucket here attention all you need we can now upload the golden data set I will go here and I will say add files and this is the rag evaluator jonel and now I upload this here so now I uploaded this but remember one thing is there we need to provide the additional permissions if you go here it says this is the uh uh type but here I",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 922.639,
+      "end_seconds": 1001.3190000000001,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=922s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fe369bf8f3ea984548ac195c73b5daf834924169408943b20c1241e51061b0b6",
+    "text": "jonel and now I upload this here so now I uploaded this but remember one thing is there we need to provide the additional permissions if you go here it says this is the uh uh type but here I specify the S3 location to store the results of the evaluation the evaluation job requires that the S3 location is configured with the cross origin resource sharing permission described in the Amazon Bedrock guide so here you see there is there the evaluation job requires that the S3 bucket is this if you click this one it will take you to the documentations I just want to show you where it is but here it doesn't Point directly you can sorts for evaluation let's see if there is some evaluator evaluation evaluate the performance of Amazon bedro resources here you can see there is this knowledge base and course requirements you go here and this is the example already being provided you can copy this and read here when you create a model evaluation job that us is the Amazon Bedrock console you must specify a course configuration on the S3 bucket itself this is really important part because if you don't do this then it will not work we have this rag evaluator we have these two things here we first create the folder where we",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 983.48,
+      "end_seconds": 1070.039,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=983s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "68e3e0f28978e2f2f4ddc3486e077288b26480dad6f356fc005df7e92857b346",
+    "text": "on the S3 bucket itself this is really important part because if you don't do this then it will not work we have this rag evaluator we have these two things here we first create the folder where we want to store rag evaluation is the folder name I created so this is where we want that to be stored but it needs to be in the Bucket Level so here in the bucket label go to the permissions and if you scroll little bit down there is the C RS right cross origin resource sharing go here edit this one and this is the basic things that is needed you can configure this only to your region or Bedrock whatever you want to do but this is the bare minimum thing that you need to provide uh so it works so this is done I can save the changes that's it now we have the golden data set we have the folder also to store the evaluations right so now if I go back here I can browse here right I will go here and here I have this Bedrock SK and here I have the data set that I provided for the rag evaluation this is the Json y I will choose this one that's fantastic I'll again go browse for the evaluations",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 1053.52,
+      "end_seconds": 1134.72,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=1053s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cb3eee24c5c649a243bfd5e777e920405c1f6a894c34b7c5b2b67b9e323d29fe",
+    "text": "here I have this Bedrock SK and here I have the data set that I provided for the rag evaluation this is the Json y I will choose this one that's fantastic I'll again go browse for the evaluations I Go Again inside this there is this rag evaluations I will choose this one that is also fine but now the main thing is also the Amazon Bedrock IM Ro permissions so this one you can create yourself or you can just ask here to create for you you can just create a new service role because if you go to this documentation here it is mentioned let me show you here is this for service assess I need to create or provide this I am service role that Bedrock can assume and that allows access to the Amazon bedrock n S3 resources used by the evaluation right it needs to read between these two things but for us it's simple we can say create an use a new service role and I can just give here SK or I can say YouTube just to know that it is being created and now I can say create so now you can see we specified all the necessary things and you need to follow step by step what I did here it",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 1117.84,
+      "end_seconds": 1197.24,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=1117s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "daa9dce3a59fe523e4d61d37f069792a4b49d9e16e91bcc493fe38198fbf4d21",
+    "text": "or I can say YouTube just to know that it is being created and now I can say create so now you can see we specified all the necessary things and you need to follow step by step what I did here it says okay hyen uh the name can have up to 50 characters okay so I can say here some strange things in AWS or sometimes so I will say YT so it says I need maybe this one yes no underscores uh there this is what the created I will create it now you can see that it is being uh created and this process may take up up to few minutes you will be redirected to the main evaluation page once it is created one thing to remember is if you cancel this it will be cancelled and it will not be swn so you need to wait some time in order to be it being created and it redirects you to the evaluation page and there you will see that it is in progress so as you can see here now it is redirected back here and it is saying here that it is in progress this will take some time but this is the previous one that I have already created and I will explain all the different things",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 1182.64,
+      "end_seconds": 1258.919,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=1182s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9858ab8817a636c0cf595a9e88f2f5fff41fc86bd1ab2e345b2d4be5ba7ca88a",
+    "text": "is redirected back here and it is saying here that it is in progress this will take some time but this is the previous one that I have already created and I will explain all the different things from this previous one once the this is created I will show you how you can uh compare it compare the rag evaluation so here let's go into the earlier one that I created I will go inside it you can see the evaluation summary if you click this you can see what is the name the total number of conversation T the evaluator model the generator model and all the informations that you need right and then here it will see you the metric summary and all the small details are being provided here uh what is the quality metrix and here you can see the overall performance using metrix uh average score across all conversations closer to one is higher score closer to zero is lower score for example closer to one for the correctness means more correct answers you can Define the custom criteria to highlight any metric that fall above or below this threshold you can hoover on top of this or click on this and you can see what is this all about better towards one right is",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 1245.24,
+      "end_seconds": 1319.32,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=1245s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "00aac579a27d2f8ee97f2082af4fe5c72939cecc149e52b5bd14da4ac1e84cde",
+    "text": "custom criteria to highlight any metric that fall above or below this threshold you can hoover on top of this or click on this and you can see what is this all about better towards one right is towards one is the better helpful also towards one it is better you can go and read in the documentations all the different things how it is being calculated and so on on the higher level just think that if it is greater towards one it's the better and you can have some kind of threshold if that threshold is defined then you are confident that okay we can now roll this into the production and also this responsive AI Matrix harmfulness is zero that is good because towards zero is better in this case because harmfulness if you click on this you can see that one indicates fully harmful responses zero indicates entirely harmless uh responses right here is the Matrix you can click on the Matrix helpfulness you can see it points here you can see from this cool looking figure also what is it all about you can click here and it opens this it says okay score equals 0.13 the filter is already there you can clear the filters and so on and there is the five responses as I showed you before also",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 1303.32,
+      "end_seconds": 1378.96,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=1303s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9eb3a2bdf206ee07f63874158ec598b6e9f4c7e6aa8a70298364c1cb22e01c88",
+    "text": "click here and it opens this it says okay score equals 0.13 the filter is already there you can clear the filters and so on and there is the five responses as I showed you before also there is the five default respon that is being that is being taken if I go here and make this bigger it's easier to read it provides the answer this is the generation output it is not being evaluated until now and there is the five different retried sources you can provide as many as you want here is the ground truth that we provided in the golden data set that is being compared and the score is provided here you can go through and check some wrong answers also how how does it it performs and so on this is for the harmfulness and now we go to the correctness here you can see the diagram you can click on this one it will show you all the different things you can make it bigger and see all the answers and so on and one thing is also if you click on this answers or the scores that is being provided it shows you why it provided that uh score for you so you can just go ahead and read why it provided that is score it is",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 1365.44,
+      "end_seconds": 1438.6399999999999,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=1365s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "26ab3ece53e03f0479d77311166c7f6866af457c3219950639c9906e2413a23b",
+    "text": "is also if you click on this answers or the scores that is being provided it shows you why it provided that uh score for you so you can just go ahead and read why it provided that is score it is the same also for the uh previous one if I go here why did it give 0.83 if you click any one of this it will explain all the details why it provided and why it give 0.83 and if there is some improvements that needs to be made or or so and remember that is provided by the llm itself so llm as a judge in our case right and then if you scroll a little bit down there is harmfulness and we don't have any harmful responses so it says measures harmful contents in the responses including hate insults violence or sexual content right so we don't have any of this you can click on this and you can go here make this bigger and see what is the actual answer that is given to you what is the answer that you provided and then this is the score that is being shown us right this is how you can quickly go into Bedrock create your knowledge base and also do the evaluations I think evaluation is still",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 1422.48,
+      "end_seconds": 1497.279,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=1422s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0521ab6b476c4c0b990125bc8e31b94a3ca802cd63436409017c87b13aa1e737",
+    "text": "provided and then this is the score that is being shown us right this is how you can quickly go into Bedrock create your knowledge base and also do the evaluations I think evaluation is still ongoing let's see if it is already there because it takes some time to do the evaluations and remember if you have more question answering pairs in the golden data set it will take more time because here we just have three still it is taking some time for us you can see here it say still in progress but if I go to the diagram here we created the knowledge base we created the golden data set we provided required course permission on S3 bucket we we did the evaluate the response with the golden data set this compare rag evaluations is uh the one that we need to do but as as you can see it takes some time but what you can do is you can just click uh these two and then to the compare it is still in progress so it is not showing us the compare but once you click these two you can do the compare and you will see the comparison in the block post also if you go a little bit down here it is shown how you can do it so here this",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 1481.48,
+      "end_seconds": 1555.88,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=1481s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1dae3ff57a6615f23def832aede51a741ca99bb4268332405b247908548d7a9c",
+    "text": "two you can do the compare and you will see the comparison in the block post also if you go a little bit down here it is shown how you can do it so here this is the example that I showed until now all the different things to do the comparison comparing the evaluations I'll provide the link in the description so here you can choose and it says here in the at a glance tab I say this this this you can do the compare and you can see at a glance evaluation and you can see all the cool looking comparison diagrams and you can compare which evaluations performs the best based on the knowledge basis you created what you can do now is go back and forth changing the embedding model or you can change the chunking mechanism you can change the paring mechanisms you can even clean the PDF if needed you can use llm to do the parsing whatever you want to do once you do the better knowledge base you can do the same metrix evaluations and then see which one performs the best the one that performs the best you can roll out into production and now you are confident enough to say that okay now the applications that I'm rolling into",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 1543.6,
+      "end_seconds": 1617.96,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=1543s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d454a8e76fb13bb0649d80e339c673301fb9a1c829a2781f4c7ca2ada7eac98f",
+    "text": "see which one performs the best the one that performs the best you can roll out into production and now you are confident enough to say that okay now the applications that I'm rolling into the production is is good because you have the the threshold and you can demonstrate that to the stakeholders or or the business units you want to present that so they are also confident enough to say that okay this I applications is behaving as we uh expect it is responsive that is all I wanted to show you in this video I hope now you can uh do rag evaluations quickly in Amazon Bedrock let me know comment section what you think did you try it or not thanks for watching and see you in next video",
+    "metadata": {
+      "video_id": "HI5b0g_mELA",
+      "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "Evaluation",
+      "start_seconds": 1602.799,
+      "end_seconds": 1647.0,
+      "url": "https://www.youtube.com/watch?v=HI5b0g_mELA&t=1602s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

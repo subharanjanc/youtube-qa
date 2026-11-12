@@ -1,0 +1,2043 @@
+{
+  "video_id": "KEeolG9JlC4",
+  "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+  "channel": "edureka!",
+  "trainer": "Edureka",
+  "topic": "Agents",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1033.0,
+  "segments": [
+    {
+      "start": 3.274,
+      "end": 5.2940000000000005,
+      "text": "[music]"
+    },
+    {
+      "start": 8.16,
+      "end": 12.719000000000001,
+      "text": "Hello everyone and welcome back to"
+    },
+    {
+      "start": 10.0,
+      "end": 15.120000000000001,
+      "text": "another video by Edureka. In today's"
+    },
+    {
+      "start": 12.719,
+      "end": 17.52,
+      "text": "video, we are going to explore agentic"
+    },
+    {
+      "start": 15.12,
+      "end": 19.358999999999998,
+      "text": "rag or agentic retrieval augmented"
+    },
+    {
+      "start": 17.52,
+      "end": 21.6,
+      "text": "generation. Whether you're new to"
+    },
+    {
+      "start": 19.359,
+      "end": 23.92,
+      "text": "generative AI or looking to understand"
+    },
+    {
+      "start": 21.6,
+      "end": 25.840000000000003,
+      "text": "how intelligent agents can dynamically"
+    },
+    {
+      "start": 23.92,
+      "end": 28.240000000000002,
+      "text": "interact with knowledge sources to"
+    },
+    {
+      "start": 25.84,
+      "end": 30.72,
+      "text": "improve performance and decision making,"
+    },
+    {
+      "start": 28.24,
+      "end": 32.559,
+      "text": "this is your perfect starting point. But"
+    },
+    {
+      "start": 30.72,
+      "end": 34.16,
+      "text": "before we begin, make sure to like,"
+    },
+    {
+      "start": 32.559,
+      "end": 36.079,
+      "text": "share, and subscribe to Edureka's"
+    },
+    {
+      "start": 34.16,
+      "end": 38.0,
+      "text": "YouTube channel and hit the bell icon to"
+    },
+    {
+      "start": 36.079,
+      "end": 41.44,
+      "text": "stay updated on the latest tech content"
+    },
+    {
+      "start": 38.0,
+      "end": 43.92,
+      "text": "from Edureka. Also check out the agentic"
+    },
+    {
+      "start": 41.44,
+      "end": 46.16,
+      "text": "AI certification training course crafted"
+    },
+    {
+      "start": 43.92,
+      "end": 48.160000000000004,
+      "text": "by industry experts to equip you with"
+    },
+    {
+      "start": 46.16,
+      "end": 50.559,
+      "text": "the cutting edge skills needed to roles"
+    },
+    {
+      "start": 48.16,
+      "end": 53.839999999999996,
+      "text": "like generative AI engineer, LLM"
+    },
+    {
+      "start": 50.559,
+      "end": 56.16,
+      "text": "engineer and AI agent engineer. This"
+    },
+    {
+      "start": 53.84,
+      "end": 58.559000000000005,
+      "text": "comprehensive program dives deep into"
+    },
+    {
+      "start": 56.16,
+      "end": 60.8,
+      "text": "agentic AI development and AI"
+    },
+    {
+      "start": 58.559,
+      "end": 63.12,
+      "text": "architecture design empowering you to"
+    },
+    {
+      "start": 60.8,
+      "end": 65.03999999999999,
+      "text": "master complex concepts such as"
+    },
+    {
+      "start": 63.12,
+      "end": 67.67999999999999,
+      "text": "conversation patterns and optimizing"
+    },
+    {
+      "start": 65.04,
+      "end": 69.43900000000001,
+      "text": "performance in no code AI environments."
+    },
+    {
+      "start": 67.68,
+      "end": 71.76,
+      "text": "You will get hands-on experience through"
+    },
+    {
+      "start": 69.439,
+      "end": 74.15899999999999,
+      "text": "real world projects that translate"
+    },
+    {
+      "start": 71.76,
+      "end": 75.43900000000001,
+      "text": "directly into practical expertise."
+    },
+    {
+      "start": 74.159,
+      "end": 78.08000000000001,
+      "text": "Whether you're aiming to build"
+    },
+    {
+      "start": 75.439,
+      "end": 80.39999999999999,
+      "text": "intelligent AI agents or advance your"
+    },
+    {
+      "start": 78.08,
+      "end": 82.96,
+      "text": "career in generative AI, this course"
+    },
+    {
+      "start": 80.4,
+      "end": 84.96000000000001,
+      "text": "provides the tools, frameworks, and"
+    },
+    {
+      "start": 82.96,
+      "end": 87.759,
+      "text": "support you need to succeed in the"
+    },
+    {
+      "start": 84.96,
+      "end": 90.96,
+      "text": "evolving AI landscape. So let's start"
+    },
+    {
+      "start": 87.759,
+      "end": 93.68,
+      "text": "with how compar GMBB has transformed a"
+    },
+    {
+      "start": 90.96,
+      "end": 96.479,
+      "text": "major German bank's operations using"
+    },
+    {
+      "start": 93.68,
+      "end": 99.36000000000001,
+      "text": "agentic rack. A universal bank in"
+    },
+    {
+      "start": 96.479,
+      "end": 102.0,
+      "text": "Germany dependent on over,200 different"
+    },
+    {
+      "start": 99.36,
+      "end": 104.56,
+      "text": "processes from archive searches and form"
+    },
+    {
+      "start": 102.0,
+      "end": 106.96,
+      "text": "management to sending emails and SMS to"
+    },
+    {
+      "start": 104.56,
+      "end": 109.84,
+      "text": "support customers and manage its back"
+    },
+    {
+      "start": 106.96,
+      "end": 111.67999999999999,
+      "text": "office task. For example, a single"
+    },
+    {
+      "start": 109.84,
+      "end": 113.92,
+      "text": "workflow like issuing a power of"
+    },
+    {
+      "start": 111.68,
+      "end": 117.04,
+      "text": "attorney required more than 30 distinct"
+    },
+    {
+      "start": 113.92,
+      "end": 119.2,
+      "text": "system calls and manual transfers. This"
+    },
+    {
+      "start": 117.04,
+      "end": 122.399,
+      "text": "complexity resulted in a process that"
+    },
+    {
+      "start": 119.2,
+      "end": 124.399,
+      "text": "was slow, expensive, and sustainable to"
+    },
+    {
+      "start": 122.399,
+      "end": 126.799,
+      "text": "errors. So, how did they turn this"
+    },
+    {
+      "start": 124.399,
+      "end": 129.36,
+      "text": "around? Let's see the agentic rack"
+    },
+    {
+      "start": 126.799,
+      "end": 131.76000000000002,
+      "text": "solution in action. Compare collaborated"
+    },
+    {
+      "start": 129.36,
+      "end": 134.239,
+      "text": "with IBM to develop a conversational"
+    },
+    {
+      "start": 131.76,
+      "end": 136.319,
+      "text": "banking assistant utilizing agentic"
+    },
+    {
+      "start": 134.239,
+      "end": 139.36,
+      "text": "rack. And here's how the process"
+    },
+    {
+      "start": 136.319,
+      "end": 141.51999999999998,
+      "text": "operated. The planning agent outlined"
+    },
+    {
+      "start": 139.36,
+      "end": 144.31900000000002,
+      "text": "every individual step in the power of"
+    },
+    {
+      "start": 141.52,
+      "end": 146.48000000000002,
+      "text": "attorney procedure. Retrieval agents"
+    },
+    {
+      "start": 144.319,
+      "end": 149.2,
+      "text": "access various systems such as core"
+    },
+    {
+      "start": 146.48,
+      "end": 152.48,
+      "text": "banking, archives, form management,"
+    },
+    {
+      "start": 149.2,
+      "end": 154.879,
+      "text": "email and SMS APIs to gather exactly"
+    },
+    {
+      "start": 152.48,
+      "end": 156.959,
+      "text": "what was needed to each phase. The"
+    },
+    {
+      "start": 154.879,
+      "end": 158.79999999999998,
+      "text": "validation loop ensured that each step"
+    },
+    {
+      "start": 156.959,
+      "end": 161.84,
+      "text": "was completed before proceeding,"
+    },
+    {
+      "start": 158.8,
+      "end": 164.0,
+      "text": "preventing any overlooked details. The"
+    },
+    {
+      "start": 161.84,
+      "end": 165.519,
+      "text": "generation agent utilizing IBM"
+    },
+    {
+      "start": 164.0,
+      "end": 168.16,
+      "text": "Watsonic.ai"
+    },
+    {
+      "start": 165.519,
+      "end": 170.16,
+      "text": "created clear user-friendly messages"
+    },
+    {
+      "start": 168.16,
+      "end": 172.879,
+      "text": "that guided the customer through every"
+    },
+    {
+      "start": 170.16,
+      "end": 175.68,
+      "text": "stage. And what did this translate to in"
+    },
+    {
+      "start": 172.879,
+      "end": 178.07999999999998,
+      "text": "real numbers? Let's look at the impact."
+    },
+    {
+      "start": 175.68,
+      "end": 180.72,
+      "text": "Once the agentic rack powered assistant"
+    },
+    {
+      "start": 178.08,
+      "end": 183.68,
+      "text": "went live, the bank saw its overall"
+    },
+    {
+      "start": 180.72,
+      "end": 186.72,
+      "text": "process effort cut in half. Team spent"
+    },
+    {
+      "start": 183.68,
+      "end": 189.44,
+      "text": "50% less time on the power of attorney"
+    },
+    {
+      "start": 186.72,
+      "end": 192.4,
+      "text": "workflow. At the same time, customer"
+    },
+    {
+      "start": 189.44,
+      "end": 194.959,
+      "text": "support tickets dropped by 30% since"
+    },
+    {
+      "start": 192.4,
+      "end": 197.92000000000002,
+      "text": "most routine questions were handled end"
+    },
+    {
+      "start": 194.959,
+      "end": 200.0,
+      "text": "to end by the system. And best of all,"
+    },
+    {
+      "start": 197.92,
+      "end": 202.159,
+      "text": "customer enjoyed faster and more"
+    },
+    {
+      "start": 200.0,
+      "end": 205.04,
+      "text": "accurate service. All because of"
+    },
+    {
+      "start": 202.159,
+      "end": 207.67999999999998,
+      "text": "automated and contextaware pipeline."
+    },
+    {
+      "start": 205.04,
+      "end": 210.07999999999998,
+      "text": "This example shows how Agentic Rag isn't"
+    },
+    {
+      "start": 207.68,
+      "end": 212.08,
+      "text": "just better search plus generation. It's"
+    },
+    {
+      "start": 210.08,
+      "end": 214.64000000000001,
+      "text": "about coordinating multiple tools and"
+    },
+    {
+      "start": 212.08,
+      "end": 217.20000000000002,
+      "text": "data sources, validating results on the"
+    },
+    {
+      "start": 214.64,
+      "end": 220.39999999999998,
+      "text": "fly, and delivering fully automated and"
+    },
+    {
+      "start": 217.2,
+      "end": 222.48,
+      "text": "contextaware workflows. All right, now"
+    },
+    {
+      "start": 220.4,
+      "end": 225.20000000000002,
+      "text": "that you have seen agentic rag in action"
+    },
+    {
+      "start": 222.48,
+      "end": 227.599,
+      "text": "at a German bank, now let's break it"
+    },
+    {
+      "start": 225.2,
+      "end": 230.64,
+      "text": "down from the ground up. What is agentic"
+    },
+    {
+      "start": 227.599,
+      "end": 233.599,
+      "text": "rag exactly? Agentic rag stands for"
+    },
+    {
+      "start": 230.64,
+      "end": 236.07999999999998,
+      "text": "agentic retrieval augmented generation."
+    },
+    {
+      "start": 233.599,
+      "end": 238.319,
+      "text": "In simple terms, I can say that it's a"
+    },
+    {
+      "start": 236.08,
+      "end": 240.239,
+      "text": "system where your AI doesn't just"
+    },
+    {
+      "start": 238.319,
+      "end": 242.879,
+      "text": "retrieve information once and split out"
+    },
+    {
+      "start": 240.239,
+      "end": 245.28,
+      "text": "an answer. Instead, it spins up"
+    },
+    {
+      "start": 242.879,
+      "end": 247.439,
+      "text": "autonomous agents that plan their own"
+    },
+    {
+      "start": 245.28,
+      "end": 250.0,
+      "text": "next steps, fetch information from"
+    },
+    {
+      "start": 247.439,
+      "end": 252.56,
+      "text": "multiple sources, validate each piece of"
+    },
+    {
+      "start": 250.0,
+      "end": 255.519,
+      "text": "data, and generate a final polish"
+    },
+    {
+      "start": 252.56,
+      "end": 258.32,
+      "text": "response without human handholding. So,"
+    },
+    {
+      "start": 255.519,
+      "end": 260.639,
+      "text": "agentic rag transform a single retrieve"
+    },
+    {
+      "start": 258.32,
+      "end": 263.44,
+      "text": "and generate call into a smart"
+    },
+    {
+      "start": 260.639,
+      "end": 266.32,
+      "text": "multi-step workflow. So, your AI can"
+    },
+    {
+      "start": 263.44,
+      "end": 268.96,
+      "text": "adapt, correct itself, and tap into the"
+    },
+    {
+      "start": 266.32,
+      "end": 271.84,
+      "text": "new data. Great. So, we know what"
+    },
+    {
+      "start": 268.96,
+      "end": 273.75899999999996,
+      "text": "agentic rag is. Next up, let's unpack"
+    },
+    {
+      "start": 271.84,
+      "end": 276.71999999999997,
+      "text": "the four core building blocks that make"
+    },
+    {
+      "start": 273.759,
+      "end": 279.28000000000003,
+      "text": "it all work. Imagine agentic rag as a"
+    },
+    {
+      "start": 276.72,
+      "end": 282.0,
+      "text": "well orchestrated factory. It begins"
+    },
+    {
+      "start": 279.28,
+      "end": 285.11999999999995,
+      "text": "with your prompt which serves as the job"
+    },
+    {
+      "start": 282.0,
+      "end": 287.84,
+      "text": "order you submit. The LLM acts as the"
+    },
+    {
+      "start": 285.12,
+      "end": 289.28000000000003,
+      "text": "master planner which reviews the order,"
+    },
+    {
+      "start": 287.84,
+      "end": 291.67999999999995,
+      "text": "comprehends what needs to be"
+    },
+    {
+      "start": 289.28,
+      "end": 295.03999999999996,
+      "text": "accomplished and outlines the highlevel"
+    },
+    {
+      "start": 291.68,
+      "end": 297.52,
+      "text": "vision. Next, the task transitions to"
+    },
+    {
+      "start": 295.04,
+      "end": 300.96000000000004,
+      "text": "the agent layer where the true magic"
+    },
+    {
+      "start": 297.52,
+      "end": 303.44,
+      "text": "occurs. Imagine each agent as an expert"
+    },
+    {
+      "start": 300.96,
+      "end": 305.75899999999996,
+      "text": "on the factory floor. A planning agent"
+    },
+    {
+      "start": 303.44,
+      "end": 307.84,
+      "text": "takes the master plan and breaks it down"
+    },
+    {
+      "start": 305.759,
+      "end": 309.84000000000003,
+      "text": "into individual task like gathering"
+    },
+    {
+      "start": 307.84,
+      "end": 312.56,
+      "text": "customer data or checking document"
+    },
+    {
+      "start": 309.84,
+      "end": 315.35999999999996,
+      "text": "status. Retrieval agents then spring"
+    },
+    {
+      "start": 312.56,
+      "end": 318.32,
+      "text": "into action. Quering vector databases,"
+    },
+    {
+      "start": 315.36,
+      "end": 321.039,
+      "text": "calling web APIs or pulling files from"
+    },
+    {
+      "start": 318.32,
+      "end": 324.15999999999997,
+      "text": "your document store to fetch exactly the"
+    },
+    {
+      "start": 321.039,
+      "end": 326.479,
+      "text": "information needed. Once data come back,"
+    },
+    {
+      "start": 324.16,
+      "end": 329.6,
+      "text": "a validation agent steps in to verify"
+    },
+    {
+      "start": 326.479,
+      "end": 331.68,
+      "text": "accuracy. retrying a failed lookup or"
+    },
+    {
+      "start": 329.6,
+      "end": 334.24,
+      "text": "switching to a backup source if"
+    },
+    {
+      "start": 331.68,
+      "end": 337.44,
+      "text": "something's off. Finally, a generation"
+    },
+    {
+      "start": 334.24,
+      "end": 340.8,
+      "text": "agent assembles the verified pieces and"
+    },
+    {
+      "start": 337.44,
+      "end": 342.8,
+      "text": "crafts the polished user ready response."
+    },
+    {
+      "start": 340.8,
+      "end": 346.16,
+      "text": "All these agents rely on the knowledge"
+    },
+    {
+      "start": 342.8,
+      "end": 348.32,
+      "text": "base and tools. This is the AI's toolbox"
+    },
+    {
+      "start": 346.16,
+      "end": 350.96000000000004,
+      "text": "filled with everything from semantic"
+    },
+    {
+      "start": 348.32,
+      "end": 353.759,
+      "text": "search indexes and CRM system to"
+    },
+    {
+      "start": 350.96,
+      "end": 356.56,
+      "text": "calculators and external web services."
+    },
+    {
+      "start": 353.759,
+      "end": 358.8,
+      "text": "It's a valuable resource that the agents"
+    },
+    {
+      "start": 356.56,
+      "end": 362.08,
+      "text": "rely on to effectively get their job"
+    },
+    {
+      "start": 358.8,
+      "end": 364.56,
+      "text": "done. And finally is the feedback loop."
+    },
+    {
+      "start": 362.08,
+      "end": 367.28,
+      "text": "Every time an agent completes a step, it"
+    },
+    {
+      "start": 364.56,
+      "end": 370.0,
+      "text": "logs whether it succeeded or not. That"
+    },
+    {
+      "start": 367.28,
+      "end": 372.0,
+      "text": "feedback gets fed back into the system,"
+    },
+    {
+      "start": 370.0,
+      "end": 374.16,
+      "text": "helping the agents learn which data"
+    },
+    {
+      "start": 372.0,
+      "end": 376.96,
+      "text": "sources are reliable and which queries"
+    },
+    {
+      "start": 374.16,
+      "end": 379.199,
+      "text": "need fine-tuning. Over time, the entire"
+    },
+    {
+      "start": 376.96,
+      "end": 381.84,
+      "text": "pipeline becomes faster, more accurate,"
+    },
+    {
+      "start": 379.199,
+      "end": 384.639,
+      "text": "and more resilient. With the elements"
+    },
+    {
+      "start": 381.84,
+      "end": 387.52,
+      "text": "laid out, let's explore step by step how"
+    },
+    {
+      "start": 384.639,
+      "end": 389.919,
+      "text": "they interact in a real query. Imagine a"
+    },
+    {
+      "start": 387.52,
+      "end": 392.71999999999997,
+      "text": "customer ask what's the status of my"
+    },
+    {
+      "start": 389.919,
+      "end": 396.08,
+      "text": "power of attorney and here's how agentic"
+    },
+    {
+      "start": 392.72,
+      "end": 398.40000000000003,
+      "text": "rag handles it. So first it decide. So"
+    },
+    {
+      "start": 396.08,
+      "end": 400.24,
+      "text": "the planning agent kicks things off. It"
+    },
+    {
+      "start": 398.4,
+      "end": 402.56,
+      "text": "reads the question and breaks it into"
+    },
+    {
+      "start": 400.24,
+      "end": 404.88,
+      "text": "subtask such as fetching customer"
+    },
+    {
+      "start": 402.56,
+      "end": 407.759,
+      "text": "details, checking document status and"
+    },
+    {
+      "start": 404.88,
+      "end": 409.759,
+      "text": "preparing a notification plan. Next, one"
+    },
+    {
+      "start": 407.759,
+      "end": 412.0,
+      "text": "or more retrieval agents spring into"
+    },
+    {
+      "start": 409.759,
+      "end": 414.24,
+      "text": "action. They query the core banking"
+    },
+    {
+      "start": 412.0,
+      "end": 416.319,
+      "text": "system for account information, hit the"
+    },
+    {
+      "start": 414.24,
+      "end": 419.039,
+      "text": "document archive for the signed form,"
+    },
+    {
+      "start": 416.319,
+      "end": 421.91900000000004,
+      "text": "and even ping the SMS API to prepare a"
+    },
+    {
+      "start": 419.039,
+      "end": 424.15999999999997,
+      "text": "message template. As each piece of data"
+    },
+    {
+      "start": 421.919,
+      "end": 426.88,
+      "text": "comes back, the validation agent checks"
+    },
+    {
+      "start": 424.16,
+      "end": 429.12,
+      "text": "it for a completeness and accuracy. If"
+    },
+    {
+      "start": 426.88,
+      "end": 432.24,
+      "text": "the archive lookup fails or returns"
+    },
+    {
+      "start": 429.12,
+      "end": 434.72,
+      "text": "stable data, it retries or switches to a"
+    },
+    {
+      "start": 432.24,
+      "end": 437.12,
+      "text": "backup index, making sure nothing slips"
+    },
+    {
+      "start": 434.72,
+      "end": 439.44000000000005,
+      "text": "through the cracks. Once all the facts"
+    },
+    {
+      "start": 437.12,
+      "end": 441.919,
+      "text": "are verified, the generation agents call"
+    },
+    {
+      "start": 439.44,
+      "end": 444.96,
+      "text": "the LLM to put together everything into"
+    },
+    {
+      "start": 441.919,
+      "end": 447.84,
+      "text": "a clear conversational reply like this."
+    },
+    {
+      "start": 444.96,
+      "end": 450.88,
+      "text": "Finally, every step logs its outcome"
+    },
+    {
+      "start": 447.84,
+      "end": 453.19899999999996,
+      "text": "success and hiccups alike. That data"
+    },
+    {
+      "start": 450.88,
+      "end": 455.039,
+      "text": "feeds back into the system so future"
+    },
+    {
+      "start": 453.199,
+      "end": 458.0,
+      "text": "queries run even smoother and more"
+    },
+    {
+      "start": 455.039,
+      "end": 461.28,
+      "text": "accurately. And that's the agentic loop."
+    },
+    {
+      "start": 458.0,
+      "end": 463.68,
+      "text": "plan, retrieve, validate, generate, and"
+    },
+    {
+      "start": 461.28,
+      "end": 466.71999999999997,
+      "text": "learn working together to deliver fast,"
+    },
+    {
+      "start": 463.68,
+      "end": 468.639,
+      "text": "reliable, and contextrich answers. Now"
+    },
+    {
+      "start": 466.72,
+      "end": 471.28000000000003,
+      "text": "that we have seen the full agentic loop"
+    },
+    {
+      "start": 468.639,
+      "end": 473.52,
+      "text": "in action, let's see how agentic rack"
+    },
+    {
+      "start": 471.28,
+      "end": 475.75899999999996,
+      "text": "stacks up against traditional rack."
+    },
+    {
+      "start": 473.52,
+      "end": 478.24,
+      "text": "Traditional rag operates simply. You"
+    },
+    {
+      "start": 475.759,
+      "end": 480.72,
+      "text": "submit a query to a retriever, retrieve"
+    },
+    {
+      "start": 478.24,
+      "end": 483.039,
+      "text": "the most relevant documents or data, and"
+    },
+    {
+      "start": 480.72,
+      "end": 484.96000000000004,
+      "text": "pass everything to your LLM for response"
+    },
+    {
+      "start": 483.039,
+      "end": 487.36,
+      "text": "generation. While it's easy to"
+    },
+    {
+      "start": 484.96,
+      "end": 489.599,
+      "text": "implement, it lacks the ability to adapt"
+    },
+    {
+      "start": 487.36,
+      "end": 492.40000000000003,
+      "text": "in real time. So if your retrieve"
+    },
+    {
+      "start": 489.599,
+      "end": 494.4,
+      "text": "overlooks something, the LLM is unaware"
+    },
+    {
+      "start": 492.4,
+      "end": 497.35999999999996,
+      "text": "and cannot revisit the retrieval"
+    },
+    {
+      "start": 494.4,
+      "end": 499.84,
+      "text": "process. Agit rag on the other hand"
+    },
+    {
+      "start": 497.36,
+      "end": 502.72,
+      "text": "treats each query like a multi-stage"
+    },
+    {
+      "start": 499.84,
+      "end": 506.15999999999997,
+      "text": "mission. First, a planning agent breaks"
+    },
+    {
+      "start": 502.72,
+      "end": 508.8,
+      "text": "your question into a discrete task. Then"
+    },
+    {
+      "start": 506.16,
+      "end": 511.59900000000005,
+      "text": "retrieval agents deal into multi-systems"
+    },
+    {
+      "start": 508.8,
+      "end": 514.159,
+      "text": "like databases, web APIs, and even"
+    },
+    {
+      "start": 511.599,
+      "end": 516.8,
+      "text": "calculators. So you're not limited to a"
+    },
+    {
+      "start": 514.159,
+      "end": 519.36,
+      "text": "single source. As each piece of data"
+    },
+    {
+      "start": 516.8,
+      "end": 522.64,
+      "text": "comes in, a validation agent checks for"
+    },
+    {
+      "start": 519.36,
+      "end": 524.5600000000001,
+      "text": "accuracy and completeness. Retrying or"
+    },
+    {
+      "start": 522.64,
+      "end": 527.4399999999999,
+      "text": "switching sources if something falls"
+    },
+    {
+      "start": 524.56,
+      "end": 530.64,
+      "text": "short. Only once every fact is verified"
+    },
+    {
+      "start": 527.44,
+      "end": 532.9590000000001,
+      "text": "does a generation agent create the final"
+    },
+    {
+      "start": 530.64,
+      "end": 535.76,
+      "text": "answer together. Because of this"
+    },
+    {
+      "start": 532.959,
+      "end": 538.16,
+      "text": "orchestration, agentic rack delivers far"
+    },
+    {
+      "start": 535.76,
+      "end": 540.56,
+      "text": "greater flexibility. You can tap into"
+    },
+    {
+      "start": 538.16,
+      "end": 542.959,
+      "text": "any tool your workflow demands while"
+    },
+    {
+      "start": 540.56,
+      "end": 545.4399999999999,
+      "text": "adapting on the fly to missing or stable"
+    },
+    {
+      "start": 542.959,
+      "end": 547.76,
+      "text": "data. Built-in validation loops"
+    },
+    {
+      "start": 545.44,
+      "end": 550.6400000000001,
+      "text": "dramatically reduce hallucinations and"
+    },
+    {
+      "start": 547.76,
+      "end": 553.279,
+      "text": "parallel agent execution keeps latency"
+    },
+    {
+      "start": 550.64,
+      "end": 555.76,
+      "text": "in checks even as complexity grows."
+    },
+    {
+      "start": 553.279,
+      "end": 558.08,
+      "text": "Unlike traditional racks, texton"
+    },
+    {
+      "start": 555.76,
+      "end": 561.12,
+      "text": "pipeline and agentic system can"
+    },
+    {
+      "start": 558.08,
+      "end": 563.2,
+      "text": "seamlessly integrate images, audio or"
+    },
+    {
+      "start": 561.12,
+      "end": 565.839,
+      "text": "structured data when the use case calls"
+    },
+    {
+      "start": 563.2,
+      "end": 568.6400000000001,
+      "text": "for it. So in short while traditional"
+    },
+    {
+      "start": 565.839,
+      "end": 571.12,
+      "text": "rag gives you one and done retrieve and"
+    },
+    {
+      "start": 568.64,
+      "end": 573.68,
+      "text": "generate call agentic rag delivers a"
+    },
+    {
+      "start": 571.12,
+      "end": 576.0,
+      "text": "smart self-correcting workflow that"
+    },
+    {
+      "start": 573.68,
+      "end": 578.88,
+      "text": "adapts to the problem making it ideal"
+    },
+    {
+      "start": 576.0,
+      "end": 581.2,
+      "text": "for high stakes and multi-step task. All"
+    },
+    {
+      "start": 578.88,
+      "end": 584.24,
+      "text": "right you have seen how agentic rag"
+    },
+    {
+      "start": 581.2,
+      "end": 586.399,
+      "text": "outperforms traditional rag. Now let's"
+    },
+    {
+      "start": 584.24,
+      "end": 589.2,
+      "text": "talk about its core features and the"
+    },
+    {
+      "start": 586.399,
+      "end": 591.92,
+      "text": "benefits you will get from adapting it."
+    },
+    {
+      "start": 589.2,
+      "end": 594.88,
+      "text": "First, agentic rack brings autonomous"
+    },
+    {
+      "start": 591.92,
+      "end": 597.04,
+      "text": "decision making to your AI pipeline."
+    },
+    {
+      "start": 594.88,
+      "end": 599.4399999999999,
+      "text": "Instead of you having to script every"
+    },
+    {
+      "start": 597.04,
+      "end": 601.68,
+      "text": "single step, the system itself figures"
+    },
+    {
+      "start": 599.44,
+      "end": 603.9200000000001,
+      "text": "out what to do next. Whether that means"
+    },
+    {
+      "start": 601.68,
+      "end": 607.1999999999999,
+      "text": "quering a vector database, calling an"
+    },
+    {
+      "start": 603.92,
+      "end": 610.0799999999999,
+      "text": "external API, or running a calculation."
+    },
+    {
+      "start": 607.2,
+      "end": 612.6400000000001,
+      "text": "Next, it offers dynamic retrieval."
+    },
+    {
+      "start": 610.08,
+      "end": 614.88,
+      "text": "Imagine your AI not just fetching one"
+    },
+    {
+      "start": 612.64,
+      "end": 617.279,
+      "text": "set of documents but hinging between"
+    },
+    {
+      "start": 614.88,
+      "end": 619.76,
+      "text": "multiple tools and data sources in real"
+    },
+    {
+      "start": 617.279,
+      "end": 622.32,
+      "text": "time so you always get the unique and"
+    },
+    {
+      "start": 619.76,
+      "end": 624.8,
+      "text": "most relevant information because it"
+    },
+    {
+      "start": 622.32,
+      "end": 627.519,
+      "text": "orchestrate multiple checks. Agentic"
+    },
+    {
+      "start": 624.8,
+      "end": 629.76,
+      "text": "rack dramatically improves accuracy."
+    },
+    {
+      "start": 627.519,
+      "end": 632.24,
+      "text": "Those built-in validation loops catches"
+    },
+    {
+      "start": 629.76,
+      "end": 635.04,
+      "text": "mistakes on the fly. So you see favor"
+    },
+    {
+      "start": 632.24,
+      "end": 637.2,
+      "text": "hallucination and more reliable answers."
+    },
+    {
+      "start": 635.04,
+      "end": 640.16,
+      "text": "And under the hood there's a continuous"
+    },
+    {
+      "start": 637.2,
+      "end": 642.88,
+      "text": "feedback loop. Every successful look up"
+    },
+    {
+      "start": 640.16,
+      "end": 644.959,
+      "text": "and every retry gets logged, teaching"
+    },
+    {
+      "start": 642.88,
+      "end": 647.8389999999999,
+      "text": "your agents where to look first and how"
+    },
+    {
+      "start": 644.959,
+      "end": 650.16,
+      "text": "to handle edge cases. Over time, the"
+    },
+    {
+      "start": 647.839,
+      "end": 653.519,
+      "text": "whole system becomes faster and smarter"
+    },
+    {
+      "start": 650.16,
+      "end": 655.76,
+      "text": "without manual tuning. Finally, agentic"
+    },
+    {
+      "start": 653.519,
+      "end": 657.92,
+      "text": "rag is inherently multimodel and"
+    },
+    {
+      "start": 655.76,
+      "end": 660.48,
+      "text": "extensible. Whether you need to"
+    },
+    {
+      "start": 657.92,
+      "end": 662.56,
+      "text": "integrate images, audio analysis,"
+    },
+    {
+      "start": 660.48,
+      "end": 665.12,
+      "text": "structured data queries or specialized"
+    },
+    {
+      "start": 662.56,
+      "end": 667.5999999999999,
+      "text": "calculators, your agents can call those"
+    },
+    {
+      "start": 665.12,
+      "end": 670.5600000000001,
+      "text": "tools seamlessly and put together the"
+    },
+    {
+      "start": 667.6,
+      "end": 673.279,
+      "text": "result into a cohesive response. In"
+    },
+    {
+      "start": 670.56,
+      "end": 676.16,
+      "text": "short, Agentic Rag offers an AI that"
+    },
+    {
+      "start": 673.279,
+      "end": 678.64,
+      "text": "autonomously charts its own course,"
+    },
+    {
+      "start": 676.16,
+      "end": 681.12,
+      "text": "retrieves precisely what it requires,"
+    },
+    {
+      "start": 678.64,
+      "end": 683.8389999999999,
+      "text": "verifies its results, learn from every"
+    },
+    {
+      "start": 681.12,
+      "end": 686.079,
+      "text": "execution, and utilizes any tool you"
+    },
+    {
+      "start": 683.839,
+      "end": 688.24,
+      "text": "provide. All contributing to more"
+    },
+    {
+      "start": 686.079,
+      "end": 690.56,
+      "text": "intelligent, quicker and more reliable"
+    },
+    {
+      "start": 688.24,
+      "end": 692.8,
+      "text": "results. Now that you have seen the"
+    },
+    {
+      "start": 690.56,
+      "end": 695.1999999999999,
+      "text": "features and benefits, you might be"
+    },
+    {
+      "start": 692.8,
+      "end": 698.399,
+      "text": "wondering how can I implement Agentic"
+    },
+    {
+      "start": 695.2,
+      "end": 700.5600000000001,
+      "text": "Rack for my own use cases. Well, let's"
+    },
+    {
+      "start": 698.399,
+      "end": 703.12,
+      "text": "dive into the two main approaches for"
+    },
+    {
+      "start": 700.56,
+      "end": 705.04,
+      "text": "building your very own agentic pipeline."
+    },
+    {
+      "start": 703.12,
+      "end": 707.6,
+      "text": "There are two key ways to get started"
+    },
+    {
+      "start": 705.04,
+      "end": 710.959,
+      "text": "with Agentic Rack. The initial method"
+    },
+    {
+      "start": 707.6,
+      "end": 713.6800000000001,
+      "text": "involves utilizing function calling LLMs"
+    },
+    {
+      "start": 710.959,
+      "end": 717.76,
+      "text": "including robust models such as openis"
+    },
+    {
+      "start": 713.68,
+      "end": 719.92,
+      "text": "GP4 co-hire anthropic and"
+    },
+    {
+      "start": 717.76,
+      "end": 723.12,
+      "text": "these models enable direct interaction"
+    },
+    {
+      "start": 719.92,
+      "end": 725.519,
+      "text": "with the external APIs or services."
+    },
+    {
+      "start": 723.12,
+      "end": 728.24,
+      "text": "Consequently, you can create a system"
+    },
+    {
+      "start": 725.519,
+      "end": 730.88,
+      "text": "where your LLM not only produces text"
+    },
+    {
+      "start": 728.24,
+      "end": 733.6800000000001,
+      "text": "but also executes functions, queries"
+    },
+    {
+      "start": 730.88,
+      "end": 735.92,
+      "text": "databases or invokes external tools like"
+    },
+    {
+      "start": 733.68,
+      "end": 738.399,
+      "text": "calculators all within a single"
+    },
+    {
+      "start": 735.92,
+      "end": 740.639,
+      "text": "conversation. This approach enables"
+    },
+    {
+      "start": 738.399,
+      "end": 742.72,
+      "text": "rapid and scalable setup without"
+    },
+    {
+      "start": 740.639,
+      "end": 744.88,
+      "text": "requiring an additional orchestration"
+    },
+    {
+      "start": 742.72,
+      "end": 747.6800000000001,
+      "text": "layer. The second option involves"
+    },
+    {
+      "start": 744.88,
+      "end": 750.16,
+      "text": "utilizing dedicated agent frameworks."
+    },
+    {
+      "start": 747.68,
+      "end": 752.079,
+      "text": "These specialized libraries facilitate"
+    },
+    {
+      "start": 750.16,
+      "end": 754.48,
+      "text": "the management and coordination of"
+    },
+    {
+      "start": 752.079,
+      "end": 756.2399999999999,
+      "text": "multiple agents that can gather data,"
+    },
+    {
+      "start": 754.48,
+      "end": 759.36,
+      "text": "verify results, and operate"
+    },
+    {
+      "start": 756.24,
+      "end": 761.6800000000001,
+      "text": "concurrently. Frameworks such as lchain,"
+    },
+    {
+      "start": 759.36,
+      "end": 764.32,
+      "text": "lamb index, and land graph are excellent"
+    },
+    {
+      "start": 761.68,
+      "end": 766.16,
+      "text": "for developing tailor agent pipelines."
+    },
+    {
+      "start": 764.32,
+      "end": 768.72,
+      "text": "They enable you to integrate various"
+    },
+    {
+      "start": 766.16,
+      "end": 771.1999999999999,
+      "text": "tools and data sources, orchestrate your"
+    },
+    {
+      "start": 768.72,
+      "end": 774.24,
+      "text": "agents, and refine workflows to meet"
+    },
+    {
+      "start": 771.2,
+      "end": 777.279,
+      "text": "your specific requirements. Moreover,"
+    },
+    {
+      "start": 774.24,
+      "end": 779.6800000000001,
+      "text": "libraries like DSPI and Crew AI provide"
+    },
+    {
+      "start": 777.279,
+      "end": 782.079,
+      "text": "advanced features for multi- aent"
+    },
+    {
+      "start": 779.68,
+      "end": 784.959,
+      "text": "coordination and distributed task"
+    },
+    {
+      "start": 782.079,
+      "end": 786.959,
+      "text": "allowing you to scale as necessary. Both"
+    },
+    {
+      "start": 784.959,
+      "end": 789.3599999999999,
+      "text": "approaches offer different level of"
+    },
+    {
+      "start": 786.959,
+      "end": 791.4399999999999,
+      "text": "flexibility depending on your project"
+    },
+    {
+      "start": 789.36,
+      "end": 793.76,
+      "text": "needs. So, if you want a quick and"
+    },
+    {
+      "start": 791.44,
+      "end": 796.48,
+      "text": "straightforward solution that integrates"
+    },
+    {
+      "start": 793.76,
+      "end": 798.56,
+      "text": "multiple tools within the same LLM, go"
+    },
+    {
+      "start": 796.48,
+      "end": 800.48,
+      "text": "for function calling models. But if"
+    },
+    {
+      "start": 798.56,
+      "end": 802.4799999999999,
+      "text": "you're looking for full control over the"
+    },
+    {
+      "start": 800.48,
+      "end": 805.279,
+      "text": "agents and the interactions, then"
+    },
+    {
+      "start": 802.48,
+      "end": 807.12,
+      "text": "frameworks like lchain is the way to go."
+    },
+    {
+      "start": 805.279,
+      "end": 809.279,
+      "text": "We have covered the architecture, the"
+    },
+    {
+      "start": 807.12,
+      "end": 811.92,
+      "text": "core features and how you can implement"
+    },
+    {
+      "start": 809.279,
+      "end": 814.639,
+      "text": "agentic rack for your own projects. But"
+    },
+    {
+      "start": 811.92,
+      "end": 817.36,
+      "text": "the real power of agentic rack is in its"
+    },
+    {
+      "start": 814.639,
+      "end": 819.6800000000001,
+      "text": "versatility. Agentic rack can be applied"
+    },
+    {
+      "start": 817.36,
+      "end": 821.92,
+      "text": "across a wide variety of industries and"
+    },
+    {
+      "start": 819.68,
+      "end": 825.1999999999999,
+      "text": "task. So let's walk through some key"
+    },
+    {
+      "start": 821.92,
+      "end": 829.279,
+      "text": "examples. So first in customer support"
+    },
+    {
+      "start": 825.2,
+      "end": 831.9200000000001,
+      "text": "and ITSM which is IT service management"
+    },
+    {
+      "start": 829.279,
+      "end": 834.48,
+      "text": "envision an AI that goes beyond merely"
+    },
+    {
+      "start": 831.92,
+      "end": 836.7199999999999,
+      "text": "searching frequently asked questions. It"
+    },
+    {
+      "start": 834.48,
+      "end": 839.44,
+      "text": "smartly manages tickets by accessing"
+    },
+    {
+      "start": 836.72,
+      "end": 841.6800000000001,
+      "text": "various knowledge bases reviewing recent"
+    },
+    {
+      "start": 839.44,
+      "end": 843.839,
+      "text": "customer interaction, monitoring system"
+    },
+    {
+      "start": 841.68,
+      "end": 846.6389999999999,
+      "text": "status and providing immediate"
+    },
+    {
+      "start": 843.839,
+      "end": 848.0,
+      "text": "solutions. With Agentic Rack, your"
+    },
+    {
+      "start": 846.639,
+      "end": 850.72,
+      "text": "customer support system can"
+    },
+    {
+      "start": 848.0,
+      "end": 852.88,
+      "text": "independently address issues or escalate"
+    },
+    {
+      "start": 850.72,
+      "end": 854.88,
+      "text": "them when necessary, resulting in"
+    },
+    {
+      "start": 852.88,
+      "end": 857.4399999999999,
+      "text": "quicker resolutions and improved"
+    },
+    {
+      "start": 854.88,
+      "end": 859.4399999999999,
+      "text": "customer satisfaction. Next,"
+    },
+    {
+      "start": 857.44,
+      "end": 862.0790000000001,
+      "text": "infrequently asked questions and"
+    },
+    {
+      "start": 859.44,
+      "end": 864.1600000000001,
+      "text": "scheduling. Agentic Rag excels at"
+    },
+    {
+      "start": 862.079,
+      "end": 866.2399999999999,
+      "text": "optimizing tasks such as scheduling"
+    },
+    {
+      "start": 864.16,
+      "end": 868.8,
+      "text": "meetings, sending reminders, or"
+    },
+    {
+      "start": 866.24,
+      "end": 871.519,
+      "text": "responding to common inquiries by"
+    },
+    {
+      "start": 868.8,
+      "end": 873.76,
+      "text": "utilizing various data sources including"
+    },
+    {
+      "start": 871.519,
+      "end": 876.399,
+      "text": "calendars, contact list, and knowledge"
+    },
+    {
+      "start": 873.76,
+      "end": 878.56,
+      "text": "bases. It effectively manages intricate"
+    },
+    {
+      "start": 876.399,
+      "end": 880.88,
+      "text": "requests like rescheduling meetings,"
+    },
+    {
+      "start": 878.56,
+      "end": 883.76,
+      "text": "arranging appointments or retrieving"
+    },
+    {
+      "start": 880.88,
+      "end": 886.24,
+      "text": "information based on context. Next,"
+    },
+    {
+      "start": 883.76,
+      "end": 888.72,
+      "text": "agentic rack can be used in healthcare."
+    },
+    {
+      "start": 886.24,
+      "end": 891.04,
+      "text": "In healthcare where precise data and"
+    },
+    {
+      "start": 888.72,
+      "end": 893.839,
+      "text": "timely decision making are essential,"
+    },
+    {
+      "start": 891.04,
+      "end": 896.0,
+      "text": "agentic rack assist clinicals by"
+    },
+    {
+      "start": 893.839,
+      "end": 897.9200000000001,
+      "text": "retrieving patient records, medical"
+    },
+    {
+      "start": 896.0,
+      "end": 900.56,
+      "text": "histories and the latest research"
+    },
+    {
+      "start": 897.92,
+      "end": 902.7199999999999,
+      "text": "information. Additionally, it checks for"
+    },
+    {
+      "start": 900.56,
+      "end": 905.279,
+      "text": "drug interactions, identifies"
+    },
+    {
+      "start": 902.72,
+      "end": 908.0,
+      "text": "irregularies in medical tests and aids"
+    },
+    {
+      "start": 905.279,
+      "end": 911.6,
+      "text": "in diagnosis, serving as a dependable"
+    },
+    {
+      "start": 908.0,
+      "end": 913.68,
+      "text": "medical assistant. Next, in education,"
+    },
+    {
+      "start": 911.6,
+      "end": 915.6,
+      "text": "envision a tailored learning assistant"
+    },
+    {
+      "start": 913.68,
+      "end": 918.7199999999999,
+      "text": "that adjusts to the needs of each"
+    },
+    {
+      "start": 915.6,
+      "end": 921.519,
+      "text": "student. Agentic rag offers personalized"
+    },
+    {
+      "start": 918.72,
+      "end": 923.44,
+      "text": "tailoring, suggests resources, addresses"
+    },
+    {
+      "start": 921.519,
+      "end": 926.24,
+      "text": "specific inquiries, and provides"
+    },
+    {
+      "start": 923.44,
+      "end": 928.399,
+      "text": "feedback based on individual progress by"
+    },
+    {
+      "start": 926.24,
+      "end": 930.9590000000001,
+      "text": "engaging with a flexible database of"
+    },
+    {
+      "start": 928.399,
+      "end": 933.199,
+      "text": "learning materials. It fosters student"
+    },
+    {
+      "start": 930.959,
+      "end": 936.56,
+      "text": "engagement and enhances educational"
+    },
+    {
+      "start": 933.199,
+      "end": 939.68,
+      "text": "results. Next, in enterprise knowledge"
+    },
+    {
+      "start": 936.56,
+      "end": 941.5999999999999,
+      "text": "management for businesses, agentic rag"
+    },
+    {
+      "start": 939.68,
+      "end": 944.16,
+      "text": "has the potential to transform knowledge"
+    },
+    {
+      "start": 941.6,
+      "end": 945.839,
+      "text": "organization and management. It can"
+    },
+    {
+      "start": 944.16,
+      "end": 948.56,
+      "text": "navigate extensive document"
+    },
+    {
+      "start": 945.839,
+      "end": 950.9590000000001,
+      "text": "repositories, extract patient insights"
+    },
+    {
+      "start": 948.56,
+      "end": 953.92,
+      "text": "for staff, produce reports and even"
+    },
+    {
+      "start": 950.959,
+      "end": 955.92,
+      "text": "automate decision using historical data."
+    },
+    {
+      "start": 953.92,
+      "end": 957.759,
+      "text": "This ensures that employees have"
+    },
+    {
+      "start": 955.92,
+      "end": 960.24,
+      "text": "immediate access to the necessary"
+    },
+    {
+      "start": 957.759,
+      "end": 963.6800000000001,
+      "text": "information which saves time and boosts"
+    },
+    {
+      "start": 960.24,
+      "end": 966.639,
+      "text": "productivity. Next in data analysis and"
+    },
+    {
+      "start": 963.68,
+      "end": 969.7589999999999,
+      "text": "research. Agentic rag automates the"
+    },
+    {
+      "start": 966.639,
+      "end": 972.5600000000001,
+      "text": "extraction, analyszis and generation of"
+    },
+    {
+      "start": 969.759,
+      "end": 974.72,
+      "text": "data insights. Imagine a research"
+    },
+    {
+      "start": 972.56,
+      "end": 976.6389999999999,
+      "text": "assistant that not only gathers and"
+    },
+    {
+      "start": 974.72,
+      "end": 979.0400000000001,
+      "text": "synthesize information from multiple"
+    },
+    {
+      "start": 976.639,
+      "end": 981.6800000000001,
+      "text": "sources, but also conducts initial"
+    },
+    {
+      "start": 979.04,
+      "end": 983.759,
+      "text": "analysis, generates reports and"
+    },
+    {
+      "start": 981.68,
+      "end": 986.0,
+      "text": "identifies trends without requiring"
+    },
+    {
+      "start": 983.759,
+      "end": 988.24,
+      "text": "manual input. There are just a few"
+    },
+    {
+      "start": 986.0,
+      "end": 990.399,
+      "text": "examples how agentic rag is already"
+    },
+    {
+      "start": 988.24,
+      "end": 993.04,
+      "text": "transforming industries, making"
+    },
+    {
+      "start": 990.399,
+      "end": 994.959,
+      "text": "processes more efficient and enhancing"
+    },
+    {
+      "start": 993.04,
+      "end": 997.36,
+      "text": "decision making. Whether it's in"
+    },
+    {
+      "start": 994.959,
+      "end": 1000.2399999999999,
+      "text": "customer service, healthcare or even"
+    },
+    {
+      "start": 997.36,
+      "end": 1002.48,
+      "text": "education, the potential is huge. And"
+    },
+    {
+      "start": 1000.24,
+      "end": 1005.199,
+      "text": "with this we have come to an end to this"
+    },
+    {
+      "start": 1002.48,
+      "end": 1007.279,
+      "text": "video on agentic rag. If you enjoyed"
+    },
+    {
+      "start": 1005.199,
+      "end": 1009.5999999999999,
+      "text": "listening to this video, please be kind"
+    },
+    {
+      "start": 1007.279,
+      "end": 1011.519,
+      "text": "enough to like it and you can comment on"
+    },
+    {
+      "start": 1009.6,
+      "end": 1013.759,
+      "text": "any of your doubts and queries. We will"
+    },
+    {
+      "start": 1011.519,
+      "end": 1016.079,
+      "text": "reply to them at the earliest. And do"
+    },
+    {
+      "start": 1013.759,
+      "end": 1018.0,
+      "text": "look out for more videos and playlist"
+    },
+    {
+      "start": 1016.079,
+      "end": 1020.0,
+      "text": "and subscribe to Edureka's YouTube"
+    },
+    {
+      "start": 1018.0,
+      "end": 1024.04,
+      "text": "channel to learn more. Thank you for"
+    },
+    {
+      "start": 1020.0,
+      "end": 1024.04,
+      "text": "watching and happy learning."
+    }
+  ]
+}

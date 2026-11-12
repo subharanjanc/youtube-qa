@@ -1,0 +1,850 @@
+[
+  {
+    "id": "dd63cb5a60c456b2e596e9ac998438b0bf6e973f73f2ad48b06e6b01ded2f11e",
+    "text": "we will now take a close look at a production application involving the use of llms AI agents Python gcp and Docker that's right I said production application this is the real deal wake up if you're new to these Technologies I'll do my best to make them approachable but you will need some familiarity with python cloud computing and clis to follow along easily if you're familiar with these Technologies I'd love your feedback on the overall design being presented in this walkthrough we will build a team of personalized AI agents who will send us daily bullet points highlighting news updates happening across multiple websites here's a diagram showing what we'll be building for clarity this design can be used as the foundation for building many applications but to get your creative juices flowing here are two that come to mind one you can use this as a productivity hack for staying up to date on a niche that matters to you and two you can use this as a foundation for building your own AI powered newsletter we'll be building our agents with a python framework called crew aai and we'll be designing our application to run on an easy to use platform managed by Google called Cloud run jobs so our agents run for us 24/7 here's an overview of the sections",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3.719,
+      "end_seconds": 73.72,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e472125bed8c7e9e42ac4e92dda0996b6dfe0a0af1119b3ab934c2fbdc77e8e8",
+    "text": "python framework called crew aai and we'll be designing our application to run on an easy to use platform managed by Google called Cloud run jobs so our agents run for us 24/7 here's an overview of the sections that follow so you know what's ahead and I 100% guarantee this is going to be incredible you will still get a ton of value if you want to Simply watch but if you want to code along here's what you'll need a you'll need a PC AKA a laptop or desktop this is going to cost you some money B you'll need Docker installed on your PC Docker is free C you'll need a code editor I suggest vs code or cursor vs code is free cursor has a free trial FYI cursor is an altered version of vs code so even though I'll be using VSS code you should be able to follow along D after vs code or cursor is installed install two VSS code extensions namely the docker extension and the dev containers extension both of these extensions are free E you'll need a GitHub account github's free tier will work F you need a gcp account gcp will practically be free G you need an open AI account open AI will cost you between a few pennies and a few dollars",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 61.559,
+      "end_seconds": 131.64,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=61s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d683f2f11727225c3acaca97d3d6b671fd5bcb00b675f9afdb3d468f8c8378aa",
+    "text": "GitHub account github's free tier will work F you need a gcp account gcp will practically be free G you need an open AI account open AI will cost you between a few pennies and a few dollars depending on circumstances H you'll need a mail gun account mail gun as a free trial I you'll need an agent Ops account agent opsis free tier will work and optionally J You'll need a domain I know this sounds like a lot but it's not that bad let me break it down in regards to Docker the code editor and the two BS code extensions I'll be playing a clip shortly that shows how I install them onto my M1 MacBook Pro in under a minute and even though my machine is Mac based the broad Strokes of what you'll see In that clip will apply to both Linux and windows machines in regards to GitHub you can get an account by coming over to github.com and signing up in regards to gcp you can come over to cloud.google.com and sign up gcp usually offers free credits upon sign up or activation plus the cost of what we're doing in this video will be in the pennies so the gcp side of things should be practically free assuming you tear on",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 117.159,
+      "end_seconds": 182.07999999999998,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=117s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8d01b10eafdb6361f8d8a9293ee6a4349a2e63103caa976a341f354aeb5ec1ba",
+    "text": "offers free credits upon sign up or activation plus the cost of what we're doing in this video will be in the pennies so the gcp side of things should be practically free assuming you tear on the gcp project within a couple days of building it we'll be showing how to tear down gcp projects at the end of the video so what I'm saying is setting up Docker a code editor two vs code extensions a GitHub account and a gcp account is enough to get started the remaining items can wait till part five those being the open AI account powering our agents the mail gun account for delivering our AI generated emails the agent Ops account for monitoring our agents and optionally the domain if you don't mind the AI generated emails we create being sent to spam which I think is okay for learning purposes don't worry about setting up a domain but if you do want the AI generated emails we create to be properly sent to the recipient's inbox you will need a verified domain I suggest using whatever domain regist you're most familiar with for example I'll be using Route 53 later in part six so let's take a deep breath let it all out if you have any setup or installation",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 169.8,
+      "end_seconds": 244.079,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=169s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "05a452ea4fd105e099d0b5315916f97376c417ffa5219a94123cf9124234f193",
+    "text": "verified domain I suggest using whatever domain regist you're most familiar with for example I'll be using Route 53 later in part six so let's take a deep breath let it all out if you have any setup or installation issues leave a comment or I suggest pasting detailed descriptions of the errors you run into into either Google or chat GPT for assistance FYI if you're laser focused you can complete all of the setup in under 15 minutes but if you find it to be overwhelming just do Parts a through F and worry about the rest for [Music] later here's how to download and install Docker desktop on Mac go to the official download page download the appropriate version for me this is Apple silicone open the downloaded DMG file and drag and drop the docker doapp icon into your applications folder I've already done this so I'll click stop but that's it it's that easy and here's how to download and install vs code on Mac go to the official download page download the appropriate version for me this is Apple silic cone unzip the downloaded zip file and drag the visual studio code. apppp icon into your applications folder I've already done this so I'll click stop but that's it it's that easy after installing VSS code you'll need to",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 224.239,
+      "end_seconds": 321.039,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=224s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "864b1eaa02993609b49612149e1f579f246b8e85912886814ea13ba079abf4f0",
+    "text": "downloaded zip file and drag the visual studio code. apppp icon into your applications folder I've already done this so I'll click stop but that's it it's that easy after installing VSS code you'll need to do one last thing open VSS code and come over to the extensions Marketplace on the side menu and you'll need to install two extensions a the docker extension you can search for it in the search bar and once you find it in the panel click on it and then you'll see these buttons right here you can click to install it should only take one click it's that simple B you'll need the dev containers extension you should see some buttons right here and you can just click to install it super simple and that should be all the setup you [Music] need welcome so I'm assuming you have at least these prerequisites installed on your computer let's get started by creating a folder somewhere on our computer perhaps in your home folder I'm going to create a folder called how to host things on Google Cloud run jobs and let's open this folder BS code and and if I pop open the terminal built into vs code and take a look at where we are on the file system you can see we are in",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 301.32,
+      "end_seconds": 401.28000000000003,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=301s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "00d87adbd60823636402154b296eb923d3eb94a5972544c3278ffde04409b129",
+    "text": "jobs and let's open this folder BS code and and if I pop open the terminal built into vs code and take a look at where we are on the file system you can see we are in this folder that we just created now let's create our Dev container if you're unfamiliar with the term Dev container hold tight it's going to make sense in a few minutes in our empty folder let's create the following folder in files let's create a folder called dodev container inside of this dodev container folder let's create a file called Dev container Json and at the root of our project folder let's create another file called dockerfile dodev and let's populate the dev container. Json file with this content and let's populate the docker file. deev with this content this code looks a bit hectic but it's actually useful this code will build a little mini computer called a container that runs on top of our base machine AKA our laptop or desktop or whatever we're using when we're done with this walkthrough we can simply kill or delete this container and our base machine will be left clean from all of the software that we installed into the Container in addition to helping us stay organized the use of containers is",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 381.88,
+      "end_seconds": 468.52,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=381s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cfc6f5726b6b4cb8388de46e6d8b867316e235aacf07788750de51cada378e04",
+    "text": "or delete this container and our base machine will be left clean from all of the software that we installed into the Container in addition to helping us stay organized the use of containers is highly compatible with Cloud platforms like AWS gcp and Azure so when we get to the point where we're deploying this application to the cloud it'll make that process super easy to shed some light on what the files are doing the docker file. deev configures our container and the dev container. Json file tells VSS code how to attach to our container when we'd like to edit the files inside of it take a closer look at the docker file. deev and we can see we're installing python we're installing git we're installing gcloud this is going to allow us to speak to gcp from inside our container and we're also installing a Docker client this is going to allow us to speak to the docker server running on our base machine from inside our container FYI when you use a container for the purposes of developing software inside of it we call it a Dev container later in this video when we ship our application to gcp we're going to make a second container we're going to refer to that second container as our production",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 455.44,
+      "end_seconds": 530.399,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=455s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "809bae412adb946ac8cb52537ca65f4170fa5fa63f18519b794a9c88ba640d91",
+    "text": "inside of it we call it a Dev container later in this video when we ship our application to gcp we're going to make a second container we're going to refer to that second container as our production container because our Dev container and our production container are going to be so similar there's a high likelihood that our code will work exactly as it does in our development environment when we run it in gcp in a nutshell using this approach is going to make shipping our code to the cloud very easy if none of this makes sense don't worry about it let's move on we can interact with Docker completely from the command line but Docker also comes with this tool called Docker desktop Docker desktop is a UI for interacting with Docker and on my local Docker instance you can see at the moment I have no containers and I have no images let's come back to our editor AKA vs Cod or cursor whatever we're using and let's type these keystrokes shift command P this will open up the command pallet as it's so-called and in the command pallet you should see an option if you've installed the dev containers extension that says Dev containers reopen in container you can also search for it let's select this option and see what",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 517.279,
+      "end_seconds": 588.92,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=517s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9dc28e6cfac29c65bb1994357c022056bb6a3c3475fa7641c03709e229677381",
+    "text": "it's so-called and in the command pallet you should see an option if you've installed the dev containers extension that says Dev containers reopen in container you can also search for it let's select this option and see what happens when you build a container from your Docker files the process will usually take a few seconds maybe a few minutes it depends on how much software you're packing into the Container so it looks like the build process has completed and let's come back to Docker desktop and see what things look like you can see we now have a few images and we also have a container this is our Dev container let's come back to vs code or whatever we're using and let's pop open the built-in terminal and look at where we are on the file system and you can see now now we are in a folder at the root called code we are no longer in the original folder we created moving forward we will be developing our application inside of this Dev container let's quickly confirm all the software we'll need is installed in this Dev container we have python we have git we have gcloud and we have our Docker client so everything's looking good let's save our progress in a remote repository on",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 574.92,
+      "end_seconds": 669.5600000000001,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=574s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "09c0f6da984e3e85b96eb918d0e5fb39e7566bf01ee4a194187f598fa978c6be",
+    "text": "all the software we'll need is installed in this Dev container we have python we have git we have gcloud and we have our Docker client so everything's looking good let's save our progress in a remote repository on GitHub if I come over to my GitHub account I will create a new repository called how to host things on Google Cloud run jobs and click create repository and there are times for creativity and this is not one of them so let's just follow these commands right here let's initialize our local repository to be tracked with Git let's create a commit so I'll save all of these changes and I'm using get shortcuts that were outlined in the docker file. deev and let's rename our Branch to be called main let's add our git remote OTE as it's socalled this lets our local git project know where to push code to and then let's push our code we can see our project has been backed up if you have a Keen Eye you're thinking what just happened so long story short is whatever credentials were authenticated to GitHub with on our base machine get forwarded to the dev container when it's launched here we are in the dev container if I type git push we can see we're authenticated with",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 643.32,
+      "end_seconds": 754.88,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=643s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0cb5e0dfad8fc7147da4c98b532c2ae2860376f4fc5f8b0db16eb8f37dc78304",
+    "text": "authenticated to GitHub with on our base machine get forwarded to the dev container when it's launched here we are in the dev container if I type git push we can see we're authenticated with GitHub that's our remote in this scenario and if I run this same command in this project folder on the host we can see we're authenticated as well so on Mac there's this application called keychain access that stores credentials for us when we authenticate with different systems I think the corresponding application on Windows would be credential manager on Linux it would be lib Secret but anyways so here in the keychain access app we can see a store credential for GitHub so if I delete this and try to authenticate with GitHub again we can see we're prompted for our credentials again and then let's try it in the dev container so if I say get push we're prompted for our credentials again here is how I suggest we authenticate with GitHub so here we are on the page for our newly created repository if we come to our profile settings there's an option that says developer settings you can see this personal access tokens drop down get up has this newish feature called fine grain tokens let's click on that and let's generate a new token we'll call",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 742.079,
+      "end_seconds": 838.639,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=742s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f56dbaff9247b415a000a4eee2455846baf3f4e4e5791a8fc519759a3b2c7d23",
+    "text": "settings there's an option that says developer settings you can see this personal access tokens drop down get up has this newish feature called fine grain tokens let's click on that and let's generate a new token we'll call this token how to hostings on Google Cloud R jobs and let's restrict this token to only be able to access the repository we just created this [Music] one and if we open this repository permissions dropdown let's add contents read and write permissions and the only other permission will'll need is metadata permission but I think this is always enabled by default and let's generate the token and we can use this token let's copy it to authenticate with GitHub in a very controlled manner so if I perform this git push command again it'll prompt for my username and if I provide that access credential or that token rather now we're authenticated again and if I come to the def container and try pushing [Music] again we're authenticating the dev container as well so long story short is your host machine or base machine credentials or authentication with Git gets shared with a Dev container so we're probably not going to need this personal access token again from GitHub but let's store it just in case we do need it so what I'll do is create a",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 816.079,
+      "end_seconds": 930.199,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=816s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "204cbde338cba3e7e475500fc59bdf8ad0530645b3446469892db8cc5ecc542d",
+    "text": "gets shared with a Dev container so we're probably not going to need this personal access token again from GitHub but let's store it just in case we do need it so what I'll do is create a another file at the root of our project call. EMV and let's store this GitHub personal access token as it's called so I'll say GitHub personal access token and then I'll paste it in here and let's also add a dog ignore and make sure that we ignore this EMV come over to this link and when you develop python projects there's a whole host of files that you do not need to add to GitHub or git for that matter so let's add them all at once right now and I think that does it so let me save this so if you have any issues authenticating with GitHub from the dev container as a backup you can just use a terminal on your host machine so I will we'll see you in part [Music] two in part two we'll learn how to deploy a simple job to Google Cloud run as we're starting from scratch let's create a new project in our gcp account by coming over to console. cloud.google.com welcome it's going to load one of the products in your account and if we click",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 913.6,
+      "end_seconds": 1014.319,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=913s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2ea80897ec0b25fa76540a0d62d591bbf6b74297eff52192000be9d8d236e4f6",
+    "text": "as we're starting from scratch let's create a new project in our gcp account by coming over to console. cloud.google.com welcome it's going to load one of the products in your account and if we click this drop down right here it'll open up a model that includes a button saying new project let's click on that and create a project called how to host teams on Google cloudon jobs let's click create and all of the gcp related work that we will be doing will be done inside of this project for organizational purposes after our project is created in gcp let's select it and search for cloud run in this top search bar and select the op that says Cloud run Cloud run is a managed service for running containers on the cloud run page you'll see two tabs one that says services and one that says jobs services in this context are long running applications like HTTP apis that need to be listening to the internet for requests jobs on the other hand are for triggering scripts these scripts will release the resources needed to run them immediately upon script completion or failure as this video covers Cloud run jobs let's run a simple job to get our feet wet first let's authenticate with gcp in our Dev",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 997.68,
+      "end_seconds": 1088.52,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=997s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f3f678646332bb914f355acc6bb2774444482bc80b38d6e529e433be1254219a",
+    "text": "needed to run them immediately upon script completion or failure as this video covers Cloud run jobs let's run a simple job to get our feet wet first let's authenticate with gcp in our Dev container by typing the gcloud init command and this will take us through an offlow and I'll say yes I would like to sign in and if I command click this link and copy it come over to whichever browser tab or browser instance I'm logged into gcp with and paste it into the URL bar I'll be able to select my account and I have to give consent and my password more consent and then I'm presented with a oth code that I can copy and paste into the terminal that kicked this whole off flow off and I'll be asked to select my project which is three for me and now the dev container is authenticated with gcp okay many g-cloud commands are going to ask us to reference our project ID so let's create a variable for it so we don't have to constantly type it right and some g-cloud commands require us to specify another ID identifier for our product which is called its product number you can find the product number by coming over to the dashboard of our selected project",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1072.36,
+      "end_seconds": 1184.28,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1072s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e38c479ecde9e053801e96544d1a91870bf90a8e044cb41ec0b2d446eb2f70d5",
+    "text": "and some g-cloud commands require us to specify another ID identifier for our product which is called its product number you can find the product number by coming over to the dashboard of our selected project and you should see the product number displayed here let's copy it and yeah trust me you're going to be very happy that you just did this so now let's set up our project so that we can run Cloud run jobs inside of it so by default this is the list of gcp apis that are enabled in uh fresh out of the box project gcp has hundreds of apis and now let's enable two more of them and the apis that we will enable will be the cloud run API and the cloud build API and after that completes let's list the enabled apis on our project and we can see that this list has grown by two entries this next command will give the cloud run API in our project permissions to talk to a number of other apis in our gcp account okay that takes care of all of the permissions and apis we need to enable in order to run a simple Cloud run job so the high level overview of what we're going to do for the remainder",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1162.32,
+      "end_seconds": 1259.2,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1162s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "df9661116e83cb5c3ca8e089692982ab9c79145174d0268fb46d5b99f562287a",
+    "text": "account okay that takes care of all of the permissions and apis we need to enable in order to run a simple Cloud run job so the high level overview of what we're going to do for the remainder of part two is first first we're going to build a little application a very simple application then second we're going to ship it to Cloud run jobs so our little application is going to require six more files to be added to our project these five and then we're going to have a helpers folder that will hold one file and let's populate the main Pi file with this content and the requirements.txt file with this content and the proc file with this content the docker file. prod with this content the cloud bill. with this content and say hello.py helper with this content as we can see a python Cloud run job project is really not that different from other python projects so as usual let's install our dependencies and that should make this import error go away if it doesn't go away try opening up the command pallet and restarting the Python language server but that did fix this import error and now let's run our script and it works so we built a little application we tested it out now let's",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1246.84,
+      "end_seconds": 1359.0800000000002,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1246s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6ec79aa51f78f146db7dff542def8b520369da27edcc13d06291e40c8f53789a",
+    "text": "away try opening up the command pallet and restarting the Python language server but that did fix this import error and now let's run our script and it works so we built a little application we tested it out now let's ship it to Cloud run the left half of this diagram shows what we have done up till this point and the right half of it shows what we're about to do deployment step number one will be to create a repository in Google artifact registry a repository in this context is a place where we can store images when we build a Docker file we are left with what is called an image an image in the context of Docker is a collection of files that defines all of the code and operating system requirements needed to run a particular application if we recall to when we built the dev container we remember seeing a few images and a container inside of the docker desktop UI when this image holding all of the configuration of our Dev container was ran it left us with this container when we build a Docker file it leaves us with an image and when we run an image holding all of the code and operating system requirements of a particular application it leaves us with a",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1335.96,
+      "end_seconds": 1415.44,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1335s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "01bb286f8afd434201f6b2b4c13c70e1233edfea4437e558766c0508e4559ff7",
+    "text": "we build a Docker file it leaves us with an image and when we run an image holding all of the code and operating system requirements of a particular application it leaves us with a container we are now going to build our second container AKA our production container by building the docker file. PR into an image holding all of the code and operating system requirements needed to run our application in Google Cloud run because our development container and our production container are going to be so similar there's an extremely high likelihood that our little application will work exactly as it did in our development container when we run it in Google Cloud run if we take a closer look at our Docker file. PR and in our Docker file. deev we see the only difference between the two is the removal of a handful of tools in the docker file. prod we don't need git we don't need g-cloud we don't need Docker these tools are not necessary when running our application in production so now you understand why Docker is so useful when you take code that's written on your computer and ship it to other computers without defining all of the operating system requirements it needs it increases the likelihood that it's not going to work so what Docker does is",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1402.88,
+      "end_seconds": 1467.08,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1402s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "24782aa39f6d82db862a5bf897cd66987cbf1afd974a236b55e65d583418cc2a",
+    "text": "useful when you take code that's written on your computer and ship it to other computers without defining all of the operating system requirements it needs it increases the likelihood that it's not going to work so what Docker does is package your code with all of its OS requirements so that when it's Shi to other computers there's a higher likelihood that it will work finally now let's create an image repository in Google artifact registry by entering this command but before we enter this command let's come over to the gcp console and come over to the artifact registry page so we can compare the before and after and now let's enter this command and when that completes let's come back to the artifact registry page and reload it and now you can see we have an image repo so for clarity an image repo is not the same thing as a git repo an image repo is a place where we can store images and a git repo is a place where we can store code changes made to a particular code base so now that we have this set up let's build our production image and store it in this repo called repo for job one first we'll do this using Cloud build if we pop open the",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1454.24,
+      "end_seconds": 1526.4399999999998,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1454s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cb28eb4be9f2124bc88f249f90eff13f7be23e5a6b374d87626eda13e42f2d1c",
+    "text": "particular code base so now that we have this set up let's build our production image and store it in this repo called repo for job one first we'll do this using Cloud build if we pop open the cloud build. file we'll see a script with Two Steps step one one is building the docker file. prod and step two is pushing the resulting image to the repository we just created in artifact registry and the URLs of repositories in Google artifact registry have to follow this specific format if they don't follow this format things will not work and the last thing I'll mention is we can see that there is a colon at the end of the repository URL followed by a string this is the tag of a particular image this is a way that we can give a custom ID to each image that we store in a particular repository the default tag is latest this hints to us that this version of the image is the latest one and we're not going to be using this tag feature pretty much at all but it's useful to know about and it's useful for QA and sometimes you'll use the gith has to identify each version of a particular image this is useful for storing a",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1511.08,
+      "end_seconds": 1591.3600000000001,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1511s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3f8c64e272259b6b5412925a5c4043bfc504b79ef01cd6d5f6d4152cffa9fc5a",
+    "text": "feature pretty much at all but it's useful to know about and it's useful for QA and sometimes you'll use the gith has to identify each version of a particular image this is useful for storing a history of all the versions of an application Etc so anyways let me stop rambling and let's build our production image and store it in the repository we just created by sending it to Cloud build with this command while that's building I'll come back to the gcp console and you can see that inside of our repository we currently have no images and when this script is finished we should see an image inside of our repository okay the script finished in Cloud build let me reload this page and now you can see we have an image inside of our repository and second we'll do this with a Docker client inside of the dev container all right this is what this looks like we have to build the docker file. prod and tag it with the appropriate image URL format or repository URL format and notice how we're also including this platform flag that reads Linux amd64 I'm guessing the hardware that powers Cloud run is provided by AMD and we have to retrieve an access token from gcp and then we log into artifact",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1577.0,
+      "end_seconds": 1668.2,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1577s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e05f9e80b2b7bac9511972b442a12b9f595854956ef0653ff5c017b0542d0e35",
+    "text": "notice how we're also including this platform flag that reads Linux amd64 I'm guessing the hardware that powers Cloud run is provided by AMD and we have to retrieve an access token from gcp and then we log into artifact registry like so so we provide this access token as the password and that worked and then we have to enter this command and when we push our [Music] image should work and it does now that we have our production image stored in a repository in Google artifact registry let's run our first job ever we finally made it back to Cloud run so let's come over to the cloud run page and come over to the jobs Tab and what we're going to do is register a job with Cloud run that uses the image that we stored in our repository as the application that will get triggered when we trigger the job so here's what that looks like this is the command that will register a job in Cloud run jobs here we specify the job's name first CL run job ever and here is where we reference the image in artifact registry that we would like to use as the application that gets triggered when we trigger the job so if I enter this command and come back to the cloud run",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1644.799,
+      "end_seconds": 1758.159,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1644s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8cf1da4ffd5302a478c992480e6e0f2a8767a6090452040e82c787023eff0846",
+    "text": "ever and here is where we reference the image in artifact registry that we would like to use as the application that gets triggered when we trigger the job so if I enter this command and come back to the cloud run page and that command finishes executing we can see we now have a job registered in Cloud run jobs and here is how we trigger the job so we execute this command and provide the job's name and if we come over to the cloud run dashboard again and select the job we can see the job's logs here and we should see the same exact output that we were seeing when we were running this application in our Dev container and there we go we see the same logs that we were seeing in the dev container so that's great we now know how to manually deploy containerized scripts to Cloud run jobs next up we'll automate this deployment process using GitHub [Music] actions we are now going to automate the deployment of our simple job using GitHub actions the way that we do this is by creating a folder at the root of our project called. GitHub and inside of this. GitHub folder we're going to create another folder called workflows and inside of this workflows folder",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1739.679,
+      "end_seconds": 1825.6789999999999,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1739s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "39d623c9418d405d263179d2b13981cbf4e733105e1462ad13db2cbd8bbdc3a2",
+    "text": "GitHub actions the way that we do this is by creating a folder at the root of our project called. GitHub and inside of this. GitHub folder we're going to create another folder called workflows and inside of this workflows folder we're going to create a file called cicd doyl here is the content that we will paste into this cico file and by placing this emo file at this specific location of our project whenever we push to the main branch of our GitHub repository this code inside of it will automatically get triggered if we look closely at the cicdl script we can see it's requiring us to specify some GitHub variables as well as a GitHub secret the way that we provide these values is by coming over to our G repository and should see a tab that says settings in the settings tab there is a option that says secrets and variables and it has a sub option that says actions on these two tabs is where we can provide our secrets and our variables first I'll provide all of the variables one of the variables of our cicd script is going to be our project ID and the next one will be our project number and the next one will be the name of our job in Cloud",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1811.279,
+      "end_seconds": 1902.0,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1811s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "644462a5216c9258328c8e3614e3fa1209b11c8f5150c66cc54dba201ae56bcd",
+    "text": "variables one of the variables of our cicd script is going to be our project ID and the next one will be our project number and the next one will be the name of our job in Cloud run and second let me show you how to generate the secret that we'll need so if we come over to console. cloud.google.com and make sure our product is selected if we come over to the IM am and admin option and select the service accounts sub option here is where we can create a service account which is a fancy way of saying a username and password that we give to an application so that it has the permission to do what we want it to do so let's create a service account and I'm going to call the service account how to hosting on Google Cloud run jobs cicd service account sa and we'll add a description so that we know what this is for we come back to this a while from now done to the key now you might have noticed that there was already a service account sitting in this list before we ever created a service account so by default gcp creates this default compute service account as it's so-called and gives this service account to a number",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1883.399,
+      "end_seconds": 1986.6789999999999,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1883s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "75b6efbf5a2359840287aeb52c7c8caeb36692a2a6adca21f13b08d15362d36c",
+    "text": "noticed that there was already a service account sitting in this list before we ever created a service account so by default gcp creates this default compute service account as it's so-called and gives this service account to a number of apis so that they have permissions to do what they need to do so now if we select the service account from this list that we just created and come over to the Keys tab we'll see this drop- down button that says add key let's create a new key we'll use the Json key type c create and a file will be downlo to our computer and the contents of this file will be our secret so let's copy the contents of this downloaded Json file and come back to our GitHub repository and create a new secret I'll call it gcp cicd SAA key then we'll paste in our service account key add our secret and then that takes care of setting all of the secrets and variables for our cicd script now we're ready to test out our cicd automation with GitHub actions let's come over to the actions tab on GitHub and we have nothing here at the moment and let's come back to our project and let's push our latest changes to GitHub and see what happens",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1972.76,
+      "end_seconds": 2065.159,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=1972s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5991f326f20c85929e7400f3a24c21650e1af4b2089139f40f36de010ad945af",
+    "text": "actions let's come over to the actions tab on GitHub and we have nothing here at the moment and let's come back to our project and let's push our latest changes to GitHub and see what happens okay so we need more permissions added to our personal access token so let's come back to GitHub and come over to the settings section and let's come over to the developer settings option find the personal access tokens drop down come over to F grain tokens and here's our personal access token and we need to add more permissions okay so we need workflow permissions and let's try to push again all right that worked come over to the actions page and reload so as we can see it failed and if we click on the automation we can see that we're failing because we're not able to upload images to artifact registry this is the command that will grant our service account those permissions so now we can re-trigger our cicd Automation and it failed and it's more permission stuff this is the command that will grant the next slew of permissions we need to give to our service account and it looks like it worked and there more permission stuff so this is the command that will give our service account the next FLW of",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 2044.039,
+      "end_seconds": 2200.64,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=2044s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "30b21c7ff8332e6bf23f055a34f97f2938080e17e22026994e352d66787fb564",
+    "text": "next slew of permissions we need to give to our service account and it looks like it worked and there more permission stuff so this is the command that will give our service account the next FLW of permissions it needs and that looked like it worked our automation completed successfully so we're definitely moving in the right direction now what we're going to do is check out the logs of the cloud run job and we're going to make an update to our application and confirm in the logs that our update gets propagated to the cloud run job hosted on Google so let's test this out here is the command that will trigger our job we can see that it got triggered again right and we get more logs so so now what we're going to do is Let's Make a update to our application instead of saying hello let's you know say hello daddies and let's save this change push it and in GitHub on the actions tab of our repository we see that another run of our automation is in flight and after this has completed we're going to trigger our job again and we should see this line in the application logs say hello daddies all right so completed and now let's trigger our job",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 2178.04,
+      "end_seconds": 2315.2000000000003,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=2178s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "011b4d9edcb77cb231a34cd6669582834e81dc01a8c3ac48def5e43bf9245210",
+    "text": "flight and after this has completed we're going to trigger our job again and we should see this line in the application logs say hello daddies all right so completed and now let's trigger our job again and we see our job got triggered for a third time and it just completed so we should have some more logs and indeed this log line got updated so have te is working in part four we're going to learn how to automatically trigger our job on a regular schedule using another gcp product called Cloud [Music] Schuler in order to use cloud Schuler we need to enable the cloud scheduler API so let's do so by entering this command and when that completes if we list out all of the enabled apis in our project we should see an additional entry here we are Cloud schedule API is now enabled now we can create a Cron job a Cron job for those who have never heard the term is a scheduled task that runs on a regular interval the way that we Define the interval for a Cron job is with this expression format for example this would be the expression for once a minute this will be the expression for every Monday at 9:00 a.m. this will be the expression for the",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 2293.68,
+      "end_seconds": 2398.8,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=2293s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f987d7fb3bb6ae14583ddfe257c91f67fc0225d04a3091272017d3a391c63897",
+    "text": "we Define the interval for a Cron job is with this expression format for example this would be the expression for once a minute this will be the expression for every Monday at 9:00 a.m. this will be the expression for the first and 15th of each month at 2 p.m. and this would be the expression for every 5 minutes between 8:00 a.m. and 10: a.m. here is the g-cloud command template for creating Crown jobs in gcp with Cloud Schuler the only variable whose value we don't yet have is the service account so let's create a new service account with a minimum needed permissions to trigger jobs in Cloud run and this time let's create the service account using the command line all right here's how we create service accounts from the command line and now we need to add invoker permissions for cloud run to this service account and this is how we do so and if we list out all of the service accounts in our project we see we have three now so in the gcloud command template for creating cron jobs with Cloud Schuler let's replace the variables with the following values before we enter this command though let's come back to the console and come over to the cloud Schuler page and we currently see no Cloud",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 2383.079,
+      "end_seconds": 2466.4399999999996,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=2383s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ee383573ba134194b45647774af1eaa402e500b421e1f7fc38789fd17b5b1e48",
+    "text": "cron jobs with Cloud Schuler let's replace the variables with the following values before we enter this command though let's come back to the console and come over to the cloud Schuler page and we currently see no Cloud Schuler jobs displayed so if we enter this command now when it completes we should see a crown job registered in the console and we do and if everything's working as expected if we come to Cloud run and take a look at the page for our job we should see it getting triggered once a minute yep you see that so yeah as we can see everything's working we see our Cron job listed as a trigger here on cloud run and our application logs are also getting printed out each time the job gets triggered so this is fabulous we now know how to set up cron jobs on Google Cloud run [Music] jobs now we're going to add in some AI let's update the requirements.txt to contain the following thirdparty packages and let's update the main.py file to contain the following contents and you can see a number of import errors at the top so let's sort those out by creating the following files let's create another helper file let's add folder for storing the schema for this application",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 2448.28,
+      "end_seconds": 2579.599,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=2448s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5de5c280baa589e08b25df2c4f796b27010feab1f18d068e79ec32b14adee9ee",
+    "text": "contents and you can see a number of import errors at the top so let's sort those out by creating the following files let's create another helper file let's add folder for storing the schema for this application we'll be building and let's add a config folder with a tasks. yo file and an agents. file and let's populate the helper and schema folder and the agents. file and the tasks. emo file and of course let's pip install if we look closely at this config folder we can see we're creating a team of agents who are reporting the latest news regarding Haiti this is what we're going to roll with for demonstration purposes and you can easily tweak these prompts according to the niche you're interested in let's now run this updated application and see what happens all right we get an error that says missing open AI API Key by default crew aai the multi-agent framework we're using uses open AI for powering llms it supports other llms but as I mentioned openi is the one that it supports by default if you're new to all this agent stuff here's a diagram that shows what I mean and in the context of this video an agent is a virtual person and the llm acts as this virtual person's brain we",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 2557.68,
+      "end_seconds": 2687.2799999999997,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=2557s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e0b3ddbb67f18929b205d3bf99f01e7ffe2b02ed304dd78f571460e4f2ad2721",
+    "text": "default if you're new to all this agent stuff here's a diagram that shows what I mean and in the context of this video an agent is a virtual person and the llm acts as this virtual person's brain we can get an openai API Key by coming over to platform. open.com and signing up after you're signed up make sure to add some credits to your account open platform is pay per use it's like a gas station and I suggest adding whatever the minimum allowed amount is because the cost of what we'll be doing here is only going to be in the pennies after you have credits added to your account come over to the dashboard API key section and create a new API key call it whatever you want you can leave every option default by the way and then copy provisioned API key into your project by coming over to the EMV file and adding a new entry that reads open AI API key equals then paste in the API key and when that's all set up let's try running our application again and see what happens it looks like it's working if we take a closer look at this config code we can see we're creating two agents a manager agent and a reporter",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 2670.079,
+      "end_seconds": 2768.64,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=2670s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d4a7279368751fd393386a14d02bd3387b04c79eebc0d9ef4e9502010a7d60dc",
+    "text": "running our application again and see what happens it looks like it's working if we take a closer look at this config code we can see we're creating two agents a manager agent and a reporter agent and this is the task that we're assigning to these agents we would like them to perform research across this list of websites and if we come to the main.py file online 56 the configuration gets tied together as of the time of recording creai lets you run your agents in two mod modes sequential mode and hierarchical mode sequential mode means that the agents are going to perform the tasks outlined in the task. yo file sequentially from top to bottom one by one with sequential mode you have to map each task to the agent you want to perform it in hierarchical mode which is what we're using we assign one of the agents in our crew as the manager and we assign tasks to the manager the manager will automatically break up the task to be assign it into subtasks and will automatically assign each subtask to the appropriate agents in the crew if you're familiar with this agent stuff one way of thinking about it is the worker agents become tools of the manager agent depending on the llm and other",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 2746.8,
+      "end_seconds": 2832.48,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=2746s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "27a3eea8a8f65315a53f572778c3bdd3abd18e82b6bee660293cf19431114f20",
+    "text": "automatically assign each subtask to the appropriate agents in the crew if you're familiar with this agent stuff one way of thinking about it is the worker agents become tools of the manager agent depending on the llm and other implementation details the reliability and reproducibility of running hierarchical mode agents can sometimes be impressive and can sometimes be atrocious but for the job of synthesizing information across a number of websites I find hierarchical mode to be a worthy match let's run this crew of Agents a few times to get a better for what it's doing let's come over to the tasks. yo file and let's edit this list of links to only have one and then let's run our crew if we come back to the main.py file we can see that the crew will be spitting out its results into a file called report. MD this file right here so let's wait till the crew is finished running and let's see what what it spits out into this report. MD file all right it finished running and let's open this up and we can see that we're getting news from the one website that we have listed in the prompt all of these are coming from the same Source now let's add the second website in this list so",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 2817.44,
+      "end_seconds": 2904.599,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=2817s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ac8deb2256e41c350aabda83c52b264174bf828770a14a98fd87a687c174cd42",
+    "text": "let's open this up and we can see that we're getting news from the one website that we have listed in the prompt all of these are coming from the same Source now let's add the second website in this list so if this is working as expected we should see news results from two websites all right it finish running and you can see now we're getting news results from two different websites right you can see in the sources The Source link is coming from the two websites we have listed in the prompt all right just to make sure this is working as expected let's add a third website to this list and have our agents perform research on these three news outlets and when I say research what's happening is the agents are instructed to load all of the text on each web page and they're prompted to extract the most meaningful or the most relevant information given the current date so here we are if this works we should see news results from three separate sources all right so our crew finish running and yeah so this first result is coming from ha. Loop news.com this second result is coming from the.com and this third result is coming from Haitian times.com so things appear to be working",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 2882.72,
+      "end_seconds": 2996.72,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=2882s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "024c88a142093864651dc17f2281cdcb06e5530ce13a0917b072059c20e3a5da",
+    "text": "running and yeah so this first result is coming from ha. Loop news.com this second result is coming from the.com and this third result is coming from Haitian times.com so things appear to be working and I hope that gives you a good feel for what this little multi-agent application is doing okay so using this report. MD file is useful for debugging but we don't need to track it in git so let's add another entry to the git ignore and now we're ready to move on to part six in part six we're going to send this AI generated news report via email to a list of subscribers [Music] next up we will integrate email into our application there are many email providers we could use but for demonstration purposes we will go with mail gun I'm suggesting mail gun as I found their integration process to be straight forward but feel free to use another email provider if you prefer anyways come over to sign up. Mail gun.com sign up after you sign up you have to verify your account via an authorization code that you receive either in your email inbox or on your phone after you complete the account verification process you can provision an API key this API key is What will authenticate our application with mail",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 2971.16,
+      "end_seconds": 3069.0789999999997,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=2971s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4a2f8096e032a1e366d33069e660489aa1a282a7c178110a742a485fc765643c",
+    "text": "authorization code that you receive either in your email inbox or on your phone after you complete the account verification process you can provision an API key this API key is What will authenticate our application with mail gun's email API next let's come over to the domains page and we can see that mail gun gives us a free domain for testing we can send emails from this test domain to any email address we list as an authorized recipient here to authorize a recipient we enter the email here and save it and then the owner of the email will receive a consent email that they'll have to agree to if they want to receive emails from our test mail gun account after we authorize some email let's add some code to our application to test out our mail gun integration so let's create a file in the helpers folder called send email and here is the code that we will populate this file with and let's call this code from the main.py file here and we have to import this Helper and for testing purposes is let's comment out all of the code except the send email call and run our application to see what happens okay if we come to our inbox and refresh our inbox we see",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3054.2,
+      "end_seconds": 3174.799,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3054s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "520d08894fd036bf667465b76685f83cb22a7a952258954e39cdbd6c71275e3c",
+    "text": "Helper and for testing purposes is let's comment out all of the code except the send email call and run our application to see what happens okay if we come to our inbox and refresh our inbox we see nothing but if we come over to our spam folder look at that we just received an email 12:08 a.m. 1208 a.m. in regards to this video if you don't mind emails being sent to spam skip ahead to part seven but if you'd like the emails we sent to arrive in the inbox as expected here are the steps you'll need to take come over to the mail gun domains page and add a particular subdomain of a domain you own for example I used mail. wish bliss. link wish bliss. link is the domain mail. wish bliss. link is the subdomain after you add a domain you'll be presented with some DNS records that you need to add to your DNS settings here are what these mail gun records look like in my Route 53 account for reference after you have your DNS settings updated you can click this verify button to have mail gun verify that we are indeed the owner of this domain and now when we send emails from our verified domain they should arrive in",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3144.319,
+      "end_seconds": 3245.96,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3144s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c2fbfca05aca1b3e4533bace5b15c265a029147f3a6ce5fc115a51b36753d72d",
+    "text": "settings updated you can click this verify button to have mail gun verify that we are indeed the owner of this domain and now when we send emails from our verified domain they should arrive in our inbox as expected voila if you have issues purchasing a domain or setting up DNS leave a comment or I suggest just pasting detailed descriptions of the issues you run into into either Google or chat GPT setting up a custom email domain is not too difficult but if you never done it before it can be a bit tricky if anyone in the community knows of an easier way to set up emails for the purposes of this walkthr please leave a comment and I'll pin it to the top of the comments let's move on to part [Music] seven we are now going to make most of the remaining changes that will move us towards the final form of our application so pay attention closely first of all we do not want this AI generated research report to be written to a file but instead would like it delivered to us via email so to do that let's make this little change to this task object Let's test this out so you see what it's doing we can see that our crew has now",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3228.839,
+      "end_seconds": 3330.2799999999997,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3228s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fbcf1a4b0d41075effe070968414cb57d8f449777af58f1090193123c4b1ddc2",
+    "text": "delivered to us via email so to do that let's make this little change to this task object Let's test this out so you see what it's doing we can see that our crew has now generated a Json structured output of the news report so what we can now do is combine the flexibility of llms with the predictability of traditional programming to transform this Json structured output into the body of an email to do that let's add a few more helper functions and let's add this code to the format news for email helper function and let's add this code to the is valid email heler function and let's update the main.py file onlines 71-74 and then let's import these helpers finally let's update the send email Helper and now if we test our application let's see what happens if it works as expected we should receive an email with our AI generated news reports all right our application just finished running and if we come over to our inbox we see our AI generated news report and the links are working too great we are now going to use another product in the gcp suite called secret manager secret manager is a product specially designed for storing API keys secr and any other sensitive data here is how we enable this API in",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3303.0,
+      "end_seconds": 3453.119,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3303s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "84790179525a635b225c3798e86c89f6e516456de47e60054037f09ea66eb00f",
+    "text": "too great we are now going to use another product in the gcp suite called secret manager secret manager is a product specially designed for storing API keys secr and any other sensitive data here is how we enable this API in our gcp project and after that command completes if we list the enabled services in our gcp account we can see that this list has been extended by one entry so this is how we would add the open AI API key to secret manager you can see we're piping in the API key into this g-cloud Secrets create command and this is the name of the secret in secret manager and this is how we would pipe in the mail gun API key so that it's stored in secret manager as well FYI here's how you update secret values anyways the last thing that we need to do before we test this is make sure that our default compute service account has the permissions to access these secrets in secret manager so let's first run this command and then this command once again for clarity what these commands are doing are giving Cloud run the ability to retrieve these secrets from Secret manager when we run our application all right now we're ready to test this so let's come over to",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3435.2,
+      "end_seconds": 3533.76,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3435s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2b1982b4e6d1bdebc2c6f5de53aad9a32409a1578cf4e4d8884d73dd53066bd9",
+    "text": "these commands are doing are giving Cloud run the ability to retrieve these secrets from Secret manager when we run our application all right now we're ready to test this so let's come over to the cd. yo file and come to the deploy step and let's add another flag called set secrets and you can see that this flag is passing in the environment variables for our API keys by referencing them in secret manager so it's doing that for the open AI API key as well as the mail gun API key so let's quickly come over to the get ignore same way that we ignored the report. markdown file let's also ignore the report. Json file this is only useful to us for debugging purposes so that looks good so we go say nearly finished okay I'm actually glad this happened so the build failed because we need to add some additional software into the Container so we're using a multi-agent framework called creai creai has what are called tools which are add-ons that you give to your agents that allow them to do things for example there's tools for browsing the internet there's tools for accessing the files on your computer there's tools for generating images these all come to you with crew AI so some of the tools",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3518.0,
+      "end_seconds": 3622.559,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3518s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b28d7d25bb1e8aeacac19bf3a2d1fa44452c66c4f0c61b4dad75bb9416feb916",
+    "text": "for example there's tools for browsing the internet there's tools for accessing the files on your computer there's tools for generating images these all come to you with crew AI so some of the tools require some C++ libraries to be installed and we need to add these C++ libraries into our production container so we will put this here build the central is going to add some extra C++ libraries into the Container so let's test this out and woo that worked let's trigger our job in Cloud run to confirm we still get AI generated news delivered to us via email okay our job got triggered and now it's running and it was able to complete if we come to our inbox we do indeed get our AI generated news report so that's great this application works in our Dev container and it works in Cloud run so we're looking really good before we wrap up part seven let's discuss a few of the flags available to us when running jobs in Cloud run so we can see in the yaml config for our job that we have the ability to specify the amount of memory allocated to each container when it runs a job the amount of retries the container is allowed to make before the job is reported as",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3607.319,
+      "end_seconds": 3710.68,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3607s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "872a7ffcd0eef998340aa056d839908874463d609457c924d44c0aaf91df05c5",
+    "text": "that we have the ability to specify the amount of memory allocated to each container when it runs a job the amount of retries the container is allowed to make before the job is reported as failed to us the timeout seconds so this looks like 10 minutes timeout so what we're going to do is twe twe the memory and tweak the max retries because agents are probabilistic by Design they're always going to work differently every time I've seen them sometimes generate so much text to where they consume all the memory allocated to them when they're ran in Cloud run jobs so what we're going to do is double the amount of memory that is given to a cloud job container by default and we're also going to increase the Max retries from 3 to 5 and here's how we'll tweak them we will come over to the deploy command in our cicd script and add two more flags all right that worked so let's quickly confirm that our configuration got updated and yeah you can see we now are at five Max retries and we have double the memory that we had before so moving on next we are going to add in an amazing tool called Agent Ops agent Ops will allow us to monitor our agents in a much",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3697.799,
+      "end_seconds": 3788.24,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3697s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "490bf9bd711ba6368386e93e2a786ac091ea414c9b365216c26096b3c9c58e15",
+    "text": "at five Max retries and we have double the memory that we had before so moving on next we are going to add in an amazing tool called Agent Ops agent Ops will allow us to monitor our agents in a much more intuitive and simpler fashion than digging through gcp you're going to need a tool like agent Ops when you have dozens or even hundreds of Agents working for you so you get an overview of what they're all doing how much each of them is costing you Etc so I'll see you in part [Music] eight the process for integrating with agent Ops is very similar to how we integrated with open AI first let's come over to the agent Ops web app come over to app. aent ops. a and find the API Keys page I found it in this drop down and let's create a new one let's create a project called agents Master Class and then let's copy the API key that was created for us and we add it to our project by adding a new entry in the EMV file that reads agent opscore aior key and we paste in the API key that we copied from the agent Ops dashboard and then let's come over to the requirements.txt file and we need to",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3768.72,
+      "end_seconds": 3869.799,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3768s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "22092fe58e23c9111ea08ab11f85c5803dd498243ca7edbd972a4035fa5e7507",
+    "text": "file that reads agent opscore aior key and we paste in the API key that we copied from the agent Ops dashboard and then let's come over to the requirements.txt file and we need to add the package for installing agent Ops and let's save this file and then pip install as usual and the final step of integrating agent Ops involves coming over to the main.py file and towards the top of this file before you initialize your agents add this bit of code and we also need need import the OS package so if we run our application we should see some information showing up in the agent Ops dashboard and agent Ops offers this overview dashboard as well as this drill down and there we go so we're starting to see some data come in all right we see our product manager agent our researcher agent and our agents are still at work so let's see what the agent Ops dashboard looks like when our agents are finished and if we reload right we see some beautiful charts giving us an overview of what happened when our agents were at work on the right here we can see the details of what the llms produced and ingested for each step of the overall session and we also see the",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3849.96,
+      "end_seconds": 3982.92,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3849s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4186f7cfd8df115c0e8e4f9da6062dec71a67ade64d1b03e0556406ebae44ec4",
+    "text": "giving us an overview of what happened when our agents were at work on the right here we can see the details of what the llms produced and ingested for each step of the overall session and we also see the costs involved as well as all the versions of the libraries that were used under the hood and this is fantastic and this page gives us an overview of what just happened as well to set up our agents in gcp AKA our production environment we must add the agent Ops API key into secret manager and then give our default compute service account permissions to access this agent Ops API key and then we reference the agent Ops API key in secret manager in our cicdl script let's push these changes to GitHub okay that worked and now let's trigger our agents in Cloud run and confirm that they still work and that they are being tracked by agent Ops so here is the command all right so our job got triggered and it's running and let's come back to agent Ops and here we are we see our gcp agent session being tracked by agent Ops as well taking a look at what our agents are doing via this dashboard is a lot more intuitive and straightforward",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 3957.559,
+      "end_seconds": 4109.56,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=3957s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e643d2f28183da9272962c20362136ddf5d8cae538c103fc02c50b1907e3d7c2",
+    "text": "and here we are we see our gcp agent session being tracked by agent Ops as well taking a look at what our agents are doing via this dashboard is a lot more intuitive and straightforward than digging through the gcp console we have now arrived at the end of this incredible journey we are masters of agents and we are masters of Our Fate to wrap things up let's do a few final things let's update our prompts to focus on a different Niche so Insurance technology and instead of focusing our task on Haiti insurance techology and instead of focusing on these new sources let's focus on these ones and let's also make the subscriber list a secret so we don't dox whoever is receiving news reports from this application so let's define the subscriber list via an environment variable for now you'll probably want to do this with some sort of database but that's outside of the scope of this video and let's turn that into an array like so and let's create environment variable in secret manager I'm just going to put one email for now but you would put a comma separated list of emails and then of course we have to give the default compute service account permissions to access this secret and then we reference this Secret in",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 4089.52,
+      "end_seconds": 4230.599999999999,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=4089s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1ae1c470ad8568d64acc442cd72954dfbc6b1de438091432ff74622cd82bbfc9",
+    "text": "for now but you would put a comma separated list of emails and then of course we have to give the default compute service account permissions to access this secret and then we reference this Secret in our cicdl script this is the final batch of changes we now have our production grade application as promised here's how to tear down the gcp project and avoid incurring charges so my suggested approach is to delete all of the resources that were provisioned so here I'm deleting the Cron job next I'm going to delete the cloud run job then we'll delete the repository in artifact registry then we'll delete the service accounts then we'll delete the secrets in secret manager and then we come to the gcp [Music] console dashboard project settings and shut down our project the reason why we have to manually delete all of these resources is because with this shutdown policy there'll be a 30-day grace period or billing period that's still in effect until all of the resources get shut down I guess a good side of that is that if you accidentally shut down a project you have 30 days to change your mind and you know disable the shutdown but from a billing standpoint if you have anything that's costing you money you'll be build",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 4201.76,
+      "end_seconds": 4336.839999999999,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=4201s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8b9596528df7e4b8c864ba85ff3a1c86f19d65e7f6c8eb91c7d39411261e6942",
+    "text": "you accidentally shut down a project you have 30 days to change your mind and you know disable the shutdown but from a billing standpoint if you have anything that's costing you money you'll be build for you know another month after you select the project for shutdown so I think that's everything namaste",
+    "metadata": {
+      "video_id": "upTlhKQbnsE",
+      "title": "Production-Grade A.I. Agents MASTERCLASS",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 4322.0,
+      "end_seconds": 4344.0,
+      "url": "https://www.youtube.com/watch?v=upTlhKQbnsE&t=4322s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

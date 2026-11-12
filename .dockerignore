@@ -1,0 +1,14 @@
+**
+!Dockerfile
+!requirements.txt
+!*.py
+!*.js
+!youtube_highlights.html
+!*_catalogue.json
+!*_captions.json
+!*_chunks.json
+!models/
+models/**
+!models/minilm/
+!models/minilm/model_quint8_avx2.onnx
+!models/minilm/tokenizer.json

@@ -1,0 +1,3378 @@
+{
+  "video_id": "qoPYlLg7_rY",
+  "title": "LLM-as-a-Judge Evals with LangSmith",
+  "channel": "COMMAND",
+  "trainer": "COMMAND",
+  "topic": "Evaluation",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1553.0,
+  "segments": [
+    {
+      "start": 0.6,
+      "end": 5.119999999999999,
+      "text": "In this video, you will learn how to do"
+    },
+    {
+      "start": 2.72,
+      "end": 7.84,
+      "text": "LLM as a judge evaluations using a"
+    },
+    {
+      "start": 5.12,
+      "end": 9.120000000000001,
+      "text": "platform called LangSmith."
+    },
+    {
+      "start": 7.84,
+      "end": 11.68,
+      "text": "Why is this even important, you might"
+    },
+    {
+      "start": 9.12,
+      "end": 13.559999999999999,
+      "text": "ask? Because this LLM as a judge"
+    },
+    {
+      "start": 11.68,
+      "end": 15.6,
+      "text": "technique is associated with two growing"
+    },
+    {
+      "start": 13.56,
+      "end": 17.68,
+      "text": "niches within the tech sector. Growing"
+    },
+    {
+      "start": 15.6,
+      "end": 20.4,
+      "text": "niche one being data collection, and"
+    },
+    {
+      "start": 17.68,
+      "end": 22.439999999999998,
+      "text": "growing niche two being AI training."
+    },
+    {
+      "start": 20.4,
+      "end": 24.24,
+      "text": "So, if you master all of the content in"
+    },
+    {
+      "start": 22.44,
+      "end": 26.6,
+      "text": "this video, you should be able to"
+    },
+    {
+      "start": 24.24,
+      "end": 28.839999999999996,
+      "text": "position yourself or your company to"
+    },
+    {
+      "start": 26.6,
+      "end": 30.200000000000003,
+      "text": "capture some of that market value within"
+    },
+    {
+      "start": 28.84,
+      "end": 31.8,
+      "text": "the coming years."
+    },
+    {
+      "start": 30.2,
+      "end": 33.4,
+      "text": "Here is a table of contents for what's"
+    },
+    {
+      "start": 31.8,
+      "end": 35.04,
+      "text": "about to follow."
+    },
+    {
+      "start": 33.4,
+      "end": 37.239999999999995,
+      "text": "First, we're going to cover the general"
+    },
+    {
+      "start": 35.04,
+      "end": 38.519999999999996,
+      "text": "steps involved with performing LLM as a"
+    },
+    {
+      "start": 37.24,
+      "end": 39.400000000000006,
+      "text": "judge."
+    },
+    {
+      "start": 38.52,
+      "end": 41.36,
+      "text": "Then we're going to demonstrate the"
+    },
+    {
+      "start": 39.4,
+      "end": 43.48,
+      "text": "basic concepts of LLM as a judge using"
+    },
+    {
+      "start": 41.36,
+      "end": 44.28,
+      "text": "the LangSmith platform."
+    },
+    {
+      "start": 43.48,
+      "end": 46.16,
+      "text": "Then we're going to take a look at a"
+    },
+    {
+      "start": 44.28,
+      "end": 47.84,
+      "text": "simple end-to-end example of how to do"
+    },
+    {
+      "start": 46.16,
+      "end": 49.519999999999996,
+      "text": "LLM as a judge."
+    },
+    {
+      "start": 47.84,
+      "end": 51.120000000000005,
+      "text": "Then we're going to expand that simple"
+    },
+    {
+      "start": 49.52,
+      "end": 53.36,
+      "text": "end-to-end example and run more {quote}"
+    },
+    {
+      "start": 51.12,
+      "end": 54.32,
+      "text": "experiments."
+    },
+    {
+      "start": 53.36,
+      "end": 56.2,
+      "text": "And then finally, we're going to"
+    },
+    {
+      "start": 54.32,
+      "end": 58.12,
+      "text": "introduce a new technique called auto"
+    },
+    {
+      "start": 56.2,
+      "end": 60.160000000000004,
+      "text": "research, so you get a taste of the"
+    },
+    {
+      "start": 58.12,
+      "end": 63.76,
+      "text": "bleeding edge of where all of this LLM"
+    },
+    {
+      "start": 60.16,
+      "end": 63.76,
+      "text": "as a judge stuff is going."
+    },
+    {
+      "start": 65.76,
+      "end": 70.04,
+      "text": "Here are the general steps involved with"
+    },
+    {
+      "start": 67.52,
+      "end": 71.88,
+      "text": "performing LLM as a judge."
+    },
+    {
+      "start": 70.04,
+      "end": 73.12,
+      "text": "Step one, you need some system that"
+    },
+    {
+      "start": 71.88,
+      "end": 75.16,
+      "text": "you're going to measure the performance"
+    },
+    {
+      "start": 73.12,
+      "end": 76.84,
+      "text": "of. For example, in the subsequent"
+    },
+    {
+      "start": 75.16,
+      "end": 80.0,
+      "text": "sections, we're going to be measuring"
+    },
+    {
+      "start": 76.84,
+      "end": 82.92,
+      "text": "how well an AI agent answers specific"
+    },
+    {
+      "start": 80.0,
+      "end": 84.44,
+      "text": "questions about some topic. Step two,"
+    },
+    {
+      "start": 82.92,
+      "end": 87.28,
+      "text": "after you decide what system you want to"
+    },
+    {
+      "start": 84.44,
+      "end": 89.96,
+      "text": "test or evaluate, you would then need to"
+    },
+    {
+      "start": 87.28,
+      "end": 92.08,
+      "text": "feed in inputs into said system and"
+    },
+    {
+      "start": 89.96,
+      "end": 94.8,
+      "text": "record the generated outputs."
+    },
+    {
+      "start": 92.08,
+      "end": 96.52,
+      "text": "For example, when we test this AI agent,"
+    },
+    {
+      "start": 94.8,
+      "end": 99.16,
+      "text": "I'm going to be feeding in these"
+    },
+    {
+      "start": 96.52,
+      "end": 101.36,
+      "text": "questions about AI school, which quick"
+    },
+    {
+      "start": 99.16,
+      "end": 102.92,
+      "text": "side note is an AI upskilling program"
+    },
+    {
+      "start": 101.36,
+      "end": 104.8,
+      "text": "for professionals that meets in the"
+    },
+    {
+      "start": 102.92,
+      "end": 106.96000000000001,
+      "text": "afternoons on Mondays and Thursdays in"
+    },
+    {
+      "start": 104.8,
+      "end": 108.75999999999999,
+      "text": "beautiful Wynwood, Miami, Florida."
+    },
+    {
+      "start": 106.96,
+      "end": 110.64,
+      "text": "Step three, you need to score the"
+    },
+    {
+      "start": 108.76,
+      "end": 112.48,
+      "text": "outputs of the system you're testing."
+    },
+    {
+      "start": 110.64,
+      "end": 114.72,
+      "text": "This is where LLM as a judge comes into"
+    },
+    {
+      "start": 112.48,
+      "end": 116.12,
+      "text": "the picture. For example,"
+    },
+    {
+      "start": 114.72,
+      "end": 117.72,
+      "text": "we're going to be comparing the outputs"
+    },
+    {
+      "start": 116.12,
+      "end": 120.84,
+      "text": "of an AI agent that's prompted with some"
+    },
+    {
+      "start": 117.72,
+      "end": 122.8,
+      "text": "questions against the correct answers in"
+    },
+    {
+      "start": 120.84,
+      "end": 125.28,
+      "text": "order to assess how good or relevant the"
+    },
+    {
+      "start": 122.8,
+      "end": 126.96,
+      "text": "outputs of the AI agent are."
+    },
+    {
+      "start": 125.28,
+      "end": 129.119,
+      "text": "Note how we specified what the correct"
+    },
+    {
+      "start": 126.96,
+      "end": 130.28,
+      "text": "answer is next to each input in this"
+    },
+    {
+      "start": 129.119,
+      "end": 131.76,
+      "text": "list."
+    },
+    {
+      "start": 130.28,
+      "end": 134.68,
+      "text": "After feeding in each input into the"
+    },
+    {
+      "start": 131.76,
+      "end": 136.48,
+      "text": "system we're testing, aka this AI agent,"
+    },
+    {
+      "start": 134.68,
+      "end": 138.20000000000002,
+      "text": "we could compare the outputs ourselves"
+    },
+    {
+      "start": 136.48,
+      "end": 140.39999999999998,
+      "text": "with the correct answers,"
+    },
+    {
+      "start": 138.2,
+      "end": 142.07999999999998,
+      "text": "but at scale, that would be super"
+    },
+    {
+      "start": 140.4,
+      "end": 144.44,
+      "text": "tedious and slow."
+    },
+    {
+      "start": 142.08,
+      "end": 145.88000000000002,
+      "text": "So, instead of us having to take a look"
+    },
+    {
+      "start": 144.44,
+      "end": 147.959,
+      "text": "at the generated outputs of whatever"
+    },
+    {
+      "start": 145.88,
+      "end": 151.12,
+      "text": "system we're testing and compare them"
+    },
+    {
+      "start": 147.959,
+      "end": 152.76,
+      "text": "against the ideal or expected outputs,"
+    },
+    {
+      "start": 151.12,
+      "end": 155.44,
+      "text": "what we're going to do is delegate that"
+    },
+    {
+      "start": 152.76,
+      "end": 157.84,
+      "text": "review work to an LLM."
+    },
+    {
+      "start": 155.44,
+      "end": 159.52,
+      "text": "Hence, an LLM will judge the quality of"
+    },
+    {
+      "start": 157.84,
+      "end": 160.72,
+      "text": "the outputs of the system we're testing"
+    },
+    {
+      "start": 159.52,
+      "end": 164.20000000000002,
+      "text": "for us,"
+    },
+    {
+      "start": 160.72,
+      "end": 166.28,
+      "text": "aka LLM as a judge."
+    },
+    {
+      "start": 164.2,
+      "end": 167.6,
+      "text": "You can use whichever LLM you prefer,"
+    },
+    {
+      "start": 166.28,
+      "end": 169.48,
+      "text": "but I suggest you go with one that you"
+    },
+    {
+      "start": 167.6,
+      "end": 171.79999999999998,
+      "text": "generally respect the outputs of because"
+    },
+    {
+      "start": 169.48,
+      "end": 173.76,
+      "text": "if the LLM judge you choose is not good"
+    },
+    {
+      "start": 171.8,
+      "end": 175.60000000000002,
+      "text": "or is inaccurate, then this whole"
+    },
+    {
+      "start": 173.76,
+      "end": 178.12,
+      "text": "technique falls apart."
+    },
+    {
+      "start": 175.6,
+      "end": 181.28,
+      "text": "FYI, I'm going to be using GPT-4o mini"
+    },
+    {
+      "start": 178.12,
+      "end": 182.92000000000002,
+      "text": "from OpenAI as my LLM judge."
+    },
+    {
+      "start": 181.28,
+      "end": 184.8,
+      "text": "And finally for step four, which is the"
+    },
+    {
+      "start": 182.92,
+      "end": 187.11999999999998,
+      "text": "most important part of this LLM as a"
+    },
+    {
+      "start": 184.8,
+      "end": 189.64000000000001,
+      "text": "judge technique, you will adjust various"
+    },
+    {
+      "start": 187.12,
+      "end": 191.519,
+      "text": "aspects of your system to see how high"
+    },
+    {
+      "start": 189.64,
+      "end": 192.67999999999998,
+      "text": "of a score you can get from your LLM"
+    },
+    {
+      "start": 191.519,
+      "end": 195.4,
+      "text": "judge."
+    },
+    {
+      "start": 192.68,
+      "end": 197.76000000000002,
+      "text": "Or to use overly scientific lingo,"
+    },
+    {
+      "start": 195.4,
+      "end": 199.8,
+      "text": "you will perform controlled experiments"
+    },
+    {
+      "start": 197.76,
+      "end": 202.239,
+      "text": "in order to measure how various"
+    },
+    {
+      "start": 199.8,
+      "end": 203.48000000000002,
+      "text": "independent variables affect dependent"
+    },
+    {
+      "start": 202.239,
+      "end": 205.36,
+      "text": "variables."
+    },
+    {
+      "start": 203.48,
+      "end": 207.2,
+      "text": "Don't worry if this is not clicking yet"
+    },
+    {
+      "start": 205.36,
+      "end": 210.16000000000003,
+      "text": "because we are now going to walk step by"
+    },
+    {
+      "start": 207.2,
+      "end": 211.67999999999998,
+      "text": "step through an example of how to do LLM"
+    },
+    {
+      "start": 210.16,
+      "end": 212.959,
+      "text": "as a judge."
+    },
+    {
+      "start": 211.68,
+      "end": 214.84,
+      "text": "And I guarantee you that by the end of"
+    },
+    {
+      "start": 212.959,
+      "end": 217.16,
+      "text": "this video, you will attain mastery of"
+    },
+    {
+      "start": 214.84,
+      "end": 219.88,
+      "text": "this concept and be able to apply it"
+    },
+    {
+      "start": 217.16,
+      "end": 219.88,
+      "text": "yourself."
+    },
+    {
+      "start": 221.519,
+      "end": 226.04,
+      "text": "We are now going to go through the basic"
+    },
+    {
+      "start": 223.2,
+      "end": 228.48,
+      "text": "concepts behind LLM as a judge, and"
+    },
+    {
+      "start": 226.04,
+      "end": 230.519,
+      "text": "we're going to do so via a platform that"
+    },
+    {
+      "start": 228.48,
+      "end": 232.11999999999998,
+      "text": "goes by the name of LangSmith,"
+    },
+    {
+      "start": 230.519,
+      "end": 234.36,
+      "text": "which is a platform made by a company"
+    },
+    {
+      "start": 232.12,
+      "end": 236.32,
+      "text": "called LangChain."
+    },
+    {
+      "start": 234.36,
+      "end": 238.28,
+      "text": "You can visit this landing page by"
+    },
+    {
+      "start": 236.32,
+      "end": 241.28,
+      "text": "coming over to"
+    },
+    {
+      "start": 238.28,
+      "end": 241.28,
+      "text": "langchain.com/langsmith-platform"
+    },
+    {
+      "start": 242.48,
+      "end": 246.35999999999999,
+      "text": "and on this landing page you should see"
+    },
+    {
+      "start": 244.24,
+      "end": 247.84,
+      "text": "buttons that say try LangSmith or get"
+    },
+    {
+      "start": 246.36,
+      "end": 249.84,
+      "text": "started."
+    },
+    {
+      "start": 247.84,
+      "end": 251.959,
+      "text": "And once you're signed up, which you"
+    },
+    {
+      "start": 249.84,
+      "end": 254.48,
+      "text": "should be able to do for free,"
+    },
+    {
+      "start": 251.959,
+      "end": 255.68,
+      "text": "LangSmith has a very generous free tier."
+    },
+    {
+      "start": 254.48,
+      "end": 258.0,
+      "text": "Once you're signed in, you should see"
+    },
+    {
+      "start": 255.68,
+      "end": 259.68,
+      "text": "something like this, right? I've started"
+    },
+    {
+      "start": 258.0,
+      "end": 261.92,
+      "text": "with a fresh account so you don't get"
+    },
+    {
+      "start": 259.68,
+      "end": 263.40000000000003,
+      "text": "confused by anything, right?"
+    },
+    {
+      "start": 261.92,
+      "end": 265.32,
+      "text": "And there's two ways that you can"
+    },
+    {
+      "start": 263.4,
+      "end": 266.76,
+      "text": "interact with the LangSmith platform."
+    },
+    {
+      "start": 265.32,
+      "end": 268.76,
+      "text": "You can interact with it through this"
+    },
+    {
+      "start": 266.76,
+      "end": 269.84,
+      "text": "web application, right? That you see"
+    },
+    {
+      "start": 268.76,
+      "end": 271.59999999999997,
+      "text": "here."
+    },
+    {
+      "start": 269.84,
+      "end": 273.76,
+      "text": "And [snorts] you can also interact with"
+    },
+    {
+      "start": 271.6,
+      "end": 275.12,
+      "text": "your LangSmith account or the LangSmith"
+    },
+    {
+      "start": 273.76,
+      "end": 276.32,
+      "text": "platform"
+    },
+    {
+      "start": 275.12,
+      "end": 279.08,
+      "text": "via"
+    },
+    {
+      "start": 276.32,
+      "end": 280.64,
+      "text": "API, right? So you can come over to the"
+    },
+    {
+      "start": 279.08,
+      "end": 283.03999999999996,
+      "text": "settings section in your LangSmith"
+    },
+    {
+      "start": 280.64,
+      "end": 284.52,
+      "text": "account and come over to the API keys"
+    },
+    {
+      "start": 283.04,
+      "end": 286.56,
+      "text": "page"
+    },
+    {
+      "start": 284.52,
+      "end": 288.88,
+      "text": "and you can provision"
+    },
+    {
+      "start": 286.56,
+      "end": 290.88,
+      "text": "API keys like so."
+    },
+    {
+      "start": 288.88,
+      "end": 293.76,
+      "text": "Once you have the API key, you can copy"
+    },
+    {
+      "start": 290.88,
+      "end": 296.15999999999997,
+      "text": "it into some local project, like for"
+    },
+    {
+      "start": 293.76,
+      "end": 297.76,
+      "text": "example, the one that I've linked with"
+    },
+    {
+      "start": 296.16,
+      "end": 300.72,
+      "text": "this video."
+    },
+    {
+      "start": 297.76,
+      "end": 302.44,
+      "text": "And you can start playing around with"
+    },
+    {
+      "start": 300.72,
+      "end": 304.88000000000005,
+      "text": "various things, right? So, what we're"
+    },
+    {
+      "start": 302.44,
+      "end": 306.88,
+      "text": "going to do now is introduce three"
+    },
+    {
+      "start": 304.88,
+      "end": 310.4,
+      "text": "fundamental concepts for understanding"
+    },
+    {
+      "start": 306.88,
+      "end": 311.6,
+      "text": "LLM as a judge. Those being one, data"
+    },
+    {
+      "start": 310.4,
+      "end": 315.919,
+      "text": "sets,"
+    },
+    {
+      "start": 311.6,
+      "end": 318.76000000000005,
+      "text": "two, evaluators, and three, experiments."
+    },
+    {
+      "start": 315.919,
+      "end": 320.88,
+      "text": "Okay, here we have a Python project"
+    },
+    {
+      "start": 318.76,
+      "end": 322.59999999999997,
+      "text": "running on my local computer. This is"
+    },
+    {
+      "start": 320.88,
+      "end": 324.919,
+      "text": "how I'm going to be demonstrating these"
+    },
+    {
+      "start": 322.6,
+      "end": 326.84000000000003,
+      "text": "three basic concepts. So, let's start"
+    },
+    {
+      "start": 324.919,
+      "end": 329.0,
+      "text": "with data sets."
+    },
+    {
+      "start": 326.84,
+      "end": 332.03999999999996,
+      "text": "Data sets are"
+    },
+    {
+      "start": 329.0,
+      "end": 335.84,
+      "text": "simply input-output pairs, right?"
+    },
+    {
+      "start": 332.04,
+      "end": 338.28000000000003,
+      "text": "So, this first command is what we'll use"
+    },
+    {
+      "start": 335.84,
+      "end": 339.67999999999995,
+      "text": "to demonstrate data sets."
+    },
+    {
+      "start": 338.28,
+      "end": 340.919,
+      "text": "Before I run this, if you look closely"
+    },
+    {
+      "start": 339.68,
+      "end": 344.919,
+      "text": "at the command, you can see all we're"
+    },
+    {
+      "start": 340.919,
+      "end": 346.47999999999996,
+      "text": "doing is uploading the data that sits in"
+    },
+    {
+      "start": 344.919,
+      "end": 349.91999999999996,
+      "text": "this CSV,"
+    },
+    {
+      "start": 346.48,
+      "end": 352.0,
+      "text": "which is a list of Q&As, aka"
+    },
+    {
+      "start": 349.92,
+      "end": 354.52000000000004,
+      "text": "input-output pairs."
+    },
+    {
+      "start": 352.0,
+      "end": 356.84,
+      "text": "So, let's just run this and see what"
+    },
+    {
+      "start": 354.52,
+      "end": 358.52,
+      "text": "happens. So, you run that."
+    },
+    {
+      "start": 356.84,
+      "end": 360.56,
+      "text": "And if we come over to our LangSmith"
+    },
+    {
+      "start": 358.52,
+      "end": 363.0,
+      "text": "dashboard and come over to the datasets"
+    },
+    {
+      "start": 360.56,
+      "end": 364.68,
+      "text": "and experiments page,"
+    },
+    {
+      "start": 363.0,
+      "end": 366.76,
+      "text": "there we go. So, I reloaded the page"
+    },
+    {
+      "start": 364.68,
+      "end": 369.04,
+      "text": "after running that command on my local,"
+    },
+    {
+      "start": 366.76,
+      "end": 370.44,
+      "text": "and we now have a dataset. If you look"
+    },
+    {
+      "start": 369.04,
+      "end": 372.48,
+      "text": "closely, you can see this dataset has"
+    },
+    {
+      "start": 370.44,
+      "end": 376.4,
+      "text": "zero experiments associated with it. You"
+    },
+    {
+      "start": 372.48,
+      "end": 378.96000000000004,
+      "text": "can see it has 73 input-output pairs. If"
+    },
+    {
+      "start": 376.4,
+      "end": 381.35999999999996,
+      "text": "I click on the dataset,"
+    },
+    {
+      "start": 378.96,
+      "end": 384.03999999999996,
+      "text": "we can take a closer look at the"
+    },
+    {
+      "start": 381.36,
+      "end": 387.88,
+      "text": "examples or input-output pairs."
+    },
+    {
+      "start": 384.04,
+      "end": 390.20000000000005,
+      "text": "Here is how we can group"
+    },
+    {
+      "start": 387.88,
+      "end": 392.08,
+      "text": "the examples into different splits. If"
+    },
+    {
+      "start": 390.2,
+      "end": 393.76,
+      "text": "you're familiar with AI training, you"
+    },
+    {
+      "start": 392.08,
+      "end": 396.0,
+      "text": "might have heard of, for example,"
+    },
+    {
+      "start": 393.76,
+      "end": 398.71999999999997,
+      "text": "training splits versus test splits"
+    },
+    {
+      "start": 396.0,
+      "end": 401.2,
+      "text": "versus validation splits, etc."
+    },
+    {
+      "start": 398.72,
+      "end": 403.88000000000005,
+      "text": "If you don't provide a way to"
+    },
+    {
+      "start": 401.2,
+      "end": 406.32,
+      "text": "group your examples, it's just going to"
+    },
+    {
+      "start": 403.88,
+      "end": 409.0,
+      "text": "put them inside of the base split. And"
+    },
+    {
+      "start": 406.32,
+      "end": 411.2,
+      "text": "if you look closely here, we have some"
+    },
+    {
+      "start": 409.0,
+      "end": 413.6,
+      "text": "more tabs, and you can see this tab here"
+    },
+    {
+      "start": 411.2,
+      "end": 416.15999999999997,
+      "text": "that says evaluators. So, let's now"
+    },
+    {
+      "start": 413.6,
+      "end": 417.88,
+      "text": "demonstrate the concept of evaluators,"
+    },
+    {
+      "start": 416.16,
+      "end": 420.48,
+      "text": "which"
+    },
+    {
+      "start": 417.88,
+      "end": 421.8,
+      "text": "is just as simple as the concept of"
+    },
+    {
+      "start": 420.48,
+      "end": 423.72,
+      "text": "datasets."
+    },
+    {
+      "start": 421.8,
+      "end": 426.48,
+      "text": "Evaluators are best understood by simply"
+    },
+    {
+      "start": 423.72,
+      "end": 429.04,
+      "text": "experiencing them, so let's"
+    },
+    {
+      "start": 426.48,
+      "end": 431.40000000000003,
+      "text": "run this second script that demonstrates"
+    },
+    {
+      "start": 429.04,
+      "end": 432.96000000000004,
+      "text": "the concept of evaluators. Before we"
+    },
+    {
+      "start": 431.4,
+      "end": 434.79999999999995,
+      "text": "trigger it, though, let's take a look at"
+    },
+    {
+      "start": 432.96,
+      "end": 436.03999999999996,
+      "text": "what this script is doing."
+    },
+    {
+      "start": 434.8,
+      "end": 437.96000000000004,
+      "text": "This script goes by the name of"
+    },
+    {
+      "start": 436.04,
+      "end": 440.16,
+      "text": "upload_simple_evaluator_demo.py,"
+    },
+    {
+      "start": 437.96,
+      "end": 442.03999999999996,
+      "text": "which we can find here."
+    },
+    {
+      "start": 440.16,
+      "end": 443.52000000000004,
+      "text": "And let's take a look at what's going"
+    },
+    {
+      "start": 442.04,
+      "end": 444.91900000000004,
+      "text": "on."
+    },
+    {
+      "start": 443.52,
+      "end": 447.88,
+      "text": "And if you scroll through it, you should"
+    },
+    {
+      "start": 444.919,
+      "end": 449.12,
+      "text": "see a section of code titled main. By"
+    },
+    {
+      "start": 447.88,
+      "end": 451.32,
+      "text": "the way, if you're new to programming,"
+    },
+    {
+      "start": 449.12,
+      "end": 453.24,
+      "text": "it's very common to see"
+    },
+    {
+      "start": 451.32,
+      "end": 455.84,
+      "text": "some section of code titled main that"
+    },
+    {
+      "start": 453.24,
+      "end": 458.48,
+      "text": "indicates to you where the script you're"
+    },
+    {
+      "start": 455.84,
+      "end": 460.919,
+      "text": "triggering will start its execution."
+    },
+    {
+      "start": 458.48,
+      "end": 462.44,
+      "text": "So, when you execute this script, this"
+    },
+    {
+      "start": 460.919,
+      "end": 463.76,
+      "text": "is where the code will start running."
+    },
+    {
+      "start": 462.44,
+      "end": 465.52,
+      "text": "So,"
+    },
+    {
+      "start": 463.76,
+      "end": 467.71999999999997,
+      "text": "not to be too pedantic, but you can see"
+    },
+    {
+      "start": 465.52,
+      "end": 470.59999999999997,
+      "text": "here on line 83, we're loading in"
+    },
+    {
+      "start": 467.72,
+      "end": 471.8,
+      "text": "environment variables, right? load.env."
+    },
+    {
+      "start": 470.6,
+      "end": 474.52000000000004,
+      "text": "Environment variables are where you can"
+    },
+    {
+      "start": 471.8,
+      "end": 476.96000000000004,
+      "text": "provide API keys to your script and"
+    },
+    {
+      "start": 474.52,
+      "end": 478.68,
+      "text": "sensitive pieces of information, etc."
+    },
+    {
+      "start": 476.96,
+      "end": 480.84,
+      "text": "Then, on line 85, you can see we're"
+    },
+    {
+      "start": 478.68,
+      "end": 482.72,
+      "text": "instantiating a client, which in this"
+    },
+    {
+      "start": 480.84,
+      "end": 484.67999999999995,
+      "text": "context means"
+    },
+    {
+      "start": 482.72,
+      "end": 488.08000000000004,
+      "text": "a connection between our local script"
+    },
+    {
+      "start": 484.68,
+      "end": 489.76,
+      "text": "and the LangSmith platform, right? On"
+    },
+    {
+      "start": 488.08,
+      "end": 491.84,
+      "text": "line 87, you can see we're confirming we"
+    },
+    {
+      "start": 489.76,
+      "end": 494.15999999999997,
+      "text": "have a dataset available to us to test"
+    },
+    {
+      "start": 491.84,
+      "end": 496.79999999999995,
+      "text": "with. And then, on line 88, you can see"
+    },
+    {
+      "start": 494.16,
+      "end": 499.6,
+      "text": "that we're evaluating some, {quote}"
+    },
+    {
+      "start": 496.8,
+      "end": 502.04,
+      "text": "{unquote}, target system, right? On line"
+    },
+    {
+      "start": 499.6,
+      "end": 504.84000000000003,
+      "text": "89, you can see the text target,"
+    },
+    {
+      "start": 502.04,
+      "end": 508.52000000000004,
+      "text": "against said dataset, right?"
+    },
+    {
+      "start": 504.84,
+      "end": 510.23999999999995,
+      "text": "And you can see on line 91, right?"
+    },
+    {
+      "start": 508.52,
+      "end": 513.0799999999999,
+      "text": "The text that reads evaluators, and you"
+    },
+    {
+      "start": 510.24,
+      "end": 515.44,
+      "text": "can see that we have one evaluator."
+    },
+    {
+      "start": 513.08,
+      "end": 517.96,
+      "text": "So, to unpack all of this,"
+    },
+    {
+      "start": 515.44,
+      "end": 520.44,
+      "text": "the whole purpose of evaluations, right?"
+    },
+    {
+      "start": 517.96,
+      "end": 522.159,
+      "text": "Is to measure the quality of some"
+    },
+    {
+      "start": 520.44,
+      "end": 524.4000000000001,
+      "text": "system, right? So,"
+    },
+    {
+      "start": 522.159,
+      "end": 526.12,
+      "text": "target, right?"
+    },
+    {
+      "start": 524.4,
+      "end": 529.1999999999999,
+      "text": "Represents the system being tested,"
+    },
+    {
+      "start": 526.12,
+      "end": 530.92,
+      "text": "right? The target system being tested."
+    },
+    {
+      "start": 529.2,
+      "end": 532.72,
+      "text": "This system that you see here is"
+    },
+    {
+      "start": 530.92,
+      "end": 534.68,
+      "text": "incredibly simple. In practice, it would"
+    },
+    {
+      "start": 532.72,
+      "end": 537.32,
+      "text": "be a slightly more complicated system,"
+    },
+    {
+      "start": 534.68,
+      "end": 538.4,
+      "text": "like, for example, an AI agent, which"
+    },
+    {
+      "start": 537.32,
+      "end": 540.36,
+      "text": "we're going to be taking a look at in"
+    },
+    {
+      "start": 538.4,
+      "end": 542.76,
+      "text": "the next section, but let's keep it"
+    },
+    {
+      "start": 540.36,
+      "end": 546.04,
+      "text": "simple for now. This system simply"
+    },
+    {
+      "start": 542.76,
+      "end": 548.3199999999999,
+      "text": "receives a color and produces the text"
+    },
+    {
+      "start": 546.04,
+      "end": 550.68,
+      "text": "along the lines of this templated string"
+    },
+    {
+      "start": 548.32,
+      "end": 552.88,
+      "text": "here, right? So, if you were to feed in"
+    },
+    {
+      "start": 550.68,
+      "end": 554.1999999999999,
+      "text": "red, this system would produce the text,"
+    },
+    {
+      "start": 552.88,
+      "end": 556.08,
+      "text": "\"My favorite color is red.\" If you were"
+    },
+    {
+      "start": 554.2,
+      "end": 557.8000000000001,
+      "text": "to feed in the color white, it would"
+    },
+    {
+      "start": 556.08,
+      "end": 558.96,
+      "text": "spit out the text, \"My favorite color is"
+    },
+    {
+      "start": 557.8,
+      "end": 560.76,
+      "text": "white.\" If you were to feed in the color"
+    },
+    {
+      "start": 558.96,
+      "end": 562.24,
+      "text": "blue, it would spit out the text, \"My"
+    },
+    {
+      "start": 560.76,
+      "end": 563.56,
+      "text": "favorite color is blue.\" Hopefully, that"
+    },
+    {
+      "start": 562.24,
+      "end": 565.839,
+      "text": "makes sense."
+    },
+    {
+      "start": 563.56,
+      "end": 568.2399999999999,
+      "text": "Now is where we get to evaluators,"
+    },
+    {
+      "start": 565.839,
+      "end": 571.12,
+      "text": "right? So,"
+    },
+    {
+      "start": 568.24,
+      "end": 573.48,
+      "text": "data is what we use to"
+    },
+    {
+      "start": 571.12,
+      "end": 575.04,
+      "text": "test the target system, right? So, for"
+    },
+    {
+      "start": 573.48,
+      "end": 578.04,
+      "text": "example,"
+    },
+    {
+      "start": 575.04,
+      "end": 579.88,
+      "text": "the data that we're testing with is"
+    },
+    {
+      "start": 578.04,
+      "end": 582.68,
+      "text": "here, right?"
+    },
+    {
+      "start": 579.88,
+      "end": 585.4,
+      "text": "So, it's a collection of two"
+    },
+    {
+      "start": 582.68,
+      "end": 587.8,
+      "text": "input-output pairs, right? You can see"
+    },
+    {
+      "start": 585.4,
+      "end": 591.56,
+      "text": "we're testing feeding in the color blue"
+    },
+    {
+      "start": 587.8,
+      "end": 593.4799999999999,
+      "text": "and then green into this target system."
+    },
+    {
+      "start": 591.56,
+      "end": 595.7199999999999,
+      "text": "And"
+    },
+    {
+      "start": 593.48,
+      "end": 598.5600000000001,
+      "text": "we have one evaluator called the keyword"
+    },
+    {
+      "start": 595.72,
+      "end": 601.44,
+      "text": "inclusion evaluator."
+    },
+    {
+      "start": 598.56,
+      "end": 604.4799999999999,
+      "text": "And all this does is takes a look at"
+    },
+    {
+      "start": 601.44,
+      "end": 607.8800000000001,
+      "text": "what the output is"
+    },
+    {
+      "start": 604.48,
+      "end": 610.6,
+      "text": "that is generated by the target system"
+    },
+    {
+      "start": 607.88,
+      "end": 613.52,
+      "text": "and confirms that the output generated"
+    },
+    {
+      "start": 610.6,
+      "end": 616.84,
+      "text": "by the target system contains"
+    },
+    {
+      "start": 613.52,
+      "end": 619.4399999999999,
+      "text": "the text provided on the output side of"
+    },
+    {
+      "start": 616.84,
+      "end": 621.5600000000001,
+      "text": "each example in our data set, right? So,"
+    },
+    {
+      "start": 619.44,
+      "end": 623.12,
+      "text": "if we feed in blue the target system"
+    },
+    {
+      "start": 621.56,
+      "end": 626.4,
+      "text": "will spit out the text my favorite color"
+    },
+    {
+      "start": 623.12,
+      "end": 628.28,
+      "text": "is blue and we're just checking that the"
+    },
+    {
+      "start": 626.4,
+      "end": 631.84,
+      "text": "output generated by the system contains"
+    },
+    {
+      "start": 628.28,
+      "end": 634.36,
+      "text": "the text blue within it, right?"
+    },
+    {
+      "start": 631.84,
+      "end": 636.96,
+      "text": "If it does, we score that example with"
+    },
+    {
+      "start": 634.36,
+      "end": 640.92,
+      "text": "one or 100% and then we move on to the"
+    },
+    {
+      "start": 636.96,
+      "end": 643.76,
+      "text": "next example and once we have all of the"
+    },
+    {
+      "start": 640.92,
+      "end": 646.0,
+      "text": "examples or data tested against our"
+    },
+    {
+      "start": 643.76,
+      "end": 647.64,
+      "text": "target system and evaluated, we produce"
+    },
+    {
+      "start": 646.0,
+      "end": 650.96,
+      "text": "a final score, right? Which is the"
+    },
+    {
+      "start": 647.64,
+      "end": 652.36,
+      "text": "average of how each example in our data"
+    },
+    {
+      "start": 650.96,
+      "end": 654.24,
+      "text": "set did"
+    },
+    {
+      "start": 652.36,
+      "end": 655.76,
+      "text": "under evaluation."
+    },
+    {
+      "start": 654.24,
+      "end": 658.36,
+      "text": "So, hopefully that gives you a sense of"
+    },
+    {
+      "start": 655.76,
+      "end": 661.8389999999999,
+      "text": "what evaluators are. Evaluators are"
+    },
+    {
+      "start": 658.36,
+      "end": 665.12,
+      "text": "snippets of code that are used to assess"
+    },
+    {
+      "start": 661.839,
+      "end": 666.7600000000001,
+      "text": "the quality of outputs generated by some"
+    },
+    {
+      "start": 665.12,
+      "end": 668.32,
+      "text": "target system."
+    },
+    {
+      "start": 666.76,
+      "end": 670.92,
+      "text": "So, let's"
+    },
+    {
+      "start": 668.32,
+      "end": 672.6800000000001,
+      "text": "give this script a spin and see this in"
+    },
+    {
+      "start": 670.92,
+      "end": 674.64,
+      "text": "action. So, we triggered the script. If"
+    },
+    {
+      "start": 672.68,
+      "end": 676.2399999999999,
+      "text": "you come back over to"
+    },
+    {
+      "start": 674.64,
+      "end": 678.0,
+      "text": "the LangSmith dashboard, you can see we"
+    },
+    {
+      "start": 676.24,
+      "end": 679.72,
+      "text": "have a second data set"
+    },
+    {
+      "start": 678.0,
+      "end": 681.12,
+      "text": "which has two examples in it, right?"
+    },
+    {
+      "start": 679.72,
+      "end": 683.12,
+      "text": "Blue and green."
+    },
+    {
+      "start": 681.12,
+      "end": 686.04,
+      "text": "And you can see that we've ran one"
+    },
+    {
+      "start": 683.12,
+      "end": 688.44,
+      "text": "experiment on this data set."
+    },
+    {
+      "start": 686.04,
+      "end": 689.8,
+      "text": "If we click into this data set here you"
+    },
+    {
+      "start": 688.44,
+      "end": 692.2,
+      "text": "can see"
+    },
+    {
+      "start": 689.8,
+      "end": 693.64,
+      "text": "our experiment."
+    },
+    {
+      "start": 692.2,
+      "end": 695.5200000000001,
+      "text": "If we click into the experiment, you can"
+    },
+    {
+      "start": 693.64,
+      "end": 699.0,
+      "text": "see"
+    },
+    {
+      "start": 695.52,
+      "end": 703.48,
+      "text": "a row for each example in our data set."
+    },
+    {
+      "start": 699.0,
+      "end": 707.16,
+      "text": "And here is where you see the result of"
+    },
+    {
+      "start": 703.48,
+      "end": 709.72,
+      "text": "the evaluator against each"
+    },
+    {
+      "start": 707.16,
+      "end": 712.24,
+      "text": "example in our data set, right? So, you"
+    },
+    {
+      "start": 709.72,
+      "end": 714.76,
+      "text": "can see we scored 100% for these two"
+    },
+    {
+      "start": 712.24,
+      "end": 717.32,
+      "text": "examples because the output generated by"
+    },
+    {
+      "start": 714.76,
+      "end": 718.52,
+      "text": "the system does include the reference"
+    },
+    {
+      "start": 717.32,
+      "end": 721.1600000000001,
+      "text": "output."
+    },
+    {
+      "start": 718.52,
+      "end": 724.36,
+      "text": "And that also"
+    },
+    {
+      "start": 721.16,
+      "end": 727.92,
+      "text": "takes care of the concept of"
+    },
+    {
+      "start": 724.36,
+      "end": 731.28,
+      "text": "experiments, right? So, an experiment"
+    },
+    {
+      "start": 727.92,
+      "end": 733.12,
+      "text": "is the result of"
+    },
+    {
+      "start": 731.28,
+      "end": 738.8,
+      "text": "evaluating some"
+    },
+    {
+      "start": 733.12,
+      "end": 738.8,
+      "text": "target system against some data set."
+    },
+    {
+      "start": 740.6,
+      "end": 745.6,
+      "text": "All right. Now, let's run through a"
+    },
+    {
+      "start": 742.08,
+      "end": 748.12,
+      "text": "simple end-to-end LLM as a judge"
+    },
+    {
+      "start": 745.6,
+      "end": 751.36,
+      "text": "example. So, the system that we're going"
+    },
+    {
+      "start": 748.12,
+      "end": 753.36,
+      "text": "to be evaluating or the target system"
+    },
+    {
+      "start": 751.36,
+      "end": 756.5600000000001,
+      "text": "that we're going to be evaluating"
+    },
+    {
+      "start": 753.36,
+      "end": 758.12,
+      "text": "is going to be an agent built on this"
+    },
+    {
+      "start": 756.56,
+      "end": 759.68,
+      "text": "platform that goes by the name of"
+    },
+    {
+      "start": 758.12,
+      "end": 761.5600000000001,
+      "text": "Gadiego."
+    },
+    {
+      "start": 759.68,
+      "end": 763.5999999999999,
+      "text": "Right?"
+    },
+    {
+      "start": 761.56,
+      "end": 765.2399999999999,
+      "text": "I've already created the agent. And for"
+    },
+    {
+      "start": 763.6,
+      "end": 767.16,
+      "text": "this first"
+    },
+    {
+      "start": 765.24,
+      "end": 768.48,
+      "text": "end-to-end example, we're going to be"
+    },
+    {
+      "start": 767.16,
+      "end": 770.76,
+      "text": "comparing"
+    },
+    {
+      "start": 768.48,
+      "end": 772.16,
+      "text": "first GPT-4o Mini"
+    },
+    {
+      "start": 770.76,
+      "end": 773.16,
+      "text": "as its brain."
+    },
+    {
+      "start": 772.16,
+      "end": 775.88,
+      "text": "And then"
+    },
+    {
+      "start": 773.16,
+      "end": 778.68,
+      "text": "the same exact agent with one tweak,"
+    },
+    {
+      "start": 775.88,
+      "end": 780.12,
+      "text": "which is using GPT-5.4"
+    },
+    {
+      "start": 778.68,
+      "end": 783.56,
+      "text": "as its brain."
+    },
+    {
+      "start": 780.12,
+      "end": 787.16,
+      "text": "One would suspect that because"
+    },
+    {
+      "start": 783.56,
+      "end": 788.3599999999999,
+      "text": "GPT-5.4 is a newer model,"
+    },
+    {
+      "start": 787.16,
+      "end": 790.4,
+      "text": "it would"
+    },
+    {
+      "start": 788.36,
+      "end": 792.64,
+      "text": "be better than"
+    },
+    {
+      "start": 790.4,
+      "end": 795.76,
+      "text": "an older model, right? You could see how"
+    },
+    {
+      "start": 792.64,
+      "end": 797.16,
+      "text": "that might be what some person might"
+    },
+    {
+      "start": 795.76,
+      "end": 798.3199999999999,
+      "text": "expect"
+    },
+    {
+      "start": 797.16,
+      "end": 799.64,
+      "text": "from the final results. But, we're going"
+    },
+    {
+      "start": 798.32,
+      "end": 802.32,
+      "text": "to run this"
+    },
+    {
+      "start": 799.64,
+      "end": 805.48,
+      "text": "evaluation experiment, right? And see"
+    },
+    {
+      "start": 802.32,
+      "end": 809.1600000000001,
+      "text": "what the data or reality has to say."
+    },
+    {
+      "start": 805.48,
+      "end": 811.44,
+      "text": "So, if we click in here, you can see"
+    },
+    {
+      "start": 809.16,
+      "end": 816.04,
+      "text": "this agent"
+    },
+    {
+      "start": 811.44,
+      "end": 818.0400000000001,
+      "text": "is agent 39 on the Calico platform."
+    },
+    {
+      "start": 816.04,
+      "end": 819.76,
+      "text": "You can see it's connected to"
+    },
+    {
+      "start": 818.04,
+      "end": 821.3199999999999,
+      "text": "a knowledge base, which is a database"
+    },
+    {
+      "start": 819.76,
+      "end": 823.08,
+      "text": "where I have a bunch of information"
+    },
+    {
+      "start": 821.32,
+      "end": 826.84,
+      "text": "sitting."
+    },
+    {
+      "start": 823.08,
+      "end": 826.84,
+      "text": "And we're using GPT-4 on mini."
+    },
+    {
+      "start": 827.4,
+      "end": 830.52,
+      "text": "Hopefully,"
+    },
+    {
+      "start": 828.56,
+      "end": 832.68,
+      "text": "that's crystal clear."
+    },
+    {
+      "start": 830.52,
+      "end": 834.64,
+      "text": "Just for comparison, I'll show the other"
+    },
+    {
+      "start": 832.68,
+      "end": 837.0,
+      "text": "agent, which is"
+    },
+    {
+      "start": 834.64,
+      "end": 838.56,
+      "text": "agent ID 40."
+    },
+    {
+      "start": 837.0,
+      "end": 840.72,
+      "text": "In a nutshell, it's the same exact"
+    },
+    {
+      "start": 838.56,
+      "end": 844.4399999999999,
+      "text": "agent,"
+    },
+    {
+      "start": 840.72,
+      "end": 847.36,
+      "text": "except that it's using GPT-5.4"
+    },
+    {
+      "start": 844.44,
+      "end": 849.5600000000001,
+      "text": "as its model or as its brain. It's"
+    },
+    {
+      "start": 847.36,
+      "end": 851.6,
+      "text": "connected to the same"
+    },
+    {
+      "start": 849.56,
+      "end": 853.7199999999999,
+      "text": "knowledge base."
+    },
+    {
+      "start": 851.6,
+      "end": 855.9200000000001,
+      "text": "So,"
+    },
+    {
+      "start": 853.72,
+      "end": 857.9200000000001,
+      "text": "let's come over here to the agent chat,"
+    },
+    {
+      "start": 855.92,
+      "end": 860.4399999999999,
+      "text": "and"
+    },
+    {
+      "start": 857.92,
+      "end": 862.4399999999999,
+      "text": "you can see here we're interacting with"
+    },
+    {
+      "start": 860.44,
+      "end": 865.96,
+      "text": "agent ID 39. That's the same one we just"
+    },
+    {
+      "start": 862.44,
+      "end": 867.32,
+      "text": "took a look at. And if I come"
+    },
+    {
+      "start": 865.96,
+      "end": 868.52,
+      "text": "here"
+    },
+    {
+      "start": 867.32,
+      "end": 871.6,
+      "text": "and look at the data set that we're"
+    },
+    {
+      "start": 868.52,
+      "end": 873.3199999999999,
+      "text": "going to use for evaluation,"
+    },
+    {
+      "start": 871.6,
+      "end": 876.96,
+      "text": "let's"
+    },
+    {
+      "start": 873.32,
+      "end": 879.48,
+      "text": "test this prompt out, right? So,"
+    },
+    {
+      "start": 876.96,
+      "end": 882.0400000000001,
+      "text": "when did cohort one phase two of AI"
+    },
+    {
+      "start": 879.48,
+      "end": 883.64,
+      "text": "school take place?"
+    },
+    {
+      "start": 882.04,
+      "end": 885.56,
+      "text": "Let's see what"
+    },
+    {
+      "start": 883.64,
+      "end": 888.4,
+      "text": "agent has to say."
+    },
+    {
+      "start": 885.56,
+      "end": 892.76,
+      "text": "Okay, so the agent says October 9th,"
+    },
+    {
+      "start": 888.4,
+      "end": 894.52,
+      "text": "2025 to November 3rd, 2025. So,"
+    },
+    {
+      "start": 892.76,
+      "end": 897.16,
+      "text": "is that the correct answer?"
+    },
+    {
+      "start": 894.52,
+      "end": 897.16,
+      "text": "October"
+    },
+    {
+      "start": 897.64,
+      "end": 902.68,
+      "text": "9th, 2025"
+    },
+    {
+      "start": 899.839,
+      "end": 904.32,
+      "text": "to November 3rd, 2025. So,"
+    },
+    {
+      "start": 902.68,
+      "end": 906.28,
+      "text": "that's accurate, right?"
+    },
+    {
+      "start": 904.32,
+      "end": 907.36,
+      "text": "So, you can imagine how tedious it would"
+    },
+    {
+      "start": 906.28,
+      "end": 910.8389999999999,
+      "text": "be"
+    },
+    {
+      "start": 907.36,
+      "end": 913.04,
+      "text": "to prompt the agent once for each of"
+    },
+    {
+      "start": 910.839,
+      "end": 915.5600000000001,
+      "text": "these examples,"
+    },
+    {
+      "start": 913.04,
+      "end": 918.8389999999999,
+      "text": "and then evaluate ourselves whether it"
+    },
+    {
+      "start": 915.56,
+      "end": 922.4799999999999,
+      "text": "was correct or not. Hence, where the"
+    },
+    {
+      "start": 918.839,
+      "end": 924.6400000000001,
+      "text": "whole idea of LLM as a judge comes in."
+    },
+    {
+      "start": 922.48,
+      "end": 927.36,
+      "text": "So, what we're going to do now is"
+    },
+    {
+      "start": 924.64,
+      "end": 929.12,
+      "text": "trigger a script that's going to call"
+    },
+    {
+      "start": 927.36,
+      "end": 930.08,
+      "text": "the same exact agent we just interacted"
+    },
+    {
+      "start": 929.12,
+      "end": 932.44,
+      "text": "with"
+    },
+    {
+      "start": 930.08,
+      "end": 936.76,
+      "text": "once for each example that we have in"
+    },
+    {
+      "start": 932.44,
+      "end": 938.5600000000001,
+      "text": "this data set. And the LLM"
+    },
+    {
+      "start": 936.76,
+      "end": 939.68,
+      "text": "right? Once again, we're using GPT-4o"
+    },
+    {
+      "start": 938.56,
+      "end": 941.76,
+      "text": "Mini"
+    },
+    {
+      "start": 939.68,
+      "end": 942.76,
+      "text": "as our judge,"
+    },
+    {
+      "start": 941.76,
+      "end": 944.48,
+      "text": "right?"
+    },
+    {
+      "start": 942.76,
+      "end": 946.16,
+      "text": "Which we specified here. We have this"
+    },
+    {
+      "start": 944.48,
+      "end": 947.84,
+      "text": "configurable"
+    },
+    {
+      "start": 946.16,
+      "end": 949.76,
+      "text": "via this parameter"
+    },
+    {
+      "start": 947.84,
+      "end": 952.24,
+      "text": "on the script."
+    },
+    {
+      "start": 949.76,
+      "end": 954.84,
+      "text": "And we're going to use GPT-4o Mini to"
+    },
+    {
+      "start": 952.24,
+      "end": 958.4,
+      "text": "take a look at the output that's"
+    },
+    {
+      "start": 954.84,
+      "end": 962.48,
+      "text": "generated by the agent and compare it"
+    },
+    {
+      "start": 958.4,
+      "end": 964.48,
+      "text": "against the expected output."
+    },
+    {
+      "start": 962.48,
+      "end": 967.28,
+      "text": "And score how well it does, right? So,"
+    },
+    {
+      "start": 964.48,
+      "end": 968.72,
+      "text": "the evaluator that's going to be used"
+    },
+    {
+      "start": 967.28,
+      "end": 971.28,
+      "text": "can be seen here. We're going to be"
+    },
+    {
+      "start": 968.72,
+      "end": 973.08,
+      "text": "using the LLM judge evaluator. It's"
+    },
+    {
+      "start": 971.28,
+      "end": 975.88,
+      "text": "simply a prompt, right? You can read the"
+    },
+    {
+      "start": 973.08,
+      "end": 978.5200000000001,
+      "text": "prompt. You can see it reads,"
+    },
+    {
+      "start": 975.88,
+      "end": 980.8,
+      "text": "\"You're an impartial evaluator. Score"
+    },
+    {
+      "start": 978.52,
+      "end": 982.0,
+      "text": "whether the predicted answer is correct"
+    },
+    {
+      "start": 980.8,
+      "end": 983.68,
+      "text": "for the given question and reference"
+    },
+    {
+      "start": 982.0,
+      "end": 984.76,
+      "text": "answer, right? And score between zero"
+    },
+    {
+      "start": 983.68,
+      "end": 988.28,
+      "text": "and one.\""
+    },
+    {
+      "start": 984.76,
+      "end": 989.64,
+      "text": "So, let's run this. It's going to make"
+    },
+    {
+      "start": 988.28,
+      "end": 991.9599999999999,
+      "text": "all the sense in the world when you just"
+    },
+    {
+      "start": 989.64,
+      "end": 993.76,
+      "text": "see it in action."
+    },
+    {
+      "start": 991.96,
+      "end": 995.88,
+      "text": "So,"
+    },
+    {
+      "start": 993.76,
+      "end": 998.92,
+      "text": "this agent that we were just testing is"
+    },
+    {
+      "start": 995.88,
+      "end": 999.8,
+      "text": "agent ID 39 on the Caligo platform."
+    },
+    {
+      "start": 998.92,
+      "end": 1001.56,
+      "text": "Same agent that we're going to be"
+    },
+    {
+      "start": 999.8,
+      "end": 1004.04,
+      "text": "calling, right?"
+    },
+    {
+      "start": 1001.56,
+      "end": 1005.7199999999999,
+      "text": "And just in the name of brevity, we're"
+    },
+    {
+      "start": 1004.04,
+      "end": 1006.9599999999999,
+      "text": "not going to run through"
+    },
+    {
+      "start": 1005.72,
+      "end": 1008.4,
+      "text": "all"
+    },
+    {
+      "start": 1006.96,
+      "end": 1010.0400000000001,
+      "text": "of the examples in this data set, just"
+    },
+    {
+      "start": 1008.4,
+      "end": 1011.8389999999999,
+      "text": "the first 10."
+    },
+    {
+      "start": 1010.04,
+      "end": 1013.56,
+      "text": "And"
+    },
+    {
+      "start": 1011.839,
+      "end": 1015.2800000000001,
+      "text": "you know what? Let's"
+    },
+    {
+      "start": 1013.56,
+      "end": 1017.1999999999999,
+      "text": "do"
+    },
+    {
+      "start": 1015.28,
+      "end": 1020.6,
+      "text": "first 20."
+    },
+    {
+      "start": 1017.2,
+      "end": 1020.6,
+      "text": "So, you run this."
+    },
+    {
+      "start": 1021.156,
+      "end": 1023.1759999999999,
+      "text": ">> [music]"
+    },
+    {
+      "start": 1025.439,
+      "end": 1028.199,
+      "text": ">> So, now"
+    },
+    {
+      "start": 1027.706,
+      "end": 1030.6799999999998,
+      "text": ">> [music]"
+    },
+    {
+      "start": 1028.199,
+      "end": 1034.28,
+      "text": ">> let's measure"
+    },
+    {
+      "start": 1030.68,
+      "end": 1039.4,
+      "text": "how well the same agent does,"
+    },
+    {
+      "start": 1034.28,
+      "end": 1043.079,
+      "text": "but let's switch out GPT-4o Mini"
+    },
+    {
+      "start": 1039.4,
+      "end": 1045.24,
+      "text": "for GPT-5.4 in regards to"
+    },
+    {
+      "start": 1043.079,
+      "end": 1047.68,
+      "text": "what model is powering this agent,"
+    },
+    {
+      "start": 1045.24,
+      "end": 1048.72,
+      "text": "right? So,"
+    },
+    {
+      "start": 1047.68,
+      "end": 1050.04,
+      "text": "I think"
+    },
+    {
+      "start": 1048.72,
+      "end": 1051.72,
+      "text": "this is good. It's"
+    },
+    {
+      "start": 1050.04,
+      "end": 1055.6,
+      "text": "critical that these experiments are"
+    },
+    {
+      "start": 1051.72,
+      "end": 1058.4,
+      "text": "controlled, meaning that you adjust one"
+    },
+    {
+      "start": 1055.6,
+      "end": 1060.7199999999998,
+      "text": "or maybe a handful of aspects of the"
+    },
+    {
+      "start": 1058.4,
+      "end": 1064.76,
+      "text": "system at a time. That's going to better"
+    },
+    {
+      "start": 1060.72,
+      "end": 1067.72,
+      "text": "allow you to interpret the outputs"
+    },
+    {
+      "start": 1064.76,
+      "end": 1069.72,
+      "text": "and the final experiment results."
+    },
+    {
+      "start": 1067.72,
+      "end": 1071.68,
+      "text": "Here, we're only tweaking a single"
+    },
+    {
+      "start": 1069.72,
+      "end": 1073.8,
+      "text": "aspect of the agent, which is, once"
+    },
+    {
+      "start": 1071.68,
+      "end": 1074.68,
+      "text": "again, the LLM that acts as the brain of"
+    },
+    {
+      "start": 1073.8,
+      "end": 1077.56,
+      "text": "it."
+    },
+    {
+      "start": 1074.68,
+      "end": 1079.0800000000002,
+      "text": "We're using agent ID 40."
+    },
+    {
+      "start": 1077.56,
+      "end": 1081.24,
+      "text": "If you come back over to the Calico"
+    },
+    {
+      "start": 1079.08,
+      "end": 1083.76,
+      "text": "platform"
+    },
+    {
+      "start": 1081.24,
+      "end": 1085.64,
+      "text": "and come over to"
+    },
+    {
+      "start": 1083.76,
+      "end": 1086.8,
+      "text": "the agent chat, let's take a look and"
+    },
+    {
+      "start": 1085.64,
+      "end": 1088.96,
+      "text": "confirm"
+    },
+    {
+      "start": 1086.8,
+      "end": 1091.0,
+      "text": "what the ID of this agent is. You can"
+    },
+    {
+      "start": 1088.96,
+      "end": 1092.52,
+      "text": "see it's agent ID 40."
+    },
+    {
+      "start": 1091.0,
+      "end": 1094.48,
+      "text": "Perfect."
+    },
+    {
+      "start": 1092.52,
+      "end": 1096.0,
+      "text": "So, let's"
+    },
+    {
+      "start": 1094.48,
+      "end": 1098.44,
+      "text": "run through these"
+    },
+    {
+      "start": 1096.0,
+      "end": 1101.72,
+      "text": "examples"
+    },
+    {
+      "start": 1098.44,
+      "end": 1101.72,
+      "text": "on this second agent."
+    },
+    {
+      "start": 1101.722,
+      "end": 1103.742,
+      "text": ">> [music]"
+    },
+    {
+      "start": 1105.96,
+      "end": 1110.8400000000001,
+      "text": ">> I think we have our final results now."
+    },
+    {
+      "start": 1109.08,
+      "end": 1113.1599999999999,
+      "text": "So, you can see here"
+    },
+    {
+      "start": 1110.84,
+      "end": 1116.1599999999999,
+      "text": "that indeed"
+    },
+    {
+      "start": 1113.16,
+      "end": 1118.28,
+      "text": "GPT-5.4"
+    },
+    {
+      "start": 1116.16,
+      "end": 1120.5600000000002,
+      "text": "scored higher in this"
+    },
+    {
+      "start": 1118.28,
+      "end": 1122.84,
+      "text": "particular scenario, right?"
+    },
+    {
+      "start": 1120.56,
+      "end": 1124.2,
+      "text": "So, we tested our agent using GPT-4o"
+    },
+    {
+      "start": 1122.84,
+      "end": 1125.9599999999998,
+      "text": "Mini."
+    },
+    {
+      "start": 1124.2,
+      "end": 1128.16,
+      "text": "It scored"
+    },
+    {
+      "start": 1125.96,
+      "end": 1129.64,
+      "text": "79%"
+    },
+    {
+      "start": 1128.16,
+      "end": 1132.8400000000001,
+      "text": "and then we tested our agent using"
+    },
+    {
+      "start": 1129.64,
+      "end": 1135.8000000000002,
+      "text": "GPT-5.4 and it scored 94%. We're using"
+    },
+    {
+      "start": 1132.84,
+      "end": 1139.36,
+      "text": "the same LLM judge."
+    },
+    {
+      "start": 1135.8,
+      "end": 1141.08,
+      "text": "All right, so let's take a look at"
+    },
+    {
+      "start": 1139.36,
+      "end": 1144.8,
+      "text": "this example. So,"
+    },
+    {
+      "start": 1141.08,
+      "end": 1147.36,
+      "text": "what topics were covered in AI school?"
+    },
+    {
+      "start": 1144.8,
+      "end": 1149.52,
+      "text": "And then let's look for the same"
+    },
+    {
+      "start": 1147.36,
+      "end": 1154.0,
+      "text": "example."
+    },
+    {
+      "start": 1149.52,
+      "end": 1156.16,
+      "text": "What topics were covered in AI school."
+    },
+    {
+      "start": 1154.0,
+      "end": 1158.16,
+      "text": "Nice. So,"
+    },
+    {
+      "start": 1156.16,
+      "end": 1161.96,
+      "text": "GPT 5.4"
+    },
+    {
+      "start": 1158.16,
+      "end": 1163.72,
+      "text": "picked that out from the knowledge base."
+    },
+    {
+      "start": 1161.96,
+      "end": 1166.6000000000001,
+      "text": "But,"
+    },
+    {
+      "start": 1163.72,
+      "end": 1168.76,
+      "text": "GPT 4.0 mini did not."
+    },
+    {
+      "start": 1166.6,
+      "end": 1170.6799999999998,
+      "text": "All right?"
+    },
+    {
+      "start": 1168.76,
+      "end": 1175.04,
+      "text": "And this is making sense, right?"
+    },
+    {
+      "start": 1170.68,
+      "end": 1178.0800000000002,
+      "text": "Now, let's move on to a more expanded"
+    },
+    {
+      "start": 1175.04,
+      "end": 1180.04,
+      "text": "test scenario. This is"
+    },
+    {
+      "start": 1178.08,
+      "end": 1182.04,
+      "text": "a simple one with a limited amount of"
+    },
+    {
+      "start": 1180.04,
+      "end": 1184.24,
+      "text": "data just to get a gist of how this"
+    },
+    {
+      "start": 1182.04,
+      "end": 1185.52,
+      "text": "works. The more expanded one should give"
+    },
+    {
+      "start": 1184.24,
+      "end": 1187.1200000000001,
+      "text": "us a"
+    },
+    {
+      "start": 1185.52,
+      "end": 1189.8799999999999,
+      "text": "broader view"
+    },
+    {
+      "start": 1187.12,
+      "end": 1192.52,
+      "text": "of how our system behaves in different"
+    },
+    {
+      "start": 1189.88,
+      "end": 1192.5200000000002,
+      "text": "scenarios."
+    },
+    {
+      "start": 1194.6,
+      "end": 1198.8799999999999,
+      "text": "We are now going to expand out,"
+    },
+    {
+      "start": 1197.08,
+      "end": 1200.76,
+      "text": "right? And do"
+    },
+    {
+      "start": 1198.88,
+      "end": 1202.44,
+      "text": "a broader test."
+    },
+    {
+      "start": 1200.76,
+      "end": 1204.0,
+      "text": "The first way that we're going to expand"
+    },
+    {
+      "start": 1202.44,
+      "end": 1206.96,
+      "text": "out is"
+    },
+    {
+      "start": 1204.0,
+      "end": 1207.96,
+      "text": "by including more examples in our data"
+    },
+    {
+      "start": 1206.96,
+      "end": 1210.24,
+      "text": "set."
+    },
+    {
+      "start": 1207.96,
+      "end": 1211.3600000000001,
+      "text": "So, we were previously testing with this"
+    },
+    {
+      "start": 1210.24,
+      "end": 1215.44,
+      "text": "data set"
+    },
+    {
+      "start": 1211.36,
+      "end": 1219.6399999999999,
+      "text": "that had about 70-ish"
+    },
+    {
+      "start": 1215.44,
+      "end": 1223.64,
+      "text": "examples in it, and we're going to"
+    },
+    {
+      "start": 1219.64,
+      "end": 1225.76,
+      "text": "2x to 3x the amount of examples. That's"
+    },
+    {
+      "start": 1223.64,
+      "end": 1227.44,
+      "text": "what you see here"
+    },
+    {
+      "start": 1225.76,
+      "end": 1230.84,
+      "text": "in this data set."
+    },
+    {
+      "start": 1227.44,
+      "end": 1232.4,
+      "text": "I'm going to mask this to not expose any"
+    },
+    {
+      "start": 1230.84,
+      "end": 1234.1999999999998,
+      "text": "sensitive data."
+    },
+    {
+      "start": 1232.4,
+      "end": 1235.8000000000002,
+      "text": "And the other way we're going to expand"
+    },
+    {
+      "start": 1234.2,
+      "end": 1240.2,
+      "text": "out"
+    },
+    {
+      "start": 1235.8,
+      "end": 1242.44,
+      "text": "on our LLM as a judge"
+    },
+    {
+      "start": 1240.2,
+      "end": 1245.68,
+      "text": "example, right?"
+    },
+    {
+      "start": 1242.44,
+      "end": 1248.68,
+      "text": "Is we're going to test more variations"
+    },
+    {
+      "start": 1245.68,
+      "end": 1250.04,
+      "text": "of our target system. So, we're going to"
+    },
+    {
+      "start": 1248.68,
+      "end": 1253.16,
+      "text": "be testing"
+    },
+    {
+      "start": 1250.04,
+      "end": 1255.8799999999999,
+      "text": "a variation of our agent that uses"
+    },
+    {
+      "start": 1253.16,
+      "end": 1257.16,
+      "text": "Gemini 3.1 Pro preview as its LLM or"
+    },
+    {
+      "start": 1255.88,
+      "end": 1259.2,
+      "text": "brain,"
+    },
+    {
+      "start": 1257.16,
+      "end": 1262.24,
+      "text": "and then another variation of the agent"
+    },
+    {
+      "start": 1259.2,
+      "end": 1266.0800000000002,
+      "text": "that uses Claude Opus 4.6 as its LLM or"
+    },
+    {
+      "start": 1262.24,
+      "end": 1268.08,
+      "text": "brain. So, let's fire off"
+    },
+    {
+      "start": 1266.08,
+      "end": 1270.12,
+      "text": "all of these"
+    },
+    {
+      "start": 1268.08,
+      "end": 1274.0,
+      "text": "experiments."
+    },
+    {
+      "start": 1270.12,
+      "end": 1276.7199999999998,
+      "text": "And we will return when they all have"
+    },
+    {
+      "start": 1274.0,
+      "end": 1276.72,
+      "text": "finished."
+    },
+    {
+      "start": 1277.264,
+      "end": 1279.2839999999999,
+      "text": ">> [music]"
+    },
+    {
+      "start": 1282.504,
+      "end": 1286.84,
+      "text": "[music]"
+    },
+    {
+      "start": 1283.68,
+      "end": 1289.44,
+      "text": ">> Okay, so here are the final results."
+    },
+    {
+      "start": 1286.84,
+      "end": 1291.28,
+      "text": "You can see that we tested with a data"
+    },
+    {
+      "start": 1289.44,
+      "end": 1293.8400000000001,
+      "text": "set of"
+    },
+    {
+      "start": 1291.28,
+      "end": 1296.8799999999999,
+      "text": "168 examples."
+    },
+    {
+      "start": 1293.84,
+      "end": 1300.12,
+      "text": "We ran four experiments."
+    },
+    {
+      "start": 1296.88,
+      "end": 1302.2,
+      "text": "AKA we ran a variation of our agent that"
+    },
+    {
+      "start": 1300.12,
+      "end": 1304.6799999999998,
+      "text": "uses GPT-4o-mini"
+    },
+    {
+      "start": 1302.2,
+      "end": 1307.4,
+      "text": "as its LLM, another one that uses"
+    },
+    {
+      "start": 1304.68,
+      "end": 1310.76,
+      "text": "GPT-5.4 as its LLM, another one that"
+    },
+    {
+      "start": 1307.4,
+      "end": 1312.72,
+      "text": "uses Claude-Opus-4.6 as its LLM, and"
+    },
+    {
+      "start": 1310.76,
+      "end": 1315.08,
+      "text": "finally a variation of our agent that"
+    },
+    {
+      "start": 1312.72,
+      "end": 1317.56,
+      "text": "uses Gemini-3.1-Pro"
+    },
+    {
+      "start": 1315.08,
+      "end": 1321.0,
+      "text": "as its LLM."
+    },
+    {
+      "start": 1317.56,
+      "end": 1325.6399999999999,
+      "text": "And these were our final LLM judge"
+    },
+    {
+      "start": 1321.0,
+      "end": 1327.8,
+      "text": "scores. You can see that Gemini-3.1-Pro"
+    },
+    {
+      "start": 1325.64,
+      "end": 1330.5200000000002,
+      "text": "edged out"
+    },
+    {
+      "start": 1327.8,
+      "end": 1332.2,
+      "text": "all of these other variations."
+    },
+    {
+      "start": 1330.52,
+      "end": 1334.84,
+      "text": "And I think"
+    },
+    {
+      "start": 1332.2,
+      "end": 1337.4,
+      "text": "an interesting result is how"
+    },
+    {
+      "start": 1334.84,
+      "end": 1339.8,
+      "text": "one of the older Open AI models, AKA"
+    },
+    {
+      "start": 1337.4,
+      "end": 1342.68,
+      "text": "GPT-4o-mini,"
+    },
+    {
+      "start": 1339.8,
+      "end": 1346.6399999999999,
+      "text": "performed better than one of the newer"
+    },
+    {
+      "start": 1342.68,
+      "end": 1348.96,
+      "text": "Open AI models, AKA GPT-5.4."
+    },
+    {
+      "start": 1346.64,
+      "end": 1350.76,
+      "text": "So we were only testing with one"
+    },
+    {
+      "start": 1348.96,
+      "end": 1354.24,
+      "text": "evaluator."
+    },
+    {
+      "start": 1350.76,
+      "end": 1356.84,
+      "text": "Sometimes you'll do multiple evaluators"
+    },
+    {
+      "start": 1354.24,
+      "end": 1358.84,
+      "text": "in order to test your"
+    },
+    {
+      "start": 1356.84,
+      "end": 1361.24,
+      "text": "results from different angles, but we"
+    },
+    {
+      "start": 1358.84,
+      "end": 1363.12,
+      "text": "want to keep it simple for now."
+    },
+    {
+      "start": 1361.24,
+      "end": 1365.64,
+      "text": "And yeah,"
+    },
+    {
+      "start": 1363.12,
+      "end": 1369.84,
+      "text": "hopefully this gives you a good idea"
+    },
+    {
+      "start": 1365.64,
+      "end": 1371.8400000000001,
+      "text": "of how this works in practice. FYI,"
+    },
+    {
+      "start": 1369.84,
+      "end": 1374.52,
+      "text": "this took about an hour for them all to"
+    },
+    {
+      "start": 1371.84,
+      "end": 1374.52,
+      "text": "complete."
+    },
+    {
+      "start": 1376.4,
+      "end": 1380.6000000000001,
+      "text": "For this final bonus section, I will"
+    },
+    {
+      "start": 1378.16,
+      "end": 1382.6000000000001,
+      "text": "leave you with this, which is a brand"
+    },
+    {
+      "start": 1380.6,
+      "end": 1384.4399999999998,
+      "text": "new concept or idea that was introduced"
+    },
+    {
+      "start": 1382.6,
+      "end": 1387.0,
+      "text": "to me by an individual who goes by the"
+    },
+    {
+      "start": 1384.44,
+      "end": 1389.24,
+      "text": "name of Jose Luis Muños."
+    },
+    {
+      "start": 1387.0,
+      "end": 1391.76,
+      "text": "The concept or idea I'm referring to is"
+    },
+    {
+      "start": 1389.24,
+      "end": 1393.48,
+      "text": "called auto research and it was created"
+    },
+    {
+      "start": 1391.76,
+      "end": 1395.44,
+      "text": "by an individual who goes by the name of"
+    },
+    {
+      "start": 1393.48,
+      "end": 1397.0,
+      "text": "Andrej Karpathy. If you've never heard"
+    },
+    {
+      "start": 1395.44,
+      "end": 1399.2,
+      "text": "of this Karpathy character, he was"
+    },
+    {
+      "start": 1397.0,
+      "end": 1400.48,
+      "text": "formerly the director of AI at Tesla and"
+    },
+    {
+      "start": 1399.2,
+      "end": 1403.76,
+      "text": "before that he was one of the founding"
+    },
+    {
+      "start": 1400.48,
+      "end": 1407.44,
+      "text": "engineers at OpenAI and to this day he"
+    },
+    {
+      "start": 1403.76,
+      "end": 1409.36,
+      "text": "is a well of new ideas in the AI sphere."
+    },
+    {
+      "start": 1407.44,
+      "end": 1411.3600000000001,
+      "text": "So, the gist of this auto research"
+    },
+    {
+      "start": 1409.36,
+      "end": 1413.04,
+      "text": "concept is pretty much everything that"
+    },
+    {
+      "start": 1411.36,
+      "end": 1415.1599999999999,
+      "text": "we've done up until this point in this"
+    },
+    {
+      "start": 1413.04,
+      "end": 1416.36,
+      "text": "video taken to the next level. Here's"
+    },
+    {
+      "start": 1415.16,
+      "end": 1418.72,
+      "text": "what I mean."
+    },
+    {
+      "start": 1416.36,
+      "end": 1419.9199999999998,
+      "text": "So, if you've watched closely"
+    },
+    {
+      "start": 1418.72,
+      "end": 1422.04,
+      "text": "as we move through this video, pretty"
+    },
+    {
+      "start": 1419.92,
+      "end": 1425.0800000000002,
+      "text": "much what we've been doing is running"
+    },
+    {
+      "start": 1422.04,
+      "end": 1426.48,
+      "text": "some evaluations against some target"
+    },
+    {
+      "start": 1425.08,
+      "end": 1429.1999999999998,
+      "text": "system"
+    },
+    {
+      "start": 1426.48,
+      "end": 1433.2,
+      "text": "and after each round of evaluations, we"
+    },
+    {
+      "start": 1429.2,
+      "end": 1435.24,
+      "text": "observe the outputs and that then will"
+    },
+    {
+      "start": 1433.2,
+      "end": 1437.68,
+      "text": "prompt us to"
+    },
+    {
+      "start": 1435.24,
+      "end": 1440.2,
+      "text": "test out various tweaks of our target"
+    },
+    {
+      "start": 1437.68,
+      "end": 1442.3600000000001,
+      "text": "system and then rerun another round of"
+    },
+    {
+      "start": 1440.2,
+      "end": 1443.68,
+      "text": "evaluations and"
+    },
+    {
+      "start": 1442.36,
+      "end": 1445.8,
+      "text": "that's pretty much the pattern of what"
+    },
+    {
+      "start": 1443.68,
+      "end": 1448.16,
+      "text": "we've been doing here, right? So, test"
+    },
+    {
+      "start": 1445.8,
+      "end": 1450.36,
+      "text": "the system, tweak the system, test the"
+    },
+    {
+      "start": 1448.16,
+      "end": 1453.2,
+      "text": "system, tweak the system, test the"
+    },
+    {
+      "start": 1450.36,
+      "end": 1454.9599999999998,
+      "text": "system, tweak the system, etc."
+    },
+    {
+      "start": 1453.2,
+      "end": 1456.88,
+      "text": "So, if you"
+    },
+    {
+      "start": 1454.96,
+      "end": 1459.2,
+      "text": "take this pattern to the next level"
+    },
+    {
+      "start": 1456.88,
+      "end": 1461.92,
+      "text": "you can imagine how instead of us"
+    },
+    {
+      "start": 1459.2,
+      "end": 1464.28,
+      "text": "tweaking the system and us"
+    },
+    {
+      "start": 1461.92,
+      "end": 1466.6000000000001,
+      "text": "rerunning the evaluations, we could"
+    },
+    {
+      "start": 1464.28,
+      "end": 1469.28,
+      "text": "delegate an AI agent"
+    },
+    {
+      "start": 1466.6,
+      "end": 1471.48,
+      "text": "to tweak our target system for us and"
+    },
+    {
+      "start": 1469.28,
+      "end": 1474.12,
+      "text": "after each set of tweaks"
+    },
+    {
+      "start": 1471.48,
+      "end": 1476.44,
+      "text": "rerun a set of evaluations"
+    },
+    {
+      "start": 1474.12,
+      "end": 1480.0,
+      "text": "and then observe"
+    },
+    {
+      "start": 1476.44,
+      "end": 1481.8400000000001,
+      "text": "how these tweaks are affecting the"
+    },
+    {
+      "start": 1480.0,
+      "end": 1484.76,
+      "text": "performance against whichever"
+    },
+    {
+      "start": 1481.84,
+      "end": 1488.76,
+      "text": "evaluations or metrics or benchmarks"
+    },
+    {
+      "start": 1484.76,
+      "end": 1489.68,
+      "text": "exist in the evals, right? So"
+    },
+    {
+      "start": 1488.76,
+      "end": 1491.12,
+      "text": "Hopefully I didn't say that in a"
+    },
+    {
+      "start": 1489.68,
+      "end": 1493.52,
+      "text": "confusing way, but pretty much what I'm"
+    },
+    {
+      "start": 1491.12,
+      "end": 1494.8,
+      "text": "saying is we could automate what we're"
+    },
+    {
+      "start": 1493.52,
+      "end": 1497.36,
+      "text": "doing"
+    },
+    {
+      "start": 1494.8,
+      "end": 1499.72,
+      "text": "and delegate it to an AI agent."
+    },
+    {
+      "start": 1497.36,
+      "end": 1501.9599999999998,
+      "text": "And you can imagine we could leave this"
+    },
+    {
+      "start": 1499.72,
+      "end": 1504.56,
+      "text": "auto research agent running for a few"
+    },
+    {
+      "start": 1501.96,
+      "end": 1506.6000000000001,
+      "text": "hours or perhaps a few days or or"
+    },
+    {
+      "start": 1504.56,
+      "end": 1508.6799999999998,
+      "text": "perhaps a few weeks."
+    },
+    {
+      "start": 1506.6,
+      "end": 1509.8,
+      "text": "And at the end of this auto research"
+    },
+    {
+      "start": 1508.68,
+      "end": 1512.6000000000001,
+      "text": "loop,"
+    },
+    {
+      "start": 1509.8,
+      "end": 1514.32,
+      "text": "you would be left with a set of insights"
+    },
+    {
+      "start": 1512.6,
+      "end": 1516.7199999999998,
+      "text": "or customizations that we could make to"
+    },
+    {
+      "start": 1514.32,
+      "end": 1520.6799999999998,
+      "text": "our system that would hyper-optimize it"
+    },
+    {
+      "start": 1516.72,
+      "end": 1523.08,
+      "text": "against whichever benchmarks or evals"
+    },
+    {
+      "start": 1520.68,
+      "end": 1525.04,
+      "text": "have been tested"
+    },
+    {
+      "start": 1523.08,
+      "end": 1528.3999999999999,
+      "text": "within this auto research loop."
+    },
+    {
+      "start": 1525.04,
+      "end": 1532.32,
+      "text": "So, it pretty much automates out the"
+    },
+    {
+      "start": 1528.4,
+      "end": 1534.2,
+      "text": "testing and {quote} researching of"
+    },
+    {
+      "start": 1532.32,
+      "end": 1537.08,
+      "text": "optimizations that can be made to a"
+    },
+    {
+      "start": 1534.2,
+      "end": 1540.72,
+      "text": "system. So, this is literally brand new"
+    },
+    {
+      "start": 1537.08,
+      "end": 1543.4399999999998,
+      "text": "stuff and I think it shows the direction"
+    },
+    {
+      "start": 1540.72,
+      "end": 1546.28,
+      "text": "of where this LLM as a judge technique"
+    },
+    {
+      "start": 1543.44,
+      "end": 1549.1200000000001,
+      "text": "is going next. So,"
+    },
+    {
+      "start": 1546.28,
+      "end": 1550.84,
+      "text": "keep exploring, keep having fun."
+    },
+    {
+      "start": 1549.12,
+      "end": 1553.0,
+      "text": "Blessings, health, wealth, all the good"
+    },
+    {
+      "start": 1550.84,
+      "end": 1553.0,
+      "text": "things. See you for the next one."
+    }
+  ]
+}

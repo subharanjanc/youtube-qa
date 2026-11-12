@@ -1,0 +1,930 @@
+[
+  {
+    "id": "62aca6e7d2a6c3adca66dcdf103a7223d39c4c779d7e6053dae4add81299c3b9",
+    "text": "Hi everyone, good evening and warm welcome to the one and only module that we are going to have which is building the rack pipeline from the scratch. So first let me introduce myself. I am Jitendra. I'm working as a director of geni within one of the bank in bas of Singapore. I'm carrying almost 16 year of experience in data science and AI. So that is about myself. Let [snorts] me set up the agenda for today's tutorial. I would say is majorly focusing on rag as you might have known by this time that rag is essentially stands for retrieval augment and generation. So what we are going to do in during this session is we are going to spend some time on this these slides try to understand the basic principles of rack try to deep dive into each and every component of a rag specifically the retriever and the generator and we'll try to understand what are the different methodologies and technical skills which is required to build these rack pipelines. So this particular session will be purely on Python. So I will encourage everybody to use Python. Maybe we are going to use Google Collab with a bit of GPU enablement because we need to download few models from hugging phase and uh as",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1.92,
+      "end_seconds": 79.68,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "963842c44beeb42447f14e4da27ac35b30f09e172e8c611b840c5fc7d2006235",
+    "text": "Python. So I will encourage everybody to use Python. Maybe we are going to use Google Collab with a bit of GPU enablement because we need to download few models from hugging phase and uh as as we progress we need to use uh vector embeddings as well which may require some sort of compute at the inference side and once we produce some output then we will use one library called DP valve to evaluate our outcome. So that is the whole agenda for today's tutorial. So before we move on, let me explain what is exactly the rack is all about. So when we say rack, rag stands for retrieval augment generation. So it is one of the core and essential part of today's modern day LLM and uh even if you're creating a techic AI solutions you need to use rag. So one of the important consideration why rag that is something which I'm going to talk about. So when we say why rag so it is one of the fundamental limitation that we are trying to overcome with the application of rag which is the limitation of large language model their knowledge right so as you know that large language models like GBT 5 that we are using recently mistrals or claude models clots onetus you might be using deep uh deepseek as",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 64.32,
+      "end_seconds": 148.4,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=64s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8fc110636d0855a92e4cb4acb7973cb433d952eaaf4be505c40721e6ad7e89c4",
+    "text": "language model their knowledge right so as you know that large language models like GBT 5 that we are using recently mistrals or claude models clots onetus you might be using deep uh deepseek as well so the whole idea is these models their knowledge is frozen at training time, right? So they are using lot of plethora of internet data to train and uh we are just using these model at inference time. But a problem associated with these models are their knowledge is frozen at training time and compress loosely into the model weights [snorts] and it is nearly impossible to update these weights without retraining and retraining are expensive. It's a multi-million investment, multi-million dollar investment that you're going to have for retraining the model. So rack sidestep this by externalizing knowledge into a retrieval storage and injection retrieval pieces into the model context at inference time. So the model become a reasoning engine over fetch evidences rather than a closed system drawing only what it had been memorized. So this technique was formally introduced in the year 2020 by one of the famouser in Facebook Meta by Lewis and uh the idea is he would like to use rag to adapt domain agnostic Q&A that means if you are going to work on domain agnostic corpus you need need not",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 129.28,
+      "end_seconds": 220.959,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=129s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5ca224daf6b52572c2dcba84f772254780349e552f77f10b4eb5fad54ef66470",
+    "text": "one of the famouser in Facebook Meta by Lewis and uh the idea is he would like to use rag to adapt domain agnostic Q&A that means if you are going to work on domain agnostic corpus you need need not to retrain the model from the scratch. However, you can able to combine some way to comprehensively drive the features that you require to generate an answer against. So what change with the modern rag is a reading instead of uh expans expensive model retraining. So the idea is every rack system will have two distinguished phases or two distinct phases that run on a different time scale which is the retrieval phase and then you will have the generation phase. So the idea is when we are using a rag system we are combining the large language model with external knowledge retrieval. That means you're going to feed your system. Let's assume that this is a system now. This is your system now. Right. And remember there's an LLM endpoint as well. That means this is an external hosted model that you're using. It could be any model. Uh we will talk in a while which model we are going to use. But let's assume that this is on one LLM endpoint model that you have hosted in the cloud server and this is",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 204.0,
+      "end_seconds": 289.84000000000003,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=204s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ef6b511b2d6048d54202e8d32af3afc95b8cac9447f9e396fe8ac55764f0bd19",
+    "text": "It could be any model. Uh we will talk in a while which model we are going to use. But let's assume that this is on one LLM endpoint model that you have hosted in the cloud server and this is your system right excluding LLM excluding your knowledge base. Now the entry point for this system is you're going to have a knowledge base which is nothing but your doc uh documents within your domain agnostic corpus. It could be a policy related document. It could be your HR policy related document. It could be addendums across country. It could be a changes in the maybe uh country wise regulatory policies as well. So there could be a number of example. You can also plug in your databases. You can also plug in your reports. There are plenty of options that you're going to use. Right? So basically the idea here is I'm just talking about this as a domain agnostic corpus. Now this is your domain agnostic corpus that you're going to use to consume at a retriever layer. Right? So we are not retraining any model by the way. just be very precautious that I'm not saying that I'm retraining a model. Instead, I'm saying that I'm just going to create a provision to inject this data to the LLM",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 276.88,
+      "end_seconds": 361.84,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=276s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "783145bccb0928225789afcb55b65ebbb77f8963a345f8aa5913d6d6298e5c6c",
+    "text": "any model by the way. just be very precautious that I'm not saying that I'm retraining a model. Instead, I'm saying that I'm just going to create a provision to inject this data to the LLM during inference so that it can able to use this data to generate an answer. Right? So the in the in what I'm trying to say here is I'm going to combine the large language model with an external knowledge retrieval layer. So retrieval relevant information will be utilized before generating the response from this LLM model. So the idea is we would like to make sure that our output should be in the context of domain. That means we should generate an answer in a high contextual manner. It should be more accurate. It should be more layman in terms of businessdriven outcomes. Right? So that is where rag is one of the important pipeline that we are going to create from the scratch. Now why rag is important. So as I mentioned that when we using LLM we are using lot of opensource internet data to train the model. Let's take an example of a GPD5. So GPD5 does not know anything in any information about your domain. They're highly gener general purpose model. Right? So when you're creating a general purpose model or you are using a general",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 346.72,
+      "end_seconds": 429.68,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=346s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3e12812537bdd64f315408c540ed468e7ae05842e115b2300a6d0749b93538d6",
+    "text": "model. Let's take an example of a GPD5. So GPD5 does not know anything in any information about your domain. They're highly gener general purpose model. Right? So when you're creating a general purpose model or you are using a general purpose model to serve during the inference, it may hallucinate because the context and the domain agnostic vectors has not been a part of their training instance. So what does that means? That means the model the LLM model when I'm saying model I will be referring to LLM here. That means your LLM model will start hallucinating. So the phenomena of hallizenation is very simple. So LLM by default has been designed to generate response because they are generative models right. So they are generating some sort of response. Now the response could be correct, it could be a factually correct or it could be inaccurate as well. So when the model which means LLM start fabricating the answers right when they start fabricating the answer or when you they are generating a non-factual answers that means your model is start hallucinating so basically rag is very important to reduce the hallucination that means we can use rags to reduce the hallucination of the LLM models we can use real time or private company data that means we",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 412.319,
+      "end_seconds": 501.68,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=412s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "39f6a5d55d3d6fc7d64d36b325aa0ea115e111bb04bb5cba4b06d0f05e5aa789",
+    "text": "so basically rag is very important to reduce the hallucination that means we can use rags to reduce the hallucination of the LLM models we can use real time or private company data that means we can go with domain agnostic IC data which is proprietary to my organization and I can use rack on the top of it. I can also update my rack at a real time as much real time as possible without retraining the LLM model. Right? So I need not to retrain the model from the scratch. However, I can simply use rack to ensure that my pipeline will pick the most recent document from the corpus and I will use those corpus to generate an answer. That means it is most cost effective than retraining models. All right. Now we'll move on to the slide number three. Some of the common use cases. So some of the common use cases of RAD include maybe a domain agnostic use cases. So I'm just trying to depict four major domain here. healthcare, legal AI, uh maybe a telecom or an enterprise knowledge search which is generic across multiple domain. So when whenever we talk about these four domains, uh the issue with enterprise knowledge search is that it is pretty commercial. We need a very commercial application to deal",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 487.12,
+      "end_seconds": 579.12,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=487s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a3c7dc0f40b85416c77908636999a25ad015c8a0b55c2642e245f2ab52b6cf32",
+    "text": "knowledge search which is generic across multiple domain. So when whenever we talk about these four domains, uh the issue with enterprise knowledge search is that it is pretty commercial. We need a very commercial application to deal with it. Right? So let's take an example of a document Q&A chatbot. That means uh again needless to mention that your policies are changing your risk landscape is evolving when you're generating a c customer query where you're tackling a customer query in a real world manner you need a different reference points right so the idea here is if you're going to use the best or the latest corpus to generate an answer using document Q&A chat bots you will always get the right answers based upon the latest update ates latest changes, latest addition in your policym. Similarly, customer assistant chatbot will always refer to the latest uh exceptions and uh modification which is required to generate an answer against the customer query. The knowledge search will become seamlessly uh possible with the advent of rag. That means you can able to always update yourself with a different sort of countrywise regulations, different sort of group wise regulations etc. Similarly in healthcare and legal AI system which is one of the complex u use case scenario for rack you will try to ensure that you",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 561.6,
+      "end_seconds": 652.959,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=561s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8a2a31f1d7d91520bf5b5477467c58ad1e219f21373fce5c0c88537e8fcb97c4",
+    "text": "different sort of countrywise regulations, different sort of group wise regulations etc. Similarly in healthcare and legal AI system which is one of the complex u use case scenario for rack you will try to ensure that you will have a single point of interface for every organization documents which you are going to manage via rack pipeline. Now let me explain what are the other possible scenarios in which we can able to generate the same efficacies in LLM model. Now as I mentioned there's something called fine-tuning. So fine-tuning is depending upon your architectures. So let's take an example here. So when you're trying to fine-tune a model or LLM model from the scratch, you have two option. You can download an open source model from hugging phase or hugging hub hugging phase uh hub models and what you can do is you can use a techniques including pft which is parametric efficient finetuning which include loras and quras quantization techniques and you can fine-tune your model with a domain agnostic corpus. Now the issue with this approach is whenever you're you're going to update your document you need to retrain your model. So let's say your policy or your regulatory reports changes every month or every quarter. That means there's a requirement here that we need to",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 637.6,
+      "end_seconds": 723.519,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=637s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "add3fc349d7d1e10db51597641204e55e20cd8d0f6bd6ab5501345166240ee5d",
+    "text": "whenever you're you're going to update your document you need to retrain your model. So let's say your policy or your regulatory reports changes every month or every quarter. That means there's a requirement here that we need to fine-tune the model every quarter. Now assuming that you might have some idea about what is the expense what are the platforms required for finetuning that means with those amount of GPUs and memories and VRAMs that is we are going to required to fine-tune the model it will become a very expensive affair that means we need to make sure that we will have sufficient compute sufficient uh servers sufficient VRAMs to perform this activity Right now imagine I'm talking about the frequent updates in the document. So for every document update you required finetuning but with the advent of rack this particular requirement become obsolete. That means you need not to worry too much about frequency of change of data anymore. You can create a very domain agnostic Q&A system with the help of a rag and you can also do a bit of transparent overview or I would say review of your rack outcome with the help of human in the loop and that make the system very very powerful and very very agile in terms of fitment criterias. So the idea",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 706.24,
+      "end_seconds": 800.16,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=706s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d55a775b091d1b24a600e7d939a1682e67db39b680180108278f3d0aaf688643",
+    "text": "overview or I would say review of your rack outcome with the help of human in the loop and that make the system very very powerful and very very agile in terms of fitment criterias. So the idea here is when you when you when you have I would say you can go with a hybrid strategy from a personal experience I can say that this is the best way that you can able to sustain both. So you can use fine-tuning when your frequency of update on a document corpus is less maybe a year or maybe couple of years you're going to change your document you can still go with a finetuning strategies when your documents are very frequently changed with a due course of time go with rack so that with that analogy into our mind we can go with either of the two system but 90% of the industries are relying on rack to perform the or to build a Q&A system. Now we'll talk about what are the different types of rack system which is there. So one of the most important rack is called vanilla rack. So there are three types of rack. The first rack is called basic rag or nave rag or vanilla rack. The second type of rack is called agentic rack.",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 782.079,
+      "end_seconds": 874.32,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=782s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "66b7f458905928974a0535c784c43b31e6ee127a76f64764b6726bacd69d996a",
+    "text": "there. So one of the most important rack is called vanilla rack. So there are three types of rack. The first rack is called basic rag or nave rag or vanilla rack. The second type of rack is called agentic rack. We are going to use the series of agent to operate on a rack system. The third type of system is called graph rack which is a pretty advanced ontology based search on a document. So these are the three system which has been uh discuss uh discovered so far in the rag ecosystem. So we'll talk about the vanilla rag in today's tutorial. We'll talk about how to create a nave rag from the scratch and then we move on to the other part. Now this slide typically showing the two-phase architecture of a rack system. So basically every rack system has two distinct phases that runs [snorts] on different time scale. The first phase is indexing. The document that you're going to use which is a domain specific corpus will undergone through injections, parsing, cleaning and splitting into the chunks so that you can able to create vectors out of it. Now let me explain what is vector database in a very simple term. So vector database is nothing but vector stores is a numeric it will it",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 847.839,
+      "end_seconds": 942.3199999999999,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=847s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9b891ae238f7a7f57d58be3c765169c7b4a7d0ac0d50b5cbd17d88a72eca460a",
+    "text": "chunks so that you can able to create vectors out of it. Now let me explain what is vector database in a very simple term. So vector database is nothing but vector stores is a numeric it will it will be used to store the embeddings. Now embedding you can consider this that's like a linear array the array of nu numbers or array of list right so basically the idea here is when you're dealing with any llm model llm model will not able to understand text they are going to use your numerical calculations they are going to convert beforehand you need to convert everything to numbers that means there are sums of bit of weights you need to determine based upon the context that means you're going to save these contexts in a vector store. So every rag architecture has two distinct phases that runs on different time scale. The first phase is called document preparation. So when you're performing a document preparation that means your corpus or your documents are going to be inject parsed it is going to be clean and split into chunks and convert then convert into a vector embedding. So once it has been converted into a vector embedding you're going to store into a vector database. So this phase runs once",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 927.68,
+      "end_seconds": 1010.639,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=927s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3ca807f3b0311de0a625c485637fd656ea7cd9d4071d8818667457984dd5b081",
+    "text": "parsed it is going to be clean and split into chunks and convert then convert into a vector embedding. So once it has been converted into a vector embedding you're going to store into a vector database. So this phase runs once document once per document. Then the second part is called retrieval and the generation phase. So when a user submit a query from this point of view. So that means your prompt when a user submit a particular prompt or a query it create another ambiting using the same model that has been used during indexing and what it does is it is trying to perform the semantic search over your query versus this document corpus by taking a dot product between the two and the whole idea here is this is called semantic similarity search. So you're performing what you're doing is you're taking a query convert into an embedding transforming this into an embedding at a retriever layer. By the time you inject your document it has been ready to consume at a vector store. This is also numerical. This is also numeric. Now both are numeric. What are you going to do with this numerical calculation is you're going to perform another operation which is called reranking at a retrieval layer. So when you're reanking",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 992.959,
+      "end_seconds": 1080.0,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=992s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7b0fa87cd784fa1f0ec9031043d75a51029ad2fdcbf258ac7dd1dfd90cbbb8fc",
+    "text": "numerical. This is also numeric. Now both are numeric. What are you going to do with this numerical calculation is you're going to perform another operation which is called reranking at a retrieval layer. So when you're reanking this document, what you're trying to achieve is you're saying that given a particular query, how many chunks should I retrieve from vector store to provide the right answer to the query. So this is where the user submit a query. It embedded using the same model that has been used during indexing and you're going to compare against the index vectors via similarity search algorithm. and the top matches are returned and these retrieval chunks are then inserted into a prompt template alongside with a query and then you're going to call an LLM model which is [snorts] at this layer to generate an accurate answer. So this is how the overall rack pipeline works in general. Right now there are different variants of rack. I will not go into that part right now because the main idea that we should understand is the methodology how the rack has been designed. Now let me try to break down this retriever chunk into multiple methods. So when you talk about retrieval workflow so essentially rag compris of three part retriever is the most",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1062.96,
+      "end_seconds": 1148.96,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1062s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4f64aa3bd0dec1d9400f35f26002109ae6eb84e5b82b5af35203614149f943de",
+    "text": "the methodology how the rack has been designed. Now let me try to break down this retriever chunk into multiple methods. So when you talk about retrieval workflow so essentially rag compris of three part retriever is the most important part where you're going to feed this pipeline with the help of corpus all the domain agnostic corpus or your data and this retriever will generate a vector store right and from this vector store you're going to perform a ranking and agumentation. So here you are going to augment the pipeline with these systematic vector and then you go to the generation phase. So during the retrieval phase you have typically you're going to work on these four steps. The first step is to accept the user query because that is the most important requirement for retrieval to operate. Then you're going to generate a query embedding. That means you're going to convert your query into numerical representation and then using this particular query embedding you're going to search from the domain corpus the document corpus that we have created in the pre-step and what you're going to do is you're going to return the top k similarity search and that is called ranking method. So when you're returning a top k similarity paragraphs or chunks we are going to",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1129.919,
+      "end_seconds": 1222.4,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1129s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a170cd3f0854e37c61d34fe6e55da9ec835b88b9f5d474ab3e76112dd4c33a6f",
+    "text": "what you're going to do is you're going to return the top k similarity search and that is called ranking method. So when you're returning a top k similarity paragraphs or chunks we are going to inject them into a retrieval context and then use llm to generate an answer. That means you're going to compound your input with the help of a query as well as your vector store and then put up this into a combination to p to pass it this to an LM to generate a response. So the whole idea here is retrieval pipeline will work like a workflows and then basically all the systematic arrangement that you're making beforehand are these part. So when you are doing pre-processing that means you're loading your document into the memory. So let's assume that you have uh some shareepoint access where you're going to store your documents in a form of a PDF file and I have access to that shareepoint right. So my pipeline will always try to look for the recent document using timestamp using some nomomenclatures using some u basically some name methods and then based upon that I will create a pipeline which will endross these document and fetch these document from uh the shareepoint or some other provisions. Now I will move on to",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1208.4,
+      "end_seconds": 1293.6789999999999,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1208s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a4a21fea71e4c2c815fb899cbd7366da35d2f0e49ee8e22a2affc4b3fce97a61",
+    "text": "some name methods and then based upon that I will create a pipeline which will endross these document and fetch these document from uh the shareepoint or some other provisions. Now I will move on to the second phase. This is the all pre-processing before retrieval. So that means I need to perform some text prep-processing. Removing and cleaning of the data is very important. I have to normalize the text using uh that I'm going to use. I need to clean some hypertext hyper uh sorry HTML tags and other stuff from the text that I'm going to consume. Then I'm going to employ something called chunking strategies. Now chunking is nothing but it's a process of breaking down your documents into multiple chunks. As the name suggests, chunking. Chunking means you're chunking your document. So why you're chunking your document? Because chunking is like an act of splitting document into smaller unit which is suitable for embedding and retrieval. So the constraints are real. So embedding model have a token limit. Often we are going to use 512 tokens and LLM context windows are finite as well. That means everything that you are going to use inside LLM will depend upon the context window. So a retrieval work better when each chunk represent a coherent unit of meaning rather than an arbitrary span.",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1278.88,
+      "end_seconds": 1363.679,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1278s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "82df46a02c4f16bf049470cbc1443cf5c63e73279b84917810080257c7a04f87",
+    "text": "windows are finite as well. That means everything that you are going to use inside LLM will depend upon the context window. So a retrieval work better when each chunk represent a coherent unit of meaning rather than an arbitrary span. That means I'm going to use a strategies of fixedsiz chunking splitting every n token into a simplest manner of engrams. Recursive check character splitting which is a second technique here is slightly different. So you're trying to split a paragraph which break first at a sentence level and then at a word level and that is called recursive chunking strategy. Right? So there are different ways that you can able to use these chunking strategies to ensure you will get a quality response from the rack pipeline. Now once you perform the text pre-processing that means the cleaning and the normalization on the text and then you convert into a chunk then you are going to use embedding models. Now here it is very important to understand that when you talk about embeddings, embedding models convert text into a dense vector typically in a range of 384 to 1536 dimension. That means you're going to use encoded similarity meaning. So the choice of embedding model depends upon the choice of your LLM as well. So I will give you an example when you're",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1346.559,
+      "end_seconds": 1433.1999999999998,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1346s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5ea58f07fa3f1890ec130d0904a26eec4c817e47c6b89c26338dac134aa8122c",
+    "text": "1536 dimension. That means you're going to use encoded similarity meaning. So the choice of embedding model depends upon the choice of your LLM as well. So I will give you an example when you're using a GPT based models you often go with text embedding three large because they are using a something called BGE notation right so that means you have a dependency on the LLM model to select a type of uh you have a you have a dependency on LLM model to select a type of embedding models as well. Now once you convert everything you have an embedding model then you're going to store this embedding back to a vector store. Now this vector store will serve like a database for you. So vector store or vector database will store embedding alongside the original chunks and the metadata and what it does is it will help you to implement the semantic search capability within the vectors operation. Now before you are storing this vectors into your u before you are storing this ambit into a vector store you are going to perform something called indexing to manage this document as well. There's something called indexing and indexing will of will be of several type there are few popular methods like hnsw ivf which is inverted",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1418.159,
+      "end_seconds": 1501.12,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1418s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "aec9ea72b93fb0dce7c19643dde02ea0c2deca39fe6daba229cb8272153beacf",
+    "text": "you are going to perform something called indexing to manage this document as well. There's something called indexing and indexing will of will be of several type there are few popular methods like hnsw ivf which is inverted file index and uh product quantization. So these are all some of the important indexing technique and it depends upon what kind of volume and velocity that you require to operate on these document retrieval. All right. Now once you develop this rack system that means you're going to use also something called generator right. So generator is very important because once you create a vector you have all the data inside this database vector database. Now you're going to use contents to be passed to a generator function. So the llm that produce the final answer takes the retrieval context and the user query and both wrapped into a prompt template and generate a grounded response. So the basically the prompt design is very important here. Now so let's say you are creating some some use case scenario for financial domain Q&A rack pipeline against healthcare. It is a two different sort of operations, right? So when you're dealing with domain agnostic problem statement, you have to be very precautious about your evaluation strategies as well. So there are different ways that you can evaluate",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1484.799,
+      "end_seconds": 1573.84,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1484s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "55b856415b0f98b8f7d823c2fbe333d130b6cc7020709a2b227f7d1afd3f886c",
+    "text": "healthcare. It is a two different sort of operations, right? So when you're dealing with domain agnostic problem statement, you have to be very precautious about your evaluation strategies as well. So there are different ways that you can evaluate your rag. One way is you can take human feedbacks into consideration which is going to be driven bymemes. The second part is you can also use some automated methods to operate. So we'll talk about one such method called Ragas and this is one of the library that we are going to use in our demonstration. So that means we would like to evaluate the outcome of a rack on a ground truth answer which will measure uh which will give provide me a very good insight on the quality of response and the quality of response I'm going to use several benchmark like answer correctness, answer similarity, answer relevance, contextual recall, contextual precision, faithfulness to ensure that my pipeline is working pretty significantly to generate an answer. So let's try to look into the tool stack that we're going to use in our code. So we are going to use Python 3.11 and higher version. I'm going to use Chromma DB which is one of the famous vector store databases. Uh and uh it is available as a free of",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1555.76,
+      "end_seconds": 1643.3600000000001,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1555s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "335b0720fbaf3e18ab7d893f22557e686bb0316cf18142ee099e0d694d7e55ce",
+    "text": "we are going to use Python 3.11 and higher version. I'm going to use Chromma DB which is one of the famous vector store databases. Uh and uh it is available as a free of cost. You do not have to pay any enterprise license for Chromod. We are going to use something called Langchain framework. So lang chain is one of the important framework for building agents and rack pipeline. So we'll use lang chain for doing this analysis. We will use llama 3 models. Uh I will use mistral 7 billion parameter model v2 for demonstration purpose. Maybe I can switch between GPT5 as well. Uh because I have a license for that. So I will use my API to demonstrate. We will use also the sentence transformers and mini LLM2 embeddings which is 512 embedding chunks to operate. We'll use sentence transformers to perform the chunking and uh retrieval strategies for us. And last but not least we will use ragas to evaluate our pipeline. So these are tax stack that we are going to use in today's tutorial and I will demonstrate how to work on this tutorial. So let's first try to understand the code and then we'll execute this code. Okay. So in this code what we going to do is first and foremost thing is we are",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1630.08,
+      "end_seconds": 1715.76,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1630s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0aade9af94bac058abe19f514a491312194b4f69d24909ebc5912b3e89e99c2c",
+    "text": "how to work on this tutorial. So let's first try to understand the code and then we'll execute this code. Okay. So in this code what we going to do is first and foremost thing is we are going to talk about what are the modules that we're going to install. So I'm going to use a command pip install and uh you can see a suffix here sorry prefix here which is exclamation mark. So this will be instructing my Linux compiler that I'm going to use pip as a command line interface. So basically I'm using a quiet uh flag which is hyphen q. So this is a quiet mode that means I will suppress pip progress. So every package has a specific role. Chromodb is for vector store vector database creation for storing the emittings. Sentence transformer for providing the emitting models. Uh and I'm going to use mini lm. I have a transformers which is a hugging phase library for loading and running. Mistral bits and byes here to enable the quantization. That means I if I have to drop the total model size to 4bit nearly the half of the existing model then I will use bit and bytes. I will also use one important package from fits which is called pyu pdfdf and this",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1699.84,
+      "end_seconds": 1783.36,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1699s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1fdea70fb3b5cff1bd0e2c5dbb1d7a19638056c53a94ad8ac7b1d7b7dd35a5be",
+    "text": "I have to drop the total model size to 4bit nearly the half of the existing model then I will use bit and bytes. I will also use one important package from fits which is called pyu pdfdf and this is one of the fastest purest python pdf text etc that is available. I'm also going to use torch which is a deep learning backend uh service and I'm going to use this for evaluation purposes. Now I'm going to do several imports. I would like to import operating system which will read the environmental variable including open AI configurations. I would like to use fits for pyu pdf. Uh and I'm importing this particular module to read the document corpus for creating a vector store. I'm going to use chromb. So chromadb again I'm going to use for vector store. Now I've got a s uh some embedding plus uh model highle rappers. So I'm going to use sentence transformers which is a highle wrapper that loads an embedding model and uh from transformers I'm going to import auto tokenizer which figure out which tokenizer class to be used based upon the model name. So every model like uh I'm going to use Mistral versus GBD5 they will have a different tokenization method. I'm going to use auto mode model for cog LLM for large",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1765.6,
+      "end_seconds": 1857.44,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1765s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9da0d7dadd4d64775f6af019609a5f9b0cc9ee064cf1dc7e51e673c00d52a7a7",
+    "text": "based upon the model name. So every model like uh I'm going to use Mistral versus GBD5 they will have a different tokenization method. I'm going to use auto mode model for cog LLM for large models that does the same for model architectures. That means this is where I'm going to use hugging phase. So if you if you're not sure what is hugging phase let me give you some illustration. So this is the community which is called hugging face and here you can search for any model. Let's say if I have to search for open source model like deepse v2. So I can go here and then try to see that this this particular model is available this rapper is available for me to consume. So what I'm doing is I'm just trying to create an interface to call this API. Now I'm wrapping everything inside a pipeline which is a convenience wrapper that combines tokenizer model decoding logic behind a single callable function. For that I required pipeline to operate. Now I'm also using a modern OpenAI SDK and uh here I'm saying I would like to operate on OpenAI SDK which is software development kit and I would like to use OpenAI APIs for doing the analysis. Now I'm also uh using some evaluation",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1842.0,
+      "end_seconds": 1925.12,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1842s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "57fc9e4502702a9ee2ce105652dbc70813a1177370c98c0ad25b766467605921",
+    "text": "OpenAI SDK and uh here I'm saying I would like to operate on OpenAI SDK which is software development kit and I would like to use OpenAI APIs for doing the analysis. Now I'm also uh using some evaluation for that I require DP val or rag evaluation and I would like to put up some use cases around it so that I can able to use these metrics to compare. Now I'm setting my setting up my open API key here. So the way that you are going to do it is you can register here. This is the platform that you can register. So you can create your credentials and uh once you create your credentials then you can go to the billing section maybe you can purchase some credit pay as you go account and then you can start using the GPD models from here right so there are different versions of GPD models available in this ecosystem now I'm just enabling my API key so that I can start using the GPD models now I'm going to use two important consideration here. So I'm keeping two models to compare. One is called Mistral which is an open source and second one is the open AI. Okay. So in this code what I'm doing is in these lines of code I'm creating two",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1907.919,
+      "end_seconds": 1993.2,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1907s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3a848a24a539882fcd847fa62a72890ede7308115b650b211347ef8d488a02fd",
+    "text": "here. So I'm keeping two models to compare. One is called Mistral which is an open source and second one is the open AI. Okay. So in this code what I'm doing is in these lines of code I'm creating two option the primary and the secondary. So in the primary I'm going to use mistral secondary I'm keeping as a backup which is open AI. Now I'm passing this open AI key to initialize my model object. Right. And then I'm just trying to ensure that my model will be using my API key that I have passed. Now there are two ways that you can pass the API key. One is via creating a secret here in Google Collab passing the model name. You can say open AI API key and then you can pass on the value as your key. Second way is you can simply hardcode using this string. So I'm just trying to use OpenAI API key as a primary method and then I will also load the embedding layer. Now this is where I would like to download the model weights from hugging phase hub and cache them under the hugging phase library. So I'm going to load this embedding model which is called all mini LM6 which is large language model which is of 384",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 1975.039,
+      "end_seconds": 2056.56,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=1975s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0bab8c4886d59eec5d4e1520176e3eb472faa00ddba9ea955a673b2f4fda8465",
+    "text": "weights from hugging phase hub and cache them under the hugging phase library. So I'm going to load this embedding model which is called all mini LM6 which is large language model which is of 384 dimension vector. That means it is very good model, efficient model, small enough that will store tens of thousands of data comfortably in terms of vector uh length and I can go with it. So I've downloaded this model. Now I'm going to load the primary back end. That means this is my primary provision where I'm going to use mist tokenizer mist model. I'm keeping it as none. That means I'm just declaring that I'm going to use uh this as secondary. Now I'm going to also initialize the model which I'm going to use as a open source which is open AI model and this is what I'm initializing. Now I'm also initializing the chromb which is my vector store. Now when I'm initializing a chromb I'm using a chromb.client client method. So this method will create in-memory client no disk persistent for production users. So I'm keeping the persistent path to my local directories. That means everything that I'm going to do will be hosted in my local Google Collab environment. Now I'm going to download this document. Let me show you the document first.",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2038.399,
+      "end_seconds": 2135.5989999999997,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2038s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6abd06ad5902821c687df4d2a6d941170e82dc494ed3e2ac9766ae22e30f47e8",
+    "text": "path to my local directories. That means everything that I'm going to do will be hosted in my local Google Collab environment. Now I'm going to download this document. Let me show you the document first. So this is the PDF document that I'm going to use. This is a nice PDF document which talks about artificial intelligence risk management framework EIMF version 1.0 and inside this document you will see a lot of text and tables which is part of it. Okay. So there's a confusion about Mistral and OpenAI. So let me open one more notebook which I have run already so that this confusion should go away. So what we are going to do is let me first open. Okay. So what we are doing is now I will move on to the primary version. So I'm going to use Mistral. So okay. So let me now go back to this sheet. So I'm going to use Mistral and I'm going to use embedding model which is all mini LM6. Right. This is a 512 embedding model dimension emitting model. Now I'm going to download a mist model which is near about uh 15GB. So you can see here 14.5GB model. And this is what something which I have downloaded from hugging face hub. Right. And I'm using a Mistral 7 billion",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2118.56,
+      "end_seconds": 2232.0789999999997,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2118s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "88bd30146847f6319f167a89e45f81fb1bc1a0ff96cd95a3a6e2c6ba0394ce5b",
+    "text": "model which is near about uh 15GB. So you can see here 14.5GB model. And this is what something which I have downloaded from hugging face hub. Right. And I'm using a Mistral 7 billion instruct v2 which is version two. And this model is great in terms of reasoning capability in terms of generating the QA based uh rack pipeline. And this model is sufficient for doing this work. So I'm loading this model. Now I'm going to create a pipeline. So this pipeline will help me to look forward for all the parameters. Now this pipeline is useful to join my retriever and the generator pipeline into a one one manner. So I'm going to use this pipeline for the purpose of creating this right. Uh I mean I'm going to join these two things together. So what are the pipeline parameter that I'm using? So the first parameter is a text generation which is a task type. So I'm saying that I would like to use this model for text generation. The task type will model will generate continuation of input text. The model that I'm passing here is mistral v2 uh 7 billion instruct parameter model. So I will load the mistral model inside the model object. The second parameter is for model initialization. The third parameter that I'm using is",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2214.88,
+      "end_seconds": 2303.5989999999997,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2214s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4aab07e7173b44cc35a92762d4f570b2f9e6b168ba499e3b655624bfd2663957",
+    "text": "here is mistral v2 uh 7 billion instruct parameter model. So I will load the mistral model inside the model object. The second parameter is for model initialization. The third parameter that I'm using is for tokenization. So I'm saying that I would like to use tokenizer which is by default I'm keeping it to be sentence tokenization. So I will use the sentence tokenization here. Now I'm also creating a limit here. The limit will respond to 256 for a newly generated token. That means I will limit my token to 256. I'm keeping the temperature while performing this analysis to be close to zero. So basically this is one of the important parameter for your LLM. When the temperature typically ranges between 0 to two higher the temperature your model will become nondeterministic. That means this model will become totally random in nature. So when you're increasing the randomness of your LLM, you will bound to get creative answers. But in this kind of scenarios when I'm creating a Q&A, I need a factual consistency on the answer. So I would like to make my temperature close to zero and for that purpose I'm keeping it to be 0.3. Right? So I'm keeping my model to be deterministic in terms of operations. So I'm controlling the randomness. Lower",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2287.76,
+      "end_seconds": 2386.56,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2287s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ee47c07386de9afc369851290dc0bc33d15e04602e82e31dc96c37e3ec1dc4bc",
+    "text": "answer. So I would like to make my temperature close to zero and for that purpose I'm keeping it to be 0.3. Right? So I'm keeping my model to be deterministic in terms of operations. So I'm controlling the randomness. Lower means more deterministic. Higher means more creative. So I'm just creating it low for factual consistency. Now I'm also using a pad token ID which is setting up to end of the token or end of the sequence. A common practice for cordial models. Now once I have done this I'm going to initialize the chrom. So I'm creating an inmemory chromad client. So this is a command that I'm using chroma client initializing with a chromabb object doclient class and creating an in-memory chromb client. So I'm using a method called persistent caching persistent client with the path that will use my local disk to store this chromad in my file system. Now I'm extracting the full document. So here I'm going to use one paper called attention paper. So this is one of the famous paper in LLM or GEI world which is called attention is all you need. So I'm going to use this particular paper and this is a paper this is abstract. So this is my input to the model. Now what I'm going to do is I will use this",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2370.48,
+      "end_seconds": 2459.359,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2370s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5f4b025fb61a5393bba7fa20928f761ee4921bf0957ec10da1cd1b09c537a271",
+    "text": "is called attention is all you need. So I'm going to use this particular paper and this is a paper this is abstract. So this is my input to the model. Now what I'm going to do is I will use this document as a PDF file. I will perform all the necessary uh cleansing and pre-processing steps converting them to a chunk and then use an embedding to register inside the chromade. So these are the set of step that I'm doing. First I will download the document use the pyu pdf to open that document. Once I open the document I will go through each pages using a loop. That means I'm doing a full text analytics. And then once I extract this text, you can see that total character inside this text is close to 32,79 which is pretty huge amount of data. Then I'm going to do some preview that this is the data which is available inside the text. And then I will move on to the chunking. The chunking strategies I will define a chunk size. So I'm keeping the chunk size to be 700. Each chunk will contain 700 characters. with an overlap percentage as or overlap size as 150 character. So the idea of overlap is very simple. When you're creating a",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2442.32,
+      "end_seconds": 2521.839,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2442s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0f7afc70ed541a50924571fc8d6a827a0e92b2fd7d98a0f8332acafa80fee5c3",
+    "text": "keeping the chunk size to be 700. Each chunk will contain 700 characters. with an overlap percentage as or overlap size as 150 character. So the idea of overlap is very simple. When you're creating a chunks, you would like to link the chunk. Let's say if I'm using this particular chunk without overlapping these two sentences will become fragmented. That means there's no link between these and these two sentences. If I'm keeping an overlap, my model will start from the previous 150 characters and there's no harm in doing this. Although I'm making it memory agnostic, I know but if I'm keeping 150 document sorry 150 character overlap that means I'm giving a reference to the next sentence so that these two sentence will link and that's the whole idea of overlap criteria. Typically the range of overlapping will lies between 10 to 15% or 10 to 20% in typical rack scenarios. You can use 10 to 20% of overlap percentage depending upon the chunk size. Now once I define this chunk and overlap I'm going to start with this process. So I will generate a chunks. Now I will start using some method called sliding window which will calculate end position by adding a chunk to the start and then I will move forward. Now I will generate a chunks. So it will",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2505.599,
+      "end_seconds": 2598.8,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2505s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2cab957706d40d648cfa0f8a017da8e9d24714d3bbe50bb16004b5c42570a65e",
+    "text": "I will generate a chunks. Now I will start using some method called sliding window which will calculate end position by adding a chunk to the start and then I will move forward. Now I will generate a chunks. So it will show me the total chunk generated and this is a sample chunk. So each paragraph will become a chunk. You can see this is the first paragraph, second paragraph, third paragraph so on and so forth. So I'm just generating a chunks based upon this. So once I generate a chunks I'm going to register this chunks inside the embedding model. So for creating the embedding I need to use embedding model. So I have used the model which is of 512 dimension. So I would like to use a list of a string to encode and then display a numerical numpy array to show the output. So this is the shape of my output. That means it is of 60 cross 384 vectors that has been created. Let me see some questions. Can you please share the notebook? Yes, we will share the notebook. The dot product is just a cosign similarity. The non-persistent you mean it will not work in production. How can we use percent? So that means you need quite a servers to operate. Uh so",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2582.079,
+      "end_seconds": 2662.48,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2582s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "acada8e7a689ea98ccea2b10368d6bbe8df74b0cb0b5695445638a0c1be014d0",
+    "text": "The dot product is just a cosign similarity. The non-persistent you mean it will not work in production. How can we use percent? So that means you need quite a servers to operate. Uh so basically persistent caching I'm just using to avoid any memory issues in my system so that by the time I delete this notebook it will clear off my memory but you can use u non-persistent as well. You can create your consistent memory by registering this tool inside the server. So this is the step that I'm going to extract now and then I will convert this into an embedding vectors. So this is where the text chunking and uh everything has been completed. Now this is where my embedding has been registered successfully. Now this particular thing will help me to create an embedding on the top of it. Now I have created the embedding. Now this embedding will be stored during my generation part. So I'm just finish off with the generation of the embedding part. Now what I'm going to do is after embeddings which I have generated here I would like to store this ambidding into a chromb. Now I would like to push this ambidding inside the chrom. So for that I would like to iterate through all the chunks",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2649.04,
+      "end_seconds": 2731.5989999999997,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2649s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1448a73354344309b6543aa61da1fcc509b268633d74e7e723ddc40d710934ea",
+    "text": "which I have generated here I would like to store this ambidding into a chromb. Now I would like to push this ambidding inside the chrom. So for that I would like to iterate through all the chunks and add a chromb instance to it. So first and foremost thing what I'm doing here is I'm passing I'm creating a collection and using an add method. So collection add so index is a unique identifier for each chunk which I'm using to convert to a string. Then I'm using embedding which is using this index and convert into a numpy embedding to a python list and the document that will store original text for retrieval purpose. Now I will test this vector search with uh some small query and then try to see uh so let's say I'm asking the simple question what is this document is all about what is the weights key query and metrics. [snorts] Now all these things has been defined inside this document this scientific document scientific uh citation references. So it is generating the three chunks for each of the queries. Now the what are these chunks? These chunks are nothing but the paragraphs which is inside my document original document. Right? So I'm just trying to test whether this whole setup is working",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2714.079,
+      "end_seconds": 2795.839,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2714s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4e683f877ed5e994fd6898976842270e6b233656198a2e7e45ee864b59141590",
+    "text": "three chunks for each of the queries. Now the what are these chunks? These chunks are nothing but the paragraphs which is inside my document original document. Right? So I'm just trying to test whether this whole setup is working or not. Now I'm going to create one function which is called retrieval relevant context or retrieve relevant context. So function will take a query as a parameter which is a string. The optional top K parameter I'm keeping it to be three. I'm encoding the query into a embedding model. That means I will use the same schemas that I'm using [snorts] earlier for document corpus and then creating this embedding model here to convert my query into embedding. Then I will call this collection to search and return the top three topic. Now here when when I'm saying top three, you can change it to top five, top 10 depending upon your requirement. And these are all hyperparameters, right? I'm just keeping it simple. So I'm saying top three. Let's go with top three. Right? Right. So here I'm saying I would like to perform a similarity search on the query embedding the query vectors and it will return the top k number of similar chunks that has been retrieved and it will return the set of document along",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2781.28,
+      "end_seconds": 2860.1600000000003,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2781s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "733e06910c158b7a44867412a0a189d5f776308387309ee516bba04c6fe020f7",
+    "text": "perform a similarity search on the query embedding the query vectors and it will return the top k number of similar chunks that has been retrieved and it will return the set of document along with the distance ids and embeddings on those document. Now I'm performing two experimentation here. So basically let me quickly run this because I need to run this here quickly to show this demo. It may take some time and delete this instance. Okay, so this instance has been started. So I'm just installing a bunch of libraries here. First importing the necessary modules. Now I'm just running the model, rerunning the model. So there's no lag. It has to go through some process. So now I'm downloading the embedding models from hugging face. You can see that it start downloading 90 mgabyte file with weights. Now I'm downloading the mistral model. It will take some time. So it is 15 GB guys. So it will take some time to download this model from hugging face. Just bear with me. So start downloading the model. Almost 6% completed. Okay. Downloading bit fast. So whatever I'm downloading uh at this moment will be stored in my Google Collab repository and once I log off from this session it will uh flush out this models and data",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2845.68,
+      "end_seconds": 3016.4,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2845s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "38d354c4c5da53541db12dadf9d6904cf16f1d9dd150a18076c02ec326e64dde",
+    "text": "Okay. Downloading bit fast. So whatever I'm downloading uh at this moment will be stored in my Google Collab repository and once I log off from this session it will uh flush out this models and data from my repos including the chromb vector stores that I'm going to create in this session. In the meantime, let me share the presentation that we are using earlier so that you will have a reference. [snorts] Almost 50% 44% completed. Uh I think it's almost done. 75% 25% still left behind. Okay, I think it is done almost. Let me first download this PDF and put it into my repository. And I will rename this. So this has been loaded now. Okay. So I read this document. This document has 15 pages. I would like to extract a text, some sample text from the document. And it's showing exactly that I have got 39,000 characters inside this document. Now I would like to do some preview on the document. So this show me the first few lines inside [snorts] my document paragraphs. I will start with chunking. Chunking means splitting my data into chunks and then I will store these chunks and then pass these chunks to an embedding layer. So this is where I'm generating the embittings. Now remember we have downloaded an",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 2997.52,
+      "end_seconds": 3136.319,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=2997s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5ce5b4a0076dc7a7e8ddc367530564771bf5733a8cbf92a88a5c9f6506e7c0fe",
+    "text": "means splitting my data into chunks and then I will store these chunks and then pass these chunks to an embedding layer. So this is where I'm generating the embittings. Now remember we have downloaded an embedding model earlier. embedding model that we have used is mini LM V6 and that is of 512 dimension. So I'm going to use this embedding along with the previous downloaded embedding. That means what I'm doing here is I'm converting my document which I passed here and converting this into a vector embedding which will be stored inside the existing embedding model. So what embedding model does internally is it will create a cluster of similar document word pairs. So it will simply store your words inside the paragraph or PDF file and it will create a cluster of similar vectors. Right? So the higher the distance between these vectors or these clusters they are becoming very dissimilar. That means that means this particular word and this particular word does not have any correlation. They are totally opposite sometimes. And this distance we can able to measure with the help of a cosine operation. Right? So we can able to identify this whole relationship with the help of a cosine similarity and that is called semantic similarity models. Now I'm going to store this embedding",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 3119.28,
+      "end_seconds": 3220.3999999999996,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=3119s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "47d4113df17b3f318ed1af6efe7df5061ecb2be08f01ae0fdfc8ec55416f0e81",
+    "text": "can able to measure with the help of a cosine operation. Right? So we can able to identify this whole relationship with the help of a cosine similarity and that is called semantic similarity models. Now I'm going to store this embedding into the chromb and for that I need to run this and I would like to test the vectors. So let me change this question. Maybe I can put up some different question here. Let me read some document. Please read this document and select some question. Let me put this question. Okay. So here what I'm trying to show is I'm just using this simple question. How transformer use multiattension. Now I'm getting a three retrieval chunk because remember I have set up a parameter called top k is equals to three. So it will literally three chunks and these chunks are nothing but a paragraph from the original document which have a high correlation with this question by using a dot product. Right? So this is the three retrieve chunks. Now what I'm going to do is I'm going to create a function and this function will use the this function is just using a relevant search relevant context which will take a query string an optional K parameter top K parameter and it is also going to",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 3202.88,
+      "end_seconds": 3322.2400000000002,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=3202s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "76aedb2077d17c7f98caccf41a535052ee4674694649fa244275186ea8ee79c5",
+    "text": "create a function and this function will use the this function is just using a relevant search relevant context which will take a query string an optional K parameter top K parameter and it is also going to encode my query into a embedding model right so that means I will have a query embedding the query vector now the top case search chunk and then I will return how similar it is. Now I would like to test this whole functionality with two set of questions, two set of scenarios. The first scenario is I will allow my model to hallucinate. That means I will not pass on the chunks which has been generated by this retriever pipeline. So I will simply run this and see how the answer has been generated. Second is I would like to use the retrieval chunks and pass it to the model and then I will see how the answer has been generated. Now I will ask the same question So this is the first scenario that I'm going to generate an answer against. So this is the answer without passing the context. So you can see that this is showing me very generic response. It is saying in transform model multi extension is used to allow the model to focus on information from different",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 3300.319,
+      "end_seconds": 3419.599,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=3300s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "43708ecdb28510adfe0e038cc3cf021579b55220ad01b16c280e73e59b8034aa",
+    "text": "passing the context. So you can see that this is showing me very generic response. It is saying in transform model multi extension is used to allow the model to focus on information from different representation segment at a different position. So it is giving very generic answer but let me try with the rack that we have created and we'll match the answer with the paragraph inside the document. Okay. Now this is the output from the model. So you can see that if I just look into this phrase, it is exactly referring to these three paragraphs. Right? So this means I will able to get a much better answer when I'm using the context set by rack pipeline right and this is a grounded answer that means this is should be the right answer that I'm always having now I would like to perform some similarity scores on the paragraph that has been used now this is a similarity score between your question and the each paragraph it is returning these paragraphs which is having 40% association with this query. So that's one way that you can able to test it out. Right? So you can able to say that I have a higher confidence in generating the cross reference between my document and the question that I'm",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 3406.64,
+      "end_seconds": 3509.599,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=3406s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0af5e116aa317106e0412e26291e9ecade001b3179ef2faa859546b5cc46c29e",
+    "text": "So that's one way that you can able to test it out. Right? So you can able to say that I have a higher confidence in generating the cross reference between my document and the question that I'm using with the help of a similarity score. Now I'm also generating one table to compare the method. So without retrieval we can see that the hellation risk is high. With retrieval the hallian risk has been reduced and it is matching the grounded response pretty significantly with the help of retrieval. All right. So what we have learned so far is we have take this example and let me show you what we have developed. So just to want to give you the pictorial representation of this pipeline. We have created a rack pipeline which will take the PDF performing the text extraction on the PDF. Then we move on to the chunking embedding and registration of embedding into a Chroma DB. Then we are expecting the user question search from the embedding using a similarity search algorithm. Retrieve the top three chunks based upon the query parameter. creating a prompt and use mistral to generate an answer. That is what we have done in a very simple terms. Right? So this is how the retrieval augment generation pipeline the basic",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 3496.48,
+      "end_seconds": 3587.359,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=3496s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f3c604c430278abae87081ede609997d5e8cb4f38cfbd9ab5b6240c24c4822e4",
+    "text": "query parameter. creating a prompt and use mistral to generate an answer. That is what we have done in a very simple terms. Right? So this is how the retrieval augment generation pipeline the basic pipeline works. Okay. Now we'll move on to the RAS. So before we move on to the RAS, let me explain what exactly RAS does. So Raa is a framework, right? So when you say we are evaluating the model or we are evaluating the rack pipeline, we are just using a framework to evaluate. Now when we already have understand that what is rag. So rag have two important components. One is called retriever. The second one is called generator. So retriever will take care of querying the knowledge database and retriever retrieves the additional context that match the user query in a very simple terms right. generator on the other hand will encompass the LLM module and generate an answer based upon the context augumented prompt. So when you're evaluating the rack pipeline, you must evaluate both components separately, right? And also understand how they are working together to understand if your rack pipeline needs further improvement and this will help you to create a quality of responses. So, Raga is a framework that will help you to evaluate your retrieval augment generation pipeline which is",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 3570.079,
+      "end_seconds": 3659.839,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=3570s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9b9663eb9f24e21008afa359a8b0b4d0d4f8dddac0e3224f720507613526c302",
+    "text": "to understand if your rack pipeline needs further improvement and this will help you to create a quality of responses. So, Raga is a framework that will help you to evaluate your retrieval augment generation pipeline which is called rack pipeline and there are existing tools and framework that help you to build these pipeline. So, ragas have eight metrics. I will list down each matrix one by one. So, ragas use eight metrics to evaluate. The first matrix is called faithfulness. So faithfulness measure how accurately the generated answer is how it is reflecting the source content which will ensure that the generated content is truthful and reliable. The second matrix is called answer relevance. [snorts] So when you say answer relevance it will access how pertinent this answer is to a given question. It is trying to validate that the response directly address the user questions or not. The third parameter is called context precision. Context precision. Now this parameter context precision will evaluate the precision of a context which has been used to generate an answer and it will ensure that relevant information selected from the content. The fourth parameter is called content or context relevancy. So context relevancy will measure how relevant a selected context is to a provided question. It will also help us to improve the context selection to",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 3644.24,
+      "end_seconds": 3774.48,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=3644s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c5a84a8ec9b661f7b8a9891254b656a2e1e28800df1715874b9ab194c9f08c43",
+    "text": "The fourth parameter is called content or context relevancy. So context relevancy will measure how relevant a selected context is to a provided question. It will also help us to improve the context selection to enhance the answer accuracy. The fifth parameter is called context recall. I hope you might have some idea about recall and precision in machine learning. So we are using the same concept here precision and recall which will assess the extent to which relevant document or relevant content information is retrieved which will ensure that there are no critical context which is missing. Similarly there's something called context entity recall. Now this will evaluate the recall of entities within the context and it will ensure that no important entities are overlooked in the context retrieval. The seventh matrix is called answer semantic similarity. And as the name says, answer semantic similarity will help us to qualify or quantify the semantic similarity between the generated answer and the expected ideal answer. That means you need to have some labels to validate this. And the last but not the least is called answer correctness which will focus on fasttracking or fast checking assessing the factual accuracy of the generated answer. So these are the metrics which has been used to define the overall pipeline. All right. Now we'll move on to the",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 3747.52,
+      "end_seconds": 3883.039,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=3747s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5889b678695e6839af5ead3bfb17e09618e40a0c9f5f1397bb602f74cb5ab1bb",
+    "text": "which will focus on fasttracking or fast checking assessing the factual accuracy of the generated answer. So these are the metrics which has been used to define the overall pipeline. All right. Now we'll move on to the implementation part. Now for implementation we will use a similar rack uh that we have just now created. So we'll reuse the same rack but with different proposition. So the idea is I need to create some ground truth labels as well. So let's move on to this. Maybe I can share this as a text. Okay. Let me install the Ragas module first and then I will start importing the Ragas. So there are two modules in Ragas. You can use Ragas data set as well. So there are some available data set to data set that you can use to get a quick run through on these profiles or these libraries. So I'm just using that. Okay. Okay. So, this has been I have an error. I think I have a pre-executed uh one as well. I will maybe show that quickly. Let me fetch the notebook which is run already in my machine. Uh just give me a moment. Just one minute guys I think uh to search for the notebook which I have already executed because it will take",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 3864.88,
+      "end_seconds": 3973.1189999999997,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=3864s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "76c6f5dcf0c8d45c9b79c8db842af03dff88a17056e2c733aeeff7e02d0bd5be",
+    "text": "Let me fetch the notebook which is run already in my machine. Uh just give me a moment. Just one minute guys I think uh to search for the notebook which I have already executed because it will take more time to execute. So I was just thinking we can reuse previous one. Yeah, this is what I have done already. So I will show you this output. Okay, so this is the step that we have completed. Okay, now let me explain the code from the scratch. So what we are doing is we are creating one RAS pipeline. So first and foremost thing is we are setting it up uh using the necessary libraries. Again the same library we are using as we have used in the previous example. Same thing we have imported here. Right now the third part is I'm just importing the the pandas for data manipulation so that I can able to compare the method which is going to be used inside Ragas. I'm loading the VL model same model same embedding right no change in the embedding either. Now once I have load all the things then I'm going to create a custom provision for running this generator pipeline and using auto model for codel pipeline. So here I'm passing the model name device",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 3951.28,
+      "end_seconds": 4076.9599999999996,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=3951s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "76e42eb25db95d2f7b207d76442cecfc81cd2568849fe853e220666f181ac5fc",
+    "text": "embedding either. Now once I have load all the things then I'm going to create a custom provision for running this generator pipeline and using auto model for codel pipeline. So here I'm passing the model name device mapping to be auto to automatically distribute model layer across GPU and CPU depending upon the provisions and the type of uh loads I'm keeping it to be 16 bit load and memory requirement I'm keeping it to be 14 GB. Now once I have done this I will create a generator pipeline and uh this will execute based upon these parameter. The first parameter is a task type model will generate the model here I'm loading is mistral tokenizer which will convert text to tokens I'm keeping the limit to be 256 maximum token to generate temperature again I'm keeping it 0.3 low randomness more deterministic factually generated I mean factually good to generate an answer then my pipeline has been ready that means I'm calling the generator prompt. Now I'm keeping the chromb uh initialize creating an inmemory chromb and with directory path. Now here I'm just loading the pull text using the same paper that I have uh I think given as well in the previous demo. Now this document is going to be set up as a chunking method. I will keep",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 4053.28,
+      "end_seconds": 4157.199,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=4053s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "13d59d6ec17c8f87445aa36cac04359516e61995a4a4355e84672fb6623f7462",
+    "text": "Now here I'm just loading the pull text using the same paper that I have uh I think given as well in the previous demo. Now this document is going to be set up as a chunking method. I will keep the chunk size to be 700 and with a overlap of 150 near about 15% overlap. Then I'm creating uh and generating the embedding stores. So I will input the ambidding using the sentence transformers and storing this embedding inside chromb. Now I will create a function to retrieve the relevant context. embed a query convert into 384 dimension vectors and query the chromb for top case more similar chunks and retrieve [snorts] the chunks with double line uh that is what I'm doing in the earlier version as well now I'm keeping the two version with and without retrieval this is what we have done now here is the most important part which has been came along so here what we are doing is we are trying to evaluate now the raas with the help of raas pipeline so I'm just using the three important parameters which is faithfulness, relevancy and answer context to evaluate. Now I'm just importing all these three metrics. Now I'm keeping some text question. So here I'm creating a set of six questions",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 4139.12,
+      "end_seconds": 4227.679,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=4139s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c61a7595bd474018125861fc0289425b3323a2ae20cd1483b2b6d2338b6f774b",
+    "text": "three important parameters which is faithfulness, relevancy and answer context to evaluate. Now I'm just importing all these three metrics. Now I'm keeping some text question. So here I'm creating a set of six questions and this is created manually by reading this document. So each each question will have a ground truth which is semantically correct answer for correctness measurement and question will be test on these aspect definition numerical values training details technical concept understanding so I'm creating six questions pretty diversified questions based upon my user response now I'm collecting the rack for demo purpose so here I'm saying I have got several rack answers several like context right and then I'm just checking the overall quality of it now to check the quality of the scores there's something called blue scores which is one way that you can able to assume it how much chunks in the generated answers match with the ground answers that is one way that you can look into the BLU scores which is typically called as blue Right. So that means we are looking for answer correctness. Now I'm going to do some mock test on this RAP pipeline. I'm setting up the evaluation strategy. Now this will generate an answer. So I'm getting the answer as this. You can [snorts] see",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 4208.48,
+      "end_seconds": 4307.52,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=4208s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a512147cd5d1fea2eadc138e6a9d59ac9092d2a9442502e18ec59cdd4977016d",
+    "text": "Now I'm going to do some mock test on this RAP pipeline. I'm setting up the evaluation strategy. Now this will generate an answer. So I'm getting the answer as this. You can [snorts] see faithfulness is 89%, answer relevancy is 94, context relevancy is 91, answer correctness is 87%. Which is pretty good result that I'm going to have. Now what I'm doing is I'm doing some result interpretation. So faithfulness score is 89. That means the rack system really has hallucinate for every talent claims about nine nine of them are supporting directly that has been retrieved from the PDF. Answer relevancy is close to 95 only 5% of the response may be tang non-tangible. context relevancy is close to 91% that means only 9% of the retrieval text chunks are relevant to the query. Now I would like to check the detail output per query as well and for that I need to generate a summary which is Raa's evalation report. Now this report will help me to understand what are the different scenarios in which I have iterated true. So basically I'm trying to generalize this performance and try to understand the gist of the overall statistics right. So this is what ragas does for you. So ragas will help you to generate and evaluate your rack pipeline",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 4291.84,
+      "end_seconds": 4383.92,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=4291s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ac4874c5c3fc01c055fd7414b4c3cf3851d9696ea67f02d2d6a4f6cbcb73f286",
+    "text": "to generalize this performance and try to understand the gist of the overall statistics right. So this is what ragas does for you. So ragas will help you to generate and evaluate your rack pipeline into numerical scores and these numerical score that you are seeing on my screen will help you to evaluate your rack pipeline with a realistic numbers not just by intuitions right you need a realistic numbers similar to what you are doing in machine learning you have a realistic numbers including precision recall ROC AU higher the ROC better the model similarly Here we are also generating the overall performance portfolio of the model by benchmarking it against the numbers and these numbers will suggest whether my model or rack pipeline are doing fairly a good job or it required some tweaking or improvisations or am I in the right direction or not. So that will help us to set up the benchmark. So that's the reason I told you in the previous uh during the start of the lecture that rag comes with different flavors. So here we are talking about basic rag which is vanilla rag right. So that's the whole idea you can compare now your rag as well that you have a version one which is a basic rag. Now you're using an",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 4367.679,
+      "end_seconds": 4454.159,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=4367s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "64ec29d504fb455590dd7b401ea75a2812a4c673889d5627f4f5fd608817a034",
+    "text": "are talking about basic rag which is vanilla rag right. So that's the whole idea you can compare now your rag as well that you have a version one which is a basic rag. Now you're using an agentic rack and you're running the same set of questions on the agentic rag. how much improvement you're getting and when you're running a graph rag against the two provisions what is the improvement that you're getting. So it is very similar to the experimentation pipeline now that your rag is going to be have a consistent improvement with different tax stack and with the help of each incorporation how much percentage you're getting as a betterment and these numbers will help you to do this analysis. So, I think this is pretty much what we have for today. Thank you guys.",
+    "metadata": {
+      "video_id": "iLO6yEnIuaA",
+      "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "RAG",
+      "start_seconds": 4440.88,
+      "end_seconds": 4492.199,
+      "url": "https://www.youtube.com/watch?v=iLO6yEnIuaA&t=4440s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

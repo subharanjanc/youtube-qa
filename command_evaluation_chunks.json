@@ -1,0 +1,322 @@
+[
+  {
+    "id": "6c16defa9f92bc87c834a17468b0b2478cd2ea2fd0d7497602bc4861d689f63a",
+    "text": "In this video, you will learn how to do LLM as a judge evaluations using a platform called LangSmith. Why is this even important, you might ask? Because this LLM as a judge technique is associated with two growing niches within the tech sector. Growing niche one being data collection, and growing niche two being AI training. So, if you master all of the content in this video, you should be able to position yourself or your company to capture some of that market value within the coming years. Here is a table of contents for what's about to follow. First, we're going to cover the general steps involved with performing LLM as a judge. Then we're going to demonstrate the basic concepts of LLM as a judge using the LangSmith platform. Then we're going to take a look at a simple end-to-end example of how to do LLM as a judge. Then we're going to expand that simple end-to-end example and run more {quote} experiments. And then finally, we're going to introduce a new technique called auto research, so you get a taste of the bleeding edge of where all of this LLM as a judge stuff is going. Here are the general steps involved with performing LLM as a judge. Step one, you need some system that you're going to measure the performance",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 0.6,
+      "end_seconds": 75.16,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "beb6258958d60c03ee86e3ed66d7b7f40b7d8e3106fa0105efe0600f24c387d0",
+    "text": "bleeding edge of where all of this LLM as a judge stuff is going. Here are the general steps involved with performing LLM as a judge. Step one, you need some system that you're going to measure the performance of. For example, in the subsequent sections, we're going to be measuring how well an AI agent answers specific questions about some topic. Step two, after you decide what system you want to test or evaluate, you would then need to feed in inputs into said system and record the generated outputs. For example, when we test this AI agent, I'm going to be feeding in these questions about AI school, which quick side note is an AI upskilling program for professionals that meets in the afternoons on Mondays and Thursdays in beautiful Wynwood, Miami, Florida. Step three, you need to score the outputs of the system you're testing. This is where LLM as a judge comes into the picture. For example, we're going to be comparing the outputs of an AI agent that's prompted with some questions against the correct answers in order to assess how good or relevant the outputs of the AI agent are. Note how we specified what the correct answer is next to each input in this list. After feeding in each input into the system we're testing, aka this AI agent,",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 58.12,
+      "end_seconds": 136.48,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=58s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9577e7f4948ae76482a556ac0595debce3a347e95adec28b71a483966babedf4",
+    "text": "outputs of the AI agent are. Note how we specified what the correct answer is next to each input in this list. After feeding in each input into the system we're testing, aka this AI agent, we could compare the outputs ourselves with the correct answers, but at scale, that would be super tedious and slow. So, instead of us having to take a look at the generated outputs of whatever system we're testing and compare them against the ideal or expected outputs, what we're going to do is delegate that review work to an LLM. Hence, an LLM will judge the quality of the outputs of the system we're testing for us, aka LLM as a judge. You can use whichever LLM you prefer, but I suggest you go with one that you generally respect the outputs of because if the LLM judge you choose is not good or is inaccurate, then this whole technique falls apart. FYI, I'm going to be using GPT-4o mini from OpenAI as my LLM judge. And finally for step four, which is the most important part of this LLM as a judge technique, you will adjust various aspects of your system to see how high of a score you can get from your LLM judge. Or to use overly scientific lingo, you will perform controlled experiments",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 122.8,
+      "end_seconds": 199.8,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=122s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a3b9f8770dd4bf788e2a1cf4092b8274de83cb51383d47c67b6cd06346db413c",
+    "text": "judge technique, you will adjust various aspects of your system to see how high of a score you can get from your LLM judge. Or to use overly scientific lingo, you will perform controlled experiments in order to measure how various independent variables affect dependent variables. Don't worry if this is not clicking yet because we are now going to walk step by step through an example of how to do LLM as a judge. And I guarantee you that by the end of this video, you will attain mastery of this concept and be able to apply it yourself. We are now going to go through the basic concepts behind LLM as a judge, and we're going to do so via a platform that goes by the name of LangSmith, which is a platform made by a company called LangChain. You can visit this landing page by coming over to langchain.com/langsmith-platform and on this landing page you should see buttons that say try LangSmith or get started. And once you're signed up, which you should be able to do for free, LangSmith has a very generous free tier. Once you're signed in, you should see something like this, right? I've started with a fresh account so you don't get confused by anything, right? And there's two ways that you can",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 184.8,
+      "end_seconds": 265.32,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=184s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "06fbd85f6dc89200fc93d652b1a01d23fc6fdd46a69f199e920f63e2a57cc681",
+    "text": "LangSmith has a very generous free tier. Once you're signed in, you should see something like this, right? I've started with a fresh account so you don't get confused by anything, right? And there's two ways that you can interact with the LangSmith platform. You can interact with it through this web application, right? That you see here. And [snorts] you can also interact with your LangSmith account or the LangSmith platform via API, right? So you can come over to the settings section in your LangSmith account and come over to the API keys page and you can provision API keys like so. Once you have the API key, you can copy it into some local project, like for example, the one that I've linked with this video. And you can start playing around with various things, right? So, what we're going to do now is introduce three fundamental concepts for understanding LLM as a judge. Those being one, data sets, two, evaluators, and three, experiments. Okay, here we have a Python project running on my local computer. This is how I'm going to be demonstrating these three basic concepts. So, let's start with data sets. Data sets are simply input-output pairs, right? So, this first command is what we'll use to demonstrate data sets. Before I run this, if you look closely",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 251.959,
+      "end_seconds": 340.919,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=251s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5abe9b1784d68ab80063dffe9a19e825ec4b676a9fee3550742bf6c75be12683",
+    "text": "three basic concepts. So, let's start with data sets. Data sets are simply input-output pairs, right? So, this first command is what we'll use to demonstrate data sets. Before I run this, if you look closely at the command, you can see all we're doing is uploading the data that sits in this CSV, which is a list of Q&As, aka input-output pairs. So, let's just run this and see what happens. So, you run that. And if we come over to our LangSmith dashboard and come over to the datasets and experiments page, there we go. So, I reloaded the page after running that command on my local, and we now have a dataset. If you look closely, you can see this dataset has zero experiments associated with it. You can see it has 73 input-output pairs. If I click on the dataset, we can take a closer look at the examples or input-output pairs. Here is how we can group the examples into different splits. If you're familiar with AI training, you might have heard of, for example, training splits versus test splits versus validation splits, etc. If you don't provide a way to group your examples, it's just going to put them inside of the base split. And if you look closely here, we have some more tabs, and you can see this tab here",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 322.6,
+      "end_seconds": 413.6,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=322s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9d853864886acaa3266b47e3afd7a6a5cb7323b4f709c416116c339051872de6",
+    "text": "If you don't provide a way to group your examples, it's just going to put them inside of the base split. And if you look closely here, we have some more tabs, and you can see this tab here that says evaluators. So, let's now demonstrate the concept of evaluators, which is just as simple as the concept of datasets. Evaluators are best understood by simply experiencing them, so let's run this second script that demonstrates the concept of evaluators. Before we trigger it, though, let's take a look at what this script is doing. This script goes by the name of upload_simple_evaluator_demo.py, which we can find here. And let's take a look at what's going on. And if you scroll through it, you should see a section of code titled main. By the way, if you're new to programming, it's very common to see some section of code titled main that indicates to you where the script you're triggering will start its execution. So, when you execute this script, this is where the code will start running. So, not to be too pedantic, but you can see here on line 83, we're loading in environment variables, right? load.env. Environment variables are where you can provide API keys to your script and sensitive pieces of information, etc. Then, on line 85, you can see we're",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 398.72,
+      "end_seconds": 480.84,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=398s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2cfecf0d9372b9b803d95b62f421980a993dda154e04ee49bb1f3999396ceb83",
+    "text": "here on line 83, we're loading in environment variables, right? load.env. Environment variables are where you can provide API keys to your script and sensitive pieces of information, etc. Then, on line 85, you can see we're instantiating a client, which in this context means a connection between our local script and the LangSmith platform, right? On line 87, you can see we're confirming we have a dataset available to us to test with. And then, on line 88, you can see that we're evaluating some, {quote} {unquote}, target system, right? On line 89, you can see the text target, against said dataset, right? And you can see on line 91, right? The text that reads evaluators, and you can see that we have one evaluator. So, to unpack all of this, the whole purpose of evaluations, right? Is to measure the quality of some system, right? So, target, right? Represents the system being tested, right? The target system being tested. This system that you see here is incredibly simple. In practice, it would be a slightly more complicated system, like, for example, an AI agent, which we're going to be taking a look at in the next section, but let's keep it simple for now. This system simply receives a color and produces the text along the lines of this templated string",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 465.52,
+      "end_seconds": 550.68,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=465s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2f07761857ff1d1d633491ce161247bb4e1fa9be6529799fad59d33b7c70e051",
+    "text": "we're going to be taking a look at in the next section, but let's keep it simple for now. This system simply receives a color and produces the text along the lines of this templated string here, right? So, if you were to feed in red, this system would produce the text, \"My favorite color is red.\" If you were to feed in the color white, it would spit out the text, \"My favorite color is white.\" If you were to feed in the color blue, it would spit out the text, \"My favorite color is blue.\" Hopefully, that makes sense. Now is where we get to evaluators, right? So, data is what we use to test the target system, right? So, for example, the data that we're testing with is here, right? So, it's a collection of two input-output pairs, right? You can see we're testing feeding in the color blue and then green into this target system. And we have one evaluator called the keyword inclusion evaluator. And all this does is takes a look at what the output is that is generated by the target system and confirms that the output generated by the target system contains the text provided on the output side of each example in our data set, right? So, if we feed in blue the target system",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 537.32,
+      "end_seconds": 623.12,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=537s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b42b24dd70af2995e118833fa89f5a3c178c1f136a643f2a8badcf1d380a9e8d",
+    "text": "and confirms that the output generated by the target system contains the text provided on the output side of each example in our data set, right? So, if we feed in blue the target system will spit out the text my favorite color is blue and we're just checking that the output generated by the system contains the text blue within it, right? If it does, we score that example with one or 100% and then we move on to the next example and once we have all of the examples or data tested against our target system and evaluated, we produce a final score, right? Which is the average of how each example in our data set did under evaluation. So, hopefully that gives you a sense of what evaluators are. Evaluators are snippets of code that are used to assess the quality of outputs generated by some target system. So, let's give this script a spin and see this in action. So, we triggered the script. If you come back over to the LangSmith dashboard, you can see we have a second data set which has two examples in it, right? Blue and green. And you can see that we've ran one experiment on this data set. If we click into this data set here you can see",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 607.88,
+      "end_seconds": 692.2,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=607s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4b003d69c0311817b7797dd3bdd756fcaa60c2ae42d2f48b9ace07e4570a6018",
+    "text": "have a second data set which has two examples in it, right? Blue and green. And you can see that we've ran one experiment on this data set. If we click into this data set here you can see our experiment. If we click into the experiment, you can see a row for each example in our data set. And here is where you see the result of the evaluator against each example in our data set, right? So, you can see we scored 100% for these two examples because the output generated by the system does include the reference output. And that also takes care of the concept of experiments, right? So, an experiment is the result of evaluating some target system against some data set. All right. Now, let's run through a simple end-to-end LLM as a judge example. So, the system that we're going to be evaluating or the target system that we're going to be evaluating is going to be an agent built on this platform that goes by the name of Gadiego. Right? I've already created the agent. And for this first end-to-end example, we're going to be comparing first GPT-4o Mini as its brain. And then the same exact agent with one tweak, which is using GPT-5.4 as its brain. One would suspect that because",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 676.24,
+      "end_seconds": 787.16,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=676s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a6a01c70351c4eaea749bf40a2e98333c925b698ba19f287fd80db8fd5d6e850",
+    "text": "this first end-to-end example, we're going to be comparing first GPT-4o Mini as its brain. And then the same exact agent with one tweak, which is using GPT-5.4 as its brain. One would suspect that because GPT-5.4 is a newer model, it would be better than an older model, right? You could see how that might be what some person might expect from the final results. But, we're going to run this evaluation experiment, right? And see what the data or reality has to say. So, if we click in here, you can see this agent is agent 39 on the Calico platform. You can see it's connected to a knowledge base, which is a database where I have a bunch of information sitting. And we're using GPT-4 on mini. Hopefully, that's crystal clear. Just for comparison, I'll show the other agent, which is agent ID 40. In a nutshell, it's the same exact agent, except that it's using GPT-5.4 as its model or as its brain. It's connected to the same knowledge base. So, let's come over here to the agent chat, and you can see here we're interacting with agent ID 39. That's the same one we just took a look at. And if I come here and look at the data set that we're going to use for evaluation,",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 763.6,
+      "end_seconds": 873.3199999999999,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=763s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b254a29aca409634d10415acaf7d22d56bcad71e847f7e04155835b8e4465401",
+    "text": "you can see here we're interacting with agent ID 39. That's the same one we just took a look at. And if I come here and look at the data set that we're going to use for evaluation, let's test this prompt out, right? So, when did cohort one phase two of AI school take place? Let's see what agent has to say. Okay, so the agent says October 9th, 2025 to November 3rd, 2025. So, is that the correct answer? October 9th, 2025 to November 3rd, 2025. So, that's accurate, right? So, you can imagine how tedious it would be to prompt the agent once for each of these examples, and then evaluate ourselves whether it was correct or not. Hence, where the whole idea of LLM as a judge comes in. So, what we're going to do now is trigger a script that's going to call the same exact agent we just interacted with once for each example that we have in this data set. And the LLM right? Once again, we're using GPT-4o Mini as our judge, right? Which we specified here. We have this configurable via this parameter on the script. And we're going to use GPT-4o Mini to take a look at the output that's generated by the agent and compare it against the expected output.",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 857.92,
+      "end_seconds": 964.48,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=857s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7db7f00f654c5c77de51f9d8de13fc066a2efddd61a20db47741af1370b51df3",
+    "text": "Which we specified here. We have this configurable via this parameter on the script. And we're going to use GPT-4o Mini to take a look at the output that's generated by the agent and compare it against the expected output. And score how well it does, right? So, the evaluator that's going to be used can be seen here. We're going to be using the LLM judge evaluator. It's simply a prompt, right? You can read the prompt. You can see it reads, \"You're an impartial evaluator. Score whether the predicted answer is correct for the given question and reference answer, right? And score between zero and one.\" So, let's run this. It's going to make all the sense in the world when you just see it in action. So, this agent that we were just testing is agent ID 39 on the Caligo platform. Same agent that we're going to be calling, right? And just in the name of brevity, we're not going to run through all of the examples in this data set, just the first 10. And you know what? Let's do first 20. So, you run this. >> [music] >> So, now >> [music] >> let's measure how well the same agent does, but let's switch out GPT-4o Mini for GPT-5.4 in regards to what model is powering this agent,",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 942.76,
+      "end_seconds": 1047.68,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=942s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ad9a6fef9a1a34a94de39500e9a245c926356642e2df734d855f8df9ce0b284a",
+    "text": "So, you run this. >> [music] >> So, now >> [music] >> let's measure how well the same agent does, but let's switch out GPT-4o Mini for GPT-5.4 in regards to what model is powering this agent, right? So, I think this is good. It's critical that these experiments are controlled, meaning that you adjust one or maybe a handful of aspects of the system at a time. That's going to better allow you to interpret the outputs and the final experiment results. Here, we're only tweaking a single aspect of the agent, which is, once again, the LLM that acts as the brain of it. We're using agent ID 40. If you come back over to the Calico platform and come over to the agent chat, let's take a look and confirm what the ID of this agent is. You can see it's agent ID 40. Perfect. So, let's run through these examples on this second agent. >> [music] >> I think we have our final results now. So, you can see here that indeed GPT-5.4 scored higher in this particular scenario, right? So, we tested our agent using GPT-4o Mini. It scored 79% and then we tested our agent using GPT-5.4 and it scored 94%. We're using the same LLM judge. All right, so let's take a look at",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 1017.2,
+      "end_seconds": 1141.08,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=1017s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "114a07b27d7e7ed6c837db758d8c39300a6ebcddfff4f35375f1e26103bec101",
+    "text": "So, we tested our agent using GPT-4o Mini. It scored 79% and then we tested our agent using GPT-5.4 and it scored 94%. We're using the same LLM judge. All right, so let's take a look at this example. So, what topics were covered in AI school? And then let's look for the same example. What topics were covered in AI school. Nice. So, GPT 5.4 picked that out from the knowledge base. But, GPT 4.0 mini did not. All right? And this is making sense, right? Now, let's move on to a more expanded test scenario. This is a simple one with a limited amount of data just to get a gist of how this works. The more expanded one should give us a broader view of how our system behaves in different scenarios. We are now going to expand out, right? And do a broader test. The first way that we're going to expand out is by including more examples in our data set. So, we were previously testing with this data set that had about 70-ish examples in it, and we're going to 2x to 3x the amount of examples. That's what you see here in this data set. I'm going to mask this to not expose any sensitive data. And the other way we're going to expand",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 1120.56,
+      "end_seconds": 1235.8000000000002,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=1120s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a7b021611ede3ce5d4b63eeee3939421c012682480cf41b5f82a350677b03e28",
+    "text": "2x to 3x the amount of examples. That's what you see here in this data set. I'm going to mask this to not expose any sensitive data. And the other way we're going to expand out on our LLM as a judge example, right? Is we're going to test more variations of our target system. So, we're going to be testing a variation of our agent that uses Gemini 3.1 Pro preview as its LLM or brain, and then another variation of the agent that uses Claude Opus 4.6 as its LLM or brain. So, let's fire off all of these experiments. And we will return when they all have finished. >> [music] [music] >> Okay, so here are the final results. You can see that we tested with a data set of 168 examples. We ran four experiments. AKA we ran a variation of our agent that uses GPT-4o-mini as its LLM, another one that uses GPT-5.4 as its LLM, another one that uses Claude-Opus-4.6 as its LLM, and finally a variation of our agent that uses Gemini-3.1-Pro as its LLM. And these were our final LLM judge scores. You can see that Gemini-3.1-Pro edged out all of these other variations. And I think an interesting result is how one of the older Open AI models, AKA GPT-4o-mini, performed better than one of the newer",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 1219.64,
+      "end_seconds": 1346.6399999999999,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=1219s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "28ecccea2e1b3a934639a01f182cc1f27663002c8152ca6056e3ed75248b145d",
+    "text": "scores. You can see that Gemini-3.1-Pro edged out all of these other variations. And I think an interesting result is how one of the older Open AI models, AKA GPT-4o-mini, performed better than one of the newer Open AI models, AKA GPT-5.4. So we were only testing with one evaluator. Sometimes you'll do multiple evaluators in order to test your results from different angles, but we want to keep it simple for now. And yeah, hopefully this gives you a good idea of how this works in practice. FYI, this took about an hour for them all to complete. For this final bonus section, I will leave you with this, which is a brand new concept or idea that was introduced to me by an individual who goes by the name of Jose Luis Muños. The concept or idea I'm referring to is called auto research and it was created by an individual who goes by the name of Andrej Karpathy. If you've never heard of this Karpathy character, he was formerly the director of AI at Tesla and before that he was one of the founding engineers at OpenAI and to this day he is a well of new ideas in the AI sphere. So, the gist of this auto research concept is pretty much everything that we've done up until this point in this",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 1321.0,
+      "end_seconds": 1415.1599999999999,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=1321s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7b8155d73a08cad65e2c688d727c90725b3f13c07341fc0b73ef9d20e87314db",
+    "text": "engineers at OpenAI and to this day he is a well of new ideas in the AI sphere. So, the gist of this auto research concept is pretty much everything that we've done up until this point in this video taken to the next level. Here's what I mean. So, if you've watched closely as we move through this video, pretty much what we've been doing is running some evaluations against some target system and after each round of evaluations, we observe the outputs and that then will prompt us to test out various tweaks of our target system and then rerun another round of evaluations and that's pretty much the pattern of what we've been doing here, right? So, test the system, tweak the system, test the system, tweak the system, test the system, tweak the system, etc. So, if you take this pattern to the next level you can imagine how instead of us tweaking the system and us rerunning the evaluations, we could delegate an AI agent to tweak our target system for us and after each set of tweaks rerun a set of evaluations and then observe how these tweaks are affecting the performance against whichever evaluations or metrics or benchmarks exist in the evals, right? So Hopefully I didn't say that in a confusing way, but pretty much what I'm",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 1400.48,
+      "end_seconds": 1493.52,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=1400s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9c152883f7bab8716692123e6dfd61e155e8830b88fd272b98027ffa7a00bb4f",
+    "text": "and then observe how these tweaks are affecting the performance against whichever evaluations or metrics or benchmarks exist in the evals, right? So Hopefully I didn't say that in a confusing way, but pretty much what I'm saying is we could automate what we're doing and delegate it to an AI agent. And you can imagine we could leave this auto research agent running for a few hours or perhaps a few days or or perhaps a few weeks. And at the end of this auto research loop, you would be left with a set of insights or customizations that we could make to our system that would hyper-optimize it against whichever benchmarks or evals have been tested within this auto research loop. So, it pretty much automates out the testing and {quote} researching of optimizations that can be made to a system. So, this is literally brand new stuff and I think it shows the direction of where this LLM as a judge technique is going next. So, keep exploring, keep having fun. Blessings, health, wealth, all the good things. See you for the next one.",
+    "metadata": {
+      "video_id": "qoPYlLg7_rY",
+      "title": "LLM-as-a-Judge Evals with LangSmith",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Evaluation",
+      "start_seconds": 1474.12,
+      "end_seconds": 1553.0,
+      "url": "https://www.youtube.com/watch?v=qoPYlLg7_rY&t=1474s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

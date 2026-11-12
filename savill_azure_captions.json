@@ -1,0 +1,8333 @@
+{
+  "video_id": "BqNbzeuxTaE",
+  "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+  "channel": "John Savill's Technical Training",
+  "trainer": "John Savill",
+  "topic": "Azure",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 3680.0,
+  "segments": [
+    {
+      "start": 0.4,
+      "end": 6.32,
+      "text": "So, welcome to session one, cloud and"
+    },
+    {
+      "start": 3.56,
+      "end": 7.68,
+      "text": "Microsoft Azure 101. So, the goal of"
+    },
+    {
+      "start": 6.32,
+      "end": 9.92,
+      "text": "this session is to provide an"
+    },
+    {
+      "start": 7.68,
+      "end": 11.92,
+      "text": "introduction to the different types of"
+    },
+    {
+      "start": 9.92,
+      "end": 14.4,
+      "text": "cloud service,"
+    },
+    {
+      "start": 11.92,
+      "end": 16.96,
+      "text": "dive into specifics about Microsoft"
+    },
+    {
+      "start": 14.4,
+      "end": 19.76,
+      "text": "Azure and its offerings."
+    },
+    {
+      "start": 16.96,
+      "end": 22.32,
+      "text": "What are as a service offerings? What do"
+    },
+    {
+      "start": 19.76,
+      "end": 24.92,
+      "text": "they mean? And then how I can actually"
+    },
+    {
+      "start": 22.32,
+      "end": 27.6,
+      "text": "acquire and leverage Azure services."
+    },
+    {
+      "start": 24.92,
+      "end": 30.560000000000002,
+      "text": "That's the goal of this module."
+    },
+    {
+      "start": 27.6,
+      "end": 32.88,
+      "text": "Now, if I think about cloud services,"
+    },
+    {
+      "start": 30.56,
+      "end": 34.4,
+      "text": "there are many different types of cloud"
+    },
+    {
+      "start": 32.88,
+      "end": 37.800000000000004,
+      "text": "service."
+    },
+    {
+      "start": 34.4,
+      "end": 40.08,
+      "text": "Now, the definition of what they mean"
+    },
+    {
+      "start": 37.8,
+      "end": 42.199999999999996,
+      "text": "can vary based on well, where the"
+    },
+    {
+      "start": 40.08,
+      "end": 45.04,
+      "text": "services are hosted,"
+    },
+    {
+      "start": 42.2,
+      "end": 48.36,
+      "text": "who owns, who provides the service,"
+    },
+    {
+      "start": 45.04,
+      "end": 50.48,
+      "text": "maybe how I access the service."
+    },
+    {
+      "start": 48.36,
+      "end": 53.28,
+      "text": "So, I can think about the first one is"
+    },
+    {
+      "start": 50.48,
+      "end": 55.12,
+      "text": "going to be a private cloud."
+    },
+    {
+      "start": 53.28,
+      "end": 59.160000000000004,
+      "text": "So, with a private cloud,"
+    },
+    {
+      "start": 55.12,
+      "end": 61.839999999999996,
+      "text": "I have full access as a company to all"
+    },
+    {
+      "start": 59.16,
+      "end": 64.6,
+      "text": "of the different aspects, the hardware,"
+    },
+    {
+      "start": 61.84,
+      "end": 65.56,
+      "text": "the operating system, the applications."
+    },
+    {
+      "start": 64.6,
+      "end": 67.39999999999999,
+      "text": "So, I'm going to have a certain amount"
+    },
+    {
+      "start": 65.56,
+      "end": 70.12,
+      "text": "of capacity"
+    },
+    {
+      "start": 67.4,
+      "end": 72.36,
+      "text": "that I then expose as different types of"
+    },
+    {
+      "start": 70.12,
+      "end": 74.56,
+      "text": "resource. Now, this might just be"
+    },
+    {
+      "start": 72.36,
+      "end": 75.8,
+      "text": "virtual machines, maybe it's containers,"
+    },
+    {
+      "start": 74.56,
+      "end": 78.64,
+      "text": "maybe it's different types of database"
+    },
+    {
+      "start": 75.8,
+      "end": 80.88,
+      "text": "service, but it's typically limited."
+    },
+    {
+      "start": 78.64,
+      "end": 83.08,
+      "text": "And really what differentiates just how"
+    },
+    {
+      "start": 80.88,
+      "end": 86.56,
+      "text": "I'm running a hypervisor to I'm running"
+    },
+    {
+      "start": 83.08,
+      "end": 89.16,
+      "text": "a private cloud would be the management"
+    },
+    {
+      "start": 86.56,
+      "end": 91.88,
+      "text": "infrastructure that I put on top of it"
+    },
+    {
+      "start": 89.16,
+      "end": 93.24,
+      "text": "to provide services to the people in my"
+    },
+    {
+      "start": 91.88,
+      "end": 94.92,
+      "text": "company."
+    },
+    {
+      "start": 93.24,
+      "end": 98.88,
+      "text": "And so, if I think for a second about"
+    },
+    {
+      "start": 94.92,
+      "end": 102.28,
+      "text": "it, when I think private cloud,"
+    },
+    {
+      "start": 98.88,
+      "end": 103.47999999999999,
+      "text": "so this is my organization, so I'm on"
+    },
+    {
+      "start": 102.28,
+      "end": 107.04,
+      "text": "premises,"
+    },
+    {
+      "start": 103.48,
+      "end": 108.36,
+      "text": "and I have my various servers"
+    },
+    {
+      "start": 107.04,
+      "end": 109.88000000000001,
+      "text": "that can obviously host virtual"
+    },
+    {
+      "start": 108.36,
+      "end": 111.4,
+      "text": "machines,"
+    },
+    {
+      "start": 109.88,
+      "end": 114.36,
+      "text": "but maybe on top of that I then maybe"
+    },
+    {
+      "start": 111.4,
+      "end": 116.32000000000001,
+      "text": "host things like containers,"
+    },
+    {
+      "start": 114.36,
+      "end": 119.4,
+      "text": "but I'm going to have some management"
+    },
+    {
+      "start": 116.32,
+      "end": 122.47999999999999,
+      "text": "layer sitting on top of this"
+    },
+    {
+      "start": 119.4,
+      "end": 124.68,
+      "text": "that exposes capabilities to the people"
+    },
+    {
+      "start": 122.48,
+      "end": 126.52000000000001,
+      "text": "in my organization."
+    },
+    {
+      "start": 124.68,
+      "end": 129.16,
+      "text": "So, they could then maybe via a portal"
+    },
+    {
+      "start": 126.52,
+      "end": 131.07999999999998,
+      "text": "go and provision services, consume the"
+    },
+    {
+      "start": 129.16,
+      "end": 133.0,
+      "text": "services, see what they're using, stop"
+    },
+    {
+      "start": 131.08,
+      "end": 134.76000000000002,
+      "text": "and start them, as opposed to just"
+    },
+    {
+      "start": 133.0,
+      "end": 136.96,
+      "text": "having to send a service ticket to the"
+    },
+    {
+      "start": 134.76,
+      "end": 139.12,
+      "text": "operations team say, \"Hey, please go and"
+    },
+    {
+      "start": 136.96,
+      "end": 141.52,
+      "text": "create this.\" So, this would be hey, I"
+    },
+    {
+      "start": 139.12,
+      "end": 143.32,
+      "text": "I've got a private cloud because it's"
+    },
+    {
+      "start": 141.52,
+      "end": 145.24,
+      "text": "things in my environment that I'm"
+    },
+    {
+      "start": 143.32,
+      "end": 148.32,
+      "text": "hosting"
+    },
+    {
+      "start": 145.24,
+      "end": 151.56,
+      "text": "um that my people in my company can then"
+    },
+    {
+      "start": 148.32,
+      "end": 153.84,
+      "text": "go and consume."
+    },
+    {
+      "start": 151.56,
+      "end": 156.52,
+      "text": "Now, as we move on from that, the next"
+    },
+    {
+      "start": 153.84,
+      "end": 159.96,
+      "text": "thing we can have is the idea of a"
+    },
+    {
+      "start": 156.52,
+      "end": 163.24,
+      "text": "public cloud. So, with a public cloud,"
+    },
+    {
+      "start": 159.96,
+      "end": 164.36,
+      "text": "this is an external party providing the"
+    },
+    {
+      "start": 163.24,
+      "end": 165.44,
+      "text": "service,"
+    },
+    {
+      "start": 164.36,
+      "end": 166.84,
+      "text": "and"
+    },
+    {
+      "start": 165.44,
+      "end": 168.76,
+      "text": "primarily,"
+    },
+    {
+      "start": 166.84,
+      "end": 170.08,
+      "text": "it's available and accessed over the"
+    },
+    {
+      "start": 168.76,
+      "end": 172.51999999999998,
+      "text": "internet."
+    },
+    {
+      "start": 170.08,
+      "end": 174.24,
+      "text": "However, very often they'll also expose"
+    },
+    {
+      "start": 172.52,
+      "end": 177.48000000000002,
+      "text": "the ability to connect to it on a more"
+    },
+    {
+      "start": 174.24,
+      "end": 178.76000000000002,
+      "text": "private um type of connectivity. So,"
+    },
+    {
+      "start": 177.48,
+      "end": 180.92,
+      "text": "this would be an example of Microsoft"
+    },
+    {
+      "start": 178.76,
+      "end": 184.28,
+      "text": "Azure, obviously, which is our focus,"
+    },
+    {
+      "start": 180.92,
+      "end": 186.2,
+      "text": "Amazon Web Services, Google Cloud."
+    },
+    {
+      "start": 184.28,
+      "end": 188.04,
+      "text": "And here, there's a shift in the"
+    },
+    {
+      "start": 186.2,
+      "end": 190.35999999999999,
+      "text": "responsibility"
+    },
+    {
+      "start": 188.04,
+      "end": 192.16,
+      "text": "for how I consume and how I leverage"
+    },
+    {
+      "start": 190.36,
+      "end": 195.36,
+      "text": "that service. And I'm going to be"
+    },
+    {
+      "start": 192.16,
+      "end": 196.92,
+      "text": "offered specific types of resource from"
+    },
+    {
+      "start": 195.36,
+      "end": 198.64000000000001,
+      "text": "that provider. So, I can't access"
+    },
+    {
+      "start": 196.92,
+      "end": 201.39999999999998,
+      "text": "everything."
+    },
+    {
+      "start": 198.64,
+      "end": 203.04,
+      "text": "And the types of resource will vary by"
+    },
+    {
+      "start": 201.4,
+      "end": 205.48000000000002,
+      "text": "cloud provider, but typically they're"
+    },
+    {
+      "start": 203.04,
+      "end": 207.07999999999998,
+      "text": "far more diverse"
+    },
+    {
+      "start": 205.48,
+      "end": 208.56,
+      "text": "than what I would be able to offer on"
+    },
+    {
+      "start": 207.08,
+      "end": 210.04000000000002,
+      "text": "premises."
+    },
+    {
+      "start": 208.56,
+      "end": 212.52,
+      "text": "There's typically a very powerful"
+    },
+    {
+      "start": 210.04,
+      "end": 215.64,
+      "text": "control plane and interaction that"
+    },
+    {
+      "start": 212.52,
+      "end": 218.08,
+      "text": "exposes a lot of capability. There'll be"
+    },
+    {
+      "start": 215.64,
+      "end": 220.32,
+      "text": "things like policy and governance, lots"
+    },
+    {
+      "start": 218.08,
+      "end": 222.8,
+      "text": "of security solutions just built into"
+    },
+    {
+      "start": 220.32,
+      "end": 224.4,
+      "text": "that. And of course, Azure is a public"
+    },
+    {
+      "start": 222.8,
+      "end": 225.88000000000002,
+      "text": "cloud solution."
+    },
+    {
+      "start": 224.4,
+      "end": 227.48000000000002,
+      "text": "And so, if we jump back to our little"
+    },
+    {
+      "start": 225.88,
+      "end": 231.12,
+      "text": "picture,"
+    },
+    {
+      "start": 227.48,
+      "end": 232.56,
+      "text": "so from a public cloud,"
+    },
+    {
+      "start": 231.12,
+      "end": 234.52,
+      "text": "so this would be a public cloud"
+    },
+    {
+      "start": 232.56,
+      "end": 236.2,
+      "text": "solution,"
+    },
+    {
+      "start": 234.52,
+      "end": 237.68,
+      "text": "there still is infrastructure. Like this"
+    },
+    {
+      "start": 236.2,
+      "end": 240.11999999999998,
+      "text": "isn't magic, there's still"
+    },
+    {
+      "start": 237.68,
+      "end": 242.88,
+      "text": "infrastructure running here in the"
+    },
+    {
+      "start": 240.12,
+      "end": 245.4,
+      "text": "clouds, but I don't see any of that."
+    },
+    {
+      "start": 242.88,
+      "end": 247.24,
+      "text": "I have some control plane that I"
+    },
+    {
+      "start": 245.4,
+      "end": 249.36,
+      "text": "interact with,"
+    },
+    {
+      "start": 247.24,
+      "end": 252.12,
+      "text": "and I just see different types of"
+    },
+    {
+      "start": 249.36,
+      "end": 255.96,
+      "text": "resource. So, there's absolutely still"
+    },
+    {
+      "start": 252.12,
+      "end": 258.88,
+      "text": "capacity, servers, storage, but it's"
+    },
+    {
+      "start": 255.96,
+      "end": 260.64,
+      "text": "hidden from me. I get exposed types of"
+    },
+    {
+      "start": 258.88,
+      "end": 263.08,
+      "text": "resource. And yes, there's basic things"
+    },
+    {
+      "start": 260.64,
+      "end": 266.08,
+      "text": "like virtual machines, but I'll also see"
+    },
+    {
+      "start": 263.08,
+      "end": 267.88,
+      "text": "AI services and database services, all"
+    },
+    {
+      "start": 266.08,
+      "end": 271.71999999999997,
+      "text": "these different capabilities. And I'll"
+    },
+    {
+      "start": 267.88,
+      "end": 273.64,
+      "text": "have a really rich control plane"
+    },
+    {
+      "start": 271.72,
+      "end": 277.08000000000004,
+      "text": "through which I interact, maybe via"
+    },
+    {
+      "start": 273.64,
+      "end": 278.64,
+      "text": "APIs, maybe via command line interfaces,"
+    },
+    {
+      "start": 277.08,
+      "end": 279.35999999999996,
+      "text": "uh portals."
+    },
+    {
+      "start": 278.64,
+      "end": 281.12,
+      "text": "I can do great things like"
+    },
+    {
+      "start": 279.36,
+      "end": 284.04,
+      "text": "infrastructure as code and declaratively"
+    },
+    {
+      "start": 281.12,
+      "end": 285.56,
+      "text": "state the resources I want."
+    },
+    {
+      "start": 284.04,
+      "end": 287.56,
+      "text": "And I'm going to access it through"
+    },
+    {
+      "start": 285.56,
+      "end": 289.88,
+      "text": "different means. Yes, it may be internet"
+    },
+    {
+      "start": 287.56,
+      "end": 293.52,
+      "text": "facing, but maybe I do establish a a"
+    },
+    {
+      "start": 289.88,
+      "end": 295.96,
+      "text": "private connection between my locations"
+    },
+    {
+      "start": 293.52,
+      "end": 298.08,
+      "text": "and that cloud capability."
+    },
+    {
+      "start": 295.96,
+      "end": 300.2,
+      "text": "So, the public cloud is obviously a big"
+    },
+    {
+      "start": 298.08,
+      "end": 302.32,
+      "text": "focus of what we're talking about right"
+    },
+    {
+      "start": 300.2,
+      "end": 303.92,
+      "text": "here."
+    },
+    {
+      "start": 302.32,
+      "end": 306.52,
+      "text": "Now,"
+    },
+    {
+      "start": 303.92,
+      "end": 309.72,
+      "text": "moving on from that,"
+    },
+    {
+      "start": 306.52,
+      "end": 311.03999999999996,
+      "text": "we also have the idea of a community"
+    },
+    {
+      "start": 309.72,
+      "end": 314.40000000000003,
+      "text": "cloud."
+    },
+    {
+      "start": 311.04,
+      "end": 317.20000000000005,
+      "text": "Now, here, some organizations may share"
+    },
+    {
+      "start": 314.4,
+      "end": 318.88,
+      "text": "a certain set of infrastructure."
+    },
+    {
+      "start": 317.2,
+      "end": 321.32,
+      "text": "For example, governments. Governments"
+    },
+    {
+      "start": 318.88,
+      "end": 324.68,
+      "text": "commonly use community clouds for their"
+    },
+    {
+      "start": 321.32,
+      "end": 326.88,
+      "text": "various agencies. So, it's not just one"
+    },
+    {
+      "start": 324.68,
+      "end": 330.0,
+      "text": "um entity, but there's a group of"
+    },
+    {
+      "start": 326.88,
+      "end": 331.6,
+      "text": "organizations will share that."
+    },
+    {
+      "start": 330.0,
+      "end": 334.88,
+      "text": "And then finally,"
+    },
+    {
+      "start": 331.6,
+      "end": 338.64000000000004,
+      "text": "we have the option of hybrid cloud."
+    },
+    {
+      "start": 334.88,
+      "end": 341.04,
+      "text": "And hybrid is where hey, I'm using some"
+    },
+    {
+      "start": 338.64,
+      "end": 342.8,
+      "text": "other cloud like the public cloud,"
+    },
+    {
+      "start": 341.04,
+      "end": 344.12,
+      "text": "but I also still have things on"
+    },
+    {
+      "start": 342.8,
+      "end": 347.08,
+      "text": "premises. And most companies are going"
+    },
+    {
+      "start": 344.12,
+      "end": 348.8,
+      "text": "to be in this state for quite some time."
+    },
+    {
+      "start": 347.08,
+      "end": 350.44,
+      "text": "Now, it doesn't mean they're completely"
+    },
+    {
+      "start": 348.8,
+      "end": 352.32,
+      "text": "different control planes and ways I"
+    },
+    {
+      "start": 350.44,
+      "end": 353.68,
+      "text": "interact. One of the nice things that"
+    },
+    {
+      "start": 352.32,
+      "end": 354.96,
+      "text": "we'll see and we'll go through this in"
+    },
+    {
+      "start": 353.68,
+      "end": 357.56,
+      "text": "Azure,"
+    },
+    {
+      "start": 354.96,
+      "end": 360.12,
+      "text": "is I can extend that control plane from"
+    },
+    {
+      "start": 357.56,
+      "end": 362.64,
+      "text": "Azure and bring it to things in other"
+    },
+    {
+      "start": 360.12,
+      "end": 364.88,
+      "text": "clouds and on premises. This is called"
+    },
+    {
+      "start": 362.64,
+      "end": 367.91999999999996,
+      "text": "Azure Arc. There's also things like"
+    },
+    {
+      "start": 364.88,
+      "end": 371.76,
+      "text": "Azure local that gives me the ability to"
+    },
+    {
+      "start": 367.92,
+      "end": 374.68,
+      "text": "actually have certain Azure services"
+    },
+    {
+      "start": 371.76,
+      "end": 376.56,
+      "text": "running on my own premises. So, that can"
+    },
+    {
+      "start": 374.68,
+      "end": 379.12,
+      "text": "be very advantageous from that"
+    },
+    {
+      "start": 376.56,
+      "end": 381.32,
+      "text": "perspective."
+    },
+    {
+      "start": 379.12,
+      "end": 383.4,
+      "text": "Now, when I think about um what is a"
+    },
+    {
+      "start": 381.32,
+      "end": 385.71999999999997,
+      "text": "cloud, there's always a a a funny thing"
+    },
+    {
+      "start": 383.4,
+      "end": 387.12,
+      "text": "here. There's a I had a customer once,"
+    },
+    {
+      "start": 385.72,
+      "end": 388.56,
+      "text": "and they said you can ask five different"
+    },
+    {
+      "start": 387.12,
+      "end": 389.88,
+      "text": "people for the definition of a cloud and"
+    },
+    {
+      "start": 388.56,
+      "end": 391.72,
+      "text": "you'll get seven different answers. So,"
+    },
+    {
+      "start": 389.88,
+      "end": 393.71999999999997,
+      "text": "there are many, many different"
+    },
+    {
+      "start": 391.72,
+      "end": 397.32000000000005,
+      "text": "definitions."
+    },
+    {
+      "start": 393.72,
+      "end": 400.08000000000004,
+      "text": "But, the US NIST, National Institute of"
+    },
+    {
+      "start": 397.32,
+      "end": 402.52,
+      "text": "Standards and Technology, they have five"
+    },
+    {
+      "start": 400.08,
+      "end": 405.52,
+      "text": "specific characteristics that they talk"
+    },
+    {
+      "start": 402.52,
+      "end": 408.12,
+      "text": "about that something must be to have and"
+    },
+    {
+      "start": 405.52,
+      "end": 409.52,
+      "text": "be classified as a cloud."
+    },
+    {
+      "start": 408.12,
+      "end": 411.68,
+      "text": "So, the first one is the idea of"
+    },
+    {
+      "start": 409.52,
+      "end": 413.91999999999996,
+      "text": "on-demand self-service."
+    },
+    {
+      "start": 411.68,
+      "end": 415.6,
+      "text": "So, the goal here is as the consumer of"
+    },
+    {
+      "start": 413.92,
+      "end": 417.88,
+      "text": "a service,"
+    },
+    {
+      "start": 415.6,
+      "end": 420.24,
+      "text": "I can just"
+    },
+    {
+      "start": 417.88,
+      "end": 421.76,
+      "text": "on my own provision computing"
+    },
+    {
+      "start": 420.24,
+      "end": 423.28000000000003,
+      "text": "capabilities."
+    },
+    {
+      "start": 421.76,
+      "end": 424.96,
+      "text": "Um"
+    },
+    {
+      "start": 423.28,
+      "end": 427.35999999999996,
+      "text": "provision storage"
+    },
+    {
+      "start": 424.96,
+      "end": 429.4,
+      "text": "without requiring some other human"
+    },
+    {
+      "start": 427.36,
+      "end": 431.52000000000004,
+      "text": "interaction."
+    },
+    {
+      "start": 429.4,
+      "end": 433.0,
+      "text": "And this can actually be very scary for"
+    },
+    {
+      "start": 431.52,
+      "end": 435.12,
+      "text": "most organizations when they have now"
+    },
+    {
+      "start": 433.0,
+      "end": 436.64,
+      "text": "users doing self-service. Well, hey, how"
+    },
+    {
+      "start": 435.12,
+      "end": 438.04,
+      "text": "do I control them? Well, that's where"
+    },
+    {
+      "start": 436.64,
+      "end": 439.59999999999997,
+      "text": "governance comes in, and we're going to"
+    },
+    {
+      "start": 438.04,
+      "end": 442.40000000000003,
+      "text": "talk about that."
+    },
+    {
+      "start": 439.6,
+      "end": 444.88,
+      "text": "But, that's a key aspect that hey, I"
+    },
+    {
+      "start": 442.4,
+      "end": 447.0,
+      "text": "have the ability to on-demand go and"
+    },
+    {
+      "start": 444.88,
+      "end": 448.44,
+      "text": "provision services within the budget,"
+    },
+    {
+      "start": 447.0,
+      "end": 452.2,
+      "text": "within the constraints that the"
+    },
+    {
+      "start": 448.44,
+      "end": 454.56,
+      "text": "governance has laid out for me."
+    },
+    {
+      "start": 452.2,
+      "end": 457.4,
+      "text": "We then think about the idea of broad"
+    },
+    {
+      "start": 454.56,
+      "end": 460.32,
+      "text": "network access. So, capabilities are"
+    },
+    {
+      "start": 457.4,
+      "end": 463.23999999999995,
+      "text": "available over the network and accessed"
+    },
+    {
+      "start": 460.32,
+      "end": 465.36,
+      "text": "through standard mechanisms. So, once"
+    },
+    {
+      "start": 463.24,
+      "end": 468.36,
+      "text": "again, this could be via the internet."
+    },
+    {
+      "start": 465.36,
+      "end": 470.64,
+      "text": "Many enterprises will establish private"
+    },
+    {
+      "start": 468.36,
+      "end": 473.56,
+      "text": "connectivity for some additional"
+    },
+    {
+      "start": 470.64,
+      "end": 476.08,
+      "text": "security, um more control over where the"
+    },
+    {
+      "start": 473.56,
+      "end": 478.0,
+      "text": "network is flowing,"
+    },
+    {
+      "start": 476.08,
+      "end": 481.0,
+      "text": "but the goal is this should be"
+    },
+    {
+      "start": 478.0,
+      "end": 483.52,
+      "text": "available to everyone. It's highly"
+    },
+    {
+      "start": 481.0,
+      "end": 485.44,
+      "text": "accessible."
+    },
+    {
+      "start": 483.52,
+      "end": 488.44,
+      "text": "And then I can think about resource"
+    },
+    {
+      "start": 485.44,
+      "end": 490.32,
+      "text": "pooling. So, the provider, they have all"
+    },
+    {
+      "start": 488.44,
+      "end": 493.68,
+      "text": "these different uh I guess you would"
+    },
+    {
+      "start": 490.32,
+      "end": 495.64,
+      "text": "think islands of resource,"
+    },
+    {
+      "start": 493.68,
+      "end": 497.64,
+      "text": "but they're pulled together. They're"
+    },
+    {
+      "start": 495.64,
+      "end": 500.52,
+      "text": "shared by multiple different consumers"
+    },
+    {
+      "start": 497.64,
+      "end": 503.44,
+      "text": "in a multi-tenant model. So, as I as a"
+    },
+    {
+      "start": 500.52,
+      "end": 505.35999999999996,
+      "text": "company consuming the cloud, I may be"
+    },
+    {
+      "start": 503.44,
+      "end": 507.8,
+      "text": "actually using the same server as"
+    },
+    {
+      "start": 505.36,
+      "end": 511.04,
+      "text": "another company, but they use strong"
+    },
+    {
+      "start": 507.8,
+      "end": 512.08,
+      "text": "isolation technologies, hypervisors, uh"
+    },
+    {
+      "start": 511.04,
+      "end": 514.6800000000001,
+      "text": "other"
+    },
+    {
+      "start": 512.08,
+      "end": 516.8000000000001,
+      "text": "hardware based capabilities and software"
+    },
+    {
+      "start": 514.68,
+      "end": 519.4399999999999,
+      "text": "capabilities to ensure there's complete"
+    },
+    {
+      "start": 516.8,
+      "end": 521.4,
+      "text": "isolation between different tenants'"
+    },
+    {
+      "start": 519.44,
+      "end": 524.72,
+      "text": "resources."
+    },
+    {
+      "start": 521.4,
+      "end": 526.3199999999999,
+      "text": "So, I have this pool of resources as the"
+    },
+    {
+      "start": 524.72,
+      "end": 527.9200000000001,
+      "text": "provider"
+    },
+    {
+      "start": 526.32,
+      "end": 529.48,
+      "text": "that my different customers can go and"
+    },
+    {
+      "start": 527.92,
+      "end": 531.56,
+      "text": "consume."
+    },
+    {
+      "start": 529.48,
+      "end": 533.48,
+      "text": "And I don't really have to worry about"
+    },
+    {
+      "start": 531.56,
+      "end": 536.3599999999999,
+      "text": "well, which building is that in, which"
+    },
+    {
+      "start": 533.48,
+      "end": 538.44,
+      "text": "rack is that in. I just go and consume"
+    },
+    {
+      "start": 536.36,
+      "end": 543.12,
+      "text": "the services that I need. That's really"
+    },
+    {
+      "start": 538.44,
+      "end": 545.4000000000001,
+      "text": "a a key point to what we do within here."
+    },
+    {
+      "start": 543.12,
+      "end": 548.52,
+      "text": "Then I can think about"
+    },
+    {
+      "start": 545.4,
+      "end": 551.28,
+      "text": "rapid elasticity."
+    },
+    {
+      "start": 548.52,
+      "end": 555.28,
+      "text": "I want the ability to create new"
+    },
+    {
+      "start": 551.28,
+      "end": 558.12,
+      "text": "instances of my service and remove them"
+    },
+    {
+      "start": 555.28,
+      "end": 560.3199999999999,
+      "text": "as I need to, automatically scale. I"
+    },
+    {
+      "start": 558.12,
+      "end": 563.48,
+      "text": "want the capacity that I have"
+    },
+    {
+      "start": 560.32,
+      "end": 565.2,
+      "text": "provisioned to match the workload that's"
+    },
+    {
+      "start": 563.48,
+      "end": 567.6,
+      "text": "coming in that they need to do. So, my"
+    },
+    {
+      "start": 565.2,
+      "end": 569.24,
+      "text": "capacity is matching the demand. I don't"
+    },
+    {
+      "start": 567.6,
+      "end": 570.6800000000001,
+      "text": "want to have to just have 10 instances"
+    },
+    {
+      "start": 569.24,
+      "end": 573.28,
+      "text": "of something running all the time and"
+    },
+    {
+      "start": 570.68,
+      "end": 574.76,
+      "text": "pay for that. Instead, I want to be able"
+    },
+    {
+      "start": 573.28,
+      "end": 577.4,
+      "text": "to maybe have three instances, then"
+    },
+    {
+      "start": 574.76,
+      "end": 580.16,
+      "text": "five, then seven, then three. It's going"
+    },
+    {
+      "start": 577.4,
+      "end": 583.36,
+      "text": "to be able to be very elastic, changing"
+    },
+    {
+      "start": 580.16,
+      "end": 586.52,
+      "text": "the amount of resource I'm consuming"
+    },
+    {
+      "start": 583.36,
+      "end": 587.72,
+      "text": "as I need to. And maybe that's based on"
+    },
+    {
+      "start": 586.52,
+      "end": 589.8,
+      "text": "the work that's coming in, maybe it's"
+    },
+    {
+      "start": 587.72,
+      "end": 593.28,
+      "text": "based on some schedule,"
+    },
+    {
+      "start": 589.8,
+      "end": 596.16,
+      "text": "but I essentially think of the cloud as"
+    },
+    {
+      "start": 593.28,
+      "end": 597.6,
+      "text": "this infinite amount of resource,"
+    },
+    {
+      "start": 596.16,
+      "end": 599.7199999999999,
+      "text": "and I can just go and provision what I"
+    },
+    {
+      "start": 597.6,
+      "end": 600.84,
+      "text": "want whenever I want."
+    },
+    {
+      "start": 599.72,
+      "end": 602.52,
+      "text": "Now,"
+    },
+    {
+      "start": 600.84,
+      "end": 605.36,
+      "text": "there obviously is a finite amount of"
+    },
+    {
+      "start": 602.52,
+      "end": 606.84,
+      "text": "capacity, the more specific I am. If I"
+    },
+    {
+      "start": 605.36,
+      "end": 608.6,
+      "text": "say, \"Hey, I have to create in this"
+    },
+    {
+      "start": 606.84,
+      "end": 611.0,
+      "text": "particular region and this particular"
+    },
+    {
+      "start": 608.6,
+      "end": 613.52,
+      "text": "zone of this very specific VM type.\""
+    },
+    {
+      "start": 611.0,
+      "end": 615.6,
+      "text": "Well, there might be a a certain limit"
+    },
+    {
+      "start": 613.52,
+      "end": 619.04,
+      "text": "that's available. So, the more flexible"
+    },
+    {
+      "start": 615.6,
+      "end": 622.0,
+      "text": "you can be with regions and SKUs,"
+    },
+    {
+      "start": 619.04,
+      "end": 625.0,
+      "text": "the more realistic that infinite amount"
+    },
+    {
+      "start": 622.0,
+      "end": 626.44,
+      "text": "of capacity actually becomes."
+    },
+    {
+      "start": 625.0,
+      "end": 627.96,
+      "text": "And then I can think about it's a"
+    },
+    {
+      "start": 626.44,
+      "end": 630.12,
+      "text": "measured service."
+    },
+    {
+      "start": 627.96,
+      "end": 632.52,
+      "text": "So, the goal is there should be metering"
+    },
+    {
+      "start": 630.12,
+      "end": 636.32,
+      "text": "and even budgets"
+    },
+    {
+      "start": 632.52,
+      "end": 638.96,
+      "text": "that show me exactly what I am consuming"
+    },
+    {
+      "start": 636.32,
+      "end": 640.7600000000001,
+      "text": "within these services. I might be able"
+    },
+    {
+      "start": 638.96,
+      "end": 643.48,
+      "text": "to use things like tagging where I can"
+    },
+    {
+      "start": 640.76,
+      "end": 645.92,
+      "text": "add metadata to resources"
+    },
+    {
+      "start": 643.48,
+      "end": 648.52,
+      "text": "to know, \"Hey, a specific department has"
+    },
+    {
+      "start": 645.92,
+      "end": 650.8,
+      "text": "consumed this much and another"
+    },
+    {
+      "start": 648.52,
+      "end": 652.48,
+      "text": "application has consumed this much.\" As"
+    },
+    {
+      "start": 650.8,
+      "end": 656.1999999999999,
+      "text": "opposed to just getting one great big"
+    },
+    {
+      "start": 652.48,
+      "end": 658.52,
+      "text": "bill. So, I'll be able to see exactly"
+    },
+    {
+      "start": 656.2,
+      "end": 660.5600000000001,
+      "text": "what I have consumed cuz in these"
+    },
+    {
+      "start": 658.52,
+      "end": 662.0,
+      "text": "services, generally I I pay for what I"
+    },
+    {
+      "start": 660.56,
+      "end": 665.0799999999999,
+      "text": "consume. So, I'm going to be able to see"
+    },
+    {
+      "start": 662.0,
+      "end": 666.56,
+      "text": "that measured service."
+    },
+    {
+      "start": 665.08,
+      "end": 668.4000000000001,
+      "text": "Now,"
+    },
+    {
+      "start": 666.56,
+      "end": 671.1199999999999,
+      "text": "as the user,"
+    },
+    {
+      "start": 668.4,
+      "end": 673.04,
+      "text": "we will have very limited interaction"
+    },
+    {
+      "start": 671.12,
+      "end": 674.839,
+      "text": "with the service provider. We'll have"
+    },
+    {
+      "start": 673.04,
+      "end": 676.88,
+      "text": "very limited access to the underlying"
+    },
+    {
+      "start": 674.839,
+      "end": 678.72,
+      "text": "resources. For example, in Azure, I"
+    },
+    {
+      "start": 676.88,
+      "end": 680.32,
+      "text": "can't go and look directly at physical"
+    },
+    {
+      "start": 678.72,
+      "end": 681.8000000000001,
+      "text": "host, nor would I want to. We're"
+    },
+    {
+      "start": 680.32,
+      "end": 683.7600000000001,
+      "text": "provided with a certain service, a"
+    },
+    {
+      "start": 681.8,
+      "end": 686.4,
+      "text": "particular type of resource. There's"
+    },
+    {
+      "start": 683.76,
+      "end": 688.56,
+      "text": "abstraction, there's classification."
+    },
+    {
+      "start": 686.4,
+      "end": 690.48,
+      "text": "I want to go and create a disk of a"
+    },
+    {
+      "start": 688.56,
+      "end": 692.88,
+      "text": "certain performance level. I want to go"
+    },
+    {
+      "start": 690.48,
+      "end": 695.24,
+      "text": "and create a virtual machine with this"
+    },
+    {
+      "start": 692.88,
+      "end": 698.12,
+      "text": "type of memory optimization or compute"
+    },
+    {
+      "start": 695.24,
+      "end": 699.44,
+      "text": "optimization of this size."
+    },
+    {
+      "start": 698.12,
+      "end": 702.0,
+      "text": "I don't have to worry about the"
+    },
+    {
+      "start": 699.44,
+      "end": 705.24,
+      "text": "specifics of the node that's running it"
+    },
+    {
+      "start": 702.0,
+      "end": 707.24,
+      "text": "or the disk that's hosting that actual"
+    },
+    {
+      "start": 705.24,
+      "end": 709.5600000000001,
+      "text": "virtual resource that I'm trying to"
+    },
+    {
+      "start": 707.24,
+      "end": 711.839,
+      "text": "create. I don't worry particularly"
+    },
+    {
+      "start": 709.56,
+      "end": 715.56,
+      "text": "about, \"Well, how many VLANs are there"
+    },
+    {
+      "start": 711.839,
+      "end": 715.5600000000001,
+      "text": "on this network segment?\""
+    },
+    {
+      "start": 715.92,
+      "end": 721.76,
+      "text": "So, let's dive in and think for a second"
+    },
+    {
+      "start": 718.96,
+      "end": 722.96,
+      "text": "about what do I mean by types of"
+    },
+    {
+      "start": 721.76,
+      "end": 724.28,
+      "text": "service?"
+    },
+    {
+      "start": 722.96,
+      "end": 726.2,
+      "text": "And we're going to start with types of"
+    },
+    {
+      "start": 724.28,
+      "end": 728.76,
+      "text": "service focusing on"
+    },
+    {
+      "start": 726.2,
+      "end": 728.76,
+      "text": "pizza."
+    },
+    {
+      "start": 728.92,
+      "end": 731.88,
+      "text": "And when we think of these types of as a"
+    },
+    {
+      "start": 730.44,
+      "end": 733.36,
+      "text": "service, this is this is going to be"
+    },
+    {
+      "start": 731.88,
+      "end": 735.0,
+      "text": "common for everything we do in the"
+    },
+    {
+      "start": 733.36,
+      "end": 736.76,
+      "text": "cloud. It's all about shifting"
+    },
+    {
+      "start": 735.0,
+      "end": 739.36,
+      "text": "responsibility."
+    },
+    {
+      "start": 736.76,
+      "end": 742.48,
+      "text": "Who is responsible for providing a"
+    },
+    {
+      "start": 739.36,
+      "end": 744.6800000000001,
+      "text": "certain aspect of the service?"
+    },
+    {
+      "start": 742.48,
+      "end": 746.5600000000001,
+      "text": "And as we move up the types of service,"
+    },
+    {
+      "start": 744.68,
+      "end": 748.0799999999999,
+      "text": "we're going to shift more and more"
+    },
+    {
+      "start": 746.56,
+      "end": 750.9599999999999,
+      "text": "responsibility."
+    },
+    {
+      "start": 748.08,
+      "end": 753.48,
+      "text": "But typically, I might pay more as I"
+    },
+    {
+      "start": 750.96,
+      "end": 755.1600000000001,
+      "text": "shift bits of that responsibility. But"
+    },
+    {
+      "start": 753.48,
+      "end": 758.6,
+      "text": "that may be offset by the fact that I"
+    },
+    {
+      "start": 755.16,
+      "end": 760.88,
+      "text": "only pay for what I actually need."
+    },
+    {
+      "start": 758.6,
+      "end": 762.8000000000001,
+      "text": "And so, if I think of pizza,"
+    },
+    {
+      "start": 760.88,
+      "end": 765.8,
+      "text": "well, pizza, there's the pizza dough,"
+    },
+    {
+      "start": 762.8,
+      "end": 768.8389999999999,
+      "text": "the sauce, the cheese, toppings. I need"
+    },
+    {
+      "start": 765.8,
+      "end": 771.5999999999999,
+      "text": "fire that runs inside the oven. I might"
+    },
+    {
+      "start": 768.839,
+      "end": 774.8000000000001,
+      "text": "need electric, uh gas. I might want"
+    },
+    {
+      "start": 771.6,
+      "end": 776.6,
+      "text": "drinks, I want table. At home, I have to"
+    },
+    {
+      "start": 774.8,
+      "end": 779.52,
+      "text": "provide all of that. So, I'm responsible"
+    },
+    {
+      "start": 776.6,
+      "end": 781.52,
+      "text": "for all of those things."
+    },
+    {
+      "start": 779.52,
+      "end": 782.92,
+      "text": "I can do take and bake. I go somewhere,"
+    },
+    {
+      "start": 781.52,
+      "end": 784.8389999999999,
+      "text": "they give me the pizza. It's not cooked"
+    },
+    {
+      "start": 782.92,
+      "end": 787.4399999999999,
+      "text": "yet, but they've provided the dough, the"
+    },
+    {
+      "start": 784.839,
+      "end": 789.5200000000001,
+      "text": "sauce, the cheese, the toppings."
+    },
+    {
+      "start": 787.44,
+      "end": 791.9200000000001,
+      "text": "I'm then responsible"
+    },
+    {
+      "start": 789.52,
+      "end": 793.96,
+      "text": "for actually cooking the thing,"
+    },
+    {
+      "start": 791.92,
+      "end": 796.56,
+      "text": "providing drinks to go with the thing,"
+    },
+    {
+      "start": 793.96,
+      "end": 798.24,
+      "text": "uh a table to eat it."
+    },
+    {
+      "start": 796.56,
+      "end": 800.88,
+      "text": "So, there's a certain amount of I am now"
+    },
+    {
+      "start": 798.24,
+      "end": 802.88,
+      "text": "responsible for more"
+    },
+    {
+      "start": 800.88,
+      "end": 803.8389999999999,
+      "text": "aspects"
+    },
+    {
+      "start": 802.88,
+      "end": 805.52,
+      "text": "compared to some of the other things"
+    },
+    {
+      "start": 803.839,
+      "end": 806.8800000000001,
+      "text": "we're going to talk about. But I've not"
+    },
+    {
+      "start": 805.52,
+      "end": 809.52,
+      "text": "had to worry about all of the raw"
+    },
+    {
+      "start": 806.88,
+      "end": 812.36,
+      "text": "materials, provide that the underlying"
+    },
+    {
+      "start": 809.52,
+      "end": 813.6,
+      "text": "pizza infrastructure in a way."
+    },
+    {
+      "start": 812.36,
+      "end": 816.44,
+      "text": "As you go up the levels, if a pizza's"
+    },
+    {
+      "start": 813.6,
+      "end": 818.44,
+      "text": "delivered, well, it's cooked."
+    },
+    {
+      "start": 816.44,
+      "end": 819.6,
+      "text": "I can"
+    },
+    {
+      "start": 818.44,
+      "end": 821.8800000000001,
+      "text": "really"
+    },
+    {
+      "start": 819.6,
+      "end": 823.52,
+      "text": "get a pizza based on what they offer."
+    },
+    {
+      "start": 821.88,
+      "end": 825.8389999999999,
+      "text": "And now, all I'm responsible for is the"
+    },
+    {
+      "start": 823.52,
+      "end": 827.28,
+      "text": "drink and somewhere to eat it at."
+    },
+    {
+      "start": 825.839,
+      "end": 828.96,
+      "text": "Compared to a restaurant, well, they do"
+    },
+    {
+      "start": 827.28,
+      "end": 830.4,
+      "text": "everything."
+    },
+    {
+      "start": 828.96,
+      "end": 832.0,
+      "text": "And you can see, generally, it gets a"
+    },
+    {
+      "start": 830.4,
+      "end": 834.12,
+      "text": "little bit more expensive, but I've"
+    },
+    {
+      "start": 832.0,
+      "end": 835.6,
+      "text": "shifted responsibility"
+    },
+    {
+      "start": 834.12,
+      "end": 837.76,
+      "text": "to all I'm responsible for now is"
+    },
+    {
+      "start": 835.6,
+      "end": 841.24,
+      "text": "putting in my face and chewing."
+    },
+    {
+      "start": 837.76,
+      "end": 844.2,
+      "text": "Um and generally in life, the less we"
+    },
+    {
+      "start": 841.24,
+      "end": 847.12,
+      "text": "are responsible for that's not key"
+    },
+    {
+      "start": 844.2,
+      "end": 850.1600000000001,
+      "text": "to our purpose, the better."
+    },
+    {
+      "start": 847.12,
+      "end": 853.6,
+      "text": "So, all things equal, generally, hey,"
+    },
+    {
+      "start": 850.16,
+      "end": 855.6,
+      "text": "I'd rather go and eat a pizza out."
+    },
+    {
+      "start": 853.6,
+      "end": 858.44,
+      "text": "So, now let's think about this in terms"
+    },
+    {
+      "start": 855.6,
+      "end": 861.839,
+      "text": "of for actual compute."
+    },
+    {
+      "start": 858.44,
+      "end": 863.36,
+      "text": "Now, those layers, now we have"
+    },
+    {
+      "start": 861.839,
+      "end": 865.8000000000001,
+      "text": "networking, storage, servers, a"
+    },
+    {
+      "start": 863.36,
+      "end": 867.8000000000001,
+      "text": "virtualization layer like a hypervisor,"
+    },
+    {
+      "start": 865.8,
+      "end": 870.28,
+      "text": "the operating system that runs inside"
+    },
+    {
+      "start": 867.8,
+      "end": 873.5999999999999,
+      "text": "virtual machine, Windows, Linux,"
+    },
+    {
+      "start": 870.28,
+      "end": 875.88,
+      "text": "middleware. So, middleware could be and"
+    },
+    {
+      "start": 873.6,
+      "end": 878.76,
+      "text": "runtimes, things like"
+    },
+    {
+      "start": 875.88,
+      "end": 880.68,
+      "text": "Java Enterprise Edition, J2EE, .NET. The"
+    },
+    {
+      "start": 878.76,
+      "end": 882.48,
+      "text": "middleware could be a messaging. Then I"
+    },
+    {
+      "start": 880.68,
+      "end": 884.7199999999999,
+      "text": "have the application that's providing"
+    },
+    {
+      "start": 882.48,
+      "end": 887.28,
+      "text": "some business function,"
+    },
+    {
+      "start": 884.72,
+      "end": 888.72,
+      "text": "and then the data."
+    },
+    {
+      "start": 887.28,
+      "end": 891.04,
+      "text": "And one of the big things when we talk"
+    },
+    {
+      "start": 888.72,
+      "end": 892.5600000000001,
+      "text": "about as a service and why we like these"
+    },
+    {
+      "start": 891.04,
+      "end": 894.64,
+      "text": "different things we're going to see is"
+    },
+    {
+      "start": 892.56,
+      "end": 896.959,
+      "text": "they're called the cloud cadence. It's a"
+    },
+    {
+      "start": 894.64,
+      "end": 899.1999999999999,
+      "text": "really big deal. The idea that in the"
+    },
+    {
+      "start": 896.959,
+      "end": 901.52,
+      "text": "cloud cadence,"
+    },
+    {
+      "start": 899.2,
+      "end": 904.6400000000001,
+      "text": "there's constant incremental new"
+    },
+    {
+      "start": 901.52,
+      "end": 907.3199999999999,
+      "text": "capabilities being introduced"
+    },
+    {
+      "start": 904.64,
+      "end": 909.4,
+      "text": "that give us new functionality, that"
+    },
+    {
+      "start": 907.32,
+      "end": 911.32,
+      "text": "makes something maybe more resilient."
+    },
+    {
+      "start": 909.4,
+      "end": 913.12,
+      "text": "And it's not like the old days where"
+    },
+    {
+      "start": 911.32,
+      "end": 914.6,
+      "text": "every 3 years we got a new version of"
+    },
+    {
+      "start": 913.12,
+      "end": 917.04,
+      "text": "Windows Server and we got this huge"
+    },
+    {
+      "start": 914.6,
+      "end": 920.0400000000001,
+      "text": "amount of new capability."
+    },
+    {
+      "start": 917.04,
+      "end": 922.0,
+      "text": "We get these constant small incremental"
+    },
+    {
+      "start": 920.04,
+      "end": 923.36,
+      "text": "changes, these constant small"
+    },
+    {
+      "start": 922.0,
+      "end": 926.8,
+      "text": "incremental"
+    },
+    {
+      "start": 923.36,
+      "end": 928.5600000000001,
+      "text": "new value added to what we're doing."
+    },
+    {
+      "start": 926.8,
+      "end": 930.04,
+      "text": "And that that's a key thing we're trying"
+    },
+    {
+      "start": 928.56,
+      "end": 931.64,
+      "text": "to do."
+    },
+    {
+      "start": 930.04,
+      "end": 933.52,
+      "text": "So, when I think about the types of as a"
+    },
+    {
+      "start": 931.64,
+      "end": 935.3199999999999,
+      "text": "service, we have infrastructure as a"
+    },
+    {
+      "start": 933.52,
+      "end": 936.4,
+      "text": "service."
+    },
+    {
+      "start": 935.32,
+      "end": 939.5600000000001,
+      "text": "Easiest to think about something like a"
+    },
+    {
+      "start": 936.4,
+      "end": 940.92,
+      "text": "VM in the cloud. The provider,"
+    },
+    {
+      "start": 939.56,
+      "end": 942.64,
+      "text": "well, they're dealing with all the"
+    },
+    {
+      "start": 940.92,
+      "end": 943.88,
+      "text": "physical network, the physical storage,"
+    },
+    {
+      "start": 942.64,
+      "end": 945.4,
+      "text": "the physical servers, and the"
+    },
+    {
+      "start": 943.88,
+      "end": 947.959,
+      "text": "hypervisor."
+    },
+    {
+      "start": 945.4,
+      "end": 950.76,
+      "text": "In Azure, it is Hyper-V."
+    },
+    {
+      "start": 947.959,
+      "end": 952.76,
+      "text": "But then you get this VM in the cloud,"
+    },
+    {
+      "start": 950.76,
+      "end": 954.959,
+      "text": "and you're then responsible for the OS"
+    },
+    {
+      "start": 952.76,
+      "end": 957.16,
+      "text": "inside that virtual machine, any"
+    },
+    {
+      "start": 954.959,
+      "end": 958.88,
+      "text": "middleware updates, runtime updates, app"
+    },
+    {
+      "start": 957.16,
+      "end": 960.8,
+      "text": "updates, data."
+    },
+    {
+      "start": 958.88,
+      "end": 962.24,
+      "text": "And when I think about responsibility,"
+    },
+    {
+      "start": 960.8,
+      "end": 964.5999999999999,
+      "text": "realize when I'm dealing with something"
+    },
+    {
+      "start": 962.24,
+      "end": 966.6800000000001,
+      "text": "like an operating system, when an"
+    },
+    {
+      "start": 964.6,
+      "end": 968.0790000000001,
+      "text": "operating system, obviously, there's"
+    },
+    {
+      "start": 966.68,
+      "end": 969.5999999999999,
+      "text": "things like"
+    },
+    {
+      "start": 968.079,
+      "end": 971.16,
+      "text": "patching,"
+    },
+    {
+      "start": 969.6,
+      "end": 974.0790000000001,
+      "text": "backup,"
+    },
+    {
+      "start": 971.16,
+      "end": 976.04,
+      "text": "antivirus, configuration,"
+    },
+    {
+      "start": 974.079,
+      "end": 978.16,
+      "text": "um high availability. There's lots of"
+    },
+    {
+      "start": 976.04,
+      "end": 979.36,
+      "text": "aspects to that."
+    },
+    {
+      "start": 978.16,
+      "end": 982.079,
+      "text": "And things like Azure will give you"
+    },
+    {
+      "start": 979.36,
+      "end": 984.9590000000001,
+      "text": "things to help and perform those"
+    },
+    {
+      "start": 982.079,
+      "end": 988.079,
+      "text": "capabilities, but you're responsible for"
+    },
+    {
+      "start": 984.959,
+      "end": 989.4799999999999,
+      "text": "their deployment and their configuration"
+    },
+    {
+      "start": 988.079,
+      "end": 991.0,
+      "text": "to make sure you're actually providing"
+    },
+    {
+      "start": 989.48,
+      "end": 993.839,
+      "text": "those on the operating system. So, I'm"
+    },
+    {
+      "start": 991.0,
+      "end": 995.6,
+      "text": "responsible for that."
+    },
+    {
+      "start": 993.839,
+      "end": 997.5600000000001,
+      "text": "Platform as a service, it's just"
+    },
+    {
+      "start": 995.6,
+      "end": 999.64,
+      "text": "providing me this place I can run my"
+    },
+    {
+      "start": 997.56,
+      "end": 1001.04,
+      "text": "code. All I care about is my application"
+    },
+    {
+      "start": 999.64,
+      "end": 1003.16,
+      "text": "and my data."
+    },
+    {
+      "start": 1001.04,
+      "end": 1006.12,
+      "text": "There's still a probably a VM there in"
+    },
+    {
+      "start": 1003.16,
+      "end": 1007.36,
+      "text": "most of the cases. I don't see it."
+    },
+    {
+      "start": 1006.12,
+      "end": 1009.64,
+      "text": "I don't worry about patching an"
+    },
+    {
+      "start": 1007.36,
+      "end": 1011.28,
+      "text": "operating system or antivirus or"
+    },
+    {
+      "start": 1009.64,
+      "end": 1013.12,
+      "text": "firewall rules."
+    },
+    {
+      "start": 1011.28,
+      "end": 1015.8,
+      "text": "I don't worry about versions of runtimes"
+    },
+    {
+      "start": 1013.12,
+      "end": 1017.5600000000001,
+      "text": "and middlewares. It's just maintained"
+    },
+    {
+      "start": 1015.8,
+      "end": 1018.959,
+      "text": "for me."
+    },
+    {
+      "start": 1017.56,
+      "end": 1020.4,
+      "text": "But it's not providing a business"
+    },
+    {
+      "start": 1018.959,
+      "end": 1022.3599999999999,
+      "text": "function, which is why it's platform as"
+    },
+    {
+      "start": 1020.4,
+      "end": 1024.12,
+      "text": "a service. I still have to provide the"
+    },
+    {
+      "start": 1022.36,
+      "end": 1025.88,
+      "text": "business function as part of my"
+    },
+    {
+      "start": 1024.12,
+      "end": 1027.1989999999998,
+      "text": "application."
+    },
+    {
+      "start": 1025.88,
+      "end": 1028.7600000000002,
+      "text": "It's the same way when we think of"
+    },
+    {
+      "start": 1027.199,
+      "end": 1031.439,
+      "text": "databases,"
+    },
+    {
+      "start": 1028.76,
+      "end": 1033.56,
+      "text": "uh there are databases as a service."
+    },
+    {
+      "start": 1031.439,
+      "end": 1035.76,
+      "text": "And even though you might argue, \"Well,"
+    },
+    {
+      "start": 1033.56,
+      "end": 1037.72,
+      "text": "that version of database, isn't that the"
+    },
+    {
+      "start": 1035.76,
+      "end": 1038.92,
+      "text": "application?\""
+    },
+    {
+      "start": 1037.72,
+      "end": 1040.679,
+      "text": "It's not providing the business"
+    },
+    {
+      "start": 1038.92,
+      "end": 1043.3200000000002,
+      "text": "function. So, when we think about"
+    },
+    {
+      "start": 1040.679,
+      "end": 1045.0790000000002,
+      "text": "managed Postgres or managed Azure SQL"
+    },
+    {
+      "start": 1043.32,
+      "end": 1047.8799999999999,
+      "text": "database, they're still already"
+    },
+    {
+      "start": 1045.079,
+      "end": 1050.44,
+      "text": "considered a PaaS cuz I have to write my"
+    },
+    {
+      "start": 1047.88,
+      "end": 1053.8400000000001,
+      "text": "own business function that runs on top"
+    },
+    {
+      "start": 1050.44,
+      "end": 1056.1200000000001,
+      "text": "of that service that's provided for me."
+    },
+    {
+      "start": 1053.84,
+      "end": 1058.1999999999998,
+      "text": "And then at the end,"
+    },
+    {
+      "start": 1056.12,
+      "end": 1060.36,
+      "text": "and this isn't really Azure at this"
+    },
+    {
+      "start": 1058.2,
+      "end": 1064.4,
+      "text": "point. Uh this would be things like"
+    },
+    {
+      "start": 1060.36,
+      "end": 1066.3999999999999,
+      "text": "Microsoft 365, Dynamics 365. It provides"
+    },
+    {
+      "start": 1064.4,
+      "end": 1068.8400000000001,
+      "text": "the business function."
+    },
+    {
+      "start": 1066.4,
+      "end": 1070.5600000000002,
+      "text": "And in this case, what I'm trying to get"
+    },
+    {
+      "start": 1068.84,
+      "end": 1072.3999999999999,
+      "text": "to here is I'm not really responsible"
+    },
+    {
+      "start": 1070.56,
+      "end": 1074.84,
+      "text": "for anything"
+    },
+    {
+      "start": 1072.4,
+      "end": 1075.88,
+      "text": "except the data."
+    },
+    {
+      "start": 1074.84,
+      "end": 1077.52,
+      "text": "And this is generally a shared"
+    },
+    {
+      "start": 1075.88,
+      "end": 1079.5600000000002,
+      "text": "responsibility."
+    },
+    {
+      "start": 1077.52,
+      "end": 1081.6399999999999,
+      "text": "So, the provider would be responsible"
+    },
+    {
+      "start": 1079.56,
+      "end": 1083.84,
+      "text": "for the durability of the data, maybe"
+    },
+    {
+      "start": 1081.64,
+      "end": 1085.64,
+      "text": "replicating the data,"
+    },
+    {
+      "start": 1083.84,
+      "end": 1087.6789999999999,
+      "text": "but I would still have responsibility"
+    },
+    {
+      "start": 1085.64,
+      "end": 1088.72,
+      "text": "for things like classification of the"
+    },
+    {
+      "start": 1087.679,
+      "end": 1091.1200000000001,
+      "text": "data,"
+    },
+    {
+      "start": 1088.72,
+      "end": 1093.52,
+      "text": "uh applying labels to the data, data"
+    },
+    {
+      "start": 1091.12,
+      "end": 1095.08,
+      "text": "loss prevention, data retention, making"
+    },
+    {
+      "start": 1093.52,
+      "end": 1097.28,
+      "text": "sure data was deleted after a period of"
+    },
+    {
+      "start": 1095.08,
+      "end": 1098.8799999999999,
+      "text": "time, rights management. So, that's why"
+    },
+    {
+      "start": 1097.28,
+      "end": 1101.12,
+      "text": "it's this kind of idea of it's it's a"
+    },
+    {
+      "start": 1098.88,
+      "end": 1103.96,
+      "text": "shared responsibility"
+    },
+    {
+      "start": 1101.12,
+      "end": 1105.84,
+      "text": "because even here,"
+    },
+    {
+      "start": 1103.96,
+      "end": 1108.159,
+      "text": "there are things that I would still be"
+    },
+    {
+      "start": 1105.84,
+      "end": 1111.6,
+      "text": "responsible for."
+    },
+    {
+      "start": 1108.159,
+      "end": 1113.7600000000002,
+      "text": "Now, generally, just like pizza,"
+    },
+    {
+      "start": 1111.6,
+      "end": 1114.8,
+      "text": "if available, I'm going to try and use"
+    },
+    {
+      "start": 1113.76,
+      "end": 1117.1589999999999,
+      "text": "SaaS."
+    },
+    {
+      "start": 1114.8,
+      "end": 1119.96,
+      "text": "If something is provided as a service"
+    },
+    {
+      "start": 1117.159,
+      "end": 1121.44,
+      "text": "that so I have almost no responsibility,"
+    },
+    {
+      "start": 1119.96,
+      "end": 1122.72,
+      "text": "I would probably go and use SaaS. It's"
+    },
+    {
+      "start": 1121.44,
+      "end": 1124.76,
+      "text": "why a lot of companies use Microsoft"
+    },
+    {
+      "start": 1122.72,
+      "end": 1126.48,
+      "text": "365. They don't want to be patching"
+    },
+    {
+      "start": 1124.76,
+      "end": 1128.48,
+      "text": "Exchange servers. They don't want to be"
+    },
+    {
+      "start": 1126.48,
+      "end": 1129.84,
+      "text": "patching SharePoint servers. You get"
+    },
+    {
+      "start": 1128.48,
+      "end": 1132.32,
+      "text": "that cloud cadence, you get these"
+    },
+    {
+      "start": 1129.84,
+      "end": 1133.9599999999998,
+      "text": "constant new capabilities introduced"
+    },
+    {
+      "start": 1132.32,
+      "end": 1135.3999999999999,
+      "text": "that enhance your ability to do"
+    },
+    {
+      "start": 1133.96,
+      "end": 1136.96,
+      "text": "business."
+    },
+    {
+      "start": 1135.4,
+      "end": 1140.72,
+      "text": "But if something isn't available as a"
+    },
+    {
+      "start": 1136.96,
+      "end": 1142.48,
+      "text": "SaaS solution, well, can I use PaaS?"
+    },
+    {
+      "start": 1140.72,
+      "end": 1144.0,
+      "text": "I don't want to have to worry about"
+    },
+    {
+      "start": 1142.48,
+      "end": 1146.48,
+      "text": "operating systems and middleware and"
+    },
+    {
+      "start": 1144.0,
+      "end": 1148.64,
+      "text": "runtime. Can I just run it on App"
+    },
+    {
+      "start": 1146.48,
+      "end": 1152.52,
+      "text": "Service? Can I run it on Azure Functions"
+    },
+    {
+      "start": 1148.64,
+      "end": 1155.8400000000001,
+      "text": "or Logic Apps, maybe even containers?"
+    },
+    {
+      "start": 1152.52,
+      "end": 1159.04,
+      "text": "But there might be some solutions that"
+    },
+    {
+      "start": 1155.84,
+      "end": 1160.3999999999999,
+      "text": "don't run in PaaS. I need more access to"
+    },
+    {
+      "start": 1159.04,
+      "end": 1162.0,
+      "text": "the operating system cuz remember,"
+    },
+    {
+      "start": 1160.4,
+      "end": 1163.64,
+      "text": "that's a big part as the responsibility"
+    },
+    {
+      "start": 1162.0,
+      "end": 1165.679,
+      "text": "shifts,"
+    },
+    {
+      "start": 1163.64,
+      "end": 1167.64,
+      "text": "I lose access to those things. On"
+    },
+    {
+      "start": 1165.679,
+      "end": 1170.44,
+      "text": "premises, I can access the physical"
+    },
+    {
+      "start": 1167.64,
+      "end": 1173.48,
+      "text": "servers. I can access the hypervisor."
+    },
+    {
+      "start": 1170.44,
+      "end": 1176.3600000000001,
+      "text": "In the cloud, I never get that access."
+    },
+    {
+      "start": 1173.48,
+      "end": 1178.04,
+      "text": "But in IaaS, I get direct control of the"
+    },
+    {
+      "start": 1176.36,
+      "end": 1180.8799999999999,
+      "text": "operating system."
+    },
+    {
+      "start": 1178.04,
+      "end": 1183.56,
+      "text": "Maybe I'm running some service, some"
+    },
+    {
+      "start": 1180.88,
+      "end": 1185.44,
+      "text": "third-party app that requires direct"
+    },
+    {
+      "start": 1183.56,
+      "end": 1187.44,
+      "text": "interaction with the OS. So, that's"
+    },
+    {
+      "start": 1185.44,
+      "end": 1189.3600000000001,
+      "text": "maybe why I would use IaaS. Maybe I'm"
+    },
+    {
+      "start": 1187.44,
+      "end": 1191.4,
+      "text": "trying to just move something from on"
+    },
+    {
+      "start": 1189.36,
+      "end": 1193.04,
+      "text": "prem to the cloud,"
+    },
+    {
+      "start": 1191.4,
+      "end": 1195.6000000000001,
+      "text": "and so, hey,"
+    },
+    {
+      "start": 1193.04,
+      "end": 1197.44,
+      "text": "uh IaaS is the simplest instant"
+    },
+    {
+      "start": 1195.6,
+      "end": 1199.7199999999998,
+      "text": "migration. It's a like-for-like of VM on"
+    },
+    {
+      "start": 1197.44,
+      "end": 1201.68,
+      "text": "premises would be very similar to the"
+    },
+    {
+      "start": 1199.72,
+      "end": 1204.4,
+      "text": "IaaS of VM in the cloud. So, it's the"
+    },
+    {
+      "start": 1201.68,
+      "end": 1206.04,
+      "text": "simplest solution, but I'm also not"
+    },
+    {
+      "start": 1204.4,
+      "end": 1207.92,
+      "text": "taking advantage of shifting"
+    },
+    {
+      "start": 1206.04,
+      "end": 1209.96,
+      "text": "responsibilities, but maybe I would do"
+    },
+    {
+      "start": 1207.92,
+      "end": 1211.92,
+      "text": "that over time."
+    },
+    {
+      "start": 1209.96,
+      "end": 1214.64,
+      "text": "Now, an important point here"
+    },
+    {
+      "start": 1211.92,
+      "end": 1219.92,
+      "text": "is I've not drawn on the idea of"
+    },
+    {
+      "start": 1214.64,
+      "end": 1221.88,
+      "text": "identity, of accounts, of devices."
+    },
+    {
+      "start": 1219.92,
+      "end": 1223.68,
+      "text": "That would always be the customer's"
+    },
+    {
+      "start": 1221.88,
+      "end": 1226.1200000000001,
+      "text": "responsibility. Again, there might be"
+    },
+    {
+      "start": 1223.68,
+      "end": 1227.72,
+      "text": "services that help you with that. If"
+    },
+    {
+      "start": 1226.12,
+      "end": 1229.0,
+      "text": "it's client devices, there's things like"
+    },
+    {
+      "start": 1227.72,
+      "end": 1230.92,
+      "text": "Intune."
+    },
+    {
+      "start": 1229.0,
+      "end": 1232.52,
+      "text": "If it's my accounts and identity, well,"
+    },
+    {
+      "start": 1230.92,
+      "end": 1234.64,
+      "text": "maybe I've got Active Directory Domain"
+    },
+    {
+      "start": 1232.52,
+      "end": 1236.68,
+      "text": "Services on premises, then I'm using"
+    },
+    {
+      "start": 1234.64,
+      "end": 1238.72,
+      "text": "Entra ID in the cloud. With Azure, you"
+    },
+    {
+      "start": 1236.68,
+      "end": 1240.48,
+      "text": "definitely are using Entra ID in the"
+    },
+    {
+      "start": 1238.72,
+      "end": 1242.44,
+      "text": "cloud."
+    },
+    {
+      "start": 1240.48,
+      "end": 1244.08,
+      "text": "And although for Entra ID, they're"
+    },
+    {
+      "start": 1242.44,
+      "end": 1247.6000000000001,
+      "text": "providing"
+    },
+    {
+      "start": 1244.08,
+      "end": 1250.32,
+      "text": "the capability, I'm still responsible"
+    },
+    {
+      "start": 1247.6,
+      "end": 1252.76,
+      "text": "for applying good practices,"
+    },
+    {
+      "start": 1250.32,
+      "end": 1254.8,
+      "text": "configuring, maybe passkeys, and"
+    },
+    {
+      "start": 1252.76,
+      "end": 1256.76,
+      "text": "multi-factor authentication, applying"
+    },
+    {
+      "start": 1254.8,
+      "end": 1259.9199999999998,
+      "text": "conditional access policies to control"
+    },
+    {
+      "start": 1256.76,
+      "end": 1261.48,
+      "text": "access to resources. So, I still have"
+    },
+    {
+      "start": 1259.92,
+      "end": 1264.0,
+      "text": "responsibility"
+    },
+    {
+      "start": 1261.48,
+      "end": 1266.0,
+      "text": "for those various things."
+    },
+    {
+      "start": 1264.0,
+      "end": 1270.32,
+      "text": "And you are going to hear terms like"
+    },
+    {
+      "start": 1266.0,
+      "end": 1273.0,
+      "text": "desktop as a service. So, Windows 365,"
+    },
+    {
+      "start": 1270.32,
+      "end": 1274.9199999999998,
+      "text": "Windows and Azure Virtual Desktop,"
+    },
+    {
+      "start": 1273.0,
+      "end": 1277.52,
+      "text": "database as a service, artificial"
+    },
+    {
+      "start": 1274.92,
+      "end": 1280.8000000000002,
+      "text": "intelligence has similar ideas. There"
+    },
+    {
+      "start": 1277.52,
+      "end": 1282.2,
+      "text": "are co-pilots that just provide you a"
+    },
+    {
+      "start": 1280.8,
+      "end": 1283.76,
+      "text": "solution."
+    },
+    {
+      "start": 1282.2,
+      "end": 1286.1200000000001,
+      "text": "Then you have things like Azure AI"
+    },
+    {
+      "start": 1283.76,
+      "end": 1289.24,
+      "text": "Foundry that would be more of a a PaaS."
+    },
+    {
+      "start": 1286.12,
+      "end": 1291.6399999999999,
+      "text": "It's hosting the models for you"
+    },
+    {
+      "start": 1289.24,
+      "end": 1293.72,
+      "text": "that I then leverage as part of my"
+    },
+    {
+      "start": 1291.64,
+      "end": 1295.5200000000002,
+      "text": "application. Maybe I'm actually running"
+    },
+    {
+      "start": 1293.72,
+      "end": 1296.68,
+      "text": "my own model directly in a VM or"
+    },
+    {
+      "start": 1295.52,
+      "end": 1299.92,
+      "text": "container, well, that would be more of"
+    },
+    {
+      "start": 1296.68,
+      "end": 1303.28,
+      "text": "an IaaS type world. And again, it's what"
+    },
+    {
+      "start": 1299.92,
+      "end": 1303.28,
+      "text": "am I responsible for?"
+    },
+    {
+      "start": 1304.56,
+      "end": 1309.48,
+      "text": "Another nice thing, I remember think"
+    },
+    {
+      "start": 1305.92,
+      "end": 1310.92,
+      "text": "Minecraft. If I ran Minecraft in a VM,"
+    },
+    {
+      "start": 1309.48,
+      "end": 1313.16,
+      "text": "well, that I'm responsible for"
+    },
+    {
+      "start": 1310.92,
+      "end": 1314.6000000000001,
+      "text": "everything. Minecraft has a Realms"
+    },
+    {
+      "start": 1313.16,
+      "end": 1316.3600000000001,
+      "text": "concept where they just provide you with"
+    },
+    {
+      "start": 1314.6,
+      "end": 1319.0,
+      "text": "a world, that would be really the"
+    },
+    {
+      "start": 1316.36,
+      "end": 1320.6789999999999,
+      "text": "software as a service."
+    },
+    {
+      "start": 1319.0,
+      "end": 1322.88,
+      "text": "But then I maybe have a a little less"
+    },
+    {
+      "start": 1320.679,
+      "end": 1325.2800000000002,
+      "text": "control over all of the things I can do."
+    },
+    {
+      "start": 1322.88,
+      "end": 1327.64,
+      "text": "So, sometimes that there's a balance to"
+    },
+    {
+      "start": 1325.28,
+      "end": 1329.56,
+      "text": "what I can do with the various types of"
+    },
+    {
+      "start": 1327.64,
+      "end": 1332.44,
+      "text": "service."
+    },
+    {
+      "start": 1329.56,
+      "end": 1335.84,
+      "text": "Now, an important point"
+    },
+    {
+      "start": 1332.44,
+      "end": 1337.28,
+      "text": "in a real public cloud,"
+    },
+    {
+      "start": 1335.84,
+      "end": 1340.72,
+      "text": "you are not putting in an order for"
+    },
+    {
+      "start": 1337.28,
+      "end": 1342.44,
+      "text": "servers to be racked. That's a a colo, a"
+    },
+    {
+      "start": 1340.72,
+      "end": 1344.44,
+      "text": "hosting provider."
+    },
+    {
+      "start": 1342.44,
+      "end": 1346.4,
+      "text": "If ever there's a racking time, it's not"
+    },
+    {
+      "start": 1344.44,
+      "end": 1348.16,
+      "text": "a true cloud. The whole point of the"
+    },
+    {
+      "start": 1346.4,
+      "end": 1352.0800000000002,
+      "text": "cloud is, \"Hey, I'm just going to go and"
+    },
+    {
+      "start": 1348.16,
+      "end": 1354.0,
+      "text": "consume the service that I want to use"
+    },
+    {
+      "start": 1352.08,
+      "end": 1356.6,
+      "text": "at that particular moment in time.\""
+    },
+    {
+      "start": 1354.0,
+      "end": 1359.2,
+      "text": "There's never going to be a a racking of"
+    },
+    {
+      "start": 1356.6,
+      "end": 1359.1999999999998,
+      "text": "a server."
+    },
+    {
+      "start": 1359.28,
+      "end": 1363.8,
+      "text": "So, when should we use public cloud"
+    },
+    {
+      "start": 1361.4,
+      "end": 1364.96,
+      "text": "solutions?"
+    },
+    {
+      "start": 1363.8,
+      "end": 1367.04,
+      "text": "And"
+    },
+    {
+      "start": 1364.96,
+      "end": 1371.52,
+      "text": "there's a huge shift in this, and a lot"
+    },
+    {
+      "start": 1367.04,
+      "end": 1373.3999999999999,
+      "text": "of companies, IT is not what they do."
+    },
+    {
+      "start": 1371.52,
+      "end": 1375.36,
+      "text": "So, there is not a definite right or"
+    },
+    {
+      "start": 1373.4,
+      "end": 1379.1200000000001,
+      "text": "wrong answer."
+    },
+    {
+      "start": 1375.36,
+      "end": 1380.4399999999998,
+      "text": "But as a typical company, IT is not my"
+    },
+    {
+      "start": 1379.12,
+      "end": 1383.84,
+      "text": "function."
+    },
+    {
+      "start": 1380.44,
+      "end": 1385.92,
+      "text": "IT is there so I can run my business"
+    },
+    {
+      "start": 1383.84,
+      "end": 1388.04,
+      "text": "application, but they don't care about"
+    },
+    {
+      "start": 1385.92,
+      "end": 1390.04,
+      "text": "the IT. They don't want to be running"
+    },
+    {
+      "start": 1388.04,
+      "end": 1392.08,
+      "text": "IT. They don't want to be in the data"
+    },
+    {
+      "start": 1390.04,
+      "end": 1393.52,
+      "text": "center business."
+    },
+    {
+      "start": 1392.08,
+      "end": 1396.52,
+      "text": "And remember, a key goal of what we're"
+    },
+    {
+      "start": 1393.52,
+      "end": 1398.84,
+      "text": "trying to do here is"
+    },
+    {
+      "start": 1396.52,
+      "end": 1400.0,
+      "text": "I can shift responsibilities. Even if I"
+    },
+    {
+      "start": 1398.84,
+      "end": 1401.6399999999999,
+      "text": "just do that infrastructure as a"
+    },
+    {
+      "start": 1400.0,
+      "end": 1404.48,
+      "text": "service,"
+    },
+    {
+      "start": 1401.64,
+      "end": 1406.6000000000001,
+      "text": "I'm no longer worrying about physical"
+    },
+    {
+      "start": 1404.48,
+      "end": 1410.4,
+      "text": "servers, physical network, physical"
+    },
+    {
+      "start": 1406.6,
+      "end": 1412.48,
+      "text": "SANs, the hypervisor."
+    },
+    {
+      "start": 1410.4,
+      "end": 1413.76,
+      "text": "I just start the most basic level, I"
+    },
+    {
+      "start": 1412.48,
+      "end": 1416.6,
+      "text": "have these virtual machines in the"
+    },
+    {
+      "start": 1413.76,
+      "end": 1418.12,
+      "text": "cloud, but I can also"
+    },
+    {
+      "start": 1416.6,
+      "end": 1420.24,
+      "text": "up-level and shift even more"
+    },
+    {
+      "start": 1418.12,
+      "end": 1422.7199999999998,
+      "text": "responsibility away."
+    },
+    {
+      "start": 1420.24,
+      "end": 1425.36,
+      "text": "So, it lets me shift from those"
+    },
+    {
+      "start": 1422.72,
+      "end": 1427.72,
+      "text": "infrastructure type things and focus"
+    },
+    {
+      "start": 1425.36,
+      "end": 1430.28,
+      "text": "more on what matters to the business."
+    },
+    {
+      "start": 1427.72,
+      "end": 1431.679,
+      "text": "It can also be a really nice catalyst to"
+    },
+    {
+      "start": 1430.28,
+      "end": 1433.96,
+      "text": "modernize."
+    },
+    {
+      "start": 1431.679,
+      "end": 1436.1200000000001,
+      "text": "So, hey, I can start to shift to"
+    },
+    {
+      "start": 1433.96,
+      "end": 1437.6000000000001,
+      "text": "containers, to app service, to"
+    },
+    {
+      "start": 1436.12,
+      "end": 1440.2399999999998,
+      "text": "serverless."
+    },
+    {
+      "start": 1437.6,
+      "end": 1441.36,
+      "text": "Maybe I want richer services. And again,"
+    },
+    {
+      "start": 1440.24,
+      "end": 1442.88,
+      "text": "I don't want to run data centers"
+    },
+    {
+      "start": 1441.36,
+      "end": 1446.1999999999998,
+      "text": "anymore. I don't want to worry about"
+    },
+    {
+      "start": 1442.88,
+      "end": 1448.5600000000002,
+      "text": "heating and ventilation and AC and"
+    },
+    {
+      "start": 1446.2,
+      "end": 1451.04,
+      "text": "powers and generators. Maybe I want"
+    },
+    {
+      "start": 1448.56,
+      "end": 1452.76,
+      "text": "proximity to my customers, and I can't"
+    },
+    {
+      "start": 1451.04,
+      "end": 1454.96,
+      "text": "run 10 different data centers. It's just"
+    },
+    {
+      "start": 1452.76,
+      "end": 1457.32,
+      "text": "not cost-effective."
+    },
+    {
+      "start": 1454.96,
+      "end": 1459.1200000000001,
+      "text": "Uh maybe want better DR. I want better"
+    },
+    {
+      "start": 1457.32,
+      "end": 1460.6789999999999,
+      "text": "business continuity."
+    },
+    {
+      "start": 1459.12,
+      "end": 1462.0,
+      "text": "Hybrid will be the norm for many"
+    },
+    {
+      "start": 1460.679,
+      "end": 1463.1200000000001,
+      "text": "customers."
+    },
+    {
+      "start": 1462.0,
+      "end": 1464.4,
+      "text": "But the point is, different"
+    },
+    {
+      "start": 1463.12,
+      "end": 1466.4799999999998,
+      "text": "organizations will have different"
+    },
+    {
+      "start": 1464.4,
+      "end": 1468.92,
+      "text": "priorities."
+    },
+    {
+      "start": 1466.48,
+      "end": 1470.44,
+      "text": "Additionally, different companies can"
+    },
+    {
+      "start": 1468.92,
+      "end": 1472.44,
+      "text": "run services in data centers at"
+    },
+    {
+      "start": 1470.44,
+      "end": 1475.0800000000002,
+      "text": "different price points. Maybe they have"
+    },
+    {
+      "start": 1472.44,
+      "end": 1477.88,
+      "text": "different environmental goals. Now, the"
+    },
+    {
+      "start": 1475.08,
+      "end": 1480.9199999999998,
+      "text": "reality is with scales of economy,"
+    },
+    {
+      "start": 1477.88,
+      "end": 1482.5600000000002,
+      "text": "it's very unlikely, if you do"
+    },
+    {
+      "start": 1480.92,
+      "end": 1485.2,
+      "text": "like-for-like,"
+    },
+    {
+      "start": 1482.56,
+      "end": 1487.56,
+      "text": "if you really do consider all of the"
+    },
+    {
+      "start": 1485.2,
+      "end": 1489.32,
+      "text": "aspects of running a data center, the"
+    },
+    {
+      "start": 1487.56,
+      "end": 1492.0,
+      "text": "physical building, the physical"
+    },
+    {
+      "start": 1489.32,
+      "end": 1493.28,
+      "text": "security, the power bill,"
+    },
+    {
+      "start": 1492.0,
+      "end": 1495.28,
+      "text": "um"
+    },
+    {
+      "start": 1493.28,
+      "end": 1496.84,
+      "text": "the network coming in, the servers you"
+    },
+    {
+      "start": 1495.28,
+      "end": 1499.6789999999999,
+      "text": "buy, the licenses. When you actually"
+    },
+    {
+      "start": 1496.84,
+      "end": 1502.6,
+      "text": "start to think of all of those things,"
+    },
+    {
+      "start": 1499.679,
+      "end": 1504.0800000000002,
+      "text": "it's very unlikely you can run at the"
+    },
+    {
+      "start": 1502.6,
+      "end": 1506.52,
+      "text": "same"
+    },
+    {
+      "start": 1504.08,
+      "end": 1508.32,
+      "text": "efficiency and cost that these mega"
+    },
+    {
+      "start": 1506.52,
+      "end": 1509.6,
+      "text": "cloud operators can."
+    },
+    {
+      "start": 1508.32,
+      "end": 1511.4399999999998,
+      "text": "I always think of the old days"
+    },
+    {
+      "start": 1509.6,
+      "end": 1512.7199999999998,
+      "text": "factories."
+    },
+    {
+      "start": 1511.44,
+      "end": 1514.92,
+      "text": "Factories used to run their own"
+    },
+    {
+      "start": 1512.72,
+      "end": 1516.52,
+      "text": "generators to generate the power for the"
+    },
+    {
+      "start": 1514.92,
+      "end": 1518.64,
+      "text": "factory,"
+    },
+    {
+      "start": 1516.52,
+      "end": 1520.36,
+      "text": "but very quickly the power utility"
+    },
+    {
+      "start": 1518.64,
+      "end": 1522.8000000000002,
+      "text": "companies could provide the power"
+    },
+    {
+      "start": 1520.36,
+      "end": 1524.4799999999998,
+      "text": "cheaper and more reliably."
+    },
+    {
+      "start": 1522.8,
+      "end": 1527.32,
+      "text": "And so, factories stopped producing"
+    },
+    {
+      "start": 1524.48,
+      "end": 1530.24,
+      "text": "their own power, they used utilities. I"
+    },
+    {
+      "start": 1527.32,
+      "end": 1534.1599999999999,
+      "text": "think honestly, compute is going or has"
+    },
+    {
+      "start": 1530.24,
+      "end": 1535.56,
+      "text": "gone that exact same way."
+    },
+    {
+      "start": 1534.16,
+      "end": 1537.96,
+      "text": "There might also be environmental"
+    },
+    {
+      "start": 1535.56,
+      "end": 1541.96,
+      "text": "considerations. Azure runs at a very"
+    },
+    {
+      "start": 1537.96,
+      "end": 1543.88,
+      "text": "high PUE, power usage efficiency. So,"
+    },
+    {
+      "start": 1541.96,
+      "end": 1545.56,
+      "text": "that's the amount of power that's coming"
+    },
+    {
+      "start": 1543.88,
+      "end": 1547.7600000000002,
+      "text": "in,"
+    },
+    {
+      "start": 1545.56,
+      "end": 1549.6399999999999,
+      "text": "how much of that is used to actually"
+    },
+    {
+      "start": 1547.76,
+      "end": 1552.16,
+      "text": "power the machines that provide the"
+    },
+    {
+      "start": 1549.64,
+      "end": 1553.92,
+      "text": "services instead of cooling and other"
+    },
+    {
+      "start": 1552.16,
+      "end": 1556.64,
+      "text": "systems."
+    },
+    {
+      "start": 1553.92,
+      "end": 1559.0800000000002,
+      "text": "And so, Azure has a fantastic PUE,"
+    },
+    {
+      "start": 1556.64,
+      "end": 1561.4,
+      "text": "getting really as close to one. I nearly"
+    },
+    {
+      "start": 1559.08,
+      "end": 1564.1999999999998,
+      "text": "all of the power is actually being used"
+    },
+    {
+      "start": 1561.4,
+      "end": 1565.8400000000001,
+      "text": "to run compute compared to other things."
+    },
+    {
+      "start": 1564.2,
+      "end": 1569.0,
+      "text": "I know for some companies I've worked"
+    },
+    {
+      "start": 1565.84,
+      "end": 1572.6,
+      "text": "with, their power bill alone is more"
+    },
+    {
+      "start": 1569.0,
+      "end": 1576.96,
+      "text": "than the actual cost of"
+    },
+    {
+      "start": 1572.6,
+      "end": 1578.4399999999998,
+      "text": "um the Azure bill that they would get."
+    },
+    {
+      "start": 1576.96,
+      "end": 1580.64,
+      "text": "So, you may have those"
+    },
+    {
+      "start": 1578.44,
+      "end": 1581.8,
+      "text": "resiliency, proximity requirements,"
+    },
+    {
+      "start": 1580.64,
+      "end": 1584.8000000000002,
+      "text": "which the cloud is great for cuz there's"
+    },
+    {
+      "start": 1581.8,
+      "end": 1587.8799999999999,
+      "text": "regions all over the place."
+    },
+    {
+      "start": 1584.8,
+      "end": 1589.9199999999998,
+      "text": "But the key point, they charge you based"
+    },
+    {
+      "start": 1587.88,
+      "end": 1591.88,
+      "text": "on what you use. If I'm consuming this"
+    },
+    {
+      "start": 1589.92,
+      "end": 1593.1200000000001,
+      "text": "amount of storage, I pay for that amount"
+    },
+    {
+      "start": 1591.88,
+      "end": 1595.0,
+      "text": "of storage."
+    },
+    {
+      "start": 1593.12,
+      "end": 1597.1999999999998,
+      "text": "I'm not paying for the amount of storage"
+    },
+    {
+      "start": 1595.0,
+      "end": 1599.2,
+      "text": "I have to buy in advance because one day"
+    },
+    {
+      "start": 1597.2,
+      "end": 1601.2,
+      "text": "I may use it."
+    },
+    {
+      "start": 1599.2,
+      "end": 1603.2,
+      "text": "If I'm running a VM for 12 hours a"
+    },
+    {
+      "start": 1601.2,
+      "end": 1605.3600000000001,
+      "text": "month, I pay for it for 12 hours a"
+    },
+    {
+      "start": 1603.2,
+      "end": 1607.04,
+      "text": "month, not because I bought the machine,"
+    },
+    {
+      "start": 1605.36,
+      "end": 1610.4399999999998,
+      "text": "it's sitting there, hey, I might as well"
+    },
+    {
+      "start": 1607.04,
+      "end": 1612.72,
+      "text": "just leave the VM running anyway."
+    },
+    {
+      "start": 1610.44,
+      "end": 1615.48,
+      "text": "And so, the fact that I pay for when"
+    },
+    {
+      "start": 1612.72,
+      "end": 1617.92,
+      "text": "it's needed, that consumption, it really"
+    },
+    {
+      "start": 1615.48,
+      "end": 1620.52,
+      "text": "opens up a lot of key scenarios for the"
+    },
+    {
+      "start": 1617.92,
+      "end": 1621.8000000000002,
+      "text": "cloud. And nearly every business you"
+    },
+    {
+      "start": 1620.52,
+      "end": 1623.84,
+      "text": "see,"
+    },
+    {
+      "start": 1621.8,
+      "end": 1626.2,
+      "text": "its workload that it needs to do varies"
+    },
+    {
+      "start": 1623.84,
+      "end": 1629.6399999999999,
+      "text": "over time. Very few companies have this"
+    },
+    {
+      "start": 1626.2,
+      "end": 1631.44,
+      "text": "constant stream of workload, of"
+    },
+    {
+      "start": 1629.64,
+      "end": 1634.679,
+      "text": "performance they need to meet. There are"
+    },
+    {
+      "start": 1631.44,
+      "end": 1637.88,
+      "text": "these fluctuations. So, if I can modify"
+    },
+    {
+      "start": 1634.679,
+      "end": 1639.92,
+      "text": "my resource based on the work coming in,"
+    },
+    {
+      "start": 1637.88,
+      "end": 1641.92,
+      "text": "that's the most efficient cost I can"
+    },
+    {
+      "start": 1639.92,
+      "end": 1643.96,
+      "text": "have. Additionally, my requirements may"
+    },
+    {
+      "start": 1641.92,
+      "end": 1646.52,
+      "text": "change. If I buy a server, I'm stuck"
+    },
+    {
+      "start": 1643.96,
+      "end": 1648.32,
+      "text": "with that server for 3 to 5 years."
+    },
+    {
+      "start": 1646.52,
+      "end": 1649.56,
+      "text": "In the cloud, I can go and delete that"
+    },
+    {
+      "start": 1648.32,
+      "end": 1651.52,
+      "text": "type of resource and create a different"
+    },
+    {
+      "start": 1649.56,
+      "end": 1653.04,
+      "text": "type of resource. I can delete the VM"
+    },
+    {
+      "start": 1651.52,
+      "end": 1654.96,
+      "text": "and move to containers. I can delete the"
+    },
+    {
+      "start": 1653.04,
+      "end": 1656.6399999999999,
+      "text": "container, move to app services or"
+    },
+    {
+      "start": 1654.96,
+      "end": 1660.04,
+      "text": "serverless technologies. Again, it's"
+    },
+    {
+      "start": 1656.64,
+      "end": 1661.0800000000002,
+      "text": "phenomenal flexibility."
+    },
+    {
+      "start": 1660.04,
+      "end": 1663.2,
+      "text": "So,"
+    },
+    {
+      "start": 1661.08,
+      "end": 1665.28,
+      "text": "let's look at that for me, that's really"
+    },
+    {
+      "start": 1663.2,
+      "end": 1666.4,
+      "text": "a great example of where public cloud"
+    },
+    {
+      "start": 1665.28,
+      "end": 1669.84,
+      "text": "shines."
+    },
+    {
+      "start": 1666.4,
+      "end": 1672.96,
+      "text": "And it combines the idea of"
+    },
+    {
+      "start": 1669.84,
+      "end": 1675.12,
+      "text": "American football, uh the Super Bowl,"
+    },
+    {
+      "start": 1672.96,
+      "end": 1676.76,
+      "text": "and what I'm really passionate about,"
+    },
+    {
+      "start": 1675.12,
+      "end": 1678.1999999999998,
+      "text": "which is pizza."
+    },
+    {
+      "start": 1676.76,
+      "end": 1679.8,
+      "text": "Now, I'm English. I'm going to be very"
+    },
+    {
+      "start": 1678.2,
+      "end": 1682.32,
+      "text": "upfront. I don't understand American"
+    },
+    {
+      "start": 1679.8,
+      "end": 1684.48,
+      "text": "football. I tried to watch it. Uh I"
+    },
+    {
+      "start": 1682.32,
+      "end": 1686.52,
+      "text": "think I saw the 2006 Super Bowl when I"
+    },
+    {
+      "start": 1684.48,
+      "end": 1689.16,
+      "text": "first came to the country."
+    },
+    {
+      "start": 1686.52,
+      "end": 1690.6399999999999,
+      "text": "It's like 5 hours. People did something"
+    },
+    {
+      "start": 1689.16,
+      "end": 1692.72,
+      "text": "for 2 minutes, they took a 5-minute"
+    },
+    {
+      "start": 1690.64,
+      "end": 1695.5600000000002,
+      "text": "break. I I really didn't enjoy it very"
+    },
+    {
+      "start": 1692.72,
+      "end": 1697.04,
+      "text": "much. But what's interesting about the"
+    },
+    {
+      "start": 1695.56,
+      "end": 1700.12,
+      "text": "Super Bowl"
+    },
+    {
+      "start": 1697.04,
+      "end": 1702.6399999999999,
+      "text": "is it has this perfect storm of pizza."
+    },
+    {
+      "start": 1700.12,
+      "end": 1705.08,
+      "text": "Now, imagine I'm a pizza restaurant."
+    },
+    {
+      "start": 1702.64,
+      "end": 1707.919,
+      "text": "So, as a pizza restaurant, one of the"
+    },
+    {
+      "start": 1705.08,
+      "end": 1709.6399999999999,
+      "text": "things I have is I have busy times."
+    },
+    {
+      "start": 1707.919,
+      "end": 1713.3600000000001,
+      "text": "Friday night, for example, Saturday"
+    },
+    {
+      "start": 1709.64,
+      "end": 1715.4,
+      "text": "night. Might be three times busier than"
+    },
+    {
+      "start": 1713.36,
+      "end": 1717.3999999999999,
+      "text": "any other time of the week. So, as a"
+    },
+    {
+      "start": 1715.4,
+      "end": 1718.679,
+      "text": "pizza restaurant, ordinarily, I would"
+    },
+    {
+      "start": 1717.4,
+      "end": 1721.3200000000002,
+      "text": "have to have three times the"
+    },
+    {
+      "start": 1718.679,
+      "end": 1724.1200000000001,
+      "text": "infrastructure just to handle a few hour"
+    },
+    {
+      "start": 1721.32,
+      "end": 1727.36,
+      "text": "peak twice a week."
+    },
+    {
+      "start": 1724.12,
+      "end": 1729.12,
+      "text": "Super Bowl is even worse."
+    },
+    {
+      "start": 1727.36,
+      "end": 1730.8799999999999,
+      "text": "In Super Bowl,"
+    },
+    {
+      "start": 1729.12,
+      "end": 1733.28,
+      "text": "the amount of pizza ordered between"
+    },
+    {
+      "start": 1730.88,
+      "end": 1735.0400000000002,
+      "text": "those two breaks, between the various"
+    },
+    {
+      "start": 1733.28,
+      "end": 1739.6,
+      "text": "breaks you get,"
+    },
+    {
+      "start": 1735.04,
+      "end": 1741.8799999999999,
+      "text": "is an additional 50% busier even than a"
+    },
+    {
+      "start": 1739.6,
+      "end": 1744.12,
+      "text": "Friday night. So, now as a pizza"
+    },
+    {
+      "start": 1741.88,
+      "end": 1746.44,
+      "text": "company, I would have to have this huge"
+    },
+    {
+      "start": 1744.12,
+      "end": 1748.32,
+      "text": "amount of additional infrastructure"
+    },
+    {
+      "start": 1746.44,
+      "end": 1749.96,
+      "text": "for one time of the year, which is"
+    },
+    {
+      "start": 1748.32,
+      "end": 1753.28,
+      "text": "insanity."
+    },
+    {
+      "start": 1749.96,
+      "end": 1756.0,
+      "text": "So, think about from that scenario,"
+    },
+    {
+      "start": 1753.28,
+      "end": 1758.1589999999999,
+      "text": "using the cloud makes total sense. That"
+    },
+    {
+      "start": 1756.0,
+      "end": 1760.36,
+      "text": "elasticity. So, that normally I have"
+    },
+    {
+      "start": 1758.159,
+      "end": 1761.7600000000002,
+      "text": "this amount of instances. They might be"
+    },
+    {
+      "start": 1760.36,
+      "end": 1763.8799999999999,
+      "text": "in the evenings during the week, it"
+    },
+    {
+      "start": 1761.76,
+      "end": 1765.6,
+      "text": "bumps up the number a little bit. Friday"
+    },
+    {
+      "start": 1763.88,
+      "end": 1766.8000000000002,
+      "text": "nights, it bumps it up more, then drops"
+    },
+    {
+      "start": 1765.6,
+      "end": 1768.84,
+      "text": "it down. Saturday night, bumps it up"
+    },
+    {
+      "start": 1766.8,
+      "end": 1771.08,
+      "text": "again, drops it down. Super Bowl, it can"
+    },
+    {
+      "start": 1768.84,
+      "end": 1773.9189999999999,
+      "text": "ramp right up. I'm only paying for that"
+    },
+    {
+      "start": 1771.08,
+      "end": 1776.08,
+      "text": "few hours of really busy for one time a"
+    },
+    {
+      "start": 1773.919,
+      "end": 1777.159,
+      "text": "year, and then it can scale back down"
+    },
+    {
+      "start": 1776.08,
+      "end": 1779.1999999999998,
+      "text": "again."
+    },
+    {
+      "start": 1777.159,
+      "end": 1782.0400000000002,
+      "text": "So, that consumption-based"
+    },
+    {
+      "start": 1779.2,
+      "end": 1784.52,
+      "text": "purchasing is huge. The fact that I only"
+    },
+    {
+      "start": 1782.04,
+      "end": 1787.12,
+      "text": "have to pay for when I'm using it"
+    },
+    {
+      "start": 1784.52,
+      "end": 1790.16,
+      "text": "is a massive benefit. And remember, you"
+    },
+    {
+      "start": 1787.12,
+      "end": 1792.4399999999998,
+      "text": "could use the cloud to burst into. Maybe"
+    },
+    {
+      "start": 1790.16,
+      "end": 1795.1200000000001,
+      "text": "you still run it on premises for that"
+    },
+    {
+      "start": 1792.44,
+      "end": 1796.76,
+      "text": "baseline amount, but I burst to the"
+    },
+    {
+      "start": 1795.12,
+      "end": 1798.04,
+      "text": "cloud"
+    },
+    {
+      "start": 1796.76,
+      "end": 1800.44,
+      "text": "when it's the Super Bowl, or when it's"
+    },
+    {
+      "start": 1798.04,
+      "end": 1803.44,
+      "text": "Friday night, or Saturday night."
+    },
+    {
+      "start": 1800.44,
+      "end": 1806.0800000000002,
+      "text": "What that really leads us to is a number"
+    },
+    {
+      "start": 1803.44,
+      "end": 1808.56,
+      "text": "of great scenarios for this."
+    },
+    {
+      "start": 1806.08,
+      "end": 1810.52,
+      "text": "So, the first one we have is the idea of"
+    },
+    {
+      "start": 1808.56,
+      "end": 1812.1599999999999,
+      "text": "predictable bursting, and the pizza is a"
+    },
+    {
+      "start": 1810.52,
+      "end": 1813.8799999999999,
+      "text": "good example of that."
+    },
+    {
+      "start": 1812.16,
+      "end": 1816.48,
+      "text": "With the pizza, I know Friday night is"
+    },
+    {
+      "start": 1813.88,
+      "end": 1819.8400000000001,
+      "text": "busy. Saturday night is busy. Breakfast"
+    },
+    {
+      "start": 1816.48,
+      "end": 1822.44,
+      "text": "time, not busy at all. So, I have this"
+    },
+    {
+      "start": 1819.84,
+      "end": 1824.3999999999999,
+      "text": "change in amount of work,"
+    },
+    {
+      "start": 1822.44,
+      "end": 1826.16,
+      "text": "and so I know when I need to scale up"
+    },
+    {
+      "start": 1824.4,
+      "end": 1828.3200000000002,
+      "text": "the number of instances I have, and when"
+    },
+    {
+      "start": 1826.16,
+      "end": 1831.88,
+      "text": "I can scale them down. So, I'm only"
+    },
+    {
+      "start": 1828.32,
+      "end": 1834.32,
+      "text": "paying for the work I'm actually doing."
+    },
+    {
+      "start": 1831.88,
+      "end": 1837.8000000000002,
+      "text": "Another one I have,"
+    },
+    {
+      "start": 1834.32,
+      "end": 1839.32,
+      "text": "well, hey, maybe I'm a startup, and one"
+    },
+    {
+      "start": 1837.8,
+      "end": 1842.56,
+      "text": "of the things as a startup, I don't want"
+    },
+    {
+      "start": 1839.32,
+      "end": 1844.6,
+      "text": "to have to do any huge initial outlay."
+    },
+    {
+      "start": 1842.56,
+      "end": 1846.8,
+      "text": "It's hard to get the funding for that."
+    },
+    {
+      "start": 1844.6,
+      "end": 1849.3999999999999,
+      "text": "If I use the cloud, as I get more"
+    },
+    {
+      "start": 1846.8,
+      "end": 1850.48,
+      "text": "successful,"
+    },
+    {
+      "start": 1849.4,
+      "end": 1852.16,
+      "text": "well,"
+    },
+    {
+      "start": 1850.48,
+      "end": 1854.16,
+      "text": "I can scale up the amount of resources."
+    },
+    {
+      "start": 1852.16,
+      "end": 1856.5600000000002,
+      "text": "So, yes, my bill will increase, but my"
+    },
+    {
+      "start": 1854.16,
+      "end": 1859.5600000000002,
+      "text": "bill is increasing in proportion to the"
+    },
+    {
+      "start": 1856.56,
+      "end": 1861.0,
+      "text": "increase in the traffic, and hopefully"
+    },
+    {
+      "start": 1859.56,
+      "end": 1862.6799999999998,
+      "text": "the money that's coming in for my"
+    },
+    {
+      "start": 1861.0,
+      "end": 1864.32,
+      "text": "business. So, this is a really"
+    },
+    {
+      "start": 1862.68,
+      "end": 1866.68,
+      "text": "attractive use of the cloud that I'm"
+    },
+    {
+      "start": 1864.32,
+      "end": 1868.52,
+      "text": "only paying for what I'm doing."
+    },
+    {
+      "start": 1866.68,
+      "end": 1871.92,
+      "text": "Additionally,"
+    },
+    {
+      "start": 1868.52,
+      "end": 1873.56,
+      "text": "if I'm not successful, the failing fast,"
+    },
+    {
+      "start": 1871.92,
+      "end": 1875.68,
+      "text": "well, I've not done this huge upfront"
+    },
+    {
+      "start": 1873.56,
+      "end": 1878.0,
+      "text": "investment. If I fail, it doesn't work"
+    },
+    {
+      "start": 1875.68,
+      "end": 1879.48,
+      "text": "out, I've not lost this huge amount of"
+    },
+    {
+      "start": 1878.0,
+      "end": 1881.24,
+      "text": "money and"
+    },
+    {
+      "start": 1879.48,
+      "end": 1883.24,
+      "text": "equipment locked in that I had to go and"
+    },
+    {
+      "start": 1881.24,
+      "end": 1886.04,
+      "text": "buy all of this stuff upfront. So,"
+    },
+    {
+      "start": 1883.24,
+      "end": 1887.84,
+      "text": "that's a really nice thing to have."
+    },
+    {
+      "start": 1886.04,
+      "end": 1889.84,
+      "text": "Another example would be unpredictable"
+    },
+    {
+      "start": 1887.84,
+      "end": 1891.52,
+      "text": "bursting. I don't know"
+    },
+    {
+      "start": 1889.84,
+      "end": 1892.6799999999998,
+      "text": "when I might get these big jumps. Maybe"
+    },
+    {
+      "start": 1891.52,
+      "end": 1895.72,
+      "text": "I'm a"
+    },
+    {
+      "start": 1892.68,
+      "end": 1897.76,
+      "text": "uh an online retailer, and some item I"
+    },
+    {
+      "start": 1895.72,
+      "end": 1899.96,
+      "text": "have is mentioned in the news and"
+    },
+    {
+      "start": 1897.76,
+      "end": 1901.28,
+      "text": "becomes the thing."
+    },
+    {
+      "start": 1899.96,
+      "end": 1903.52,
+      "text": "Well,"
+    },
+    {
+      "start": 1901.28,
+      "end": 1906.0,
+      "text": "I can just scale up as suddenly I get"
+    },
+    {
+      "start": 1903.52,
+      "end": 1907.96,
+      "text": "all of that attention to my site. I"
+    },
+    {
+      "start": 1906.0,
+      "end": 1909.04,
+      "text": "don't have to"
+    },
+    {
+      "start": 1907.96,
+      "end": 1910.8400000000001,
+      "text": "again,"
+    },
+    {
+      "start": 1909.04,
+      "end": 1913.52,
+      "text": "have all this capacity just there. I can"
+    },
+    {
+      "start": 1910.84,
+      "end": 1915.84,
+      "text": "scale and respond"
+    },
+    {
+      "start": 1913.52,
+      "end": 1918.08,
+      "text": "as maybe the instance I have, the CPU"
+    },
+    {
+      "start": 1915.84,
+      "end": 1919.6789999999999,
+      "text": "usage goes above 80%. Hey, go and add an"
+    },
+    {
+      "start": 1918.08,
+      "end": 1922.32,
+      "text": "instance."
+    },
+    {
+      "start": 1919.679,
+      "end": 1924.3600000000001,
+      "text": "Maybe I'm a a news site, and hey, again,"
+    },
+    {
+      "start": 1922.32,
+      "end": 1927.12,
+      "text": "there's some big occasion."
+    },
+    {
+      "start": 1924.36,
+      "end": 1929.3999999999999,
+      "text": "I'm just modifying."
+    },
+    {
+      "start": 1927.12,
+      "end": 1931.12,
+      "text": "Another thing could be I'm just on off."
+    },
+    {
+      "start": 1929.4,
+      "end": 1932.2800000000002,
+      "text": "A tax office, they're really busy for a"
+    },
+    {
+      "start": 1931.12,
+      "end": 1934.9199999999998,
+      "text": "couple of months of the year. They're"
+    },
+    {
+      "start": 1932.28,
+      "end": 1937.32,
+      "text": "not doing anything. Um I'm hosting a big"
+    },
+    {
+      "start": 1934.92,
+      "end": 1938.44,
+      "text": "sporting event."
+    },
+    {
+      "start": 1937.32,
+      "end": 1940.04,
+      "text": "Um"
+    },
+    {
+      "start": 1938.44,
+      "end": 1941.4,
+      "text": "lots of people streaming that while the"
+    },
+    {
+      "start": 1940.04,
+      "end": 1943.6789999999999,
+      "text": "sporting event's going on, then it's not"
+    },
+    {
+      "start": 1941.4,
+      "end": 1945.76,
+      "text": "doing anything."
+    },
+    {
+      "start": 1943.679,
+      "end": 1948.2,
+      "text": "I could also use public cloud, remember,"
+    },
+    {
+      "start": 1945.76,
+      "end": 1950.36,
+      "text": "to supplement that on premises."
+    },
+    {
+      "start": 1948.2,
+      "end": 1952.32,
+      "text": "But the point here is if there is a"
+    },
+    {
+      "start": 1950.36,
+      "end": 1955.4799999999998,
+      "text": "fluctuation in the amount of resource"
+    },
+    {
+      "start": 1952.32,
+      "end": 1957.72,
+      "text": "required, or any great flexibility,"
+    },
+    {
+      "start": 1955.48,
+      "end": 1959.88,
+      "text": "change the type of VM, change the type"
+    },
+    {
+      "start": 1957.72,
+      "end": 1961.52,
+      "text": "of service, change type of database, use"
+    },
+    {
+      "start": 1959.88,
+      "end": 1962.6000000000001,
+      "text": "AI services,"
+    },
+    {
+      "start": 1961.52,
+      "end": 1965.04,
+      "text": "then the cloud, and the fact that I'm"
+    },
+    {
+      "start": 1962.6,
+      "end": 1967.1599999999999,
+      "text": "paying for what I'm using,"
+    },
+    {
+      "start": 1965.04,
+      "end": 1969.8799999999999,
+      "text": "makes it very, very attractive to"
+    },
+    {
+      "start": 1967.16,
+      "end": 1972.2,
+      "text": "actually leverage."
+    },
+    {
+      "start": 1969.88,
+      "end": 1974.5600000000002,
+      "text": "Now, if I think about, well,"
+    },
+    {
+      "start": 1972.2,
+      "end": 1977.1200000000001,
+      "text": "how do companies typically adopt the"
+    },
+    {
+      "start": 1974.56,
+      "end": 1978.04,
+      "text": "cloud, if you're not already?"
+    },
+    {
+      "start": 1977.12,
+      "end": 1980.36,
+      "text": "And very typically, they're going to"
+    },
+    {
+      "start": 1978.04,
+      "end": 1983.6399999999999,
+      "text": "start small, and they'll progressively"
+    },
+    {
+      "start": 1980.36,
+      "end": 1985.24,
+      "text": "use more and more. And also, they'll"
+    },
+    {
+      "start": 1983.64,
+      "end": 1986.8000000000002,
+      "text": "kind of you dip your toe in the water."
+    },
+    {
+      "start": 1985.24,
+      "end": 1988.1200000000001,
+      "text": "You'll start with a less important"
+    },
+    {
+      "start": 1986.8,
+      "end": 1990.6789999999999,
+      "text": "workload,"
+    },
+    {
+      "start": 1988.12,
+      "end": 1993.1999999999998,
+      "text": "and then as you gain confidence, both in"
+    },
+    {
+      "start": 1990.679,
+      "end": 1995.48,
+      "text": "the platform, but also in your ability"
+    },
+    {
+      "start": 1993.2,
+      "end": 1998.0800000000002,
+      "text": "to use and operate the platform, you'll"
+    },
+    {
+      "start": 1995.48,
+      "end": 2000.3600000000001,
+      "text": "put more and more important services"
+    },
+    {
+      "start": 1998.08,
+      "end": 2001.28,
+      "text": "within that cloud."
+    },
+    {
+      "start": 2000.36,
+      "end": 2003.4399999999998,
+      "text": "So,"
+    },
+    {
+      "start": 2001.28,
+      "end": 2005.08,
+      "text": "test and development"
+    },
+    {
+      "start": 2003.44,
+      "end": 2007.679,
+      "text": "is a great first use case for a lot of"
+    },
+    {
+      "start": 2005.08,
+      "end": 2009.36,
+      "text": "companies. It also has very high churn."
+    },
+    {
+      "start": 2007.679,
+      "end": 2010.6000000000001,
+      "text": "I people create environments, delete"
+    },
+    {
+      "start": 2009.36,
+      "end": 2012.28,
+      "text": "environments, create environments,"
+    },
+    {
+      "start": 2010.6,
+      "end": 2013.48,
+      "text": "delete environments. And I don't want"
+    },
+    {
+      "start": 2012.28,
+      "end": 2015.72,
+      "text": "that"
+    },
+    {
+      "start": 2013.48,
+      "end": 2018.72,
+      "text": "on premises. So, suddenly, this becomes"
+    },
+    {
+      "start": 2015.72,
+      "end": 2020.16,
+      "text": "a really nice option to not run on"
+    },
+    {
+      "start": 2018.72,
+      "end": 2022.2,
+      "text": "premises,"
+    },
+    {
+      "start": 2020.16,
+      "end": 2023.6000000000001,
+      "text": "I create it in the cloud."
+    },
+    {
+      "start": 2022.2,
+      "end": 2026.52,
+      "text": "Now, you do want to be careful with this"
+    },
+    {
+      "start": 2023.6,
+      "end": 2028.28,
+      "text": "for final testing, remember,"
+    },
+    {
+      "start": 2026.52,
+      "end": 2029.2,
+      "text": "it should match the environment where"
+    },
+    {
+      "start": 2028.28,
+      "end": 2030.48,
+      "text": "it's actually going to run in"
+    },
+    {
+      "start": 2029.2,
+      "end": 2033.3600000000001,
+      "text": "production."
+    },
+    {
+      "start": 2030.48,
+      "end": 2036.4,
+      "text": "So, if production is on premises, my"
+    },
+    {
+      "start": 2033.36,
+      "end": 2038.08,
+      "text": "final testing should be matching that"
+    },
+    {
+      "start": 2036.4,
+      "end": 2040.0400000000002,
+      "text": "type of deployment. I don't want a"
+    },
+    {
+      "start": 2038.08,
+      "end": 2042.08,
+      "text": "completely different hypervisor and"
+    },
+    {
+      "start": 2040.04,
+      "end": 2043.84,
+      "text": "operating model than production, but a"
+    },
+    {
+      "start": 2042.08,
+      "end": 2046.0,
+      "text": "lot of the initial development, the"
+    },
+    {
+      "start": 2043.84,
+      "end": 2047.28,
+      "text": "initial testing, hey, that high churn"
+    },
+    {
+      "start": 2046.0,
+      "end": 2049.72,
+      "text": "environment would be great to actually"
+    },
+    {
+      "start": 2047.28,
+      "end": 2051.7599999999998,
+      "text": "go and run in the cloud."
+    },
+    {
+      "start": 2049.72,
+      "end": 2053.4399999999996,
+      "text": "Um disaster recovery."
+    },
+    {
+      "start": 2051.76,
+      "end": 2055.159,
+      "text": "Many companies either don't have"
+    },
+    {
+      "start": 2053.44,
+      "end": 2057.64,
+      "text": "disaster recovery,"
+    },
+    {
+      "start": 2055.159,
+      "end": 2059.9190000000003,
+      "text": "or it's terrible,"
+    },
+    {
+      "start": 2057.64,
+      "end": 2062.3199999999997,
+      "text": "because it's expensive."
+    },
+    {
+      "start": 2059.919,
+      "end": 2064.919,
+      "text": "Imagine on premises, I would have to"
+    },
+    {
+      "start": 2062.32,
+      "end": 2067.7200000000003,
+      "text": "have a second location"
+    },
+    {
+      "start": 2064.919,
+      "end": 2070.12,
+      "text": "with servers stood up"
+    },
+    {
+      "start": 2067.72,
+      "end": 2072.0,
+      "text": "that I hope I never, ever use."
+    },
+    {
+      "start": 2070.12,
+      "end": 2073.919,
+      "text": "On the cloud, remember, most of the bill"
+    },
+    {
+      "start": 2072.0,
+      "end": 2075.359,
+      "text": "would be if it's actually running. So,"
+    },
+    {
+      "start": 2073.919,
+      "end": 2077.44,
+      "text": "it wouldn't really be costing me much"
+    },
+    {
+      "start": 2075.359,
+      "end": 2079.24,
+      "text": "money. Now, you should be testing your"
+    },
+    {
+      "start": 2077.44,
+      "end": 2080.84,
+      "text": "DR regularly."
+    },
+    {
+      "start": 2079.24,
+      "end": 2083.879,
+      "text": "Every few months, you should do a DR"
+    },
+    {
+      "start": 2080.84,
+      "end": 2085.6400000000003,
+      "text": "test, make sure it runs successfully,"
+    },
+    {
+      "start": 2083.879,
+      "end": 2088.52,
+      "text": "but I'll only be paying while I'm"
+    },
+    {
+      "start": 2085.64,
+      "end": 2090.8399999999997,
+      "text": "actually running"
+    },
+    {
+      "start": 2088.52,
+      "end": 2091.96,
+      "text": "the compute for my failover. There's"
+    },
+    {
+      "start": 2090.84,
+      "end": 2093.08,
+      "text": "still probably going to be storage"
+    },
+    {
+      "start": 2091.96,
+      "end": 2095.0,
+      "text": "costs. There might be certain"
+    },
+    {
+      "start": 2093.08,
+      "end": 2097.0,
+      "text": "replication costs. It would depend on"
+    },
+    {
+      "start": 2095.0,
+      "end": 2098.84,
+      "text": "how long I have to failover, what my"
+    },
+    {
+      "start": 2097.0,
+      "end": 2100.76,
+      "text": "recovery point, how much data I could"
+    },
+    {
+      "start": 2098.84,
+      "end": 2103.96,
+      "text": "lose in an unplanned,"
+    },
+    {
+      "start": 2100.76,
+      "end": 2106.7200000000003,
+      "text": "but it's a very effective option"
+    },
+    {
+      "start": 2103.96,
+      "end": 2109.6,
+      "text": "to optimize my costs."
+    },
+    {
+      "start": 2106.72,
+      "end": 2112.16,
+      "text": "It might be a DMZ, so a demilitarized"
+    },
+    {
+      "start": 2109.6,
+      "end": 2114.16,
+      "text": "zone. The idea is that, hey, I have my"
+    },
+    {
+      "start": 2112.16,
+      "end": 2115.6,
+      "text": "private network,"
+    },
+    {
+      "start": 2114.16,
+      "end": 2117.08,
+      "text": "and maybe I need to offer some stuff to"
+    },
+    {
+      "start": 2115.6,
+      "end": 2119.08,
+      "text": "the public. More and more companies"
+    },
+    {
+      "start": 2117.08,
+      "end": 2120.359,
+      "text": "today have to be able to offer things"
+    },
+    {
+      "start": 2119.08,
+      "end": 2122.84,
+      "text": "publicly."
+    },
+    {
+      "start": 2120.359,
+      "end": 2124.4,
+      "text": "Well, I may not be very good at that."
+    },
+    {
+      "start": 2122.84,
+      "end": 2126.88,
+      "text": "So, one option is the services that I"
+    },
+    {
+      "start": 2124.4,
+      "end": 2130.12,
+      "text": "want to offer out to the public, I run"
+    },
+    {
+      "start": 2126.88,
+      "end": 2131.6,
+      "text": "in Azure as a a separation from my"
+    },
+    {
+      "start": 2130.12,
+      "end": 2133.72,
+      "text": "network. Now,"
+    },
+    {
+      "start": 2131.6,
+      "end": 2135.8399999999997,
+      "text": "there's still probably is connectivity."
+    },
+    {
+      "start": 2133.72,
+      "end": 2136.9199999999996,
+      "text": "I still need very good security. I"
+    },
+    {
+      "start": 2135.84,
+      "end": 2138.7200000000003,
+      "text": "should be using things like web"
+    },
+    {
+      "start": 2136.92,
+      "end": 2140.64,
+      "text": "application firewalls. I should be"
+    },
+    {
+      "start": 2138.72,
+      "end": 2143.7599999999998,
+      "text": "reducing the types of traffic that's"
+    },
+    {
+      "start": 2140.64,
+      "end": 2145.24,
+      "text": "allowed through, but that can be a nice"
+    },
+    {
+      "start": 2143.76,
+      "end": 2146.96,
+      "text": "option."
+    },
+    {
+      "start": 2145.24,
+      "end": 2149.24,
+      "text": "Also, I may have customers all"
+    },
+    {
+      "start": 2146.96,
+      "end": 2151.8,
+      "text": "throughout the world. Well, by using"
+    },
+    {
+      "start": 2149.24,
+      "end": 2153.8399999999997,
+      "text": "these scenarios, I can create instances"
+    },
+    {
+      "start": 2151.8,
+      "end": 2155.6400000000003,
+      "text": "of services in regions all throughout"
+    },
+    {
+      "start": 2153.84,
+      "end": 2158.1200000000003,
+      "text": "the world. I might use things like Azure"
+    },
+    {
+      "start": 2155.64,
+      "end": 2160.68,
+      "text": "Front Door and and have caches of"
+    },
+    {
+      "start": 2158.12,
+      "end": 2163.64,
+      "text": "content that's static"
+    },
+    {
+      "start": 2160.68,
+      "end": 2166.44,
+      "text": "close to all of my customers."
+    },
+    {
+      "start": 2163.64,
+      "end": 2168.24,
+      "text": "I might also have the idea"
+    },
+    {
+      "start": 2166.44,
+      "end": 2170.48,
+      "text": "of just special projects. It's going to"
+    },
+    {
+      "start": 2168.24,
+      "end": 2171.6,
+      "text": "run for a limited amount of time."
+    },
+    {
+      "start": 2170.48,
+      "end": 2173.2,
+      "text": "Maybe I want to use a certain type of"
+    },
+    {
+      "start": 2171.6,
+      "end": 2175.7599999999998,
+      "text": "service or hardware I don't have on"
+    },
+    {
+      "start": 2173.2,
+      "end": 2177.08,
+      "text": "premises. Maybe it's for AI. I want to"
+    },
+    {
+      "start": 2175.76,
+      "end": 2179.0400000000004,
+      "text": "be able to use this big large language"
+    },
+    {
+      "start": 2177.08,
+      "end": 2180.4,
+      "text": "model. That could be very hard to do on"
+    },
+    {
+      "start": 2179.04,
+      "end": 2181.96,
+      "text": "premises."
+    },
+    {
+      "start": 2180.4,
+      "end": 2184.1600000000003,
+      "text": "In the cloud, it's super easy. I spin"
+    },
+    {
+      "start": 2181.96,
+      "end": 2186.6,
+      "text": "this up, run it for a few weeks, delete"
+    },
+    {
+      "start": 2184.16,
+      "end": 2188.7599999999998,
+      "text": "it. I just pay for those few weeks it"
+    },
+    {
+      "start": 2186.6,
+      "end": 2191.52,
+      "text": "was running."
+    },
+    {
+      "start": 2188.76,
+      "end": 2194.2000000000003,
+      "text": "And realistically today, I mean, most"
+    },
+    {
+      "start": 2191.52,
+      "end": 2195.48,
+      "text": "organizations are just all in."
+    },
+    {
+      "start": 2194.2,
+      "end": 2197.04,
+      "text": "Remember what I said, for most"
+    },
+    {
+      "start": 2195.48,
+      "end": 2199.32,
+      "text": "companies,"
+    },
+    {
+      "start": 2197.04,
+      "end": 2203.04,
+      "text": "they're providing a certain business."
+    },
+    {
+      "start": 2199.32,
+      "end": 2206.1600000000003,
+      "text": "IT is not their business. IT is really a"
+    },
+    {
+      "start": 2203.04,
+      "end": 2208.6,
+      "text": "cost for them and an inconvenience that"
+    },
+    {
+      "start": 2206.16,
+      "end": 2209.8799999999997,
+      "text": "they have to run it to be able to offer"
+    },
+    {
+      "start": 2208.6,
+      "end": 2212.12,
+      "text": "the business function. They don't want"
+    },
+    {
+      "start": 2209.88,
+      "end": 2213.56,
+      "text": "to be in the IT business."
+    },
+    {
+      "start": 2212.12,
+      "end": 2215.52,
+      "text": "And so, with those shifts in"
+    },
+    {
+      "start": 2213.56,
+      "end": 2217.52,
+      "text": "responsibilities, even if I just go"
+    },
+    {
+      "start": 2215.52,
+      "end": 2219.96,
+      "text": "IaaS, I've offloaded all of that"
+    },
+    {
+      "start": 2217.52,
+      "end": 2221.64,
+      "text": "physical compute, storage, network,"
+    },
+    {
+      "start": 2219.96,
+      "end": 2223.52,
+      "text": "hypervisor,"
+    },
+    {
+      "start": 2221.64,
+      "end": 2225.56,
+      "text": "that's huge. Then when I start to use"
+    },
+    {
+      "start": 2223.52,
+      "end": 2227.64,
+      "text": "things like, hey, managed databases, now"
+    },
+    {
+      "start": 2225.56,
+      "end": 2229.04,
+      "text": "I've offloaded that. I use container"
+    },
+    {
+      "start": 2227.64,
+      "end": 2230.8799999999997,
+      "text": "offerings, now I've offloaded worrying"
+    },
+    {
+      "start": 2229.04,
+      "end": 2232.0,
+      "text": "about Kubernetes and all of those"
+    },
+    {
+      "start": 2230.88,
+      "end": 2233.76,
+      "text": "aspects."
+    },
+    {
+      "start": 2232.0,
+      "end": 2235.52,
+      "text": "The network solutions, I've offloaded"
+    },
+    {
+      "start": 2233.76,
+      "end": 2236.28,
+      "text": "those concerns."
+    },
+    {
+      "start": 2235.52,
+      "end": 2238.8,
+      "text": "Now, I still have certain"
+    },
+    {
+      "start": 2236.28,
+      "end": 2242.6800000000003,
+      "text": "responsibilities, but I'm really moving"
+    },
+    {
+      "start": 2238.8,
+      "end": 2244.1600000000003,
+      "text": "a huge amount of the responsibility."
+    },
+    {
+      "start": 2242.68,
+      "end": 2246.359,
+      "text": "And as a company, also, there's"
+    },
+    {
+      "start": 2244.16,
+      "end": 2249.2,
+      "text": "operational expense versus capital"
+    },
+    {
+      "start": 2246.359,
+      "end": 2251.2,
+      "text": "expenditure. So, OpEx versus CapEx."
+    },
+    {
+      "start": 2249.2,
+      "end": 2254.16,
+      "text": "OpEx, I just pay for as I'm consuming"
+    },
+    {
+      "start": 2251.2,
+      "end": 2255.7599999999998,
+      "text": "something, the cloud bill, versus CapEx,"
+    },
+    {
+      "start": 2254.16,
+      "end": 2258.359,
+      "text": "I'm buying this big bit of"
+    },
+    {
+      "start": 2255.76,
+      "end": 2260.0,
+      "text": "infrastructure, and then maybe I"
+    },
+    {
+      "start": 2258.359,
+      "end": 2261.4,
+      "text": "write that off over a number of years."
+    },
+    {
+      "start": 2260.0,
+      "end": 2264.16,
+      "text": "Customers don't"
+    },
+    {
+      "start": 2261.4,
+      "end": 2266.6800000000003,
+      "text": "like CapEx typically."
+    },
+    {
+      "start": 2264.16,
+      "end": 2269.24,
+      "text": "And so, realized"
+    },
+    {
+      "start": 2266.68,
+      "end": 2271.6,
+      "text": "that these companies that are all in,"
+    },
+    {
+      "start": 2269.24,
+      "end": 2273.56,
+      "text": "they might start with virtual machines,"
+    },
+    {
+      "start": 2271.6,
+      "end": 2276.48,
+      "text": "but typically, they'll then advance as"
+    },
+    {
+      "start": 2273.56,
+      "end": 2277.359,
+      "text": "they start to use the cloud to, oh,"
+    },
+    {
+      "start": 2276.48,
+      "end": 2278.76,
+      "text": "well, actually, I'm going to use"
+    },
+    {
+      "start": 2277.359,
+      "end": 2280.48,
+      "text": "containers. I'm going to use app"
+    },
+    {
+      "start": 2278.76,
+      "end": 2283.28,
+      "text": "services. I'm going to move from running"
+    },
+    {
+      "start": 2280.48,
+      "end": 2285.48,
+      "text": "this database in a VM to using a managed"
+    },
+    {
+      "start": 2283.28,
+      "end": 2288.28,
+      "text": "PostgreSQL or managed MySQL Azure SQL"
+    },
+    {
+      "start": 2285.48,
+      "end": 2290.2,
+      "text": "database, or Cosmos DB."
+    },
+    {
+      "start": 2288.28,
+      "end": 2291.6800000000003,
+      "text": "And I'll start moving it, oh, I'll go"
+    },
+    {
+      "start": 2290.2,
+      "end": 2293.3199999999997,
+      "text": "and use some serverless technologies for"
+    },
+    {
+      "start": 2291.68,
+      "end": 2295.359,
+      "text": "this."
+    },
+    {
+      "start": 2293.32,
+      "end": 2296.76,
+      "text": "And then, also, when you use these cloud"
+    },
+    {
+      "start": 2295.359,
+      "end": 2299.3199999999997,
+      "text": "solutions, they have fantastic"
+    },
+    {
+      "start": 2296.76,
+      "end": 2301.2000000000003,
+      "text": "governance. I can apply policies as the"
+    },
+    {
+      "start": 2299.32,
+      "end": 2303.52,
+      "text": "guardrails, budgets. I get great"
+    },
+    {
+      "start": 2301.2,
+      "end": 2305.2,
+      "text": "monitoring, security."
+    },
+    {
+      "start": 2303.52,
+      "end": 2306.8,
+      "text": "And so, as companies just start to dip"
+    },
+    {
+      "start": 2305.2,
+      "end": 2308.12,
+      "text": "their toe into the cloud and see what it"
+    },
+    {
+      "start": 2306.8,
+      "end": 2309.44,
+      "text": "can offer,"
+    },
+    {
+      "start": 2308.12,
+      "end": 2311.48,
+      "text": "more and more, they'll then just start"
+    },
+    {
+      "start": 2309.44,
+      "end": 2313.4,
+      "text": "to move everything."
+    },
+    {
+      "start": 2311.48,
+      "end": 2315.2400000000002,
+      "text": "What tends to happen is the on premises,"
+    },
+    {
+      "start": 2313.4,
+      "end": 2317.7200000000003,
+      "text": "you may still have some,"
+    },
+    {
+      "start": 2315.24,
+      "end": 2319.9199999999996,
+      "text": "but it's stuff that is anchored. And by"
+    },
+    {
+      "start": 2317.72,
+      "end": 2322.3999999999996,
+      "text": "anchor, I mean, there's some maybe it's"
+    },
+    {
+      "start": 2319.92,
+      "end": 2324.64,
+      "text": "a mainframe that today I can't move to"
+    },
+    {
+      "start": 2322.4,
+      "end": 2326.2400000000002,
+      "text": "the cloud, and I have a dependency on"
+    },
+    {
+      "start": 2324.64,
+      "end": 2328.56,
+      "text": "the mainframe. So, I don't want a large"
+    },
+    {
+      "start": 2326.24,
+      "end": 2330.9599999999996,
+      "text": "distance between my application and"
+    },
+    {
+      "start": 2328.56,
+      "end": 2332.72,
+      "text": "maybe that other service, latency."
+    },
+    {
+      "start": 2330.96,
+      "end": 2334.8,
+      "text": "Latency is the"
+    },
+    {
+      "start": 2332.72,
+      "end": 2337.56,
+      "text": "in a product of distance between"
+    },
+    {
+      "start": 2334.8,
+      "end": 2339.84,
+      "text": "services. Light only travels so fast."
+    },
+    {
+      "start": 2337.56,
+      "end": 2342.16,
+      "text": "It's even slower over fiber than a"
+    },
+    {
+      "start": 2339.84,
+      "end": 2344.92,
+      "text": "vacuum. And so, the bigger the distance"
+    },
+    {
+      "start": 2342.16,
+      "end": 2347.12,
+      "text": "between things, the higher the latency,"
+    },
+    {
+      "start": 2344.92,
+      "end": 2348.52,
+      "text": "which is the the time between, hey, I'm"
+    },
+    {
+      "start": 2347.12,
+      "end": 2351.12,
+      "text": "trying to do something and it gives me a"
+    },
+    {
+      "start": 2348.52,
+      "end": 2352.88,
+      "text": "response. So, if I had some component on"
+    },
+    {
+      "start": 2351.12,
+      "end": 2355.3199999999997,
+      "text": "prem and a piece in the cloud, well,"
+    },
+    {
+      "start": 2352.88,
+      "end": 2356.48,
+      "text": "it's going to be a higher latency"
+    },
+    {
+      "start": 2355.32,
+      "end": 2358.2000000000003,
+      "text": "than if they were both sitting on"
+    },
+    {
+      "start": 2356.48,
+      "end": 2359.8,
+      "text": "premises. And some things are latency"
+    },
+    {
+      "start": 2358.2,
+      "end": 2361.3999999999996,
+      "text": "sensitive, some are not. That's"
+    },
+    {
+      "start": 2359.8,
+      "end": 2363.28,
+      "text": "something I would have to understand."
+    },
+    {
+      "start": 2361.4,
+      "end": 2365.52,
+      "text": "But that typically is why some things"
+    },
+    {
+      "start": 2363.28,
+      "end": 2367.5600000000004,
+      "text": "might be stuck on premises today, that I"
+    },
+    {
+      "start": 2365.52,
+      "end": 2370.0,
+      "text": "have some physical piece of hardware,"
+    },
+    {
+      "start": 2367.56,
+      "end": 2372.32,
+      "text": "some mainframe that I can't, maybe I"
+    },
+    {
+      "start": 2370.0,
+      "end": 2376.16,
+      "text": "don't have the time to get it to be able"
+    },
+    {
+      "start": 2372.32,
+      "end": 2377.56,
+      "text": "to move and transfer it into the cloud."
+    },
+    {
+      "start": 2376.16,
+      "end": 2380.6,
+      "text": "So,"
+    },
+    {
+      "start": 2377.56,
+      "end": 2382.88,
+      "text": "when I think about the types of service"
+    },
+    {
+      "start": 2380.6,
+      "end": 2384.68,
+      "text": "that are available, well, there's just a"
+    },
+    {
+      "start": 2382.88,
+      "end": 2388.1600000000003,
+      "text": "massive number. There's compute"
+    },
+    {
+      "start": 2384.68,
+      "end": 2390.7599999999998,
+      "text": "services, storage, network, database, AI"
+    },
+    {
+      "start": 2388.16,
+      "end": 2393.3199999999997,
+      "text": "machine learning, analytics, security,"
+    },
+    {
+      "start": 2390.76,
+      "end": 2395.2000000000003,
+      "text": "DevOps, IoT."
+    },
+    {
+      "start": 2393.32,
+      "end": 2396.36,
+      "text": "And one of the maybe the good things to"
+    },
+    {
+      "start": 2395.2,
+      "end": 2397.8399999999997,
+      "text": "do is if you just go and look at this"
+    },
+    {
+      "start": 2396.36,
+      "end": 2399.0,
+      "text": "super quickly, we can go and look at"
+    },
+    {
+      "start": 2397.84,
+      "end": 2400.96,
+      "text": "these."
+    },
+    {
+      "start": 2399.0,
+      "end": 2403.04,
+      "text": "And it breaks it down into AI machine"
+    },
+    {
+      "start": 2400.96,
+      "end": 2404.44,
+      "text": "learning. There's bot services, AI"
+    },
+    {
+      "start": 2403.04,
+      "end": 2405.68,
+      "text": "search,"
+    },
+    {
+      "start": 2404.44,
+      "end": 2407.68,
+      "text": "which is great for creating these"
+    },
+    {
+      "start": 2405.68,
+      "end": 2409.56,
+      "text": "semantic indexes we use with large"
+    },
+    {
+      "start": 2407.68,
+      "end": 2411.8799999999997,
+      "text": "language models, regular machine"
+    },
+    {
+      "start": 2409.56,
+      "end": 2416.72,
+      "text": "learning, video indexer. I mean, there's"
+    },
+    {
+      "start": 2411.88,
+      "end": 2416.7200000000003,
+      "text": "just so open AI services."
+    },
+    {
+      "start": 2416.88,
+      "end": 2422.7200000000003,
+      "text": "I mean, analytics capabilities, compute."
+    },
+    {
+      "start": 2420.24,
+      "end": 2425.2,
+      "text": "So, you see Windows VMs, Linux VMs, even"
+    },
+    {
+      "start": 2422.72,
+      "end": 2429.68,
+      "text": "hey, I'm VMware. I can run uh"
+    },
+    {
+      "start": 2425.2,
+      "end": 2432.0,
+      "text": "VMware-based services in Azure."
+    },
+    {
+      "start": 2429.68,
+      "end": 2433.68,
+      "text": "Virtual machine scale sets, container"
+    },
+    {
+      "start": 2432.0,
+      "end": 2436.84,
+      "text": "capabilities, container apps,"
+    },
+    {
+      "start": 2433.68,
+      "end": 2438.48,
+      "text": "container-specific services."
+    },
+    {
+      "start": 2436.84,
+      "end": 2441.0,
+      "text": "Different types of database, different"
+    },
+    {
+      "start": 2438.48,
+      "end": 2444.96,
+      "text": "types of caching."
+    },
+    {
+      "start": 2441.0,
+      "end": 2448.4,
+      "text": "There's just this huge, huge number"
+    },
+    {
+      "start": 2444.96,
+      "end": 2450.12,
+      "text": "of capabilities available to you in"
+    },
+    {
+      "start": 2448.4,
+      "end": 2452.8,
+      "text": "Azure."
+    },
+    {
+      "start": 2450.12,
+      "end": 2455.0,
+      "text": "And so, one of those points here is to"
+    },
+    {
+      "start": 2452.8,
+      "end": 2456.6400000000003,
+      "text": "really go and understand, well, what's"
+    },
+    {
+      "start": 2455.0,
+      "end": 2459.8,
+      "text": "available"
+    },
+    {
+      "start": 2456.64,
+      "end": 2461.6,
+      "text": "and what should I actually be using as"
+    },
+    {
+      "start": 2459.8,
+      "end": 2463.7200000000003,
+      "text": "part of it."
+    },
+    {
+      "start": 2461.6,
+      "end": 2466.88,
+      "text": "But that's going to take you some time."
+    },
+    {
+      "start": 2463.72,
+      "end": 2468.9199999999996,
+      "text": "Okay, so how do we actually go and get"
+    },
+    {
+      "start": 2466.88,
+      "end": 2471.0,
+      "text": "Azure? And there there's different"
+    },
+    {
+      "start": 2468.92,
+      "end": 2473.36,
+      "text": "options available."
+    },
+    {
+      "start": 2471.0,
+      "end": 2475.48,
+      "text": "For most of us, remember, if you want to"
+    },
+    {
+      "start": 2473.36,
+      "end": 2477.2000000000003,
+      "text": "learn something, you have to get"
+    },
+    {
+      "start": 2475.48,
+      "end": 2480.64,
+      "text": "hands-on Azure. There's no way you can"
+    },
+    {
+      "start": 2477.2,
+      "end": 2483.7999999999997,
+      "text": "learn Azure just by reading or watching"
+    },
+    {
+      "start": 2480.64,
+      "end": 2487.0,
+      "text": "videos. You have to go and get hands-on."
+    },
+    {
+      "start": 2483.8,
+      "end": 2488.52,
+      "text": "Now, a key point both for free services"
+    },
+    {
+      "start": 2487.0,
+      "end": 2489.88,
+      "text": "and everything else"
+    },
+    {
+      "start": 2488.52,
+      "end": 2493.16,
+      "text": "is remember, you pay for what you"
+    },
+    {
+      "start": 2489.88,
+      "end": 2495.2400000000002,
+      "text": "consume. Make sure you shut things down"
+    },
+    {
+      "start": 2493.16,
+      "end": 2497.48,
+      "text": "when they're not in use or scale them"
+    },
+    {
+      "start": 2495.24,
+      "end": 2499.8799999999997,
+      "text": "down. And there's lots of capabilities"
+    },
+    {
+      "start": 2497.48,
+      "end": 2503.16,
+      "text": "to be able to go and"
+    },
+    {
+      "start": 2499.88,
+      "end": 2504.8,
+      "text": "tag resources to see who's using them."
+    },
+    {
+      "start": 2503.16,
+      "end": 2507.3199999999997,
+      "text": "And we get certain services free for"
+    },
+    {
+      "start": 2504.8,
+      "end": 2509.96,
+      "text": "certain amount of time."
+    },
+    {
+      "start": 2507.32,
+      "end": 2514.1600000000003,
+      "text": "But one way to get started is there is"
+    },
+    {
+      "start": 2509.96,
+      "end": 2516.12,
+      "text": "just a a 1-month trial. You get $200 of"
+    },
+    {
+      "start": 2514.16,
+      "end": 2517.8399999999997,
+      "text": "credit. Let's just go and take a look at"
+    },
+    {
+      "start": 2516.12,
+      "end": 2521.7999999999997,
+      "text": "this."
+    },
+    {
+      "start": 2517.84,
+      "end": 2521.8,
+      "text": "So, you get 100 $200 of credit."
+    },
+    {
+      "start": 2522.44,
+      "end": 2527.4,
+      "text": "So, this is the free account."
+    },
+    {
+      "start": 2524.88,
+      "end": 2529.8,
+      "text": "But additionally"
+    },
+    {
+      "start": 2527.4,
+      "end": 2533.52,
+      "text": "you also get, in addition, a certain"
+    },
+    {
+      "start": 2529.8,
+      "end": 2535.6800000000003,
+      "text": "amount of services free for 12 months."
+    },
+    {
+      "start": 2533.52,
+      "end": 2537.04,
+      "text": "And there's also services that are free"
+    },
+    {
+      "start": 2535.68,
+      "end": 2538.7999999999997,
+      "text": "always."
+    },
+    {
+      "start": 2537.04,
+      "end": 2542.16,
+      "text": "And what's interesting is a lot of these"
+    },
+    {
+      "start": 2538.8,
+      "end": 2544.04,
+      "text": "are also available on regular accounts."
+    },
+    {
+      "start": 2542.16,
+      "end": 2546.48,
+      "text": "So, even if I create a regular account,"
+    },
+    {
+      "start": 2544.04,
+      "end": 2547.64,
+      "text": "I still get certain services free for 12"
+    },
+    {
+      "start": 2546.48,
+      "end": 2549.72,
+      "text": "months"
+    },
+    {
+      "start": 2547.64,
+      "end": 2550.64,
+      "text": "and then certain amount that are always"
+    },
+    {
+      "start": 2549.72,
+      "end": 2552.9599999999996,
+      "text": "free."
+    },
+    {
+      "start": 2550.64,
+      "end": 2554.52,
+      "text": "And if we scroll down"
+    },
+    {
+      "start": 2552.96,
+      "end": 2556.52,
+      "text": "we can go and see all the different"
+    },
+    {
+      "start": 2554.52,
+      "end": 2558.16,
+      "text": "types of free services."
+    },
+    {
+      "start": 2556.52,
+      "end": 2560.28,
+      "text": "And some of them, as you can see, are"
+    },
+    {
+      "start": 2558.16,
+      "end": 2562.12,
+      "text": "free always."
+    },
+    {
+      "start": 2560.28,
+      "end": 2564.76,
+      "text": "You can see this column"
+    },
+    {
+      "start": 2562.12,
+      "end": 2566.92,
+      "text": "over here."
+    },
+    {
+      "start": 2564.76,
+      "end": 2568.1600000000003,
+      "text": "And some of them are for 12 months."
+    },
+    {
+      "start": 2566.92,
+      "end": 2570.64,
+      "text": "So, for example, AI document"
+    },
+    {
+      "start": 2568.16,
+      "end": 2573.72,
+      "text": "intelligence"
+    },
+    {
+      "start": 2570.64,
+      "end": 2576.56,
+      "text": "gives you 500 pages"
+    },
+    {
+      "start": 2573.72,
+      "end": 2579.12,
+      "text": "OCR for 12 months."
+    },
+    {
+      "start": 2576.56,
+      "end": 2581.24,
+      "text": "There are some things around databases."
+    },
+    {
+      "start": 2579.12,
+      "end": 2583.12,
+      "text": "That's AI vision. But this is really"
+    },
+    {
+      "start": 2581.24,
+      "end": 2586.16,
+      "text": "nice. You can go and test certain things"
+    },
+    {
+      "start": 2583.12,
+      "end": 2588.08,
+      "text": "out. Cosmos DB. Hey, for 12 months, I"
+    },
+    {
+      "start": 2586.16,
+      "end": 2589.3599999999997,
+      "text": "can get this 400 request units per"
+    },
+    {
+      "start": 2588.08,
+      "end": 2592.52,
+      "text": "second"
+    },
+    {
+      "start": 2589.36,
+      "end": 2594.0,
+      "text": "with 25 GB of storage."
+    },
+    {
+      "start": 2592.52,
+      "end": 2595.7599999999998,
+      "text": "So, it's a nice way to go and test and"
+    },
+    {
+      "start": 2594.0,
+      "end": 2597.92,
+      "text": "try things out. So,"
+    },
+    {
+      "start": 2595.76,
+      "end": 2599.1600000000003,
+      "text": "go and take advantage and look at these"
+    },
+    {
+      "start": 2597.92,
+      "end": 2601.48,
+      "text": "things"
+    },
+    {
+      "start": 2599.16,
+      "end": 2603.3999999999996,
+      "text": "cuz it can really save you uh"
+    },
+    {
+      "start": 2601.48,
+      "end": 2604.92,
+      "text": "a nice amount of money"
+    },
+    {
+      "start": 2603.4,
+      "end": 2607.28,
+      "text": "when I want to go and learn these"
+    },
+    {
+      "start": 2604.92,
+      "end": 2610.04,
+      "text": "capabilities. So, the"
+    },
+    {
+      "start": 2607.28,
+      "end": 2611.4,
+      "text": "the free trial, yes, it's $200 credit of"
+    },
+    {
+      "start": 2610.04,
+      "end": 2613.16,
+      "text": "nearly anything. There's some"
+    },
+    {
+      "start": 2611.4,
+      "end": 2614.64,
+      "text": "limitations on things like marketplace,"
+    },
+    {
+      "start": 2613.16,
+      "end": 2616.16,
+      "text": "etc."
+    },
+    {
+      "start": 2614.64,
+      "end": 2618.3599999999997,
+      "text": "But for most part, I can go and consume"
+    },
+    {
+      "start": 2616.16,
+      "end": 2620.48,
+      "text": "those services. But you also get some"
+    },
+    {
+      "start": 2618.36,
+      "end": 2622.2000000000003,
+      "text": "things free for 12 months and then other"
+    },
+    {
+      "start": 2620.48,
+      "end": 2625.52,
+      "text": "things free always across all the"
+    },
+    {
+      "start": 2622.2,
+      "end": 2625.52,
+      "text": "different types of account."
+    },
+    {
+      "start": 2626.04,
+      "end": 2629.96,
+      "text": "For"
+    },
+    {
+      "start": 2626.92,
+      "end": 2632.08,
+      "text": "more regular companies, well, actually,"
+    },
+    {
+      "start": 2629.96,
+      "end": 2634.16,
+      "text": "another thing you have"
+    },
+    {
+      "start": 2632.08,
+      "end": 2637.44,
+      "text": "is you have the idea of if I have a"
+    },
+    {
+      "start": 2634.16,
+      "end": 2639.7599999999998,
+      "text": "Visual Studio Enterprise license"
+    },
+    {
+      "start": 2637.44,
+      "end": 2642.4,
+      "text": "you actually get Azure for free as part"
+    },
+    {
+      "start": 2639.76,
+      "end": 2644.5600000000004,
+      "text": "of that. So, if we go and look here at"
+    },
+    {
+      "start": 2642.4,
+      "end": 2646.56,
+      "text": "this link"
+    },
+    {
+      "start": 2644.56,
+      "end": 2650.56,
+      "text": "we'll see"
+    },
+    {
+      "start": 2646.56,
+      "end": 2650.56,
+      "text": "depending on which subscription I have"
+    },
+    {
+      "start": 2650.76,
+      "end": 2654.76,
+      "text": "you get a different amount of credit."
+    },
+    {
+      "start": 2652.32,
+      "end": 2656.8,
+      "text": "So, if I've got the Enterprise, I get"
+    },
+    {
+      "start": 2654.76,
+      "end": 2658.44,
+      "text": "$150 a month."
+    },
+    {
+      "start": 2656.8,
+      "end": 2661.5600000000004,
+      "text": "If I've got just a regular MSDN, it's"
+    },
+    {
+      "start": 2658.44,
+      "end": 2663.88,
+      "text": "100. And for Visual Studio Professional"
+    },
+    {
+      "start": 2661.56,
+      "end": 2664.7999999999997,
+      "text": "or Test, I get 50."
+    },
+    {
+      "start": 2663.88,
+      "end": 2666.32,
+      "text": "So,"
+    },
+    {
+      "start": 2664.8,
+      "end": 2668.0,
+      "text": "you can go and turn those things on. I"
+    },
+    {
+      "start": 2666.32,
+      "end": 2670.4,
+      "text": "shouldn't run production workloads in"
+    },
+    {
+      "start": 2668.0,
+      "end": 2672.72,
+      "text": "there. But it it's a nice thing that I"
+    },
+    {
+      "start": 2670.4,
+      "end": 2674.6,
+      "text": "can use if I just want to go and play"
+    },
+    {
+      "start": 2672.72,
+      "end": 2676.7599999999998,
+      "text": "around."
+    },
+    {
+      "start": 2674.6,
+      "end": 2679.64,
+      "text": "Now, for a small organization"
+    },
+    {
+      "start": 2676.76,
+      "end": 2681.3590000000004,
+      "text": "what I'd probably go and do is I can"
+    },
+    {
+      "start": 2679.64,
+      "end": 2682.48,
+      "text": "create a pay-as-you-go."
+    },
+    {
+      "start": 2681.359,
+      "end": 2685.2799999999997,
+      "text": "So, pay-as-you-go is when I create the"
+    },
+    {
+      "start": 2682.48,
+      "end": 2687.32,
+      "text": "subscription and I just pay for it as I"
+    },
+    {
+      "start": 2685.28,
+      "end": 2689.0,
+      "text": "consume the resource."
+    },
+    {
+      "start": 2687.32,
+      "end": 2690.52,
+      "text": "Now, I can still have multiple different"
+    },
+    {
+      "start": 2689.0,
+      "end": 2692.48,
+      "text": "subscriptions, which we're going to talk"
+    },
+    {
+      "start": 2690.52,
+      "end": 2694.6,
+      "text": "about when we get into governance. I can"
+    },
+    {
+      "start": 2692.48,
+      "end": 2697.04,
+      "text": "still organize them into different"
+    },
+    {
+      "start": 2694.6,
+      "end": 2698.7999999999997,
+      "text": "groupings called management groups under"
+    },
+    {
+      "start": 2697.04,
+      "end": 2701.44,
+      "text": "my tenant. That's where my accounts"
+    },
+    {
+      "start": 2698.8,
+      "end": 2702.6800000000003,
+      "text": "live. So, I'll have an intra ID tenant,"
+    },
+    {
+      "start": 2701.44,
+      "end": 2704.68,
+      "text": "just like an old active directory"
+    },
+    {
+      "start": 2702.68,
+      "end": 2707.44,
+      "text": "domain, but it's all of my accounts and"
+    },
+    {
+      "start": 2704.68,
+      "end": 2710.0,
+      "text": "identities. My devices are known there."
+    },
+    {
+      "start": 2707.44,
+      "end": 2713.44,
+      "text": "So, I can still do organization."
+    },
+    {
+      "start": 2710.0,
+      "end": 2716.64,
+      "text": "But if I'm a large company"
+    },
+    {
+      "start": 2713.44,
+      "end": 2719.16,
+      "text": "I've lots of different subscriptions."
+    },
+    {
+      "start": 2716.64,
+      "end": 2721.2799999999997,
+      "text": "Well, here what I can do is I can create"
+    },
+    {
+      "start": 2719.16,
+      "end": 2723.7999999999997,
+      "text": "an enterprise agreement, an EA. There's"
+    },
+    {
+      "start": 2721.28,
+      "end": 2725.28,
+      "text": "other vehicles available as well."
+    },
+    {
+      "start": 2723.8,
+      "end": 2728.1600000000003,
+      "text": "And here I can have lots of"
+    },
+    {
+      "start": 2725.28,
+      "end": 2730.88,
+      "text": "subscriptions. I can organize them uh"
+    },
+    {
+      "start": 2728.16,
+      "end": 2732.64,
+      "text": "with departments and account owners"
+    },
+    {
+      "start": 2730.88,
+      "end": 2735.32,
+      "text": "to control who can go and create"
+    },
+    {
+      "start": 2732.64,
+      "end": 2736.7599999999998,
+      "text": "subscriptions for their things."
+    },
+    {
+      "start": 2735.32,
+      "end": 2738.76,
+      "text": "I"
+    },
+    {
+      "start": 2736.76,
+      "end": 2742.4,
+      "text": "can have some additional roles. So, I"
+    },
+    {
+      "start": 2738.76,
+      "end": 2743.5200000000004,
+      "text": "have things like an enterprise uh admin."
+    },
+    {
+      "start": 2742.4,
+      "end": 2746.04,
+      "text": "The enterprise administrator has the"
+    },
+    {
+      "start": 2743.52,
+      "end": 2748.24,
+      "text": "ability to create and add accounts to my"
+    },
+    {
+      "start": 2746.04,
+      "end": 2750.0,
+      "text": "involvement. And then the account owners"
+    },
+    {
+      "start": 2748.24,
+      "end": 2751.9599999999996,
+      "text": "can go and add subscriptions to their"
+    },
+    {
+      "start": 2750.0,
+      "end": 2754.6,
+      "text": "account. So, I have those different"
+    },
+    {
+      "start": 2751.96,
+      "end": 2756.359,
+      "text": "types of capabilities there."
+    },
+    {
+      "start": 2754.6,
+      "end": 2759.16,
+      "text": "Um another option"
+    },
+    {
+      "start": 2756.359,
+      "end": 2762.2,
+      "text": "I can use a cloud service provider. So,"
+    },
+    {
+      "start": 2759.16,
+      "end": 2764.44,
+      "text": "this is almost like a reseller in a way."
+    },
+    {
+      "start": 2762.2,
+      "end": 2767.0,
+      "text": "But they're an entity I work with who"
+    },
+    {
+      "start": 2764.44,
+      "end": 2769.4,
+      "text": "will provide Azure services. And then"
+    },
+    {
+      "start": 2767.0,
+      "end": 2771.8,
+      "text": "maybe I pay them and they may even add"
+    },
+    {
+      "start": 2769.4,
+      "end": 2774.6800000000003,
+      "text": "additional capabilities on top of that."
+    },
+    {
+      "start": 2771.8,
+      "end": 2776.44,
+      "text": "Some some value add as part of those"
+    },
+    {
+      "start": 2774.68,
+      "end": 2778.44,
+      "text": "things."
+    },
+    {
+      "start": 2776.44,
+      "end": 2780.2000000000003,
+      "text": "Now, when I think about if I'm using an"
+    },
+    {
+      "start": 2778.44,
+      "end": 2781.7200000000003,
+      "text": "enterprise agreement, how I would set"
+    },
+    {
+      "start": 2780.2,
+      "end": 2784.3999999999996,
+      "text": "this up"
+    },
+    {
+      "start": 2781.72,
+      "end": 2785.7999999999997,
+      "text": "well, there's lots of different options."
+    },
+    {
+      "start": 2784.4,
+      "end": 2787.88,
+      "text": "But I think about creating different"
+    },
+    {
+      "start": 2785.8,
+      "end": 2790.4,
+      "text": "subscriptions for different units of"
+    },
+    {
+      "start": 2787.88,
+      "end": 2793.48,
+      "text": "work. Uh remember, for billing I can use"
+    },
+    {
+      "start": 2790.4,
+      "end": 2795.28,
+      "text": "tags for showback, chargeback."
+    },
+    {
+      "start": 2793.48,
+      "end": 2796.92,
+      "text": "But I might have different options for"
+    },
+    {
+      "start": 2795.28,
+      "end": 2799.32,
+      "text": "creating those accounts, maybe based on"
+    },
+    {
+      "start": 2796.92,
+      "end": 2802.08,
+      "text": "functional teams. So, sales, legal,"
+    },
+    {
+      "start": 2799.32,
+      "end": 2805.4,
+      "text": "marketing, maybe business divisions,"
+    },
+    {
+      "start": 2802.08,
+      "end": 2808.24,
+      "text": "Windows, Bing. Um geographic. So, North"
+    },
+    {
+      "start": 2805.4,
+      "end": 2810.2000000000003,
+      "text": "America, Europe. So, I can break the"
+    },
+    {
+      "start": 2808.24,
+      "end": 2813.2,
+      "text": "things up and it's really a function for"
+    },
+    {
+      "start": 2810.2,
+      "end": 2815.3199999999997,
+      "text": "me on how I want to do business. That's"
+    },
+    {
+      "start": 2813.2,
+      "end": 2817.3199999999997,
+      "text": "the whole goal of this. It lets me"
+    },
+    {
+      "start": 2815.32,
+      "end": 2819.84,
+      "text": "organize my things based on, hey, you"
+    },
+    {
+      "start": 2817.32,
+      "end": 2823.7200000000003,
+      "text": "can create subscriptions for your group,"
+    },
+    {
+      "start": 2819.84,
+      "end": 2826.2000000000003,
+      "text": "uh your line of business. Um again, yes,"
+    },
+    {
+      "start": 2823.72,
+      "end": 2827.4399999999996,
+      "text": "visibility is some of the billing."
+    },
+    {
+      "start": 2826.2,
+      "end": 2829.68,
+      "text": "But honestly, these days there's there's"
+    },
+    {
+      "start": 2827.44,
+      "end": 2831.56,
+      "text": "richer capabilities. For policy and"
+    },
+    {
+      "start": 2829.68,
+      "end": 2833.04,
+      "text": "governance, we don't use this. We use"
+    },
+    {
+      "start": 2831.56,
+      "end": 2836.96,
+      "text": "management groups, which we'll talk"
+    },
+    {
+      "start": 2833.04,
+      "end": 2836.96,
+      "text": "about when we cover governance."
+    },
+    {
+      "start": 2837.359,
+      "end": 2841.2799999999997,
+      "text": "So,"
+    },
+    {
+      "start": 2838.52,
+      "end": 2843.64,
+      "text": "there are limits. Uh there are quotas."
+    },
+    {
+      "start": 2841.28,
+      "end": 2845.48,
+      "text": "Remember, be mindful of your spend. Shut"
+    },
+    {
+      "start": 2843.64,
+      "end": 2848.44,
+      "text": "down VMs we're not using. We're going to"
+    },
+    {
+      "start": 2845.48,
+      "end": 2851.48,
+      "text": "spend a whole bunch of time on this."
+    },
+    {
+      "start": 2848.44,
+      "end": 2854.32,
+      "text": "But there are limits put in place and a"
+    },
+    {
+      "start": 2851.48,
+      "end": 2855.96,
+      "text": "lot of these are to help protect you"
+    },
+    {
+      "start": 2854.32,
+      "end": 2857.56,
+      "text": "from yourselves."
+    },
+    {
+      "start": 2855.96,
+      "end": 2859.16,
+      "text": "So, there are soft limits and hard"
+    },
+    {
+      "start": 2857.56,
+      "end": 2862.12,
+      "text": "limits. Soft limits are things we can"
+    },
+    {
+      "start": 2859.16,
+      "end": 2863.64,
+      "text": "request to increase. Hard limits are,"
+    },
+    {
+      "start": 2862.12,
+      "end": 2865.64,
+      "text": "hey, this is the maximum. So, this might"
+    },
+    {
+      "start": 2863.64,
+      "end": 2869.52,
+      "text": "be the number of cores I can use in a"
+    },
+    {
+      "start": 2865.64,
+      "end": 2871.08,
+      "text": "subscription of VMs. It might be how big"
+    },
+    {
+      "start": 2869.52,
+      "end": 2872.88,
+      "text": "a storage account can be. It might be"
+    },
+    {
+      "start": 2871.08,
+      "end": 2874.56,
+      "text": "how many instances of a database I can"
+    },
+    {
+      "start": 2872.88,
+      "end": 2876.2000000000003,
+      "text": "have."
+    },
+    {
+      "start": 2874.56,
+      "end": 2878.12,
+      "text": "So, additionally, a lot of subscriptions"
+    },
+    {
+      "start": 2876.2,
+      "end": 2879.3999999999996,
+      "text": "will have fairly low limits and it's"
+    },
+    {
+      "start": 2878.12,
+      "end": 2881.7999999999997,
+      "text": "just to protect you from yourselves. You"
+    },
+    {
+      "start": 2879.4,
+      "end": 2884.04,
+      "text": "may get go off and start playing. It's a"
+    },
+    {
+      "start": 2881.8,
+      "end": 2885.96,
+      "text": "way to try and limit the damage you can"
+    },
+    {
+      "start": 2884.04,
+      "end": 2888.32,
+      "text": "do to yourself in terms of how big your"
+    },
+    {
+      "start": 2885.96,
+      "end": 2891.48,
+      "text": "cloud bill will be."
+    },
+    {
+      "start": 2888.32,
+      "end": 2893.52,
+      "text": "And those limits are documented."
+    },
+    {
+      "start": 2891.48,
+      "end": 2895.32,
+      "text": "So, we can go and we can look at the"
+    },
+    {
+      "start": 2893.52,
+      "end": 2896.7599999999998,
+      "text": "limit pages"
+    },
+    {
+      "start": 2895.32,
+      "end": 2898.3590000000004,
+      "text": "and it will talk about all the different"
+    },
+    {
+      "start": 2896.76,
+      "end": 2900.0800000000004,
+      "text": "types of limits that are available. So,"
+    },
+    {
+      "start": 2898.359,
+      "end": 2901.2,
+      "text": "there's limits in management group"
+    },
+    {
+      "start": 2900.08,
+      "end": 2903.64,
+      "text": "subscription limits, how many"
+    },
+    {
+      "start": 2901.2,
+      "end": 2906.3999999999996,
+      "text": "subscriptions I can have, how many"
+    },
+    {
+      "start": 2903.64,
+      "end": 2908.72,
+      "text": "resource groups per subscription,"
+    },
+    {
+      "start": 2906.4,
+      "end": 2909.96,
+      "text": "resource groups limits,"
+    },
+    {
+      "start": 2908.72,
+      "end": 2912.2799999999997,
+      "text": "intra ID limits. There's going to be"
+    },
+    {
+      "start": 2909.96,
+      "end": 2914.4,
+      "text": "limits for every types of resource that"
+    },
+    {
+      "start": 2912.28,
+      "end": 2915.92,
+      "text": "exists. So, I can go and see these and"
+    },
+    {
+      "start": 2914.4,
+      "end": 2917.56,
+      "text": "notice"
+    },
+    {
+      "start": 2915.92,
+      "end": 2919.04,
+      "text": "the limits may change based on the type"
+    },
+    {
+      "start": 2917.56,
+      "end": 2921.72,
+      "text": "of SKU."
+    },
+    {
+      "start": 2919.04,
+      "end": 2923.8,
+      "text": "There's different SKUs showing here."
+    },
+    {
+      "start": 2921.72,
+      "end": 2925.7999999999997,
+      "text": "And that's often a reason why there are"
+    },
+    {
+      "start": 2923.8,
+      "end": 2928.1600000000003,
+      "text": "different types of the same service. So,"
+    },
+    {
+      "start": 2925.8,
+      "end": 2929.96,
+      "text": "for app service, for example,"
+    },
+    {
+      "start": 2928.16,
+      "end": 2932.8399999999997,
+      "text": "well, there's a free tier, a shared"
+    },
+    {
+      "start": 2929.96,
+      "end": 2935.2400000000002,
+      "text": "tier, a basic, standard, premium V1 to"
+    },
+    {
+      "start": 2932.84,
+      "end": 2938.96,
+      "text": "3, isolated. And they have some"
+    },
+    {
+      "start": 2935.24,
+      "end": 2940.7599999999998,
+      "text": "different numbers based on which SKU I'm"
+    },
+    {
+      "start": 2938.96,
+      "end": 2942.6,
+      "text": "using."
+    },
+    {
+      "start": 2940.76,
+      "end": 2945.6000000000004,
+      "text": "How many instances I can have. So, as"
+    },
+    {
+      "start": 2942.6,
+      "end": 2947.64,
+      "text": "they go up as I go up the SKUs. So,"
+    },
+    {
+      "start": 2945.6,
+      "end": 2949.4,
+      "text": "that's one of the reasons"
+    },
+    {
+      "start": 2947.64,
+      "end": 2952.52,
+      "text": "often we have these different SKUs. It"
+    },
+    {
+      "start": 2949.4,
+      "end": 2954.56,
+      "text": "might be how big they can be, how much"
+    },
+    {
+      "start": 2952.52,
+      "end": 2956.0,
+      "text": "compute they can use. It may be they"
+    },
+    {
+      "start": 2954.56,
+      "end": 2958.7999999999997,
+      "text": "actually add different specific"
+    },
+    {
+      "start": 2956.0,
+      "end": 2960.88,
+      "text": "capabilities as well to them."
+    },
+    {
+      "start": 2958.8,
+      "end": 2962.96,
+      "text": "But some of these limits will be soft,"
+    },
+    {
+      "start": 2960.88,
+      "end": 2964.88,
+      "text": "some of them are hard. Again, if soft, I"
+    },
+    {
+      "start": 2962.96,
+      "end": 2966.92,
+      "text": "can go and request"
+    },
+    {
+      "start": 2964.88,
+      "end": 2969.2000000000003,
+      "text": "them to be increased"
+    },
+    {
+      "start": 2966.92,
+      "end": 2970.56,
+      "text": "by putting in a service ticket. So, we"
+    },
+    {
+      "start": 2969.2,
+      "end": 2972.4399999999996,
+      "text": "have all of these different"
+    },
+    {
+      "start": 2970.56,
+      "end": 2974.7999999999997,
+      "text": "capabilities."
+    },
+    {
+      "start": 2972.44,
+      "end": 2976.32,
+      "text": "And those limits will vary."
+    },
+    {
+      "start": 2974.8,
+      "end": 2977.76,
+      "text": "And"
+    },
+    {
+      "start": 2976.32,
+      "end": 2980.28,
+      "text": "you can increase them. If I go to my"
+    },
+    {
+      "start": 2977.76,
+      "end": 2983.0,
+      "text": "subscription page in the portal and I go"
+    },
+    {
+      "start": 2980.28,
+      "end": 2985.5600000000004,
+      "text": "to usage and quotas, there's a service"
+    },
+    {
+      "start": 2983.0,
+      "end": 2987.16,
+      "text": "request to go and request to increase"
+    },
+    {
+      "start": 2985.56,
+      "end": 2989.0,
+      "text": "that."
+    },
+    {
+      "start": 2987.16,
+      "end": 2990.68,
+      "text": "And on your account, if I got that free"
+    },
+    {
+      "start": 2989.0,
+      "end": 2992.6,
+      "text": "account, I can always go and remove the"
+    },
+    {
+      "start": 2990.68,
+      "end": 2995.64,
+      "text": "spending limit. So, hey, I've used my"
+    },
+    {
+      "start": 2992.6,
+      "end": 2997.44,
+      "text": "$200. I want to keep doing other stuff."
+    },
+    {
+      "start": 2995.64,
+      "end": 3000.24,
+      "text": "Then it's going to start billing to my"
+    },
+    {
+      "start": 2997.44,
+      "end": 3000.2400000000002,
+      "text": "credit card."
+    },
+    {
+      "start": 3001.12,
+      "end": 3004.52,
+      "text": "I want to talk a quick bit about"
+    },
+    {
+      "start": 3002.6,
+      "end": 3007.16,
+      "text": "reliability"
+    },
+    {
+      "start": 3004.52,
+      "end": 3009.04,
+      "text": "because we think differently than"
+    },
+    {
+      "start": 3007.16,
+      "end": 3011.24,
+      "text": "historically how we may have thought"
+    },
+    {
+      "start": 3009.04,
+      "end": 3012.6,
+      "text": "about it on premises."
+    },
+    {
+      "start": 3011.24,
+      "end": 3015.04,
+      "text": "Um we're going to talk about this a lot"
+    },
+    {
+      "start": 3012.6,
+      "end": 3017.88,
+      "text": "more in in future modules. But it it"
+    },
+    {
+      "start": 3015.04,
+      "end": 3020.84,
+      "text": "made sense to cover it really quickly."
+    },
+    {
+      "start": 3017.88,
+      "end": 3022.36,
+      "text": "So, historically"
+    },
+    {
+      "start": 3020.84,
+      "end": 3024.6400000000003,
+      "text": "on premises, we always thought about"
+    },
+    {
+      "start": 3022.36,
+      "end": 3025.84,
+      "text": "reliability in the hardware."
+    },
+    {
+      "start": 3024.64,
+      "end": 3027.44,
+      "text": "So, I would have this centralized"
+    },
+    {
+      "start": 3025.84,
+      "end": 3029.6000000000004,
+      "text": "storage of SAN."
+    },
+    {
+      "start": 3027.44,
+      "end": 3031.0,
+      "text": "And I had lots of resiliency built into"
+    },
+    {
+      "start": 3029.6,
+      "end": 3033.3199999999997,
+      "text": "my SAN, lots of disks, lots of"
+    },
+    {
+      "start": 3031.0,
+      "end": 3037.52,
+      "text": "replications. I would have clusters of"
+    },
+    {
+      "start": 3033.32,
+      "end": 3040.36,
+      "text": "hosts that would fail over VM."
+    },
+    {
+      "start": 3037.52,
+      "end": 3042.24,
+      "text": "I would migrate VMs between those hosts"
+    },
+    {
+      "start": 3040.36,
+      "end": 3044.28,
+      "text": "when I had planned maintenance. So, it"
+    },
+    {
+      "start": 3042.24,
+      "end": 3046.4799999999996,
+      "text": "would do like a live migration or a V"
+    },
+    {
+      "start": 3044.28,
+      "end": 3049.4,
+      "text": "motion so I could patch the host without"
+    },
+    {
+      "start": 3046.48,
+      "end": 3051.0,
+      "text": "any downtime to the operating system."
+    },
+    {
+      "start": 3049.4,
+      "end": 3053.4,
+      "text": "And very often we had these single"
+    },
+    {
+      "start": 3051.0,
+      "end": 3055.4,
+      "text": "instances of workloads."
+    },
+    {
+      "start": 3053.4,
+      "end": 3057.12,
+      "text": "The challenge here"
+    },
+    {
+      "start": 3055.4,
+      "end": 3060.7200000000003,
+      "text": "is that only works for planned"
+    },
+    {
+      "start": 3057.12,
+      "end": 3063.08,
+      "text": "scenarios. If there's actually a a crash"
+    },
+    {
+      "start": 3060.72,
+      "end": 3065.3199999999997,
+      "text": "to the host, well, then yes, it would"
+    },
+    {
+      "start": 3063.08,
+      "end": 3067.0,
+      "text": "restart on another node. But imagine"
+    },
+    {
+      "start": 3065.32,
+      "end": 3069.96,
+      "text": "there's a crash inside the operating"
+    },
+    {
+      "start": 3067.0,
+      "end": 3072.64,
+      "text": "system. The OS crashes, the app crashes,"
+    },
+    {
+      "start": 3069.96,
+      "end": 3075.12,
+      "text": "some middleware component crashes."
+    },
+    {
+      "start": 3072.64,
+      "end": 3078.4,
+      "text": "The VM is still running."
+    },
+    {
+      "start": 3075.12,
+      "end": 3080.68,
+      "text": "Unless I'm doing more in-depth probing,"
+    },
+    {
+      "start": 3078.4,
+      "end": 3083.0,
+      "text": "I won't even know in it that element is"
+    },
+    {
+      "start": 3080.68,
+      "end": 3085.68,
+      "text": "just crashed inside. So, it doesn't help"
+    },
+    {
+      "start": 3083.0,
+      "end": 3087.28,
+      "text": "protect me from everything."
+    },
+    {
+      "start": 3085.68,
+      "end": 3090.08,
+      "text": "And so, this idea of a single instance"
+    },
+    {
+      "start": 3087.28,
+      "end": 3091.7200000000003,
+      "text": "is is not a great thing. Now, that is"
+    },
+    {
+      "start": 3090.08,
+      "end": 3093.92,
+      "text": "starting to shift even on premises as we"
+    },
+    {
+      "start": 3091.72,
+      "end": 3096.12,
+      "text": "adopt things like containers. The idea"
+    },
+    {
+      "start": 3093.92,
+      "end": 3098.88,
+      "text": "of having multiple instances to meet"
+    },
+    {
+      "start": 3096.12,
+      "end": 3102.2799999999997,
+      "text": "higher resiliency, but also meet our"
+    },
+    {
+      "start": 3098.88,
+      "end": 3104.08,
+      "text": "scale is becoming more common."
+    },
+    {
+      "start": 3102.28,
+      "end": 3106.44,
+      "text": "But in the cloud"
+    },
+    {
+      "start": 3104.08,
+      "end": 3108.44,
+      "text": "we use reliability in the software."
+    },
+    {
+      "start": 3106.44,
+      "end": 3110.2400000000002,
+      "text": "That's really the focus. We have"
+    },
+    {
+      "start": 3108.44,
+      "end": 3112.84,
+      "text": "distributed"
+    },
+    {
+      "start": 3110.24,
+      "end": 3116.4799999999996,
+      "text": "I have constructs in the cloud that give"
+    },
+    {
+      "start": 3112.84,
+      "end": 3117.6000000000004,
+      "text": "us independent network calling"
+    },
+    {
+      "start": 3116.48,
+      "end": 3118.6,
+      "text": "um"
+    },
+    {
+      "start": 3117.6,
+      "end": 3120.8399999999997,
+      "text": "um"
+    },
+    {
+      "start": 3118.6,
+      "end": 3123.72,
+      "text": "fire suppression"
+    },
+    {
+      "start": 3120.84,
+      "end": 3126.2000000000003,
+      "text": "control plane elements. And we want"
+    },
+    {
+      "start": 3123.72,
+      "end": 3127.3599999999997,
+      "text": "instances of our app distributed over"
+    },
+    {
+      "start": 3126.2,
+      "end": 3129.48,
+      "text": "those"
+    },
+    {
+      "start": 3127.36,
+      "end": 3131.76,
+      "text": "isolation boundaries. So, we have"
+    },
+    {
+      "start": 3129.48,
+      "end": 3133.6,
+      "text": "multiple instances for both our compute"
+    },
+    {
+      "start": 3131.76,
+      "end": 3135.84,
+      "text": "and storage."
+    },
+    {
+      "start": 3133.6,
+      "end": 3136.8399999999997,
+      "text": "And typically VMs are not migrated"
+    },
+    {
+      "start": 3135.84,
+      "end": 3138.32,
+      "text": "during"
+    },
+    {
+      "start": 3136.84,
+      "end": 3140.6000000000004,
+      "text": "maintenance activities. Now, there are"
+    },
+    {
+      "start": 3138.32,
+      "end": 3143.0,
+      "text": "certain things that like VM food to"
+    },
+    {
+      "start": 3140.6,
+      "end": 3145.2799999999997,
+      "text": "minimize the downtime. Sometimes it may"
+    },
+    {
+      "start": 3143.0,
+      "end": 3146.96,
+      "text": "move it. But our resiliency of the"
+    },
+    {
+      "start": 3145.28,
+      "end": 3149.92,
+      "text": "service is because we have multiple"
+    },
+    {
+      "start": 3146.96,
+      "end": 3151.08,
+      "text": "instances spread over update domains."
+    },
+    {
+      "start": 3149.92,
+      "end": 3154.04,
+      "text": "So, our"
+    },
+    {
+      "start": 3151.08,
+      "end": 3156.7599999999998,
+      "text": "service is never down."
+    },
+    {
+      "start": 3154.04,
+      "end": 3159.44,
+      "text": "We're resilient to any node failure or"
+    },
+    {
+      "start": 3156.76,
+      "end": 3161.32,
+      "text": "OS crash or app crash cuz we have"
+    },
+    {
+      "start": 3159.44,
+      "end": 3164.28,
+      "text": "multiple instances and that's a much"
+    },
+    {
+      "start": 3161.32,
+      "end": 3166.8,
+      "text": "higher reliability. So, we think very"
+    },
+    {
+      "start": 3164.28,
+      "end": 3168.5600000000004,
+      "text": "much from our app architecture of a"
+    },
+    {
+      "start": 3166.8,
+      "end": 3171.6800000000003,
+      "text": "shift from not thinking about a single"
+    },
+    {
+      "start": 3168.56,
+      "end": 3173.12,
+      "text": "instance to I want lots of instances."
+    },
+    {
+      "start": 3171.68,
+      "end": 3175.44,
+      "text": "Now,"
+    },
+    {
+      "start": 3173.12,
+      "end": 3178.56,
+      "text": "that does not mean"
+    },
+    {
+      "start": 3175.44,
+      "end": 3180.12,
+      "text": "that Azure is not highly reliable. Those"
+    },
+    {
+      "start": 3178.56,
+      "end": 3182.32,
+      "text": "services we consume have service level"
+    },
+    {
+      "start": 3180.12,
+      "end": 3184.6,
+      "text": "agreements that that tell us what the"
+    },
+    {
+      "start": 3182.32,
+      "end": 3186.76,
+      "text": "availability should be."
+    },
+    {
+      "start": 3184.6,
+      "end": 3188.72,
+      "text": "Those Azure data centers uh I've"
+    },
+    {
+      "start": 3186.76,
+      "end": 3190.6400000000003,
+      "text": "actually gone and done tours of those."
+    },
+    {
+      "start": 3188.72,
+      "end": 3191.68,
+      "text": "They have amazing reliability built into"
+    },
+    {
+      "start": 3190.64,
+      "end": 3193.2799999999997,
+      "text": "them. They have these huge banks of"
+    },
+    {
+      "start": 3191.68,
+      "end": 3195.3599999999997,
+      "text": "batteries. They have huge generators."
+    },
+    {
+      "start": 3193.28,
+      "end": 3198.8,
+      "text": "They have on-site fuel. They have huge"
+    },
+    {
+      "start": 3195.36,
+      "end": 3200.6400000000003,
+      "text": "water tanks for the cooling."
+    },
+    {
+      "start": 3198.8,
+      "end": 3202.92,
+      "text": "So, they are highly reliable and"
+    },
+    {
+      "start": 3200.64,
+      "end": 3205.2799999999997,
+      "text": "resilient."
+    },
+    {
+      "start": 3202.92,
+      "end": 3207.64,
+      "text": "But instead of just relying on that cuz"
+    },
+    {
+      "start": 3205.28,
+      "end": 3209.0400000000004,
+      "text": "things still happen,"
+    },
+    {
+      "start": 3207.64,
+      "end": 3211.4,
+      "text": "we think about well, they provide"
+    },
+    {
+      "start": 3209.04,
+      "end": 3213.32,
+      "text": "availability zones. So, that's within a"
+    },
+    {
+      "start": 3211.4,
+      "end": 3215.44,
+      "text": "particular region,"
+    },
+    {
+      "start": 3213.32,
+      "end": 3218.6000000000004,
+      "text": "but they have independent power cooling"
+    },
+    {
+      "start": 3215.44,
+      "end": 3220.84,
+      "text": "networking, independent control planes."
+    },
+    {
+      "start": 3218.6,
+      "end": 3223.48,
+      "text": "And I want my service distributed over"
+    },
+    {
+      "start": 3220.84,
+      "end": 3225.84,
+      "text": "those. So, if even if a a whole building"
+    },
+    {
+      "start": 3223.48,
+      "end": 3227.96,
+      "text": "went down, my service is still available"
+    },
+    {
+      "start": 3225.84,
+      "end": 3229.8,
+      "text": "in another building."
+    },
+    {
+      "start": 3227.96,
+      "end": 3232.04,
+      "text": "So, we think about leveraging those"
+    },
+    {
+      "start": 3229.8,
+      "end": 3236.52,
+      "text": "capabilities."
+    },
+    {
+      "start": 3232.04,
+      "end": 3238.84,
+      "text": "And really the the goal of reliability"
+    },
+    {
+      "start": 3236.52,
+      "end": 3241.4,
+      "text": "is we want it in the software. Now,"
+    },
+    {
+      "start": 3238.84,
+      "end": 3243.1200000000003,
+      "text": "Microsoft are constantly adding new"
+    },
+    {
+      "start": 3241.4,
+      "end": 3245.04,
+      "text": "reliability features. There was a whole"
+    },
+    {
+      "start": 3243.12,
+      "end": 3246.6,
+      "text": "project tardigrade to increase"
+    },
+    {
+      "start": 3245.04,
+      "end": 3248.0,
+      "text": "reliability. They've changed how they do"
+    },
+    {
+      "start": 3246.6,
+      "end": 3249.48,
+      "text": "deployments with safe deployment"
+    },
+    {
+      "start": 3248.0,
+      "end": 3251.24,
+      "text": "practices."
+    },
+    {
+      "start": 3249.48,
+      "end": 3253.0,
+      "text": "They can detect if there's a hardware"
+    },
+    {
+      "start": 3251.24,
+      "end": 3254.7599999999998,
+      "text": "failure imminent and will try and"
+    },
+    {
+      "start": 3253.0,
+      "end": 3257.84,
+      "text": "proactively do things. So, amazing"
+    },
+    {
+      "start": 3254.76,
+      "end": 3259.5600000000004,
+      "text": "things. But primarily, we don't want"
+    },
+    {
+      "start": 3257.84,
+      "end": 3261.48,
+      "text": "single instances."
+    },
+    {
+      "start": 3259.56,
+      "end": 3264.0,
+      "text": "At the mega scale of a cloud, and this"
+    },
+    {
+      "start": 3261.48,
+      "end": 3265.92,
+      "text": "isn't just Azure, this is anyone,"
+    },
+    {
+      "start": 3264.0,
+      "end": 3268.84,
+      "text": "you focus on multiple instances"
+    },
+    {
+      "start": 3265.92,
+      "end": 3271.32,
+      "text": "distributed over these different in a"
+    },
+    {
+      "start": 3268.84,
+      "end": 3273.2000000000003,
+      "text": "way fault domains"
+    },
+    {
+      "start": 3271.32,
+      "end": 3274.6400000000003,
+      "text": "to give me my resiliency and give me my"
+    },
+    {
+      "start": 3273.2,
+      "end": 3276.68,
+      "text": "scale because then again, I don't want"
+    },
+    {
+      "start": 3274.64,
+      "end": 3278.6,
+      "text": "one big instance cuz then it's always"
+    },
+    {
+      "start": 3276.68,
+      "end": 3280.48,
+      "text": "running at that capacity."
+    },
+    {
+      "start": 3278.6,
+      "end": 3283.52,
+      "text": "I want lots of smaller instances that I"
+    },
+    {
+      "start": 3280.48,
+      "end": 3285.6,
+      "text": "can stop and start or create and delete"
+    },
+    {
+      "start": 3283.52,
+      "end": 3287.88,
+      "text": "as my demand fluctuates. I want to be"
+    },
+    {
+      "start": 3285.6,
+      "end": 3289.7999999999997,
+      "text": "able to automatically scale based on"
+    },
+    {
+      "start": 3287.88,
+      "end": 3292.28,
+      "text": "what we really really need. And that's"
+    },
+    {
+      "start": 3289.8,
+      "end": 3294.3590000000004,
+      "text": "really a key point to this."
+    },
+    {
+      "start": 3292.28,
+      "end": 3297.1200000000003,
+      "text": "So, I have to factor that as part of my"
+    },
+    {
+      "start": 3294.359,
+      "end": 3298.52,
+      "text": "architecture. I have to design around"
+    },
+    {
+      "start": 3297.12,
+      "end": 3301.3199999999997,
+      "text": "the fact that there will be multiple"
+    },
+    {
+      "start": 3298.52,
+      "end": 3305.2,
+      "text": "instances and I'll be able to react to"
+    },
+    {
+      "start": 3301.32,
+      "end": 3305.2000000000003,
+      "text": "fluctuations in the demand."
+    },
+    {
+      "start": 3305.68,
+      "end": 3309.48,
+      "text": "So, why should you use Azure? Uh there"
+    },
+    {
+      "start": 3307.48,
+      "end": 3310.88,
+      "text": "are many different cloud solutions out"
+    },
+    {
+      "start": 3309.48,
+      "end": 3312.2400000000002,
+      "text": "there."
+    },
+    {
+      "start": 3310.88,
+      "end": 3314.1600000000003,
+      "text": "And I'm going to"
+    },
+    {
+      "start": 3312.24,
+      "end": 3316.3199999999997,
+      "text": "partly refer to the Gartner has this"
+    },
+    {
+      "start": 3314.16,
+      "end": 3318.44,
+      "text": "magic quadrant idea."
+    },
+    {
+      "start": 3316.32,
+      "end": 3320.48,
+      "text": "And it's the ability to execute and how"
+    },
+    {
+      "start": 3318.44,
+      "end": 3323.04,
+      "text": "complete the vision is. And you want to"
+    },
+    {
+      "start": 3320.48,
+      "end": 3324.359,
+      "text": "be in this leader magic quadrant. This"
+    },
+    {
+      "start": 3323.04,
+      "end": 3326.68,
+      "text": "is like you've got the most complete"
+    },
+    {
+      "start": 3324.359,
+      "end": 3329.16,
+      "text": "vision and the most complete ability to"
+    },
+    {
+      "start": 3326.68,
+      "end": 3331.359,
+      "text": "actually execute."
+    },
+    {
+      "start": 3329.16,
+      "end": 3333.2,
+      "text": "And with this Gartner quadrant,"
+    },
+    {
+      "start": 3331.359,
+      "end": 3334.92,
+      "text": "Microsoft is in the leader magic"
+    },
+    {
+      "start": 3333.2,
+      "end": 3336.2,
+      "text": "quadrant for many many different"
+    },
+    {
+      "start": 3334.92,
+      "end": 3337.56,
+      "text": "scenarios."
+    },
+    {
+      "start": 3336.2,
+      "end": 3339.9199999999996,
+      "text": "So, we can think about the strategic"
+    },
+    {
+      "start": 3337.56,
+      "end": 3342.56,
+      "text": "cloud platform services, so IaaS and"
+    },
+    {
+      "start": 3339.92,
+      "end": 3345.04,
+      "text": "PaaS capabilities, access management,"
+    },
+    {
+      "start": 3342.56,
+      "end": 3347.24,
+      "text": "cloud database management solutions, AI"
+    },
+    {
+      "start": 3345.04,
+      "end": 3348.8,
+      "text": "development services, lots of security"
+    },
+    {
+      "start": 3347.24,
+      "end": 3351.9199999999996,
+      "text": "things. I mean, they're they're a leader"
+    },
+    {
+      "start": 3348.8,
+      "end": 3353.1600000000003,
+      "text": "in a huge number of these."
+    },
+    {
+      "start": 3351.92,
+      "end": 3355.76,
+      "text": "And they can also provide hybrid"
+    },
+    {
+      "start": 3353.16,
+      "end": 3359.04,
+      "text": "solutions. So, as a company, I probably"
+    },
+    {
+      "start": 3355.76,
+      "end": 3362.92,
+      "text": "don't want two completely separate"
+    },
+    {
+      "start": 3359.04,
+      "end": 3365.0,
+      "text": "monitoring and control planes."
+    },
+    {
+      "start": 3362.92,
+      "end": 3367.56,
+      "text": "Microsoft obviously started with"
+    },
+    {
+      "start": 3365.0,
+      "end": 3371.359,
+      "text": "on-premises things, Windows Server,"
+    },
+    {
+      "start": 3367.56,
+      "end": 3372.7999999999997,
+      "text": "Hyper-V. Now, they have the cloud."
+    },
+    {
+      "start": 3371.359,
+      "end": 3374.7999999999997,
+      "text": "But they have common solutions across"
+    },
+    {
+      "start": 3372.8,
+      "end": 3376.32,
+      "text": "this. Like the Azure control plane, a"
+    },
+    {
+      "start": 3374.8,
+      "end": 3378.92,
+      "text": "lot of the Azure capabilities and the"
+    },
+    {
+      "start": 3376.32,
+      "end": 3380.96,
+      "text": "governance, I can bring outside of Azure"
+    },
+    {
+      "start": 3378.92,
+      "end": 3382.7200000000003,
+      "text": "to other clouds, to on-premises using"
+    },
+    {
+      "start": 3380.96,
+      "end": 3385.0,
+      "text": "Azure Arc."
+    },
+    {
+      "start": 3382.72,
+      "end": 3388.12,
+      "text": "There's things like Azure local to"
+    },
+    {
+      "start": 3385.0,
+      "end": 3389.84,
+      "text": "actually run hardware at your location"
+    },
+    {
+      "start": 3388.12,
+      "end": 3392.12,
+      "text": "that can run various Azure services"
+    },
+    {
+      "start": 3389.84,
+      "end": 3394.2000000000003,
+      "text": "being managed by Azure."
+    },
+    {
+      "start": 3392.12,
+      "end": 3397.96,
+      "text": "It's security services. It's identity"
+    },
+    {
+      "start": 3394.2,
+      "end": 3399.64,
+      "text": "services. You can use those outside of"
+    },
+    {
+      "start": 3397.96,
+      "end": 3402.92,
+      "text": "Azure. So, that's really a huge"
+    },
+    {
+      "start": 3399.64,
+      "end": 3405.0,
+      "text": "capability to have that single solution"
+    },
+    {
+      "start": 3402.92,
+      "end": 3408.2400000000002,
+      "text": "being able to use in the cloud and in"
+    },
+    {
+      "start": 3405.0,
+      "end": 3408.24,
+      "text": "your own locations."
+    },
+    {
+      "start": 3408.8,
+      "end": 3413.6400000000003,
+      "text": "But what about feature X? It always"
+    },
+    {
+      "start": 3410.6,
+      "end": 3416.64,
+      "text": "comes up. Um yeah, but I'm evaluating"
+    },
+    {
+      "start": 3413.64,
+      "end": 3419.96,
+      "text": "clouds and I care super much about this"
+    },
+    {
+      "start": 3416.64,
+      "end": 3421.24,
+      "text": "feature or this particular thing."
+    },
+    {
+      "start": 3419.96,
+      "end": 3423.4,
+      "text": "And the way I like to think about this"
+    },
+    {
+      "start": 3421.24,
+      "end": 3425.08,
+      "text": "is looking at squiggle."
+    },
+    {
+      "start": 3423.4,
+      "end": 3426.48,
+      "text": "So, this squiggle"
+    },
+    {
+      "start": 3425.08,
+      "end": 3428.92,
+      "text": "again, Gartner, it's called the Gartner"
+    },
+    {
+      "start": 3426.48,
+      "end": 3431.56,
+      "text": "hype cycle. And I actually love this. I"
+    },
+    {
+      "start": 3428.92,
+      "end": 3434.4,
+      "text": "think it applies yes to cloud, uh but it"
+    },
+    {
+      "start": 3431.56,
+      "end": 3437.08,
+      "text": "applies to AI. I think it applies to"
+    },
+    {
+      "start": 3434.4,
+      "end": 3438.44,
+      "text": "marriage, kids, really anything you can"
+    },
+    {
+      "start": 3437.08,
+      "end": 3440.84,
+      "text": "think of."
+    },
+    {
+      "start": 3438.44,
+      "end": 3442.64,
+      "text": "Cuz the goal is initially you get some"
+    },
+    {
+      "start": 3440.84,
+      "end": 3444.2000000000003,
+      "text": "technology."
+    },
+    {
+      "start": 3442.64,
+      "end": 3445.72,
+      "text": "So, there's a trigger. Like large"
+    },
+    {
+      "start": 3444.2,
+      "end": 3447.4399999999996,
+      "text": "language models would be a great current"
+    },
+    {
+      "start": 3445.72,
+      "end": 3449.0,
+      "text": "example of this."
+    },
+    {
+      "start": 3447.44,
+      "end": 3452.0,
+      "text": "So, you get a trigger. Some new"
+    },
+    {
+      "start": 3449.0,
+      "end": 3453.68,
+      "text": "fantastic thing comes out."
+    },
+    {
+      "start": 3452.0,
+      "end": 3455.6,
+      "text": "So, you get this peak of inflated"
+    },
+    {
+      "start": 3453.68,
+      "end": 3456.7999999999997,
+      "text": "expectations. It's going to do"
+    },
+    {
+      "start": 3455.6,
+      "end": 3459.0,
+      "text": "everything. It's going to solve all"
+    },
+    {
+      "start": 3456.8,
+      "end": 3460.92,
+      "text": "problems. This is the best thing ever."
+    },
+    {
+      "start": 3459.0,
+      "end": 3463.16,
+      "text": "Again, why you can also relate this to"
+    },
+    {
+      "start": 3460.92,
+      "end": 3465.2400000000002,
+      "text": "marriage, kids, everything else."
+    },
+    {
+      "start": 3463.16,
+      "end": 3467.6,
+      "text": "And then you start using it. And it's"
+    },
+    {
+      "start": 3465.24,
+      "end": 3468.64,
+      "text": "like, well, hmm, it's actually not it's"
+    },
+    {
+      "start": 3467.6,
+      "end": 3471.359,
+      "text": "not as great as I thought it was going"
+    },
+    {
+      "start": 3468.64,
+      "end": 3472.96,
+      "text": "to be. This trough of disillusionment."
+    },
+    {
+      "start": 3471.359,
+      "end": 3474.88,
+      "text": "It's not going to change everything."
+    },
+    {
+      "start": 3472.96,
+      "end": 3477.12,
+      "text": "This is not the best thing ever."
+    },
+    {
+      "start": 3474.88,
+      "end": 3479.0,
+      "text": "But you continue using it."
+    },
+    {
+      "start": 3477.12,
+      "end": 3480.64,
+      "text": "You get this slope of enlightenment. So,"
+    },
+    {
+      "start": 3479.0,
+      "end": 3482.4,
+      "text": "actually, well, here's where it is"
+    },
+    {
+      "start": 3480.64,
+      "end": 3483.72,
+      "text": "useful. Here's where it does benefit"
+    },
+    {
+      "start": 3482.4,
+      "end": 3484.6,
+      "text": "things."
+    },
+    {
+      "start": 3483.72,
+      "end": 3487.12,
+      "text": "And so, you get this plateau of"
+    },
+    {
+      "start": 3484.6,
+      "end": 3489.2799999999997,
+      "text": "productivity. It's actually useful."
+    },
+    {
+      "start": 3487.12,
+      "end": 3491.04,
+      "text": "Now, the point of this squiggle might so"
+    },
+    {
+      "start": 3489.28,
+      "end": 3493.1200000000003,
+      "text": "useful"
+    },
+    {
+      "start": 3491.04,
+      "end": 3495.12,
+      "text": "is when you're in this peak of inflated"
+    },
+    {
+      "start": 3493.12,
+      "end": 3497.4,
+      "text": "expectations, all you care about is"
+    },
+    {
+      "start": 3495.12,
+      "end": 3499.96,
+      "text": "features. It's brand new. Does it do"
+    },
+    {
+      "start": 3497.4,
+      "end": 3501.6,
+      "text": "this? I think best of breed. I don't"
+    },
+    {
+      "start": 3499.96,
+      "end": 3503.16,
+      "text": "think about integration. I don't think"
+    },
+    {
+      "start": 3501.6,
+      "end": 3506.3199999999997,
+      "text": "about the rest of my environment. I just"
+    },
+    {
+      "start": 3503.16,
+      "end": 3509.04,
+      "text": "think about feature feature feature."
+    },
+    {
+      "start": 3506.32,
+      "end": 3510.4,
+      "text": "But once it's actually really useful and"
+    },
+    {
+      "start": 3509.04,
+      "end": 3513.48,
+      "text": "you get more into this plateau of"
+    },
+    {
+      "start": 3510.4,
+      "end": 3515.04,
+      "text": "productivity, you focus on integration."
+    },
+    {
+      "start": 3513.48,
+      "end": 3516.16,
+      "text": "How does it work with my other tech"
+    },
+    {
+      "start": 3515.04,
+      "end": 3517.48,
+      "text": "nologies?"
+    },
+    {
+      "start": 3516.16,
+      "end": 3519.8399999999997,
+      "text": "How does it work with my holistic"
+    },
+    {
+      "start": 3517.48,
+      "end": 3521.12,
+      "text": "complete solution?"
+    },
+    {
+      "start": 3519.84,
+      "end": 3523.2400000000002,
+      "text": "And"
+    },
+    {
+      "start": 3521.12,
+      "end": 3525.04,
+      "text": "obviously, features are important."
+    },
+    {
+      "start": 3523.24,
+      "end": 3526.3999999999996,
+      "text": "But any particular feature you care"
+    },
+    {
+      "start": 3525.04,
+      "end": 3528.32,
+      "text": "about today, you're probably not going"
+    },
+    {
+      "start": 3526.4,
+      "end": 3530.52,
+      "text": "to care about tomorrow. Any particular"
+    },
+    {
+      "start": 3528.32,
+      "end": 3532.76,
+      "text": "feature that maybe isn't in Azure today"
+    },
+    {
+      "start": 3530.52,
+      "end": 3535.12,
+      "text": "will probably be there tomorrow."
+    },
+    {
+      "start": 3532.76,
+      "end": 3537.84,
+      "text": "It it's constantly evolving."
+    },
+    {
+      "start": 3535.12,
+      "end": 3542.0,
+      "text": "So, when you're evaluating anything,"
+    },
+    {
+      "start": 3537.84,
+      "end": 3543.08,
+      "text": "I would always urge you to always think"
+    },
+    {
+      "start": 3542.0,
+      "end": 3545.64,
+      "text": "don't"
+    },
+    {
+      "start": 3543.08,
+      "end": 3546.7599999999998,
+      "text": "make decisions on this."
+    },
+    {
+      "start": 3545.64,
+      "end": 3547.64,
+      "text": "How is it going to work with everything"
+    },
+    {
+      "start": 3546.76,
+      "end": 3549.8,
+      "text": "else? How is it going to work with my"
+    },
+    {
+      "start": 3547.64,
+      "end": 3551.92,
+      "text": "monitoring, with my security, with my"
+    },
+    {
+      "start": 3549.8,
+      "end": 3554.5600000000004,
+      "text": "provisioning, with my governance, with"
+    },
+    {
+      "start": 3551.92,
+      "end": 3557.48,
+      "text": "all of the other things I have?"
+    },
+    {
+      "start": 3554.56,
+      "end": 3559.0,
+      "text": "How is it going to work with that?"
+    },
+    {
+      "start": 3557.48,
+      "end": 3562.12,
+      "text": "So,"
+    },
+    {
+      "start": 3559.0,
+      "end": 3565.0,
+      "text": "what does all of this actually mean?"
+    },
+    {
+      "start": 3562.12,
+      "end": 3567.68,
+      "text": "Azure is one of the few realistic big"
+    },
+    {
+      "start": 3565.0,
+      "end": 3569.24,
+      "text": "players in the space. Obviously, AWS is"
+    },
+    {
+      "start": 3567.68,
+      "end": 3570.96,
+      "text": "another big one."
+    },
+    {
+      "start": 3569.24,
+      "end": 3572.9599999999996,
+      "text": "Um there are other more regional"
+    },
+    {
+      "start": 3570.96,
+      "end": 3575.32,
+      "text": "offerings. Google Cloud to a less"
+    },
+    {
+      "start": 3572.96,
+      "end": 3578.4,
+      "text": "extent, but honestly, I hear a lot less"
+    },
+    {
+      "start": 3575.32,
+      "end": 3580.1600000000003,
+      "text": "about those today."
+    },
+    {
+      "start": 3578.4,
+      "end": 3582.28,
+      "text": "It takes billions and billions of"
+    },
+    {
+      "start": 3580.16,
+      "end": 3583.96,
+      "text": "dollars to go and create these data"
+    },
+    {
+      "start": 3582.28,
+      "end": 3586.8,
+      "text": "centers, to populate with the service"
+    },
+    {
+      "start": 3583.96,
+      "end": 3589.32,
+      "text": "with AI, to buy all of the GPUs, and do"
+    },
+    {
+      "start": 3586.8,
+      "end": 3591.5600000000004,
+      "text": "the investment to secure them, and and"
+    },
+    {
+      "start": 3589.32,
+      "end": 3592.8,
+      "text": "add all the governance around them."
+    },
+    {
+      "start": 3591.56,
+      "end": 3595.24,
+      "text": "So, there's very few players that can"
+    },
+    {
+      "start": 3592.8,
+      "end": 3598.28,
+      "text": "really operate at that global scale that"
+    },
+    {
+      "start": 3595.24,
+      "end": 3599.52,
+      "text": "you're you're going to want."
+    },
+    {
+      "start": 3598.28,
+      "end": 3601.2400000000002,
+      "text": "Everyone else will likely be a niche"
+    },
+    {
+      "start": 3599.52,
+      "end": 3602.96,
+      "text": "player."
+    },
+    {
+      "start": 3601.24,
+      "end": 3605.6,
+      "text": "Uh they'll have some certain geographic"
+    },
+    {
+      "start": 3602.96,
+      "end": 3607.8,
+      "text": "market. They may play very well in a"
+    },
+    {
+      "start": 3605.6,
+      "end": 3610.68,
+      "text": "particular type of service. They'll have"
+    },
+    {
+      "start": 3607.8,
+      "end": 3612.6800000000003,
+      "text": "some specialist capability."
+    },
+    {
+      "start": 3610.68,
+      "end": 3614.72,
+      "text": "But, it's really Azure and AWS, and"
+    },
+    {
+      "start": 3612.68,
+      "end": 3617.04,
+      "text": "again, to a less extent, I think GCP."
+    },
+    {
+      "start": 3614.72,
+      "end": 3619.56,
+      "text": "They're the true"
+    },
+    {
+      "start": 3617.04,
+      "end": 3620.56,
+      "text": "global cloud players uh in the market"
+    },
+    {
+      "start": 3619.56,
+      "end": 3623.04,
+      "text": "today."
+    },
+    {
+      "start": 3620.56,
+      "end": 3625.48,
+      "text": "So, you're betting on a good horse. That"
+    },
+    {
+      "start": 3623.04,
+      "end": 3628.2799999999997,
+      "text": "that's obviously an important thing."
+    },
+    {
+      "start": 3625.48,
+      "end": 3631.64,
+      "text": "And if Azure does become self-aware, by"
+    },
+    {
+      "start": 3628.28,
+      "end": 3633.36,
+      "text": "adopting Azure and being one of those"
+    },
+    {
+      "start": 3631.64,
+      "end": 3636.56,
+      "text": "initial people,"
+    },
+    {
+      "start": 3633.36,
+      "end": 3639.2400000000002,
+      "text": "it will uh treat you nicely when it is"
+    },
+    {
+      "start": 3636.56,
+      "end": 3640.96,
+      "text": "your your overlord. So,"
+    },
+    {
+      "start": 3639.24,
+      "end": 3643.9199999999996,
+      "text": "if that actually comes to reality, at"
+    },
+    {
+      "start": 3640.96,
+      "end": 3645.56,
+      "text": "least it may treat you nicely."
+    },
+    {
+      "start": 3643.92,
+      "end": 3647.36,
+      "text": "So, that was it."
+    },
+    {
+      "start": 3645.56,
+      "end": 3648.92,
+      "text": "Uh that's the end of the module. This is"
+    },
+    {
+      "start": 3647.36,
+      "end": 3651.4,
+      "text": "actually a sprite my wife had made for"
+    },
+    {
+      "start": 3648.92,
+      "end": 3652.92,
+      "text": "me for my birthday, so I'm using it as"
+    },
+    {
+      "start": 3651.4,
+      "end": 3654.1600000000003,
+      "text": "the final slide. But, I hope that was"
+    },
+    {
+      "start": 3652.92,
+      "end": 3655.88,
+      "text": "useful. Now, we're going to start"
+    },
+    {
+      "start": 3654.16,
+      "end": 3657.3599999999997,
+      "text": "building on this knowledge and get into"
+    },
+    {
+      "start": 3655.88,
+      "end": 3659.2000000000003,
+      "text": "specifics"
+    },
+    {
+      "start": 3657.36,
+      "end": 3660.8,
+      "text": "uh around other constructs."
+    },
+    {
+      "start": 3659.2,
+      "end": 3663.48,
+      "text": "So, thank you for watching. See you on"
+    },
+    {
+      "start": 3660.8,
+      "end": 3663.48,
+      "text": "the next video."
+    }
+  ]
+}

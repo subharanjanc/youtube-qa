@@ -1,0 +1,2038 @@
+{
+  "video_id": "V6ddMAUCOys",
+  "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+  "channel": "edureka!",
+  "trainer": "Edureka",
+  "topic": "LangChain",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1162.0,
+  "segments": [
+    {
+      "start": 0.43,
+      "end": 9.84,
+      "text": "[Music]"
+    },
+    {
+      "start": 8.0,
+      "end": 13.0,
+      "text": "hello everyone and welcome back to"
+    },
+    {
+      "start": 9.84,
+      "end": 15.679,
+      "text": "another exciting video by Eda in today's"
+    },
+    {
+      "start": 13.0,
+      "end": 17.48,
+      "text": "video we will dive deep into Lang chain"
+    },
+    {
+      "start": 15.679,
+      "end": 20.96,
+      "text": "and Innovative framework that makes"
+    },
+    {
+      "start": 17.48,
+      "end": 22.72,
+      "text": "building robust AI applications a breeze"
+    },
+    {
+      "start": 20.96,
+      "end": 24.72,
+      "text": "whether you are a beginner or an"
+    },
+    {
+      "start": 22.72,
+      "end": 26.72,
+      "text": "experienced developer Lang chain"
+    },
+    {
+      "start": 24.72,
+      "end": 29.16,
+      "text": "simplifies the use of large language"
+    },
+    {
+      "start": 26.72,
+      "end": 32.079,
+      "text": "models by seamlessly integrating them"
+    },
+    {
+      "start": 29.16,
+      "end": 33.96,
+      "text": "into complex workflows so without any"
+    },
+    {
+      "start": 32.079,
+      "end": 36.92,
+      "text": "further delay let's walk through our"
+    },
+    {
+      "start": 33.96,
+      "end": 39.32,
+      "text": "agenda for this video but before we"
+    },
+    {
+      "start": 36.92,
+      "end": 40.879000000000005,
+      "text": "begin please like share and subscribe"
+    },
+    {
+      "start": 39.32,
+      "end": 42.92,
+      "text": "remember to hit the Bell icon to stay"
+    },
+    {
+      "start": 40.879,
+      "end": 46.079,
+      "text": "updated on the latest content on the"
+    },
+    {
+      "start": 42.92,
+      "end": 48.28,
+      "text": "urea YouTube channel also check out our"
+    },
+    {
+      "start": 46.079,
+      "end": 50.039,
+      "text": "generative AI course Masters program the"
+    },
+    {
+      "start": 48.28,
+      "end": 52.6,
+      "text": "link to which is in the description box"
+    },
+    {
+      "start": 50.039,
+      "end": 54.359,
+      "text": "below now let's Dive Right In and"
+    },
+    {
+      "start": 52.6,
+      "end": 56.480000000000004,
+      "text": "explore agenda and how it is"
+    },
+    {
+      "start": 54.359,
+      "end": 58.760000000000005,
+      "text": "revolutionary the AI development"
+    },
+    {
+      "start": 56.48,
+      "end": 61.68,
+      "text": "landscape so here's what we will cover"
+    },
+    {
+      "start": 58.76,
+      "end": 63.92,
+      "text": "today first we will understand what L"
+    },
+    {
+      "start": 61.68,
+      "end": 67.2,
+      "text": "chain is and why it's a such a game"
+    },
+    {
+      "start": 63.92,
+      "end": 69.759,
+      "text": "changer for AI development next we will"
+    },
+    {
+      "start": 67.2,
+      "end": 72.24000000000001,
+      "text": "explore the LM application life cycle"
+    },
+    {
+      "start": 69.759,
+      "end": 75.2,
+      "text": "and learn how langin facilitates its"
+    },
+    {
+      "start": 72.24,
+      "end": 76.88,
+      "text": "implementation we will then discuss apis"
+    },
+    {
+      "start": 75.2,
+      "end": 78.96000000000001,
+      "text": "their role in enabling seamless"
+    },
+    {
+      "start": 76.88,
+      "end": 81.83999999999999,
+      "text": "communication between systems and how"
+    },
+    {
+      "start": 78.96,
+      "end": 84.36,
+      "text": "they power llm models finally we will"
+    },
+    {
+      "start": 81.84,
+      "end": 86.759,
+      "text": "showcase a practical langon project an"
+    },
+    {
+      "start": 84.36,
+      "end": 88.759,
+      "text": "SQL query fetcher that demonstrates Its"
+    },
+    {
+      "start": 86.759,
+      "end": 91.64,
+      "text": "Real World applications with detailed"
+    },
+    {
+      "start": 88.759,
+      "end": 93.6,
+      "text": "code explanation so this project will"
+    },
+    {
+      "start": 91.64,
+      "end": 96.2,
+      "text": "guide you through how it uses SQL"
+    },
+    {
+      "start": 93.6,
+      "end": 99.96,
+      "text": "queries effectively so stick around for"
+    },
+    {
+      "start": 96.2,
+      "end": 102.88,
+      "text": "an engaging session so let's get started"
+    },
+    {
+      "start": 99.96,
+      "end": 104.88,
+      "text": "now let us understand what langin is and"
+    },
+    {
+      "start": 102.88,
+      "end": 107.56,
+      "text": "why it is a valuable tool for building"
+    },
+    {
+      "start": 104.88,
+      "end": 110.0,
+      "text": "AI applications you must be aware of"
+    },
+    {
+      "start": 107.56,
+      "end": 113.56,
+      "text": "popular applications such as GPT and"
+    },
+    {
+      "start": 110.0,
+      "end": 116.68,
+      "text": "Gemini these applications utilize apis"
+    },
+    {
+      "start": 113.56,
+      "end": 119.0,
+      "text": "and GPD uses openi API while Gemini"
+    },
+    {
+      "start": 116.68,
+      "end": 120.88000000000001,
+      "text": "operates through the Gemini API to"
+    },
+    {
+      "start": 119.0,
+      "end": 124.799,
+      "text": "process prompts they leverage models"
+    },
+    {
+      "start": 120.88,
+      "end": 127.079,
+      "text": "like GPT 3.5 GPT 4 palm and Gemini 1"
+    },
+    {
+      "start": 124.799,
+      "end": 131.4,
+      "text": "additionally these are other Advanced"
+    },
+    {
+      "start": 127.079,
+      "end": 137.4,
+      "text": "models such as llama Gemini kire Cloud"
+    },
+    {
+      "start": 131.4,
+      "end": 139.12,
+      "text": "version one Falcon pal gp4 and GPT 3.5 L"
+    },
+    {
+      "start": 137.4,
+      "end": 141.4,
+      "text": "chain is a framework designed to help"
+    },
+    {
+      "start": 139.12,
+      "end": 144.0,
+      "text": "developers build flexible and Powerful"
+    },
+    {
+      "start": 141.4,
+      "end": 146.48000000000002,
+      "text": "AI driven applications by integrating"
+    },
+    {
+      "start": 144.0,
+      "end": 149.64,
+      "text": "and utilizing these diverse models"
+    },
+    {
+      "start": 146.48,
+      "end": 150.76,
+      "text": "effectively but why exactly do we need L"
+    },
+    {
+      "start": 149.64,
+      "end": 152.76,
+      "text": "chain"
+    },
+    {
+      "start": 150.76,
+      "end": 155.92,
+      "text": "you must be thinking if langin is this"
+    },
+    {
+      "start": 152.76,
+      "end": 157.72,
+      "text": "important then why do we need langin so"
+    },
+    {
+      "start": 155.92,
+      "end": 161.07999999999998,
+      "text": "let's break down this question using"
+    },
+    {
+      "start": 157.72,
+      "end": 163.44,
+      "text": "some real world examples so imagine"
+    },
+    {
+      "start": 161.08,
+      "end": 166.36,
+      "text": "simply asking an llm a prompt and"
+    },
+    {
+      "start": 163.44,
+      "end": 168.68,
+      "text": "getting an answer that's easy but what"
+    },
+    {
+      "start": 166.36,
+      "end": 170.56,
+      "text": "happens when the complexity increases"
+    },
+    {
+      "start": 168.68,
+      "end": 173.92000000000002,
+      "text": "for example let's say you're working"
+    },
+    {
+      "start": 170.56,
+      "end": 176.959,
+      "text": "with data from SQL databases CSV files"
+    },
+    {
+      "start": 173.92,
+      "end": 179.11999999999998,
+      "text": "PDFs or Google analytics and you need"
+    },
+    {
+      "start": 176.959,
+      "end": 181.36,
+      "text": "the model to write code perform searches"
+    },
+    {
+      "start": 179.12,
+      "end": 183.68,
+      "text": "or send EMA emails handling such"
+    },
+    {
+      "start": 181.36,
+      "end": 186.31900000000002,
+      "text": "intricate workflows manually can get"
+    },
+    {
+      "start": 183.68,
+      "end": 188.20000000000002,
+      "text": "overwhelming this is where lton steps in"
+    },
+    {
+      "start": 186.319,
+      "end": 190.56,
+      "text": "it simplifies the process by offering"
+    },
+    {
+      "start": 188.2,
+      "end": 193.07999999999998,
+      "text": "components like document loaders text"
+    },
+    {
+      "start": 190.56,
+      "end": 195.72,
+      "text": "Splitters Vector databases prompt"
+    },
+    {
+      "start": 193.08,
+      "end": 197.44000000000003,
+      "text": "templates and tools so these helps you"
+    },
+    {
+      "start": 195.72,
+      "end": 199.4,
+      "text": "assemble tasks such as document"
+    },
+    {
+      "start": 197.44,
+      "end": 202.159,
+      "text": "summarization question and answer"
+    },
+    {
+      "start": 199.4,
+      "end": 204.44,
+      "text": "systems or even Advanced workflows like"
+    },
+    {
+      "start": 202.159,
+      "end": 207.159,
+      "text": "Google searches or customer support"
+    },
+    {
+      "start": 204.44,
+      "end": 210.35999999999999,
+      "text": "automation let's visualize this process"
+    },
+    {
+      "start": 207.159,
+      "end": 212.92,
+      "text": "with a diagram here's how it works so"
+    },
+    {
+      "start": 210.36,
+      "end": 215.84,
+      "text": "first you load a document like a CSV"
+    },
+    {
+      "start": 212.92,
+      "end": 217.55999999999997,
+      "text": "file using a document loader then use a"
+    },
+    {
+      "start": 215.84,
+      "end": 219.4,
+      "text": "text splitter to divide it into a"
+    },
+    {
+      "start": 217.56,
+      "end": 221.84,
+      "text": "smaller chunks and then store those"
+    },
+    {
+      "start": 219.4,
+      "end": 223.76000000000002,
+      "text": "chunks into a vector database and add a"
+    },
+    {
+      "start": 221.84,
+      "end": 227.519,
+      "text": "prompt template to guide the model and"
+    },
+    {
+      "start": 223.76,
+      "end": 229.48,
+      "text": "finally use a llm like a gp4 or Lama to"
+    },
+    {
+      "start": 227.519,
+      "end": 232.92000000000002,
+      "text": "perform task like searching the web or"
+    },
+    {
+      "start": 229.48,
+      "end": 234.56,
+      "text": "automating workflows and L chain also"
+    },
+    {
+      "start": 232.92,
+      "end": 236.64,
+      "text": "offers chains that will help you"
+    },
+    {
+      "start": 234.56,
+      "end": 240.2,
+      "text": "assemble components to achieve single"
+    },
+    {
+      "start": 236.64,
+      "end": 242.23899999999998,
+      "text": "task such as summarization and an agenda"
+    },
+    {
+      "start": 240.2,
+      "end": 245.439,
+      "text": "to figure out what each component must"
+    },
+    {
+      "start": 242.239,
+      "end": 247.439,
+      "text": "do like password customer services Etc"
+    },
+    {
+      "start": 245.439,
+      "end": 250.07899999999998,
+      "text": "now that we understand Lang Chain's core"
+    },
+    {
+      "start": 247.439,
+      "end": 252.72,
+      "text": "components now let's explore how it"
+    },
+    {
+      "start": 250.079,
+      "end": 255.59900000000002,
+      "text": "streamlines the llm application life"
+    },
+    {
+      "start": 252.72,
+      "end": 258.359,
+      "text": "cycle so it typically involves three key"
+    },
+    {
+      "start": 255.599,
+      "end": 261.56,
+      "text": "stages first is the development where"
+    },
+    {
+      "start": 258.359,
+      "end": 263.75899999999996,
+      "text": "you build and test your application then"
+    },
+    {
+      "start": 261.56,
+      "end": 266.04,
+      "text": "productionize the system is fine-tuned"
+    },
+    {
+      "start": 263.759,
+      "end": 268.32,
+      "text": "for a real world use and finally"
+    },
+    {
+      "start": 266.04,
+      "end": 271.0,
+      "text": "deployment where the final product is"
+    },
+    {
+      "start": 268.32,
+      "end": 272.88,
+      "text": "launched for users so lankton simplifies"
+    },
+    {
+      "start": 271.0,
+      "end": 274.52,
+      "text": "this life cycle allowing you to focus on"
+    },
+    {
+      "start": 272.88,
+      "end": 276.96,
+      "text": "Building without worrying about the"
+    },
+    {
+      "start": 274.52,
+      "end": 278.71999999999997,
+      "text": "underlying complexity now let's take a"
+    },
+    {
+      "start": 276.96,
+      "end": 281.68,
+      "text": "step back and understand the role of"
+    },
+    {
+      "start": 278.72,
+      "end": 283.91900000000004,
+      "text": "apis in powering these llm applications"
+    },
+    {
+      "start": 281.68,
+      "end": 286.12,
+      "text": "and how Langton effectively integrates"
+    },
+    {
+      "start": 283.919,
+      "end": 288.32,
+      "text": "them in all these applications and"
+    },
+    {
+      "start": 286.12,
+      "end": 292.84000000000003,
+      "text": "models one thing is common that is they"
+    },
+    {
+      "start": 288.32,
+      "end": 295.12,
+      "text": "use API so now let's discuss apis apis"
+    },
+    {
+      "start": 292.84,
+      "end": 296.919,
+      "text": "act as an intermediaries that enable"
+    },
+    {
+      "start": 295.12,
+      "end": 299.52,
+      "text": "different systems to communicate with"
+    },
+    {
+      "start": 296.919,
+      "end": 301.59999999999997,
+      "text": "each other for example they allow apps"
+    },
+    {
+      "start": 299.52,
+      "end": 303.919,
+      "text": "like like swiggy or blinket to display"
+    },
+    {
+      "start": 301.6,
+      "end": 306.12,
+      "text": "your delivery driver's location in real"
+    },
+    {
+      "start": 303.919,
+      "end": 309.75899999999996,
+      "text": "time so now let's look at the steps to"
+    },
+    {
+      "start": 306.12,
+      "end": 312.919,
+      "text": "explain apis and API keys so apps like"
+    },
+    {
+      "start": 309.759,
+      "end": 315.40000000000003,
+      "text": "zipo swiggy and blinkit use apis to show"
+    },
+    {
+      "start": 312.919,
+      "end": 317.19899999999996,
+      "text": "the location of your delivery driver so"
+    },
+    {
+      "start": 315.4,
+      "end": 319.28,
+      "text": "this apps don't communicate directly"
+    },
+    {
+      "start": 317.199,
+      "end": 321.6,
+      "text": "with Google Maps but follow a ler"
+    },
+    {
+      "start": 319.28,
+      "end": 324.23999999999995,
+      "text": "process involving servers and security"
+    },
+    {
+      "start": 321.6,
+      "end": 327.6,
+      "text": "mechanism first the app send a request"
+    },
+    {
+      "start": 324.24,
+      "end": 330.68,
+      "text": "to Google Maps API then the API forward"
+    },
+    {
+      "start": 327.6,
+      "end": 332.88,
+      "text": "the request to Google servers then the"
+    },
+    {
+      "start": 330.68,
+      "end": 335.56,
+      "text": "servers validate the request with the"
+    },
+    {
+      "start": 332.88,
+      "end": 338.08,
+      "text": "system so once approved the response"
+    },
+    {
+      "start": 335.56,
+      "end": 341.08,
+      "text": "follows back through the servers apis"
+    },
+    {
+      "start": 338.08,
+      "end": 343.15999999999997,
+      "text": "and finally to the app so previously"
+    },
+    {
+      "start": 341.08,
+      "end": 346.24,
+      "text": "apps like swiggy allowed login using"
+    },
+    {
+      "start": 343.16,
+      "end": 349.56,
+      "text": "phone numbers now they use API for login"
+    },
+    {
+      "start": 346.24,
+      "end": 351.759,
+      "text": "via platforms like Google or Facebook so"
+    },
+    {
+      "start": 349.56,
+      "end": 353.919,
+      "text": "this demonstrates the versatility of a"
+    },
+    {
+      "start": 351.759,
+      "end": 356.8,
+      "text": "apis in enabling seamless user"
+    },
+    {
+      "start": 353.919,
+      "end": 359.15999999999997,
+      "text": "interactions to prevent misuse apis"
+    },
+    {
+      "start": 356.8,
+      "end": 362.0,
+      "text": "require API Keys which are unique"
+    },
+    {
+      "start": 359.16,
+      "end": 364.08000000000004,
+      "text": "identifi Fires for secure access so this"
+    },
+    {
+      "start": 362.0,
+      "end": 366.24,
+      "text": "givs authenticate request and ensure"
+    },
+    {
+      "start": 364.08,
+      "end": 369.15999999999997,
+      "text": "that only authorized users can interact"
+    },
+    {
+      "start": 366.24,
+      "end": 371.84000000000003,
+      "text": "with the apis next security systems"
+    },
+    {
+      "start": 369.16,
+      "end": 374.88000000000005,
+      "text": "closely monitor API uses to detect and"
+    },
+    {
+      "start": 371.84,
+      "end": 376.919,
+      "text": "prevent misuse this ensures that apis"
+    },
+    {
+      "start": 374.88,
+      "end": 379.71999999999997,
+      "text": "remain safe and functional for their"
+    },
+    {
+      "start": 376.919,
+      "end": 382.4,
+      "text": "intended purpose and this steps simplify"
+    },
+    {
+      "start": 379.72,
+      "end": 385.03900000000004,
+      "text": "the explanation of how apis and API Keys"
+    },
+    {
+      "start": 382.4,
+      "end": 387.44,
+      "text": "work in real world applications so this"
+    },
+    {
+      "start": 385.039,
+      "end": 389.56,
+      "text": "is how langin leverages apis to connect"
+    },
+    {
+      "start": 387.44,
+      "end": 392.36,
+      "text": "your llm applications with external tool"
+    },
+    {
+      "start": 389.56,
+      "end": 394.36,
+      "text": "tools making them versatile and secure"
+    },
+    {
+      "start": 392.36,
+      "end": 396.039,
+      "text": "now that we understand the role of API"
+    },
+    {
+      "start": 394.36,
+      "end": 399.0,
+      "text": "so let's explore some real world"
+    },
+    {
+      "start": 396.039,
+      "end": 401.52,
+      "text": "applications of L chain so what can you"
+    },
+    {
+      "start": 399.0,
+      "end": 403.919,
+      "text": "build with Lang chain here are few"
+    },
+    {
+      "start": 401.52,
+      "end": 406.35999999999996,
+      "text": "applications first application we have"
+    },
+    {
+      "start": 403.919,
+      "end": 408.4,
+      "text": "is customer support So customer support"
+    },
+    {
+      "start": 406.36,
+      "end": 411.199,
+      "text": "for your shopping websites to interact"
+    },
+    {
+      "start": 408.4,
+      "end": 413.31899999999996,
+      "text": "with customers next conversational chat"
+    },
+    {
+      "start": 411.199,
+      "end": 415.36,
+      "text": "Bots for helping you study content"
+    },
+    {
+      "start": 413.319,
+      "end": 417.879,
+      "text": "generation tools for blogs or social"
+    },
+    {
+      "start": 415.36,
+      "end": 420.319,
+      "text": "media we also have question answering"
+    },
+    {
+      "start": 417.879,
+      "end": 422.319,
+      "text": "systems for knowledge basis and then"
+    },
+    {
+      "start": 420.319,
+      "end": 425.599,
+      "text": "document summarizes for legal or"
+    },
+    {
+      "start": 422.319,
+      "end": 427.96000000000004,
+      "text": "academic content Langton simplifies AI"
+    },
+    {
+      "start": 425.599,
+      "end": 430.44,
+      "text": "development by integrating llms with"
+    },
+    {
+      "start": 427.96,
+      "end": 432.87899999999996,
+      "text": "various data sources and tools its"
+    },
+    {
+      "start": 430.44,
+      "end": 435.71999999999997,
+      "text": "applications are vast from chatbots to"
+    },
+    {
+      "start": 432.879,
+      "end": 438.36,
+      "text": "document summarization so let's examine"
+    },
+    {
+      "start": 435.72,
+      "end": 441.40000000000003,
+      "text": "a practical example to see langin in"
+    },
+    {
+      "start": 438.36,
+      "end": 443.40000000000003,
+      "text": "action all right in today's data driven"
+    },
+    {
+      "start": 441.4,
+      "end": 445.71999999999997,
+      "text": "World understanding and effectively"
+    },
+    {
+      "start": 443.4,
+      "end": 448.79999999999995,
+      "text": "using SQL queries is crucial for"
+    },
+    {
+      "start": 445.72,
+      "end": 451.03900000000004,
+      "text": "managing and analyzing large data sets"
+    },
+    {
+      "start": 448.8,
+      "end": 453.599,
+      "text": "however beginers and even experienced"
+    },
+    {
+      "start": 451.039,
+      "end": 456.919,
+      "text": "users often need help with complex SQL"
+    },
+    {
+      "start": 453.599,
+      "end": 458.919,
+      "text": "queries their syntax and how they work"
+    },
+    {
+      "start": 456.919,
+      "end": 461.15999999999997,
+      "text": "this creates a barrier to efficiently"
+    },
+    {
+      "start": 458.919,
+      "end": 463.0,
+      "text": "interacting with databases and limits"
+    },
+    {
+      "start": 461.16,
+      "end": 465.68,
+      "text": "their potential to solve real world"
+    },
+    {
+      "start": 463.0,
+      "end": 468.639,
+      "text": "problems to address this challenge we"
+    },
+    {
+      "start": 465.68,
+      "end": 471.8,
+      "text": "propose a SQL query fetcher application"
+    },
+    {
+      "start": 468.639,
+      "end": 474.599,
+      "text": "that leverages the Gemini AI Python and"
+    },
+    {
+      "start": 471.8,
+      "end": 477.159,
+      "text": "streamlit to simplify SQL learning and"
+    },
+    {
+      "start": 474.599,
+      "end": 479.599,
+      "text": "usage the application allows users to"
+    },
+    {
+      "start": 477.159,
+      "end": 482.08,
+      "text": "input or select a query generates the"
+    },
+    {
+      "start": 479.599,
+      "end": 484.599,
+      "text": "SQL syntax and provides a detailed"
+    },
+    {
+      "start": 482.08,
+      "end": 486.84,
+      "text": "explanation of its components and"
+    },
+    {
+      "start": 484.599,
+      "end": 488.71999999999997,
+      "text": "functionality this tool Bridges the gap"
+    },
+    {
+      "start": 486.84,
+      "end": 491.039,
+      "text": "between technical understanding and real"
+    },
+    {
+      "start": 488.72,
+      "end": 493.47900000000004,
+      "text": "world database operations empowering"
+    },
+    {
+      "start": 491.039,
+      "end": 496.479,
+      "text": "users with an initiative and interactive"
+    },
+    {
+      "start": 493.479,
+      "end": 498.84,
+      "text": "SQL learning experience let's jump right"
+    },
+    {
+      "start": 496.479,
+      "end": 501.479,
+      "text": "into the code so the first step is"
+    },
+    {
+      "start": 498.84,
+      "end": 505.039,
+      "text": "setting up your dependencies here we"
+    },
+    {
+      "start": 501.479,
+      "end": 508.44,
+      "text": "import stream LD for the user interface"
+    },
+    {
+      "start": 505.039,
+      "end": 513.279,
+      "text": "and then Google generative AI for using"
+    },
+    {
+      "start": 508.44,
+      "end": 518.64,
+      "text": "Gemini so first import stream lit as"
+    },
+    {
+      "start": 513.279,
+      "end": 521.56,
+      "text": "SD and next import Google do generative"
+    },
+    {
+      "start": 518.64,
+      "end": 524.8389999999999,
+      "text": "AI as gen"
+    },
+    {
+      "start": 521.56,
+      "end": 528.04,
+      "text": "AI so to get this API you have to go to"
+    },
+    {
+      "start": 524.839,
+      "end": 531.44,
+      "text": "the Google Gemini API key and here click"
+    },
+    {
+      "start": 528.04,
+      "end": 533.88,
+      "text": "on get a Gemini API key in Google AI"
+    },
+    {
+      "start": 531.44,
+      "end": 537.6,
+      "text": "studio and then once you scroll there is"
+    },
+    {
+      "start": 533.88,
+      "end": 539.4399999999999,
+      "text": "a button on the left called create API"
+    },
+    {
+      "start": 537.6,
+      "end": 541.8000000000001,
+      "text": "now click on it and select your model"
+    },
+    {
+      "start": 539.44,
+      "end": 541.8000000000001,
+      "text": "model"
+    },
+    {
+      "start": 541.839,
+      "end": 548.6800000000001,
+      "text": "here and let's copy it and now let's go"
+    },
+    {
+      "start": 546.24,
+      "end": 551.04,
+      "text": "back to our vs code editor and paste it"
+    },
+    {
+      "start": 548.68,
+      "end": 557.4799999999999,
+      "text": "here so to paste let's"
+    },
+    {
+      "start": 551.04,
+      "end": 560.12,
+      "text": "type Google uncore API uncore key and"
+    },
+    {
+      "start": 557.48,
+      "end": 563.12,
+      "text": "inside the double code let's paste it"
+    },
+    {
+      "start": 560.12,
+      "end": 564.76,
+      "text": "and now let's type gen AI"
+    },
+    {
+      "start": 563.12,
+      "end": 567.16,
+      "text": "do"
+    },
+    {
+      "start": 564.76,
+      "end": 571.4399999999999,
+      "text": "configure and inside the bracket let's"
+    },
+    {
+      "start": 567.16,
+      "end": 577.4399999999999,
+      "text": "keep it as API key equal to and give it"
+    },
+    {
+      "start": 571.44,
+      "end": 582.8800000000001,
+      "text": "as Google aior key now let's type model"
+    },
+    {
+      "start": 577.44,
+      "end": 585.399,
+      "text": "equal to gen AI do generative"
+    },
+    {
+      "start": 582.88,
+      "end": 589.68,
+      "text": "model and inside the bracket let's keep"
+    },
+    {
+      "start": 585.399,
+      "end": 592.04,
+      "text": "it as Gemini Pro so we use the Google"
+    },
+    {
+      "start": 589.68,
+      "end": 593.92,
+      "text": "Gemini API to generate SQL queries"
+    },
+    {
+      "start": 592.04,
+      "end": 596.959,
+      "text": "dynamically so make sure to configure"
+    },
+    {
+      "start": 593.92,
+      "end": 599.92,
+      "text": "your API key securely now let's display"
+    },
+    {
+      "start": 596.959,
+      "end": 602.0,
+      "text": "the stream L layout code"
+    },
+    {
+      "start": 599.92,
+      "end": 604.519,
+      "text": "now let's set up the app's user"
+    },
+    {
+      "start": 602.0,
+      "end": 606.44,
+      "text": "interface so we use stream LD to create"
+    },
+    {
+      "start": 604.519,
+      "end": 609.24,
+      "text": "an interactive page where users can"
+    },
+    {
+      "start": 606.44,
+      "end": 615.36,
+      "text": "input plain English queries and get SQL"
+    },
+    {
+      "start": 609.24,
+      "end": 620.0,
+      "text": "code in return so we write STD dot set"
+    },
+    {
+      "start": 615.36,
+      "end": 622.44,
+      "text": "underscore page underscore config and"
+    },
+    {
+      "start": 620.0,
+      "end": 624.48,
+      "text": "inside the bracket let's give it as page"
+    },
+    {
+      "start": 622.44,
+      "end": 628.12,
+      "text": "uncore"
+    },
+    {
+      "start": 624.48,
+      "end": 632.76,
+      "text": "title and inside the double codes let's"
+    },
+    {
+      "start": 628.12,
+      "end": 636.079,
+      "text": "give a title as a a SQL query"
+    },
+    {
+      "start": 632.76,
+      "end": 638.639,
+      "text": "generator and give a comma and let's"
+    },
+    {
+      "start": 636.079,
+      "end": 642.6389999999999,
+      "text": "type it as page uncore"
+    },
+    {
+      "start": 638.639,
+      "end": 644.639,
+      "text": "icon equal to and inside the double code"
+    },
+    {
+      "start": 642.639,
+      "end": 647.839,
+      "text": "let's keep it as"
+    },
+    {
+      "start": 644.639,
+      "end": 650.44,
+      "text": "robot now let's put some images so I'm"
+    },
+    {
+      "start": 647.839,
+      "end": 652.9200000000001,
+      "text": "using edureka image and SQL logo and"
+    },
+    {
+      "start": 650.44,
+      "end": 657.7600000000001,
+      "text": "also to make them Center we will type it"
+    },
+    {
+      "start": 652.92,
+      "end": 661.639,
+      "text": "as column 1 comma column 2 comma column"
+    },
+    {
+      "start": 657.76,
+      "end": 664.04,
+      "text": "3 equal to SD do"
+    },
+    {
+      "start": 661.639,
+      "end": 668.44,
+      "text": "columns and inside the bracket let's"
+    },
+    {
+      "start": 664.04,
+      "end": 671.36,
+      "text": "keep it as 1 comma 2 comma 1 next let us"
+    },
+    {
+      "start": 668.44,
+      "end": 675.72,
+      "text": "type with column 2"
+    },
+    {
+      "start": 671.36,
+      "end": 679.0,
+      "text": "colon and let's type it as STD do"
+    },
+    {
+      "start": 675.72,
+      "end": 681.6,
+      "text": "image and inside the bracket let's give"
+    },
+    {
+      "start": 679.0,
+      "end": 684.639,
+      "text": "the image address and then width is"
+    },
+    {
+      "start": 681.6,
+      "end": 686.76,
+      "text": "equal to 200 now let us add another"
+    },
+    {
+      "start": 684.639,
+      "end": 690.6,
+      "text": "image so let's copy the same and give"
+    },
+    {
+      "start": 686.76,
+      "end": 693.24,
+      "text": "the other image address"
+    },
+    {
+      "start": 690.6,
+      "end": 695.24,
+      "text": "our layout includes a title logo and"
+    },
+    {
+      "start": 693.24,
+      "end": 697.8,
+      "text": "text input box to keep the interface"
+    },
+    {
+      "start": 695.24,
+      "end": 700.0,
+      "text": "simple and initiative so here's where"
+    },
+    {
+      "start": 697.8,
+      "end": 702.959,
+      "text": "the magic happens so when a user clicks"
+    },
+    {
+      "start": 700.0,
+      "end": 705.279,
+      "text": "the generate SQL query button we format"
+    },
+    {
+      "start": 702.959,
+      "end": 708.16,
+      "text": "their input into a prompt for the Gemini"
+    },
+    {
+      "start": 705.279,
+      "end": 710.8,
+      "text": "model to generate SQL code so let's"
+    },
+    {
+      "start": 708.16,
+      "end": 713.959,
+      "text": "create template by writing template"
+    },
+    {
+      "start": 710.8,
+      "end": 718.24,
+      "text": "equal to and inside the triple codes"
+    },
+    {
+      "start": 713.959,
+      "end": 723.0,
+      "text": "let's type it as create a SQL"
+    },
+    {
+      "start": 718.24,
+      "end": 727.48,
+      "text": "query snip it using the below"
+    },
+    {
+      "start": 723.0,
+      "end": 731.88,
+      "text": "text next let us also give text input"
+    },
+    {
+      "start": 727.48,
+      "end": 735.04,
+      "text": "and we'll also type I just want a SQL"
+    },
+    {
+      "start": 731.88,
+      "end": 738.12,
+      "text": "query now let's type the response so"
+    },
+    {
+      "start": 735.04,
+      "end": 740.5999999999999,
+      "text": "typee response equal to model. generate"
+    },
+    {
+      "start": 738.12,
+      "end": 744.519,
+      "text": "generate uncore"
+    },
+    {
+      "start": 740.6,
+      "end": 747.9590000000001,
+      "text": "content and let's keep it as template."
+    },
+    {
+      "start": 744.519,
+      "end": 750.12,
+      "text": "format and inside the bracket let's give"
+    },
+    {
+      "start": 747.959,
+      "end": 755.68,
+      "text": "text"
+    },
+    {
+      "start": 750.12,
+      "end": 755.68,
+      "text": "input equal to textor"
+    },
+    {
+      "start": 755.76,
+      "end": 763.0,
+      "text": "input and next let's type the SQL query"
+    },
+    {
+      "start": 760.279,
+      "end": 763.0,
+      "text": "so give"
+    },
+    {
+      "start": 763.519,
+      "end": 769.44,
+      "text": "sqlquery equal to"
+    },
+    {
+      "start": 767.079,
+      "end": 772.8389999999999,
+      "text": "response do"
+    },
+    {
+      "start": 769.44,
+      "end": 778.1600000000001,
+      "text": "text Dot so let's give the strip"
+    },
+    {
+      "start": 772.839,
+      "end": 779.72,
+      "text": "function do L strip function do R strip"
+    },
+    {
+      "start": 778.16,
+      "end": 782.16,
+      "text": "function so"
+    },
+    {
+      "start": 779.72,
+      "end": 784.519,
+      "text": "the AI generates the SQL query and we"
+    },
+    {
+      "start": 782.16,
+      "end": 786.92,
+      "text": "clean up the output for display so once"
+    },
+    {
+      "start": 784.519,
+      "end": 789.279,
+      "text": "the SQL query is ready we take it a step"
+    },
+    {
+      "start": 786.92,
+      "end": 791.199,
+      "text": "further by generating a sample expected"
+    },
+    {
+      "start": 789.279,
+      "end": 793.959,
+      "text": "output and a clear explanation of the"
+    },
+    {
+      "start": 791.199,
+      "end": 796.8389999999999,
+      "text": "query now let's type the logic for"
+    },
+    {
+      "start": 793.959,
+      "end": 799.0,
+      "text": "showing explanation and output so let's"
+    },
+    {
+      "start": 796.839,
+      "end": 802.44,
+      "text": "type St do"
+    },
+    {
+      "start": 799.0,
+      "end": 806.959,
+      "text": "markdown and inside the bracket we will"
+    },
+    {
+      "start": 802.44,
+      "end": 809.9200000000001,
+      "text": "give HTML TX so first diff style is"
+    },
+    {
+      "start": 806.959,
+      "end": 814.92,
+      "text": "equal to we will align find the text in"
+    },
+    {
+      "start": 809.92,
+      "end": 818.76,
+      "text": "Center so text align Center and next"
+    },
+    {
+      "start": 814.92,
+      "end": 821.88,
+      "text": "let's give H1 tag and inside H1 tag we"
+    },
+    {
+      "start": 818.76,
+      "end": 825.519,
+      "text": "will write SQL query"
+    },
+    {
+      "start": 821.88,
+      "end": 829.48,
+      "text": "generator and let's close the H1 tag"
+    },
+    {
+      "start": 825.519,
+      "end": 832.72,
+      "text": "next let's open H3 tag and write I can"
+    },
+    {
+      "start": 829.48,
+      "end": 837.24,
+      "text": "generate SQL queries for you and let's"
+    },
+    {
+      "start": 832.72,
+      "end": 841.1990000000001,
+      "text": "close the H3 tag and inside the H4 tag"
+    },
+    {
+      "start": 837.24,
+      "end": 846.04,
+      "text": "let's type it as with explanation as"
+    },
+    {
+      "start": 841.199,
+      "end": 850.04,
+      "text": "well now close the H4 tag and let's open"
+    },
+    {
+      "start": 846.04,
+      "end": 852.5999999999999,
+      "text": "the paragraph tag which is the P tag and"
+    },
+    {
+      "start": 850.04,
+      "end": 855.8389999999999,
+      "text": "inside the P tag let's type it as this"
+    },
+    {
+      "start": 852.6,
+      "end": 855.839,
+      "text": "tool allows you to"
+    },
+    {
+      "start": 855.959,
+      "end": 862.7199999999999,
+      "text": "generate SQL queries based on your data"
+    },
+    {
+      "start": 861.12,
+      "end": 865.6,
+      "text": "now let us close the"
+    },
+    {
+      "start": 862.72,
+      "end": 868.8000000000001,
+      "text": "ptag also close the div"
+    },
+    {
+      "start": 865.6,
+      "end": 870.24,
+      "text": "tag now to make the markdown visible let"
+    },
+    {
+      "start": 868.8,
+      "end": 874.88,
+      "text": "us type"
+    },
+    {
+      "start": 870.24,
+      "end": 879.48,
+      "text": "unsave underscore allow uncore HTML"
+    },
+    {
+      "start": 874.88,
+      "end": 885.88,
+      "text": "equal to true now let's write text input"
+    },
+    {
+      "start": 879.48,
+      "end": 888.1990000000001,
+      "text": "equal to st. text uncore area and inside"
+    },
+    {
+      "start": 885.88,
+      "end": 891.279,
+      "text": "the bracket let's give it as enter your"
+    },
+    {
+      "start": 888.199,
+      "end": 893.5999999999999,
+      "text": "query here in plain English now let us"
+    },
+    {
+      "start": 891.279,
+      "end": 898.759,
+      "text": "give a submit button so for that let us"
+    },
+    {
+      "start": 893.6,
+      "end": 901.639,
+      "text": "type submit uncore button equal to St do"
+    },
+    {
+      "start": 898.759,
+      "end": 907.12,
+      "text": "button button and inside the bracket let"
+    },
+    {
+      "start": 901.639,
+      "end": 912.32,
+      "text": "us give generate SQL query now if submit"
+    },
+    {
+      "start": 907.12,
+      "end": 914.079,
+      "text": "button colon write it with st do spinner"
+    },
+    {
+      "start": 912.32,
+      "end": 915.88,
+      "text": "and inside the bracket let's keep"
+    },
+    {
+      "start": 914.079,
+      "end": 918.4399999999999,
+      "text": "generating SQL"
+    },
+    {
+      "start": 915.88,
+      "end": 921.519,
+      "text": "query and then let's create a"
+    },
+    {
+      "start": 918.44,
+      "end": 922.9590000000001,
+      "text": "template and inside the trible codes"
+    },
+    {
+      "start": 921.519,
+      "end": 928.0,
+      "text": "let's type it"
+    },
+    {
+      "start": 922.959,
+      "end": 930.92,
+      "text": "as create a SQL queries snippit using"
+    },
+    {
+      "start": 928.0,
+      "end": 933.959,
+      "text": "the below"
+    },
+    {
+      "start": 930.92,
+      "end": 935.8,
+      "text": "text now using the about template we"
+    },
+    {
+      "start": 933.959,
+      "end": 938.4399999999999,
+      "text": "will write three more templates for SQL"
+    },
+    {
+      "start": 935.8,
+      "end": 940.8,
+      "text": "query which are text input and then SQL"
+    },
+    {
+      "start": 938.44,
+      "end": 942.9200000000001,
+      "text": "query which will include expected output"
+    },
+    {
+      "start": 940.8,
+      "end": 945.92,
+      "text": "and also explanation"
+    },
+    {
+      "start": 942.92,
+      "end": 947.68,
+      "text": "output now to merge all the templates"
+    },
+    {
+      "start": 945.92,
+      "end": 950.4799999999999,
+      "text": "together we will make a container so we"
+    },
+    {
+      "start": 947.68,
+      "end": 954.12,
+      "text": "will write with std."
+    },
+    {
+      "start": 950.48,
+      "end": 957.3190000000001,
+      "text": "container so it's a function and let us"
+    },
+    {
+      "start": 954.12,
+      "end": 960.24,
+      "text": "also write it as STD"
+    },
+    {
+      "start": 957.319,
+      "end": 963.16,
+      "text": "do success"
+    },
+    {
+      "start": 960.24,
+      "end": 966.92,
+      "text": "and inside the bracket let us give it as"
+    },
+    {
+      "start": 963.16,
+      "end": 970.519,
+      "text": "SQL query generated"
+    },
+    {
+      "start": 966.92,
+      "end": 971.8,
+      "text": "successfully also we will give here is"
+    },
+    {
+      "start": 970.519,
+      "end": 974.04,
+      "text": "your query"
+    },
+    {
+      "start": 971.8,
+      "end": 976.4399999999999,
+      "text": "below"
+    },
+    {
+      "start": 974.04,
+      "end": 980.5999999999999,
+      "text": "next st."
+    },
+    {
+      "start": 976.44,
+      "end": 985.639,
+      "text": "code and inside the bracket let us give"
+    },
+    {
+      "start": 980.6,
+      "end": 988.9200000000001,
+      "text": "sqlquery and comma language equal to"
+    },
+    {
+      "start": 985.639,
+      "end": 992.519,
+      "text": "SQL now let us give once again St do"
+    },
+    {
+      "start": 988.92,
+      "end": 995.279,
+      "text": "Suess and inside this let us keep it"
+    },
+    {
+      "start": 992.519,
+      "end": 999.399,
+      "text": "as expected"
+    },
+    {
+      "start": 995.279,
+      "end": 1004.16,
+      "text": "output of this query will"
+    },
+    {
+      "start": 999.399,
+      "end": 1007.48,
+      "text": "be and now let us keep it as STD do"
+    },
+    {
+      "start": 1004.16,
+      "end": 1010.6,
+      "text": "markdown and inside the bracket e"
+    },
+    {
+      "start": 1007.48,
+      "end": 1012.44,
+      "text": "output once again SD do success and"
+    },
+    {
+      "start": 1010.6,
+      "end": 1014.759,
+      "text": "inside this let us keep it as"
+    },
+    {
+      "start": 1012.44,
+      "end": 1019.44,
+      "text": "explanation of this SQL"
+    },
+    {
+      "start": 1014.759,
+      "end": 1021.5600000000001,
+      "text": "query next let us give St do markdown"
+    },
+    {
+      "start": 1019.44,
+      "end": 1024.919,
+      "text": "and inside this function let us keep it"
+    },
+    {
+      "start": 1021.56,
+      "end": 1027.079,
+      "text": "as explanation so over here this shows a"
+    },
+    {
+      "start": 1024.919,
+      "end": 1029.959,
+      "text": "green success message indicating the SQL"
+    },
+    {
+      "start": 1027.079,
+      "end": 1033.0,
+      "text": "query was generated successfully and"
+    },
+    {
+      "start": 1029.959,
+      "end": 1035.439,
+      "text": "next the show SQL query this displays"
+    },
+    {
+      "start": 1033.0,
+      "end": 1038.72,
+      "text": "the SQL query is a formatted code blog"
+    },
+    {
+      "start": 1035.439,
+      "end": 1041.3190000000002,
+      "text": "highlighting it as a SQL next is the"
+    },
+    {
+      "start": 1038.72,
+      "end": 1043.039,
+      "text": "display expected output so this provides"
+    },
+    {
+      "start": 1041.319,
+      "end": 1046.1599999999999,
+      "text": "a success message for the queries"
+    },
+    {
+      "start": 1043.039,
+      "end": 1048.28,
+      "text": "expected output followed by St markdown"
+    },
+    {
+      "start": 1046.16,
+      "end": 1051.679,
+      "text": "e output which displays the expected"
+    },
+    {
+      "start": 1048.28,
+      "end": 1054.32,
+      "text": "output in markdown format and followed"
+    },
+    {
+      "start": 1051.679,
+      "end": 1056.44,
+      "text": "by st. markdown e output which displays"
+    },
+    {
+      "start": 1054.32,
+      "end": 1058.8799999999999,
+      "text": "the expected output in the markdown"
+    },
+    {
+      "start": 1056.44,
+      "end": 1061.24,
+      "text": "format so now this line of code"
+    },
+    {
+      "start": 1058.88,
+      "end": 1063.8400000000001,
+      "text": "introduce an explanation and st."
+    },
+    {
+      "start": 1061.24,
+      "end": 1066.919,
+      "text": "markdown explanation displays that it is"
+    },
+    {
+      "start": 1063.84,
+      "end": 1068.48,
+      "text": "in markdown format for clarity so this"
+    },
+    {
+      "start": 1066.919,
+      "end": 1071.64,
+      "text": "makes the tool valuable for both"
+    },
+    {
+      "start": 1068.48,
+      "end": 1074.72,
+      "text": "learning and debugging SQL so now let's"
+    },
+    {
+      "start": 1071.64,
+      "end": 1077.76,
+      "text": "see it in action so open the terminal"
+    },
+    {
+      "start": 1074.72,
+      "end": 1080.84,
+      "text": "and let us type stream lit run and give"
+    },
+    {
+      "start": 1077.76,
+      "end": 1080.84,
+      "text": "your file name"
+    },
+    {
+      "start": 1083.48,
+      "end": 1088.52,
+      "text": "now as you can see the screen your SQL"
+    },
+    {
+      "start": 1085.679,
+      "end": 1091.76,
+      "text": "query generator is ready to go now let's"
+    },
+    {
+      "start": 1088.52,
+      "end": 1095.0,
+      "text": "test it so for that here I will input a"
+    },
+    {
+      "start": 1091.76,
+      "end": 1097.52,
+      "text": "prompt asking for a query which is give"
+    },
+    {
+      "start": 1095.0,
+      "end": 1101.159,
+      "text": "me the query for create"
+    },
+    {
+      "start": 1097.52,
+      "end": 1104.039,
+      "text": "table now let's click on generate SQL"
+    },
+    {
+      "start": 1101.159,
+      "end": 1106.2800000000002,
+      "text": "query and as you can see it's running so"
+    },
+    {
+      "start": 1104.039,
+      "end": 1108.559,
+      "text": "let's wait for it to"
+    },
+    {
+      "start": 1106.28,
+      "end": 1111.2,
+      "text": "generate so as you can see on the screen"
+    },
+    {
+      "start": 1108.559,
+      "end": 1113.2,
+      "text": "the app generates a SQL query expected"
+    },
+    {
+      "start": 1111.2,
+      "end": 1116.2,
+      "text": "output and even a plain English"
+    },
+    {
+      "start": 1113.2,
+      "end": 1119.52,
+      "text": "explanation in seconds so how cool is"
+    },
+    {
+      "start": 1116.2,
+      "end": 1122.159,
+      "text": "that right and that's it our SQL query"
+    },
+    {
+      "start": 1119.52,
+      "end": 1124.44,
+      "text": "generator powered by L chain Gemini API"
+    },
+    {
+      "start": 1122.159,
+      "end": 1126.64,
+      "text": "and stream late is complete so this"
+    },
+    {
+      "start": 1124.44,
+      "end": 1129.52,
+      "text": "project is perfect for simplifying SQL"
+    },
+    {
+      "start": 1126.64,
+      "end": 1131.48,
+      "text": "learning and enhancing productivity with"
+    },
+    {
+      "start": 1129.52,
+      "end": 1133.96,
+      "text": "this we have come to an end to this"
+    },
+    {
+      "start": 1131.48,
+      "end": 1135.919,
+      "text": "video on what is Lang chain and if you"
+    },
+    {
+      "start": 1133.96,
+      "end": 1138.1200000000001,
+      "text": "enjoyed listening to this video please"
+    },
+    {
+      "start": 1135.919,
+      "end": 1139.919,
+      "text": "be kind enough to like it and you can"
+    },
+    {
+      "start": 1138.12,
+      "end": 1142.1589999999999,
+      "text": "comment on any any of your doubts or"
+    },
+    {
+      "start": 1139.919,
+      "end": 1145.2800000000002,
+      "text": "queries and we will reply to them at the"
+    },
+    {
+      "start": 1142.159,
+      "end": 1147.919,
+      "text": "earliest also do look up for more videos"
+    },
+    {
+      "start": 1145.28,
+      "end": 1151.039,
+      "text": "and playlist and also subscribe to the"
+    },
+    {
+      "start": 1147.919,
+      "end": 1154.2800000000002,
+      "text": "edua YouTube channel to learn more and"
+    },
+    {
+      "start": 1151.039,
+      "end": 1154.28,
+      "text": "happy learning"
+    }
+  ]
+}

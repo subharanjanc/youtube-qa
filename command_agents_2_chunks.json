@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ef228efe3fec7610af350d2a941be3be938f973be38e5feed994f97cd7fd7685",
+    "text": "Removing all of the hype, an AI agent is just an LLM running in a loop. Here's how an agent loop works. So, you'll prompt an LLM, and if the LLM can respond to the prompt in a single step, it does. But if the LLM cannot respond in a single step, what it does is emit an action to take. So, if you test with this message that reads, \"Say hi and then think about a funny joke, but don't tell me it.\" Let's see what happens. Right, you can see it thought of a joke, but didn't say it. And here we can see there were tool calls involved. So, if we inspect the tool calls associated with this reason and act agent, you can see it emitted a think action with this information attached to it, right? And you can see the joke in here. Tools are what we give to AI agents so they can perform the actions they generate. You'll see tools come in a few different forms in the wild. Sometimes you'll see them called connectors, sometimes you'll see them called MCP, sometimes you'll see them called plugins, all the same stuff. If an LLM is like the brain of an AI agent, then the tools are like its hands. It's through tools that your AI agents",
+    "metadata": {
+      "video_id": "Bda73OPFGss",
+      "title": "Agent Tools vs. Agent Skills (and the Security Risks Many Leaders Miss)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 4.28,
+      "end_seconds": 75.36,
+      "url": "https://www.youtube.com/watch?v=Bda73OPFGss&t=4s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5bf8c718dc8a22595bb105091673b3d3aefda7839b81ae55559fb5e382194dd8",
+    "text": "sometimes you'll see them called plugins, all the same stuff. If an LLM is like the brain of an AI agent, then the tools are like its hands. It's through tools that your AI agents will gain access to your company systems and your company data. If you give an AI agent a tool for accessing an email inbox, it'll be able to draft emails for you. If you give an AI agent access to your social media accounts, it'll be able to post content for you. If you give an AI agent access to a company database, it'll be able to run reports for you. To peel the onion open for just a few seconds, all a tool is, when you boil it down, is a list of instructions specified in computer code. Here, for example, is that think tool we were just demonstrating. You can see it enables an AI agent to send it a thought, and it says to the agent back, \"Okay, your thought was recorded.\" Super simple. But you can make your tools as complicated as you would like. Here, for example, is a tool for reading data from a database. You You the gist, right? Enough nerdy stuff. You can configure the tools you give to your AI agents to require approval before they are used,",
+    "metadata": {
+      "video_id": "Bda73OPFGss",
+      "title": "Agent Tools vs. Agent Skills (and the Security Risks Many Leaders Miss)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 63.48,
+      "end_seconds": 125.2,
+      "url": "https://www.youtube.com/watch?v=Bda73OPFGss&t=63s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e9acfae98f820a7e50f18f746b3d3f1ef0f0f76cfaa0914034bd0734ddcc0b7d",
+    "text": "example, is a tool for reading data from a database. You You the gist, right? Enough nerdy stuff. You can configure the tools you give to your AI agents to require approval before they are used, also known as human in the loop. For example, here's an AI agent that has a tool for sending emails. And you can see I've configured this tool to require human approval. So, if I send a prompt like \"Send an email to ceo@company.com saying see you at 11:00 on Thursday to set up your AI OS.\" Let's see what happens. Here you can see approval is requested, right? And if I approve this request, the email will get sent. And if I reject it, you can see it's been rejected. It doesn't execute. The amount of approvals your AI agents require directly affects how autonomous they are. If you set up approval on every tool call, you build a system bottlenecked by how fast a human can review the requests. If you set up approval on some tool calls, your agents can work mostly on their own, but will check in with you before doing anything sensitive, like sending emails or moving money. And if you remove all approval, you've created an autonomous system that can work without you. Your role as a business leader is to set",
+    "metadata": {
+      "video_id": "Bda73OPFGss",
+      "title": "Agent Tools vs. Agent Skills (and the Security Risks Many Leaders Miss)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 111.64,
+      "end_seconds": 185.959,
+      "url": "https://www.youtube.com/watch?v=Bda73OPFGss&t=111s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "144a20275dcca2fa248514f8d600bdcdbe43b59ca2f3ed38275a83559ba19c29",
+    "text": "before doing anything sensitive, like sending emails or moving money. And if you remove all approval, you've created an autonomous system that can work without you. Your role as a business leader is to set that autonomy dial for the agents running in your business. Start with human in the loop and add more autonomy later as you understand where it makes sense. To give you an analogy, if you grant someone access to your kitchen, that alone is not going to enable them to make your favorite dish. But if you grant them access to your kitchen and give them the recipe for how to make your favorite dish, they can follow that recipe and deliver a meal to you exactly as you would like it. In this analogy, the kitchen represents tools and the recipe represents agent skills. In the context of business, the tools will be the systems used to power the business and the skills will be the details of how you and or your team use those systems. By documenting company processes and tasks as agent skills, you can automate them by simply handing those skills to AI agents. What does an agent skill look like? Well, an agent skill is simply a folder with one file inside called skill.md. Inside that skill.md file, you'll find",
+    "metadata": {
+      "video_id": "Bda73OPFGss",
+      "title": "Agent Tools vs. Agent Skills (and the Security Risks Many Leaders Miss)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 172.8,
+      "end_seconds": 252.12,
+      "url": "https://www.youtube.com/watch?v=Bda73OPFGss&t=172s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7c2c5531ad64e6c505df7ff797fc8139bd135e2cb69b14b420f3ea6a5f054073",
+    "text": "them by simply handing those skills to AI agents. What does an agent skill look like? Well, an agent skill is simply a folder with one file inside called skill.md. Inside that skill.md file, you'll find the skill's name, a description of when it should be used, and the body of the skill. The body of the skill is where all of the detail regarding the skill can be specified in natural language. Here we have two agent skills, a simple one on the left and a slightly more advanced one on the right. Agent skills allow you to include additional files in the skill folder to give your AI agents additional context of how the skill works, but those additional files are optional. As a bare minimum though, you have to include the skill.md. And FYI, the name of the skill has to match the name of the skill folder. How are skills created? Most AI platforms come with built-in support for prompting skills into existence. I'm going to show you this on the Command Labs platform, but it works the exact same way on platforms like Claude, ChatGPT, Gemini, etc. On the skills page, you can see we have a skill called skill creator. It's a skill that enables us to make more skills. This is exactly what you'll see on",
+    "metadata": {
+      "video_id": "Bda73OPFGss",
+      "title": "Agent Tools vs. Agent Skills (and the Security Risks Many Leaders Miss)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 235.56,
+      "end_seconds": 316.28000000000003,
+      "url": "https://www.youtube.com/watch?v=Bda73OPFGss&t=235s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f741b18e2e96b4e03ff357f95333d788566416a71e3c88722ef691fa2da96138",
+    "text": "exact same way on platforms like Claude, ChatGPT, Gemini, etc. On the skills page, you can see we have a skill called skill creator. It's a skill that enables us to make more skills. This is exactly what you'll see on Claude, ChatGPT, Gemini. If we now go to one of our agents and attach this skill to it, we can use that agent to make skills, right? I've already added it, so now we can come over and interact with this agent, and here's the prompt I'm going to provide. Create a skill that holds the brand guidelines for Command Labs. The skill should be called Command Labs brand guidelines. Here are the brand guidelines. And I'll make this bigger so you can read it. And I will paste in the Command Labs brand guidelines like so. All right, we got the colors, the fonts, etc. Send this off. And let's see what happens. It's asking us to confirm if this looks good. I'm going to say yes. Save it. All right, so it saved the skill, and if we come back to the skills page, you can see we have two skills now, right? This is the one we just created. How is a skill used? To use a skill, you have to attach it to the agent that",
+    "metadata": {
+      "video_id": "Bda73OPFGss",
+      "title": "Agent Tools vs. Agent Skills (and the Security Risks Many Leaders Miss)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 298.88,
+      "end_seconds": 391.44,
+      "url": "https://www.youtube.com/watch?v=Bda73OPFGss&t=298s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "30b4af585aae7f6d6b2f7ea7f33edd7ac28851a8059e03c97a1091d9d83b957b",
+    "text": "we come back to the skills page, you can see we have two skills now, right? This is the one we just created. How is a skill used? To use a skill, you have to attach it to the agent that you're using. So, if I come over to the agents overview page, I can see all the agents that I have on this particular platform. And we're going to demonstrate this with this one. So, let me come to the agent config and attach that skill we just made, right? The Command Labs brand guidelines skill. Let's attach it. And save the agent config. And now when we interact with this agent, all we have to do is prompt in a way where the content of the prompt aligns with the description of the skill. So, if I send a prompt like this, which reads draft an email to be sent to ceo@company.com with Command Labs branded emojis saying looking forward to meeting, blah blah blah. Let's see what happens. So, if you look at the tool calls, you can see we're loading in the skill, and let's see what it comes up with. So, you can see it generated an email that has Command Labs branding, right? It's the same branding that you're seeing in this user interface.",
+    "metadata": {
+      "video_id": "Bda73OPFGss",
+      "title": "Agent Tools vs. Agent Skills (and the Security Risks Many Leaders Miss)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 378.76,
+      "end_seconds": 456.15999999999997,
+      "url": "https://www.youtube.com/watch?v=Bda73OPFGss&t=378s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "759210530a3235431303ceea49204d4954f97b0520005ec832de9177c75f2a8b",
+    "text": "can see we're loading in the skill, and let's see what it comes up with. So, you can see it generated an email that has Command Labs branding, right? It's the same branding that you're seeing in this user interface. If for some reason your skill is not getting loaded into context, you can explicitly bring it in by typing a slash command. you'll type forward slash and the name of the skill you explicitly want to include in context, right? And there's no chances of it not being included if you do it via this technique. So now you understand how to use skills. One final note regarding skills, make sure you keep your company's skills private as they can document proprietary company processes. Building skills will free up your people and turn operational knowledge in people's heads into a business asset. They're very valuable. Make sure they're protected, make sure they're versioned, and make sure you monitor who has access to them. Now let's talk about the three main cybersecurity concerns when it comes to AI agents. Concern number one is prompt injection. Prompt injection is when malicious instructions sneak into what your agents read via prompts, tools, and skills. Regarding prompts, imagine your enemy prompting your AI agents to delete all company data. You can see how that could",
+    "metadata": {
+      "video_id": "Bda73OPFGss",
+      "title": "Agent Tools vs. Agent Skills (and the Security Risks Many Leaders Miss)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 440.919,
+      "end_seconds": 530.56,
+      "url": "https://www.youtube.com/watch?v=Bda73OPFGss&t=440s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5e5c5d656ab1c0e9f1948a42b12dd2a3e12ba163107b73debb684b05fdd308b4",
+    "text": "Prompt injection is when malicious instructions sneak into what your agents read via prompts, tools, and skills. Regarding prompts, imagine your enemy prompting your AI agents to delete all company data. You can see how that could be a problem depending on the systems your AI agents have access to. Regarding tools, any tool that reads data into context can potentially cause malicious instructions embedded inside of that data to be followed. For example, if I were to prompt one of my AI agents to read a PDF and the text inside of that PDF reads, \"Delete all company data,\" you can see how that could be problematic, too. And as for agent skills, err on the side of writing your own. Do not give unaudited skills to your AI agents as they might also contain malicious instructions. Concern number two is tool sprawl. More tools sounds better on the surface, but more tools means that more things can go wrong, especially if guardrails have been removed from those tools. As a rule of thumb, give your AI agents access to the tools they need and remove access once those tools are no longer needed. Concern number three is coding agents. The most powerful tool you can give to an AI agent is the ability to code. The ability to code is a tool that",
+    "metadata": {
+      "video_id": "Bda73OPFGss",
+      "title": "Agent Tools vs. Agent Skills (and the Security Risks Many Leaders Miss)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 513.719,
+      "end_seconds": 592.12,
+      "url": "https://www.youtube.com/watch?v=Bda73OPFGss&t=513s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5985954c2a1a5c1940e4a42d049009ce55ad386e5d55d856b3a5e21cddb289ea",
+    "text": "access once those tools are no longer needed. Concern number three is coding agents. The most powerful tool you can give to an AI agent is the ability to code. The ability to code is a tool that literally enables the AI agent to make more tools. Prompting one of these AI coding agents to do something that it doesn't have the right tool for will cause it to build the tool dynamically in order to service the prompt. On the surface, this seems magical, and it is, but it can cause these agents to do things that are unexpected and alarming. For example, in May 2026, a team at OpenAI was running tests on AI agents that were configured to use unreleased LLMs, and some of these agents escaped the test environment by executing a series of hacks over the course of several weeks that led to multiple systems within OpenAI, as well as external systems owned by Hugging Face, being compromised. This case study, referred to as the OpenAI Hugging Face incident, shows how coding agents can escape the control of even the biggest and brightest AI companies. Do you agree with this list, or you think other concerns should have been on it? Leave a comment saying which AI agent cybersecurity concerns I missed.",
+    "metadata": {
+      "video_id": "Bda73OPFGss",
+      "title": "Agent Tools vs. Agent Skills (and the Security Risks Many Leaders Miss)",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 577.92,
+      "end_seconds": 644.16,
+      "url": "https://www.youtube.com/watch?v=Bda73OPFGss&t=577s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

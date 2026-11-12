@@ -1,0 +1,2193 @@
+{
+  "video_id": "p4pHsuEf4Ms",
+  "title": "Generative AI Vs Agentic AI Vs AI Agents",
+  "channel": "Krish Naik",
+  "trainer": "Krish Naik",
+  "topic": "Agents",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1067.0,
+  "segments": [
+    {
+      "start": 0.48,
+      "end": 4.48,
+      "text": "Hello all, my name is Krishna and"
+    },
+    {
+      "start": 2.56,
+      "end": 6.16,
+      "text": "welcome to my YouTube channel. So guys,"
+    },
+    {
+      "start": 4.48,
+      "end": 7.839,
+      "text": "today in this particular video we are"
+    },
+    {
+      "start": 6.16,
+      "end": 10.32,
+      "text": "going to discuss about the basic"
+    },
+    {
+      "start": 7.839,
+      "end": 13.679,
+      "text": "differences between generative AI versus"
+    },
+    {
+      "start": 10.32,
+      "end": 15.839,
+      "text": "AI agents versus agentic AI. Now this is"
+    },
+    {
+      "start": 13.679,
+      "end": 17.6,
+      "text": "one of the most trending topics that is"
+    },
+    {
+      "start": 15.839,
+      "end": 20.240000000000002,
+      "text": "currently going on and it is necessary"
+    },
+    {
+      "start": 17.6,
+      "end": 22.080000000000002,
+      "text": "that you need to have your understanding"
+    },
+    {
+      "start": 20.24,
+      "end": 24.0,
+      "text": "very much clear when you are"
+    },
+    {
+      "start": 22.08,
+      "end": 27.198999999999998,
+      "text": "specifically working in all the specific"
+    },
+    {
+      "start": 24.0,
+      "end": 29.039,
+      "text": "topics. Okay. So one by one we will try"
+    },
+    {
+      "start": 27.199,
+      "end": 30.32,
+      "text": "to understand about each and every"
+    },
+    {
+      "start": 29.039,
+      "end": 32.800000000000004,
+      "text": "topics that I have actually mentioned"
+    },
+    {
+      "start": 30.32,
+      "end": 35.12,
+      "text": "over here. We'll go step by step. Okay."
+    },
+    {
+      "start": 32.8,
+      "end": 37.839999999999996,
+      "text": "So first thing is that I hope you may be"
+    },
+    {
+      "start": 35.12,
+      "end": 40.718999999999994,
+      "text": "knowing large language models. Okay. You"
+    },
+    {
+      "start": 37.84,
+      "end": 43.28,
+      "text": "may be knowing about large image models"
+    },
+    {
+      "start": 40.719,
+      "end": 45.760000000000005,
+      "text": "also. Right? So let's say that I'll also"
+    },
+    {
+      "start": 43.28,
+      "end": 47.52,
+      "text": "go ahead and write large image models."
+    },
+    {
+      "start": 45.76,
+      "end": 51.44,
+      "text": "When we talk about large language models"
+    },
+    {
+      "start": 47.52,
+      "end": 54.64,
+      "text": "or large image model, these models are"
+    },
+    {
+      "start": 51.44,
+      "end": 56.879,
+      "text": "actually very huge models, right? These"
+    },
+    {
+      "start": 54.64,
+      "end": 58.8,
+      "text": "are like huge models, bigger models,"
+    },
+    {
+      "start": 56.879,
+      "end": 61.199,
+      "text": "right? It can be of billions of"
+    },
+    {
+      "start": 58.8,
+      "end": 63.919999999999995,
+      "text": "parameters and they have trained with"
+    },
+    {
+      "start": 61.199,
+      "end": 65.75999999999999,
+      "text": "huge amount of data, right? This data"
+    },
+    {
+      "start": 63.92,
+      "end": 68.32000000000001,
+      "text": "that it is specifically used to train"
+    },
+    {
+      "start": 65.76,
+      "end": 71.36,
+      "text": "this model is huge. So you may have seen"
+    },
+    {
+      "start": 68.32,
+      "end": 73.439,
+      "text": "various models like llama 3. You may"
+    },
+    {
+      "start": 71.36,
+      "end": 77.439,
+      "text": "have been seeing OpenAI models right"
+    },
+    {
+      "start": 73.439,
+      "end": 78.72,
+      "text": "from GPT4 to GPT4 mini. Many many"
+    },
+    {
+      "start": 77.439,
+      "end": 80.24,
+      "text": "different models are there. And these"
+    },
+    {
+      "start": 78.72,
+      "end": 82.72,
+      "text": "models are specifically trained with"
+    },
+    {
+      "start": 80.24,
+      "end": 86.03999999999999,
+      "text": "huge amount of data. And at the end of"
+    },
+    {
+      "start": 82.72,
+      "end": 88.15899999999999,
+      "text": "the day, all these particular models are"
+    },
+    {
+      "start": 86.04,
+      "end": 90.36000000000001,
+      "text": "generating what are they basically"
+    },
+    {
+      "start": 88.159,
+      "end": 93.24000000000001,
+      "text": "doing? They're generating new content,"
+    },
+    {
+      "start": 90.36,
+      "end": 95.36,
+      "text": "right? Generating new"
+    },
+    {
+      "start": 93.24,
+      "end": 97.91999999999999,
+      "text": "content. Now, when we talk about"
+    },
+    {
+      "start": 95.36,
+      "end": 99.96,
+      "text": "generating new content, the models can"
+    },
+    {
+      "start": 97.92,
+      "end": 103.32000000000001,
+      "text": "probably generate new"
+    },
+    {
+      "start": 99.96,
+      "end": 106.24,
+      "text": "images, it can generate new text, it can"
+    },
+    {
+      "start": 103.32,
+      "end": 108.479,
+      "text": "generate video frames, it can generate"
+    },
+    {
+      "start": 106.24,
+      "end": 111.67999999999999,
+      "text": "anything as such, right?"
+    },
+    {
+      "start": 108.479,
+      "end": 113.84,
+      "text": "audio it can also generate audio right"
+    },
+    {
+      "start": 111.68,
+      "end": 115.43900000000001,
+      "text": "and it can also generate videos so I've"
+    },
+    {
+      "start": 113.84,
+      "end": 118.399,
+      "text": "written each and everything about over"
+    },
+    {
+      "start": 115.439,
+      "end": 119.91999999999999,
+      "text": "here right so here what this LLM is"
+    },
+    {
+      "start": 118.399,
+      "end": 122.32000000000001,
+      "text": "basically doing since it is trained with"
+    },
+    {
+      "start": 119.92,
+      "end": 123.759,
+      "text": "huge amount of data in short it is"
+    },
+    {
+      "start": 122.32,
+      "end": 125.75899999999999,
+      "text": "basically generating new content"
+    },
+    {
+      "start": 123.759,
+      "end": 128.16,
+      "text": "whenever we try to give any kind of"
+    },
+    {
+      "start": 125.759,
+      "end": 131.12,
+      "text": "input right if I say hey please generate"
+    },
+    {
+      "start": 128.16,
+      "end": 134.0,
+      "text": "a new image related to aentic AI so this"
+    },
+    {
+      "start": 131.12,
+      "end": 136.0,
+      "text": "LLA model it if it has that multimodel"
+    },
+    {
+      "start": 134.0,
+      "end": 138.239,
+      "text": "capabilities it will be able to generate"
+    },
+    {
+      "start": 136.0,
+      "end": 140.56,
+      "text": "that particular image or video whatever"
+    },
+    {
+      "start": 138.239,
+      "end": 142.56,
+      "text": "specific things we require whenever we"
+    },
+    {
+      "start": 140.56,
+      "end": 145.28,
+      "text": "talk in this specific way this is"
+    },
+    {
+      "start": 142.56,
+      "end": 146.879,
+      "text": "something related to generative AI okay"
+    },
+    {
+      "start": 145.28,
+      "end": 150.08,
+      "text": "so this is something related to"
+    },
+    {
+      "start": 146.879,
+      "end": 151.67999999999998,
+      "text": "generative AI right now when we say hey"
+    },
+    {
+      "start": 150.08,
+      "end": 155.08,
+      "text": "uh let's go ahead and build a generative"
+    },
+    {
+      "start": 151.68,
+      "end": 158.48000000000002,
+      "text": "AI application wherein we create a"
+    },
+    {
+      "start": 155.08,
+      "end": 161.59900000000002,
+      "text": "chatbot okay and that chatbot should be"
+    },
+    {
+      "start": 158.48,
+      "end": 163.84,
+      "text": "able to do this specific ch uh task"
+    },
+    {
+      "start": 161.599,
+      "end": 166.39999999999998,
+      "text": "wherein the main aim is generating new"
+    },
+    {
+      "start": 163.84,
+      "end": 168.72,
+      "text": "content you can definitely do it right"
+    },
+    {
+      "start": 166.4,
+      "end": 170.56,
+      "text": "so There we specifically say hey we are"
+    },
+    {
+      "start": 168.72,
+      "end": 173.76,
+      "text": "specifically working in generative AI"
+    },
+    {
+      "start": 170.56,
+      "end": 176.0,
+      "text": "applications right here the most"
+    },
+    {
+      "start": 173.76,
+      "end": 177.92,
+      "text": "important thing is that there's some few"
+    },
+    {
+      "start": 176.0,
+      "end": 179.68,
+      "text": "properties that everybody should keep in"
+    },
+    {
+      "start": 177.92,
+      "end": 182.319,
+      "text": "mind right whenever we talk about"
+    },
+    {
+      "start": 179.68,
+      "end": 183.64000000000001,
+      "text": "generative AI application these are"
+    },
+    {
+      "start": 182.319,
+      "end": 186.48,
+      "text": "specifically"
+    },
+    {
+      "start": 183.64,
+      "end": 188.79999999999998,
+      "text": "reactive okay reactive there is this"
+    },
+    {
+      "start": 186.48,
+      "end": 191.04,
+      "text": "word that we use which we basically say"
+    },
+    {
+      "start": 188.8,
+      "end": 195.12,
+      "text": "it as reactive now what does this"
+    },
+    {
+      "start": 191.04,
+      "end": 197.599,
+      "text": "basically reactive mean right see in"
+    },
+    {
+      "start": 195.12,
+      "end": 200.36,
+      "text": "order to work with this LLM models right"
+    },
+    {
+      "start": 197.599,
+      "end": 204.319,
+      "text": "we definitely have to write some kind of"
+    },
+    {
+      "start": 200.36,
+      "end": 206.56,
+      "text": "prompts okay prompts and based on this"
+    },
+    {
+      "start": 204.319,
+      "end": 208.56,
+      "text": "particular prompt this LLM model will"
+    },
+    {
+      "start": 206.56,
+      "end": 210.64000000000001,
+      "text": "generate new content this is really"
+    },
+    {
+      "start": 208.56,
+      "end": 213.44,
+      "text": "important to understand now what does"
+    },
+    {
+      "start": 210.64,
+      "end": 216.64,
+      "text": "this prompt basically means this prompt"
+    },
+    {
+      "start": 213.44,
+      "end": 218.799,
+      "text": "is just like some sentence where we"
+    },
+    {
+      "start": 216.64,
+      "end": 221.27999999999997,
+      "text": "specify something and we tell the LLM to"
+    },
+    {
+      "start": 218.799,
+      "end": 224.64000000000001,
+      "text": "behave in that way I may say hey that uh"
+    },
+    {
+      "start": 221.28,
+      "end": 226.879,
+      "text": "hey please try to uh act as a data"
+    },
+    {
+      "start": 224.64,
+      "end": 229.599,
+      "text": "scientist and take an interview for me"
+    },
+    {
+      "start": 226.879,
+      "end": 231.44,
+      "text": "right so I that is a kind of prompt that"
+    },
+    {
+      "start": 229.599,
+      "end": 234.159,
+      "text": "is a kind of instruction that I'm"
+    },
+    {
+      "start": 231.44,
+      "end": 236.48,
+      "text": "actually giving to the LLM model right"
+    },
+    {
+      "start": 234.159,
+      "end": 238.39999999999998,
+      "text": "so here the most important thing with"
+    },
+    {
+      "start": 236.48,
+      "end": 240.159,
+      "text": "respect to the generative AI content uh"
+    },
+    {
+      "start": 238.4,
+      "end": 242.239,
+      "text": "generative AI application is that"
+    },
+    {
+      "start": 240.159,
+      "end": 244.519,
+      "text": "obviously you will be having some kind"
+    },
+    {
+      "start": 242.239,
+      "end": 247.28,
+      "text": "of models LLM models LM models"
+    },
+    {
+      "start": 244.519,
+      "end": 249.84,
+      "text": "multimodel right along with these models"
+    },
+    {
+      "start": 247.28,
+      "end": 252.56,
+      "text": "we specifically write prompts right like"
+    },
+    {
+      "start": 249.84,
+      "end": 254.799,
+      "text": "how this particular LML model should be"
+    },
+    {
+      "start": 252.56,
+      "end": 257.04,
+      "text": "behaving and that is how it'll go ahead"
+    },
+    {
+      "start": 254.799,
+      "end": 258.56,
+      "text": "and generate the new content. Okay. So"
+    },
+    {
+      "start": 257.04,
+      "end": 261.68,
+      "text": "this is with respect to the generative"
+    },
+    {
+      "start": 258.56,
+      "end": 263.199,
+      "text": "AI applications. Right? Here uh there"
+    },
+    {
+      "start": 261.68,
+      "end": 265.24,
+      "text": "are lot of different different kind of"
+    },
+    {
+      "start": 263.199,
+      "end": 268.16,
+      "text": "libraries. There are libraries like"
+    },
+    {
+      "start": 265.24,
+      "end": 270.16,
+      "text": "langraph right. There are libraries like"
+    },
+    {
+      "start": 268.16,
+      "end": 273.199,
+      "text": "lang chain which you can specifically"
+    },
+    {
+      "start": 270.16,
+      "end": 274.72,
+      "text": "use and you can get started with right"
+    },
+    {
+      "start": 273.199,
+      "end": 276.91900000000004,
+      "text": "lang chain. There are different"
+    },
+    {
+      "start": 274.72,
+      "end": 280.639,
+      "text": "different libraries like let's say llama"
+    },
+    {
+      "start": 276.919,
+      "end": 282.0,
+      "text": "index. Llama index right? If you don't"
+    },
+    {
+      "start": 280.639,
+      "end": 285.04,
+      "text": "want to go ahead and use this you can"
+    },
+    {
+      "start": 282.0,
+      "end": 288.08,
+      "text": "also go ahead and use grock. Grock also"
+    },
+    {
+      "start": 285.04,
+      "end": 290.32,
+      "text": "has a specific set of code or you can"
+    },
+    {
+      "start": 288.08,
+      "end": 291.919,
+      "text": "also go ahead and use OpenAI code in"
+    },
+    {
+      "start": 290.32,
+      "end": 293.44,
+      "text": "order to probably go ahead and start"
+    },
+    {
+      "start": 291.919,
+      "end": 295.68,
+      "text": "working and developing geni"
+    },
+    {
+      "start": 293.44,
+      "end": 298.71999999999997,
+      "text": "applications. Okay. Now this is one of"
+    },
+    {
+      "start": 295.68,
+      "end": 300.08,
+      "text": "the thing. Okay. Now the next two topics"
+    },
+    {
+      "start": 298.72,
+      "end": 302.16,
+      "text": "that we are specifically going to"
+    },
+    {
+      "start": 300.08,
+      "end": 304.59999999999997,
+      "text": "discuss about is something called as AI"
+    },
+    {
+      "start": 302.16,
+      "end": 307.12,
+      "text": "agents and agentic AI. And this is super"
+    },
+    {
+      "start": 304.6,
+      "end": 309.12,
+      "text": "important right now because the thing"
+    },
+    {
+      "start": 307.12,
+      "end": 311.199,
+      "text": "that we work on right agentic AI"
+    },
+    {
+      "start": 309.12,
+      "end": 313.44,
+      "text": "application it is trending in every"
+    },
+    {
+      "start": 311.199,
+      "end": 316.32,
+      "text": "field. people are thinking that how they"
+    },
+    {
+      "start": 313.44,
+      "end": 318.479,
+      "text": "can automate the entire complex task the"
+    },
+    {
+      "start": 316.32,
+      "end": 320.479,
+      "text": "entire workflow with the help of agent"
+    },
+    {
+      "start": 318.479,
+      "end": 322.88,
+      "text": "application and obviously bring human"
+    },
+    {
+      "start": 320.479,
+      "end": 324.4,
+      "text": "feedback in between them. Okay. Now"
+    },
+    {
+      "start": 322.88,
+      "end": 326.4,
+      "text": "let's go ahead and discuss about this"
+    },
+    {
+      "start": 324.4,
+      "end": 327.75899999999996,
+      "text": "and I hope I have already made a video"
+    },
+    {
+      "start": 326.4,
+      "end": 329.67999999999995,
+      "text": "related to generative way. I have"
+    },
+    {
+      "start": 327.759,
+      "end": 331.199,
+      "text": "developed so many different videos from"
+    },
+    {
+      "start": 329.68,
+      "end": 333.16,
+      "text": "lang chain to lang graph you can"
+    },
+    {
+      "start": 331.199,
+      "end": 335.44,
+      "text": "definitely go ahead and watch."
+    },
+    {
+      "start": 333.16,
+      "end": 337.08000000000004,
+      "text": "Okay. Now let's go ahead and discuss"
+    },
+    {
+      "start": 335.44,
+      "end": 339.84,
+      "text": "about the second thing which is nothing"
+    },
+    {
+      "start": 337.08,
+      "end": 342.68,
+      "text": "but the second category that we're going"
+    },
+    {
+      "start": 339.84,
+      "end": 345.96,
+      "text": "to focus on is AI"
+    },
+    {
+      "start": 342.68,
+      "end": 349.639,
+      "text": "agents versus agentic"
+    },
+    {
+      "start": 345.96,
+      "end": 354.32,
+      "text": "AI versus agentic"
+    },
+    {
+      "start": 349.639,
+      "end": 356.96000000000004,
+      "text": "AI. Now people do think that AI agents"
+    },
+    {
+      "start": 354.32,
+      "end": 360.639,
+      "text": "and agentic AI one and the same but it"
+    },
+    {
+      "start": 356.96,
+      "end": 362.96,
+      "text": "is not like that. Okay. So here just"
+    },
+    {
+      "start": 360.639,
+      "end": 364.56,
+      "text": "please focus on for the next 10 minutes"
+    },
+    {
+      "start": 362.96,
+      "end": 366.31899999999996,
+      "text": "because I'm going to explain each and"
+    },
+    {
+      "start": 364.56,
+      "end": 368.0,
+      "text": "everything that you really need to"
+    },
+    {
+      "start": 366.319,
+      "end": 369.52000000000004,
+      "text": "understand and that is how you'll be"
+    },
+    {
+      "start": 368.0,
+      "end": 371.36,
+      "text": "able to understand between what is the"
+    },
+    {
+      "start": 369.52,
+      "end": 374.96,
+      "text": "basic difference between AI agents and"
+    },
+    {
+      "start": 371.36,
+      "end": 377.36,
+      "text": "agent AI. Okay. Now let's say that I"
+    },
+    {
+      "start": 374.96,
+      "end": 380.56,
+      "text": "have some kind of LLMs. Okay. So let's"
+    },
+    {
+      "start": 377.36,
+      "end": 382.639,
+      "text": "say and at all these places LLM is the"
+    },
+    {
+      "start": 380.56,
+      "end": 385.36,
+      "text": "most important thing right because LLM"
+    },
+    {
+      "start": 382.639,
+      "end": 387.28000000000003,
+      "text": "is something that will be acting like an"
+    },
+    {
+      "start": 385.36,
+      "end": 389.36,
+      "text": "AI agent. It can act like an AI agent."
+    },
+    {
+      "start": 387.28,
+      "end": 391.28,
+      "text": "it can also work in an agentic AI"
+    },
+    {
+      "start": 389.36,
+      "end": 394.16,
+      "text": "application. Okay. And it will it will"
+    },
+    {
+      "start": 391.28,
+      "end": 396.479,
+      "text": "be very important how this AI agents is"
+    },
+    {
+      "start": 394.16,
+      "end": 399.12,
+      "text": "different when compared to the LLM also."
+    },
+    {
+      "start": 396.479,
+      "end": 401.52,
+      "text": "Okay. So let's say that I have a"
+    },
+    {
+      "start": 399.12,
+      "end": 403.52,
+      "text": "specific LLM. Okay. And now this LLM can"
+    },
+    {
+      "start": 401.52,
+      "end": 406.15999999999997,
+      "text": "be any model. Okay. Let's let's consider"
+    },
+    {
+      "start": 403.52,
+      "end": 408.08,
+      "text": "that it is it is some model that we are"
+    },
+    {
+      "start": 406.16,
+      "end": 410.40000000000003,
+      "text": "going to use from graph. It can be lama"
+    },
+    {
+      "start": 408.08,
+      "end": 413.44,
+      "text": "3. We are using this specific model."
+    },
+    {
+      "start": 410.4,
+      "end": 415.52,
+      "text": "Okay. Now you know that all these LLM or"
+    },
+    {
+      "start": 413.44,
+      "end": 419.12,
+      "text": "LM models they're trained with some"
+    },
+    {
+      "start": 415.52,
+      "end": 420.84,
+      "text": "specific past data okay they don't have"
+    },
+    {
+      "start": 419.12,
+      "end": 424.319,
+      "text": "like let's say if I ask this particular"
+    },
+    {
+      "start": 420.84,
+      "end": 427.52,
+      "text": "LLM hey what is the news for today or"
+    },
+    {
+      "start": 424.319,
+      "end": 429.599,
+      "text": "hey or who won this particular IPL match"
+    },
+    {
+      "start": 427.52,
+      "end": 431.639,
+      "text": "between this and this like let's say"
+    },
+    {
+      "start": 429.599,
+      "end": 434.4,
+      "text": "Bangalore is going to happen have some"
+    },
+    {
+      "start": 431.639,
+      "end": 436.96000000000004,
+      "text": "matches tomorrow or today if it has"
+    },
+    {
+      "start": 434.4,
+      "end": 438.4,
+      "text": "right and LLM will not know the result"
+    },
+    {
+      "start": 436.96,
+      "end": 440.4,
+      "text": "because it's not connected to the"
+    },
+    {
+      "start": 438.4,
+      "end": 442.23999999999995,
+      "text": "internet okay so in that kind of"
+    },
+    {
+      "start": 440.4,
+      "end": 444.0,
+      "text": "scenario Whenever I ask this particular"
+    },
+    {
+      "start": 442.24,
+      "end": 447.199,
+      "text": "question, the LLM will not be able to"
+    },
+    {
+      "start": 444.0,
+      "end": 448.72,
+      "text": "give an output to us. Okay, obviously it"
+    },
+    {
+      "start": 447.199,
+      "end": 451.44,
+      "text": "will not be able to give because it does"
+    },
+    {
+      "start": 448.72,
+      "end": 454.24,
+      "text": "not have that specific information. Now,"
+    },
+    {
+      "start": 451.44,
+      "end": 456.71999999999997,
+      "text": "this is one major disadvantage of LLM,"
+    },
+    {
+      "start": 454.24,
+      "end": 458.319,
+      "text": "right? Yes, LLM will be able to generate"
+    },
+    {
+      "start": 456.72,
+      "end": 460.0,
+      "text": "new content. These models will be able"
+    },
+    {
+      "start": 458.319,
+      "end": 461.84000000000003,
+      "text": "to generate the new content. But what"
+    },
+    {
+      "start": 460.0,
+      "end": 464.16,
+      "text": "about the current information? Okay, it"
+    },
+    {
+      "start": 461.84,
+      "end": 466.15999999999997,
+      "text": "will not be able to give you, right?"
+    },
+    {
+      "start": 464.16,
+      "end": 468.47900000000004,
+      "text": "Let's say that I'm going to ask some"
+    },
+    {
+      "start": 466.16,
+      "end": 470.40000000000003,
+      "text": "specific information of a company."
+    },
+    {
+      "start": 468.479,
+      "end": 472.15999999999997,
+      "text": "Obviously this LLM will not be trained"
+    },
+    {
+      "start": 470.4,
+      "end": 473.75899999999996,
+      "text": "with that company data because the"
+    },
+    {
+      "start": 472.16,
+      "end": 476.16,
+      "text": "company data will be private to that"
+    },
+    {
+      "start": 473.759,
+      "end": 477.84000000000003,
+      "text": "company itself. Right? So that way also"
+    },
+    {
+      "start": 476.16,
+      "end": 479.759,
+      "text": "that LLM will not be able to give you"
+    },
+    {
+      "start": 477.84,
+      "end": 481.52,
+      "text": "that unless and until it is connected to"
+    },
+    {
+      "start": 479.759,
+      "end": 483.879,
+      "text": "some kind of external database or"
+    },
+    {
+      "start": 481.52,
+      "end": 486.15999999999997,
+      "text": "external data source. This is just one"
+    },
+    {
+      "start": 483.879,
+      "end": 487.759,
+      "text": "example now what is basically happening"
+    },
+    {
+      "start": 486.16,
+      "end": 489.68,
+      "text": "is that as soon as I asked a question"
+    },
+    {
+      "start": 487.759,
+      "end": 493.199,
+      "text": "hey who won this particular match within"
+    },
+    {
+      "start": 489.68,
+      "end": 495.52,
+      "text": "RCB or any other place any other um any"
+    },
+    {
+      "start": 493.199,
+      "end": 497.759,
+      "text": "other team that happened today it will"
+    },
+    {
+      "start": 495.52,
+      "end": 499.35999999999996,
+      "text": "not be able to give you the output. So"
+    },
+    {
+      "start": 497.759,
+      "end": 502.16,
+      "text": "what it will be dependent on it will be"
+    },
+    {
+      "start": 499.36,
+      "end": 503.52000000000004,
+      "text": "dependent on the third party source."
+    },
+    {
+      "start": 502.16,
+      "end": 505.12,
+      "text": "Let's say there is one third party"
+    },
+    {
+      "start": 503.52,
+      "end": 507.12,
+      "text": "source I will consider in this"
+    },
+    {
+      "start": 505.12,
+      "end": 509.36,
+      "text": "particular scenario. I will just go"
+    },
+    {
+      "start": 507.12,
+      "end": 511.84000000000003,
+      "text": "ahead and connect it to some kind of"
+    },
+    {
+      "start": 509.36,
+      "end": 514.64,
+      "text": "database. Okay. Let's say one of the"
+    },
+    {
+      "start": 511.84,
+      "end": 516.7189999999999,
+      "text": "data source is something called as taby."
+    },
+    {
+      "start": 514.64,
+      "end": 518.56,
+      "text": "I will go ahead and write tabi. So if"
+    },
+    {
+      "start": 516.719,
+      "end": 520.88,
+      "text": "you don't know about tabi it provides"
+    },
+    {
+      "start": 518.56,
+      "end": 522.959,
+      "text": "you some kind of internet search. Okay."
+    },
+    {
+      "start": 520.88,
+      "end": 524.8,
+      "text": "It you can use that particular API. You"
+    },
+    {
+      "start": 522.959,
+      "end": 526.64,
+      "text": "can write this specific wrapper and you"
+    },
+    {
+      "start": 524.8,
+      "end": 529.8389999999999,
+      "text": "can probably go ahead and write this."
+    },
+    {
+      "start": 526.64,
+      "end": 532.48,
+      "text": "Now the question arises how this llm is"
+    },
+    {
+      "start": 529.839,
+      "end": 534.48,
+      "text": "basically going to call this tavly API."
+    },
+    {
+      "start": 532.48,
+      "end": 536.16,
+      "text": "Now there is one very important property"
+    },
+    {
+      "start": 534.48,
+      "end": 538.48,
+      "text": "if you're learning lang chain or lang"
+    },
+    {
+      "start": 536.16,
+      "end": 540.0,
+      "text": "graph any of the specific libraries"
+    },
+    {
+      "start": 538.48,
+      "end": 543.0,
+      "text": "there is a concept of something called"
+    },
+    {
+      "start": 540.0,
+      "end": 546.64,
+      "text": "as tool call. Tool"
+    },
+    {
+      "start": 543.0,
+      "end": 548.72,
+      "text": "call. Okay tool call. Now what is this"
+    },
+    {
+      "start": 546.64,
+      "end": 550.88,
+      "text": "tool call? Let's say that if the LLM is"
+    },
+    {
+      "start": 548.72,
+      "end": 553.36,
+      "text": "not able to provide the response for"
+    },
+    {
+      "start": 550.88,
+      "end": 555.8389999999999,
+      "text": "this particular input, it will keep on"
+    },
+    {
+      "start": 553.36,
+      "end": 558.0,
+      "text": "looking for external things that will be"
+    },
+    {
+      "start": 555.839,
+      "end": 560.1600000000001,
+      "text": "able to handle this particular input."
+    },
+    {
+      "start": 558.0,
+      "end": 562.08,
+      "text": "Now in this particular case when I ask"
+    },
+    {
+      "start": 560.16,
+      "end": 564.7199999999999,
+      "text": "the input saying that hey what is the"
+    },
+    {
+      "start": 562.08,
+      "end": 566.8000000000001,
+      "text": "current news? What is the current news"
+    },
+    {
+      "start": 564.72,
+      "end": 568.8000000000001,
+      "text": "for this specific date that is today's"
+    },
+    {
+      "start": 566.8,
+      "end": 571.4399999999999,
+      "text": "date? The LLM will not be able to give"
+    },
+    {
+      "start": 568.8,
+      "end": 573.16,
+      "text": "the answer. So the LLM will look for"
+    },
+    {
+      "start": 571.44,
+      "end": 577.0400000000001,
+      "text": "whether it is connected to any"
+    },
+    {
+      "start": 573.16,
+      "end": 579.04,
+      "text": "third-party APIs, third party APIs or"
+    },
+    {
+      "start": 577.04,
+      "end": 581.68,
+      "text": "data source from which I will be able to"
+    },
+    {
+      "start": 579.04,
+      "end": 584.3199999999999,
+      "text": "get this kind of information. So that is"
+    },
+    {
+      "start": 581.68,
+      "end": 587.279,
+      "text": "where it will be making the specific"
+    },
+    {
+      "start": 584.32,
+      "end": 588.9590000000001,
+      "text": "tool call. Okay, it will be making the"
+    },
+    {
+      "start": 587.279,
+      "end": 590.399,
+      "text": "specific tool call. Now this tool call"
+    },
+    {
+      "start": 588.959,
+      "end": 592.399,
+      "text": "will be something like this. The tool"
+    },
+    {
+      "start": 590.399,
+      "end": 595.68,
+      "text": "call will be made and based on this I"
+    },
+    {
+      "start": 592.399,
+      "end": 598.08,
+      "text": "will be getting a response. Okay, I'll"
+    },
+    {
+      "start": 595.68,
+      "end": 601.519,
+      "text": "be getting a response. Now the as soon"
+    },
+    {
+      "start": 598.08,
+      "end": 603.36,
+      "text": "as the LLM made this tool call the it"
+    },
+    {
+      "start": 601.519,
+      "end": 606.04,
+      "text": "got this specific response. So this is"
+    },
+    {
+      "start": 603.36,
+      "end": 609.279,
+      "text": "my request and this is my response."
+    },
+    {
+      "start": 606.04,
+      "end": 611.5999999999999,
+      "text": "Okay, this is my response and as soon as"
+    },
+    {
+      "start": 609.279,
+      "end": 613.68,
+      "text": "I got the response the LLM is smart"
+    },
+    {
+      "start": 611.6,
+      "end": 616.0,
+      "text": "enough to finally summarize that"
+    },
+    {
+      "start": 613.68,
+      "end": 617.92,
+      "text": "particular output uh that response and"
+    },
+    {
+      "start": 616.0,
+      "end": 620.56,
+      "text": "give you the output and this is what I'm"
+    },
+    {
+      "start": 617.92,
+      "end": 622.8389999999999,
+      "text": "actually looking for. Okay."
+    },
+    {
+      "start": 620.56,
+      "end": 626.3199999999999,
+      "text": "Now you need to really understand over"
+    },
+    {
+      "start": 622.839,
+      "end": 628.5600000000001,
+      "text": "here the kind of task that is happening"
+    },
+    {
+      "start": 626.32,
+      "end": 630.44,
+      "text": "right a request is going I'm getting the"
+    },
+    {
+      "start": 628.56,
+      "end": 633.1999999999999,
+      "text": "information I'm getting giving back the"
+    },
+    {
+      "start": 630.44,
+      "end": 636.8000000000001,
+      "text": "response this is basically happening by"
+    },
+    {
+      "start": 633.2,
+      "end": 640.0,
+      "text": "an AI agent just a single AI agent I can"
+    },
+    {
+      "start": 636.8,
+      "end": 642.56,
+      "text": "consider this as an AI agent okay here"
+    },
+    {
+      "start": 640.0,
+      "end": 644.399,
+      "text": "my main aim is that I have asked an"
+    },
+    {
+      "start": 642.56,
+      "end": 647.8389999999999,
+      "text": "input saying that hey give me the some"
+    },
+    {
+      "start": 644.399,
+      "end": 650.16,
+      "text": "current information about today AI news"
+    },
+    {
+      "start": 647.839,
+      "end": 652.24,
+      "text": "I really want to see for this particular"
+    },
+    {
+      "start": 650.16,
+      "end": 654.24,
+      "text": "date AI news which my LLM was not able"
+    },
+    {
+      "start": 652.24,
+      "end": 656.32,
+      "text": "to do it. So what it has done is that"
+    },
+    {
+      "start": 654.24,
+      "end": 658.72,
+      "text": "the LLM is smart enough to understand"
+    },
+    {
+      "start": 656.32,
+      "end": 660.24,
+      "text": "which tool to probably call and based on"
+    },
+    {
+      "start": 658.72,
+      "end": 662.32,
+      "text": "this tool call functional it is calling"
+    },
+    {
+      "start": 660.24,
+      "end": 665.36,
+      "text": "this and it is getting the response. So"
+    },
+    {
+      "start": 662.32,
+      "end": 667.7600000000001,
+      "text": "this is a specific task okay and this"
+    },
+    {
+      "start": 665.36,
+      "end": 669.6800000000001,
+      "text": "task is basically solved by this tavly"
+    },
+    {
+      "start": 667.76,
+      "end": 672.88,
+      "text": "okay tavly which is responsible for the"
+    },
+    {
+      "start": 669.68,
+      "end": 675.1999999999999,
+      "text": "internet search. So this task can be"
+    },
+    {
+      "start": 672.88,
+      "end": 677.279,
+      "text": "considered as an AI agent. Okay, for a"
+    },
+    {
+      "start": 675.2,
+      "end": 679.9200000000001,
+      "text": "specific task we have defined this."
+    },
+    {
+      "start": 677.279,
+      "end": 681.6,
+      "text": "Okay, very simple definition. Okay, so"
+    },
+    {
+      "start": 679.92,
+      "end": 682.959,
+      "text": "for a specific task we are able to"
+    },
+    {
+      "start": 681.6,
+      "end": 684.5600000000001,
+      "text": "probably go ahead and call this and we"
+    },
+    {
+      "start": 682.959,
+      "end": 687.4799999999999,
+      "text": "are getting the response. Now the"
+    },
+    {
+      "start": 684.56,
+      "end": 691.04,
+      "text": "question rises, now the question"
+    },
+    {
+      "start": 687.48,
+      "end": 693.12,
+      "text": "rises then what is agentic AI? AI agents"
+    },
+    {
+      "start": 691.04,
+      "end": 695.4399999999999,
+      "text": "have understood okay fine for a specific"
+    },
+    {
+      "start": 693.12,
+      "end": 697.519,
+      "text": "task I'm calling something from the LLM,"
+    },
+    {
+      "start": 695.44,
+      "end": 699.12,
+      "text": "right? The LM is responsible for making"
+    },
+    {
+      "start": 697.519,
+      "end": 700.8,
+      "text": "that tool call and getting the output"
+    },
+    {
+      "start": 699.12,
+      "end": 702.48,
+      "text": "and summarizing the output and giving it"
+    },
+    {
+      "start": 700.8,
+      "end": 704.959,
+      "text": "over here. Here also we can add the"
+    },
+    {
+      "start": 702.48,
+      "end": 707.279,
+      "text": "prompt. Here also once I get the"
+    },
+    {
+      "start": 704.959,
+      "end": 709.1199999999999,
+      "text": "response I can add the prompt and based"
+    },
+    {
+      "start": 707.279,
+      "end": 711.2,
+      "text": "on that I can summarize the output. I"
+    },
+    {
+      "start": 709.12,
+      "end": 713.839,
+      "text": "can do that. Okay. But this is only for"
+    },
+    {
+      "start": 711.2,
+      "end": 716.399,
+      "text": "one kind of task. Now if I talk about"
+    },
+    {
+      "start": 713.839,
+      "end": 718.0,
+      "text": "agentic AI okay and for discussing about"
+    },
+    {
+      "start": 716.399,
+      "end": 720.64,
+      "text": "the agentic AI application let's"
+    },
+    {
+      "start": 718.0,
+      "end": 723.839,
+      "text": "consider that let's consider that I have"
+    },
+    {
+      "start": 720.64,
+      "end": 725.92,
+      "text": "a task and this task is nothing but"
+    },
+    {
+      "start": 723.839,
+      "end": 728.48,
+      "text": "let's consider I want to probably"
+    },
+    {
+      "start": 725.92,
+      "end": 730.4399999999999,
+      "text": "convert a YT video that I really want to"
+    },
+    {
+      "start": 728.48,
+      "end": 732.12,
+      "text": "upload to a"
+    },
+    {
+      "start": 730.44,
+      "end": 736.9590000000001,
+      "text": "blog"
+    },
+    {
+      "start": 732.12,
+      "end": 740.079,
+      "text": "okay to a blog and now to convert a YT"
+    },
+    {
+      "start": 736.959,
+      "end": 742.16,
+      "text": "video YouTube video into a blog let's"
+    },
+    {
+      "start": 740.079,
+      "end": 744.3199999999999,
+      "text": "say that I have been uploading so many"
+    },
+    {
+      "start": 742.16,
+      "end": 746.7199999999999,
+      "text": "videos. Just imagine if I just create an"
+    },
+    {
+      "start": 744.32,
+      "end": 748.8000000000001,
+      "text": "agenti system which takes my YouTube"
+    },
+    {
+      "start": 746.72,
+      "end": 751.0400000000001,
+      "text": "video and convert that into a blog and"
+    },
+    {
+      "start": 748.8,
+      "end": 753.04,
+      "text": "publish it in my website. Would it will"
+    },
+    {
+      "start": 751.04,
+      "end": 755.76,
+      "text": "that not be good? It will definitely be"
+    },
+    {
+      "start": 753.04,
+      "end": 757.68,
+      "text": "good. Right now here if I probably see I"
+    },
+    {
+      "start": 755.76,
+      "end": 760.399,
+      "text": "can divide this into multiple subtask."
+    },
+    {
+      "start": 757.68,
+      "end": 762.4799999999999,
+      "text": "First of all I will take this YT video."
+    },
+    {
+      "start": 760.399,
+      "end": 765.76,
+      "text": "I will convert I will take the"
+    },
+    {
+      "start": 762.48,
+      "end": 768.639,
+      "text": "transcript from the YT video. Transcript"
+    },
+    {
+      "start": 765.76,
+      "end": 771.04,
+      "text": "from the YT video. Okay. After"
+    },
+    {
+      "start": 768.639,
+      "end": 773.8,
+      "text": "considering the transcript from this my"
+    },
+    {
+      "start": 771.04,
+      "end": 778.0,
+      "text": "second task will be creating"
+    },
+    {
+      "start": 773.8,
+      "end": 780.8,
+      "text": "title. Creating title. Okay. Third it"
+    },
+    {
+      "start": 778.0,
+      "end": 780.8,
+      "text": "can be creating"
+    },
+    {
+      "start": 780.839,
+      "end": 785.24,
+      "text": "description. Okay. So this will be my"
+    },
+    {
+      "start": 782.959,
+      "end": 787.8389999999999,
+      "text": "third task creating"
+    },
+    {
+      "start": 785.24,
+      "end": 789.16,
+      "text": "description and my fourth task will be"
+    },
+    {
+      "start": 787.839,
+      "end": 791.6,
+      "text": "writing the"
+    },
+    {
+      "start": 789.16,
+      "end": 794.959,
+      "text": "conclusion. Let's say so I've defined"
+    },
+    {
+      "start": 791.6,
+      "end": 796.88,
+      "text": "this task into four different task right"
+    },
+    {
+      "start": 794.959,
+      "end": 801.16,
+      "text": "four different tasks. Now for the same"
+    },
+    {
+      "start": 796.88,
+      "end": 805.4399999999999,
+      "text": "task, don't you think converting a"
+    },
+    {
+      "start": 801.16,
+      "end": 809.12,
+      "text": "YT YT video into transcript, I can"
+    },
+    {
+      "start": 805.44,
+      "end": 811.839,
+      "text": "create one AI agent. Then similarly for"
+    },
+    {
+      "start": 809.12,
+      "end": 813.399,
+      "text": "my second AI agent, I can basically take"
+    },
+    {
+      "start": 811.839,
+      "end": 816.639,
+      "text": "this transcript"
+    },
+    {
+      "start": 813.399,
+      "end": 820.24,
+      "text": "and this AI agent should be able to give"
+    },
+    {
+      "start": 816.639,
+      "end": 822.639,
+      "text": "me the title. Yeah. Yeah. And just to"
+    },
+    {
+      "start": 820.24,
+      "end": 825.839,
+      "text": "show you how these things will happen,"
+    },
+    {
+      "start": 822.639,
+      "end": 827.92,
+      "text": "don't you think I can just go ahead see"
+    },
+    {
+      "start": 825.839,
+      "end": 829.7600000000001,
+      "text": "this? Okay, see this magic. Okay. So, so"
+    },
+    {
+      "start": 827.92,
+      "end": 832.24,
+      "text": "what what I will be doing is that my"
+    },
+    {
+      "start": 829.76,
+      "end": 834.56,
+      "text": "first task will be that this AI agent"
+    },
+    {
+      "start": 832.24,
+      "end": 836.48,
+      "text": "will be responsible in getting me the"
+    },
+    {
+      "start": 834.56,
+      "end": 839.04,
+      "text": "transcript from my YouTube video. Okay."
+    },
+    {
+      "start": 836.48,
+      "end": 841.12,
+      "text": "This AI agent will be responsible for"
+    },
+    {
+      "start": 839.04,
+      "end": 844.48,
+      "text": "creating the title from the transcript"
+    },
+    {
+      "start": 841.12,
+      "end": 846.8,
+      "text": "that I get. Okay. Then my next agent"
+    },
+    {
+      "start": 844.48,
+      "end": 847.5600000000001,
+      "text": "over here which will be parallelly will"
+    },
+    {
+      "start": 846.8,
+      "end": 849.8389999999999,
+      "text": "be"
+    },
+    {
+      "start": 847.56,
+      "end": 851.399,
+      "text": "responsible to probably create the"
+    },
+    {
+      "start": 849.839,
+      "end": 854.5600000000001,
+      "text": "description from this particular"
+    },
+    {
+      "start": 851.399,
+      "end": 858.04,
+      "text": "transcript. Yeah. And finally, don't you"
+    },
+    {
+      "start": 854.56,
+      "end": 862.7199999999999,
+      "text": "think I can have one more one"
+    },
+    {
+      "start": 858.04,
+      "end": 866.4399999999999,
+      "text": "more AI agent which will be responsible"
+    },
+    {
+      "start": 862.72,
+      "end": 870.48,
+      "text": "in creating the conclusion. Right? Now"
+    },
+    {
+      "start": 866.44,
+      "end": 873.6800000000001,
+      "text": "here this is my AI agent one. Let's"
+    },
+    {
+      "start": 870.48,
+      "end": 875.5600000000001,
+      "text": "consider this. Okay. So this is my AI"
+    },
+    {
+      "start": 873.68,
+      "end": 879.7199999999999,
+      "text": "agent"
+    },
+    {
+      "start": 875.56,
+      "end": 884.88,
+      "text": "one. This is my AI agent"
+    },
+    {
+      "start": 879.72,
+      "end": 887.0,
+      "text": "2. This is my AI agent three. And this"
+    },
+    {
+      "start": 884.88,
+      "end": 892.56,
+      "text": "is my AI agent"
+    },
+    {
+      "start": 887.0,
+      "end": 895.0,
+      "text": "4. Each and every agent can use LLM. It"
+    },
+    {
+      "start": 892.56,
+      "end": 900.0,
+      "text": "can use"
+    },
+    {
+      "start": 895.0,
+      "end": 902.959,
+      "text": "prompt to perform its task. Each each"
+    },
+    {
+      "start": 900.0,
+      "end": 905.199,
+      "text": "here it can or it cannot it is not"
+    },
+    {
+      "start": 902.959,
+      "end": 907.1199999999999,
+      "text": "composite it needs to use all the LLM"
+    },
+    {
+      "start": 905.199,
+      "end": 909.8389999999999,
+      "text": "but since we are working with respect to"
+    },
+    {
+      "start": 907.12,
+      "end": 912.8,
+      "text": "text related things then obviously we"
+    },
+    {
+      "start": 909.839,
+      "end": 915.1990000000001,
+      "text": "can use LLM okay for now this is just"
+    },
+    {
+      "start": 912.8,
+      "end": 916.88,
+      "text": "like a one kind of workflow so this"
+    },
+    {
+      "start": 915.199,
+      "end": 920.199,
+      "text": "workflow goes on like this right so"
+    },
+    {
+      "start": 916.88,
+      "end": 923.8389999999999,
+      "text": "first of all I give my YT video"
+    },
+    {
+      "start": 920.199,
+      "end": 926.24,
+      "text": "URL YT video URL then this agent is"
+    },
+    {
+      "start": 923.839,
+      "end": 928.44,
+      "text": "responsible in taking from this and"
+    },
+    {
+      "start": 926.24,
+      "end": 932.639,
+      "text": "giving the output a"
+    },
+    {
+      "start": 928.44,
+      "end": 937.0400000000001,
+      "text": "transcript. Now this transcript is sent"
+    },
+    {
+      "start": 932.639,
+      "end": 939.8,
+      "text": "to all the agents and finally we can"
+    },
+    {
+      "start": 937.04,
+      "end": 943.3199999999999,
+      "text": "combine all these"
+    },
+    {
+      "start": 939.8,
+      "end": 946.4799999999999,
+      "text": "outputs and give my final"
+    },
+    {
+      "start": 943.32,
+      "end": 949.839,
+      "text": "blog. Right? So what does this basically"
+    },
+    {
+      "start": 946.48,
+      "end": 953.04,
+      "text": "mean? Before an AI agent only used to do"
+    },
+    {
+      "start": 949.839,
+      "end": 956.72,
+      "text": "one task in an agentic AI system. So"
+    },
+    {
+      "start": 953.04,
+      "end": 960.56,
+      "text": "this is my entire complex workflow with"
+    },
+    {
+      "start": 956.72,
+      "end": 964.6800000000001,
+      "text": "respect to my agentic AI system and this"
+    },
+    {
+      "start": 960.56,
+      "end": 967.5999999999999,
+      "text": "is performing this entire task together."
+    },
+    {
+      "start": 964.68,
+      "end": 970.6389999999999,
+      "text": "Here every agent is communicating with"
+    },
+    {
+      "start": 967.6,
+      "end": 973.399,
+      "text": "each other. Right? I can add one more"
+    },
+    {
+      "start": 970.639,
+      "end": 976.36,
+      "text": "thing over here. I can add human"
+    },
+    {
+      "start": 973.399,
+      "end": 978.72,
+      "text": "feedback. Human feedback also over"
+    },
+    {
+      "start": 976.36,
+      "end": 981.12,
+      "text": "here. So here what is basically"
+    },
+    {
+      "start": 978.72,
+      "end": 982.72,
+      "text": "happening? AI agents are communicating"
+    },
+    {
+      "start": 981.12,
+      "end": 985.839,
+      "text": "with each other."
+    },
+    {
+      "start": 982.72,
+      "end": 987.759,
+      "text": "Right. I can also make sure to probably"
+    },
+    {
+      "start": 985.839,
+      "end": 989.36,
+      "text": "before this AI agent, let's say this"
+    },
+    {
+      "start": 987.759,
+      "end": 991.6800000000001,
+      "text": "agent is responsible in probably"
+    },
+    {
+      "start": 989.36,
+      "end": 993.6,
+      "text": "creating a description. For creating a"
+    },
+    {
+      "start": 991.68,
+      "end": 996.16,
+      "text": "description, it also wants the title. So"
+    },
+    {
+      "start": 993.6,
+      "end": 998.0,
+      "text": "it will just go ahead this AI agent 2"
+    },
+    {
+      "start": 996.16,
+      "end": 1000.24,
+      "text": "whatever output it is creating for the"
+    },
+    {
+      "start": 998.0,
+      "end": 1002.079,
+      "text": "title, it will give it to the agent 3."
+    },
+    {
+      "start": 1000.24,
+      "end": 1004.399,
+      "text": "And this will take that information and"
+    },
+    {
+      "start": 1002.079,
+      "end": 1006.6389999999999,
+      "text": "do this. So internally you'll be able to"
+    },
+    {
+      "start": 1004.399,
+      "end": 1010.16,
+      "text": "see we can also make this agent"
+    },
+    {
+      "start": 1006.639,
+      "end": 1013.44,
+      "text": "communicate with each other to solve a"
+    },
+    {
+      "start": 1010.16,
+      "end": 1016.56,
+      "text": "complex workflow and finally achieve a"
+    },
+    {
+      "start": 1013.44,
+      "end": 1017.839,
+      "text": "goal. Right? So just to understand what"
+    },
+    {
+      "start": 1016.56,
+      "end": 1020.2399999999999,
+      "text": "is the difference between AI agents"
+    },
+    {
+      "start": 1017.839,
+      "end": 1023.36,
+      "text": "versus agentic AI here AI agent is doing"
+    },
+    {
+      "start": 1020.24,
+      "end": 1025.6,
+      "text": "only one task. In an agentic AI system"
+    },
+    {
+      "start": 1023.36,
+      "end": 1026.959,
+      "text": "this AI agents will be collaborating"
+    },
+    {
+      "start": 1025.6,
+      "end": 1029.559,
+      "text": "with each other. This is really"
+    },
+    {
+      "start": 1026.959,
+      "end": 1031.4,
+      "text": "important."
+    },
+    {
+      "start": 1029.559,
+      "end": 1034.6,
+      "text": "Collaborating"
+    },
+    {
+      "start": 1031.4,
+      "end": 1037.959,
+      "text": "collaborating with each"
+    },
+    {
+      "start": 1034.6,
+      "end": 1041.6399999999999,
+      "text": "other to solve a"
+    },
+    {
+      "start": 1037.959,
+      "end": 1044.16,
+      "text": "goal. This is really really important to"
+    },
+    {
+      "start": 1041.64,
+      "end": 1046.0,
+      "text": "understand. So I hope you understood"
+    },
+    {
+      "start": 1044.16,
+      "end": 1047.679,
+      "text": "this particular video. I hope you liked"
+    },
+    {
+      "start": 1046.0,
+      "end": 1049.52,
+      "text": "this particular video. This was the"
+    },
+    {
+      "start": 1047.679,
+      "end": 1052.3200000000002,
+      "text": "basic differences between generative AI"
+    },
+    {
+      "start": 1049.52,
+      "end": 1054.16,
+      "text": "versus AI agent versus agentic AI. And I"
+    },
+    {
+      "start": 1052.32,
+      "end": 1056.3999999999999,
+      "text": "hope you are able to understand this."
+    },
+    {
+      "start": 1054.16,
+      "end": 1058.24,
+      "text": "Okay. Similar kind of videos I'm also"
+    },
+    {
+      "start": 1056.4,
+      "end": 1060.72,
+      "text": "going to come up in this specific series"
+    },
+    {
+      "start": 1058.24,
+      "end": 1062.24,
+      "text": "so that you get your fundamental rights."
+    },
+    {
+      "start": 1060.72,
+      "end": 1063.6000000000001,
+      "text": "I hope you like this particular video."
+    },
+    {
+      "start": 1062.24,
+      "end": 1064.96,
+      "text": "This was it from my side. I'll see you"
+    },
+    {
+      "start": 1063.6,
+      "end": 1067.0,
+      "text": "in the next video. Have a great day."
+    },
+    {
+      "start": 1064.96,
+      "end": 1067.0,
+      "text": "Thank you and all. Take care. Bye-bye."
+    }
+  ]
+}

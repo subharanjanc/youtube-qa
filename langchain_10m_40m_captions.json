@@ -1,0 +1,3501 @@
+{
+  "video_id": "AOQyRiwydyo",
+  "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+  "channel": "Ansh Lamba",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 600,
+  "end_seconds": 2400,
+  "segments": [
+    {
+      "start": 600.0,
+      "end": 604.16,
+      "text": "and do you know what do you know what do"
+    },
+    {
+      "start": 601.519,
+      "end": 607.92,
+      "text": "you know the funny thing data engineers"
+    },
+    {
+      "start": 604.16,
+      "end": 610.8,
+      "text": "are the ones who are entering into the"
+    },
+    {
+      "start": 607.92,
+      "end": 613.8389999999999,
+      "text": "AI world after all of those"
+    },
+    {
+      "start": 610.8,
+      "end": 616.8,
+      "text": "professionals that is the I would say a"
+    },
+    {
+      "start": 613.839,
+      "end": 619.839,
+      "text": "kind of pain point. Data engineers"
+    },
+    {
+      "start": 616.8,
+      "end": 621.3599999999999,
+      "text": "should be the first ones to enter into"
+    },
+    {
+      "start": 619.839,
+      "end": 623.12,
+      "text": "this particular domain and they are the"
+    },
+    {
+      "start": 621.36,
+      "end": 625.6,
+      "text": "last ones. I don't know why because they"
+    },
+    {
+      "start": 623.12,
+      "end": 628.079,
+      "text": "think like data engineers do not need to"
+    },
+    {
+      "start": 625.6,
+      "end": 629.6,
+      "text": "learn AI and it is something else. It is"
+    },
+    {
+      "start": 628.079,
+      "end": 632.399,
+      "text": "something out of the topic. It is for"
+    },
+    {
+      "start": 629.6,
+      "end": 633.76,
+      "text": "data science. I don't know but that is"
+    },
+    {
+      "start": 632.399,
+      "end": 636.32,
+      "text": "why this channel is for you. This"
+    },
+    {
+      "start": 633.76,
+      "end": 637.8389999999999,
+      "text": "channel is just actually teaching you"
+    },
+    {
+      "start": 636.32,
+      "end": 641.2,
+      "text": "and providing you the knowledge which is"
+    },
+    {
+      "start": 637.839,
+      "end": 643.6,
+      "text": "required to be in that particular group"
+    },
+    {
+      "start": 641.2,
+      "end": 645.2,
+      "text": "which is always in demand. Right? That"
+    },
+    {
+      "start": 643.6,
+      "end": 647.44,
+      "text": "is why by the way if you are not aware"
+    },
+    {
+      "start": 645.2,
+      "end": 649.44,
+      "text": "about this thing if you just go on any"
+    },
+    {
+      "start": 647.44,
+      "end": 651.2790000000001,
+      "text": "job portal if you just type AI data"
+    },
+    {
+      "start": 649.44,
+      "end": 653.2,
+      "text": "engineers you will see that particular"
+    },
+    {
+      "start": 651.279,
+      "end": 655.2,
+      "text": "job postings as well because currently"
+    },
+    {
+      "start": 653.2,
+      "end": 657.279,
+      "text": "industry has also accepted the fact that"
+    },
+    {
+      "start": 655.2,
+      "end": 659.0400000000001,
+      "text": "AI engineering is is incomplete without"
+    },
+    {
+      "start": 657.279,
+      "end": 661.519,
+      "text": "data engineering. So they have just"
+    },
+    {
+      "start": 659.04,
+      "end": 663.519,
+      "text": "started putting out those labels called"
+    },
+    {
+      "start": 661.519,
+      "end": 665.839,
+      "text": "AI data engineers. So I think it is the"
+    },
+    {
+      "start": 663.519,
+      "end": 667.76,
+      "text": "high time and the best time to learn I"
+    },
+    {
+      "start": 665.839,
+      "end": 669.44,
+      "text": "wouldn't say best time it is the high"
+    },
+    {
+      "start": 667.76,
+      "end": 671.6,
+      "text": "time when when you will learn about"
+    },
+    {
+      "start": 669.44,
+      "end": 673.6800000000001,
+      "text": "agent AI and all. So let's start this"
+    },
+    {
+      "start": 671.6,
+      "end": 675.44,
+      "text": "particular conversation. So I told you"
+    },
+    {
+      "start": 673.68,
+      "end": 677.5999999999999,
+      "text": "that I do not expect any kind of"
+    },
+    {
+      "start": 675.44,
+      "end": 680.399,
+      "text": "knowledge from you. So let's say you are"
+    },
+    {
+      "start": 677.6,
+      "end": 683.519,
+      "text": "this person who do not have any kind of"
+    },
+    {
+      "start": 680.399,
+      "end": 686.399,
+      "text": "knowledge about anything. Okay. Let's"
+    },
+    {
+      "start": 683.519,
+      "end": 689.04,
+      "text": "say this is you and your name is what is"
+    },
+    {
+      "start": 686.399,
+      "end": 690.8,
+      "text": "your name? Let's say Rahul. Do you know"
+    },
+    {
+      "start": 689.04,
+      "end": 693.12,
+      "text": "what I just picked the random names and"
+    },
+    {
+      "start": 690.8,
+      "end": 695.12,
+      "text": "there was a real Rahul. He I think"
+    },
+    {
+      "start": 693.12,
+      "end": 698.16,
+      "text": "dropped a comment. Hey I feel so happy"
+    },
+    {
+      "start": 695.12,
+      "end": 700.48,
+      "text": "whenever you take my name. So shout out"
+    },
+    {
+      "start": 698.16,
+      "end": 703.04,
+      "text": "to Rahul whoever the person is. Okay. So"
+    },
+    {
+      "start": 700.48,
+      "end": 704.48,
+      "text": "let's say he is Rahul. Okay. And this"
+    },
+    {
+      "start": 703.04,
+      "end": 706.88,
+      "text": "person doesn't even know anything about"
+    },
+    {
+      "start": 704.48,
+      "end": 708.399,
+      "text": "agentic AI frameworks. Like why do we"
+    },
+    {
+      "start": 706.88,
+      "end": 710.72,
+      "text": "talk about these things? So first of"
+    },
+    {
+      "start": 708.399,
+      "end": 714.48,
+      "text": "all, do you even know the difference"
+    },
+    {
+      "start": 710.72,
+      "end": 716.9590000000001,
+      "text": "between AI agent and agentic AI? Do you"
+    },
+    {
+      "start": 714.48,
+      "end": 718.5600000000001,
+      "text": "even know the difference? No, I I I know"
+    },
+    {
+      "start": 716.959,
+      "end": 720.079,
+      "text": "this. So we will first of all discuss"
+    },
+    {
+      "start": 718.56,
+      "end": 721.92,
+      "text": "about this thing because once you get"
+    },
+    {
+      "start": 720.079,
+      "end": 723.76,
+      "text": "this concept only then you should learn"
+    },
+    {
+      "start": 721.92,
+      "end": 725.279,
+      "text": "anything else. Then you should learn the"
+    },
+    {
+      "start": 723.76,
+      "end": 727.6,
+      "text": "frameworks. You first need to understand"
+    },
+    {
+      "start": 725.279,
+      "end": 731.2,
+      "text": "the concept like what is agent and AI"
+    },
+    {
+      "start": 727.6,
+      "end": 733.839,
+      "text": "agent. Frameworks is not a very critical"
+    },
+    {
+      "start": 731.2,
+      "end": 736.0790000000001,
+      "text": "or you can say very uh complex thing."
+    },
+    {
+      "start": 733.839,
+      "end": 738.8000000000001,
+      "text": "Framework is just like a kind of module."
+    },
+    {
+      "start": 736.079,
+      "end": 740.7199999999999,
+      "text": "It's just a kind of SDK. It's just a"
+    },
+    {
+      "start": 738.8,
+      "end": 742.88,
+      "text": "kind of package. We just call it as"
+    },
+    {
+      "start": 740.72,
+      "end": 745.12,
+      "text": "framework. Right? The main thing is"
+    },
+    {
+      "start": 742.88,
+      "end": 748.48,
+      "text": "agentic AI. What is agent? And in order"
+    },
+    {
+      "start": 745.12,
+      "end": 750.88,
+      "text": "to do that, we need to just understand"
+    },
+    {
+      "start": 748.48,
+      "end": 752.72,
+      "text": "this concept agent versus AI agent. So"
+    },
+    {
+      "start": 750.88,
+      "end": 755.8389999999999,
+      "text": "let's start with AI agent like what"
+    },
+    {
+      "start": 752.72,
+      "end": 757.839,
+      "text": "exactly is AI agent? Let's say this"
+    },
+    {
+      "start": 755.839,
+      "end": 760.24,
+      "text": "Rahul. Let's let's let's say this is"
+    },
+    {
+      "start": 757.839,
+      "end": 762.0790000000001,
+      "text": "Rahul. Okay. And this person needs to"
+    },
+    {
+      "start": 760.24,
+      "end": 764.9590000000001,
+      "text": "know everything about agent and all. And"
+    },
+    {
+      "start": 762.079,
+      "end": 767.519,
+      "text": "do you know what this person for first"
+    },
+    {
+      "start": 764.959,
+      "end": 770.0,
+      "text": "needs to understand the AI agents? Okay."
+    },
+    {
+      "start": 767.519,
+      "end": 773.44,
+      "text": "So now when I just talk about AI agent,"
+    },
+    {
+      "start": 770.0,
+      "end": 775.76,
+      "text": "what is actually an AI agent?"
+    },
+    {
+      "start": 773.44,
+      "end": 778.32,
+      "text": "AI"
+    },
+    {
+      "start": 775.76,
+      "end": 779.8389999999999,
+      "text": "agent. What is this thing? Like why this"
+    },
+    {
+      "start": 778.32,
+      "end": 781.7600000000001,
+      "text": "term is so popular right now and"
+    },
+    {
+      "start": 779.839,
+      "end": 785.7600000000001,
+      "text": "everyone is talking about this thing AI"
+    },
+    {
+      "start": 781.76,
+      "end": 789.2,
+      "text": "agent. AI agent is actually nothing"
+    },
+    {
+      "start": 785.76,
+      "end": 792.72,
+      "text": "about you can say is like nothing but a"
+    },
+    {
+      "start": 789.2,
+      "end": 795.6,
+      "text": "kind of framework"
+    },
+    {
+      "start": 792.72,
+      "end": 796.8000000000001,
+      "text": "in itself not the framework let let's"
+    },
+    {
+      "start": 795.6,
+      "end": 799.2,
+      "text": "not call it as framework you will be"
+    },
+    {
+      "start": 796.8,
+      "end": 802.8,
+      "text": "confused it is a kind of let's say real"
+    },
+    {
+      "start": 799.2,
+      "end": 805.12,
+      "text": "person what is agent forget about AI"
+    },
+    {
+      "start": 802.8,
+      "end": 809.12,
+      "text": "what is agent if you just try to find"
+    },
+    {
+      "start": 805.12,
+      "end": 812.16,
+      "text": "out the word agent agent is someone who"
+    },
+    {
+      "start": 809.12,
+      "end": 815.04,
+      "text": "performs a specific task"
+    },
+    {
+      "start": 812.16,
+      "end": 819.279,
+      "text": "you would have um seen you can say"
+    },
+    {
+      "start": 815.04,
+      "end": 821.8389999999999,
+      "text": "insurance agents and then you can say"
+    },
+    {
+      "start": 819.279,
+      "end": 823.76,
+      "text": "customer care agents and then you have"
+    },
+    {
+      "start": 821.839,
+      "end": 826.639,
+      "text": "flight agent like there are some agents"
+    },
+    {
+      "start": 823.76,
+      "end": 829.92,
+      "text": "like why do we use the word agent this"
+    },
+    {
+      "start": 826.639,
+      "end": 832.0,
+      "text": "particular thing this AI agent is"
+    },
+    {
+      "start": 829.92,
+      "end": 835.5999999999999,
+      "text": "actually"
+    },
+    {
+      "start": 832.0,
+      "end": 837.76,
+      "text": "aligned towards a specific task okay"
+    },
+    {
+      "start": 835.6,
+      "end": 839.6800000000001,
+      "text": "specific task"
+    },
+    {
+      "start": 837.76,
+      "end": 844.3199999999999,
+      "text": "nothing fancy"
+    },
+    {
+      "start": 839.68,
+      "end": 847.5999999999999,
+      "text": "this thing so now we Have"
+    },
+    {
+      "start": 844.32,
+      "end": 851.0400000000001,
+      "text": "we have added the keyword called AI?"
+    },
+    {
+      "start": 847.6,
+      "end": 852.72,
+      "text": "That means this agent is not the real"
+    },
+    {
+      "start": 851.04,
+      "end": 855.5999999999999,
+      "text": "person."
+    },
+    {
+      "start": 852.72,
+      "end": 859.36,
+      "text": "Oh, okay. This agent is not the real"
+    },
+    {
+      "start": 855.6,
+      "end": 862.0790000000001,
+      "text": "person. This is AI performing the task"
+    },
+    {
+      "start": 859.36,
+      "end": 865.92,
+      "text": "of an agent."
+    },
+    {
+      "start": 862.079,
+      "end": 868.7199999999999,
+      "text": "Okay. And in this case, it will be let's"
+    },
+    {
+      "start": 865.92,
+      "end": 871.68,
+      "text": "say LLM."
+    },
+    {
+      "start": 868.72,
+      "end": 874.9590000000001,
+      "text": "LLM, right? Okay."
+    },
+    {
+      "start": 871.68,
+      "end": 879.4399999999999,
+      "text": "This will be LLM. When LLM that means"
+    },
+    {
+      "start": 874.959,
+      "end": 881.279,
+      "text": "large language model the entire AI"
+    },
+    {
+      "start": 879.44,
+      "end": 883.36,
+      "text": "industry is built on top of LLM right"
+    },
+    {
+      "start": 881.279,
+      "end": 887.12,
+      "text": "now makes sense like large language"
+    },
+    {
+      "start": 883.36,
+      "end": 890.8000000000001,
+      "text": "models. So LLM when"
+    },
+    {
+      "start": 887.12,
+      "end": 894.24,
+      "text": "able to perform the task of a real human"
+    },
+    {
+      "start": 890.8,
+      "end": 896.4799999999999,
+      "text": "that will be called as an AI agent. But"
+    },
+    {
+      "start": 894.24,
+      "end": 898.639,
+      "text": "An Lamba"
+    },
+    {
+      "start": 896.48,
+      "end": 902.399,
+      "text": "can we say that all the LLMs are AI"
+    },
+    {
+      "start": 898.639,
+      "end": 907.6,
+      "text": "agents? No, I didn't say that here. Hear"
+    },
+    {
+      "start": 902.399,
+      "end": 910.8,
+      "text": "me out. I said when LLM is able when LLM"
+    },
+    {
+      "start": 907.6,
+      "end": 912.399,
+      "text": "when this LLM let's say this is the LLM."
+    },
+    {
+      "start": 910.8,
+      "end": 915.4399999999999,
+      "text": "Okay, and this can be like any normal"
+    },
+    {
+      "start": 912.399,
+      "end": 917.839,
+      "text": "LLM. It can be chat GBT. It can be"
+    },
+    {
+      "start": 915.44,
+      "end": 919.519,
+      "text": "anything. Let's say this is your LLM."
+    },
+    {
+      "start": 917.839,
+      "end": 921.6800000000001,
+      "text": "Okay,"
+    },
+    {
+      "start": 919.519,
+      "end": 923.279,
+      "text": "this is your LLM."
+    },
+    {
+      "start": 921.68,
+      "end": 925.199,
+      "text": "Wow."
+    },
+    {
+      "start": 923.279,
+      "end": 928.8,
+      "text": "Let's say this is your LLM. Now, this"
+    },
+    {
+      "start": 925.199,
+      "end": 930.16,
+      "text": "LLM can be anyone. Open AI. Let's let's"
+    },
+    {
+      "start": 928.8,
+      "end": 933.76,
+      "text": "take open eye because open is very"
+    },
+    {
+      "start": 930.16,
+      "end": 936.639,
+      "text": "popular. This is open LLM. This is"
+    },
+    {
+      "start": 933.76,
+      "end": 939.92,
+      "text": "simple LLM that just knows how to"
+    },
+    {
+      "start": 936.639,
+      "end": 944.0790000000001,
+      "text": "generate the text. Simple."
+    },
+    {
+      "start": 939.92,
+      "end": 946.639,
+      "text": "Now when we we developers"
+    },
+    {
+      "start": 944.079,
+      "end": 950.4799999999999,
+      "text": "add some capabilities"
+    },
+    {
+      "start": 946.639,
+      "end": 953.6800000000001,
+      "text": "to this LLM in order to perform a"
+    },
+    {
+      "start": 950.48,
+      "end": 956.399,
+      "text": "specific task in or"
+    },
+    {
+      "start": 953.68,
+      "end": 960.959,
+      "text": "sorry in order to achieve a specific"
+    },
+    {
+      "start": 956.399,
+      "end": 965.199,
+      "text": "goal. this LLM becomes AI agent."
+    },
+    {
+      "start": 960.959,
+      "end": 967.199,
+      "text": "Okay, that is clear. But what are those"
+    },
+    {
+      "start": 965.199,
+      "end": 969.3599999999999,
+      "text": "specific task or specific capabilities"
+    },
+    {
+      "start": 967.199,
+      "end": 971.92,
+      "text": "that we add? Very good question. In"
+    },
+    {
+      "start": 969.36,
+      "end": 976.5600000000001,
+      "text": "short, in simple language, we add"
+    },
+    {
+      "start": 971.92,
+      "end": 980.0,
+      "text": "something called as tools. Okay,"
+    },
+    {
+      "start": 976.56,
+      "end": 981.68,
+      "text": "we add something called as tools."
+    },
+    {
+      "start": 980.0,
+      "end": 987.399,
+      "text": "And now you will say what kind of tools?"
+    },
+    {
+      "start": 981.68,
+      "end": 987.399,
+      "text": "I will say any tool. Any kind of tool."
+    },
+    {
+      "start": 988.079,
+      "end": 995.199,
+      "text": "So when we add this tools"
+    },
+    {
+      "start": 991.36,
+      "end": 997.839,
+      "text": "okay so we have provided it who we this"
+    },
+    {
+      "start": 995.199,
+      "end": 1000.56,
+      "text": "let's say developer Rahul Rahul knows"
+    },
+    {
+      "start": 997.839,
+      "end": 1004.48,
+      "text": "how to develop the tools okay now these"
+    },
+    {
+      "start": 1000.56,
+      "end": 1008.04,
+      "text": "tools when these tools are integrated"
+    },
+    {
+      "start": 1004.48,
+      "end": 1008.04,
+      "text": "with this LLM"
+    },
+    {
+      "start": 1008.48,
+      "end": 1013.1990000000001,
+      "text": "okay this thing and this"
+    },
+    {
+      "start": 1015.839,
+      "end": 1020.8000000000001,
+      "text": "Perfect. Now when we integrate this"
+    },
+    {
+      "start": 1018.8,
+      "end": 1023.199,
+      "text": "these tools"
+    },
+    {
+      "start": 1020.8,
+      "end": 1026.0,
+      "text": "with this LLM, let me just write it for"
+    },
+    {
+      "start": 1023.199,
+      "end": 1029.039,
+      "text": "you. Integrated"
+    },
+    {
+      "start": 1026.0,
+      "end": 1032.72,
+      "text": "then it becomes this LLM. Simple. This"
+    },
+    {
+      "start": 1029.039,
+      "end": 1034.959,
+      "text": "is your entire definition, entire flow."
+    },
+    {
+      "start": 1032.72,
+      "end": 1036.48,
+      "text": "And now this AI agent can perform this"
+    },
+    {
+      "start": 1034.959,
+      "end": 1038.88,
+      "text": "task."
+    },
+    {
+      "start": 1036.48,
+      "end": 1041.1200000000001,
+      "text": "Right? Now you will say um which task? I"
+    },
+    {
+      "start": 1038.88,
+      "end": 1043.199,
+      "text": "would say any task. Let's say reporting"
+    },
+    {
+      "start": 1041.12,
+      "end": 1047.28,
+      "text": "data, email, anything. Let's say this is"
+    },
+    {
+      "start": 1043.199,
+      "end": 1050.3200000000002,
+      "text": "a task. Simple."
+    },
+    {
+      "start": 1047.28,
+      "end": 1052.32,
+      "text": "Let's say this agent is a kind of um"
+    },
+    {
+      "start": 1050.32,
+      "end": 1055.84,
+      "text": "customer assistant or basically customer"
+    },
+    {
+      "start": 1052.32,
+      "end": 1057.9189999999999,
+      "text": "service agent which receives the emails"
+    },
+    {
+      "start": 1055.84,
+      "end": 1060.32,
+      "text": "and maybe filtering out the emails which"
+    },
+    {
+      "start": 1057.919,
+      "end": 1062.96,
+      "text": "are bad, which are right and categorize"
+    },
+    {
+      "start": 1060.32,
+      "end": 1065.28,
+      "text": "it. It's a kind of task simple that you"
+    },
+    {
+      "start": 1062.96,
+      "end": 1069.1200000000001,
+      "text": "would hire a real human for this task."
+    },
+    {
+      "start": 1065.28,
+      "end": 1072.6399999999999,
+      "text": "Now you have AI agent for it. Now"
+    },
+    {
+      "start": 1069.12,
+      "end": 1075.6789999999999,
+      "text": "this developer builds these particular"
+    },
+    {
+      "start": 1072.64,
+      "end": 1078.0,
+      "text": "tools. This is the main thing to"
+    },
+    {
+      "start": 1075.679,
+      "end": 1080.3200000000002,
+      "text": "understand."
+    },
+    {
+      "start": 1078.0,
+      "end": 1085.6,
+      "text": "This is the main thing."
+    },
+    {
+      "start": 1080.32,
+      "end": 1087.4399999999998,
+      "text": "This developer built these tools."
+    },
+    {
+      "start": 1085.6,
+      "end": 1091.52,
+      "text": "Okay."
+    },
+    {
+      "start": 1087.44,
+      "end": 1093.2,
+      "text": "Good. Now a very good question can be"
+    },
+    {
+      "start": 1091.52,
+      "end": 1094.48,
+      "text": "like you can ask like so many questions"
+    },
+    {
+      "start": 1093.2,
+      "end": 1098.559,
+      "text": "but let's say you have asked this"
+    },
+    {
+      "start": 1094.48,
+      "end": 1101.44,
+      "text": "question anala. Yeah."
+    },
+    {
+      "start": 1098.559,
+      "end": 1103.76,
+      "text": "Why do we need to create tools and why"
+    },
+    {
+      "start": 1101.44,
+      "end": 1106.16,
+      "text": "LLMs? Because LLMs are so popular."
+    },
+    {
+      "start": 1103.76,
+      "end": 1108.24,
+      "text": "Everyone is talking about LLMs. LLMs are"
+    },
+    {
+      "start": 1106.16,
+      "end": 1111.039,
+      "text": "like so big like they have raised"
+    },
+    {
+      "start": 1108.24,
+      "end": 1113.2,
+      "text": "billions of dollars. Why we need to"
+    },
+    {
+      "start": 1111.039,
+      "end": 1115.6,
+      "text": "create tools? Why we need to integrate"
+    },
+    {
+      "start": 1113.2,
+      "end": 1118.0,
+      "text": "tools? So very good question. Let me"
+    },
+    {
+      "start": 1115.6,
+      "end": 1120.9599999999998,
+      "text": "just tell you. Let's say you are using"
+    },
+    {
+      "start": 1118.0,
+      "end": 1124.08,
+      "text": "um Chat GPD. Let's say let me open ChatG"
+    },
+    {
+      "start": 1120.96,
+      "end": 1126.08,
+      "text": "in front of you. Okay. And I hope you"
+    },
+    {
+      "start": 1124.08,
+      "end": 1129.12,
+      "text": "know what is ChatG."
+    },
+    {
+      "start": 1126.08,
+      "end": 1132.799,
+      "text": "If no um then very good slow collapse."
+    },
+    {
+      "start": 1129.12,
+      "end": 1134.3999999999999,
+      "text": "So let's say this is the chat GPD right."
+    },
+    {
+      "start": 1132.799,
+      "end": 1136.48,
+      "text": "Chad GPD is nothing but a kind of"
+    },
+    {
+      "start": 1134.4,
+      "end": 1140.0800000000002,
+      "text": "wrapper. It's just a kind of front end"
+    },
+    {
+      "start": 1136.48,
+      "end": 1142.48,
+      "text": "that is built on top of LLM. Simple very"
+    },
+    {
+      "start": 1140.08,
+      "end": 1145.6789999999999,
+      "text": "good. Now do you know what when Chad GPD"
+    },
+    {
+      "start": 1142.48,
+      "end": 1148.24,
+      "text": "was launched in its initial days if I"
+    },
+    {
+      "start": 1145.679,
+      "end": 1151.039,
+      "text": "ask something like this? Um my name is"
+    },
+    {
+      "start": 1148.24,
+      "end": 1152.72,
+      "text": "Anro."
+    },
+    {
+      "start": 1151.039,
+      "end": 1154.96,
+      "text": "Let's say I write something like this."
+    },
+    {
+      "start": 1152.72,
+      "end": 1158.16,
+      "text": "So Chad GBD would be able to generate"
+    },
+    {
+      "start": 1154.96,
+      "end": 1161.8400000000001,
+      "text": "this text and that's it. And when I was"
+    },
+    {
+      "start": 1158.16,
+      "end": 1164.72,
+      "text": "asking Chad GBD, hey"
+    },
+    {
+      "start": 1161.84,
+      "end": 1168.1599999999999,
+      "text": "what's the temperature"
+    },
+    {
+      "start": 1164.72,
+      "end": 1171.3600000000001,
+      "text": "here in Canada?"
+    },
+    {
+      "start": 1168.16,
+      "end": 1173.039,
+      "text": "Right? If I hit enter, if I hit enter, I"
+    },
+    {
+      "start": 1171.36,
+      "end": 1175.28,
+      "text": "will not hit enter right now because I"
+    },
+    {
+      "start": 1173.039,
+      "end": 1178.16,
+      "text": "need to explain this thing. In the"
+    },
+    {
+      "start": 1175.28,
+      "end": 1180.799,
+      "text": "earlier days, in the initial days when I"
+    },
+    {
+      "start": 1178.16,
+      "end": 1183.1200000000001,
+      "text": "would be asking this question,"
+    },
+    {
+      "start": 1180.799,
+      "end": 1185.039,
+      "text": "Chad GPT would not be able to answer"
+    },
+    {
+      "start": 1183.12,
+      "end": 1188.0,
+      "text": "this question."
+    },
+    {
+      "start": 1185.039,
+      "end": 1190.72,
+      "text": "Okay. Why? Because it doesn't have the"
+    },
+    {
+      "start": 1188.0,
+      "end": 1192.799,
+      "text": "capability to track the recent data"
+    },
+    {
+      "start": 1190.72,
+      "end": 1194.72,
+      "text": "because these LLMs this these large"
+    },
+    {
+      "start": 1192.799,
+      "end": 1196.799,
+      "text": "language models are trained on specific"
+    },
+    {
+      "start": 1194.72,
+      "end": 1198.48,
+      "text": "data sets, right? And they cannot train"
+    },
+    {
+      "start": 1196.799,
+      "end": 1200.24,
+      "text": "the data sets like they cannot train the"
+    },
+    {
+      "start": 1198.48,
+      "end": 1202.24,
+      "text": "model on data sets on a daily basis. It"
+    },
+    {
+      "start": 1200.24,
+      "end": 1204.0,
+      "text": "is a very expensive task. So they do it"
+    },
+    {
+      "start": 1202.24,
+      "end": 1205.679,
+      "text": "I think once a year or twice a year. So"
+    },
+    {
+      "start": 1204.0,
+      "end": 1210.44,
+      "text": "they do not have like realtime access"
+    },
+    {
+      "start": 1205.679,
+      "end": 1210.44,
+      "text": "but you know what when I hit enter now"
+    },
+    {
+      "start": 1211.36,
+      "end": 1217.9189999999999,
+      "text": "just bait and watch Canada's huge oh it"
+    },
+    {
+      "start": 1214.559,
+      "end": 1220.48,
+      "text": "is very smart let's say temperature in"
+    },
+    {
+      "start": 1217.919,
+      "end": 1223.919,
+      "text": "Calgary I'm not in Calgary by the way"
+    },
+    {
+      "start": 1220.48,
+      "end": 1227.3600000000001,
+      "text": "but yeah let's say in Calgary so now see"
+    },
+    {
+      "start": 1223.919,
+      "end": 1230.88,
+      "text": "see did you see I know it's cold -4°"
+    },
+    {
+      "start": 1227.36,
+      "end": 1234.1589999999999,
+      "text": "centigrade yeah so now the thing is how"
+    },
+    {
+      "start": 1230.88,
+      "end": 1237.44,
+      "text": "it is able to just get the right"
+    },
+    {
+      "start": 1234.159,
+      "end": 1240.3200000000002,
+      "text": "temperature and it is actually -4° -15°"
+    },
+    {
+      "start": 1237.44,
+      "end": 1243.1200000000001,
+      "text": "I know this okay because here in my city"
+    },
+    {
+      "start": 1240.32,
+      "end": 1245.039,
+      "text": "it is 11° so yeah Alberta is like the"
+    },
+    {
+      "start": 1243.12,
+      "end": 1247.4399999999998,
+      "text": "coldest not coldest but yeah one of the"
+    },
+    {
+      "start": 1245.039,
+      "end": 1249.6,
+      "text": "coldest so now I know that the"
+    },
+    {
+      "start": 1247.44,
+      "end": 1252.4,
+      "text": "temperature is -4° centiggrade how it is"
+    },
+    {
+      "start": 1249.6,
+      "end": 1254.48,
+      "text": "able to track that now you will say"
+    },
+    {
+      "start": 1252.4,
+      "end": 1256.4,
+      "text": "because LLMs are becoming smart not at"
+    },
+    {
+      "start": 1254.48,
+      "end": 1261.6,
+      "text": "all not at all now do you know what"
+    },
+    {
+      "start": 1256.4,
+      "end": 1265.1200000000001,
+      "text": "happened this chat GBD team built tools"
+    },
+    {
+      "start": 1261.6,
+      "end": 1268.24,
+      "text": "okay this chad GBD built tools and they"
+    },
+    {
+      "start": 1265.12,
+      "end": 1271.6789999999999,
+      "text": "integrated those tools with this LLM"
+    },
+    {
+      "start": 1268.24,
+      "end": 1275.44,
+      "text": "original LLM. It can be let's say GPT5,"
+    },
+    {
+      "start": 1271.679,
+      "end": 1277.76,
+      "text": "GPT4, any LLM model. They built these"
+    },
+    {
+      "start": 1275.44,
+      "end": 1281.2,
+      "text": "tools and this tool can be let's say"
+    },
+    {
+      "start": 1277.76,
+      "end": 1282.96,
+      "text": "getting the u weather information and"
+    },
+    {
+      "start": 1281.2,
+      "end": 1286.4,
+      "text": "did you notice when we just hit that"
+    },
+    {
+      "start": 1282.96,
+      "end": 1288.559,
+      "text": "particular question it showed that um"
+    },
+    {
+      "start": 1286.4,
+      "end": 1291.52,
+      "text": "thing called searching the web is that"
+    },
+    {
+      "start": 1288.559,
+      "end": 1294.32,
+      "text": "thing that is a tool call."
+    },
+    {
+      "start": 1291.52,
+      "end": 1296.72,
+      "text": "Okay, so we build these tools on our"
+    },
+    {
+      "start": 1294.32,
+      "end": 1298.559,
+      "text": "own. These are nothing but the functions"
+    },
+    {
+      "start": 1296.72,
+      "end": 1301.6000000000001,
+      "text": "and then we integrate these things to"
+    },
+    {
+      "start": 1298.559,
+      "end": 1303.52,
+      "text": "the LLM and then this becomes an AI"
+    },
+    {
+      "start": 1301.6,
+      "end": 1306.24,
+      "text": "agent"
+    },
+    {
+      "start": 1303.52,
+      "end": 1308.24,
+      "text": "like obviously we will be just doing so"
+    },
+    {
+      "start": 1306.24,
+      "end": 1311.44,
+      "text": "much of stuff to make it as an agent to"
+    },
+    {
+      "start": 1308.24,
+      "end": 1314.159,
+      "text": "make it autonomous as much as we can but"
+    },
+    {
+      "start": 1311.44,
+      "end": 1316.48,
+      "text": "this is the backbone of AI agent LLM"
+    },
+    {
+      "start": 1314.159,
+      "end": 1319.6000000000001,
+      "text": "with tools that's it because can you"
+    },
+    {
+      "start": 1316.48,
+      "end": 1321.84,
+      "text": "think of an agent which doesn't have any"
+    },
+    {
+      "start": 1319.6,
+      "end": 1323.76,
+      "text": "capability so let's say we are hiring a"
+    },
+    {
+      "start": 1321.84,
+      "end": 1326.8799999999999,
+      "text": "real person right and person needs to"
+    },
+    {
+      "start": 1323.76,
+      "end": 1329.28,
+      "text": "write email, read email and do so many"
+    },
+    {
+      "start": 1326.88,
+      "end": 1331.3600000000001,
+      "text": "stuff. So that agent, that human also"
+    },
+    {
+      "start": 1329.28,
+      "end": 1333.039,
+      "text": "needs some access, needs an email"
+    },
+    {
+      "start": 1331.36,
+      "end": 1335.36,
+      "text": "address, all those things, right? So it"
+    },
+    {
+      "start": 1333.039,
+      "end": 1337.36,
+      "text": "needs those capabilities. Same thing we"
+    },
+    {
+      "start": 1335.36,
+      "end": 1340.08,
+      "text": "will provide to this LLM and then it"
+    },
+    {
+      "start": 1337.36,
+      "end": 1343.12,
+      "text": "will become an AI agent. This is the"
+    },
+    {
+      "start": 1340.08,
+      "end": 1344.96,
+      "text": "definition of AI agent. Okay? Now what"
+    },
+    {
+      "start": 1343.12,
+      "end": 1348.3999999999999,
+      "text": "is the difference between AI agent and"
+    },
+    {
+      "start": 1344.96,
+      "end": 1349.8400000000001,
+      "text": "agenti? Because this is clear. So always"
+    },
+    {
+      "start": 1348.4,
+      "end": 1351.919,
+      "text": "remember this thing. This is a kind of"
+    },
+    {
+      "start": 1349.84,
+      "end": 1355.36,
+      "text": "formula you can say or just a thing just"
+    },
+    {
+      "start": 1351.919,
+      "end": 1358.64,
+      "text": "a you can say way to remember it. So AI"
+    },
+    {
+      "start": 1355.36,
+      "end": 1362.7199999999998,
+      "text": "agent is built to fulfill a specific"
+    },
+    {
+      "start": 1358.64,
+      "end": 1364.88,
+      "text": "task. Okay is built to fuli fulfill a"
+    },
+    {
+      "start": 1362.72,
+      "end": 1367.6000000000001,
+      "text": "specific task."
+    },
+    {
+      "start": 1364.88,
+      "end": 1369.1200000000001,
+      "text": "Let's say you are hiring an AI agent"
+    },
+    {
+      "start": 1367.6,
+      "end": 1371.6,
+      "text": "basically building an AI agent. You are"
+    },
+    {
+      "start": 1369.12,
+      "end": 1373.84,
+      "text": "hiring a person same thing. So you are"
+    },
+    {
+      "start": 1371.6,
+      "end": 1376.559,
+      "text": "getting an AI agent for this task. Let's"
+    },
+    {
+      "start": 1373.84,
+      "end": 1379.6789999999999,
+      "text": "say now this email task is done. Now you"
+    },
+    {
+      "start": 1376.559,
+      "end": 1382.799,
+      "text": "need to add an agent in your team who"
+    },
+    {
+      "start": 1379.679,
+      "end": 1385.1200000000001,
+      "text": "will do the marketing like person is"
+    },
+    {
+      "start": 1382.799,
+      "end": 1388.1589999999999,
+      "text": "reading the emails categorizing it and"
+    },
+    {
+      "start": 1385.12,
+      "end": 1391.4399999999998,
+      "text": "that's it. Now this particular agent"
+    },
+    {
+      "start": 1388.159,
+      "end": 1393.7600000000002,
+      "text": "needs to talk to another agent who is a"
+    },
+    {
+      "start": 1391.44,
+      "end": 1395.44,
+      "text": "marketing agent who will do the"
+    },
+    {
+      "start": 1393.76,
+      "end": 1398.0,
+      "text": "marketing stuff who will run ads on"
+    },
+    {
+      "start": 1395.44,
+      "end": 1400.159,
+      "text": "social platforms."
+    },
+    {
+      "start": 1398.0,
+      "end": 1402.48,
+      "text": "Make sense? And then that marketing"
+    },
+    {
+      "start": 1400.159,
+      "end": 1405.0390000000002,
+      "text": "agent needs to talk to let's say"
+    },
+    {
+      "start": 1402.48,
+      "end": 1406.4,
+      "text": "business agent because it needs to"
+    },
+    {
+      "start": 1405.039,
+      "end": 1408.08,
+      "text": "communicate with the business team or"
+    },
+    {
+      "start": 1406.4,
+      "end": 1409.8400000000001,
+      "text": "finance team. Hey, how much money do we"
+    },
+    {
+      "start": 1408.08,
+      "end": 1413.039,
+      "text": "have to run ads? Hey, how much money do"
+    },
+    {
+      "start": 1409.84,
+      "end": 1416.559,
+      "text": "we need to spend this month? Maybe"
+    },
+    {
+      "start": 1413.039,
+      "end": 1418.64,
+      "text": "right. So when we need to"
+    },
+    {
+      "start": 1416.559,
+      "end": 1422.3999999999999,
+      "text": "enable the communication between the"
+    },
+    {
+      "start": 1418.64,
+      "end": 1425.3600000000001,
+      "text": "agents that becomes agentic AI that"
+    },
+    {
+      "start": 1422.4,
+      "end": 1428.4,
+      "text": "means orchestration of AI agents when we"
+    },
+    {
+      "start": 1425.36,
+      "end": 1432.32,
+      "text": "have multiple AI agents and do you know"
+    },
+    {
+      "start": 1428.4,
+      "end": 1435.2,
+      "text": "what the fun part agentic AI is always"
+    },
+    {
+      "start": 1432.32,
+      "end": 1438.6399999999999,
+      "text": "is always aligned towards fulfilling the"
+    },
+    {
+      "start": 1435.2,
+      "end": 1440.32,
+      "text": "goal. Now we'll say AI agent is also"
+    },
+    {
+      "start": 1438.64,
+      "end": 1443.2,
+      "text": "inclined towards fulfilling a goal. The"
+    },
+    {
+      "start": 1440.32,
+      "end": 1445.52,
+      "text": "difference is AI agent is only"
+    },
+    {
+      "start": 1443.2,
+      "end": 1449.2,
+      "text": "fulfilling the sub goal basically the"
+    },
+    {
+      "start": 1445.52,
+      "end": 1452.32,
+      "text": "task but agentic AI is fulfilling the"
+    },
+    {
+      "start": 1449.2,
+      "end": 1454.88,
+      "text": "entire you can say goal or you can say"
+    },
+    {
+      "start": 1452.32,
+      "end": 1457.9189999999999,
+      "text": "bigger project. So let's say you have a"
+    },
+    {
+      "start": 1454.88,
+      "end": 1460.3200000000002,
+      "text": "kind of social media managing company"
+    },
+    {
+      "start": 1457.919,
+      "end": 1462.3200000000002,
+      "text": "and you have those AI agents built in"
+    },
+    {
+      "start": 1460.32,
+      "end": 1465.039,
+      "text": "specific areas and that will be called"
+    },
+    {
+      "start": 1462.32,
+      "end": 1467.4399999999998,
+      "text": "as agent AI."
+    },
+    {
+      "start": 1465.039,
+      "end": 1469.36,
+      "text": "I hope it makes sense."
+    },
+    {
+      "start": 1467.44,
+      "end": 1471.44,
+      "text": "Now let's say let's relate this analogy"
+    },
+    {
+      "start": 1469.36,
+      "end": 1474.1589999999999,
+      "text": "to our data engineering. Let's say you"
+    },
+    {
+      "start": 1471.44,
+      "end": 1476.799,
+      "text": "are a developer okay and you have built"
+    },
+    {
+      "start": 1474.159,
+      "end": 1479.1200000000001,
+      "text": "some tools to run the spark notebook"
+    },
+    {
+      "start": 1476.799,
+      "end": 1480.799,
+      "text": "let's say or let's say spark job in"
+    },
+    {
+      "start": 1479.12,
+      "end": 1482.1589999999999,
+      "text": "pispark right if you do not know what"
+    },
+    {
+      "start": 1480.799,
+      "end": 1483.6,
+      "text": "pispark basically pispark is the"
+    },
+    {
+      "start": 1482.159,
+      "end": 1486.3200000000002,
+      "text": "framework that we use to process big"
+    },
+    {
+      "start": 1483.6,
+      "end": 1489.84,
+      "text": "data right so you have built this AI"
+    },
+    {
+      "start": 1486.32,
+      "end": 1492.1589999999999,
+      "text": "agent to run the task and task is"
+    },
+    {
+      "start": 1489.84,
+      "end": 1494.799,
+      "text": "running spark"
+    },
+    {
+      "start": 1492.159,
+      "end": 1496.5590000000002,
+      "text": "right running spark job perfect this is"
+    },
+    {
+      "start": 1494.799,
+      "end": 1499.9189999999999,
+      "text": "the task"
+    },
+    {
+      "start": 1496.559,
+      "end": 1505.52,
+      "text": "now this is agent one right as we just"
+    },
+    {
+      "start": 1499.919,
+      "end": 1508.72,
+      "text": "mentioned this is agent one."
+    },
+    {
+      "start": 1505.52,
+      "end": 1511.52,
+      "text": "Okay, this is agent one and let me"
+    },
+    {
+      "start": 1508.72,
+      "end": 1514.24,
+      "text": "remove this Rahul. This is very obvious"
+    },
+    {
+      "start": 1511.52,
+      "end": 1518.0,
+      "text": "now because they have the tools."
+    },
+    {
+      "start": 1514.24,
+      "end": 1520.88,
+      "text": "So this is only and only agent one makes"
+    },
+    {
+      "start": 1518.0,
+      "end": 1523.88,
+      "text": "sense."
+    },
+    {
+      "start": 1520.88,
+      "end": 1523.88,
+      "text": "Perfect."
+    },
+    {
+      "start": 1524.48,
+      "end": 1530.64,
+      "text": "Agent one. Now do you know what? Before"
+    },
+    {
+      "start": 1527.919,
+      "end": 1532.4,
+      "text": "running this job, you obviously need to"
+    },
+    {
+      "start": 1530.64,
+      "end": 1534.72,
+      "text": "configure the spark cluster size like"
+    },
+    {
+      "start": 1532.4,
+      "end": 1538.64,
+      "text": "what cluster do we need. So actually"
+    },
+    {
+      "start": 1534.72,
+      "end": 1541.679,
+      "text": "this agent needs to communicate with"
+    },
+    {
+      "start": 1538.64,
+      "end": 1543.279,
+      "text": "another agent, right? Let's say this"
+    },
+    {
+      "start": 1541.679,
+      "end": 1544.96,
+      "text": "agent or you can say it can be like two"
+    },
+    {
+      "start": 1543.279,
+      "end": 1546.96,
+      "text": "and four two and fro communication as"
+    },
+    {
+      "start": 1544.96,
+      "end": 1549.52,
+      "text": "well. So it's not a big deal. So let's"
+    },
+    {
+      "start": 1546.96,
+      "end": 1552.559,
+      "text": "say this is the this is another agent"
+    },
+    {
+      "start": 1549.52,
+      "end": 1555.039,
+      "text": "and what this agent does this agent"
+    },
+    {
+      "start": 1552.559,
+      "end": 1556.559,
+      "text": "configure the spark cluster size that"
+    },
+    {
+      "start": 1555.039,
+      "end": 1558.96,
+      "text": "what should be the cluster size on the"
+    },
+    {
+      "start": 1556.559,
+      "end": 1560.559,
+      "text": "basis of the data what should be the you"
+    },
+    {
+      "start": 1558.96,
+      "end": 1562.0,
+      "text": "can say course number of coursees what"
+    },
+    {
+      "start": 1560.559,
+      "end": 1564.08,
+      "text": "should be the memory we should allocate"
+    },
+    {
+      "start": 1562.0,
+      "end": 1566.799,
+      "text": "to our jobs like it will give you the"
+    },
+    {
+      "start": 1564.08,
+      "end": 1568.6399999999999,
+      "text": "exact or ideal cluster size and then you"
+    },
+    {
+      "start": 1566.799,
+      "end": 1570.6399999999999,
+      "text": "can just run your job before that you do"
+    },
+    {
+      "start": 1568.64,
+      "end": 1573.3600000000001,
+      "text": "not need to run the job so we'll edit"
+    },
+    {
+      "start": 1570.64,
+      "end": 1577.1200000000001,
+      "text": "the task and we can say"
+    },
+    {
+      "start": 1573.36,
+      "end": 1580.08,
+      "text": "we are simply let's Okay, talking about"
+    },
+    {
+      "start": 1577.12,
+      "end": 1582.0,
+      "text": "clusters basically these servers."
+    },
+    {
+      "start": 1580.08,
+      "end": 1586.3999999999999,
+      "text": "Make sense?"
+    },
+    {
+      "start": 1582.0,
+      "end": 1588.48,
+      "text": "Make sense? Okay. So now the task is to"
+    },
+    {
+      "start": 1586.4,
+      "end": 1590.799,
+      "text": "give us the right server size. Basically"
+    },
+    {
+      "start": 1588.48,
+      "end": 1593.44,
+      "text": "the right cluster size and then we need"
+    },
+    {
+      "start": 1590.799,
+      "end": 1595.6,
+      "text": "to talk to each other. So now this"
+    },
+    {
+      "start": 1593.44,
+      "end": 1598.0800000000002,
+      "text": "framework will be called as agentic"
+    },
+    {
+      "start": 1595.6,
+      "end": 1599.84,
+      "text": "framework. Why? Because they are"
+    },
+    {
+      "start": 1598.08,
+      "end": 1601.52,
+      "text": "communicating with each other and"
+    },
+    {
+      "start": 1599.84,
+      "end": 1602.8799999999999,
+      "text": "there's an orchestration. This is a very"
+    },
+    {
+      "start": 1601.52,
+      "end": 1604.6399999999999,
+      "text": "simple uh you can say a kind of"
+    },
+    {
+      "start": 1602.88,
+      "end": 1606.48,
+      "text": "orchestration where where we just have"
+    },
+    {
+      "start": 1604.64,
+      "end": 1608.5590000000002,
+      "text": "like two people talking to each other."
+    },
+    {
+      "start": 1606.48,
+      "end": 1610.72,
+      "text": "In the real world, we build the complex"
+    },
+    {
+      "start": 1608.559,
+      "end": 1612.96,
+      "text": "workflows where we have let's say 10 to"
+    },
+    {
+      "start": 1610.72,
+      "end": 1615.2,
+      "text": "20 agents talking to each other. And the"
+    },
+    {
+      "start": 1612.96,
+      "end": 1617.2,
+      "text": "main thing is it is not linear. What do"
+    },
+    {
+      "start": 1615.2,
+      "end": 1619.2,
+      "text": "I mean? It can be branched out to many"
+    },
+    {
+      "start": 1617.2,
+      "end": 1622.559,
+      "text": "things, right? Let me just show you. So"
+    },
+    {
+      "start": 1619.2,
+      "end": 1626.32,
+      "text": "let's say this is agent one. Okay, this"
+    },
+    {
+      "start": 1622.559,
+      "end": 1630.96,
+      "text": "is agent one. And this agent one"
+    },
+    {
+      "start": 1626.32,
+      "end": 1633.279,
+      "text": "can be connected to this one. Okay,"
+    },
+    {
+      "start": 1630.96,
+      "end": 1635.52,
+      "text": "let me just make it small. So let's say"
+    },
+    {
+      "start": 1633.279,
+      "end": 1637.039,
+      "text": "like this because I want to just show"
+    },
+    {
+      "start": 1635.52,
+      "end": 1638.799,
+      "text": "you the complex one. So that is why I'm"
+    },
+    {
+      "start": 1637.039,
+      "end": 1640.48,
+      "text": "just zooming it out. So do not need to"
+    },
+    {
+      "start": 1638.799,
+      "end": 1643.9189999999999,
+      "text": "worry. Okay, so let's say this is agent"
+    },
+    {
+      "start": 1640.48,
+      "end": 1647.6,
+      "text": "one. This is connected to this one"
+    },
+    {
+      "start": 1643.919,
+      "end": 1650.7990000000002,
+      "text": "and let's use this one. Perfect. So this"
+    },
+    {
+      "start": 1647.6,
+      "end": 1654.3999999999999,
+      "text": "is agent two and then let's say this"
+    },
+    {
+      "start": 1650.799,
+      "end": 1657.44,
+      "text": "will be connected to this agent."
+    },
+    {
+      "start": 1654.4,
+      "end": 1659.6000000000001,
+      "text": "Can be it's not a big deal,"
+    },
+    {
+      "start": 1657.44,
+      "end": 1662.96,
+      "text": "right? Let's say like this. And then we"
+    },
+    {
+      "start": 1659.6,
+      "end": 1665.52,
+      "text": "have let's say two agents."
+    },
+    {
+      "start": 1662.96,
+      "end": 1668.559,
+      "text": "Let's say like this. Let's say like"
+    },
+    {
+      "start": 1665.52,
+      "end": 1672.48,
+      "text": "this. Wow. Can we have these complex"
+    },
+    {
+      "start": 1668.559,
+      "end": 1676.1589999999999,
+      "text": "workflows? Obviously, we have it."
+    },
+    {
+      "start": 1672.48,
+      "end": 1678.159,
+      "text": "So, let's say this is the thing, right?"
+    },
+    {
+      "start": 1676.159,
+      "end": 1680.64,
+      "text": "And then we have let's say the final"
+    },
+    {
+      "start": 1678.159,
+      "end": 1683.8400000000001,
+      "text": "node or basically the agent like this."
+    },
+    {
+      "start": 1680.64,
+      "end": 1685.919,
+      "text": "So, this is a complex"
+    },
+    {
+      "start": 1683.84,
+      "end": 1687.52,
+      "text": "agentic workflow. Let's say we have a"
+    },
+    {
+      "start": 1685.919,
+      "end": 1691.24,
+      "text": "conditional here."
+    },
+    {
+      "start": 1687.52,
+      "end": 1691.24,
+      "text": "that we can use."
+    },
+    {
+      "start": 1692.48,
+      "end": 1700.72,
+      "text": "Perfect. So let's say this is the"
+    },
+    {
+      "start": 1695.12,
+      "end": 1702.7199999999998,
+      "text": "complex workflow. This is agenti."
+    },
+    {
+      "start": 1700.72,
+      "end": 1705.3600000000001,
+      "text": "Now I hope that you have the clear"
+    },
+    {
+      "start": 1702.72,
+      "end": 1707.76,
+      "text": "understanding of agenti"
+    },
+    {
+      "start": 1705.36,
+      "end": 1709.6789999999999,
+      "text": "like what is agenti and what is AI"
+    },
+    {
+      "start": 1707.76,
+      "end": 1712.24,
+      "text": "agent?"
+    },
+    {
+      "start": 1709.679,
+      "end": 1713.679,
+      "text": "I hope so. This is also aki by the way"
+    },
+    {
+      "start": 1712.24,
+      "end": 1715.1200000000001,
+      "text": "but this is a very simple one but"
+    },
+    {
+      "start": 1713.679,
+      "end": 1719.52,
+      "text": "obviously this was required to make you"
+    },
+    {
+      "start": 1715.12,
+      "end": 1723.36,
+      "text": "understand the concepts right"
+    },
+    {
+      "start": 1719.52,
+      "end": 1725.12,
+      "text": "you can say agent here"
+    },
+    {
+      "start": 1723.36,
+      "end": 1727.76,
+      "text": "like here and don't worry I'll just"
+    },
+    {
+      "start": 1725.12,
+      "end": 1730.4799999999998,
+      "text": "provide all of these nodes in my repo"
+    },
+    {
+      "start": 1727.76,
+      "end": 1735.76,
+      "text": "GitHub repo so that you can just enjoy"
+    },
+    {
+      "start": 1730.48,
+      "end": 1738.64,
+      "text": "it agent I can simply say simple"
+    },
+    {
+      "start": 1735.76,
+      "end": 1741.36,
+      "text": "and then we have"
+    },
+    {
+      "start": 1738.64,
+      "end": 1741.3600000000001,
+      "text": "complex as"
+    },
+    {
+      "start": 1742.799,
+      "end": 1746.679,
+      "text": "here let's write complex"
+    },
+    {
+      "start": 1748.88,
+      "end": 1753.5200000000002,
+      "text": "make sense perfect so now if you have"
+    },
+    {
+      "start": 1751.6,
+      "end": 1755.039,
+      "text": "this clear now you can just learn any"
+    },
+    {
+      "start": 1753.52,
+      "end": 1756.799,
+      "text": "framework because see now let's go back"
+    },
+    {
+      "start": 1755.039,
+      "end": 1758.32,
+      "text": "to our main agenda agentic AI and"
+    },
+    {
+      "start": 1756.799,
+      "end": 1761.279,
+      "text": "frameworks so now we know the difference"
+    },
+    {
+      "start": 1758.32,
+      "end": 1763.84,
+      "text": "of agentic AI and AI agents obviously"
+    },
+    {
+      "start": 1761.279,
+      "end": 1765.36,
+      "text": "and now you also know why agentic is"
+    },
+    {
+      "start": 1763.84,
+      "end": 1767.4399999999998,
+      "text": "becoming more and more popular because"
+    },
+    {
+      "start": 1765.36,
+      "end": 1769.52,
+      "text": "we do not create just one AI agent and"
+    },
+    {
+      "start": 1767.44,
+      "end": 1772.3200000000002,
+      "text": "that's it we need the entire flow Now"
+    },
+    {
+      "start": 1769.52,
+      "end": 1775.9189999999999,
+      "text": "just tell me one thing. Come here. If I"
+    },
+    {
+      "start": 1772.32,
+      "end": 1778.8799999999999,
+      "text": "just show you this agentic AI and not"
+    },
+    {
+      "start": 1775.919,
+      "end": 1780.0,
+      "text": "the simple one, complex one. Have you"
+    },
+    {
+      "start": 1778.88,
+      "end": 1781.679,
+      "text": "seen this kind of thing in your"
+    },
+    {
+      "start": 1780.0,
+      "end": 1783.679,
+      "text": "day-to-day activities? And I'm talking"
+    },
+    {
+      "start": 1781.679,
+      "end": 1786.3990000000001,
+      "text": "to you data engineer. Have you seen this"
+    },
+    {
+      "start": 1783.679,
+      "end": 1788.5590000000002,
+      "text": "kind of thing? I'm not asking you to"
+    },
+    {
+      "start": 1786.399,
+      "end": 1790.7199999999998,
+      "text": "think about LLM. No, no, no. Just take"
+    },
+    {
+      "start": 1788.559,
+      "end": 1793.279,
+      "text": "about like I'm just talking about these"
+    },
+    {
+      "start": 1790.72,
+      "end": 1794.96,
+      "text": "things, these boxes. I'm not talking"
+    },
+    {
+      "start": 1793.279,
+      "end": 1797.36,
+      "text": "about the stuff that is built inside"
+    },
+    {
+      "start": 1794.96,
+      "end": 1799.2,
+      "text": "this just the nodes."
+    },
+    {
+      "start": 1797.36,
+      "end": 1800.799,
+      "text": "Have you seen this? You will say yeah we"
+    },
+    {
+      "start": 1799.2,
+      "end": 1803.3600000000001,
+      "text": "have seen this in our pipelines."
+    },
+    {
+      "start": 1800.799,
+      "end": 1805.76,
+      "text": "Exactly. That's what I'm trying to tell"
+    },
+    {
+      "start": 1803.36,
+      "end": 1807.6,
+      "text": "you that we are actually building the"
+    },
+    {
+      "start": 1805.76,
+      "end": 1810.72,
+      "text": "pipelines and we are calling call"
+    },
+    {
+      "start": 1807.6,
+      "end": 1812.6399999999999,
+      "text": "calling it as agentic."
+    },
+    {
+      "start": 1810.72,
+      "end": 1815.1200000000001,
+      "text": "Now yes I'm not saying that it is not"
+    },
+    {
+      "start": 1812.64,
+      "end": 1817.6000000000001,
+      "text": "agentic. It is agentic. Why? Because we"
+    },
+    {
+      "start": 1815.12,
+      "end": 1820.6399999999999,
+      "text": "have AI workflows basically AI"
+    },
+    {
+      "start": 1817.6,
+      "end": 1822.399,
+      "text": "activities within each node. But on the"
+    },
+    {
+      "start": 1820.64,
+      "end": 1825.76,
+      "text": "bigger picture side this is just a"
+    },
+    {
+      "start": 1822.399,
+      "end": 1827.6,
+      "text": "pipeline. That's it. This is just a DAG"
+    },
+    {
+      "start": 1825.76,
+      "end": 1830.24,
+      "text": "directed asyclic graph that we build in"
+    },
+    {
+      "start": 1827.6,
+      "end": 1832.9599999999998,
+      "text": "our day-to-day activities."
+    },
+    {
+      "start": 1830.24,
+      "end": 1834.799,
+      "text": "Make sense? So I hope now you are very"
+    },
+    {
+      "start": 1832.96,
+      "end": 1837.039,
+      "text": "much clear and now you should know why"
+    },
+    {
+      "start": 1834.799,
+      "end": 1839.44,
+      "text": "data engineers need to lead this"
+    },
+    {
+      "start": 1837.039,
+      "end": 1841.039,
+      "text": "industry and they are not leading the"
+    },
+    {
+      "start": 1839.44,
+      "end": 1843.279,
+      "text": "industry right now because they are too"
+    },
+    {
+      "start": 1841.039,
+      "end": 1845.76,
+      "text": "late and they are not actually learning"
+    },
+    {
+      "start": 1843.279,
+      "end": 1847.6,
+      "text": "AI because this is the right time high"
+    },
+    {
+      "start": 1845.76,
+      "end": 1849.12,
+      "text": "time to learn it and don't worry I will"
+    },
+    {
+      "start": 1847.6,
+      "end": 1851.279,
+      "text": "just"
+    },
+    {
+      "start": 1849.12,
+      "end": 1853.6,
+      "text": "make it understand everything. Okay,"
+    },
+    {
+      "start": 1851.279,
+      "end": 1855.039,
+      "text": "perfect. So this is the whole concept"
+    },
+    {
+      "start": 1853.6,
+      "end": 1856.8799999999999,
+      "text": "and now let's talk about the frameworks"
+    },
+    {
+      "start": 1855.039,
+      "end": 1859.12,
+      "text": "quickly. Framework is not a very kind of"
+    },
+    {
+      "start": 1856.88,
+      "end": 1861.6000000000001,
+      "text": "complex thing. Framework is nothing but"
+    },
+    {
+      "start": 1859.12,
+      "end": 1863.6789999999999,
+      "text": "just a word that we use to portray"
+    },
+    {
+      "start": 1861.6,
+      "end": 1865.76,
+      "text": "something about you can say a module."
+    },
+    {
+      "start": 1863.679,
+      "end": 1867.8400000000001,
+      "text": "Let's say I'm building a Python package,"
+    },
+    {
+      "start": 1865.76,
+      "end": 1870.0,
+      "text": "right? I have so many classes, I have so"
+    },
+    {
+      "start": 1867.84,
+      "end": 1871.9189999999999,
+      "text": "many functions, I have so many variables"
+    },
+    {
+      "start": 1870.0,
+      "end": 1874.48,
+      "text": "and blah blah blah blah blah. When I"
+    },
+    {
+      "start": 1871.919,
+      "end": 1876.3990000000001,
+      "text": "package them together, when it is ready"
+    },
+    {
+      "start": 1874.48,
+      "end": 1878.3990000000001,
+      "text": "to be reusable by anyone, it will be"
+    },
+    {
+      "start": 1876.399,
+      "end": 1880.6399999999999,
+      "text": "called as framework."
+    },
+    {
+      "start": 1878.399,
+      "end": 1882.9599999999998,
+      "text": "Simple if you just want to understand"
+    },
+    {
+      "start": 1880.64,
+      "end": 1884.159,
+      "text": "it. Okay. And if you just want to learn"
+    },
+    {
+      "start": 1882.96,
+      "end": 1885.919,
+      "text": "the definition of framework, go to"
+    },
+    {
+      "start": 1884.159,
+      "end": 1887.8400000000001,
+      "text": "Wikipedia and learn it. This is the"
+    },
+    {
+      "start": 1885.919,
+      "end": 1890.7990000000002,
+      "text": "understanding of framework, right? So"
+    },
+    {
+      "start": 1887.84,
+      "end": 1892.9599999999998,
+      "text": "the thing is now in order to build all"
+    },
+    {
+      "start": 1890.799,
+      "end": 1895.679,
+      "text": "of these things, obviously we can use"
+    },
+    {
+      "start": 1892.96,
+      "end": 1897.039,
+      "text": "our traditional Python language or any"
+    },
+    {
+      "start": 1895.679,
+      "end": 1901.2,
+      "text": "programming language, it's not a big"
+    },
+    {
+      "start": 1897.039,
+      "end": 1903.44,
+      "text": "deal. But in order to integrate with AI"
+    },
+    {
+      "start": 1901.2,
+      "end": 1906.24,
+      "text": "models, those LLM tool calling"
+    },
+    {
+      "start": 1903.44,
+      "end": 1908.3200000000002,
+      "text": "capabilities, all those things, we need"
+    },
+    {
+      "start": 1906.24,
+      "end": 1910.64,
+      "text": "to write our own package, right? every"
+    },
+    {
+      "start": 1908.32,
+      "end": 1912.8799999999999,
+      "text": "time let's say if I am um if I'm just"
+    },
+    {
+      "start": 1910.64,
+      "end": 1914.96,
+      "text": "trying to build this particular logic I"
+    },
+    {
+      "start": 1912.88,
+      "end": 1916.48,
+      "text": "know that I will be just reusing my code"
+    },
+    {
+      "start": 1914.96,
+      "end": 1918.559,
+      "text": "again and again so let's build a package"
+    },
+    {
+      "start": 1916.48,
+      "end": 1920.08,
+      "text": "so I will build my package you will say"
+    },
+    {
+      "start": 1918.559,
+      "end": 1921.6,
+      "text": "you you will say the same thing you will"
+    },
+    {
+      "start": 1920.08,
+      "end": 1923.36,
+      "text": "build your own package then third person"
+    },
+    {
+      "start": 1921.6,
+      "end": 1926.1589999999999,
+      "text": "will say the person will build the build"
+    },
+    {
+      "start": 1923.36,
+      "end": 1928.9599999999998,
+      "text": "his own package so now we have some"
+    },
+    {
+      "start": 1926.159,
+      "end": 1931.7600000000002,
+      "text": "solutions in the industry very popular"
+    },
+    {
+      "start": 1928.96,
+      "end": 1933.6000000000001,
+      "text": "ones are like lang chain okay we have"
+    },
+    {
+      "start": 1931.76,
+      "end": 1936.559,
+      "text": "one to two very popular more we have"
+    },
+    {
+      "start": 1933.6,
+      "end": 1938.32,
+      "text": "llama index we have I think there's one"
+    },
+    {
+      "start": 1936.559,
+      "end": 1939.9189999999999,
+      "text": "to two more like there are so But these"
+    },
+    {
+      "start": 1938.32,
+      "end": 1942.6399999999999,
+      "text": "are the popular and trusted ones that"
+    },
+    {
+      "start": 1939.919,
+      "end": 1944.48,
+      "text": "you should use. So, Langchen is the most"
+    },
+    {
+      "start": 1942.64,
+      "end": 1946.24,
+      "text": "popular one right now that everyone is"
+    },
+    {
+      "start": 1944.48,
+      "end": 1949.6,
+      "text": "talking about because it is open source"
+    },
+    {
+      "start": 1946.24,
+      "end": 1951.6,
+      "text": "plus it is the most mature I would say"
+    },
+    {
+      "start": 1949.6,
+      "end": 1954.32,
+      "text": "um framework plus it is well integrated"
+    },
+    {
+      "start": 1951.6,
+      "end": 1957.039,
+      "text": "with all of the tools and technologies."
+    },
+    {
+      "start": 1954.32,
+      "end": 1961.039,
+      "text": "Wow, this is amazing. So now let's talk"
+    },
+    {
+      "start": 1957.039,
+      "end": 1965.96,
+      "text": "about the lang. Now what is lang chain?"
+    },
+    {
+      "start": 1961.039,
+      "end": 1965.96,
+      "text": "Lang chain under the hood I would say."
+    },
+    {
+      "start": 1966.08,
+      "end": 1972.32,
+      "text": "Lang chain under the hood."
+    },
+    {
+      "start": 1969.76,
+      "end": 1974.64,
+      "text": "Okay, lang chain. I know the name is"
+    },
+    {
+      "start": 1972.32,
+      "end": 1976.0,
+      "text": "funny but it is really really cool. I"
+    },
+    {
+      "start": 1974.64,
+      "end": 1979.039,
+      "text": "still remember like when I was learning"
+    },
+    {
+      "start": 1976.0,
+      "end": 1980.32,
+      "text": "lang chain I would say years back it was"
+    },
+    {
+      "start": 1979.039,
+      "end": 1982.24,
+      "text": "like really really cool and it was"
+    },
+    {
+      "start": 1980.32,
+      "end": 1984.0,
+      "text": "really new and after that we have got so"
+    },
+    {
+      "start": 1982.24,
+      "end": 1985.44,
+      "text": "so so many new new things. But yeah,"
+    },
+    {
+      "start": 1984.0,
+      "end": 1988.72,
+      "text": "let's talk about lang chain because lang"
+    },
+    {
+      "start": 1985.44,
+      "end": 1991.039,
+      "text": "chain was the early mover of the"
+    },
+    {
+      "start": 1988.72,
+      "end": 1995.559,
+      "text": "AI agentic or basically you can say"
+    },
+    {
+      "start": 1991.039,
+      "end": 1995.559,
+      "text": "agentic AI and AI agents industry."
+    },
+    {
+      "start": 1997.2,
+      "end": 2004.3990000000001,
+      "text": "Yeah, stay hydrated even if it is cold."
+    },
+    {
+      "start": 2002.0,
+      "end": 2008.44,
+      "text": "So lang chain under the hood. Now what"
+    },
+    {
+      "start": 2004.399,
+      "end": 2008.4399999999998,
+      "text": "is lang chain? Now"
+    },
+    {
+      "start": 2008.72,
+      "end": 2013.76,
+      "text": "let's talk about lang chain. So let's"
+    },
+    {
+      "start": 2010.48,
+      "end": 2015.519,
+      "text": "say you have something within your code"
+    },
+    {
+      "start": 2013.76,
+      "end": 2017.679,
+      "text": "right you want to build this particular"
+    },
+    {
+      "start": 2015.519,
+      "end": 2018.88,
+      "text": "thing if you are a data engineer you"
+    },
+    {
+      "start": 2017.679,
+      "end": 2021.039,
+      "text": "would have built something similar to"
+    },
+    {
+      "start": 2018.88,
+      "end": 2022.48,
+      "text": "this using your Python functions you"
+    },
+    {
+      "start": 2021.039,
+      "end": 2024.0,
+      "text": "would have built it right it's not a big"
+    },
+    {
+      "start": 2022.48,
+      "end": 2025.3600000000001,
+      "text": "deal because you are a data engineer you"
+    },
+    {
+      "start": 2024.0,
+      "end": 2026.88,
+      "text": "are a data professional you know already"
+    },
+    {
+      "start": 2025.36,
+      "end": 2030.6399999999999,
+      "text": "Python"
+    },
+    {
+      "start": 2026.88,
+      "end": 2032.3200000000002,
+      "text": "right let's say you built this okay"
+    },
+    {
+      "start": 2030.64,
+      "end": 2036.72,
+      "text": "where is Rahul let's bring that bring"
+    },
+    {
+      "start": 2032.32,
+      "end": 2040.72,
+      "text": "that Rahul let's say this Rahul"
+    },
+    {
+      "start": 2036.72,
+      "end": 2044.08,
+      "text": "I'm making Rahul famous right So now we"
+    },
+    {
+      "start": 2040.72,
+      "end": 2048.2400000000002,
+      "text": "need to build a framework. Okay, I"
+    },
+    {
+      "start": 2044.08,
+      "end": 2051.24,
+      "text": "basically I need to build the agentic AI"
+    },
+    {
+      "start": 2048.24,
+      "end": 2051.24,
+      "text": "solution,"
+    },
+    {
+      "start": 2051.76,
+      "end": 2056.639,
+      "text": "right? And you know what we need to"
+    },
+    {
+      "start": 2053.52,
+      "end": 2058.32,
+      "text": "build and let me just bring this thing"
+    },
+    {
+      "start": 2056.639,
+      "end": 2061.839,
+      "text": "as well like it will make more sense."
+    },
+    {
+      "start": 2058.32,
+      "end": 2066.8790000000004,
+      "text": "Let's say I want to build this,"
+    },
+    {
+      "start": 2061.839,
+      "end": 2070.399,
+      "text": "right? Let's say we want to build this."
+    },
+    {
+      "start": 2066.879,
+      "end": 2073.2,
+      "text": "Our goal is this one"
+    },
+    {
+      "start": 2070.399,
+      "end": 2076.399,
+      "text": "build this Rahul."
+    },
+    {
+      "start": 2073.2,
+      "end": 2077.6789999999996,
+      "text": "So now this Rahul can build this this"
+    },
+    {
+      "start": 2076.399,
+      "end": 2081.44,
+      "text": "entire thing. It's not a big deal for"
+    },
+    {
+      "start": 2077.679,
+      "end": 2083.919,
+      "text": "Rahul because Rahul is a pro coder even"
+    },
+    {
+      "start": 2081.44,
+      "end": 2085.359,
+      "text": "not a procoder but he can build this"
+    },
+    {
+      "start": 2083.919,
+      "end": 2086.879,
+      "text": "using something called as let's say"
+    },
+    {
+      "start": 2085.359,
+      "end": 2089.44,
+      "text": "Python"
+    },
+    {
+      "start": 2086.879,
+      "end": 2091.52,
+      "text": "right because Python is like amazing"
+    },
+    {
+      "start": 2089.44,
+      "end": 2092.639,
+      "text": "language I love Python and you should"
+    },
+    {
+      "start": 2091.52,
+      "end": 2094.639,
+      "text": "also love Python if you're data"
+    },
+    {
+      "start": 2092.639,
+      "end": 2097.839,
+      "text": "engineer. So let's say you are building"
+    },
+    {
+      "start": 2094.639,
+      "end": 2099.92,
+      "text": "this thing right simple"
+    },
+    {
+      "start": 2097.839,
+      "end": 2104.0,
+      "text": "perfect so this Rahul can build this"
+    },
+    {
+      "start": 2099.92,
+      "end": 2106.079,
+      "text": "thing using Python okay"
+    },
+    {
+      "start": 2104.0,
+      "end": 2108.56,
+      "text": "makes sense"
+    },
+    {
+      "start": 2106.079,
+      "end": 2111.119,
+      "text": "okay using Python but now what will"
+    },
+    {
+      "start": 2108.56,
+      "end": 2114.24,
+      "text": "happen what will happen all of these"
+    },
+    {
+      "start": 2111.119,
+      "end": 2116.32,
+      "text": "code cells all of these LLM tool calls"
+    },
+    {
+      "start": 2114.24,
+      "end": 2118.4799999999996,
+      "text": "um integration with the tools and then"
+    },
+    {
+      "start": 2116.32,
+      "end": 2120.6400000000003,
+      "text": "just making it as an AI agent and then"
+    },
+    {
+      "start": 2118.48,
+      "end": 2123.68,
+      "text": "orchestrating it it will take a lot of"
+    },
+    {
+      "start": 2120.64,
+      "end": 2127.839,
+      "text": "time Right?"
+    },
+    {
+      "start": 2123.68,
+      "end": 2130.24,
+      "text": "Everything is manual."
+    },
+    {
+      "start": 2127.839,
+      "end": 2134.0,
+      "text": "That means everything is manual. That"
+    },
+    {
+      "start": 2130.24,
+      "end": 2135.9199999999996,
+      "text": "means Rahul"
+    },
+    {
+      "start": 2134.0,
+      "end": 2138.64,
+      "text": "needs to"
+    },
+    {
+      "start": 2135.92,
+      "end": 2140.88,
+      "text": "build"
+    },
+    {
+      "start": 2138.64,
+      "end": 2142.64,
+      "text": "all the classes. Now you will say bro"
+    },
+    {
+      "start": 2140.88,
+      "end": 2144.32,
+      "text": "why Rahul needs to build the classes? He"
+    },
+    {
+      "start": 2142.64,
+      "end": 2147.04,
+      "text": "will simply write the code because Rahul"
+    },
+    {
+      "start": 2144.32,
+      "end": 2149.28,
+      "text": "is working in an organization right and"
+    },
+    {
+      "start": 2147.04,
+      "end": 2151.2,
+      "text": "in in that organization there are lots"
+    },
+    {
+      "start": 2149.28,
+      "end": 2152.96,
+      "text": "of developers who are working. So in"
+    },
+    {
+      "start": 2151.2,
+      "end": 2155.2,
+      "text": "order to use that code, we need to build"
+    },
+    {
+      "start": 2152.96,
+      "end": 2156.96,
+      "text": "the classes, right? And I hope that you"
+    },
+    {
+      "start": 2155.2,
+      "end": 2159.5989999999997,
+      "text": "have some basic understanding of Python"
+    },
+    {
+      "start": 2156.96,
+      "end": 2162.32,
+      "text": "like Python class, Python object. If"
+    },
+    {
+      "start": 2159.599,
+      "end": 2164.0,
+      "text": "not, bro, just go and just learn Python"
+    },
+    {
+      "start": 2162.32,
+      "end": 2165.599,
+      "text": "as soon as possible. And if you want to"
+    },
+    {
+      "start": 2164.0,
+      "end": 2166.88,
+      "text": "learn from me, if you want to learn"
+    },
+    {
+      "start": 2165.599,
+      "end": 2169.3590000000004,
+      "text": "Python from me, I have a dedicated"
+    },
+    {
+      "start": 2166.88,
+      "end": 2171.599,
+      "text": "Python course on my channel. And you can"
+    },
+    {
+      "start": 2169.359,
+      "end": 2173.119,
+      "text": "just simply search on YouTube An Lamba"
+    },
+    {
+      "start": 2171.599,
+      "end": 2175.119,
+      "text": "Python full course and you will get the"
+    },
+    {
+      "start": 2173.119,
+      "end": 2178.48,
+      "text": "Python full course and just make your"
+    },
+    {
+      "start": 2175.119,
+      "end": 2180.0,
+      "text": "Python skills or take your Python skills"
+    },
+    {
+      "start": 2178.48,
+      "end": 2182.32,
+      "text": "uh through the roof because it is really"
+    },
+    {
+      "start": 2180.0,
+      "end": 2187.92,
+      "text": "important. So Rahul needs to build all"
+    },
+    {
+      "start": 2182.32,
+      "end": 2190.96,
+      "text": "the classes from scratch. Right"
+    },
+    {
+      "start": 2187.92,
+      "end": 2193.359,
+      "text": "now I have a solution"
+    },
+    {
+      "start": 2190.96,
+      "end": 2197.48,
+      "text": "or"
+    },
+    {
+      "start": 2193.359,
+      "end": 2197.48,
+      "text": "Rahul can use a framework."
+    },
+    {
+      "start": 2198.72,
+      "end": 2204.5989999999997,
+      "text": "Rahul can use the agentic framework"
+    },
+    {
+      "start": 2205.2,
+      "end": 2211.359,
+      "text": "called langj."
+    },
+    {
+      "start": 2209.28,
+      "end": 2213.92,
+      "text": "Make sense?"
+    },
+    {
+      "start": 2211.359,
+      "end": 2217.5989999999997,
+      "text": "Now in that particular framework all the"
+    },
+    {
+      "start": 2213.92,
+      "end": 2220.16,
+      "text": "classes are built. Obviously there's not"
+    },
+    {
+      "start": 2217.599,
+      "end": 2221.599,
+      "text": "like very specific use cases as per your"
+    },
+    {
+      "start": 2220.16,
+      "end": 2223.52,
+      "text": "organization. Obviously you need to make"
+    },
+    {
+      "start": 2221.599,
+      "end": 2226.1600000000003,
+      "text": "so many changes like so many tweaks so"
+    },
+    {
+      "start": 2223.52,
+      "end": 2228.079,
+      "text": "many things but it is very much"
+    },
+    {
+      "start": 2226.16,
+      "end": 2230.96,
+      "text": "efficient. Why? Because all the test"
+    },
+    {
+      "start": 2228.079,
+      "end": 2233.04,
+      "text": "cases all the error handling all of"
+    },
+    {
+      "start": 2230.96,
+      "end": 2235.359,
+      "text": "those things boilerplate code everything"
+    },
+    {
+      "start": 2233.04,
+      "end": 2240.079,
+      "text": "is gone. It will save us a lot of time."
+    },
+    {
+      "start": 2235.359,
+      "end": 2241.68,
+      "text": "So Rahul will take this approach."
+    },
+    {
+      "start": 2240.079,
+      "end": 2244.1600000000003,
+      "text": "Okay. Rahul will take this approach"
+    },
+    {
+      "start": 2241.68,
+      "end": 2246.7999999999997,
+      "text": "because Rahul is smart."
+    },
+    {
+      "start": 2244.16,
+      "end": 2250.2799999999997,
+      "text": "So now lang chain is what langchain is"
+    },
+    {
+      "start": 2246.8,
+      "end": 2250.28,
+      "text": "doing. So, Langjain"
+    },
+    {
+      "start": 2250.4,
+      "end": 2259.92,
+      "text": "has built the Python classes"
+    },
+    {
+      "start": 2255.359,
+      "end": 2261.839,
+      "text": "for your agentic solutions"
+    },
+    {
+      "start": 2259.92,
+      "end": 2265.04,
+      "text": "that"
+    },
+    {
+      "start": 2261.839,
+      "end": 2267.839,
+      "text": "you can use anytime or you can say that"
+    },
+    {
+      "start": 2265.04,
+      "end": 2269.44,
+      "text": "you can use and"
+    },
+    {
+      "start": 2267.839,
+      "end": 2271.68,
+      "text": "modify"
+    },
+    {
+      "start": 2269.44,
+      "end": 2275.04,
+      "text": "as per your"
+    },
+    {
+      "start": 2271.68,
+      "end": 2278.24,
+      "text": "use cases. Simple. This is lang chain"
+    },
+    {
+      "start": 2275.04,
+      "end": 2280.079,
+      "text": "under the hood. Nothing special. Nothing"
+    },
+    {
+      "start": 2278.24,
+      "end": 2281.839,
+      "text": "special. It is not magic. It is not"
+    },
+    {
+      "start": 2280.079,
+      "end": 2284.48,
+      "text": "actually no magic. You can write the"
+    },
+    {
+      "start": 2281.839,
+      "end": 2286.24,
+      "text": "exact code that Langchain has built. All"
+    },
+    {
+      "start": 2284.48,
+      "end": 2289.04,
+      "text": "the classes you can build on your own as"
+    },
+    {
+      "start": 2286.24,
+      "end": 2291.52,
+      "text": "well. But the good thing is Langchain"
+    },
+    {
+      "start": 2289.04,
+      "end": 2293.119,
+      "text": "has built all those classes for you. So"
+    },
+    {
+      "start": 2291.52,
+      "end": 2295.359,
+      "text": "that you do not need to build everything"
+    },
+    {
+      "start": 2293.119,
+      "end": 2298.32,
+      "text": "from scratch again."
+    },
+    {
+      "start": 2295.359,
+      "end": 2302.64,
+      "text": "And I hope it makes sense."
+    },
+    {
+      "start": 2298.32,
+      "end": 2304.32,
+      "text": "It makes sense to me. Yes."
+    },
+    {
+      "start": 2302.64,
+      "end": 2305.92,
+      "text": "Okay. So this is lanchin under the hood."
+    },
+    {
+      "start": 2304.32,
+      "end": 2307.599,
+      "text": "So that means we are simply trying to"
+    },
+    {
+      "start": 2305.92,
+      "end": 2309.28,
+      "text": "learn lang chain from the Python point"
+    },
+    {
+      "start": 2307.599,
+      "end": 2311.44,
+      "text": "of view. There are like type I think"
+    },
+    {
+      "start": 2309.28,
+      "end": 2312.88,
+      "text": "TypeScript or JavaScript support as well"
+    },
+    {
+      "start": 2311.44,
+      "end": 2315.599,
+      "text": "but we are simply learning from Python"
+    },
+    {
+      "start": 2312.88,
+      "end": 2317.599,
+      "text": "point of view. Make sense? So let's help"
+    },
+    {
+      "start": 2315.599,
+      "end": 2319.119,
+      "text": "Rahul to build all of these things and"
+    },
+    {
+      "start": 2317.599,
+      "end": 2320.6400000000003,
+      "text": "we know that Rahul doesn't know anything"
+    },
+    {
+      "start": 2319.119,
+      "end": 2322.1600000000003,
+      "text": "about Langchain because Rahul is new to"
+    },
+    {
+      "start": 2320.64,
+      "end": 2324.16,
+      "text": "Langchain. So we have a cool"
+    },
+    {
+      "start": 2322.16,
+      "end": 2325.68,
+      "text": "documentation about lang chain and let"
+    },
+    {
+      "start": 2324.16,
+      "end": 2327.68,
+      "text": "me just bring that lang chain"
+    },
+    {
+      "start": 2325.68,
+      "end": 2329.2,
+      "text": "documentation"
+    },
+    {
+      "start": 2327.68,
+      "end": 2331.5989999999997,
+      "text": "and this is the official documentation"
+    },
+    {
+      "start": 2329.2,
+      "end": 2335.04,
+      "text": "for lang chain that they keep on"
+    },
+    {
+      "start": 2331.599,
+      "end": 2337.04,
+      "text": "updating and see python and typescript."
+    },
+    {
+      "start": 2335.04,
+      "end": 2338.48,
+      "text": "So we have both capabilities. I will"
+    },
+    {
+      "start": 2337.04,
+      "end": 2340.64,
+      "text": "simply say lang chain python and this is"
+    },
+    {
+      "start": 2338.48,
+      "end": 2342.96,
+      "text": "the documentation of it. See we have"
+    },
+    {
+      "start": 2340.64,
+      "end": 2345.68,
+      "text": "everything here. We have installation,"
+    },
+    {
+      "start": 2342.96,
+      "end": 2349.92,
+      "text": "quick start, change log and blah blah"
+    },
+    {
+      "start": 2345.68,
+      "end": 2351.44,
+      "text": "blah. And then we have agents."
+    },
+    {
+      "start": 2349.92,
+      "end": 2353.2000000000003,
+      "text": "Very long documentation, very very"
+    },
+    {
+      "start": 2351.44,
+      "end": 2354.64,
+      "text": "detailed documentation and I love it to"
+    },
+    {
+      "start": 2353.2,
+      "end": 2357.9199999999996,
+      "text": "be honest and you can also go and check"
+    },
+    {
+      "start": 2354.64,
+      "end": 2359.92,
+      "text": "it out. But yes, initially Rahul wants"
+    },
+    {
+      "start": 2357.92,
+      "end": 2361.76,
+      "text": "quick overview, quick tutorial so that"
+    },
+    {
+      "start": 2359.92,
+      "end": 2363.76,
+      "text": "Rahul can start building using lang"
+    },
+    {
+      "start": 2361.76,
+      "end": 2365.92,
+      "text": "chain and sideways Rahul can also"
+    },
+    {
+      "start": 2363.76,
+      "end": 2367.76,
+      "text": "explore the documentation but Rahul"
+    },
+    {
+      "start": 2365.92,
+      "end": 2369.2000000000003,
+      "text": "wants some guidance right some"
+    },
+    {
+      "start": 2367.76,
+      "end": 2371.0400000000004,
+      "text": "structured approach because obviously"
+    },
+    {
+      "start": 2369.2,
+      "end": 2372.3999999999996,
+      "text": "when I was also learning lang chain"
+    },
+    {
+      "start": 2371.04,
+      "end": 2374.64,
+      "text": "instead of directly going to the"
+    },
+    {
+      "start": 2372.4,
+      "end": 2377.119,
+      "text": "documentation I also like was studying"
+    },
+    {
+      "start": 2374.64,
+      "end": 2380.3199999999997,
+      "text": "through so many sources like books um"
+    },
+    {
+      "start": 2377.119,
+      "end": 2383.28,
+      "text": "playlist courses and then blogs and then"
+    },
+    {
+      "start": 2380.32,
+      "end": 2385.04,
+      "text": "documentation like everything because I"
+    },
+    {
+      "start": 2383.28,
+      "end": 2387.44,
+      "text": "like I I'm not I will not say like there"
+    },
+    {
+      "start": 2385.04,
+      "end": 2389.839,
+      "text": "was no structured learning available or"
+    },
+    {
+      "start": 2387.44,
+      "end": 2391.68,
+      "text": "video available. Um I just wanted to"
+    },
+    {
+      "start": 2389.839,
+      "end": 2394.16,
+      "text": "learn on my own like how things are"
+    },
+    {
+      "start": 2391.68,
+      "end": 2396.3199999999997,
+      "text": "working and then I realized let me just"
+    },
+    {
+      "start": 2394.16,
+      "end": 2398.0789999999997,
+      "text": "pass on this knowledge of all the"
+    },
+    {
+      "start": 2396.32,
+      "end": 2400,
+      "text": "sources. It is like a condensed form of"
+    },
+    {
+      "start": 2398.079,
+      "end": 2400,
+      "text": "knowledge which is you can say the"
+    }
+  ]
+}

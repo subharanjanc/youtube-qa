@@ -1,0 +1,322 @@
+[
+  {
+    "id": "95c958593d661cfe513f6799f80bab71c659d9d9745ca64dae93d68ae4903a96",
+    "text": "hello all my name is Krish naak and welcome to my YouTube channel so guys as you all know now many many companies are specifically using llm models uh to solve various use cases not only that they're using common web Frameworks like Lang chain Lama index you know to solve different different applications now in langin itself uh there is an amazing modu that has actually come which is called as Lang Smith now what exactly lsmith will be capable of doing it will be very very helpful because when you are actually building a production grade llm application Lang spin will be super important okay so in this video we will be talking about lsmith I will be showing you a complete end to endend use case and with the help of lsmith I will also show you how you can debug test evaluate monitor your entire llm applications and llm Frameworks and you'll also be able to see the performance of the llm model so yes please make sure that you watch this video till the end because this is an amazing video together and for your learning capabilities it will be super amazing when you're solving projects and also I'll keep a light Target of, in this specific video because uh you know that will actually motivate me a bit",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 0.52,
+      "end_seconds": 75.04,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "57f727118b49d3a196b533e5a68cf19091c494190e68ca551de4d9ebfd1b572c",
+    "text": "amazing video together and for your learning capabilities it will be super amazing when you're solving projects and also I'll keep a light Target of, in this specific video because uh you know that will actually motivate me a bit okay so let me go ahead and share my screen so uh if you have not used Lang chain I would suggest now start using Lang chain guys because it is a very common framework which can be specifically used with respect to any llm models that you have right and I have also created a lot of videos now let's understand what exactly is lsmith okay now over here you can see the definition lsmith is a platform for building production grade llm application it lets you debug test evaluate and monitor chains and intelligent agents built on any llm Frameworks and seamlessly integrates with Lang chain the goto open source framework for building with llms lsmith is developed by Lang chain and again at the end of the you will be able to do all this kind of activities debug test evaluate and monitor in short if I probably consider lsmith it is a kind of a llm Ops uh platform which will actually help you to you know see that how the performance of your llm module",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 59.079,
+      "end_seconds": 141.2,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=59s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7567876409f11d56ac3bbe44f245a1f738ceddbd559dbbbb384ea35d32ec31f6",
+    "text": "debug test evaluate and monitor in short if I probably consider lsmith it is a kind of a llm Ops uh platform which will actually help you to you know see that how the performance of your llm module is llm model is okay so let's go ahead and let's see that how practically we can actually do it and there will be a kind of setup that will be required so first to start with what you really need to do is that sign up for the Lang chin account once you probably sign up and sign in you will be able to see something like this you know so once I probably go ahead and click on go to app you'll be able to see this entire dashboard you know and from this particular dashboard I have already running four projects over here and I'll show you how you can actually create your own projects along with that how you can actually see the entire results everything will be shown over here you know uh the first section is basically the projects one then you have have annotation cues option then you have deployment options and this deployment option will soon get added with the help of Lang serve okay and that will probably be my next video once this I I",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 123.119,
+      "end_seconds": 193.159,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=123s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "01c48f7b5a1d4eae556d674ceebdde5e15663650d6c95e3d805d566085aa667c",
+    "text": "annotation cues option then you have deployment options and this deployment option will soon get added with the help of Lang serve okay and that will probably be my next video once this I I get the access of this okay then you also have an option of creating your own data set and testing I've already checked it out and there is also something called as Hub uh it's just like uh Docker Hub itself or hugging face Hub itself where you can also download multiple things now first thing uh in order to use this entire Lang chain like an mlops platform uh I will go to the settings and uh you really need to create some API key okay so first of all create this specific API key because as soon as you run any code it should be able to you know push all the kind of analytics data over here right and then you'll be able to see in the form of graphs and all so first of all go ahead and create the API I've already created the API over here I will use this same API copy it and specifically use it in the my environment variable again to give you a brief idea what we are exactly doing with the help of lsmith it is a platform",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 179.959,
+      "end_seconds": 249.319,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=179s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c42a2c3b00fe0df92475b19445f2fce4ddefe14dc61f44d3ae4d85c1d68d60ee",
+    "text": "use this same API copy it and specifically use it in the my environment variable again to give you a brief idea what we are exactly doing with the help of lsmith it is a platform for building production Guild llm application and we will be debugging testing evaluating monitoring the entire llm application okay so let me go ahead and open it now the first thing that you really need to create an environment and here I have created some requirement. txt in this whatever libraries you specifically require like Lang chain Lang chain open AI Lang chain core and python. so this three four libraries I'll be specifically using now the next step uh you know is my environment variable now in the environment variable I really need to put some good good information okay so first is Lang chain okay so I will go ahead and use some Lang chain API so let me just copy it so this is my Lang chain API okay and this API key will be the same API key that I have actually created okay so I will copy it and paste it over here the next key that is specifically required is my open opencore uncore API uncore key okay and here also I will be using my open API key just to",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 235.959,
+      "end_seconds": 326.919,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=235s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "87d64a5b3b7e70d13430c32fd9cd938e19cbe10662d6e42975229ef4bfd5544b",
+    "text": "copy it and paste it over here the next key that is specifically required is my open opencore uncore API uncore key okay and here also I will be using my open API key just to show you this specific uh example I'm going to use an open AI model okay so open a API key I'm going to use it that is chat gbd 3.5 or 4 the next key that I'm actually going to create is my Lang Chen project name so that whatever information whatever things whatever model that I'm evaluating it should be kept under this specific project all the information okay so here I will say test llm app okay so the third API key is basically created so these three are the main important information that is basically required now in the open API key I will just go ahead I'll pause the video I'll go ahead and update my API key later on I'll be using the same API key in my code so let's go ahead and update this and then further we will go ahead and install all these requirements and then we will go ahead and create our own application so guys I have updated all the environment variables in myv file the reason we are updating it because see Lang chain API key is used so that",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 305.24,
+      "end_seconds": 390.59900000000005,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=305s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "bf5364e15a70acdbd38d238ca506653421851a107e6703ab7edd111715d4cc17",
+    "text": "we will go ahead and create our own application so guys I have updated all the environment variables in myv file the reason we are updating it because see Lang chain API key is used so that I'll be able to create the projects over here like see there are three projects that is written over here and inside this projects only all the information with respect to any analytics that is required for debugging testing monitoring will be updated you know so that is the reason we require a lanin API how do you get it just go to the settings over here and just go ahead and click on the create API okay so create API and you'll be getting the API key the second is open AI API key I we will try to develop it with respect to an open llm model and the third one is the project name okay so this three information we have updated now let's do one thing let's quickly go ahead and write my app.py file and here I'm going to write my all the code okay so first of all uh I'm going to update three important libraries over here from linore openai import chat openai from linore core. prompts I'm going to import chat prom template and from langin code.",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 376.919,
+      "end_seconds": 449.039,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=376s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f571a3da226c2b2744bc7700d5a67c63122e0c46d194d7c23836ea81adf644fc",
+    "text": "to write my all the code okay so first of all uh I'm going to update three important libraries over here from linore openai import chat openai from linore core. prompts I'm going to import chat prom template and from langin code. output parser we are going to use St Str output par procor this s Str output procer is for the display purpose how the results needs to be displayed in front of us then I will go ahead and import OS so this will be there along with this what I'm actually going to do is that I'm going to use Dov import load. EnV okay and then finally you'll be able to see that I will call this loore Dov okay done now all the environment variable that I have specifically created I will call it or I'll set it with my os. environment variable see os. environment open API key and if I write os. get EnV I'll be able to get my open key then two more parameters that we really one single parameter that we need to set so that this entire information gets displayed over there in the portal itself that is nothing but linore tracing _ V V2 is nothing but version true and we have to keep this value as true okay so that os. environment Lang",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 428.319,
+      "end_seconds": 518.0,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=428s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "893f24c6c414fb0c31d8420cd77d622c5fa16683a7da5a3e640e8756104e6d64",
+    "text": "gets displayed over there in the portal itself that is nothing but linore tracing _ V V2 is nothing but version true and we have to keep this value as true okay so that os. environment Lang chain tracing V2 that basically means this entire llm application will get traced as soon as we execute the code okay then you have os. environment variable for my Lang chain API key and I'm going to get that API key from os. get En EnV now this is done now what I'm actually going to do is that I'm going to create my prompt and inside this prompt and this prompt will be created with the help of Lang chain I'm going to write chat prom template uh and go ahead and write do from message Chat promp template. promore magees and then I will go ahead and set up my messages over here okay and again this will be in the form of list the first message like what is the default instruction that I really need to give to my llm model okay so that will be nothing but with respect to system and here I'm saying you are a helpful assistant please respond to the user okay user questions I will write something like this okay once this is done I will go ahead and",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 503.24,
+      "end_seconds": 597.16,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=503s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "39bdd4f769d74042e76da822e041568a08b5968a2dce5008a40fb4bb1c44616d",
+    "text": "nothing but with respect to system and here I'm saying you are a helpful assistant please respond to the user okay user questions I will write something like this okay once this is done I will go ahead and create my second prompt and this will be with respect to my user okay just to give you an idea and the user what I can basically do is that I will create some question and some context okay so here let us go ahead and write question is equal to I'll create a parameter which is called as question question along with this I will use a context parameter context colon I will give my context over here so since I'm giving the context let me do one thing here here let me add one more important thing you are a helpful assistant please response to the user question or user request okay let me do one thing requir request only based on the given context okay now you'll be able to see that we'll be able to track everything that is basically happening with the help of this open a okay so this two information is done and this is my prompt that is basically getting created okay now my question will be that this question I'm going to give okay question",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 570.0,
+      "end_seconds": 671.639,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=570s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d55d8a2e1ec4f06fe807f9b420f897ca22da6c59fffdcb752b414bdd6191c5fd",
+    "text": "help of this open a okay so this two information is done and this is my prompt that is basically getting created okay now my question will be that this question I'm going to give okay question will be can you summarize the can you summarize the speech okay uh let me do can you summarize the speech can you summarize the speech okay I will just give a question mark okay now the speech that I'm going to give okay let's take any speech over here so here I'll say context and this context will be my speech itself so let me go ahead and select some speech okay I will see some speech let's say apj Abdul Abdul Kalam speech okay and let's see okay can you summarize the speech I will just take okay can you summarize the speech by apj Abdul kamam I'll write something like this by or let me just write like this the context will basically be my in triple quotes okay I'm going to use a triple quote and probably use the speech now this is the speech that I have and we're going to summarize the speech with the help of this chat prompt template okay now let me do one thing is that what I will do after this I will go ahead and write",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 656.48,
+      "end_seconds": 768.72,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=656s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "702ca7b7bc886c1bd75002d88dd040ae5501f8e73218ee7df933357955903bbc",
+    "text": "speech that I have and we're going to summarize the speech with the help of this chat prompt template okay now let me do one thing is that what I will do after this I will go ahead and write print chain dot invoke and here I'm going to basically give my question colon question comma context colon context this is how we run with respect to any kind of llm application now the thing is that I have still not created the chain the chain will probably get created after I create my model okay so let's go ahead and Define my model uh and obviously I will do it after prompt so here I'm going to basically write model is equal to chat open okay and here I'm going to use my model name is equal to GPT 3.5 turbo okay and then finally I'm going to use my output parser and this output parsel will be nothing but the St Str output parer so that it'll be responsible forplay uh for displaying the output of the model itself okay and here finally we go ahead and create my chain my chain will be first having prompt after this after the prompt it will get combined with the model and after that we will have this output parser okay so this chain we are going",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 754.079,
+      "end_seconds": 858.04,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=754s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "86ad0cb4a3dc9cf71e9096fa3a9c8b2c38c1a08d18c6412eaf0a9a61c2685626",
+    "text": "my chain my chain will be first having prompt after this after the prompt it will get combined with the model and after that we will have this output parser okay so this chain we are going to invoke once we get the question and the context so this entire information see how the flow is of this how this chatbot flow is basically getting created you'll be able to see that once I run this right this all the information will get captured in the dashboard and that is how we are able to test debug deploy monitor not deploy but monitor the entire llm application to see the performance now the major idea over here is basically to make sure that to keep this lanon tracing to true and whatever llm application we specifically use it will make sure that it is going to send all the information or track all the information in that particular dashboard so let's go ahead and let's open my terminal okay let's go ahead and let's open my terminal okay and let me write python app.py so as soon as I execute it you'll be able to see that it'll take some time and I hope so my API is working everything is working so I am getting an error saying that okay there is some",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 842.24,
+      "end_seconds": 931.279,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=842s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ff45aa40e659b2393d5f0a32c868f7e14585709252942f88e28ab15e7a5b77e3",
+    "text": "app.py so as soon as I execute it you'll be able to see that it'll take some time and I hope so my API is working everything is working so I am getting an error saying that okay there is some error with respect to the open API so guys uh I've updated the API key again uh the reason was that the credit card balance was less so that is the reason now let's go ahead and again execute this particular code python app.py so as soon as I execute it now you'll be able to see that yes the speech emphasizes the importance of Education this and I'm getting the output okay so whatever question and context I specifically give with respect to that I'm able to get the output but the most interesting thing that I really want to show you is over here now you see my project will get updated so here is my test llm app okay the first time error that I probably got why did I get that error I will be able to see it over here okay uh chat open AI you can see over here they're saying that some credit this this is problem is there okay but if I probably see with respect to the successful one you know so it has",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 916.16,
+      "end_seconds": 991.5600000000001,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=916s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "908698b865136db9202ff61f3dc8569c06843e40ea1b8a1847601e27e969ffa1",
+    "text": "here okay uh chat open AI you can see over here they're saying that some credit this this is problem is there okay but if I probably see with respect to the successful one you know so it has taken a latency of 2.65 seconds you will be able to see over completely in detail right so this is my runnable sequence over here the question was can you summarize the speech this was the context and with respect to that you'll be able to see this I have got the entire input over here right now there is also some uh good uh like there is also some options like feedback and all if there is any feedback that uh specifically is given for that particular call here the feedback will be there if you want to see the metadata you'll be able to see the metadata over here also and this also has some kind of information which will be very much important uh when you will be monitoring this entire application not only that you'll be able to see in that runable sequence you have chat prompt template and here in the chat prompt template you'll be able to see what all version we are specifically using uh what SDK we are using what is the runtime version",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 977.88,
+      "end_seconds": 1050.3600000000001,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=977s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a38a894f59c94da73dc63ad252894fc338bff691a4314dfc28290e56a7609277",
+    "text": "sequence you have chat prompt template and here in the chat prompt template you'll be able to see what all version we are specifically using uh what SDK we are using what is the runtime version and not only that in this chat open AI you know so when you have actually made a response a request uh when you got a response for a specific request what all information you can probably see over here also okay not only that uh there are many things over here see llm calls like how many times you have actually done the llm calls over here so with respect to that also information you'll be able to get it right and minute details see which model you have actually hit you know all those information how much seconds this is called as the trace you know the entire Trace things you'll be able to see llm calls you'll be able to see all runs like how much like what was the pattern of running each and every step here you have Str Str output parser right so with the help of s Str output parsel what kind of output you have specifically got all the information you'll be seeing over here how many time you have hit this chat open AI chat prompt template",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 1034.24,
+      "end_seconds": 1102.6000000000001,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=1034s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7ccc5788e921f0fa40f9f4cec9aad9061812cb865f3319fef39ea3201e022aac",
+    "text": "the help of s Str output parsel what kind of output you have specifically got all the information you'll be seeing over here how many time you have hit this chat open AI chat prompt template like with respect to this chat prompt template what all information you have got now in the monitor also you'll be able to see that you'll be able to monitor any like all the information out here right so if I probably see with respect to 1 hour here you'll be able to see how much llm count is there all this amazing graphs right so here you can see Trace count llm count Trace success rate llm success rate latency llm latency now if I probably go ahead and execute it once again you'll be also able to see this right so let's say I change I change the context over here uh let's say or you can put any information over here but I'm just going to run it once again so in short I'm going to hit this open AI again right so I will be getting some kind of output over here so this is the output the speech emphasizes the importance of education and all so if I go ahead and again back to the traces you'll be able",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 1091.799,
+      "end_seconds": 1158.8799999999999,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=1091s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a18f1333776e6bc227a9c3d3df5bb15e7e361710d8331391bc9ecb76ad3ed985",
+    "text": "I will be getting some kind of output over here so this is the output the speech emphasizes the importance of education and all so if I go ahead and again back to the traces you'll be able to see that my new runable sequence is created right and here if I go ahead and see first was my chat prompt template that I actually created then inside this then we go we went ahead and hit this particular uh chat open AI right and uh with respect to the chat open AI if you want to go and see in the Run what was the input what was the output everything see input output is getting created so in short you have lot of information to probably debug your entire application then after this chat prom template you have this chat open AI you know which is summarizing then this string output parser is responsible in displaying your output as I said right so in traces you'll be able to find out every information in monitor right overall count if you probably want to see see there is one hit request over here with respect to the trace count llm count so one more hit is there this again it will increase see once again if I execute this any number of time right",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 1147.6,
+      "end_seconds": 1215.3600000000001,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=1147s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "15fa5be5355cc7c186430bbaa0a4375111787214d9373daf7f97067cf39756e1",
+    "text": "to see see there is one hit request over here with respect to the trace count llm count so one more hit is there this again it will increase see once again if I execute this any number of time right if any number of time you hitting the LM model that specific count will keep on increasing see over here now as soon as I get the output here you'll be able to see it let's see so here I've got the output and if I go ahead and reload it see one more request is coming up right so in this past 1 hour one more request over here right success pending how much is there and with respect to this pending see they still showing in pending that basically means the information is still going over here llm call success rate the red color basically shows you the error the green color is the success right over here with respect to the latency now here you can see the latency is still less right um then there is something called LM call prce Total tokens right you if you really want to go go ahead and see with respect to like how much cost is basically getting applied that information is also over here token per llm call so in Tres also it will show",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 1201.039,
+      "end_seconds": 1269.96,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=1201s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "60afc1c28a45f8baa5add523d873518effc968d15ef2e38dafe0a72038893770",
+    "text": "really want to go go ahead and see with respect to like how much cost is basically getting applied that information is also over here token per llm call so in Tres also it will show you that entire information see latency cost so this request actually took me somewhere around 039 this request took me somewhere around 0 3645 right so whenever you are specifically using some paid llms this will be a very handy library to entirely monitor the your entire application llm application with respect to the cost uh it will help you to test debug because any errors are also coming you'll be able to see over here see overall how many number of total tokens you have hit median tokens error rate streaming latency all the information is over here so um yes uh this looks quite amazing in my upcoming video we are also going to see about Lang serve like how you can actually create apis this entirely full a dedicated video I'll try to create on this with respect to the Practical implementation so I hope you like this particular video this was it from my side uh I'll see you in the next video have a great day thank you and all take care bye-bye",
+    "metadata": {
+      "video_id": "3Gcm27l-uyQ",
+      "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Evaluation",
+      "start_seconds": 1257.88,
+      "end_seconds": 1327.0,
+      "url": "https://www.youtube.com/watch?v=3Gcm27l-uyQ&t=1257s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

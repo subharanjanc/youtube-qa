@@ -1,0 +1,2303 @@
+{
+  "video_id": "QuYlSSYWogE",
+  "title": "MASTER AI RERANKING IN 23 MINUTES",
+  "channel": "COMMAND",
+  "trainer": "COMMAND",
+  "topic": "RAG",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1405.0,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.799,
+      "text": "[Music]"
+    },
+    {
+      "start": 2.159,
+      "end": 7.359,
+      "text": "The first part of reranking is"
+    },
+    {
+      "start": 4.799,
+      "end": 9.519,
+      "text": "similarity search. Remember, reranking"
+    },
+    {
+      "start": 7.359,
+      "end": 11.440000000000001,
+      "text": "is sometimes called two-stage retrieval."
+    },
+    {
+      "start": 9.519,
+      "end": 13.599,
+      "text": "The first stage of reranking is"
+    },
+    {
+      "start": 11.44,
+      "end": 16.88,
+      "text": "similarity search and the second stage"
+    },
+    {
+      "start": 13.599,
+      "end": 18.32,
+      "text": "of reranking is relevancy scoring or"
+    },
+    {
+      "start": 16.88,
+      "end": 20.16,
+      "text": "sometimes it's just called ranking as"
+    },
+    {
+      "start": 18.32,
+      "end": 24.64,
+      "text": "well. Anyhow, when you're applying"
+    },
+    {
+      "start": 20.16,
+      "end": 29.279,
+      "text": "ranking, the first thing is to convert"
+    },
+    {
+      "start": 24.64,
+      "end": 31.599,
+      "text": "some immense body of data into vectors."
+    },
+    {
+      "start": 29.279,
+      "end": 33.84,
+      "text": "Once you have all of your data converted"
+    },
+    {
+      "start": 31.599,
+      "end": 37.04,
+      "text": "into vectors, you need to store those"
+    },
+    {
+      "start": 33.84,
+      "end": 40.160000000000004,
+      "text": "vectors into a database so that you can"
+    },
+    {
+      "start": 37.04,
+      "end": 42.399,
+      "text": "easily search across them."
+    },
+    {
+      "start": 40.16,
+      "end": 44.48,
+      "text": "There are many databases you can use for"
+    },
+    {
+      "start": 42.399,
+      "end": 48.480000000000004,
+      "text": "storing vectors. For example, you can"
+    },
+    {
+      "start": 44.48,
+      "end": 51.68,
+      "text": "use Pine Cone, you can use Milvis, you"
+    },
+    {
+      "start": 48.48,
+      "end": 53.919999999999995,
+      "text": "can use Reddus, etc. There's many, many"
+    },
+    {
+      "start": 51.68,
+      "end": 56.239,
+      "text": "others you can choose from. I'm going to"
+    },
+    {
+      "start": 53.92,
+      "end": 58.160000000000004,
+      "text": "go with a vector database called Pine"
+    },
+    {
+      "start": 56.239,
+      "end": 61.28,
+      "text": "Cone. So once again, when you're using"
+    },
+    {
+      "start": 58.16,
+      "end": 64.32,
+      "text": "reranking, you're going to start with"
+    },
+    {
+      "start": 61.28,
+      "end": 66.56,
+      "text": "some immense body of data, you're going"
+    },
+    {
+      "start": 64.32,
+      "end": 67.83999999999999,
+      "text": "to convert that body of data into"
+    },
+    {
+      "start": 66.56,
+      "end": 70.24000000000001,
+      "text": "vectors, and then you need to store"
+    },
+    {
+      "start": 67.84,
+      "end": 73.2,
+      "text": "those vectors into a vector database so"
+    },
+    {
+      "start": 70.24,
+      "end": 76.08,
+      "text": "you can easily search across them. Let's"
+    },
+    {
+      "start": 73.2,
+      "end": 78.88,
+      "text": "see what that looks like. If we pop open"
+    },
+    {
+      "start": 76.08,
+      "end": 81.52,
+      "text": "this side drawer,"
+    },
+    {
+      "start": 78.88,
+      "end": 85.03999999999999,
+      "text": "I've built out some functionality that"
+    },
+    {
+      "start": 81.52,
+      "end": 87.28,
+      "text": "allows me to easily upload data into a"
+    },
+    {
+      "start": 85.04,
+      "end": 89.43900000000001,
+      "text": "pine cone database."
+    },
+    {
+      "start": 87.28,
+      "end": 91.92,
+      "text": "FYI, the embedding model that we're"
+    },
+    {
+      "start": 89.439,
+      "end": 96.63999999999999,
+      "text": "going to use to convert our data into"
+    },
+    {
+      "start": 91.92,
+      "end": 99.2,
+      "text": "vectors is all mini LM L6V2."
+    },
+    {
+      "start": 96.64,
+      "end": 101.6,
+      "text": "It generates vectors with 384"
+    },
+    {
+      "start": 99.2,
+      "end": 105.04,
+      "text": "dimensions."
+    },
+    {
+      "start": 101.6,
+      "end": 107.6,
+      "text": "And you can see inside of our vector"
+    },
+    {
+      "start": 105.04,
+      "end": 112.0,
+      "text": "database, we currently have zero"
+    },
+    {
+      "start": 107.6,
+      "end": 115.55999999999999,
+      "text": "vectors. So if I click over here, I'll"
+    },
+    {
+      "start": 112.0,
+      "end": 115.56,
+      "text": "be able to upload"
+    },
+    {
+      "start": 116.56,
+      "end": 121.0,
+      "text": "these Q&As's."
+    },
+    {
+      "start": 121.52,
+      "end": 126.0,
+      "text": "Pretty much the way this mini demo"
+    },
+    {
+      "start": 123.759,
+      "end": 130.959,
+      "text": "application works is it allows you to"
+    },
+    {
+      "start": 126.0,
+      "end": 133.599,
+      "text": "ingest Q&As's into the vector database."
+    },
+    {
+      "start": 130.959,
+      "end": 137.599,
+      "text": "You can see these Q&As's"
+    },
+    {
+      "start": 133.599,
+      "end": 142.879,
+      "text": "are related to workouts, right? You can"
+    },
+    {
+      "start": 137.599,
+      "end": 144.23899999999998,
+      "text": "imagine a huge database, which in"
+    },
+    {
+      "start": 142.879,
+      "end": 146.79999999999998,
+      "text": "essence is what this is, right? You can"
+    },
+    {
+      "start": 144.239,
+      "end": 148.879,
+      "text": "imagine a huge database with every"
+    },
+    {
+      "start": 146.8,
+      "end": 151.44,
+      "text": "workout in the planet, right? And in"
+    },
+    {
+      "start": 148.879,
+      "end": 153.28,
+      "text": "this little demo application,"
+    },
+    {
+      "start": 151.44,
+      "end": 155.2,
+      "text": "we're going to search for workouts"
+    },
+    {
+      "start": 153.28,
+      "end": 158.879,
+      "text": "related to some terms, right? Maybe"
+    },
+    {
+      "start": 155.2,
+      "end": 161.599,
+      "text": "we're doing a session and we just worked"
+    },
+    {
+      "start": 158.879,
+      "end": 164.16,
+      "text": "out our arms and now we want to work out"
+    },
+    {
+      "start": 161.599,
+      "end": 166.48,
+      "text": "our abs and we want to mix it up. We"
+    },
+    {
+      "start": 164.16,
+      "end": 168.48,
+      "text": "want to get some new ideas for workouts"
+    },
+    {
+      "start": 166.48,
+      "end": 174.72,
+      "text": "that we can do that target our abs, etc."
+    },
+    {
+      "start": 168.48,
+      "end": 179.12,
+      "text": "Right? Now, if I drag this CSV"
+    },
+    {
+      "start": 174.72,
+      "end": 181.2,
+      "text": "and upload it into the vector database,"
+    },
+    {
+      "start": 179.12,
+      "end": 184.31900000000002,
+      "text": "you can see"
+    },
+    {
+      "start": 181.2,
+      "end": 187.04,
+      "text": "that we now"
+    },
+    {
+      "start": 184.319,
+      "end": 191.599,
+      "text": "have vectors inside of our vector"
+    },
+    {
+      "start": 187.04,
+      "end": 194.239,
+      "text": "database. And now when we search for"
+    },
+    {
+      "start": 191.599,
+      "end": 197.51899999999998,
+      "text": "information, let's see what we get back."
+    },
+    {
+      "start": 194.239,
+      "end": 199.92000000000002,
+      "text": "So, I'll type ABS."
+    },
+    {
+      "start": 197.519,
+      "end": 204.4,
+      "text": "And you can see"
+    },
+    {
+      "start": 199.92,
+      "end": 208.07999999999998,
+      "text": "we get results that are related"
+    },
+    {
+      "start": 204.4,
+      "end": 211.12,
+      "text": "to our query. Bicycle crunches is the"
+    },
+    {
+      "start": 208.08,
+      "end": 213.68,
+      "text": "top suggested result, right? Then we get"
+    },
+    {
+      "start": 211.12,
+      "end": 216.48000000000002,
+      "text": "scissor kicks, which also is an exercise"
+    },
+    {
+      "start": 213.68,
+      "end": 219.44,
+      "text": "that targets abs. We also get reverse"
+    },
+    {
+      "start": 216.48,
+      "end": 223.2,
+      "text": "crunches, which is on point."
+    },
+    {
+      "start": 219.44,
+      "end": 226.799,
+      "text": "And if I click this little cog icon, we"
+    },
+    {
+      "start": 223.2,
+      "end": 230.959,
+      "text": "can grow this list to include more"
+    },
+    {
+      "start": 226.799,
+      "end": 232.799,
+      "text": "nearby vectors to our query vector. So"
+    },
+    {
+      "start": 230.959,
+      "end": 235.44,
+      "text": "once again, if this is not making sense,"
+    },
+    {
+      "start": 232.799,
+      "end": 237.84,
+      "text": "when we search across our vector"
+    },
+    {
+      "start": 235.44,
+      "end": 239.2,
+      "text": "database or our vector space, we're"
+    },
+    {
+      "start": 237.84,
+      "end": 241.76,
+      "text": "going to start with a query. In this"
+    },
+    {
+      "start": 239.2,
+      "end": 243.76,
+      "text": "case, it's ABS. And what's going to"
+    },
+    {
+      "start": 241.76,
+      "end": 245.67999999999998,
+      "text": "happen is"
+    },
+    {
+      "start": 243.76,
+      "end": 247.84,
+      "text": "we're going to be placed into some"
+    },
+    {
+      "start": 245.68,
+      "end": 249.76000000000002,
+      "text": "location in our vector space. And the"
+    },
+    {
+      "start": 247.84,
+      "end": 252.56,
+      "text": "way that we get results using similarity"
+    },
+    {
+      "start": 249.76,
+      "end": 255.12,
+      "text": "search is we're going to grab the nearby"
+    },
+    {
+      "start": 252.56,
+      "end": 257.6,
+      "text": "vectors, right, to wherever we're placed"
+    },
+    {
+      "start": 255.12,
+      "end": 259.84000000000003,
+      "text": "by our query vector. Hopefully that"
+    },
+    {
+      "start": 257.6,
+      "end": 261.6,
+      "text": "makes sense. Right?"
+    },
+    {
+      "start": 259.84,
+      "end": 267.35999999999996,
+      "text": "Right now we're pulling five results,"
+    },
+    {
+      "start": 261.6,
+      "end": 271.44,
+      "text": "but we can adjust the hyperparameters of"
+    },
+    {
+      "start": 267.36,
+      "end": 275.04,
+      "text": "our similarity search to include more"
+    },
+    {
+      "start": 271.44,
+      "end": 277.759,
+      "text": "results. So let's switch to 10. And now"
+    },
+    {
+      "start": 275.04,
+      "end": 280.24,
+      "text": "you can see we get 10 results. And as we"
+    },
+    {
+      "start": 277.759,
+      "end": 281.84000000000003,
+      "text": "go further down the list,"
+    },
+    {
+      "start": 280.24,
+      "end": 286.0,
+      "text": "we're getting further away from our"
+    },
+    {
+      "start": 281.84,
+      "end": 288.0,
+      "text": "point, which means less similar results."
+    },
+    {
+      "start": 286.0,
+      "end": 289.52,
+      "text": "We have a lot of ab exercises in this"
+    },
+    {
+      "start": 288.0,
+      "end": 293.28,
+      "text": "database."
+    },
+    {
+      "start": 289.52,
+      "end": 294.88,
+      "text": "Let's go to 20"
+    },
+    {
+      "start": 293.28,
+      "end": 298.11999999999995,
+      "text": "and see what we get at the bottom of"
+    },
+    {
+      "start": 294.88,
+      "end": 298.12,
+      "text": "this list."
+    },
+    {
+      "start": 298.24,
+      "end": 304.96000000000004,
+      "text": "Yeah. So you can see as we get further"
+    },
+    {
+      "start": 301.199,
+      "end": 308.08000000000004,
+      "text": "away, right, as we start grabbing more"
+    },
+    {
+      "start": 304.96,
+      "end": 310.88,
+      "text": "and more vectors, right, from wherever"
+    },
+    {
+      "start": 308.08,
+      "end": 313.35999999999996,
+      "text": "we are in vector space, right, as we get"
+    },
+    {
+      "start": 310.88,
+      "end": 315.68,
+      "text": "further from our location, we're getting"
+    },
+    {
+      "start": 313.36,
+      "end": 317.68,
+      "text": "further and further away, right, from"
+    },
+    {
+      "start": 315.68,
+      "end": 320.40000000000003,
+      "text": "the semantic meaning of our query."
+    },
+    {
+      "start": 317.68,
+      "end": 322.16,
+      "text": "Another way that we can filter"
+    },
+    {
+      "start": 320.4,
+      "end": 323.75899999999996,
+      "text": "our results is by adjusting the"
+    },
+    {
+      "start": 322.16,
+      "end": 326.72,
+      "text": "similarity threshold, which is this"
+    },
+    {
+      "start": 323.759,
+      "end": 330.0,
+      "text": "score right here."
+    },
+    {
+      "start": 326.72,
+      "end": 333.36,
+      "text": "We're using cosine similarity in order"
+    },
+    {
+      "start": 330.0,
+      "end": 335.919,
+      "text": "to measure the similarity of our"
+    },
+    {
+      "start": 333.36,
+      "end": 341.039,
+      "text": "vectors."
+    },
+    {
+      "start": 335.919,
+      "end": 343.35999999999996,
+      "text": "And if we increase our similarity"
+    },
+    {
+      "start": 341.039,
+      "end": 345.52,
+      "text": "threshold,"
+    },
+    {
+      "start": 343.36,
+      "end": 348.40000000000003,
+      "text": "that's going to"
+    },
+    {
+      "start": 345.52,
+      "end": 350.56,
+      "text": "filter out more records. Right? So I've"
+    },
+    {
+      "start": 348.4,
+      "end": 353.84,
+      "text": "increased the similarity threshold to"
+    },
+    {
+      "start": 350.56,
+      "end": 357.28000000000003,
+      "text": "50%. So we should get zero results cuz"
+    },
+    {
+      "start": 353.84,
+      "end": 360.08,
+      "text": "nothing in this result set is above 50,"
+    },
+    {
+      "start": 357.28,
+      "end": 363.039,
+      "text": "right? Zero results. If we take that"
+    },
+    {
+      "start": 360.08,
+      "end": 365.039,
+      "text": "down to let's say 40,"
+    },
+    {
+      "start": 363.039,
+      "end": 367.36,
+      "text": "we get nine results, right? Everything"
+    },
+    {
+      "start": 365.039,
+      "end": 371.12,
+      "text": "that crosses the similarity threshold of"
+    },
+    {
+      "start": 367.36,
+      "end": 375.8,
+      "text": "40%. So hopefully that makes sense."
+    },
+    {
+      "start": 371.12,
+      "end": 375.8,
+      "text": "Let's do a search for calves,"
+    },
+    {
+      "start": 376.72,
+      "end": 383.52000000000004,
+      "text": "right? calf raises, single leg calf"
+    },
+    {
+      "start": 379.52,
+      "end": 386.96,
+      "text": "raises, donkey kicks."
+    },
+    {
+      "start": 383.52,
+      "end": 392.56,
+      "text": "So yeah, that's similarity search."
+    },
+    {
+      "start": 386.96,
+      "end": 396.88,
+      "text": "So once again, zooming out,"
+    },
+    {
+      "start": 392.56,
+      "end": 399.68,
+      "text": "reranking is a two-step"
+    },
+    {
+      "start": 396.88,
+      "end": 402.0,
+      "text": "algorithm, right? The first step of"
+    },
+    {
+      "start": 399.68,
+      "end": 403.52,
+      "text": "reranking is similarity search and the"
+    },
+    {
+      "start": 402.0,
+      "end": 409.44,
+      "text": "second step is what we're going to be"
+    },
+    {
+      "start": 403.52,
+      "end": 413.75899999999996,
+      "text": "covering shortly. And once again, the"
+    },
+    {
+      "start": 409.44,
+      "end": 418.0,
+      "text": "usefulness of learning this is if we"
+    },
+    {
+      "start": 413.759,
+      "end": 420.8,
+      "text": "have use cases where a lot of data is"
+    },
+    {
+      "start": 418.0,
+      "end": 422.56,
+      "text": "needing to be processed, these are tools"
+    },
+    {
+      "start": 420.8,
+      "end": 425.36,
+      "text": "in our tool belt that we can use to"
+    },
+    {
+      "start": 422.56,
+      "end": 427.12,
+      "text": "filter out all of the irrelevant"
+    },
+    {
+      "start": 425.36,
+      "end": 431.40000000000003,
+      "text": "information"
+    },
+    {
+      "start": 427.12,
+      "end": 431.4,
+      "text": "based on our current task."
+    },
+    {
+      "start": 431.599,
+      "end": 436.88,
+      "text": "Before we move on to the second stage of"
+    },
+    {
+      "start": 434.4,
+      "end": 439.039,
+      "text": "re-ranking, remember reranking is"
+    },
+    {
+      "start": 436.88,
+      "end": 440.639,
+      "text": "sometimes called two-stage retrieval."
+    },
+    {
+      "start": 439.039,
+      "end": 442.8,
+      "text": "The first stage being similarity search"
+    },
+    {
+      "start": 440.639,
+      "end": 445.599,
+      "text": "that we covered in the previous part and"
+    },
+    {
+      "start": 442.8,
+      "end": 447.36,
+      "text": "the second stage being relevancy scoring"
+    },
+    {
+      "start": 445.599,
+      "end": 449.28,
+      "text": "or sometimes it's just called ranking as"
+    },
+    {
+      "start": 447.36,
+      "end": 452.56,
+      "text": "well. We're going to cover that next."
+    },
+    {
+      "start": 449.28,
+      "end": 454.31899999999996,
+      "text": "Anyhow, before we demo the second stage"
+    },
+    {
+      "start": 452.56,
+      "end": 457.039,
+      "text": "of re-ranking, I wanted to briefly"
+    },
+    {
+      "start": 454.319,
+      "end": 460.0,
+      "text": "discuss the topic of chunking."
+    },
+    {
+      "start": 457.039,
+      "end": 462.15999999999997,
+      "text": "Tokenization refers to how you break up"
+    },
+    {
+      "start": 460.0,
+      "end": 465.28,
+      "text": "data into its elementary units for"
+    },
+    {
+      "start": 462.16,
+      "end": 467.759,
+      "text": "feeding into an AI system. Chunking, on"
+    },
+    {
+      "start": 465.28,
+      "end": 471.44,
+      "text": "the other hand, is how we group our"
+    },
+    {
+      "start": 467.759,
+      "end": 475.91900000000004,
+      "text": "tokens so as to best"
+    },
+    {
+      "start": 471.44,
+      "end": 479.919,
+      "text": "retrieve relevant information for our AI"
+    },
+    {
+      "start": 475.919,
+      "end": 481.19899999999996,
+      "text": "or reranking related application. It's"
+    },
+    {
+      "start": 479.919,
+      "end": 483.28,
+      "text": "okay if this seems a little bit"
+    },
+    {
+      "start": 481.199,
+      "end": 486.0,
+      "text": "abstract. It took me a while to wrap my"
+    },
+    {
+      "start": 483.28,
+      "end": 487.67999999999995,
+      "text": "head around these concepts, right? So,"
+    },
+    {
+      "start": 486.0,
+      "end": 489.039,
+      "text": "it's okay if you feel a little bit lost"
+    },
+    {
+      "start": 487.68,
+      "end": 492.479,
+      "text": "and it's probably going to sound like"
+    },
+    {
+      "start": 489.039,
+      "end": 496.15999999999997,
+      "text": "mumbo jumbo, but anyhow, if we take a"
+    },
+    {
+      "start": 492.479,
+      "end": 500.87899999999996,
+      "text": "closer look at the previous demo, the"
+    },
+    {
+      "start": 496.16,
+      "end": 505.759,
+      "text": "one related to workouts, what we did was"
+    },
+    {
+      "start": 500.879,
+      "end": 509.03900000000004,
+      "text": "go through a CSV file full of Q&As's"
+    },
+    {
+      "start": 505.759,
+      "end": 510.96000000000004,
+      "text": "where each Q&A shared some information"
+    },
+    {
+      "start": 509.039,
+      "end": 512.7189999999999,
+      "text": "about a workout that targets a"
+    },
+    {
+      "start": 510.96,
+      "end": 516.399,
+      "text": "particular part of your body. And what"
+    },
+    {
+      "start": 512.719,
+      "end": 519.6400000000001,
+      "text": "we did is we appended the Q part to the"
+    },
+    {
+      "start": 516.399,
+      "end": 519.64,
+      "text": "A part"
+    },
+    {
+      "start": 519.919,
+      "end": 525.36,
+      "text": "and that's what we fed into our"
+    },
+    {
+      "start": 522.399,
+      "end": 528.56,
+      "text": "embedding model that converted this raw"
+    },
+    {
+      "start": 525.36,
+      "end": 530.32,
+      "text": "data into a vector for us. Just to"
+    },
+    {
+      "start": 528.56,
+      "end": 534.399,
+      "text": "clarify, the embedding model that we're"
+    },
+    {
+      "start": 530.32,
+      "end": 538.88,
+      "text": "using for this two-stage retrieval demo"
+    },
+    {
+      "start": 534.399,
+      "end": 541.36,
+      "text": "is all mini LM L6V2. And for some"
+    },
+    {
+      "start": 538.88,
+      "end": 545.68,
+      "text": "insight into the details, the input"
+    },
+    {
+      "start": 541.36,
+      "end": 549.519,
+      "text": "context limit of all mini LM L6V2"
+    },
+    {
+      "start": 545.68,
+      "end": 554.0,
+      "text": "is 256 tokens. These Q&As are quite"
+    },
+    {
+      "start": 549.519,
+      "end": 557.92,
+      "text": "short, so they fit within that 256"
+    },
+    {
+      "start": 554.0,
+      "end": 561.12,
+      "text": "input token limit of all mini LM L6V2."
+    },
+    {
+      "start": 557.92,
+      "end": 564.7199999999999,
+      "text": "So the vectors that get generated to"
+    },
+    {
+      "start": 561.12,
+      "end": 566.399,
+      "text": "represent each Q&A are able to take into"
+    },
+    {
+      "start": 564.72,
+      "end": 570.48,
+      "text": "account"
+    },
+    {
+      "start": 566.399,
+      "end": 573.839,
+      "text": "the full Q&A. If the Q&A was longer than"
+    },
+    {
+      "start": 570.48,
+      "end": 577.6800000000001,
+      "text": "the 256 input context limit of all Mini"
+    },
+    {
+      "start": 573.839,
+      "end": 581.2790000000001,
+      "text": "LM L6V2, we would need to"
+    },
+    {
+      "start": 577.68,
+      "end": 583.8389999999999,
+      "text": "chunk it, right? There are a couple"
+    },
+    {
+      "start": 581.279,
+      "end": 586.88,
+      "text": "different approaches for how to chunk"
+    },
+    {
+      "start": 583.839,
+      "end": 592.1600000000001,
+      "text": "data. Here's"
+    },
+    {
+      "start": 586.88,
+      "end": 595.92,
+      "text": "a demo from an engineer who lives in SF"
+    },
+    {
+      "start": 592.16,
+      "end": 598.16,
+      "text": "by the name of Greg Camrat. Hopefully"
+    },
+    {
+      "start": 595.92,
+      "end": 602.88,
+      "text": "I'm pronouncing his name correctly. But"
+    },
+    {
+      "start": 598.16,
+      "end": 605.76,
+      "text": "here we can see a passage of text."
+    },
+    {
+      "start": 602.88,
+      "end": 607.8389999999999,
+      "text": "And we can play around with different"
+    },
+    {
+      "start": 605.76,
+      "end": 611.519,
+      "text": "ways of chunking it by adjusting these"
+    },
+    {
+      "start": 607.839,
+      "end": 616.6400000000001,
+      "text": "sliders. Right? So here you can see"
+    },
+    {
+      "start": 611.519,
+      "end": 619.36,
+      "text": "we're reducing the size of our chunks."
+    },
+    {
+      "start": 616.64,
+      "end": 621.68,
+      "text": "Once again, a chunk is composed of"
+    },
+    {
+      "start": 619.36,
+      "end": 624.48,
+      "text": "multiple tokens. The token is the"
+    },
+    {
+      "start": 621.68,
+      "end": 627.12,
+      "text": "elementary unit here. And another thing"
+    },
+    {
+      "start": 624.48,
+      "end": 629.76,
+      "text": "we can do that might get us better"
+    },
+    {
+      "start": 627.12,
+      "end": 632.399,
+      "text": "results is"
+    },
+    {
+      "start": 629.76,
+      "end": 636.72,
+      "text": "include an overlap. Right? What this is"
+    },
+    {
+      "start": 632.399,
+      "end": 639.279,
+      "text": "doing is instead of each chunk"
+    },
+    {
+      "start": 636.72,
+      "end": 643.2,
+      "text": "not including any information from its"
+    },
+    {
+      "start": 639.279,
+      "end": 646.64,
+      "text": "previous chunk, it overlaps"
+    },
+    {
+      "start": 643.2,
+      "end": 649.2,
+      "text": "each subsequent chunk so that there's"
+    },
+    {
+      "start": 646.64,
+      "end": 652.48,
+      "text": "some information shared."
+    },
+    {
+      "start": 649.2,
+      "end": 655.36,
+      "text": "Sometimes this is very handy because"
+    },
+    {
+      "start": 652.48,
+      "end": 658.64,
+      "text": "you can increase the likelihood of"
+    },
+    {
+      "start": 655.36,
+      "end": 661.6800000000001,
+      "text": "matching against two subsequent chunks."
+    },
+    {
+      "start": 658.64,
+      "end": 665.279,
+      "text": "And when that gets fed into"
+    },
+    {
+      "start": 661.68,
+      "end": 668.16,
+      "text": "your LLM for subsequent processing, the"
+    },
+    {
+      "start": 665.279,
+      "end": 670.32,
+      "text": "LLM is able to piece together that these"
+    },
+    {
+      "start": 668.16,
+      "end": 674.64,
+      "text": "are"
+    },
+    {
+      "start": 670.32,
+      "end": 679.839,
+      "text": "supposed to be one larger unit of data."
+    },
+    {
+      "start": 674.64,
+      "end": 681.279,
+      "text": "So you can kind of hack this to feed in"
+    },
+    {
+      "start": 679.839,
+      "end": 683.36,
+      "text": "larger chunks of data that are"
+    },
+    {
+      "start": 681.279,
+      "end": 684.8,
+      "text": "contiguous into the LLM. This is going"
+    },
+    {
+      "start": 683.36,
+      "end": 686.32,
+      "text": "to make sense later. By the way, it's"
+    },
+    {
+      "start": 684.8,
+      "end": 689.12,
+      "text": "okay once again if this seems a little"
+    },
+    {
+      "start": 686.32,
+      "end": 692.48,
+      "text": "bit abstract. But anyhow, I think we'll"
+    },
+    {
+      "start": 689.12,
+      "end": 695.76,
+      "text": "leave it there for now. This is a rabbit"
+    },
+    {
+      "start": 692.48,
+      "end": 698.64,
+      "text": "hole you can go deeper on. For example,"
+    },
+    {
+      "start": 695.76,
+      "end": 702.24,
+      "text": "there's this article from another vector"
+    },
+    {
+      "start": 698.64,
+      "end": 704.24,
+      "text": "database company called Chroma."
+    },
+    {
+      "start": 702.24,
+      "end": 708.32,
+      "text": "And in this article, they analyzed a"
+    },
+    {
+      "start": 704.24,
+      "end": 710.16,
+      "text": "bunch of different chunking strategies"
+    },
+    {
+      "start": 708.32,
+      "end": 713.0400000000001,
+      "text": "and they analyzed the performance of"
+    },
+    {
+      "start": 710.16,
+      "end": 715.8389999999999,
+      "text": "them. How accurate are the results"
+    },
+    {
+      "start": 713.04,
+      "end": 719.279,
+      "text": "generated by your AI applications when"
+    },
+    {
+      "start": 715.839,
+      "end": 722.5600000000001,
+      "text": "you use various chunking strategies?"
+    },
+    {
+      "start": 719.279,
+      "end": 725.279,
+      "text": "So they found the best"
+    },
+    {
+      "start": 722.56,
+      "end": 727.92,
+      "text": "approach to chunking data at least in"
+    },
+    {
+      "start": 725.279,
+      "end": 733.68,
+      "text": "the context of text"
+    },
+    {
+      "start": 727.92,
+      "end": 737.92,
+      "text": "to be using an LLM to decide what the"
+    },
+    {
+      "start": 733.68,
+      "end": 740.959,
+      "text": "chunks should be. Right? That's the LLM"
+    },
+    {
+      "start": 737.92,
+      "end": 743.68,
+      "text": "semantic chunker approach."
+    },
+    {
+      "start": 740.959,
+      "end": 747.1199999999999,
+      "text": "Anyhow, we're going to keep it simple"
+    },
+    {
+      "start": 743.68,
+      "end": 750.88,
+      "text": "for this video."
+    },
+    {
+      "start": 747.12,
+      "end": 753.63,
+      "text": "And yeah, that's chunking. Let's move on"
+    },
+    {
+      "start": 750.88,
+      "end": 755.92,
+      "text": "to the second stage of re-ranking."
+    },
+    {
+      "start": 753.63,
+      "end": 760.16,
+      "text": "[Music]"
+    },
+    {
+      "start": 755.92,
+      "end": 762.7199999999999,
+      "text": "Here we go. Reranking."
+    },
+    {
+      "start": 760.16,
+      "end": 765.76,
+      "text": "So, we're going to follow the same"
+    },
+    {
+      "start": 762.72,
+      "end": 768.399,
+      "text": "general process. In order to leverage"
+    },
+    {
+      "start": 765.76,
+      "end": 771.2,
+      "text": "this technology, we have to first"
+    },
+    {
+      "start": 768.399,
+      "end": 774.8,
+      "text": "convert some large body of information"
+    },
+    {
+      "start": 771.2,
+      "end": 779.12,
+      "text": "into vectors. And we can do that via"
+    },
+    {
+      "start": 774.8,
+      "end": 781.12,
+      "text": "this side right drawer. You can see that"
+    },
+    {
+      "start": 779.12,
+      "end": 785.44,
+      "text": "we have no vectors in our vector"
+    },
+    {
+      "start": 781.12,
+      "end": 787.68,
+      "text": "database. So let's upload some"
+    },
+    {
+      "start": 785.44,
+      "end": 790.9590000000001,
+      "text": "information."
+    },
+    {
+      "start": 787.68,
+      "end": 794.079,
+      "text": "And for this"
+    },
+    {
+      "start": 790.959,
+      "end": 798.0,
+      "text": "relevancy scoring demo or second stage"
+    },
+    {
+      "start": 794.079,
+      "end": 801.3599999999999,
+      "text": "of reranking demo, we're actually going"
+    },
+    {
+      "start": 798.0,
+      "end": 804.8,
+      "text": "to use a cookbook"
+    },
+    {
+      "start": 801.36,
+      "end": 808.639,
+      "text": "that consists of it looks like over 600"
+    },
+    {
+      "start": 804.8,
+      "end": 813.7199999999999,
+      "text": "pages of recipes. So let's ingest this"
+    },
+    {
+      "start": 808.639,
+      "end": 813.72,
+      "text": "into our vector database and"
+    },
+    {
+      "start": 814.0,
+      "end": 819.44,
+      "text": "take reranking"
+    },
+    {
+      "start": 816.32,
+      "end": 821.6800000000001,
+      "text": "for a spin."
+    },
+    {
+      "start": 819.44,
+      "end": 825.36,
+      "text": "After our data is uploaded, we should"
+    },
+    {
+      "start": 821.68,
+      "end": 826.88,
+      "text": "see some vectors inside of our vector"
+    },
+    {
+      "start": 825.36,
+      "end": 829.36,
+      "text": "database."
+    },
+    {
+      "start": 826.88,
+      "end": 832.88,
+      "text": "And this should be the same number we're"
+    },
+    {
+      "start": 829.36,
+      "end": 835.12,
+      "text": "seeing in pine cone. And now we can test"
+    },
+    {
+      "start": 832.88,
+      "end": 838.639,
+      "text": "out reranking."
+    },
+    {
+      "start": 835.12,
+      "end": 841.6,
+      "text": "So, as this is a cookbook, let's ask"
+    },
+    {
+      "start": 838.639,
+      "end": 845.12,
+      "text": "some culinary questions."
+    },
+    {
+      "start": 841.6,
+      "end": 846.88,
+      "text": "Starting with what's a delicious Indian"
+    },
+    {
+      "start": 845.12,
+      "end": 850.16,
+      "text": "dish."
+    },
+    {
+      "start": 846.88,
+      "end": 853.279,
+      "text": "Here are the results we get. And you can"
+    },
+    {
+      "start": 850.16,
+      "end": 855.36,
+      "text": "see that we have two columns of results."
+    },
+    {
+      "start": 853.279,
+      "end": 858.399,
+      "text": "The first column corresponds to the"
+    },
+    {
+      "start": 855.36,
+      "end": 860.88,
+      "text": "first stage of reranking and the second"
+    },
+    {
+      "start": 858.399,
+      "end": 863.04,
+      "text": "column corresponds to the second stage"
+    },
+    {
+      "start": 860.88,
+      "end": 867.519,
+      "text": "of reanking."
+    },
+    {
+      "start": 863.04,
+      "end": 870.16,
+      "text": "The metric that we're using to rank the"
+    },
+    {
+      "start": 867.519,
+      "end": 871.68,
+      "text": "similarity search results is called"
+    },
+    {
+      "start": 870.16,
+      "end": 874.3199999999999,
+      "text": "similarity."
+    },
+    {
+      "start": 871.68,
+      "end": 878.2399999999999,
+      "text": "And the metric we're using to rank the"
+    },
+    {
+      "start": 874.32,
+      "end": 881.279,
+      "text": "reranked results is relevance. Here's an"
+    },
+    {
+      "start": 878.24,
+      "end": 883.44,
+      "text": "article that let's quickly browse"
+    },
+    {
+      "start": 881.279,
+      "end": 886.32,
+      "text": "through to get a better idea of what's"
+    },
+    {
+      "start": 883.44,
+      "end": 890.48,
+      "text": "going on. So when you're comparing two"
+    },
+    {
+      "start": 886.32,
+      "end": 893.36,
+      "text": "pieces of information or two sequences"
+    },
+    {
+      "start": 890.48,
+      "end": 895.36,
+      "text": "of tokens, there's multiple techniques"
+    },
+    {
+      "start": 893.36,
+      "end": 897.279,
+      "text": "for doing so. Hopefully, we're very"
+    },
+    {
+      "start": 895.36,
+      "end": 899.44,
+      "text": "familiar with"
+    },
+    {
+      "start": 897.279,
+      "end": 903.6,
+      "text": "similarity search, which is also"
+    },
+    {
+      "start": 899.44,
+      "end": 906.32,
+      "text": "sometimes called uh by encoder. It's a"
+    },
+    {
+      "start": 903.6,
+      "end": 909.1990000000001,
+      "text": "bit confusing of a name but anyhow here"
+    },
+    {
+      "start": 906.32,
+      "end": 912.0790000000001,
+      "text": "you can see we have some query input"
+    },
+    {
+      "start": 909.199,
+      "end": 914.959,
+      "text": "that we convert into a vector and some"
+    },
+    {
+      "start": 912.079,
+      "end": 918.079,
+      "text": "chunk of data or document that we"
+    },
+    {
+      "start": 914.959,
+      "end": 920.079,
+      "text": "convert into a vector and we calculate"
+    },
+    {
+      "start": 918.079,
+      "end": 921.68,
+      "text": "their similarity using cosine"
+    },
+    {
+      "start": 920.079,
+      "end": 925.12,
+      "text": "similarity. Right? That tells us how"
+    },
+    {
+      "start": 921.68,
+      "end": 927.519,
+      "text": "similar these two pieces of data are."
+    },
+    {
+      "start": 925.12,
+      "end": 931.68,
+      "text": "There is another technique for measuring"
+    },
+    {
+      "start": 927.519,
+      "end": 933.279,
+      "text": "the similarity or relevance of two"
+    },
+    {
+      "start": 931.68,
+      "end": 935.76,
+      "text": "pieces of data."
+    },
+    {
+      "start": 933.279,
+      "end": 938.399,
+      "text": "And this other approach is called the"
+    },
+    {
+      "start": 935.76,
+      "end": 940.8,
+      "text": "cross encoder approach. Internally, this"
+    },
+    {
+      "start": 938.399,
+      "end": 943.839,
+      "text": "uses an algorithm called cross"
+    },
+    {
+      "start": 940.8,
+      "end": 947.92,
+      "text": "attention, which is the same algorithm"
+    },
+    {
+      "start": 943.839,
+      "end": 950.8000000000001,
+      "text": "found inside of most LLMs."
+    },
+    {
+      "start": 947.92,
+      "end": 954.88,
+      "text": "If you're familiar with the history of"
+    },
+    {
+      "start": 950.8,
+      "end": 958.0,
+      "text": "ML, you might know that the transformer,"
+    },
+    {
+      "start": 954.88,
+      "end": 960.639,
+      "text": "which is the type of system an LLM is"
+    },
+    {
+      "start": 958.0,
+      "end": 963.92,
+      "text": "based on, was introduced in a paper"
+    },
+    {
+      "start": 960.639,
+      "end": 966.48,
+      "text": "called attention is all you need. This"
+    },
+    {
+      "start": 963.92,
+      "end": 968.7199999999999,
+      "text": "way of measuring the"
+    },
+    {
+      "start": 966.48,
+      "end": 971.1990000000001,
+      "text": "similarity or relevance, I'm going to"
+    },
+    {
+      "start": 968.72,
+      "end": 974.0,
+      "text": "use the term relevance in reference to"
+    },
+    {
+      "start": 971.199,
+      "end": 975.92,
+      "text": "cross encoders and the term similarity"
+    },
+    {
+      "start": 974.0,
+      "end": 978.48,
+      "text": "in reference to similarity search or by"
+    },
+    {
+      "start": 975.92,
+      "end": 980.4799999999999,
+      "text": "encoders. This way of measuring the"
+    },
+    {
+      "start": 978.48,
+      "end": 984.0,
+      "text": "relevance of two pieces of information"
+    },
+    {
+      "start": 980.48,
+      "end": 986.16,
+      "text": "is much more accurate, but the trade-off"
+    },
+    {
+      "start": 984.0,
+      "end": 988.56,
+      "text": "is it's much more computationally"
+    },
+    {
+      "start": 986.16,
+      "end": 990.8,
+      "text": "intensive. If we only use the cross"
+    },
+    {
+      "start": 988.56,
+      "end": 994.56,
+      "text": "encoder, we would be waiting a very long"
+    },
+    {
+      "start": 990.8,
+      "end": 998.4799999999999,
+      "text": "time to get matches as it's usually"
+    },
+    {
+      "start": 994.56,
+      "end": 1001.8389999999999,
+      "text": "about 10 to 200 maybe even more times"
+    },
+    {
+      "start": 998.48,
+      "end": 1004.32,
+      "text": "slower of an algorithm compared to the"
+    },
+    {
+      "start": 1001.839,
+      "end": 1007.1990000000001,
+      "text": "bencoder approach. And that's why we"
+    },
+    {
+      "start": 1004.32,
+      "end": 1010.8000000000001,
+      "text": "have to combine them into this reranking"
+    },
+    {
+      "start": 1007.199,
+      "end": 1012.88,
+      "text": "technique in practice. Right? So in a"
+    },
+    {
+      "start": 1010.8,
+      "end": 1017.7589999999999,
+      "text": "nutshell, what we're doing if we come"
+    },
+    {
+      "start": 1012.88,
+      "end": 1020.399,
+      "text": "back is we're first grabbing a bunch of"
+    },
+    {
+      "start": 1017.759,
+      "end": 1022.8000000000001,
+      "text": "generally similar pieces of information"
+    },
+    {
+      "start": 1020.399,
+      "end": 1025.199,
+      "text": "from our search space or our immense"
+    },
+    {
+      "start": 1022.8,
+      "end": 1029.6,
+      "text": "body of data. And once we have those"
+    },
+    {
+      "start": 1025.199,
+      "end": 1033.919,
+      "text": "initial samples or initial chunks of"
+    },
+    {
+      "start": 1029.6,
+      "end": 1036.9589999999998,
+      "text": "data, we then analyze those"
+    },
+    {
+      "start": 1033.919,
+      "end": 1040.0,
+      "text": "for relevance to our query using a"
+    },
+    {
+      "start": 1036.959,
+      "end": 1043.439,
+      "text": "reranker or a cross encoder. A lot of"
+    },
+    {
+      "start": 1040.0,
+      "end": 1045.919,
+      "text": "lingo in AI or ML, another name for a"
+    },
+    {
+      "start": 1043.439,
+      "end": 1048.72,
+      "text": "cross encoder is a reranker. The"
+    },
+    {
+      "start": 1045.919,
+      "end": 1051.76,
+      "text": "re-ranker we're using, FYI, is provided"
+    },
+    {
+      "start": 1048.72,
+      "end": 1055.28,
+      "text": "to us by a company called Cohhere here."
+    },
+    {
+      "start": 1051.76,
+      "end": 1057.12,
+      "text": "They have one of the best rerankers on"
+    },
+    {
+      "start": 1055.28,
+      "end": 1059.84,
+      "text": "the market. There are other ones that"
+    },
+    {
+      "start": 1057.12,
+      "end": 1063.52,
+      "text": "are open source. Anyhow, what you do"
+    },
+    {
+      "start": 1059.84,
+      "end": 1067.1999999999998,
+      "text": "here is pass in a query along with a"
+    },
+    {
+      "start": 1063.52,
+      "end": 1070.8799999999999,
+      "text": "list of documents and the reranker gives"
+    },
+    {
+      "start": 1067.2,
+      "end": 1074.96,
+      "text": "you back a relevance score that measures"
+    },
+    {
+      "start": 1070.88,
+      "end": 1077.5200000000002,
+      "text": "how similar the query is to each"
+    },
+    {
+      "start": 1074.96,
+      "end": 1080.52,
+      "text": "document or chunk of your overall search"
+    },
+    {
+      "start": 1077.52,
+      "end": 1080.52,
+      "text": "space."
+    },
+    {
+      "start": 1081.44,
+      "end": 1089.28,
+      "text": "Let's tweak the hyperparameters of this"
+    },
+    {
+      "start": 1085.44,
+      "end": 1092.0,
+      "text": "re-ranking pipeline and"
+    },
+    {
+      "start": 1089.28,
+      "end": 1096.0,
+      "text": "see this"
+    },
+    {
+      "start": 1092.0,
+      "end": 1099.28,
+      "text": "in a more extreme manner. So let's"
+    },
+    {
+      "start": 1096.0,
+      "end": 1101.28,
+      "text": "increase our similarity search results"
+    },
+    {
+      "start": 1099.28,
+      "end": 1105.12,
+      "text": "from 10"
+    },
+    {
+      "start": 1101.28,
+      "end": 1108.8799999999999,
+      "text": "to 20. Right?"
+    },
+    {
+      "start": 1105.12,
+      "end": 1111.9189999999999,
+      "text": "We can see that the first"
+    },
+    {
+      "start": 1108.88,
+      "end": 1114.16,
+      "text": "record returned from similarity search,"
+    },
+    {
+      "start": 1111.919,
+      "end": 1117.8400000000001,
+      "text": "the fourth one,"
+    },
+    {
+      "start": 1114.16,
+      "end": 1122.16,
+      "text": "the 13th one and the 15th and the 16th"
+    },
+    {
+      "start": 1117.84,
+      "end": 1125.76,
+      "text": "one are the ones that are actually most"
+    },
+    {
+      "start": 1122.16,
+      "end": 1128.0800000000002,
+      "text": "relevant to our search query, not the"
+    },
+    {
+      "start": 1125.76,
+      "end": 1130.08,
+      "text": "top five."
+    },
+    {
+      "start": 1128.08,
+      "end": 1133.76,
+      "text": "What I'm trying to highlight here is"
+    },
+    {
+      "start": 1130.08,
+      "end": 1137.1999999999998,
+      "text": "when similarity search tells you"
+    },
+    {
+      "start": 1133.76,
+      "end": 1139.12,
+      "text": "these documents are the most similar,"
+    },
+    {
+      "start": 1137.2,
+      "end": 1142.32,
+      "text": "it's not necessarily the case because"
+    },
+    {
+      "start": 1139.12,
+      "end": 1144.3999999999999,
+      "text": "similarity search is a very crude way of"
+    },
+    {
+      "start": 1142.32,
+      "end": 1147.52,
+      "text": "measuring the similarity of two pieces"
+    },
+    {
+      "start": 1144.4,
+      "end": 1149.679,
+      "text": "of data. A much more accurate way is to"
+    },
+    {
+      "start": 1147.52,
+      "end": 1153.44,
+      "text": "use a reranker. And you can see here"
+    },
+    {
+      "start": 1149.679,
+      "end": 1156.5590000000002,
+      "text": "that the first search result returned by"
+    },
+    {
+      "start": 1153.44,
+      "end": 1158.799,
+      "text": "similarity search was actually assessed"
+    },
+    {
+      "start": 1156.559,
+      "end": 1161.799,
+      "text": "to be"
+    },
+    {
+      "start": 1158.799,
+      "end": 1161.799,
+      "text": "the"
+    },
+    {
+      "start": 1162.88,
+      "end": 1168.72,
+      "text": "fifth most relevant"
+    },
+    {
+      "start": 1165.76,
+      "end": 1172.559,
+      "text": "reranked result. You can see that right."
+    },
+    {
+      "start": 1168.72,
+      "end": 1175.84,
+      "text": "So chunk 2379"
+    },
+    {
+      "start": 1172.559,
+      "end": 1178.6399999999999,
+      "text": "was scored first right according to"
+    },
+    {
+      "start": 1175.84,
+      "end": 1180.9599999999998,
+      "text": "similarity search or cosign similarity"
+    },
+    {
+      "start": 1178.64,
+      "end": 1183.2,
+      "text": "but according to the cross encoder it's"
+    },
+    {
+      "start": 1180.96,
+      "end": 1185.3600000000001,
+      "text": "actually the fifth most relevant"
+    },
+    {
+      "start": 1183.2,
+      "end": 1187.679,
+      "text": "document and it actually scores quite"
+    },
+    {
+      "start": 1185.36,
+      "end": 1191.28,
+      "text": "low"
+    },
+    {
+      "start": 1187.679,
+      "end": 1196.2800000000002,
+      "text": "and the"
+    },
+    {
+      "start": 1191.28,
+      "end": 1196.28,
+      "text": "most relevant document which is 476"
+    },
+    {
+      "start": 1198.32,
+      "end": 1204.8799999999999,
+      "text": "was actually the 16th rank result"
+    },
+    {
+      "start": 1201.679,
+      "end": 1206.64,
+      "text": "according to similarity search."
+    },
+    {
+      "start": 1204.88,
+      "end": 1209.44,
+      "text": "So as you can see here, what the"
+    },
+    {
+      "start": 1206.64,
+      "end": 1213.2,
+      "text": "reranker does for us is helps us"
+    },
+    {
+      "start": 1209.44,
+      "end": 1216.2,
+      "text": "identify what's actually most relevant."
+    },
+    {
+      "start": 1213.2,
+      "end": 1216.2,
+      "text": "And"
+    },
+    {
+      "start": 1216.24,
+      "end": 1221.3,
+      "text": "I think that's it. So you now understand"
+    },
+    {
+      "start": 1220.16,
+      "end": 1223.76,
+      "text": "reranking."
+    },
+    {
+      "start": 1221.3,
+      "end": 1225.6789999999999,
+      "text": "[Music]"
+    },
+    {
+      "start": 1223.76,
+      "end": 1228.32,
+      "text": "Next up, we're going to show how you can"
+    },
+    {
+      "start": 1225.679,
+      "end": 1230.24,
+      "text": "run a reranking pipeline. And after you"
+    },
+    {
+      "start": 1228.32,
+      "end": 1232.0,
+      "text": "retrieve your results from the"
+    },
+    {
+      "start": 1230.24,
+      "end": 1236.48,
+      "text": "re-ranking pipeline, you can pass them"
+    },
+    {
+      "start": 1232.0,
+      "end": 1239.84,
+      "text": "into an LLM or LMM along with your query"
+    },
+    {
+      "start": 1236.48,
+      "end": 1242.08,
+      "text": "or prompt so that the LLM can perform"
+    },
+    {
+      "start": 1239.84,
+      "end": 1245.52,
+      "text": "all of the analysis and synthesis for"
+    },
+    {
+      "start": 1242.08,
+      "end": 1248.96,
+      "text": "you and give you a response back that is"
+    },
+    {
+      "start": 1245.52,
+      "end": 1252.8799999999999,
+      "text": "more natural. And when you slap a nice"
+    },
+    {
+      "start": 1248.96,
+      "end": 1254.96,
+      "text": "UI on top of the LLM's output along the"
+    },
+    {
+      "start": 1252.88,
+      "end": 1257.919,
+      "text": "lines of what we prepared here, you get"
+    },
+    {
+      "start": 1254.96,
+      "end": 1260.08,
+      "text": "an effect like this."
+    },
+    {
+      "start": 1257.919,
+      "end": 1262.3200000000002,
+      "text": "FYI, we're going to be searching across"
+    },
+    {
+      "start": 1260.08,
+      "end": 1266.0,
+      "text": "the same exact vector space that we used"
+    },
+    {
+      "start": 1262.32,
+      "end": 1269.4399999999998,
+      "text": "in the previous demo. If you recall, we"
+    },
+    {
+      "start": 1266.0,
+      "end": 1273.28,
+      "text": "ingested a cookbook that had about 600"
+    },
+    {
+      "start": 1269.44,
+      "end": 1276.64,
+      "text": "pages of recipes in it. So, let's send a"
+    },
+    {
+      "start": 1273.28,
+      "end": 1278.799,
+      "text": "prompt along the lines of, \"What's an"
+    },
+    {
+      "start": 1276.64,
+      "end": 1283.2,
+      "text": "Italian dish that's quick and easy to"
+    },
+    {
+      "start": 1278.799,
+      "end": 1287.4,
+      "text": "make? Cite your sources and pull the"
+    },
+    {
+      "start": 1283.2,
+      "end": 1287.4,
+      "text": "dish from your knowledge base."
+    },
+    {
+      "start": 1291.44,
+      "end": 1296.96,
+      "text": "Great. Classic spaghetti with tomato"
+    },
+    {
+      "start": 1294.4,
+      "end": 1300.0,
+      "text": "sauce. That's on point. It gives me the"
+    },
+    {
+      "start": 1296.96,
+      "end": 1302.559,
+      "text": "ingredients, the instructions,"
+    },
+    {
+      "start": 1300.0,
+      "end": 1304.64,
+      "text": "and if we click on this button, we can"
+    },
+    {
+      "start": 1302.559,
+      "end": 1306.6399999999999,
+      "text": "see"
+    },
+    {
+      "start": 1304.64,
+      "end": 1310.24,
+      "text": "the chunks that were retrieved from our"
+    },
+    {
+      "start": 1306.64,
+      "end": 1314.0800000000002,
+      "text": "knowledge base. This was the top chunk."
+    },
+    {
+      "start": 1310.24,
+      "end": 1317.08,
+      "text": "And it does mention spaghetti."
+    },
+    {
+      "start": 1314.08,
+      "end": 1317.08,
+      "text": "And"
+    },
+    {
+      "start": 1318.159,
+      "end": 1326.0,
+      "text": "I don't see anything. Okay, here you see"
+    },
+    {
+      "start": 1321.2,
+      "end": 1329.0,
+      "text": "it says spaghetti with tomato sauce,"
+    },
+    {
+      "start": 1326.0,
+      "end": 1329.0,
+      "text": "right?"
+    },
+    {
+      "start": 1329.36,
+      "end": 1337.28,
+      "text": "And"
+    },
+    {
+      "start": 1331.44,
+      "end": 1340.799,
+      "text": "let's run one more query just for fun."
+    },
+    {
+      "start": 1337.28,
+      "end": 1343.9189999999999,
+      "text": "What's an Indian dish? that's quick and"
+    },
+    {
+      "start": 1340.799,
+      "end": 1348.039,
+      "text": "easy to make. Site your sources and pull"
+    },
+    {
+      "start": 1343.919,
+      "end": 1348.039,
+      "text": "the dish from your knowledge base."
+    },
+    {
+      "start": 1351.36,
+      "end": 1357.28,
+      "text": "Great. We get curried vegetables. Here"
+    },
+    {
+      "start": 1355.52,
+      "end": 1359.52,
+      "text": "are the ingredients and the"
+    },
+    {
+      "start": 1357.28,
+      "end": 1363.6399999999999,
+      "text": "instructions. And let's take a look at"
+    },
+    {
+      "start": 1359.52,
+      "end": 1363.6399999999999,
+      "text": "the referenced chunks."
+    },
+    {
+      "start": 1363.679,
+      "end": 1368.8400000000001,
+      "text": "Let's look at the first chunk. And"
+    },
+    {
+      "start": 1371.2,
+      "end": 1377.8400000000001,
+      "text": "says Indian curry, but that's not"
+    },
+    {
+      "start": 1374.159,
+      "end": 1382.1200000000001,
+      "text": "curried vegetables. Or is it?"
+    },
+    {
+      "start": 1377.84,
+      "end": 1382.12,
+      "text": "Let's take a look at the second chunk."
+    },
+    {
+      "start": 1386.96,
+      "end": 1389.96,
+      "text": "H"
+    },
+    {
+      "start": 1392.64,
+      "end": 1395.88,
+      "text": "this one."
+    },
+    {
+      "start": 1399.6,
+      "end": 1404.52,
+      "text": "Here we go. Curry vegetables. You see"
+    },
+    {
+      "start": 1401.52,
+      "end": 1404.52,
+      "text": "that?"
+    }
+  ]
+}

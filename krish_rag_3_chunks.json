@@ -1,0 +1,258 @@
+[
+  {
+    "id": "5209fc9b1e274bf4fa3318e6ed7d06792b9314318b376ccce1eb2a614636ea4f",
+    "text": "Hello, all. My name is Krish Naik, and uh welcome to my YouTube channel. So, guys, today in this particular video, I'm going to discuss about these three important terms, and also talk about the differences between them. That is nothing but prompt engineering versus rag versus fine-tuning. Now, all these three terms, you may have used it. You may have built You may have used different different prompts with the LLMs to get or develop generative AI application. You may have developed rag application. You may have developed fine-tuning techniques, right? But, our main aim is basically to understand the differences between them. And also, I will be covering one very important thing, like which technique to use for which kind of use cases, which many people fail to understand. So, please make sure that you watch this video till the end, because I am making similar kind of videos to make your basic concept very much crystal clear. And this will be super important even in interviews. So, let me go ahead and explain you what are the differences between prompt engineering versus rag versus fine-tuning. And I'll try to explain in such a way that even a 5-year-old kid should be able to understand. So, let me go ahead with one by one, okay? So, here I have",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 0.52,
+      "end_seconds": 79.2,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "22af81125b5f668f4154929b6c322f8e7b3ab04ef623f979b535fea13d35b142",
+    "text": "engineering versus rag versus fine-tuning. And I'll try to explain in such a way that even a 5-year-old kid should be able to understand. So, let me go ahead with one by one, okay? So, here I have taken the images from Google. Three robots are there. This is robot one, robot two, and this is Jarvis. I hope everybody knows who Jarvis is, right? If you are a Marvel fan, definitely you should know this, okay? So, let's talk about prompt engineering. And again, I I'm just telling you that in a very much easier way, I will try to explain it to you what are the exact differences between these three. And by default, you'll understand when to use what, okay? So, let's say that here I have my first robot. And uh let's say that I want to gift this robot to a child, okay? And this child ask a question, \"Hey, tell me something about cat.\" Okay? So, this is the basic question that we have asked or the child is basically asking, \"Hey, tell me Hey robot, tell me something about cats, okay?\" Now, here when I probably get the response from the robot, it will be a generic response related to cat. Related to cat, right? I will be getting a generic response. Hey, cat is this kind of",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 64.44,
+      "end_seconds": 145.25199999999998,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=64s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7e78e0e18162632d543b26bc3ffc82dabd2f45d9a94200b2d4e9cdadf43c4066",
+    "text": "Now, here when I probably get the response from the robot, it will be a generic response related to cat. Related to cat, right? I will be getting a generic response. Hey, cat is this kind of animal, it likes to do this, it likes to do that. This kind of information will be getting. So, uh and if you use different different robots which are internally having different different LLM models, they'll give you different different kind of answers, okay? Now, let's say that now the child probably changes his or her question and says that, \"Hey, tell me one funny thing about cats.\" Funny thing about cat. So, let's say here now I have changed my question and I'm asking, \"Hey, tell me something really one funny thing about cat.\" And I may also give a kind of suggestion saying that, \"Do they like to play?\" \"Do they like to play?\" So, this is the question that I have asked. Now, based on the context information that I have actually given in the query, the robot will understand and it will try to give you a different response. Right? Different response. Right? Now, here one important thing that you will be seeing when you ask anything to the robot with clear instruction, it can help you with much more better",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 127.652,
+      "end_seconds": 225.49200000000002,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=127s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "609677f2c32b72ccfa2b5104e9461216276b3510f6ee14b43b6eead8b9473bfd",
+    "text": "give you a different response. Right? Different response. Right? Now, here one important thing that you will be seeing when you ask anything to the robot with clear instruction, it can help you with much more better response. Okay? Now, here the robot is there. I'm changing the question. If I'm asking more clearer questions, then I'm able to get a better response itself. So, this is just an example of prompt engineering. In prompt engineering, I will specifically be having an LLM, which is nothing but large language model. And for this large language model, I will define a prompt. I will say, \"Hey, there is a prompt for this. Let's say one of the prompt is that I want you to act as a teacher, a physics teacher, or AI teacher, and answer the questions in detail to the questions that is given in the input. Okay? So, this is a detailed question. Okay? I may also tell that, \"Hey, provide me a structured output in that specific prompt. I want a structured output in point-wise.\" Right? So, there you'll be able to see that as we write more detailed prompt, this LLM will be able to give you more amazing answers. Right? So, I hope just by seeing this example, you have understood what exactly prompt engineering is all about.",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 203.332,
+      "end_seconds": 304.094,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=203s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "15170d7c94a2ff9f2e08cdd6797431ee841f3a2fbee10efc8d986a923e017ef4",
+    "text": "we write more detailed prompt, this LLM will be able to give you more amazing answers. Right? So, I hope just by seeing this example, you have understood what exactly prompt engineering is all about. Here, we are trying to do our level best to do some kind of quick improvements, explore model capabilities, and task where the required knowledge is likely within the pre-trained LLM models. So, here, specifically, we are playing with the pre-trained LLM models. LLM models, and we are trying our level best to explore its capabilities. Right? Here, we also say that prompt is just like we are trying to like we try to go ahead and write detailed prompts, detailed information, so that the LLM will be able to understand and provide a specific response out of it. Right? Now, the major advantages I told you why we specifically use prompt engineering, I will again repeat it as we go ahead. Okay? Now, coming to the second one, that is called as the rag. Now, just by seeing this robot, you'll be able to see that this robot has a backpack. Okay? Now, this backpack has some kind of books. Right? It has some kind of books. Now, if I ask a question, let's say, \"Hey, what is one funny thing about cat?\" Okay?",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 285.774,
+      "end_seconds": 377.055,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=285s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "341a2191411f3b4972275a726f256413f74778c33598f767a6286248a3e61d59",
+    "text": "be able to see that this robot has a backpack. Okay? Now, this backpack has some kind of books. Right? It has some kind of books. Now, if I ask a question, let's say, \"Hey, what is one funny thing about cat?\" Okay? Does it like to play to this particular robot? This robot knows some generic answer. It knows some generic answer. But, what this robot will do is that it will still go and refer this books because this books are all about cat. Right? All about cat. Now, let's say that you ask me a question. I know about that particular topic, but before answering, I definitely want to confirm anything and provide a much more accurate answer by exploring all the books I have in my library. You ask me, \"Krish, what is machine learning?\" I may give you a two-line definition. But, what I will do? I will say that, \"Hey, I want to give a much more better response.\" So, I will go ahead and refer all the books that is available, the best books that are available in the internet. I will search for multiple blogs, and then I will summarize those data. Okay? I will summarize those data with a prompt. With a prompt and answer that particular question. Right? So, this backpack that you are",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 358.454,
+      "end_seconds": 442.33500000000004,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=358s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0b2e1aaa2e357c3218efec7a4f73ea90ec9d0776c0efb52479b9e48507b37430",
+    "text": "internet. I will search for multiple blogs, and then I will summarize those data. Okay? I will summarize those data with a prompt. With a prompt and answer that particular question. Right? So, this backpack that you are able to see, this backpack is some kind of external information. Similarly, when we have an LLM, when we have an LLM, if we are giving any queries, if we are giving any queries, for this particular query, you'll be able to see that we will be referring some other vector database. Some other vector database. Okay? Some other vector database. We will be referring some vector database. And from this vector database, which is just like my backpack or external information, so this can be my DB. Oops. Just a second. This can be my DB, which is having some kind of information. And from this particular information, I will be getting a context because in this vector DB you have everything related to cats stored in the form of vector embeddings. Vector embeddings. So, what will happen? When you give a query, initially the query will be converted into vectors. And this vector similarity search will be done in the DB and based on that you retrieve the context. And along with this context, you combine the prompt. And finally, your LLM will be able to",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 424.575,
+      "end_seconds": 523.577,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=424s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "84d44c8037dd288561df5781878edb1be763233954dafca8ee2e52e0f18b7b96",
+    "text": "And this vector similarity search will be done in the DB and based on that you retrieve the context. And along with this context, you combine the prompt. And finally, your LLM will be able to summarize the output and the response. Okay? Output and the response. So, for a company, if I talk in terms of a real-world scenario, companies which has or whenever you need some access to specific up-to-date data, a proprietary information, company policies, right? There we can specifically use rag. Let's say companies having some kind of data which keeps on getting updated. What I can do? If I want probably create a chatbot assistant which will be able to retrieve all this information from a rag database and give me the response, that would be an amazing example with respect to rag. Right? Let's say one more example. Let's say that I will go ahead and ask, \"Hey, tell me about tell me about about the leave policies leave policies in XYZ company.\" XYZ company. So, in this case, the LLM will not be able to answer because it will not have that information out there because it is not trained with that data. But this leave policies may get updated in a company time to time. So, what I can do? I can store all this information in my",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 507.617,
+      "end_seconds": 594.8570000000001,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=507s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cceded783e487523df3e98c16045367fa1d8f5db98dd58ff06edc26ae00bb1ed",
+    "text": "will not have that information out there because it is not trained with that data. But this leave policies may get updated in a company time to time. So, what I can do? I can store all this information in my vector DB which will have all my policy document. And this will basically be connected to my AI assistant wherein this will act like a backpack, right? Backpack or external data. Right? So, this can be a vector DB, it can be document database, it can be different different things, but I hope you are able to understand why do we specifically use rag. Yes, there are different types of rag, like agentic rags. You have something like agentic rags, adaptive rag, corrective rag. Those are some different kind of rag data rag applications which can specifically use this rag database, but there we specifically create agents. Okay? Now, coming to the third type, which is called as fine-tuning. Okay? Fine-tuning. Now, just imagine this Jarvis robot, right? So, I am going on a party and I want to gift this robot to a kid. Right? The kid name is, let's say, um the kid name is Tom. So, I will what I will do, since I'm gifting this to a Tom, Tom is somewhere around 10 years old.",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 579.777,
+      "end_seconds": 662.6980000000001,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=579s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5a357b479d02869e29de7e1501d11708090b33d98eab7201c902d60f480e38d0",
+    "text": "want to gift this robot to a kid. Right? The kid name is, let's say, um the kid name is Tom. So, I will what I will do, since I'm gifting this to a Tom, Tom is somewhere around 10 years old. So, based on the features or based on the the age of the kid, whatever this robot whatever this kid likes, I will be training this robot to provide a response in such a way. Since he or she is a 10 years old kid, he should probably talk about, \"Hey Tom, how are you?\" He should try to provide this kind of response. Let's say, uh we should probably put what all things Tom's like. We know that particular data, so we will train this particular, um you know, robot with whatever things Tom's like. Let's say Tom's like, uh how to probably play cricket. If Tom's likes to hear the stories, which kind of stories, right? We will try to feed this particular, um robot with those kind of information. So, here in a real-world scenario, what we do is that we take a LLM model. We take a LLM model. This is a pre-trained LLM model. And then, with respect to this pre-trained LLM model, what we do? We have our data, the data what this organization likes,",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 643.658,
+      "end_seconds": 728.898,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=643s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4e9fbb88cdef91a22c650f9a4aed72d89e6789c7866bd8fc7b74b0ef6b3e36a3",
+    "text": "we do is that we take a LLM model. We take a LLM model. This is a pre-trained LLM model. And then, with respect to this pre-trained LLM model, what we do? We have our data, the data what this organization likes, what this organization wants, what this organization have. Because I want to make my chatbot talk about anything that is asked related to our application like how we want. Right? If I say, \"Hey, if I go ahead and ask this chatbot assistant, 'Hi.'\" It should provide me the response saying that, \"Hello brother Hello brother, this is what it is.\" And I really want to welcome that particular person based on the information that I really want to put out there. Right? So, this LLM will be nothing but it will be a pre-trained model pre-trained model and this pre-trained model LLM will be fine-tuned with my data that I really want. With my data I really want. Now, when we say fine-tuned, what does this basically mean? Let's say that we are using some kind of transformer. This LLM is a transformer model, right? Transformer model. Let's consider that. And you know in transformer you have you may have neural networks. Right? This is how a neural network looks like, right? I'm just showing one example. And you",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 708.938,
+      "end_seconds": 792.2990000000001,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=708s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "dfcf880e8030cdbcf0ed8c3153aefd43a6f8c2436b029be2d68497812e2bc937",
+    "text": "LLM is a transformer model, right? Transformer model. Let's consider that. And you know in transformer you have you may have neural networks. Right? This is how a neural network looks like, right? I'm just showing one example. And you know with respect to all these neural networks all these neural networks, there will be weights that will be associated. So, what we are going to do? We are going to fine-tune fine-tune this particular model with our new data. Now, when we are fine-tuning, the weights will definitely change. Weights will definitely change. Right? It will not be the same. So, here what we are basically doing is that we are just fine-tuning our models with the new data that we have related to any companies and we want our LLM model to behave in that specific way like how this Jarvis has trained for this particular person that is called as Tom. Because Jarvis is created to satisfy the needs of Tom. Okay? So, here whatever Tom likes, I will probably prepare that data. And based on that particular data, I will go ahead and train this. I will tell the robot, \"Hey, you have to probably go ahead and do this.\" Now, let's talk about the challenges from fine-tuning to rag to fro- prompt engineering. One of the major challenges",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 775.819,
+      "end_seconds": 860.021,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=775s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "94f90b9e9e765cb3109614f4062b2d19e272c69f028dbfcffb3f59b5cc2b0ecb",
+    "text": "will go ahead and train this. I will tell the robot, \"Hey, you have to probably go ahead and do this.\" Now, let's talk about the challenges from fine-tuning to rag to fro- prompt engineering. One of the major challenges with respect to fine tuning is that training the core data, right? Training a pre-trained model the cost is really high. Just imagine how many GPUs you'll be using in order to probably train these LLM models, right? With the new data, right? There will be cost that will be involved. There will be multiple things that will be involved. And again, you have to redeploy all those models into the cloud. You have to probably have a separate team for the entire management, for the verification, for the performance metrics, each and everything, right? So, this is the major cost with respect to fine tuning. The second cost is always related to data preparation. Because for this, we require some kind of data. And for without data, this will not be possible to probably go ahead and train this particular model. Right? Now, coming to the rag part, right? Rag is really, really good. You have an external database, but again, remember there is some cost that is involved in hitting the database and getting the information. Initially, when I talk about prompt",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 845.819,
+      "end_seconds": 923.461,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=845s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fc1db27b210ca0370280cd5784a3ca3003421886486764f3ab6c766b0802e3c7",
+    "text": "right? Rag is really, really good. You have an external database, but again, remember there is some cost that is involved in hitting the database and getting the information. Initially, when I talk about prompt engineering here, we are trying to directly use the LLM and get the response from the LLM. But here, what we are doing is that first of all, we are doing a vector search from the database. I'm getting some kind of context, then combining to the system prompt, then along with that, we are getting the response. So, that cost is basically involved. Use case-wise, this is really, really good because you have all up-to-date information and you are able to probably get the response and satisfy the needs of the customers, right? And when I talk about prompt engineering, this is probably the best thing, I think, okay? But again, here, there are multiple challenges. We cannot do what all things we can actually do in rag and fine tuning. Here, we are just trying to explore the model capabilities. We are trying to see that whatever pre-trained model can actually do, we should be able to get it, right? One of the major challenges is that we have to uh keep on playing with the prompt, right? We have to hit and try. This is just",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 906.701,
+      "end_seconds": 976.7810000000001,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=906s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3a13bfc6212dc3bd3c06987e059ddadd460e2c38c400398abff966a0d474ad04",
+    "text": "do, we should be able to get it, right? One of the major challenges is that we have to uh keep on playing with the prompt, right? We have to hit and try. This is just like try and hit, hit and try, right? We have to keep on playing with the prompt. We have We have to probably see the output. Then, if you are satisfied that particular output, then only we'll be using that particular prompt. So, this basically uh tells us that you have to keep on trying unless and until you get a suitable prompt, and it is probably approved by all the stakeholders. Right? So, this was all about the differences between prompt engineering rag versus fine-tuning. I hope you have heard about the challenges, things, and all. Now, when to use what? It is very simple. If you have up-to-date domain-specific information, you can definitely use rag. If you want your entire AI assistant chatbot to work like how you specifically want with respect to each and every inputs that you specifically give. Right? From, let's say, introduction to probably greetings to to probably providing any specific company information. Let's say, I'm having an e-commerce website. I may want to probably go ahead and create a chatbot. Whenever a person ask about anything related to any device, it should",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 963.141,
+      "end_seconds": 1033.8220000000001,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=963s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7bba3c615721eb71c1e6b595fe624a0f775b8b0e16d79f30e87d85ffabb4f47d",
+    "text": "probably providing any specific company information. Let's say, I'm having an e-commerce website. I may want to probably go ahead and create a chatbot. Whenever a person ask about anything related to any device, it should probably provide all the possible options. Uh let's say that I want to probably go ahead and buy iPhone. Right? So, my chatbot should provide all the options related to iPhone. Hey, do you want this specification, this specification, this specification? Right? And select one of the specification to go ahead and buy that particular product. Right? So, I want my chatbot to work based on my organization goals. At that point of time, I can definitely use fine-tuning. Right? So, I hope you like this particular video. Uh this was a quick video to make you understand between prompt engineering versus rag versus fine-tuning. This was it from my side. I hope you like this particular video. I'll see you all in the next video. Thank you. Take care. Bye-bye.",
+    "metadata": {
+      "video_id": "6SO-8FcSkz4",
+      "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1020.342,
+      "end_seconds": 1067.0,
+      "url": "https://www.youtube.com/watch?v=6SO-8FcSkz4&t=1020s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

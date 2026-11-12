@@ -1,0 +1,2208 @@
+{
+  "video_id": "t9kz9P6cEYM",
+  "title": "Computer Use Agents DEEP DIVE",
+  "channel": "COMMAND",
+  "trainer": "COMMAND",
+  "topic": "Agents",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1179.0,
+  "segments": [
+    {
+      "start": 0.16,
+      "end": 3.439,
+      "text": "in this two-part video we are going to"
+    },
+    {
+      "start": 2.04,
+      "end": 5.640000000000001,
+      "text": "take a close look at the latest"
+    },
+    {
+      "start": 3.439,
+      "end": 8.440000000000001,
+      "text": "developments in the realm of computer"
+    },
+    {
+      "start": 5.64,
+      "end": 10.120000000000001,
+      "text": "use agents computer use agents are"
+    },
+    {
+      "start": 8.44,
+      "end": 12.16,
+      "text": "exactly what you think they would be"
+    },
+    {
+      "start": 10.12,
+      "end": 15.239999999999998,
+      "text": "they allow multimodal Transformers like"
+    },
+    {
+      "start": 12.16,
+      "end": 16.68,
+      "text": "Cloud 3.5 Sonet or GPT 40 to execute"
+    },
+    {
+      "start": 15.24,
+      "end": 19.08,
+      "text": "actions on your computer in the same"
+    },
+    {
+      "start": 16.68,
+      "end": 20.84,
+      "text": "manner you would the multimodal aspect"
+    },
+    {
+      "start": 19.08,
+      "end": 23.08,
+      "text": "is key as they rely on taking"
+    },
+    {
+      "start": 20.84,
+      "end": 24.519,
+      "text": "screenshots to deduce context in"
+    },
+    {
+      "start": 23.08,
+      "end": 27.24,
+      "text": "addition to deducing context from the"
+    },
+    {
+      "start": 24.519,
+      "end": 28.479999999999997,
+      "text": "usual format of text my goal is to leave"
+    },
+    {
+      "start": 27.24,
+      "end": 30.479999999999997,
+      "text": "you with a deep understanding of how"
+    },
+    {
+      "start": 28.48,
+      "end": 33.16,
+      "text": "these agents work and highlight some of"
+    },
+    {
+      "start": 30.48,
+      "end": 34.44,
+      "text": "the challenges they present in part one"
+    },
+    {
+      "start": 33.16,
+      "end": 37.36,
+      "text": "we are going to show how to run a"
+    },
+    {
+      "start": 34.44,
+      "end": 38.8,
+      "text": "computer use agent in a Docker container"
+    },
+    {
+      "start": 37.36,
+      "end": 40.519999999999996,
+      "text": "part one's content should apply to"
+    },
+    {
+      "start": 38.8,
+      "end": 42.76,
+      "text": "pretty much everybody as Docker"
+    },
+    {
+      "start": 40.52,
+      "end": 45.440000000000005,
+      "text": "containers are supported on Mac windows"
+    },
+    {
+      "start": 42.76,
+      "end": 47.039,
+      "text": "and Linux and in part two we're going to"
+    },
+    {
+      "start": 45.44,
+      "end": 49.48,
+      "text": "show how to run a computer use agent"
+    },
+    {
+      "start": 47.039,
+      "end": 51.28,
+      "text": "directly on a Mac general concepts"
+    },
+    {
+      "start": 49.48,
+      "end": 53.44,
+      "text": "demoed in part two will apply to Windows"
+    },
+    {
+      "start": 51.28,
+      "end": 54.559,
+      "text": "and Linux users but let's be real part"
+    },
+    {
+      "start": 53.44,
+      "end": 55.96,
+      "text": "two's content is going to be of"
+    },
+    {
+      "start": 54.559,
+      "end": 58.599999999999994,
+      "text": "particular interest to those who use Mac"
+    },
+    {
+      "start": 55.96,
+      "end": 60.68,
+      "text": "based machines as I've not tested a"
+    },
+    {
+      "start": 58.6,
+      "end": 62.800000000000004,
+      "text": "particular windows or Linux computer use"
+    },
+    {
+      "start": 60.68,
+      "end": 65.4,
+      "text": "agent implementation I cannot safely"
+    },
+    {
+      "start": 62.8,
+      "end": 66.72,
+      "text": "recommend one at this time along the way"
+    },
+    {
+      "start": 65.4,
+      "end": 68.52000000000001,
+      "text": "we're also going to show how to set up"
+    },
+    {
+      "start": 66.72,
+      "end": 71.56,
+      "text": "these agents for monitoring using a tool"
+    },
+    {
+      "start": 68.52,
+      "end": 73.67999999999999,
+      "text": "called AG Ops the only prxs you'll need"
+    },
+    {
+      "start": 71.56,
+      "end": 77.159,
+      "text": "to follow along are a a laptop or"
+    },
+    {
+      "start": 73.68,
+      "end": 80.0,
+      "text": "desktop B Docker CVS code D familiarity"
+    },
+    {
+      "start": 77.159,
+      "end": 82.68,
+      "text": "with Git e an anthropic API key and F an"
+    },
+    {
+      "start": 80.0,
+      "end": 85.479,
+      "text": "agent Ops API key you can get Docker by"
+    },
+    {
+      "start": 82.68,
+      "end": 86.64,
+      "text": "coming over to www.dr.com and then"
+    },
+    {
+      "start": 85.479,
+      "end": 88.32,
+      "text": "downloading and installing the"
+    },
+    {
+      "start": 86.64,
+      "end": 89.96,
+      "text": "appropriate version for your machine"
+    },
+    {
+      "start": 88.32,
+      "end": 91.19999999999999,
+      "text": "this should be pretty painless leave a"
+    },
+    {
+      "start": 89.96,
+      "end": 93.55999999999999,
+      "text": "comment if you have an issue installing"
+    },
+    {
+      "start": 91.2,
+      "end": 95.799,
+      "text": "Docker you can get vs code by coming"
+    },
+    {
+      "start": 93.56,
+      "end": 96.799,
+      "text": "over to code. visual studio.com and then"
+    },
+    {
+      "start": 95.799,
+      "end": 98.60000000000001,
+      "text": "downloading and installing the"
+    },
+    {
+      "start": 96.799,
+      "end": 100.47900000000001,
+      "text": "appropriate version for your machine"
+    },
+    {
+      "start": 98.6,
+      "end": 101.67999999999999,
+      "text": "likewise this should be pretty painless"
+    },
+    {
+      "start": 100.479,
+      "end": 104.24,
+      "text": "leave a comment if you have an issue"
+    },
+    {
+      "start": 101.68,
+      "end": 105.96000000000001,
+      "text": "installing VSS code git is a free"
+    },
+    {
+      "start": 104.24,
+      "end": 107.32,
+      "text": "software for sharing and editing code"
+    },
+    {
+      "start": 105.96,
+      "end": 109.759,
+      "text": "with others on the internet and you can"
+    },
+    {
+      "start": 107.32,
+      "end": 112.55999999999999,
+      "text": "install git a number of ways for example"
+    },
+    {
+      "start": 109.759,
+      "end": 112.56,
+      "text": "you can come over to"
+    },
+    {
+      "start": 118.84,
+      "end": 124.0,
+      "text": "g-.& Agents from GitHub the process for"
+    },
+    {
+      "start": 122.32,
+      "end": 125.24,
+      "text": "getting an anthropic API key is very"
+    },
+    {
+      "start": 124.0,
+      "end": 128.08,
+      "text": "similar to how you would provision an"
+    },
+    {
+      "start": 125.24,
+      "end": 130.92,
+      "text": "open aai API key come over to console."
+    },
+    {
+      "start": 128.08,
+      "end": 134.12,
+      "text": "anthropic dcom and sign up purchase"
+    },
+    {
+      "start": 130.92,
+      "end": 136.04,
+      "text": "credits and provision an API key just"
+    },
+    {
+      "start": 134.12,
+      "end": 137.59900000000002,
+      "text": "like open aai anthropic pricing model is"
+    },
+    {
+      "start": 136.04,
+      "end": 139.319,
+      "text": "usage based like a gas station so you"
+    },
+    {
+      "start": 137.599,
+      "end": 140.79999999999998,
+      "text": "will need credits you can start with"
+    },
+    {
+      "start": 139.319,
+      "end": 142.11999999999998,
+      "text": "whatever the minimum allowed amount is"
+    },
+    {
+      "start": 140.8,
+      "end": 144.76000000000002,
+      "text": "and always purchase more credits later"
+    },
+    {
+      "start": 142.12,
+      "end": 148.04,
+      "text": "if needed to get an agent Ops API key"
+    },
+    {
+      "start": 144.76,
+      "end": 150.39999999999998,
+      "text": "come over to app. aent ops. and sign up"
+    },
+    {
+      "start": 148.04,
+      "end": 152.48,
+      "text": "then come over to the API key section"
+    },
+    {
+      "start": 150.4,
+      "end": 154.31900000000002,
+      "text": "and copy the default key or create a new"
+    },
+    {
+      "start": 152.48,
+      "end": 155.84,
+      "text": "project to provision a non-default API"
+    },
+    {
+      "start": 154.319,
+      "end": 158.56,
+      "text": "key for organizational purposes if you"
+    },
+    {
+      "start": 155.84,
+      "end": 160.519,
+      "text": "like that takes care of all the PRX for"
+    },
+    {
+      "start": 158.56,
+      "end": 162.72,
+      "text": "part one if you want to try out this"
+    },
+    {
+      "start": 160.519,
+      "end": 165.08,
+      "text": "containerized computer use agent stuff"
+    },
+    {
+      "start": 162.72,
+      "end": 166.48,
+      "text": "for yourself for the Mac users watching"
+    },
+    {
+      "start": 165.08,
+      "end": 168.0,
+      "text": "I'm pretty sure you're excited to get to"
+    },
+    {
+      "start": 166.48,
+      "end": 170.04,
+      "text": "part two but I highly recommend you"
+    },
+    {
+      "start": 168.0,
+      "end": 172.319,
+      "text": "watch part one before watching part two"
+    },
+    {
+      "start": 170.04,
+      "end": 174.44,
+      "text": "for additional context part two is going"
+    },
+    {
+      "start": 172.319,
+      "end": 176.04,
+      "text": "to be simpler to set up than part one"
+    },
+    {
+      "start": 174.44,
+      "end": 177.599,
+      "text": "but it comes with a tradeoff of"
+    },
+    {
+      "start": 176.04,
+      "end": 179.519,
+      "text": "increased risk to your personal data"
+    },
+    {
+      "start": 177.599,
+      "end": 180.72,
+      "text": "being either damaged or exposed"
+    },
+    {
+      "start": 179.519,
+      "end": 181.4,
+      "text": "depending depending on what you ask the"
+    },
+    {
+      "start": 180.72,
+      "end": 184.04,
+      "text": "agent to"
+    },
+    {
+      "start": 181.4,
+      "end": 186.92000000000002,
+      "text": "[Music]"
+    },
+    {
+      "start": 184.04,
+      "end": 191.0,
+      "text": "do here is a diagram showing how to set"
+    },
+    {
+      "start": 186.92,
+      "end": 192.55999999999997,
+      "text": "up a containerized computer use agent"
+    },
+    {
+      "start": 191.0,
+      "end": 194.2,
+      "text": "the benefit of running a computer use"
+    },
+    {
+      "start": 192.56,
+      "end": 196.36,
+      "text": "agent inside of a container is that it"
+    },
+    {
+      "start": 194.2,
+      "end": 198.319,
+      "text": "adds a layer of protection for the data"
+    },
+    {
+      "start": 196.36,
+      "end": 201.31900000000002,
+      "text": "that sits on our base"
+    },
+    {
+      "start": 198.319,
+      "end": 203.51899999999998,
+      "text": "machine yes this is not fullprof there"
+    },
+    {
+      "start": 201.319,
+      "end": 205.11999999999998,
+      "text": "are crazy hacks that can cause the"
+    },
+    {
+      "start": 203.519,
+      "end": 207.28,
+      "text": "software running in the container to"
+    },
+    {
+      "start": 205.12,
+      "end": 209.159,
+      "text": "affect data on the base machine but the"
+    },
+    {
+      "start": 207.28,
+      "end": 212.04,
+      "text": "whole premise and design of what a"
+    },
+    {
+      "start": 209.159,
+      "end": 213.319,
+      "text": "container is does is intended to isolate"
+    },
+    {
+      "start": 212.04,
+      "end": 215.35999999999999,
+      "text": "whatever software runs inside of the"
+    },
+    {
+      "start": 213.319,
+      "end": 217.599,
+      "text": "container from the base machine itself"
+    },
+    {
+      "start": 215.36,
+      "end": 219.4,
+      "text": "to make this a bit more practical if"
+    },
+    {
+      "start": 217.599,
+      "end": 221.83999999999997,
+      "text": "there is some data that sits on our"
+    },
+    {
+      "start": 219.4,
+      "end": 224.31900000000002,
+      "text": "machine that we'd like the computer use"
+    },
+    {
+      "start": 221.84,
+      "end": 226.64000000000001,
+      "text": "agent that we run to access or work with"
+    },
+    {
+      "start": 224.319,
+      "end": 229.04,
+      "text": "we'll need to explicitly copy that data"
+    },
+    {
+      "start": 226.64,
+      "end": 231.64,
+      "text": "into the Container so that the agent can"
+    },
+    {
+      "start": 229.04,
+      "end": 234.12,
+      "text": "work with and access it to give another"
+    },
+    {
+      "start": 231.64,
+      "end": 235.64,
+      "text": "analogy running a computer use agent"
+    },
+    {
+      "start": 234.12,
+      "end": 238.519,
+      "text": "inside of a container is sort of like"
+    },
+    {
+      "start": 235.64,
+      "end": 240.48,
+      "text": "putting a dog inside of a pen yes the"
+    },
+    {
+      "start": 238.519,
+      "end": 242.439,
+      "text": "dog can get over under around through"
+    },
+    {
+      "start": 240.48,
+      "end": 244.159,
+      "text": "the pen the whole purpose of the pen"
+    },
+    {
+      "start": 242.439,
+      "end": 245.56,
+      "text": "though is to confine the dog or to limit"
+    },
+    {
+      "start": 244.159,
+      "end": 247.92,
+      "text": "the blast radius of how the dog can"
+    },
+    {
+      "start": 245.56,
+      "end": 249.439,
+      "text": "affect its surrounding environment the"
+    },
+    {
+      "start": 247.92,
+      "end": 250.879,
+      "text": "combined approach of being very"
+    },
+    {
+      "start": 249.439,
+      "end": 253.439,
+      "text": "thoughtful about the tasks that you"
+    },
+    {
+      "start": 250.879,
+      "end": 255.51899999999998,
+      "text": "assign to your computer use agents along"
+    },
+    {
+      "start": 253.439,
+      "end": 257.44,
+      "text": "with running them in isolated or"
+    },
+    {
+      "start": 255.519,
+      "end": 259.4,
+      "text": "containerized or virtualized"
+    },
+    {
+      "start": 257.44,
+      "end": 260.84,
+      "text": "environments sums up the general"
+    },
+    {
+      "start": 259.4,
+      "end": 263.12,
+      "text": "approach being presented here in part"
+    },
+    {
+      "start": 260.84,
+      "end": 264.79999999999995,
+      "text": "one for how to run these types of Agents"
+    },
+    {
+      "start": 263.12,
+      "end": 266.68,
+      "text": "with respect to data privacy and"
+    },
+    {
+      "start": 264.8,
+      "end": 269.36,
+      "text": "protection okay let's give this"
+    },
+    {
+      "start": 266.68,
+      "end": 270.32,
+      "text": "containerized computer use agent stuff a"
+    },
+    {
+      "start": 269.36,
+      "end": 272.24,
+      "text": "spin"
+    },
+    {
+      "start": 270.32,
+      "end": 275.759,
+      "text": "anthropics original computer use"
+    },
+    {
+      "start": 272.24,
+      "end": 278.919,
+      "text": "implementation can be found at this"
+    },
+    {
+      "start": 275.759,
+      "end": 281.56,
+      "text": "URL inside of this repo there's a number"
+    },
+    {
+      "start": 278.919,
+      "end": 284.75899999999996,
+      "text": "of example projects this is the one that"
+    },
+    {
+      "start": 281.56,
+      "end": 287.32,
+      "text": "we want let's click into it and let's"
+    },
+    {
+      "start": 284.759,
+      "end": 290.759,
+      "text": "take a moment to read through this"
+    },
+    {
+      "start": 287.32,
+      "end": 292.639,
+      "text": "cautionary message that welcomes US"
+    },
+    {
+      "start": 290.759,
+      "end": 294.28000000000003,
+      "text": "computer use is a beta feature Please be"
+    },
+    {
+      "start": 292.639,
+      "end": 295.68,
+      "text": "aware that computer use poses unique"
+    },
+    {
+      "start": 294.28,
+      "end": 298.67999999999995,
+      "text": "risks that are distinct from standard"
+    },
+    {
+      "start": 295.68,
+      "end": 300.8,
+      "text": "API features to minimize risks consider"
+    },
+    {
+      "start": 298.68,
+      "end": 303.56,
+      "text": "one us using a dedicated virtual machine"
+    },
+    {
+      "start": 300.8,
+      "end": 306.199,
+      "text": "or container two avoid giving the model"
+    },
+    {
+      "start": 303.56,
+      "end": 307.919,
+      "text": "access to sensitive data three limit"
+    },
+    {
+      "start": 306.199,
+      "end": 310.639,
+      "text": "internet access to a white list of"
+    },
+    {
+      "start": 307.919,
+      "end": 312.0,
+      "text": "domains and for ask a human to confirm"
+    },
+    {
+      "start": 310.639,
+      "end": 314.199,
+      "text": "decisions that may result in meaningful"
+    },
+    {
+      "start": 312.0,
+      "end": 316.0,
+      "text": "real world consequences in some"
+    },
+    {
+      "start": 314.199,
+      "end": 318.319,
+      "text": "circumstances Cloud will follow commands"
+    },
+    {
+      "start": 316.0,
+      "end": 320.52,
+      "text": "found in content even if it conflicts"
+    },
+    {
+      "start": 318.319,
+      "end": 322.8,
+      "text": "with the user's instructions for example"
+    },
+    {
+      "start": 320.52,
+      "end": 325.4,
+      "text": "instructions on web pages may override"
+    },
+    {
+      "start": 322.8,
+      "end": 328.0,
+      "text": "user instructions or cause claw to make"
+    },
+    {
+      "start": 325.4,
+      "end": 331.63899999999995,
+      "text": "mistakes okay that was not reassuring at"
+    },
+    {
+      "start": 328.0,
+      "end": 331.639,
+      "text": "all but let's move forward anyways"
+    },
+    {
+      "start": 331.72,
+      "end": 339.44000000000005,
+      "text": "let's clone that"
+    },
+    {
+      "start": 334.919,
+      "end": 339.44,
+      "text": "anthropic quick starts repo onto our"
+    },
+    {
+      "start": 340.919,
+      "end": 349.15999999999997,
+      "text": "machine and let's enter the cloned or"
+    },
+    {
+      "start": 346.479,
+      "end": 351.44,
+      "text": "copied project that we downloaded from"
+    },
+    {
+      "start": 349.16,
+      "end": 353.47900000000004,
+      "text": "GitHub and here we see all of the"
+    },
+    {
+      "start": 351.44,
+      "end": 354.639,
+      "text": "projects let's enter the computer use"
+    },
+    {
+      "start": 353.479,
+      "end": 360.31899999999996,
+      "text": "demo"
+    },
+    {
+      "start": 354.639,
+      "end": 360.319,
+      "text": "project and open it with vs code"
+    },
+    {
+      "start": 363.16,
+      "end": 370.8,
+      "text": "in this project we see a"
+    },
+    {
+      "start": 366.039,
+      "end": 373.759,
+      "text": "setup.sh script and let's run"
+    },
+    {
+      "start": 370.8,
+      "end": 379.0,
+      "text": "that here you can see this"
+    },
+    {
+      "start": 373.759,
+      "end": 382.599,
+      "text": "script is confirming we have Python and"
+    },
+    {
+      "start": 379.0,
+      "end": 384.24,
+      "text": "cargo installed and it's going to set up"
+    },
+    {
+      "start": 382.599,
+      "end": 387.68,
+      "text": "a virtual environment for us and"
+    },
+    {
+      "start": 384.24,
+      "end": 391.24,
+      "text": "download all of the dependencies this"
+    },
+    {
+      "start": 387.68,
+      "end": 393.919,
+      "text": "project needs Etc so let me be quiet and"
+    },
+    {
+      "start": 391.24,
+      "end": 393.919,
+      "text": "let's just run"
+    },
+    {
+      "start": 394.639,
+      "end": 403.759,
+      "text": "this all right so the setup script"
+    },
+    {
+      "start": 399.44,
+      "end": 406.96,
+      "text": "finished and next up we have to"
+    },
+    {
+      "start": 403.759,
+      "end": 408.96000000000004,
+      "text": "build the docker image that's going to"
+    },
+    {
+      "start": 406.96,
+      "end": 410.84,
+      "text": "power our computer use"
+    },
+    {
+      "start": 408.96,
+      "end": 414.039,
+      "text": "agent hopefully you're familiar with"
+    },
+    {
+      "start": 410.84,
+      "end": 418.599,
+      "text": "Docker lingo so Docker file is to image"
+    },
+    {
+      "start": 414.039,
+      "end": 420.08,
+      "text": "is to container as recipe is to frozen"
+    },
+    {
+      "start": 418.599,
+      "end": 424.28,
+      "text": "food is to"
+    },
+    {
+      "start": 420.08,
+      "end": 426.599,
+      "text": "meal as blueprint is to manufacture good"
+    },
+    {
+      "start": 424.28,
+      "end": 429.919,
+      "text": "is to purchase good sort of abstract but"
+    },
+    {
+      "start": 426.599,
+      "end": 433.84,
+      "text": "that's how it works Docker file image"
+    },
+    {
+      "start": 429.919,
+      "end": 439.039,
+      "text": "container anyways next up we"
+    },
+    {
+      "start": 433.84,
+      "end": 441.35999999999996,
+      "text": "will set our anthropic API key I"
+    },
+    {
+      "start": 439.039,
+      "end": 443.759,
+      "text": "will censor"
+    },
+    {
+      "start": 441.36,
+      "end": 448.0,
+      "text": "this so I don't"
+    },
+    {
+      "start": 443.759,
+      "end": 449.84000000000003,
+      "text": "expose my key clear the terminal and now"
+    },
+    {
+      "start": 448.0,
+      "end": 453.52,
+      "text": "we can run our Docker container that"
+    },
+    {
+      "start": 449.84,
+      "end": 453.52,
+      "text": "will power our computer use"
+    },
+    {
+      "start": 455.08,
+      "end": 460.479,
+      "text": "agent here we see the computer use agent"
+    },
+    {
+      "start": 459.28,
+      "end": 462.11999999999995,
+      "text": "booting"
+    },
+    {
+      "start": 460.479,
+      "end": 466.12,
+      "text": "up"
+    },
+    {
+      "start": 462.12,
+      "end": 469.44,
+      "text": "and we see it's ready for us to load and"
+    },
+    {
+      "start": 466.12,
+      "end": 471.919,
+      "text": "here we see the same image that we saw"
+    },
+    {
+      "start": 469.44,
+      "end": 475.44,
+      "text": "on the architecture diagram of how to"
+    },
+    {
+      "start": 471.919,
+      "end": 478.84,
+      "text": "set up a computer use agent in a Docker"
+    },
+    {
+      "start": 475.44,
+      "end": 481.44,
+      "text": "container here is a simple web"
+    },
+    {
+      "start": 478.84,
+      "end": 483.52,
+      "text": "application that consists of two panels"
+    },
+    {
+      "start": 481.44,
+      "end": 486.56,
+      "text": "you see this left panel and this right"
+    },
+    {
+      "start": 483.52,
+      "end": 489.52,
+      "text": "panel the left panel holds an iframe"
+    },
+    {
+      "start": 486.56,
+      "end": 492.599,
+      "text": "powering a little chat application for"
+    },
+    {
+      "start": 489.52,
+      "end": 497.4,
+      "text": "interacting with our computer use agent"
+    },
+    {
+      "start": 492.599,
+      "end": 501.28,
+      "text": "and on the right is the desktop guey of"
+    },
+    {
+      "start": 497.4,
+      "end": 505.599,
+      "text": "the computer that the agent is"
+    },
+    {
+      "start": 501.28,
+      "end": 507.71999999999997,
+      "text": "controlling so if I say for example"
+    },
+    {
+      "start": 505.599,
+      "end": 511.279,
+      "text": "hello right we see the agent taking"
+    },
+    {
+      "start": 507.72,
+      "end": 516.36,
+      "text": "screenshots of the machine"
+    },
+    {
+      "start": 511.279,
+      "end": 523.159,
+      "text": "and let's try this out now open the"
+    },
+    {
+      "start": 516.36,
+      "end": 523.159,
+      "text": "calculator and add 2 +"
+    },
+    {
+      "start": 525.399,
+      "end": 532.76,
+      "text": "2 right that's pretty incredible right"
+    },
+    {
+      "start": 527.88,
+      "end": 534.8389999999999,
+      "text": "so next up let's show how to copy data"
+    },
+    {
+      "start": 532.76,
+      "end": 536.76,
+      "text": "on our base machine into the Container"
+    },
+    {
+      "start": 534.839,
+      "end": 540.2790000000001,
+      "text": "so that we can do some more practical"
+    },
+    {
+      "start": 536.76,
+      "end": 544.959,
+      "text": "work okay here's the technique"
+    },
+    {
+      "start": 540.279,
+      "end": 548.56,
+      "text": "so we are going to mount a folder in our"
+    },
+    {
+      "start": 544.959,
+      "end": 550.7199999999999,
+      "text": "project into a folder in the container"
+    },
+    {
+      "start": 548.56,
+      "end": 554.079,
+      "text": "and whatever files or data we add to"
+    },
+    {
+      "start": 550.72,
+      "end": 554.9590000000001,
+      "text": "this folder will be visible to the agent"
+    },
+    {
+      "start": 554.079,
+      "end": 558.5999999999999,
+      "text": "in the"
+    },
+    {
+      "start": 554.959,
+      "end": 560.5189999999999,
+      "text": "container so for demonstration purposes"
+    },
+    {
+      "start": 558.6,
+      "end": 564.76,
+      "text": "I am going"
+    },
+    {
+      "start": 560.519,
+      "end": 567.8,
+      "text": "to add this service agreement"
+    },
+    {
+      "start": 564.76,
+      "end": 570.279,
+      "text": "contract that I've used a few times over"
+    },
+    {
+      "start": 567.8,
+      "end": 572.16,
+      "text": "the past year or two"
+    },
+    {
+      "start": 570.279,
+      "end": 573.8389999999999,
+      "text": "it comes from Liam Atley I don't know if"
+    },
+    {
+      "start": 572.16,
+      "end": 577.36,
+      "text": "you've ever heard of him he's a YouTuber"
+    },
+    {
+      "start": 573.839,
+      "end": 580.8000000000001,
+      "text": "as well and what usually happens is a"
+    },
+    {
+      "start": 577.36,
+      "end": 583.5600000000001,
+      "text": "perspective client will come into my"
+    },
+    {
+      "start": 580.8,
+      "end": 586.24,
+      "text": "Pipeline and I'll need to draft a"
+    },
+    {
+      "start": 583.56,
+      "end": 590.1199999999999,
+      "text": "proposal for them and customize a"
+    },
+    {
+      "start": 586.24,
+      "end": 592.48,
+      "text": "template and let's see if the computer"
+    },
+    {
+      "start": 590.12,
+      "end": 593.72,
+      "text": "use agent can do this work instead of me"
+    },
+    {
+      "start": 592.48,
+      "end": 598.6800000000001,
+      "text": "doing it"
+    },
+    {
+      "start": 593.72,
+      "end": 601.12,
+      "text": "so we've created the scratch folder and"
+    },
+    {
+      "start": 598.68,
+      "end": 606.2399999999999,
+      "text": "this is how we"
+    },
+    {
+      "start": 601.12,
+      "end": 606.24,
+      "text": "mount it to The"
+    },
+    {
+      "start": 609.079,
+      "end": 614.3599999999999,
+      "text": "Container the computer use agent has"
+    },
+    {
+      "start": 611.839,
+      "end": 617.12,
+      "text": "rebooted"
+    },
+    {
+      "start": 614.36,
+      "end": 619.839,
+      "text": "and here's the"
+    },
+    {
+      "start": 617.12,
+      "end": 623.36,
+      "text": "prompt that we're going to"
+    },
+    {
+      "start": 619.839,
+      "end": 627.0,
+      "text": "send to have our"
+    },
+    {
+      "start": 623.36,
+      "end": 630.92,
+      "text": "agent customize this service agreement"
+    },
+    {
+      "start": 627.0,
+      "end": 630.92,
+      "text": "template for us"
+    },
+    {
+      "start": 631.92,
+      "end": 636.639,
+      "text": "right and you can see the agent has"
+    },
+    {
+      "start": 634.32,
+      "end": 640.1600000000001,
+      "text": "extracted the text from"
+    },
+    {
+      "start": 636.639,
+      "end": 640.16,
+      "text": "this PDF"
+    },
+    {
+      "start": 642.399,
+      "end": 648.12,
+      "text": "document all right so it extracted the"
+    },
+    {
+      "start": 645.36,
+      "end": 651.6,
+      "text": "text and it"
+    },
+    {
+      "start": 648.12,
+      "end": 653.16,
+      "text": "modified the service agreement with the"
+    },
+    {
+      "start": 651.6,
+      "end": 655.9590000000001,
+      "text": "information I"
+    },
+    {
+      "start": 653.16,
+      "end": 659.6,
+      "text": "provided and in the prompt I requested"
+    },
+    {
+      "start": 655.959,
+      "end": 662.92,
+      "text": "the final document to be a PDF so"
+    },
+    {
+      "start": 659.6,
+      "end": 662.9200000000001,
+      "text": "let's see if it does that part"
+    },
+    {
+      "start": 668.959,
+      "end": 677.4399999999999,
+      "text": "two all right eventually it got pretty"
+    },
+    {
+      "start": 672.48,
+      "end": 679.839,
+      "text": "much there it's not the best looking"
+    },
+    {
+      "start": 677.44,
+      "end": 682.0400000000001,
+      "text": "agreement the original one is formatted"
+    },
+    {
+      "start": 679.839,
+      "end": 684.5600000000001,
+      "text": "much more"
+    },
+    {
+      "start": 682.04,
+      "end": 686.5999999999999,
+      "text": "nicely but you get a feel for how this"
+    },
+    {
+      "start": 684.56,
+      "end": 688.7199999999999,
+      "text": "works now we're going to add in agent"
+    },
+    {
+      "start": 686.6,
+      "end": 690.9200000000001,
+      "text": "Ops and rerun this PDF customization"
+    },
+    {
+      "start": 688.72,
+      "end": 693.24,
+      "text": "request to confirm everything regarding"
+    },
+    {
+      "start": 690.92,
+      "end": 695.3199999999999,
+      "text": "our agent's activity is being monitored"
+    },
+    {
+      "start": 693.24,
+      "end": 697.639,
+      "text": "appropriately okay to do this first we"
+    },
+    {
+      "start": 695.32,
+      "end": 702.2,
+      "text": "come over to the requirements.txt file"
+    },
+    {
+      "start": 697.639,
+      "end": 707.04,
+      "text": "in the computer _ demo folder and add"
+    },
+    {
+      "start": 702.2,
+      "end": 711.0400000000001,
+      "text": "another dependency that reads like"
+    },
+    {
+      "start": 707.04,
+      "end": 713.279,
+      "text": "this agent Ops is still testing this"
+    },
+    {
+      "start": 711.04,
+      "end": 716.12,
+      "text": "computer use agent tracking"
+    },
+    {
+      "start": 713.279,
+      "end": 717.8389999999999,
+      "text": "feature that's why we have to import"
+    },
+    {
+      "start": 716.12,
+      "end": 722.32,
+      "text": "this special unreleased version that was"
+    },
+    {
+      "start": 717.839,
+      "end": 723.839,
+      "text": "authored by to NS AKA Romanian Raiden or"
+    },
+    {
+      "start": 722.32,
+      "end": 725.9590000000001,
+      "text": "Romanian Ryden however you want to"
+    },
+    {
+      "start": 723.839,
+      "end": 728.0790000000001,
+      "text": "pronounce it if and when this is"
+    },
+    {
+      "start": 725.959,
+      "end": 730.5189999999999,
+      "text": "released you'll simply import it like"
+    },
+    {
+      "start": 728.079,
+      "end": 732.4399999999999,
+      "text": "this but for now we have to go with this"
+    },
+    {
+      "start": 730.519,
+      "end": 735.399,
+      "text": "the next thing that we have to do is"
+    },
+    {
+      "start": 732.44,
+      "end": 739.5600000000001,
+      "text": "come over to the streamlit dopy file and"
+    },
+    {
+      "start": 735.399,
+      "end": 743.12,
+      "text": "initialize agent Ops to track all of the"
+    },
+    {
+      "start": 739.56,
+      "end": 746.7199999999999,
+      "text": "llm calls our application"
+    },
+    {
+      "start": 743.12,
+      "end": 751.16,
+      "text": "makes and now we can"
+    },
+    {
+      "start": 746.72,
+      "end": 751.1600000000001,
+      "text": "build our image again"
+    },
+    {
+      "start": 752.44,
+      "end": 761.0,
+      "text": "and now we have to set our agent Ops API"
+    },
+    {
+      "start": 756.68,
+      "end": 761.0,
+      "text": "key as a shell"
+    },
+    {
+      "start": 762.12,
+      "end": 768.399,
+      "text": "variable this is the API key that you"
+    },
+    {
+      "start": 764.56,
+      "end": 768.399,
+      "text": "copied from the agent Ops"
+    },
+    {
+      "start": 770.12,
+      "end": 777.48,
+      "text": "console and now we can run our computer"
+    },
+    {
+      "start": 774.959,
+      "end": 781.1199999999999,
+      "text": "use agent again with this command and"
+    },
+    {
+      "start": 777.48,
+      "end": 781.12,
+      "text": "make sure you reference the agent Ops AP"
+    },
+    {
+      "start": 782.56,
+      "end": 789.079,
+      "text": "key okay the computer use agent has"
+    },
+    {
+      "start": 785.639,
+      "end": 791.279,
+      "text": "rebooted and we see agent Ops appears to"
+    },
+    {
+      "start": 789.079,
+      "end": 791.279,
+      "text": "be"
+    },
+    {
+      "start": 792.36,
+      "end": 801.399,
+      "text": "working and now if we send our agreement"
+    },
+    {
+      "start": 797.32,
+      "end": 804.9200000000001,
+      "text": "customization prompt let's see if agent"
+    },
+    {
+      "start": 801.399,
+      "end": 808.44,
+      "text": "Ops is indeed tracking all of the"
+    },
+    {
+      "start": 804.92,
+      "end": 808.4399999999999,
+      "text": "agent's activity"
+    },
+    {
+      "start": 819.0,
+      "end": 825.079,
+      "text": "okay so monitoring is set up and this is"
+    },
+    {
+      "start": 823.12,
+      "end": 829.0,
+      "text": "an advisable way to use this system so"
+    },
+    {
+      "start": 825.079,
+      "end": 832.7589999999999,
+      "text": "that you can audit what it does and you"
+    },
+    {
+      "start": 829.0,
+      "end": 834.44,
+      "text": "know make sure you have a personal track"
+    },
+    {
+      "start": 832.759,
+      "end": 839.04,
+      "text": "of everything that it's doing in case it"
+    },
+    {
+      "start": 834.44,
+      "end": 839.0400000000001,
+      "text": "goes off the rails so to speak"
+    },
+    {
+      "start": 840.04,
+      "end": 844.92,
+      "text": "we are now going to skirt cautiously on"
+    },
+    {
+      "start": 842.079,
+      "end": 847.199,
+      "text": "the edge of Pandora's box-like territory"
+    },
+    {
+      "start": 844.92,
+      "end": 849.5999999999999,
+      "text": "we are going to run a computer use agent"
+    },
+    {
+      "start": 847.199,
+      "end": 851.24,
+      "text": "directly on a Mac while anthropics"
+    },
+    {
+      "start": 849.6,
+      "end": 853.5600000000001,
+      "text": "original implementation was designed to"
+    },
+    {
+      "start": 851.24,
+      "end": 855.519,
+      "text": "run the agent on an auntu machine within"
+    },
+    {
+      "start": 853.56,
+      "end": 857.5999999999999,
+      "text": "a container a rather creative and"
+    },
+    {
+      "start": 855.519,
+      "end": 859.279,
+      "text": "exceptional fellow by the name of DD"
+    },
+    {
+      "start": 857.6,
+      "end": 861.36,
+      "text": "forked or customized this original"
+    },
+    {
+      "start": 859.279,
+      "end": 864.12,
+      "text": "implementation so that the agent runs"
+    },
+    {
+      "start": 861.36,
+      "end": 866.12,
+      "text": "directly in mac-based environments here"
+    },
+    {
+      "start": 864.12,
+      "end": 868.079,
+      "text": "is a diagram outlining the design of"
+    },
+    {
+      "start": 866.12,
+      "end": 870.079,
+      "text": "this Mac computer use agent and"
+    },
+    {
+      "start": 868.079,
+      "end": 872.56,
+      "text": "immediately we can see that it's simpler"
+    },
+    {
+      "start": 870.079,
+      "end": 874.399,
+      "text": "than the original containerized computer"
+    },
+    {
+      "start": 872.56,
+      "end": 876.7199999999999,
+      "text": "use implementation that anthropic"
+    },
+    {
+      "start": 874.399,
+      "end": 878.639,
+      "text": "published keep in mind that this Mac"
+    },
+    {
+      "start": 876.72,
+      "end": 880.279,
+      "text": "computer use agent implementation will"
+    },
+    {
+      "start": 878.639,
+      "end": 881.92,
+      "text": "periodically take screenshots of your"
+    },
+    {
+      "start": 880.279,
+      "end": 884.639,
+      "text": "monitor and other snapshots of your"
+    },
+    {
+      "start": 881.92,
+      "end": 885.88,
+      "text": "machine for upload to AWS and Google"
+    },
+    {
+      "start": 884.639,
+      "end": 887.5600000000001,
+      "text": "Cloud as that's where I understand"
+    },
+    {
+      "start": 885.88,
+      "end": 889.959,
+      "text": "anthropic models are currently"
+    },
+    {
+      "start": 887.56,
+      "end": 891.5999999999999,
+      "text": "hosted after this data is uploaded to"
+    },
+    {
+      "start": 889.959,
+      "end": 893.2399999999999,
+      "text": "these clouds it will be ran through"
+    },
+    {
+      "start": 891.6,
+      "end": 895.72,
+      "text": "multiple layers of processing and"
+    },
+    {
+      "start": 893.24,
+      "end": 898.48,
+      "text": "Analysis the exact details of which are"
+    },
+    {
+      "start": 895.72,
+      "end": 900.36,
+      "text": "not publicly known secondly due to the"
+    },
+    {
+      "start": 898.48,
+      "end": 902.279,
+      "text": "probabilistic nature of how multimodal"
+    },
+    {
+      "start": 900.36,
+      "end": 904.1990000000001,
+      "text": "Transformers work they by their very"
+    },
+    {
+      "start": 902.279,
+      "end": 905.6,
+      "text": "nature are capable of doing unexpected"
+    },
+    {
+      "start": 904.199,
+      "end": 908.12,
+      "text": "things which in the realm of personal"
+    },
+    {
+      "start": 905.6,
+      "end": 910.36,
+      "text": "data is not that reassuring let's say"
+    },
+    {
+      "start": 908.12,
+      "end": 912.12,
+      "text": "for example that for maybe prompt"
+    },
+    {
+      "start": 910.36,
+      "end": 914.0790000000001,
+      "text": "injection reasons one of the models"
+    },
+    {
+      "start": 912.12,
+      "end": 916.199,
+      "text": "you're using were to edit or delete"
+    },
+    {
+      "start": 914.079,
+      "end": 917.92,
+      "text": "sensitive data on your computer this"
+    },
+    {
+      "start": 916.199,
+      "end": 919.92,
+      "text": "would be disastrous if backups were"
+    },
+    {
+      "start": 917.92,
+      "end": 921.3199999999999,
+      "text": "never taken thirdly there is the"
+    },
+    {
+      "start": 919.92,
+      "end": 923.079,
+      "text": "fundamental concern that we are"
+    },
+    {
+      "start": 921.32,
+      "end": 925.839,
+      "text": "literally handing over control of our"
+    },
+    {
+      "start": 923.079,
+      "end": 927.92,
+      "text": "computer to another entity yes there are"
+    },
+    {
+      "start": 925.839,
+      "end": 929.6800000000001,
+      "text": "already many ways that big Tech players"
+    },
+    {
+      "start": 927.92,
+      "end": 931.199,
+      "text": "and government actors are are monitoring"
+    },
+    {
+      "start": 929.68,
+      "end": 933.8389999999999,
+      "text": "and restricting our personal computer"
+    },
+    {
+      "start": 931.199,
+      "end": 935.4799999999999,
+      "text": "usage but this setup makes it explicit"
+    },
+    {
+      "start": 933.839,
+      "end": 937.759,
+      "text": "you're literally handing over control to"
+    },
+    {
+      "start": 935.48,
+      "end": 939.6,
+      "text": "another entity at the very least what"
+    },
+    {
+      "start": 937.759,
+      "end": 941.399,
+      "text": "you should do is make sure that the"
+    },
+    {
+      "start": 939.6,
+      "end": 944.9590000000001,
+      "text": "prompts you send to your computer use"
+    },
+    {
+      "start": 941.399,
+      "end": 947.319,
+      "text": "agents include human in the loop steps"
+    },
+    {
+      "start": 944.959,
+      "end": 949.0,
+      "text": "so that you stay involved at key points"
+    },
+    {
+      "start": 947.319,
+      "end": 951.199,
+      "text": "in the tasks that you're assigning to"
+    },
+    {
+      "start": 949.0,
+      "end": 952.44,
+      "text": "them that's the very least you can do in"
+    },
+    {
+      "start": 951.199,
+      "end": 954.0,
+      "text": "order to make sure this doesn't have"
+    },
+    {
+      "start": 952.44,
+      "end": 956.48,
+      "text": "unintended consequences you'll probably"
+    },
+    {
+      "start": 954.0,
+      "end": 959.8,
+      "text": "need additional layers of protection"
+    },
+    {
+      "start": 956.48,
+      "end": 962.12,
+      "text": "like virtualization you know fire walls"
+    },
+    {
+      "start": 959.8,
+      "end": 965.56,
+      "text": "moving on now let's take this Mac"
+    },
+    {
+      "start": 962.12,
+      "end": 968.079,
+      "text": "computer use agent for a spin DD's Mac"
+    },
+    {
+      "start": 965.56,
+      "end": 970.3599999999999,
+      "text": "computer use implementation can be found"
+    },
+    {
+      "start": 968.079,
+      "end": 974.8,
+      "text": "at this"
+    },
+    {
+      "start": 970.36,
+      "end": 977.0790000000001,
+      "text": "URL and let's clone this project onto"
+    },
+    {
+      "start": 974.8,
+      "end": 977.079,
+      "text": "our"
+    },
+    {
+      "start": 978.399,
+      "end": 984.639,
+      "text": "computer and"
+    },
+    {
+      "start": 980.319,
+      "end": 987.639,
+      "text": "enter the project and open it with vs"
+    },
+    {
+      "start": 984.639,
+      "end": 989.279,
+      "text": "code and then there is this setup.sh"
+    },
+    {
+      "start": 987.639,
+      "end": 990.6800000000001,
+      "text": "script that's going to inst install all"
+    },
+    {
+      "start": 989.279,
+      "end": 993.56,
+      "text": "the requirements we need to run this"
+    },
+    {
+      "start": 990.68,
+      "end": 996.079,
+      "text": "application on our computer for us so"
+    },
+    {
+      "start": 993.56,
+      "end": 996.079,
+      "text": "let's run"
+    },
+    {
+      "start": 999.12,
+      "end": 1009.199,
+      "text": "it and"
+    },
+    {
+      "start": 1002.68,
+      "end": 1010.6099999999999,
+      "text": "then let's create aemv file with these"
+    },
+    {
+      "start": 1009.199,
+      "end": 1011.88,
+      "text": "variables"
+    },
+    {
+      "start": 1010.61,
+      "end": 1016.44,
+      "text": "[Music]"
+    },
+    {
+      "start": 1011.88,
+      "end": 1020.8389999999999,
+      "text": "and next up we want"
+    },
+    {
+      "start": 1016.44,
+      "end": 1020.839,
+      "text": "to activate our virtual environment"
+    },
+    {
+      "start": 1023.0,
+      "end": 1027.36,
+      "text": "and you can see our environment is"
+    },
+    {
+      "start": 1025.039,
+      "end": 1030.16,
+      "text": "activated by this change in the"
+    },
+    {
+      "start": 1027.36,
+      "end": 1032.4799999999998,
+      "text": "prompt I'm surprised it's not set up out"
+    },
+    {
+      "start": 1030.16,
+      "end": 1034.919,
+      "text": "of the box for us but we have to rename"
+    },
+    {
+      "start": 1032.48,
+      "end": 1038.52,
+      "text": "this streamlit dopy file to be called"
+    },
+    {
+      "start": 1034.919,
+      "end": 1041.679,
+      "text": "streamlit app.py maybe try running it as"
+    },
+    {
+      "start": 1038.52,
+      "end": 1043.28,
+      "text": "is see if it works for you but for me I"
+    },
+    {
+      "start": 1041.679,
+      "end": 1047.8400000000001,
+      "text": "have to rename"
+    },
+    {
+      "start": 1043.28,
+      "end": 1050.799,
+      "text": "it and then when I run this"
+    },
+    {
+      "start": 1047.84,
+      "end": 1053.3999999999999,
+      "text": "application with this command it"
+    },
+    {
+      "start": 1050.799,
+      "end": 1053.4,
+      "text": "hopefully should"
+    },
+    {
+      "start": 1054.6,
+      "end": 1061.52,
+      "text": "work and it looks like it does let's run"
+    },
+    {
+      "start": 1058.679,
+      "end": 1063.5590000000002,
+      "text": "a quick smoke test write the text Hello"
+    },
+    {
+      "start": 1061.52,
+      "end": 1067.12,
+      "text": "to a new file called hello.txt on A's"
+    },
+    {
+      "start": 1063.559,
+      "end": 1069.12,
+      "text": "desktop a is the Mac User running this"
+    },
+    {
+      "start": 1067.12,
+      "end": 1072.3999999999999,
+      "text": "prompt"
+    },
+    {
+      "start": 1069.12,
+      "end": 1072.3999999999999,
+      "text": "voila see"
+    },
+    {
+      "start": 1074.88,
+      "end": 1080.48,
+      "text": "that"
+    },
+    {
+      "start": 1076.919,
+      "end": 1083.76,
+      "text": "hello so that's immediately stop this"
+    },
+    {
+      "start": 1080.48,
+      "end": 1086.0,
+      "text": "nonsense and shut this"
+    },
+    {
+      "start": 1083.76,
+      "end": 1087.799,
+      "text": "down I'm pretty sure on this channel"
+    },
+    {
+      "start": 1086.0,
+      "end": 1090.32,
+      "text": "that's as far as we're ever going to go"
+    },
+    {
+      "start": 1087.799,
+      "end": 1093.24,
+      "text": "on this direct host-based computer use"
+    },
+    {
+      "start": 1090.32,
+      "end": 1095.3999999999999,
+      "text": "agent setup stuff in conclusion computer"
+    },
+    {
+      "start": 1093.24,
+      "end": 1097.84,
+      "text": "use agents are an amazing Innovation but"
+    },
+    {
+      "start": 1095.4,
+      "end": 1099.88,
+      "text": "I'd highly advise against using them"
+    },
+    {
+      "start": 1097.84,
+      "end": 1101.84,
+      "text": "without thoroughly assessing potential"
+    },
+    {
+      "start": 1099.88,
+      "end": 1103.8400000000001,
+      "text": "consequences the trickiest thing about"
+    },
+    {
+      "start": 1101.84,
+      "end": 1106.12,
+      "text": "them is that they can perform undesired"
+    },
+    {
+      "start": 1103.84,
+      "end": 1108.8799999999999,
+      "text": "actions even after being explicitly"
+    },
+    {
+      "start": 1106.12,
+      "end": 1110.7199999999998,
+      "text": "configured to not do so if you'd still"
+    },
+    {
+      "start": 1108.88,
+      "end": 1112.679,
+      "text": "like to experiment with them however"
+    },
+    {
+      "start": 1110.72,
+      "end": 1115.3600000000001,
+      "text": "here is the list of precautions to take"
+    },
+    {
+      "start": 1112.679,
+      "end": 1117.48,
+      "text": "as a starting"
+    },
+    {
+      "start": 1115.36,
+      "end": 1118.8799999999999,
+      "text": "point if you'd like to experiment with"
+    },
+    {
+      "start": 1117.48,
+      "end": 1120.919,
+      "text": "developing the source code of a computer"
+    },
+    {
+      "start": 1118.88,
+      "end": 1122.2800000000002,
+      "text": "use agent here is a fork of the original"
+    },
+    {
+      "start": 1120.919,
+      "end": 1124.5200000000002,
+      "text": "anthropic implementation that I'm"
+    },
+    {
+      "start": 1122.28,
+      "end": 1127.36,
+      "text": "particularly fond of it was authored by"
+    },
+    {
+      "start": 1124.52,
+      "end": 1128.679,
+      "text": "tocns AKA Romanian Raiden and it"
+    },
+    {
+      "start": 1127.36,
+      "end": 1130.36,
+      "text": "features outof the-box breakpoint"
+    },
+    {
+      "start": 1128.679,
+      "end": 1132.64,
+      "text": "debugging and a more streamlined project"
+    },
+    {
+      "start": 1130.36,
+      "end": 1134.24,
+      "text": "setup as a challenge to the community"
+    },
+    {
+      "start": 1132.64,
+      "end": 1136.159,
+      "text": "one thing I'd love to see integrated"
+    },
+    {
+      "start": 1134.24,
+      "end": 1138.4,
+      "text": "into this Fork would be the use of an"
+    },
+    {
+      "start": 1136.159,
+      "end": 1142.48,
+      "text": "open-source multimodal model like for"
+    },
+    {
+      "start": 1138.4,
+      "end": 1144.039,
+      "text": "example llama 3.2 multimodal 90b using a"
+    },
+    {
+      "start": 1142.48,
+      "end": 1146.1200000000001,
+      "text": "locally hosted model for powering a"
+    },
+    {
+      "start": 1144.039,
+      "end": 1147.52,
+      "text": "computer use agent is going to be a huge"
+    },
+    {
+      "start": 1146.12,
+      "end": 1149.7199999999998,
+      "text": "step up from a data protection"
+    },
+    {
+      "start": 1147.52,
+      "end": 1151.799,
+      "text": "standpoint finally in the description"
+    },
+    {
+      "start": 1149.72,
+      "end": 1153.679,
+      "text": "for this video you should see a links"
+    },
+    {
+      "start": 1151.799,
+      "end": 1156.8799999999999,
+      "text": "section I've included the links for"
+    },
+    {
+      "start": 1153.679,
+      "end": 1158.6000000000001,
+      "text": "downloading git Docker and VSS code I've"
+    },
+    {
+      "start": 1156.88,
+      "end": 1161.48,
+      "text": "also included the links for signing up"
+    },
+    {
+      "start": 1158.6,
+      "end": 1163.039,
+      "text": "to anthropic and agent Ops plus I've"
+    },
+    {
+      "start": 1161.48,
+      "end": 1166.08,
+      "text": "included a link for buying me a"
+    },
+    {
+      "start": 1163.039,
+      "end": 1168.96,
+      "text": "metaphorical coffee and I've included an"
+    },
+    {
+      "start": 1166.08,
+      "end": 1173.72,
+      "text": "affiliate link for buying this yoga ball"
+    },
+    {
+      "start": 1168.96,
+      "end": 1177.48,
+      "text": "useful for stretching for bouncing for"
+    },
+    {
+      "start": 1173.72,
+      "end": 1179.0,
+      "text": "exercise Etc wishing us all the highest"
+    },
+    {
+      "start": 1177.48,
+      "end": 1179.0,
+      "text": "of blessings"
+    }
+  ]
+}

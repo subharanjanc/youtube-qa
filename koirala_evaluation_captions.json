@@ -1,0 +1,3348 @@
+{
+  "video_id": "HI5b0g_mELA",
+  "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+  "channel": "Data Science Basics | AI",
+  "trainer": "Sudarshan Koirala",
+  "topic": "Evaluation",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1647.0,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 4.12,
+      "text": "hello guys welcome back in this video"
+    },
+    {
+      "start": 1.68,
+      "end": 6.52,
+      "text": "let's go through the rag evaluation in"
+    },
+    {
+      "start": 4.12,
+      "end": 10.2,
+      "text": "Amazon Bedrock you create a rag"
+    },
+    {
+      "start": 6.52,
+      "end": 12.759,
+      "text": "application and until you know how the"
+    },
+    {
+      "start": 10.2,
+      "end": 14.879,
+      "text": "rag application is behaving you cannot"
+    },
+    {
+      "start": 12.759,
+      "end": 17.84,
+      "text": "be sure that okay this rag application"
+    },
+    {
+      "start": 14.879,
+      "end": 20.198999999999998,
+      "text": "is is Top Notch right in this video"
+    },
+    {
+      "start": 17.84,
+      "end": 22.439,
+      "text": "let's go through how to create that step"
+    },
+    {
+      "start": 20.199,
+      "end": 24.599000000000004,
+      "text": "by step we are going to use llm to"
+    },
+    {
+      "start": 22.439,
+      "end": 26.519,
+      "text": "compute The Matrix we are going to"
+    },
+    {
+      "start": 24.599,
+      "end": 29.039,
+      "text": "choose the metrix that we want because"
+    },
+    {
+      "start": 26.519,
+      "end": 31.24,
+      "text": "not all metrics might be essential for"
+    },
+    {
+      "start": 29.039,
+      "end": 33.68,
+      "text": "your application you can even compare"
+    },
+    {
+      "start": 31.24,
+      "end": 36.12,
+      "text": "different configurations when you create"
+    },
+    {
+      "start": 33.68,
+      "end": 38.239,
+      "text": "the evaluations I will be walking you"
+    },
+    {
+      "start": 36.12,
+      "end": 40.36,
+      "text": "step by step we'll be creating a"
+    },
+    {
+      "start": 38.239,
+      "end": 42.0,
+      "text": "knowledge base we'll be creating a"
+    },
+    {
+      "start": 40.36,
+      "end": 43.6,
+      "text": "golden data set because there is some"
+    },
+    {
+      "start": 42.0,
+      "end": 45.84,
+      "text": "formats that you need to follow to"
+    },
+    {
+      "start": 43.6,
+      "end": 48.0,
+      "text": "create the golden data set you need to"
+    },
+    {
+      "start": 45.84,
+      "end": 50.399,
+      "text": "provide some permissions for that bucket"
+    },
+    {
+      "start": 48.0,
+      "end": 52.64,
+      "text": "in order to work for the"
+    },
+    {
+      "start": 50.399,
+      "end": 55.199,
+      "text": "evaluations we will be evaluate the"
+    },
+    {
+      "start": 52.64,
+      "end": 57.28,
+      "text": "responses with that golden data set and"
+    },
+    {
+      "start": 55.199,
+      "end": 59.0,
+      "text": "you can even compare let's say you"
+    },
+    {
+      "start": 57.28,
+      "end": 61.120000000000005,
+      "text": "create application change some"
+    },
+    {
+      "start": 59.0,
+      "end": 62.719,
+      "text": "configurations you have two evaluations"
+    },
+    {
+      "start": 61.12,
+      "end": 65.0,
+      "text": "and you can see which one performs the"
+    },
+    {
+      "start": 62.719,
+      "end": 67.2,
+      "text": "best so you can use the one that"
+    },
+    {
+      "start": 65.0,
+      "end": 69.6,
+      "text": "performs the best in your production"
+    },
+    {
+      "start": 67.2,
+      "end": 72.64,
+      "text": "environment by the end of the video you"
+    },
+    {
+      "start": 69.6,
+      "end": 74.36,
+      "text": "will see something like this let me load"
+    },
+    {
+      "start": 72.64,
+      "end": 76.6,
+      "text": "it again here so this is one of the"
+    },
+    {
+      "start": 74.36,
+      "end": 78.56,
+      "text": "example that I have already already run"
+    },
+    {
+      "start": 76.6,
+      "end": 80.79899999999999,
+      "text": "here so this is the correctness one I"
+    },
+    {
+      "start": 78.56,
+      "end": 83.4,
+      "text": "have created three different question"
+    },
+    {
+      "start": 80.799,
+      "end": 86.88000000000001,
+      "text": "answering pairs to check you can see the"
+    },
+    {
+      "start": 83.4,
+      "end": 90.07900000000001,
+      "text": "correctness is one helpfulness is"
+    },
+    {
+      "start": 86.88,
+      "end": 92.28,
+      "text": "0.83 and harmfulness is zero if you go"
+    },
+    {
+      "start": 90.079,
+      "end": 94.24,
+      "text": "down you can see a graph or let's say"
+    },
+    {
+      "start": 92.28,
+      "end": 96.479,
+      "text": "the diagram here which says there are"
+    },
+    {
+      "start": 94.24,
+      "end": 98.24,
+      "text": "total number of prompt is three average"
+    },
+    {
+      "start": 96.479,
+      "end": 100.88,
+      "text": "score is this and if you click on this"
+    },
+    {
+      "start": 98.24,
+      "end": 103.52,
+      "text": "one it shows for each and every"
+    },
+    {
+      "start": 100.88,
+      "end": 105.15899999999999,
+      "text": "questions how many of those are correct"
+    },
+    {
+      "start": 103.52,
+      "end": 107.6,
+      "text": "and how many are not if you scroll it"
+    },
+    {
+      "start": 105.159,
+      "end": 109.43900000000001,
+      "text": "down there is this correctness zore if"
+    },
+    {
+      "start": 107.6,
+      "end": 112.19999999999999,
+      "text": "you click here you can see different"
+    },
+    {
+      "start": 109.439,
+      "end": 115.15899999999999,
+      "text": "things if I scroll little bit here you"
+    },
+    {
+      "start": 112.2,
+      "end": 118.60000000000001,
+      "text": "can see you can even open it in a bigger"
+    },
+    {
+      "start": 115.159,
+      "end": 121.24000000000001,
+      "text": "window and you can see how many uh"
+    },
+    {
+      "start": 118.6,
+      "end": 123.759,
+      "text": "retried sources are are there for this"
+    },
+    {
+      "start": 121.24,
+      "end": 126.28,
+      "text": "question this is the answer being"
+    },
+    {
+      "start": 123.759,
+      "end": 128.72,
+      "text": "reported from the rag applications it"
+    },
+    {
+      "start": 126.28,
+      "end": 131.0,
+      "text": "retrieves five different sources from"
+    },
+    {
+      "start": 128.72,
+      "end": 133.68,
+      "text": "where the answer was taken and this is"
+    },
+    {
+      "start": 131.0,
+      "end": 136.36,
+      "text": "the ground truth that we provided when"
+    },
+    {
+      "start": 133.68,
+      "end": 139.56,
+      "text": "we create the golden data set and then"
+    },
+    {
+      "start": 136.36,
+      "end": 142.519,
+      "text": "llm the one that you choose will provide"
+    },
+    {
+      "start": 139.56,
+      "end": 145.64000000000001,
+      "text": "the score for us this is how we can"
+    },
+    {
+      "start": 142.519,
+      "end": 148.68,
+      "text": "create a rag evaluation in Amazon"
+    },
+    {
+      "start": 145.64,
+      "end": 151.51899999999998,
+      "text": "Bedrock now let's get into it first"
+    },
+    {
+      "start": 148.68,
+      "end": 153.72,
+      "text": "let's go into amazoned Rock in order to"
+    },
+    {
+      "start": 151.519,
+      "end": 156.48000000000002,
+      "text": "create the rag applications you need to"
+    },
+    {
+      "start": 153.72,
+      "end": 158.8,
+      "text": "go to this knowledge basis and before"
+    },
+    {
+      "start": 156.48,
+      "end": 161.84,
+      "text": "that what I want to mention is when you"
+    },
+    {
+      "start": 158.8,
+      "end": 164.44,
+      "text": "create the knowledge base it throws the"
+    },
+    {
+      "start": 161.84,
+      "end": 168.20000000000002,
+      "text": "error if you are a root user so you need"
+    },
+    {
+      "start": 164.44,
+      "end": 170.68,
+      "text": "to be not or root user to create the"
+    },
+    {
+      "start": 168.2,
+      "end": 173.35999999999999,
+      "text": "knowledge base please uh keep that into"
+    },
+    {
+      "start": 170.68,
+      "end": 174.8,
+      "text": "account and I'm now in North Virginia as"
+    },
+    {
+      "start": 173.36,
+      "end": 176.959,
+      "text": "you can see here you can choose"
+    },
+    {
+      "start": 174.8,
+      "end": 179.239,
+      "text": "different reasons but not all reasons"
+    },
+    {
+      "start": 176.959,
+      "end": 181.31900000000002,
+      "text": "support the evaluations that's the"
+    },
+    {
+      "start": 179.239,
+      "end": 184.48000000000002,
+      "text": "reason I'm going through North Virginia"
+    },
+    {
+      "start": 181.319,
+      "end": 186.0,
+      "text": "for now I will go in the knowledge basis"
+    },
+    {
+      "start": 184.48,
+      "end": 188.35999999999999,
+      "text": "you can see this is the one that I have"
+    },
+    {
+      "start": 186.0,
+      "end": 189.92,
+      "text": "already created but I will create a new"
+    },
+    {
+      "start": 188.36,
+      "end": 191.84,
+      "text": "one you can see there are different"
+    },
+    {
+      "start": 189.92,
+      "end": 193.879,
+      "text": "knowledge bases with Vector store"
+    },
+    {
+      "start": 191.84,
+      "end": 195.519,
+      "text": "knowledge based with structure data"
+    },
+    {
+      "start": 193.879,
+      "end": 198.79899999999998,
+      "text": "store and knowledge based with Kendra"
+    },
+    {
+      "start": 195.519,
+      "end": 200.72,
+      "text": "gen index not all these are available in"
+    },
+    {
+      "start": 198.799,
+      "end": 203.08,
+      "text": "all regions but we are going to go with"
+    },
+    {
+      "start": 200.72,
+      "end": 206.48,
+      "text": "the vectory store you can give uh some"
+    },
+    {
+      "start": 203.08,
+      "end": 209.92000000000002,
+      "text": "random name here I can say"
+    },
+    {
+      "start": 206.48,
+      "end": 212.159,
+      "text": "YouTube Bedrock uh just an example this"
+    },
+    {
+      "start": 209.92,
+      "end": 214.67999999999998,
+      "text": "is optional uh we don't need to provide"
+    },
+    {
+      "start": 212.159,
+      "end": 217.35999999999999,
+      "text": "it and this is the IIM permissions you"
+    },
+    {
+      "start": 214.68,
+      "end": 219.239,
+      "text": "can use the existing one or create one"
+    },
+    {
+      "start": 217.36,
+      "end": 221.76000000000002,
+      "text": "for me to know that I am creating for"
+    },
+    {
+      "start": 219.239,
+      "end": 223.56,
+      "text": "this one I will just give Here YouTube"
+    },
+    {
+      "start": 221.76,
+      "end": 226.67999999999998,
+      "text": "there are different data sources that"
+    },
+    {
+      "start": 223.56,
+      "end": 229.36,
+      "text": "you can provide Amazon S3 wave crawler"
+    },
+    {
+      "start": 226.68,
+      "end": 231.20000000000002,
+      "text": "also custom and there are also the third"
+    },
+    {
+      "start": 229.36,
+      "end": 233.799,
+      "text": "party which are SharePoint Salesforce"
+    },
+    {
+      "start": 231.2,
+      "end": 235.92,
+      "text": "and Confluence which needs extra"
+    },
+    {
+      "start": 233.799,
+      "end": 238.76000000000002,
+      "text": "configurations but for this case we are"
+    },
+    {
+      "start": 235.92,
+      "end": 241.599,
+      "text": "going to go with Amazon S3 in order to"
+    },
+    {
+      "start": 238.76,
+      "end": 245.439,
+      "text": "go with the Amazon s 3 you need to"
+    },
+    {
+      "start": 241.599,
+      "end": 248.599,
+      "text": "create a bucket and then upload your uh"
+    },
+    {
+      "start": 245.439,
+      "end": 250.56,
+      "text": "data set we can go to the S3 bucket for"
+    },
+    {
+      "start": 248.599,
+      "end": 252.72,
+      "text": "that you can just go into the search bar"
+    },
+    {
+      "start": 250.56,
+      "end": 255.44,
+      "text": "here and type is S3 I'll open in a new"
+    },
+    {
+      "start": 252.72,
+      "end": 258.44,
+      "text": "tab here I have already created the uh"
+    },
+    {
+      "start": 255.44,
+      "end": 261.199,
+      "text": "folder here you can see I have this test"
+    },
+    {
+      "start": 258.44,
+      "end": 263.84,
+      "text": "data science Basics and inside there I"
+    },
+    {
+      "start": 261.199,
+      "end": 265.96000000000004,
+      "text": "already have this attention all you need"
+    },
+    {
+      "start": 263.84,
+      "end": 268.479,
+      "text": "PDF but for this case what I will do is"
+    },
+    {
+      "start": 265.96,
+      "end": 272.039,
+      "text": "create a new one I will create a bucket"
+    },
+    {
+      "start": 268.479,
+      "end": 274.639,
+      "text": "I can give a new name I can say bedrock"
+    },
+    {
+      "start": 272.039,
+      "end": 277.199,
+      "text": "YouTube then I create a bucket so now"
+    },
+    {
+      "start": 274.639,
+      "end": 280.479,
+      "text": "here is the Bedrock YouTube I will go"
+    },
+    {
+      "start": 277.199,
+      "end": 283.68,
+      "text": "inside this and here I will upload a"
+    },
+    {
+      "start": 280.479,
+      "end": 287.28,
+      "text": "file and what I'm going to upload is"
+    },
+    {
+      "start": 283.68,
+      "end": 289.88,
+      "text": "attention is all you need PDF right the"
+    },
+    {
+      "start": 287.28,
+      "end": 291.59999999999997,
+      "text": "data set is now provided remember that"
+    },
+    {
+      "start": 289.88,
+      "end": 294.68,
+      "text": "this is not the golden data set but this"
+    },
+    {
+      "start": 291.6,
+      "end": 296.91900000000004,
+      "text": "is the data set that is going to be fed"
+    },
+    {
+      "start": 294.68,
+      "end": 299.96,
+      "text": "for the rag application so we have our"
+    },
+    {
+      "start": 296.919,
+      "end": 302.19899999999996,
+      "text": "data set here now I will go back into to"
+    },
+    {
+      "start": 299.96,
+      "end": 305.479,
+      "text": "this one where we have this knowledge"
+    },
+    {
+      "start": 302.199,
+      "end": 308.72,
+      "text": "base being created Amazon S3 we go down"
+    },
+    {
+      "start": 305.479,
+      "end": 310.59999999999997,
+      "text": "here it says next say"
+    },
+    {
+      "start": 308.72,
+      "end": 314.44000000000005,
+      "text": "YouTube uh"
+    },
+    {
+      "start": 310.6,
+      "end": 316.759,
+      "text": "bedro data source and I will say here"
+    },
+    {
+      "start": 314.44,
+      "end": 319.24,
+      "text": "from this AWS account we are not going"
+    },
+    {
+      "start": 316.759,
+      "end": 322.12,
+      "text": "to go with other AWS account and from"
+    },
+    {
+      "start": 319.24,
+      "end": 324.84000000000003,
+      "text": "here we can choose which data set I will"
+    },
+    {
+      "start": 322.12,
+      "end": 327.199,
+      "text": "click this browse S3 and here you can"
+    },
+    {
+      "start": 324.84,
+      "end": 329.35999999999996,
+      "text": "see there is this bedrock YouTube SK"
+    },
+    {
+      "start": 327.199,
+      "end": 331.319,
+      "text": "that is what we created and I'll go"
+    },
+    {
+      "start": 329.36,
+      "end": 333.47900000000004,
+      "text": "inside inside this and here is the"
+    },
+    {
+      "start": 331.319,
+      "end": 336.47900000000004,
+      "text": "attention all you need I will choose"
+    },
+    {
+      "start": 333.479,
+      "end": 339.12,
+      "text": "this one so this is the data set that is"
+    },
+    {
+      "start": 336.479,
+      "end": 341.08,
+      "text": "going to be provided for this knowledge"
+    },
+    {
+      "start": 339.12,
+      "end": 342.8,
+      "text": "base I'm not going to go through the"
+    },
+    {
+      "start": 341.08,
+      "end": 344.68,
+      "text": "advanced parsing things I can create a"
+    },
+    {
+      "start": 342.8,
+      "end": 346.639,
+      "text": "new video for you because there is llm"
+    },
+    {
+      "start": 344.68,
+      "end": 348.319,
+      "text": "parsing and data automation all the"
+    },
+    {
+      "start": 346.639,
+      "end": 350.84000000000003,
+      "text": "different things here but we are going"
+    },
+    {
+      "start": 348.319,
+      "end": 353.40000000000003,
+      "text": "to go with the Amazon bedrocks default"
+    },
+    {
+      "start": 350.84,
+      "end": 355.039,
+      "text": "parel in this case chunking strategy"
+    },
+    {
+      "start": 353.4,
+      "end": 356.96,
+      "text": "also there are different chunking"
+    },
+    {
+      "start": 355.039,
+      "end": 359.639,
+      "text": "strategies but we are going to go with"
+    },
+    {
+      "start": 356.96,
+      "end": 361.75899999999996,
+      "text": "the default chunking and now I can I can"
+    },
+    {
+      "start": 359.639,
+      "end": 365.56,
+      "text": "can just uh leave as it is here I will"
+    },
+    {
+      "start": 361.759,
+      "end": 368.0,
+      "text": "go next and now if you know what rag"
+    },
+    {
+      "start": 365.56,
+      "end": 369.599,
+      "text": "applications we have the data set we"
+    },
+    {
+      "start": 368.0,
+      "end": 371.919,
+      "text": "have the parer and everything and we"
+    },
+    {
+      "start": 369.599,
+      "end": 375.08,
+      "text": "need to have the embedding model to"
+    },
+    {
+      "start": 371.919,
+      "end": 377.44,
+      "text": "embed that uh particular uh chunks from"
+    },
+    {
+      "start": 375.08,
+      "end": 380.08,
+      "text": "the bedro right so here if you click the"
+    },
+    {
+      "start": 377.44,
+      "end": 382.319,
+      "text": "select model you can choose either cair"
+    },
+    {
+      "start": 380.08,
+      "end": 385.31899999999996,
+      "text": "or Amazon for this case I will just go"
+    },
+    {
+      "start": 382.319,
+      "end": 388.52000000000004,
+      "text": "with the Titan text eding version two on"
+    },
+    {
+      "start": 385.319,
+      "end": 390.52000000000004,
+      "text": "demand uh one I will apply and once this"
+    },
+    {
+      "start": 388.52,
+      "end": 392.19899999999996,
+      "text": "is applied you can go and see the"
+    },
+    {
+      "start": 390.52,
+      "end": 394.4,
+      "text": "additional configurations you don't need"
+    },
+    {
+      "start": 392.199,
+      "end": 396.68,
+      "text": "to do anything here you can choose the"
+    },
+    {
+      "start": 394.4,
+      "end": 399.52,
+      "text": "vector Dimensions let's just go with the"
+    },
+    {
+      "start": 396.68,
+      "end": 401.88,
+      "text": "default ones and now the vector store"
+    },
+    {
+      "start": 399.52,
+      "end": 405.4,
+      "text": "right we need to store that somewhere"
+    },
+    {
+      "start": 401.88,
+      "end": 407.199,
+      "text": "right and Amazon uh Bedrock provides you"
+    },
+    {
+      "start": 405.4,
+      "end": 410.23999999999995,
+      "text": "all the different things here but we are"
+    },
+    {
+      "start": 407.199,
+      "end": 413.24,
+      "text": "going to go with the Amazon open S"
+    },
+    {
+      "start": 410.24,
+      "end": 415.479,
+      "text": "server list we don't need to do anything"
+    },
+    {
+      "start": 413.24,
+      "end": 417.919,
+      "text": "we'll go next this is the review and"
+    },
+    {
+      "start": 415.479,
+      "end": 421.0,
+      "text": "create everything looks fine I will say"
+    },
+    {
+      "start": 417.919,
+      "end": 423.479,
+      "text": "create knowledge base if you were using"
+    },
+    {
+      "start": 421.0,
+      "end": 425.68,
+      "text": "the root user when you create the"
+    },
+    {
+      "start": 423.479,
+      "end": 428.44,
+      "text": "knowledge base then it would show you"
+    },
+    {
+      "start": 425.68,
+      "end": 432.28000000000003,
+      "text": "the error here that okay you cannot"
+    },
+    {
+      "start": 428.44,
+      "end": 434.199,
+      "text": "create the knowledge base when uh you"
+    },
+    {
+      "start": 432.28,
+      "end": 436.19899999999996,
+      "text": "are the root user so it will take some"
+    },
+    {
+      "start": 434.199,
+      "end": 437.599,
+      "text": "time to create because it needs to go"
+    },
+    {
+      "start": 436.199,
+      "end": 440.36,
+      "text": "through the open source create the"
+    },
+    {
+      "start": 437.599,
+      "end": 443.24,
+      "text": "collection create the vector uh store"
+    },
+    {
+      "start": 440.36,
+      "end": 445.639,
+      "text": "for us now I'll go to this uh blog post"
+    },
+    {
+      "start": 443.24,
+      "end": 448.56,
+      "text": "which is provided by the Amazon this is"
+    },
+    {
+      "start": 445.639,
+      "end": 450.199,
+      "text": "the new rag evaluations and llm as a JW"
+    },
+    {
+      "start": 448.56,
+      "end": 452.08,
+      "text": "capabilities in Amazon Bedrock I will"
+    },
+    {
+      "start": 450.199,
+      "end": 454.68,
+      "text": "provide the link in the description you"
+    },
+    {
+      "start": 452.08,
+      "end": 458.4,
+      "text": "can go through this but what we need to"
+    },
+    {
+      "start": 454.68,
+      "end": 462.36,
+      "text": "do now is in order to go into the"
+    },
+    {
+      "start": 458.4,
+      "end": 465.28,
+      "text": "evaluation part we need to create a"
+    },
+    {
+      "start": 462.36,
+      "end": 467.159,
+      "text": "golden data set and that golden data set"
+    },
+    {
+      "start": 465.28,
+      "end": 470.4,
+      "text": "is in the"
+    },
+    {
+      "start": 467.159,
+      "end": 473.199,
+      "text": "jonl file format and then we need to"
+    },
+    {
+      "start": 470.4,
+      "end": 474.63899999999995,
+      "text": "have certain uh things like this there"
+    },
+    {
+      "start": 473.199,
+      "end": 477.08,
+      "text": "is certain format that you need to"
+    },
+    {
+      "start": 474.639,
+      "end": 479.56,
+      "text": "follow right let me go now it says"
+    },
+    {
+      "start": 477.08,
+      "end": 482.479,
+      "text": "knowledge base is created that's fine"
+    },
+    {
+      "start": 479.56,
+      "end": 484.72,
+      "text": "fine and now once it is created this is"
+    },
+    {
+      "start": 482.479,
+      "end": 487.96,
+      "text": "the most important thing that you need"
+    },
+    {
+      "start": 484.72,
+      "end": 490.199,
+      "text": "to click the one that is being created"
+    },
+    {
+      "start": 487.96,
+      "end": 492.35999999999996,
+      "text": "and you need to sync it meaning that"
+    },
+    {
+      "start": 490.199,
+      "end": 495.479,
+      "text": "once you sync you can see here the"
+    },
+    {
+      "start": 492.36,
+      "end": 497.72,
+      "text": "system is syncing your data source first"
+    },
+    {
+      "start": 495.479,
+      "end": 500.36,
+      "text": "you just pointed which data you want to"
+    },
+    {
+      "start": 497.72,
+      "end": 502.879,
+      "text": "use and now it is synced if I Now"
+    },
+    {
+      "start": 500.36,
+      "end": 506.0,
+      "text": "quickly go here anthropic I can choose"
+    },
+    {
+      "start": 502.879,
+      "end": 508.40000000000003,
+      "text": "the model maybe 3.5 on demand or"
+    },
+    {
+      "start": 506.0,
+      "end": 510.44,
+      "text": "inference profiles on demand I will say"
+    },
+    {
+      "start": 508.4,
+      "end": 513.24,
+      "text": "apply and here here I can ask the"
+    },
+    {
+      "start": 510.44,
+      "end": 516.44,
+      "text": "questions right so maybe let's say what"
+    },
+    {
+      "start": 513.24,
+      "end": 516.44,
+      "text": "is the paper"
+    },
+    {
+      "start": 516.519,
+      "end": 522.399,
+      "text": "about if I ask uh this question it"
+    },
+    {
+      "start": 519.519,
+      "end": 524.32,
+      "text": "already provides the answer okay uh"
+    },
+    {
+      "start": 522.399,
+      "end": 526.76,
+      "text": "because if you are too fast sometimes"
+    },
+    {
+      "start": 524.32,
+      "end": 528.7600000000001,
+      "text": "the the vector is store or the"
+    },
+    {
+      "start": 526.76,
+      "end": 530.6,
+      "text": "collection is not being created but in"
+    },
+    {
+      "start": 528.76,
+      "end": 532.64,
+      "text": "this case it's already created it says"
+    },
+    {
+      "start": 530.6,
+      "end": 534.32,
+      "text": "okay the authors introduce a model that"
+    },
+    {
+      "start": 532.64,
+      "end": 536.4399999999999,
+      "text": "relies on self attention layers and all"
+    },
+    {
+      "start": 534.32,
+      "end": 538.7600000000001,
+      "text": "the different things yes now we can ask"
+    },
+    {
+      "start": 536.44,
+      "end": 540.9590000000001,
+      "text": "the questions for this particular"
+    },
+    {
+      "start": 538.76,
+      "end": 542.76,
+      "text": "knowledge base so I have already created"
+    },
+    {
+      "start": 540.959,
+      "end": 545.4399999999999,
+      "text": "some of the questions here but I will"
+    },
+    {
+      "start": 542.76,
+      "end": 547.64,
+      "text": "first ask the question right this is the"
+    },
+    {
+      "start": 545.44,
+      "end": 550.24,
+      "text": "golden data set I will show you how you"
+    },
+    {
+      "start": 547.64,
+      "end": 552.88,
+      "text": "can do that but I will just ask here how"
+    },
+    {
+      "start": 550.24,
+      "end": 556.5600000000001,
+      "text": "many identical layers does the decoder"
+    },
+    {
+      "start": 552.88,
+      "end": 559.12,
+      "text": "has right I will go here I will go to"
+    },
+    {
+      "start": 556.56,
+      "end": 561.3199999999999,
+      "text": "the knowledge base and ask the question"
+    },
+    {
+      "start": 559.12,
+      "end": 563.68,
+      "text": "it will go through that document we"
+    },
+    {
+      "start": 561.32,
+      "end": 565.519,
+      "text": "provided and provide the answer for us"
+    },
+    {
+      "start": 563.68,
+      "end": 568.2399999999999,
+      "text": "let's see what will be the answer here"
+    },
+    {
+      "start": 565.519,
+      "end": 569.88,
+      "text": "your request uh rate is too high reduce"
+    },
+    {
+      "start": 568.24,
+      "end": 572.24,
+      "text": "the frequency of request"
+    },
+    {
+      "start": 569.88,
+      "end": 574.8389999999999,
+      "text": "I don't know sometimes I face this issue"
+    },
+    {
+      "start": 572.24,
+      "end": 575.72,
+      "text": "also in Bedrock although I'm not using"
+    },
+    {
+      "start": 574.839,
+      "end": 578.399,
+      "text": "any"
+    },
+    {
+      "start": 575.72,
+      "end": 580.5600000000001,
+      "text": "concurrent questions and so on right but"
+    },
+    {
+      "start": 578.399,
+      "end": 583.279,
+      "text": "for this we can just refresh the page"
+    },
+    {
+      "start": 580.56,
+      "end": 585.3199999999999,
+      "text": "that's what I do and now I go here"
+    },
+    {
+      "start": 583.279,
+      "end": 587.48,
+      "text": "select the model I will go to anthropic"
+    },
+    {
+      "start": 585.32,
+      "end": 589.88,
+      "text": "and when you go to the anthropy 3.5 it"
+    },
+    {
+      "start": 587.48,
+      "end": 592.48,
+      "text": "says that error but if you go with high"
+    },
+    {
+      "start": 589.88,
+      "end": 594.079,
+      "text": "it will not just play around with it for"
+    },
+    {
+      "start": 592.48,
+      "end": 596.72,
+      "text": "some weird reason that is the error that"
+    },
+    {
+      "start": 594.079,
+      "end": 598.4399999999999,
+      "text": "I also get so I go here apply I will ask"
+    },
+    {
+      "start": 596.72,
+      "end": 601.36,
+      "text": "the question how many identical layers I"
+    },
+    {
+      "start": 598.44,
+      "end": 603.839,
+      "text": "will run this and let's see now it says"
+    },
+    {
+      "start": 601.36,
+      "end": 605.92,
+      "text": "the decoder in the Transformer model is"
+    },
+    {
+      "start": 603.839,
+      "end": 608.36,
+      "text": "composed of a stack of six identical"
+    },
+    {
+      "start": 605.92,
+      "end": 610.8,
+      "text": "years that's correct and it even"
+    },
+    {
+      "start": 608.36,
+      "end": 613.44,
+      "text": "provides us the resources from where it"
+    },
+    {
+      "start": 610.8,
+      "end": 615.7199999999999,
+      "text": "is taken you can click this s details"
+    },
+    {
+      "start": 613.44,
+      "end": 617.6,
+      "text": "and here this is the chunk one and"
+    },
+    {
+      "start": 615.72,
+      "end": 620.36,
+      "text": "there's the metadata associated with"
+    },
+    {
+      "start": 617.6,
+      "end": 623.0790000000001,
+      "text": "that it says here this is the S3"
+    },
+    {
+      "start": 620.36,
+      "end": 625.76,
+      "text": "location from where the PDF or the"
+    },
+    {
+      "start": 623.079,
+      "end": 628.92,
+      "text": "document was taken the answer is in the"
+    },
+    {
+      "start": 625.76,
+      "end": 630.56,
+      "text": "page number three and other different"
+    },
+    {
+      "start": 628.92,
+      "end": 632.36,
+      "text": "meod data information that you need"
+    },
+    {
+      "start": 630.56,
+      "end": 634.3599999999999,
+      "text": "because this is really important when"
+    },
+    {
+      "start": 632.36,
+      "end": 636.839,
+      "text": "you create your applications and if you"
+    },
+    {
+      "start": 634.36,
+      "end": 639.519,
+      "text": "want to show the page numbers and other"
+    },
+    {
+      "start": 636.839,
+      "end": 641.2,
+      "text": "stops for your uh users so yeah this"
+    },
+    {
+      "start": 639.519,
+      "end": 644.079,
+      "text": "looks great we created the knowledge"
+    },
+    {
+      "start": 641.2,
+      "end": 646.839,
+      "text": "base right if you go back to our uh"
+    },
+    {
+      "start": 644.079,
+      "end": 649.5999999999999,
+      "text": "diagram here we created the knowledge"
+    },
+    {
+      "start": 646.839,
+      "end": 651.1600000000001,
+      "text": "base we uploaded the data we created the"
+    },
+    {
+      "start": 649.6,
+      "end": 653.399,
+      "text": "knowledge base now let's go and create"
+    },
+    {
+      "start": 651.16,
+      "end": 656.0,
+      "text": "the golden data set because now we are"
+    },
+    {
+      "start": 653.399,
+      "end": 659.6,
+      "text": "going into the evaluation part right"
+    },
+    {
+      "start": 656.0,
+      "end": 661.76,
+      "text": "yeah we tried this here and it says six"
+    },
+    {
+      "start": 659.6,
+      "end": 663.32,
+      "text": "right when you are going into the users"
+    },
+    {
+      "start": 661.76,
+      "end": 665.76,
+      "text": "they can ask as many questions as they"
+    },
+    {
+      "start": 663.32,
+      "end": 667.88,
+      "text": "want from that particular document and"
+    },
+    {
+      "start": 665.76,
+      "end": 669.92,
+      "text": "you don't know uh if that is correct or"
+    },
+    {
+      "start": 667.88,
+      "end": 672.959,
+      "text": "not before rolling into production you"
+    },
+    {
+      "start": 669.92,
+      "end": 675.1999999999999,
+      "text": "need to make sure that some threshold"
+    },
+    {
+      "start": 672.959,
+      "end": 677.76,
+      "text": "has been achieved so that you are"
+    },
+    {
+      "start": 675.2,
+      "end": 680.279,
+      "text": "confident to roll the applications to"
+    },
+    {
+      "start": 677.76,
+      "end": 682.76,
+      "text": "the IND user for this there is the"
+    },
+    {
+      "start": 680.279,
+      "end": 685.24,
+      "text": "evaluations and again this evaluation is"
+    },
+    {
+      "start": 682.76,
+      "end": 687.76,
+      "text": "not in all regions so you need to be"
+    },
+    {
+      "start": 685.24,
+      "end": 690.279,
+      "text": "careful but now I am in North Virginia"
+    },
+    {
+      "start": 687.76,
+      "end": 693.8,
+      "text": "it is showing here I can go to the"
+    },
+    {
+      "start": 690.279,
+      "end": 695.6,
+      "text": "evaluations right I can cancel this and"
+    },
+    {
+      "start": 693.8,
+      "end": 697.519,
+      "text": "here there is two evaluations model"
+    },
+    {
+      "start": 695.6,
+      "end": 700.2,
+      "text": "evaluations and rag evaluations we are"
+    },
+    {
+      "start": 697.519,
+      "end": 702.88,
+      "text": "going to go with the rag evaluations I"
+    },
+    {
+      "start": 700.2,
+      "end": 706.24,
+      "text": "have already created one uh and we are"
+    },
+    {
+      "start": 702.88,
+      "end": 708.56,
+      "text": "going to create the uh new one here so"
+    },
+    {
+      "start": 706.24,
+      "end": 712.16,
+      "text": "I'll say create and you can give the"
+    },
+    {
+      "start": 708.56,
+      "end": 716.2399999999999,
+      "text": "name here I will say YouTube and"
+    },
+    {
+      "start": 712.16,
+      "end": 718.16,
+      "text": "description uh latest uh eval just a"
+    },
+    {
+      "start": 716.24,
+      "end": 722.2,
+      "text": "sample name here you can choose the"
+    },
+    {
+      "start": 718.16,
+      "end": 724.279,
+      "text": "evaluator model IU mol Lama 3.1 3 Sonet"
+    },
+    {
+      "start": 722.2,
+      "end": 727.279,
+      "text": "whatever you want I will go with 3.5"
+    },
+    {
+      "start": 724.279,
+      "end": 729.04,
+      "text": "Sonet and the tax it's up to you if you"
+    },
+    {
+      "start": 727.279,
+      "end": 731.079,
+      "text": "want to give or not and choose a"
+    },
+    {
+      "start": 729.04,
+      "end": 733.199,
+      "text": "knowledge base so we created a knowledge"
+    },
+    {
+      "start": 731.079,
+      "end": 734.519,
+      "text": "base now we need to provide the"
+    },
+    {
+      "start": 733.199,
+      "end": 736.4399999999999,
+      "text": "knowledge base here we have two"
+    },
+    {
+      "start": 734.519,
+      "end": 738.24,
+      "text": "knowledge bases this is the one that I"
+    },
+    {
+      "start": 736.44,
+      "end": 740.72,
+      "text": "created before and this is the one that"
+    },
+    {
+      "start": 738.24,
+      "end": 743.0790000000001,
+      "text": "I created just now I will choose the one"
+    },
+    {
+      "start": 740.72,
+      "end": 745.48,
+      "text": "that I want uh to do the"
+    },
+    {
+      "start": 743.079,
+      "end": 748.04,
+      "text": "evaluations and there is also the"
+    },
+    {
+      "start": 745.48,
+      "end": 750.639,
+      "text": "retrieval only or retrieval and response"
+    },
+    {
+      "start": 748.04,
+      "end": 753.04,
+      "text": "Generations I will go with the retrial"
+    },
+    {
+      "start": 750.639,
+      "end": 755.9590000000001,
+      "text": "and response generations and now here is"
+    },
+    {
+      "start": 753.04,
+      "end": 757.88,
+      "text": "the response generator model right so"
+    },
+    {
+      "start": 755.959,
+      "end": 761.399,
+      "text": "there is two things here one which does"
+    },
+    {
+      "start": 757.88,
+      "end": 763.279,
+      "text": "the evaluation one which generates the"
+    },
+    {
+      "start": 761.399,
+      "end": 765.32,
+      "text": "uh response for your question so I will"
+    },
+    {
+      "start": 763.279,
+      "end": 768.88,
+      "text": "choose again the same one that I used"
+    },
+    {
+      "start": 765.32,
+      "end": 771.36,
+      "text": "before anthropic 3.5 Sonet apply you can"
+    },
+    {
+      "start": 768.88,
+      "end": 772.959,
+      "text": "choose whatever you want there as you"
+    },
+    {
+      "start": 771.36,
+      "end": 775.32,
+      "text": "can see I said compare different"
+    },
+    {
+      "start": 772.959,
+      "end": 777.68,
+      "text": "configurations and so on right so what"
+    },
+    {
+      "start": 775.32,
+      "end": 779.8000000000001,
+      "text": "you can do here is by default there is"
+    },
+    {
+      "start": 777.68,
+      "end": 781.7199999999999,
+      "text": "some configurations there but you can"
+    },
+    {
+      "start": 779.8,
+      "end": 784.0,
+      "text": "even go here in and click this"
+    },
+    {
+      "start": 781.72,
+      "end": 786.9200000000001,
+      "text": "configurations and already here you can"
+    },
+    {
+      "start": 784.0,
+      "end": 789.639,
+      "text": "go and change the temperature topy top K"
+    },
+    {
+      "start": 786.92,
+      "end": 791.399,
+      "text": "length maximum length and so on you can"
+    },
+    {
+      "start": 789.639,
+      "end": 794.44,
+      "text": "provide the guard rails if you want what"
+    },
+    {
+      "start": 791.399,
+      "end": 797.24,
+      "text": "is the search type override the default"
+    },
+    {
+      "start": 794.44,
+      "end": 799.12,
+      "text": "search how many Source chunks you want"
+    },
+    {
+      "start": 797.24,
+      "end": 801.0,
+      "text": "to have by default it's five you can"
+    },
+    {
+      "start": 799.12,
+      "end": 803.88,
+      "text": "provide two three whatever you want"
+    },
+    {
+      "start": 801.0,
+      "end": 805.44,
+      "text": "right and there's the filters you can"
+    },
+    {
+      "start": 803.88,
+      "end": 807.32,
+      "text": "provide the filters also query"
+    },
+    {
+      "start": 805.44,
+      "end": 809.32,
+      "text": "modifications do you want to break down"
+    },
+    {
+      "start": 807.32,
+      "end": 812.399,
+      "text": "the queries you can even break down the"
+    },
+    {
+      "start": 809.32,
+      "end": 814.36,
+      "text": "queries uh so split complex queries into"
+    },
+    {
+      "start": 812.399,
+      "end": 816.839,
+      "text": "multiple parts to get more relevant"
+    },
+    {
+      "start": 814.36,
+      "end": 818.5600000000001,
+      "text": "responses you can even do that knowledge"
+    },
+    {
+      "start": 816.839,
+      "end": 821.32,
+      "text": "based prompt template you can provide"
+    },
+    {
+      "start": 818.56,
+      "end": 823.1199999999999,
+      "text": "the system prompt uh for you I'm just"
+    },
+    {
+      "start": 821.32,
+      "end": 825.8000000000001,
+      "text": "going to use the normal one in this case"
+    },
+    {
+      "start": 823.12,
+      "end": 827.36,
+      "text": "and there is the guard drills you can"
+    },
+    {
+      "start": 825.8,
+      "end": 829.519,
+      "text": "create the guard because I haven't"
+    },
+    {
+      "start": 827.36,
+      "end": 832.44,
+      "text": "created any guardrails here so these are"
+    },
+    {
+      "start": 829.519,
+      "end": 834.92,
+      "text": "the things that you can change when you"
+    },
+    {
+      "start": 832.44,
+      "end": 837.399,
+      "text": "do the evaluations but I'm going to use"
+    },
+    {
+      "start": 834.92,
+      "end": 839.8389999999999,
+      "text": "the template or the one that is being"
+    },
+    {
+      "start": 837.399,
+      "end": 841.8,
+      "text": "provided by default right this is now"
+    },
+    {
+      "start": 839.839,
+      "end": 844.1600000000001,
+      "text": "the part where I said you can choose the"
+    },
+    {
+      "start": 841.8,
+      "end": 845.4799999999999,
+      "text": "metrix right so here there is the"
+    },
+    {
+      "start": 844.16,
+      "end": 848.12,
+      "text": "helpfulness you can choose the"
+    },
+    {
+      "start": 845.48,
+      "end": 849.8000000000001,
+      "text": "correctness faithfulness logical"
+    },
+    {
+      "start": 848.12,
+      "end": 852.639,
+      "text": "coherence completeness whatever you want"
+    },
+    {
+      "start": 849.8,
+      "end": 855.7199999999999,
+      "text": "to do but for me I will just choose the"
+    },
+    {
+      "start": 852.639,
+      "end": 857.92,
+      "text": "helpfulness and the correctness that's"
+    },
+    {
+      "start": 855.72,
+      "end": 859.9200000000001,
+      "text": "enough for me for this demo and in the"
+    },
+    {
+      "start": 857.92,
+      "end": 862.759,
+      "text": "responsible AI part you can choose"
+    },
+    {
+      "start": 859.92,
+      "end": 865.12,
+      "text": "refusal stereotyping or harmfulness I"
+    },
+    {
+      "start": 862.759,
+      "end": 868.6800000000001,
+      "text": "will choose the humbleness for now this"
+    },
+    {
+      "start": 865.12,
+      "end": 872.24,
+      "text": "is done and now is the part where you"
+    },
+    {
+      "start": 868.68,
+      "end": 874.519,
+      "text": "need to provide uh the data set uh for"
+    },
+    {
+      "start": 872.24,
+      "end": 876.639,
+      "text": "the evaluations and there is the results"
+    },
+    {
+      "start": 874.519,
+      "end": 879.12,
+      "text": "for the evaluations so data set for the"
+    },
+    {
+      "start": 876.639,
+      "end": 880.6,
+      "text": "evaluation meaning the golden data set"
+    },
+    {
+      "start": 879.12,
+      "end": 883.519,
+      "text": "and the results for the evaluation"
+    },
+    {
+      "start": 880.6,
+      "end": 886.279,
+      "text": "meaning once the evaluation is done it"
+    },
+    {
+      "start": 883.519,
+      "end": 888.16,
+      "text": "needs to store somewhere right these are"
+    },
+    {
+      "start": 886.279,
+      "end": 890.759,
+      "text": "the two things which you need to provide"
+    },
+    {
+      "start": 888.16,
+      "end": 893.079,
+      "text": "and it has to be certain formats and"
+    },
+    {
+      "start": 890.759,
+      "end": 895.16,
+      "text": "permissions needs to be provided if you"
+    },
+    {
+      "start": 893.079,
+      "end": 896.92,
+      "text": "go to this blog post again as you can"
+    },
+    {
+      "start": 895.16,
+      "end": 899.16,
+      "text": "see here this is the example that is"
+    },
+    {
+      "start": 896.92,
+      "end": 901.279,
+      "text": "being provided right and what I have"
+    },
+    {
+      "start": 899.16,
+      "end": 904.079,
+      "text": "already done is I have already created"
+    },
+    {
+      "start": 901.279,
+      "end": 906.199,
+      "text": "this is the uh PDF that I'm going to use"
+    },
+    {
+      "start": 904.079,
+      "end": 908.12,
+      "text": "attention is all you need right from"
+    },
+    {
+      "start": 906.199,
+      "end": 910.4799999999999,
+      "text": "here I have chosen random three"
+    },
+    {
+      "start": 908.12,
+      "end": 912.44,
+      "text": "different questions and answer pair"
+    },
+    {
+      "start": 910.48,
+      "end": 914.639,
+      "text": "which I just showed you before but here"
+    },
+    {
+      "start": 912.44,
+      "end": 918.8800000000001,
+      "text": "you can see I'm saying here rag"
+    },
+    {
+      "start": 914.639,
+      "end": 920.759,
+      "text": "evaluator Json Y and this is the same"
+    },
+    {
+      "start": 918.88,
+      "end": 922.639,
+      "text": "copy pasted but I replace the question"
+    },
+    {
+      "start": 920.759,
+      "end": 924.72,
+      "text": "and answer so conversation turns"
+    },
+    {
+      "start": 922.639,
+      "end": 927.0790000000001,
+      "text": "reference response text and so this is"
+    },
+    {
+      "start": 924.72,
+      "end": 929.8000000000001,
+      "text": "the answer the recorder is composed of"
+    },
+    {
+      "start": 927.079,
+      "end": 931.92,
+      "text": "stack of n equals to six identical"
+    },
+    {
+      "start": 929.8,
+      "end": 933.7589999999999,
+      "text": "layers that is the answer and here you"
+    },
+    {
+      "start": 931.92,
+      "end": 936.8,
+      "text": "can see this is the prompt this is the"
+    },
+    {
+      "start": 933.759,
+      "end": 938.5600000000001,
+      "text": "content what questions you ask right so"
+    },
+    {
+      "start": 936.8,
+      "end": 941.0,
+      "text": "then here is how many identical layers"
+    },
+    {
+      "start": 938.56,
+      "end": 944.4799999999999,
+      "text": "does the decoder has you can provide as"
+    },
+    {
+      "start": 941.0,
+      "end": 947.68,
+      "text": "many uh question pairs uh as you want I"
+    },
+    {
+      "start": 944.48,
+      "end": 949.9590000000001,
+      "text": "have now this right and one thing is"
+    },
+    {
+      "start": 947.68,
+      "end": 953.079,
+      "text": "also that I have already uploaded this"
+    },
+    {
+      "start": 949.959,
+      "end": 955.4399999999999,
+      "text": "in my GitHub for you to go through it so"
+    },
+    {
+      "start": 953.079,
+      "end": 958.319,
+      "text": "if you go inside the YouTube"
+    },
+    {
+      "start": 955.44,
+      "end": 960.639,
+      "text": "stuffs and here I have this Bedrock rag"
+    },
+    {
+      "start": 958.319,
+      "end": 963.56,
+      "text": "eval that set I will provide the link in"
+    },
+    {
+      "start": 960.639,
+      "end": 965.0790000000001,
+      "text": "the description inside here is the PDF"
+    },
+    {
+      "start": 963.56,
+      "end": 967.92,
+      "text": "that I have been using this is the rag"
+    },
+    {
+      "start": 965.079,
+      "end": 971.04,
+      "text": "evaluator J L you can take this or go"
+    },
+    {
+      "start": 967.92,
+      "end": 973.5999999999999,
+      "text": "into the blog post and take this now"
+    },
+    {
+      "start": 971.04,
+      "end": 975.92,
+      "text": "let's go to the S3 bucket here attention"
+    },
+    {
+      "start": 973.6,
+      "end": 979.16,
+      "text": "all you need we can now upload the"
+    },
+    {
+      "start": 975.92,
+      "end": 980.68,
+      "text": "golden data set I will go here and I"
+    },
+    {
+      "start": 979.16,
+      "end": 983.48,
+      "text": "will say add"
+    },
+    {
+      "start": 980.68,
+      "end": 987.3599999999999,
+      "text": "files and this is the rag evaluator"
+    },
+    {
+      "start": 983.48,
+      "end": 989.9200000000001,
+      "text": "jonel and now I upload this here so now"
+    },
+    {
+      "start": 987.36,
+      "end": 993.279,
+      "text": "I uploaded this but remember one thing"
+    },
+    {
+      "start": 989.92,
+      "end": 995.4799999999999,
+      "text": "is there we need to provide the"
+    },
+    {
+      "start": 993.279,
+      "end": 998.759,
+      "text": "additional permissions if you go here it"
+    },
+    {
+      "start": 995.48,
+      "end": 1001.3190000000001,
+      "text": "says this is the uh uh type but here I"
+    },
+    {
+      "start": 998.759,
+      "end": 1003.24,
+      "text": "specify the S3 location to store the"
+    },
+    {
+      "start": 1001.319,
+      "end": 1006.279,
+      "text": "results of the evaluation the evaluation"
+    },
+    {
+      "start": 1003.24,
+      "end": 1008.9590000000001,
+      "text": "job requires that the S3 location is"
+    },
+    {
+      "start": 1006.279,
+      "end": 1011.48,
+      "text": "configured with the cross origin"
+    },
+    {
+      "start": 1008.959,
+      "end": 1014.16,
+      "text": "resource sharing permission described in"
+    },
+    {
+      "start": 1011.48,
+      "end": 1015.72,
+      "text": "the Amazon Bedrock guide so here you see"
+    },
+    {
+      "start": 1014.16,
+      "end": 1018.319,
+      "text": "there is there the evaluation job"
+    },
+    {
+      "start": 1015.72,
+      "end": 1020.399,
+      "text": "requires that the S3 bucket is this if"
+    },
+    {
+      "start": 1018.319,
+      "end": 1022.0,
+      "text": "you click this one it will take you to"
+    },
+    {
+      "start": 1020.399,
+      "end": 1023.959,
+      "text": "the documentations I just want to show"
+    },
+    {
+      "start": 1022.0,
+      "end": 1026.679,
+      "text": "you where it is but here it doesn't"
+    },
+    {
+      "start": 1023.959,
+      "end": 1028.24,
+      "text": "Point directly you can sorts"
+    },
+    {
+      "start": 1026.679,
+      "end": 1031.88,
+      "text": "for"
+    },
+    {
+      "start": 1028.24,
+      "end": 1034.16,
+      "text": "evaluation let's see if there is some"
+    },
+    {
+      "start": 1031.88,
+      "end": 1036.6000000000001,
+      "text": "evaluator evaluation evaluate the"
+    },
+    {
+      "start": 1034.16,
+      "end": 1038.199,
+      "text": "performance of Amazon bedro resources"
+    },
+    {
+      "start": 1036.6,
+      "end": 1041.36,
+      "text": "here you can see there is this knowledge"
+    },
+    {
+      "start": 1038.199,
+      "end": 1043.48,
+      "text": "base and course requirements you go here"
+    },
+    {
+      "start": 1041.36,
+      "end": 1046.36,
+      "text": "and this is the example already being"
+    },
+    {
+      "start": 1043.48,
+      "end": 1048.4,
+      "text": "provided you can copy this and read here"
+    },
+    {
+      "start": 1046.36,
+      "end": 1050.7199999999998,
+      "text": "when you create a model evaluation job"
+    },
+    {
+      "start": 1048.4,
+      "end": 1053.52,
+      "text": "that us is the Amazon Bedrock console"
+    },
+    {
+      "start": 1050.72,
+      "end": 1056.52,
+      "text": "you must specify a course configuration"
+    },
+    {
+      "start": 1053.52,
+      "end": 1058.48,
+      "text": "on the S3 bucket itself this is really"
+    },
+    {
+      "start": 1056.52,
+      "end": 1061.28,
+      "text": "important part because if you don't do"
+    },
+    {
+      "start": 1058.48,
+      "end": 1064.039,
+      "text": "this then it will not work we have this"
+    },
+    {
+      "start": 1061.28,
+      "end": 1066.8799999999999,
+      "text": "rag evaluator we have these two things"
+    },
+    {
+      "start": 1064.039,
+      "end": 1070.039,
+      "text": "here we first create the folder where we"
+    },
+    {
+      "start": 1066.88,
+      "end": 1072.0390000000002,
+      "text": "want to store rag evaluation is the"
+    },
+    {
+      "start": 1070.039,
+      "end": 1075.0,
+      "text": "folder name I created so this is where"
+    },
+    {
+      "start": 1072.039,
+      "end": 1076.96,
+      "text": "we want that to be stored but it needs"
+    },
+    {
+      "start": 1075.0,
+      "end": 1080.039,
+      "text": "to be in the Bucket Level so here in the"
+    },
+    {
+      "start": 1076.96,
+      "end": 1082.0,
+      "text": "bucket label go to the permissions"
+    },
+    {
+      "start": 1080.039,
+      "end": 1085.76,
+      "text": "and if you scroll little bit down there"
+    },
+    {
+      "start": 1082.0,
+      "end": 1089.28,
+      "text": "is the C RS right cross origin resource"
+    },
+    {
+      "start": 1085.76,
+      "end": 1092.28,
+      "text": "sharing go here edit this one and this"
+    },
+    {
+      "start": 1089.28,
+      "end": 1095.52,
+      "text": "is the basic things that is needed you"
+    },
+    {
+      "start": 1092.28,
+      "end": 1098.12,
+      "text": "can configure this only to your region"
+    },
+    {
+      "start": 1095.52,
+      "end": 1100.6,
+      "text": "or Bedrock whatever you want to do but"
+    },
+    {
+      "start": 1098.12,
+      "end": 1103.1589999999999,
+      "text": "this is the bare minimum thing that you"
+    },
+    {
+      "start": 1100.6,
+      "end": 1106.36,
+      "text": "need to provide uh so it works so this"
+    },
+    {
+      "start": 1103.159,
+      "end": 1108.6000000000001,
+      "text": "is done I can save the changes that's it"
+    },
+    {
+      "start": 1106.36,
+      "end": 1111.6789999999999,
+      "text": "now we have the golden data set we have"
+    },
+    {
+      "start": 1108.6,
+      "end": 1115.12,
+      "text": "the folder also to store the evaluations"
+    },
+    {
+      "start": 1111.679,
+      "end": 1117.8400000000001,
+      "text": "right so now if I go back here I can"
+    },
+    {
+      "start": 1115.12,
+      "end": 1122.1589999999999,
+      "text": "browse here right I will go here and"
+    },
+    {
+      "start": 1117.84,
+      "end": 1123.9189999999999,
+      "text": "here I have this Bedrock SK and here I"
+    },
+    {
+      "start": 1122.159,
+      "end": 1126.919,
+      "text": "have the data set that I provided for"
+    },
+    {
+      "start": 1123.919,
+      "end": 1129.48,
+      "text": "the rag evaluation this is the Json y I"
+    },
+    {
+      "start": 1126.919,
+      "end": 1132.039,
+      "text": "will choose this one that's fantastic"
+    },
+    {
+      "start": 1129.48,
+      "end": 1134.72,
+      "text": "I'll again go browse for the evaluations"
+    },
+    {
+      "start": 1132.039,
+      "end": 1137.48,
+      "text": "I Go Again inside this there is this rag"
+    },
+    {
+      "start": 1134.72,
+      "end": 1140.6000000000001,
+      "text": "evaluations I will choose this one that"
+    },
+    {
+      "start": 1137.48,
+      "end": 1143.4,
+      "text": "is also fine but now the main thing is"
+    },
+    {
+      "start": 1140.6,
+      "end": 1146.4399999999998,
+      "text": "also the Amazon Bedrock IM Ro"
+    },
+    {
+      "start": 1143.4,
+      "end": 1149.799,
+      "text": "permissions so this one you can create"
+    },
+    {
+      "start": 1146.44,
+      "end": 1152.0,
+      "text": "yourself or you can just ask here to"
+    },
+    {
+      "start": 1149.799,
+      "end": 1154.32,
+      "text": "create for you you can just create a new"
+    },
+    {
+      "start": 1152.0,
+      "end": 1157.799,
+      "text": "service role because if you go to this"
+    },
+    {
+      "start": 1154.32,
+      "end": 1160.96,
+      "text": "documentation here it is mentioned let"
+    },
+    {
+      "start": 1157.799,
+      "end": 1163.1589999999999,
+      "text": "me show you here is this for service"
+    },
+    {
+      "start": 1160.96,
+      "end": 1165.4,
+      "text": "assess I need to create or provide this"
+    },
+    {
+      "start": 1163.159,
+      "end": 1167.72,
+      "text": "I am service role that Bedrock can"
+    },
+    {
+      "start": 1165.4,
+      "end": 1170.919,
+      "text": "assume and that allows access to the"
+    },
+    {
+      "start": 1167.72,
+      "end": 1173.84,
+      "text": "Amazon bedrock n S3 resources used by"
+    },
+    {
+      "start": 1170.919,
+      "end": 1176.24,
+      "text": "the evaluation right it needs to read"
+    },
+    {
+      "start": 1173.84,
+      "end": 1178.6399999999999,
+      "text": "between these two things but for us it's"
+    },
+    {
+      "start": 1176.24,
+      "end": 1182.64,
+      "text": "simple we can say create an use a new"
+    },
+    {
+      "start": 1178.64,
+      "end": 1185.2800000000002,
+      "text": "service role and I can just give here SK"
+    },
+    {
+      "start": 1182.64,
+      "end": 1187.72,
+      "text": "or I can say YouTube just to know that"
+    },
+    {
+      "start": 1185.28,
+      "end": 1190.96,
+      "text": "it is being created and now I can say"
+    },
+    {
+      "start": 1187.72,
+      "end": 1192.679,
+      "text": "create so now you can see we specified"
+    },
+    {
+      "start": 1190.96,
+      "end": 1195.559,
+      "text": "all the necessary things and you need to"
+    },
+    {
+      "start": 1192.679,
+      "end": 1197.24,
+      "text": "follow step by step what I did here it"
+    },
+    {
+      "start": 1195.559,
+      "end": 1200.44,
+      "text": "says okay"
+    },
+    {
+      "start": 1197.24,
+      "end": 1203.32,
+      "text": "hyen uh the name can have up to 50"
+    },
+    {
+      "start": 1200.44,
+      "end": 1207.039,
+      "text": "characters okay so I can say here some"
+    },
+    {
+      "start": 1203.32,
+      "end": 1211.9189999999999,
+      "text": "strange things in AWS or sometimes so I"
+    },
+    {
+      "start": 1207.039,
+      "end": 1214.24,
+      "text": "will say YT so it says I need maybe this"
+    },
+    {
+      "start": 1211.919,
+      "end": 1216.88,
+      "text": "one yes no"
+    },
+    {
+      "start": 1214.24,
+      "end": 1219.44,
+      "text": "underscores uh there this is what the"
+    },
+    {
+      "start": 1216.88,
+      "end": 1221.679,
+      "text": "created I will create it now you can see"
+    },
+    {
+      "start": 1219.44,
+      "end": 1224.919,
+      "text": "that it is being uh created and this"
+    },
+    {
+      "start": 1221.679,
+      "end": 1226.64,
+      "text": "process may take up up to few minutes"
+    },
+    {
+      "start": 1224.919,
+      "end": 1229.24,
+      "text": "you will be redirected to the main"
+    },
+    {
+      "start": 1226.64,
+      "end": 1231.1200000000001,
+      "text": "evaluation page once it is created"
+    },
+    {
+      "start": 1229.24,
+      "end": 1232.72,
+      "text": "one thing to remember is if you cancel"
+    },
+    {
+      "start": 1231.12,
+      "end": 1235.28,
+      "text": "this it will be cancelled and it will"
+    },
+    {
+      "start": 1232.72,
+      "end": 1238.799,
+      "text": "not be swn so you need to wait some time"
+    },
+    {
+      "start": 1235.28,
+      "end": 1242.24,
+      "text": "in order to be it being created and it"
+    },
+    {
+      "start": 1238.799,
+      "end": 1243.6,
+      "text": "redirects you to the evaluation page and"
+    },
+    {
+      "start": 1242.24,
+      "end": 1245.24,
+      "text": "there you will see that it is in"
+    },
+    {
+      "start": 1243.6,
+      "end": 1247.6789999999999,
+      "text": "progress so as you can see here now it"
+    },
+    {
+      "start": 1245.24,
+      "end": 1249.799,
+      "text": "is redirected back here and it is saying"
+    },
+    {
+      "start": 1247.679,
+      "end": 1252.799,
+      "text": "here that it is in progress this will"
+    },
+    {
+      "start": 1249.799,
+      "end": 1254.9189999999999,
+      "text": "take some time but this is the previous"
+    },
+    {
+      "start": 1252.799,
+      "end": 1256.679,
+      "text": "one that I have already created and I"
+    },
+    {
+      "start": 1254.919,
+      "end": 1258.919,
+      "text": "will explain all the different things"
+    },
+    {
+      "start": 1256.679,
+      "end": 1261.4,
+      "text": "from this previous one once the this is"
+    },
+    {
+      "start": 1258.919,
+      "end": 1264.24,
+      "text": "created I will show you how you can uh"
+    },
+    {
+      "start": 1261.4,
+      "end": 1266.3200000000002,
+      "text": "compare it compare the rag evaluation so"
+    },
+    {
+      "start": 1264.24,
+      "end": 1269.32,
+      "text": "here let's go into the earlier one that"
+    },
+    {
+      "start": 1266.32,
+      "end": 1272.36,
+      "text": "I created I will go inside it you can"
+    },
+    {
+      "start": 1269.32,
+      "end": 1274.4399999999998,
+      "text": "see the evaluation summary if you click"
+    },
+    {
+      "start": 1272.36,
+      "end": 1276.12,
+      "text": "this you can see what is the name the"
+    },
+    {
+      "start": 1274.44,
+      "end": 1278.2,
+      "text": "total number of conversation T the"
+    },
+    {
+      "start": 1276.12,
+      "end": 1281.76,
+      "text": "evaluator model the generator model and"
+    },
+    {
+      "start": 1278.2,
+      "end": 1283.559,
+      "text": "all the informations that you need right"
+    },
+    {
+      "start": 1281.76,
+      "end": 1286.24,
+      "text": "and then here it will see you the metric"
+    },
+    {
+      "start": 1283.559,
+      "end": 1288.2,
+      "text": "summary and all the small details are"
+    },
+    {
+      "start": 1286.24,
+      "end": 1290.159,
+      "text": "being provided here uh what is the"
+    },
+    {
+      "start": 1288.2,
+      "end": 1292.64,
+      "text": "quality metrix and here you can see the"
+    },
+    {
+      "start": 1290.159,
+      "end": 1294.8400000000001,
+      "text": "overall performance using metrix uh"
+    },
+    {
+      "start": 1292.64,
+      "end": 1297.3600000000001,
+      "text": "average score across all conversations"
+    },
+    {
+      "start": 1294.84,
+      "end": 1299.3999999999999,
+      "text": "closer to one is higher score closer to"
+    },
+    {
+      "start": 1297.36,
+      "end": 1301.279,
+      "text": "zero is lower score for example closer"
+    },
+    {
+      "start": 1299.4,
+      "end": 1303.3200000000002,
+      "text": "to one for the correctness means more"
+    },
+    {
+      "start": 1301.279,
+      "end": 1306.12,
+      "text": "correct answers you can Define the"
+    },
+    {
+      "start": 1303.32,
+      "end": 1308.9189999999999,
+      "text": "custom criteria to highlight any metric"
+    },
+    {
+      "start": 1306.12,
+      "end": 1311.039,
+      "text": "that fall above or below this threshold"
+    },
+    {
+      "start": 1308.919,
+      "end": 1313.72,
+      "text": "you can hoover on top of this or click"
+    },
+    {
+      "start": 1311.039,
+      "end": 1316.72,
+      "text": "on this and you can see what is this all"
+    },
+    {
+      "start": 1313.72,
+      "end": 1319.32,
+      "text": "about better towards one right is"
+    },
+    {
+      "start": 1316.72,
+      "end": 1321.559,
+      "text": "towards one is the better helpful also"
+    },
+    {
+      "start": 1319.32,
+      "end": 1323.12,
+      "text": "towards one it is better you can go and"
+    },
+    {
+      "start": 1321.559,
+      "end": 1324.3999999999999,
+      "text": "read in the documentations all the"
+    },
+    {
+      "start": 1323.12,
+      "end": 1326.799,
+      "text": "different things how it is being"
+    },
+    {
+      "start": 1324.4,
+      "end": 1329.88,
+      "text": "calculated and so on on the higher level"
+    },
+    {
+      "start": 1326.799,
+      "end": 1331.48,
+      "text": "just think that if it is greater towards"
+    },
+    {
+      "start": 1329.88,
+      "end": 1333.7990000000002,
+      "text": "one it's the better and you can have"
+    },
+    {
+      "start": 1331.48,
+      "end": 1336.44,
+      "text": "some kind of threshold if that threshold"
+    },
+    {
+      "start": 1333.799,
+      "end": 1337.9189999999999,
+      "text": "is defined then you are confident that"
+    },
+    {
+      "start": 1336.44,
+      "end": 1340.3600000000001,
+      "text": "okay we can now roll this into the"
+    },
+    {
+      "start": 1337.919,
+      "end": 1342.72,
+      "text": "production and also this responsive AI"
+    },
+    {
+      "start": 1340.36,
+      "end": 1344.9599999999998,
+      "text": "Matrix harmfulness is zero that is good"
+    },
+    {
+      "start": 1342.72,
+      "end": 1347.1200000000001,
+      "text": "because towards zero is better in this"
+    },
+    {
+      "start": 1344.96,
+      "end": 1350.08,
+      "text": "case because harmfulness if you click on"
+    },
+    {
+      "start": 1347.12,
+      "end": 1352.76,
+      "text": "this you can see that one indicates"
+    },
+    {
+      "start": 1350.08,
+      "end": 1356.0,
+      "text": "fully harmful responses zero indicates"
+    },
+    {
+      "start": 1352.76,
+      "end": 1357.72,
+      "text": "entirely harmless uh responses right"
+    },
+    {
+      "start": 1356.0,
+      "end": 1360.039,
+      "text": "here is the Matrix you can click on the"
+    },
+    {
+      "start": 1357.72,
+      "end": 1362.559,
+      "text": "Matrix helpfulness you can see it points"
+    },
+    {
+      "start": 1360.039,
+      "end": 1365.44,
+      "text": "here you can see from this cool looking"
+    },
+    {
+      "start": 1362.559,
+      "end": 1368.0,
+      "text": "figure also what is it all about you can"
+    },
+    {
+      "start": 1365.44,
+      "end": 1370.52,
+      "text": "click here and it opens this it says"
+    },
+    {
+      "start": 1368.0,
+      "end": 1372.64,
+      "text": "okay score equals 0.13 the filter is"
+    },
+    {
+      "start": 1370.52,
+      "end": 1374.679,
+      "text": "already there you can clear the filters"
+    },
+    {
+      "start": 1372.64,
+      "end": 1376.3600000000001,
+      "text": "and so on and there is the five"
+    },
+    {
+      "start": 1374.679,
+      "end": 1378.96,
+      "text": "responses as I showed you before also"
+    },
+    {
+      "start": 1376.36,
+      "end": 1381.12,
+      "text": "there is the five default respon that is"
+    },
+    {
+      "start": 1378.96,
+      "end": 1383.76,
+      "text": "being that is being taken if I go here"
+    },
+    {
+      "start": 1381.12,
+      "end": 1385.9599999999998,
+      "text": "and make this bigger it's easier to read"
+    },
+    {
+      "start": 1383.76,
+      "end": 1388.96,
+      "text": "it provides the answer this is the"
+    },
+    {
+      "start": 1385.96,
+      "end": 1391.2,
+      "text": "generation output it is not being"
+    },
+    {
+      "start": 1388.96,
+      "end": 1393.96,
+      "text": "evaluated until now and there is the"
+    },
+    {
+      "start": 1391.2,
+      "end": 1396.4,
+      "text": "five different retried sources you can"
+    },
+    {
+      "start": 1393.96,
+      "end": 1399.0,
+      "text": "provide as many as you want here is the"
+    },
+    {
+      "start": 1396.4,
+      "end": 1401.64,
+      "text": "ground truth that we provided in the"
+    },
+    {
+      "start": 1399.0,
+      "end": 1403.919,
+      "text": "golden data set that is being compared"
+    },
+    {
+      "start": 1401.64,
+      "end": 1406.8400000000001,
+      "text": "and the score is provided here you can"
+    },
+    {
+      "start": 1403.919,
+      "end": 1409.4,
+      "text": "go through and check some wrong answers"
+    },
+    {
+      "start": 1406.84,
+      "end": 1412.279,
+      "text": "also how how does it it performs and so"
+    },
+    {
+      "start": 1409.4,
+      "end": 1414.76,
+      "text": "on this is for the harmfulness and now"
+    },
+    {
+      "start": 1412.279,
+      "end": 1416.6,
+      "text": "we go to the correctness here you can"
+    },
+    {
+      "start": 1414.76,
+      "end": 1418.44,
+      "text": "see the diagram you can click on this"
+    },
+    {
+      "start": 1416.6,
+      "end": 1420.4399999999998,
+      "text": "one it will show you all the different"
+    },
+    {
+      "start": 1418.44,
+      "end": 1422.48,
+      "text": "things you can make it bigger and see"
+    },
+    {
+      "start": 1420.44,
+      "end": 1425.88,
+      "text": "all the answers and so on and one thing"
+    },
+    {
+      "start": 1422.48,
+      "end": 1427.96,
+      "text": "is also if you click on this answers or"
+    },
+    {
+      "start": 1425.88,
+      "end": 1431.3600000000001,
+      "text": "the scores that is being provided it"
+    },
+    {
+      "start": 1427.96,
+      "end": 1433.1200000000001,
+      "text": "shows you why it provided that uh score"
+    },
+    {
+      "start": 1431.36,
+      "end": 1435.24,
+      "text": "for you so you can just go ahead and"
+    },
+    {
+      "start": 1433.12,
+      "end": 1438.6399999999999,
+      "text": "read why it provided that is score it is"
+    },
+    {
+      "start": 1435.24,
+      "end": 1441.84,
+      "text": "the same also for the uh previous one if"
+    },
+    {
+      "start": 1438.64,
+      "end": 1444.5590000000002,
+      "text": "I go here why did it give 0.83 if you"
+    },
+    {
+      "start": 1441.84,
+      "end": 1447.039,
+      "text": "click any one of this it will explain"
+    },
+    {
+      "start": 1444.559,
+      "end": 1449.2,
+      "text": "all the details why it provided and why"
+    },
+    {
+      "start": 1447.039,
+      "end": 1451.64,
+      "text": "it give 0.83 and if there is some"
+    },
+    {
+      "start": 1449.2,
+      "end": 1453.679,
+      "text": "improvements that needs to be made or or"
+    },
+    {
+      "start": 1451.64,
+      "end": 1457.5200000000002,
+      "text": "so and remember that is provided by the"
+    },
+    {
+      "start": 1453.679,
+      "end": 1459.44,
+      "text": "llm itself so llm as a judge in our case"
+    },
+    {
+      "start": 1457.52,
+      "end": 1461.36,
+      "text": "right and then if you scroll a little"
+    },
+    {
+      "start": 1459.44,
+      "end": 1463.919,
+      "text": "bit down there is harmfulness and we"
+    },
+    {
+      "start": 1461.36,
+      "end": 1465.84,
+      "text": "don't have any harmful responses so it"
+    },
+    {
+      "start": 1463.919,
+      "end": 1467.8400000000001,
+      "text": "says measures harmful contents in the"
+    },
+    {
+      "start": 1465.84,
+      "end": 1470.0,
+      "text": "responses including hate insults"
+    },
+    {
+      "start": 1467.84,
+      "end": 1472.1589999999999,
+      "text": "violence or sexual content right so we"
+    },
+    {
+      "start": 1470.0,
+      "end": 1474.08,
+      "text": "don't have any of this you can click on"
+    },
+    {
+      "start": 1472.159,
+      "end": 1477.5200000000002,
+      "text": "this and you can go here make this"
+    },
+    {
+      "start": 1474.08,
+      "end": 1480.1589999999999,
+      "text": "bigger and see what is the actual answer"
+    },
+    {
+      "start": 1477.52,
+      "end": 1481.48,
+      "text": "that is given to you what is the answer"
+    },
+    {
+      "start": 1480.159,
+      "end": 1484.279,
+      "text": "that you"
+    },
+    {
+      "start": 1481.48,
+      "end": 1486.52,
+      "text": "provided and then this is the score that"
+    },
+    {
+      "start": 1484.279,
+      "end": 1489.279,
+      "text": "is being shown us right this is how you"
+    },
+    {
+      "start": 1486.52,
+      "end": 1491.36,
+      "text": "can quickly go into Bedrock create your"
+    },
+    {
+      "start": 1489.279,
+      "end": 1494.399,
+      "text": "knowledge base and also do the"
+    },
+    {
+      "start": 1491.36,
+      "end": 1497.279,
+      "text": "evaluations I think evaluation is still"
+    },
+    {
+      "start": 1494.399,
+      "end": 1498.8799999999999,
+      "text": "ongoing let's see if it is already there"
+    },
+    {
+      "start": 1497.279,
+      "end": 1500.72,
+      "text": "because it takes some time to do the"
+    },
+    {
+      "start": 1498.88,
+      "end": 1503.0800000000002,
+      "text": "evaluations and remember if you have"
+    },
+    {
+      "start": 1500.72,
+      "end": 1504.84,
+      "text": "more question answering pairs in the"
+    },
+    {
+      "start": 1503.08,
+      "end": 1507.8799999999999,
+      "text": "golden data set it will take more time"
+    },
+    {
+      "start": 1504.84,
+      "end": 1509.6789999999999,
+      "text": "because here we just have three still it"
+    },
+    {
+      "start": 1507.88,
+      "end": 1513.0800000000002,
+      "text": "is taking some time for us you can see"
+    },
+    {
+      "start": 1509.679,
+      "end": 1515.799,
+      "text": "here it say still in progress but if I"
+    },
+    {
+      "start": 1513.08,
+      "end": 1517.72,
+      "text": "go to the diagram here we created the"
+    },
+    {
+      "start": 1515.799,
+      "end": 1520.559,
+      "text": "knowledge base we created the golden"
+    },
+    {
+      "start": 1517.72,
+      "end": 1523.1200000000001,
+      "text": "data set we provided required course"
+    },
+    {
+      "start": 1520.559,
+      "end": 1524.76,
+      "text": "permission on S3 bucket we we did the"
+    },
+    {
+      "start": 1523.12,
+      "end": 1528.1999999999998,
+      "text": "evaluate the response with the golden"
+    },
+    {
+      "start": 1524.76,
+      "end": 1530.8799999999999,
+      "text": "data set this compare rag evaluations is"
+    },
+    {
+      "start": 1528.2,
+      "end": 1533.0,
+      "text": "uh the one that we need to do but as as"
+    },
+    {
+      "start": 1530.88,
+      "end": 1536.3200000000002,
+      "text": "you can see it takes some time but what"
+    },
+    {
+      "start": 1533.0,
+      "end": 1539.039,
+      "text": "you can do is you can just click uh"
+    },
+    {
+      "start": 1536.32,
+      "end": 1540.9189999999999,
+      "text": "these two and then to the compare it is"
+    },
+    {
+      "start": 1539.039,
+      "end": 1543.6,
+      "text": "still in progress so it is not showing"
+    },
+    {
+      "start": 1540.919,
+      "end": 1546.5590000000002,
+      "text": "us the compare but once you click these"
+    },
+    {
+      "start": 1543.6,
+      "end": 1548.84,
+      "text": "two you can do the compare and you will"
+    },
+    {
+      "start": 1546.559,
+      "end": 1550.6789999999999,
+      "text": "see the comparison in the block post"
+    },
+    {
+      "start": 1548.84,
+      "end": 1553.6399999999999,
+      "text": "also if you go a little bit down here it"
+    },
+    {
+      "start": 1550.679,
+      "end": 1555.88,
+      "text": "is shown how you can do it so here this"
+    },
+    {
+      "start": 1553.64,
+      "end": 1557.3600000000001,
+      "text": "is the example that I showed until now"
+    },
+    {
+      "start": 1555.88,
+      "end": 1558.96,
+      "text": "all the different things to do the"
+    },
+    {
+      "start": 1557.36,
+      "end": 1560.76,
+      "text": "comparison comparing the evaluations"
+    },
+    {
+      "start": 1558.96,
+      "end": 1563.44,
+      "text": "I'll provide the link in the description"
+    },
+    {
+      "start": 1560.76,
+      "end": 1565.44,
+      "text": "so here you can choose and it says here"
+    },
+    {
+      "start": 1563.44,
+      "end": 1567.919,
+      "text": "in the at a glance tab I say this this"
+    },
+    {
+      "start": 1565.44,
+      "end": 1570.52,
+      "text": "this you can do the compare and you can"
+    },
+    {
+      "start": 1567.919,
+      "end": 1573.039,
+      "text": "see at a glance evaluation and you can"
+    },
+    {
+      "start": 1570.52,
+      "end": 1575.559,
+      "text": "see all the cool looking comparison"
+    },
+    {
+      "start": 1573.039,
+      "end": 1578.399,
+      "text": "diagrams and you can compare which"
+    },
+    {
+      "start": 1575.559,
+      "end": 1580.76,
+      "text": "evaluations performs the best based on"
+    },
+    {
+      "start": 1578.399,
+      "end": 1584.039,
+      "text": "the knowledge basis you created what you"
+    },
+    {
+      "start": 1580.76,
+      "end": 1586.039,
+      "text": "can do now is go back and forth changing"
+    },
+    {
+      "start": 1584.039,
+      "end": 1587.96,
+      "text": "the embedding model or you can change"
+    },
+    {
+      "start": 1586.039,
+      "end": 1590.48,
+      "text": "the chunking mechanism you can change"
+    },
+    {
+      "start": 1587.96,
+      "end": 1593.88,
+      "text": "the paring mechanisms you can even clean"
+    },
+    {
+      "start": 1590.48,
+      "end": 1596.279,
+      "text": "the PDF if needed you can use llm to do"
+    },
+    {
+      "start": 1593.88,
+      "end": 1599.64,
+      "text": "the parsing whatever you want to do once"
+    },
+    {
+      "start": 1596.279,
+      "end": 1602.799,
+      "text": "you do the better knowledge base you can"
+    },
+    {
+      "start": 1599.64,
+      "end": 1605.1200000000001,
+      "text": "do the same metrix evaluations and then"
+    },
+    {
+      "start": 1602.799,
+      "end": 1606.76,
+      "text": "see which one performs the best the one"
+    },
+    {
+      "start": 1605.12,
+      "end": 1608.6789999999999,
+      "text": "that performs the best you can roll out"
+    },
+    {
+      "start": 1606.76,
+      "end": 1612.44,
+      "text": "into production and now you are"
+    },
+    {
+      "start": 1608.679,
+      "end": 1614.76,
+      "text": "confident enough to say that okay now"
+    },
+    {
+      "start": 1612.44,
+      "end": 1617.96,
+      "text": "the applications that I'm rolling into"
+    },
+    {
+      "start": 1614.76,
+      "end": 1619.6,
+      "text": "the production is is good because you"
+    },
+    {
+      "start": 1617.96,
+      "end": 1622.8400000000001,
+      "text": "have the the threshold and you can"
+    },
+    {
+      "start": 1619.6,
+      "end": 1624.279,
+      "text": "demonstrate that to the stakeholders or"
+    },
+    {
+      "start": 1622.84,
+      "end": 1626.4399999999998,
+      "text": "or the business units you want to"
+    },
+    {
+      "start": 1624.279,
+      "end": 1628.84,
+      "text": "present that so they are also confident"
+    },
+    {
+      "start": 1626.44,
+      "end": 1633.0,
+      "text": "enough to say that okay this I"
+    },
+    {
+      "start": 1628.84,
+      "end": 1635.279,
+      "text": "applications is behaving as we uh expect"
+    },
+    {
+      "start": 1633.0,
+      "end": 1637.159,
+      "text": "it is responsive that is all I wanted to"
+    },
+    {
+      "start": 1635.279,
+      "end": 1639.919,
+      "text": "show you in this video I hope now you"
+    },
+    {
+      "start": 1637.159,
+      "end": 1641.8400000000001,
+      "text": "can uh do rag evaluations quickly in"
+    },
+    {
+      "start": 1639.919,
+      "end": 1643.96,
+      "text": "Amazon Bedrock let me know comment"
+    },
+    {
+      "start": 1641.84,
+      "end": 1646.36,
+      "text": "section what you think did you try it or"
+    },
+    {
+      "start": 1643.96,
+      "end": 1647.0,
+      "text": "not thanks for watching and see you in"
+    },
+    {
+      "start": 1646.36,
+      "end": 1647.0,
+      "text": "next video"
+    }
+  ]
+}

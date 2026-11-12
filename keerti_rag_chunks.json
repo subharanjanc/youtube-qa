@@ -1,0 +1,594 @@
+[
+  {
+    "id": "e05800afa22726a62d9905236959e3f00c9f9ba7e9a636173344371f9bb43fb2",
+    "text": "use this information to answer the question. We are also sending the data or the context along with it. Now I need to scrape my site and add the information in the vector database. These splits we need to embed them into vectors and we need to store them in a database. I am creating a dictionary. Now whatever prompt I'm going to get that I am passing as an input to our LM. Also if you want to see the exact prompt that is going LLMs are trained on a lot of data and they are awesome at answering queries related to that information. But now what if I want my LLM to be able to answer questions related to my company specific data. For example, what if I have an e-commerce platform like Amazon? Now I want our LLMs to be able to answer questions related to the products that are specific to my particular platform or what if I have courses right? I want to create a bot where I'm using LLM to answer questions related to our courses. How can we do that? There are a couple of things that we can do. The first one is fine-tuning. And for those of you who understand finetuning, you will know the problems associated with it. It is very",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 0.4,
+      "end_seconds": 63.199,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8dddbbc88ef88f5f1511490d633be9086714704175da512187edfe19fb73839b",
+    "text": "How can we do that? There are a couple of things that we can do. The first one is fine-tuning. And for those of you who understand finetuning, you will know the problems associated with it. It is very very costly. It is very computationally expensive. It will need a lot of time. You will need to pre-process your data. You will need to clean it. You will need ML engineers to actually do the finetuning. Also, if your data is being updated very frequently, for example, we are going to add on products or I'm going to add on my courses, right? Then my company specific data is being updated again and again. So, I will need to fine-tune my model again and again. So, it is going to be hard to update. Plus, if I need to remove some information, then it is very hard to remove the particular course or particular products also. So, there are a lot of problems associated with fine-tuning. So, introducing the second solution, rack, which is what we'll be discussing now. The concept behind rag is very very simple and very very logical. Let me explain it in very simple terms. Forget the term right now. See we have LLM which is very good at answering questions but it does not have our data.",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 52.48,
+      "end_seconds": 114.96,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=52s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f24c63aee76d4bf92ef828ab1c9db2fe420e25f4e2e8764b752eb678ca1fd007",
+    "text": "simple and very very logical. Let me explain it in very simple terms. Forget the term right now. See we have LLM which is very good at answering questions but it does not have our data. Where is our data? Our data is present in the database. Now what can we do? What if we fetch or we take out the relevant information from this database and when we are quering RLM when we are sending the query to LLM at that time we are just going to tell see this is the information that we have already gotten from the database use this information to answer the question exactly this is as simple as that this is rag so what do we do let me repeat it we have a database present what are we going to do we are going to get a query now based on this query we are going to fetch only the relevant information from the database So we're going to retrieve the information from database or we are going to get the information from database and that we are going to send to our LLM as a prompt along with the question we're going to send listen this is the context this is the data just use this to answer this particular question",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 103.84,
+      "end_seconds": 161.35999999999999,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=103s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "132608a709e9f2ad14e85a0557449a5f87cdddb6950edc16d8a572ebd9da6dcf",
+    "text": "database and that we are going to send to our LLM as a prompt along with the question we're going to send listen this is the context this is the data just use this to answer this particular question so we are sending the question but we are also sending the data or the context along with it which our LLM will use and it will answer the question our LLM is awesome at answering questions but it does not have the data so all we are doing is fetching the data from our database and sending it along with the question as simple as that. So rag stands for retrieval augmented generation. Retrieval meaning we are retrieving or we are fetching out the relevant information from the database. Augmented meaning we are augmenting or we are enhancing the query by adding the context of the data that we have gotten from the database. So we retrieve the information we enhanced our query. We added the context of this extra information and then who is generating the answer? The LM is generating the answer. So retrieval augmented generation simple. Before we move ahead, I would like to take a moment over here to say something to those who are technically interested in Geni. See, there are two sides of Genai. One is if",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 150.72,
+      "end_seconds": 214.4,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=150s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c9fd52b80ebfa9bbb5cdbb928c74b928c8d28e4579dbced0cbd3253a7d4572b9",
+    "text": "generation simple. Before we move ahead, I would like to take a moment over here to say something to those who are technically interested in Geni. See, there are two sides of Genai. One is if you are learning to build your own LMS, build your own version of chat GPT. The other side is when you are learning to use LLMs to build your own apps. Now, if you're learning to build your own LLMs, you need to understand transformer architecture based on which chat GPT is built. And for that, the prerequisite is understanding LSTM and RNN for which the prerequisite is neural network. So this is how you will be able to build your own version of chatgity neural networks ANN CNN RNN LSTMs transformer architecture and then you will be ready to build and when you're talking about building your own apps that is where lang chain rag and all of this comes into picture in our 7 weeks hands-on generative AI course with educosis we have covered both of these sites in seven weeks now this is a very very comprehensive course which I'm teaching live currently all the recordings are available for lifetime notes code everything is available You can check out the curriculum. You can check out the testimonials of our courses for this",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 202.8,
+      "end_seconds": 268.56,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=202s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e53886c93ab229925c6ccea2791187ac76fa0dc07d7edd12d84d889d7f4ff093",
+    "text": "comprehensive course which I'm teaching live currently all the recordings are available for lifetime notes code everything is available You can check out the curriculum. You can check out the testimonials of our courses for this course also. We already have such great feedback. I'm thoroughly enjoying this course and I'm so proud of it. If you're interested in learning live with me or watch the recordings 7 weeks, this is very very comprehensive and we are covering everything. It's very beginner friendly. At least check out the details in the description. For now, let's get back to the video. Let's get started with our code. And for the example, what I'm going to be doing is I'm going to be creating a bot for my courses. So I'm going to retrieve information for a particular query from a database and I'm going to send this information to our LLM and I'm going to fetch the answers. So I'm going to be creating this entire rack pipeline. But what is the first thing that I need to do? I need to make sure that the information is present in some database. See in your case in your example you might already have this information present in the database. So you can directly start from there. But in order to demo it I'm going to show",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 254.879,
+      "end_seconds": 318.15999999999997,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=254s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "23f3116ba2e22b6381aff1e2fa2b0f482acac15d2f90b5a9ce1f26119a0748c8",
+    "text": "some database. See in your case in your example you might already have this information present in the database. So you can directly start from there. But in order to demo it I'm going to show you that how you can also put the information in the vector database. So I'm going to be using Chromma DB as the vector database in our particular example and I need to make sure that the information for my courses is present over here. Now this is going to be a one-time effort to put the information in the vector database. Right? So I'll also demo that. So in our case what I'm going to be doing is I have a site educes.com. I'm going to be scraping this site. I'm going to be scraping it and putting that relevant information of the courses. Whatever information I have about the courses, I'm going to be putting it into the vector database. So that is one time effort and then in the rack pipeline for a particular query I'm going to retrieve the relevant information and I'm going to send it to the LLM. So let's get started with the code. Let's get started with writing some boiler plate code. So I'm just quickly installing all the libraries that we are going to need. I'm going to",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 306.479,
+      "end_seconds": 368.8,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=306s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3c2704a09e9031b35ca9fd5ba9d0faae2e57769b1b452abf162e5c31e1c081fd",
+    "text": "the LLM. So let's get started with the code. Let's get started with writing some boiler plate code. So I'm just quickly installing all the libraries that we are going to need. I'm going to be starting with Lang community. We are going to be using lang hub and I will let you know for what are we using all of this. We are going to be using ChromB as our vector database and we are going to be using OpenAI as our LLM. So we are going to be using GPT. This is going to take a couple of minutes. So just give me a second and let's quickly set our OpenAI API key. So in Google Collab itself, if you just go to keys, I have a lot of keys over here. I'll be using this particular key. So you can just create your OpenAI API key. It's fairly simple. I've shown it earlier as well. I'll just add the screen recording over here. In order to set up OpenAI API key, just go to platform.opi.com. You will be able to see all the documentation over here. A lot of details is there. But just go to dashboard, go to API keys. See, right now I have two secret keys. These are for my projects. What you can do is",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 356.32,
+      "end_seconds": 427.68,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=356s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f2ab4033ae08bf2f19fa0a70ce3ba785706adbf63b826fa7a61af5b222910589",
+    "text": "see all the documentation over here. A lot of details is there. But just go to dashboard, go to API keys. See, right now I have two secret keys. These are for my projects. What you can do is create a new secret key over here. Just give some name like for example text project and create the secret key and copy it and keep it somewhere. Make sure you save it because you will not be able to access it later and we'll be needing it. Right? And I'm going to import user data. So we are going to have our keys and our user data and I'm going to be using OS. So I'm just going to set the environment variables quickly. So it's as simple as that. Here our name was this. So this is it. We are done with setting our open API key. Now I need to scrape my site and add the information in the vector database. So let's go to the lang chain documentation. Here you can see there are a lot of document loaders that are available. So you can load PDF file, CSV data, HTML data, JSON data and so on. So we have a web page that we want to scrape, right? So that is what we want to load. So we are going to be using web",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 415.28,
+      "end_seconds": 481.12,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=415s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8b25674c493013aaf9b25171cb09629dce26bdaea70191c82058bac68f201cf0",
+    "text": "data, HTML data, JSON data and so on. So we have a web page that we want to scrape, right? So that is what we want to load. So we are going to be using web based loader. So this is the documentation that I went through to understand how to load web pages. So everything is available in the documentation. I keep saying this in every video. Everything is available. Don't get too overwhelmed that how will I understand this. Everything is available. It is for free. Don't worry about it. Okay. My job is to make things easier for you. So let's do that. I am going to be using web page loader and that is available in langu. So let's just quickly from the document loaders let's just quickly import webbased loader and in the loader I can just give the paths that I want to load. So in this web based loader if I go see you can give a single path like this or you could also give multiple paths. So if you go over here say let me just actually write it. So if I write web path you can see you can give either one path or you can give multiple paths. So you can see this right? I can give a list of parts that I want to basically",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 471.68,
+      "end_seconds": 537.04,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=471s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "386040a0f2c8dcf5f70e5a5033cecbe48f9de17059a38a2365d652820617bf60",
+    "text": "actually write it. So if I write web path you can see you can give either one path or you can give multiple paths. So you can see this right? I can give a list of parts that I want to basically load. So in our case, I am just loading the Educosis site and I'm just loading the Geni course right now. Okay. So I am loading one. But you can also give a list of sites like this. Okay. Just explaining you how you can do that. And once you have the loader, all you have to do is loader.load. That's it. It's as simple as that. And we will have all the documents. And if you want to see the documents, let's just quickly print them and see how it looks like. So you can see this is awesome. We have the source. The title is hands-on geni course. The description is something. This is the content and if you go down you will be able to see the entire thing. You will be able to see that it is seven weeks. You will be able to see the entire curriculum. The entire FAQ section. You will be able to see the entire content of the page is now available in this documents. Now that I have the entire page content",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 525.44,
+      "end_seconds": 592.16,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=525s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "da425f3e773616ba22955a4641ee2af73b8dbc64acba25120a732969e9c3870b",
+    "text": "is seven weeks. You will be able to see the entire curriculum. The entire FAQ section. You will be able to see the entire content of the page is now available in this documents. Now that I have the entire page content available with me in this docs variable, do I store the entire docs as it is in the vector database? What do you think? Think about it. See, when I have to send some context to my data, to my LLM, do I send the entire content of the page? Think about it. Because our page can be huge. Currently, I'm scraping only the geni part. Maybe I'm scraping all the courses like I'm just scraping educes.com. then the information of all the courses is there. Now if someone is asking just about jennyang, do I send the information of all the courses to our LLM? No. Right? Why do I send so much of irrelevant information? If someone is asking about the duration of the course, why do I send the curriculum and the FAQ to the LLM? Right? It is just going to be too many tokens that I am sending to LLM. It is just going to be too much processing that I am making LLM do for no reason at all. So what do",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 573.2,
+      "end_seconds": 642.079,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=573s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0031e2b1d910222e155253a8ab45d7e7fa9d99eabceea51d06374cf579b014b6",
+    "text": "just going to be too many tokens that I am sending to LLM. It is just going to be too much processing that I am making LLM do for no reason at all. So what do I want to do? I want to send just the relevant information which is going to be useful in answering the query to our LLM. So in order to do that I want to send just some part of this entire document right so it makes sense that I split this entire document into some chunks or into some splits and I save it in our vector database. So that is what we are going to be doing now. And how do I convert this entire data into splits? Again go back to the lang documentation. And I'm just going back just below the document loaders, we have text splitters. And we have documentation about how to recursively split text, how to split HTML, how to split code, how to recursively split JSON and so on. So we just need to split our text, right? I'm going to be using recursive character text splitter. Again, very simple. I'm just going to be using the documentation itself. We are going to have something called chunk size and chunk overlap. What is this chunk size from the name",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 631.76,
+      "end_seconds": 694.32,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=631s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2238a2292ec6cc42264191f3ab3ca88f6a029ca4c8a222b0e2cf2c0489b182d0",
+    "text": "going to be using recursive character text splitter. Again, very simple. I'm just going to be using the documentation itself. We are going to have something called chunk size and chunk overlap. What is this chunk size from the name itself? How big we want our chunk to be. Right? So here they have taken really small chunk size 100. We are going to take for demo. We are going to maybe take 1 th00and you can make it smaller obviously. They have also taken something called chunk overlap which they have kept 20. In our case maybe we'll keep 200. And let me explain you why do we need chunk overlap. Let's take an example. Suppose in my content currently I have it's a 7 weeks course. Now suppose I split at between seven and weeks. Now seven is present in one chunk and weeks course is present in the other chunk. So now the context of seven weeks is neither present in chunk one nor nor chunk two. Right? So when I split in between I will need to do some processing to understand that okay this was seven which was there in chunk one and weeks which was present in chunk two. Instead of doing all of that, instead of making it more complex, we just have some overlap of chunks. So",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 681.279,
+      "end_seconds": 746.2399999999999,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=681s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2b6b9a58ae15327d04d24d4c500d48ee311d3133d6853b1941f89b26ca37f606",
+    "text": "was seven which was there in chunk one and weeks which was present in chunk two. Instead of doing all of that, instead of making it more complex, we just have some overlap of chunks. So that the last 200 characters that were there in the say chunk one will also be there in the starting of the chunk two. So like this, you're making sure that context is present. If if needed, you can send both chunk one, chunk two to lm. That is okay. But you're just saving on your computation and you're making sure that the entire context is present. Just to give you another example, suppose my text was no prerequisite needed. And I split the chunks between no and prerequisite needed. So in my second chunk, we have prerequisite needed and no went in the first chunk. You get the point that the entire context is lots, right? So it makes sense that I have some overlap between the chunks. I hope that part is clear. If not, let me know in the comments and think of different examples for which you know chunk overlap would make a lot of sense. So let's get back to writing our code. And from lang chain I am going to be using text splitters and I'm going to be importing",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 735.2,
+      "end_seconds": 801.839,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=735s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3d0a7113e03cfe035d62ff1b60addd7992ce0dc9c111a28ad675cedbda3365b9",
+    "text": "you know chunk overlap would make a lot of sense. So let's get back to writing our code. And from lang chain I am going to be using text splitters and I'm going to be importing recursive character text splitter and I'm going to be creating the splitter and chunk size as we discussed I'm probably going to give say 1,000. You could also give chunk overlap is zero but I am giving it as 200. And here we have these splits. And it is as simple as that. You can also print your splits. So let's see how our splits look like. So suppose you want to see splits of zero, splits of one. You can just check it out like this. So this is the first split and this is going to be of thousand characters and there's going to be some overlap. So if you see in the end part there was uh tensorboard mini project implement GAN uh two handwritten digents and then it was starting with mini project something I think and then if we come to the starting of this you can see the GAN part is going to be there again. So you can say implement a GAN to uh generate handwritten digits mini project. The next one is coming like this. Right? So there is some overlap.",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 786.24,
+      "end_seconds": 871.4399999999999,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=786s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0d4f54156bba5eb08d4f40132d6d9fcc4fd2141a5fee98007802dfca90c507ac",
+    "text": "the GAN part is going to be there again. So you can say implement a GAN to uh generate handwritten digits mini project. The next one is coming like this. Right? So there is some overlap. So the entire VA part was ending over there and then the after that GAN part started again. So there is some overlap between chunk one and chunk two. Similarly it's going to be there for the rest of the chunks also. I hope you understood that point. But also if you want to see the total number of splits it is as simple as just printing the length of the splits. So if we see that the total number of splits is 11. So you can actually try printing all of the splits and you can see right so you can also write like a for loop or something there just right so here you can see again you will be able to see some overlap between this and the last one so here you can see it is starting from nodes state graph so in the second split if I go over here there should be nodes so I'm basically talking about graph and let's see so you can see right lang graph nodes a state state graph so you can see the simple Q&A",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 859.36,
+      "end_seconds": 919.5999999999999,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=859s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9d88de30efb47d4fc9d636303c86a11b03504b00ba74c7e449213a5a0885c306",
+    "text": "if I go over here there should be nodes so I'm basically talking about graph and let's see so you can see right lang graph nodes a state state graph so you can see the simple Q&A application ation that is going to be present in this particular third chunk as well. So you can see that right now that we have the splits is time that we add these splits into a vector database. We are going to be using chromb. But see again these splits are just text and vector database from the name itself we are supposed to store vectors right everything internally in mli is basically numbers it's all vectors. So what do we need to do these splits we need to embed them into vectors and we need to store them in a database. It sounds fancy. It's actually very simple. We are just converting this text into numbers into vectors and we are trying to understand the meaning of the words in that. Okay. And we are going to be using everything from libraries. So it's not like we have to write the code for that. Oh, it's giving me autocomplete. So let's actually do that. So I'm going to be using chromb and here I'm using openi embeddings to convert our splits into embeddings.",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 905.279,
+      "end_seconds": 979.279,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=905s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9f8bec49c1b52ed350b0896e415014212ddb739c90f5c0435a8aa09a30e79678",
+    "text": "libraries. So it's not like we have to write the code for that. Oh, it's giving me autocomplete. So let's actually do that. So I'm going to be using chromb and here I'm using openi embeddings to convert our splits into embeddings. Okay. So this is what we are going to use to convert this textual information into numbers into vectors. We are embedding these texts. Okay. And we are embedding splits and that is what we are storing in a vector store. So after this we have the information present in a vector DB. And once we have that we can actually also print the collection to see that how it is right. So in our vector store if you want to see the collection and if we see the suppose count of it you can see there are 11 splits embedded and stored over here. Right? If you also want to see so instead of the count if you also want to see the uh suppose ids of these collections. So if I just do this these are the ids for the 11 splits that we had embedded into vector store. And if you also want to print it, we can also print the collections. And I'm just printing the first collection for now. And I'm just giving the ID of the",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 964.72,
+      "end_seconds": 1045.1599999999999,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=964s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0ce0172294617bc1a62abcb0cfc625fae8219444f70f7c6655c2375fb6adb155",
+    "text": "11 splits that we had embedded into vector store. And if you also want to print it, we can also print the collections. And I'm just printing the first collection for now. And I'm just giving the ID of the first collection. And in Chroma database, so it stores in different values the embeddings in and the documents. So here I'm just going to tell it to include the embeddings. So I want to see the embeddings and the documents over here. So you can see if you want to see the metadata as the document. So you can just give what all you want to see. So you can see this is the embedding. So this is the array and in the document you can see the entire document. So document is basically the original text that you had that is embedded and stored into the embedding. So like this you can also try printing for multiple collections for any of the collections in fact and you can try checking it out. So okay let me just change this So like this you can see that these are the embeddings for these particular chunks. So it is only creating the ID. It is only saving the documents and embedding. So how are we doing the embedding? Using open embedding till now I was just adding the",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1026.079,
+      "end_seconds": 1111.2,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1026s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b70e396aa861806dbdb668f39c07283b8d76ffe602f80317a83660988bf28a30",
+    "text": "the embeddings for these particular chunks. So it is only creating the ID. It is only saving the documents and embedding. So how are we doing the embedding? Using open embedding till now I was just adding the information into my vector database. So you might already have the information in vector database and you might not need to do all of this. Now I'm going to get started with the rack pipeline. So I need this vector store to act as my retriever. So I'm just going to create a variable retriever and I'm going to make my vector store act as retriever. That's it. As simple as that. And what is the next step that I need to do? I need to do the augmentation. For augmentation, what do we need to do? See in our vector database, there is a lot of documents. Now we are going to fetch the relevant document and along with the question that we are getting we are going to send this context this relevant documentation to our LLM. Correct? Now see we can create our own prompt and send to LLM that see this is the question this is the context but there are lot of prompts that are already available and I just wanted to show it to you. See in lang",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1093.52,
+      "end_seconds": 1167.2,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1093s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1bebfd94421ed1183ff4875dc8b6572a194d94b2e8fac4c903e227d523794c67",
+    "text": "create our own prompt and send to LLM that see this is the question this is the context but there are lot of prompts that are already available and I just wanted to show it to you. See in lang itself if you see there are so many prompts that are available. So we are going to be using this rack prompt. You could actually just copy this and you could write it yourself also. But I want to also show you how you can use the prompts that are available in the hub. So what this is saying is that you are an assistant for question answering task. So this is the question, this is the context and you're supposed to answer in three sentences maximum and keep the answer concise. So you can also write your own prompt. You can say that no I want a more detailed information or I want maybe three-word answer or something like that. Whatever you want, right? You can customize your own prompt and you can write your own prompt. I just want to show you that there are prompts available in the hub and you can just use them like this. Okay. So we are going to be using them like this. I'm again saying it you this is just basically copy paste of text. So I can",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1155.52,
+      "end_seconds": 1218.48,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1155s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e765b089af6c3c81eaffb40317e834534657dbc069444002386b338bbae6b8b8",
+    "text": "prompts available in the hub and you can just use them like this. Okay. So we are going to be using them like this. I'm again saying it you this is just basically copy paste of text. So I can copy it and I can create a prompt or I can use it from the hub as it is. So let's write the code for pulling the prompt. And from lang chain itself I'm going to be importing hub and we are going to be pulling the prompt from the hub and let's run this. So we have the prompt now. Now now we need to send this prompt to whom to our LLM. So we need to use our LLM. We are going to be using GPT as our LLM. So we are going to be using OpenAI's LLM. So let me just quickly create the LLM. So we are using open AI and whenever we need to talk to LLMs, what do we create? CH chat models. We have covered this in multiple videos. So I hope this should be clear now. If not, check out the lang and the langraph videos. You should be clear with these concepts. And we can just create the chat model for chat open AI, right? And uh we can give the model name and the",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1205.039,
+      "end_seconds": 1278.08,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1205s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "20436e98bacd0df32d80c68ee84c3dc2d54fb377922f04e9d1a5c145c48d4ebd",
+    "text": "check out the lang and the langraph videos. You should be clear with these concepts. And we can just create the chat model for chat open AI, right? And uh we can give the model name and the temperature or we can just do this. And we are going to use the default values. So we have our LLM. Now we are ready to create our rack chain. What do we send to our LM? We send the prompt. And what does our prompt need? So if we go to the prompt that we are using, we need the question and the context. So first we need the context. From where are we going to get the context? From our retriever. So the first thing that I need to do is have the variables that I need to send to our prompt. So I need to send context. So I need to send context and that I'm going to get from the retriever. Right? Other than this what do I need to send? I need to send the question. So I am sending it in a dictionary. Right? So here you can see I have to send context and question. So I am sending these values in a dictionary. So I have the context now. Now I need to send the",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1266.32,
+      "end_seconds": 1331.5200000000002,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1266s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4488e73ad81e99541e2f208dc54172192bcd2c521b0b145ae54448c77f215d97",
+    "text": "sending it in a dictionary. Right? So here you can see I have to send context and question. So I am sending these values in a dictionary. So I have the context now. Now I need to send the question. See whenever we need to just pass the input as it is. So our question is going to be the input. Whenever we just need to pass the input as it is, we use something called runnable pass through. So let me just quickly import that. So in lang itself there are a lot of runnables that are available. So langchain concepts are very very important over here. So whenever you just need to pass the question as it is, whatever is there, whatever you need to pass as it is, you use something called runnable pass through. So it is a runnable. So basically a task that you're going to be running where we are just passing through the information, right? So here because I need to pass the question I am using runnable pass through. Now another point over here is that whatever I'm going to be retrieving from my vector store. It doesn't have to be a single document. Maybe I'm asking something maybe I'm asking the curriculum for all the five weeks. So the curriculum might be present in",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1318.88,
+      "end_seconds": 1383.52,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1318s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2e45d6740a8ad1b1129925c4f2d5fb368156b08d4e758de18d544e58de45e005",
+    "text": "that whatever I'm going to be retrieving from my vector store. It doesn't have to be a single document. Maybe I'm asking something maybe I'm asking the curriculum for all the five weeks. So the curriculum might be present in multiple splits instead of just one split. Right? So whatever context I'm getting I need to join these relevant splits. So maybe there were a total of thousand splits and from that I got say five or four relevant splits right now I need to join them and send them together to in my context right it is not like I'm sending a list of four or five different splits so our rack chain I just need to send the context so the entire whatever is the context so whatever relevant information I got from the vector store I need to join that and send it in the context I'm repeating that see in our splits right now in our case we 11 splits. In real cases, maybe we have a lot of data. We have say thousand splits and the relevant information might be in say four to five splits. So I need to join this relevant information and send it together in this context. So I need to do that joining also. Right? So here I have whatever the",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1369.679,
+      "end_seconds": 1439.76,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1369s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5a9f9a6e50ce4c97ec8584440fb09c3e8987482a7133dc5f4d766bca79f84646",
+    "text": "information might be in say four to five splits. So I need to join this relevant information and send it together in this context. So I need to do that joining also. Right? So here I have whatever the retriever sent me but I need to do one more thing. So whatever is the output from this retriever I'm going to pass to my own function and I'm going to call this as maybe format documents. Okay. And let's just write this function. And here all I am doing is basically formatting whatever relevant information I have. So in this I'm going to be passing the documents that I have. How am I getting this documents from the retriever? So retriever is responsible for doing it that whatever is relevant for this particular question give me the documents for that and all that we have to do is join those documents. Okay. So here whatever information is there I'm just going to join them. So in the page content and I'm going to go through all the talks and I'm just going to join and that's it. So now I have the context in the question. Where do I need to pass this context and question to the prompt right? So this is the first thing. Now this needs to be passed to",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1425.64,
+      "end_seconds": 1506.559,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1425s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "244973bb188a2ac23533b985f435cc99561c495320d0c1d0dfadd78c9d124f7e",
+    "text": "join and that's it. So now I have the context in the question. Where do I need to pass this context and question to the prompt right? So this is the first thing. Now this needs to be passed to the prompt. So the input is to the prompt. Right? Now when I get the prompt that has to be sent to our LLM, right? and from arm I'm going to get the output. Now the output is going to have a lot of information. I just need the content out of it. So whenever we have we have to take out the content we can use str output parser. Again we have used this also in previous videos. It's okay if you don't know these things just you'll get used to them as you write more and more code or just go through the langraph videos and you'll get used to these things. Okay. So we need to use the str output parser and let me just quickly import that and whatever is the output I'm going to basically parse out the content from it and that is what I'm going to get as the output. So we have made our rank chain. Let's quickly revise it once what's happening over here. See whenever we create a chain we create",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1491.159,
+      "end_seconds": 1570.0,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1491s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "121c97d902ef76b0cec5da10d6388db231222994183692f15a5fbad17dcdce1a",
+    "text": "from it and that is what I'm going to get as the output. So we have made our rank chain. Let's quickly revise it once what's happening over here. See whenever we create a chain we create a chain of some runnables or tasks. So what are the different tasks over here this is one task and what am I doing? I am creating a dictionary of where I am passing the retriever and I'm formatting the documents and I'm passing it as context and the question I'm passing it as it is. So now these are going to be the inputs to the prompt. Now what is the prompt? This is the prompt and it needed these two as the inputs. Right? Now what am I going to get output from this? I'm going to get the prompt. I could have just done create prompt from chat prompt template and I could have passed this as it is with the inputs. So this these inputs I have passed them as dictionary. Now whatever prompt I'm going to get that I am passing as an input to our LM. So I am passing the prompt to our LLM. Now what is the output that I get from LM? There are a lot of things present. I'm going to take out just the content of it and I'm",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1553.039,
+      "end_seconds": 1618.72,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1553s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b6e29df3da1fd8e0d9431f87c087ef629e264ea42364cbdeefa094071253c0c6",
+    "text": "input to our LM. So I am passing the prompt to our LLM. Now what is the output that I get from LM? There are a lot of things present. I'm going to take out just the content of it and I'm parsing out the content. Okay. So I'm parsing out the content over here. So basically here the runnables are or the different tasks are divided by this pipe operator and whatever is the output from this prompt is passed into the LLM. Whatever is the output from the LLM is passed to the parser and we take out the content. And what are we doing over here? See why do we need this function? So I have a retriever. Retriever is going to take out the relevant documents. Now maybe they might be like two documents or three documents. I need to join those documents. So here I'm just going through the documents and I'm joining the entire content. All I'm doing over here is adding one line between those documents and I'm just putting the documents together, formatting them together and passing the context and the question forming the prompt passing to the NLM. Whatever is the output I am just passing it out. It's time that we actually check whether this chain is working or not.",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1606.559,
+      "end_seconds": 1671.0,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1606s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a9c5a35a6caaf9a7a897378afc024ca60f0f8d1ea909a1f93124c6c9e3373975",
+    "text": "formatting them together and passing the context and the question forming the prompt passing to the NLM. Whatever is the output I am just passing it out. It's time that we actually check whether this chain is working or not. Let's run this chain and let all we have to do now is invoke the chain and we can just pass the query over here. So suppose let's ask are the recordings of the course available for how long? Let's see. Okay, there is some error in runnable pass through. Okay. Oh, sorry. So I missed this. Let's run it again. Here's the recordings of the course are available for lifetime access. Nice. So let's probably try for some more queries. Let's try something like um are the testimonials for the course available? Because I just added the testimonials like right before uh recording this video. I was just adding them because the course just ended the live classes. Yes, the testimonials for the course are available on this website. Shows real stories and satisfaction from the courses. Uh let's see if it can name these students. Nice. So it has named some of the students. Sahitya, Manika, Ashish, Satish. So these are all my students from the HNI course. So these are some of the students. There are more",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1656.559,
+      "end_seconds": 1748.5590000000002,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1656s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3c22f300f6b85021ac134f260722bb31cfa084302729c715d41a71b93fd53be0",
+    "text": "these students. Nice. So it has named some of the students. Sahitya, Manika, Ashish, Satish. So these are all my students from the HNI course. So these are some of the students. There are more testimonials but this is good enough. Uh we can also probably check for something some more questions like for example are these certificates provided? certificates are provided for the course probably let's say what all projects are covered as part of the course so maybe it will go through the curriculum and it will tell what all projects are covered right so that would be nice oh nice so it is saying okay implementing can training VA uh then there is uh fine-tuning techniques offers hands-on learning experiences allows participants for mini and major projects Nice. This is so cool. We created a rack pipeline and we are able to create basically a pot where we are able to answer questions based on our site. Right? So like this I have courses. You could be having any products and you can make LLM answer questions related to your products. Also if you want to see the exact prompt that is going into the LLM, you can also add probably a print after this. So let's try doing that. So what I'm going to do is probably create",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1731.12,
+      "end_seconds": 1822.76,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1731s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0ece09ab2c0b627280a2df988bf3de400954021577b196105d1e5a1a5eff90ce",
+    "text": "your products. Also if you want to see the exact prompt that is going into the LLM, you can also add probably a print after this. So let's try doing that. So what I'm going to do is probably create a new chain. So rack chain with print something like this. Okay. And whatever is the output from this prompt. So I'm getting the prompt, right? I need to print it and I need to again pass the prompt to my LLM, right? So in order to print it, what I'm going to do is I'm going to create my own custom uh function where I'm going to basically create a runnable lambda. And to create your own custom function, you need to create reneable lambda. Okay. So there are different kinds of runnables. So if you want to just pass the information as it is, we have reable pass through. If you want to create your own function, uh you can basically use renable lambda. So let me just quickly import that from blankchain core and and I'm going to be using that and I need to give a function over here right so the function that we are going to be writing is probably going to be print prompt and let's just define it and I'm going to be getting the prompt text over",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1805.84,
+      "end_seconds": 1886.0,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1805s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0649615879a8d1b20a6031d83562068017cd392c6072a78498aa89acd3af2bc6",
+    "text": "need to give a function over here right so the function that we are going to be writing is probably going to be print prompt and let's just define it and I'm going to be getting the prompt text over here and I'm just going to be printing it just to show it to And also see whatever will be the output from this renable lambda that will be passed to the LLM. So LM is still expecting the prompt right. So I'm going to be returning the prompt as it is. So that I am making sure that it is passed to the LLM. Right? So don't do this mistake. If you add a print like if you are adding in between for enable lambda, you need to make sure that the same is passed to the LLM. Right? So whatever prompt was the output, same thing I am passing to the LL. Okay. So let's quickly run this and let's try again. So in this particular chain I'm going to probably invoke something else. Suppose is there doubt support and let's try running this. So it is saying I don't know. So maybe it was not able to get that part. So let's probably try for this itself. Maybe I need to be better at my FAQ. Right. Uh so here we are getting",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1870.64,
+      "end_seconds": 1955.36,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1870s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "95662483b5497ec4715785d344ff814c386cc4d9dc85e594103bd79b95695a97",
+    "text": "this. So it is saying I don't know. So maybe it was not able to get that part. So let's probably try for this itself. Maybe I need to be better at my FAQ. Right. Uh so here we are getting you are an assistant answering questions for question answering task. Right? So this was basically the same thing that is going you are an assistant for question answering task. Use the following pieces of retrieved context. So the same thing is basically going and we are passing the question and the context. So if I just go ahead this is the context and these are probably some chunks that the retriever has taken out for us. Uh maybe you know for what part it did not work maybe because my uh chunk size was too huge. So maybe using that we'll get better and so the question in the context is passed. So you can see the question is passed what all projects are covered in the course and then the entire context basically uh the splits are passed. Now you remember I had joined the documents with a end line in between right. So that is why these are in new lines. So these are the different chunks that are being passed and based on that we are getting the",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1937.159,
+      "end_seconds": 2009.519,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1937s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d24ac001124b824c43ab4a8a39f1577a095ddd0f03ab0b9d1b1037bf199ed406",
+    "text": "I had joined the documents with a end line in between right. So that is why these are in new lines. So these are the different chunks that are being passed and based on that we are getting the response. So nice and this brings us to the end of the video. I hope you enjoyed and you understood drag very well. If there are any questions please let me know in the comments and I would love to answer them. Also guys I'm planning to be extremely active on YouTube now. I am creating a lot of content on YouTube, LinkedIn as well as on my personal Instagram that is the personal side. But for YouTube and LinkedIn, I am creating so much of free content and I it would really really motivate me if you could support me a bit more. Hit the like button, share with your friends, share on LinkedIn. If you are finding it useful, if you have watched it here, I am hoping that you really found it useful. Please do let me know and please consider sharing more of your support and love. It is going to mean the world to me. It is really going to motivate me a lot. And see you next time. I promise a lot more videos coming up. Stay tuned.",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 1995.84,
+      "end_seconds": 2068.65,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=1995s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e902bd8ddcf70485aa004efbffca24700367bdaf68950568c1fd93a1cdf73e28",
+    "text": "and love. It is going to mean the world to me. It is really going to motivate me a lot. And see you next time. I promise a lot more videos coming up. Stay tuned. [Music]",
+    "metadata": {
+      "video_id": "wzssm02u35I",
+      "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "RAG",
+      "start_seconds": 2045.279,
+      "end_seconds": 2068.65,
+      "url": "https://www.youtube.com/watch?v=wzssm02u35I&t=2045s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

@@ -1,0 +1,248 @@
+{
+  "video_id": "TMshhnrEXlg",
+  "title": "What is the ROUGE metric?",
+  "channel": "Hugging Face",
+  "trainer": "Hugging Face",
+  "topic": "Evaluation",
+  "language": "en",
+  "caption_type": "manual",
+  "start_seconds": 0,
+  "end_seconds": 249.0,
+  "segments": [
+    {
+      "start": 5.52,
+      "end": 12.079999999999998,
+      "text": "What is the ROUGE metric? For many NLP tasks we can use common metrics like accuracy or F1 score,"
+    },
+    {
+      "start": 12.08,
+      "end": 15.92,
+      "text": "but what do you do when you want to measure the quality of a summary from a model like T5?"
+    },
+    {
+      "start": 16.72,
+      "end": 20.265,
+      "text": "In this video, we'll take a look at a widely used metric for text summarization called ROUGE,"
+    },
+    {
+      "start": 20.265,
+      "end": 23.36,
+      "text": "which is short for Recall-Oriented Understudy for Gisting Evaluation. There are actually several"
+    },
+    {
+      "start": 23.36,
+      "end": 27.28,
+      "text": "variants of ROUGE, but the basic idea behind all of them is to assign a single numerical"
+    },
+    {
+      "start": 27.28,
+      "end": 31.36,
+      "text": "score to a summary that tells us how \"good\" it is compared to one or more reference summaries."
+    },
+    {
+      "start": 32.32,
+      "end": 35.36,
+      "text": "In this example we have a book review that has been summarized by some model."
+    },
+    {
+      "start": 36.4,
+      "end": 39.6,
+      "text": "If we compare the generated summary to some reference human summaries,"
+    },
+    {
+      "start": 39.6,
+      "end": 43.84,
+      "text": "we can see that the model is pretty good, and only differs by a word or two."
+    },
+    {
+      "start": 44.8,
+      "end": 48.0,
+      "text": "So how can we measure the quality of a generated summary in an automatic way?"
+    },
+    {
+      "start": 48.8,
+      "end": 52.879999999999995,
+      "text": "The approach that ROUGE takes is to compare the n-grams of the generated summary to the"
+    },
+    {
+      "start": 52.88,
+      "end": 58.400000000000006,
+      "text": "n-grams of the references. An n-gram is just a fancy way of saying \"a chunk of n words\","
+    },
+    {
+      "start": 58.4,
+      "end": 62.08,
+      "text": "so let's start with unigrams, which correspond to the individual words in a sentence."
+    },
+    {
+      "start": 63.6,
+      "end": 67.76,
+      "text": "In this example you can see that six of the words in the generated summary are also found in one of"
+    },
+    {
+      "start": 67.76,
+      "end": 71.84,
+      "text": "the reference summaries. The ROUGE metric that compares unigrams is called ROUGE-1."
+    },
+    {
+      "start": 74.0,
+      "end": 78.0,
+      "text": "Now that we've found our matches, one way to assign a score to the summary is to compute the"
+    },
+    {
+      "start": 78.0,
+      "end": 82.88,
+      "text": "recall of the unigrams. This means we just count the number of matching words in the generated and"
+    },
+    {
+      "start": 82.88,
+      "end": 87.03999999999999,
+      "text": "reference summaries and normalize the count by dividing by the number of word in the reference."
+    },
+    {
+      "start": 88.0,
+      "end": 91.92,
+      "text": "In this example, we found 6 matching words and our reference has 6 words,"
+    },
+    {
+      "start": 91.92,
+      "end": 96.24000000000001,
+      "text": "so our unigram recall is perfect! This means that all of words in the reference"
+    },
+    {
+      "start": 96.24,
+      "end": 102.32,
+      "text": "summary have produced in the generated one. Perfect recall sounds great, but imagine if"
+    },
+    {
+      "start": 102.32,
+      "end": 107.11999999999999,
+      "text": "our generated summary had been “I really really really really loved reading the Hunger Games”."
+    },
+    {
+      "start": 107.92,
+      "end": 112.24000000000001,
+      "text": "This would also have perfect recall, but is arguably a worse summary since it is verbose."
+    },
+    {
+      "start": 113.28,
+      "end": 117.84,
+      "text": "To deal with these scenarios we can also compute precision, which in the ROUGE context measures"
+    },
+    {
+      "start": 117.84,
+      "end": 121.2,
+      "text": "how much of the generated summary was relevant. In this example, the precision is 6/7. In practice,"
+    },
+    {
+      "start": 121.2,
+      "end": 125.2,
+      "text": "both precision and recall are usually computed and then the F1-score is reported."
+    },
+    {
+      "start": 127.36,
+      "end": 132.0,
+      "text": "We can change the granularity of the comparison by comparing bigrams instead of unigrams."
+    },
+    {
+      "start": 132.8,
+      "end": 137.76000000000002,
+      "text": "With bigrams we chunk the sentence into pairs of consecutive words and then count how many pairs in"
+    },
+    {
+      "start": 137.76,
+      "end": 143.6,
+      "text": "the generated summary are present in the reference one. This gives us ROUGE-2 precision and recall,"
+    },
+    {
+      "start": 143.6,
+      "end": 148.79999999999998,
+      "text": "which we can see is lower than the ROUGE-1 scores we saw earlier. Note that if the summaries are"
+    },
+    {
+      "start": 148.8,
+      "end": 154.56,
+      "text": "long, the ROUGE-2 score will be small as there are typically fewer bigrams to match. This is"
+    },
+    {
+      "start": 154.56,
+      "end": 159.68,
+      "text": "also true for abstractive summarization, so both ROUGE-1 and ROUGE-2 scores are usually reported."
+    },
+    {
+      "start": 161.76,
+      "end": 166.88,
+      "text": "The last ROUGE variant we'll discuss is ROUGE-L. ROUGE-L doesn't compare n-grams,"
+    },
+    {
+      "start": 166.88,
+      "end": 171.35999999999999,
+      "text": "but instead treats each summary as a sequence of words and then looks for the longest common"
+    },
+    {
+      "start": 171.36,
+      "end": 177.28,
+      "text": "subsequence or LCS. A subsequence is a sequence that appears in the same relative order,"
+    },
+    {
+      "start": 177.28,
+      "end": 183.28,
+      "text": "but not necessarily contiguous. So in this example, \"I loved reading the Hunger Games\" is the"
+    },
+    {
+      "start": 183.28,
+      "end": 191.12,
+      "text": "longest common subsequence. The main advantage of ROUGE-L over ROUGE-1 or ROUGE-2 is that is doesn't"
+    },
+    {
+      "start": 191.12,
+      "end": 198.4,
+      "text": "depend on consecutive n-gram matches, so it tends to capture sentence structure more accurately. To"
+    },
+    {
+      "start": 198.4,
+      "end": 203.20000000000002,
+      "text": "compute ROUGE scores in Hugging Face Datasets is very simple: just use the load_metric() function,"
+    },
+    {
+      "start": 203.76,
+      "end": 206.95999999999998,
+      "text": "provide your model's summaries along with the references and you're good to go!"
+    },
+    {
+      "start": 208.56,
+      "end": 212.48,
+      "text": "The output from the calculation contains a lot of information! The first thing we"
+    },
+    {
+      "start": 212.48,
+      "end": 216.88,
+      "text": "can see here is that the confidence intervals of each ROUGE score are provided in the low,"
+    },
+    {
+      "start": 216.88,
+      "end": 221.68,
+      "text": "mid, and high fields. This is really useful if you want to know the spread of your ROUGE scores when"
+    },
+    {
+      "start": 221.68,
+      "end": 228.08,
+      "text": "comparing two or more models. The second thing to notice is that we have four types of ROUGE score."
+    },
+    {
+      "start": 228.08,
+      "end": 233.84,
+      "text": "We've already seen ROUGE-1, ROUGE-2 and ROUGE-L, so what is ROUGE-LSUM? Well,"
+    },
+    {
+      "start": 233.84,
+      "end": 238.8,
+      "text": "the “sum” in ROUGE-LSUM refers to the fact that this metric is computed over a whole summary,"
+    },
+    {
+      "start": 238.8,
+      "end": 248.48000000000002,
+      "text": "while ROUGE-L is computed as the average over individual sentences."
+    }
+  ]
+}

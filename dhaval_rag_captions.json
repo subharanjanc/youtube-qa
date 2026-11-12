@@ -1,0 +1,1783 @@
+{
+  "video_id": "dDkynerzV-Q",
+  "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+  "channel": "codebasics",
+  "trainer": "Dhaval Patel",
+  "topic": "RAG",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 876.0,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.4,
+      "text": "In almost all Gen AI engineer job"
+    },
+    {
+      "start": 2.4,
+      "end": 6.800000000000001,
+      "text": "postings, you will find one common"
+    },
+    {
+      "start": 4.4,
+      "end": 9.08,
+      "text": "skill, retrieval augmented generation,"
+    },
+    {
+      "start": 6.8,
+      "end": 11.24,
+      "text": "also known as rag. In my company at"
+    },
+    {
+      "start": 9.08,
+      "end": 14.440000000000001,
+      "text": "Lake, when we build AI projects for our"
+    },
+    {
+      "start": 11.24,
+      "end": 16.48,
+      "text": "clients, more than 40% of these projects"
+    },
+    {
+      "start": 14.44,
+      "end": 18.4,
+      "text": "have rag component in it. So, what"
+    },
+    {
+      "start": 16.48,
+      "end": 20.6,
+      "text": "exactly is rag? What are different"
+    },
+    {
+      "start": 18.4,
+      "end": 22.919999999999998,
+      "text": "types? Is naive rag dead due to"
+    },
+    {
+      "start": 20.6,
+      "end": 25.44,
+      "text": "vectorless rag? We are going to cover"
+    },
+    {
+      "start": 22.92,
+      "end": 27.64,
+      "text": "all these rag basics in a very simple"
+    },
+    {
+      "start": 25.44,
+      "end": 30.28,
+      "text": "and intuitive language. We will not just"
+    },
+    {
+      "start": 27.64,
+      "end": 32.88,
+      "text": "talk theory. I will show you a rag"
+    },
+    {
+      "start": 30.28,
+      "end": 35.72,
+      "text": "project which is a customer care chatbot"
+    },
+    {
+      "start": 32.88,
+      "end": 38.56,
+      "text": "in telecom domain. In the end, I will"
+    },
+    {
+      "start": 35.72,
+      "end": 40.68,
+      "text": "share some useful resources including"
+    },
+    {
+      "start": 38.56,
+      "end": 42.760000000000005,
+      "text": "rag interview questions. All right,"
+    },
+    {
+      "start": 40.68,
+      "end": 44.8,
+      "text": "let's get started. Let's understand rag"
+    },
+    {
+      "start": 42.76,
+      "end": 47.32,
+      "text": "using a simple example. When you ask"
+    },
+    {
+      "start": 44.8,
+      "end": 49.64,
+      "text": "ChatGPT a policy question for some"
+    },
+    {
+      "start": 47.32,
+      "end": 53.12,
+      "text": "private company, it won't be able to"
+    },
+    {
+      "start": 49.64,
+      "end": 55.16,
+      "text": "answer it because ChatGPT is trained on"
+    },
+    {
+      "start": 53.12,
+      "end": 58.64,
+      "text": "general internet knowledge. It doesn't"
+    },
+    {
+      "start": 55.16,
+      "end": 62.16,
+      "text": "know the HR policy details of any"
+    },
+    {
+      "start": 58.64,
+      "end": 64.559,
+      "text": "private company. But, if you give HR"
+    },
+    {
+      "start": 62.16,
+      "end": 67.92,
+      "text": "policy document to this LLM, which acts"
+    },
+    {
+      "start": 64.559,
+      "end": 69.92,
+      "text": "like a brain, it should be able to read"
+    },
+    {
+      "start": 67.92,
+      "end": 73.12,
+      "text": "a relevant section and provide you with"
+    },
+    {
+      "start": 69.92,
+      "end": 75.28,
+      "text": "the answer. This is similar to having a"
+    },
+    {
+      "start": 73.12,
+      "end": 77.4,
+      "text": "very smart student Mira, who is a"
+    },
+    {
+      "start": 75.28,
+      "end": 80.08,
+      "text": "computer science student, and you are"
+    },
+    {
+      "start": 77.4,
+      "end": 82.56,
+      "text": "asking her to appear in a microbiology"
+    },
+    {
+      "start": 80.08,
+      "end": 84.56,
+      "text": "exam, which is an open book exam. Now,"
+    },
+    {
+      "start": 82.56,
+      "end": 86.60000000000001,
+      "text": "Mira is generally good in terms of"
+    },
+    {
+      "start": 84.56,
+      "end": 88.88,
+      "text": "reading, writing, comprehension,"
+    },
+    {
+      "start": 86.6,
+      "end": 90.88,
+      "text": "understanding, etc., but she doesn't"
+    },
+    {
+      "start": 88.88,
+      "end": 93.72,
+      "text": "know anything about microbiology. But,"
+    },
+    {
+      "start": 90.88,
+      "end": 95.67999999999999,
+      "text": "in this exam, she has been given a book"
+    },
+    {
+      "start": 93.72,
+      "end": 97.72,
+      "text": "on microbiology from which they are"
+    },
+    {
+      "start": 95.68,
+      "end": 100.08000000000001,
+      "text": "going to ask the questions. Now, Mira"
+    },
+    {
+      "start": 97.72,
+      "end": 102.88,
+      "text": "can use her reading, writing,"
+    },
+    {
+      "start": 100.08,
+      "end": 105.2,
+      "text": "comprehension skills to uh look at the"
+    },
+    {
+      "start": 102.88,
+      "end": 108.28,
+      "text": "book and she can write answers in the"
+    },
+    {
+      "start": 105.2,
+      "end": 109.84,
+      "text": "exam. So, here Mira's brain is like LLM,"
+    },
+    {
+      "start": 108.28,
+      "end": 112.52,
+      "text": "which has a good understanding of"
+    },
+    {
+      "start": 109.84,
+      "end": 114.52000000000001,
+      "text": "language, it has reasoning capabilities,"
+    },
+    {
+      "start": 112.52,
+      "end": 116.52,
+      "text": "and the book is like an HR policy"
+    },
+    {
+      "start": 114.52,
+      "end": 119.6,
+      "text": "document. It is an external knowledge"
+    },
+    {
+      "start": 116.52,
+      "end": 121.6,
+      "text": "where LLM can look into it and pull the"
+    },
+    {
+      "start": 119.6,
+      "end": 124.24,
+      "text": "answers. Let's now understand the"
+    },
+    {
+      "start": 121.6,
+      "end": 126.91999999999999,
+      "text": "two-step process of how rag works"
+    },
+    {
+      "start": 124.24,
+      "end": 128.84,
+      "text": "underneath. So, here I have HR policy"
+    },
+    {
+      "start": 126.92,
+      "end": 132.36,
+      "text": "document from Atliq, which will have a"
+    },
+    {
+      "start": 128.84,
+      "end": 134.92000000000002,
+      "text": "section on retirement benefits, okay?"
+    },
+    {
+      "start": 132.36,
+      "end": 137.32000000000002,
+      "text": "So, now if I go to ChatGPT, and if I"
+    },
+    {
+      "start": 134.92,
+      "end": 140.2,
+      "text": "copy this particular section, okay, and"
+    },
+    {
+      "start": 137.32,
+      "end": 142.6,
+      "text": "I ask my question related to"
+    },
+    {
+      "start": 140.2,
+      "end": 145.88,
+      "text": "contribution to employees retirement"
+    },
+    {
+      "start": 142.6,
+      "end": 147.92,
+      "text": "fund, in that case, ChatGPT will be able"
+    },
+    {
+      "start": 145.88,
+      "end": 151.0,
+      "text": "to answer that question. Because here"
+    },
+    {
+      "start": 147.92,
+      "end": 153.6,
+      "text": "you are asking question and providing uh"
+    },
+    {
+      "start": 151.0,
+      "end": 156.12,
+      "text": "knowledge as a reference in the context,"
+    },
+    {
+      "start": 153.6,
+      "end": 158.76,
+      "text": "and it can pull the answer. But, what if"
+    },
+    {
+      "start": 156.12,
+      "end": 161.44,
+      "text": "your HR policy document is 3,000 page"
+    },
+    {
+      "start": 158.76,
+      "end": 164.2,
+      "text": "PDF, okay? What if that knowledge is"
+    },
+    {
+      "start": 161.44,
+      "end": 166.92,
+      "text": "very big? What's going to happen in that"
+    },
+    {
+      "start": 164.2,
+      "end": 168.79999999999998,
+      "text": "case is you will run out of your context"
+    },
+    {
+      "start": 166.92,
+      "end": 170.72,
+      "text": "window limit. And even if you have a"
+    },
+    {
+      "start": 168.8,
+      "end": 173.8,
+      "text": "huge context window,"
+    },
+    {
+      "start": 170.72,
+      "end": 176.0,
+      "text": "uh you should still not feed the entire"
+    },
+    {
+      "start": 173.8,
+      "end": 178.04000000000002,
+      "text": "knowledge because it will be too many"
+    },
+    {
+      "start": 176.0,
+      "end": 181.24,
+      "text": "tokens, it will be costly. So, what"
+    },
+    {
+      "start": 178.04,
+      "end": 182.84,
+      "text": "people do is they will chunk this"
+    },
+    {
+      "start": 181.24,
+      "end": 186.08,
+      "text": "document. So, they will create, let's"
+    },
+    {
+      "start": 182.84,
+      "end": 189.44,
+      "text": "say, basic strategy is fixed-size"
+    },
+    {
+      "start": 186.08,
+      "end": 191.88000000000002,
+      "text": "chunks. And then, for a given question,"
+    },
+    {
+      "start": 189.44,
+      "end": 193.96,
+      "text": "you can pull the relevant chunks. So,"
+    },
+    {
+      "start": 191.88,
+      "end": 197.12,
+      "text": "for this particular question, let's say"
+    },
+    {
+      "start": 193.96,
+      "end": 199.0,
+      "text": "my first chunk is 70% uh probability"
+    },
+    {
+      "start": 197.12,
+      "end": 201.16,
+      "text": "that it will it will contain the answer."
+    },
+    {
+      "start": 199.0,
+      "end": 202.44,
+      "text": "Second chunk is 60% match. And you can"
+    },
+    {
+      "start": 201.16,
+      "end": 204.92,
+      "text": "have, by the way, I'm showing just"
+    },
+    {
+      "start": 202.44,
+      "end": 207.64,
+      "text": "three, but you can have 1,000 chunks,"
+    },
+    {
+      "start": 204.92,
+      "end": 210.35999999999999,
+      "text": "and some of the chunks might have 5% or"
+    },
+    {
+      "start": 207.64,
+      "end": 213.6,
+      "text": "even 10% possibility that it may contain"
+    },
+    {
+      "start": 210.36,
+      "end": 216.48000000000002,
+      "text": "the answer. Let's say the chunk contains"
+    },
+    {
+      "start": 213.6,
+      "end": 219.32,
+      "text": "uh information on uh when Atliq was"
+    },
+    {
+      "start": 216.48,
+      "end": 221.39999999999998,
+      "text": "founded, culture, founders, etc., then"
+    },
+    {
+      "start": 219.32,
+      "end": 223.28,
+      "text": "that doesn't has anything to do with the"
+    },
+    {
+      "start": 221.4,
+      "end": 226.28,
+      "text": "retirement question that you are asking,"
+    },
+    {
+      "start": 223.28,
+      "end": 228.88,
+      "text": "okay? So, the the relevance of that"
+    },
+    {
+      "start": 226.28,
+      "end": 230.72,
+      "text": "chunk will be very, very low. Now, how"
+    },
+    {
+      "start": 228.88,
+      "end": 233.72,
+      "text": "do you exactly find this kind of"
+    },
+    {
+      "start": 230.72,
+      "end": 235.64,
+      "text": "similarity? So, there is this concept of"
+    },
+    {
+      "start": 233.72,
+      "end": 239.72,
+      "text": "embeddings, okay? So, embedding is a"
+    },
+    {
+      "start": 235.64,
+      "end": 242.51999999999998,
+      "text": "process of converting text into a vector"
+    },
+    {
+      "start": 239.72,
+      "end": 244.16,
+      "text": "such that it can represent its meaning,"
+    },
+    {
+      "start": 242.52,
+      "end": 248.04000000000002,
+      "text": "okay? So, all the chunks, you will"
+    },
+    {
+      "start": 244.16,
+      "end": 250.32,
+      "text": "convert them into vector embeddings, and"
+    },
+    {
+      "start": 248.04,
+      "end": 252.32,
+      "text": "then you will store them into a vector"
+    },
+    {
+      "start": 250.32,
+      "end": 255.07999999999998,
+      "text": "database. This is different than your"
+    },
+    {
+      "start": 252.32,
+      "end": 257.88,
+      "text": "regular database. Your regular database"
+    },
+    {
+      "start": 255.08,
+      "end": 260.04,
+      "text": "can search using exact values, whereas"
+    },
+    {
+      "start": 257.88,
+      "end": 262.84,
+      "text": "vector database will be able to search"
+    },
+    {
+      "start": 260.04,
+      "end": 265.84000000000003,
+      "text": "using the meaning. So, when you search"
+    },
+    {
+      "start": 262.84,
+      "end": 269.2,
+      "text": "for, let's say, uh a company that is a"
+    },
+    {
+      "start": 265.84,
+      "end": 271.79999999999995,
+      "text": "leader in electric vehicle, it will"
+    },
+    {
+      "start": 269.2,
+      "end": 273.84,
+      "text": "return Tesla uh from the database. So,"
+    },
+    {
+      "start": 271.8,
+      "end": 276.28000000000003,
+      "text": "it is searching based on the meaning,"
+    },
+    {
+      "start": 273.84,
+      "end": 278.28,
+      "text": "not based on the exact word. To generate"
+    },
+    {
+      "start": 276.28,
+      "end": 280.28,
+      "text": "embedding, you can use variety of"
+    },
+    {
+      "start": 278.28,
+      "end": 282.71999999999997,
+      "text": "models, sentence transformer, text"
+    },
+    {
+      "start": 280.28,
+      "end": 284.67999999999995,
+      "text": "embedding three small, and so on. And"
+    },
+    {
+      "start": 282.72,
+      "end": 286.20000000000005,
+      "text": "there are many vector database choices"
+    },
+    {
+      "start": 284.68,
+      "end": 288.76,
+      "text": "that you have in market, Milvus,"
+    },
+    {
+      "start": 286.2,
+      "end": 291.15999999999997,
+      "text": "Quadrant, Chroma DB, and so on. This"
+    },
+    {
+      "start": 288.76,
+      "end": 294.76,
+      "text": "step is called indexing. This is the"
+    },
+    {
+      "start": 291.16,
+      "end": 297.32000000000005,
+      "text": "first step in rag process, where you are"
+    },
+    {
+      "start": 294.76,
+      "end": 299.71999999999997,
+      "text": "indexing all these vectors of chunks"
+    },
+    {
+      "start": 297.32,
+      "end": 301.64,
+      "text": "into a vector database. The second step"
+    },
+    {
+      "start": 299.72,
+      "end": 303.8,
+      "text": "is retrieval, where for a given"
+    },
+    {
+      "start": 301.64,
+      "end": 305.88,
+      "text": "question, you will generate embedding"
+    },
+    {
+      "start": 303.8,
+      "end": 308.44,
+      "text": "using the same embedding model. Then,"
+    },
+    {
+      "start": 305.88,
+      "end": 310.88,
+      "text": "you will try to find the relevant chunks"
+    },
+    {
+      "start": 308.44,
+      "end": 313.71999999999997,
+      "text": "in a vector database. So, here it is"
+    },
+    {
+      "start": 310.88,
+      "end": 316.0,
+      "text": "doing the semantic search, giving you a"
+    },
+    {
+      "start": 313.72,
+      "end": 318.40000000000003,
+      "text": "relevant vectors. You can specify top K"
+    },
+    {
+      "start": 316.0,
+      "end": 320.56,
+      "text": "factor, let's say I need two chunks or"
+    },
+    {
+      "start": 318.4,
+      "end": 322.67999999999995,
+      "text": "five chunks, and so on. And then, you"
+    },
+    {
+      "start": 320.56,
+      "end": 325.76,
+      "text": "will generate the"
+    },
+    {
+      "start": 322.68,
+      "end": 328.12,
+      "text": "actual text out of those chunks, and you"
+    },
+    {
+      "start": 325.76,
+      "end": 330.03999999999996,
+      "text": "will put it in your prompt along with"
+    },
+    {
+      "start": 328.12,
+      "end": 332.12,
+      "text": "the question. And when the question is"
+    },
+    {
+      "start": 330.04,
+      "end": 335.12,
+      "text": "given to LLM, it will give you the"
+    },
+    {
+      "start": 332.12,
+      "end": 337.28000000000003,
+      "text": "answer. So, here uh below the question,"
+    },
+    {
+      "start": 335.12,
+      "end": 339.88,
+      "text": "what you are doing is you are providing"
+    },
+    {
+      "start": 337.28,
+      "end": 342.59999999999997,
+      "text": "only the relevant chunks. So, this way"
+    },
+    {
+      "start": 339.88,
+      "end": 345.36,
+      "text": "LLM will not hallucinate, and it will"
+    },
+    {
+      "start": 342.6,
+      "end": 347.56,
+      "text": "give you accurate answer. That takes us"
+    },
+    {
+      "start": 345.36,
+      "end": 350.76,
+      "text": "into our next segment, which is the two"
+    },
+    {
+      "start": 347.56,
+      "end": 353.96,
+      "text": "major benefits of rag. The first one is"
+    },
+    {
+      "start": 350.76,
+      "end": 356.2,
+      "text": "the answers that you get will be highly"
+    },
+    {
+      "start": 353.96,
+      "end": 359.12,
+      "text": "accurate, and the chances of"
+    },
+    {
+      "start": 356.2,
+      "end": 361.59999999999997,
+      "text": "hallucination will reduce because you"
+    },
+    {
+      "start": 359.12,
+      "end": 363.76,
+      "text": "are grounding your responses in the"
+    },
+    {
+      "start": 361.6,
+      "end": 365.8,
+      "text": "knowledge, in the source of truth."
+    },
+    {
+      "start": 363.76,
+      "end": 367.92,
+      "text": "Second, it is very cost-effective"
+    },
+    {
+      "start": 365.8,
+      "end": 370.28000000000003,
+      "text": "because if you pass the entire context,"
+    },
+    {
+      "start": 367.92,
+      "end": 373.16,
+      "text": "then you are sending too many tokens to"
+    },
+    {
+      "start": 370.28,
+      "end": 375.55999999999995,
+      "text": "LLM, and these LLM APIs, they charge you"
+    },
+    {
+      "start": 373.16,
+      "end": 377.88000000000005,
+      "text": "per token. So, if you send less number"
+    },
+    {
+      "start": 375.56,
+      "end": 379.96,
+      "text": "of tokens, only the relevant knowledge,"
+    },
+    {
+      "start": 377.88,
+      "end": 382.2,
+      "text": "then you will save money on your API"
+    },
+    {
+      "start": 379.96,
+      "end": 384.47999999999996,
+      "text": "bill. Here is a hands-on customer care"
+    },
+    {
+      "start": 382.2,
+      "end": 386.4,
+      "text": "assistant rag project. I have given the"
+    },
+    {
+      "start": 384.48,
+      "end": 387.68,
+      "text": "code in the video description below. You"
+    },
+    {
+      "start": 386.4,
+      "end": 390.64,
+      "text": "can ask different questions, for"
+    },
+    {
+      "start": 387.68,
+      "end": 393.56,
+      "text": "example, why is my mobile internet slow?"
+    },
+    {
+      "start": 390.64,
+      "end": 395.71999999999997,
+      "text": "And it will find the answer based on the"
+    },
+    {
+      "start": 393.56,
+      "end": 397.0,
+      "text": "knowledge that it has. So, the knowledge"
+    },
+    {
+      "start": 395.72,
+      "end": 399.64000000000004,
+      "text": "is stored in terms of the"
+    },
+    {
+      "start": 397.0,
+      "end": 402.04,
+      "text": "troubleshooting PDF file. So, here is"
+    },
+    {
+      "start": 399.64,
+      "end": 404.59999999999997,
+      "text": "the PDF file, and let's say you have"
+    },
+    {
+      "start": 402.04,
+      "end": 407.92,
+      "text": "this question on how do you want to"
+    },
+    {
+      "start": 404.6,
+      "end": 410.96000000000004,
+      "text": "enable the LTE, then it is pulling that"
+    },
+    {
+      "start": 407.92,
+      "end": 413.68,
+      "text": "answer from this particular PDF file."
+    },
+    {
+      "start": 410.96,
+      "end": 416.03999999999996,
+      "text": "The other source is the CSV file"
+    },
+    {
+      "start": 413.68,
+      "end": 419.04,
+      "text": "containing all the FAQs. And the third"
+    },
+    {
+      "start": 416.04,
+      "end": 421.12,
+      "text": "source is a SQLite database containing"
+    },
+    {
+      "start": 419.04,
+      "end": 423.68,
+      "text": "all the past ticket. Here we are using"
+    },
+    {
+      "start": 421.12,
+      "end": 427.4,
+      "text": "Chroma DB as vector database. So, we are"
+    },
+    {
+      "start": 423.68,
+      "end": 430.0,
+      "text": "ingesting FAQs, then PDF, and tickets"
+    },
+    {
+      "start": 427.4,
+      "end": 432.44,
+      "text": "into Chroma DB, okay? So, these are the"
+    },
+    {
+      "start": 430.0,
+      "end": 434.52,
+      "text": "three files which is ingesting into a"
+    },
+    {
+      "start": 432.44,
+      "end": 437.36,
+      "text": "vector database. If you look at ingest"
+    },
+    {
+      "start": 434.52,
+      "end": 439.91999999999996,
+      "text": "PDF, here we are using the chunk size of"
+    },
+    {
+      "start": 437.36,
+      "end": 442.28000000000003,
+      "text": "600, overlap of 100. We are using the"
+    },
+    {
+      "start": 439.92,
+      "end": 444.2,
+      "text": "recursive character text splitter"
+    },
+    {
+      "start": 442.28,
+      "end": 446.67999999999995,
+      "text": "strategy. And for embedding, we are"
+    },
+    {
+      "start": 444.2,
+      "end": 448.56,
+      "text": "using this particular embedding model"
+    },
+    {
+      "start": 446.68,
+      "end": 451.36,
+      "text": "from Hugging Face. As a framework, we"
+    },
+    {
+      "start": 448.56,
+      "end": 454.64,
+      "text": "have used LangChain. Now, the retriever"
+    },
+    {
+      "start": 451.36,
+      "end": 457.24,
+      "text": "will try to find relevant chunks from"
+    },
+    {
+      "start": 454.64,
+      "end": 460.2,
+      "text": "FAQ, tickets, or guides. In terms of"
+    },
+    {
+      "start": 457.24,
+      "end": 461.76,
+      "text": "LLM, we are using Quen from Chat Grok."
+    },
+    {
+      "start": 460.2,
+      "end": 464.71999999999997,
+      "text": "Please download the project on your"
+    },
+    {
+      "start": 461.76,
+      "end": 467.32,
+      "text": "computer, try to run it to enhance your"
+    },
+    {
+      "start": 464.72,
+      "end": 469.72,
+      "text": "understanding on rag concepts. Telecom"
+    },
+    {
+      "start": 467.32,
+      "end": 472.44,
+      "text": "support chatbot that we just saw is an"
+    },
+    {
+      "start": 469.72,
+      "end": 475.12,
+      "text": "example of enterprise QA chatbot. There"
+    },
+    {
+      "start": 472.44,
+      "end": 477.28,
+      "text": "are many other industry use cases for"
+    },
+    {
+      "start": 475.12,
+      "end": 480.12,
+      "text": "rag. For example, you can build medical"
+    },
+    {
+      "start": 477.28,
+      "end": 482.91999999999996,
+      "text": "knowledge assistant, which can look at"
+    },
+    {
+      "start": 480.12,
+      "end": 485.56,
+      "text": "the vast amount of medical knowledge and"
+    },
+    {
+      "start": 482.92,
+      "end": 487.84000000000003,
+      "text": "pulls a relevant answer for your query."
+    },
+    {
+      "start": 485.56,
+      "end": 489.6,
+      "text": "The other one is legal and compliance"
+    },
+    {
+      "start": 487.84,
+      "end": 492.11999999999995,
+      "text": "tools. Once again, here the knowledge"
+    },
+    {
+      "start": 489.6,
+      "end": 494.04,
+      "text": "will be your legal documents, and you"
+    },
+    {
+      "start": 492.12,
+      "end": 496.44,
+      "text": "want to pull the most relevant and"
+    },
+    {
+      "start": 494.04,
+      "end": 498.36,
+      "text": "accurate answer. HR chatbot is another"
+    },
+    {
+      "start": 496.44,
+      "end": 500.48,
+      "text": "example. Let's now look at rag"
+    },
+    {
+      "start": 498.36,
+      "end": 503.2,
+      "text": "categories. The first one is a vector"
+    },
+    {
+      "start": 500.48,
+      "end": 507.0,
+      "text": "rag, and naive rag is the example that"
+    },
+    {
+      "start": 503.2,
+      "end": 509.59999999999997,
+      "text": "we just saw, where you pull the top K"
+    },
+    {
+      "start": 507.0,
+      "end": 512.159,
+      "text": "relevant chunks from a vector database"
+    },
+    {
+      "start": 509.6,
+      "end": 515.479,
+      "text": "and answer user's question. The second"
+    },
+    {
+      "start": 512.159,
+      "end": 518.88,
+      "text": "category is vectorless rag, in which you"
+    },
+    {
+      "start": 515.479,
+      "end": 520.88,
+      "text": "can perform a keyword rag. So, here you"
+    },
+    {
+      "start": 518.88,
+      "end": 522.919,
+      "text": "are not generating any vector"
+    },
+    {
+      "start": 520.88,
+      "end": 525.32,
+      "text": "embeddings. You don't have a vector"
+    },
+    {
+      "start": 522.919,
+      "end": 529.3199999999999,
+      "text": "database, but you are using keyword"
+    },
+    {
+      "start": 525.32,
+      "end": 532.72,
+      "text": "match, uh techniques like BM25, TF-IDF,"
+    },
+    {
+      "start": 529.32,
+      "end": 535.4000000000001,
+      "text": "etc., to uh query into the document"
+    },
+    {
+      "start": 532.72,
+      "end": 538.4,
+      "text": "using the exact keywords. This method"
+    },
+    {
+      "start": 535.4,
+      "end": 541.48,
+      "text": "will work when you have a lot of codes,"
+    },
+    {
+      "start": 538.4,
+      "end": 543.4399999999999,
+      "text": "jargons, IDs, citations. Let's say you"
+    },
+    {
+      "start": 541.48,
+      "end": 547.04,
+      "text": "are doing research, and you are always"
+    },
+    {
+      "start": 543.44,
+      "end": 550.0400000000001,
+      "text": "searching using some particular ID or a"
+    },
+    {
+      "start": 547.04,
+      "end": 552.4,
+      "text": "particular keyword, then this will work."
+    },
+    {
+      "start": 550.04,
+      "end": 554.24,
+      "text": "This is weak for semantic understanding."
+    },
+    {
+      "start": 552.4,
+      "end": 556.8,
+      "text": "When you are not doing exact keyword"
+    },
+    {
+      "start": 554.24,
+      "end": 559.12,
+      "text": "matching and searching using meaning,"
+    },
+    {
+      "start": 556.8,
+      "end": 561.92,
+      "text": "this is not a good choice. And the key"
+    },
+    {
+      "start": 559.12,
+      "end": 565.6,
+      "text": "tools that uses keyword rag concepts"
+    },
+    {
+      "start": 561.92,
+      "end": 568.9599999999999,
+      "text": "like BM25 is Elasticsearch and Apache"
+    },
+    {
+      "start": 565.6,
+      "end": 571.4,
+      "text": "Solr. The next category in vector rag is"
+    },
+    {
+      "start": 568.96,
+      "end": 574.0,
+      "text": "hybrid rag, where you're combining"
+    },
+    {
+      "start": 571.4,
+      "end": 577.04,
+      "text": "vector search and keyword search, okay?"
+    },
+    {
+      "start": 574.0,
+      "end": 579.84,
+      "text": "You do both of these in parallel and"
+    },
+    {
+      "start": 577.04,
+      "end": 582.8,
+      "text": "merge the results. This is best for most"
+    },
+    {
+      "start": 579.84,
+      "end": 585.72,
+      "text": "of the production systems. The key tools"
+    },
+    {
+      "start": 582.8,
+      "end": 589.4,
+      "text": "here are Elasticsearch plus any vector"
+    },
+    {
+      "start": 585.72,
+      "end": 591.5600000000001,
+      "text": "DB. Now, in Atliq, we worked on one rag"
+    },
+    {
+      "start": 589.4,
+      "end": 595.24,
+      "text": "project for our client, where we have"
+    },
+    {
+      "start": 591.56,
+      "end": 597.8,
+      "text": "developed our own custom hybrid method"
+    },
+    {
+      "start": 595.24,
+      "end": 600.36,
+      "text": "for doing rag, and we have given details"
+    },
+    {
+      "start": 597.8,
+      "end": 601.4799999999999,
+      "text": "of this approach in a different video."
+    },
+    {
+      "start": 600.36,
+      "end": 603.48,
+      "text": "You can check it out if you are"
+    },
+    {
+      "start": 601.48,
+      "end": 605.48,
+      "text": "interested. Also, if you want to learn"
+    },
+    {
+      "start": 603.48,
+      "end": 607.84,
+      "text": "AI engineering by building production"
+    },
+    {
+      "start": 605.48,
+      "end": 610.76,
+      "text": "grade AI systems similar to the projects"
+    },
+    {
+      "start": 607.84,
+      "end": 613.0400000000001,
+      "text": "that I just mentioned, then check our AI"
+    },
+    {
+      "start": 610.76,
+      "end": 616.0,
+      "text": "engineering cohort where we have live"
+    },
+    {
+      "start": 613.04,
+      "end": 618.24,
+      "text": "sessions on weekends and we will teach"
+    },
+    {
+      "start": 616.0,
+      "end": 620.56,
+      "text": "you all the concepts plus you will build"
+    },
+    {
+      "start": 618.24,
+      "end": 622.96,
+      "text": "eight plus production grade projects."
+    },
+    {
+      "start": 620.56,
+      "end": 627.1999999999999,
+      "text": "The next category in vector less rag is"
+    },
+    {
+      "start": 622.96,
+      "end": 629.72,
+      "text": "a graph rag. It is also known as KG rag."
+    },
+    {
+      "start": 627.2,
+      "end": 631.36,
+      "text": "So here you will generate a knowledge"
+    },
+    {
+      "start": 629.72,
+      "end": 633.4,
+      "text": "graph. So let's say your knowledge is"
+    },
+    {
+      "start": 631.36,
+      "end": 635.48,
+      "text": "Elon Musk and all the companies he has"
+    },
+    {
+      "start": 633.4,
+      "end": 637.8,
+      "text": "founded. So in that case you will build"
+    },
+    {
+      "start": 635.48,
+      "end": 639.6,
+      "text": "this kind of knowledge graph where you"
+    },
+    {
+      "start": 637.8,
+      "end": 642.4,
+      "text": "will say Elon Musk founded Tesla,"
+    },
+    {
+      "start": 639.6,
+      "end": 643.76,
+      "text": "SpaceX, Neuralink, OpenAI and so on."
+    },
+    {
+      "start": 642.4,
+      "end": 645.52,
+      "text": "And then these companies will be"
+    },
+    {
+      "start": 643.76,
+      "end": 647.28,
+      "text": "operating in these different domains. So"
+    },
+    {
+      "start": 645.52,
+      "end": 649.36,
+      "text": "these are all the entities and they are"
+    },
+    {
+      "start": 647.28,
+      "end": 651.48,
+      "text": "connected through some kind of"
+    },
+    {
+      "start": 649.36,
+      "end": 653.72,
+      "text": "relationship. Now when you ask a"
+    },
+    {
+      "start": 651.48,
+      "end": 656.16,
+      "text": "question, which companies are founded by"
+    },
+    {
+      "start": 653.72,
+      "end": 658.6800000000001,
+      "text": "Elon Musk which are working in AI, you"
+    },
+    {
+      "start": 656.16,
+      "end": 660.1999999999999,
+      "text": "will traverse this particular path,"
+    },
+    {
+      "start": 658.68,
+      "end": 662.1999999999999,
+      "text": "okay? So you will look at all the"
+    },
+    {
+      "start": 660.2,
+      "end": 665.0400000000001,
+      "text": "companies and then you will do breadth"
+    },
+    {
+      "start": 662.2,
+      "end": 668.24,
+      "text": "first traversal and you will find that"
+    },
+    {
+      "start": 665.04,
+      "end": 671.1999999999999,
+      "text": "OpenAI is working in AI. The next one is"
+    },
+    {
+      "start": 668.24,
+      "end": 673.2,
+      "text": "SQL rag. This is also known as text to"
+    },
+    {
+      "start": 671.2,
+      "end": 675.5600000000001,
+      "text": "SQL. This method is very simple. Let's"
+    },
+    {
+      "start": 673.2,
+      "end": 678.0400000000001,
+      "text": "say you have sales database which"
+    },
+    {
+      "start": 675.56,
+      "end": 679.76,
+      "text": "contains the sales of"
+    },
+    {
+      "start": 678.04,
+      "end": 681.76,
+      "text": "products. Now you are asking this"
+    },
+    {
+      "start": 679.76,
+      "end": 684.56,
+      "text": "question, which product sold the most"
+    },
+    {
+      "start": 681.76,
+      "end": 686.96,
+      "text": "last month? Using LLM you can first"
+    },
+    {
+      "start": 684.56,
+      "end": 689.16,
+      "text": "generate a query for that database. You"
+    },
+    {
+      "start": 686.96,
+      "end": 691.44,
+      "text": "will execute the query, get the results"
+    },
+    {
+      "start": 689.16,
+      "end": 693.8389999999999,
+      "text": "and then give it back to LLM to generate"
+    },
+    {
+      "start": 691.44,
+      "end": 696.2,
+      "text": "a comprehensive answer. Very simple"
+    },
+    {
+      "start": 693.839,
+      "end": 698.44,
+      "text": "technique. You are taking a sentence in"
+    },
+    {
+      "start": 696.2,
+      "end": 701.4000000000001,
+      "text": "a natural language, converting it to SQL"
+    },
+    {
+      "start": 698.44,
+      "end": 703.96,
+      "text": "using LLM and putting a query in your"
+    },
+    {
+      "start": 701.4,
+      "end": 707.0,
+      "text": "database to get the results. And the"
+    },
+    {
+      "start": 703.96,
+      "end": 710.6,
+      "text": "last method, which is relatively new, is"
+    },
+    {
+      "start": 707.0,
+      "end": 713.56,
+      "text": "called page index. It is reasoning based"
+    },
+    {
+      "start": 710.6,
+      "end": 716.16,
+      "text": "rag. So here let's say you have 3,000"
+    },
+    {
+      "start": 713.56,
+      "end": 719.2399999999999,
+      "text": "page PDF document. First you will"
+    },
+    {
+      "start": 716.16,
+      "end": 722.28,
+      "text": "generate the table of content, okay? The"
+    },
+    {
+      "start": 719.24,
+      "end": 724.12,
+      "text": "table of content or your information"
+    },
+    {
+      "start": 722.28,
+      "end": 726.28,
+      "text": "structure. This is like you are having a"
+    },
+    {
+      "start": 724.12,
+      "end": 728.36,
+      "text": "book and you are having all the chapter"
+    },
+    {
+      "start": 726.28,
+      "end": 729.92,
+      "text": "and topic layout. Now when somebody asks"
+    },
+    {
+      "start": 728.36,
+      "end": 731.6,
+      "text": "this question, what does the contract"
+    },
+    {
+      "start": 729.92,
+      "end": 735.76,
+      "text": "say about compensation for breach of"
+    },
+    {
+      "start": 731.6,
+      "end": 738.44,
+      "text": "contract, the LLM will use its reasoning"
+    },
+    {
+      "start": 735.76,
+      "end": 742.3199999999999,
+      "text": "capability and this particular table of"
+    },
+    {
+      "start": 738.44,
+      "end": 745.72,
+      "text": "content to traverse this particular"
+    },
+    {
+      "start": 742.32,
+      "end": 748.0400000000001,
+      "text": "graph and locate the thing that it is"
+    },
+    {
+      "start": 745.72,
+      "end": 750.0400000000001,
+      "text": "looking for. So for example, in this"
+    },
+    {
+      "start": 748.04,
+      "end": 752.0799999999999,
+      "text": "case it will first find out that this is"
+    },
+    {
+      "start": 750.04,
+      "end": 753.56,
+      "text": "related to performance of contracts"
+    },
+    {
+      "start": 752.08,
+      "end": 755.6,
+      "text": "because the contract is already"
+    },
+    {
+      "start": 753.56,
+      "end": 758.4399999999999,
+      "text": "executed. So it has to be related to"
+    },
+    {
+      "start": 755.6,
+      "end": 760.96,
+      "text": "this and then it finds compensation of"
+    },
+    {
+      "start": 758.44,
+      "end": 761.96,
+      "text": "breach. So it goes from here to here and"
+    },
+    {
+      "start": 760.96,
+      "end": 764.24,
+      "text": "then"
+    },
+    {
+      "start": 761.96,
+      "end": 766.6800000000001,
+      "text": "you are discussing loss. So due to that"
+    },
+    {
+      "start": 764.24,
+      "end": 769.6,
+      "text": "it will out of all these nodes, it will"
+    },
+    {
+      "start": 766.68,
+      "end": 773.3599999999999,
+      "text": "go to this particular node and it will"
+    },
+    {
+      "start": 769.6,
+      "end": 775.839,
+      "text": "pull the relevant document. Now this"
+    },
+    {
+      "start": 773.36,
+      "end": 777.4,
+      "text": "might give you an index and using index"
+    },
+    {
+      "start": 775.839,
+      "end": 779.5200000000001,
+      "text": "you might have to refer back to the"
+    },
+    {
+      "start": 777.4,
+      "end": 782.16,
+      "text": "original knowledge. So here is the"
+    },
+    {
+      "start": 779.52,
+      "end": 784.72,
+      "text": "GitHub for page index. It is known as"
+    },
+    {
+      "start": 782.16,
+      "end": 787.28,
+      "text": "vector less rag but it is one of the"
+    },
+    {
+      "start": 784.72,
+      "end": 790.1600000000001,
+      "text": "categories of vector less rag, okay? The"
+    },
+    {
+      "start": 787.28,
+      "end": 791.8389999999999,
+      "text": "right term is reasoning based rag. So"
+    },
+    {
+      "start": 790.16,
+      "end": 793.8,
+      "text": "here you can see from document you are"
+    },
+    {
+      "start": 791.839,
+      "end": 796.4000000000001,
+      "text": "generating a tree, which is your"
+    },
+    {
+      "start": 793.8,
+      "end": 798.92,
+      "text": "knowledge tree structure index of"
+    },
+    {
+      "start": 796.4,
+      "end": 801.04,
+      "text": "documents and then LLM will do its"
+    },
+    {
+      "start": 798.92,
+      "end": 802.8389999999999,
+      "text": "reasoning to find the relevant chunk."
+    },
+    {
+      "start": 801.04,
+      "end": 804.3199999999999,
+      "text": "Here you are not using any vectors. You"
+    },
+    {
+      "start": 802.839,
+      "end": 806.9200000000001,
+      "text": "are not using any"
+    },
+    {
+      "start": 804.32,
+      "end": 810.12,
+      "text": "embeddings. No vector DB. Just by"
+    },
+    {
+      "start": 806.92,
+      "end": 812.56,
+      "text": "looking at the the structure, you know,"
+    },
+    {
+      "start": 810.12,
+      "end": 813.92,
+      "text": "the table layout, which looks something"
+    },
+    {
+      "start": 812.56,
+      "end": 816.92,
+      "text": "like this,"
+    },
+    {
+      "start": 813.92,
+      "end": 818.8,
+      "text": "you will try to find a given node, okay?"
+    },
+    {
+      "start": 816.92,
+      "end": 821.4799999999999,
+      "text": "And see here there is a summary. So"
+    },
+    {
+      "start": 818.8,
+      "end": 824.4799999999999,
+      "text": "using the summary, LLM can reason and it"
+    },
+    {
+      "start": 821.48,
+      "end": 826.04,
+      "text": "can say, \"Okay, maybe the answer is in"
+    },
+    {
+      "start": 824.48,
+      "end": 828.48,
+      "text": "this particular node.\" And then it will"
+    },
+    {
+      "start": 826.04,
+      "end": 830.4,
+      "text": "go to that node, refer to the original"
+    },
+    {
+      "start": 828.48,
+      "end": 831.9200000000001,
+      "text": "document and pull the answer. I have"
+    },
+    {
+      "start": 830.4,
+      "end": 833.52,
+      "text": "attached this PDF in the video"
+    },
+    {
+      "start": 831.92,
+      "end": 836.4399999999999,
+      "text": "description below where you have"
+    },
+    {
+      "start": 833.52,
+      "end": 839.28,
+      "text": "categories of rag. You also have a table"
+    },
+    {
+      "start": 836.44,
+      "end": 840.4000000000001,
+      "text": "comparing when to use what. It is not"
+    },
+    {
+      "start": 839.28,
+      "end": 842.4,
+      "text": "that"
+    },
+    {
+      "start": 840.4,
+      "end": 845.0,
+      "text": "reasoning rag is here so you should not"
+    },
+    {
+      "start": 842.4,
+      "end": 848.04,
+      "text": "use naive rag. You should use it when"
+    },
+    {
+      "start": 845.0,
+      "end": 850.52,
+      "text": "you have general text Q&A bots, etc. And"
+    },
+    {
+      "start": 848.04,
+      "end": 852.88,
+      "text": "the complexity here is low. The"
+    },
+    {
+      "start": 850.52,
+      "end": 854.8389999999999,
+      "text": "complexity in case of page index is"
+    },
+    {
+      "start": 852.88,
+      "end": 858.04,
+      "text": "high. You should use it when you have"
+    },
+    {
+      "start": 854.839,
+      "end": 859.4000000000001,
+      "text": "hierarchical tree index LLM traversal."
+    },
+    {
+      "start": 858.04,
+      "end": 861.8389999999999,
+      "text": "You know, these are the use cases. So"
+    },
+    {
+      "start": 859.4,
+      "end": 864.52,
+      "text": "you can use this table to determine when"
+    },
+    {
+      "start": 861.839,
+      "end": 866.6800000000001,
+      "text": "to use what kind of rag. And at the end"
+    },
+    {
+      "start": 864.52,
+      "end": 868.4399999999999,
+      "text": "we have rag interview questions. All"
+    },
+    {
+      "start": 866.68,
+      "end": 869.88,
+      "text": "right, folks. So please check it out. If"
+    },
+    {
+      "start": 868.44,
+      "end": 873.12,
+      "text": "you have any question, post in the"
+    },
+    {
+      "start": 869.88,
+      "end": 873.12,
+      "text": "comment box below."
+    },
+    {
+      "start": 873.125,
+      "end": 875.145,
+      "text": ">> [music]"
+    }
+  ]
+}

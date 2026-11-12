@@ -1,0 +1,82 @@
+[
+  {
+    "video_id": "fZM3oX4xEyg",
+    "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+    "channel": "Krish Naik",
+    "trainer": "Krish Naik",
+    "topic": "RAG",
+    "start_seconds": 0,
+    "end_seconds": 1240.0,
+    "stem": "krish_rag"
+  },
+  {
+    "video_id": "CK0ExcCWDP4",
+    "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+    "channel": "Krish Naik",
+    "trainer": "Krish Naik",
+    "topic": "RAG",
+    "start_seconds": 0,
+    "end_seconds": 2555.0,
+    "stem": "krish_rag_2"
+  },
+  {
+    "video_id": "6SO-8FcSkz4",
+    "title": "Prompt Engineering Vs RAG Vs Finetuning Explained Easily",
+    "channel": "Krish Naik",
+    "trainer": "Krish Naik",
+    "topic": "RAG",
+    "start_seconds": 0,
+    "end_seconds": 1067.0,
+    "stem": "krish_rag_3"
+  },
+  {
+    "video_id": "vmy3HgaKJsY",
+    "title": "Most Popular Framework-Langchain vs LangGraph",
+    "channel": "Krish Naik",
+    "trainer": "Krish Naik",
+    "topic": "LangChain",
+    "start_seconds": 0,
+    "end_seconds": 1243.0,
+    "stem": "krish_langchain"
+  },
+  {
+    "video_id": "HodCjnGv8Ag",
+    "title": "What Is Agentic RAG?",
+    "channel": "Krish Naik",
+    "trainer": "Krish Naik",
+    "topic": "Agents",
+    "start_seconds": 0,
+    "end_seconds": 890.0,
+    "stem": "krish_agents"
+  },
+  {
+    "video_id": "p4pHsuEf4Ms",
+    "title": "Generative AI Vs Agentic AI Vs AI Agents",
+    "channel": "Krish Naik",
+    "trainer": "Krish Naik",
+    "topic": "Agents",
+    "start_seconds": 0,
+    "end_seconds": 1067.0,
+    "stem": "krish_agents_2"
+  },
+  {
+    "video_id": "3Gcm27l-uyQ",
+    "title": "Langsmith LLMOPS Platform By Langchain-Debug ,Monitor And Build Production Grade LLM Application",
+    "channel": "Krish Naik",
+    "trainer": "Krish Naik",
+    "topic": "Evaluation",
+    "start_seconds": 0,
+    "end_seconds": 1327.0,
+    "stem": "krish_evaluation"
+  },
+  {
+    "video_id": "r0q1n8BJ0QI",
+    "title": "What Is LLM HAllucination And How to Reduce It?",
+    "channel": "Krish Naik",
+    "trainer": "Krish Naik",
+    "topic": "Evaluation",
+    "start_seconds": 0,
+    "end_seconds": 720.0,
+    "stem": "krish_evaluation_2"
+  }
+]

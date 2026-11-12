@@ -1,0 +1,883 @@
+{
+  "video_id": "AesaLzudK9M",
+  "title": "Hierarchical Agents vs. Sequential Agents with CrewAI",
+  "channel": "COMMAND",
+  "trainer": "COMMAND",
+  "topic": "Agents",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 485.0,
+  "segments": [
+    {
+      "start": 0.28,
+      "end": 5.48,
+      "text": "now we're going to add in some AI let's"
+    },
+    {
+      "start": 3.199,
+      "end": 8.52,
+      "text": "update the requirements.txt to contain"
+    },
+    {
+      "start": 5.48,
+      "end": 8.52,
+      "text": "the following thirdparty"
+    },
+    {
+      "start": 9.12,
+      "end": 15.04,
+      "text": "packages and let's update the main.py"
+    },
+    {
+      "start": 11.679,
+      "end": 15.040000000000001,
+      "text": "file to contain the following"
+    },
+    {
+      "start": 15.64,
+      "end": 20.240000000000002,
+      "text": "contents and you can see a number of"
+    },
+    {
+      "start": 17.64,
+      "end": 23.279,
+      "text": "import errors at the top so let's sort"
+    },
+    {
+      "start": 20.24,
+      "end": 27.64,
+      "text": "those out by creating the following"
+    },
+    {
+      "start": 23.279,
+      "end": 27.64,
+      "text": "files let's create another helper"
+    },
+    {
+      "start": 27.72,
+      "end": 32.36,
+      "text": "file let's add"
+    },
+    {
+      "start": 30.64,
+      "end": 35.16,
+      "text": "folder for"
+    },
+    {
+      "start": 32.36,
+      "end": 37.48,
+      "text": "storing the schema for this application"
+    },
+    {
+      "start": 35.16,
+      "end": 37.48,
+      "text": "we'll be"
+    },
+    {
+      "start": 37.76,
+      "end": 40.76,
+      "text": "building"
+    },
+    {
+      "start": 41.48,
+      "end": 48.919999999999995,
+      "text": "and let's add a config"
+    },
+    {
+      "start": 44.32,
+      "end": 50.52,
+      "text": "folder with a tasks. yo"
+    },
+    {
+      "start": 48.92,
+      "end": 54.0,
+      "text": "file"
+    },
+    {
+      "start": 50.52,
+      "end": 57.039,
+      "text": "and an agents. yo"
+    },
+    {
+      "start": 54.0,
+      "end": 61.12,
+      "text": "file and let's"
+    },
+    {
+      "start": 57.039,
+      "end": 64.76,
+      "text": "populate the helper"
+    },
+    {
+      "start": 61.12,
+      "end": 64.75999999999999,
+      "text": "and schema"
+    },
+    {
+      "start": 66.64,
+      "end": 72.119,
+      "text": "folder and the agents."
+    },
+    {
+      "start": 72.28,
+      "end": 77.56,
+      "text": "file and the"
+    },
+    {
+      "start": 74.56,
+      "end": 77.56,
+      "text": "tasks."
+    },
+    {
+      "start": 78.52,
+      "end": 83.28,
+      "text": "file and of course let's pip"
+    },
+    {
+      "start": 86.64,
+      "end": 90.6,
+      "text": "install if we look closely at this"
+    },
+    {
+      "start": 88.84,
+      "end": 92.52000000000001,
+      "text": "config folder we can see we're creating"
+    },
+    {
+      "start": 90.6,
+      "end": 95.19999999999999,
+      "text": "a team of agents who are reporting the"
+    },
+    {
+      "start": 92.52,
+      "end": 97.03999999999999,
+      "text": "latest news regarding"
+    },
+    {
+      "start": 95.2,
+      "end": 99.52000000000001,
+      "text": "Haiti this is what we're going to roll"
+    },
+    {
+      "start": 97.04,
+      "end": 103.0,
+      "text": "with for demonstration purposes and you"
+    },
+    {
+      "start": 99.52,
+      "end": 105.32,
+      "text": "can easily tweak these prompts according"
+    },
+    {
+      "start": 103.0,
+      "end": 107.92,
+      "text": "to the niche you're interested in let's"
+    },
+    {
+      "start": 105.32,
+      "end": 109.88,
+      "text": "now run this updated application and see"
+    },
+    {
+      "start": 107.92,
+      "end": 113.24000000000001,
+      "text": "what"
+    },
+    {
+      "start": 109.88,
+      "end": 118.28,
+      "text": "happens all right we get an error that"
+    },
+    {
+      "start": 113.24,
+      "end": 120.399,
+      "text": "says missing open AI API Key by default"
+    },
+    {
+      "start": 118.28,
+      "end": 123.759,
+      "text": "crew AI the multi-agent framework we're"
+    },
+    {
+      "start": 120.399,
+      "end": 126.52,
+      "text": "using uses open AI for powering llms it"
+    },
+    {
+      "start": 123.759,
+      "end": 128.039,
+      "text": "supports other llms but as I mentioned"
+    },
+    {
+      "start": 126.52,
+      "end": 130.07999999999998,
+      "text": "open AI is the one that it supports by"
+    },
+    {
+      "start": 128.039,
+      "end": 132.04,
+      "text": "default if you're new to all this agent"
+    },
+    {
+      "start": 130.08,
+      "end": 135.48000000000002,
+      "text": "stuff here's a diagram that shows what I"
+    },
+    {
+      "start": 132.04,
+      "end": 139.79999999999998,
+      "text": "mean and in the context of this video an"
+    },
+    {
+      "start": 135.48,
+      "end": 142.64,
+      "text": "agent is a virtual person and the llm"
+    },
+    {
+      "start": 139.8,
+      "end": 145.04000000000002,
+      "text": "acts as this virtual person's brain we"
+    },
+    {
+      "start": 142.64,
+      "end": 148.2,
+      "text": "can get an open AI API Key by coming"
+    },
+    {
+      "start": 145.04,
+      "end": 150.64,
+      "text": "over to platform. open.com and signing"
+    },
+    {
+      "start": 148.2,
+      "end": 153.11999999999998,
+      "text": "up after you're signed up make sure to"
+    },
+    {
+      "start": 150.64,
+      "end": 156.92,
+      "text": "add some credits to your account open"
+    },
+    {
+      "start": 153.12,
+      "end": 157.72,
+      "text": "AIS platform is payer use it's like a"
+    },
+    {
+      "start": 156.92,
+      "end": 161.28,
+      "text": "gas"
+    },
+    {
+      "start": 157.72,
+      "end": 164.08,
+      "text": "station and I suggest adding whatever"
+    },
+    {
+      "start": 161.28,
+      "end": 165.68,
+      "text": "the minimum allowed amount is because"
+    },
+    {
+      "start": 164.08,
+      "end": 168.20000000000002,
+      "text": "the cost of what we'll be doing here is"
+    },
+    {
+      "start": 165.68,
+      "end": 170.31900000000002,
+      "text": "only going to be in the pennies after"
+    },
+    {
+      "start": 168.2,
+      "end": 172.11999999999998,
+      "text": "you have credits added to your account"
+    },
+    {
+      "start": 170.319,
+      "end": 176.319,
+      "text": "come over to the"
+    },
+    {
+      "start": 172.12,
+      "end": 180.92000000000002,
+      "text": "dashboard API key section and create a"
+    },
+    {
+      "start": 176.319,
+      "end": 182.35999999999999,
+      "text": "new API key call that whatever you want"
+    },
+    {
+      "start": 180.92,
+      "end": 183.83999999999997,
+      "text": "you can leave every option default by"
+    },
+    {
+      "start": 182.36,
+      "end": 187.08,
+      "text": "the"
+    },
+    {
+      "start": 183.84,
+      "end": 190.04,
+      "text": "way and then copy the provisioned API"
+    },
+    {
+      "start": 187.08,
+      "end": 194.08,
+      "text": "key into your project by coming over to"
+    },
+    {
+      "start": 190.04,
+      "end": 195.959,
+      "text": "the EMV file and adding a new entry that"
+    },
+    {
+      "start": 194.08,
+      "end": 202.4,
+      "text": "reads open"
+    },
+    {
+      "start": 195.959,
+      "end": 204.76,
+      "text": "AI API key equals then paste in the API"
+    },
+    {
+      "start": 202.4,
+      "end": 206.68,
+      "text": "key and when that's all set up let's try"
+    },
+    {
+      "start": 204.76,
+      "end": 209.879,
+      "text": "running our application again and see"
+    },
+    {
+      "start": 206.68,
+      "end": 209.87900000000002,
+      "text": "what happens"
+    },
+    {
+      "start": 213.159,
+      "end": 217.319,
+      "text": "it looks like it's"
+    },
+    {
+      "start": 214.799,
+      "end": 219.08,
+      "text": "working if we take a closer look at this"
+    },
+    {
+      "start": 217.319,
+      "end": 222.28,
+      "text": "config code we can see we're creating"
+    },
+    {
+      "start": 219.08,
+      "end": 223.519,
+      "text": "two agents a manager agent and a"
+    },
+    {
+      "start": 222.28,
+      "end": 226.56,
+      "text": "reporter"
+    },
+    {
+      "start": 223.519,
+      "end": 229.0,
+      "text": "agent and this is the task that we're"
+    },
+    {
+      "start": 226.56,
+      "end": 231.08,
+      "text": "assigning to these agents we would like"
+    },
+    {
+      "start": 229.0,
+      "end": 233.519,
+      "text": "them to perform research across this"
+    },
+    {
+      "start": 231.08,
+      "end": 237.72,
+      "text": "list of websites and if we come to the"
+    },
+    {
+      "start": 233.519,
+      "end": 241.48000000000002,
+      "text": "main.py file online"
+    },
+    {
+      "start": 237.72,
+      "end": 243.48,
+      "text": "56 the configuration gets tied together"
+    },
+    {
+      "start": 241.48,
+      "end": 245.76,
+      "text": "as of the time of recording crei lets"
+    },
+    {
+      "start": 243.48,
+      "end": 248.879,
+      "text": "you run your agents in two modes"
+    },
+    {
+      "start": 245.76,
+      "end": 250.76,
+      "text": "sequential mode and hierarchical mode"
+    },
+    {
+      "start": 248.879,
+      "end": 252.599,
+      "text": "sequential mode means that the agents"
+    },
+    {
+      "start": 250.76,
+      "end": 255.12,
+      "text": "are going to perform the tasks outlined"
+    },
+    {
+      "start": 252.599,
+      "end": 257.84,
+      "text": "in the tasks. yo file sequentially from"
+    },
+    {
+      "start": 255.12,
+      "end": 260.479,
+      "text": "top to bottom one by one with sequential"
+    },
+    {
+      "start": 257.84,
+      "end": 263.11999999999995,
+      "text": "mode you have to map each task to the"
+    },
+    {
+      "start": 260.479,
+      "end": 264.59999999999997,
+      "text": "agent you want to perform it in"
+    },
+    {
+      "start": 263.12,
+      "end": 266.96,
+      "text": "hierarchical mode which is what we're"
+    },
+    {
+      "start": 264.6,
+      "end": 269.40000000000003,
+      "text": "using we assign one of the agents in our"
+    },
+    {
+      "start": 266.96,
+      "end": 271.68,
+      "text": "crew as the manager and we assign tasks"
+    },
+    {
+      "start": 269.4,
+      "end": 273.23999999999995,
+      "text": "to the the manager the manager will"
+    },
+    {
+      "start": 271.68,
+      "end": 275.36,
+      "text": "automatically break up the task to be"
+    },
+    {
+      "start": 273.24,
+      "end": 277.8,
+      "text": "assigned into subtasks and will"
+    },
+    {
+      "start": 275.36,
+      "end": 280.36,
+      "text": "automatically assign each subtask to the"
+    },
+    {
+      "start": 277.8,
+      "end": 281.84000000000003,
+      "text": "appropriate agents in the crew if you're"
+    },
+    {
+      "start": 280.36,
+      "end": 283.6,
+      "text": "familiar with this agent stuff one way"
+    },
+    {
+      "start": 281.84,
+      "end": 285.75899999999996,
+      "text": "of thinking about it is the worker"
+    },
+    {
+      "start": 283.6,
+      "end": 288.28000000000003,
+      "text": "agents become tools of the manager"
+    },
+    {
+      "start": 285.759,
+      "end": 290.44,
+      "text": "agents depending on the llm and other"
+    },
+    {
+      "start": 288.28,
+      "end": 291.71999999999997,
+      "text": "implementation details the reliability"
+    },
+    {
+      "start": 290.44,
+      "end": 293.68,
+      "text": "and reproducibility of running"
+    },
+    {
+      "start": 291.72,
+      "end": 295.16,
+      "text": "hierarchical mode agents can sometimes"
+    },
+    {
+      "start": 293.68,
+      "end": 296.96,
+      "text": "be impressive and can sometimes be"
+    },
+    {
+      "start": 295.16,
+      "end": 298.44,
+      "text": "atrocious but for the job of"
+    },
+    {
+      "start": 296.96,
+      "end": 300.44,
+      "text": "synthesizing information across a number"
+    },
+    {
+      "start": 298.44,
+      "end": 303.24,
+      "text": "of websites I find hierarchical mode to"
+    },
+    {
+      "start": 300.44,
+      "end": 304.88,
+      "text": "be a worthy match let's run this crew of"
+    },
+    {
+      "start": 303.24,
+      "end": 306.199,
+      "text": "Agents a few times to get a better feel"
+    },
+    {
+      "start": 304.88,
+      "end": 308.88,
+      "text": "for what it's"
+    },
+    {
+      "start": 306.199,
+      "end": 311.68,
+      "text": "doing let's come over to the tasks. yo"
+    },
+    {
+      "start": 308.88,
+      "end": 314.6,
+      "text": "file and let's edit this list of"
+    },
+    {
+      "start": 311.68,
+      "end": 320.039,
+      "text": "links to only have"
+    },
+    {
+      "start": 314.6,
+      "end": 322.47900000000004,
+      "text": "one and then let's run our crew if we"
+    },
+    {
+      "start": 320.039,
+      "end": 326.12,
+      "text": "come back to the main.py file we can see"
+    },
+    {
+      "start": 322.479,
+      "end": 329.88,
+      "text": "that the crew will be spitting out its"
+    },
+    {
+      "start": 326.12,
+      "end": 332.8,
+      "text": "results into a file called report. MD"
+    },
+    {
+      "start": 329.88,
+      "end": 334.24,
+      "text": "this file right here so let's wait till"
+    },
+    {
+      "start": 332.8,
+      "end": 336.36,
+      "text": "the crew has finished running and let's"
+    },
+    {
+      "start": 334.24,
+      "end": 337.6,
+      "text": "see what it spits out into this report."
+    },
+    {
+      "start": 336.36,
+      "end": 340.639,
+      "text": "MD"
+    },
+    {
+      "start": 337.6,
+      "end": 342.88,
+      "text": "file all right it finished running and"
+    },
+    {
+      "start": 340.639,
+      "end": 344.68,
+      "text": "let's open this up and we can see that"
+    },
+    {
+      "start": 342.88,
+      "end": 348.28,
+      "text": "we're getting"
+    },
+    {
+      "start": 344.68,
+      "end": 349.72,
+      "text": "news from the one website that we have"
+    },
+    {
+      "start": 348.28,
+      "end": 351.75899999999996,
+      "text": "listed in the"
+    },
+    {
+      "start": 349.72,
+      "end": 354.68,
+      "text": "prompt all of these are coming from the"
+    },
+    {
+      "start": 351.759,
+      "end": 357.24,
+      "text": "same Source"
+    },
+    {
+      "start": 354.68,
+      "end": 360.479,
+      "text": "now let's"
+    },
+    {
+      "start": 357.24,
+      "end": 362.6,
+      "text": "add the second website in this list so"
+    },
+    {
+      "start": 360.479,
+      "end": 367.96,
+      "text": "if this is working as expected we should"
+    },
+    {
+      "start": 362.6,
+      "end": 367.96000000000004,
+      "text": "see news results from two"
+    },
+    {
+      "start": 369.68,
+      "end": 375.52,
+      "text": "websites all right it finish running and"
+    },
+    {
+      "start": 373.52,
+      "end": 378.96,
+      "text": "you can see now we're getting news"
+    },
+    {
+      "start": 375.52,
+      "end": 380.44,
+      "text": "results from two different websites"
+    },
+    {
+      "start": 378.96,
+      "end": 383.479,
+      "text": "right you can see in the"
+    },
+    {
+      "start": 380.44,
+      "end": 386.039,
+      "text": "sources The Source link"
+    },
+    {
+      "start": 383.479,
+      "end": 388.28,
+      "text": "is coming from the two websites we have"
+    },
+    {
+      "start": 386.039,
+      "end": 391.4,
+      "text": "listed in the prompt all"
+    },
+    {
+      "start": 388.28,
+      "end": 394.599,
+      "text": "right just to make sure this is working"
+    },
+    {
+      "start": 391.4,
+      "end": 398.039,
+      "text": "as expected let's add a"
+    },
+    {
+      "start": 394.599,
+      "end": 399.96,
+      "text": "third website to this list and have our"
+    },
+    {
+      "start": 398.039,
+      "end": 403.479,
+      "text": "agents perform research on these three"
+    },
+    {
+      "start": 399.96,
+      "end": 405.63899999999995,
+      "text": "news outlets and when I say research"
+    },
+    {
+      "start": 403.479,
+      "end": 408.56,
+      "text": "what's happening is the agents are"
+    },
+    {
+      "start": 405.639,
+      "end": 412.0,
+      "text": "instructed to load all of the text on"
+    },
+    {
+      "start": 408.56,
+      "end": 414.68,
+      "text": "each web page and they're prompted to"
+    },
+    {
+      "start": 412.0,
+      "end": 417.16,
+      "text": "extract the most meaningful or the most"
+    },
+    {
+      "start": 414.68,
+      "end": 420.919,
+      "text": "relevant information given the current"
+    },
+    {
+      "start": 417.16,
+      "end": 424.08000000000004,
+      "text": "date so here we are if this works we"
+    },
+    {
+      "start": 420.919,
+      "end": 425.71999999999997,
+      "text": "should see news results from three"
+    },
+    {
+      "start": 424.08,
+      "end": 429.12,
+      "text": "separate"
+    },
+    {
+      "start": 425.72,
+      "end": 432.12,
+      "text": "sources all right so our crew finish"
+    },
+    {
+      "start": 429.12,
+      "end": 432.12,
+      "text": "running"
+    },
+    {
+      "start": 434.479,
+      "end": 441.87899999999996,
+      "text": "and yeah so this"
+    },
+    {
+      "start": 438.0,
+      "end": 444.16,
+      "text": "first result is coming from hai. Loop"
+    },
+    {
+      "start": 441.879,
+      "end": 445.08000000000004,
+      "text": "news.com this second result is coming"
+    },
+    {
+      "start": 444.16,
+      "end": 447.319,
+      "text": "from"
+    },
+    {
+      "start": 445.08,
+      "end": 449.96,
+      "text": "l.com and this third result is coming"
+    },
+    {
+      "start": 447.319,
+      "end": 453.199,
+      "text": "from Haitian times.com"
+    },
+    {
+      "start": 449.96,
+      "end": 456.12,
+      "text": "so things appear to be working and I"
+    },
+    {
+      "start": 453.199,
+      "end": 458.759,
+      "text": "hope that gives you a good feel for what"
+    },
+    {
+      "start": 456.12,
+      "end": 461.879,
+      "text": "this little multiagent application is"
+    },
+    {
+      "start": 458.759,
+      "end": 463.8,
+      "text": "doing okay so using this report. MD file"
+    },
+    {
+      "start": 461.879,
+      "end": 468.56,
+      "text": "is useful for debugging but we don't"
+    },
+    {
+      "start": 463.8,
+      "end": 471.759,
+      "text": "need to track it in git so let's add"
+    },
+    {
+      "start": 468.56,
+      "end": 474.0,
+      "text": "another entry to the git"
+    },
+    {
+      "start": 471.759,
+      "end": 476.36,
+      "text": "ignore"
+    },
+    {
+      "start": 474.0,
+      "end": 478.96,
+      "text": "and now we're ready to move on to part"
+    },
+    {
+      "start": 476.36,
+      "end": 482.24,
+      "text": "six in part six we're going to send this"
+    },
+    {
+      "start": 478.96,
+      "end": 485.0,
+      "text": "AI generated news report via email to a"
+    },
+    {
+      "start": 482.24,
+      "end": 485.0,
+      "text": "list of subscribers"
+    }
+  ]
+}

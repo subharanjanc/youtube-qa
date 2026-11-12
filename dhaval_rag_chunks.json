@@ -1,0 +1,210 @@
+[
+  {
+    "id": "9e7ce98b87c830d1bb81bdda656484c5f40c845bad0b46582e254fac3ed4d377",
+    "text": "In almost all Gen AI engineer job postings, you will find one common skill, retrieval augmented generation, also known as rag. In my company at Lake, when we build AI projects for our clients, more than 40% of these projects have rag component in it. So, what exactly is rag? What are different types? Is naive rag dead due to vectorless rag? We are going to cover all these rag basics in a very simple and intuitive language. We will not just talk theory. I will show you a rag project which is a customer care chatbot in telecom domain. In the end, I will share some useful resources including rag interview questions. All right, let's get started. Let's understand rag using a simple example. When you ask ChatGPT a policy question for some private company, it won't be able to answer it because ChatGPT is trained on general internet knowledge. It doesn't know the HR policy details of any private company. But, if you give HR policy document to this LLM, which acts like a brain, it should be able to read a relevant section and provide you with the answer. This is similar to having a very smart student Mira, who is a computer science student, and you are asking her to appear in a microbiology exam, which is an open book exam. Now,",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 0.0,
+      "end_seconds": 84.56,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4e95dc26a849974bc8f33fa57731bbf336ebf8fb78f107bb105012346fbff001",
+    "text": "the answer. This is similar to having a very smart student Mira, who is a computer science student, and you are asking her to appear in a microbiology exam, which is an open book exam. Now, Mira is generally good in terms of reading, writing, comprehension, understanding, etc., but she doesn't know anything about microbiology. But, in this exam, she has been given a book on microbiology from which they are going to ask the questions. Now, Mira can use her reading, writing, comprehension skills to uh look at the book and she can write answers in the exam. So, here Mira's brain is like LLM, which has a good understanding of language, it has reasoning capabilities, and the book is like an HR policy document. It is an external knowledge where LLM can look into it and pull the answers. Let's now understand the two-step process of how rag works underneath. So, here I have HR policy document from Atliq, which will have a section on retirement benefits, okay? So, now if I go to ChatGPT, and if I copy this particular section, okay, and I ask my question related to contribution to employees retirement fund, in that case, ChatGPT will be able to answer that question. Because here you are asking question and providing uh knowledge as a reference in the context,",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 69.92,
+      "end_seconds": 156.12,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=69s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ed8cc21458b62b69872390fbf4ec24339fcf7d38ad3ae1dd180a6fdf05d95203",
+    "text": "I ask my question related to contribution to employees retirement fund, in that case, ChatGPT will be able to answer that question. Because here you are asking question and providing uh knowledge as a reference in the context, and it can pull the answer. But, what if your HR policy document is 3,000 page PDF, okay? What if that knowledge is very big? What's going to happen in that case is you will run out of your context window limit. And even if you have a huge context window, uh you should still not feed the entire knowledge because it will be too many tokens, it will be costly. So, what people do is they will chunk this document. So, they will create, let's say, basic strategy is fixed-size chunks. And then, for a given question, you can pull the relevant chunks. So, for this particular question, let's say my first chunk is 70% uh probability that it will it will contain the answer. Second chunk is 60% match. And you can have, by the way, I'm showing just three, but you can have 1,000 chunks, and some of the chunks might have 5% or even 10% possibility that it may contain the answer. Let's say the chunk contains uh information on uh when Atliq was founded, culture, founders, etc., then",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 137.32,
+      "end_seconds": 221.39999999999998,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=137s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "92ee198c4b6f38577edce6d3a4a19b6a9d119fdbfbaecdaf3ed803c1831d53a8",
+    "text": "and some of the chunks might have 5% or even 10% possibility that it may contain the answer. Let's say the chunk contains uh information on uh when Atliq was founded, culture, founders, etc., then that doesn't has anything to do with the retirement question that you are asking, okay? So, the the relevance of that chunk will be very, very low. Now, how do you exactly find this kind of similarity? So, there is this concept of embeddings, okay? So, embedding is a process of converting text into a vector such that it can represent its meaning, okay? So, all the chunks, you will convert them into vector embeddings, and then you will store them into a vector database. This is different than your regular database. Your regular database can search using exact values, whereas vector database will be able to search using the meaning. So, when you search for, let's say, uh a company that is a leader in electric vehicle, it will return Tesla uh from the database. So, it is searching based on the meaning, not based on the exact word. To generate embedding, you can use variety of models, sentence transformer, text embedding three small, and so on. And there are many vector database choices that you have in market, Milvus, Quadrant, Chroma DB, and so on. This",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 204.92,
+      "end_seconds": 291.15999999999997,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=204s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "caa9311d3957554bfb446b602fa38f919923e0de59824cf7a08bbae142c07bb8",
+    "text": "embedding, you can use variety of models, sentence transformer, text embedding three small, and so on. And there are many vector database choices that you have in market, Milvus, Quadrant, Chroma DB, and so on. This step is called indexing. This is the first step in rag process, where you are indexing all these vectors of chunks into a vector database. The second step is retrieval, where for a given question, you will generate embedding using the same embedding model. Then, you will try to find the relevant chunks in a vector database. So, here it is doing the semantic search, giving you a relevant vectors. You can specify top K factor, let's say I need two chunks or five chunks, and so on. And then, you will generate the actual text out of those chunks, and you will put it in your prompt along with the question. And when the question is given to LLM, it will give you the answer. So, here uh below the question, what you are doing is you are providing only the relevant chunks. So, this way LLM will not hallucinate, and it will give you accurate answer. That takes us into our next segment, which is the two major benefits of rag. The first one is the answers that you get will be highly",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 276.28,
+      "end_seconds": 356.2,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=276s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e4718c1d5962fa9f67e2be0efd17ec5da27e1cbb8129148cb250128d814d07f9",
+    "text": "LLM will not hallucinate, and it will give you accurate answer. That takes us into our next segment, which is the two major benefits of rag. The first one is the answers that you get will be highly accurate, and the chances of hallucination will reduce because you are grounding your responses in the knowledge, in the source of truth. Second, it is very cost-effective because if you pass the entire context, then you are sending too many tokens to LLM, and these LLM APIs, they charge you per token. So, if you send less number of tokens, only the relevant knowledge, then you will save money on your API bill. Here is a hands-on customer care assistant rag project. I have given the code in the video description below. You can ask different questions, for example, why is my mobile internet slow? And it will find the answer based on the knowledge that it has. So, the knowledge is stored in terms of the troubleshooting PDF file. So, here is the PDF file, and let's say you have this question on how do you want to enable the LTE, then it is pulling that answer from this particular PDF file. The other source is the CSV file containing all the FAQs. And the third source is a SQLite database containing",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 339.88,
+      "end_seconds": 421.12,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=339s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "525ba33f7ec65ddf634060d335112f60d379eb721d39f6f9f367ee7eb7537170",
+    "text": "this question on how do you want to enable the LTE, then it is pulling that answer from this particular PDF file. The other source is the CSV file containing all the FAQs. And the third source is a SQLite database containing all the past ticket. Here we are using Chroma DB as vector database. So, we are ingesting FAQs, then PDF, and tickets into Chroma DB, okay? So, these are the three files which is ingesting into a vector database. If you look at ingest PDF, here we are using the chunk size of 600, overlap of 100. We are using the recursive character text splitter strategy. And for embedding, we are using this particular embedding model from Hugging Face. As a framework, we have used LangChain. Now, the retriever will try to find relevant chunks from FAQ, tickets, or guides. In terms of LLM, we are using Quen from Chat Grok. Please download the project on your computer, try to run it to enhance your understanding on rag concepts. Telecom support chatbot that we just saw is an example of enterprise QA chatbot. There are many other industry use cases for rag. For example, you can build medical knowledge assistant, which can look at the vast amount of medical knowledge and pulls a relevant answer for your query.",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 402.04,
+      "end_seconds": 487.84000000000003,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=402s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a4f329dc110cdca5422bcf6f10bf422d8696b27c13312349ebc96dac324d4f56",
+    "text": "example of enterprise QA chatbot. There are many other industry use cases for rag. For example, you can build medical knowledge assistant, which can look at the vast amount of medical knowledge and pulls a relevant answer for your query. The other one is legal and compliance tools. Once again, here the knowledge will be your legal documents, and you want to pull the most relevant and accurate answer. HR chatbot is another example. Let's now look at rag categories. The first one is a vector rag, and naive rag is the example that we just saw, where you pull the top K relevant chunks from a vector database and answer user's question. The second category is vectorless rag, in which you can perform a keyword rag. So, here you are not generating any vector embeddings. You don't have a vector database, but you are using keyword match, uh techniques like BM25, TF-IDF, etc., to uh query into the document using the exact keywords. This method will work when you have a lot of codes, jargons, IDs, citations. Let's say you are doing research, and you are always searching using some particular ID or a particular keyword, then this will work. This is weak for semantic understanding. When you are not doing exact keyword matching and searching using meaning, this is not a good choice. And the key",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 469.72,
+      "end_seconds": 561.92,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=469s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1b56a7632feca6724dc99dfa28e482ac44aa7db51a5bdc773f5409d53700d4c4",
+    "text": "searching using some particular ID or a particular keyword, then this will work. This is weak for semantic understanding. When you are not doing exact keyword matching and searching using meaning, this is not a good choice. And the key tools that uses keyword rag concepts like BM25 is Elasticsearch and Apache Solr. The next category in vector rag is hybrid rag, where you're combining vector search and keyword search, okay? You do both of these in parallel and merge the results. This is best for most of the production systems. The key tools here are Elasticsearch plus any vector DB. Now, in Atliq, we worked on one rag project for our client, where we have developed our own custom hybrid method for doing rag, and we have given details of this approach in a different video. You can check it out if you are interested. Also, if you want to learn AI engineering by building production grade AI systems similar to the projects that I just mentioned, then check our AI engineering cohort where we have live sessions on weekends and we will teach you all the concepts plus you will build eight plus production grade projects. The next category in vector less rag is a graph rag. It is also known as KG rag. So here you will generate a knowledge",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 543.44,
+      "end_seconds": 631.36,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=543s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b734f777ce4f87758ad18e9f65516cd87a5fa2432f9ec7237a5c1f7d661bcd86",
+    "text": "you all the concepts plus you will build eight plus production grade projects. The next category in vector less rag is a graph rag. It is also known as KG rag. So here you will generate a knowledge graph. So let's say your knowledge is Elon Musk and all the companies he has founded. So in that case you will build this kind of knowledge graph where you will say Elon Musk founded Tesla, SpaceX, Neuralink, OpenAI and so on. And then these companies will be operating in these different domains. So these are all the entities and they are connected through some kind of relationship. Now when you ask a question, which companies are founded by Elon Musk which are working in AI, you will traverse this particular path, okay? So you will look at all the companies and then you will do breadth first traversal and you will find that OpenAI is working in AI. The next one is SQL rag. This is also known as text to SQL. This method is very simple. Let's say you have sales database which contains the sales of products. Now you are asking this question, which product sold the most last month? Using LLM you can first generate a query for that database. You will execute the query, get the results",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 616.0,
+      "end_seconds": 691.44,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=616s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7fe23efe18b984696bb16d5b0ecc8fdd1daf1ba4b0faca4d62c27a22d99bf826",
+    "text": "contains the sales of products. Now you are asking this question, which product sold the most last month? Using LLM you can first generate a query for that database. You will execute the query, get the results and then give it back to LLM to generate a comprehensive answer. Very simple technique. You are taking a sentence in a natural language, converting it to SQL using LLM and putting a query in your database to get the results. And the last method, which is relatively new, is called page index. It is reasoning based rag. So here let's say you have 3,000 page PDF document. First you will generate the table of content, okay? The table of content or your information structure. This is like you are having a book and you are having all the chapter and topic layout. Now when somebody asks this question, what does the contract say about compensation for breach of contract, the LLM will use its reasoning capability and this particular table of content to traverse this particular graph and locate the thing that it is looking for. So for example, in this case it will first find out that this is related to performance of contracts because the contract is already executed. So it has to be related to this and then it finds compensation of",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 675.56,
+      "end_seconds": 760.96,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=675s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "153167573646177aa59bcc595098f171c552dabd726ae9f75ba1640a0b87ceb2",
+    "text": "looking for. So for example, in this case it will first find out that this is related to performance of contracts because the contract is already executed. So it has to be related to this and then it finds compensation of breach. So it goes from here to here and then you are discussing loss. So due to that it will out of all these nodes, it will go to this particular node and it will pull the relevant document. Now this might give you an index and using index you might have to refer back to the original knowledge. So here is the GitHub for page index. It is known as vector less rag but it is one of the categories of vector less rag, okay? The right term is reasoning based rag. So here you can see from document you are generating a tree, which is your knowledge tree structure index of documents and then LLM will do its reasoning to find the relevant chunk. Here you are not using any vectors. You are not using any embeddings. No vector DB. Just by looking at the the structure, you know, the table layout, which looks something like this, you will try to find a given node, okay? And see here there is a summary. So using the summary, LLM can reason and it",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 745.72,
+      "end_seconds": 824.4799999999999,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=745s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4169fe726a0f68cc602378e47cd266d4734321c0e525387ba0e4d889d8fb6776",
+    "text": "looking at the the structure, you know, the table layout, which looks something like this, you will try to find a given node, okay? And see here there is a summary. So using the summary, LLM can reason and it can say, \"Okay, maybe the answer is in this particular node.\" And then it will go to that node, refer to the original document and pull the answer. I have attached this PDF in the video description below where you have categories of rag. You also have a table comparing when to use what. It is not that reasoning rag is here so you should not use naive rag. You should use it when you have general text Q&A bots, etc. And the complexity here is low. The complexity in case of page index is high. You should use it when you have hierarchical tree index LLM traversal. You know, these are the use cases. So you can use this table to determine when to use what kind of rag. And at the end we have rag interview questions. All right, folks. So please check it out. If you have any question, post in the comment box below. >> [music]",
+    "metadata": {
+      "video_id": "dDkynerzV-Q",
+      "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "RAG",
+      "start_seconds": 806.92,
+      "end_seconds": 875.145,
+      "url": "https://www.youtube.com/watch?v=dDkynerzV-Q&t=806s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

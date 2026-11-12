@@ -1,0 +1,290 @@
+[
+  {
+    "id": "a562d04420050866918ca0f035c87d716544af5d55ada4696fadf5783c99f5c8",
+    "text": "Hello all, my name is Krishna and welcome to my YouTube channel. So guys, I am super excited to start this new series on one of the most important technique which is right now being used in genative AI and agentic AI field that is nothing but rag. If you don't know the full form of rag, it is called as retrieval augmented generation. In this specific video, we will try to understand what exactly is rag. uh what are the disadvantages of just using the LLM model and how we are overcoming those disadvantages with the help of rag when should we use rag and what are the important pipelines that we should take a note while developing a rag application okay so all this topics we will be discussing and as we go ahead we are going to implement each and every important pipelines with the help of Jupyter notebook and I will also show you with the help of modular coding Right. So both the ways we will try to implement it. Now why I'm stressing on this specific series because nowadays every companies are looking for professionals who are who knows how to build rag applications because if you see various AI engineering reports there many of the companies around 60 to 70 projects percentage of the projects are",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 0.48,
+      "end_seconds": 81.28,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "412ab86e5f99717c85cb1950cf9ab8759658a5410e12e80cab62d471337b841e",
+    "text": "every companies are looking for professionals who are who knows how to build rag applications because if you see various AI engineering reports there many of the companies around 60 to 70 projects percentage of the projects are specifically on rag application. So let me quickly go ahead and share my screen and start discussing about rag. This is just the introduction video of rag. Uh and as we go ahead we'll be implementing more amazing examples. So let me quickly go ahead and show you. So this is a simple definition that uh I've put up over here and uh in this definition first of all we'll try to understand rag. Okay. So first of all let's go through the definition and then I will give you a brief idea what exactly rag is all about you know. So here you can clearly see that rag is the process of optimizing the output of a large language model. Okay. So it references an authorative knowledge base outside of it training data set source before get generating a response. LLMs are trained on vast volume of data as we all know and use billions of parameters to generally original output for task like question answering, translating and completing sentences. Rag extends the already powerful capabilities of LLM to specific domain or an organizational",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 64.239,
+      "end_seconds": 153.92,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=64s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b60e7506e5dd345a8dbb0230647e39ef59d70289d7bc1905cfe65f97dc74dd26",
+    "text": "on vast volume of data as we all know and use billions of parameters to generally original output for task like question answering, translating and completing sentences. Rag extends the already powerful capabilities of LLM to specific domain or an organizational internal knowledge base all without the need to retrain the model. Okay. It is cost- effective approach to improve LLM output. So it's relevant, accurate and useful in various context. So this is just a basic definition. You can refer to this particular definition. So guys, now let's go ahead and understand about rag. So let's consider that I have a generative AI application. And as you all know in a generative AI application, usually let's say that I have an LLM. So this is my LLM. Now usually whenever we have a LLM what happens is that let's consider that I have a user a user is asking a query. So this is a my query from the user and before it is sent to the LLM we do add a prompt right we do add a prompt and this prompt is just like an instruction to the LLM like how the LLM should work okay and then based on this we actually get an output now this is a simple generative AI application wherein the LLM is used to",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 133.92,
+      "end_seconds": 220.39999999999998,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=133s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "632e6765cf8d6143879b01404309deb5c2acb5f87666131f02b0395f974c4c3d",
+    "text": "just like an instruction to the LLM like how the LLM should work okay and then based on this we actually get an output now this is a simple generative AI application wherein the LLM is used to generate the content Okay, generate the content. So obviously by using this specific technique we give a query and this LLM you know that it has been trained with billions of data okay different kind of data that is available in the internet and based on this it will be able to generate the output. One of the disadvantage of this let me talk about the disadvantage of this particular approach. As you know that every LLM that is trained you know it will be trained for a specific set of data. So let's say right now it is 31st August. Okay 31st August. Let's say this is my LLM model and this is basically GPT5 which is the recent model from OpenAI. Now as you know that when this model was launched this model may be trained by may be trained with data till 1st August. Okay. So this LLM will not have any idea what has basically happened in the current world between 1st to 31st August. Right? And let's say if I go ahead and ask a specific question to the",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 202.8,
+      "end_seconds": 295.67999999999995,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=202s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "967a139ae61466e1bc27178069c5879bb977b46e7eeb6f588c291344cd07a44b",
+    "text": "August. Okay. So this LLM will not have any idea what has basically happened in the current world between 1st to 31st August. Right? And let's say if I go ahead and ask a specific question to the LLM which is between this specific dates for any kind of events the LLM will start hallucinating. So one of the major disadvantages of only using the LLM is that it will hallucinate. Okay. When we say hallucinating what does this basically mean? It means that even though it does not have the knowledge what has happened between 1st August to 31st August any events even though we ask any question the LLM will try to generate it own answer because it does not want to look like a fool. Okay, that is the best example. It does not want to look like a fool. So it will try to generate some answers and it will make sure that it will it'll show you answer that you may also have to believe it. that is how it will be written you know in in terms of the output that we get so usually this condition is basically called as hallucinating okay so this is one of the major disadvantage the second disadvantage that you have so let's say that I'm using this LLM and",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 277.44,
+      "end_seconds": 357.52,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=277s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b24dbf86276274bdd7865ff723d926f8e002f6d36def3bf355c6d9f8d5e1bd16",
+    "text": "in in terms of the output that we get so usually this condition is basically called as hallucinating okay so this is one of the major disadvantage the second disadvantage that you have so let's say that I'm using this LLM and you know this LLM has been trained with huge amount of data now what happens is that I'm running a startup let's say now in my startup I'm solving a specific use case and I have some data which again I need to use this particular data along with my LLM. Okay. So let's say that I have some other data like you know um policies policies of my company I have HR policies of my company I have finance policies you know and this policies all will not be available in the it will not be available publicly because it is my startup so these all data has been protected now I also want to use this specific data and probably create a chatbot okay now how do I do this now one way is that many people will say hey kish we can take this particular data and we can fine-tune the model right we can simply fine-tune the model yes this is a very good solution but understand fine-tuning a model is a very expensive process very tedious process",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 341.6,
+      "end_seconds": 428.639,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=341s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1a453b0fd38b63766afed36f9e34dfd66169d2f40cb9eeda5c0e52e83da4d646",
+    "text": "particular data and we can fine-tune the model right we can simply fine-tune the model yes this is a very good solution but understand fine-tuning a model is a very expensive process very tedious process because this LLM whichever LLM we are using it has billions of parameter and tweaking this billions of parameter usually takes a lot of time Right? So obviously this is a solution but this is a very expensive solution. Okay. Now do we have any other way any other way and remember these all policies and these all data will also keep on getting updated as we run the startup. Right? So every time we cannot just go ahead and fine-tune it like every day we not fine-tune it. Right? So we should try to find out a solution like how do we prevent this? So this can again be prevented with the help of rag. Right? Now how it will be prevented with the help of rag I will talk about it. Okay. So here instead of fine-tuning I'm saying that hey I will go ahead and implement the rag. Now you'll understand only when we understand the pipeline of the rag which I will discuss in this specific video. Okay. Now these are the major two disadvantages that you see right over here and yes there are some",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 409.44,
+      "end_seconds": 495.68,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=409s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "467eef5ba51a2c571eda7735c37ec74ae90ff9a4b0a3482fee1ef450cc8a5b1e",
+    "text": "only when we understand the pipeline of the rag which I will discuss in this specific video. Okay. Now these are the major two disadvantages that you see right over here and yes there are some more disadvantages which we'll just deep dive more as we go ahead. Okay now what happens in uh if we use rag and how we are preventing it. See rag is nothing but it is it is saying that is a process of optimizing the output of a large language model. So it references an authorative knowledge base outside of his training data. Now how do we solve this hallucinating and this problem that we have okay so let me just go ahead and draw the diagram again okay so here is my llm okay and here is my query so let's say that uh I am coming up with an user query so let's consider it over here okay and here I'm drawing a user I'm user okay and this user will first of all give a query. Okay. Now what happens is that there will be two important pipelines that will be created. As I said over here we are trying to optimize the output of a large language model. So it references an authorative knowledge base outside of it training data source. So as you all",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 480.479,
+      "end_seconds": 569.6800000000001,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=480s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "70f88f7548be83b1205ffa584f61b89e14c728ad1f9dbf3ef983377a8e42e87b",
+    "text": "will be created. As I said over here we are trying to optimize the output of a large language model. So it references an authorative knowledge base outside of it training data source. So as you all know this is my LLM right? This LLM is already trained with huge amount of data. Now along with this I will be having an external database and this database we basically say it as vector database. Okay external vector database. Now you you know that this LLM is already trained with some amount of data and any additional data let's say my startup data my policies HR finance whatever data is there we will try to create a data injection pipeline over here data injection pipeline over here now what will be this data injection pipeline so let's say I have my data from this data we will do some kind of parsing and from this parsing we will do embeddings embeddings and then we finally store it into the vector store. Okay. Now whenever we talk about this specific data this data can be in any format. It can be in PDF format. It can be in HTML format. It can be in Excel format. It can be even in SQL database format or unstructured format any format. So what we do initially we take this data and we",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 551.76,
+      "end_seconds": 650.88,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=551s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7022c8fc529e6080dfdcb4e2a863c79deae4d4ba04ba6f57397c7ecd5c1cb8f1",
+    "text": "can be in PDF format. It can be in HTML format. It can be in Excel format. It can be even in SQL database format or unstructured format any format. So what we do initially we take this data and we do data parsing. Now here data parsing is a very important step. I think if you crack this step then developing a rag application becomes very easy. Data parsing is all about how do you read the unstructured data or the structured data that is present inside this and how do you chunk this data right how do you chunk how do you divide this specific data into chunks chunking is very important because you need to save this data inside some kind of vector store this is nothing but vector store or vector DB okay now vector store and vector DB is nothing but it will actually help you to save vectors inside this. Okay. So once you do the chunking after doing the chunking you pass it to the embedding models. Now here in the embedding models you basically convert text to vectors. Okay. Vectors is just like a numerical representation for text so that you will be able to apply algorithms like similarity search cosine similarity techniques that are already available right wherein similar kind of results",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 633.6,
+      "end_seconds": 725.04,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=633s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "295aff91c0f7612a1e984a5fe43ca4ef324cd2bfb79af882a7736756f4f57f3e",
+    "text": "Okay. Vectors is just like a numerical representation for text so that you will be able to apply algorithms like similarity search cosine similarity techniques that are already available right wherein similar kind of results based on a specific query can be retrieved from this particular databases. Okay. So here whenever I talk about vector DB this is my vector DB or vector store here we are storing embeddings. Okay. And this embeddings will get applied to every chunks. Embeddings is nothing but we basically use we convert text into vectors. Here we can use different different embeddings like Google Germany embedding models. We can use open AI embedding models. We can use hugging phase embedding models and each and every embedding models exist with different different cost and there are also open-source embedding models which will actually help you to convert the text into vectors. Now this is one specific pipeline which we call it as data injection pipeline. At the end of the data injection pipeline you are able to store the text into vectors inside your vector DB. Now how rag is different from the previous one. Right? So initially you had this data injection pipeline where you are converting all your data into vectors. Right? And this data is specifically for this particular startup. And now I have created a",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 705.68,
+      "end_seconds": 794.5600000000001,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=705s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0f615c27772f8219e5876f3fc1585343a3c884726922a3841d11d6ac829a5678",
+    "text": "the previous one. Right? So initially you had this data injection pipeline where you are converting all your data into vectors. Right? And this data is specifically for this particular startup. And now I have created a knowledge base. So this is my knowledge base. External knowledge base or internal knowledge base whatever knowledge base I have and this knowledge base does not exist with this LLM. Right? Yes, some amount of information may be available but not the entire part. Now see the definition. It is a process of optimizing the output of a large language so that it references an authorative knowledge base outside of this training data. Now what will happen when user gives a query? Now this query instead of directly going to the LLM will go to this vector database right and before going here also we need to go ahead and apply embedding right because this query will be converted into vectors right why we need to convert into vectors so that when we are hitting this query to the vector DB this similarity search is basically applied and based on this we get some kind of context we get some information from the vector DB and now whatever query I'm asking okay if I ask hey what is the leaf policy of my company",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 778.079,
+      "end_seconds": 871.12,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=778s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "df97baac049d795500016782c973b677b5e0a0754c3cbdea977f29a891e969c5",
+    "text": "and based on this we get some kind of context we get some information from the vector DB and now whatever query I'm asking okay if I ask hey what is the leaf policy of my company right now what will happen first of all it'll go to the vector store it will gather all the related information that is available over here and that information when it is sending it to the llm it is called as context Now we use this context along with we go ahead and write a specific prompt. Now this prompt is an instruction to the LLM and it says that you can use this context to answer the question and finally you get a output. This is the entire pipeline. This pipeline is basically called as retrieval pipeline. Retrieval pipeline. And this is a very good example of a traditional rag. Now you may be thinking kish what about other types of rag. Don't worry thumb don't worry I will explain it completely from basic to advanc with implementation each and everything because later on we'll be discussing about agentic rags. We'll be discussing how agentic rags actually work each and everything. But I hope you got an idea with respect to this. Now here you will even not be seeing this particular problem like",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 849.36,
+      "end_seconds": 939.04,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=849s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "16978c1e024874f9ee9e66f8c0ec823baaba35f6b1473ca098d4ce0e6047edd2",
+    "text": "we'll be discussing about agentic rags. We'll be discussing how agentic rags actually work each and everything. But I hope you got an idea with respect to this. Now here you will even not be seeing this particular problem like you'll not completely remove hallucination but some amount of hallucination if any queries that is asked related to the data that is present in the vector DB I will definitely get some kind of context and my LLM will give me the output as let's say that if that data is not present over here then LLM can hallucinate right but here we are doing this see one best example that you can do is that you can use perfectly Perplexity. Perplexity is nothing but it is based on rag. It is completely developed based on rag applications. Okay. Rag it is it is a kind of a rag application. In perplexity you have connected to various retrievers. You are connected to tools. You are connected to web search right and then it is summarizing the output and giving by the LLM. Right? and it also uses various LLMs itself. I'm also planning to mostly start a startup soon enough within a couple of weeks I guess and the kind of application that I'm developing is a rag application only",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 924.639,
+      "end_seconds": 1006.72,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=924s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5fecf9fe7757187f50e8c6bb8d08494840004e871480f82802dc1b35e777d548",
+    "text": "it also uses various LLMs itself. I'm also planning to mostly start a startup soon enough within a couple of weeks I guess and the kind of application that I'm developing is a rag application only and it solves a very good problem for a developer. Okay. So that is the reason I'm not being able to upload a lot of videos because I'm pretty much involved in those startups and working and developing a product that India can definitely remember. Okay. And this is how you know this is this is this is how things are and you can basically see how good uh you know the pipeline actually works and this is basically a traditional rack. Now you may be thinking what all things we'll be discussing. Okay fine we have discussed about a traditional rack in the future classes what coding we'll be doing. Okay so let's go ahead and talk about it. As I said two important pipelines we'll go ahead and create one is a data injection pipeline and one is a retrieval pipeline. Okay. Now in the data injection pipeline you'll be see seeing that we will be performing data injection. Along with the data injection we will go ahead and do data parsing. Then we'll perform embeddings. Then uh we will store everything into the vector",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 991.279,
+      "end_seconds": 1068.559,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=991s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9e32c792a085356da20f4cfe13efb87477e6aa6de336dfeeeaa6b4f4bd2b3a37",
+    "text": "injection pipeline you'll be see seeing that we will be performing data injection. Along with the data injection we will go ahead and do data parsing. Then we'll perform embeddings. Then uh we will store everything into the vector store. Then we will create a retriever for this and whenever a user ask any queries it will be able to give the context to the LLM and then finally we will be generating the output. So here this is retrieval this is auggmentation right this is augumentation over here augmentation basically means what you're giving a context to the LLM along with the prompt to generate the output right so this is basically called as augmentation and finally you're generating the output right which is nothing but generation so here you are basically generating now in the next session how we are going to implement it first of all I will show you how to perform these two steps in a very efficient way. Okay, sorry not these two steps. I will show you how we can perform these all steps, right? Data injection, data parsing and embedding. Here we are going to consider different different files like PDF, HTML. Okay. Um PDF, HTML, you can consider Excel, you can consider SQL database, you can consider any kind of files. Then",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1051.76,
+      "end_seconds": 1135.2800000000002,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=1051s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f6d7abe6d91de377dbd6b9bef5d73ee041ba37634d0cf7d0a8479e4d3bea26d4",
+    "text": "injection, data parsing and embedding. Here we are going to consider different different files like PDF, HTML. Okay. Um PDF, HTML, you can consider Excel, you can consider SQL database, you can consider any kind of files. Then we'll do document parsing and we will try to convert this into document. So document is an amazing data structure which you can basically use it and you can even parse this do the chunking and store it in the vector embeddings sorry vector store. Then we'll perform embeddings. Here we will use both open source and we are going to use paid embeddings for the same. Okay. And then finally we go to the vector store. Then based on a user query, how do we go ahead and apply the same embeddings we are going to see that okay and then finally we'll be developing this. So mostly I really want I'm I'm focusing more on making bigger videos so that you don't just follow a playlist. Okay. I want to basically cover a lot of stuff in one video so that uh you should also be able to efficiently cover it instead of covering 50 different videos. Right now when we are doing data injection and data parsing right there are various techniques see we are going to see about",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1117.76,
+      "end_seconds": 1191.36,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=1117s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ff6844e1b2fd65f7a132008e35603ccd4818bd8e3415d9e913c6cf05925a1812",
+    "text": "that uh you should also be able to efficiently cover it instead of covering 50 different videos. Right now when we are doing data injection and data parsing right there are various techniques see we are going to see about optimization we are going to see about various chunking strategies context engineering these all kind of topics will be coming up when we talk about data parsing you know u what is semantic chunker you know how do we go ahead and do the chunking in those strategies and all everything we'll try to discuss as we go ahead but I hope you got a very super cool idea about what exactly is rag um Yeah, this was it from my side. Uh please make sure to like the video, share with all your friends and uh soon within couple of days we'll come up with the next video wherein we will be starting the coding tutorial and we'll start building this data injection pipeline and I will try to build it in the form of a project uh that it'll be looking good for you so that you'll also be able to completely implement things right. So yes, this was it from my side. I'll see you in the next video. Thank you. Take care.",
+    "metadata": {
+      "video_id": "fZM3oX4xEyg",
+      "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1177.28,
+      "end_seconds": 1240.0,
+      "url": "https://www.youtube.com/watch?v=fZM3oX4xEyg&t=1177s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

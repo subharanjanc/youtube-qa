@@ -1,0 +1,2448 @@
+{
+  "video_id": "fZM3oX4xEyg",
+  "title": "Introduction To Undertsanding RAG(Retrieval-Augmented Generation)",
+  "channel": "Krish Naik",
+  "trainer": "Krish Naik",
+  "topic": "RAG",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1240.0,
+  "segments": [
+    {
+      "start": 0.48,
+      "end": 4.720000000000001,
+      "text": "Hello all, my name is Krishna and"
+    },
+    {
+      "start": 2.56,
+      "end": 7.040000000000001,
+      "text": "welcome to my YouTube channel. So guys,"
+    },
+    {
+      "start": 4.72,
+      "end": 9.92,
+      "text": "I am super excited to start this new"
+    },
+    {
+      "start": 7.04,
+      "end": 11.92,
+      "text": "series on one of the most important"
+    },
+    {
+      "start": 9.92,
+      "end": 14.96,
+      "text": "technique which is right now being used"
+    },
+    {
+      "start": 11.92,
+      "end": 17.198999999999998,
+      "text": "in genative AI and agentic AI field that"
+    },
+    {
+      "start": 14.96,
+      "end": 18.72,
+      "text": "is nothing but rag. If you don't know"
+    },
+    {
+      "start": 17.199,
+      "end": 21.439,
+      "text": "the full form of rag, it is called as"
+    },
+    {
+      "start": 18.72,
+      "end": 23.198999999999998,
+      "text": "retrieval augmented generation. In this"
+    },
+    {
+      "start": 21.439,
+      "end": 26.48,
+      "text": "specific video, we will try to"
+    },
+    {
+      "start": 23.199,
+      "end": 28.96,
+      "text": "understand what exactly is rag. uh what"
+    },
+    {
+      "start": 26.48,
+      "end": 31.439,
+      "text": "are the disadvantages of just using the"
+    },
+    {
+      "start": 28.96,
+      "end": 34.079,
+      "text": "LLM model and how we are overcoming"
+    },
+    {
+      "start": 31.439,
+      "end": 37.44,
+      "text": "those disadvantages with the help of rag"
+    },
+    {
+      "start": 34.079,
+      "end": 40.0,
+      "text": "when should we use rag and what are the"
+    },
+    {
+      "start": 37.44,
+      "end": 41.599999999999994,
+      "text": "important pipelines that we should take"
+    },
+    {
+      "start": 40.0,
+      "end": 44.559,
+      "text": "a note while developing a rag"
+    },
+    {
+      "start": 41.6,
+      "end": 47.2,
+      "text": "application okay so all this topics we"
+    },
+    {
+      "start": 44.559,
+      "end": 50.0,
+      "text": "will be discussing and as we go ahead we"
+    },
+    {
+      "start": 47.2,
+      "end": 52.160000000000004,
+      "text": "are going to implement each and every"
+    },
+    {
+      "start": 50.0,
+      "end": 54.079,
+      "text": "important pipelines with the help of"
+    },
+    {
+      "start": 52.16,
+      "end": 55.839999999999996,
+      "text": "Jupyter notebook and I will also show"
+    },
+    {
+      "start": 54.079,
+      "end": 58.64,
+      "text": "you with the help of modular coding"
+    },
+    {
+      "start": 55.84,
+      "end": 61.120000000000005,
+      "text": "Right. So both the ways we will try to"
+    },
+    {
+      "start": 58.64,
+      "end": 64.239,
+      "text": "implement it. Now why I'm stressing on"
+    },
+    {
+      "start": 61.12,
+      "end": 66.15899999999999,
+      "text": "this specific series because nowadays"
+    },
+    {
+      "start": 64.239,
+      "end": 68.159,
+      "text": "every companies are looking for"
+    },
+    {
+      "start": 66.159,
+      "end": 71.2,
+      "text": "professionals who are who knows how to"
+    },
+    {
+      "start": 68.159,
+      "end": 74.08000000000001,
+      "text": "build rag applications because if you"
+    },
+    {
+      "start": 71.2,
+      "end": 76.24000000000001,
+      "text": "see various AI engineering reports there"
+    },
+    {
+      "start": 74.08,
+      "end": 78.56,
+      "text": "many of the companies around 60 to 70"
+    },
+    {
+      "start": 76.24,
+      "end": 81.28,
+      "text": "projects percentage of the projects are"
+    },
+    {
+      "start": 78.56,
+      "end": 83.52,
+      "text": "specifically on rag application. So let"
+    },
+    {
+      "start": 81.28,
+      "end": 86.159,
+      "text": "me quickly go ahead and share my screen"
+    },
+    {
+      "start": 83.52,
+      "end": 88.64,
+      "text": "and start discussing about rag. This is"
+    },
+    {
+      "start": 86.159,
+      "end": 90.4,
+      "text": "just the introduction video of rag. Uh"
+    },
+    {
+      "start": 88.64,
+      "end": 92.96000000000001,
+      "text": "and as we go ahead we'll be implementing"
+    },
+    {
+      "start": 90.4,
+      "end": 95.60000000000001,
+      "text": "more amazing examples. So let me quickly"
+    },
+    {
+      "start": 92.96,
+      "end": 98.479,
+      "text": "go ahead and show you. So this is a"
+    },
+    {
+      "start": 95.6,
+      "end": 101.36,
+      "text": "simple definition that uh I've put up"
+    },
+    {
+      "start": 98.479,
+      "end": 103.28,
+      "text": "over here and uh in this definition"
+    },
+    {
+      "start": 101.36,
+      "end": 105.439,
+      "text": "first of all we'll try to understand"
+    },
+    {
+      "start": 103.28,
+      "end": 107.28,
+      "text": "rag. Okay. So first of all let's go"
+    },
+    {
+      "start": 105.439,
+      "end": 109.83999999999999,
+      "text": "through the definition and then I will"
+    },
+    {
+      "start": 107.28,
+      "end": 112.07900000000001,
+      "text": "give you a brief idea what exactly rag"
+    },
+    {
+      "start": 109.84,
+      "end": 115.68,
+      "text": "is all about you know. So here you can"
+    },
+    {
+      "start": 112.079,
+      "end": 119.27999999999999,
+      "text": "clearly see that rag is the process of"
+    },
+    {
+      "start": 115.68,
+      "end": 124.0,
+      "text": "optimizing the output of a large"
+    },
+    {
+      "start": 119.28,
+      "end": 127.119,
+      "text": "language model. Okay. So it references"
+    },
+    {
+      "start": 124.0,
+      "end": 130.16,
+      "text": "an authorative knowledge base outside of"
+    },
+    {
+      "start": 127.119,
+      "end": 133.92,
+      "text": "it training data set source before get"
+    },
+    {
+      "start": 130.16,
+      "end": 136.319,
+      "text": "generating a response. LLMs are trained"
+    },
+    {
+      "start": 133.92,
+      "end": 138.48,
+      "text": "on vast volume of data as we all know"
+    },
+    {
+      "start": 136.319,
+      "end": 141.11999999999998,
+      "text": "and use billions of parameters to"
+    },
+    {
+      "start": 138.48,
+      "end": 142.79999999999998,
+      "text": "generally original output for task like"
+    },
+    {
+      "start": 141.12,
+      "end": 145.68,
+      "text": "question answering, translating and"
+    },
+    {
+      "start": 142.8,
+      "end": 148.16000000000003,
+      "text": "completing sentences. Rag extends the"
+    },
+    {
+      "start": 145.68,
+      "end": 150.72,
+      "text": "already powerful capabilities of LLM to"
+    },
+    {
+      "start": 148.16,
+      "end": 153.92,
+      "text": "specific domain or an organizational"
+    },
+    {
+      "start": 150.72,
+      "end": 156.8,
+      "text": "internal knowledge base all without the"
+    },
+    {
+      "start": 153.92,
+      "end": 158.95899999999997,
+      "text": "need to retrain the model. Okay. It is"
+    },
+    {
+      "start": 156.8,
+      "end": 161.28,
+      "text": "cost- effective approach to improve LLM"
+    },
+    {
+      "start": 158.959,
+      "end": 163.04,
+      "text": "output. So it's relevant, accurate and"
+    },
+    {
+      "start": 161.28,
+      "end": 164.879,
+      "text": "useful in various context. So this is"
+    },
+    {
+      "start": 163.04,
+      "end": 167.04,
+      "text": "just a basic definition. You can refer"
+    },
+    {
+      "start": 164.879,
+      "end": 168.79999999999998,
+      "text": "to this particular definition. So guys,"
+    },
+    {
+      "start": 167.04,
+      "end": 172.4,
+      "text": "now let's go ahead and understand about"
+    },
+    {
+      "start": 168.8,
+      "end": 174.239,
+      "text": "rag. So let's consider that I have a"
+    },
+    {
+      "start": 172.4,
+      "end": 176.4,
+      "text": "generative AI application. And as you"
+    },
+    {
+      "start": 174.239,
+      "end": 179.04,
+      "text": "all know in a generative AI application,"
+    },
+    {
+      "start": 176.4,
+      "end": 182.0,
+      "text": "usually let's say that I have an LLM. So"
+    },
+    {
+      "start": 179.04,
+      "end": 184.239,
+      "text": "this is my LLM. Now usually whenever we"
+    },
+    {
+      "start": 182.0,
+      "end": 187.76,
+      "text": "have a LLM what happens is that let's"
+    },
+    {
+      "start": 184.239,
+      "end": 191.59900000000002,
+      "text": "consider that I have a user"
+    },
+    {
+      "start": 187.76,
+      "end": 195.35999999999999,
+      "text": "a user is asking a query. So this is a"
+    },
+    {
+      "start": 191.599,
+      "end": 200.0,
+      "text": "my query from the user and before it is"
+    },
+    {
+      "start": 195.36,
+      "end": 202.8,
+      "text": "sent to the LLM we do add a prompt right"
+    },
+    {
+      "start": 200.0,
+      "end": 204.8,
+      "text": "we do add a prompt and this prompt is"
+    },
+    {
+      "start": 202.8,
+      "end": 208.08,
+      "text": "just like an instruction to the LLM like"
+    },
+    {
+      "start": 204.8,
+      "end": 212.0,
+      "text": "how the LLM should work okay and then"
+    },
+    {
+      "start": 208.08,
+      "end": 213.76000000000002,
+      "text": "based on this we actually get an output"
+    },
+    {
+      "start": 212.0,
+      "end": 216.959,
+      "text": "now this is a simple generative AI"
+    },
+    {
+      "start": 213.76,
+      "end": 220.39999999999998,
+      "text": "application wherein the LLM is used to"
+    },
+    {
+      "start": 216.959,
+      "end": 224.48,
+      "text": "generate the content"
+    },
+    {
+      "start": 220.4,
+      "end": 227.04,
+      "text": "Okay, generate the content. So obviously"
+    },
+    {
+      "start": 224.48,
+      "end": 229.67999999999998,
+      "text": "by using this specific technique we give"
+    },
+    {
+      "start": 227.04,
+      "end": 233.44,
+      "text": "a query and this LLM you know that it"
+    },
+    {
+      "start": 229.68,
+      "end": 235.20000000000002,
+      "text": "has been trained with billions of data"
+    },
+    {
+      "start": 233.44,
+      "end": 238.159,
+      "text": "okay different kind of data that is"
+    },
+    {
+      "start": 235.2,
+      "end": 239.92,
+      "text": "available in the internet and based on"
+    },
+    {
+      "start": 238.159,
+      "end": 244.319,
+      "text": "this it will be able to generate the"
+    },
+    {
+      "start": 239.92,
+      "end": 246.0,
+      "text": "output. One of the disadvantage of this"
+    },
+    {
+      "start": 244.319,
+      "end": 248.56,
+      "text": "let me talk about the disadvantage of"
+    },
+    {
+      "start": 246.0,
+      "end": 251.84,
+      "text": "this particular approach. As you know"
+    },
+    {
+      "start": 248.56,
+      "end": 254.239,
+      "text": "that every LLM that is trained you know"
+    },
+    {
+      "start": 251.84,
+      "end": 257.12,
+      "text": "it will be trained for a specific set of"
+    },
+    {
+      "start": 254.239,
+      "end": 261.28000000000003,
+      "text": "data. So let's say right now it is 31st"
+    },
+    {
+      "start": 257.12,
+      "end": 263.36,
+      "text": "August. Okay 31st August."
+    },
+    {
+      "start": 261.28,
+      "end": 265.84,
+      "text": "Let's say this is my LLM model and this"
+    },
+    {
+      "start": 263.36,
+      "end": 268.32,
+      "text": "is basically GPT5"
+    },
+    {
+      "start": 265.84,
+      "end": 270.15999999999997,
+      "text": "which is the recent model from OpenAI."
+    },
+    {
+      "start": 268.32,
+      "end": 273.919,
+      "text": "Now as you know that when this model was"
+    },
+    {
+      "start": 270.16,
+      "end": 277.44,
+      "text": "launched this model may be trained"
+    },
+    {
+      "start": 273.919,
+      "end": 281.19899999999996,
+      "text": "by may be trained with data till 1st"
+    },
+    {
+      "start": 277.44,
+      "end": 284.08,
+      "text": "August. Okay. So this LLM will not have"
+    },
+    {
+      "start": 281.199,
+      "end": 286.8,
+      "text": "any idea what has basically happened in"
+    },
+    {
+      "start": 284.08,
+      "end": 289.28,
+      "text": "the current world between 1st to 31st"
+    },
+    {
+      "start": 286.8,
+      "end": 292.08,
+      "text": "August. Right? And let's say if I go"
+    },
+    {
+      "start": 289.28,
+      "end": 295.67999999999995,
+      "text": "ahead and ask a specific question to the"
+    },
+    {
+      "start": 292.08,
+      "end": 298.56,
+      "text": "LLM which is between this specific dates"
+    },
+    {
+      "start": 295.68,
+      "end": 301.6,
+      "text": "for any kind of events the LLM will"
+    },
+    {
+      "start": 298.56,
+      "end": 305.68,
+      "text": "start hallucinating. So one of the major"
+    },
+    {
+      "start": 301.6,
+      "end": 308.8,
+      "text": "disadvantages of only using the LLM is"
+    },
+    {
+      "start": 305.68,
+      "end": 310.24,
+      "text": "that it will hallucinate. Okay. When we"
+    },
+    {
+      "start": 308.8,
+      "end": 313.36,
+      "text": "say hallucinating what does this"
+    },
+    {
+      "start": 310.24,
+      "end": 314.88,
+      "text": "basically mean? It means that even"
+    },
+    {
+      "start": 313.36,
+      "end": 317.039,
+      "text": "though it does not have the knowledge"
+    },
+    {
+      "start": 314.88,
+      "end": 319.68,
+      "text": "what has happened between 1st August to"
+    },
+    {
+      "start": 317.039,
+      "end": 322.71999999999997,
+      "text": "31st August any events even though we"
+    },
+    {
+      "start": 319.68,
+      "end": 325.199,
+      "text": "ask any question the LLM will try to"
+    },
+    {
+      "start": 322.72,
+      "end": 328.40000000000003,
+      "text": "generate it own answer because it does"
+    },
+    {
+      "start": 325.199,
+      "end": 330.639,
+      "text": "not want to look like a fool. Okay, that"
+    },
+    {
+      "start": 328.4,
+      "end": 332.4,
+      "text": "is the best example. It does not want to"
+    },
+    {
+      "start": 330.639,
+      "end": 334.16,
+      "text": "look like a fool. So it will try to"
+    },
+    {
+      "start": 332.4,
+      "end": 337.19899999999996,
+      "text": "generate some answers and it will make"
+    },
+    {
+      "start": 334.16,
+      "end": 339.759,
+      "text": "sure that it will it'll show you answer"
+    },
+    {
+      "start": 337.199,
+      "end": 341.6,
+      "text": "that you may also have to believe it."
+    },
+    {
+      "start": 339.759,
+      "end": 344.16,
+      "text": "that is how it will be written you know"
+    },
+    {
+      "start": 341.6,
+      "end": 345.91900000000004,
+      "text": "in in terms of the output that we get so"
+    },
+    {
+      "start": 344.16,
+      "end": 348.8,
+      "text": "usually this condition is basically"
+    },
+    {
+      "start": 345.919,
+      "end": 351.039,
+      "text": "called as hallucinating okay so this is"
+    },
+    {
+      "start": 348.8,
+      "end": 353.28000000000003,
+      "text": "one of the major disadvantage"
+    },
+    {
+      "start": 351.039,
+      "end": 355.84,
+      "text": "the second disadvantage that you have so"
+    },
+    {
+      "start": 353.28,
+      "end": 357.52,
+      "text": "let's say that I'm using this LLM and"
+    },
+    {
+      "start": 355.84,
+      "end": 360.0,
+      "text": "you know this LLM has been trained with"
+    },
+    {
+      "start": 357.52,
+      "end": 363.84,
+      "text": "huge amount of data now what happens is"
+    },
+    {
+      "start": 360.0,
+      "end": 366.319,
+      "text": "that I'm running a startup"
+    },
+    {
+      "start": 363.84,
+      "end": 371.52,
+      "text": "let's say now in my startup I'm solving"
+    },
+    {
+      "start": 366.319,
+      "end": 373.68,
+      "text": "a specific use case and I have some data"
+    },
+    {
+      "start": 371.52,
+      "end": 376.56,
+      "text": "which again I need to use this"
+    },
+    {
+      "start": 373.68,
+      "end": 378.96,
+      "text": "particular data along with my LLM. Okay."
+    },
+    {
+      "start": 376.56,
+      "end": 383.84,
+      "text": "So let's say that I have some other data"
+    },
+    {
+      "start": 378.96,
+      "end": 387.039,
+      "text": "like you know um policies policies of my"
+    },
+    {
+      "start": 383.84,
+      "end": 390.31899999999996,
+      "text": "company I have HR policies of my company"
+    },
+    {
+      "start": 387.039,
+      "end": 393.12,
+      "text": "I have finance policies you know and"
+    },
+    {
+      "start": 390.319,
+      "end": 395.759,
+      "text": "this policies all will not be available"
+    },
+    {
+      "start": 393.12,
+      "end": 398.08,
+      "text": "in the it will not be available publicly"
+    },
+    {
+      "start": 395.759,
+      "end": 400.96000000000004,
+      "text": "because it is my startup so these all"
+    },
+    {
+      "start": 398.08,
+      "end": 402.88,
+      "text": "data has been protected now I also want"
+    },
+    {
+      "start": 400.96,
+      "end": 406.0,
+      "text": "to use this specific data and probably"
+    },
+    {
+      "start": 402.88,
+      "end": 407.919,
+      "text": "create a chatbot okay now how do I do"
+    },
+    {
+      "start": 406.0,
+      "end": 409.44,
+      "text": "this now one way is that many people"
+    },
+    {
+      "start": 407.919,
+      "end": 412.96,
+      "text": "will say hey kish we can take this"
+    },
+    {
+      "start": 409.44,
+      "end": 414.479,
+      "text": "particular data and we can fine-tune the"
+    },
+    {
+      "start": 412.96,
+      "end": 417.919,
+      "text": "model"
+    },
+    {
+      "start": 414.479,
+      "end": 420.639,
+      "text": "right we can simply fine-tune the model"
+    },
+    {
+      "start": 417.919,
+      "end": 423.35999999999996,
+      "text": "yes this is a very good solution but"
+    },
+    {
+      "start": 420.639,
+      "end": 426.40000000000003,
+      "text": "understand fine-tuning a model is a very"
+    },
+    {
+      "start": 423.36,
+      "end": 428.639,
+      "text": "expensive process very tedious process"
+    },
+    {
+      "start": 426.4,
+      "end": 430.88,
+      "text": "because this LLM whichever LLM we are"
+    },
+    {
+      "start": 428.639,
+      "end": 432.88,
+      "text": "using it has billions of parameter and"
+    },
+    {
+      "start": 430.88,
+      "end": 436.4,
+      "text": "tweaking this billions of parameter"
+    },
+    {
+      "start": 432.88,
+      "end": 439.039,
+      "text": "usually takes a lot of time Right? So"
+    },
+    {
+      "start": 436.4,
+      "end": 442.71999999999997,
+      "text": "obviously this is a solution but this is"
+    },
+    {
+      "start": 439.039,
+      "end": 445.68,
+      "text": "a very expensive solution. Okay. Now do"
+    },
+    {
+      "start": 442.72,
+      "end": 447.52000000000004,
+      "text": "we have any other way any other way and"
+    },
+    {
+      "start": 445.68,
+      "end": 449.52,
+      "text": "remember these all policies and these"
+    },
+    {
+      "start": 447.52,
+      "end": 454.08,
+      "text": "all data will also keep on getting"
+    },
+    {
+      "start": 449.52,
+      "end": 455.52,
+      "text": "updated as we run the startup. Right? So"
+    },
+    {
+      "start": 454.08,
+      "end": 457.12,
+      "text": "every time we cannot just go ahead and"
+    },
+    {
+      "start": 455.52,
+      "end": 459.19899999999996,
+      "text": "fine-tune it like every day we not"
+    },
+    {
+      "start": 457.12,
+      "end": 461.919,
+      "text": "fine-tune it. Right? So we should try to"
+    },
+    {
+      "start": 459.199,
+      "end": 464.96000000000004,
+      "text": "find out a solution like how do we"
+    },
+    {
+      "start": 461.919,
+      "end": 469.35999999999996,
+      "text": "prevent this? So this can again be"
+    },
+    {
+      "start": 464.96,
+      "end": 471.35999999999996,
+      "text": "prevented with the help of rag."
+    },
+    {
+      "start": 469.36,
+      "end": 473.12,
+      "text": "Right? Now how it will be prevented with"
+    },
+    {
+      "start": 471.36,
+      "end": 476.40000000000003,
+      "text": "the help of rag I will talk about it."
+    },
+    {
+      "start": 473.12,
+      "end": 477.919,
+      "text": "Okay. So here instead of fine-tuning I'm"
+    },
+    {
+      "start": 476.4,
+      "end": 480.479,
+      "text": "saying that hey I will go ahead and"
+    },
+    {
+      "start": 477.919,
+      "end": 482.31899999999996,
+      "text": "implement the rag. Now you'll understand"
+    },
+    {
+      "start": 480.479,
+      "end": 483.84,
+      "text": "only when we understand the pipeline of"
+    },
+    {
+      "start": 482.319,
+      "end": 487.44,
+      "text": "the rag which I will discuss in this"
+    },
+    {
+      "start": 483.84,
+      "end": 490.71999999999997,
+      "text": "specific video. Okay. Now these are the"
+    },
+    {
+      "start": 487.44,
+      "end": 493.599,
+      "text": "major two disadvantages that you see"
+    },
+    {
+      "start": 490.72,
+      "end": 495.68,
+      "text": "right over here and yes there are some"
+    },
+    {
+      "start": 493.599,
+      "end": 498.87899999999996,
+      "text": "more disadvantages which we'll just deep"
+    },
+    {
+      "start": 495.68,
+      "end": 501.12,
+      "text": "dive more as we go ahead. Okay now what"
+    },
+    {
+      "start": 498.879,
+      "end": 502.879,
+      "text": "happens in"
+    },
+    {
+      "start": 501.12,
+      "end": 505.039,
+      "text": "uh if we use rag and how we are"
+    },
+    {
+      "start": 502.879,
+      "end": 506.8,
+      "text": "preventing it. See rag is nothing but it"
+    },
+    {
+      "start": 505.039,
+      "end": 508.639,
+      "text": "is it is saying that is a process of"
+    },
+    {
+      "start": 506.8,
+      "end": 510.479,
+      "text": "optimizing the output of a large"
+    },
+    {
+      "start": 508.639,
+      "end": 513.2,
+      "text": "language model. So it references an"
+    },
+    {
+      "start": 510.479,
+      "end": 516.959,
+      "text": "authorative knowledge base outside of"
+    },
+    {
+      "start": 513.2,
+      "end": 519.279,
+      "text": "his training data. Now how do we solve"
+    },
+    {
+      "start": 516.959,
+      "end": 521.5989999999999,
+      "text": "this hallucinating and this problem that"
+    },
+    {
+      "start": 519.279,
+      "end": 523.76,
+      "text": "we have okay so let me just go ahead and"
+    },
+    {
+      "start": 521.599,
+      "end": 528.1600000000001,
+      "text": "draw the diagram again okay so here is"
+    },
+    {
+      "start": 523.76,
+      "end": 530.72,
+      "text": "my llm okay and here is my query so"
+    },
+    {
+      "start": 528.16,
+      "end": 533.279,
+      "text": "let's say that uh I am coming up with an"
+    },
+    {
+      "start": 530.72,
+      "end": 537.9200000000001,
+      "text": "user query so let's consider it over"
+    },
+    {
+      "start": 533.279,
+      "end": 542.0,
+      "text": "here okay and here I'm drawing a user"
+    },
+    {
+      "start": 537.92,
+      "end": 544.3199999999999,
+      "text": "I'm user okay and this user"
+    },
+    {
+      "start": 542.0,
+      "end": 546.8,
+      "text": "will first of all"
+    },
+    {
+      "start": 544.32,
+      "end": 549.839,
+      "text": "give a query."
+    },
+    {
+      "start": 546.8,
+      "end": 551.76,
+      "text": "Okay. Now what happens is that there"
+    },
+    {
+      "start": 549.839,
+      "end": 555.9200000000001,
+      "text": "will be two important pipelines that"
+    },
+    {
+      "start": 551.76,
+      "end": 558.3199999999999,
+      "text": "will be created. As I said over here we"
+    },
+    {
+      "start": 555.92,
+      "end": 561.76,
+      "text": "are trying to optimize the output of a"
+    },
+    {
+      "start": 558.32,
+      "end": 564.72,
+      "text": "large language model. So it references"
+    },
+    {
+      "start": 561.76,
+      "end": 566.88,
+      "text": "an authorative knowledge base outside of"
+    },
+    {
+      "start": 564.72,
+      "end": 569.6800000000001,
+      "text": "it training data source. So as you all"
+    },
+    {
+      "start": 566.88,
+      "end": 570.88,
+      "text": "know this is my LLM right? This LLM is"
+    },
+    {
+      "start": 569.68,
+      "end": 573.5999999999999,
+      "text": "already trained with huge amount of"
+    },
+    {
+      "start": 570.88,
+      "end": 576.64,
+      "text": "data. Now along with this I will be"
+    },
+    {
+      "start": 573.6,
+      "end": 579.36,
+      "text": "having an external"
+    },
+    {
+      "start": 576.64,
+      "end": 583.1999999999999,
+      "text": "database and this database we basically"
+    },
+    {
+      "start": 579.36,
+      "end": 586.08,
+      "text": "say it as vector database. Okay external"
+    },
+    {
+      "start": 583.2,
+      "end": 588.1600000000001,
+      "text": "vector database. Now you you know that"
+    },
+    {
+      "start": 586.08,
+      "end": 590.8000000000001,
+      "text": "this LLM is already trained with some"
+    },
+    {
+      "start": 588.16,
+      "end": 593.519,
+      "text": "amount of data and any additional data"
+    },
+    {
+      "start": 590.8,
+      "end": 596.3199999999999,
+      "text": "let's say my startup data my policies HR"
+    },
+    {
+      "start": 593.519,
+      "end": 600.399,
+      "text": "finance whatever data is there we will"
+    },
+    {
+      "start": 596.32,
+      "end": 602.88,
+      "text": "try to create a data injection pipeline"
+    },
+    {
+      "start": 600.399,
+      "end": 606.959,
+      "text": "over here"
+    },
+    {
+      "start": 602.88,
+      "end": 608.56,
+      "text": "data injection pipeline over here now"
+    },
+    {
+      "start": 606.959,
+      "end": 611.5999999999999,
+      "text": "what will be this data injection"
+    },
+    {
+      "start": 608.56,
+      "end": 615.4399999999999,
+      "text": "pipeline so let's say I have my data"
+    },
+    {
+      "start": 611.6,
+      "end": 617.6,
+      "text": "from this data we will do some kind of"
+    },
+    {
+      "start": 615.44,
+      "end": 620.8000000000001,
+      "text": "parsing"
+    },
+    {
+      "start": 617.6,
+      "end": 623.279,
+      "text": "and from this parsing we will do"
+    },
+    {
+      "start": 620.8,
+      "end": 626.4799999999999,
+      "text": "embeddings"
+    },
+    {
+      "start": 623.279,
+      "end": 628.8,
+      "text": "embeddings and then we finally store it"
+    },
+    {
+      "start": 626.48,
+      "end": 630.399,
+      "text": "into the vector store. Okay. Now"
+    },
+    {
+      "start": 628.8,
+      "end": 633.5999999999999,
+      "text": "whenever we talk about this specific"
+    },
+    {
+      "start": 630.399,
+      "end": 636.48,
+      "text": "data this data can be in any format. It"
+    },
+    {
+      "start": 633.6,
+      "end": 639.839,
+      "text": "can be in PDF format. It can be in HTML"
+    },
+    {
+      "start": 636.48,
+      "end": 642.8000000000001,
+      "text": "format. It can be in Excel format. It"
+    },
+    {
+      "start": 639.839,
+      "end": 645.6800000000001,
+      "text": "can be even in SQL database format or"
+    },
+    {
+      "start": 642.8,
+      "end": 648.399,
+      "text": "unstructured format any format. So what"
+    },
+    {
+      "start": 645.68,
+      "end": 650.88,
+      "text": "we do initially we take this data and we"
+    },
+    {
+      "start": 648.399,
+      "end": 655.2,
+      "text": "do data parsing. Now here data parsing"
+    },
+    {
+      "start": 650.88,
+      "end": 658.399,
+      "text": "is a very important step. I think if you"
+    },
+    {
+      "start": 655.2,
+      "end": 660.6400000000001,
+      "text": "crack this step then developing a rag"
+    },
+    {
+      "start": 658.399,
+      "end": 663.519,
+      "text": "application becomes very easy. Data"
+    },
+    {
+      "start": 660.64,
+      "end": 666.0,
+      "text": "parsing is all about how do you read the"
+    },
+    {
+      "start": 663.519,
+      "end": 669.6,
+      "text": "unstructured data or the structured data"
+    },
+    {
+      "start": 666.0,
+      "end": 673.2,
+      "text": "that is present inside this and how do"
+    },
+    {
+      "start": 669.6,
+      "end": 675.2,
+      "text": "you chunk this data right how do you"
+    },
+    {
+      "start": 673.2,
+      "end": 677.9200000000001,
+      "text": "chunk how do you divide this specific"
+    },
+    {
+      "start": 675.2,
+      "end": 679.36,
+      "text": "data into chunks chunking is very"
+    },
+    {
+      "start": 677.92,
+      "end": 682.959,
+      "text": "important because you need to save this"
+    },
+    {
+      "start": 679.36,
+      "end": 684.48,
+      "text": "data inside some kind of vector store"
+    },
+    {
+      "start": 682.959,
+      "end": 687.1999999999999,
+      "text": "this is nothing but vector store or"
+    },
+    {
+      "start": 684.48,
+      "end": 689.6,
+      "text": "vector DB okay now vector store and"
+    },
+    {
+      "start": 687.2,
+      "end": 692.399,
+      "text": "vector DB is nothing but it will"
+    },
+    {
+      "start": 689.6,
+      "end": 695.839,
+      "text": "actually help you to save vectors inside"
+    },
+    {
+      "start": 692.399,
+      "end": 697.839,
+      "text": "this. Okay. So once you do the chunking"
+    },
+    {
+      "start": 695.839,
+      "end": 699.9200000000001,
+      "text": "after doing the chunking you pass it to"
+    },
+    {
+      "start": 697.839,
+      "end": 702.8000000000001,
+      "text": "the embedding models. Now here in the"
+    },
+    {
+      "start": 699.92,
+      "end": 705.68,
+      "text": "embedding models you basically convert"
+    },
+    {
+      "start": 702.8,
+      "end": 708.7199999999999,
+      "text": "text to vectors."
+    },
+    {
+      "start": 705.68,
+      "end": 712.56,
+      "text": "Okay. Vectors is just like a numerical"
+    },
+    {
+      "start": 708.72,
+      "end": 715.839,
+      "text": "representation for text so that you will"
+    },
+    {
+      "start": 712.56,
+      "end": 718.079,
+      "text": "be able to apply algorithms like"
+    },
+    {
+      "start": 715.839,
+      "end": 720.5600000000001,
+      "text": "similarity search cosine similarity"
+    },
+    {
+      "start": 718.079,
+      "end": 723.1999999999999,
+      "text": "techniques that are already available"
+    },
+    {
+      "start": 720.56,
+      "end": 725.04,
+      "text": "right wherein similar kind of results"
+    },
+    {
+      "start": 723.2,
+      "end": 726.48,
+      "text": "based on a specific query can be"
+    },
+    {
+      "start": 725.04,
+      "end": 729.5999999999999,
+      "text": "retrieved from this particular"
+    },
+    {
+      "start": 726.48,
+      "end": 732.0790000000001,
+      "text": "databases. Okay. So here whenever I talk"
+    },
+    {
+      "start": 729.6,
+      "end": 734.399,
+      "text": "about vector DB this is my vector DB or"
+    },
+    {
+      "start": 732.079,
+      "end": 737.04,
+      "text": "vector store here we are storing"
+    },
+    {
+      "start": 734.399,
+      "end": 739.6,
+      "text": "embeddings. Okay. And this embeddings"
+    },
+    {
+      "start": 737.04,
+      "end": 741.8389999999999,
+      "text": "will get applied to every chunks."
+    },
+    {
+      "start": 739.6,
+      "end": 745.279,
+      "text": "Embeddings is nothing but we basically"
+    },
+    {
+      "start": 741.839,
+      "end": 746.32,
+      "text": "use we convert text into vectors. Here"
+    },
+    {
+      "start": 745.279,
+      "end": 748.48,
+      "text": "we can use different different"
+    },
+    {
+      "start": 746.32,
+      "end": 750.5600000000001,
+      "text": "embeddings like Google Germany embedding"
+    },
+    {
+      "start": 748.48,
+      "end": 751.839,
+      "text": "models. We can use open AI embedding"
+    },
+    {
+      "start": 750.56,
+      "end": 753.5999999999999,
+      "text": "models. We can use hugging phase"
+    },
+    {
+      "start": 751.839,
+      "end": 756.32,
+      "text": "embedding models and each and every"
+    },
+    {
+      "start": 753.6,
+      "end": 758.399,
+      "text": "embedding models exist with different"
+    },
+    {
+      "start": 756.32,
+      "end": 760.0,
+      "text": "different cost and there are also"
+    },
+    {
+      "start": 758.399,
+      "end": 761.36,
+      "text": "open-source embedding models which will"
+    },
+    {
+      "start": 760.0,
+      "end": 764.16,
+      "text": "actually help you to convert the text"
+    },
+    {
+      "start": 761.36,
+      "end": 765.839,
+      "text": "into vectors. Now this is one specific"
+    },
+    {
+      "start": 764.16,
+      "end": 768.079,
+      "text": "pipeline which we call it as data"
+    },
+    {
+      "start": 765.839,
+      "end": 770.0,
+      "text": "injection pipeline. At the end of the"
+    },
+    {
+      "start": 768.079,
+      "end": 773.04,
+      "text": "data injection pipeline you are able to"
+    },
+    {
+      "start": 770.0,
+      "end": 778.079,
+      "text": "store the text into vectors inside your"
+    },
+    {
+      "start": 773.04,
+      "end": 779.76,
+      "text": "vector DB. Now how rag is different from"
+    },
+    {
+      "start": 778.079,
+      "end": 781.1999999999999,
+      "text": "the previous one. Right? So initially"
+    },
+    {
+      "start": 779.76,
+      "end": 783.4399999999999,
+      "text": "you had this data injection pipeline"
+    },
+    {
+      "start": 781.2,
+      "end": 787.2,
+      "text": "where you are converting all your data"
+    },
+    {
+      "start": 783.44,
+      "end": 788.72,
+      "text": "into vectors. Right? And this data is"
+    },
+    {
+      "start": 787.2,
+      "end": 791.44,
+      "text": "specifically for this particular"
+    },
+    {
+      "start": 788.72,
+      "end": 794.5600000000001,
+      "text": "startup. And now I have created a"
+    },
+    {
+      "start": 791.44,
+      "end": 797.2790000000001,
+      "text": "knowledge base. So this is my knowledge"
+    },
+    {
+      "start": 794.56,
+      "end": 798.88,
+      "text": "base. External knowledge base or"
+    },
+    {
+      "start": 797.279,
+      "end": 801.04,
+      "text": "internal knowledge base whatever"
+    },
+    {
+      "start": 798.88,
+      "end": 803.36,
+      "text": "knowledge base I have and this knowledge"
+    },
+    {
+      "start": 801.04,
+      "end": 805.12,
+      "text": "base does not exist with this LLM."
+    },
+    {
+      "start": 803.36,
+      "end": 807.44,
+      "text": "Right? Yes, some amount of information"
+    },
+    {
+      "start": 805.12,
+      "end": 811.6,
+      "text": "may be available but not the entire"
+    },
+    {
+      "start": 807.44,
+      "end": 813.36,
+      "text": "part. Now see the definition. It is a"
+    },
+    {
+      "start": 811.6,
+      "end": 816.0790000000001,
+      "text": "process of optimizing the output of a"
+    },
+    {
+      "start": 813.36,
+      "end": 818.16,
+      "text": "large language so that it references an"
+    },
+    {
+      "start": 816.079,
+      "end": 820.6389999999999,
+      "text": "authorative knowledge base outside of"
+    },
+    {
+      "start": 818.16,
+      "end": 823.6,
+      "text": "this training data. Now what will happen"
+    },
+    {
+      "start": 820.639,
+      "end": 825.839,
+      "text": "when user gives a query? Now this query"
+    },
+    {
+      "start": 823.6,
+      "end": 829.279,
+      "text": "instead of directly going to the LLM"
+    },
+    {
+      "start": 825.839,
+      "end": 831.7600000000001,
+      "text": "will go to this vector database right"
+    },
+    {
+      "start": 829.279,
+      "end": 834.639,
+      "text": "and before going here also we need to go"
+    },
+    {
+      "start": 831.76,
+      "end": 838.72,
+      "text": "ahead and apply embedding right because"
+    },
+    {
+      "start": 834.639,
+      "end": 841.36,
+      "text": "this query will be converted into"
+    },
+    {
+      "start": 838.72,
+      "end": 844.0790000000001,
+      "text": "vectors right why we need to convert"
+    },
+    {
+      "start": 841.36,
+      "end": 846.16,
+      "text": "into vectors so that when we are hitting"
+    },
+    {
+      "start": 844.079,
+      "end": 849.3599999999999,
+      "text": "this query to the vector DB this"
+    },
+    {
+      "start": 846.16,
+      "end": 853.6,
+      "text": "similarity search is basically applied"
+    },
+    {
+      "start": 849.36,
+      "end": 855.92,
+      "text": "and based on this we get"
+    },
+    {
+      "start": 853.6,
+      "end": 857.519,
+      "text": "some kind of"
+    },
+    {
+      "start": 855.92,
+      "end": 859.519,
+      "text": "context"
+    },
+    {
+      "start": 857.519,
+      "end": 862.5600000000001,
+      "text": "we get some information from the vector"
+    },
+    {
+      "start": 859.519,
+      "end": 865.12,
+      "text": "DB and now whatever query I'm asking"
+    },
+    {
+      "start": 862.56,
+      "end": 869.04,
+      "text": "okay if I ask hey what is the leaf"
+    },
+    {
+      "start": 865.12,
+      "end": 871.12,
+      "text": "policy of my company"
+    },
+    {
+      "start": 869.04,
+      "end": 873.68,
+      "text": "right now what will happen first of all"
+    },
+    {
+      "start": 871.12,
+      "end": 875.44,
+      "text": "it'll go to the vector store it will"
+    },
+    {
+      "start": 873.68,
+      "end": 877.199,
+      "text": "gather all the related information that"
+    },
+    {
+      "start": 875.44,
+      "end": 879.12,
+      "text": "is available over here and that"
+    },
+    {
+      "start": 877.199,
+      "end": 882.16,
+      "text": "information when it is sending it to the"
+    },
+    {
+      "start": 879.12,
+      "end": 885.519,
+      "text": "llm it is called as context Now we use"
+    },
+    {
+      "start": 882.16,
+      "end": 888.399,
+      "text": "this context along with we go ahead and"
+    },
+    {
+      "start": 885.519,
+      "end": 890.8,
+      "text": "write a specific prompt."
+    },
+    {
+      "start": 888.399,
+      "end": 893.44,
+      "text": "Now this prompt is an instruction to the"
+    },
+    {
+      "start": 890.8,
+      "end": 896.0,
+      "text": "LLM and it says that you can use this"
+    },
+    {
+      "start": 893.44,
+      "end": 899.9200000000001,
+      "text": "context to answer the question and"
+    },
+    {
+      "start": 896.0,
+      "end": 902.24,
+      "text": "finally you get a output."
+    },
+    {
+      "start": 899.92,
+      "end": 904.3199999999999,
+      "text": "This is the entire pipeline. This"
+    },
+    {
+      "start": 902.24,
+      "end": 907.36,
+      "text": "pipeline is basically called as"
+    },
+    {
+      "start": 904.32,
+      "end": 910.0,
+      "text": "retrieval pipeline."
+    },
+    {
+      "start": 907.36,
+      "end": 914.72,
+      "text": "Retrieval pipeline. And this is a very"
+    },
+    {
+      "start": 910.0,
+      "end": 916.32,
+      "text": "good example of a traditional rag."
+    },
+    {
+      "start": 914.72,
+      "end": 918.639,
+      "text": "Now you may be thinking kish what about"
+    },
+    {
+      "start": 916.32,
+      "end": 920.8000000000001,
+      "text": "other types of rag. Don't worry thumb"
+    },
+    {
+      "start": 918.639,
+      "end": 922.9590000000001,
+      "text": "don't worry I will explain it completely"
+    },
+    {
+      "start": 920.8,
+      "end": 924.639,
+      "text": "from basic to advanc with implementation"
+    },
+    {
+      "start": 922.959,
+      "end": 926.4799999999999,
+      "text": "each and everything because later on"
+    },
+    {
+      "start": 924.639,
+      "end": 928.16,
+      "text": "we'll be discussing about agentic rags."
+    },
+    {
+      "start": 926.48,
+      "end": 930.8000000000001,
+      "text": "We'll be discussing how agentic rags"
+    },
+    {
+      "start": 928.16,
+      "end": 932.8,
+      "text": "actually work each and everything. But I"
+    },
+    {
+      "start": 930.8,
+      "end": 935.92,
+      "text": "hope you got an idea with respect to"
+    },
+    {
+      "start": 932.8,
+      "end": 937.519,
+      "text": "this. Now here you will even not be"
+    },
+    {
+      "start": 935.92,
+      "end": 939.04,
+      "text": "seeing this particular problem like"
+    },
+    {
+      "start": 937.519,
+      "end": 940.8,
+      "text": "you'll not completely remove"
+    },
+    {
+      "start": 939.04,
+      "end": 942.639,
+      "text": "hallucination but some amount of"
+    },
+    {
+      "start": 940.8,
+      "end": 944.7199999999999,
+      "text": "hallucination if any queries that is"
+    },
+    {
+      "start": 942.639,
+      "end": 946.8,
+      "text": "asked related to the data that is"
+    },
+    {
+      "start": 944.72,
+      "end": 949.759,
+      "text": "present in the vector DB I will"
+    },
+    {
+      "start": 946.8,
+      "end": 953.279,
+      "text": "definitely get some kind of context and"
+    },
+    {
+      "start": 949.759,
+      "end": 954.72,
+      "text": "my LLM will give me the output as let's"
+    },
+    {
+      "start": 953.279,
+      "end": 957.92,
+      "text": "say that if that data is not present"
+    },
+    {
+      "start": 954.72,
+      "end": 960.48,
+      "text": "over here then LLM can hallucinate right"
+    },
+    {
+      "start": 957.92,
+      "end": 962.079,
+      "text": "but here we are doing this see one best"
+    },
+    {
+      "start": 960.48,
+      "end": 964.639,
+      "text": "example that you can do is that you can"
+    },
+    {
+      "start": 962.079,
+      "end": 967.04,
+      "text": "use perfectly Perplexity."
+    },
+    {
+      "start": 964.639,
+      "end": 971.36,
+      "text": "Perplexity is nothing but it is based on"
+    },
+    {
+      "start": 967.04,
+      "end": 975.4399999999999,
+      "text": "rag. It is completely developed based on"
+    },
+    {
+      "start": 971.36,
+      "end": 976.88,
+      "text": "rag applications. Okay. Rag it is it is"
+    },
+    {
+      "start": 975.44,
+      "end": 980.0,
+      "text": "a kind of a rag application. In"
+    },
+    {
+      "start": 976.88,
+      "end": 983.759,
+      "text": "perplexity you have connected to various"
+    },
+    {
+      "start": 980.0,
+      "end": 986.72,
+      "text": "retrievers. You are connected to tools."
+    },
+    {
+      "start": 983.759,
+      "end": 988.88,
+      "text": "You are connected to web search"
+    },
+    {
+      "start": 986.72,
+      "end": 991.279,
+      "text": "right and then it is summarizing the"
+    },
+    {
+      "start": 988.88,
+      "end": 993.92,
+      "text": "output and giving by the LLM. Right? and"
+    },
+    {
+      "start": 991.279,
+      "end": 997.04,
+      "text": "it also uses various LLMs itself. I'm"
+    },
+    {
+      "start": 993.92,
+      "end": 999.279,
+      "text": "also planning to mostly start a startup"
+    },
+    {
+      "start": 997.04,
+      "end": 1001.4399999999999,
+      "text": "soon enough within a couple of weeks I"
+    },
+    {
+      "start": 999.279,
+      "end": 1004.32,
+      "text": "guess and the kind of application that"
+    },
+    {
+      "start": 1001.44,
+      "end": 1006.72,
+      "text": "I'm developing is a rag application only"
+    },
+    {
+      "start": 1004.32,
+      "end": 1008.8000000000001,
+      "text": "and it solves a very good problem for a"
+    },
+    {
+      "start": 1006.72,
+      "end": 1011.1990000000001,
+      "text": "developer. Okay. So that is the reason"
+    },
+    {
+      "start": 1008.8,
+      "end": 1013.279,
+      "text": "I'm not being able to upload a lot of"
+    },
+    {
+      "start": 1011.199,
+      "end": 1015.519,
+      "text": "videos because I'm pretty much involved"
+    },
+    {
+      "start": 1013.279,
+      "end": 1017.6,
+      "text": "in those startups and working and"
+    },
+    {
+      "start": 1015.519,
+      "end": 1020.5600000000001,
+      "text": "developing a product that India can"
+    },
+    {
+      "start": 1017.6,
+      "end": 1022.24,
+      "text": "definitely remember. Okay. And this is"
+    },
+    {
+      "start": 1020.56,
+      "end": 1024.24,
+      "text": "how"
+    },
+    {
+      "start": 1022.24,
+      "end": 1026.799,
+      "text": "you know this is this is this is how"
+    },
+    {
+      "start": 1024.24,
+      "end": 1030.72,
+      "text": "things are and you can basically see how"
+    },
+    {
+      "start": 1026.799,
+      "end": 1031.839,
+      "text": "good uh you know the pipeline actually"
+    },
+    {
+      "start": 1030.72,
+      "end": 1033.3600000000001,
+      "text": "works and this is basically a"
+    },
+    {
+      "start": 1031.839,
+      "end": 1034.72,
+      "text": "traditional rack. Now you may be"
+    },
+    {
+      "start": 1033.36,
+      "end": 1036.0,
+      "text": "thinking what all things we'll be"
+    },
+    {
+      "start": 1034.72,
+      "end": 1038.079,
+      "text": "discussing. Okay fine we have discussed"
+    },
+    {
+      "start": 1036.0,
+      "end": 1040.0,
+      "text": "about a traditional rack in the future"
+    },
+    {
+      "start": 1038.079,
+      "end": 1042.1599999999999,
+      "text": "classes what coding we'll be doing. Okay"
+    },
+    {
+      "start": 1040.0,
+      "end": 1044.559,
+      "text": "so let's go ahead and talk about it. As"
+    },
+    {
+      "start": 1042.16,
+      "end": 1046.799,
+      "text": "I said two important pipelines we'll go"
+    },
+    {
+      "start": 1044.559,
+      "end": 1048.319,
+      "text": "ahead and create one is a data injection"
+    },
+    {
+      "start": 1046.799,
+      "end": 1051.76,
+      "text": "pipeline and one is a retrieval"
+    },
+    {
+      "start": 1048.319,
+      "end": 1054.48,
+      "text": "pipeline. Okay. Now in the data"
+    },
+    {
+      "start": 1051.76,
+      "end": 1056.0,
+      "text": "injection pipeline you'll be see seeing"
+    },
+    {
+      "start": 1054.48,
+      "end": 1058.0,
+      "text": "that we will be performing data"
+    },
+    {
+      "start": 1056.0,
+      "end": 1060.559,
+      "text": "injection. Along with the data injection"
+    },
+    {
+      "start": 1058.0,
+      "end": 1063.52,
+      "text": "we will go ahead and do data parsing."
+    },
+    {
+      "start": 1060.559,
+      "end": 1065.84,
+      "text": "Then we'll perform embeddings. Then uh"
+    },
+    {
+      "start": 1063.52,
+      "end": 1068.559,
+      "text": "we will store everything into the vector"
+    },
+    {
+      "start": 1065.84,
+      "end": 1071.4399999999998,
+      "text": "store. Then we will create a retriever"
+    },
+    {
+      "start": 1068.559,
+      "end": 1073.44,
+      "text": "for this and whenever a user ask any"
+    },
+    {
+      "start": 1071.44,
+      "end": 1076.0800000000002,
+      "text": "queries it will be able to give the"
+    },
+    {
+      "start": 1073.44,
+      "end": 1078.88,
+      "text": "context to the LLM and then finally we"
+    },
+    {
+      "start": 1076.08,
+      "end": 1082.559,
+      "text": "will be generating the output. So here"
+    },
+    {
+      "start": 1078.88,
+      "end": 1084.4,
+      "text": "this is retrieval this is auggmentation"
+    },
+    {
+      "start": 1082.559,
+      "end": 1086.32,
+      "text": "right this is augumentation over here"
+    },
+    {
+      "start": 1084.4,
+      "end": 1088.3200000000002,
+      "text": "augmentation basically means what you're"
+    },
+    {
+      "start": 1086.32,
+      "end": 1090.6399999999999,
+      "text": "giving a context to the LLM along with"
+    },
+    {
+      "start": 1088.32,
+      "end": 1092.0,
+      "text": "the prompt to generate the output right"
+    },
+    {
+      "start": 1090.64,
+      "end": 1093.6000000000001,
+      "text": "so this is basically called as"
+    },
+    {
+      "start": 1092.0,
+      "end": 1095.44,
+      "text": "augmentation and finally you're"
+    },
+    {
+      "start": 1093.6,
+      "end": 1097.84,
+      "text": "generating the output right which is"
+    },
+    {
+      "start": 1095.44,
+      "end": 1100.799,
+      "text": "nothing but generation so here you are"
+    },
+    {
+      "start": 1097.84,
+      "end": 1102.3999999999999,
+      "text": "basically generating"
+    },
+    {
+      "start": 1100.799,
+      "end": 1104.32,
+      "text": "now"
+    },
+    {
+      "start": 1102.4,
+      "end": 1106.64,
+      "text": "in the next session how we are going to"
+    },
+    {
+      "start": 1104.32,
+      "end": 1110.48,
+      "text": "implement it first of all I will show"
+    },
+    {
+      "start": 1106.64,
+      "end": 1113.2,
+      "text": "you how to perform these two steps in a"
+    },
+    {
+      "start": 1110.48,
+      "end": 1115.039,
+      "text": "very efficient way. Okay, sorry not"
+    },
+    {
+      "start": 1113.2,
+      "end": 1117.76,
+      "text": "these two steps. I will show you how we"
+    },
+    {
+      "start": 1115.039,
+      "end": 1120.0,
+      "text": "can perform these all steps, right? Data"
+    },
+    {
+      "start": 1117.76,
+      "end": 1121.6,
+      "text": "injection, data parsing and embedding."
+    },
+    {
+      "start": 1120.0,
+      "end": 1125.12,
+      "text": "Here we are going to consider different"
+    },
+    {
+      "start": 1121.6,
+      "end": 1128.48,
+      "text": "different files like PDF, HTML."
+    },
+    {
+      "start": 1125.12,
+      "end": 1130.6399999999999,
+      "text": "Okay. Um PDF, HTML, you can consider"
+    },
+    {
+      "start": 1128.48,
+      "end": 1132.96,
+      "text": "Excel, you can consider SQL database,"
+    },
+    {
+      "start": 1130.64,
+      "end": 1135.2800000000002,
+      "text": "you can consider any kind of files. Then"
+    },
+    {
+      "start": 1132.96,
+      "end": 1137.039,
+      "text": "we'll do document parsing and we will"
+    },
+    {
+      "start": 1135.28,
+      "end": 1139.52,
+      "text": "try to convert this into document. So"
+    },
+    {
+      "start": 1137.039,
+      "end": 1142.559,
+      "text": "document is an amazing data structure"
+    },
+    {
+      "start": 1139.52,
+      "end": 1144.8799999999999,
+      "text": "which you can basically use it and you"
+    },
+    {
+      "start": 1142.559,
+      "end": 1146.6399999999999,
+      "text": "can even parse this do the chunking and"
+    },
+    {
+      "start": 1144.88,
+      "end": 1148.48,
+      "text": "store it in the vector embeddings sorry"
+    },
+    {
+      "start": 1146.64,
+      "end": 1150.72,
+      "text": "vector store. Then we'll perform"
+    },
+    {
+      "start": 1148.48,
+      "end": 1152.32,
+      "text": "embeddings. Here we will use both open"
+    },
+    {
+      "start": 1150.72,
+      "end": 1154.4,
+      "text": "source"
+    },
+    {
+      "start": 1152.32,
+      "end": 1156.96,
+      "text": "and we are going to use paid embeddings"
+    },
+    {
+      "start": 1154.4,
+      "end": 1159.52,
+      "text": "for the same. Okay. And then finally we"
+    },
+    {
+      "start": 1156.96,
+      "end": 1161.3600000000001,
+      "text": "go to the vector store. Then based on a"
+    },
+    {
+      "start": 1159.52,
+      "end": 1163.12,
+      "text": "user query, how do we go ahead and apply"
+    },
+    {
+      "start": 1161.36,
+      "end": 1165.6,
+      "text": "the same embeddings we are going to see"
+    },
+    {
+      "start": 1163.12,
+      "end": 1168.2399999999998,
+      "text": "that okay and then finally we'll be"
+    },
+    {
+      "start": 1165.6,
+      "end": 1170.32,
+      "text": "developing this. So mostly I really want"
+    },
+    {
+      "start": 1168.24,
+      "end": 1172.32,
+      "text": "I'm I'm focusing more on making bigger"
+    },
+    {
+      "start": 1170.32,
+      "end": 1174.48,
+      "text": "videos so that you don't just follow a"
+    },
+    {
+      "start": 1172.32,
+      "end": 1177.28,
+      "text": "playlist. Okay. I want to basically"
+    },
+    {
+      "start": 1174.48,
+      "end": 1180.24,
+      "text": "cover a lot of stuff in one video so"
+    },
+    {
+      "start": 1177.28,
+      "end": 1181.9189999999999,
+      "text": "that uh you should also be able to"
+    },
+    {
+      "start": 1180.24,
+      "end": 1184.48,
+      "text": "efficiently cover it instead of covering"
+    },
+    {
+      "start": 1181.919,
+      "end": 1185.76,
+      "text": "50 different videos. Right now when we"
+    },
+    {
+      "start": 1184.48,
+      "end": 1187.6,
+      "text": "are doing data injection and data"
+    },
+    {
+      "start": 1185.76,
+      "end": 1189.76,
+      "text": "parsing right there are various"
+    },
+    {
+      "start": 1187.6,
+      "end": 1191.36,
+      "text": "techniques see we are going to see about"
+    },
+    {
+      "start": 1189.76,
+      "end": 1192.8799999999999,
+      "text": "optimization"
+    },
+    {
+      "start": 1191.36,
+      "end": 1195.6789999999999,
+      "text": "we are going to see about various"
+    },
+    {
+      "start": 1192.88,
+      "end": 1197.44,
+      "text": "chunking strategies context engineering"
+    },
+    {
+      "start": 1195.679,
+      "end": 1199.52,
+      "text": "these all kind of topics will be coming"
+    },
+    {
+      "start": 1197.44,
+      "end": 1202.4,
+      "text": "up when we talk about data parsing you"
+    },
+    {
+      "start": 1199.52,
+      "end": 1204.0,
+      "text": "know u what is semantic chunker you know"
+    },
+    {
+      "start": 1202.4,
+      "end": 1206.24,
+      "text": "how do we go ahead and do the chunking"
+    },
+    {
+      "start": 1204.0,
+      "end": 1208.0,
+      "text": "in those strategies and all everything"
+    },
+    {
+      "start": 1206.24,
+      "end": 1210.0,
+      "text": "we'll try to discuss as we go ahead but"
+    },
+    {
+      "start": 1208.0,
+      "end": 1213.039,
+      "text": "I hope you got a very super cool idea"
+    },
+    {
+      "start": 1210.0,
+      "end": 1215.6,
+      "text": "about what exactly is rag um Yeah, this"
+    },
+    {
+      "start": 1213.039,
+      "end": 1218.48,
+      "text": "was it from my side. Uh please make sure"
+    },
+    {
+      "start": 1215.6,
+      "end": 1220.9599999999998,
+      "text": "to like the video, share with all your"
+    },
+    {
+      "start": 1218.48,
+      "end": 1222.48,
+      "text": "friends and uh soon within couple of"
+    },
+    {
+      "start": 1220.96,
+      "end": 1224.799,
+      "text": "days we'll come up with the next video"
+    },
+    {
+      "start": 1222.48,
+      "end": 1226.88,
+      "text": "wherein we will be starting the coding"
+    },
+    {
+      "start": 1224.799,
+      "end": 1229.12,
+      "text": "tutorial and we'll start building this"
+    },
+    {
+      "start": 1226.88,
+      "end": 1231.2,
+      "text": "data injection pipeline and I will try"
+    },
+    {
+      "start": 1229.12,
+      "end": 1233.039,
+      "text": "to build it in the form of a project uh"
+    },
+    {
+      "start": 1231.2,
+      "end": 1235.2,
+      "text": "that it'll be looking good for you so"
+    },
+    {
+      "start": 1233.039,
+      "end": 1237.12,
+      "text": "that you'll also be able to completely"
+    },
+    {
+      "start": 1235.2,
+      "end": 1238.32,
+      "text": "implement things right. So yes, this was"
+    },
+    {
+      "start": 1237.12,
+      "end": 1240.0,
+      "text": "it from my side. I'll see you in the"
+    },
+    {
+      "start": 1238.32,
+      "end": 1240.0,
+      "text": "next video. Thank you. Take care."
+    }
+  ]
+}

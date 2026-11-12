@@ -1,0 +1,1588 @@
+{
+  "video_id": "Bda73OPFGss",
+  "title": "Agent Tools vs. Agent Skills (and the Security Risks Many Leaders Miss)",
+  "channel": "COMMAND",
+  "trainer": "COMMAND",
+  "topic": "Agents",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 647.0,
+  "segments": [
+    {
+      "start": 4.28,
+      "end": 9.120000000000001,
+      "text": "Removing all of the hype, an AI agent is"
+    },
+    {
+      "start": 6.64,
+      "end": 11.64,
+      "text": "just an LLM running in a loop."
+    },
+    {
+      "start": 9.12,
+      "end": 14.639999999999999,
+      "text": "Here's how an agent loop works."
+    },
+    {
+      "start": 11.64,
+      "end": 16.240000000000002,
+      "text": "So, you'll prompt an LLM, and if the LLM"
+    },
+    {
+      "start": 14.64,
+      "end": 18.240000000000002,
+      "text": "can respond to the prompt in a single"
+    },
+    {
+      "start": 16.24,
+      "end": 19.799999999999997,
+      "text": "step, it does."
+    },
+    {
+      "start": 18.24,
+      "end": 22.56,
+      "text": "But if the LLM cannot respond in a"
+    },
+    {
+      "start": 19.8,
+      "end": 24.12,
+      "text": "single step, what it does is emit an"
+    },
+    {
+      "start": 22.56,
+      "end": 25.68,
+      "text": "action to take."
+    },
+    {
+      "start": 24.12,
+      "end": 27.68,
+      "text": "So, if you test with this message that"
+    },
+    {
+      "start": 25.68,
+      "end": 29.8,
+      "text": "reads, \"Say hi and then think about a"
+    },
+    {
+      "start": 27.68,
+      "end": 32.56,
+      "text": "funny joke, but don't tell me it.\" Let's"
+    },
+    {
+      "start": 29.8,
+      "end": 32.56,
+      "text": "see what happens."
+    },
+    {
+      "start": 34.32,
+      "end": 37.08,
+      "text": "Right, you can see it thought of a joke,"
+    },
+    {
+      "start": 35.64,
+      "end": 38.52,
+      "text": "but didn't say it."
+    },
+    {
+      "start": 37.08,
+      "end": 40.36,
+      "text": "And here we can see there were tool"
+    },
+    {
+      "start": 38.52,
+      "end": 41.56,
+      "text": "calls involved."
+    },
+    {
+      "start": 40.36,
+      "end": 44.0,
+      "text": "So, if we inspect the tool calls"
+    },
+    {
+      "start": 41.56,
+      "end": 45.32,
+      "text": "associated with this reason and act"
+    },
+    {
+      "start": 44.0,
+      "end": 48.0,
+      "text": "agent,"
+    },
+    {
+      "start": 45.32,
+      "end": 49.96,
+      "text": "you can see it emitted a think action"
+    },
+    {
+      "start": 48.0,
+      "end": 53.2,
+      "text": "with this information attached to it,"
+    },
+    {
+      "start": 49.96,
+      "end": 55.0,
+      "text": "right? And you can see the joke in here."
+    },
+    {
+      "start": 53.2,
+      "end": 56.2,
+      "text": "Tools are what we give to AI agents so"
+    },
+    {
+      "start": 55.0,
+      "end": 58.24,
+      "text": "they can perform the actions they"
+    },
+    {
+      "start": 56.2,
+      "end": 60.160000000000004,
+      "text": "generate. You'll see tools come in a few"
+    },
+    {
+      "start": 58.24,
+      "end": 61.64,
+      "text": "different forms in the wild. Sometimes"
+    },
+    {
+      "start": 60.16,
+      "end": 63.48,
+      "text": "you'll see them called connectors,"
+    },
+    {
+      "start": 61.64,
+      "end": 64.44,
+      "text": "sometimes you'll see them called MCP,"
+    },
+    {
+      "start": 63.48,
+      "end": 66.75999999999999,
+      "text": "sometimes you'll see them called"
+    },
+    {
+      "start": 64.44,
+      "end": 68.36,
+      "text": "plugins, all the same stuff."
+    },
+    {
+      "start": 66.76,
+      "end": 70.04,
+      "text": "If an LLM is like the brain of an AI"
+    },
+    {
+      "start": 68.36,
+      "end": 71.28,
+      "text": "agent, then the tools are like its"
+    },
+    {
+      "start": 70.04,
+      "end": 73.52000000000001,
+      "text": "hands."
+    },
+    {
+      "start": 71.28,
+      "end": 75.36,
+      "text": "It's through tools that your AI agents"
+    },
+    {
+      "start": 73.52,
+      "end": 77.08,
+      "text": "will gain access to your company systems"
+    },
+    {
+      "start": 75.36,
+      "end": 78.6,
+      "text": "and your company data."
+    },
+    {
+      "start": 77.08,
+      "end": 80.67999999999999,
+      "text": "If you give an AI agent a tool for"
+    },
+    {
+      "start": 78.6,
+      "end": 82.72,
+      "text": "accessing an email inbox, it'll be able"
+    },
+    {
+      "start": 80.68,
+      "end": 84.12,
+      "text": "to draft emails for you."
+    },
+    {
+      "start": 82.72,
+      "end": 85.72,
+      "text": "If you give an AI agent access to your"
+    },
+    {
+      "start": 84.12,
+      "end": 87.4,
+      "text": "social media accounts, it'll be able to"
+    },
+    {
+      "start": 85.72,
+      "end": 88.72,
+      "text": "post content for you."
+    },
+    {
+      "start": 87.4,
+      "end": 90.36,
+      "text": "If you give an AI agent access to a"
+    },
+    {
+      "start": 88.72,
+      "end": 91.84,
+      "text": "company database, it'll be able to run"
+    },
+    {
+      "start": 90.36,
+      "end": 93.64,
+      "text": "reports for you."
+    },
+    {
+      "start": 91.84,
+      "end": 95.92,
+      "text": "To peel the onion open for just a few"
+    },
+    {
+      "start": 93.64,
+      "end": 98.0,
+      "text": "seconds, all a tool is, when you boil it"
+    },
+    {
+      "start": 95.92,
+      "end": 100.48,
+      "text": "down, is a list of instructions"
+    },
+    {
+      "start": 98.0,
+      "end": 101.84,
+      "text": "specified in computer code."
+    },
+    {
+      "start": 100.48,
+      "end": 103.16000000000001,
+      "text": "Here, for example, is that think tool we"
+    },
+    {
+      "start": 101.84,
+      "end": 104.48,
+      "text": "were just demonstrating. You can see it"
+    },
+    {
+      "start": 103.16,
+      "end": 106.64,
+      "text": "enables an AI agent to send it a"
+    },
+    {
+      "start": 104.48,
+      "end": 108.32000000000001,
+      "text": "thought, and it says to the agent back,"
+    },
+    {
+      "start": 106.64,
+      "end": 110.0,
+      "text": "\"Okay, your thought was recorded.\" Super"
+    },
+    {
+      "start": 108.32,
+      "end": 111.63999999999999,
+      "text": "simple. But you can make your tools as"
+    },
+    {
+      "start": 110.0,
+      "end": 113.24,
+      "text": "complicated as you would like. Here, for"
+    },
+    {
+      "start": 111.64,
+      "end": 114.96,
+      "text": "example, is a tool for reading data from"
+    },
+    {
+      "start": 113.24,
+      "end": 116.52,
+      "text": "a database."
+    },
+    {
+      "start": 114.96,
+      "end": 118.36,
+      "text": "You You the gist, right?"
+    },
+    {
+      "start": 116.52,
+      "end": 120.11999999999999,
+      "text": "Enough nerdy stuff. You can configure"
+    },
+    {
+      "start": 118.36,
+      "end": 122.72,
+      "text": "the tools you give to your AI agents to"
+    },
+    {
+      "start": 120.12,
+      "end": 125.2,
+      "text": "require approval before they are used,"
+    },
+    {
+      "start": 122.72,
+      "end": 127.36,
+      "text": "also known as human in the loop."
+    },
+    {
+      "start": 125.2,
+      "end": 129.399,
+      "text": "For example, here's an AI agent that has"
+    },
+    {
+      "start": 127.36,
+      "end": 130.479,
+      "text": "a tool for sending emails."
+    },
+    {
+      "start": 129.399,
+      "end": 133.28,
+      "text": "And you can see I've configured this"
+    },
+    {
+      "start": 130.479,
+      "end": 136.36,
+      "text": "tool to require human approval."
+    },
+    {
+      "start": 133.28,
+      "end": 138.92,
+      "text": "So, if I send a prompt like"
+    },
+    {
+      "start": 136.36,
+      "end": 140.76000000000002,
+      "text": "\"Send an email to ceo@company.com"
+    },
+    {
+      "start": 138.92,
+      "end": 142.64,
+      "text": "saying see you at 11:00 on Thursday to"
+    },
+    {
+      "start": 140.76,
+      "end": 145.16,
+      "text": "set up your AI OS.\" Let's see what"
+    },
+    {
+      "start": 142.64,
+      "end": 145.16,
+      "text": "happens."
+    },
+    {
+      "start": 146.16,
+      "end": 149.64,
+      "text": "Here you can see approval is requested,"
+    },
+    {
+      "start": 148.04,
+      "end": 151.4,
+      "text": "right?"
+    },
+    {
+      "start": 149.64,
+      "end": 152.83999999999997,
+      "text": "And if I approve this request, the email"
+    },
+    {
+      "start": 151.4,
+      "end": 154.6,
+      "text": "will get sent."
+    },
+    {
+      "start": 152.84,
+      "end": 155.72,
+      "text": "And if I reject it,"
+    },
+    {
+      "start": 154.6,
+      "end": 157.32,
+      "text": "you can see it's been rejected. It"
+    },
+    {
+      "start": 155.72,
+      "end": 158.76,
+      "text": "doesn't execute."
+    },
+    {
+      "start": 157.32,
+      "end": 160.68,
+      "text": "The amount of approvals your AI agents"
+    },
+    {
+      "start": 158.76,
+      "end": 161.84,
+      "text": "require directly affects how autonomous"
+    },
+    {
+      "start": 160.68,
+      "end": 163.36,
+      "text": "they are."
+    },
+    {
+      "start": 161.84,
+      "end": 165.36,
+      "text": "If you set up approval on every tool"
+    },
+    {
+      "start": 163.36,
+      "end": 166.60000000000002,
+      "text": "call, you build a system bottlenecked by"
+    },
+    {
+      "start": 165.36,
+      "end": 167.959,
+      "text": "how fast a human can review the"
+    },
+    {
+      "start": 166.6,
+      "end": 169.48,
+      "text": "requests."
+    },
+    {
+      "start": 167.959,
+      "end": 171.56,
+      "text": "If you set up approval on some tool"
+    },
+    {
+      "start": 169.48,
+      "end": 172.79999999999998,
+      "text": "calls, your agents can work mostly on"
+    },
+    {
+      "start": 171.56,
+      "end": 174.68,
+      "text": "their own, but will check in with you"
+    },
+    {
+      "start": 172.8,
+      "end": 177.0,
+      "text": "before doing anything sensitive, like"
+    },
+    {
+      "start": 174.68,
+      "end": 178.92000000000002,
+      "text": "sending emails or moving money."
+    },
+    {
+      "start": 177.0,
+      "end": 180.519,
+      "text": "And if you remove all approval, you've"
+    },
+    {
+      "start": 178.92,
+      "end": 182.11999999999998,
+      "text": "created an autonomous system that can"
+    },
+    {
+      "start": 180.519,
+      "end": 184.239,
+      "text": "work without you."
+    },
+    {
+      "start": 182.12,
+      "end": 185.959,
+      "text": "Your role as a business leader is to set"
+    },
+    {
+      "start": 184.239,
+      "end": 187.88,
+      "text": "that autonomy dial for the agents"
+    },
+    {
+      "start": 185.959,
+      "end": 189.64000000000001,
+      "text": "running in your business."
+    },
+    {
+      "start": 187.88,
+      "end": 191.32,
+      "text": "Start with human in the loop and add"
+    },
+    {
+      "start": 189.64,
+      "end": 194.27999999999997,
+      "text": "more autonomy later as you understand"
+    },
+    {
+      "start": 191.32,
+      "end": 194.28,
+      "text": "where it makes sense."
+    },
+    {
+      "start": 194.92,
+      "end": 199.23899999999998,
+      "text": "To give you an analogy, if you grant"
+    },
+    {
+      "start": 197.08,
+      "end": 201.0,
+      "text": "someone access to your kitchen, that"
+    },
+    {
+      "start": 199.239,
+      "end": 203.0,
+      "text": "alone is not going to enable them to"
+    },
+    {
+      "start": 201.0,
+      "end": 204.48,
+      "text": "make your favorite dish."
+    },
+    {
+      "start": 203.0,
+      "end": 206.72,
+      "text": "But if you grant them access to your"
+    },
+    {
+      "start": 204.48,
+      "end": 208.64,
+      "text": "kitchen and give them the recipe for how"
+    },
+    {
+      "start": 206.72,
+      "end": 210.88,
+      "text": "to make your favorite dish, they can"
+    },
+    {
+      "start": 208.64,
+      "end": 213.6,
+      "text": "follow that recipe and deliver a meal to"
+    },
+    {
+      "start": 210.88,
+      "end": 215.64,
+      "text": "you exactly as you would like it."
+    },
+    {
+      "start": 213.6,
+      "end": 218.6,
+      "text": "In this analogy, the kitchen represents"
+    },
+    {
+      "start": 215.64,
+      "end": 219.88,
+      "text": "tools and the recipe represents agent"
+    },
+    {
+      "start": 218.6,
+      "end": 221.88,
+      "text": "skills."
+    },
+    {
+      "start": 219.88,
+      "end": 223.76,
+      "text": "In the context of business, the tools"
+    },
+    {
+      "start": 221.88,
+      "end": 224.84,
+      "text": "will be the systems used to power the"
+    },
+    {
+      "start": 223.76,
+      "end": 226.32,
+      "text": "business"
+    },
+    {
+      "start": 224.84,
+      "end": 228.76,
+      "text": "and the skills will be the details of"
+    },
+    {
+      "start": 226.32,
+      "end": 230.32,
+      "text": "how you and or your team use those"
+    },
+    {
+      "start": 228.76,
+      "end": 232.51999999999998,
+      "text": "systems."
+    },
+    {
+      "start": 230.32,
+      "end": 235.56,
+      "text": "By documenting company processes and"
+    },
+    {
+      "start": 232.52,
+      "end": 237.52,
+      "text": "tasks as agent skills, you can automate"
+    },
+    {
+      "start": 235.56,
+      "end": 238.96,
+      "text": "them by simply handing those skills to"
+    },
+    {
+      "start": 237.52,
+      "end": 241.4,
+      "text": "AI agents."
+    },
+    {
+      "start": 238.96,
+      "end": 244.08,
+      "text": "What does an agent skill look like?"
+    },
+    {
+      "start": 241.4,
+      "end": 247.959,
+      "text": "Well, an agent skill is simply a folder"
+    },
+    {
+      "start": 244.08,
+      "end": 250.08,
+      "text": "with one file inside called skill.md."
+    },
+    {
+      "start": 247.959,
+      "end": 252.12,
+      "text": "Inside that skill.md file, you'll find"
+    },
+    {
+      "start": 250.08,
+      "end": 254.8,
+      "text": "the skill's name,"
+    },
+    {
+      "start": 252.12,
+      "end": 256.799,
+      "text": "a description of when it should be used,"
+    },
+    {
+      "start": 254.8,
+      "end": 258.16,
+      "text": "and the body of the skill."
+    },
+    {
+      "start": 256.799,
+      "end": 260.03999999999996,
+      "text": "The body of the skill is where all of"
+    },
+    {
+      "start": 258.16,
+      "end": 262.6,
+      "text": "the detail regarding the skill can be"
+    },
+    {
+      "start": 260.04,
+      "end": 264.8,
+      "text": "specified in natural language."
+    },
+    {
+      "start": 262.6,
+      "end": 266.44,
+      "text": "Here we have two agent skills, a simple"
+    },
+    {
+      "start": 264.8,
+      "end": 268.919,
+      "text": "one on the left and a slightly more"
+    },
+    {
+      "start": 266.44,
+      "end": 270.52,
+      "text": "advanced one on the right."
+    },
+    {
+      "start": 268.919,
+      "end": 272.71999999999997,
+      "text": "Agent skills allow you to include"
+    },
+    {
+      "start": 270.52,
+      "end": 274.52,
+      "text": "additional files in the skill folder to"
+    },
+    {
+      "start": 272.72,
+      "end": 276.12,
+      "text": "give your AI agents additional context"
+    },
+    {
+      "start": 274.52,
+      "end": 278.71999999999997,
+      "text": "of how the skill works,"
+    },
+    {
+      "start": 276.12,
+      "end": 280.24,
+      "text": "but those additional files are optional."
+    },
+    {
+      "start": 278.72,
+      "end": 282.32000000000005,
+      "text": "As a bare minimum though, you have to"
+    },
+    {
+      "start": 280.24,
+      "end": 285.32,
+      "text": "include the skill.md."
+    },
+    {
+      "start": 282.32,
+      "end": 286.84,
+      "text": "And FYI, the name of the skill"
+    },
+    {
+      "start": 285.32,
+      "end": 288.48,
+      "text": "has to match the name of the skill"
+    },
+    {
+      "start": 286.84,
+      "end": 290.47999999999996,
+      "text": "folder."
+    },
+    {
+      "start": 288.48,
+      "end": 292.36,
+      "text": "How are skills created?"
+    },
+    {
+      "start": 290.48,
+      "end": 294.24,
+      "text": "Most AI platforms come with built-in"
+    },
+    {
+      "start": 292.36,
+      "end": 295.72,
+      "text": "support for prompting skills into"
+    },
+    {
+      "start": 294.24,
+      "end": 296.8,
+      "text": "existence."
+    },
+    {
+      "start": 295.72,
+      "end": 298.88000000000005,
+      "text": "I'm going to show you this on the"
+    },
+    {
+      "start": 296.8,
+      "end": 301.88,
+      "text": "Command Labs platform, but it works the"
+    },
+    {
+      "start": 298.88,
+      "end": 304.96,
+      "text": "exact same way on platforms like Claude,"
+    },
+    {
+      "start": 301.88,
+      "end": 306.56,
+      "text": "ChatGPT, Gemini, etc."
+    },
+    {
+      "start": 304.96,
+      "end": 308.84,
+      "text": "On the skills page, you can see we have"
+    },
+    {
+      "start": 306.56,
+      "end": 310.32,
+      "text": "a skill called skill creator. It's a"
+    },
+    {
+      "start": 308.84,
+      "end": 311.56,
+      "text": "skill that enables us to make more"
+    },
+    {
+      "start": 310.32,
+      "end": 312.8,
+      "text": "skills."
+    },
+    {
+      "start": 311.56,
+      "end": 316.28000000000003,
+      "text": "This is exactly what you'll see on"
+    },
+    {
+      "start": 312.8,
+      "end": 319.0,
+      "text": "Claude, ChatGPT, Gemini."
+    },
+    {
+      "start": 316.28,
+      "end": 320.52,
+      "text": "If we now go to one of our agents"
+    },
+    {
+      "start": 319.0,
+      "end": 323.6,
+      "text": "and attach"
+    },
+    {
+      "start": 320.52,
+      "end": 325.71999999999997,
+      "text": "this skill to it, we can use that agent"
+    },
+    {
+      "start": 323.6,
+      "end": 327.44,
+      "text": "to make skills, right?"
+    },
+    {
+      "start": 325.72,
+      "end": 329.28000000000003,
+      "text": "I've already added it, so now we can"
+    },
+    {
+      "start": 327.44,
+      "end": 332.32,
+      "text": "come over"
+    },
+    {
+      "start": 329.28,
+      "end": 335.23999999999995,
+      "text": "and interact with this agent, and here's"
+    },
+    {
+      "start": 332.32,
+      "end": 336.52,
+      "text": "the prompt I'm going to provide."
+    },
+    {
+      "start": 335.24,
+      "end": 338.52,
+      "text": "Create a skill that holds the brand"
+    },
+    {
+      "start": 336.52,
+      "end": 340.52,
+      "text": "guidelines for Command Labs. The skill"
+    },
+    {
+      "start": 338.52,
+      "end": 342.28,
+      "text": "should be called Command Labs brand"
+    },
+    {
+      "start": 340.52,
+      "end": 344.84,
+      "text": "guidelines. Here are the brand"
+    },
+    {
+      "start": 342.28,
+      "end": 346.52,
+      "text": "guidelines."
+    },
+    {
+      "start": 344.84,
+      "end": 347.67999999999995,
+      "text": "And I'll make this bigger so you can"
+    },
+    {
+      "start": 346.52,
+      "end": 350.24,
+      "text": "read it."
+    },
+    {
+      "start": 347.68,
+      "end": 353.40000000000003,
+      "text": "And I will paste in"
+    },
+    {
+      "start": 350.24,
+      "end": 356.08,
+      "text": "the Command Labs brand guidelines like"
+    },
+    {
+      "start": 353.4,
+      "end": 356.08,
+      "text": "so."
+    },
+    {
+      "start": 357.04,
+      "end": 360.96000000000004,
+      "text": "All right, we got the colors, the fonts,"
+    },
+    {
+      "start": 359.32,
+      "end": 362.59999999999997,
+      "text": "etc."
+    },
+    {
+      "start": 360.96,
+      "end": 366.03999999999996,
+      "text": "Send this off."
+    },
+    {
+      "start": 362.6,
+      "end": 366.04,
+      "text": "And let's see what happens."
+    },
+    {
+      "start": 367.24,
+      "end": 370.12,
+      "text": "It's asking us to confirm if this looks"
+    },
+    {
+      "start": 368.84,
+      "end": 371.79999999999995,
+      "text": "good."
+    },
+    {
+      "start": 370.12,
+      "end": 373.2,
+      "text": "I'm going to say"
+    },
+    {
+      "start": 371.8,
+      "end": 376.04,
+      "text": "yes."
+    },
+    {
+      "start": 373.2,
+      "end": 376.03999999999996,
+      "text": "Save it."
+    },
+    {
+      "start": 377.24,
+      "end": 380.68,
+      "text": "All right, so it saved the skill, and if"
+    },
+    {
+      "start": 378.76,
+      "end": 383.24,
+      "text": "we come back to the skills page, you can"
+    },
+    {
+      "start": 380.68,
+      "end": 385.72,
+      "text": "see we have two skills now, right?"
+    },
+    {
+      "start": 383.24,
+      "end": 388.919,
+      "text": "This is the one we just created."
+    },
+    {
+      "start": 385.72,
+      "end": 390.24,
+      "text": "How is a skill used? To use a skill, you"
+    },
+    {
+      "start": 388.919,
+      "end": 391.44,
+      "text": "have to attach it to the agent that"
+    },
+    {
+      "start": 390.24,
+      "end": 393.24,
+      "text": "you're using."
+    },
+    {
+      "start": 391.44,
+      "end": 394.919,
+      "text": "So, if I come over to the agents"
+    },
+    {
+      "start": 393.24,
+      "end": 397.2,
+      "text": "overview page, I can see all the agents"
+    },
+    {
+      "start": 394.919,
+      "end": 398.28,
+      "text": "that I have on this particular platform."
+    },
+    {
+      "start": 397.2,
+      "end": 400.0,
+      "text": "And we're going to demonstrate this with"
+    },
+    {
+      "start": 398.28,
+      "end": 402.28,
+      "text": "this one."
+    },
+    {
+      "start": 400.0,
+      "end": 404.88,
+      "text": "So, let me come to the agent config and"
+    },
+    {
+      "start": 402.28,
+      "end": 407.47999999999996,
+      "text": "attach that skill we just made, right?"
+    },
+    {
+      "start": 404.88,
+      "end": 408.88,
+      "text": "The Command Labs brand guidelines skill."
+    },
+    {
+      "start": 407.48,
+      "end": 411.36,
+      "text": "Let's attach it."
+    },
+    {
+      "start": 408.88,
+      "end": 412.8,
+      "text": "And save the agent config."
+    },
+    {
+      "start": 411.36,
+      "end": 414.6,
+      "text": "And now when we interact with this"
+    },
+    {
+      "start": 412.8,
+      "end": 416.12,
+      "text": "agent, all we have to do is prompt in a"
+    },
+    {
+      "start": 414.6,
+      "end": 417.48,
+      "text": "way where the content of the prompt"
+    },
+    {
+      "start": 416.12,
+      "end": 418.8,
+      "text": "aligns with the description of the"
+    },
+    {
+      "start": 417.48,
+      "end": 422.16,
+      "text": "skill."
+    },
+    {
+      "start": 418.8,
+      "end": 424.8,
+      "text": "So, if I send a prompt like this,"
+    },
+    {
+      "start": 422.16,
+      "end": 427.16,
+      "text": "which reads draft an email to be sent to"
+    },
+    {
+      "start": 424.8,
+      "end": 429.52000000000004,
+      "text": "ceo@company.com"
+    },
+    {
+      "start": 427.16,
+      "end": 430.91900000000004,
+      "text": "with Command Labs branded emojis saying"
+    },
+    {
+      "start": 429.52,
+      "end": 434.68,
+      "text": "looking forward to meeting, blah blah"
+    },
+    {
+      "start": 430.919,
+      "end": 434.68,
+      "text": "blah. Let's see what happens."
+    },
+    {
+      "start": 439.16,
+      "end": 443.08000000000004,
+      "text": "So, if you look at the tool calls, you"
+    },
+    {
+      "start": 440.919,
+      "end": 446.28,
+      "text": "can see we're loading in the skill, and"
+    },
+    {
+      "start": 443.08,
+      "end": 446.28,
+      "text": "let's see what it comes up with."
+    },
+    {
+      "start": 446.44,
+      "end": 450.6,
+      "text": "So, you can see it generated an email"
+    },
+    {
+      "start": 448.68,
+      "end": 451.52,
+      "text": "that has Command Labs branding, right?"
+    },
+    {
+      "start": 450.6,
+      "end": 454.04,
+      "text": "It's the same branding that you're"
+    },
+    {
+      "start": 451.52,
+      "end": 456.15999999999997,
+      "text": "seeing in this user interface."
+    },
+    {
+      "start": 454.04,
+      "end": 458.44,
+      "text": "If for some reason your skill is not"
+    },
+    {
+      "start": 456.16,
+      "end": 461.20000000000005,
+      "text": "getting loaded into context, you can"
+    },
+    {
+      "start": 458.44,
+      "end": 462.2,
+      "text": "explicitly bring it in by typing a slash"
+    },
+    {
+      "start": 461.2,
+      "end": 464.08,
+      "text": "command."
+    },
+    {
+      "start": 462.2,
+      "end": 467.28,
+      "text": "you'll type forward slash"
+    },
+    {
+      "start": 464.08,
+      "end": 468.76,
+      "text": "and the name of the skill"
+    },
+    {
+      "start": 467.28,
+      "end": 472.28,
+      "text": "you explicitly want to include in"
+    },
+    {
+      "start": 468.76,
+      "end": 472.28,
+      "text": "context, right?"
+    },
+    {
+      "start": 472.52,
+      "end": 477.28,
+      "text": "And there's no chances of it not being"
+    },
+    {
+      "start": 475.88,
+      "end": 478.48,
+      "text": "included if you do it via this"
+    },
+    {
+      "start": 477.28,
+      "end": 480.32,
+      "text": "technique."
+    },
+    {
+      "start": 478.48,
+      "end": 482.88,
+      "text": "So now you understand how to use skills."
+    },
+    {
+      "start": 480.32,
+      "end": 485.04,
+      "text": "One final note regarding skills,"
+    },
+    {
+      "start": 482.88,
+      "end": 488.28,
+      "text": "make sure you keep your company's skills"
+    },
+    {
+      "start": 485.04,
+      "end": 490.52000000000004,
+      "text": "private as they can document proprietary"
+    },
+    {
+      "start": 488.28,
+      "end": 492.84,
+      "text": "company processes."
+    },
+    {
+      "start": 490.52,
+      "end": 494.47999999999996,
+      "text": "Building skills will free up your people"
+    },
+    {
+      "start": 492.84,
+      "end": 496.79999999999995,
+      "text": "and turn operational knowledge in"
+    },
+    {
+      "start": 494.48,
+      "end": 498.40000000000003,
+      "text": "people's heads into a business asset."
+    },
+    {
+      "start": 496.8,
+      "end": 500.72,
+      "text": "They're very valuable. Make sure they're"
+    },
+    {
+      "start": 498.4,
+      "end": 502.52,
+      "text": "protected, make sure they're versioned,"
+    },
+    {
+      "start": 500.72,
+      "end": 504.96000000000004,
+      "text": "and make sure you monitor who has access"
+    },
+    {
+      "start": 502.52,
+      "end": 504.96,
+      "text": "to them."
+    },
+    {
+      "start": 505.6,
+      "end": 509.12,
+      "text": "Now let's talk about the three main"
+    },
+    {
+      "start": 507.12,
+      "end": 510.56,
+      "text": "cybersecurity concerns when it comes to"
+    },
+    {
+      "start": 509.12,
+      "end": 513.719,
+      "text": "AI agents."
+    },
+    {
+      "start": 510.56,
+      "end": 515.28,
+      "text": "Concern number one is prompt injection."
+    },
+    {
+      "start": 513.719,
+      "end": 517.9190000000001,
+      "text": "Prompt injection is when malicious"
+    },
+    {
+      "start": 515.28,
+      "end": 522.0,
+      "text": "instructions sneak into what your agents"
+    },
+    {
+      "start": 517.919,
+      "end": 524.16,
+      "text": "read via prompts, tools, and skills."
+    },
+    {
+      "start": 522.0,
+      "end": 526.52,
+      "text": "Regarding prompts, imagine your enemy"
+    },
+    {
+      "start": 524.16,
+      "end": 528.64,
+      "text": "prompting your AI agents to delete all"
+    },
+    {
+      "start": 526.52,
+      "end": 530.56,
+      "text": "company data. You can see how that could"
+    },
+    {
+      "start": 528.64,
+      "end": 532.92,
+      "text": "be a problem depending on the systems"
+    },
+    {
+      "start": 530.56,
+      "end": 535.1199999999999,
+      "text": "your AI agents have access to."
+    },
+    {
+      "start": 532.92,
+      "end": 538.0799999999999,
+      "text": "Regarding tools, any tool that reads"
+    },
+    {
+      "start": 535.12,
+      "end": 539.8,
+      "text": "data into context can potentially cause"
+    },
+    {
+      "start": 538.08,
+      "end": 541.88,
+      "text": "malicious instructions embedded inside"
+    },
+    {
+      "start": 539.8,
+      "end": 543.8,
+      "text": "of that data to be followed."
+    },
+    {
+      "start": 541.88,
+      "end": 546.4399999999999,
+      "text": "For example, if I were to prompt one of"
+    },
+    {
+      "start": 543.8,
+      "end": 548.4,
+      "text": "my AI agents to read a PDF and the text"
+    },
+    {
+      "start": 546.44,
+      "end": 549.7600000000001,
+      "text": "inside of that PDF reads, \"Delete all"
+    },
+    {
+      "start": 548.4,
+      "end": 550.6,
+      "text": "company data,\""
+    },
+    {
+      "start": 549.76,
+      "end": 552.2,
+      "text": "you can see how that could be"
+    },
+    {
+      "start": 550.6,
+      "end": 554.24,
+      "text": "problematic, too."
+    },
+    {
+      "start": 552.2,
+      "end": 555.839,
+      "text": "And as for agent skills, err on the side"
+    },
+    {
+      "start": 554.24,
+      "end": 558.2,
+      "text": "of writing your own."
+    },
+    {
+      "start": 555.839,
+      "end": 559.9200000000001,
+      "text": "Do not give unaudited skills to your AI"
+    },
+    {
+      "start": 558.2,
+      "end": 561.8000000000001,
+      "text": "agents as they might also contain"
+    },
+    {
+      "start": 559.92,
+      "end": 564.3199999999999,
+      "text": "malicious instructions."
+    },
+    {
+      "start": 561.8,
+      "end": 566.9599999999999,
+      "text": "Concern number two is tool sprawl."
+    },
+    {
+      "start": 564.32,
+      "end": 568.48,
+      "text": "More tools sounds better on the surface,"
+    },
+    {
+      "start": 566.96,
+      "end": 570.8000000000001,
+      "text": "but more tools means that more things"
+    },
+    {
+      "start": 568.48,
+      "end": 573.12,
+      "text": "can go wrong, especially if guardrails"
+    },
+    {
+      "start": 570.8,
+      "end": 575.4399999999999,
+      "text": "have been removed from those tools."
+    },
+    {
+      "start": 573.12,
+      "end": 577.92,
+      "text": "As a rule of thumb, give your AI agents"
+    },
+    {
+      "start": 575.44,
+      "end": 580.24,
+      "text": "access to the tools they need and remove"
+    },
+    {
+      "start": 577.92,
+      "end": 582.76,
+      "text": "access once those tools are no longer"
+    },
+    {
+      "start": 580.24,
+      "end": 583.92,
+      "text": "needed. Concern number three is coding"
+    },
+    {
+      "start": 582.76,
+      "end": 585.36,
+      "text": "agents."
+    },
+    {
+      "start": 583.92,
+      "end": 588.4,
+      "text": "The most powerful tool you can give to"
+    },
+    {
+      "start": 585.36,
+      "end": 590.48,
+      "text": "an AI agent is the ability to code."
+    },
+    {
+      "start": 588.4,
+      "end": 592.12,
+      "text": "The ability to code is a tool that"
+    },
+    {
+      "start": 590.48,
+      "end": 593.84,
+      "text": "literally enables the AI agent to make"
+    },
+    {
+      "start": 592.12,
+      "end": 595.64,
+      "text": "more tools."
+    },
+    {
+      "start": 593.84,
+      "end": 596.6800000000001,
+      "text": "Prompting one of these AI coding agents"
+    },
+    {
+      "start": 595.64,
+      "end": 598.96,
+      "text": "to do something that it doesn't have the"
+    },
+    {
+      "start": 596.68,
+      "end": 600.68,
+      "text": "right tool for will cause it to build"
+    },
+    {
+      "start": 598.96,
+      "end": 601.96,
+      "text": "the tool dynamically in order to service"
+    },
+    {
+      "start": 600.68,
+      "end": 603.8,
+      "text": "the prompt."
+    },
+    {
+      "start": 601.96,
+      "end": 606.0,
+      "text": "On the surface, this seems magical, and"
+    },
+    {
+      "start": 603.8,
+      "end": 607.4,
+      "text": "it is, but it can cause these agents to"
+    },
+    {
+      "start": 606.0,
+      "end": 610.32,
+      "text": "do things that are unexpected and"
+    },
+    {
+      "start": 607.4,
+      "end": 612.36,
+      "text": "alarming. For example, in May 2026, a"
+    },
+    {
+      "start": 610.32,
+      "end": 613.84,
+      "text": "team at OpenAI was running tests on AI"
+    },
+    {
+      "start": 612.36,
+      "end": 615.8000000000001,
+      "text": "agents that were configured to use"
+    },
+    {
+      "start": 613.84,
+      "end": 617.2,
+      "text": "unreleased LLMs,"
+    },
+    {
+      "start": 615.8,
+      "end": 618.9599999999999,
+      "text": "and some of these agents escaped the"
+    },
+    {
+      "start": 617.2,
+      "end": 620.32,
+      "text": "test environment by executing a series"
+    },
+    {
+      "start": 618.96,
+      "end": 622.36,
+      "text": "of hacks over the course of several"
+    },
+    {
+      "start": 620.32,
+      "end": 624.32,
+      "text": "weeks that led to multiple systems"
+    },
+    {
+      "start": 622.36,
+      "end": 625.96,
+      "text": "within OpenAI, as well as external"
+    },
+    {
+      "start": 624.32,
+      "end": 627.4000000000001,
+      "text": "systems owned by Hugging Face, being"
+    },
+    {
+      "start": 625.96,
+      "end": 629.0400000000001,
+      "text": "compromised."
+    },
+    {
+      "start": 627.4,
+      "end": 631.4399999999999,
+      "text": "This case study, referred to as the"
+    },
+    {
+      "start": 629.04,
+      "end": 633.1999999999999,
+      "text": "OpenAI Hugging Face incident, shows how"
+    },
+    {
+      "start": 631.44,
+      "end": 634.6800000000001,
+      "text": "coding agents can escape the control of"
+    },
+    {
+      "start": 633.2,
+      "end": 636.6400000000001,
+      "text": "even the biggest and brightest AI"
+    },
+    {
+      "start": 634.68,
+      "end": 637.9599999999999,
+      "text": "companies. Do you agree with this list,"
+    },
+    {
+      "start": 636.64,
+      "end": 640.08,
+      "text": "or you think other concerns should have"
+    },
+    {
+      "start": 637.96,
+      "end": 641.64,
+      "text": "been on it? Leave a comment saying which"
+    },
+    {
+      "start": 640.08,
+      "end": 644.1600000000001,
+      "text": "AI agent cybersecurity concerns I"
+    },
+    {
+      "start": 641.64,
+      "end": 644.16,
+      "text": "missed."
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+[
+  {
+    "id": "b8386790091c04d08a0762fee0d68a1a76fb868e5ad24060818687b7f62abdc8",
+    "text": "Hey everyone, welcome to LangChain Dev High Boot Camp. Till now, we have seen our first AI program with the LangChain and free AI API services. Then we had seen LangChain roles and messages. There after we had seen LangChain prompts and the template. Then we had seen LangChain chains and the pipe operator. And it is time to go ahead with the structured output. So this is structured output is really very important. Once we move ahead with this particular lesson, then you will understand its importance. But before that, let me tell you where we are currently in our boot camp. So this is what we have already covered till now. You will notice this is something which we have already covered. And we have also covered this one in our previous lesson. And this is what we are going to cover in this particular lesson. All right. Now, let me tell you exactly why you need this structured output. Suppose that you are designing one sentiment analysis sentiment analysis model or a system, let's say. All right. So you are designing this particular system. In this system, what happen? You provide user review here for your product or for your services. Then this particular system is designed in a such a way that it is going to give you the sentiment of",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 0.0,
+      "end_seconds": 94.92,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "138f7a40857e571bd4f9cf2ca0e7b59d00388a9324eadb00993a4b4eca5b64fd",
+    "text": "In this system, what happen? You provide user review here for your product or for your services. Then this particular system is designed in a such a way that it is going to give you the sentiment of a user or of the users. Okay. Cool. Suppose that you have got a positive sentiment, and then output is coming something like this. Where your model is telling that review is moderately positive. There are some concern about the negative review as well. For example, delay was negative, although the product quality was good. That is why it is positive and then finally customer says that the customer will buy it again. So, if you read all these visually, then it is fine. But, suppose that if you have a millions of the review, then in that case reading everything is not possible. Then you need the assistant which can analyze everything. For example, how many positive reviews are there? How many negative reviews are there? What are the percentage? Basically, you cannot do the statistics on this particular text data. So, ideally what happened with the large language model? Large language models are designed to generate the text data. Now, this text data can be something like this, like a running text data like you are seeing currently here. Or this text data could be like",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 76.32,
+      "end_seconds": 170.0,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=76s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3e046f3e1be97605f9de28656ad7c8b6b1ed376ed112b356376f557ed76874bd",
+    "text": "language model? Large language models are designed to generate the text data. Now, this text data can be something like this, like a running text data like you are seeing currently here. Or this text data could be like dictionary or the JSON as well. So, that is why we need output something like this. So, this output which you are currently seeing, this is known as a structured output. Why it is known as a structured output? Because its output is structured in a particular manner so that you can do the analysis. For example, here this review score which you are seeing here, this is class. I'll tell you later how to create this class. So, this is your review class which you have defined, let's say. And then inside that class you have defined these fields. Basically, whatever input reviews are going to come to your system, then those reviews are going to be classified in these classes only. So, those classes I mean, in these fields of this particular class. So, what are those fields? You have a field like rating and then the positive and the region. That's all. No matter what kind of review comes in here, all those reviews are going to be classified with only these three fields. If you have a system like this one, then",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 153.56,
+      "end_seconds": 240.4,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=153s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "431fef924cc701d8d9405694608671e826f5d40d285f0c9099c35189e54e083c",
+    "text": "the positive and the region. That's all. No matter what kind of review comes in here, all those reviews are going to be classified with only these three fields. If you have a system like this one, then you can use the pandas data frame or you can use, you know, the generic Python analysis method to analyze all these. So, this is how it is going to work. All right, cool. All right, now let's go ahead and see how this particular class is designed. So, this is known as the data model. All right? Because it is stores our data, that is why it is known as a data model. And this data model is designed using the Pydantic model. All right. So, the Pydantic is a Python library that is used for the creating the structured output. All right, basically it is kind of the data model where we can define what kind of input fields or output field we need to have with our data. So, here we define as a class, first of all, and then this is going to be our object, let's say the review score, and then we are extending it with the base model. Again, this is the Pydantic base model. Then there we are defining here three We are defining here uh three fields.",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 225.4,
+      "end_seconds": 308.44,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=225s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "966a999c434fb0596d0f8b1af59fda47c404de8133ae0012860f39b43207a6e4",
+    "text": "object, let's say the review score, and then we are extending it with the base model. Again, this is the Pydantic base model. Then there we are defining here three We are defining here uh three fields. Currently, it seems like we have only two fields here. The previously we had also seen the reason field as well. All right. So, let's say these three fields are there. So, field name comes first, thereafter the type of field comes here. So, the rating is going to be the integer. And then what this field you see here, this is going to tell us that what how basically how our LLM is going to calculate this, basically. All right? So, how our LLM is going to calculate this particular rating. So, it is going to calculate like if rating is a terrible, then give one rating. If it is excellent, then give five rating. Similarly, if rating is classified as a positive, then this is going to be the boolean here. I mean, this particular field is going to be the boolean, so it can be either true or it can be false here. Then again here, this description inside this field says that how this positive or basically how true and false of this positive need to be decided. Thereafter, let's say if you have a",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 292.919,
+      "end_seconds": 369.8,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=292s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4007292a936e95bfd2be0cc214e0972597855ad383672c1cbbad890d0a2a0544",
+    "text": "either true or it can be false here. Then again here, this description inside this field says that how this positive or basically how true and false of this positive need to be decided. Thereafter, let's say if you have a reason, then this reason would be here the STR type, and then inside the field you can say here with the description that why LLM thinks that it is positive or negative and why LLM gave a particular rating for a particular uh for a particular review. All right. So, finally, if you have your Pydantic data model something like this, then it is sent to your LLM something like this. So, finally it becomes actually the JSON. When it goes to the LLM, then it becomes the JSON. So, this JSON data goes inside the LLM actually. Now, let's go ahead and see how another feature in Pydantic data model works. That feature is known as literal. All right. So, this literal is going to make sure whenever you are doing a classification or a structured output, this literal is going to make sure that your LLM is going to give only one output or only one value out of these given value. For example, let's say if you are trying to classify category of a particular review or a particular complaint, then",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 354.08,
+      "end_seconds": 436.32,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=354s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "efc6e9ff02e7286c63fa42755f51ce0362df0022e1dd3c1d7a5bd03de6c21cfc",
+    "text": "your LLM is going to give only one output or only one value out of these given value. For example, let's say if you are trying to classify category of a particular review or a particular complaint, then you just don't want to create a hundreds of the category. What you want here, you want a particular set of the category in which those reviews or complaints need to be classified. So, in that case, you can use the Pydantic literal to define that, \"Okay, here is the list of the category which I want to use and then classify our complaint and review in only those particular only in only those particular category. For example, here you have a billing, you have a delivery, you have a product and account. Otherwise, what happened here? So, sometimes your LLM can give you the category billing, then billing department, money problem, payment and finance. Ideally, you will notice here all these four category which is coming here without providing literal is actually the problem of the billing itself. All right? So, you can avoid problem something like this if you use here the literal. So, in that case, what happened? You can provide a list there what kind of the category you want as a output, then your LLM is going to select",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 419.56,
+      "end_seconds": 504.36,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=419s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a0a12ee6d130ee6679c939257b458961b14920844410f91f6a680c33550ebd49",
+    "text": "something like this if you use here the literal. So, in that case, what happened? You can provide a list there what kind of the category you want as a output, then your LLM is going to select only one category out of all the selected or provided category. All right. Cool. Now, let's go ahead and see what is the basic problem with the review score which we had seen previously. All right? So, at that time in our review score, we had got rating and then we had got there uh I guess rating and then it was the reason as well. And another was another one was I don't know what was that. I guess the positive or the negative I guess it was. Okay. So, here it was the positive. Okay, cool. So, you have all these three. So, you have defined your data model to classify any complaint, any review in these three fields. But the problem happened when your review or the complaint is not falling in any of these category. For example, you cannot say this is a positive review or negative review. There is no way to telling this as a positive or review. And similarly, for this one, you don't have any way to tell that whether it is positive or negative review.",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 490.32,
+      "end_seconds": 579.8000000000001,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=490s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "89f2be2643f0abe162329fc80d2ce4e26fcb74c3f786850368d4c3ce1ccc3b8e",
+    "text": "or negative review. There is no way to telling this as a positive or review. And similarly, for this one, you don't have any way to tell that whether it is positive or negative review. But you have provided only options here true or false. And then here in the rating 1 to 5, then your LLM is bound to classify it in one of these categories. So, what our LLM is going to tell here for this particular problem statement, I don't know. But, ideally it might tell you positive and gives rating some two or three. I don't know exactly. But, overall you understand here the problem. If you don't provide any way to classify that this does not belong with the rating, then your LLM is always going to classify these kind of ratings in provided options here. I mean I mean in these fields only. So, what you can do here, you can actually fix this with adding one additional fields there. So, if you add just one additional field is a review here. All right. So, if you just add here one additional field here is it a review or not at all, right? So, if it is a review, then it is going to be true. If it is not a review at all,",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 564.44,
+      "end_seconds": 644.0,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=564s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b250c3f738103c7038af69aca147cda66df7f3aa7355239f715d9dbc479b02ee",
+    "text": "just add here one additional field here is it a review or not at all, right? So, if it is a review, then it is going to be true. If it is not a review at all, then it can be false. And if it is false, then you can ignore all these automatically. There is no issue in that case then. All right, everyone. Now, let's go ahead and get started with the coding part so that you can understand all the fundamentals which we have just discussed. So, before I get started with the coding part, let me just make sure you understand a few basic things. We are using here open router API key. This is something which I have shown in the first lesson so that you can make sure you get started with the free AI API services. I'll be using here a Neumotron 3.5 lightning model, which is released by the Nvidia. And this came just few days back. That was the August 11, 2026. So, this is really very advanced model. I'll be using this one. Okay, cool. Let's go ahead and come back here and then let me just show you here in one minute variable. So, this is open router API key and here is the LangSmith setup so that we can do our project",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 631.8,
+      "end_seconds": 705.4399999999999,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=631s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fa8f14835f68cd22ae7ca35f11102e72478687af6fc6875e9bd23fd436d6dc0f",
+    "text": "Okay, cool. Let's go ahead and come back here and then let me just show you here in one minute variable. So, this is open router API key and here is the LangSmith setup so that we can do our project tracing as well if it is needed at the LangSmith. All right, having said that, let's go ahead and get started with this. So, as usual, you know, we are going to first import the load. env and then we are going to import the chat open router. This one is going to use to load this environment variable. This one is going to use to connect with our LLM. And then finally, we are going to load our .env. So, once you run this cell, then it is going to give you true, that means our environment variable is loaded. And then finally, we are going to get here the model instance using chat open router. And we are using here NVIDIA NeMo Tron 3.5 lightning free model. Now, let's go ahead and try to understand why do we really need structured output? So, I'm going to show you this through the code itself. I have a very simple review like this, arrived 2 days late, but the quality is excellent, would buy again. And then I'm just going to simply call",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 692.32,
+      "end_seconds": 765.8,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=692s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6c30141db1440c70fa815bb7bc1687c00389de7ad4df3eef257be7fa974898c1",
+    "text": "going to show you this through the code itself. I have a very simple review like this, arrived 2 days late, but the quality is excellent, would buy again. And then I'm just going to simply call my model here, model.invoke, how positive is this review? And that's all I'm going to do here. So, this is my prompt and then this review gets added here and then finally with dot text, I'm going to get the output. So, this is the output. This is what I was talking earlier. So, in our slide, you had seen here how this structured output was, I mean, how the output was coming before the structured output. All right, so this is how we are getting here. We are getting the output in running text format. And if you have a millions of the review and you get all these text data, then there is no use of the LLM because anyway, you are getting text data out of the text data. So, you cannot do the analysis. For one and two review, it is perfectly fine. All right? And even our even after that, if you run it multiple time, you will be getting here varied output. Every time you are not going to get the consistent output. That is something which we had seen",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 751.72,
+      "end_seconds": 821.2,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=751s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "82f9034cb51edad44ad9d637cedf4535848d1a8cdb15f5e680599fc98fc2648f",
+    "text": "And even our even after that, if you run it multiple time, you will be getting here varied output. Every time you are not going to get the consistent output. That is something which we had seen previously when we were testing the temperature and we were seeing the variability of the LLM models. So, how to solve this problem? So, to solve this problem, we need to use here the Pydantic model like we had used previously here. I mean, during our presentation, I told you we need to use the Pydantic model like you are currently seeing here. So, we need to define here the Pydantic model or the data model something like this. Let's go ahead and check that. So, first of all, we need to import base model from the Pydantic and the field here. Okay? Then, we define a class here, review score. We are extending it with the base model. Because you are extending this base model, because of that, it automatically becomes the Pydantic base model. I mean, Pydantic model. So, you are going to have here the rating, you are going to have here a positive and the reason. So, these are the three fields which we are going to have here. Rating is going to be like this one. Basically, one means terrible",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 808.76,
+      "end_seconds": 878.96,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=808s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "61284bbb6c60c0d71a3459afa1f84fdce22c579bf6f7e57c750f84ce51217672",
+    "text": "rating, you are going to have here a positive and the reason. So, these are the three fields which we are going to have here. Rating is going to be like this one. Basically, one means terrible and five means excellent. Similarly, you are going to have for positive as well. It is going to have here the true if it is actually the true, otherwise, it is going to be false. All right? And then here is the reason, one short sentence why it has given a particular rating and why it has given a particular value for the positive field. All right? Excellent. Let's go ahead and do this. And thereafter, let's go ahead and ask here basically, let's go ahead and get our model as the structured output. This particular line is important. There after, we can ask our model for the classification. So, in this way, what happened here? We are attaching this particular Pydantic class with our model so that our model is aware here that whatever output our model is going to give us, that output need to be in this particular format only. All right. Before I move ahead, I wanted to show you here something. Now, if you check your bare model, I mean, model without the structured output, it look like something this. So, you have your",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 867.24,
+      "end_seconds": 940.52,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=867s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4ac34e99f1c236d76478e9b05882c64b10d2b2c0335e0ce9d051fbe7f787a7b6",
+    "text": "All right. Before I move ahead, I wanted to show you here something. Now, if you check your bare model, I mean, model without the structured output, it look like something this. So, you have your model something like this where you have a model name, Nvidia Nemo Tron, and you don't have anything related to your field here. I mean, with your Pydantic model. But here, you have the reader. Now, if I run this and then I check this reader. Now, inside this reader, you are going to have here the Pydantic tool parser. And do you notice this one? And do you recall anything? I'm sure you must recall this particular pipe operator is coming from the day four. This is where we learned how we create the LangChain chains or how we use the pipe operator. All right. So, we have our model. Once model gives its output, then that output is going inside the Pydantic model, and that Pydantic model is finally going to give us the structured output. All right. Do you see here? All right. Cool. And apart from that, one more thing you will notice here. Let me just show you here. So, here inside the tools, do you notice here there is basically, this Pydantic model which which is defined there, that got",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 928.32,
+      "end_seconds": 1006.0799999999999,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=928s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "68653cbb2f587f55761dffb0735b76e29d622df55a8d473dddac8129908ceb0f",
+    "text": "one more thing you will notice here. Let me just show you here. So, here inside the tools, do you notice here there is basically, this Pydantic model which which is defined there, that got attached as a tool with the model. So, that you can check it here. All right. So, here is the tool, and then here review score, and then description, parameters. All right. For all these parameters, you have descriptions and everything here basically. All right. All these are going to be passed there to the LLM. All right. Cool. Let's go ahead and try to get the output. So, this is the review, original review, and then we are invoking this reader. So, reader is a structured output actually, structured model with a structured output or like that you can say. And thereafter, let's go ahead and check the result. So, the result is coming now as the Pydantic model. You have a review score, rating is poor, this is integer, and here you have a true, and here is the reason. You see? Now, it doesn't matter how many times you run this, every time you are going to get the output something like this. Even if you change your input, even if you change your input, let's say if you change it to something else,",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 991.88,
+      "end_seconds": 1068.16,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=991s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "06597102937b857770e3d5978ae7b32371b5cebb977ce9101e04660bf5259ac8",
+    "text": "you run this, every time you are going to get the output something like this. Even if you change your input, even if you change your input, let's say if you change it to something else, right? I'm not going to buy your product. Let's say if you do it like that. Even after that, you will see you will get a review score and then the rating positive and the reason. Basically, by defining our data model with the Pydantic model, we make sure here that we get the output in only a particular format. That is what happening here. So, if you come back here and you check here LangSmith tracing on the LangSmith tracing, you can check how it is working. So, you have your enable sequence and then chat open router is there where Nvidia model is getting used, and then you can see here all the tokens which is getting used for this particular model. So, like you have 348 tokens with a structured output. Okay? I mean, with the structured input definition, and then finally total output you have 548. And then here you have a Pydantic tool parser. So, this Pydantic tool parser is making sure that you get the correct output finally. Okay? So, the final output is going to be like this one. You have a",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1056.28,
+      "end_seconds": 1139.92,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1056s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fbf5ccbe43c50a6ae9dee87696aea02f4161e27605b3650f740ac2a4c42ad734",
+    "text": "And then here you have a Pydantic tool parser. So, this Pydantic tool parser is making sure that you get the correct output finally. Okay? So, the final output is going to be like this one. You have a positive, you have a rating, and this one you will notice it is coming as the JSON or the dictionary format. Okay? Cool. Now, if you click on here, then you can see the input as well, how the input is coming. So, inside the input you have your user input, that is the question. I mean, that is the review. And then you have here the tool as well, that is the review score. All right? In review score, you have the description for each of these fields. You have a positive I mean, positive field, rating field, and the reason field. This particular thing is very important, okay? So, remember this one, required true. By default, everything is required true. That means your LLM is bound to give this particular field output. So, this is what I was talking here earlier in the slide. So, what happened if you give output something like this? I mean, input complaint or a review something like this, then your LLM is bound to give the value. Then your LLM will assign some",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1125.36,
+      "end_seconds": 1199.6399999999999,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1125s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f193b998eaefcaf43087b77dcf5d8348ac8fe75b5067e7b61bd7fe157812c1af",
+    "text": "So, what happened if you give output something like this? I mean, input complaint or a review something like this, then your LLM is bound to give the value. Then your LLM will assign some random value if there is no definite answer. So, that is what we are also going to see in this particular notebook. Don't worry about that. Okay. Now, let's go ahead and check how you can read these values with the result here. So, result look like as a Pydantic model, but you can use this as a dictionary as well. Like this, you can also read these. Okay? Cool. Now, if you want to convert it as the proper JSON model or the dictionary, then you can do it like this. result.model_dump, then it is going to convert it directly as the dictionary. As of now, this result is as a Pydantic data model, but now it has become here as a JSON or the dictionary data. Okay? Cool. Now, let's go ahead and see how we can make sure our our LLM is going to give you only a certain values for a particular field. For example, what we had seen here in this case. Okay? So, if we define the category and we don't tell our LLM that you need to give a category between",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1185.92,
+      "end_seconds": 1262.96,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1185s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fd173ff5285d20693e8a20e57796acac75ef21675d8d7a7d1c74d8637f18b868",
+    "text": "for a particular field. For example, what we had seen here in this case. Okay? So, if we define the category and we don't tell our LLM that you need to give a category between category uh you know, category using only these values, then your LLM can give so many, you know, the similar categories. So, to solve that problem, we can use there the literal in the Pydantic data model. So, how it is going to work? So, let's say I have here a ticket. Basically, let's say some complain uh some complain is coming. And as a customer service agent, I need to classify those in multiple tickets. Okay. Uh I mean, in multiple classes. So, how we define that? So, we can define a particular set of the category so that our LLM decides category based on these particular fields only. I mean, these fields only. Based on these fields only. So, you have here a literal like you have a delivery, you have a billing, you have a product account. So, your LLM is going to give the output out of these four categories only. Your LLM cannot go outside of these four category. Okay. So, every time it is going to give you the delivery, billing, product, or account only. Okay. Cool. And in the description, we",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1249.76,
+      "end_seconds": 1331.72,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1249s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a8e2240647109847ace12484af2c152cf694f3376b290c37748e39890d7925ca",
+    "text": "out of these four categories only. Your LLM cannot go outside of these four category. Okay. So, every time it is going to give you the delivery, billing, product, or account only. Okay. Cool. And in the description, we have given which team should handle this. Ideally, in the production, we give a better description so that we can define that what this delivery means, what this billing means, what this product means, what this account means. Another problem with this particular thing here, which I can uh give you as a homework, that let's say if something else is coming, some other problem. All right. Let's say not complain at all or something like that comes in. Then in that case, you cannot you cannot classify in this particular given category. So, it will automatically classify in some category, but that would be wrong. In that case, you can also add here others as well. So, you can add it like this one here. Others or something like that. Okay. Cool. Let's go ahead and move ahead here. And then we can define here how urgent particular complaint is there. For example, urgency. Whether urgency is low or urgency is medium or urgency is high. And then we can summarize that here, a customer problem under 12 words. All",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1314.84,
+      "end_seconds": 1390.16,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1314s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "54a6a40845ec373819e948099cae4ebcb3610a0e7aaed9d6fbb1457a15750240",
+    "text": "how urgent particular complaint is there. For example, urgency. Whether urgency is low or urgency is medium or urgency is high. And then we can summarize that here, a customer problem under 12 words. All right. Excellent. So, we have got our Pydantic class here. Let's go ahead and uh run our model. So, I get my model here, router, with the structured output. And inside that, this ticket is going to be there. So, this router is again a model, but this time this particular Pydantic data class is added with our original model. Okay. Cool. There after, we are going to give here a simple review or complaint, actually. I was charged twice for the same order, and nobody has replied for a week. Let's go ahead and run this, and then see what happens here. Ideally, this should go inside the billing, and urgency is high here. So, yes, category is billing, and urgency is high. Summary is here, duplicate charge for order, no response for a week. You see? This is literally awesome. All right. So, even if you give something, as I told you earlier, which does not belong to those classes, it will be actually bound to classify it between those classes. For example, let's say, do you sell chips, let's say. This does not",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1375.16,
+      "end_seconds": 1458.96,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1375s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "039db1b0773c60976dba953be17245b99f9e56b4b7bb931dafc593c348327b37",
+    "text": "something, as I told you earlier, which does not belong to those classes, it will be actually bound to classify it between those classes. For example, let's say, do you sell chips, let's say. This does not belong to any of these, actually. All right. Maybe the product it might belong, but let's go ahead and check here. All right. So, this is actually the general question. Ideally, it it it also does not belong to the product, but this is just a general question. Seems like we did not get any output. This is not correct. Let's go ahead and check it again. Ideally, we should have got some output. I'm I just want to check this with the LangSmith as well, so that I can understand that what was the output. So, output was null, basically. Okay. So, it was not able to classify it in any of the provided category. All right. So, although the ticket was cu- called here, even after that, it was not able to give us the correct output. Anyway, let's go ahead and check here. And here, the category is product, urgency is low. You see? So, again, ideally, it is not the product one. Okay? Even if you give something like this, let's say how how are you? Ideally, okay? How are you?",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1439.12,
+      "end_seconds": 1526.28,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1439s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4df059d56235cd8d87d891b9d1817f15c178a6bd5d21643f81a03d2d597ac844",
+    "text": "And here, the category is product, urgency is low. You see? So, again, ideally, it is not the product one. Okay? Even if you give something like this, let's say how how are you? Ideally, okay? How are you? Now, it must not belong with any of these category, but our LLM will still try to classify it in in any of these category, as you see here. So, how to solve this? Now, if you put here another category like, let's say if you put here others, okay? So, in this case, our LLM is going to understand here this is the others category. All right. This is definitely not the uh these four category, and you have got here others. Now, if you want to make sure that this becomes a little bit more specific, then what you can do, you can provide here the description, so that you can explain each of these fields properly, so that your LLM can understand that. Okay. Cool. So, this is what we had seen here, because our LLM is now forced to classify our complaint in given category. So, how to solve this? Okay. So, to solve this, what we can do, we can make it optional. As of now, what you had seen here, everything was required. Required true means it is not",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1508.64,
+      "end_seconds": 1594.1999999999998,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1508s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "db3a1b95d990ab4fb5eab1fd75a6a98286488165aa88dcbbe235968f721b77a4",
+    "text": "category. So, how to solve this? Okay. So, to solve this, what we can do, we can make it optional. As of now, what you had seen here, everything was required. Required true means it is not optional. It is must. So, if you make that required false, that means if it becomes optional, then in that case, you can get the more better output. Basically, if a particular thing does not belong to a particular category or field, then LLM don't need to classify that in that particular category. For example, product is here, so product is not optional, so it is must here. Days late is must here, but default I mean days late is actually you know it it it is default optional actually, so this is optional because we have defined here a none, that means it is optional. Okay, cool. So, this is a new kind of class which I am trying to test here. Like let's say I'm a e-commerce company, I'm trying to get feedback from the customer. Customer has given the feedback on the delivery, let's say. Okay. So, on the delivery customer is now trying to write here how many days delivery was, how many you know days later they got the delivery. Okay, cool. Let's go ahead and check it's a feedback how it is going to work.",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1578.72,
+      "end_seconds": 1661.4399999999998,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1578s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "45b7ba204ce5126d9a52b3e61252407434c1a90e2cafc96e339e324be864d5a1",
+    "text": "now trying to write here how many days delivery was, how many you know days later they got the delivery. Okay, cool. Let's go ahead and check it's a feedback how it is going to work. So, here we have. So, model with the structured output, we attach this Pydantic base model with our model and then we get our model which is named as here the optional and then we are just [clears throat] asking our model to classify this. Okay, blue mug is lovely here. Okay, so in this case you will notice here days late field is optional, so ideally this should be none. Okay, and product is actually you know required, so it must give you the output for the product. You see? This is awesome. Okay, so this is how you can control which particular field you want to include in the output or which you want to ignore if output is not available. I mean, if data is not available for that particular field. But it does not stop here. Let me show you here why. Sometimes what happen, if you add optional in the field, then in that case what happen, your LLM is not bound to give you that particular field output. So, sometimes, even if you have a genuine case, even in that case, your",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1646.16,
+      "end_seconds": 1735.8000000000002,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1646s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "54971b2bec74ce8a718317012b165d1ebe28b2ebaff9de917a623c7265da0470",
+    "text": "optional in the field, then in that case what happen, your LLM is not bound to give you that particular field output. So, sometimes, even if you have a genuine case, even in that case, your LLM tend to ignore those cases. For example, when I tested at that time, this 4 days late was missing from the days late. But, I don't know how it is going to happen right now. Let's go ahead and check it. Okay. So, when I was preparing this, at that time, this days late was missing because our LLM was not bound to give it. As of now, I can see this. So, that is perfectly fine as of now. But, this is the problem. We might run it multiple time, and thereafter, we might see that. And also, you might also see that. Whenever you put optional field, then your LLM is not always bound to give that particular output. Okay. Cool. So, how to solve that? Let's say if this particular problem occurs here to you, then how to solve that? So, to solve that, what you can do here, you can create a better Pydantic model here. All right. So, how do you create that better Pydantic model? Then, you can create it inside You can create it like this. So, you",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1718.92,
+      "end_seconds": 1800.68,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1718s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "775bb8864bd5c84c56ebfa398e1e203acf33362ec5c9531f6c7f62f7d16d5ac8",
+    "text": "that, what you can do here, you can create a better Pydantic model here. All right. So, how do you create that better Pydantic model? Then, you can create it inside You can create it like this. So, you have a product, then you mention there lateness. Basically, whether user has mentioned the lateness or not. If user has mentioned the lateness, only then you give the how many days it is late. Otherwise, you can give there the zero. All right. Because if lateness is not mentioned at all, then days late is going to be the zero there. That means the customer has got it on time. And in this case, we don't need to make it optional. All right. As I told you earlier, if you make it something optional, then your LLM is not going to fight for that particular field. If that particular field is a complicated, then your LLM is going to ignore that field automatically. Okay. Let's go ahead and check this. So, I'm going to check this here with the new input. The blue mug arrived 4 days late, but it is lovely. And here better feedback, this one is coming here model with structured output. All right. Let's go ahead and run this. Now, this time we are going to get here three fields here.",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1786.2,
+      "end_seconds": 1862.04,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1786s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e1561bc88a54629b9e3758ffbb5758c620060846beba310736dae81a526932c1",
+    "text": "but it is lovely. And here better feedback, this one is coming here model with structured output. All right. Let's go ahead and run this. Now, this time we are going to get here three fields here. Product mentions lateness and days late. All right, everything is there. So, here mention lateness is true. Now, if you give here something where lateness is not mentioned, then in that case you are going to give mention lateness equal to the false and days late equal to zero. That is what you are going to get here. Okay. Excellent. Now, I hope you have understood that how this Pydantic model works here. Okay, cool. So, now we have worked with the Pydantic base models on a single level only, but you can also design this Pydantic models on a multiple levels as well. For example, let's say if you have um address, let's say. If you are defining someone address, so then you can have one class at the address and then inside that address you can have some, you know, the more information about the person. For example, the person name, age, and so on. So, something like that you can design, you know, class inside class. For example, I can define here issue class first of all, kind and the",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1848.6,
+      "end_seconds": 1924.88,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1848s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2268fab70320a54dadc42d4054a389083d9e723d2c273badff2b2df3a99a99ec",
+    "text": "person. For example, the person name, age, and so on. So, something like that you can design, you know, class inside class. For example, I can define here issue class first of all, kind and the details, and then finally I can define here a parent class as a complaint. So, inside this complaint parent class I'm having here child class that is issues. So, inside this issue I'm going to get these fields. All right, kind and the detail because this list is actually the type of issue here. All right. So, this is going to be a Pydantic model inside a Pydantic model. This is how you can define it. Now, let me just show you here the final output how it is going to give you. So, the final output look like this. So, you have your structured output where this complaint goes. And inside this complaint, you have issue as well here. All right, everything there. And then analyst this model is coming, and then I'm just invoking this with this particular complaint here. Let's go ahead and check this how it is going to give you the output. This is really very important to see here. So, customer mode annoyed, that is fine. And then inside this issue, you are going to you are going to have",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1910.08,
+      "end_seconds": 1990.2399999999998,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1910s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9d65802d0d60391f95ae6ee0a3d469c1c885f1eed7dd94670b262da833218f22",
+    "text": "ahead and check this how it is going to give you the output. This is really very important to see here. So, customer mode annoyed, that is fine. And then inside this issue, you are going to you are going to have here class issue, this one. Okay. So, here you are having class inside a class here. Okay. And then inside that you have a kind and the detail. All right. Why you need this? You need this because let's see if there are multiple issues. Okay. If there are multiple issues need to be reported, in that case you need to create a separate issue class like here you are seeing. There are multiple issues. So, each of these issues need to be recorded separately. So, first issue was wrong item. Another issue was the lateness there. All right. Because of this, you need these nested classes. Okay. Cool. Now, I hope you have understood here how you can use this in your company or in your project. Thereafter, let's go ahead and check it this in the detail how many issues we have here. So, first wrong item, then late, and thereafter the damaged, and then the billing. You see? There are multiple issues there. All right. So, there are so many issues, and then once refund. All of these issues we",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 1974.2,
+      "end_seconds": 2055.2,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=1974s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4ce3fe6c57bf7a47fcdc6d9154acac5502cc38e50eedc8bb29d97721c0797ae2",
+    "text": "have here. So, first wrong item, then late, and thereafter the damaged, and then the billing. You see? There are multiple issues there. All right. So, there are so many issues, and then once refund. All of these issues we cannot combine everything together. We need to make sure here these issues are actually recorded separately. As an e-commerce company, you need to make sure that you record each and every complaint of the customer. And also, you need to make sure that you dig deeper to understand what actually customer is trying to say. All right, so this is how you improve your services. This is how you improve your product. All right, everyone. I hope you must have liked this particular video. It is like a 20 to 40 minute probably, not a 20 minute. So, 30 to 40 minute long video. And this is the fifth day in our LangChain boot camp series. And please do not forget to like this video and subscribe this channel. If you want me to make a video on a particular let me know. I would be more than happy to make that. All right, everyone. Bye-bye. Take care.",
+    "metadata": {
+      "video_id": "__DATHvlGEY",
+      "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+      "trainer": "KGP Talkie",
+      "channel": "Laxmi Kant | KGP Talkie",
+      "topic": "LangChain",
+      "start_seconds": 2039.08,
+      "end_seconds": 2108.0,
+      "url": "https://www.youtube.com/watch?v=__DATHvlGEY&t=2039s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

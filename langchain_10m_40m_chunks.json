@@ -1,0 +1,392 @@
+[
+  {
+    "id": "f21e7df1542383e5439e295c03b01e2dfd390c25ae9349ce8dee2d312a69d5d0",
+    "text": "and do you know what do you know what do you know the funny thing data engineers are the ones who are entering into the AI world after all of those professionals that is the I would say a kind of pain point. Data engineers should be the first ones to enter into this particular domain and they are the last ones. I don't know why because they think like data engineers do not need to learn AI and it is something else. It is something out of the topic. It is for data science. I don't know but that is why this channel is for you. This channel is just actually teaching you and providing you the knowledge which is required to be in that particular group which is always in demand. Right? That is why by the way if you are not aware about this thing if you just go on any job portal if you just type AI data engineers you will see that particular job postings as well because currently industry has also accepted the fact that AI engineering is is incomplete without data engineering. So they have just started putting out those labels called AI data engineers. So I think it is the high time and the best time to learn I wouldn't say best time it is the high",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 600.0,
+      "end_seconds": 669.44,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=600s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6a8424c95cda93e9a9bfdca1f50a591cb0593fffaf70773bca33bac640ba7ef8",
+    "text": "data engineering. So they have just started putting out those labels called AI data engineers. So I think it is the high time and the best time to learn I wouldn't say best time it is the high time when when you will learn about agent AI and all. So let's start this particular conversation. So I told you that I do not expect any kind of knowledge from you. So let's say you are this person who do not have any kind of knowledge about anything. Okay. Let's say this is you and your name is what is your name? Let's say Rahul. Do you know what I just picked the random names and there was a real Rahul. He I think dropped a comment. Hey I feel so happy whenever you take my name. So shout out to Rahul whoever the person is. Okay. So let's say he is Rahul. Okay. And this person doesn't even know anything about agentic AI frameworks. Like why do we talk about these things? So first of all, do you even know the difference between AI agent and agentic AI? Do you even know the difference? No, I I I know this. So we will first of all discuss about this thing because once you get this concept only then you should learn",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 657.279,
+      "end_seconds": 723.76,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=657s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f2d26b06dc5087ad24b75882c1b8b48c7788aef665713404eac9090f2c24f235",
+    "text": "between AI agent and agentic AI? Do you even know the difference? No, I I I know this. So we will first of all discuss about this thing because once you get this concept only then you should learn anything else. Then you should learn the frameworks. You first need to understand the concept like what is agent and AI agent. Frameworks is not a very critical or you can say very uh complex thing. Framework is just like a kind of module. It's just a kind of SDK. It's just a kind of package. We just call it as framework. Right? The main thing is agentic AI. What is agent? And in order to do that, we need to just understand this concept agent versus AI agent. So let's start with AI agent like what exactly is AI agent? Let's say this Rahul. Let's let's let's say this is Rahul. Okay. And this person needs to know everything about agent and all. And do you know what this person for first needs to understand the AI agents? Okay. So now when I just talk about AI agent, what is actually an AI agent? AI agent. What is this thing? Like why this term is so popular right now and everyone is talking about this thing AI agent. AI agent is actually nothing",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 710.72,
+      "end_seconds": 789.2,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=710s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "596b3ba71d9d997eb826b4f72fc3a1455ed79c8d7e9f798ab90e96dea64fe3b6",
+    "text": "what is actually an AI agent? AI agent. What is this thing? Like why this term is so popular right now and everyone is talking about this thing AI agent. AI agent is actually nothing about you can say is like nothing but a kind of framework in itself not the framework let let's not call it as framework you will be confused it is a kind of let's say real person what is agent forget about AI what is agent if you just try to find out the word agent agent is someone who performs a specific task you would have um seen you can say insurance agents and then you can say customer care agents and then you have flight agent like there are some agents like why do we use the word agent this particular thing this AI agent is actually aligned towards a specific task okay specific task nothing fancy this thing so now we Have we have added the keyword called AI? That means this agent is not the real person. Oh, okay. This agent is not the real person. This is AI performing the task of an agent. Okay. And in this case, it will be let's say LLM. LLM, right? Okay. This will be LLM. When LLM that means large language model the entire AI",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 770.0,
+      "end_seconds": 881.279,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=770s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e433e9d55baa4c93555158e0eb83d2803d63c9c42bad4bacc178056df28bcb72",
+    "text": "person. This is AI performing the task of an agent. Okay. And in this case, it will be let's say LLM. LLM, right? Okay. This will be LLM. When LLM that means large language model the entire AI industry is built on top of LLM right now makes sense like large language models. So LLM when able to perform the task of a real human that will be called as an AI agent. But An Lamba can we say that all the LLMs are AI agents? No, I didn't say that here. Hear me out. I said when LLM is able when LLM when this LLM let's say this is the LLM. Okay, and this can be like any normal LLM. It can be chat GBT. It can be anything. Let's say this is your LLM. Okay, this is your LLM. Wow. Let's say this is your LLM. Now, this LLM can be anyone. Open AI. Let's let's take open eye because open is very popular. This is open LLM. This is simple LLM that just knows how to generate the text. Simple. Now when we we developers add some capabilities to this LLM in order to perform a specific task in or sorry in order to achieve a specific goal. this LLM becomes AI agent. Okay, that is clear. But what are those",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 855.6,
+      "end_seconds": 967.199,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=855s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0b25b08b89fb73756cdcc90cdc05a90cba763a52186e5411e311115dc446c0a7",
+    "text": "add some capabilities to this LLM in order to perform a specific task in or sorry in order to achieve a specific goal. this LLM becomes AI agent. Okay, that is clear. But what are those specific task or specific capabilities that we add? Very good question. In short, in simple language, we add something called as tools. Okay, we add something called as tools. And now you will say what kind of tools? I will say any tool. Any kind of tool. So when we add this tools okay so we have provided it who we this let's say developer Rahul Rahul knows how to develop the tools okay now these tools when these tools are integrated with this LLM okay this thing and this Perfect. Now when we integrate this these tools with this LLM, let me just write it for you. Integrated then it becomes this LLM. Simple. This is your entire definition, entire flow. And now this AI agent can perform this task. Right? Now you will say um which task? I would say any task. Let's say reporting data, email, anything. Let's say this is a task. Simple. Let's say this agent is a kind of um customer assistant or basically customer service agent which receives the emails and maybe filtering out the emails which",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 944.079,
+      "end_seconds": 1060.32,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=944s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5ca14bb0d7ff7e11758ce9c5a88b336218796577fcb57331983283dee20a69e6",
+    "text": "data, email, anything. Let's say this is a task. Simple. Let's say this agent is a kind of um customer assistant or basically customer service agent which receives the emails and maybe filtering out the emails which are bad, which are right and categorize it. It's a kind of task simple that you would hire a real human for this task. Now you have AI agent for it. Now this developer builds these particular tools. This is the main thing to understand. This is the main thing. This developer built these tools. Okay. Good. Now a very good question can be like you can ask like so many questions but let's say you have asked this question anala. Yeah. Why do we need to create tools and why LLMs? Because LLMs are so popular. Everyone is talking about LLMs. LLMs are like so big like they have raised billions of dollars. Why we need to create tools? Why we need to integrate tools? So very good question. Let me just tell you. Let's say you are using um Chat GPD. Let's say let me open ChatG in front of you. Okay. And I hope you know what is ChatG. If no um then very good slow collapse. So let's say this is the chat GPD right. Chad GPD is nothing but a kind of",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1041.12,
+      "end_seconds": 1136.48,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1041s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e3fd3fb412e5a1102610492272a90dbc016651b119b9b165428d4d22c5e36d81",
+    "text": "in front of you. Okay. And I hope you know what is ChatG. If no um then very good slow collapse. So let's say this is the chat GPD right. Chad GPD is nothing but a kind of wrapper. It's just a kind of front end that is built on top of LLM. Simple very good. Now do you know what when Chad GPD was launched in its initial days if I ask something like this? Um my name is Anro. Let's say I write something like this. So Chad GBD would be able to generate this text and that's it. And when I was asking Chad GBD, hey what's the temperature here in Canada? Right? If I hit enter, if I hit enter, I will not hit enter right now because I need to explain this thing. In the earlier days, in the initial days when I would be asking this question, Chad GPT would not be able to answer this question. Okay. Why? Because it doesn't have the capability to track the recent data because these LLMs this these large language models are trained on specific data sets, right? And they cannot train the data sets like they cannot train the model on data sets on a daily basis. It is a very expensive task. So they do it",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1120.96,
+      "end_seconds": 1204.0,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1120s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "69a886d11b2fdecf2d17fe9efad5ea0227b59b2b27285385f5c5b58e9bd8ed2d",
+    "text": "language models are trained on specific data sets, right? And they cannot train the data sets like they cannot train the model on data sets on a daily basis. It is a very expensive task. So they do it I think once a year or twice a year. So they do not have like realtime access but you know what when I hit enter now just bait and watch Canada's huge oh it is very smart let's say temperature in Calgary I'm not in Calgary by the way but yeah let's say in Calgary so now see see did you see I know it's cold -4° centigrade yeah so now the thing is how it is able to just get the right temperature and it is actually -4° -15° I know this okay because here in my city it is 11° so yeah Alberta is like the coldest not coldest but yeah one of the coldest so now I know that the temperature is -4° centiggrade how it is able to track that now you will say because LLMs are becoming smart not at all not at all now do you know what happened this chat GBD team built tools okay this chad GBD built tools and they integrated those tools with this LLM original LLM. It can be let's say GPT5,",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1192.799,
+      "end_seconds": 1275.44,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1192s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6af9565aa59bc4dc31acd4c26b60e0c02a3a7070a1965140a26d9e5d9d6f3e1f",
+    "text": "all not at all now do you know what happened this chat GBD team built tools okay this chad GBD built tools and they integrated those tools with this LLM original LLM. It can be let's say GPT5, GPT4, any LLM model. They built these tools and this tool can be let's say getting the u weather information and did you notice when we just hit that particular question it showed that um thing called searching the web is that thing that is a tool call. Okay, so we build these tools on our own. These are nothing but the functions and then we integrate these things to the LLM and then this becomes an AI agent like obviously we will be just doing so much of stuff to make it as an agent to make it autonomous as much as we can but this is the backbone of AI agent LLM with tools that's it because can you think of an agent which doesn't have any capability so let's say we are hiring a real person right and person needs to write email, read email and do so many stuff. So that agent, that human also needs some access, needs an email address, all those things, right? So it needs those capabilities. Same thing we will provide to this LLM and then it",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1254.48,
+      "end_seconds": 1340.08,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1254s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e517f155e65f35d840465a74605ee4b5cad431a0d3cfee2b5a43020044f532c6",
+    "text": "write email, read email and do so many stuff. So that agent, that human also needs some access, needs an email address, all those things, right? So it needs those capabilities. Same thing we will provide to this LLM and then it will become an AI agent. This is the definition of AI agent. Okay? Now what is the difference between AI agent and agenti? Because this is clear. So always remember this thing. This is a kind of formula you can say or just a thing just a you can say way to remember it. So AI agent is built to fulfill a specific task. Okay is built to fuli fulfill a specific task. Let's say you are hiring an AI agent basically building an AI agent. You are hiring a person same thing. So you are getting an AI agent for this task. Let's say now this email task is done. Now you need to add an agent in your team who will do the marketing like person is reading the emails categorizing it and that's it. Now this particular agent needs to talk to another agent who is a marketing agent who will do the marketing stuff who will run ads on social platforms. Make sense? And then that marketing agent needs to talk to let's say",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1323.76,
+      "end_seconds": 1405.0390000000002,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1323s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "829f134d7ffa298b4271406acfba86e30df4e812165e8567cdb7a9e3790aad7a",
+    "text": "needs to talk to another agent who is a marketing agent who will do the marketing stuff who will run ads on social platforms. Make sense? And then that marketing agent needs to talk to let's say business agent because it needs to communicate with the business team or finance team. Hey, how much money do we have to run ads? Hey, how much money do we need to spend this month? Maybe right. So when we need to enable the communication between the agents that becomes agentic AI that means orchestration of AI agents when we have multiple AI agents and do you know what the fun part agentic AI is always is always aligned towards fulfilling the goal. Now we'll say AI agent is also inclined towards fulfilling a goal. The difference is AI agent is only fulfilling the sub goal basically the task but agentic AI is fulfilling the entire you can say goal or you can say bigger project. So let's say you have a kind of social media managing company and you have those AI agents built in specific areas and that will be called as agent AI. I hope it makes sense. Now let's say let's relate this analogy to our data engineering. Let's say you are a developer okay and you have built",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1388.159,
+      "end_seconds": 1476.799,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1388s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5c850f0db456e0604bfc70c69c1e1bb95b18f2926106900cca4fbd54ff1909de",
+    "text": "specific areas and that will be called as agent AI. I hope it makes sense. Now let's say let's relate this analogy to our data engineering. Let's say you are a developer okay and you have built some tools to run the spark notebook let's say or let's say spark job in pispark right if you do not know what pispark basically pispark is the framework that we use to process big data right so you have built this AI agent to run the task and task is running spark right running spark job perfect this is the task now this is agent one right as we just mentioned this is agent one. Okay, this is agent one and let me remove this Rahul. This is very obvious now because they have the tools. So this is only and only agent one makes sense. Perfect. Agent one. Now do you know what? Before running this job, you obviously need to configure the spark cluster size like what cluster do we need. So actually this agent needs to communicate with another agent, right? Let's say this agent or you can say it can be like two and four two and fro communication as well. So it's not a big deal. So let's say this is the this is another agent and what this agent does this agent",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1460.32,
+      "end_seconds": 1555.039,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1460s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d682ff683960c9115399f8d5f3165004ece4c9f1449d488858a446a852c4ace3",
+    "text": "agent or you can say it can be like two and four two and fro communication as well. So it's not a big deal. So let's say this is the this is another agent and what this agent does this agent configure the spark cluster size that what should be the cluster size on the basis of the data what should be the you can say course number of coursees what should be the memory we should allocate to our jobs like it will give you the exact or ideal cluster size and then you can just run your job before that you do not need to run the job so we'll edit the task and we can say we are simply let's Okay, talking about clusters basically these servers. Make sense? Make sense? Okay. So now the task is to give us the right server size. Basically the right cluster size and then we need to talk to each other. So now this framework will be called as agentic framework. Why? Because they are communicating with each other and there's an orchestration. This is a very simple uh you can say a kind of orchestration where where we just have like two people talking to each other. In the real world, we build the complex workflows where we have let's say 10 to",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1541.679,
+      "end_seconds": 1612.96,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1541s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "679411a00e641e8861eab9b52db03ff04d47107d0904b23164a205fab90a13cf",
+    "text": "simple uh you can say a kind of orchestration where where we just have like two people talking to each other. In the real world, we build the complex workflows where we have let's say 10 to 20 agents talking to each other. And the main thing is it is not linear. What do I mean? It can be branched out to many things, right? Let me just show you. So let's say this is agent one. Okay, this is agent one. And this agent one can be connected to this one. Okay, let me just make it small. So let's say like this because I want to just show you the complex one. So that is why I'm just zooming it out. So do not need to worry. Okay, so let's say this is agent one. This is connected to this one and let's use this one. Perfect. So this is agent two and then let's say this will be connected to this agent. Can be it's not a big deal, right? Let's say like this. And then we have let's say two agents. Let's say like this. Let's say like this. Wow. Can we have these complex workflows? Obviously, we have it. So, let's say this is the thing, right? And then we have let's say the final",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1601.52,
+      "end_seconds": 1680.64,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1601s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "58fcda704e0839725758c44993a8d00c87fd7532b085c2f6cffb6ec138fb8a21",
+    "text": "Let's say like this. Let's say like this. Wow. Can we have these complex workflows? Obviously, we have it. So, let's say this is the thing, right? And then we have let's say the final node or basically the agent like this. So, this is a complex agentic workflow. Let's say we have a conditional here. that we can use. Perfect. So let's say this is the complex workflow. This is agenti. Now I hope that you have the clear understanding of agenti like what is agenti and what is AI agent? I hope so. This is also aki by the way but this is a very simple one but obviously this was required to make you understand the concepts right you can say agent here like here and don't worry I'll just provide all of these nodes in my repo GitHub repo so that you can just enjoy it agent I can simply say simple and then we have complex as here let's write complex make sense perfect so now if you have this clear now you can just learn any framework because see now let's go back to our main agenda agentic AI and frameworks so now we know the difference of agentic AI and AI agents obviously and now you also know why agentic is becoming more and more popular because",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1662.96,
+      "end_seconds": 1767.4399999999998,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1662s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "929e454f8b3e1c466aed8301816aa898232f67758338ff62d55669b98774e442",
+    "text": "to our main agenda agentic AI and frameworks so now we know the difference of agentic AI and AI agents obviously and now you also know why agentic is becoming more and more popular because we do not create just one AI agent and that's it we need the entire flow Now just tell me one thing. Come here. If I just show you this agentic AI and not the simple one, complex one. Have you seen this kind of thing in your day-to-day activities? And I'm talking to you data engineer. Have you seen this kind of thing? I'm not asking you to think about LLM. No, no, no. Just take about like I'm just talking about these things, these boxes. I'm not talking about the stuff that is built inside this just the nodes. Have you seen this? You will say yeah we have seen this in our pipelines. Exactly. That's what I'm trying to tell you that we are actually building the pipelines and we are calling call calling it as agentic. Now yes I'm not saying that it is not agentic. It is agentic. Why? Because we have AI workflows basically AI activities within each node. But on the bigger picture side this is just a pipeline. That's it. This is just a DAG directed asyclic graph that we build in",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1755.039,
+      "end_seconds": 1830.24,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1755s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3b209337d9d9d3bbc5e329680a4e2b41a78702110d1aba80d24da9576d50ab5a",
+    "text": "agentic. It is agentic. Why? Because we have AI workflows basically AI activities within each node. But on the bigger picture side this is just a pipeline. That's it. This is just a DAG directed asyclic graph that we build in our day-to-day activities. Make sense? So I hope now you are very much clear and now you should know why data engineers need to lead this industry and they are not leading the industry right now because they are too late and they are not actually learning AI because this is the right time high time to learn it and don't worry I will just make it understand everything. Okay, perfect. So this is the whole concept and now let's talk about the frameworks quickly. Framework is not a very kind of complex thing. Framework is nothing but just a word that we use to portray something about you can say a module. Let's say I'm building a Python package, right? I have so many classes, I have so many functions, I have so many variables and blah blah blah blah blah. When I package them together, when it is ready to be reusable by anyone, it will be called as framework. Simple if you just want to understand it. Okay. And if you just want to learn the definition of framework, go to",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1812.64,
+      "end_seconds": 1885.919,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1812s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3af58535998a72c17d37b7f60f7495d0606a869608b5553c6ba80a00138699c4",
+    "text": "package them together, when it is ready to be reusable by anyone, it will be called as framework. Simple if you just want to understand it. Okay. And if you just want to learn the definition of framework, go to Wikipedia and learn it. This is the understanding of framework, right? So the thing is now in order to build all of these things, obviously we can use our traditional Python language or any programming language, it's not a big deal. But in order to integrate with AI models, those LLM tool calling capabilities, all those things, we need to write our own package, right? every time let's say if I am um if I'm just trying to build this particular logic I know that I will be just reusing my code again and again so let's build a package so I will build my package you will say you you will say the same thing you will build your own package then third person will say the person will build the build his own package so now we have some solutions in the industry very popular ones are like lang chain okay we have one to two very popular more we have llama index we have I think there's one to two more like there are so But these",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1871.919,
+      "end_seconds": 1939.9189999999999,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1871s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a47efdccd7605c5c422027e842d45d575743ac8eb2c5f5cdd3dfb6cd541ffe35",
+    "text": "solutions in the industry very popular ones are like lang chain okay we have one to two very popular more we have llama index we have I think there's one to two more like there are so But these are the popular and trusted ones that you should use. So, Langchen is the most popular one right now that everyone is talking about because it is open source plus it is the most mature I would say um framework plus it is well integrated with all of the tools and technologies. Wow, this is amazing. So now let's talk about the lang. Now what is lang chain? Lang chain under the hood I would say. Lang chain under the hood. Okay, lang chain. I know the name is funny but it is really really cool. I still remember like when I was learning lang chain I would say years back it was like really really cool and it was really new and after that we have got so so so many new new things. But yeah, let's talk about lang chain because lang chain was the early mover of the AI agentic or basically you can say agentic AI and AI agents industry. Yeah, stay hydrated even if it is cold. So lang chain under the hood. Now what is lang chain? Now",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1926.159,
+      "end_seconds": 2008.4399999999998,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1926s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7a448410ce9b7c9b6726ab0b51f541cee2c81c2b63a34b9cc9f17208566ab4fe",
+    "text": "chain was the early mover of the AI agentic or basically you can say agentic AI and AI agents industry. Yeah, stay hydrated even if it is cold. So lang chain under the hood. Now what is lang chain? Now let's talk about lang chain. So let's say you have something within your code right you want to build this particular thing if you are a data engineer you would have built something similar to this using your Python functions you would have built it right it's not a big deal because you are a data engineer you are a data professional you know already Python right let's say you built this okay where is Rahul let's bring that bring that Rahul let's say this Rahul I'm making Rahul famous right So now we need to build a framework. Okay, I basically I need to build the agentic AI solution, right? And you know what we need to build and let me just bring this thing as well like it will make more sense. Let's say I want to build this, right? Let's say we want to build this. Our goal is this one build this Rahul. So now this Rahul can build this this entire thing. It's not a big deal for Rahul because Rahul is a pro coder even",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 1985.44,
+      "end_seconds": 2083.919,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=1985s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "be0e8564f9e2efddc72860b789db438271cf61e9a0db8060c5d7f025bbdd7e8d",
+    "text": "right? Let's say we want to build this. Our goal is this one build this Rahul. So now this Rahul can build this this entire thing. It's not a big deal for Rahul because Rahul is a pro coder even not a procoder but he can build this using something called as let's say Python right because Python is like amazing language I love Python and you should also love Python if you're data engineer. So let's say you are building this thing right simple perfect so this Rahul can build this thing using Python okay makes sense okay using Python but now what will happen what will happen all of these code cells all of these LLM tool calls um integration with the tools and then just making it as an AI agent and then orchestrating it it will take a lot of time Right? Everything is manual. That means everything is manual. That means Rahul needs to build all the classes. Now you will say bro why Rahul needs to build the classes? He will simply write the code because Rahul is working in an organization right and in in that organization there are lots of developers who are working. So in order to use that code, we need to build the classes, right? And I hope that you",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 2061.839,
+      "end_seconds": 2156.96,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=2061s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a2e755bf04f73990471b55f4ffb4a06a11b3d74d64742ce2c2b9641cb05323b5",
+    "text": "is working in an organization right and in in that organization there are lots of developers who are working. So in order to use that code, we need to build the classes, right? And I hope that you have some basic understanding of Python like Python class, Python object. If not, bro, just go and just learn Python as soon as possible. And if you want to learn from me, if you want to learn Python from me, I have a dedicated Python course on my channel. And you can just simply search on YouTube An Lamba Python full course and you will get the Python full course and just make your Python skills or take your Python skills uh through the roof because it is really important. So Rahul needs to build all the classes from scratch. Right now I have a solution or Rahul can use a framework. Rahul can use the agentic framework called langj. Make sense? Now in that particular framework all the classes are built. Obviously there's not like very specific use cases as per your organization. Obviously you need to make so many changes like so many tweaks so many things but it is very much efficient. Why? Because all the test cases all the error handling all of those things boilerplate code everything",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 2144.32,
+      "end_seconds": 2235.359,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=2144s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a40a70fb95f46dc4446811217c7e103865eff4a98af5c0288c12d88861a701b9",
+    "text": "organization. Obviously you need to make so many changes like so many tweaks so many things but it is very much efficient. Why? Because all the test cases all the error handling all of those things boilerplate code everything is gone. It will save us a lot of time. So Rahul will take this approach. Okay. Rahul will take this approach because Rahul is smart. So now lang chain is what langchain is doing. So, Langjain has built the Python classes for your agentic solutions that you can use anytime or you can say that you can use and modify as per your use cases. Simple. This is lang chain under the hood. Nothing special. Nothing special. It is not magic. It is not actually no magic. You can write the exact code that Langchain has built. All the classes you can build on your own as well. But the good thing is Langchain has built all those classes for you. So that you do not need to build everything from scratch again. And I hope it makes sense. It makes sense to me. Yes. Okay. So this is lanchin under the hood. So that means we are simply trying to learn lang chain from the Python point of view. There are like type I think TypeScript or JavaScript support as well",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 2220.16,
+      "end_seconds": 2312.88,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=2220s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "baa09d21292c441a5be88daa0a9d09bd665ca59f2a999581a1765deab0eb5fd9",
+    "text": "Okay. So this is lanchin under the hood. So that means we are simply trying to learn lang chain from the Python point of view. There are like type I think TypeScript or JavaScript support as well but we are simply learning from Python point of view. Make sense? So let's help Rahul to build all of these things and we know that Rahul doesn't know anything about Langchain because Rahul is new to Langchain. So we have a cool documentation about lang chain and let me just bring that lang chain documentation and this is the official documentation for lang chain that they keep on updating and see python and typescript. So we have both capabilities. I will simply say lang chain python and this is the documentation of it. See we have everything here. We have installation, quick start, change log and blah blah blah. And then we have agents. Very long documentation, very very detailed documentation and I love it to be honest and you can also go and check it out. But yes, initially Rahul wants quick overview, quick tutorial so that Rahul can start building using lang chain and sideways Rahul can also explore the documentation but Rahul wants some guidance right some structured approach because obviously when I was also learning lang chain instead of directly going to the",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 2302.64,
+      "end_seconds": 2374.64,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=2302s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3135b4ef5c4f8417ab775d552f05b5a5e62499b0d2223e8295393bb443129dbb",
+    "text": "Rahul can start building using lang chain and sideways Rahul can also explore the documentation but Rahul wants some guidance right some structured approach because obviously when I was also learning lang chain instead of directly going to the documentation I also like was studying through so many sources like books um playlist courses and then blogs and then documentation like everything because I like I I'm not I will not say like there was no structured learning available or video available. Um I just wanted to learn on my own like how things are working and then I realized let me just pass on this knowledge of all the sources. It is like a condensed form of knowledge which is you can say the",
+    "metadata": {
+      "video_id": "AOQyRiwydyo",
+      "title": "Langchain Tutorial For Beginners (2026 Guide) | AI Agents For Data Engineers",
+      "trainer": "Ansh Lamba",
+      "topic": "LangChain",
+      "start_seconds": 2359.92,
+      "end_seconds": 2400,
+      "url": "https://www.youtube.com/watch?v=AOQyRiwydyo&t=2359s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

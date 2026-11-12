@@ -1,0 +1,8218 @@
+{
+  "video_id": "iLO6yEnIuaA",
+  "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+  "channel": "edureka!",
+  "trainer": "Edureka",
+  "topic": "RAG",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 4544.0,
+  "segments": [
+    {
+      "start": 1.92,
+      "end": 6.08,
+      "text": "Hi everyone, good evening and warm"
+    },
+    {
+      "start": 3.76,
+      "end": 7.6,
+      "text": "welcome to"
+    },
+    {
+      "start": 6.08,
+      "end": 9.599,
+      "text": "the one and only module that we are"
+    },
+    {
+      "start": 7.6,
+      "end": 12.08,
+      "text": "going to have which is building the rack"
+    },
+    {
+      "start": 9.599,
+      "end": 14.4,
+      "text": "pipeline from the scratch. So first let"
+    },
+    {
+      "start": 12.08,
+      "end": 17.039,
+      "text": "me introduce myself. I am Jitendra. I'm"
+    },
+    {
+      "start": 14.4,
+      "end": 19.84,
+      "text": "working as a director of geni within one"
+    },
+    {
+      "start": 17.039,
+      "end": 21.76,
+      "text": "of the bank in bas of Singapore. I'm"
+    },
+    {
+      "start": 19.84,
+      "end": 24.48,
+      "text": "carrying almost 16 year of experience in"
+    },
+    {
+      "start": 21.76,
+      "end": 26.160000000000004,
+      "text": "data science and AI. So that is about"
+    },
+    {
+      "start": 24.48,
+      "end": 28.0,
+      "text": "myself. Let [snorts] me set up the"
+    },
+    {
+      "start": 26.16,
+      "end": 31.519,
+      "text": "agenda for today's tutorial. I would say"
+    },
+    {
+      "start": 28.0,
+      "end": 34.079,
+      "text": "is majorly focusing on rag as you might"
+    },
+    {
+      "start": 31.519,
+      "end": 36.0,
+      "text": "have known by this time that rag is"
+    },
+    {
+      "start": 34.079,
+      "end": 38.079,
+      "text": "essentially stands for retrieval augment"
+    },
+    {
+      "start": 36.0,
+      "end": 40.0,
+      "text": "and generation. So what we are going to"
+    },
+    {
+      "start": 38.079,
+      "end": 43.52,
+      "text": "do in during this session is we are"
+    },
+    {
+      "start": 40.0,
+      "end": 45.2,
+      "text": "going to spend some time on this these"
+    },
+    {
+      "start": 43.52,
+      "end": 47.92,
+      "text": "slides try to understand the basic"
+    },
+    {
+      "start": 45.2,
+      "end": 49.760000000000005,
+      "text": "principles of rack try to deep dive into"
+    },
+    {
+      "start": 47.92,
+      "end": 51.28,
+      "text": "each and every component of a rag"
+    },
+    {
+      "start": 49.76,
+      "end": 53.599999999999994,
+      "text": "specifically the retriever and the"
+    },
+    {
+      "start": 51.28,
+      "end": 55.84,
+      "text": "generator and we'll try to understand"
+    },
+    {
+      "start": 53.6,
+      "end": 58.96,
+      "text": "what are the different methodologies and"
+    },
+    {
+      "start": 55.84,
+      "end": 61.92,
+      "text": "technical skills which is required to"
+    },
+    {
+      "start": 58.96,
+      "end": 64.32000000000001,
+      "text": "build these rack pipelines. So this"
+    },
+    {
+      "start": 61.92,
+      "end": 67.68,
+      "text": "particular session will be purely on"
+    },
+    {
+      "start": 64.32,
+      "end": 69.67999999999999,
+      "text": "Python. So I will encourage everybody to"
+    },
+    {
+      "start": 67.68,
+      "end": 72.08000000000001,
+      "text": "use Python. Maybe we are going to use"
+    },
+    {
+      "start": 69.68,
+      "end": 74.159,
+      "text": "Google Collab with a bit of GPU"
+    },
+    {
+      "start": 72.08,
+      "end": 76.479,
+      "text": "enablement because we need to download"
+    },
+    {
+      "start": 74.159,
+      "end": 79.68,
+      "text": "few models from hugging phase and uh as"
+    },
+    {
+      "start": 76.479,
+      "end": 82.08,
+      "text": "as we progress we need to use uh vector"
+    },
+    {
+      "start": 79.68,
+      "end": 83.68,
+      "text": "embeddings as well which may require"
+    },
+    {
+      "start": 82.08,
+      "end": 86.24,
+      "text": "some sort of compute at the inference"
+    },
+    {
+      "start": 83.68,
+      "end": 88.799,
+      "text": "side and once we produce some output"
+    },
+    {
+      "start": 86.24,
+      "end": 91.52,
+      "text": "then we will use one library called DP"
+    },
+    {
+      "start": 88.799,
+      "end": 93.04,
+      "text": "valve to evaluate our outcome. So that"
+    },
+    {
+      "start": 91.52,
+      "end": 95.67999999999999,
+      "text": "is the whole agenda for today's"
+    },
+    {
+      "start": 93.04,
+      "end": 98.0,
+      "text": "tutorial. So before we move on, let me"
+    },
+    {
+      "start": 95.68,
+      "end": 100.72000000000001,
+      "text": "explain what is exactly the rack is all"
+    },
+    {
+      "start": 98.0,
+      "end": 103.04,
+      "text": "about. So when we say rack, rag stands"
+    },
+    {
+      "start": 100.72,
+      "end": 106.88,
+      "text": "for retrieval augment generation. So it"
+    },
+    {
+      "start": 103.04,
+      "end": 110.24000000000001,
+      "text": "is one of the core and essential part of"
+    },
+    {
+      "start": 106.88,
+      "end": 113.36,
+      "text": "today's modern day LLM and uh even if"
+    },
+    {
+      "start": 110.24,
+      "end": 116.0,
+      "text": "you're creating a techic AI solutions"
+    },
+    {
+      "start": 113.36,
+      "end": 118.399,
+      "text": "you need to use rag. So one of the"
+    },
+    {
+      "start": 116.0,
+      "end": 119.92,
+      "text": "important consideration why rag that is"
+    },
+    {
+      "start": 118.399,
+      "end": 123.04,
+      "text": "something which I'm going to talk about."
+    },
+    {
+      "start": 119.92,
+      "end": 125.36,
+      "text": "So when we say why rag so it is one of"
+    },
+    {
+      "start": 123.04,
+      "end": 126.71900000000001,
+      "text": "the fundamental limitation that we are"
+    },
+    {
+      "start": 125.36,
+      "end": 129.28,
+      "text": "trying to overcome with the application"
+    },
+    {
+      "start": 126.719,
+      "end": 132.239,
+      "text": "of rag which is the limitation of large"
+    },
+    {
+      "start": 129.28,
+      "end": 134.0,
+      "text": "language model their knowledge right so"
+    },
+    {
+      "start": 132.239,
+      "end": 137.52,
+      "text": "as you know that large language models"
+    },
+    {
+      "start": 134.0,
+      "end": 142.16,
+      "text": "like GBT 5 that we are using recently"
+    },
+    {
+      "start": 137.52,
+      "end": 145.20000000000002,
+      "text": "mistrals or claude models clots onetus"
+    },
+    {
+      "start": 142.16,
+      "end": 148.4,
+      "text": "you might be using deep uh deepseek as"
+    },
+    {
+      "start": 145.2,
+      "end": 150.23899999999998,
+      "text": "well so the whole idea is these models"
+    },
+    {
+      "start": 148.4,
+      "end": 152.72,
+      "text": "their knowledge is frozen at training"
+    },
+    {
+      "start": 150.239,
+      "end": 155.68,
+      "text": "time, right? So they are using lot of"
+    },
+    {
+      "start": 152.72,
+      "end": 157.28,
+      "text": "plethora of internet data to train and"
+    },
+    {
+      "start": 155.68,
+      "end": 159.04000000000002,
+      "text": "uh we are just using these model at"
+    },
+    {
+      "start": 157.28,
+      "end": 160.959,
+      "text": "inference time. But a problem associated"
+    },
+    {
+      "start": 159.04,
+      "end": 164.319,
+      "text": "with these models are their knowledge is"
+    },
+    {
+      "start": 160.959,
+      "end": 166.4,
+      "text": "frozen at training time and compress"
+    },
+    {
+      "start": 164.319,
+      "end": 168.64,
+      "text": "loosely into the model weights [snorts]"
+    },
+    {
+      "start": 166.4,
+      "end": 171.36,
+      "text": "and it is nearly impossible to update"
+    },
+    {
+      "start": 168.64,
+      "end": 173.27999999999997,
+      "text": "these weights without retraining and"
+    },
+    {
+      "start": 171.36,
+      "end": 175.12,
+      "text": "retraining are expensive. It's a"
+    },
+    {
+      "start": 173.28,
+      "end": 176.48,
+      "text": "multi-million investment, multi-million"
+    },
+    {
+      "start": 175.12,
+      "end": 180.08,
+      "text": "dollar investment that you're going to"
+    },
+    {
+      "start": 176.48,
+      "end": 182.64,
+      "text": "have for retraining the model. So rack"
+    },
+    {
+      "start": 180.08,
+      "end": 185.28,
+      "text": "sidestep this by externalizing knowledge"
+    },
+    {
+      "start": 182.64,
+      "end": 187.27999999999997,
+      "text": "into a retrieval storage and injection"
+    },
+    {
+      "start": 185.28,
+      "end": 189.2,
+      "text": "retrieval pieces"
+    },
+    {
+      "start": 187.28,
+      "end": 191.92,
+      "text": "into the model context at inference"
+    },
+    {
+      "start": 189.2,
+      "end": 194.879,
+      "text": "time. So the model become a reasoning"
+    },
+    {
+      "start": 191.92,
+      "end": 198.48,
+      "text": "engine over fetch evidences rather than"
+    },
+    {
+      "start": 194.879,
+      "end": 201.04,
+      "text": "a closed system drawing only what it had"
+    },
+    {
+      "start": 198.48,
+      "end": 204.0,
+      "text": "been memorized. So this technique was"
+    },
+    {
+      "start": 201.04,
+      "end": 207.28,
+      "text": "formally introduced in the year 2020 by"
+    },
+    {
+      "start": 204.0,
+      "end": 210.48,
+      "text": "one of the famouser in Facebook Meta by"
+    },
+    {
+      "start": 207.28,
+      "end": 214.4,
+      "text": "Lewis and uh the idea is he would like"
+    },
+    {
+      "start": 210.48,
+      "end": 216.0,
+      "text": "to use rag to adapt domain agnostic Q&A"
+    },
+    {
+      "start": 214.4,
+      "end": 218.959,
+      "text": "that means if you are going to work on"
+    },
+    {
+      "start": 216.0,
+      "end": 220.959,
+      "text": "domain agnostic corpus you need need not"
+    },
+    {
+      "start": 218.959,
+      "end": 224.31900000000002,
+      "text": "to retrain the model from the scratch."
+    },
+    {
+      "start": 220.959,
+      "end": 228.08,
+      "text": "However, you can able to combine some"
+    },
+    {
+      "start": 224.319,
+      "end": 230.159,
+      "text": "way to comprehensively drive the"
+    },
+    {
+      "start": 228.08,
+      "end": 233.28,
+      "text": "features that you require to generate an"
+    },
+    {
+      "start": 230.159,
+      "end": 236.56,
+      "text": "answer against. So what change with the"
+    },
+    {
+      "start": 233.28,
+      "end": 239.519,
+      "text": "modern rag is a reading instead of uh"
+    },
+    {
+      "start": 236.56,
+      "end": 242.159,
+      "text": "expans expensive model retraining. So"
+    },
+    {
+      "start": 239.519,
+      "end": 244.159,
+      "text": "the idea is every rack system will have"
+    },
+    {
+      "start": 242.159,
+      "end": 246.0,
+      "text": "two distinguished phases or two distinct"
+    },
+    {
+      "start": 244.159,
+      "end": 249.519,
+      "text": "phases that run on a different time"
+    },
+    {
+      "start": 246.0,
+      "end": 252.64,
+      "text": "scale which is the retrieval phase and"
+    },
+    {
+      "start": 249.519,
+      "end": 254.799,
+      "text": "then you will have the generation phase."
+    },
+    {
+      "start": 252.64,
+      "end": 256.799,
+      "text": "So the idea is when we are using a rag"
+    },
+    {
+      "start": 254.799,
+      "end": 259.84000000000003,
+      "text": "system we are combining the large"
+    },
+    {
+      "start": 256.799,
+      "end": 262.07899999999995,
+      "text": "language model with external knowledge"
+    },
+    {
+      "start": 259.84,
+      "end": 264.88,
+      "text": "retrieval. That means you're going to"
+    },
+    {
+      "start": 262.079,
+      "end": 267.6,
+      "text": "feed your system. Let's assume that this"
+    },
+    {
+      "start": 264.88,
+      "end": 270.4,
+      "text": "is a system now. This is your system"
+    },
+    {
+      "start": 267.6,
+      "end": 270.40000000000003,
+      "text": "now."
+    },
+    {
+      "start": 270.56,
+      "end": 274.88,
+      "text": "Right. And remember there's an LLM"
+    },
+    {
+      "start": 273.12,
+      "end": 276.88,
+      "text": "endpoint as well. That means this is an"
+    },
+    {
+      "start": 274.88,
+      "end": 278.96,
+      "text": "external hosted model that you're using."
+    },
+    {
+      "start": 276.88,
+      "end": 281.199,
+      "text": "It could be any model. Uh we will talk"
+    },
+    {
+      "start": 278.96,
+      "end": 282.71999999999997,
+      "text": "in a while which model we are going to"
+    },
+    {
+      "start": 281.199,
+      "end": 285.36,
+      "text": "use. But let's assume that this is on"
+    },
+    {
+      "start": 282.72,
+      "end": 287.759,
+      "text": "one LLM endpoint model that you have"
+    },
+    {
+      "start": 285.36,
+      "end": 289.84000000000003,
+      "text": "hosted in the cloud server and this is"
+    },
+    {
+      "start": 287.759,
+      "end": 292.24,
+      "text": "your system right excluding LLM"
+    },
+    {
+      "start": 289.84,
+      "end": 294.0,
+      "text": "excluding your knowledge base. Now the"
+    },
+    {
+      "start": 292.24,
+      "end": 296.639,
+      "text": "entry point for this system is you're"
+    },
+    {
+      "start": 294.0,
+      "end": 301.52,
+      "text": "going to have a knowledge base which is"
+    },
+    {
+      "start": 296.639,
+      "end": 303.919,
+      "text": "nothing but your doc uh documents within"
+    },
+    {
+      "start": 301.52,
+      "end": 306.79999999999995,
+      "text": "your domain agnostic corpus. It could be"
+    },
+    {
+      "start": 303.919,
+      "end": 308.96,
+      "text": "a policy related document. It could be"
+    },
+    {
+      "start": 306.8,
+      "end": 311.28000000000003,
+      "text": "your HR policy related document. It"
+    },
+    {
+      "start": 308.96,
+      "end": 315.52,
+      "text": "could be addendums across country. It"
+    },
+    {
+      "start": 311.28,
+      "end": 317.44,
+      "text": "could be a changes in the maybe uh"
+    },
+    {
+      "start": 315.52,
+      "end": 319.19899999999996,
+      "text": "country wise regulatory policies as"
+    },
+    {
+      "start": 317.44,
+      "end": 321.039,
+      "text": "well. So there could be a number of"
+    },
+    {
+      "start": 319.199,
+      "end": 324.039,
+      "text": "example. You can also plug in your"
+    },
+    {
+      "start": 321.039,
+      "end": 324.039,
+      "text": "databases."
+    },
+    {
+      "start": 324.639,
+      "end": 328.919,
+      "text": "You can also plug in your reports."
+    },
+    {
+      "start": 329.44,
+      "end": 334.4,
+      "text": "There are plenty of options that you're"
+    },
+    {
+      "start": 331.52,
+      "end": 336.24,
+      "text": "going to use. Right? So basically the"
+    },
+    {
+      "start": 334.4,
+      "end": 338.56,
+      "text": "idea here is I'm just talking about this"
+    },
+    {
+      "start": 336.24,
+      "end": 340.88,
+      "text": "as a domain agnostic corpus. Now this is"
+    },
+    {
+      "start": 338.56,
+      "end": 344.88,
+      "text": "your domain agnostic corpus that you're"
+    },
+    {
+      "start": 340.88,
+      "end": 346.71999999999997,
+      "text": "going to use to consume at a retriever"
+    },
+    {
+      "start": 344.88,
+      "end": 349.52,
+      "text": "layer. Right? So we are not retraining"
+    },
+    {
+      "start": 346.72,
+      "end": 351.91900000000004,
+      "text": "any model by the way. just be very"
+    },
+    {
+      "start": 349.52,
+      "end": 353.919,
+      "text": "precautious that I'm not saying that I'm"
+    },
+    {
+      "start": 351.919,
+      "end": 355.52,
+      "text": "retraining a model. Instead, I'm saying"
+    },
+    {
+      "start": 353.919,
+      "end": 359.28,
+      "text": "that I'm just going to create a"
+    },
+    {
+      "start": 355.52,
+      "end": 361.84,
+      "text": "provision to inject this data to the LLM"
+    },
+    {
+      "start": 359.28,
+      "end": 364.479,
+      "text": "during inference so that it can able to"
+    },
+    {
+      "start": 361.84,
+      "end": 366.31899999999996,
+      "text": "use this data to generate an answer."
+    },
+    {
+      "start": 364.479,
+      "end": 369.039,
+      "text": "Right? So the in the in what I'm trying"
+    },
+    {
+      "start": 366.319,
+      "end": 370.88,
+      "text": "to say here is I'm going to combine the"
+    },
+    {
+      "start": 369.039,
+      "end": 374.0,
+      "text": "large language model with an external"
+    },
+    {
+      "start": 370.88,
+      "end": 376.319,
+      "text": "knowledge retrieval layer. So retrieval"
+    },
+    {
+      "start": 374.0,
+      "end": 378.08,
+      "text": "relevant information will be utilized"
+    },
+    {
+      "start": 376.319,
+      "end": 381.52000000000004,
+      "text": "before generating the response from this"
+    },
+    {
+      "start": 378.08,
+      "end": 385.19899999999996,
+      "text": "LLM model. So the idea is we would like"
+    },
+    {
+      "start": 381.52,
+      "end": 387.52,
+      "text": "to make sure that our output should be"
+    },
+    {
+      "start": 385.199,
+      "end": 390.0,
+      "text": "in the context of domain. That means we"
+    },
+    {
+      "start": 387.52,
+      "end": 392.31899999999996,
+      "text": "should generate an answer in a high"
+    },
+    {
+      "start": 390.0,
+      "end": 394.8,
+      "text": "contextual manner. It should be more"
+    },
+    {
+      "start": 392.319,
+      "end": 397.52000000000004,
+      "text": "accurate. It should be more layman in"
+    },
+    {
+      "start": 394.8,
+      "end": 399.759,
+      "text": "terms of businessdriven outcomes. Right?"
+    },
+    {
+      "start": 397.52,
+      "end": 401.52,
+      "text": "So that is where rag is one of the"
+    },
+    {
+      "start": 399.759,
+      "end": 404.47900000000004,
+      "text": "important pipeline that we are going to"
+    },
+    {
+      "start": 401.52,
+      "end": 407.52,
+      "text": "create from the scratch. Now why rag is"
+    },
+    {
+      "start": 404.479,
+      "end": 410.31899999999996,
+      "text": "important. So as I mentioned that when"
+    },
+    {
+      "start": 407.52,
+      "end": 412.31899999999996,
+      "text": "we using LLM we are using lot of"
+    },
+    {
+      "start": 410.319,
+      "end": 415.44,
+      "text": "opensource internet data to train the"
+    },
+    {
+      "start": 412.319,
+      "end": 417.759,
+      "text": "model. Let's take an example of a GPD5."
+    },
+    {
+      "start": 415.44,
+      "end": 420.56,
+      "text": "So GPD5 does not know anything in any"
+    },
+    {
+      "start": 417.759,
+      "end": 422.72,
+      "text": "information about your domain. They're"
+    },
+    {
+      "start": 420.56,
+      "end": 425.12,
+      "text": "highly gener general purpose model."
+    },
+    {
+      "start": 422.72,
+      "end": 427.36,
+      "text": "Right? So when you're creating a general"
+    },
+    {
+      "start": 425.12,
+      "end": 429.68,
+      "text": "purpose model or you are using a general"
+    },
+    {
+      "start": 427.36,
+      "end": 432.639,
+      "text": "purpose model to serve during the"
+    },
+    {
+      "start": 429.68,
+      "end": 435.28000000000003,
+      "text": "inference, it may hallucinate"
+    },
+    {
+      "start": 432.639,
+      "end": 437.919,
+      "text": "because the context and the domain"
+    },
+    {
+      "start": 435.28,
+      "end": 440.23999999999995,
+      "text": "agnostic vectors has not been a part of"
+    },
+    {
+      "start": 437.919,
+      "end": 442.79999999999995,
+      "text": "their training instance."
+    },
+    {
+      "start": 440.24,
+      "end": 445.36,
+      "text": "So what does that means? That means the"
+    },
+    {
+      "start": 442.8,
+      "end": 448.24,
+      "text": "model the LLM model when I'm saying"
+    },
+    {
+      "start": 445.36,
+      "end": 450.40000000000003,
+      "text": "model I will be referring to LLM here."
+    },
+    {
+      "start": 448.24,
+      "end": 452.56,
+      "text": "That means your LLM model will start"
+    },
+    {
+      "start": 450.4,
+      "end": 456.31899999999996,
+      "text": "hallucinating. So the phenomena of"
+    },
+    {
+      "start": 452.56,
+      "end": 459.36,
+      "text": "hallizenation is very simple. So LLM by"
+    },
+    {
+      "start": 456.319,
+      "end": 460.8,
+      "text": "default has been designed to generate"
+    },
+    {
+      "start": 459.36,
+      "end": 462.47900000000004,
+      "text": "response because they are generative"
+    },
+    {
+      "start": 460.8,
+      "end": 464.08,
+      "text": "models"
+    },
+    {
+      "start": 462.479,
+      "end": 466.71999999999997,
+      "text": "right. So they are generating some sort"
+    },
+    {
+      "start": 464.08,
+      "end": 468.8,
+      "text": "of response. Now the response could be"
+    },
+    {
+      "start": 466.72,
+      "end": 471.12,
+      "text": "correct, it could be a factually correct"
+    },
+    {
+      "start": 468.8,
+      "end": 474.08,
+      "text": "or it could be inaccurate as well. So"
+    },
+    {
+      "start": 471.12,
+      "end": 477.12,
+      "text": "when the model which means LLM start"
+    },
+    {
+      "start": 474.08,
+      "end": 479.12,
+      "text": "fabricating the answers"
+    },
+    {
+      "start": 477.12,
+      "end": 481.039,
+      "text": "right when they start fabricating the"
+    },
+    {
+      "start": 479.12,
+      "end": 482.72,
+      "text": "answer or when you they are generating a"
+    },
+    {
+      "start": 481.039,
+      "end": 485.28,
+      "text": "non-factual"
+    },
+    {
+      "start": 482.72,
+      "end": 487.12,
+      "text": "answers that means your model is start"
+    },
+    {
+      "start": 485.28,
+      "end": 489.039,
+      "text": "hallucinating"
+    },
+    {
+      "start": 487.12,
+      "end": 490.72,
+      "text": "so basically rag is very important to"
+    },
+    {
+      "start": 489.039,
+      "end": 493.52,
+      "text": "reduce the hallucination that means we"
+    },
+    {
+      "start": 490.72,
+      "end": 496.96000000000004,
+      "text": "can use rags to reduce the hallucination"
+    },
+    {
+      "start": 493.52,
+      "end": 499.12,
+      "text": "of the LLM models we can use real time"
+    },
+    {
+      "start": 496.96,
+      "end": 501.68,
+      "text": "or private company data that means we"
+    },
+    {
+      "start": 499.12,
+      "end": 504.879,
+      "text": "can go with domain agnostic IC data"
+    },
+    {
+      "start": 501.68,
+      "end": 508.40000000000003,
+      "text": "which is proprietary to my organization"
+    },
+    {
+      "start": 504.879,
+      "end": 510.96000000000004,
+      "text": "and I can use rack on the top of it. I"
+    },
+    {
+      "start": 508.4,
+      "end": 512.88,
+      "text": "can also update my rack at a real time"
+    },
+    {
+      "start": 510.96,
+      "end": 515.039,
+      "text": "as much real time as possible without"
+    },
+    {
+      "start": 512.88,
+      "end": 516.719,
+      "text": "retraining the LLM model. Right? So I"
+    },
+    {
+      "start": 515.039,
+      "end": 521.039,
+      "text": "need not to retrain the model from the"
+    },
+    {
+      "start": 516.719,
+      "end": 523.44,
+      "text": "scratch. However, I can simply use rack"
+    },
+    {
+      "start": 521.039,
+      "end": 526.56,
+      "text": "to ensure that my pipeline will pick the"
+    },
+    {
+      "start": 523.44,
+      "end": 528.399,
+      "text": "most recent document from the corpus and"
+    },
+    {
+      "start": 526.56,
+      "end": 531.1199999999999,
+      "text": "I will use those corpus to generate an"
+    },
+    {
+      "start": 528.399,
+      "end": 532.64,
+      "text": "answer. That means it is most cost"
+    },
+    {
+      "start": 531.12,
+      "end": 536.519,
+      "text": "effective"
+    },
+    {
+      "start": 532.64,
+      "end": 536.519,
+      "text": "than retraining models."
+    },
+    {
+      "start": 539.04,
+      "end": 545.04,
+      "text": "All right. Now we'll move on to the"
+    },
+    {
+      "start": 541.92,
+      "end": 547.519,
+      "text": "slide number three."
+    },
+    {
+      "start": 545.04,
+      "end": 551.279,
+      "text": "Some of the common use cases. So some of"
+    },
+    {
+      "start": 547.519,
+      "end": 553.519,
+      "text": "the common use cases of RAD include"
+    },
+    {
+      "start": 551.279,
+      "end": 555.4399999999999,
+      "text": "maybe a domain agnostic use cases. So"
+    },
+    {
+      "start": 553.519,
+      "end": 558.5600000000001,
+      "text": "I'm just trying to depict four major"
+    },
+    {
+      "start": 555.44,
+      "end": 561.6,
+      "text": "domain here. healthcare, legal AI,"
+    },
+    {
+      "start": 558.56,
+      "end": 563.5189999999999,
+      "text": "uh maybe a telecom or an enterprise"
+    },
+    {
+      "start": 561.6,
+      "end": 566.08,
+      "text": "knowledge search which is generic across"
+    },
+    {
+      "start": 563.519,
+      "end": 568.64,
+      "text": "multiple domain. So when whenever we"
+    },
+    {
+      "start": 566.08,
+      "end": 570.8000000000001,
+      "text": "talk about these four domains, uh the"
+    },
+    {
+      "start": 568.64,
+      "end": 574.64,
+      "text": "issue with enterprise knowledge search"
+    },
+    {
+      "start": 570.8,
+      "end": 576.4799999999999,
+      "text": "is that it is pretty commercial. We need"
+    },
+    {
+      "start": 574.64,
+      "end": 579.12,
+      "text": "a very commercial application to deal"
+    },
+    {
+      "start": 576.48,
+      "end": 582.32,
+      "text": "with it. Right? So let's take an example"
+    },
+    {
+      "start": 579.12,
+      "end": 584.08,
+      "text": "of a document Q&A chatbot. That means uh"
+    },
+    {
+      "start": 582.32,
+      "end": 586.24,
+      "text": "again needless to mention that your"
+    },
+    {
+      "start": 584.08,
+      "end": 588.5600000000001,
+      "text": "policies are changing your risk"
+    },
+    {
+      "start": 586.24,
+      "end": 590.72,
+      "text": "landscape is evolving when you're"
+    },
+    {
+      "start": 588.56,
+      "end": 592.3199999999999,
+      "text": "generating a c customer query where"
+    },
+    {
+      "start": 590.72,
+      "end": 594.64,
+      "text": "you're tackling a customer query in a"
+    },
+    {
+      "start": 592.32,
+      "end": 598.48,
+      "text": "real world manner you need a different"
+    },
+    {
+      "start": 594.64,
+      "end": 601.279,
+      "text": "reference points right so the idea here"
+    },
+    {
+      "start": 598.48,
+      "end": 604.48,
+      "text": "is if you're going to use the best or"
+    },
+    {
+      "start": 601.279,
+      "end": 607.4399999999999,
+      "text": "the latest corpus to generate an answer"
+    },
+    {
+      "start": 604.48,
+      "end": 609.76,
+      "text": "using document Q&A chat bots you will"
+    },
+    {
+      "start": 607.44,
+      "end": 613.2,
+      "text": "always get the right answers based upon"
+    },
+    {
+      "start": 609.76,
+      "end": 616.24,
+      "text": "the latest update ates latest changes,"
+    },
+    {
+      "start": 613.2,
+      "end": 618.32,
+      "text": "latest addition in your policym."
+    },
+    {
+      "start": 616.24,
+      "end": 621.6,
+      "text": "Similarly, customer assistant chatbot"
+    },
+    {
+      "start": 618.32,
+      "end": 624.72,
+      "text": "will always refer to the latest uh"
+    },
+    {
+      "start": 621.6,
+      "end": 626.399,
+      "text": "exceptions and uh modification which is"
+    },
+    {
+      "start": 624.72,
+      "end": 630.1600000000001,
+      "text": "required to generate an answer against"
+    },
+    {
+      "start": 626.399,
+      "end": 632.88,
+      "text": "the customer query. The knowledge search"
+    },
+    {
+      "start": 630.16,
+      "end": 634.7199999999999,
+      "text": "will become seamlessly uh possible with"
+    },
+    {
+      "start": 632.88,
+      "end": 637.6,
+      "text": "the advent of rag. That means you can"
+    },
+    {
+      "start": 634.72,
+      "end": 638.8000000000001,
+      "text": "able to always update yourself with a"
+    },
+    {
+      "start": 637.6,
+      "end": 640.64,
+      "text": "different sort of countrywise"
+    },
+    {
+      "start": 638.8,
+      "end": 643.279,
+      "text": "regulations, different sort of group"
+    },
+    {
+      "start": 640.64,
+      "end": 645.279,
+      "text": "wise regulations etc. Similarly in"
+    },
+    {
+      "start": 643.279,
+      "end": 648.0,
+      "text": "healthcare and legal AI system which is"
+    },
+    {
+      "start": 645.279,
+      "end": 651.04,
+      "text": "one of the complex u use case scenario"
+    },
+    {
+      "start": 648.0,
+      "end": 652.959,
+      "text": "for rack you will try to ensure that you"
+    },
+    {
+      "start": 651.04,
+      "end": 655.1999999999999,
+      "text": "will have a single point of interface"
+    },
+    {
+      "start": 652.959,
+      "end": 657.04,
+      "text": "for every organization documents which"
+    },
+    {
+      "start": 655.2,
+      "end": 658.6400000000001,
+      "text": "you are going to manage via rack"
+    },
+    {
+      "start": 657.04,
+      "end": 660.88,
+      "text": "pipeline."
+    },
+    {
+      "start": 658.64,
+      "end": 663.279,
+      "text": "Now let me explain what are the other"
+    },
+    {
+      "start": 660.88,
+      "end": 665.8389999999999,
+      "text": "possible scenarios in which we can able"
+    },
+    {
+      "start": 663.279,
+      "end": 667.36,
+      "text": "to generate the same efficacies in LLM"
+    },
+    {
+      "start": 665.839,
+      "end": 669.12,
+      "text": "model. Now as I mentioned there's"
+    },
+    {
+      "start": 667.36,
+      "end": 672.5600000000001,
+      "text": "something called fine-tuning. So"
+    },
+    {
+      "start": 669.12,
+      "end": 675.12,
+      "text": "fine-tuning is depending upon your"
+    },
+    {
+      "start": 672.56,
+      "end": 677.5999999999999,
+      "text": "architectures. So let's take an example"
+    },
+    {
+      "start": 675.12,
+      "end": 680.48,
+      "text": "here. So when you're trying to fine-tune"
+    },
+    {
+      "start": 677.6,
+      "end": 683.44,
+      "text": "a model or LLM model from the scratch,"
+    },
+    {
+      "start": 680.48,
+      "end": 685.6,
+      "text": "you have two option. You can download an"
+    },
+    {
+      "start": 683.44,
+      "end": 688.9590000000001,
+      "text": "open source model from hugging phase or"
+    },
+    {
+      "start": 685.6,
+      "end": 690.8000000000001,
+      "text": "hugging hub hugging phase uh hub models"
+    },
+    {
+      "start": 688.959,
+      "end": 692.8,
+      "text": "and what you can do is you can use a"
+    },
+    {
+      "start": 690.8,
+      "end": 694.7199999999999,
+      "text": "techniques including pft which is"
+    },
+    {
+      "start": 692.8,
+      "end": 697.68,
+      "text": "parametric efficient finetuning which"
+    },
+    {
+      "start": 694.72,
+      "end": 699.9200000000001,
+      "text": "include loras and quras quantization"
+    },
+    {
+      "start": 697.68,
+      "end": 702.88,
+      "text": "techniques and you can fine-tune your"
+    },
+    {
+      "start": 699.92,
+      "end": 706.24,
+      "text": "model with a domain agnostic corpus."
+    },
+    {
+      "start": 702.88,
+      "end": 707.92,
+      "text": "Now the issue with this approach is"
+    },
+    {
+      "start": 706.24,
+      "end": 709.6,
+      "text": "whenever you're you're going to update"
+    },
+    {
+      "start": 707.92,
+      "end": 713.68,
+      "text": "your document you need to retrain your"
+    },
+    {
+      "start": 709.6,
+      "end": 716.5600000000001,
+      "text": "model. So let's say your policy or your"
+    },
+    {
+      "start": 713.68,
+      "end": 718.64,
+      "text": "regulatory reports changes every month"
+    },
+    {
+      "start": 716.56,
+      "end": 720.56,
+      "text": "or every quarter. That means there's a"
+    },
+    {
+      "start": 718.64,
+      "end": 723.519,
+      "text": "requirement here that we need to"
+    },
+    {
+      "start": 720.56,
+      "end": 725.4399999999999,
+      "text": "fine-tune the model every quarter. Now"
+    },
+    {
+      "start": 723.519,
+      "end": 728.5600000000001,
+      "text": "assuming that you might have some idea"
+    },
+    {
+      "start": 725.44,
+      "end": 731.12,
+      "text": "about what is the expense what are the"
+    },
+    {
+      "start": 728.56,
+      "end": 734.8,
+      "text": "platforms required for finetuning that"
+    },
+    {
+      "start": 731.12,
+      "end": 736.9590000000001,
+      "text": "means with those amount of GPUs and"
+    },
+    {
+      "start": 734.8,
+      "end": 739.4399999999999,
+      "text": "memories and VRAMs that is we are going"
+    },
+    {
+      "start": 736.959,
+      "end": 741.3599999999999,
+      "text": "to required to"
+    },
+    {
+      "start": 739.44,
+      "end": 743.7600000000001,
+      "text": "fine-tune the model it will become a"
+    },
+    {
+      "start": 741.36,
+      "end": 745.44,
+      "text": "very expensive affair that means we need"
+    },
+    {
+      "start": 743.76,
+      "end": 749.2,
+      "text": "to make sure that we will have"
+    },
+    {
+      "start": 745.44,
+      "end": 752.0790000000001,
+      "text": "sufficient compute sufficient uh servers"
+    },
+    {
+      "start": 749.2,
+      "end": 753.6800000000001,
+      "text": "sufficient VRAMs to perform this"
+    },
+    {
+      "start": 752.079,
+      "end": 756.2399999999999,
+      "text": "activity"
+    },
+    {
+      "start": 753.68,
+      "end": 758.2399999999999,
+      "text": "Right now imagine I'm talking about the"
+    },
+    {
+      "start": 756.24,
+      "end": 759.6,
+      "text": "frequent updates in the document. So for"
+    },
+    {
+      "start": 758.24,
+      "end": 761.279,
+      "text": "every document update you required"
+    },
+    {
+      "start": 759.6,
+      "end": 763.76,
+      "text": "finetuning"
+    },
+    {
+      "start": 761.279,
+      "end": 765.519,
+      "text": "but with the advent of rack this"
+    },
+    {
+      "start": 763.76,
+      "end": 767.68,
+      "text": "particular"
+    },
+    {
+      "start": 765.519,
+      "end": 769.2,
+      "text": "requirement become obsolete. That means"
+    },
+    {
+      "start": 767.68,
+      "end": 772.399,
+      "text": "you need not to worry too much about"
+    },
+    {
+      "start": 769.2,
+      "end": 775.839,
+      "text": "frequency of change of data anymore."
+    },
+    {
+      "start": 772.399,
+      "end": 778.48,
+      "text": "You can create a very domain agnostic"
+    },
+    {
+      "start": 775.839,
+      "end": 782.0790000000001,
+      "text": "Q&A system with the help of a rag and"
+    },
+    {
+      "start": 778.48,
+      "end": 784.8000000000001,
+      "text": "you can also do a bit of transparent"
+    },
+    {
+      "start": 782.079,
+      "end": 787.68,
+      "text": "overview or I would say review of your"
+    },
+    {
+      "start": 784.8,
+      "end": 789.92,
+      "text": "rack outcome with the help of human in"
+    },
+    {
+      "start": 787.68,
+      "end": 792.56,
+      "text": "the loop and that make the system very"
+    },
+    {
+      "start": 789.92,
+      "end": 796.0,
+      "text": "very powerful and very very agile in"
+    },
+    {
+      "start": 792.56,
+      "end": 800.16,
+      "text": "terms of fitment criterias. So the idea"
+    },
+    {
+      "start": 796.0,
+      "end": 802.16,
+      "text": "here is when you when you when you have"
+    },
+    {
+      "start": 800.16,
+      "end": 804.48,
+      "text": "I would say you can go with a hybrid"
+    },
+    {
+      "start": 802.16,
+      "end": 806.48,
+      "text": "strategy from a personal experience I"
+    },
+    {
+      "start": 804.48,
+      "end": 808.72,
+      "text": "can say that this is the best way that"
+    },
+    {
+      "start": 806.48,
+      "end": 811.04,
+      "text": "you can able to sustain both. So you can"
+    },
+    {
+      "start": 808.72,
+      "end": 813.6,
+      "text": "use fine-tuning when your frequency of"
+    },
+    {
+      "start": 811.04,
+      "end": 816.399,
+      "text": "update on a document corpus is less"
+    },
+    {
+      "start": 813.6,
+      "end": 818.32,
+      "text": "maybe a year or maybe couple of years"
+    },
+    {
+      "start": 816.399,
+      "end": 819.68,
+      "text": "you're going to change your document you"
+    },
+    {
+      "start": 818.32,
+      "end": 823.6,
+      "text": "can still go with a finetuning"
+    },
+    {
+      "start": 819.68,
+      "end": 825.8389999999999,
+      "text": "strategies when your documents are very"
+    },
+    {
+      "start": 823.6,
+      "end": 829.36,
+      "text": "frequently changed with a due course of"
+    },
+    {
+      "start": 825.839,
+      "end": 832.639,
+      "text": "time go with rack so that with that"
+    },
+    {
+      "start": 829.36,
+      "end": 835.92,
+      "text": "analogy into our mind we can go with"
+    },
+    {
+      "start": 832.639,
+      "end": 839.199,
+      "text": "either of the two system but 90% of the"
+    },
+    {
+      "start": 835.92,
+      "end": 843.76,
+      "text": "industries are relying on rack"
+    },
+    {
+      "start": 839.199,
+      "end": 845.519,
+      "text": "to perform the or to build a Q&A system."
+    },
+    {
+      "start": 843.76,
+      "end": 847.8389999999999,
+      "text": "Now we'll talk about what are the"
+    },
+    {
+      "start": 845.519,
+      "end": 851.839,
+      "text": "different types of rack system which is"
+    },
+    {
+      "start": 847.839,
+      "end": 854.5600000000001,
+      "text": "there. So one of the most important rack"
+    },
+    {
+      "start": 851.839,
+      "end": 856.8800000000001,
+      "text": "is called vanilla rack."
+    },
+    {
+      "start": 854.56,
+      "end": 859.1199999999999,
+      "text": "So there are three types of rack. The"
+    },
+    {
+      "start": 856.88,
+      "end": 863.0,
+      "text": "first rack is called basic rag or nave"
+    },
+    {
+      "start": 859.12,
+      "end": 863.0,
+      "text": "rag or vanilla rack."
+    },
+    {
+      "start": 866.399,
+      "end": 871.68,
+      "text": "The second type of rack is called"
+    },
+    {
+      "start": 868.32,
+      "end": 874.32,
+      "text": "agentic rack."
+    },
+    {
+      "start": 871.68,
+      "end": 876.399,
+      "text": "We are going to use the series of agent"
+    },
+    {
+      "start": 874.32,
+      "end": 880.32,
+      "text": "to operate on a rack system. The third"
+    },
+    {
+      "start": 876.399,
+      "end": 882.88,
+      "text": "type of system is called graph rack"
+    },
+    {
+      "start": 880.32,
+      "end": 886.12,
+      "text": "which is a pretty advanced ontology"
+    },
+    {
+      "start": 882.88,
+      "end": 886.12,
+      "text": "based search"
+    },
+    {
+      "start": 886.56,
+      "end": 891.4399999999999,
+      "text": "on a document. So these are the three"
+    },
+    {
+      "start": 889.04,
+      "end": 896.0,
+      "text": "system which has been uh discuss uh"
+    },
+    {
+      "start": 891.44,
+      "end": 898.5600000000001,
+      "text": "discovered so far in the rag ecosystem."
+    },
+    {
+      "start": 896.0,
+      "end": 900.16,
+      "text": "So we'll talk about the vanilla rag in"
+    },
+    {
+      "start": 898.56,
+      "end": 902.56,
+      "text": "today's tutorial. We'll talk about how"
+    },
+    {
+      "start": 900.16,
+      "end": 905.8389999999999,
+      "text": "to create a nave rag from the scratch"
+    },
+    {
+      "start": 902.56,
+      "end": 908.399,
+      "text": "and then we move on to the other part."
+    },
+    {
+      "start": 905.839,
+      "end": 910.639,
+      "text": "Now this slide typically showing the"
+    },
+    {
+      "start": 908.399,
+      "end": 912.8,
+      "text": "two-phase architecture of a rack system."
+    },
+    {
+      "start": 910.639,
+      "end": 914.72,
+      "text": "So basically every rack system has two"
+    },
+    {
+      "start": 912.8,
+      "end": 917.12,
+      "text": "distinct phases that runs [snorts] on"
+    },
+    {
+      "start": 914.72,
+      "end": 919.6800000000001,
+      "text": "different time scale. The first phase is"
+    },
+    {
+      "start": 917.12,
+      "end": 922.88,
+      "text": "indexing. The document that you're going"
+    },
+    {
+      "start": 919.68,
+      "end": 925.12,
+      "text": "to use which is a domain specific corpus"
+    },
+    {
+      "start": 922.88,
+      "end": 927.68,
+      "text": "will undergone through injections,"
+    },
+    {
+      "start": 925.12,
+      "end": 929.76,
+      "text": "parsing, cleaning and splitting into the"
+    },
+    {
+      "start": 927.68,
+      "end": 932.0,
+      "text": "chunks so that you can able to create"
+    },
+    {
+      "start": 929.76,
+      "end": 933.76,
+      "text": "vectors out of it. Now let me explain"
+    },
+    {
+      "start": 932.0,
+      "end": 936.8,
+      "text": "what is vector database in a very simple"
+    },
+    {
+      "start": 933.76,
+      "end": 940.0,
+      "text": "term. So vector database is nothing but"
+    },
+    {
+      "start": 936.8,
+      "end": 942.3199999999999,
+      "text": "vector stores is a numeric it will it"
+    },
+    {
+      "start": 940.0,
+      "end": 944.079,
+      "text": "will be used to store the embeddings."
+    },
+    {
+      "start": 942.32,
+      "end": 946.88,
+      "text": "Now embedding you can consider this"
+    },
+    {
+      "start": 944.079,
+      "end": 951.68,
+      "text": "that's like a linear array the array of"
+    },
+    {
+      "start": 946.88,
+      "end": 953.92,
+      "text": "nu numbers or array of list right so"
+    },
+    {
+      "start": 951.68,
+      "end": 956.399,
+      "text": "basically the idea here is when you're"
+    },
+    {
+      "start": 953.92,
+      "end": 959.68,
+      "text": "dealing with any llm model llm model"
+    },
+    {
+      "start": 956.399,
+      "end": 961.44,
+      "text": "will not able to understand text"
+    },
+    {
+      "start": 959.68,
+      "end": 963.92,
+      "text": "they are going to use your numerical"
+    },
+    {
+      "start": 961.44,
+      "end": 965.2790000000001,
+      "text": "calculations they are going to convert"
+    },
+    {
+      "start": 963.92,
+      "end": 967.5999999999999,
+      "text": "beforehand you need to convert"
+    },
+    {
+      "start": 965.279,
+      "end": 970.72,
+      "text": "everything to numbers that means there"
+    },
+    {
+      "start": 967.6,
+      "end": 973.519,
+      "text": "are sums of bit of weights you need to"
+    },
+    {
+      "start": 970.72,
+      "end": 974.639,
+      "text": "determine based upon the context that"
+    },
+    {
+      "start": 973.519,
+      "end": 977.279,
+      "text": "means you're going to save these"
+    },
+    {
+      "start": 974.639,
+      "end": 979.36,
+      "text": "contexts in a vector store. So every rag"
+    },
+    {
+      "start": 977.279,
+      "end": 981.8389999999999,
+      "text": "architecture has two distinct phases"
+    },
+    {
+      "start": 979.36,
+      "end": 983.36,
+      "text": "that runs on different time scale. The"
+    },
+    {
+      "start": 981.839,
+      "end": 985.0400000000001,
+      "text": "first phase is called document"
+    },
+    {
+      "start": 983.36,
+      "end": 986.5600000000001,
+      "text": "preparation."
+    },
+    {
+      "start": 985.04,
+      "end": 990.56,
+      "text": "So when you're performing a document"
+    },
+    {
+      "start": 986.56,
+      "end": 992.959,
+      "text": "preparation that means your corpus or"
+    },
+    {
+      "start": 990.56,
+      "end": 995.5189999999999,
+      "text": "your documents are going to be inject"
+    },
+    {
+      "start": 992.959,
+      "end": 997.5999999999999,
+      "text": "parsed it is going to be clean and split"
+    },
+    {
+      "start": 995.519,
+      "end": 1000.32,
+      "text": "into chunks and convert then convert"
+    },
+    {
+      "start": 997.6,
+      "end": 1001.9200000000001,
+      "text": "into a vector embedding. So once it has"
+    },
+    {
+      "start": 1000.32,
+      "end": 1004.0,
+      "text": "been converted into a vector embedding"
+    },
+    {
+      "start": 1001.92,
+      "end": 1006.639,
+      "text": "you're going to store into a vector"
+    },
+    {
+      "start": 1004.0,
+      "end": 1010.639,
+      "text": "database. So this phase runs once"
+    },
+    {
+      "start": 1006.639,
+      "end": 1012.9590000000001,
+      "text": "document once per document."
+    },
+    {
+      "start": 1010.639,
+      "end": 1015.36,
+      "text": "Then the second part is called retrieval"
+    },
+    {
+      "start": 1012.959,
+      "end": 1017.4399999999999,
+      "text": "and the generation phase. So when a user"
+    },
+    {
+      "start": 1015.36,
+      "end": 1019.92,
+      "text": "submit a query"
+    },
+    {
+      "start": 1017.44,
+      "end": 1022.8000000000001,
+      "text": "from this point of view. So that means"
+    },
+    {
+      "start": 1019.92,
+      "end": 1025.36,
+      "text": "your prompt when a user submit a"
+    },
+    {
+      "start": 1022.8,
+      "end": 1028.0,
+      "text": "particular prompt or a query it create"
+    },
+    {
+      "start": 1025.36,
+      "end": 1030.079,
+      "text": "another ambiting using the same model"
+    },
+    {
+      "start": 1028.0,
+      "end": 1032.64,
+      "text": "that has been used during indexing and"
+    },
+    {
+      "start": 1030.079,
+      "end": 1035.6789999999999,
+      "text": "what it does is it is trying to perform"
+    },
+    {
+      "start": 1032.64,
+      "end": 1038.5590000000002,
+      "text": "the semantic search over your query"
+    },
+    {
+      "start": 1035.679,
+      "end": 1041.3600000000001,
+      "text": "versus this document corpus by taking a"
+    },
+    {
+      "start": 1038.559,
+      "end": 1043.36,
+      "text": "dot product between the two"
+    },
+    {
+      "start": 1041.36,
+      "end": 1046.0,
+      "text": "and the whole idea here is this is"
+    },
+    {
+      "start": 1043.36,
+      "end": 1049.1999999999998,
+      "text": "called semantic"
+    },
+    {
+      "start": 1046.0,
+      "end": 1050.64,
+      "text": "similarity search. So you're performing"
+    },
+    {
+      "start": 1049.2,
+      "end": 1053.52,
+      "text": "what you're doing is you're taking a"
+    },
+    {
+      "start": 1050.64,
+      "end": 1055.679,
+      "text": "query convert into an embedding"
+    },
+    {
+      "start": 1053.52,
+      "end": 1058.559,
+      "text": "transforming this into an embedding at a"
+    },
+    {
+      "start": 1055.679,
+      "end": 1060.96,
+      "text": "retriever layer. By the time you inject"
+    },
+    {
+      "start": 1058.559,
+      "end": 1062.96,
+      "text": "your document it has been ready to"
+    },
+    {
+      "start": 1060.96,
+      "end": 1065.76,
+      "text": "consume at a vector store. This is also"
+    },
+    {
+      "start": 1062.96,
+      "end": 1067.679,
+      "text": "numerical. This is also numeric. Now"
+    },
+    {
+      "start": 1065.76,
+      "end": 1070.08,
+      "text": "both are numeric. What are you going to"
+    },
+    {
+      "start": 1067.679,
+      "end": 1071.919,
+      "text": "do with this numerical calculation is"
+    },
+    {
+      "start": 1070.08,
+      "end": 1076.08,
+      "text": "you're going to perform another"
+    },
+    {
+      "start": 1071.919,
+      "end": 1077.8400000000001,
+      "text": "operation which is called reranking at a"
+    },
+    {
+      "start": 1076.08,
+      "end": 1080.0,
+      "text": "retrieval layer. So when you're reanking"
+    },
+    {
+      "start": 1077.84,
+      "end": 1082.1599999999999,
+      "text": "this document, what you're trying to"
+    },
+    {
+      "start": 1080.0,
+      "end": 1084.0,
+      "text": "achieve is you're saying that given a"
+    },
+    {
+      "start": 1082.16,
+      "end": 1086.48,
+      "text": "particular query,"
+    },
+    {
+      "start": 1084.0,
+      "end": 1090.0,
+      "text": "how many chunks should I retrieve from"
+    },
+    {
+      "start": 1086.48,
+      "end": 1092.48,
+      "text": "vector store to provide the right answer"
+    },
+    {
+      "start": 1090.0,
+      "end": 1094.48,
+      "text": "to the query. So this is where the user"
+    },
+    {
+      "start": 1092.48,
+      "end": 1096.24,
+      "text": "submit a query. It embedded using the"
+    },
+    {
+      "start": 1094.48,
+      "end": 1099.039,
+      "text": "same model that has been used during"
+    },
+    {
+      "start": 1096.24,
+      "end": 1101.76,
+      "text": "indexing and you're going to compare"
+    },
+    {
+      "start": 1099.039,
+      "end": 1104.4,
+      "text": "against the index vectors via similarity"
+    },
+    {
+      "start": 1101.76,
+      "end": 1106.64,
+      "text": "search algorithm. and the top matches"
+    },
+    {
+      "start": 1104.4,
+      "end": 1109.039,
+      "text": "are returned and these retrieval chunks"
+    },
+    {
+      "start": 1106.64,
+      "end": 1111.6000000000001,
+      "text": "are then inserted into a prompt template"
+    },
+    {
+      "start": 1109.039,
+      "end": 1114.167,
+      "text": "alongside with a query and then you're"
+    },
+    {
+      "start": 1111.6,
+      "end": 1115.9189999999999,
+      "text": "going to call an LLM model which is"
+    },
+    {
+      "start": 1114.167,
+      "end": 1118.32,
+      "text": "[snorts] at this layer to generate an"
+    },
+    {
+      "start": 1115.919,
+      "end": 1121.039,
+      "text": "accurate answer."
+    },
+    {
+      "start": 1118.32,
+      "end": 1123.36,
+      "text": "So this is how the overall rack pipeline"
+    },
+    {
+      "start": 1121.039,
+      "end": 1125.2,
+      "text": "works in general. Right now there are"
+    },
+    {
+      "start": 1123.36,
+      "end": 1128.24,
+      "text": "different variants of rack. I will not"
+    },
+    {
+      "start": 1125.2,
+      "end": 1129.919,
+      "text": "go into that part right now because the"
+    },
+    {
+      "start": 1128.24,
+      "end": 1132.0,
+      "text": "main idea that we should understand is"
+    },
+    {
+      "start": 1129.919,
+      "end": 1134.0,
+      "text": "the methodology how the rack has been"
+    },
+    {
+      "start": 1132.0,
+      "end": 1135.679,
+      "text": "designed."
+    },
+    {
+      "start": 1134.0,
+      "end": 1139.84,
+      "text": "Now let me try to break down this"
+    },
+    {
+      "start": 1135.679,
+      "end": 1141.44,
+      "text": "retriever chunk into multiple methods."
+    },
+    {
+      "start": 1139.84,
+      "end": 1145.039,
+      "text": "So when you talk about retrieval"
+    },
+    {
+      "start": 1141.44,
+      "end": 1147.039,
+      "text": "workflow so essentially rag compris of"
+    },
+    {
+      "start": 1145.039,
+      "end": 1148.96,
+      "text": "three part retriever is the most"
+    },
+    {
+      "start": 1147.039,
+      "end": 1152.799,
+      "text": "important part"
+    },
+    {
+      "start": 1148.96,
+      "end": 1154.96,
+      "text": "where you're going to feed this pipeline"
+    },
+    {
+      "start": 1152.799,
+      "end": 1158.0,
+      "text": "with the help of corpus all the domain"
+    },
+    {
+      "start": 1154.96,
+      "end": 1161.52,
+      "text": "agnostic corpus or your data and this"
+    },
+    {
+      "start": 1158.0,
+      "end": 1164.64,
+      "text": "retriever will generate a vector store"
+    },
+    {
+      "start": 1161.52,
+      "end": 1167.12,
+      "text": "right and from this vector store you're"
+    },
+    {
+      "start": 1164.64,
+      "end": 1169.2,
+      "text": "going to perform a ranking and"
+    },
+    {
+      "start": 1167.12,
+      "end": 1171.36,
+      "text": "agumentation."
+    },
+    {
+      "start": 1169.2,
+      "end": 1174.559,
+      "text": "So here you are going to augment the"
+    },
+    {
+      "start": 1171.36,
+      "end": 1177.36,
+      "text": "pipeline with these systematic vector"
+    },
+    {
+      "start": 1174.559,
+      "end": 1181.6789999999999,
+      "text": "and then you go to the generation phase."
+    },
+    {
+      "start": 1177.36,
+      "end": 1183.36,
+      "text": "So during the retrieval phase you have"
+    },
+    {
+      "start": 1181.679,
+      "end": 1186.16,
+      "text": "typically you're going to work on these"
+    },
+    {
+      "start": 1183.36,
+      "end": 1188.3999999999999,
+      "text": "four steps. The first step is to accept"
+    },
+    {
+      "start": 1186.16,
+      "end": 1190.24,
+      "text": "the user query because that is the most"
+    },
+    {
+      "start": 1188.4,
+      "end": 1193.44,
+      "text": "important requirement for retrieval to"
+    },
+    {
+      "start": 1190.24,
+      "end": 1196.0,
+      "text": "operate. Then you're going to generate a"
+    },
+    {
+      "start": 1193.44,
+      "end": 1197.28,
+      "text": "query embedding."
+    },
+    {
+      "start": 1196.0,
+      "end": 1199.919,
+      "text": "That means you're going to convert your"
+    },
+    {
+      "start": 1197.28,
+      "end": 1201.28,
+      "text": "query into numerical representation and"
+    },
+    {
+      "start": 1199.919,
+      "end": 1203.2800000000002,
+      "text": "then using this particular query"
+    },
+    {
+      "start": 1201.28,
+      "end": 1205.44,
+      "text": "embedding you're going to search from"
+    },
+    {
+      "start": 1203.28,
+      "end": 1208.3999999999999,
+      "text": "the domain corpus the document corpus"
+    },
+    {
+      "start": 1205.44,
+      "end": 1209.76,
+      "text": "that we have created in the pre-step and"
+    },
+    {
+      "start": 1208.4,
+      "end": 1212.3200000000002,
+      "text": "what you're going to do is you're going"
+    },
+    {
+      "start": 1209.76,
+      "end": 1214.96,
+      "text": "to return the top k similarity search"
+    },
+    {
+      "start": 1212.32,
+      "end": 1217.039,
+      "text": "and that is called ranking method. So"
+    },
+    {
+      "start": 1214.96,
+      "end": 1219.919,
+      "text": "when you're returning a top k similarity"
+    },
+    {
+      "start": 1217.039,
+      "end": 1222.4,
+      "text": "paragraphs or chunks we are going to"
+    },
+    {
+      "start": 1219.919,
+      "end": 1225.2,
+      "text": "inject them into a retrieval context and"
+    },
+    {
+      "start": 1222.4,
+      "end": 1227.1200000000001,
+      "text": "then use llm to generate an answer. That"
+    },
+    {
+      "start": 1225.2,
+      "end": 1229.76,
+      "text": "means you're going to compound your"
+    },
+    {
+      "start": 1227.12,
+      "end": 1232.6399999999999,
+      "text": "input with the help of a query as well"
+    },
+    {
+      "start": 1229.76,
+      "end": 1236.1589999999999,
+      "text": "as your vector store"
+    },
+    {
+      "start": 1232.64,
+      "end": 1238.0800000000002,
+      "text": "and then put up this into a"
+    },
+    {
+      "start": 1236.159,
+      "end": 1240.0800000000002,
+      "text": "combination"
+    },
+    {
+      "start": 1238.08,
+      "end": 1242.48,
+      "text": "to p to pass it this to an LM to"
+    },
+    {
+      "start": 1240.08,
+      "end": 1244.24,
+      "text": "generate a response."
+    },
+    {
+      "start": 1242.48,
+      "end": 1247.2,
+      "text": "So the whole idea here is retrieval"
+    },
+    {
+      "start": 1244.24,
+      "end": 1249.76,
+      "text": "pipeline will work like a workflows and"
+    },
+    {
+      "start": 1247.2,
+      "end": 1251.3600000000001,
+      "text": "then basically all the systematic"
+    },
+    {
+      "start": 1249.76,
+      "end": 1254.24,
+      "text": "arrangement that you're making"
+    },
+    {
+      "start": 1251.36,
+      "end": 1256.0,
+      "text": "beforehand are these part. So when you"
+    },
+    {
+      "start": 1254.24,
+      "end": 1258.0,
+      "text": "are doing pre-processing that means"
+    },
+    {
+      "start": 1256.0,
+      "end": 1261.28,
+      "text": "you're loading your document into the"
+    },
+    {
+      "start": 1258.0,
+      "end": 1263.52,
+      "text": "memory. So let's assume that you have uh"
+    },
+    {
+      "start": 1261.28,
+      "end": 1265.12,
+      "text": "some shareepoint access where you're"
+    },
+    {
+      "start": 1263.52,
+      "end": 1267.679,
+      "text": "going to store your documents in a form"
+    },
+    {
+      "start": 1265.12,
+      "end": 1270.4799999999998,
+      "text": "of a PDF file and I have access to that"
+    },
+    {
+      "start": 1267.679,
+      "end": 1272.4,
+      "text": "shareepoint right. So my pipeline will"
+    },
+    {
+      "start": 1270.48,
+      "end": 1274.72,
+      "text": "always try to look for the recent"
+    },
+    {
+      "start": 1272.4,
+      "end": 1278.88,
+      "text": "document using timestamp using some"
+    },
+    {
+      "start": 1274.72,
+      "end": 1281.679,
+      "text": "nomomenclatures using some u basically"
+    },
+    {
+      "start": 1278.88,
+      "end": 1284.7990000000002,
+      "text": "some name methods and then based upon"
+    },
+    {
+      "start": 1281.679,
+      "end": 1286.799,
+      "text": "that I will create a pipeline which will"
+    },
+    {
+      "start": 1284.799,
+      "end": 1289.28,
+      "text": "endross these document and fetch these"
+    },
+    {
+      "start": 1286.799,
+      "end": 1291.84,
+      "text": "document from uh the shareepoint or some"
+    },
+    {
+      "start": 1289.28,
+      "end": 1293.6789999999999,
+      "text": "other provisions. Now I will move on to"
+    },
+    {
+      "start": 1291.84,
+      "end": 1295.6789999999999,
+      "text": "the second phase. This is the all"
+    },
+    {
+      "start": 1293.679,
+      "end": 1297.039,
+      "text": "pre-processing before retrieval. So that"
+    },
+    {
+      "start": 1295.679,
+      "end": 1299.919,
+      "text": "means I need to perform some text"
+    },
+    {
+      "start": 1297.039,
+      "end": 1302.0,
+      "text": "prep-processing. Removing and cleaning"
+    },
+    {
+      "start": 1299.919,
+      "end": 1304.64,
+      "text": "of the data is very important. I have to"
+    },
+    {
+      "start": 1302.0,
+      "end": 1306.88,
+      "text": "normalize the text using uh that I'm"
+    },
+    {
+      "start": 1304.64,
+      "end": 1310.96,
+      "text": "going to use. I need to clean some"
+    },
+    {
+      "start": 1306.88,
+      "end": 1312.88,
+      "text": "hypertext hyper uh sorry HTML tags and"
+    },
+    {
+      "start": 1310.96,
+      "end": 1314.48,
+      "text": "other stuff from the text that I'm going"
+    },
+    {
+      "start": 1312.88,
+      "end": 1316.24,
+      "text": "to consume."
+    },
+    {
+      "start": 1314.48,
+      "end": 1318.48,
+      "text": "Then I'm going to employ something"
+    },
+    {
+      "start": 1316.24,
+      "end": 1320.0,
+      "text": "called chunking strategies."
+    },
+    {
+      "start": 1318.48,
+      "end": 1322.32,
+      "text": "Now chunking is nothing but it's a"
+    },
+    {
+      "start": 1320.0,
+      "end": 1324.08,
+      "text": "process of breaking down your documents"
+    },
+    {
+      "start": 1322.32,
+      "end": 1325.76,
+      "text": "into multiple chunks. As the name"
+    },
+    {
+      "start": 1324.08,
+      "end": 1328.08,
+      "text": "suggests, chunking. Chunking means"
+    },
+    {
+      "start": 1325.76,
+      "end": 1330.1589999999999,
+      "text": "you're chunking your document. So why"
+    },
+    {
+      "start": 1328.08,
+      "end": 1332.24,
+      "text": "you're chunking your document? Because"
+    },
+    {
+      "start": 1330.159,
+      "end": 1334.88,
+      "text": "chunking is like an act of splitting"
+    },
+    {
+      "start": 1332.24,
+      "end": 1338.0,
+      "text": "document into smaller unit which is"
+    },
+    {
+      "start": 1334.88,
+      "end": 1340.3200000000002,
+      "text": "suitable for embedding and retrieval. So"
+    },
+    {
+      "start": 1338.0,
+      "end": 1342.799,
+      "text": "the constraints are real. So embedding"
+    },
+    {
+      "start": 1340.32,
+      "end": 1346.559,
+      "text": "model have a token limit. Often we are"
+    },
+    {
+      "start": 1342.799,
+      "end": 1349.36,
+      "text": "going to use 512 tokens and LLM context"
+    },
+    {
+      "start": 1346.559,
+      "end": 1350.8799999999999,
+      "text": "windows are finite as well. That means"
+    },
+    {
+      "start": 1349.36,
+      "end": 1352.9599999999998,
+      "text": "everything that you are going to use"
+    },
+    {
+      "start": 1350.88,
+      "end": 1355.919,
+      "text": "inside LLM will depend upon the context"
+    },
+    {
+      "start": 1352.96,
+      "end": 1358.4,
+      "text": "window. So a retrieval work better when"
+    },
+    {
+      "start": 1355.919,
+      "end": 1361.2,
+      "text": "each chunk represent a coherent unit of"
+    },
+    {
+      "start": 1358.4,
+      "end": 1363.679,
+      "text": "meaning rather than an arbitrary span."
+    },
+    {
+      "start": 1361.2,
+      "end": 1366.559,
+      "text": "That means I'm going to use a strategies"
+    },
+    {
+      "start": 1363.679,
+      "end": 1368.159,
+      "text": "of fixedsiz chunking splitting every n"
+    },
+    {
+      "start": 1366.559,
+      "end": 1370.799,
+      "text": "token"
+    },
+    {
+      "start": 1368.159,
+      "end": 1373.0390000000002,
+      "text": "into a simplest manner of engrams."
+    },
+    {
+      "start": 1370.799,
+      "end": 1376.4,
+      "text": "Recursive check character splitting"
+    },
+    {
+      "start": 1373.039,
+      "end": 1378.4,
+      "text": "which is a second technique here is"
+    },
+    {
+      "start": 1376.4,
+      "end": 1381.919,
+      "text": "slightly different. So you're trying to"
+    },
+    {
+      "start": 1378.4,
+      "end": 1384.3200000000002,
+      "text": "split a paragraph which break first at a"
+    },
+    {
+      "start": 1381.919,
+      "end": 1386.0,
+      "text": "sentence level and then at a word level"
+    },
+    {
+      "start": 1384.32,
+      "end": 1387.84,
+      "text": "and that is called recursive chunking"
+    },
+    {
+      "start": 1386.0,
+      "end": 1389.2,
+      "text": "strategy."
+    },
+    {
+      "start": 1387.84,
+      "end": 1390.6399999999999,
+      "text": "Right? So there are different ways that"
+    },
+    {
+      "start": 1389.2,
+      "end": 1392.64,
+      "text": "you can able to use these chunking"
+    },
+    {
+      "start": 1390.64,
+      "end": 1396.0,
+      "text": "strategies to ensure you will get a"
+    },
+    {
+      "start": 1392.64,
+      "end": 1398.48,
+      "text": "quality response from the rack pipeline."
+    },
+    {
+      "start": 1396.0,
+      "end": 1400.159,
+      "text": "Now once you perform the text"
+    },
+    {
+      "start": 1398.48,
+      "end": 1401.84,
+      "text": "pre-processing that means the cleaning"
+    },
+    {
+      "start": 1400.159,
+      "end": 1404.72,
+      "text": "and the normalization on the text and"
+    },
+    {
+      "start": 1401.84,
+      "end": 1406.6399999999999,
+      "text": "then you convert into a chunk then you"
+    },
+    {
+      "start": 1404.72,
+      "end": 1408.64,
+      "text": "are going to use embedding models. Now"
+    },
+    {
+      "start": 1406.64,
+      "end": 1411.2800000000002,
+      "text": "here it is very important to understand"
+    },
+    {
+      "start": 1408.64,
+      "end": 1413.2800000000002,
+      "text": "that when you talk about embeddings,"
+    },
+    {
+      "start": 1411.28,
+      "end": 1416.559,
+      "text": "embedding models convert text into a"
+    },
+    {
+      "start": 1413.28,
+      "end": 1418.1589999999999,
+      "text": "dense vector typically in a range of 384"
+    },
+    {
+      "start": 1416.559,
+      "end": 1420.72,
+      "text": "to"
+    },
+    {
+      "start": 1418.159,
+      "end": 1423.7600000000002,
+      "text": "1536 dimension. That means you're going"
+    },
+    {
+      "start": 1420.72,
+      "end": 1426.48,
+      "text": "to use encoded similarity meaning."
+    },
+    {
+      "start": 1423.76,
+      "end": 1429.36,
+      "text": "So the choice of embedding model depends"
+    },
+    {
+      "start": 1426.48,
+      "end": 1430.88,
+      "text": "upon the choice of your LLM as well. So"
+    },
+    {
+      "start": 1429.36,
+      "end": 1433.1999999999998,
+      "text": "I will give you an example when you're"
+    },
+    {
+      "start": 1430.88,
+      "end": 1436.3200000000002,
+      "text": "using a GPT based models you often go"
+    },
+    {
+      "start": 1433.2,
+      "end": 1438.32,
+      "text": "with text embedding three large because"
+    },
+    {
+      "start": 1436.32,
+      "end": 1441.6789999999999,
+      "text": "they are using a something called BGE"
+    },
+    {
+      "start": 1438.32,
+      "end": 1444.48,
+      "text": "notation right so that means you have a"
+    },
+    {
+      "start": 1441.679,
+      "end": 1447.44,
+      "text": "dependency on the LLM model to select a"
+    },
+    {
+      "start": 1444.48,
+      "end": 1450.08,
+      "text": "type of uh you have a you have a"
+    },
+    {
+      "start": 1447.44,
+      "end": 1452.96,
+      "text": "dependency on LLM model to select a type"
+    },
+    {
+      "start": 1450.08,
+      "end": 1455.279,
+      "text": "of embedding models as well."
+    },
+    {
+      "start": 1452.96,
+      "end": 1456.88,
+      "text": "Now once you convert everything you have"
+    },
+    {
+      "start": 1455.279,
+      "end": 1458.64,
+      "text": "an embedding model then you're going to"
+    },
+    {
+      "start": 1456.88,
+      "end": 1460.64,
+      "text": "store this embedding back to a vector"
+    },
+    {
+      "start": 1458.64,
+      "end": 1462.4,
+      "text": "store. Now this vector store will serve"
+    },
+    {
+      "start": 1460.64,
+      "end": 1464.5590000000002,
+      "text": "like a"
+    },
+    {
+      "start": 1462.4,
+      "end": 1466.5590000000002,
+      "text": "database for you. So vector store or"
+    },
+    {
+      "start": 1464.559,
+      "end": 1468.48,
+      "text": "vector database will store embedding"
+    },
+    {
+      "start": 1466.559,
+      "end": 1471.039,
+      "text": "alongside the original chunks and the"
+    },
+    {
+      "start": 1468.48,
+      "end": 1473.84,
+      "text": "metadata and what it does is it will"
+    },
+    {
+      "start": 1471.039,
+      "end": 1475.84,
+      "text": "help you to implement the semantic"
+    },
+    {
+      "start": 1473.84,
+      "end": 1478.48,
+      "text": "search capability within the vectors"
+    },
+    {
+      "start": 1475.84,
+      "end": 1482.32,
+      "text": "operation. Now before you are storing"
+    },
+    {
+      "start": 1478.48,
+      "end": 1484.799,
+      "text": "this vectors into your u before you are"
+    },
+    {
+      "start": 1482.32,
+      "end": 1486.0,
+      "text": "storing this ambit into a vector store"
+    },
+    {
+      "start": 1484.799,
+      "end": 1488.08,
+      "text": "you are going to perform something"
+    },
+    {
+      "start": 1486.0,
+      "end": 1489.44,
+      "text": "called indexing to manage this document"
+    },
+    {
+      "start": 1488.08,
+      "end": 1492.48,
+      "text": "as well. There's something called"
+    },
+    {
+      "start": 1489.44,
+      "end": 1494.559,
+      "text": "indexing and indexing will of will be of"
+    },
+    {
+      "start": 1492.48,
+      "end": 1497.6,
+      "text": "several type there are few popular"
+    },
+    {
+      "start": 1494.559,
+      "end": 1501.12,
+      "text": "methods like hnsw ivf which is inverted"
+    },
+    {
+      "start": 1497.6,
+      "end": 1502.9599999999998,
+      "text": "file index and uh product quantization."
+    },
+    {
+      "start": 1501.12,
+      "end": 1505.12,
+      "text": "So these are all some of the important"
+    },
+    {
+      "start": 1502.96,
+      "end": 1508.559,
+      "text": "indexing technique and it depends upon"
+    },
+    {
+      "start": 1505.12,
+      "end": 1511.039,
+      "text": "what kind of volume and velocity that"
+    },
+    {
+      "start": 1508.559,
+      "end": 1512.96,
+      "text": "you require to operate on these document"
+    },
+    {
+      "start": 1511.039,
+      "end": 1514.799,
+      "text": "retrieval."
+    },
+    {
+      "start": 1512.96,
+      "end": 1517.76,
+      "text": "All right. Now once you develop this"
+    },
+    {
+      "start": 1514.799,
+      "end": 1520.08,
+      "text": "rack system that means you're going to"
+    },
+    {
+      "start": 1517.76,
+      "end": 1522.32,
+      "text": "use also something called generator"
+    },
+    {
+      "start": 1520.08,
+      "end": 1524.6399999999999,
+      "text": "right. So generator is very important"
+    },
+    {
+      "start": 1522.32,
+      "end": 1527.6,
+      "text": "because once you create a vector you"
+    },
+    {
+      "start": 1524.64,
+      "end": 1530.48,
+      "text": "have all the data inside this database"
+    },
+    {
+      "start": 1527.6,
+      "end": 1532.9599999999998,
+      "text": "vector database. Now you're going to use"
+    },
+    {
+      "start": 1530.48,
+      "end": 1535.3600000000001,
+      "text": "contents to be passed to a generator"
+    },
+    {
+      "start": 1532.96,
+      "end": 1537.6000000000001,
+      "text": "function. So the llm that produce the"
+    },
+    {
+      "start": 1535.36,
+      "end": 1540.24,
+      "text": "final answer takes the retrieval context"
+    },
+    {
+      "start": 1537.6,
+      "end": 1543.279,
+      "text": "and the user query and both wrapped into"
+    },
+    {
+      "start": 1540.24,
+      "end": 1545.279,
+      "text": "a prompt template and generate a"
+    },
+    {
+      "start": 1543.279,
+      "end": 1547.679,
+      "text": "grounded response. So the basically the"
+    },
+    {
+      "start": 1545.279,
+      "end": 1550.4,
+      "text": "prompt design is very important here."
+    },
+    {
+      "start": 1547.679,
+      "end": 1552.3200000000002,
+      "text": "Now so let's say you are creating some"
+    },
+    {
+      "start": 1550.4,
+      "end": 1555.76,
+      "text": "some use case scenario for financial"
+    },
+    {
+      "start": 1552.32,
+      "end": 1558.0,
+      "text": "domain Q&A rack pipeline against"
+    },
+    {
+      "start": 1555.76,
+      "end": 1560.32,
+      "text": "healthcare. It is a two different sort"
+    },
+    {
+      "start": 1558.0,
+      "end": 1562.24,
+      "text": "of operations, right? So when you're"
+    },
+    {
+      "start": 1560.32,
+      "end": 1563.84,
+      "text": "dealing with domain agnostic problem"
+    },
+    {
+      "start": 1562.24,
+      "end": 1565.919,
+      "text": "statement, you have to be very"
+    },
+    {
+      "start": 1563.84,
+      "end": 1568.0,
+      "text": "precautious about your evaluation"
+    },
+    {
+      "start": 1565.919,
+      "end": 1569.3600000000001,
+      "text": "strategies as well. So there are"
+    },
+    {
+      "start": 1568.0,
+      "end": 1573.84,
+      "text": "different ways that you can evaluate"
+    },
+    {
+      "start": 1569.36,
+      "end": 1576.6399999999999,
+      "text": "your rag. One way is you can take human"
+    },
+    {
+      "start": 1573.84,
+      "end": 1578.9599999999998,
+      "text": "feedbacks into consideration which is"
+    },
+    {
+      "start": 1576.64,
+      "end": 1581.44,
+      "text": "going to be driven bymemes."
+    },
+    {
+      "start": 1578.96,
+      "end": 1584.799,
+      "text": "The second part is you can also use some"
+    },
+    {
+      "start": 1581.44,
+      "end": 1588.64,
+      "text": "automated methods to operate. So we'll"
+    },
+    {
+      "start": 1584.799,
+      "end": 1590.1589999999999,
+      "text": "talk about one such method called Ragas"
+    },
+    {
+      "start": 1588.64,
+      "end": 1593.2,
+      "text": "and this is one of the library that we"
+    },
+    {
+      "start": 1590.159,
+      "end": 1595.0390000000002,
+      "text": "are going to use in our demonstration."
+    },
+    {
+      "start": 1593.2,
+      "end": 1598.24,
+      "text": "So that means we would like to evaluate"
+    },
+    {
+      "start": 1595.039,
+      "end": 1601.12,
+      "text": "the outcome of a rack on a ground truth"
+    },
+    {
+      "start": 1598.24,
+      "end": 1603.2,
+      "text": "answer which will measure"
+    },
+    {
+      "start": 1601.12,
+      "end": 1606.6399999999999,
+      "text": "uh which will give provide me a very"
+    },
+    {
+      "start": 1603.2,
+      "end": 1608.559,
+      "text": "good insight on the quality of response"
+    },
+    {
+      "start": 1606.64,
+      "end": 1611.44,
+      "text": "and the quality of response I'm going to"
+    },
+    {
+      "start": 1608.559,
+      "end": 1614.1589999999999,
+      "text": "use several benchmark like answer"
+    },
+    {
+      "start": 1611.44,
+      "end": 1616.88,
+      "text": "correctness, answer similarity, answer"
+    },
+    {
+      "start": 1614.159,
+      "end": 1619.8400000000001,
+      "text": "relevance, contextual recall, contextual"
+    },
+    {
+      "start": 1616.88,
+      "end": 1623.3600000000001,
+      "text": "precision, faithfulness to ensure that"
+    },
+    {
+      "start": 1619.84,
+      "end": 1626.6399999999999,
+      "text": "my pipeline is working pretty"
+    },
+    {
+      "start": 1623.36,
+      "end": 1628.32,
+      "text": "significantly to generate an answer. So"
+    },
+    {
+      "start": 1626.64,
+      "end": 1630.0800000000002,
+      "text": "let's try to look into the tool stack"
+    },
+    {
+      "start": 1628.32,
+      "end": 1632.24,
+      "text": "that we're going to use in our code. So"
+    },
+    {
+      "start": 1630.08,
+      "end": 1634.72,
+      "text": "we are going to use Python 3.11 and"
+    },
+    {
+      "start": 1632.24,
+      "end": 1637.039,
+      "text": "higher version. I'm going to use Chromma"
+    },
+    {
+      "start": 1634.72,
+      "end": 1638.88,
+      "text": "DB which is one of the famous vector"
+    },
+    {
+      "start": 1637.039,
+      "end": 1641.44,
+      "text": "store databases."
+    },
+    {
+      "start": 1638.88,
+      "end": 1643.3600000000001,
+      "text": "Uh and uh it is available as a free of"
+    },
+    {
+      "start": 1641.44,
+      "end": 1646.96,
+      "text": "cost. You do not have to pay any"
+    },
+    {
+      "start": 1643.36,
+      "end": 1648.24,
+      "text": "enterprise license for Chromod."
+    },
+    {
+      "start": 1646.96,
+      "end": 1650.64,
+      "text": "We are going to use something called"
+    },
+    {
+      "start": 1648.24,
+      "end": 1653.1200000000001,
+      "text": "Langchain framework. So lang chain is"
+    },
+    {
+      "start": 1650.64,
+      "end": 1655.3600000000001,
+      "text": "one of the important framework for"
+    },
+    {
+      "start": 1653.12,
+      "end": 1657.1999999999998,
+      "text": "building agents and rack pipeline. So"
+    },
+    {
+      "start": 1655.36,
+      "end": 1660.799,
+      "text": "we'll use lang chain for doing this"
+    },
+    {
+      "start": 1657.2,
+      "end": 1663.8400000000001,
+      "text": "analysis. We will use llama 3 models. Uh"
+    },
+    {
+      "start": 1660.799,
+      "end": 1666.8799999999999,
+      "text": "I will use mistral 7 billion parameter"
+    },
+    {
+      "start": 1663.84,
+      "end": 1669.6,
+      "text": "model v2 for demonstration purpose."
+    },
+    {
+      "start": 1666.88,
+      "end": 1671.8400000000001,
+      "text": "Maybe I can switch between GPT5 as well."
+    },
+    {
+      "start": 1669.6,
+      "end": 1674.8799999999999,
+      "text": "Uh because I have a license for that. So"
+    },
+    {
+      "start": 1671.84,
+      "end": 1677.6789999999999,
+      "text": "I will use my API to demonstrate. We"
+    },
+    {
+      "start": 1674.88,
+      "end": 1681.919,
+      "text": "will use also the sentence transformers"
+    },
+    {
+      "start": 1677.679,
+      "end": 1684.48,
+      "text": "and mini LLM2 embeddings which is 512"
+    },
+    {
+      "start": 1681.919,
+      "end": 1686.96,
+      "text": "embedding chunks to operate. We'll use"
+    },
+    {
+      "start": 1684.48,
+      "end": 1689.2,
+      "text": "sentence transformers to perform the"
+    },
+    {
+      "start": 1686.96,
+      "end": 1691.919,
+      "text": "chunking and"
+    },
+    {
+      "start": 1689.2,
+      "end": 1693.76,
+      "text": "uh retrieval strategies for us. And last"
+    },
+    {
+      "start": 1691.919,
+      "end": 1696.3990000000001,
+      "text": "but not least we will use ragas to"
+    },
+    {
+      "start": 1693.76,
+      "end": 1697.52,
+      "text": "evaluate our pipeline. So these are tax"
+    },
+    {
+      "start": 1696.399,
+      "end": 1699.84,
+      "text": "stack that we are going to use in"
+    },
+    {
+      "start": 1697.52,
+      "end": 1703.679,
+      "text": "today's tutorial and I will demonstrate"
+    },
+    {
+      "start": 1699.84,
+      "end": 1705.6,
+      "text": "how to work on this tutorial."
+    },
+    {
+      "start": 1703.679,
+      "end": 1708.3200000000002,
+      "text": "So let's first try to understand the"
+    },
+    {
+      "start": 1705.6,
+      "end": 1710.9599999999998,
+      "text": "code and then we'll execute this code."
+    },
+    {
+      "start": 1708.32,
+      "end": 1713.6789999999999,
+      "text": "Okay. So in this code what we going to"
+    },
+    {
+      "start": 1710.96,
+      "end": 1715.76,
+      "text": "do is first and foremost thing is we are"
+    },
+    {
+      "start": 1713.679,
+      "end": 1717.919,
+      "text": "going to talk about what are the modules"
+    },
+    {
+      "start": 1715.76,
+      "end": 1721.12,
+      "text": "that we're going to install. So I'm"
+    },
+    {
+      "start": 1717.919,
+      "end": 1723.1200000000001,
+      "text": "going to use a command pip install and"
+    },
+    {
+      "start": 1721.12,
+      "end": 1725.6789999999999,
+      "text": "uh you can see a suffix here sorry"
+    },
+    {
+      "start": 1723.12,
+      "end": 1727.9189999999999,
+      "text": "prefix here which is exclamation mark."
+    },
+    {
+      "start": 1725.679,
+      "end": 1730.3990000000001,
+      "text": "So this will be instructing my Linux"
+    },
+    {
+      "start": 1727.919,
+      "end": 1733.3600000000001,
+      "text": "compiler that I'm going to use pip as a"
+    },
+    {
+      "start": 1730.399,
+      "end": 1737.039,
+      "text": "command line interface. So basically I'm"
+    },
+    {
+      "start": 1733.36,
+      "end": 1738.7199999999998,
+      "text": "using a quiet uh flag which is hyphen q."
+    },
+    {
+      "start": 1737.039,
+      "end": 1741.679,
+      "text": "So this is a quiet mode that means I"
+    },
+    {
+      "start": 1738.72,
+      "end": 1744.24,
+      "text": "will suppress pip progress. So every"
+    },
+    {
+      "start": 1741.679,
+      "end": 1745.8400000000001,
+      "text": "package has a specific role. Chromodb is"
+    },
+    {
+      "start": 1744.24,
+      "end": 1748.0,
+      "text": "for vector store vector database"
+    },
+    {
+      "start": 1745.84,
+      "end": 1749.76,
+      "text": "creation for storing the emittings."
+    },
+    {
+      "start": 1748.0,
+      "end": 1752.72,
+      "text": "Sentence transformer for providing the"
+    },
+    {
+      "start": 1749.76,
+      "end": 1756.8799999999999,
+      "text": "emitting models. Uh and I'm going to use"
+    },
+    {
+      "start": 1752.72,
+      "end": 1758.72,
+      "text": "mini lm. I have a transformers which is"
+    },
+    {
+      "start": 1756.88,
+      "end": 1763.1200000000001,
+      "text": "a hugging phase library for loading and"
+    },
+    {
+      "start": 1758.72,
+      "end": 1765.6000000000001,
+      "text": "running. Mistral bits and byes here to"
+    },
+    {
+      "start": 1763.12,
+      "end": 1768.8799999999999,
+      "text": "enable the quantization. That means I if"
+    },
+    {
+      "start": 1765.6,
+      "end": 1771.6789999999999,
+      "text": "I have to drop the total model size to"
+    },
+    {
+      "start": 1768.88,
+      "end": 1775.3600000000001,
+      "text": "4bit nearly the half of the existing"
+    },
+    {
+      "start": 1771.679,
+      "end": 1777.279,
+      "text": "model then I will use bit and bytes. I"
+    },
+    {
+      "start": 1775.36,
+      "end": 1780.1589999999999,
+      "text": "will also use one important package from"
+    },
+    {
+      "start": 1777.279,
+      "end": 1783.36,
+      "text": "fits which is called pyu pdfdf and this"
+    },
+    {
+      "start": 1780.159,
+      "end": 1786.3990000000001,
+      "text": "is one of the fastest purest python pdf"
+    },
+    {
+      "start": 1783.36,
+      "end": 1788.0,
+      "text": "text etc that is available. I'm also"
+    },
+    {
+      "start": 1786.399,
+      "end": 1791.039,
+      "text": "going to use torch which is a deep"
+    },
+    {
+      "start": 1788.0,
+      "end": 1793.52,
+      "text": "learning backend uh service and I'm"
+    },
+    {
+      "start": 1791.039,
+      "end": 1795.039,
+      "text": "going to use this for evaluation"
+    },
+    {
+      "start": 1793.52,
+      "end": 1798.1589999999999,
+      "text": "purposes."
+    },
+    {
+      "start": 1795.039,
+      "end": 1799.919,
+      "text": "Now I'm going to do several imports."
+    },
+    {
+      "start": 1798.159,
+      "end": 1801.2,
+      "text": "I would like to import operating system"
+    },
+    {
+      "start": 1799.919,
+      "end": 1803.039,
+      "text": "which will read the environmental"
+    },
+    {
+      "start": 1801.2,
+      "end": 1805.8400000000001,
+      "text": "variable including open AI"
+    },
+    {
+      "start": 1803.039,
+      "end": 1809.6,
+      "text": "configurations. I would like to use fits"
+    },
+    {
+      "start": 1805.84,
+      "end": 1811.9189999999999,
+      "text": "for pyu pdf. Uh and I'm importing this"
+    },
+    {
+      "start": 1809.6,
+      "end": 1815.52,
+      "text": "particular module to read the document"
+    },
+    {
+      "start": 1811.919,
+      "end": 1818.3990000000001,
+      "text": "corpus for creating a vector store. I'm"
+    },
+    {
+      "start": 1815.52,
+      "end": 1821.12,
+      "text": "going to use chromb. So chromadb again"
+    },
+    {
+      "start": 1818.399,
+      "end": 1823.84,
+      "text": "I'm going to use for vector store. Now"
+    },
+    {
+      "start": 1821.12,
+      "end": 1826.399,
+      "text": "I've got a s uh"
+    },
+    {
+      "start": 1823.84,
+      "end": 1828.9599999999998,
+      "text": "some embedding plus"
+    },
+    {
+      "start": 1826.399,
+      "end": 1831.039,
+      "text": "uh model highle rappers. So I'm going to"
+    },
+    {
+      "start": 1828.96,
+      "end": 1833.039,
+      "text": "use sentence transformers which is a"
+    },
+    {
+      "start": 1831.039,
+      "end": 1837.52,
+      "text": "highle wrapper that loads an embedding"
+    },
+    {
+      "start": 1833.039,
+      "end": 1839.919,
+      "text": "model and uh from transformers I'm going"
+    },
+    {
+      "start": 1837.52,
+      "end": 1842.0,
+      "text": "to import auto tokenizer which figure"
+    },
+    {
+      "start": 1839.919,
+      "end": 1844.24,
+      "text": "out which tokenizer class to be used"
+    },
+    {
+      "start": 1842.0,
+      "end": 1846.72,
+      "text": "based upon the model name. So every"
+    },
+    {
+      "start": 1844.24,
+      "end": 1848.72,
+      "text": "model like uh I'm going to use Mistral"
+    },
+    {
+      "start": 1846.72,
+      "end": 1851.2,
+      "text": "versus GBD5 they will have a different"
+    },
+    {
+      "start": 1848.72,
+      "end": 1855.3600000000001,
+      "text": "tokenization method. I'm going to use"
+    },
+    {
+      "start": 1851.2,
+      "end": 1857.44,
+      "text": "auto mode model for cog LLM for large"
+    },
+    {
+      "start": 1855.36,
+      "end": 1859.9189999999999,
+      "text": "models that does the same for model"
+    },
+    {
+      "start": 1857.44,
+      "end": 1861.679,
+      "text": "architectures. That means this is where"
+    },
+    {
+      "start": 1859.919,
+      "end": 1863.1200000000001,
+      "text": "I'm going to use hugging phase. So if"
+    },
+    {
+      "start": 1861.679,
+      "end": 1867.48,
+      "text": "you if you're not sure what is hugging"
+    },
+    {
+      "start": 1863.12,
+      "end": 1867.4799999999998,
+      "text": "phase let me give you some illustration."
+    },
+    {
+      "start": 1870.159,
+      "end": 1874.7990000000002,
+      "text": "So this is the community which is called"
+    },
+    {
+      "start": 1871.919,
+      "end": 1876.64,
+      "text": "hugging face and here you can search for"
+    },
+    {
+      "start": 1874.799,
+      "end": 1880.399,
+      "text": "any model. Let's say if I have to search"
+    },
+    {
+      "start": 1876.64,
+      "end": 1882.96,
+      "text": "for open source model like deepse v2. So"
+    },
+    {
+      "start": 1880.399,
+      "end": 1885.12,
+      "text": "I can go here and then try to see that"
+    },
+    {
+      "start": 1882.96,
+      "end": 1888.0,
+      "text": "this this particular model is available"
+    },
+    {
+      "start": 1885.12,
+      "end": 1890.6399999999999,
+      "text": "this rapper is available for me to"
+    },
+    {
+      "start": 1888.0,
+      "end": 1892.88,
+      "text": "consume. So what I'm doing is I'm just"
+    },
+    {
+      "start": 1890.64,
+      "end": 1895.2,
+      "text": "trying to create an interface to call"
+    },
+    {
+      "start": 1892.88,
+      "end": 1897.279,
+      "text": "this API. Now I'm wrapping everything"
+    },
+    {
+      "start": 1895.2,
+      "end": 1900.24,
+      "text": "inside a pipeline which is a convenience"
+    },
+    {
+      "start": 1897.279,
+      "end": 1902.32,
+      "text": "wrapper that combines tokenizer model"
+    },
+    {
+      "start": 1900.24,
+      "end": 1904.32,
+      "text": "decoding logic behind a single callable"
+    },
+    {
+      "start": 1902.32,
+      "end": 1907.9189999999999,
+      "text": "function. For that I required pipeline"
+    },
+    {
+      "start": 1904.32,
+      "end": 1911.039,
+      "text": "to operate. Now I'm also using a modern"
+    },
+    {
+      "start": 1907.919,
+      "end": 1913.279,
+      "text": "OpenAI SDK and uh here I'm saying I"
+    },
+    {
+      "start": 1911.039,
+      "end": 1915.519,
+      "text": "would like to operate on OpenAI SDK"
+    },
+    {
+      "start": 1913.279,
+      "end": 1917.6,
+      "text": "which is software development kit and I"
+    },
+    {
+      "start": 1915.519,
+      "end": 1919.76,
+      "text": "would like to use OpenAI APIs for doing"
+    },
+    {
+      "start": 1917.6,
+      "end": 1922.6399999999999,
+      "text": "the analysis."
+    },
+    {
+      "start": 1919.76,
+      "end": 1925.12,
+      "text": "Now I'm also uh using some evaluation"
+    },
+    {
+      "start": 1922.64,
+      "end": 1927.519,
+      "text": "for that I require DP val or rag"
+    },
+    {
+      "start": 1925.12,
+      "end": 1930.08,
+      "text": "evaluation and I would like to put up"
+    },
+    {
+      "start": 1927.519,
+      "end": 1934.64,
+      "text": "some use cases around it so that I can"
+    },
+    {
+      "start": 1930.08,
+      "end": 1936.559,
+      "text": "able to use these metrics to compare."
+    },
+    {
+      "start": 1934.64,
+      "end": 1938.88,
+      "text": "Now I'm setting my setting up my open"
+    },
+    {
+      "start": 1936.559,
+      "end": 1942.1589999999999,
+      "text": "API key here. So the way that you are"
+    },
+    {
+      "start": 1938.88,
+      "end": 1944.0,
+      "text": "going to do it is you can register here."
+    },
+    {
+      "start": 1942.159,
+      "end": 1946.5590000000002,
+      "text": "This is the platform that you can"
+    },
+    {
+      "start": 1944.0,
+      "end": 1949.12,
+      "text": "register. So you can create your"
+    },
+    {
+      "start": 1946.559,
+      "end": 1951.519,
+      "text": "credentials"
+    },
+    {
+      "start": 1949.12,
+      "end": 1954.0,
+      "text": "and uh once you create your credentials"
+    },
+    {
+      "start": 1951.519,
+      "end": 1956.3990000000001,
+      "text": "then you can go to the billing section"
+    },
+    {
+      "start": 1954.0,
+      "end": 1959.2,
+      "text": "maybe you can purchase some credit pay"
+    },
+    {
+      "start": 1956.399,
+      "end": 1962.1589999999999,
+      "text": "as you go account and then you can start"
+    },
+    {
+      "start": 1959.2,
+      "end": 1963.6000000000001,
+      "text": "using the GPD models from here right so"
+    },
+    {
+      "start": 1962.159,
+      "end": 1967.679,
+      "text": "there are different versions of GPD"
+    },
+    {
+      "start": 1963.6,
+      "end": 1969.76,
+      "text": "models available in this ecosystem now"
+    },
+    {
+      "start": 1967.679,
+      "end": 1972.88,
+      "text": "I'm just enabling my API key so that I"
+    },
+    {
+      "start": 1969.76,
+      "end": 1975.039,
+      "text": "can start using the GPD models now I'm"
+    },
+    {
+      "start": 1972.88,
+      "end": 1978.0,
+      "text": "going to use two important consideration"
+    },
+    {
+      "start": 1975.039,
+      "end": 1979.84,
+      "text": "here. So I'm keeping two models to"
+    },
+    {
+      "start": 1978.0,
+      "end": 1982.559,
+      "text": "compare. One is called Mistral which is"
+    },
+    {
+      "start": 1979.84,
+      "end": 1984.799,
+      "text": "an open source and second one is the"
+    },
+    {
+      "start": 1982.559,
+      "end": 1986.96,
+      "text": "open AI."
+    },
+    {
+      "start": 1984.799,
+      "end": 1990.399,
+      "text": "Okay. So in this code what I'm doing is"
+    },
+    {
+      "start": 1986.96,
+      "end": 1993.2,
+      "text": "in these lines of code I'm creating two"
+    },
+    {
+      "start": 1990.399,
+      "end": 1995.6,
+      "text": "option the primary and the secondary. So"
+    },
+    {
+      "start": 1993.2,
+      "end": 1997.44,
+      "text": "in the primary I'm going to use mistral"
+    },
+    {
+      "start": 1995.6,
+      "end": 2000.0,
+      "text": "secondary I'm keeping as a backup which"
+    },
+    {
+      "start": 1997.44,
+      "end": 2003.279,
+      "text": "is open AI. Now I'm passing this open AI"
+    },
+    {
+      "start": 2000.0,
+      "end": 2005.44,
+      "text": "key to initialize my model object."
+    },
+    {
+      "start": 2003.279,
+      "end": 2007.679,
+      "text": "Right. And then I'm just trying to"
+    },
+    {
+      "start": 2005.44,
+      "end": 2009.8400000000001,
+      "text": "ensure that my model will be using my"
+    },
+    {
+      "start": 2007.679,
+      "end": 2011.44,
+      "text": "API key that I have passed. Now there"
+    },
+    {
+      "start": 2009.84,
+      "end": 2013.76,
+      "text": "are two ways that you can pass the API"
+    },
+    {
+      "start": 2011.44,
+      "end": 2016.88,
+      "text": "key. One is via creating a secret here"
+    },
+    {
+      "start": 2013.76,
+      "end": 2020.08,
+      "text": "in Google Collab passing the model name."
+    },
+    {
+      "start": 2016.88,
+      "end": 2022.0800000000002,
+      "text": "You can say open AI API key and then you"
+    },
+    {
+      "start": 2020.08,
+      "end": 2024.559,
+      "text": "can pass on the value as your key."
+    },
+    {
+      "start": 2022.08,
+      "end": 2026.6399999999999,
+      "text": "Second way is you can simply hardcode"
+    },
+    {
+      "start": 2024.559,
+      "end": 2030.399,
+      "text": "using this string."
+    },
+    {
+      "start": 2026.64,
+      "end": 2033.8400000000001,
+      "text": "So I'm just trying to use OpenAI API key"
+    },
+    {
+      "start": 2030.399,
+      "end": 2036.2399999999998,
+      "text": "as a primary method and then I will also"
+    },
+    {
+      "start": 2033.84,
+      "end": 2038.399,
+      "text": "load the embedding layer. Now this is"
+    },
+    {
+      "start": 2036.24,
+      "end": 2040.559,
+      "text": "where I would like to download the model"
+    },
+    {
+      "start": 2038.399,
+      "end": 2042.7199999999998,
+      "text": "weights from hugging phase hub and cache"
+    },
+    {
+      "start": 2040.559,
+      "end": 2045.9189999999999,
+      "text": "them under"
+    },
+    {
+      "start": 2042.72,
+      "end": 2048.0,
+      "text": "the hugging phase library."
+    },
+    {
+      "start": 2045.919,
+      "end": 2051.119,
+      "text": "So I'm going to load this embedding"
+    },
+    {
+      "start": 2048.0,
+      "end": 2054.24,
+      "text": "model which is called all mini LM6 which"
+    },
+    {
+      "start": 2051.119,
+      "end": 2056.56,
+      "text": "is large language model which is of 384"
+    },
+    {
+      "start": 2054.24,
+      "end": 2058.4799999999996,
+      "text": "dimension vector. That means it is very"
+    },
+    {
+      "start": 2056.56,
+      "end": 2061.2799999999997,
+      "text": "good model, efficient model, small"
+    },
+    {
+      "start": 2058.48,
+      "end": 2064.879,
+      "text": "enough that will store tens of thousands"
+    },
+    {
+      "start": 2061.28,
+      "end": 2069.52,
+      "text": "of data comfortably in terms of vector"
+    },
+    {
+      "start": 2064.879,
+      "end": 2072.0789999999997,
+      "text": "uh length and I can go with it."
+    },
+    {
+      "start": 2069.52,
+      "end": 2075.2,
+      "text": "So I've downloaded this model. Now I'm"
+    },
+    {
+      "start": 2072.079,
+      "end": 2077.04,
+      "text": "going to load the primary back end. That"
+    },
+    {
+      "start": 2075.2,
+      "end": 2080.1589999999997,
+      "text": "means this is my primary provision where"
+    },
+    {
+      "start": 2077.04,
+      "end": 2082.079,
+      "text": "I'm going to use mist tokenizer mist"
+    },
+    {
+      "start": 2080.159,
+      "end": 2084.399,
+      "text": "model. I'm keeping it as none. That"
+    },
+    {
+      "start": 2082.079,
+      "end": 2089.7200000000003,
+      "text": "means I'm just declaring that I'm going"
+    },
+    {
+      "start": 2084.399,
+      "end": 2089.72,
+      "text": "to use uh this as secondary."
+    },
+    {
+      "start": 2091.2,
+      "end": 2097.2799999999997,
+      "text": "Now I'm going to also initialize the"
+    },
+    {
+      "start": 2093.679,
+      "end": 2099.359,
+      "text": "model which I'm going to use as a open"
+    },
+    {
+      "start": 2097.28,
+      "end": 2101.599,
+      "text": "source which is open AI model and this"
+    },
+    {
+      "start": 2099.359,
+      "end": 2104.0789999999997,
+      "text": "is what I'm initializing. Now I'm also"
+    },
+    {
+      "start": 2101.599,
+      "end": 2106.079,
+      "text": "initializing the chromb which is my"
+    },
+    {
+      "start": 2104.079,
+      "end": 2107.76,
+      "text": "vector store. Now when I'm initializing"
+    },
+    {
+      "start": 2106.079,
+      "end": 2111.599,
+      "text": "a chromb"
+    },
+    {
+      "start": 2107.76,
+      "end": 2113.6800000000003,
+      "text": "I'm using a chromb.client client method."
+    },
+    {
+      "start": 2111.599,
+      "end": 2116.2400000000002,
+      "text": "So this method will create in-memory"
+    },
+    {
+      "start": 2113.68,
+      "end": 2118.56,
+      "text": "client no disk persistent for production"
+    },
+    {
+      "start": 2116.24,
+      "end": 2121.839,
+      "text": "users. So I'm keeping the persistent"
+    },
+    {
+      "start": 2118.56,
+      "end": 2123.2799999999997,
+      "text": "path to my local directories. That means"
+    },
+    {
+      "start": 2121.839,
+      "end": 2125.599,
+      "text": "everything that I'm going to do will be"
+    },
+    {
+      "start": 2123.28,
+      "end": 2127.52,
+      "text": "hosted in my local Google Collab"
+    },
+    {
+      "start": 2125.599,
+      "end": 2129.3590000000004,
+      "text": "environment."
+    },
+    {
+      "start": 2127.52,
+      "end": 2133.7599999999998,
+      "text": "Now I'm going to download this document."
+    },
+    {
+      "start": 2129.359,
+      "end": 2135.5989999999997,
+      "text": "Let me show you the document first."
+    },
+    {
+      "start": 2133.76,
+      "end": 2138.8390000000004,
+      "text": "So this is the PDF document that I'm"
+    },
+    {
+      "start": 2135.599,
+      "end": 2138.839,
+      "text": "going to use."
+    },
+    {
+      "start": 2140.4,
+      "end": 2144.1600000000003,
+      "text": "This is a nice PDF document which talks"
+    },
+    {
+      "start": 2142.48,
+      "end": 2148.2400000000002,
+      "text": "about artificial intelligence risk"
+    },
+    {
+      "start": 2144.16,
+      "end": 2150.16,
+      "text": "management framework EIMF version 1.0"
+    },
+    {
+      "start": 2148.24,
+      "end": 2152.72,
+      "text": "and inside this document you will see a"
+    },
+    {
+      "start": 2150.16,
+      "end": 2155.72,
+      "text": "lot of text and tables which is part of"
+    },
+    {
+      "start": 2152.72,
+      "end": 2155.72,
+      "text": "it."
+    },
+    {
+      "start": 2158.16,
+      "end": 2162.3199999999997,
+      "text": "Okay. So there's a confusion about"
+    },
+    {
+      "start": 2159.839,
+      "end": 2165.839,
+      "text": "Mistral and OpenAI. So let me open one"
+    },
+    {
+      "start": 2162.32,
+      "end": 2168.079,
+      "text": "more notebook which I have run already"
+    },
+    {
+      "start": 2165.839,
+      "end": 2170.56,
+      "text": "so that this confusion should go away."
+    },
+    {
+      "start": 2168.079,
+      "end": 2174.3590000000004,
+      "text": "So what we are going to do is"
+    },
+    {
+      "start": 2170.56,
+      "end": 2174.359,
+      "text": "let me first open."
+    },
+    {
+      "start": 2192.16,
+      "end": 2196.3999999999996,
+      "text": "Okay. So what we are doing is now I will"
+    },
+    {
+      "start": 2194.24,
+      "end": 2198.56,
+      "text": "move on to the primary version. So I'm"
+    },
+    {
+      "start": 2196.4,
+      "end": 2200.48,
+      "text": "going to use Mistral."
+    },
+    {
+      "start": 2198.56,
+      "end": 2202.72,
+      "text": "So"
+    },
+    {
+      "start": 2200.48,
+      "end": 2205.28,
+      "text": "okay. So let me now go back to this"
+    },
+    {
+      "start": 2202.72,
+      "end": 2207.04,
+      "text": "sheet. So I'm going to use Mistral and"
+    },
+    {
+      "start": 2205.28,
+      "end": 2210.1600000000003,
+      "text": "I'm going to use embedding model which"
+    },
+    {
+      "start": 2207.04,
+      "end": 2212.24,
+      "text": "is all mini LM6. Right. This is a 512"
+    },
+    {
+      "start": 2210.16,
+      "end": 2214.8799999999997,
+      "text": "embedding model dimension emitting"
+    },
+    {
+      "start": 2212.24,
+      "end": 2218.72,
+      "text": "model. Now I'm going to download a mist"
+    },
+    {
+      "start": 2214.88,
+      "end": 2222.32,
+      "text": "model which is near about uh 15GB."
+    },
+    {
+      "start": 2218.72,
+      "end": 2223.52,
+      "text": "So you can see here 14.5GB model. And"
+    },
+    {
+      "start": 2222.32,
+      "end": 2226.2400000000002,
+      "text": "this is what something which I have"
+    },
+    {
+      "start": 2223.52,
+      "end": 2228.64,
+      "text": "downloaded from hugging face hub. Right."
+    },
+    {
+      "start": 2226.24,
+      "end": 2232.0789999999997,
+      "text": "And I'm using a Mistral 7 billion"
+    },
+    {
+      "start": 2228.64,
+      "end": 2233.7599999999998,
+      "text": "instruct v2 which is version two. And"
+    },
+    {
+      "start": 2232.079,
+      "end": 2235.76,
+      "text": "this model is great in terms of"
+    },
+    {
+      "start": 2233.76,
+      "end": 2238.079,
+      "text": "reasoning capability in terms of"
+    },
+    {
+      "start": 2235.76,
+      "end": 2239.76,
+      "text": "generating the QA based uh rack"
+    },
+    {
+      "start": 2238.079,
+      "end": 2242.7200000000003,
+      "text": "pipeline. And this model is sufficient"
+    },
+    {
+      "start": 2239.76,
+      "end": 2244.32,
+      "text": "for doing this work. So I'm loading this"
+    },
+    {
+      "start": 2242.72,
+      "end": 2246.3199999999997,
+      "text": "model."
+    },
+    {
+      "start": 2244.32,
+      "end": 2248.4,
+      "text": "Now I'm going to create a pipeline. So"
+    },
+    {
+      "start": 2246.32,
+      "end": 2251.599,
+      "text": "this pipeline will help me to look"
+    },
+    {
+      "start": 2248.4,
+      "end": 2255.2000000000003,
+      "text": "forward for all the parameters. Now this"
+    },
+    {
+      "start": 2251.599,
+      "end": 2259.04,
+      "text": "pipeline is useful to join my retriever"
+    },
+    {
+      "start": 2255.2,
+      "end": 2261.2799999999997,
+      "text": "and the generator pipeline into a one"
+    },
+    {
+      "start": 2259.04,
+      "end": 2264.48,
+      "text": "one manner. So I'm going to use this"
+    },
+    {
+      "start": 2261.28,
+      "end": 2267.92,
+      "text": "pipeline for the purpose of creating"
+    },
+    {
+      "start": 2264.48,
+      "end": 2271.72,
+      "text": "this right. Uh I mean I'm going to join"
+    },
+    {
+      "start": 2267.92,
+      "end": 2271.7200000000003,
+      "text": "these two things together."
+    },
+    {
+      "start": 2273.28,
+      "end": 2276.8,
+      "text": "So what are the pipeline parameter that"
+    },
+    {
+      "start": 2274.88,
+      "end": 2278.88,
+      "text": "I'm using? So the first parameter is a"
+    },
+    {
+      "start": 2276.8,
+      "end": 2280.48,
+      "text": "text generation which is a task type. So"
+    },
+    {
+      "start": 2278.88,
+      "end": 2283.2000000000003,
+      "text": "I'm saying that I would like to use this"
+    },
+    {
+      "start": 2280.48,
+      "end": 2285.2,
+      "text": "model for text generation. The task type"
+    },
+    {
+      "start": 2283.2,
+      "end": 2287.7599999999998,
+      "text": "will model will generate continuation of"
+    },
+    {
+      "start": 2285.2,
+      "end": 2292.0,
+      "text": "input text. The model that I'm passing"
+    },
+    {
+      "start": 2287.76,
+      "end": 2293.76,
+      "text": "here is mistral v2 uh 7 billion instruct"
+    },
+    {
+      "start": 2292.0,
+      "end": 2296.56,
+      "text": "parameter model. So I will load the"
+    },
+    {
+      "start": 2293.76,
+      "end": 2298.1600000000003,
+      "text": "mistral model inside the model object."
+    },
+    {
+      "start": 2296.56,
+      "end": 2299.68,
+      "text": "The second parameter is for model"
+    },
+    {
+      "start": 2298.16,
+      "end": 2301.2799999999997,
+      "text": "initialization."
+    },
+    {
+      "start": 2299.68,
+      "end": 2303.5989999999997,
+      "text": "The third parameter that I'm using is"
+    },
+    {
+      "start": 2301.28,
+      "end": 2307.3590000000004,
+      "text": "for tokenization. So I'm saying that I"
+    },
+    {
+      "start": 2303.599,
+      "end": 2309.44,
+      "text": "would like to use tokenizer which is by"
+    },
+    {
+      "start": 2307.359,
+      "end": 2311.44,
+      "text": "default I'm keeping it to be sentence"
+    },
+    {
+      "start": 2309.44,
+      "end": 2313.839,
+      "text": "tokenization. So I will use the sentence"
+    },
+    {
+      "start": 2311.44,
+      "end": 2316.7200000000003,
+      "text": "tokenization here. Now I'm also creating"
+    },
+    {
+      "start": 2313.839,
+      "end": 2319.92,
+      "text": "a limit here. The limit will respond to"
+    },
+    {
+      "start": 2316.72,
+      "end": 2322.9599999999996,
+      "text": "256 for a newly generated token. That"
+    },
+    {
+      "start": 2319.92,
+      "end": 2326.079,
+      "text": "means I will limit my token to 256. I'm"
+    },
+    {
+      "start": 2322.96,
+      "end": 2329.359,
+      "text": "keeping the temperature while performing"
+    },
+    {
+      "start": 2326.079,
+      "end": 2330.88,
+      "text": "this analysis to be close to zero. So"
+    },
+    {
+      "start": 2329.359,
+      "end": 2333.92,
+      "text": "basically this is one of the important"
+    },
+    {
+      "start": 2330.88,
+      "end": 2338.4,
+      "text": "parameter for your LLM. When the"
+    },
+    {
+      "start": 2333.92,
+      "end": 2341.839,
+      "text": "temperature typically ranges between"
+    },
+    {
+      "start": 2338.4,
+      "end": 2345.4,
+      "text": "0 to two"
+    },
+    {
+      "start": 2341.839,
+      "end": 2345.4,
+      "text": "higher the temperature"
+    },
+    {
+      "start": 2345.839,
+      "end": 2350.359,
+      "text": "your model will become nondeterministic."
+    },
+    {
+      "start": 2354.0,
+      "end": 2359.44,
+      "text": "That means this model will become"
+    },
+    {
+      "start": 2355.839,
+      "end": 2360.96,
+      "text": "totally random in nature."
+    },
+    {
+      "start": 2359.44,
+      "end": 2363.599,
+      "text": "So when you're increasing the randomness"
+    },
+    {
+      "start": 2360.96,
+      "end": 2366.16,
+      "text": "of your LLM, you will bound to get"
+    },
+    {
+      "start": 2363.599,
+      "end": 2368.8,
+      "text": "creative answers. But in this kind of"
+    },
+    {
+      "start": 2366.16,
+      "end": 2370.48,
+      "text": "scenarios when I'm creating a Q&A, I"
+    },
+    {
+      "start": 2368.8,
+      "end": 2371.92,
+      "text": "need a factual consistency on the"
+    },
+    {
+      "start": 2370.48,
+      "end": 2374.8,
+      "text": "answer. So I would like to make my"
+    },
+    {
+      "start": 2371.92,
+      "end": 2377.599,
+      "text": "temperature close to zero and for that"
+    },
+    {
+      "start": 2374.8,
+      "end": 2379.28,
+      "text": "purpose I'm keeping it to be 0.3."
+    },
+    {
+      "start": 2377.599,
+      "end": 2382.32,
+      "text": "Right? So I'm keeping my model to be"
+    },
+    {
+      "start": 2379.28,
+      "end": 2384.5600000000004,
+      "text": "deterministic in terms of operations. So"
+    },
+    {
+      "start": 2382.32,
+      "end": 2386.56,
+      "text": "I'm controlling the randomness. Lower"
+    },
+    {
+      "start": 2384.56,
+      "end": 2388.24,
+      "text": "means more deterministic. Higher means"
+    },
+    {
+      "start": 2386.56,
+      "end": 2390.32,
+      "text": "more creative."
+    },
+    {
+      "start": 2388.24,
+      "end": 2393.1189999999997,
+      "text": "So I'm just creating it low for factual"
+    },
+    {
+      "start": 2390.32,
+      "end": 2395.92,
+      "text": "consistency. Now I'm also using a pad"
+    },
+    {
+      "start": 2393.119,
+      "end": 2398.1600000000003,
+      "text": "token ID which is setting up to end of"
+    },
+    {
+      "start": 2395.92,
+      "end": 2402.4,
+      "text": "the token or end of the sequence. A"
+    },
+    {
+      "start": 2398.16,
+      "end": 2404.72,
+      "text": "common practice for cordial models."
+    },
+    {
+      "start": 2402.4,
+      "end": 2407.04,
+      "text": "Now once I have done this I'm going to"
+    },
+    {
+      "start": 2404.72,
+      "end": 2409.7599999999998,
+      "text": "initialize the chrom. So I'm creating an"
+    },
+    {
+      "start": 2407.04,
+      "end": 2412.0,
+      "text": "inmemory chromad client. So this is a"
+    },
+    {
+      "start": 2409.76,
+      "end": 2414.079,
+      "text": "command that I'm using chroma client"
+    },
+    {
+      "start": 2412.0,
+      "end": 2416.96,
+      "text": "initializing with a chromabb object"
+    },
+    {
+      "start": 2414.079,
+      "end": 2419.92,
+      "text": "doclient class and creating an in-memory"
+    },
+    {
+      "start": 2416.96,
+      "end": 2422.48,
+      "text": "chromb client. So I'm using a method"
+    },
+    {
+      "start": 2419.92,
+      "end": 2425.359,
+      "text": "called persistent caching persistent"
+    },
+    {
+      "start": 2422.48,
+      "end": 2428.64,
+      "text": "client with the path that will use my"
+    },
+    {
+      "start": 2425.359,
+      "end": 2431.44,
+      "text": "local disk to store this chromad"
+    },
+    {
+      "start": 2428.64,
+      "end": 2434.3199999999997,
+      "text": "in my file system."
+    },
+    {
+      "start": 2431.44,
+      "end": 2436.16,
+      "text": "Now I'm extracting the full document. So"
+    },
+    {
+      "start": 2434.32,
+      "end": 2438.48,
+      "text": "here I'm going to use one paper called"
+    },
+    {
+      "start": 2436.16,
+      "end": 2442.3199999999997,
+      "text": "attention paper. So this is one of the"
+    },
+    {
+      "start": 2438.48,
+      "end": 2444.48,
+      "text": "famous paper in LLM or GEI world which"
+    },
+    {
+      "start": 2442.32,
+      "end": 2447.76,
+      "text": "is called attention is all you need. So"
+    },
+    {
+      "start": 2444.48,
+      "end": 2451.2,
+      "text": "I'm going to use this particular paper"
+    },
+    {
+      "start": 2447.76,
+      "end": 2453.8390000000004,
+      "text": "and this is a paper this is abstract."
+    },
+    {
+      "start": 2451.2,
+      "end": 2455.7599999999998,
+      "text": "So this is my input to the model. Now"
+    },
+    {
+      "start": 2453.839,
+      "end": 2459.359,
+      "text": "what I'm going to do is I will use this"
+    },
+    {
+      "start": 2455.76,
+      "end": 2461.5200000000004,
+      "text": "document as a PDF file. I will perform"
+    },
+    {
+      "start": 2459.359,
+      "end": 2464.56,
+      "text": "all the necessary uh cleansing and"
+    },
+    {
+      "start": 2461.52,
+      "end": 2467.359,
+      "text": "pre-processing steps converting them to"
+    },
+    {
+      "start": 2464.56,
+      "end": 2469.52,
+      "text": "a chunk and then use an embedding to"
+    },
+    {
+      "start": 2467.359,
+      "end": 2471.04,
+      "text": "register inside the chromade. So these"
+    },
+    {
+      "start": 2469.52,
+      "end": 2473.7599999999998,
+      "text": "are the set of step that I'm doing."
+    },
+    {
+      "start": 2471.04,
+      "end": 2477.2,
+      "text": "First I will download the document use"
+    },
+    {
+      "start": 2473.76,
+      "end": 2478.88,
+      "text": "the pyu pdf to open that document. Once"
+    },
+    {
+      "start": 2477.2,
+      "end": 2481.2,
+      "text": "I open the document I will go through"
+    },
+    {
+      "start": 2478.88,
+      "end": 2483.839,
+      "text": "each pages using a loop. That means I'm"
+    },
+    {
+      "start": 2481.2,
+      "end": 2486.24,
+      "text": "doing a full text analytics. And then"
+    },
+    {
+      "start": 2483.839,
+      "end": 2488.88,
+      "text": "once I extract this text, you can see"
+    },
+    {
+      "start": 2486.24,
+      "end": 2491.2,
+      "text": "that total character inside this text is"
+    },
+    {
+      "start": 2488.88,
+      "end": 2494.2400000000002,
+      "text": "close to 32,79"
+    },
+    {
+      "start": 2491.2,
+      "end": 2496.319,
+      "text": "which is pretty huge amount of data."
+    },
+    {
+      "start": 2494.24,
+      "end": 2498.319,
+      "text": "Then I'm going to do some preview that"
+    },
+    {
+      "start": 2496.319,
+      "end": 2500.72,
+      "text": "this is the data which is available"
+    },
+    {
+      "start": 2498.319,
+      "end": 2503.2,
+      "text": "inside the text. And then I will move on"
+    },
+    {
+      "start": 2500.72,
+      "end": 2505.5989999999997,
+      "text": "to the chunking. The chunking strategies"
+    },
+    {
+      "start": 2503.2,
+      "end": 2507.52,
+      "text": "I will define a chunk size. So I'm"
+    },
+    {
+      "start": 2505.599,
+      "end": 2510.4,
+      "text": "keeping the chunk size to be 700. Each"
+    },
+    {
+      "start": 2507.52,
+      "end": 2513.68,
+      "text": "chunk will contain 700 characters. with"
+    },
+    {
+      "start": 2510.4,
+      "end": 2516.88,
+      "text": "an overlap percentage as or overlap size"
+    },
+    {
+      "start": 2513.68,
+      "end": 2519.359,
+      "text": "as 150 character. So the idea of overlap"
+    },
+    {
+      "start": 2516.88,
+      "end": 2521.839,
+      "text": "is very simple. When you're creating a"
+    },
+    {
+      "start": 2519.359,
+      "end": 2524.88,
+      "text": "chunks, you would like to link the"
+    },
+    {
+      "start": 2521.839,
+      "end": 2527.68,
+      "text": "chunk. Let's say if I'm using this"
+    },
+    {
+      "start": 2524.88,
+      "end": 2529.839,
+      "text": "particular chunk without overlapping"
+    },
+    {
+      "start": 2527.68,
+      "end": 2532.24,
+      "text": "these two sentences will become"
+    },
+    {
+      "start": 2529.839,
+      "end": 2535.04,
+      "text": "fragmented. That means there's no link"
+    },
+    {
+      "start": 2532.24,
+      "end": 2537.52,
+      "text": "between these and these two sentences."
+    },
+    {
+      "start": 2535.04,
+      "end": 2539.04,
+      "text": "If I'm keeping an overlap, my model will"
+    },
+    {
+      "start": 2537.52,
+      "end": 2542.8,
+      "text": "start"
+    },
+    {
+      "start": 2539.04,
+      "end": 2545.2799999999997,
+      "text": "from the previous 150 characters"
+    },
+    {
+      "start": 2542.8,
+      "end": 2547.44,
+      "text": "and there's no harm in doing this."
+    },
+    {
+      "start": 2545.28,
+      "end": 2550.96,
+      "text": "Although I'm making it memory agnostic,"
+    },
+    {
+      "start": 2547.44,
+      "end": 2554.4,
+      "text": "I know but if I'm keeping 150 document"
+    },
+    {
+      "start": 2550.96,
+      "end": 2555.92,
+      "text": "sorry 150 character overlap that means"
+    },
+    {
+      "start": 2554.4,
+      "end": 2558.48,
+      "text": "I'm giving a reference to the next"
+    },
+    {
+      "start": 2555.92,
+      "end": 2560.7200000000003,
+      "text": "sentence so that these two sentence will"
+    },
+    {
+      "start": 2558.48,
+      "end": 2563.2,
+      "text": "link and that's the whole idea of"
+    },
+    {
+      "start": 2560.72,
+      "end": 2566.72,
+      "text": "overlap criteria. Typically the range of"
+    },
+    {
+      "start": 2563.2,
+      "end": 2570.72,
+      "text": "overlapping will lies between 10 to 15%"
+    },
+    {
+      "start": 2566.72,
+      "end": 2573.04,
+      "text": "or 10 to 20% in typical rack scenarios."
+    },
+    {
+      "start": 2570.72,
+      "end": 2575.2799999999997,
+      "text": "You can use 10 to 20% of overlap"
+    },
+    {
+      "start": 2573.04,
+      "end": 2577.359,
+      "text": "percentage depending upon the chunk"
+    },
+    {
+      "start": 2575.28,
+      "end": 2579.92,
+      "text": "size."
+    },
+    {
+      "start": 2577.359,
+      "end": 2582.0789999999997,
+      "text": "Now once I define this chunk and overlap"
+    },
+    {
+      "start": 2579.92,
+      "end": 2584.7200000000003,
+      "text": "I'm going to start with this process. So"
+    },
+    {
+      "start": 2582.079,
+      "end": 2587.3590000000004,
+      "text": "I will generate a chunks. Now I will"
+    },
+    {
+      "start": 2584.72,
+      "end": 2589.5989999999997,
+      "text": "start using some method called sliding"
+    },
+    {
+      "start": 2587.359,
+      "end": 2592.56,
+      "text": "window which will calculate end position"
+    },
+    {
+      "start": 2589.599,
+      "end": 2594.8,
+      "text": "by adding a chunk to the start and then"
+    },
+    {
+      "start": 2592.56,
+      "end": 2597.2,
+      "text": "I will move forward."
+    },
+    {
+      "start": 2594.8,
+      "end": 2598.8,
+      "text": "Now I will generate a chunks. So it will"
+    },
+    {
+      "start": 2597.2,
+      "end": 2600.64,
+      "text": "show me the total chunk generated and"
+    },
+    {
+      "start": 2598.8,
+      "end": 2602.4,
+      "text": "this is a sample chunk. So each"
+    },
+    {
+      "start": 2600.64,
+      "end": 2604.64,
+      "text": "paragraph will become a chunk. You can"
+    },
+    {
+      "start": 2602.4,
+      "end": 2606.319,
+      "text": "see this is the first paragraph, second"
+    },
+    {
+      "start": 2604.64,
+      "end": 2607.92,
+      "text": "paragraph, third paragraph so on and so"
+    },
+    {
+      "start": 2606.319,
+      "end": 2610.4,
+      "text": "forth. So I'm just generating a chunks"
+    },
+    {
+      "start": 2607.92,
+      "end": 2612.64,
+      "text": "based upon this. So once I generate a"
+    },
+    {
+      "start": 2610.4,
+      "end": 2615.359,
+      "text": "chunks I'm going to register this chunks"
+    },
+    {
+      "start": 2612.64,
+      "end": 2617.2799999999997,
+      "text": "inside the embedding model. So for"
+    },
+    {
+      "start": 2615.359,
+      "end": 2621.7599999999998,
+      "text": "creating the embedding I need to use"
+    },
+    {
+      "start": 2617.28,
+      "end": 2626.4,
+      "text": "embedding model. So I have used"
+    },
+    {
+      "start": 2621.76,
+      "end": 2628.4,
+      "text": "the model which is of 512 dimension. So"
+    },
+    {
+      "start": 2626.4,
+      "end": 2631.04,
+      "text": "I would like to use a list of a string"
+    },
+    {
+      "start": 2628.4,
+      "end": 2634.4,
+      "text": "to encode and then display a numerical"
+    },
+    {
+      "start": 2631.04,
+      "end": 2636.48,
+      "text": "numpy array to show the output. So this"
+    },
+    {
+      "start": 2634.4,
+      "end": 2639.92,
+      "text": "is the shape of my output. That means it"
+    },
+    {
+      "start": 2636.48,
+      "end": 2642.16,
+      "text": "is of 60 cross 384 vectors that has been"
+    },
+    {
+      "start": 2639.92,
+      "end": 2644.2400000000002,
+      "text": "created."
+    },
+    {
+      "start": 2642.16,
+      "end": 2646.96,
+      "text": "Let me see some questions. Can you"
+    },
+    {
+      "start": 2644.24,
+      "end": 2649.04,
+      "text": "please share the notebook? Yes, we will"
+    },
+    {
+      "start": 2646.96,
+      "end": 2650.7200000000003,
+      "text": "share the notebook."
+    },
+    {
+      "start": 2649.04,
+      "end": 2653.04,
+      "text": "The dot product is just a cosign"
+    },
+    {
+      "start": 2650.72,
+      "end": 2655.1189999999997,
+      "text": "similarity. The non-persistent you mean"
+    },
+    {
+      "start": 2653.04,
+      "end": 2657.2799999999997,
+      "text": "it will not work in production. How can"
+    },
+    {
+      "start": 2655.119,
+      "end": 2660.2400000000002,
+      "text": "we use percent? So that means you need"
+    },
+    {
+      "start": 2657.28,
+      "end": 2662.48,
+      "text": "quite a servers to operate. Uh so"
+    },
+    {
+      "start": 2660.24,
+      "end": 2665.2,
+      "text": "basically persistent caching I'm just"
+    },
+    {
+      "start": 2662.48,
+      "end": 2667.599,
+      "text": "using to avoid any memory issues in my"
+    },
+    {
+      "start": 2665.2,
+      "end": 2670.3999999999996,
+      "text": "system so that by the time I delete this"
+    },
+    {
+      "start": 2667.599,
+      "end": 2673.52,
+      "text": "notebook it will clear off my memory but"
+    },
+    {
+      "start": 2670.4,
+      "end": 2676.4,
+      "text": "you can use u non-persistent as well."
+    },
+    {
+      "start": 2673.52,
+      "end": 2679.839,
+      "text": "You can create your consistent memory by"
+    },
+    {
+      "start": 2676.4,
+      "end": 2681.44,
+      "text": "registering this tool inside the server."
+    },
+    {
+      "start": 2679.839,
+      "end": 2684.24,
+      "text": "So this is the step that I'm going to"
+    },
+    {
+      "start": 2681.44,
+      "end": 2686.319,
+      "text": "extract now and then I will convert this"
+    },
+    {
+      "start": 2684.24,
+      "end": 2688.0,
+      "text": "into an embedding vectors. So this is"
+    },
+    {
+      "start": 2686.319,
+      "end": 2690.16,
+      "text": "where the text chunking and uh"
+    },
+    {
+      "start": 2688.0,
+      "end": 2691.68,
+      "text": "everything has been completed. Now this"
+    },
+    {
+      "start": 2690.16,
+      "end": 2694.0789999999997,
+      "text": "is where my embedding has been"
+    },
+    {
+      "start": 2691.68,
+      "end": 2697.359,
+      "text": "registered successfully."
+    },
+    {
+      "start": 2694.079,
+      "end": 2699.3590000000004,
+      "text": "Now this particular thing will help me"
+    },
+    {
+      "start": 2697.359,
+      "end": 2701.44,
+      "text": "to create an embedding on the top of it."
+    },
+    {
+      "start": 2699.359,
+      "end": 2705.04,
+      "text": "Now I have created the embedding. Now"
+    },
+    {
+      "start": 2701.44,
+      "end": 2707.2000000000003,
+      "text": "this embedding will be stored during my"
+    },
+    {
+      "start": 2705.04,
+      "end": 2708.56,
+      "text": "generation part. So I'm just finish off"
+    },
+    {
+      "start": 2707.2,
+      "end": 2712.48,
+      "text": "with the generation of the embedding"
+    },
+    {
+      "start": 2708.56,
+      "end": 2714.0789999999997,
+      "text": "part. Now what I'm going to do is after"
+    },
+    {
+      "start": 2712.48,
+      "end": 2717.04,
+      "text": "embeddings"
+    },
+    {
+      "start": 2714.079,
+      "end": 2719.599,
+      "text": "which I have generated here I would like"
+    },
+    {
+      "start": 2717.04,
+      "end": 2721.7599999999998,
+      "text": "to store this ambidding into a chromb."
+    },
+    {
+      "start": 2719.599,
+      "end": 2724.6400000000003,
+      "text": "Now I would like to push this ambidding"
+    },
+    {
+      "start": 2721.76,
+      "end": 2728.2400000000002,
+      "text": "inside the chrom. So for that I would"
+    },
+    {
+      "start": 2724.64,
+      "end": 2731.5989999999997,
+      "text": "like to iterate through all the chunks"
+    },
+    {
+      "start": 2728.24,
+      "end": 2733.04,
+      "text": "and add a chromb instance to it. So"
+    },
+    {
+      "start": 2731.599,
+      "end": 2735.6800000000003,
+      "text": "first and foremost thing what I'm doing"
+    },
+    {
+      "start": 2733.04,
+      "end": 2738.16,
+      "text": "here is I'm passing I'm creating a"
+    },
+    {
+      "start": 2735.68,
+      "end": 2741.7599999999998,
+      "text": "collection and using an add method. So"
+    },
+    {
+      "start": 2738.16,
+      "end": 2743.68,
+      "text": "collection add so index is a unique"
+    },
+    {
+      "start": 2741.76,
+      "end": 2747.28,
+      "text": "identifier for each chunk which I'm"
+    },
+    {
+      "start": 2743.68,
+      "end": 2749.2,
+      "text": "using to convert to a string. Then I'm"
+    },
+    {
+      "start": 2747.28,
+      "end": 2750.8,
+      "text": "using embedding which is using this"
+    },
+    {
+      "start": 2749.2,
+      "end": 2753.359,
+      "text": "index"
+    },
+    {
+      "start": 2750.8,
+      "end": 2756.48,
+      "text": "and convert into a numpy embedding to a"
+    },
+    {
+      "start": 2753.359,
+      "end": 2758.0,
+      "text": "python list and the document that will"
+    },
+    {
+      "start": 2756.48,
+      "end": 2760.72,
+      "text": "store original text for retrieval"
+    },
+    {
+      "start": 2758.0,
+      "end": 2763.52,
+      "text": "purpose. Now I will test this vector"
+    },
+    {
+      "start": 2760.72,
+      "end": 2766.24,
+      "text": "search with uh some small query and then"
+    },
+    {
+      "start": 2763.52,
+      "end": 2767.52,
+      "text": "try to see uh so let's say I'm asking"
+    },
+    {
+      "start": 2766.24,
+      "end": 2769.2799999999997,
+      "text": "the simple question what is this"
+    },
+    {
+      "start": 2767.52,
+      "end": 2772.48,
+      "text": "document is all about what is the"
+    },
+    {
+      "start": 2769.28,
+      "end": 2773.8390000000004,
+      "text": "weights key query and metrics. [snorts]"
+    },
+    {
+      "start": 2772.48,
+      "end": 2776.16,
+      "text": "Now all these things has been defined"
+    },
+    {
+      "start": 2773.839,
+      "end": 2778.72,
+      "text": "inside this document this scientific"
+    },
+    {
+      "start": 2776.16,
+      "end": 2781.2799999999997,
+      "text": "document scientific uh citation"
+    },
+    {
+      "start": 2778.72,
+      "end": 2783.9199999999996,
+      "text": "references. So it is generating the"
+    },
+    {
+      "start": 2781.28,
+      "end": 2785.44,
+      "text": "three chunks for each of the queries."
+    },
+    {
+      "start": 2783.92,
+      "end": 2787.359,
+      "text": "Now the what are these chunks? These"
+    },
+    {
+      "start": 2785.44,
+      "end": 2789.28,
+      "text": "chunks are nothing but the paragraphs"
+    },
+    {
+      "start": 2787.359,
+      "end": 2791.04,
+      "text": "which is inside my document original"
+    },
+    {
+      "start": 2789.28,
+      "end": 2793.2000000000003,
+      "text": "document. Right? So I'm just trying to"
+    },
+    {
+      "start": 2791.04,
+      "end": 2795.839,
+      "text": "test whether this whole setup is working"
+    },
+    {
+      "start": 2793.2,
+      "end": 2798.56,
+      "text": "or not. Now I'm going to create one"
+    },
+    {
+      "start": 2795.839,
+      "end": 2800.88,
+      "text": "function which is called retrieval"
+    },
+    {
+      "start": 2798.56,
+      "end": 2803.2,
+      "text": "relevant context or retrieve relevant"
+    },
+    {
+      "start": 2800.88,
+      "end": 2806.319,
+      "text": "context. So function will take a query"
+    },
+    {
+      "start": 2803.2,
+      "end": 2808.72,
+      "text": "as a parameter which is a string. The"
+    },
+    {
+      "start": 2806.319,
+      "end": 2811.7599999999998,
+      "text": "optional top K parameter I'm keeping it"
+    },
+    {
+      "start": 2808.72,
+      "end": 2815.68,
+      "text": "to be three. I'm encoding the query into"
+    },
+    {
+      "start": 2811.76,
+      "end": 2817.3590000000004,
+      "text": "a embedding model. That means I will use"
+    },
+    {
+      "start": 2815.68,
+      "end": 2820.3999999999996,
+      "text": "the same schemas that I'm using [snorts]"
+    },
+    {
+      "start": 2817.359,
+      "end": 2822.96,
+      "text": "earlier for document corpus and then"
+    },
+    {
+      "start": 2820.4,
+      "end": 2825.92,
+      "text": "creating this embedding model here to"
+    },
+    {
+      "start": 2822.96,
+      "end": 2828.64,
+      "text": "convert my query into embedding. Then I"
+    },
+    {
+      "start": 2825.92,
+      "end": 2830.7200000000003,
+      "text": "will call this collection to search and"
+    },
+    {
+      "start": 2828.64,
+      "end": 2832.7999999999997,
+      "text": "return the top three topic. Now here"
+    },
+    {
+      "start": 2830.72,
+      "end": 2835.2799999999997,
+      "text": "when when I'm saying top three, you can"
+    },
+    {
+      "start": 2832.8,
+      "end": 2837.599,
+      "text": "change it to top five, top 10 depending"
+    },
+    {
+      "start": 2835.28,
+      "end": 2839.52,
+      "text": "upon your requirement. And these are all"
+    },
+    {
+      "start": 2837.599,
+      "end": 2841.52,
+      "text": "hyperparameters, right? I'm just keeping"
+    },
+    {
+      "start": 2839.52,
+      "end": 2844.079,
+      "text": "it simple. So I'm saying top three."
+    },
+    {
+      "start": 2841.52,
+      "end": 2845.68,
+      "text": "Let's go with top three. Right? Right."
+    },
+    {
+      "start": 2844.079,
+      "end": 2848.2400000000002,
+      "text": "So here I'm saying I would like to"
+    },
+    {
+      "start": 2845.68,
+      "end": 2850.96,
+      "text": "perform a similarity search on the query"
+    },
+    {
+      "start": 2848.24,
+      "end": 2853.1189999999997,
+      "text": "embedding the query vectors and it will"
+    },
+    {
+      "start": 2850.96,
+      "end": 2855.76,
+      "text": "return the top k number of similar"
+    },
+    {
+      "start": 2853.119,
+      "end": 2858.1600000000003,
+      "text": "chunks that has been retrieved and it"
+    },
+    {
+      "start": 2855.76,
+      "end": 2860.1600000000003,
+      "text": "will return the set of document along"
+    },
+    {
+      "start": 2858.16,
+      "end": 2864.7999999999997,
+      "text": "with the distance"
+    },
+    {
+      "start": 2860.16,
+      "end": 2866.48,
+      "text": "ids and embeddings on those document."
+    },
+    {
+      "start": 2864.8,
+      "end": 2870.7200000000003,
+      "text": "Now I'm performing two experimentation"
+    },
+    {
+      "start": 2866.48,
+      "end": 2873.44,
+      "text": "here. So basically"
+    },
+    {
+      "start": 2870.72,
+      "end": 2877.2,
+      "text": "let me quickly run this because I need"
+    },
+    {
+      "start": 2873.44,
+      "end": 2879.52,
+      "text": "to run this here quickly to show this"
+    },
+    {
+      "start": 2877.2,
+      "end": 2883.48,
+      "text": "demo."
+    },
+    {
+      "start": 2879.52,
+      "end": 2883.48,
+      "text": "It may take some time"
+    },
+    {
+      "start": 2884.8,
+      "end": 2888.44,
+      "text": "and delete this instance."
+    },
+    {
+      "start": 2936.48,
+      "end": 2940.92,
+      "text": "Okay, so this instance has been started."
+    },
+    {
+      "start": 2942.72,
+      "end": 2948.1189999999997,
+      "text": "So I'm just installing a bunch of"
+    },
+    {
+      "start": 2944.079,
+      "end": 2948.119,
+      "text": "libraries here. First"
+    },
+    {
+      "start": 2953.04,
+      "end": 2957.2799999999997,
+      "text": "importing the necessary modules."
+    },
+    {
+      "start": 2955.839,
+      "end": 2959.7599999999998,
+      "text": "Now I'm just running the model,"
+    },
+    {
+      "start": 2957.28,
+      "end": 2962.88,
+      "text": "rerunning the model. So there's no lag."
+    },
+    {
+      "start": 2959.76,
+      "end": 2964.559,
+      "text": "It has to go through some process. So"
+    },
+    {
+      "start": 2962.88,
+      "end": 2966.8,
+      "text": "now I'm downloading the embedding models"
+    },
+    {
+      "start": 2964.559,
+      "end": 2971.28,
+      "text": "from hugging face. You can see that it"
+    },
+    {
+      "start": 2966.8,
+      "end": 2974.079,
+      "text": "start downloading 90 mgabyte file with"
+    },
+    {
+      "start": 2971.28,
+      "end": 2976.4,
+      "text": "weights. Now I'm downloading the mistral"
+    },
+    {
+      "start": 2974.079,
+      "end": 2980.1600000000003,
+      "text": "model. It will take some time. So it is"
+    },
+    {
+      "start": 2976.4,
+      "end": 2981.92,
+      "text": "15 GB guys. So it will take some time"
+    },
+    {
+      "start": 2980.16,
+      "end": 2984.7999999999997,
+      "text": "to download this model from hugging"
+    },
+    {
+      "start": 2981.92,
+      "end": 2988.44,
+      "text": "face."
+    },
+    {
+      "start": 2984.8,
+      "end": 2988.44,
+      "text": "Just bear with me."
+    },
+    {
+      "start": 2990.4,
+      "end": 2996.04,
+      "text": "So start downloading the model. Almost"
+    },
+    {
+      "start": 2992.4,
+      "end": 2996.04,
+      "text": "6% completed."
+    },
+    {
+      "start": 2997.52,
+      "end": 3003.52,
+      "text": "Okay. Downloading bit fast."
+    },
+    {
+      "start": 3001.359,
+      "end": 3005.2,
+      "text": "So whatever I'm downloading uh at this"
+    },
+    {
+      "start": 3003.52,
+      "end": 3007.44,
+      "text": "moment will be stored in my Google"
+    },
+    {
+      "start": 3005.2,
+      "end": 3009.4399999999996,
+      "text": "Collab repository"
+    },
+    {
+      "start": 3007.44,
+      "end": 3013.2000000000003,
+      "text": "and once I log off from this session it"
+    },
+    {
+      "start": 3009.44,
+      "end": 3016.4,
+      "text": "will uh flush out this models and data"
+    },
+    {
+      "start": 3013.2,
+      "end": 3018.3999999999996,
+      "text": "from my repos"
+    },
+    {
+      "start": 3016.4,
+      "end": 3020.559,
+      "text": "including the chromb"
+    },
+    {
+      "start": 3018.4,
+      "end": 3023.52,
+      "text": "vector stores that I'm going to create"
+    },
+    {
+      "start": 3020.559,
+      "end": 3025.0400000000004,
+      "text": "in this session."
+    },
+    {
+      "start": 3023.52,
+      "end": 3027.28,
+      "text": "In the meantime, let me share the"
+    },
+    {
+      "start": 3025.04,
+      "end": 3029.409,
+      "text": "presentation that we are using earlier"
+    },
+    {
+      "start": 3027.28,
+      "end": 3030.7200000000003,
+      "text": "so that you will have a reference."
+    },
+    {
+      "start": 3029.409,
+      "end": 3035.88,
+      "text": "[snorts]"
+    },
+    {
+      "start": 3030.72,
+      "end": 3035.8799999999997,
+      "text": "Almost 50% 44% completed."
+    },
+    {
+      "start": 3048.48,
+      "end": 3056.28,
+      "text": "Uh I think it's almost done. 75% 25%"
+    },
+    {
+      "start": 3052.4,
+      "end": 3056.28,
+      "text": "still left behind."
+    },
+    {
+      "start": 3061.2,
+      "end": 3065.319,
+      "text": "Okay, I think it is done almost."
+    },
+    {
+      "start": 3065.76,
+      "end": 3072.92,
+      "text": "Let me first download this PDF and put"
+    },
+    {
+      "start": 3069.04,
+      "end": 3072.92,
+      "text": "it into my repository."
+    },
+    {
+      "start": 3078.48,
+      "end": 3083.319,
+      "text": "And I will rename this."
+    },
+    {
+      "start": 3090.88,
+      "end": 3096.4,
+      "text": "So this has been loaded now. Okay. So I"
+    },
+    {
+      "start": 3094.0,
+      "end": 3098.88,
+      "text": "read this document. This document has 15"
+    },
+    {
+      "start": 3096.4,
+      "end": 3101.52,
+      "text": "pages. I would like to extract a text,"
+    },
+    {
+      "start": 3098.88,
+      "end": 3103.92,
+      "text": "some sample text from the document. And"
+    },
+    {
+      "start": 3101.52,
+      "end": 3107.599,
+      "text": "it's showing exactly that I have got"
+    },
+    {
+      "start": 3103.92,
+      "end": 3109.2000000000003,
+      "text": "39,000 characters inside this document."
+    },
+    {
+      "start": 3107.599,
+      "end": 3111.3590000000004,
+      "text": "Now I would like to do some preview on"
+    },
+    {
+      "start": 3109.2,
+      "end": 3114.319,
+      "text": "the document."
+    },
+    {
+      "start": 3111.359,
+      "end": 3117.2,
+      "text": "So this show me the first few lines"
+    },
+    {
+      "start": 3114.319,
+      "end": 3119.2799999999997,
+      "text": "inside [snorts] my document paragraphs."
+    },
+    {
+      "start": 3117.2,
+      "end": 3123.4399999999996,
+      "text": "I will start with chunking. Chunking"
+    },
+    {
+      "start": 3119.28,
+      "end": 3125.6800000000003,
+      "text": "means splitting my data into chunks"
+    },
+    {
+      "start": 3123.44,
+      "end": 3127.599,
+      "text": "and then I will store these chunks and"
+    },
+    {
+      "start": 3125.68,
+      "end": 3129.9199999999996,
+      "text": "then pass these chunks to an embedding"
+    },
+    {
+      "start": 3127.599,
+      "end": 3132.2400000000002,
+      "text": "layer. So this is where I'm generating"
+    },
+    {
+      "start": 3129.92,
+      "end": 3133.76,
+      "text": "the embittings."
+    },
+    {
+      "start": 3132.24,
+      "end": 3136.319,
+      "text": "Now remember we have downloaded an"
+    },
+    {
+      "start": 3133.76,
+      "end": 3140.079,
+      "text": "embedding model earlier. embedding model"
+    },
+    {
+      "start": 3136.319,
+      "end": 3142.16,
+      "text": "that we have used is mini LM V6 and that"
+    },
+    {
+      "start": 3140.079,
+      "end": 3144.1600000000003,
+      "text": "is of 512"
+    },
+    {
+      "start": 3142.16,
+      "end": 3147.5989999999997,
+      "text": "dimension."
+    },
+    {
+      "start": 3144.16,
+      "end": 3150.48,
+      "text": "So I'm going to use this embedding along"
+    },
+    {
+      "start": 3147.599,
+      "end": 3152.1600000000003,
+      "text": "with the previous downloaded embedding."
+    },
+    {
+      "start": 3150.48,
+      "end": 3154.48,
+      "text": "That means what I'm doing here is I'm"
+    },
+    {
+      "start": 3152.16,
+      "end": 3157.2799999999997,
+      "text": "converting my document which I passed"
+    },
+    {
+      "start": 3154.48,
+      "end": 3158.96,
+      "text": "here and converting this into a vector"
+    },
+    {
+      "start": 3157.28,
+      "end": 3161.44,
+      "text": "embedding which will be stored inside"
+    },
+    {
+      "start": 3158.96,
+      "end": 3164.48,
+      "text": "the existing embedding model. So what"
+    },
+    {
+      "start": 3161.44,
+      "end": 3166.559,
+      "text": "embedding model does internally is it"
+    },
+    {
+      "start": 3164.48,
+      "end": 3170.079,
+      "text": "will create a cluster of similar"
+    },
+    {
+      "start": 3166.559,
+      "end": 3173.6800000000003,
+      "text": "document word pairs. So it will simply"
+    },
+    {
+      "start": 3170.079,
+      "end": 3177.119,
+      "text": "store your words inside the paragraph or"
+    },
+    {
+      "start": 3173.68,
+      "end": 3179.1189999999997,
+      "text": "PDF file and it will create a cluster of"
+    },
+    {
+      "start": 3177.119,
+      "end": 3181.28,
+      "text": "similar"
+    },
+    {
+      "start": 3179.119,
+      "end": 3183.44,
+      "text": "vectors."
+    },
+    {
+      "start": 3181.28,
+      "end": 3187.96,
+      "text": "Right? So the higher the distance"
+    },
+    {
+      "start": 3183.44,
+      "end": 3187.96,
+      "text": "between these vectors or these clusters"
+    },
+    {
+      "start": 3190.72,
+      "end": 3196.0789999999997,
+      "text": "they are becoming very dissimilar. That"
+    },
+    {
+      "start": 3193.599,
+      "end": 3197.6800000000003,
+      "text": "means that means this particular word"
+    },
+    {
+      "start": 3196.079,
+      "end": 3200.0,
+      "text": "and this particular word does not have"
+    },
+    {
+      "start": 3197.68,
+      "end": 3202.8799999999997,
+      "text": "any correlation. They are totally"
+    },
+    {
+      "start": 3200.0,
+      "end": 3204.319,
+      "text": "opposite sometimes. And this distance we"
+    },
+    {
+      "start": 3202.88,
+      "end": 3208.2400000000002,
+      "text": "can able to measure with the help of a"
+    },
+    {
+      "start": 3204.319,
+      "end": 3211.359,
+      "text": "cosine operation. Right? So we can able"
+    },
+    {
+      "start": 3208.24,
+      "end": 3213.4399999999996,
+      "text": "to identify this whole relationship with"
+    },
+    {
+      "start": 3211.359,
+      "end": 3216.16,
+      "text": "the help of a cosine similarity and that"
+    },
+    {
+      "start": 3213.44,
+      "end": 3217.92,
+      "text": "is called semantic similarity models."
+    },
+    {
+      "start": 3216.16,
+      "end": 3220.3999999999996,
+      "text": "Now I'm going to store this embedding"
+    },
+    {
+      "start": 3217.92,
+      "end": 3223.839,
+      "text": "into the chromb and for that I need to"
+    },
+    {
+      "start": 3220.4,
+      "end": 3226.839,
+      "text": "run this and I would like to test the"
+    },
+    {
+      "start": 3223.839,
+      "end": 3226.839,
+      "text": "vectors."
+    },
+    {
+      "start": 3226.88,
+      "end": 3234.319,
+      "text": "So let me change this question. Maybe I"
+    },
+    {
+      "start": 3229.76,
+      "end": 3236.1600000000003,
+      "text": "can put up some different question here."
+    },
+    {
+      "start": 3234.319,
+      "end": 3240.52,
+      "text": "Let me read some document. Please read"
+    },
+    {
+      "start": 3236.16,
+      "end": 3240.52,
+      "text": "this document and select some question."
+    },
+    {
+      "start": 3252.88,
+      "end": 3256.76,
+      "text": "Let me put this question."
+    },
+    {
+      "start": 3266.8,
+      "end": 3274.4,
+      "text": "Okay. So here what I'm trying to show is"
+    },
+    {
+      "start": 3271.52,
+      "end": 3276.8,
+      "text": "I'm just using this simple question. How"
+    },
+    {
+      "start": 3274.4,
+      "end": 3278.559,
+      "text": "transformer use multiattension."
+    },
+    {
+      "start": 3276.8,
+      "end": 3280.0,
+      "text": "Now I'm getting a three retrieval chunk"
+    },
+    {
+      "start": 3278.559,
+      "end": 3282.079,
+      "text": "because remember I have set up a"
+    },
+    {
+      "start": 3280.0,
+      "end": 3284.64,
+      "text": "parameter called top k is equals to"
+    },
+    {
+      "start": 3282.079,
+      "end": 3286.1600000000003,
+      "text": "three. So it will literally three chunks"
+    },
+    {
+      "start": 3284.64,
+      "end": 3288.319,
+      "text": "and these chunks are nothing but a"
+    },
+    {
+      "start": 3286.16,
+      "end": 3292.0,
+      "text": "paragraph from the original document"
+    },
+    {
+      "start": 3288.319,
+      "end": 3296.079,
+      "text": "which have a high correlation with this"
+    },
+    {
+      "start": 3292.0,
+      "end": 3298.48,
+      "text": "question by using a dot product. Right?"
+    },
+    {
+      "start": 3296.079,
+      "end": 3300.319,
+      "text": "So this is the three retrieve chunks."
+    },
+    {
+      "start": 3298.48,
+      "end": 3303.839,
+      "text": "Now what I'm going to do is I'm going to"
+    },
+    {
+      "start": 3300.319,
+      "end": 3305.359,
+      "text": "create a function and this function will"
+    },
+    {
+      "start": 3303.839,
+      "end": 3307.7599999999998,
+      "text": "use"
+    },
+    {
+      "start": 3305.359,
+      "end": 3309.92,
+      "text": "the"
+    },
+    {
+      "start": 3307.76,
+      "end": 3313.3590000000004,
+      "text": "this function is just using a relevant"
+    },
+    {
+      "start": 3309.92,
+      "end": 3316.079,
+      "text": "search relevant context which will take"
+    },
+    {
+      "start": 3313.359,
+      "end": 3318.64,
+      "text": "a query string an optional K parameter"
+    },
+    {
+      "start": 3316.079,
+      "end": 3322.2400000000002,
+      "text": "top K parameter and it is also going to"
+    },
+    {
+      "start": 3318.64,
+      "end": 3324.16,
+      "text": "encode my query into a embedding model"
+    },
+    {
+      "start": 3322.24,
+      "end": 3326.9599999999996,
+      "text": "right so that means I will have a query"
+    },
+    {
+      "start": 3324.16,
+      "end": 3329.2799999999997,
+      "text": "embedding the query vector now the top"
+    },
+    {
+      "start": 3326.96,
+      "end": 3332.16,
+      "text": "case search chunk"
+    },
+    {
+      "start": 3329.28,
+      "end": 3333.8390000000004,
+      "text": "and then I will return how similar it"
+    },
+    {
+      "start": 3332.16,
+      "end": 3336.5589999999997,
+      "text": "is."
+    },
+    {
+      "start": 3333.839,
+      "end": 3340.0,
+      "text": "Now I would like to test this whole"
+    },
+    {
+      "start": 3336.559,
+      "end": 3342.2400000000002,
+      "text": "functionality with two set of questions,"
+    },
+    {
+      "start": 3340.0,
+      "end": 3345.92,
+      "text": "two set of scenarios. The first scenario"
+    },
+    {
+      "start": 3342.24,
+      "end": 3349.52,
+      "text": "is I will allow my model to hallucinate."
+    },
+    {
+      "start": 3345.92,
+      "end": 3350.88,
+      "text": "That means I will not pass on the chunks"
+    },
+    {
+      "start": 3349.52,
+      "end": 3352.799,
+      "text": "which has been generated by this"
+    },
+    {
+      "start": 3350.88,
+      "end": 3355.44,
+      "text": "retriever pipeline. So I will simply run"
+    },
+    {
+      "start": 3352.799,
+      "end": 3360.079,
+      "text": "this and see how the answer has been"
+    },
+    {
+      "start": 3355.44,
+      "end": 3362.559,
+      "text": "generated. Second is I would like to use"
+    },
+    {
+      "start": 3360.079,
+      "end": 3364.7200000000003,
+      "text": "the retrieval chunks and pass it to the"
+    },
+    {
+      "start": 3362.559,
+      "end": 3368.0400000000004,
+      "text": "model and then I will see how the answer"
+    },
+    {
+      "start": 3364.72,
+      "end": 3368.04,
+      "text": "has been generated."
+    },
+    {
+      "start": 3371.04,
+      "end": 3375.0,
+      "text": "Now I will ask the same question"
+    },
+    {
+      "start": 3394.72,
+      "end": 3400.7599999999998,
+      "text": "So this is the first scenario that I'm"
+    },
+    {
+      "start": 3396.72,
+      "end": 3400.7599999999998,
+      "text": "going to generate an answer against."
+    },
+    {
+      "start": 3403.359,
+      "end": 3409.04,
+      "text": "So this is the answer without"
+    },
+    {
+      "start": 3406.64,
+      "end": 3410.48,
+      "text": "passing the context. So you can see that"
+    },
+    {
+      "start": 3409.04,
+      "end": 3412.16,
+      "text": "this is showing me very generic"
+    },
+    {
+      "start": 3410.48,
+      "end": 3414.079,
+      "text": "response."
+    },
+    {
+      "start": 3412.16,
+      "end": 3415.5989999999997,
+      "text": "It is saying in transform model multi"
+    },
+    {
+      "start": 3414.079,
+      "end": 3417.119,
+      "text": "extension is used to allow the model to"
+    },
+    {
+      "start": 3415.599,
+      "end": 3419.599,
+      "text": "focus on information from different"
+    },
+    {
+      "start": 3417.119,
+      "end": 3421.28,
+      "text": "representation segment at a different"
+    },
+    {
+      "start": 3419.599,
+      "end": 3425.28,
+      "text": "position. So it is giving very generic"
+    },
+    {
+      "start": 3421.28,
+      "end": 3428.599,
+      "text": "answer but let me try with the rack that"
+    },
+    {
+      "start": 3425.28,
+      "end": 3428.599,
+      "text": "we have created"
+    },
+    {
+      "start": 3430.64,
+      "end": 3434.48,
+      "text": "and we'll match the answer with the"
+    },
+    {
+      "start": 3432.319,
+      "end": 3438.119,
+      "text": "paragraph"
+    },
+    {
+      "start": 3434.48,
+      "end": 3438.119,
+      "text": "inside the document."
+    },
+    {
+      "start": 3448.24,
+      "end": 3454.799,
+      "text": "Okay. Now this is the output from the"
+    },
+    {
+      "start": 3451.839,
+      "end": 3458.96,
+      "text": "model. So you can see that if I just"
+    },
+    {
+      "start": 3454.799,
+      "end": 3461.599,
+      "text": "look into this phrase, it is exactly"
+    },
+    {
+      "start": 3458.96,
+      "end": 3463.599,
+      "text": "referring to these three paragraphs."
+    },
+    {
+      "start": 3461.599,
+      "end": 3467.599,
+      "text": "Right? So this means I will able to get"
+    },
+    {
+      "start": 3463.599,
+      "end": 3471.92,
+      "text": "a much better answer when I'm using the"
+    },
+    {
+      "start": 3467.599,
+      "end": 3474.4,
+      "text": "context set by rack pipeline right and"
+    },
+    {
+      "start": 3471.92,
+      "end": 3476.48,
+      "text": "this is a grounded answer that means"
+    },
+    {
+      "start": 3474.4,
+      "end": 3479.599,
+      "text": "this is should be the right answer that"
+    },
+    {
+      "start": 3476.48,
+      "end": 3482.559,
+      "text": "I'm always having now I would like to"
+    },
+    {
+      "start": 3479.599,
+      "end": 3485.839,
+      "text": "perform some similarity scores"
+    },
+    {
+      "start": 3482.559,
+      "end": 3487.8390000000004,
+      "text": "on the paragraph that has been used now"
+    },
+    {
+      "start": 3485.839,
+      "end": 3490.48,
+      "text": "this is a similarity score between your"
+    },
+    {
+      "start": 3487.839,
+      "end": 3492.16,
+      "text": "question and the each paragraph it is"
+    },
+    {
+      "start": 3490.48,
+      "end": 3496.48,
+      "text": "returning these paragraphs which is"
+    },
+    {
+      "start": 3492.16,
+      "end": 3497.92,
+      "text": "having 40% association with this query."
+    },
+    {
+      "start": 3496.48,
+      "end": 3499.76,
+      "text": "So that's one way that you can able to"
+    },
+    {
+      "start": 3497.92,
+      "end": 3502.7200000000003,
+      "text": "test it out. Right? So you can able to"
+    },
+    {
+      "start": 3499.76,
+      "end": 3505.76,
+      "text": "say that I have a higher confidence in"
+    },
+    {
+      "start": 3502.72,
+      "end": 3507.5989999999997,
+      "text": "generating the cross reference between"
+    },
+    {
+      "start": 3505.76,
+      "end": 3509.599,
+      "text": "my document and the question that I'm"
+    },
+    {
+      "start": 3507.599,
+      "end": 3511.119,
+      "text": "using with the help of a similarity"
+    },
+    {
+      "start": 3509.599,
+      "end": 3513.04,
+      "text": "score."
+    },
+    {
+      "start": 3511.119,
+      "end": 3517.119,
+      "text": "Now I'm also generating one table to"
+    },
+    {
+      "start": 3513.04,
+      "end": 3520.079,
+      "text": "compare the method. So without retrieval"
+    },
+    {
+      "start": 3517.119,
+      "end": 3522.4,
+      "text": "we can see that the hellation risk is"
+    },
+    {
+      "start": 3520.079,
+      "end": 3524.799,
+      "text": "high. With retrieval the hallian risk"
+    },
+    {
+      "start": 3522.4,
+      "end": 3527.359,
+      "text": "has been reduced and it is matching the"
+    },
+    {
+      "start": 3524.799,
+      "end": 3531.72,
+      "text": "grounded response pretty significantly"
+    },
+    {
+      "start": 3527.359,
+      "end": 3531.72,
+      "text": "with the help of retrieval."
+    },
+    {
+      "start": 3531.76,
+      "end": 3536.96,
+      "text": "All right. So what we have learned so"
+    },
+    {
+      "start": 3533.359,
+      "end": 3539.839,
+      "text": "far is we have take this example and let"
+    },
+    {
+      "start": 3536.96,
+      "end": 3540.88,
+      "text": "me show you what we have developed."
+    },
+    {
+      "start": 3539.839,
+      "end": 3542.72,
+      "text": "So just to want to give you the"
+    },
+    {
+      "start": 3540.88,
+      "end": 3545.28,
+      "text": "pictorial representation of this"
+    },
+    {
+      "start": 3542.72,
+      "end": 3548.2799999999997,
+      "text": "pipeline. We have created a rack"
+    },
+    {
+      "start": 3545.28,
+      "end": 3548.28,
+      "text": "pipeline"
+    },
+    {
+      "start": 3549.68,
+      "end": 3555.2,
+      "text": "which will take the PDF performing the"
+    },
+    {
+      "start": 3552.16,
+      "end": 3557.04,
+      "text": "text extraction on the PDF. Then we move"
+    },
+    {
+      "start": 3555.2,
+      "end": 3558.8799999999997,
+      "text": "on to the chunking embedding and"
+    },
+    {
+      "start": 3557.04,
+      "end": 3561.52,
+      "text": "registration of embedding into a Chroma"
+    },
+    {
+      "start": 3558.88,
+      "end": 3563.119,
+      "text": "DB. Then we are expecting the user"
+    },
+    {
+      "start": 3561.52,
+      "end": 3565.04,
+      "text": "question"
+    },
+    {
+      "start": 3563.119,
+      "end": 3567.599,
+      "text": "search from the embedding using a"
+    },
+    {
+      "start": 3565.04,
+      "end": 3570.079,
+      "text": "similarity search algorithm. Retrieve"
+    },
+    {
+      "start": 3567.599,
+      "end": 3574.0,
+      "text": "the top three chunks based upon the"
+    },
+    {
+      "start": 3570.079,
+      "end": 3577.52,
+      "text": "query parameter. creating a prompt and"
+    },
+    {
+      "start": 3574.0,
+      "end": 3579.2,
+      "text": "use mistral to generate an answer. That"
+    },
+    {
+      "start": 3577.52,
+      "end": 3580.799,
+      "text": "is what we have done in a very simple"
+    },
+    {
+      "start": 3579.2,
+      "end": 3582.3999999999996,
+      "text": "terms."
+    },
+    {
+      "start": 3580.799,
+      "end": 3584.72,
+      "text": "Right? So this is how the retrieval"
+    },
+    {
+      "start": 3582.4,
+      "end": 3587.359,
+      "text": "augment generation pipeline the basic"
+    },
+    {
+      "start": 3584.72,
+      "end": 3590.5589999999997,
+      "text": "pipeline works."
+    },
+    {
+      "start": 3587.359,
+      "end": 3592.4,
+      "text": "Okay. Now we'll move on to the RAS."
+    },
+    {
+      "start": 3590.559,
+      "end": 3595.92,
+      "text": "So before we move on to the RAS, let me"
+    },
+    {
+      "start": 3592.4,
+      "end": 3599.359,
+      "text": "explain what exactly RAS does. So Raa is"
+    },
+    {
+      "start": 3595.92,
+      "end": 3601.52,
+      "text": "a framework, right? So when you say we"
+    },
+    {
+      "start": 3599.359,
+      "end": 3603.2,
+      "text": "are evaluating the model or we are"
+    },
+    {
+      "start": 3601.52,
+      "end": 3606.079,
+      "text": "evaluating the rack pipeline, we are"
+    },
+    {
+      "start": 3603.2,
+      "end": 3609.7599999999998,
+      "text": "just using a framework to evaluate."
+    },
+    {
+      "start": 3606.079,
+      "end": 3612.079,
+      "text": "Now when we already have understand that"
+    },
+    {
+      "start": 3609.76,
+      "end": 3613.8390000000004,
+      "text": "what is rag. So rag have two important"
+    },
+    {
+      "start": 3612.079,
+      "end": 3616.079,
+      "text": "components. One is called retriever. The"
+    },
+    {
+      "start": 3613.839,
+      "end": 3618.319,
+      "text": "second one is called generator."
+    },
+    {
+      "start": 3616.079,
+      "end": 3620.88,
+      "text": "So retriever will take care of querying"
+    },
+    {
+      "start": 3618.319,
+      "end": 3622.5589999999997,
+      "text": "the knowledge database and retriever"
+    },
+    {
+      "start": 3620.88,
+      "end": 3624.48,
+      "text": "retrieves the additional context that"
+    },
+    {
+      "start": 3622.559,
+      "end": 3627.44,
+      "text": "match the user query in a very simple"
+    },
+    {
+      "start": 3624.48,
+      "end": 3630.0,
+      "text": "terms right. generator on the other hand"
+    },
+    {
+      "start": 3627.44,
+      "end": 3631.599,
+      "text": "will encompass the LLM module and"
+    },
+    {
+      "start": 3630.0,
+      "end": 3634.559,
+      "text": "generate an answer based upon the"
+    },
+    {
+      "start": 3631.599,
+      "end": 3636.96,
+      "text": "context augumented prompt. So when"
+    },
+    {
+      "start": 3634.559,
+      "end": 3638.6400000000003,
+      "text": "you're evaluating the rack pipeline, you"
+    },
+    {
+      "start": 3636.96,
+      "end": 3640.2400000000002,
+      "text": "must evaluate both components"
+    },
+    {
+      "start": 3638.64,
+      "end": 3642.48,
+      "text": "separately,"
+    },
+    {
+      "start": 3640.24,
+      "end": 3644.24,
+      "text": "right? And also understand how they are"
+    },
+    {
+      "start": 3642.48,
+      "end": 3646.2400000000002,
+      "text": "working together"
+    },
+    {
+      "start": 3644.24,
+      "end": 3648.64,
+      "text": "to understand if your rack pipeline"
+    },
+    {
+      "start": 3646.24,
+      "end": 3650.8799999999997,
+      "text": "needs further improvement and this will"
+    },
+    {
+      "start": 3648.64,
+      "end": 3653.5989999999997,
+      "text": "help you to create a quality of"
+    },
+    {
+      "start": 3650.88,
+      "end": 3655.92,
+      "text": "responses. So, Raga is a framework that"
+    },
+    {
+      "start": 3653.599,
+      "end": 3657.52,
+      "text": "will help you to evaluate your retrieval"
+    },
+    {
+      "start": 3655.92,
+      "end": 3659.839,
+      "text": "augment generation pipeline which is"
+    },
+    {
+      "start": 3657.52,
+      "end": 3662.72,
+      "text": "called rack pipeline and there are"
+    },
+    {
+      "start": 3659.839,
+      "end": 3666.16,
+      "text": "existing tools and framework that help"
+    },
+    {
+      "start": 3662.72,
+      "end": 3670.5589999999997,
+      "text": "you to build these pipeline."
+    },
+    {
+      "start": 3666.16,
+      "end": 3674.3999999999996,
+      "text": "So, ragas have eight metrics."
+    },
+    {
+      "start": 3670.559,
+      "end": 3677.44,
+      "text": "I will list down each matrix one by one."
+    },
+    {
+      "start": 3674.4,
+      "end": 3681.88,
+      "text": "So, ragas use eight metrics to evaluate."
+    },
+    {
+      "start": 3677.44,
+      "end": 3681.88,
+      "text": "The first matrix is called faithfulness."
+    },
+    {
+      "start": 3688.72,
+      "end": 3693.68,
+      "text": "So faithfulness measure how accurately"
+    },
+    {
+      "start": 3691.04,
+      "end": 3696.319,
+      "text": "the generated answer is how it is"
+    },
+    {
+      "start": 3693.68,
+      "end": 3698.24,
+      "text": "reflecting the source content which will"
+    },
+    {
+      "start": 3696.319,
+      "end": 3701.119,
+      "text": "ensure that the generated content is"
+    },
+    {
+      "start": 3698.24,
+      "end": 3703.2,
+      "text": "truthful and reliable."
+    },
+    {
+      "start": 3701.119,
+      "end": 3706.087,
+      "text": "The second matrix is called answer"
+    },
+    {
+      "start": 3703.2,
+      "end": 3706.087,
+      "text": "relevance. [snorts]"
+    },
+    {
+      "start": 3711.119,
+      "end": 3715.76,
+      "text": "So when you say answer relevance it will"
+    },
+    {
+      "start": 3713.2,
+      "end": 3718.64,
+      "text": "access how pertinent this answer is to a"
+    },
+    {
+      "start": 3715.76,
+      "end": 3720.559,
+      "text": "given question. It is trying to validate"
+    },
+    {
+      "start": 3718.64,
+      "end": 3723.1189999999997,
+      "text": "that the response directly address the"
+    },
+    {
+      "start": 3720.559,
+      "end": 3727.96,
+      "text": "user questions or not. The third"
+    },
+    {
+      "start": 3723.119,
+      "end": 3727.96,
+      "text": "parameter is called context precision."
+    },
+    {
+      "start": 3730.4,
+      "end": 3734.04,
+      "text": "Context precision."
+    },
+    {
+      "start": 3736.0,
+      "end": 3740.96,
+      "text": "Now this parameter context precision"
+    },
+    {
+      "start": 3737.839,
+      "end": 3742.4,
+      "text": "will evaluate the precision of a context"
+    },
+    {
+      "start": 3740.96,
+      "end": 3744.559,
+      "text": "which has been used to generate an"
+    },
+    {
+      "start": 3742.4,
+      "end": 3747.52,
+      "text": "answer and it will ensure that relevant"
+    },
+    {
+      "start": 3744.559,
+      "end": 3751.76,
+      "text": "information selected from the content."
+    },
+    {
+      "start": 3747.52,
+      "end": 3754.92,
+      "text": "The fourth parameter is called content"
+    },
+    {
+      "start": 3751.76,
+      "end": 3754.92,
+      "text": "or context"
+    },
+    {
+      "start": 3755.839,
+      "end": 3758.839,
+      "text": "relevancy."
+    },
+    {
+      "start": 3762.319,
+      "end": 3767.7599999999998,
+      "text": "So context relevancy will measure how"
+    },
+    {
+      "start": 3764.48,
+      "end": 3770.4,
+      "text": "relevant a selected context is to a"
+    },
+    {
+      "start": 3767.76,
+      "end": 3772.079,
+      "text": "provided question. It will also help us"
+    },
+    {
+      "start": 3770.4,
+      "end": 3774.48,
+      "text": "to improve the context selection to"
+    },
+    {
+      "start": 3772.079,
+      "end": 3776.799,
+      "text": "enhance the answer accuracy."
+    },
+    {
+      "start": 3774.48,
+      "end": 3779.799,
+      "text": "The fifth parameter is called context"
+    },
+    {
+      "start": 3776.799,
+      "end": 3779.799,
+      "text": "recall."
+    },
+    {
+      "start": 3782.72,
+      "end": 3786.16,
+      "text": "I hope you might have some idea about"
+    },
+    {
+      "start": 3784.64,
+      "end": 3788.48,
+      "text": "recall and precision in machine"
+    },
+    {
+      "start": 3786.16,
+      "end": 3791.2799999999997,
+      "text": "learning. So we are using the same"
+    },
+    {
+      "start": 3788.48,
+      "end": 3793.76,
+      "text": "concept here precision and recall which"
+    },
+    {
+      "start": 3791.28,
+      "end": 3795.76,
+      "text": "will assess the extent to which relevant"
+    },
+    {
+      "start": 3793.76,
+      "end": 3798.1600000000003,
+      "text": "document or relevant content information"
+    },
+    {
+      "start": 3795.76,
+      "end": 3799.92,
+      "text": "is retrieved which will ensure that"
+    },
+    {
+      "start": 3798.16,
+      "end": 3802.24,
+      "text": "there are no critical context which is"
+    },
+    {
+      "start": 3799.92,
+      "end": 3806.52,
+      "text": "missing. Similarly there's something"
+    },
+    {
+      "start": 3802.24,
+      "end": 3806.52,
+      "text": "called context entity recall."
+    },
+    {
+      "start": 3814.88,
+      "end": 3818.88,
+      "text": "Now this will evaluate the recall of"
+    },
+    {
+      "start": 3816.64,
+      "end": 3820.96,
+      "text": "entities within the context and it will"
+    },
+    {
+      "start": 3818.88,
+      "end": 3823.6800000000003,
+      "text": "ensure that no important entities are"
+    },
+    {
+      "start": 3820.96,
+      "end": 3828.28,
+      "text": "overlooked in the context retrieval. The"
+    },
+    {
+      "start": 3823.68,
+      "end": 3828.2799999999997,
+      "text": "seventh matrix is called answer"
+    },
+    {
+      "start": 3829.599,
+      "end": 3832.599,
+      "text": "semantic"
+    },
+    {
+      "start": 3833.92,
+      "end": 3836.92,
+      "text": "similarity."
+    },
+    {
+      "start": 3840.88,
+      "end": 3845.839,
+      "text": "And as the name says, answer semantic"
+    },
+    {
+      "start": 3842.64,
+      "end": 3847.68,
+      "text": "similarity will help us to qualify or"
+    },
+    {
+      "start": 3845.839,
+      "end": 3849.599,
+      "text": "quantify the semantic similarity between"
+    },
+    {
+      "start": 3847.68,
+      "end": 3852.24,
+      "text": "the generated answer and the expected"
+    },
+    {
+      "start": 3849.599,
+      "end": 3853.839,
+      "text": "ideal answer."
+    },
+    {
+      "start": 3852.24,
+      "end": 3856.9599999999996,
+      "text": "That means you need to have some labels"
+    },
+    {
+      "start": 3853.839,
+      "end": 3860.72,
+      "text": "to validate this. And the last but not"
+    },
+    {
+      "start": 3856.96,
+      "end": 3863.7200000000003,
+      "text": "the least is called answer"
+    },
+    {
+      "start": 3860.72,
+      "end": 3863.72,
+      "text": "correctness"
+    },
+    {
+      "start": 3864.88,
+      "end": 3869.599,
+      "text": "which will focus on fasttracking or fast"
+    },
+    {
+      "start": 3867.28,
+      "end": 3871.8390000000004,
+      "text": "checking assessing the factual accuracy"
+    },
+    {
+      "start": 3869.599,
+      "end": 3875.2000000000003,
+      "text": "of the generated answer. So these are"
+    },
+    {
+      "start": 3871.839,
+      "end": 3878.48,
+      "text": "the metrics which has been used to"
+    },
+    {
+      "start": 3875.2,
+      "end": 3880.64,
+      "text": "define the overall pipeline."
+    },
+    {
+      "start": 3878.48,
+      "end": 3883.039,
+      "text": "All right. Now we'll move on to the"
+    },
+    {
+      "start": 3880.64,
+      "end": 3884.799,
+      "text": "implementation part. Now for"
+    },
+    {
+      "start": 3883.039,
+      "end": 3887.6800000000003,
+      "text": "implementation we will use a similar"
+    },
+    {
+      "start": 3884.799,
+      "end": 3890.24,
+      "text": "rack uh that we have just now created."
+    },
+    {
+      "start": 3887.68,
+      "end": 3892.0789999999997,
+      "text": "So we'll reuse the same rack but with"
+    },
+    {
+      "start": 3890.24,
+      "end": 3893.9199999999996,
+      "text": "different proposition."
+    },
+    {
+      "start": 3892.079,
+      "end": 3896.96,
+      "text": "So the idea is I need to create some"
+    },
+    {
+      "start": 3893.92,
+      "end": 3899.839,
+      "text": "ground truth labels as well. So let's"
+    },
+    {
+      "start": 3896.96,
+      "end": 3903.319,
+      "text": "move on to this. Maybe I can share this"
+    },
+    {
+      "start": 3899.839,
+      "end": 3903.319,
+      "text": "as a text."
+    },
+    {
+      "start": 3907.839,
+      "end": 3912.0789999999997,
+      "text": "Okay. Let me install the Ragas module"
+    },
+    {
+      "start": 3910.319,
+      "end": 3914.4,
+      "text": "first and then I will start importing"
+    },
+    {
+      "start": 3912.079,
+      "end": 3917.3590000000004,
+      "text": "the Ragas."
+    },
+    {
+      "start": 3914.4,
+      "end": 3920.2400000000002,
+      "text": "So there are two modules in Ragas. You"
+    },
+    {
+      "start": 3917.359,
+      "end": 3922.64,
+      "text": "can use Ragas data set as well. So there"
+    },
+    {
+      "start": 3920.24,
+      "end": 3925.0389999999998,
+      "text": "are some available data set to data set"
+    },
+    {
+      "start": 3922.64,
+      "end": 3926.64,
+      "text": "that you can use to get a quick run"
+    },
+    {
+      "start": 3925.039,
+      "end": 3931.88,
+      "text": "through on these profiles or these"
+    },
+    {
+      "start": 3926.64,
+      "end": 3931.8799999999997,
+      "text": "libraries. So I'm just using that."
+    },
+    {
+      "start": 3934.559,
+      "end": 3941.2400000000002,
+      "text": "Okay. Okay. So, this has been"
+    },
+    {
+      "start": 3937.599,
+      "end": 3941.2400000000002,
+      "text": "I have an error."
+    },
+    {
+      "start": 3944.079,
+      "end": 3951.28,
+      "text": "I think I have a pre-executed uh one as"
+    },
+    {
+      "start": 3946.96,
+      "end": 3953.68,
+      "text": "well. I will maybe show that quickly."
+    },
+    {
+      "start": 3951.28,
+      "end": 3956.079,
+      "text": "Let me fetch the notebook which is run"
+    },
+    {
+      "start": 3953.68,
+      "end": 3959.0789999999997,
+      "text": "already in my machine. Uh just give me a"
+    },
+    {
+      "start": 3956.079,
+      "end": 3959.079,
+      "text": "moment."
+    },
+    {
+      "start": 3965.119,
+      "end": 3968.6400000000003,
+      "text": "Just one minute guys I think uh to"
+    },
+    {
+      "start": 3967.119,
+      "end": 3970.7200000000003,
+      "text": "search for the notebook which I have"
+    },
+    {
+      "start": 3968.64,
+      "end": 3973.1189999999997,
+      "text": "already executed because it will take"
+    },
+    {
+      "start": 3970.72,
+      "end": 3978.2,
+      "text": "more time to execute. So I was just"
+    },
+    {
+      "start": 3973.119,
+      "end": 3978.2000000000003,
+      "text": "thinking we can reuse previous one."
+    },
+    {
+      "start": 4005.44,
+      "end": 4010.64,
+      "text": "Yeah, this is what I have done already."
+    },
+    {
+      "start": 4007.76,
+      "end": 4013.8390000000004,
+      "text": "So I will show you this output. Okay, so"
+    },
+    {
+      "start": 4010.64,
+      "end": 4015.839,
+      "text": "this is the step that we have completed."
+    },
+    {
+      "start": 4013.839,
+      "end": 4018.64,
+      "text": "Okay, now let me explain the code from"
+    },
+    {
+      "start": 4015.839,
+      "end": 4021.839,
+      "text": "the scratch. So what we are doing is we"
+    },
+    {
+      "start": 4018.64,
+      "end": 4024.24,
+      "text": "are creating one RAS pipeline. So first"
+    },
+    {
+      "start": 4021.839,
+      "end": 4027.119,
+      "text": "and foremost thing is we are setting it"
+    },
+    {
+      "start": 4024.24,
+      "end": 4028.799,
+      "text": "up uh using the necessary libraries."
+    },
+    {
+      "start": 4027.119,
+      "end": 4031.52,
+      "text": "Again the same library we are using as"
+    },
+    {
+      "start": 4028.799,
+      "end": 4034.48,
+      "text": "we have used in the previous example."
+    },
+    {
+      "start": 4031.52,
+      "end": 4038.559,
+      "text": "Same thing we have imported here. Right"
+    },
+    {
+      "start": 4034.48,
+      "end": 4040.72,
+      "text": "now the third part is I'm just importing"
+    },
+    {
+      "start": 4038.559,
+      "end": 4043.28,
+      "text": "the"
+    },
+    {
+      "start": 4040.72,
+      "end": 4044.9599999999996,
+      "text": "the pandas for data manipulation so that"
+    },
+    {
+      "start": 4043.28,
+      "end": 4047.8390000000004,
+      "text": "I can able to compare the method which"
+    },
+    {
+      "start": 4044.96,
+      "end": 4050.799,
+      "text": "is going to be used inside Ragas. I'm"
+    },
+    {
+      "start": 4047.839,
+      "end": 4053.2799999999997,
+      "text": "loading the VL model same model same"
+    },
+    {
+      "start": 4050.799,
+      "end": 4057.119,
+      "text": "embedding right no change in the"
+    },
+    {
+      "start": 4053.28,
+      "end": 4060.4,
+      "text": "embedding either. Now once I have load"
+    },
+    {
+      "start": 4057.119,
+      "end": 4063.28,
+      "text": "all the things then I'm going to create"
+    },
+    {
+      "start": 4060.4,
+      "end": 4066.2400000000002,
+      "text": "a custom"
+    },
+    {
+      "start": 4063.28,
+      "end": 4068.48,
+      "text": "provision for"
+    },
+    {
+      "start": 4066.24,
+      "end": 4072.72,
+      "text": "running this generator pipeline and"
+    },
+    {
+      "start": 4068.48,
+      "end": 4074.72,
+      "text": "using auto model for codel pipeline. So"
+    },
+    {
+      "start": 4072.72,
+      "end": 4076.9599999999996,
+      "text": "here I'm passing the model name device"
+    },
+    {
+      "start": 4074.72,
+      "end": 4078.5589999999997,
+      "text": "mapping to be auto"
+    },
+    {
+      "start": 4076.96,
+      "end": 4080.799,
+      "text": "to automatically distribute model layer"
+    },
+    {
+      "start": 4078.559,
+      "end": 4086.0,
+      "text": "across GPU and CPU depending upon the"
+    },
+    {
+      "start": 4080.799,
+      "end": 4088.319,
+      "text": "provisions and the type of"
+    },
+    {
+      "start": 4086.0,
+      "end": 4090.24,
+      "text": "uh loads I'm keeping it to be 16 bit"
+    },
+    {
+      "start": 4088.319,
+      "end": 4093.68,
+      "text": "load and memory requirement I'm keeping"
+    },
+    {
+      "start": 4090.24,
+      "end": 4096.239,
+      "text": "it to be 14 GB. Now once I have done"
+    },
+    {
+      "start": 4093.68,
+      "end": 4098.96,
+      "text": "this I will create a generator pipeline"
+    },
+    {
+      "start": 4096.239,
+      "end": 4100.5599999999995,
+      "text": "and uh this will execute based upon"
+    },
+    {
+      "start": 4098.96,
+      "end": 4104.2390000000005,
+      "text": "these parameter. The first parameter is"
+    },
+    {
+      "start": 4100.56,
+      "end": 4106.799,
+      "text": "a task type model will generate"
+    },
+    {
+      "start": 4104.239,
+      "end": 4109.04,
+      "text": "the model here I'm loading is mistral"
+    },
+    {
+      "start": 4106.799,
+      "end": 4110.56,
+      "text": "tokenizer which will convert text to"
+    },
+    {
+      "start": 4109.04,
+      "end": 4112.88,
+      "text": "tokens"
+    },
+    {
+      "start": 4110.56,
+      "end": 4115.6,
+      "text": "I'm keeping the limit to be 256 maximum"
+    },
+    {
+      "start": 4112.88,
+      "end": 4118.719,
+      "text": "token to generate temperature again I'm"
+    },
+    {
+      "start": 4115.6,
+      "end": 4122.0,
+      "text": "keeping it 0.3 low randomness more"
+    },
+    {
+      "start": 4118.719,
+      "end": 4125.6,
+      "text": "deterministic factually generated I mean"
+    },
+    {
+      "start": 4122.0,
+      "end": 4128.0,
+      "text": "factually good to generate an answer"
+    },
+    {
+      "start": 4125.6,
+      "end": 4130.719,
+      "text": "then my pipeline has been ready that"
+    },
+    {
+      "start": 4128.0,
+      "end": 4133.759,
+      "text": "means I'm calling the generator prompt."
+    },
+    {
+      "start": 4130.719,
+      "end": 4136.56,
+      "text": "Now I'm keeping the chromb uh initialize"
+    },
+    {
+      "start": 4133.759,
+      "end": 4139.12,
+      "text": "creating an inmemory chromb and with"
+    },
+    {
+      "start": 4136.56,
+      "end": 4143.6,
+      "text": "directory path."
+    },
+    {
+      "start": 4139.12,
+      "end": 4146.719,
+      "text": "Now here I'm just loading the pull text"
+    },
+    {
+      "start": 4143.6,
+      "end": 4148.159000000001,
+      "text": "using the same paper that I have uh I"
+    },
+    {
+      "start": 4146.719,
+      "end": 4152.159,
+      "text": "think given as well in the previous"
+    },
+    {
+      "start": 4148.159,
+      "end": 4154.159,
+      "text": "demo. Now this document is going to be"
+    },
+    {
+      "start": 4152.159,
+      "end": 4157.199,
+      "text": "set up as a chunking method. I will keep"
+    },
+    {
+      "start": 4154.159,
+      "end": 4162.4,
+      "text": "the chunk size to be 700 and with a"
+    },
+    {
+      "start": 4157.199,
+      "end": 4165.04,
+      "text": "overlap of 150 near about 15% overlap."
+    },
+    {
+      "start": 4162.4,
+      "end": 4168.239,
+      "text": "Then I'm creating uh and generating the"
+    },
+    {
+      "start": 4165.04,
+      "end": 4170.159,
+      "text": "embedding stores. So I will input the"
+    },
+    {
+      "start": 4168.239,
+      "end": 4172.799,
+      "text": "ambidding using the sentence"
+    },
+    {
+      "start": 4170.159,
+      "end": 4174.719,
+      "text": "transformers and storing this embedding"
+    },
+    {
+      "start": 4172.799,
+      "end": 4177.04,
+      "text": "inside chromb."
+    },
+    {
+      "start": 4174.719,
+      "end": 4179.199,
+      "text": "Now I will create a function to retrieve"
+    },
+    {
+      "start": 4177.04,
+      "end": 4182.64,
+      "text": "the relevant context. embed a query"
+    },
+    {
+      "start": 4179.199,
+      "end": 4184.799,
+      "text": "convert into 384 dimension vectors and"
+    },
+    {
+      "start": 4182.64,
+      "end": 4186.799,
+      "text": "query the chromb for top case more"
+    },
+    {
+      "start": 4184.799,
+      "end": 4188.96,
+      "text": "similar chunks and retrieve [snorts] the"
+    },
+    {
+      "start": 4186.799,
+      "end": 4191.5199999999995,
+      "text": "chunks with double line uh that is what"
+    },
+    {
+      "start": 4188.96,
+      "end": 4193.12,
+      "text": "I'm doing in the earlier version as well"
+    },
+    {
+      "start": 4191.52,
+      "end": 4194.96,
+      "text": "now I'm keeping the two version with and"
+    },
+    {
+      "start": 4193.12,
+      "end": 4198.4,
+      "text": "without retrieval this is what we have"
+    },
+    {
+      "start": 4194.96,
+      "end": 4200.4,
+      "text": "done now here is the most important part"
+    },
+    {
+      "start": 4198.4,
+      "end": 4202.719,
+      "text": "which has been came along so here what"
+    },
+    {
+      "start": 4200.4,
+      "end": 4205.44,
+      "text": "we are doing is we are trying to"
+    },
+    {
+      "start": 4202.719,
+      "end": 4208.4800000000005,
+      "text": "evaluate now the raas with the help of"
+    },
+    {
+      "start": 4205.44,
+      "end": 4210.4,
+      "text": "raas pipeline so I'm just using the"
+    },
+    {
+      "start": 4208.48,
+      "end": 4212.5599999999995,
+      "text": "three important parameters which is"
+    },
+    {
+      "start": 4210.4,
+      "end": 4215.839999999999,
+      "text": "faithfulness, relevancy and answer"
+    },
+    {
+      "start": 4212.56,
+      "end": 4219.92,
+      "text": "context to evaluate. Now I'm just"
+    },
+    {
+      "start": 4215.84,
+      "end": 4222.159000000001,
+      "text": "importing all these three metrics."
+    },
+    {
+      "start": 4219.92,
+      "end": 4225.12,
+      "text": "Now I'm keeping some text question. So"
+    },
+    {
+      "start": 4222.159,
+      "end": 4227.679,
+      "text": "here I'm creating a set of six questions"
+    },
+    {
+      "start": 4225.12,
+      "end": 4230.88,
+      "text": "and this is created manually by reading"
+    },
+    {
+      "start": 4227.679,
+      "end": 4232.8,
+      "text": "this document. So each each question"
+    },
+    {
+      "start": 4230.88,
+      "end": 4234.4800000000005,
+      "text": "will have a ground truth which is"
+    },
+    {
+      "start": 4232.8,
+      "end": 4236.8,
+      "text": "semantically correct answer for"
+    },
+    {
+      "start": 4234.48,
+      "end": 4239.5199999999995,
+      "text": "correctness measurement and question"
+    },
+    {
+      "start": 4236.8,
+      "end": 4242.159000000001,
+      "text": "will be test on these aspect definition"
+    },
+    {
+      "start": 4239.52,
+      "end": 4244.719,
+      "text": "numerical values training details"
+    },
+    {
+      "start": 4242.159,
+      "end": 4246.5599999999995,
+      "text": "technical concept understanding so I'm"
+    },
+    {
+      "start": 4244.719,
+      "end": 4249.92,
+      "text": "creating six questions pretty"
+    },
+    {
+      "start": 4246.56,
+      "end": 4254.0,
+      "text": "diversified questions based upon my user"
+    },
+    {
+      "start": 4249.92,
+      "end": 4256.4,
+      "text": "response now I'm collecting the rack"
+    },
+    {
+      "start": 4254.0,
+      "end": 4259.12,
+      "text": "for demo purpose so here I'm saying I"
+    },
+    {
+      "start": 4256.4,
+      "end": 4264.159,
+      "text": "have got several rack answers"
+    },
+    {
+      "start": 4259.12,
+      "end": 4267.76,
+      "text": "several like context right and then I'm"
+    },
+    {
+      "start": 4264.159,
+      "end": 4269.92,
+      "text": "just checking the overall quality of it"
+    },
+    {
+      "start": 4267.76,
+      "end": 4272.719,
+      "text": "now to check the quality of the scores"
+    },
+    {
+      "start": 4269.92,
+      "end": 4275.52,
+      "text": "there's something called blue scores"
+    },
+    {
+      "start": 4272.719,
+      "end": 4279.36,
+      "text": "which is one way that you can able to"
+    },
+    {
+      "start": 4275.52,
+      "end": 4281.1990000000005,
+      "text": "assume it how much chunks in the"
+    },
+    {
+      "start": 4279.36,
+      "end": 4283.199,
+      "text": "generated answers match with the ground"
+    },
+    {
+      "start": 4281.199,
+      "end": 4285.599999999999,
+      "text": "answers that is one way that you can"
+    },
+    {
+      "start": 4283.199,
+      "end": 4288.239,
+      "text": "look into the BLU scores which is"
+    },
+    {
+      "start": 4285.6,
+      "end": 4289.4400000000005,
+      "text": "typically called as blue Right. So that"
+    },
+    {
+      "start": 4288.239,
+      "end": 4291.839999999999,
+      "text": "means we are looking for answer"
+    },
+    {
+      "start": 4289.44,
+      "end": 4294.799999999999,
+      "text": "correctness."
+    },
+    {
+      "start": 4291.84,
+      "end": 4298.08,
+      "text": "Now I'm going to do some mock test on"
+    },
+    {
+      "start": 4294.8,
+      "end": 4300.8,
+      "text": "this RAP pipeline. I'm setting up the"
+    },
+    {
+      "start": 4298.08,
+      "end": 4302.64,
+      "text": "evaluation strategy. Now this will"
+    },
+    {
+      "start": 4300.8,
+      "end": 4304.320000000001,
+      "text": "generate an answer. So I'm getting the"
+    },
+    {
+      "start": 4302.64,
+      "end": 4307.52,
+      "text": "answer as this. You can [snorts] see"
+    },
+    {
+      "start": 4304.32,
+      "end": 4311.199,
+      "text": "faithfulness is 89%, answer relevancy is"
+    },
+    {
+      "start": 4307.52,
+      "end": 4313.6,
+      "text": "94, context relevancy is 91, answer"
+    },
+    {
+      "start": 4311.199,
+      "end": 4317.678999999999,
+      "text": "correctness is 87%. Which is pretty good"
+    },
+    {
+      "start": 4313.6,
+      "end": 4319.120000000001,
+      "text": "result that I'm going to have. Now what"
+    },
+    {
+      "start": 4317.679,
+      "end": 4321.4400000000005,
+      "text": "I'm doing is I'm doing some result"
+    },
+    {
+      "start": 4319.12,
+      "end": 4324.96,
+      "text": "interpretation. So faithfulness score is"
+    },
+    {
+      "start": 4321.44,
+      "end": 4326.799999999999,
+      "text": "89. That means the rack system"
+    },
+    {
+      "start": 4324.96,
+      "end": 4328.719,
+      "text": "really has hallucinate for every talent"
+    },
+    {
+      "start": 4326.8,
+      "end": 4330.64,
+      "text": "claims about nine nine of them are"
+    },
+    {
+      "start": 4328.719,
+      "end": 4333.6,
+      "text": "supporting directly that has been"
+    },
+    {
+      "start": 4330.64,
+      "end": 4337.52,
+      "text": "retrieved from the PDF. Answer relevancy"
+    },
+    {
+      "start": 4333.6,
+      "end": 4340.159000000001,
+      "text": "is close to 95 only 5% of the response"
+    },
+    {
+      "start": 4337.52,
+      "end": 4344.4800000000005,
+      "text": "may be tang non-tangible."
+    },
+    {
+      "start": 4340.159,
+      "end": 4346.5599999999995,
+      "text": "context relevancy is close to 91%"
+    },
+    {
+      "start": 4344.48,
+      "end": 4349.5199999999995,
+      "text": "that means only 9% of the retrieval text"
+    },
+    {
+      "start": 4346.56,
+      "end": 4352.159000000001,
+      "text": "chunks are relevant to the query. Now I"
+    },
+    {
+      "start": 4349.52,
+      "end": 4355.1990000000005,
+      "text": "would like to check the detail output"
+    },
+    {
+      "start": 4352.159,
+      "end": 4357.92,
+      "text": "per query as well and for that I need to"
+    },
+    {
+      "start": 4355.199,
+      "end": 4360.08,
+      "text": "generate a summary which is Raa's"
+    },
+    {
+      "start": 4357.92,
+      "end": 4362.64,
+      "text": "evalation report. Now this report will"
+    },
+    {
+      "start": 4360.08,
+      "end": 4365.44,
+      "text": "help me to understand what are the"
+    },
+    {
+      "start": 4362.64,
+      "end": 4367.679,
+      "text": "different scenarios in which I have"
+    },
+    {
+      "start": 4365.44,
+      "end": 4370.32,
+      "text": "iterated true. So basically I'm trying"
+    },
+    {
+      "start": 4367.679,
+      "end": 4373.4400000000005,
+      "text": "to generalize this performance and try"
+    },
+    {
+      "start": 4370.32,
+      "end": 4375.84,
+      "text": "to understand the gist of the overall"
+    },
+    {
+      "start": 4373.44,
+      "end": 4378.4,
+      "text": "statistics right. So this is what ragas"
+    },
+    {
+      "start": 4375.84,
+      "end": 4381.360000000001,
+      "text": "does for you. So ragas will help you to"
+    },
+    {
+      "start": 4378.4,
+      "end": 4383.92,
+      "text": "generate and evaluate your rack pipeline"
+    },
+    {
+      "start": 4381.36,
+      "end": 4385.36,
+      "text": "into numerical scores and these"
+    },
+    {
+      "start": 4383.92,
+      "end": 4387.679,
+      "text": "numerical score that you are seeing on"
+    },
+    {
+      "start": 4385.36,
+      "end": 4391.5199999999995,
+      "text": "my screen will help you to evaluate your"
+    },
+    {
+      "start": 4387.679,
+      "end": 4393.52,
+      "text": "rack pipeline with a realistic numbers"
+    },
+    {
+      "start": 4391.52,
+      "end": 4396.159000000001,
+      "text": "not just by"
+    },
+    {
+      "start": 4393.52,
+      "end": 4397.84,
+      "text": "intuitions right you need a realistic"
+    },
+    {
+      "start": 4396.159,
+      "end": 4399.44,
+      "text": "numbers similar to what you are doing in"
+    },
+    {
+      "start": 4397.84,
+      "end": 4402.8,
+      "text": "machine learning you have a realistic"
+    },
+    {
+      "start": 4399.44,
+      "end": 4406.159,
+      "text": "numbers including precision recall ROC"
+    },
+    {
+      "start": 4402.8,
+      "end": 4407.679,
+      "text": "AU higher the ROC better the model"
+    },
+    {
+      "start": 4406.159,
+      "end": 4409.44,
+      "text": "similarly Here we are also generating"
+    },
+    {
+      "start": 4407.679,
+      "end": 4411.84,
+      "text": "the overall performance portfolio of the"
+    },
+    {
+      "start": 4409.44,
+      "end": 4415.28,
+      "text": "model by benchmarking it against the"
+    },
+    {
+      "start": 4411.84,
+      "end": 4417.4400000000005,
+      "text": "numbers and these numbers will suggest"
+    },
+    {
+      "start": 4415.28,
+      "end": 4419.92,
+      "text": "whether my model or rack pipeline are"
+    },
+    {
+      "start": 4417.44,
+      "end": 4424.32,
+      "text": "doing fairly a good job or it required"
+    },
+    {
+      "start": 4419.92,
+      "end": 4426.4800000000005,
+      "text": "some tweaking or improvisations or am I"
+    },
+    {
+      "start": 4424.32,
+      "end": 4429.12,
+      "text": "in the right direction or not. So that"
+    },
+    {
+      "start": 4426.48,
+      "end": 4431.12,
+      "text": "will help us to set up the benchmark. So"
+    },
+    {
+      "start": 4429.12,
+      "end": 4433.28,
+      "text": "that's the reason I told you in the"
+    },
+    {
+      "start": 4431.12,
+      "end": 4438.0,
+      "text": "previous uh during the start of the"
+    },
+    {
+      "start": 4433.28,
+      "end": 4440.88,
+      "text": "lecture that rag"
+    },
+    {
+      "start": 4438.0,
+      "end": 4443.36,
+      "text": "comes with different flavors. So here we"
+    },
+    {
+      "start": 4440.88,
+      "end": 4445.36,
+      "text": "are talking about basic rag which is"
+    },
+    {
+      "start": 4443.36,
+      "end": 4448.159,
+      "text": "vanilla rag right. So that's the whole"
+    },
+    {
+      "start": 4445.36,
+      "end": 4450.159,
+      "text": "idea you can compare now your rag as"
+    },
+    {
+      "start": 4448.159,
+      "end": 4452.159,
+      "text": "well that you have a version one which"
+    },
+    {
+      "start": 4450.159,
+      "end": 4454.159,
+      "text": "is a basic rag. Now you're using an"
+    },
+    {
+      "start": 4452.159,
+      "end": 4457.839999999999,
+      "text": "agentic rack and you're running the same"
+    },
+    {
+      "start": 4454.159,
+      "end": 4460.5599999999995,
+      "text": "set of questions on the agentic rag. how"
+    },
+    {
+      "start": 4457.84,
+      "end": 4463.360000000001,
+      "text": "much improvement you're getting and when"
+    },
+    {
+      "start": 4460.56,
+      "end": 4465.52,
+      "text": "you're running a graph rag against the"
+    },
+    {
+      "start": 4463.36,
+      "end": 4467.5199999999995,
+      "text": "two provisions what is the improvement"
+    },
+    {
+      "start": 4465.52,
+      "end": 4469.360000000001,
+      "text": "that you're getting. So it is very"
+    },
+    {
+      "start": 4467.52,
+      "end": 4471.679,
+      "text": "similar to the experimentation pipeline"
+    },
+    {
+      "start": 4469.36,
+      "end": 4473.839999999999,
+      "text": "now that your rag is going to be have a"
+    },
+    {
+      "start": 4471.679,
+      "end": 4476.32,
+      "text": "consistent improvement with different"
+    },
+    {
+      "start": 4473.84,
+      "end": 4478.88,
+      "text": "tax stack and with the help of each"
+    },
+    {
+      "start": 4476.32,
+      "end": 4481.28,
+      "text": "incorporation how much percentage you're"
+    },
+    {
+      "start": 4478.88,
+      "end": 4483.1990000000005,
+      "text": "getting as a betterment and these"
+    },
+    {
+      "start": 4481.28,
+      "end": 4485.44,
+      "text": "numbers will help you to do this"
+    },
+    {
+      "start": 4483.199,
+      "end": 4487.44,
+      "text": "analysis."
+    },
+    {
+      "start": 4485.44,
+      "end": 4492.199,
+      "text": "So, I think this is pretty much what we"
+    },
+    {
+      "start": 4487.44,
+      "end": 4492.199,
+      "text": "have for today. Thank you guys."
+    }
+  ]
+}

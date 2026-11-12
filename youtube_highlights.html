@@ -1,0 +1,96 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Highlight in YouTube about the correct answer</title>
+<style>body{font:17px system-ui;max-width:960px;margin:35px auto;padding:0 22px;background:#f6f8fc;color:#17243c}h1{font-size:30px}section{background:white;padding:22px;border-radius:16px;margin:18px 0}textarea{box-sizing:border-box;width:100%;font:inherit;padding:12px;border:1px solid #9aa8ba;border-radius:8px}button,select{font:inherit;padding:10px;margin:8px 7px 8px 0;border-radius:8px;border:1px solid #9aa8ba}button{cursor:pointer;background:#e2ecff}#speak{background:#ffe0a3}#find,#play{background:#153e83;color:white}small{display:block;line-height:1.5;color:#526078}iframe{width:100%;aspect-ratio:16/9;border:0}#answer,#evidence{white-space:pre-wrap}#status{min-height:25px}button:disabled{opacity:.5}a{color:#164c9a}</style>
+<h1>Highlight in YouTube about the correct answer</h1>
+<p>Ask about a topic to find the best matching clip, or name a trainer to search their videos.</p>
+<section><label for="question">Your question</label><textarea id="question" rows="3" placeholder="According to Ansh Lamba, what is RAG?"></textarea>
+<button id="speak">🎙 Speak question</button><button id="stop" disabled>Stop listening</button><button id="find">Find explanation</button><label for="level"> Microphone </label><meter id="level" min="0" max="1" value="0"></meter>
+<p id="status" role="status" aria-live="polite">Type a question or click Speak question. Then click Find explanation to submit it.</p>
+<select id="trainer" aria-label="Trainer"><option value="all">All trainers</option><option>Ansh Lamba</option><option>Dhaval Patel</option><option>Piyush Garg</option><option>Edureka</option><option>Keerti Purswani</option><option>Hugging Face</option><option>COMMAND</option><option>KGP Talkie</option><option>Sudarshan Koirala</option><option>Krish Naik</option><option>John Savill</option></select>
+<select id="topic" aria-label="Course"><option value="all">All topics</option><option>RAG</option><option>LangChain</option><option value="Agents">AI agents and memory</option><option>Evaluation</option><option>AWS</option><option>Azure</option></select>
+<select id="duration" aria-label="Clip length"><option value="180">About 3 minutes</option><option value="240">About 4 minutes</option></select>
+<label><input id="otherTrainer" type="checkbox" checked> Try another trainer if needed for a selected trainer</label>
+<button id="reset">New conversation</button>
+<small>Voice records your question until Stop listening, then sends the audio to OpenAI for transcription. Text appears after you stop. Recordings stay in memory and are not saved by this app. Transcription and Find explanation use API credit. Internet is required.</small></section>
+<section><strong id="memory">Conversation: no completed exchanges yet.</strong><p id="resolved"></p><details><summary>Recent conversation</summary><div id="history"></div></details><small>Remembers up to six exchanges in this browser tab. Cleared by New conversation, server restart, or one hour of inactivity. Recent question/answer context is sent to the model for follow-ups; captions remain the source of evidence.</small></section>
+<section id="result" hidden><h2 id="title"></h2><p id="agentTool"></p><p id="routing"></p>
+<div id="bestMatch" hidden style="background:#e6f4ed;padding:12px;border-radius:8px">
+<strong>Best match</strong><p id="bestReason"></p><button id="playBest">Play best match</button>
+<small>German subtitles are requested automatically. If they don’t appear, try YouTube’s Settings → Subtitles/CC → Auto-translate → German, when available.</small>
+</div>
+<a id="watch" target="_blank" rel="noopener" hidden>Open at this time on YouTube</a><div id="player"></div>
+<p id="answer"></p><details id="details"><summary>Check supporting captions</summary><p id="evidence"></p></details><details id="sourceDetails" hidden><summary>Sources</summary><div id="sources"></div></details></section>
+<small>With All trainers selected, the app compares matching clips across all indexed sources. Naming a trainer in your question overrides the selector.</small>
+<script>
+const $=id=>document.getElementById(id);
+// 2026-11-11 · FIX for the hosted app: after a quiet period the server sleeps and restarts. Its session code then
+//   changes (403) and, while it wakes, the host may answer with an HTML error page. Retry while it wakes;
+//   on a restart, reload the page once and put the typed question back.
+//   2026-11-11 (2) · a restart now first fetches a fresh session code and resends the SAME request, so a spoken
+//   question is not lost to a page reload. Reloading is only the last resort.
+let liveToken=null;
+async function freshToken(){
+  try{const page=await (await fetch('/',{cache:'no-store'})).text();const m=page.match(/'X-Highlight-Token':'([A-Za-z0-9_-]{20,})'/);return m?m[1]:null;}catch{return null;}
+}
+async function apiFetch(path,options,tries=4){
+  let refreshed=false;
+  for(let attempt=1;;attempt++){
+    let response=null;
+    const sent=liveToken?{...options,headers:{...options.headers,'X-Highlight-Token':liveToken}}:options;
+    try{response=await fetch(path,sent);}catch(error){if(error.name==='AbortError')throw error;}
+    if(response&&response.status===403&&!refreshed){
+      refreshed=true;
+      $('status').textContent='The app restarted after a pause. Reconnecting…';
+      const token=await freshToken();
+      if(token){liveToken=token;attempt--;continue;}
+    }
+    if(response&&response.status===403){
+      sessionStorage.setItem('pending-question',$('question').value);
+      $('status').textContent='The app restarted after a pause. Reloading the page; your question is kept…';
+      location.reload();return new Promise(()=>{});
+    }
+    const isJson=response&&(response.headers.get('content-type')||'').includes('application/json');
+    if(response&&isJson&&response.status<500)return response;
+    if(attempt>=tries){if(response&&isJson)return response;throw Error('The server did not answer. It may still be waking up: wait a minute and try again.');}
+    $('status').textContent=`The server is waking up after a pause (try ${attempt} of ${tries})… please wait.`;
+    await new Promise(resolve=>setTimeout(resolve,15000));
+  }
+}
+{const pending=sessionStorage.getItem('pending-question');if(pending!==null){sessionStorage.removeItem('pending-question');addEventListener('DOMContentLoaded',()=>{$('question').value=pending;$('status').textContent='The app restarted, so the page was reloaded. Your question is back: click Find explanation.';});}}
+let sessionId=sessionStorage.getItem('youtube-highlight-conversation');
+if(!sessionId){sessionId=crypto.randomUUID();sessionStorage.setItem('youtube-highlight-conversation',sessionId);}
+const showConversation=data=>{$('memory').textContent=`Conversation: ${data.remembered_turns} of 6 recent exchanges · ${data.memory_used?'Follow-up used earlier context':'Standalone question'}`;
+$('resolved').textContent='Question used for search: '+data.resolved_question;$('history').replaceChildren();
+for(const turn of data.conversation||[]){const p=document.createElement('p');p.textContent=`You: ${turn.question}\n${turn.trainer} (${turn.status}): ${turn.answer}`;p.style.whiteSpace='pre-wrap';$('history').appendChild(p);}};
+fetch('/history',{method:'POST',headers:{'Content-Type':'application/json','X-Highlight-Token':'__TOKEN__'},body:JSON.stringify({session_id:sessionId})}).then(r=>r.ok?r.json():null).then(data=>{if(data?.remembered_turns){showConversation(data);$('memory').textContent=`Conversation restored: ${data.remembered_turns} of 6 recent exchanges`;}}).catch(()=>{});
+</script><script src="/question_recorder.js"></script><script src="/highlight_playlist.js"></script><script>
+$('find').onclick=async()=>{if(!$('question').value.trim()){ $('status').textContent='Please speak or type a question first.';return;}
+cancelTranscription();
+const previousMemoryLabel=$('memory').textContent;
+$('memory').textContent='Question submitted. Waiting for the answer.';
+$('find').disabled=true;$('reset').disabled=true;$('speak').disabled=true;highlightPlayer.set(null);$('result').hidden=true;$('status').textContent='Searching trainer captions for the best match…';
+try{const response=await apiFetch('/find',{method:'POST',headers:{'Content-Type':'application/json','X-Highlight-Token':'__TOKEN__'},body:JSON.stringify({session_id:sessionId,question:$('question').value,trainer:$('trainer').value,topic:$('topic').value,duration:Number($('duration').value),allow_other_trainer:$('otherTrainer').checked})});const data=await response.json();if(!response.ok)throw Error(data.error||'Request failed');
+showConversation(data);
+$('result').hidden=false;$('answer').textContent=data.answer;$('title').textContent=data.title||'More information needed';
+$('routing').textContent=data.routing_note||'';
+const toolNames={search_transcript:'Transcript search',lookup_video:'Course lookup',summarize_lesson:'Lesson summarization'};
+const toolName=toolNames[data.tool_used];
+$('agentTool').textContent=toolName?'Agent tool used: '+toolName:'';
+$('sources').replaceChildren();
+if(data.clip_note){const note=document.createElement('p');note.textContent=data.clip_note;$('sources').appendChild(note);}
+for(const source of data.sources||[]){const p=document.createElement('p');const a=document.createElement('a');a.textContent=`${source.trainer} — ${source.title} — ${source.time}`;a.href=source.url;a.target='_blank';a.rel='noopener';p.appendChild(a);if(source.snippet){const quote=document.createElement('small');quote.textContent=source.snippet;p.appendChild(quote);}$('sources').appendChild(p);}
+const clips=data.clips||(data.status==='supported'?[data]:[]);
+const best=data.best_match;
+const bestClip=best ? clips[best.index] : clips.length===1 ? clips[0] : null;
+highlightPlayer.set(bestClip);
+$('sourceDetails').hidden=!$('sources').childElementCount;
+$('sourceDetails').open=data.status==='catalogue'||!!data.closest_passages;
+if(bestClip){
+  $('bestReason').textContent=[`${bestClip.trainer} · ${bestClip.time}`,best?.reason].filter(Boolean).join(' — ');
+  $('title').textContent=bestClip.title;
+  $('answer').textContent=bestClip.answer||data.answer;
+}
+if(bestClip){$('status').textContent='Best match ready.';}else if(data.ranking_unavailable){$('status').textContent='Clip comparison is temporarily unavailable. Try again.';}else if(data.status==='catalogue'){$('status').textContent='Course lookup complete.';}else if(data.status==='answer_only'||clips.length){$('status').textContent='Written explanation ready. No best clip was selected.';}else{$('status').textContent=data.status==='clarify'?'Please clarify your question and search again.':data.closest_passages?'No exact explanation was verified. The closest passages are listed under Sources below.':'The available video evidence does not fully answer this question. See the explanation below.';}}
+catch(e){$('memory').textContent=previousMemoryLabel;$('status').textContent=e.message;}finally{$('find').disabled=false;$('reset').disabled=false;$('speak').disabled=!voiceAvailable;}};
+$('reset').onclick=async()=>{cancelTranscription();$('reset').disabled=true;$('find').disabled=true;$('speak').disabled=true;try{const response=await apiFetch('/reset',{method:'POST',headers:{'Content-Type':'application/json','X-Highlight-Token':'__TOKEN__'},body:JSON.stringify({session_id:sessionId})});if(!response.ok)throw Error('Could not clear the conversation. Try again.');highlightPlayer.set(null);$('question').value='';$('result').hidden=true;$('history').replaceChildren();$('resolved').textContent='';$('memory').textContent='Conversation: no completed exchanges yet.';$('status').textContent='Conversation cleared. Ask a complete first question.';}catch(e){$('status').textContent=e.message;}finally{$('reset').disabled=false;$('find').disabled=false;$('speak').disabled=!voiceAvailable;}};
+</script></html>

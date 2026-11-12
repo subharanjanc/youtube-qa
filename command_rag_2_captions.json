@@ -1,0 +1,1138 @@
+{
+  "video_id": "MDb81aT0V4w",
+  "title": "Build a private R.A.G. Assistant with CrewAI, Ollama, & AgentOps",
+  "channel": "COMMAND",
+  "trainer": "COMMAND",
+  "topic": "RAG",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 728.0,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.44,
+      "text": "[Music]"
+    },
+    {
+      "start": 2.12,
+      "end": 7.04,
+      "text": "somewhere on our computer let's create a"
+    },
+    {
+      "start": 4.44,
+      "end": 9.4,
+      "text": "folder where we will start our work for"
+    },
+    {
+      "start": 7.04,
+      "end": 13.24,
+      "text": "example I'm creating a folder called our"
+    },
+    {
+      "start": 9.4,
+      "end": 16.68,
+      "text": "project folder let's CD into it and open"
+    },
+    {
+      "start": 13.24,
+      "end": 19.72,
+      "text": "it up with our code editor of choice I"
+    },
+    {
+      "start": 16.68,
+      "end": 22.48,
+      "text": "will be using VSS code as we're in a"
+    },
+    {
+      "start": 19.72,
+      "end": 24.198999999999998,
+      "text": "fresh folder building a fresh project"
+    },
+    {
+      "start": 22.48,
+      "end": 26.92,
+      "text": "let's create our virtual environment"
+    },
+    {
+      "start": 24.199,
+      "end": 28.96,
+      "text": "like so if you're unfamiliar with this"
+    },
+    {
+      "start": 26.92,
+      "end": 32.719,
+      "text": "virtual environment stuff all we're"
+    },
+    {
+      "start": 28.96,
+      "end": 35.04,
+      "text": "doing is configuring python to install"
+    },
+    {
+      "start": 32.719,
+      "end": 39.28,
+      "text": "any third-party python packages related"
+    },
+    {
+      "start": 35.04,
+      "end": 41.68,
+      "text": "to this project inside of this project"
+    },
+    {
+      "start": 39.28,
+      "end": 46.64,
+      "text": "folder so that it doesn't affect any"
+    },
+    {
+      "start": 41.68,
+      "end": 46.64,
+      "text": "other python projects on our"
+    },
+    {
+      "start": 47.44,
+      "end": 55.28,
+      "text": "computer and if we run the UV init"
+    },
+    {
+      "start": 51.96,
+      "end": 59.199,
+      "text": "command you should see uh python project"
+    },
+    {
+      "start": 55.28,
+      "end": 63.0,
+      "text": "scaffolded for us here and with this"
+    },
+    {
+      "start": 59.199,
+      "end": 66.88,
+      "text": "scaffolded UV project we get a little"
+    },
+    {
+      "start": 63.0,
+      "end": 69.84,
+      "text": "hello.py script and this allows us to"
+    },
+    {
+      "start": 66.88,
+      "end": 73.08,
+      "text": "smoke test everything is working and you"
+    },
+    {
+      "start": 69.84,
+      "end": 76.36,
+      "text": "can see this little warning here this is"
+    },
+    {
+      "start": 73.08,
+      "end": 80.119,
+      "text": "vs code asking us to confirm which"
+    },
+    {
+      "start": 76.36,
+      "end": 84.32,
+      "text": "virtual environment we are working in"
+    },
+    {
+      "start": 80.119,
+      "end": 88.0,
+      "text": "and this is the one we just created and"
+    },
+    {
+      "start": 84.32,
+      "end": 91.439,
+      "text": "I like to remove this hello.py script"
+    },
+    {
+      "start": 88.0,
+      "end": 95.52,
+      "text": "because we won't need it and and now"
+    },
+    {
+      "start": 91.439,
+      "end": 101.67999999999999,
+      "text": "that we have all of that set up we can"
+    },
+    {
+      "start": 95.52,
+      "end": 101.67999999999999,
+      "text": "add crei to our project folder like"
+    },
+    {
+      "start": 102.479,
+      "end": 108.03999999999999,
+      "text": "so and after crei is downloaded we can"
+    },
+    {
+      "start": 106.079,
+      "end": 112.91999999999999,
+      "text": "print out its version to confirm it's"
+    },
+    {
+      "start": 108.04,
+      "end": 116.07900000000001,
+      "text": "working and you can see we're using"
+    },
+    {
+      "start": 112.92,
+      "end": 117.799,
+      "text": "0.860 to scaffold a crew aai application"
+    },
+    {
+      "start": 116.079,
+      "end": 120.24,
+      "text": "with the crew aai CLI we enter the"
+    },
+    {
+      "start": 117.799,
+      "end": 122.32000000000001,
+      "text": "following command crew AI create crew"
+    },
+    {
+      "start": 120.24,
+      "end": 124.67999999999999,
+      "text": "followed by the name of our project and"
+    },
+    {
+      "start": 122.32,
+      "end": 125.91999999999999,
+      "text": "I'm going to use the name rag assistant"
+    },
+    {
+      "start": 124.68,
+      "end": 127.24000000000001,
+      "text": "and you can see we're presented with a"
+    },
+    {
+      "start": 125.92,
+      "end": 130.0,
+      "text": "menu that helps us set up this"
+    },
+    {
+      "start": 127.24,
+      "end": 133.04,
+      "text": "autogenerated project and the provider"
+    },
+    {
+      "start": 130.0,
+      "end": 136.48,
+      "text": "is the name of the company or group that"
+    },
+    {
+      "start": 133.04,
+      "end": 138.28,
+      "text": "will provide the AI we want to use to us"
+    },
+    {
+      "start": 136.48,
+      "end": 140.2,
+      "text": "so we're not going to use open AI we're"
+    },
+    {
+      "start": 138.28,
+      "end": 142.0,
+      "text": "not going to use anthropic to mix it up"
+    },
+    {
+      "start": 140.2,
+      "end": 145.76,
+      "text": "we're going to use"
+    },
+    {
+      "start": 142.0,
+      "end": 147.599,
+      "text": "olama and AMA actually provides hundreds"
+    },
+    {
+      "start": 145.76,
+      "end": 149.44,
+      "text": "of different models but you can see in"
+    },
+    {
+      "start": 147.599,
+      "end": 150.72,
+      "text": "this menu it only allows us to select"
+    },
+    {
+      "start": 149.44,
+      "end": 154.76,
+      "text": "two of them"
+    },
+    {
+      "start": 150.72,
+      "end": 157.68,
+      "text": "so we'll be switching this model later"
+    },
+    {
+      "start": 154.76,
+      "end": 161.67999999999998,
+      "text": "but for now let's just select llama 3.1"
+    },
+    {
+      "start": 157.68,
+      "end": 163.8,
+      "text": "and you can see that uh another folder"
+    },
+    {
+      "start": 161.68,
+      "end": 167.64000000000001,
+      "text": "has been created for us called ragor"
+    },
+    {
+      "start": 163.8,
+      "end": 173.12,
+      "text": "assistant and let's CD into"
+    },
+    {
+      "start": 167.64,
+      "end": 175.76,
+      "text": "it and open it with vs code and I know"
+    },
+    {
+      "start": 173.12,
+      "end": 178.76,
+      "text": "this might seem strange that we just"
+    },
+    {
+      "start": 175.76,
+      "end": 181.67999999999998,
+      "text": "created a project to create another"
+    },
+    {
+      "start": 178.76,
+      "end": 184.72,
+      "text": "project within it but that's how this"
+    },
+    {
+      "start": 181.68,
+      "end": 186.84,
+      "text": "works now that we're in this second"
+    },
+    {
+      "start": 184.72,
+      "end": 188.72,
+      "text": "project folder let's make sure that its"
+    },
+    {
+      "start": 186.84,
+      "end": 190.68,
+      "text": "virtual environment is set up correctly"
+    },
+    {
+      "start": 188.72,
+      "end": 192.64,
+      "text": "so that whatever work we do doesn't"
+    },
+    {
+      "start": 190.68,
+      "end": 195.239,
+      "text": "affect the outer project or any other"
+    },
+    {
+      "start": 192.64,
+      "end": 199.51899999999998,
+      "text": "project that's sitting on our computer"
+    },
+    {
+      "start": 195.239,
+      "end": 206.48000000000002,
+      "text": "so here I am just making sure the"
+    },
+    {
+      "start": 199.519,
+      "end": 206.48000000000002,
+      "text": "virtual environment is set up correctly"
+    },
+    {
+      "start": 212.0,
+      "end": 216.84,
+      "text": "and if we run this"
+    },
+    {
+      "start": 214.51,
+      "end": 219.67999999999998,
+      "text": "[Music]"
+    },
+    {
+      "start": 216.84,
+      "end": 222.64000000000001,
+      "text": "command we should be"
+    },
+    {
+      "start": 219.68,
+      "end": 224.519,
+      "text": "good and yeah that looks great let's"
+    },
+    {
+      "start": 222.64,
+      "end": 225.92,
+      "text": "take a quick look at this crew AI"
+    },
+    {
+      "start": 224.519,
+      "end": 228.0,
+      "text": "project to get a feel for what's going"
+    },
+    {
+      "start": 225.92,
+      "end": 230.51899999999998,
+      "text": "on so if we pop open this Source folder"
+    },
+    {
+      "start": 228.0,
+      "end": 232.48,
+      "text": "we can see a config folder inside of it"
+    },
+    {
+      "start": 230.519,
+      "end": 236.31900000000002,
+      "text": "this is where crew AI allows us to"
+    },
+    {
+      "start": 232.48,
+      "end": 239.35999999999999,
+      "text": "configure the agents and tasks in our"
+    },
+    {
+      "start": 236.319,
+      "end": 242.72,
+      "text": "application so here you can see we"
+    },
+    {
+      "start": 239.36,
+      "end": 245.20000000000002,
+      "text": "currently have two agents A researcher"
+    },
+    {
+      "start": 242.72,
+      "end": 247.599,
+      "text": "and an analyst and the tasks that we're"
+    },
+    {
+      "start": 245.2,
+      "end": 250.879,
+      "text": "giving to them are to perform research"
+    },
+    {
+      "start": 247.599,
+      "end": 254.76,
+      "text": "about a topic and then write a report on"
+    },
+    {
+      "start": 250.879,
+      "end": 257.639,
+      "text": "said topic the way that we trigger this"
+    },
+    {
+      "start": 254.76,
+      "end": 259.799,
+      "text": "application is by calling this run"
+    },
+    {
+      "start": 257.639,
+      "end": 262.04,
+      "text": "function and here you can see the topic"
+    },
+    {
+      "start": 259.799,
+      "end": 264.35999999999996,
+      "text": "that we're giving to our agents is AI"
+    },
+    {
+      "start": 262.04,
+      "end": 267.47900000000004,
+      "text": "llms so I mentioned earlier we were"
+    },
+    {
+      "start": 264.36,
+      "end": 271.52000000000004,
+      "text": "going to be using a different AMA model"
+    },
+    {
+      "start": 267.479,
+      "end": 274.8,
+      "text": "not llama 3.1 so the way that we"
+    },
+    {
+      "start": 271.52,
+      "end": 279.4,
+      "text": "customize this is by importing the llm"
+    },
+    {
+      "start": 274.8,
+      "end": 282.479,
+      "text": "module from crew aai and here is how we"
+    },
+    {
+      "start": 279.4,
+      "end": 286.71999999999997,
+      "text": "configure each agent to use not llama"
+    },
+    {
+      "start": 282.479,
+      "end": 289.59999999999997,
+      "text": "3.1 but Gemma 2 Gemma 2 is another"
+    },
+    {
+      "start": 286.72,
+      "end": 292.44000000000005,
+      "text": "open-source model that is provided not"
+    },
+    {
+      "start": 289.6,
+      "end": 296.0,
+      "text": "by meta but by Google so it's small"
+    },
+    {
+      "start": 292.44,
+      "end": 298.759,
+      "text": "enough to run on our computer and the"
+    },
+    {
+      "start": 296.0,
+      "end": 302.6,
+      "text": "way that we're going to run it is by"
+    },
+    {
+      "start": 298.759,
+      "end": 305.72,
+      "text": "using olama AMA is a super easy to use"
+    },
+    {
+      "start": 302.6,
+      "end": 307.84000000000003,
+      "text": "tool you can download it at ama.com it"
+    },
+    {
+      "start": 305.72,
+      "end": 310.28000000000003,
+      "text": "literally takes a minute or two to set"
+    },
+    {
+      "start": 307.84,
+      "end": 315.19899999999996,
+      "text": "it up and run it and after you have Ama"
+    },
+    {
+      "start": 310.28,
+      "end": 316.28,
+      "text": "running you can come over to a terminal"
+    },
+    {
+      "start": 315.199,
+      "end": 319.68,
+      "text": "and"
+    },
+    {
+      "start": 316.28,
+      "end": 322.55999999999995,
+      "text": "download the model that you want to run"
+    },
+    {
+      "start": 319.68,
+      "end": 325.039,
+      "text": "by entering the AMA pull command and"
+    },
+    {
+      "start": 322.56,
+      "end": 327.08,
+      "text": "after you write pull you write the model"
+    },
+    {
+      "start": 325.039,
+      "end": 331.88,
+      "text": "ID that you want to"
+    },
+    {
+      "start": 327.08,
+      "end": 335.0,
+      "text": "download and there we go so so now that"
+    },
+    {
+      "start": 331.88,
+      "end": 337.759,
+      "text": "all of that is taken care of let's run"
+    },
+    {
+      "start": 335.0,
+      "end": 340.84,
+      "text": "our crew AI application by entering the"
+    },
+    {
+      "start": 337.759,
+      "end": 340.84000000000003,
+      "text": "crew AI run"
+    },
+    {
+      "start": 344.36,
+      "end": 351.44,
+      "text": "command here is the report that was"
+    },
+    {
+      "start": 347.84,
+      "end": 356.08,
+      "text": "generated so it looks like our"
+    },
+    {
+      "start": 351.44,
+      "end": 356.08,
+      "text": "autogenerated crew aai application is"
+    },
+    {
+      "start": 356.4,
+      "end": 361.28,
+      "text": "working now let's customize This"
+    },
+    {
+      "start": 358.56,
+      "end": 364.12,
+      "text": "autogenerated Crew AI project and build"
+    },
+    {
+      "start": 361.28,
+      "end": 366.71999999999997,
+      "text": "a little rag application the data that"
+    },
+    {
+      "start": 364.12,
+      "end": 369.12,
+      "text": "we will perform rag against will be this"
+    },
+    {
+      "start": 366.72,
+      "end": 370.91900000000004,
+      "text": "ebook published earlier this year by"
+    },
+    {
+      "start": 369.12,
+      "end": 374.28000000000003,
+      "text": "Noel"
+    },
+    {
+      "start": 370.919,
+      "end": 377.24,
+      "text": "Russell so let's add this ebook to the"
+    },
+    {
+      "start": 374.28,
+      "end": 379.039,
+      "text": "knowledge folder of our crew AI project"
+    },
+    {
+      "start": 377.24,
+      "end": 382.599,
+      "text": "for those who don't know Noel Russell is"
+    },
+    {
+      "start": 379.039,
+      "end": 386.84,
+      "text": "an IRL AI influencer based in South"
+    },
+    {
+      "start": 382.599,
+      "end": 389.84,
+      "text": "Florida she has worked at AWS IBM"
+    },
+    {
+      "start": 386.84,
+      "end": 392.63899999999995,
+      "text": "Accenture and Microsoft so she has quite"
+    },
+    {
+      "start": 389.84,
+      "end": 394.08,
+      "text": "a bit of professional AI experience and"
+    },
+    {
+      "start": 392.639,
+      "end": 396.639,
+      "text": "because I want to get a pulse on what"
+    },
+    {
+      "start": 394.08,
+      "end": 399.08,
+      "text": "her latest ebook is all about that's"
+    },
+    {
+      "start": 396.639,
+      "end": 402.88,
+      "text": "what we're going to be using crew aai"
+    },
+    {
+      "start": 399.08,
+      "end": 406.0,
+      "text": "actually has a builtin rag tool"
+    },
+    {
+      "start": 402.88,
+      "end": 408.639,
+      "text": "specialized for performing rag against"
+    },
+    {
+      "start": 406.0,
+      "end": 414.52,
+      "text": "PDFs so let's import"
+    },
+    {
+      "start": 408.639,
+      "end": 418.84000000000003,
+      "text": "it and give this tool to our researcher"
+    },
+    {
+      "start": 414.52,
+      "end": 418.84,
+      "text": "agent like so"
+    },
+    {
+      "start": 420.319,
+      "end": 424.879,
+      "text": "and"
+    },
+    {
+      "start": 421.879,
+      "end": 428.8,
+      "text": "if we look closely at the configuration"
+    },
+    {
+      "start": 424.879,
+      "end": 431.44,
+      "text": "of this PDF Search tool for performing"
+    },
+    {
+      "start": 428.8,
+      "end": 434.28000000000003,
+      "text": "rag against a particular PDF you can see"
+    },
+    {
+      "start": 431.44,
+      "end": 438.759,
+      "text": "we're pointing it to the"
+    },
+    {
+      "start": 434.28,
+      "end": 443.11999999999995,
+      "text": "ebook and specifying that we're going to"
+    },
+    {
+      "start": 438.759,
+      "end": 444.879,
+      "text": "use nomic embed text as our embeddings"
+    },
+    {
+      "start": 443.12,
+      "end": 447.84000000000003,
+      "text": "model if you've never heard of"
+    },
+    {
+      "start": 444.879,
+      "end": 450.24,
+      "text": "embeddings it's just a fancy term for"
+    },
+    {
+      "start": 447.84,
+      "end": 452.4,
+      "text": "converting data into a list of numbers"
+    },
+    {
+      "start": 450.24,
+      "end": 454.759,
+      "text": "so that an AI can more easily work with"
+    },
+    {
+      "start": 452.4,
+      "end": 457.039,
+      "text": "it it's really not that complicated"
+    },
+    {
+      "start": 454.759,
+      "end": 460.16,
+      "text": "don't worry about it so we're going to"
+    },
+    {
+      "start": 457.039,
+      "end": 463.8,
+      "text": "be using AMA as the provider of this"
+    },
+    {
+      "start": 460.16,
+      "end": 467.15900000000005,
+      "text": "embeddings model so let's make sure we"
+    },
+    {
+      "start": 463.8,
+      "end": 470.08,
+      "text": "have this model downloaded before"
+    },
+    {
+      "start": 467.159,
+      "end": 473.24,
+      "text": "running our"
+    },
+    {
+      "start": 470.08,
+      "end": 478.44,
+      "text": "application and the last thing we need"
+    },
+    {
+      "start": 473.24,
+      "end": 483.639,
+      "text": "to do is customize our"
+    },
+    {
+      "start": 478.44,
+      "end": 486.479,
+      "text": "prompts so let's update the agents. yo"
+    },
+    {
+      "start": 483.639,
+      "end": 487.759,
+      "text": "like so you can read through this to see"
+    },
+    {
+      "start": 486.479,
+      "end": 490.199,
+      "text": "exactly what it's"
+    },
+    {
+      "start": 487.759,
+      "end": 492.879,
+      "text": "doing we're just making this more"
+    },
+    {
+      "start": 490.199,
+      "end": 495.28000000000003,
+      "text": "appropriate for extracting relevant"
+    },
+    {
+      "start": 492.879,
+      "end": 496.639,
+      "text": "information from this ebook and we're"
+    },
+    {
+      "start": 495.28,
+      "end": 500.11999999999995,
+      "text": "doing the same thing here we're just"
+    },
+    {
+      "start": 496.639,
+      "end": 503.08,
+      "text": "customizing these prompts to extract"
+    },
+    {
+      "start": 500.12,
+      "end": 507.159,
+      "text": "data from this ebook"
+    },
+    {
+      "start": 503.08,
+      "end": 511.44,
+      "text": "so let's run our crew again now that"
+    },
+    {
+      "start": 507.159,
+      "end": 511.44,
+      "text": "we've set all this up and see what"
+    },
+    {
+      "start": 516.2,
+      "end": 522.519,
+      "text": "happens okay so this is interesting it"
+    },
+    {
+      "start": 519.279,
+      "end": 524.36,
+      "text": "did not extract any data"
+    },
+    {
+      "start": 522.519,
+      "end": 526.44,
+      "text": "from the"
+    },
+    {
+      "start": 524.36,
+      "end": 528.5600000000001,
+      "text": "ebook let's try one more time and see"
+    },
+    {
+      "start": 526.44,
+      "end": 528.5600000000001,
+      "text": "what"
+    },
+    {
+      "start": 532.279,
+      "end": 537.8389999999999,
+      "text": "happens this"
+    },
+    {
+      "start": 536.04,
+      "end": 540.1999999999999,
+      "text": "is"
+    },
+    {
+      "start": 537.839,
+      "end": 543.24,
+      "text": "the brief"
+    },
+    {
+      "start": 540.2,
+      "end": 545.9590000000001,
+      "text": "that our multi-agent application"
+    },
+    {
+      "start": 543.24,
+      "end": 545.9590000000001,
+      "text": "generated for"
+    },
+    {
+      "start": 546.0,
+      "end": 551.32,
+      "text": "us now let's add in agent Ops for"
+    },
+    {
+      "start": 548.92,
+      "end": 554.24,
+      "text": "monitoring to get started with agent Ops"
+    },
+    {
+      "start": 551.32,
+      "end": 555.9590000000001,
+      "text": "come over to app. agent ops. and sign up"
+    },
+    {
+      "start": 554.24,
+      "end": 558.399,
+      "text": "if you haven't"
+    },
+    {
+      "start": 555.959,
+      "end": 562.399,
+      "text": "already once you're signed up come over"
+    },
+    {
+      "start": 558.399,
+      "end": 565.44,
+      "text": "to the API Keys page and copy one of the"
+    },
+    {
+      "start": 562.399,
+      "end": 569.72,
+      "text": "API Keys associated with one of the"
+    },
+    {
+      "start": 565.44,
+      "end": 572.32,
+      "text": "projects in your account into the M file"
+    },
+    {
+      "start": 569.72,
+      "end": 576.36,
+      "text": "of the crew AI project"
+    },
+    {
+      "start": 572.32,
+      "end": 578.12,
+      "text": "and we're overriding this AMA config in"
+    },
+    {
+      "start": 576.36,
+      "end": 581.48,
+      "text": "the crewp file so we don't need these"
+    },
+    {
+      "start": 578.12,
+      "end": 583.44,
+      "text": "but here is how we add the agent Ops API"
+    },
+    {
+      "start": 581.48,
+      "end": 588.76,
+      "text": "key we type in all"
+    },
+    {
+      "start": 583.44,
+      "end": 590.6800000000001,
+      "text": "caps agent opscore API unor key equals"
+    },
+    {
+      "start": 588.76,
+      "end": 593.399,
+      "text": "and then we paste in the API key that we"
+    },
+    {
+      "start": 590.68,
+      "end": 595.4799999999999,
+      "text": "copied after we have the agent Ops API"
+    },
+    {
+      "start": 593.399,
+      "end": 598.6,
+      "text": "key added to our project let's install"
+    },
+    {
+      "start": 595.48,
+      "end": 602.64,
+      "text": "agent Ops like so and come over to the"
+    },
+    {
+      "start": 598.6,
+      "end": 608.88,
+      "text": "main. High script and we're going to"
+    },
+    {
+      "start": 602.64,
+      "end": 613.36,
+      "text": "add the following code at the top let's"
+    },
+    {
+      "start": 608.88,
+      "end": 618.2,
+      "text": "import our environment variables like"
+    },
+    {
+      "start": 613.36,
+      "end": 622.6,
+      "text": "so and then let's import agent"
+    },
+    {
+      "start": 618.2,
+      "end": 626.399,
+      "text": "Ops on line"
+    },
+    {
+      "start": 622.6,
+      "end": 630.12,
+      "text": "nine and initialize agent Ops like so"
+    },
+    {
+      "start": 626.399,
+      "end": 633.8,
+      "text": "and because the homies of crew AI"
+    },
+    {
+      "start": 630.12,
+      "end": 635.32,
+      "text": "and the homies of agent Ops are so tight"
+    },
+    {
+      "start": 633.8,
+      "end": 639.04,
+      "text": "that's literally all we have to do"
+    },
+    {
+      "start": 635.32,
+      "end": 642.48,
+      "text": "they've made it quite easy so if we run"
+    },
+    {
+      "start": 639.04,
+      "end": 647.16,
+      "text": "our crew AI application"
+    },
+    {
+      "start": 642.48,
+      "end": 647.16,
+      "text": "again let's see what"
+    },
+    {
+      "start": 648.24,
+      "end": 653.16,
+      "text": "happens here we can see agent Ops has"
+    },
+    {
+      "start": 651.639,
+      "end": 658.12,
+      "text": "printed out a"
+    },
+    {
+      "start": 653.16,
+      "end": 662.279,
+      "text": "link and when our agents have finished"
+    },
+    {
+      "start": 658.12,
+      "end": 665.48,
+      "text": "generating this brief of the Noel"
+    },
+    {
+      "start": 662.279,
+      "end": 669.519,
+      "text": "Russell ebook we should see another"
+    },
+    {
+      "start": 665.48,
+      "end": 669.519,
+      "text": "agent Ops URL printed as"
+    },
+    {
+      "start": 670.079,
+      "end": 675.5999999999999,
+      "text": "well we can see that there was an issue"
+    },
+    {
+      "start": 672.92,
+      "end": 676.8389999999999,
+      "text": "extracting text from the PDF again so"
+    },
+    {
+      "start": 675.6,
+      "end": 679.0,
+      "text": "let's run this one more time and see"
+    },
+    {
+      "start": 676.839,
+      "end": 679.0,
+      "text": "what"
+    },
+    {
+      "start": 685.32,
+      "end": 692.6,
+      "text": "happens let's take a look at how many"
+    },
+    {
+      "start": 687.68,
+      "end": 699.4799999999999,
+      "text": "sessions we just ran 1 two 3 four five"
+    },
+    {
+      "start": 692.6,
+      "end": 705.6800000000001,
+      "text": "six 7 so on attempt 7 the agent was able"
+    },
+    {
+      "start": 699.48,
+      "end": 708.48,
+      "text": "to correctly use the PDF Search tool the"
+    },
+    {
+      "start": 705.68,
+      "end": 712.0,
+      "text": "tool we're leveraging for performing rag"
+    },
+    {
+      "start": 708.48,
+      "end": 716.9200000000001,
+      "text": "against this ebook so welcome to the"
+    },
+    {
+      "start": 712.0,
+      "end": 719.8,
+      "text": "world of sub 10 billion parameter"
+    },
+    {
+      "start": 716.92,
+      "end": 724.24,
+      "text": "models that gives you a feel for for"
+    },
+    {
+      "start": 719.8,
+      "end": 727.24,
+      "text": "what agent Ops and crew AI is all about"
+    },
+    {
+      "start": 724.24,
+      "end": 727.24,
+      "text": "peace"
+    }
+  ]
+}

@@ -1,0 +1,5908 @@
+{
+  "video_id": "Vq3oCOVVwwM",
+  "title": "The Hidden Power of Rerankers in AI Systems",
+  "channel": "COMMAND",
+  "trainer": "COMMAND",
+  "topic": "RAG",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 3465.0,
+  "segments": [
+    {
+      "start": 1.6,
+      "end": 6.5600000000000005,
+      "text": "Heads up, the target audience for this"
+    },
+    {
+      "start": 3.76,
+      "end": 9.599,
+      "text": "video is AI engineers, AI product"
+    },
+    {
+      "start": 6.56,
+      "end": 11.678999999999998,
+      "text": "owners, and AI project managers. If"
+    },
+    {
+      "start": 9.599,
+      "end": 13.2,
+      "text": "you're a general AI enthusiast, you will"
+    },
+    {
+      "start": 11.679,
+      "end": 16.4,
+      "text": "get a lot of value out of understanding"
+    },
+    {
+      "start": 13.2,
+      "end": 17.919999999999998,
+      "text": "what re-ranking is. But just know that"
+    },
+    {
+      "start": 16.4,
+      "end": 20.32,
+      "text": "we're going to be diving deep on the"
+    },
+    {
+      "start": 17.92,
+      "end": 23.6,
+      "text": "details of how it works under the hood."
+    },
+    {
+      "start": 20.32,
+      "end": 26.96,
+      "text": "What is re-ranking? Reranking or as it's"
+    },
+    {
+      "start": 23.6,
+      "end": 28.880000000000003,
+      "text": "sometimes called two-stage retrieval is"
+    },
+    {
+      "start": 26.96,
+      "end": 32.559,
+      "text": "an advanced technique for searching"
+    },
+    {
+      "start": 28.88,
+      "end": 36.239,
+      "text": "through and analyzing lots of data and I"
+    },
+    {
+      "start": 32.559,
+      "end": 39.599999999999994,
+      "text": "mean lots of data. The use cases for"
+    },
+    {
+      "start": 36.239,
+      "end": 42.0,
+      "text": "re-ranking are vast, but to name a few,"
+    },
+    {
+      "start": 39.6,
+      "end": 43.84,
+      "text": "you can use reranking for rag, which is"
+    },
+    {
+      "start": 42.0,
+      "end": 45.92,
+      "text": "a loose term for collecting relevant"
+    },
+    {
+      "start": 43.84,
+      "end": 48.0,
+      "text": "information given a prompt that you then"
+    },
+    {
+      "start": 45.92,
+      "end": 51.84,
+      "text": "feed into a more sophisticated AI"
+    },
+    {
+      "start": 48.0,
+      "end": 54.399,
+      "text": "system, like for example, an LLM or LMM"
+    },
+    {
+      "start": 51.84,
+      "end": 56.559000000000005,
+      "text": "for subsequent processing. You can also"
+    },
+    {
+      "start": 54.399,
+      "end": 58.0,
+      "text": "use reranking as a long-term memory"
+    },
+    {
+      "start": 56.559,
+      "end": 59.68,
+      "text": "solution for some agent that you're"
+    },
+    {
+      "start": 58.0,
+      "end": 61.359,
+      "text": "building. For example, let's say you're"
+    },
+    {
+      "start": 59.68,
+      "end": 63.12,
+      "text": "building an email responder agent that"
+    },
+    {
+      "start": 61.359,
+      "end": 65.6,
+      "text": "responds to emails on your behalf, or at"
+    },
+    {
+      "start": 63.12,
+      "end": 67.84,
+      "text": "least generates draft responses that you"
+    },
+    {
+      "start": 65.6,
+      "end": 70.39999999999999,
+      "text": "can then review. Over time, you're going"
+    },
+    {
+      "start": 67.84,
+      "end": 73.04,
+      "text": "to feed in lots of transcripts and email"
+    },
+    {
+      "start": 70.4,
+      "end": 75.2,
+      "text": "threads and notes and files into the"
+    },
+    {
+      "start": 73.04,
+      "end": 77.43900000000001,
+      "text": "memory bank of your email responder"
+    },
+    {
+      "start": 75.2,
+      "end": 80.0,
+      "text": "agent. And when your email responder"
+    },
+    {
+      "start": 77.439,
+      "end": 82.63999999999999,
+      "text": "agent receives some request, the first"
+    },
+    {
+      "start": 80.0,
+      "end": 84.799,
+      "text": "step it has to do in order to respond to"
+    },
+    {
+      "start": 82.64,
+      "end": 86.4,
+      "text": "said request is pull in the most"
+    },
+    {
+      "start": 84.799,
+      "end": 88.72000000000001,
+      "text": "relevant bits of information in its"
+    },
+    {
+      "start": 86.4,
+      "end": 91.04,
+      "text": "memory bank so that it can generate a"
+    },
+    {
+      "start": 88.72,
+      "end": 92.4,
+      "text": "response that reflects your experiences"
+    },
+    {
+      "start": 91.04,
+      "end": 93.68,
+      "text": "and that takes into account the"
+    },
+    {
+      "start": 92.4,
+      "end": 95.759,
+      "text": "interactions that you've had with the"
+    },
+    {
+      "start": 93.68,
+      "end": 97.52000000000001,
+      "text": "outside world. Another common use case"
+    },
+    {
+      "start": 95.759,
+      "end": 99.6,
+      "text": "for reranking would be doing research"
+    },
+    {
+      "start": 97.52,
+      "end": 101.759,
+      "text": "across the internet. A common pattern"
+    },
+    {
+      "start": 99.6,
+      "end": 103.439,
+      "text": "that you'll see is you'll scrape data"
+    },
+    {
+      "start": 101.759,
+      "end": 105.759,
+      "text": "from a number of websites and dump that"
+    },
+    {
+      "start": 103.439,
+      "end": 107.27999999999999,
+      "text": "data into some local database or some"
+    },
+    {
+      "start": 105.759,
+      "end": 109.68,
+      "text": "data lake that's sitting within your"
+    },
+    {
+      "start": 107.28,
+      "end": 111.2,
+      "text": "company and then you'll use summary"
+    },
+    {
+      "start": 109.68,
+      "end": 113.119,
+      "text": "ranking technique to sift through all of"
+    },
+    {
+      "start": 111.2,
+      "end": 115.92,
+      "text": "that information in order to accomplish"
+    },
+    {
+      "start": 113.119,
+      "end": 117.439,
+      "text": "some task or goal that you have. The"
+    },
+    {
+      "start": 115.92,
+      "end": 119.43900000000001,
+      "text": "general pattern with all of these use"
+    },
+    {
+      "start": 117.439,
+      "end": 122.24,
+      "text": "cases is that you have some immense"
+    },
+    {
+      "start": 119.439,
+      "end": 126.79899999999999,
+      "text": "amount of information, right? It's way"
+    },
+    {
+      "start": 122.24,
+      "end": 129.2,
+      "text": "more information than the LLM or LMM"
+    },
+    {
+      "start": 126.799,
+      "end": 132.16,
+      "text": "you're using can process at one go,"
+    },
+    {
+      "start": 129.2,
+      "end": 135.76,
+      "text": "right? GBT5, for example,"
+    },
+    {
+      "start": 132.16,
+      "end": 138.48,
+      "text": "has a 128,000 token limit, meaning it"
+    },
+    {
+      "start": 135.76,
+      "end": 141.67999999999998,
+      "text": "can only process 380ish pages of"
+    },
+    {
+      "start": 138.48,
+      "end": 144.319,
+      "text": "information at a time. So, if you're"
+    },
+    {
+      "start": 141.68,
+      "end": 147.04000000000002,
+      "text": "doing some sort of task that requires"
+    },
+    {
+      "start": 144.319,
+      "end": 150.07999999999998,
+      "text": "analyzing or sifting through more than"
+    },
+    {
+      "start": 147.04,
+      "end": 153.84,
+      "text": "380 pages of data,"
+    },
+    {
+      "start": 150.08,
+      "end": 158.08,
+      "text": "a common technique is to filter out all"
+    },
+    {
+      "start": 153.84,
+      "end": 160.72,
+      "text": "of the noise and trash from the body of"
+    },
+    {
+      "start": 158.08,
+      "end": 162.56,
+      "text": "data you have available to you and"
+    },
+    {
+      "start": 160.72,
+      "end": 164.64,
+      "text": "identify only what's relevant to the"
+    },
+    {
+      "start": 162.56,
+      "end": 166.319,
+      "text": "given task. Once you've identified that"
+    },
+    {
+      "start": 164.64,
+      "end": 168.0,
+      "text": "information, you then build a prompt"
+    },
+    {
+      "start": 166.319,
+      "end": 169.92,
+      "text": "that contains the instructions or"
+    },
+    {
+      "start": 168.0,
+      "end": 172.239,
+      "text": "outline of the task you're accomplishing"
+    },
+    {
+      "start": 169.92,
+      "end": 174.64,
+      "text": "along with the relevant information."
+    },
+    {
+      "start": 172.239,
+      "end": 177.20000000000002,
+      "text": "Then you can feed that into your LLM and"
+    },
+    {
+      "start": 174.64,
+      "end": 179.11999999999998,
+      "text": "then generate an output that at least"
+    },
+    {
+      "start": 177.2,
+      "end": 181.11999999999998,
+      "text": "partially hopefully completely"
+    },
+    {
+      "start": 179.12,
+      "end": 183.76,
+      "text": "accomplishes your goal. Now, we're going"
+    },
+    {
+      "start": 181.12,
+      "end": 187.12,
+      "text": "to walk through the outline of a"
+    },
+    {
+      "start": 183.76,
+      "end": 191.35999999999999,
+      "text": "state-of-the-art re-ranking system in 12"
+    },
+    {
+      "start": 187.12,
+      "end": 194.48000000000002,
+      "text": "steps. Let's go."
+    },
+    {
+      "start": 191.36,
+      "end": 197.68,
+      "text": "In the context of this video, tokenizers"
+    },
+    {
+      "start": 194.48,
+      "end": 200.879,
+      "text": "or tokenization refers to breaking data"
+    },
+    {
+      "start": 197.68,
+      "end": 202.87900000000002,
+      "text": "down into its elementary units. I'm not"
+    },
+    {
+      "start": 200.879,
+      "end": 205.51899999999998,
+      "text": "going to expand upon this topic too"
+    },
+    {
+      "start": 202.879,
+      "end": 207.76,
+      "text": "much. It can get boring very quickly,"
+    },
+    {
+      "start": 205.519,
+      "end": 209.519,
+      "text": "but I thought it was a good place to"
+    },
+    {
+      "start": 207.76,
+      "end": 212.879,
+      "text": "start as it's quite a fundamental"
+    },
+    {
+      "start": 209.519,
+      "end": 216.959,
+      "text": "building block. From what I've seen,"
+    },
+    {
+      "start": 212.879,
+      "end": 219.12,
+      "text": "every AI system starts with this step of"
+    },
+    {
+      "start": 216.959,
+      "end": 222.879,
+      "text": "breaking data down into its elementary"
+    },
+    {
+      "start": 219.12,
+      "end": 226.159,
+      "text": "units. Let me show you a few examples."
+    },
+    {
+      "start": 222.879,
+      "end": 230.72,
+      "text": "Here is a little playground app provided"
+    },
+    {
+      "start": 226.159,
+      "end": 233.519,
+      "text": "by OpenAI. And we can see tokenization"
+    },
+    {
+      "start": 230.72,
+      "end": 235.35999999999999,
+      "text": "in action. If we paste some text here,"
+    },
+    {
+      "start": 233.519,
+      "end": 238.31900000000002,
+      "text": "for example,"
+    },
+    {
+      "start": 235.36,
+      "end": 241.59900000000002,
+      "text": "if I paste this in, you can see on the"
+    },
+    {
+      "start": 238.319,
+      "end": 243.67999999999998,
+      "text": "bottom how the AI system breaks it up"
+    },
+    {
+      "start": 241.599,
+      "end": 246.159,
+      "text": "into"
+    },
+    {
+      "start": 243.68,
+      "end": 248.4,
+      "text": "subwords, right? I don't know if you're"
+    },
+    {
+      "start": 246.159,
+      "end": 251.35999999999999,
+      "text": "like me, but I would think most humans"
+    },
+    {
+      "start": 248.4,
+      "end": 252.87900000000002,
+      "text": "would break this particular sentence"
+    },
+    {
+      "start": 251.36,
+      "end": 254.959,
+      "text": "down into three components, right?"
+    },
+    {
+      "start": 252.879,
+      "end": 257.68,
+      "text": "Because it has three words. Penguins"
+    },
+    {
+      "start": 254.959,
+      "end": 259.28000000000003,
+      "text": "love cheese. But as you can see, AI"
+    },
+    {
+      "start": 257.68,
+      "end": 260.88,
+      "text": "systems think about this a little bit"
+    },
+    {
+      "start": 259.28,
+      "end": 264.08,
+      "text": "differently."
+    },
+    {
+      "start": 260.88,
+      "end": 267.36,
+      "text": "Let me just give you another example so"
+    },
+    {
+      "start": 264.08,
+      "end": 270.0,
+      "text": "you get a good feel for this."
+    },
+    {
+      "start": 267.36,
+      "end": 271.91900000000004,
+      "text": "Right? Here's the same sentence, but in"
+    },
+    {
+      "start": 270.0,
+      "end": 274.4,
+      "text": "Spanish,"
+    },
+    {
+      "start": 271.919,
+      "end": 277.919,
+      "text": "right?"
+    },
+    {
+      "start": 274.4,
+      "end": 280.88,
+      "text": "And this step of breaking data down into"
+    },
+    {
+      "start": 277.919,
+      "end": 283.59999999999997,
+      "text": "elementary units is quite generalizable."
+    },
+    {
+      "start": 280.88,
+      "end": 287.44,
+      "text": "For example, if we wanted our AI system"
+    },
+    {
+      "start": 283.6,
+      "end": 289.68,
+      "text": "to be able to understand images,"
+    },
+    {
+      "start": 287.44,
+      "end": 292.08,
+      "text": "the tokenization step would look"
+    },
+    {
+      "start": 289.68,
+      "end": 294.40000000000003,
+      "text": "something like this."
+    },
+    {
+      "start": 292.08,
+      "end": 297.03999999999996,
+      "text": "Our images would get broken up into sub"
+    },
+    {
+      "start": 294.4,
+      "end": 299.35999999999996,
+      "text": "patches, right?"
+    },
+    {
+      "start": 297.04,
+      "end": 301.84000000000003,
+      "text": "Or if you wanted our AI system to be"
+    },
+    {
+      "start": 299.36,
+      "end": 304.47900000000004,
+      "text": "able to process audio,"
+    },
+    {
+      "start": 301.84,
+      "end": 309.039,
+      "text": "we would feed in some spoken audio or"
+    },
+    {
+      "start": 304.479,
+      "end": 312.0,
+      "text": "audio and that audio would get converted"
+    },
+    {
+      "start": 309.039,
+      "end": 315.919,
+      "text": "into its subcomponents. For example, in"
+    },
+    {
+      "start": 312.0,
+      "end": 317.44,
+      "text": "the case of spoken audio phonms, right?"
+    },
+    {
+      "start": 315.919,
+      "end": 321.44,
+      "text": "So hopefully you have an understanding"
+    },
+    {
+      "start": 317.44,
+      "end": 323.12,
+      "text": "of what this tokenizer step is doing and"
+    },
+    {
+      "start": 321.44,
+      "end": 325.199,
+      "text": "what tokens mean. I've already mentioned"
+    },
+    {
+      "start": 323.12,
+      "end": 328.08,
+      "text": "the term once. I mentioned previously"
+    },
+    {
+      "start": 325.199,
+      "end": 332.88,
+      "text": "that GBT5 for example has a context"
+    },
+    {
+      "start": 328.08,
+      "end": 336.71999999999997,
+      "text": "limit of 128,000 tokens. So now you can"
+    },
+    {
+      "start": 332.88,
+      "end": 339.199,
+      "text": "understand what that means. And once"
+    },
+    {
+      "start": 336.72,
+      "end": 343.36,
+      "text": "we've identified the subunits of our"
+    },
+    {
+      "start": 339.199,
+      "end": 349.44,
+      "text": "data, each subunit gets converted into"
+    },
+    {
+      "start": 343.36,
+      "end": 353.36,
+      "text": "an ID. Let's now move on to step two."
+    },
+    {
+      "start": 349.44,
+      "end": 355.6,
+      "text": "All right. Now let's have some fun. Here"
+    },
+    {
+      "start": 353.36,
+      "end": 357.91900000000004,
+      "text": "is a little web application that I've"
+    },
+    {
+      "start": 355.6,
+      "end": 360.47900000000004,
+      "text": "put together to accompany this video."
+    },
+    {
+      "start": 357.919,
+      "end": 362.71999999999997,
+      "text": "All of the code for this web application"
+    },
+    {
+      "start": 360.479,
+      "end": 365.12,
+      "text": "is included in the description. It's"
+    },
+    {
+      "start": 362.72,
+      "end": 367.199,
+      "text": "completely open source."
+    },
+    {
+      "start": 365.12,
+      "end": 370.479,
+      "text": "And I thought"
+    },
+    {
+      "start": 367.199,
+      "end": 372.08000000000004,
+      "text": "next up we should explore a little bit"
+    },
+    {
+      "start": 370.479,
+      "end": 379.039,
+      "text": "very quickly. We're not going to go too"
+    },
+    {
+      "start": 372.08,
+      "end": 382.4,
+      "text": "deep how an LLM or LMM works so that"
+    },
+    {
+      "start": 379.039,
+      "end": 384.56,
+      "text": "it'll then motivate why we need reanking"
+    },
+    {
+      "start": 382.4,
+      "end": 389.19899999999996,
+      "text": "or why reanking is a good thing. Right?"
+    },
+    {
+      "start": 384.56,
+      "end": 395.28000000000003,
+      "text": "So, let's send a prompt to this LLM."
+    },
+    {
+      "start": 389.199,
+      "end": 398.0,
+      "text": "Right? I'm going to say my name is Tad."
+    },
+    {
+      "start": 395.28,
+      "end": 400.15999999999997,
+      "text": "And we get a decent response."
+    },
+    {
+      "start": 398.0,
+      "end": 404.24,
+      "text": "And next up, let's send another prompt"
+    },
+    {
+      "start": 400.16,
+      "end": 406.24,
+      "text": "asking, \"What is my name?\""
+    },
+    {
+      "start": 404.24,
+      "end": 408.479,
+      "text": "Do you think it's going to know my name"
+    },
+    {
+      "start": 406.24,
+      "end": 413.639,
+      "text": "or not? Remember, we're interacting"
+    },
+    {
+      "start": 408.479,
+      "end": 413.639,
+      "text": "directly with an LLM. Let's find out."
+    },
+    {
+      "start": 414.319,
+      "end": 421.12,
+      "text": "No. Right. So, hopefully that clears up"
+    },
+    {
+      "start": 417.84,
+      "end": 424.08,
+      "text": "the first aspect of how an LLM works. It"
+    },
+    {
+      "start": 421.12,
+      "end": 427.84000000000003,
+      "text": "does not remember anything about the"
+    },
+    {
+      "start": 424.08,
+      "end": 429.19899999999996,
+      "text": "data that runs through it."
+    },
+    {
+      "start": 427.84,
+      "end": 433.28,
+      "text": "after it's been trained, I should say,"
+    },
+    {
+      "start": 429.199,
+      "end": 436.96000000000004,
+      "text": "right? You can train it to gain more"
+    },
+    {
+      "start": 433.28,
+      "end": 438.479,
+      "text": "information, but once it's been trained,"
+    },
+    {
+      "start": 436.96,
+      "end": 440.4,
+      "text": "it doesn't remember anything about the"
+    },
+    {
+      "start": 438.479,
+      "end": 442.88,
+      "text": "data that runs through it. Now, let's"
+    },
+    {
+      "start": 440.4,
+      "end": 445.919,
+      "text": "open up this little side drawer. And"
+    },
+    {
+      "start": 442.88,
+      "end": 449.28,
+      "text": "here I've listed some of the most"
+    },
+    {
+      "start": 445.919,
+      "end": 451.52,
+      "text": "popular LLM or LMMs on the market today."
+    },
+    {
+      "start": 449.28,
+      "end": 453.52,
+      "text": "Remember most of these systems at this"
+    },
+    {
+      "start": 451.52,
+      "end": 459.52,
+      "text": "point are not only trained on text but"
+    },
+    {
+      "start": 453.52,
+      "end": 462.639,
+      "text": "also audio, images, video, etc."
+    },
+    {
+      "start": 459.52,
+      "end": 468.56,
+      "text": "Anyhow, here I've outlined the token"
+    },
+    {
+      "start": 462.639,
+      "end": 472.72,
+      "text": "limits for each of these LLM or LMM."
+    },
+    {
+      "start": 468.56,
+      "end": 475.599,
+      "text": "And this is the beginning of the"
+    },
+    {
+      "start": 472.72,
+      "end": 477.36,
+      "text": "motivation for why re-ranking is"
+    },
+    {
+      "start": 475.599,
+      "end": 480.639,
+      "text": "important or a good technique to know."
+    },
+    {
+      "start": 477.36,
+      "end": 483.28000000000003,
+      "text": "So, if we're going to do some sort of"
+    },
+    {
+      "start": 480.639,
+      "end": 486.08,
+      "text": "task or send some type of prompt to an"
+    },
+    {
+      "start": 483.28,
+      "end": 489.11999999999995,
+      "text": "LLM that is not a little message like"
+    },
+    {
+      "start": 486.08,
+      "end": 491.28,
+      "text": "these ones, right? But imagine it's"
+    },
+    {
+      "start": 489.12,
+      "end": 494.96,
+      "text": "a really large message that includes a"
+    },
+    {
+      "start": 491.28,
+      "end": 497.599,
+      "text": "bunch of data. We can only send"
+    },
+    {
+      "start": 494.96,
+      "end": 500.08,
+      "text": "this amount of data max. Let's focus on"
+    },
+    {
+      "start": 497.599,
+      "end": 503.84,
+      "text": "GBT5, right?"
+    },
+    {
+      "start": 500.08,
+      "end": 506.0,
+      "text": "If we want to pipe in more than 128,000"
+    },
+    {
+      "start": 503.84,
+      "end": 508.0,
+      "text": "tokens of data, we're going to have to"
+    },
+    {
+      "start": 506.0,
+      "end": 510.4,
+      "text": "resort to some tricks. And this is where"
+    },
+    {
+      "start": 508.0,
+      "end": 514.479,
+      "text": "reranking comes in. What reranking is"
+    },
+    {
+      "start": 510.4,
+      "end": 518.4789999999999,
+      "text": "going to do for us is based on our task"
+    },
+    {
+      "start": 514.479,
+      "end": 520.479,
+      "text": "or prompt along with a body of data that"
+    },
+    {
+      "start": 518.479,
+      "end": 523.839,
+      "text": "we need to analyze or process to"
+    },
+    {
+      "start": 520.479,
+      "end": 526.64,
+      "text": "accomplish said prompt. Ranking is going"
+    },
+    {
+      "start": 523.839,
+      "end": 529.36,
+      "text": "to extract the most relevant parts of"
+    },
+    {
+      "start": 526.64,
+      "end": 532.72,
+      "text": "that body of data for us. And that has"
+    },
+    {
+      "start": 529.36,
+      "end": 537.2,
+      "text": "impact on costs as well as time. So it's"
+    },
+    {
+      "start": 532.72,
+      "end": 540.64,
+      "text": "a very useful thing to be able to from a"
+    },
+    {
+      "start": 537.2,
+      "end": 544.24,
+      "text": "body of data or from a large prompt to"
+    },
+    {
+      "start": 540.64,
+      "end": 547.519,
+      "text": "extract only what's relevant, right? And"
+    },
+    {
+      "start": 544.24,
+      "end": 551.6800000000001,
+      "text": "only pipe in to the LLM absolutely"
+    },
+    {
+      "start": 547.519,
+      "end": 555.2,
+      "text": "what's necessary. So this is why"
+    },
+    {
+      "start": 551.68,
+      "end": 557.8389999999999,
+      "text": "reranking is useful or necessary at"
+    },
+    {
+      "start": 555.2,
+      "end": 560.72,
+      "text": "times especially when we want to process"
+    },
+    {
+      "start": 557.839,
+      "end": 564.8800000000001,
+      "text": "more data than is allowed by the token"
+    },
+    {
+      "start": 560.72,
+      "end": 566.9590000000001,
+      "text": "limit. Now let's move on to step three."
+    },
+    {
+      "start": 564.88,
+      "end": 571.04,
+      "text": "We are now going to quickly explore the"
+    },
+    {
+      "start": 566.959,
+      "end": 573.76,
+      "text": "topic of memory in the context of LLMs."
+    },
+    {
+      "start": 571.04,
+      "end": 577.1999999999999,
+      "text": "And here we have a little demo that's"
+    },
+    {
+      "start": 573.76,
+      "end": 579.76,
+      "text": "very similar to the previous demo. And"
+    },
+    {
+      "start": 577.2,
+      "end": 583.36,
+      "text": "we're actually going to send the same"
+    },
+    {
+      "start": 579.76,
+      "end": 585.12,
+      "text": "prompts and see what happens. So let's"
+    },
+    {
+      "start": 583.36,
+      "end": 588.839,
+      "text": "say"
+    },
+    {
+      "start": 585.12,
+      "end": 588.839,
+      "text": "my name is Tad."
+    },
+    {
+      "start": 589.04,
+      "end": 596.64,
+      "text": "Great. We get an identical, if not"
+    },
+    {
+      "start": 592.24,
+      "end": 599.839,
+      "text": "almost identical response. And now,"
+    },
+    {
+      "start": 596.64,
+      "end": 602.72,
+      "text": "drum roll. Let's ask"
+    },
+    {
+      "start": 599.839,
+      "end": 605.6800000000001,
+      "text": "what is my name? And let's see what"
+    },
+    {
+      "start": 602.72,
+      "end": 608.8000000000001,
+      "text": "happens."
+    },
+    {
+      "start": 605.68,
+      "end": 611.12,
+      "text": "Now it remembers my name."
+    },
+    {
+      "start": 608.8,
+      "end": 614.3199999999999,
+      "text": "So the difference between this"
+    },
+    {
+      "start": 611.12,
+      "end": 616.88,
+      "text": "application and the previous one is"
+    },
+    {
+      "start": 614.32,
+      "end": 621.519,
+      "text": "in the previous one we were sending each"
+    },
+    {
+      "start": 616.88,
+      "end": 625.519,
+      "text": "message by itself to the LLM, right?"
+    },
+    {
+      "start": 621.519,
+      "end": 628.32,
+      "text": "Whereas in this little demo,"
+    },
+    {
+      "start": 625.519,
+      "end": 631.12,
+      "text": "we're sending each message associated"
+    },
+    {
+      "start": 628.32,
+      "end": 634.0,
+      "text": "with the current session along with"
+    },
+    {
+      "start": 631.12,
+      "end": 637.12,
+      "text": "every previous message"
+    },
+    {
+      "start": 634.0,
+      "end": 641.76,
+      "text": "that has either been sent or received to"
+    },
+    {
+      "start": 637.12,
+      "end": 644.72,
+      "text": "or from the LLM. And that's our little"
+    },
+    {
+      "start": 641.76,
+      "end": 647.8389999999999,
+      "text": "memory hack, right? So the gist of what"
+    },
+    {
+      "start": 644.72,
+      "end": 649.76,
+      "text": "I'm trying to get across here is"
+    },
+    {
+      "start": 647.839,
+      "end": 653.2790000000001,
+      "text": "a certain"
+    },
+    {
+      "start": 649.76,
+      "end": 656.959,
+      "text": "percentage of the input context is going"
+    },
+    {
+      "start": 653.279,
+      "end": 659.76,
+      "text": "to have to be reserved for memory if you"
+    },
+    {
+      "start": 656.959,
+      "end": 661.76,
+      "text": "want to have an AI application that has"
+    },
+    {
+      "start": 659.76,
+      "end": 665.68,
+      "text": "any semblance of memory at least in the"
+    },
+    {
+      "start": 661.76,
+      "end": 669.2,
+      "text": "context of LLM applications right so we"
+    },
+    {
+      "start": 665.68,
+      "end": 672.7199999999999,
+      "text": "can definitely fit a long chat session"
+    },
+    {
+      "start": 669.2,
+      "end": 676.72,
+      "text": "right a long history of messages into"
+    },
+    {
+      "start": 672.72,
+      "end": 678.9590000000001,
+      "text": "for example 128,000 token context in the"
+    },
+    {
+      "start": 676.72,
+      "end": 681.44,
+      "text": "case of GPT5"
+    },
+    {
+      "start": 678.959,
+      "end": 684.0,
+      "text": "but eventually we will run out right"
+    },
+    {
+      "start": 681.44,
+      "end": 687.44,
+      "text": "another thing to keep in mind is as we"
+    },
+    {
+      "start": 684.0,
+      "end": 690.16,
+      "text": "have a really long message history there"
+    },
+    {
+      "start": 687.44,
+      "end": 693.44,
+      "text": "will be parts of the message history"
+    },
+    {
+      "start": 690.16,
+      "end": 697.279,
+      "text": "that are irrelevant to the latest prompt"
+    },
+    {
+      "start": 693.44,
+      "end": 699.6800000000001,
+      "text": "we send to our AI application right so"
+    },
+    {
+      "start": 697.279,
+      "end": 701.519,
+      "text": "it becomes useful to extract the most"
+    },
+    {
+      "start": 699.68,
+      "end": 704.16,
+      "text": "relevant parts based on what we're"
+    },
+    {
+      "start": 701.519,
+      "end": 707.44,
+      "text": "currently needing done."
+    },
+    {
+      "start": 704.16,
+      "end": 710.3199999999999,
+      "text": "And once again, I'm just giving context"
+    },
+    {
+      "start": 707.44,
+      "end": 714.0,
+      "text": "for the motivation of reranking."
+    },
+    {
+      "start": 710.32,
+      "end": 716.88,
+      "text": "Let me show this which is pretty cool."
+    },
+    {
+      "start": 714.0,
+      "end": 720.079,
+      "text": "Each demo that I've prepared that"
+    },
+    {
+      "start": 716.88,
+      "end": 722.32,
+      "text": "involves an interaction with an LLM has"
+    },
+    {
+      "start": 720.079,
+      "end": 724.7199999999999,
+      "text": "been set up for being monitored by this"
+    },
+    {
+      "start": 722.32,
+      "end": 728.1600000000001,
+      "text": "application which is called Langsmith."
+    },
+    {
+      "start": 724.72,
+      "end": 730.5600000000001,
+      "text": "FYI, the agent framework that I'm using"
+    },
+    {
+      "start": 728.16,
+      "end": 732.639,
+      "text": "or AI framework that I'm using to build"
+    },
+    {
+      "start": 730.56,
+      "end": 734.3199999999999,
+      "text": "a lot of these demos is called"
+    },
+    {
+      "start": 732.639,
+      "end": 736.72,
+      "text": "Langchain."
+    },
+    {
+      "start": 734.32,
+      "end": 739.12,
+      "text": "Anyways, there's many other tools you"
+    },
+    {
+      "start": 736.72,
+      "end": 741.12,
+      "text": "could use, but pretty much what I'm"
+    },
+    {
+      "start": 739.12,
+      "end": 745.279,
+      "text": "showing you here"
+    },
+    {
+      "start": 741.12,
+      "end": 749.36,
+      "text": "is the messages that were sent"
+    },
+    {
+      "start": 745.279,
+      "end": 752.32,
+      "text": "to and from the LLM. Right? These two"
+    },
+    {
+      "start": 749.36,
+      "end": 755.6,
+      "text": "are the ones to focus on. So if we click"
+    },
+    {
+      "start": 752.32,
+      "end": 759.519,
+      "text": "this we see we sent a system message"
+    },
+    {
+      "start": 755.6,
+      "end": 762.32,
+      "text": "which is very simple right along with"
+    },
+    {
+      "start": 759.519,
+      "end": 764.8,
+      "text": "our initial message or prompt and this"
+    },
+    {
+      "start": 762.32,
+      "end": 767.9200000000001,
+      "text": "was the output we received"
+    },
+    {
+      "start": 764.8,
+      "end": 772.56,
+      "text": "and then we sent"
+    },
+    {
+      "start": 767.92,
+      "end": 775.8389999999999,
+      "text": "this right. So we just appended"
+    },
+    {
+      "start": 772.56,
+      "end": 778.7199999999999,
+      "text": "the next message"
+    },
+    {
+      "start": 775.839,
+      "end": 780.8800000000001,
+      "text": "to the history of messages."
+    },
+    {
+      "start": 778.72,
+      "end": 783.36,
+      "text": "Then we received this output, right? And"
+    },
+    {
+      "start": 780.88,
+      "end": 785.36,
+      "text": "as we would continue to add messages to"
+    },
+    {
+      "start": 783.36,
+      "end": 787.76,
+      "text": "this chat history,"
+    },
+    {
+      "start": 785.36,
+      "end": 790.72,
+      "text": "this list of inputs would just grow and"
+    },
+    {
+      "start": 787.76,
+      "end": 792.959,
+      "text": "grow and grow until eventually we"
+    },
+    {
+      "start": 790.72,
+      "end": 796.32,
+      "text": "exceeded the context limit. So this is a"
+    },
+    {
+      "start": 792.959,
+      "end": 800.6389999999999,
+      "text": "simple example that shows how you can"
+    },
+    {
+      "start": 796.32,
+      "end": 803.36,
+      "text": "imbue a sense of memory into your LLM"
+    },
+    {
+      "start": 800.639,
+      "end": 807.76,
+      "text": "applications or AI systems. Now let's"
+    },
+    {
+      "start": 803.36,
+      "end": 811.279,
+      "text": "move on to step four."
+    },
+    {
+      "start": 807.76,
+      "end": 813.6,
+      "text": "Okay, embeddings or embedding models."
+    },
+    {
+      "start": 811.279,
+      "end": 815.6,
+      "text": "Here is the most concise diagram I could"
+    },
+    {
+      "start": 813.6,
+      "end": 818.0790000000001,
+      "text": "think of putting together that explains"
+    },
+    {
+      "start": 815.6,
+      "end": 820.0,
+      "text": "what an embedding model is doing. An"
+    },
+    {
+      "start": 818.079,
+      "end": 821.519,
+      "text": "embedding model is this thing that takes"
+    },
+    {
+      "start": 820.0,
+      "end": 823.519,
+      "text": "in data. It doesn't matter what type of"
+    },
+    {
+      "start": 821.519,
+      "end": 826.48,
+      "text": "data it is. It could be text data or"
+    },
+    {
+      "start": 823.519,
+      "end": 828.16,
+      "text": "image data or video data etc. It takes"
+    },
+    {
+      "start": 826.48,
+      "end": 830.72,
+      "text": "in data and then it converts that data"
+    },
+    {
+      "start": 828.16,
+      "end": 833.12,
+      "text": "into a list of numbers."
+    },
+    {
+      "start": 830.72,
+      "end": 834.72,
+      "text": "This list of numbers is also called a"
+    },
+    {
+      "start": 833.12,
+      "end": 836.399,
+      "text": "vector. Right? So if I say the term"
+    },
+    {
+      "start": 834.72,
+      "end": 838.9590000000001,
+      "text": "vector, you know what I mean. A vector"
+    },
+    {
+      "start": 836.399,
+      "end": 840.56,
+      "text": "is just a list of numbers."
+    },
+    {
+      "start": 838.959,
+      "end": 842.4799999999999,
+      "text": "Technically speaking, you don't have to"
+    },
+    {
+      "start": 840.56,
+      "end": 844.8,
+      "text": "understand what an embedded model does"
+    },
+    {
+      "start": 842.48,
+      "end": 847.12,
+      "text": "internally. It's sort of like a car. You"
+    },
+    {
+      "start": 844.8,
+      "end": 849.3599999999999,
+      "text": "don't need to understand how to fix or"
+    },
+    {
+      "start": 847.12,
+      "end": 851.44,
+      "text": "build a car in order to drive one,"
+    },
+    {
+      "start": 849.36,
+      "end": 854.399,
+      "text": "right? But in case you're interested,"
+    },
+    {
+      "start": 851.44,
+      "end": 856.0790000000001,
+      "text": "here are some resources you can read up"
+    },
+    {
+      "start": 854.399,
+      "end": 857.68,
+      "text": "on"
+    },
+    {
+      "start": 856.079,
+      "end": 860.2399999999999,
+      "text": "that"
+    },
+    {
+      "start": 857.68,
+      "end": 862.399,
+      "text": "cover the subject. There's also this"
+    },
+    {
+      "start": 860.24,
+      "end": 864.9590000000001,
+      "text": "YouTube channel that has a number of"
+    },
+    {
+      "start": 862.399,
+      "end": 868.88,
+      "text": "videos on the subject, too. This one is"
+    },
+    {
+      "start": 864.959,
+      "end": 871.68,
+      "text": "great, for example. Anyhow, I vibecoded"
+    },
+    {
+      "start": 868.88,
+      "end": 875.12,
+      "text": "this little interactive animation that I"
+    },
+    {
+      "start": 871.68,
+      "end": 877.04,
+      "text": "will now play in order to give us a gist"
+    },
+    {
+      "start": 875.12,
+      "end": 880.16,
+      "text": "of what the embedding process, as it's"
+    },
+    {
+      "start": 877.04,
+      "end": 883.04,
+      "text": "so-called, looks like. So let's play it."
+    },
+    {
+      "start": 880.16,
+      "end": 885.199,
+      "text": "So we start off with some data. It gets"
+    },
+    {
+      "start": 883.04,
+      "end": 886.48,
+      "text": "tokenized. We run the tokens through an"
+    },
+    {
+      "start": 885.199,
+      "end": 887.68,
+      "text": "embedding model and then we're left with"
+    },
+    {
+      "start": 886.48,
+      "end": 892.0790000000001,
+      "text": "a list of numbers that represents the"
+    },
+    {
+      "start": 887.68,
+      "end": 894.0,
+      "text": "input data. Right? So input tokenization"
+    },
+    {
+      "start": 892.079,
+      "end": 897.04,
+      "text": "embedding and then we're left with a"
+    },
+    {
+      "start": 894.0,
+      "end": 899.68,
+      "text": "list of numbers aka a vector."
+    },
+    {
+      "start": 897.04,
+      "end": 901.8389999999999,
+      "text": "If we take a step back, remember how we"
+    },
+    {
+      "start": 899.68,
+      "end": 905.199,
+      "text": "were playing with this tokenizer app"
+    },
+    {
+      "start": 901.839,
+      "end": 909.6,
+      "text": "from OpenAI and how we saw it breaking"
+    },
+    {
+      "start": 905.199,
+      "end": 913.199,
+      "text": "up our data into tokens and mapping each"
+    },
+    {
+      "start": 909.6,
+      "end": 915.279,
+      "text": "token to a token ID. As it turns out,"
+    },
+    {
+      "start": 913.199,
+      "end": 918.7199999999999,
+      "text": "using a single number to represent a"
+    },
+    {
+      "start": 915.279,
+      "end": 922.399,
+      "text": "token is not very useful. If we want to"
+    },
+    {
+      "start": 918.72,
+      "end": 925.839,
+      "text": "measure things like how similar a token"
+    },
+    {
+      "start": 922.399,
+      "end": 927.76,
+      "text": "is to another token or how similar a"
+    },
+    {
+      "start": 925.839,
+      "end": 930.8800000000001,
+      "text": "collection of tokens are to another"
+    },
+    {
+      "start": 927.76,
+      "end": 934.3199999999999,
+      "text": "collection of tokens or how dissimilar a"
+    },
+    {
+      "start": 930.88,
+      "end": 937.279,
+      "text": "token is to another token etc."
+    },
+    {
+      "start": 934.32,
+      "end": 940.0790000000001,
+      "text": "using a list of numbers is more"
+    },
+    {
+      "start": 937.279,
+      "end": 942.639,
+      "text": "practical, right? And the other thing"
+    },
+    {
+      "start": 940.079,
+      "end": 944.16,
+      "text": "I'll mention is generally speaking, the"
+    },
+    {
+      "start": 942.639,
+      "end": 946.16,
+      "text": "larger the list of numbers that you use"
+    },
+    {
+      "start": 944.16,
+      "end": 949.04,
+      "text": "to represent a token or the larger the"
+    },
+    {
+      "start": 946.16,
+      "end": 952.24,
+      "text": "vector you use to represent a token,"
+    },
+    {
+      "start": 949.04,
+      "end": 954.24,
+      "text": "then the more nuance that vector is"
+    },
+    {
+      "start": 952.24,
+      "end": 956.399,
+      "text": "capable of carrying, which when you"
+    },
+    {
+      "start": 954.24,
+      "end": 958.5600000000001,
+      "text": "start to build more advanced AI systems"
+    },
+    {
+      "start": 956.399,
+      "end": 961.279,
+      "text": "on top of these vectors, that means that"
+    },
+    {
+      "start": 958.56,
+      "end": 964.079,
+      "text": "your AI system is going to become more"
+    },
+    {
+      "start": 961.279,
+      "end": 965.759,
+      "text": "intelligent. But there is a trade-off."
+    },
+    {
+      "start": 964.079,
+      "end": 967.4399999999999,
+      "text": "If you start to use huge vectors,"
+    },
+    {
+      "start": 965.759,
+      "end": 970.16,
+      "text": "eventually that slows your system down."
+    },
+    {
+      "start": 967.44,
+      "end": 974.639,
+      "text": "But blah blah blah. The last thing I'll"
+    },
+    {
+      "start": 970.16,
+      "end": 976.56,
+      "text": "mention or show you is an overview of"
+    },
+    {
+      "start": 974.639,
+      "end": 978.8,
+      "text": "some of the most popular embedding"
+    },
+    {
+      "start": 976.56,
+      "end": 979.92,
+      "text": "models on the market today. The one that"
+    },
+    {
+      "start": 978.8,
+      "end": 982.079,
+      "text": "we're going to be using for the most"
+    },
+    {
+      "start": 979.92,
+      "end": 985.04,
+      "text": "part moving forward is this one called"
+    },
+    {
+      "start": 982.079,
+      "end": 987.199,
+      "text": "All Mini LM L6V2."
+    },
+    {
+      "start": 985.04,
+      "end": 991.759,
+      "text": "It's pretty lightweight. There are"
+    },
+    {
+      "start": 987.199,
+      "end": 994.8,
+      "text": "better ones, but this is cool because"
+    },
+    {
+      "start": 991.759,
+      "end": 998.24,
+      "text": "you can run it locally and you can host"
+    },
+    {
+      "start": 994.8,
+      "end": 1002.079,
+      "text": "it on a cheap machine in the cloud. It"
+    },
+    {
+      "start": 998.24,
+      "end": 1004.24,
+      "text": "only allows you to feed in 256 tokens of"
+    },
+    {
+      "start": 1002.079,
+      "end": 1007.3599999999999,
+      "text": "data at a time, whereas some of the"
+    },
+    {
+      "start": 1004.24,
+      "end": 1010.0,
+      "text": "other ones allow you to build vectors"
+    },
+    {
+      "start": 1007.36,
+      "end": 1012.8000000000001,
+      "text": "that represent larger sequences of"
+    },
+    {
+      "start": 1010.0,
+      "end": 1014.72,
+      "text": "tokens. But anyhow, hopefully you get"
+    },
+    {
+      "start": 1012.8,
+      "end": 1017.68,
+      "text": "the gist of it and let's move on to step"
+    },
+    {
+      "start": 1014.72,
+      "end": 1021.36,
+      "text": "five. In step five, we're going to"
+    },
+    {
+      "start": 1017.68,
+      "end": 1023.04,
+      "text": "explore visualizing these vectors, and"
+    },
+    {
+      "start": 1021.36,
+      "end": 1025.76,
+      "text": "that's going to give us a better feel"
+    },
+    {
+      "start": 1023.04,
+      "end": 1028.799,
+      "text": "for what they're doing and how we can"
+    },
+    {
+      "start": 1025.76,
+      "end": 1030.24,
+      "text": "use them."
+    },
+    {
+      "start": 1028.799,
+      "end": 1032.079,
+      "text": "Now, let's visualize some of these"
+    },
+    {
+      "start": 1030.24,
+      "end": 1035.199,
+      "text": "vectors so we get a better feel for what"
+    },
+    {
+      "start": 1032.079,
+      "end": 1036.8799999999999,
+      "text": "they are and how we can use them. And"
+    },
+    {
+      "start": 1035.199,
+      "end": 1038.959,
+      "text": "the way that we're going to do that is"
+    },
+    {
+      "start": 1036.88,
+      "end": 1042.679,
+      "text": "by using this free tool called the"
+    },
+    {
+      "start": 1038.959,
+      "end": 1042.679,
+      "text": "TensorFlow projector."
+    },
+    {
+      "start": 1043.199,
+      "end": 1050.48,
+      "text": "And what this is doing is visualizing"
+    },
+    {
+      "start": 1047.12,
+      "end": 1052.559,
+      "text": "vectors generated by the word tovec"
+    },
+    {
+      "start": 1050.48,
+      "end": 1054.559,
+      "text": "embedding model."
+    },
+    {
+      "start": 1052.559,
+      "end": 1057.28,
+      "text": "This embedding model generates vectors"
+    },
+    {
+      "start": 1054.559,
+      "end": 1060.48,
+      "text": "or lists of numbers that represent the"
+    },
+    {
+      "start": 1057.28,
+      "end": 1063.2,
+      "text": "text fed into the model, right? In 200"
+    },
+    {
+      "start": 1060.48,
+      "end": 1064.799,
+      "text": "dimensions, right? Or put another way,"
+    },
+    {
+      "start": 1063.2,
+      "end": 1067.6000000000001,
+      "text": "the list of numbers generated by the"
+    },
+    {
+      "start": 1064.799,
+      "end": 1072.24,
+      "text": "word embedding model have 200 numbers"
+    },
+    {
+      "start": 1067.6,
+      "end": 1074.1599999999999,
+      "text": "inside of them. Of course, this is a"
+    },
+    {
+      "start": 1072.24,
+      "end": 1076.4,
+      "text": "three-dimensional visualization. So,"
+    },
+    {
+      "start": 1074.16,
+      "end": 1078.799,
+      "text": "what's happening here is those"
+    },
+    {
+      "start": 1076.4,
+      "end": 1080.16,
+      "text": "200dimensional vectors are getting down"
+    },
+    {
+      "start": 1078.799,
+      "end": 1082.6399999999999,
+      "text": "projected, I think is the technical"
+    },
+    {
+      "start": 1080.16,
+      "end": 1083.919,
+      "text": "term. Excuse me if I'm incorrect."
+    },
+    {
+      "start": 1082.64,
+      "end": 1085.5200000000002,
+      "text": "They're getting down projected into"
+    },
+    {
+      "start": 1083.919,
+      "end": 1088.16,
+      "text": "three dimensions. The way I think about"
+    },
+    {
+      "start": 1085.52,
+      "end": 1090.799,
+      "text": "this is it's sort of like how a cube can"
+    },
+    {
+      "start": 1088.16,
+      "end": 1093.44,
+      "text": "get projected into 2D as a square or a"
+    },
+    {
+      "start": 1090.799,
+      "end": 1097.52,
+      "text": "hyper cube can get projected into 3D as"
+    },
+    {
+      "start": 1093.44,
+      "end": 1099.76,
+      "text": "a cube. But anyhow,"
+    },
+    {
+      "start": 1097.52,
+      "end": 1102.16,
+      "text": "if we"
+    },
+    {
+      "start": 1099.76,
+      "end": 1105.28,
+      "text": "check out a certain area of this vector"
+    },
+    {
+      "start": 1102.16,
+      "end": 1109.0,
+      "text": "space and hover over some of the points,"
+    },
+    {
+      "start": 1105.28,
+      "end": 1109.0,
+      "text": "we should see"
+    },
+    {
+      "start": 1109.039,
+      "end": 1115.039,
+      "text": "similar concepts."
+    },
+    {
+      "start": 1111.12,
+      "end": 1119.1599999999999,
+      "text": "This seems to me to be"
+    },
+    {
+      "start": 1115.039,
+      "end": 1119.16,
+      "text": "like military or"
+    },
+    {
+      "start": 1119.919,
+      "end": 1124.5200000000002,
+      "text": "political kind of concepts."
+    },
+    {
+      "start": 1126.64,
+      "end": 1132.7990000000002,
+      "text": "Yeah, politician. Let's come over to one"
+    },
+    {
+      "start": 1129.12,
+      "end": 1135.9189999999999,
+      "text": "more area so you can"
+    },
+    {
+      "start": 1132.799,
+      "end": 1138.559,
+      "text": "fully understand what's going on."
+    },
+    {
+      "start": 1135.919,
+      "end": 1140.88,
+      "text": "Yeah. Here we have like chemicals."
+    },
+    {
+      "start": 1138.559,
+      "end": 1142.799,
+      "text": "Yeah."
+    },
+    {
+      "start": 1140.88,
+      "end": 1144.88,
+      "text": "Right."
+    },
+    {
+      "start": 1142.799,
+      "end": 1148.0,
+      "text": "Or more scientific"
+    },
+    {
+      "start": 1144.88,
+      "end": 1150.0,
+      "text": "related words."
+    },
+    {
+      "start": 1148.0,
+      "end": 1151.679,
+      "text": "Yeah. So hopefully that's enough to"
+    },
+    {
+      "start": 1150.0,
+      "end": 1154.799,
+      "text": "drive this home. But what an embedding"
+    },
+    {
+      "start": 1151.679,
+      "end": 1158.5590000000002,
+      "text": "model is doing is giving us a way to"
+    },
+    {
+      "start": 1154.799,
+      "end": 1161.2,
+      "text": "measure how similar two tokens are in a"
+    },
+    {
+      "start": 1158.559,
+      "end": 1163.6789999999999,
+      "text": "body of data or how similar a collection"
+    },
+    {
+      "start": 1161.2,
+      "end": 1166.64,
+      "text": "of tokens are to another collection of"
+    },
+    {
+      "start": 1163.679,
+      "end": 1168.5590000000002,
+      "text": "tokens in a body of data."
+    },
+    {
+      "start": 1166.64,
+      "end": 1171.2800000000002,
+      "text": "Once again, in practical AI"
+    },
+    {
+      "start": 1168.559,
+      "end": 1174.6399999999999,
+      "text": "applications, the size of the vectors"
+    },
+    {
+      "start": 1171.28,
+      "end": 1178.24,
+      "text": "are going to be at least 100 long,"
+    },
+    {
+      "start": 1174.64,
+      "end": 1179.76,
+      "text": "probably even a thousand long. And"
+    },
+    {
+      "start": 1178.24,
+      "end": 1182.32,
+      "text": "before we move on, I want to show you"
+    },
+    {
+      "start": 1179.76,
+      "end": 1185.2,
+      "text": "this other way of visualizing"
+    },
+    {
+      "start": 1182.32,
+      "end": 1187.2,
+      "text": "highdimensional vectors. I learned this"
+    },
+    {
+      "start": 1185.2,
+      "end": 1188.72,
+      "text": "way of visualizing"
+    },
+    {
+      "start": 1187.2,
+      "end": 1191.52,
+      "text": "high dimensional vectors from this"
+    },
+    {
+      "start": 1188.72,
+      "end": 1192.88,
+      "text": "YouTuber called Adam Lusk. If I'm"
+    },
+    {
+      "start": 1191.52,
+      "end": 1196.039,
+      "text": "pronouncing his name correct, shout out"
+    },
+    {
+      "start": 1192.88,
+      "end": 1196.0390000000002,
+      "text": "to him."
+    },
+    {
+      "start": 1196.24,
+      "end": 1201.44,
+      "text": "Here is a technique that uses color"
+    },
+    {
+      "start": 1199.28,
+      "end": 1204.8799999999999,
+      "text": "bands."
+    },
+    {
+      "start": 1201.44,
+      "end": 1207.76,
+      "text": "And this for example is"
+    },
+    {
+      "start": 1204.88,
+      "end": 1210.3200000000002,
+      "text": "the embedding for dog."
+    },
+    {
+      "start": 1207.76,
+      "end": 1214.32,
+      "text": "The higher the number in the list of"
+    },
+    {
+      "start": 1210.32,
+      "end": 1215.9189999999999,
+      "text": "numbers, the more red color band is, the"
+    },
+    {
+      "start": 1214.32,
+      "end": 1217.6789999999999,
+      "text": "lower"
+    },
+    {
+      "start": 1215.919,
+      "end": 1219.3600000000001,
+      "text": "the value of the number is in the list"
+    },
+    {
+      "start": 1217.679,
+      "end": 1221.8400000000001,
+      "text": "of numbers, the more blue it shows."
+    },
+    {
+      "start": 1219.36,
+      "end": 1223.76,
+      "text": "Right? So that's one way of visualizing"
+    },
+    {
+      "start": 1221.84,
+      "end": 1225.9189999999999,
+      "text": "the embedding for the word dog. This is"
+    },
+    {
+      "start": 1223.76,
+      "end": 1229.52,
+      "text": "how you visualize the embedding for the"
+    },
+    {
+      "start": 1225.919,
+      "end": 1232.0,
+      "text": "word mango, etc."
+    },
+    {
+      "start": 1229.52,
+      "end": 1234.0,
+      "text": "And once we have"
+    },
+    {
+      "start": 1232.0,
+      "end": 1237.36,
+      "text": "tokens or collections of tokens"
+    },
+    {
+      "start": 1234.0,
+      "end": 1240.24,
+      "text": "converted into vectors, we can run very"
+    },
+    {
+      "start": 1237.36,
+      "end": 1242.4799999999998,
+      "text": "simple math formulas on them. What we"
+    },
+    {
+      "start": 1240.24,
+      "end": 1247.039,
+      "text": "can do is measure the distance between"
+    },
+    {
+      "start": 1242.48,
+      "end": 1249.3600000000001,
+      "text": "two vectors, right? And the smaller the"
+    },
+    {
+      "start": 1247.039,
+      "end": 1251.2,
+      "text": "distance, that means the more similar"
+    },
+    {
+      "start": 1249.36,
+      "end": 1253.039,
+      "text": "the underlying data represented by the"
+    },
+    {
+      "start": 1251.2,
+      "end": 1256.24,
+      "text": "vectors is. Or another way that we can"
+    },
+    {
+      "start": 1253.039,
+      "end": 1258.64,
+      "text": "measure similarity is we can take two"
+    },
+    {
+      "start": 1256.24,
+      "end": 1261.36,
+      "text": "vectors and measure the angle between"
+    },
+    {
+      "start": 1258.64,
+      "end": 1263.3600000000001,
+      "text": "them when we draw a line from the origin"
+    },
+    {
+      "start": 1261.36,
+      "end": 1266.6399999999999,
+      "text": "of the vector space to each vector."
+    },
+    {
+      "start": 1263.36,
+      "end": 1268.559,
+      "text": "Right? The smaller the angle means the"
+    },
+    {
+      "start": 1266.64,
+      "end": 1272.0800000000002,
+      "text": "more similar the underlying data"
+    },
+    {
+      "start": 1268.559,
+      "end": 1273.44,
+      "text": "represented by the vectors is"
+    },
+    {
+      "start": 1272.08,
+      "end": 1275.6789999999999,
+      "text": "I think that covers all of the"
+    },
+    {
+      "start": 1273.44,
+      "end": 1280.0,
+      "text": "fundamentals we need to start building"
+    },
+    {
+      "start": 1275.679,
+      "end": 1282.88,
+      "text": "our reanking system. So let's jump into"
+    },
+    {
+      "start": 1280.0,
+      "end": 1284.64,
+      "text": "that."
+    },
+    {
+      "start": 1282.88,
+      "end": 1287.5200000000002,
+      "text": "Finally, we made it to the re-ranking"
+    },
+    {
+      "start": 1284.64,
+      "end": 1290.24,
+      "text": "part of this journey. The first part of"
+    },
+    {
+      "start": 1287.52,
+      "end": 1292.48,
+      "text": "re-ranking is similarity search."
+    },
+    {
+      "start": 1290.24,
+      "end": 1294.559,
+      "text": "Remember, reranking is sometimes called"
+    },
+    {
+      "start": 1292.48,
+      "end": 1297.3600000000001,
+      "text": "two-stage retrieval. The first stage of"
+    },
+    {
+      "start": 1294.559,
+      "end": 1300.3999999999999,
+      "text": "reranking is similarity search and the"
+    },
+    {
+      "start": 1297.36,
+      "end": 1301.9189999999999,
+      "text": "second stage of re-ranking is relevancy"
+    },
+    {
+      "start": 1300.4,
+      "end": 1304.88,
+      "text": "scoring or sometimes it's just called"
+    },
+    {
+      "start": 1301.919,
+      "end": 1307.5200000000002,
+      "text": "ranking as well. Excuse the terminology,"
+    },
+    {
+      "start": 1304.88,
+      "end": 1310.48,
+      "text": "but welcome to the world of AI/ML."
+    },
+    {
+      "start": 1307.52,
+      "end": 1313.039,
+      "text": "There's a lot of very confusing terms."
+    },
+    {
+      "start": 1310.48,
+      "end": 1317.039,
+      "text": "Anyhow, when you're applying ranking,"
+    },
+    {
+      "start": 1313.039,
+      "end": 1321.039,
+      "text": "the first thing is to convert some"
+    },
+    {
+      "start": 1317.039,
+      "end": 1323.36,
+      "text": "immense body of data into vectors."
+    },
+    {
+      "start": 1321.039,
+      "end": 1325.6,
+      "text": "Once you have all of your data converted"
+    },
+    {
+      "start": 1323.36,
+      "end": 1328.799,
+      "text": "into vectors, you need to store those"
+    },
+    {
+      "start": 1325.6,
+      "end": 1332.0,
+      "text": "vectors into a database so that you can"
+    },
+    {
+      "start": 1328.799,
+      "end": 1334.24,
+      "text": "easily search across them."
+    },
+    {
+      "start": 1332.0,
+      "end": 1336.24,
+      "text": "There are many databases you can use for"
+    },
+    {
+      "start": 1334.24,
+      "end": 1340.24,
+      "text": "storing vectors. For example, you can"
+    },
+    {
+      "start": 1336.24,
+      "end": 1343.44,
+      "text": "use Pine Cone, you can use Milvis, you"
+    },
+    {
+      "start": 1340.24,
+      "end": 1346.159,
+      "text": "can use Reddus, etc. There's many, many"
+    },
+    {
+      "start": 1343.44,
+      "end": 1348.48,
+      "text": "others you can choose from. I'm going to"
+    },
+    {
+      "start": 1346.159,
+      "end": 1350.4,
+      "text": "go with a vector database called Pine"
+    },
+    {
+      "start": 1348.48,
+      "end": 1353.44,
+      "text": "Cone. So, once again, when you're using"
+    },
+    {
+      "start": 1350.4,
+      "end": 1356.48,
+      "text": "reranking, you're going to start with"
+    },
+    {
+      "start": 1353.44,
+      "end": 1358.72,
+      "text": "some immense body of data. You're going"
+    },
+    {
+      "start": 1356.48,
+      "end": 1360.24,
+      "text": "to convert that body of data into"
+    },
+    {
+      "start": 1358.72,
+      "end": 1362.64,
+      "text": "vectors and then you need to store those"
+    },
+    {
+      "start": 1360.24,
+      "end": 1365.52,
+      "text": "vectors into a vector database so you"
+    },
+    {
+      "start": 1362.64,
+      "end": 1368.3200000000002,
+      "text": "can easily search across them. Let's see"
+    },
+    {
+      "start": 1365.52,
+      "end": 1371.12,
+      "text": "what that looks like. If we pop open"
+    },
+    {
+      "start": 1368.32,
+      "end": 1373.6789999999999,
+      "text": "this side drawer,"
+    },
+    {
+      "start": 1371.12,
+      "end": 1377.28,
+      "text": "I've built out some functionality that"
+    },
+    {
+      "start": 1373.679,
+      "end": 1379.52,
+      "text": "allows me to easily upload data into a"
+    },
+    {
+      "start": 1377.28,
+      "end": 1381.6789999999999,
+      "text": "pine cone database."
+    },
+    {
+      "start": 1379.52,
+      "end": 1384.08,
+      "text": "FYI, the embedding model that we're"
+    },
+    {
+      "start": 1381.679,
+      "end": 1389.52,
+      "text": "going to use to convert our data into"
+    },
+    {
+      "start": 1384.08,
+      "end": 1392.0,
+      "text": "vectors is all mini LM L6V2."
+    },
+    {
+      "start": 1389.52,
+      "end": 1394.4,
+      "text": "It generates vectors with 384"
+    },
+    {
+      "start": 1392.0,
+      "end": 1397.919,
+      "text": "dimensions."
+    },
+    {
+      "start": 1394.4,
+      "end": 1400.48,
+      "text": "And you can see inside of our vector"
+    },
+    {
+      "start": 1397.919,
+      "end": 1405.76,
+      "text": "database, we currently have zero"
+    },
+    {
+      "start": 1400.48,
+      "end": 1409.64,
+      "text": "vectors. So, if I click over here,"
+    },
+    {
+      "start": 1405.76,
+      "end": 1409.64,
+      "text": "I'll be able to upload"
+    },
+    {
+      "start": 1410.64,
+      "end": 1415.0800000000002,
+      "text": "these Q&As's."
+    },
+    {
+      "start": 1415.6,
+      "end": 1420.08,
+      "text": "Pretty much the way this mini demo"
+    },
+    {
+      "start": 1417.84,
+      "end": 1425.039,
+      "text": "application works is it allows you to"
+    },
+    {
+      "start": 1420.08,
+      "end": 1427.6789999999999,
+      "text": "ingest Q&As's into the vector database."
+    },
+    {
+      "start": 1425.039,
+      "end": 1431.28,
+      "text": "You can see these Q&As's"
+    },
+    {
+      "start": 1427.679,
+      "end": 1436.64,
+      "text": "are related to workouts, right?"
+    },
+    {
+      "start": 1431.28,
+      "end": 1438.1589999999999,
+      "text": "You can imagine a huge database, which"
+    },
+    {
+      "start": 1436.64,
+      "end": 1440.88,
+      "text": "in essence is what this is, right? You"
+    },
+    {
+      "start": 1438.159,
+      "end": 1442.96,
+      "text": "can imagine a huge database with every"
+    },
+    {
+      "start": 1440.88,
+      "end": 1445.5200000000002,
+      "text": "workout in the planet, right? And in"
+    },
+    {
+      "start": 1442.96,
+      "end": 1447.3600000000001,
+      "text": "this little demo application,"
+    },
+    {
+      "start": 1445.52,
+      "end": 1449.28,
+      "text": "we're going to search for workouts"
+    },
+    {
+      "start": 1447.36,
+      "end": 1452.9599999999998,
+      "text": "related to some terms, right? Maybe"
+    },
+    {
+      "start": 1449.28,
+      "end": 1455.6,
+      "text": "we're doing a session and we just worked"
+    },
+    {
+      "start": 1452.96,
+      "end": 1458.24,
+      "text": "out our arms and now we want to work out"
+    },
+    {
+      "start": 1455.6,
+      "end": 1460.559,
+      "text": "our abs and we want to mix it up. We"
+    },
+    {
+      "start": 1458.24,
+      "end": 1462.559,
+      "text": "want to get some new ideas for workouts"
+    },
+    {
+      "start": 1460.559,
+      "end": 1468.799,
+      "text": "that we can do that target our abs, etc."
+    },
+    {
+      "start": 1462.559,
+      "end": 1473.2,
+      "text": "Right? So, if I drag this CSV"
+    },
+    {
+      "start": 1468.799,
+      "end": 1475.279,
+      "text": "and upload it into the vector database,"
+    },
+    {
+      "start": 1473.2,
+      "end": 1478.32,
+      "text": "you can see"
+    },
+    {
+      "start": 1475.279,
+      "end": 1481.039,
+      "text": "that we now"
+    },
+    {
+      "start": 1478.32,
+      "end": 1485.6789999999999,
+      "text": "have vectors inside of our vector"
+    },
+    {
+      "start": 1481.039,
+      "end": 1488.32,
+      "text": "database. And now when we search for"
+    },
+    {
+      "start": 1485.679,
+      "end": 1491.6000000000001,
+      "text": "information, let's see what we get back."
+    },
+    {
+      "start": 1488.32,
+      "end": 1494.0,
+      "text": "So I'll type ABS."
+    },
+    {
+      "start": 1491.6,
+      "end": 1499.4399999999998,
+      "text": "And you can see"
+    },
+    {
+      "start": 1494.0,
+      "end": 1502.44,
+      "text": "we get results that are related to our"
+    },
+    {
+      "start": 1499.44,
+      "end": 1502.44,
+      "text": "query."
+    },
+    {
+      "start": 1503.039,
+      "end": 1507.919,
+      "text": "Bicycle crunches is the top suggested"
+    },
+    {
+      "start": 1505.84,
+      "end": 1510.3999999999999,
+      "text": "result. Right? Then we get scissor"
+    },
+    {
+      "start": 1507.919,
+      "end": 1511.919,
+      "text": "kicks, which also is an exercise that"
+    },
+    {
+      "start": 1510.4,
+      "end": 1514.0800000000002,
+      "text": "targets abs."
+    },
+    {
+      "start": 1511.919,
+      "end": 1516.0,
+      "text": "We also get reverse crunches which is on"
+    },
+    {
+      "start": 1514.08,
+      "end": 1519.6789999999999,
+      "text": "point."
+    },
+    {
+      "start": 1516.0,
+      "end": 1523.279,
+      "text": "And if I click this little cog icon, we"
+    },
+    {
+      "start": 1519.679,
+      "end": 1527.44,
+      "text": "can grow this list to include more"
+    },
+    {
+      "start": 1523.279,
+      "end": 1529.279,
+      "text": "nearby vectors to our query vector. So"
+    },
+    {
+      "start": 1527.44,
+      "end": 1533.1200000000001,
+      "text": "once again, if this is not making sense,"
+    },
+    {
+      "start": 1529.279,
+      "end": 1536.24,
+      "text": "if you remember that visualization of"
+    },
+    {
+      "start": 1533.12,
+      "end": 1539.36,
+      "text": "vectors in space, right? When we search"
+    },
+    {
+      "start": 1536.24,
+      "end": 1541.039,
+      "text": "across our vector database or our vector"
+    },
+    {
+      "start": 1539.36,
+      "end": 1543.84,
+      "text": "space, we're going to start with a"
+    },
+    {
+      "start": 1541.039,
+      "end": 1546.4,
+      "text": "query. In this case, it's ABS. And"
+    },
+    {
+      "start": 1543.84,
+      "end": 1548.32,
+      "text": "what's going to happen is"
+    },
+    {
+      "start": 1546.4,
+      "end": 1550.4,
+      "text": "we're going to be placed into some"
+    },
+    {
+      "start": 1548.32,
+      "end": 1552.3999999999999,
+      "text": "location in our vector space. And the"
+    },
+    {
+      "start": 1550.4,
+      "end": 1555.1200000000001,
+      "text": "way that we get results using similarity"
+    },
+    {
+      "start": 1552.4,
+      "end": 1557.76,
+      "text": "search is we're going to grab the nearby"
+    },
+    {
+      "start": 1555.12,
+      "end": 1560.1589999999999,
+      "text": "vectors, right, to wherever we're placed"
+    },
+    {
+      "start": 1557.76,
+      "end": 1562.4,
+      "text": "by our query vector. Hopefully that"
+    },
+    {
+      "start": 1560.159,
+      "end": 1564.24,
+      "text": "makes sense. Right?"
+    },
+    {
+      "start": 1562.4,
+      "end": 1570.0,
+      "text": "Right now we're pulling five results,"
+    },
+    {
+      "start": 1564.24,
+      "end": 1574.0,
+      "text": "but we can adjust the hyperparameters of"
+    },
+    {
+      "start": 1570.0,
+      "end": 1577.679,
+      "text": "our similarity search to include more"
+    },
+    {
+      "start": 1574.0,
+      "end": 1580.32,
+      "text": "results. So let's switch to 10. And now"
+    },
+    {
+      "start": 1577.679,
+      "end": 1582.799,
+      "text": "you can see we get 10 results. And as we"
+    },
+    {
+      "start": 1580.32,
+      "end": 1584.48,
+      "text": "go further down the list,"
+    },
+    {
+      "start": 1582.799,
+      "end": 1587.84,
+      "text": "we're getting further away from our"
+    },
+    {
+      "start": 1584.48,
+      "end": 1590.48,
+      "text": "point, which means"
+    },
+    {
+      "start": 1587.84,
+      "end": 1593.279,
+      "text": "less similar results. We have a lot of"
+    },
+    {
+      "start": 1590.48,
+      "end": 1597.039,
+      "text": "ab exercises in this database."
+    },
+    {
+      "start": 1593.279,
+      "end": 1598.64,
+      "text": "Let's go to 20"
+    },
+    {
+      "start": 1597.039,
+      "end": 1601.799,
+      "text": "and see what we get at the bottom of"
+    },
+    {
+      "start": 1598.64,
+      "end": 1601.7990000000002,
+      "text": "this list."
+    },
+    {
+      "start": 1602.0,
+      "end": 1608.64,
+      "text": "Yeah. So you can see as we get further"
+    },
+    {
+      "start": 1604.88,
+      "end": 1611.8400000000001,
+      "text": "away, right, as we start grabbing more"
+    },
+    {
+      "start": 1608.64,
+      "end": 1614.5590000000002,
+      "text": "and more vectors, right, from wherever"
+    },
+    {
+      "start": 1611.84,
+      "end": 1617.12,
+      "text": "we are in vector space, right, as we get"
+    },
+    {
+      "start": 1614.559,
+      "end": 1619.36,
+      "text": "further from our location, we're getting"
+    },
+    {
+      "start": 1617.12,
+      "end": 1621.36,
+      "text": "further and further away, right, from"
+    },
+    {
+      "start": 1619.36,
+      "end": 1624.1589999999999,
+      "text": "the semantic meaning of our query."
+    },
+    {
+      "start": 1621.36,
+      "end": 1625.9189999999999,
+      "text": "Another way that we can filter"
+    },
+    {
+      "start": 1624.159,
+      "end": 1627.44,
+      "text": "our results is by adjusting the"
+    },
+    {
+      "start": 1625.919,
+      "end": 1630.48,
+      "text": "similarity threshold, which is this"
+    },
+    {
+      "start": 1627.44,
+      "end": 1633.76,
+      "text": "score right here."
+    },
+    {
+      "start": 1630.48,
+      "end": 1637.1200000000001,
+      "text": "We're using cosine similarity in order"
+    },
+    {
+      "start": 1633.76,
+      "end": 1639.679,
+      "text": "to measure the similarity of our"
+    },
+    {
+      "start": 1637.12,
+      "end": 1644.799,
+      "text": "vectors."
+    },
+    {
+      "start": 1639.679,
+      "end": 1647.1200000000001,
+      "text": "And if we increase our similarity"
+    },
+    {
+      "start": 1644.799,
+      "end": 1649.279,
+      "text": "threshold,"
+    },
+    {
+      "start": 1647.12,
+      "end": 1652.08,
+      "text": "that's going to"
+    },
+    {
+      "start": 1649.279,
+      "end": 1654.32,
+      "text": "filter out more records, right? So, I've"
+    },
+    {
+      "start": 1652.08,
+      "end": 1657.52,
+      "text": "increased the similarity threshold to"
+    },
+    {
+      "start": 1654.32,
+      "end": 1661.039,
+      "text": "50%. So you should get zero results cuz"
+    },
+    {
+      "start": 1657.52,
+      "end": 1663.76,
+      "text": "nothing in this result set is above 50,"
+    },
+    {
+      "start": 1661.039,
+      "end": 1666.799,
+      "text": "right? Zero results. If we take that"
+    },
+    {
+      "start": 1663.76,
+      "end": 1668.799,
+      "text": "down to let's say 40,"
+    },
+    {
+      "start": 1666.799,
+      "end": 1671.12,
+      "text": "we get nine results, right? Everything"
+    },
+    {
+      "start": 1668.799,
+      "end": 1674.8799999999999,
+      "text": "that crosses the similarity threshold of"
+    },
+    {
+      "start": 1671.12,
+      "end": 1679.559,
+      "text": "40%. So hopefully that makes sense."
+    },
+    {
+      "start": 1674.88,
+      "end": 1679.5590000000002,
+      "text": "Let's do a search for calves,"
+    },
+    {
+      "start": 1680.48,
+      "end": 1687.2,
+      "text": "right? calf raises, single leg calf"
+    },
+    {
+      "start": 1683.2,
+      "end": 1691.52,
+      "text": "raises, donkey kicks."
+    },
+    {
+      "start": 1687.2,
+      "end": 1696.24,
+      "text": "So yeah, that's similarity search. So"
+    },
+    {
+      "start": 1691.52,
+      "end": 1700.6399999999999,
+      "text": "once again, zooming out,"
+    },
+    {
+      "start": 1696.24,
+      "end": 1703.44,
+      "text": "reranking is a two-step"
+    },
+    {
+      "start": 1700.64,
+      "end": 1705.679,
+      "text": "algorithm, right? The first step of"
+    },
+    {
+      "start": 1703.44,
+      "end": 1707.279,
+      "text": "reanking is similarity search and the"
+    },
+    {
+      "start": 1705.679,
+      "end": 1710.88,
+      "text": "second step is what we're going to be"
+    },
+    {
+      "start": 1707.279,
+      "end": 1714.159,
+      "text": "covering shortly."
+    },
+    {
+      "start": 1710.88,
+      "end": 1718.48,
+      "text": "And once again, the"
+    },
+    {
+      "start": 1714.159,
+      "end": 1722.72,
+      "text": "usefulness of learning this is if we"
+    },
+    {
+      "start": 1718.48,
+      "end": 1725.52,
+      "text": "have use cases where a lot of data is"
+    },
+    {
+      "start": 1722.72,
+      "end": 1727.279,
+      "text": "needing to be processed, these are tools"
+    },
+    {
+      "start": 1725.52,
+      "end": 1730.08,
+      "text": "in our tool belt that we can use to"
+    },
+    {
+      "start": 1727.279,
+      "end": 1731.84,
+      "text": "filter out all of the irrelevant"
+    },
+    {
+      "start": 1730.08,
+      "end": 1736.12,
+      "text": "information"
+    },
+    {
+      "start": 1731.84,
+      "end": 1736.12,
+      "text": "based on our current task."
+    },
+    {
+      "start": 1736.24,
+      "end": 1741.6,
+      "text": "Before we move on to the second stage of"
+    },
+    {
+      "start": 1739.12,
+      "end": 1743.6789999999999,
+      "text": "re-ranking, remember reranking is"
+    },
+    {
+      "start": 1741.6,
+      "end": 1745.36,
+      "text": "sometimes called two-stage retrieval."
+    },
+    {
+      "start": 1743.679,
+      "end": 1747.52,
+      "text": "The first stage being similarity search"
+    },
+    {
+      "start": 1745.36,
+      "end": 1750.24,
+      "text": "that we covered in the previous part and"
+    },
+    {
+      "start": 1747.52,
+      "end": 1751.9189999999999,
+      "text": "the second stage being relevancy scoring"
+    },
+    {
+      "start": 1750.24,
+      "end": 1754.0,
+      "text": "or sometimes it's just called reanking"
+    },
+    {
+      "start": 1751.919,
+      "end": 1757.279,
+      "text": "as well. We're going to cover that next."
+    },
+    {
+      "start": 1754.0,
+      "end": 1759.039,
+      "text": "Anyhow, before we demo the second stage"
+    },
+    {
+      "start": 1757.279,
+      "end": 1762.399,
+      "text": "of re-ranking, I wanted to briefly"
+    },
+    {
+      "start": 1759.039,
+      "end": 1764.24,
+      "text": "discuss the topic of chunking."
+    },
+    {
+      "start": 1762.399,
+      "end": 1766.559,
+      "text": "We already discussed the topic of"
+    },
+    {
+      "start": 1764.24,
+      "end": 1769.2,
+      "text": "tokenization, right? Tokenization refers"
+    },
+    {
+      "start": 1766.559,
+      "end": 1772.0,
+      "text": "to how you break up data into its"
+    },
+    {
+      "start": 1769.2,
+      "end": 1774.88,
+      "text": "elementary units for feeding into an AI"
+    },
+    {
+      "start": 1772.0,
+      "end": 1779.76,
+      "text": "system. Chunking, on the other hand, is"
+    },
+    {
+      "start": 1774.88,
+      "end": 1784.24,
+      "text": "how we group our tokens so as to best"
+    },
+    {
+      "start": 1779.76,
+      "end": 1788.24,
+      "text": "retrieve relevant information for our AI"
+    },
+    {
+      "start": 1784.24,
+      "end": 1789.6,
+      "text": "or re-ranking related application. It's"
+    },
+    {
+      "start": 1788.24,
+      "end": 1791.6,
+      "text": "okay if this seems a little bit"
+    },
+    {
+      "start": 1789.6,
+      "end": 1794.32,
+      "text": "abstract. It took me a while to wrap my"
+    },
+    {
+      "start": 1791.6,
+      "end": 1796.0,
+      "text": "head around these concepts, right? So,"
+    },
+    {
+      "start": 1794.32,
+      "end": 1797.4399999999998,
+      "text": "it's okay if you feel a little bit lost"
+    },
+    {
+      "start": 1796.0,
+      "end": 1800.799,
+      "text": "and it's probably going to sound like"
+    },
+    {
+      "start": 1797.44,
+      "end": 1804.48,
+      "text": "mumbo jumbo, but anyhow, if we take a"
+    },
+    {
+      "start": 1800.799,
+      "end": 1809.2,
+      "text": "closer look at the previous demo, the"
+    },
+    {
+      "start": 1804.48,
+      "end": 1814.08,
+      "text": "one related to workouts, what we did was"
+    },
+    {
+      "start": 1809.2,
+      "end": 1817.3600000000001,
+      "text": "go through a CSV file full of Q&As's"
+    },
+    {
+      "start": 1814.08,
+      "end": 1819.279,
+      "text": "where each Q&A shared some information"
+    },
+    {
+      "start": 1817.36,
+      "end": 1821.12,
+      "text": "about a workout that targets a"
+    },
+    {
+      "start": 1819.279,
+      "end": 1824.72,
+      "text": "particular part of your body. And what"
+    },
+    {
+      "start": 1821.12,
+      "end": 1828.039,
+      "text": "we did is we appended the Q part to the"
+    },
+    {
+      "start": 1824.72,
+      "end": 1828.039,
+      "text": "A part"
+    },
+    {
+      "start": 1828.24,
+      "end": 1833.679,
+      "text": "and that's what we fed into our"
+    },
+    {
+      "start": 1830.799,
+      "end": 1836.8799999999999,
+      "text": "embedding model that converted this raw"
+    },
+    {
+      "start": 1833.679,
+      "end": 1838.72,
+      "text": "data into a vector for us. Just to"
+    },
+    {
+      "start": 1836.88,
+      "end": 1842.72,
+      "text": "clarify, the embedding model that we're"
+    },
+    {
+      "start": 1838.72,
+      "end": 1847.2,
+      "text": "using for this two-stage retrieval demo"
+    },
+    {
+      "start": 1842.72,
+      "end": 1849.679,
+      "text": "is all mini LM L6V2. And for some"
+    },
+    {
+      "start": 1847.2,
+      "end": 1854.0,
+      "text": "insight into the details, the input"
+    },
+    {
+      "start": 1849.679,
+      "end": 1857.6000000000001,
+      "text": "context limit of all mini LM L6V2"
+    },
+    {
+      "start": 1854.0,
+      "end": 1860.64,
+      "text": "is 256 tokens."
+    },
+    {
+      "start": 1857.6,
+      "end": 1863.279,
+      "text": "These Q&As are quite short, so they fit"
+    },
+    {
+      "start": 1860.64,
+      "end": 1867.1200000000001,
+      "text": "within that 256"
+    },
+    {
+      "start": 1863.279,
+      "end": 1870.399,
+      "text": "input token limit of all mini LM L6V2."
+    },
+    {
+      "start": 1867.12,
+      "end": 1874.08,
+      "text": "So the vectors that get generated to"
+    },
+    {
+      "start": 1870.399,
+      "end": 1875.6789999999999,
+      "text": "represent each Q&A are able to take into"
+    },
+    {
+      "start": 1874.08,
+      "end": 1879.76,
+      "text": "account"
+    },
+    {
+      "start": 1875.679,
+      "end": 1883.2,
+      "text": "the full Q&A. If the Q&A was longer than"
+    },
+    {
+      "start": 1879.76,
+      "end": 1888.08,
+      "text": "the 256 input context limit of all Mini"
+    },
+    {
+      "start": 1883.2,
+      "end": 1890.88,
+      "text": "LML L6V2, we would need to chunk it,"
+    },
+    {
+      "start": 1888.08,
+      "end": 1895.36,
+      "text": "right? There are a couple different"
+    },
+    {
+      "start": 1890.88,
+      "end": 1900.48,
+      "text": "approaches for how to chunk data."
+    },
+    {
+      "start": 1895.36,
+      "end": 1904.9599999999998,
+      "text": "Here's a demo from an engineer who lives"
+    },
+    {
+      "start": 1900.48,
+      "end": 1906.0,
+      "text": "in SF by the name of Greg Camrat."
+    },
+    {
+      "start": 1904.96,
+      "end": 1910.24,
+      "text": "Hopefully I'm pronouncing his name"
+    },
+    {
+      "start": 1906.0,
+      "end": 1912.159,
+      "text": "correctly. But here we can see a passage"
+    },
+    {
+      "start": 1910.24,
+      "end": 1915.1200000000001,
+      "text": "of text."
+    },
+    {
+      "start": 1912.159,
+      "end": 1917.1200000000001,
+      "text": "And we can play around with different"
+    },
+    {
+      "start": 1915.12,
+      "end": 1920.799,
+      "text": "ways of chunking it by adjusting these"
+    },
+    {
+      "start": 1917.12,
+      "end": 1925.84,
+      "text": "sliders. Right? So here you can see"
+    },
+    {
+      "start": 1920.799,
+      "end": 1928.6399999999999,
+      "text": "we're reducing the size of our chunks."
+    },
+    {
+      "start": 1925.84,
+      "end": 1930.9599999999998,
+      "text": "Once again, a chunk is composed of"
+    },
+    {
+      "start": 1928.64,
+      "end": 1933.76,
+      "text": "multiple tokens. The token is the"
+    },
+    {
+      "start": 1930.96,
+      "end": 1936.3990000000001,
+      "text": "elementary unit here. And another thing"
+    },
+    {
+      "start": 1933.76,
+      "end": 1939.12,
+      "text": "we can do that might get us better"
+    },
+    {
+      "start": 1936.399,
+      "end": 1941.6789999999999,
+      "text": "results is"
+    },
+    {
+      "start": 1939.12,
+      "end": 1946.08,
+      "text": "include an overlap. Right? What this is"
+    },
+    {
+      "start": 1941.679,
+      "end": 1948.5590000000002,
+      "text": "doing is instead of each chunk"
+    },
+    {
+      "start": 1946.08,
+      "end": 1952.48,
+      "text": "not including any information from its"
+    },
+    {
+      "start": 1948.559,
+      "end": 1955.9189999999999,
+      "text": "previous chunk, it overlaps"
+    },
+    {
+      "start": 1952.48,
+      "end": 1958.48,
+      "text": "each subsequent chunk so that there's"
+    },
+    {
+      "start": 1955.919,
+      "end": 1961.76,
+      "text": "some information shared."
+    },
+    {
+      "start": 1958.48,
+      "end": 1964.64,
+      "text": "Sometimes this is very handy because"
+    },
+    {
+      "start": 1961.76,
+      "end": 1967.919,
+      "text": "you can increase the likelihood of"
+    },
+    {
+      "start": 1964.64,
+      "end": 1970.96,
+      "text": "matching against two subsequent chunks."
+    },
+    {
+      "start": 1967.919,
+      "end": 1974.5590000000002,
+      "text": "And when that gets fed into"
+    },
+    {
+      "start": 1970.96,
+      "end": 1977.44,
+      "text": "your LLM for subsequent processing, the"
+    },
+    {
+      "start": 1974.559,
+      "end": 1979.6,
+      "text": "LLM is able to piece together that these"
+    },
+    {
+      "start": 1977.44,
+      "end": 1983.919,
+      "text": "are"
+    },
+    {
+      "start": 1979.6,
+      "end": 1989.12,
+      "text": "supposed to be one larger unit of data."
+    },
+    {
+      "start": 1983.919,
+      "end": 1990.64,
+      "text": "So, you can kind of hack this to feed in"
+    },
+    {
+      "start": 1989.12,
+      "end": 1992.7199999999998,
+      "text": "larger chunks of data that are"
+    },
+    {
+      "start": 1990.64,
+      "end": 1994.0800000000002,
+      "text": "contiguous into the LLM. This is going"
+    },
+    {
+      "start": 1992.72,
+      "end": 1995.6000000000001,
+      "text": "to make sense later, by the way. It's"
+    },
+    {
+      "start": 1994.08,
+      "end": 1998.399,
+      "text": "okay once again if this seems a little"
+    },
+    {
+      "start": 1995.6,
+      "end": 2001.76,
+      "text": "bit abstract. But anyhow, I think we'll"
+    },
+    {
+      "start": 1998.399,
+      "end": 2005.039,
+      "text": "leave it there for now. This is a rabbit"
+    },
+    {
+      "start": 2001.76,
+      "end": 2007.919,
+      "text": "hole you can go deeper on. For example,"
+    },
+    {
+      "start": 2005.039,
+      "end": 2011.519,
+      "text": "there's this article from another vector"
+    },
+    {
+      "start": 2007.919,
+      "end": 2013.519,
+      "text": "database company called Chroma."
+    },
+    {
+      "start": 2011.519,
+      "end": 2017.6,
+      "text": "And in this article, they analyzed a"
+    },
+    {
+      "start": 2013.519,
+      "end": 2019.44,
+      "text": "bunch of different chunking strategies"
+    },
+    {
+      "start": 2017.6,
+      "end": 2022.32,
+      "text": "and they analyzed the performance of"
+    },
+    {
+      "start": 2019.44,
+      "end": 2025.1200000000001,
+      "text": "them. How accurate are the results"
+    },
+    {
+      "start": 2022.32,
+      "end": 2028.6399999999999,
+      "text": "generated by your AI applications when"
+    },
+    {
+      "start": 2025.12,
+      "end": 2031.9189999999999,
+      "text": "you use various chunking strategies?"
+    },
+    {
+      "start": 2028.64,
+      "end": 2034.5590000000002,
+      "text": "So they found the best"
+    },
+    {
+      "start": 2031.919,
+      "end": 2037.2,
+      "text": "approach to chunking data at least in"
+    },
+    {
+      "start": 2034.559,
+      "end": 2042.96,
+      "text": "the context of text"
+    },
+    {
+      "start": 2037.2,
+      "end": 2047.2,
+      "text": "to be using an LLM to decide what the"
+    },
+    {
+      "start": 2042.96,
+      "end": 2050.2400000000002,
+      "text": "chunks should be. Right? That's the LLM"
+    },
+    {
+      "start": 2047.2,
+      "end": 2053.04,
+      "text": "semantic chunker approach."
+    },
+    {
+      "start": 2050.24,
+      "end": 2056.399,
+      "text": "Anyhow, we're going to keep it simple"
+    },
+    {
+      "start": 2053.04,
+      "end": 2060.159,
+      "text": "for this video."
+    },
+    {
+      "start": 2056.399,
+      "end": 2062.929,
+      "text": "And yeah, that's chunking. Let's move on"
+    },
+    {
+      "start": 2060.159,
+      "end": 2065.28,
+      "text": "to the second stage of re-ranking."
+    },
+    {
+      "start": 2062.929,
+      "end": 2069.44,
+      "text": "[Music]"
+    },
+    {
+      "start": 2065.28,
+      "end": 2072.0,
+      "text": "Here we go. Reranking."
+    },
+    {
+      "start": 2069.44,
+      "end": 2073.919,
+      "text": "So, we're going to follow the same"
+    },
+    {
+      "start": 2072.0,
+      "end": 2076.56,
+      "text": "general process."
+    },
+    {
+      "start": 2073.919,
+      "end": 2079.919,
+      "text": "In order to leverage this technology, we"
+    },
+    {
+      "start": 2076.56,
+      "end": 2082.7999999999997,
+      "text": "have to first convert some large body of"
+    },
+    {
+      "start": 2079.919,
+      "end": 2086.96,
+      "text": "information into vectors. And we can do"
+    },
+    {
+      "start": 2082.8,
+      "end": 2090.079,
+      "text": "that via this side right drawer. You can"
+    },
+    {
+      "start": 2086.96,
+      "end": 2094.8,
+      "text": "see that we have no vectors in our"
+    },
+    {
+      "start": 2090.079,
+      "end": 2097.04,
+      "text": "vector database. So let's upload some"
+    },
+    {
+      "start": 2094.8,
+      "end": 2100.32,
+      "text": "information."
+    },
+    {
+      "start": 2097.04,
+      "end": 2103.359,
+      "text": "And for this"
+    },
+    {
+      "start": 2100.32,
+      "end": 2107.28,
+      "text": "relevancy scoring demo or second stage"
+    },
+    {
+      "start": 2103.359,
+      "end": 2110.72,
+      "text": "of reanking demo, we're actually going"
+    },
+    {
+      "start": 2107.28,
+      "end": 2113.92,
+      "text": "to use a cookbook."
+    },
+    {
+      "start": 2110.72,
+      "end": 2116.8799999999997,
+      "text": "This is a cookbook that I found on"
+    },
+    {
+      "start": 2113.92,
+      "end": 2118.96,
+      "text": "Gutenberg or Project Gutenberg I think"
+    },
+    {
+      "start": 2116.88,
+      "end": 2122.8,
+      "text": "it's called. But anyhow, this is a"
+    },
+    {
+      "start": 2118.96,
+      "end": 2126.4,
+      "text": "cookbook that consists of it looks like"
+    },
+    {
+      "start": 2122.8,
+      "end": 2132.599,
+      "text": "over 600 pages of recipes. So, let's"
+    },
+    {
+      "start": 2126.4,
+      "end": 2132.599,
+      "text": "ingest this into our vector database and"
+    },
+    {
+      "start": 2132.8,
+      "end": 2138.32,
+      "text": "take reranking"
+    },
+    {
+      "start": 2135.2,
+      "end": 2140.56,
+      "text": "for a spin."
+    },
+    {
+      "start": 2138.32,
+      "end": 2144.1600000000003,
+      "text": "After our data is uploaded, we should"
+    },
+    {
+      "start": 2140.56,
+      "end": 2145.68,
+      "text": "see some vectors inside of our vector"
+    },
+    {
+      "start": 2144.16,
+      "end": 2148.24,
+      "text": "database."
+    },
+    {
+      "start": 2145.68,
+      "end": 2151.68,
+      "text": "And this should be the same number we're"
+    },
+    {
+      "start": 2148.24,
+      "end": 2154.0,
+      "text": "seeing in Pine Cone. And now we can test"
+    },
+    {
+      "start": 2151.68,
+      "end": 2158.0789999999997,
+      "text": "out reranking."
+    },
+    {
+      "start": 2154.0,
+      "end": 2160.48,
+      "text": "So as this is a cookbook, let's ask some"
+    },
+    {
+      "start": 2158.079,
+      "end": 2162.4,
+      "text": "culinary questions"
+    },
+    {
+      "start": 2160.48,
+      "end": 2165.76,
+      "text": "starting with"
+    },
+    {
+      "start": 2162.4,
+      "end": 2168.4,
+      "text": "what's a delicious Indian dish."
+    },
+    {
+      "start": 2165.76,
+      "end": 2170.96,
+      "text": "Here are the results we get."
+    },
+    {
+      "start": 2168.4,
+      "end": 2173.76,
+      "text": "And you can see that we have two columns"
+    },
+    {
+      "start": 2170.96,
+      "end": 2176.96,
+      "text": "of results. The first column corresponds"
+    },
+    {
+      "start": 2173.76,
+      "end": 2179.28,
+      "text": "to the first stage of re-ranking and the"
+    },
+    {
+      "start": 2176.96,
+      "end": 2181.839,
+      "text": "second column corresponds to the second"
+    },
+    {
+      "start": 2179.28,
+      "end": 2186.32,
+      "text": "stage of reranking."
+    },
+    {
+      "start": 2181.839,
+      "end": 2188.96,
+      "text": "The metric that we're using to rank the"
+    },
+    {
+      "start": 2186.32,
+      "end": 2190.48,
+      "text": "similarity search results is called"
+    },
+    {
+      "start": 2188.96,
+      "end": 2193.119,
+      "text": "similarity."
+    },
+    {
+      "start": 2190.48,
+      "end": 2197.119,
+      "text": "And the metric we're using to rank the"
+    },
+    {
+      "start": 2193.119,
+      "end": 2200.1600000000003,
+      "text": "reranked results is relevance. Here's an"
+    },
+    {
+      "start": 2197.119,
+      "end": 2202.32,
+      "text": "article that let's quickly browse"
+    },
+    {
+      "start": 2200.16,
+      "end": 2205.1189999999997,
+      "text": "through to get a better idea of what's"
+    },
+    {
+      "start": 2202.32,
+      "end": 2209.28,
+      "text": "going on. So, when you're comparing two"
+    },
+    {
+      "start": 2205.119,
+      "end": 2212.1600000000003,
+      "text": "pieces of information or two sequences"
+    },
+    {
+      "start": 2209.28,
+      "end": 2214.1600000000003,
+      "text": "of tokens, there's multiple techniques"
+    },
+    {
+      "start": 2212.16,
+      "end": 2216.0789999999997,
+      "text": "for doing so. Hopefully, we're very"
+    },
+    {
+      "start": 2214.16,
+      "end": 2218.24,
+      "text": "familiar with"
+    },
+    {
+      "start": 2216.079,
+      "end": 2220.4,
+      "text": "similarity search, which is also"
+    },
+    {
+      "start": 2218.24,
+      "end": 2223.4399999999996,
+      "text": "sometimes called"
+    },
+    {
+      "start": 2220.4,
+      "end": 2225.92,
+      "text": "by encoder. It's a bit confusing of a"
+    },
+    {
+      "start": 2223.44,
+      "end": 2229.119,
+      "text": "name but anyhow here you can see we have"
+    },
+    {
+      "start": 2225.92,
+      "end": 2232.56,
+      "text": "some query input that we convert into a"
+    },
+    {
+      "start": 2229.119,
+      "end": 2235.6800000000003,
+      "text": "vector and some chunk of data or"
+    },
+    {
+      "start": 2232.56,
+      "end": 2238.48,
+      "text": "document that we convert into a vector"
+    },
+    {
+      "start": 2235.68,
+      "end": 2240.24,
+      "text": "and we calculate their similarity using"
+    },
+    {
+      "start": 2238.48,
+      "end": 2243.2,
+      "text": "cosine similarity. Right? That tells us"
+    },
+    {
+      "start": 2240.24,
+      "end": 2245.7599999999998,
+      "text": "how similar these two pieces of data"
+    },
+    {
+      "start": 2243.2,
+      "end": 2250.24,
+      "text": "are. There is another technique for"
+    },
+    {
+      "start": 2245.76,
+      "end": 2253.28,
+      "text": "measuring the similarity or relevance of"
+    },
+    {
+      "start": 2250.24,
+      "end": 2255.52,
+      "text": "two pieces of data and this other"
+    },
+    {
+      "start": 2253.28,
+      "end": 2258.2400000000002,
+      "text": "approach is called the cross encoder"
+    },
+    {
+      "start": 2255.52,
+      "end": 2260.72,
+      "text": "approach. Internally this uses an"
+    },
+    {
+      "start": 2258.24,
+      "end": 2264.56,
+      "text": "algorithm called cross attention which"
+    },
+    {
+      "start": 2260.72,
+      "end": 2266.64,
+      "text": "is the same algorithm found inside of"
+    },
+    {
+      "start": 2264.56,
+      "end": 2269.599,
+      "text": "most LLMs."
+    },
+    {
+      "start": 2266.64,
+      "end": 2273.5989999999997,
+      "text": "If you're familiar with the history of"
+    },
+    {
+      "start": 2269.599,
+      "end": 2276.8,
+      "text": "ML, you might know that the transformer,"
+    },
+    {
+      "start": 2273.599,
+      "end": 2279.44,
+      "text": "which is the type of system an LLM is"
+    },
+    {
+      "start": 2276.8,
+      "end": 2282.7200000000003,
+      "text": "based on, was introduced in a paper"
+    },
+    {
+      "start": 2279.44,
+      "end": 2285.28,
+      "text": "called attention is all you need. This"
+    },
+    {
+      "start": 2282.72,
+      "end": 2287.52,
+      "text": "way of measuring the"
+    },
+    {
+      "start": 2285.28,
+      "end": 2289.92,
+      "text": "similarity or relevance, I'm going to"
+    },
+    {
+      "start": 2287.52,
+      "end": 2292.88,
+      "text": "use the term relevance in reference to"
+    },
+    {
+      "start": 2289.92,
+      "end": 2294.7200000000003,
+      "text": "cross encoders and the term similarity"
+    },
+    {
+      "start": 2292.88,
+      "end": 2297.28,
+      "text": "reference to similarity search or by"
+    },
+    {
+      "start": 2294.72,
+      "end": 2299.2799999999997,
+      "text": "encoders. This way of measuring the"
+    },
+    {
+      "start": 2297.28,
+      "end": 2302.88,
+      "text": "relevance of two pieces of information"
+    },
+    {
+      "start": 2299.28,
+      "end": 2305.0400000000004,
+      "text": "is much more accurate, but the trade-off"
+    },
+    {
+      "start": 2302.88,
+      "end": 2307.44,
+      "text": "is it's much more computationally"
+    },
+    {
+      "start": 2305.04,
+      "end": 2309.68,
+      "text": "intensive. If we only used the cross"
+    },
+    {
+      "start": 2307.44,
+      "end": 2313.359,
+      "text": "encoder, we would be waiting a very long"
+    },
+    {
+      "start": 2309.68,
+      "end": 2317.359,
+      "text": "time to get matches as it's usually"
+    },
+    {
+      "start": 2313.359,
+      "end": 2320.72,
+      "text": "about 10 to 200 maybe even more times"
+    },
+    {
+      "start": 2317.359,
+      "end": 2323.119,
+      "text": "slower of an algorithm compared to the"
+    },
+    {
+      "start": 2320.72,
+      "end": 2326.0,
+      "text": "buy encoder approach. And that's why we"
+    },
+    {
+      "start": 2323.119,
+      "end": 2329.599,
+      "text": "have to combine them into this reranking"
+    },
+    {
+      "start": 2326.0,
+      "end": 2331.68,
+      "text": "technique in practice. Right? So in a"
+    },
+    {
+      "start": 2329.599,
+      "end": 2336.6400000000003,
+      "text": "nutshell, what we're doing if we come"
+    },
+    {
+      "start": 2331.68,
+      "end": 2339.2,
+      "text": "back is we're first grabbing a bunch of"
+    },
+    {
+      "start": 2336.64,
+      "end": 2341.68,
+      "text": "generally similar pieces of information"
+    },
+    {
+      "start": 2339.2,
+      "end": 2344.0,
+      "text": "from our search space or our immense"
+    },
+    {
+      "start": 2341.68,
+      "end": 2345.52,
+      "text": "body of data. And once we have those"
+    },
+    {
+      "start": 2344.0,
+      "end": 2349.44,
+      "text": "initial"
+    },
+    {
+      "start": 2345.52,
+      "end": 2352.72,
+      "text": "samples or initial chunks of data, we"
+    },
+    {
+      "start": 2349.44,
+      "end": 2355.76,
+      "text": "then analyze those"
+    },
+    {
+      "start": 2352.72,
+      "end": 2358.7999999999997,
+      "text": "for relevance to our query using a"
+    },
+    {
+      "start": 2355.76,
+      "end": 2362.32,
+      "text": "reranker or a cross encoder. A lot of"
+    },
+    {
+      "start": 2358.8,
+      "end": 2364.7200000000003,
+      "text": "lingo in AI or ML, another name for a"
+    },
+    {
+      "start": 2362.32,
+      "end": 2367.599,
+      "text": "cross encoder is a reranker. The"
+    },
+    {
+      "start": 2364.72,
+      "end": 2370.64,
+      "text": "reranker we're using, FYI, is provided"
+    },
+    {
+      "start": 2367.599,
+      "end": 2373.92,
+      "text": "to us by a company called Cohhere."
+    },
+    {
+      "start": 2370.64,
+      "end": 2375.92,
+      "text": "They have one of the best free rankers"
+    },
+    {
+      "start": 2373.92,
+      "end": 2378.7200000000003,
+      "text": "on the market. There are other ones that"
+    },
+    {
+      "start": 2375.92,
+      "end": 2382.32,
+      "text": "are open source. Anyhow, what you do"
+    },
+    {
+      "start": 2378.72,
+      "end": 2386.0789999999997,
+      "text": "here is pass in a query along with a"
+    },
+    {
+      "start": 2382.32,
+      "end": 2389.6800000000003,
+      "text": "list of documents and the reranker gives"
+    },
+    {
+      "start": 2386.079,
+      "end": 2393.76,
+      "text": "you back a relevance score that measures"
+    },
+    {
+      "start": 2389.68,
+      "end": 2396.3199999999997,
+      "text": "how similar the query is to each"
+    },
+    {
+      "start": 2393.76,
+      "end": 2399.32,
+      "text": "document or chunk of your overall search"
+    },
+    {
+      "start": 2396.32,
+      "end": 2399.32,
+      "text": "space."
+    },
+    {
+      "start": 2400.24,
+      "end": 2408.0789999999997,
+      "text": "Let's tweak the hyperparameters of this"
+    },
+    {
+      "start": 2404.24,
+      "end": 2410.7999999999997,
+      "text": "reranking pipeline and"
+    },
+    {
+      "start": 2408.079,
+      "end": 2414.88,
+      "text": "see this"
+    },
+    {
+      "start": 2410.8,
+      "end": 2418.1600000000003,
+      "text": "in a more extreme manner. So let's"
+    },
+    {
+      "start": 2414.88,
+      "end": 2423.92,
+      "text": "increase our similarity search results"
+    },
+    {
+      "start": 2418.16,
+      "end": 2427.7599999999998,
+      "text": "from 10 to 20. Right?"
+    },
+    {
+      "start": 2423.92,
+      "end": 2430.7200000000003,
+      "text": "We can see that the first"
+    },
+    {
+      "start": 2427.76,
+      "end": 2433.0400000000004,
+      "text": "record returned from similarity search,"
+    },
+    {
+      "start": 2430.72,
+      "end": 2436.64,
+      "text": "the fourth one,"
+    },
+    {
+      "start": 2433.04,
+      "end": 2441.04,
+      "text": "the 13th one, and the 15th and the 16th"
+    },
+    {
+      "start": 2436.64,
+      "end": 2444.56,
+      "text": "one are the ones that are actually most"
+    },
+    {
+      "start": 2441.04,
+      "end": 2446.88,
+      "text": "relevant to our search query, not the"
+    },
+    {
+      "start": 2444.56,
+      "end": 2448.88,
+      "text": "top five."
+    },
+    {
+      "start": 2446.88,
+      "end": 2452.6400000000003,
+      "text": "What I'm trying to highlight here is"
+    },
+    {
+      "start": 2448.88,
+      "end": 2456.0,
+      "text": "when similarity search tells you"
+    },
+    {
+      "start": 2452.64,
+      "end": 2458.0,
+      "text": "these documents are the most similar,"
+    },
+    {
+      "start": 2456.0,
+      "end": 2461.119,
+      "text": "it's not necessarily the case because"
+    },
+    {
+      "start": 2458.0,
+      "end": 2463.28,
+      "text": "similarity search is a very crude way of"
+    },
+    {
+      "start": 2461.119,
+      "end": 2466.319,
+      "text": "measuring the similarity of two pieces"
+    },
+    {
+      "start": 2463.28,
+      "end": 2468.5600000000004,
+      "text": "of data. A much more accurate way is to"
+    },
+    {
+      "start": 2466.319,
+      "end": 2472.319,
+      "text": "use a reranker. And you can see here"
+    },
+    {
+      "start": 2468.56,
+      "end": 2475.359,
+      "text": "that the first search result returned by"
+    },
+    {
+      "start": 2472.319,
+      "end": 2477.599,
+      "text": "similarity search was actually assessed"
+    },
+    {
+      "start": 2475.359,
+      "end": 2480.5989999999997,
+      "text": "to be"
+    },
+    {
+      "start": 2477.599,
+      "end": 2480.599,
+      "text": "the"
+    },
+    {
+      "start": 2481.68,
+      "end": 2487.44,
+      "text": "fifth most relevant"
+    },
+    {
+      "start": 2484.64,
+      "end": 2491.2799999999997,
+      "text": "reranked result. You can see that right."
+    },
+    {
+      "start": 2487.44,
+      "end": 2494.64,
+      "text": "So chunk 2379"
+    },
+    {
+      "start": 2491.28,
+      "end": 2497.44,
+      "text": "was scored first right according to"
+    },
+    {
+      "start": 2494.64,
+      "end": 2499.7599999999998,
+      "text": "similarity search or cosign similarity"
+    },
+    {
+      "start": 2497.44,
+      "end": 2501.92,
+      "text": "but according to the cross encoder it's"
+    },
+    {
+      "start": 2499.76,
+      "end": 2504.079,
+      "text": "actually the fifth most relevant"
+    },
+    {
+      "start": 2501.92,
+      "end": 2506.4,
+      "text": "document and it actually scores quite"
+    },
+    {
+      "start": 2504.079,
+      "end": 2510.0,
+      "text": "low"
+    },
+    {
+      "start": 2506.4,
+      "end": 2515.8,
+      "text": "and the"
+    },
+    {
+      "start": 2510.0,
+      "end": 2515.8,
+      "text": "most relevant document which is 476 six"
+    },
+    {
+      "start": 2517.04,
+      "end": 2523.68,
+      "text": "was actually the 16th ranked result"
+    },
+    {
+      "start": 2520.48,
+      "end": 2526.079,
+      "text": "according to similarity search."
+    },
+    {
+      "start": 2523.68,
+      "end": 2529.68,
+      "text": "So as you can see here what the reranker"
+    },
+    {
+      "start": 2526.079,
+      "end": 2531.92,
+      "text": "does for us is helps us identify what's"
+    },
+    {
+      "start": 2529.68,
+      "end": 2534.9199999999996,
+      "text": "actually most relevant."
+    },
+    {
+      "start": 2531.92,
+      "end": 2534.92,
+      "text": "And"
+    },
+    {
+      "start": 2534.96,
+      "end": 2540.56,
+      "text": "I think that's it. So, you now"
+    },
+    {
+      "start": 2538.0,
+      "end": 2543.599,
+      "text": "understand re-ranking"
+    },
+    {
+      "start": 2540.56,
+      "end": 2545.7599999999998,
+      "text": "and in the remaining steps of this"
+    },
+    {
+      "start": 2543.599,
+      "end": 2548.6400000000003,
+      "text": "journey, we're going to layer on a few"
+    },
+    {
+      "start": 2545.76,
+      "end": 2553.1600000000003,
+      "text": "more tricks that makes this even more"
+    },
+    {
+      "start": 2548.64,
+      "end": 2553.16,
+      "text": "powerful and usable."
+    },
+    {
+      "start": 2553.44,
+      "end": 2558.0,
+      "text": "Next up, we're going to show how you can"
+    },
+    {
+      "start": 2555.359,
+      "end": 2559.92,
+      "text": "run a reranking pipeline and after you"
+    },
+    {
+      "start": 2558.0,
+      "end": 2561.68,
+      "text": "retrieve your results from the"
+    },
+    {
+      "start": 2559.92,
+      "end": 2566.16,
+      "text": "re-ranking pipeline, you can pass them"
+    },
+    {
+      "start": 2561.68,
+      "end": 2569.52,
+      "text": "into an LLM or LMM along with your query"
+    },
+    {
+      "start": 2566.16,
+      "end": 2571.7599999999998,
+      "text": "or prompt so that the LLM can perform"
+    },
+    {
+      "start": 2569.52,
+      "end": 2575.2,
+      "text": "all of the analysis and synthesis for"
+    },
+    {
+      "start": 2571.76,
+      "end": 2578.7200000000003,
+      "text": "you and give you a response back that is"
+    },
+    {
+      "start": 2575.2,
+      "end": 2582.64,
+      "text": "more natural. And when you slap a nice"
+    },
+    {
+      "start": 2578.72,
+      "end": 2584.72,
+      "text": "UI on top of the LLM's output along the"
+    },
+    {
+      "start": 2582.64,
+      "end": 2587.68,
+      "text": "lines of what we prepared here, you get"
+    },
+    {
+      "start": 2584.72,
+      "end": 2589.839,
+      "text": "an effect like this."
+    },
+    {
+      "start": 2587.68,
+      "end": 2592.0789999999997,
+      "text": "FYI, we're going to be searching across"
+    },
+    {
+      "start": 2589.839,
+      "end": 2595.7599999999998,
+      "text": "the same exact vector space that we used"
+    },
+    {
+      "start": 2592.079,
+      "end": 2599.2000000000003,
+      "text": "in the previous demo. If you recall, we"
+    },
+    {
+      "start": 2595.76,
+      "end": 2603.0400000000004,
+      "text": "ingested a cookbook that had about 600"
+    },
+    {
+      "start": 2599.2,
+      "end": 2606.3999999999996,
+      "text": "pages of recipes in it. So, let's send a"
+    },
+    {
+      "start": 2603.04,
+      "end": 2608.56,
+      "text": "prompt along the lines of, \"What's an"
+    },
+    {
+      "start": 2606.4,
+      "end": 2612.96,
+      "text": "Italian dish that's quick and easy to"
+    },
+    {
+      "start": 2608.56,
+      "end": 2617.16,
+      "text": "make?\" Site your sources and pull the"
+    },
+    {
+      "start": 2612.96,
+      "end": 2617.16,
+      "text": "dish from your knowledge base."
+    },
+    {
+      "start": 2621.2,
+      "end": 2626.72,
+      "text": "Great. Classic spaghetti with tomato"
+    },
+    {
+      "start": 2624.16,
+      "end": 2629.7599999999998,
+      "text": "sauce. That's on point. It gives me the"
+    },
+    {
+      "start": 2626.72,
+      "end": 2632.319,
+      "text": "ingredients, the instructions,"
+    },
+    {
+      "start": 2629.76,
+      "end": 2634.4,
+      "text": "and if we click on this button, we can"
+    },
+    {
+      "start": 2632.319,
+      "end": 2636.4,
+      "text": "see"
+    },
+    {
+      "start": 2634.4,
+      "end": 2639.839,
+      "text": "the chunks that were retrieved from our"
+    },
+    {
+      "start": 2636.4,
+      "end": 2643.92,
+      "text": "knowledge base. This was the top chunk,"
+    },
+    {
+      "start": 2639.839,
+      "end": 2646.92,
+      "text": "and it does mention spaghetti."
+    },
+    {
+      "start": 2643.92,
+      "end": 2646.92,
+      "text": "And"
+    },
+    {
+      "start": 2647.92,
+      "end": 2655.76,
+      "text": "I don't see anything. Okay, here you see"
+    },
+    {
+      "start": 2650.96,
+      "end": 2658.76,
+      "text": "it says spaghetti with tomato sauce."
+    },
+    {
+      "start": 2655.76,
+      "end": 2658.76,
+      "text": "Right."
+    },
+    {
+      "start": 2659.119,
+      "end": 2667.04,
+      "text": "And"
+    },
+    {
+      "start": 2661.2,
+      "end": 2670.56,
+      "text": "let's run one more query just for fun."
+    },
+    {
+      "start": 2667.04,
+      "end": 2673.68,
+      "text": "What's an Indian dish that's quick and"
+    },
+    {
+      "start": 2670.56,
+      "end": 2677.7999999999997,
+      "text": "easy to make? Site your sources and pull"
+    },
+    {
+      "start": 2673.68,
+      "end": 2677.7999999999997,
+      "text": "the dish from your knowledge base."
+    },
+    {
+      "start": 2681.119,
+      "end": 2687.04,
+      "text": "Great. We get curried vegetables. Here"
+    },
+    {
+      "start": 2685.28,
+      "end": 2689.28,
+      "text": "are the ingredients and the"
+    },
+    {
+      "start": 2687.04,
+      "end": 2693.4,
+      "text": "instructions. And let's take a look at"
+    },
+    {
+      "start": 2689.28,
+      "end": 2693.4,
+      "text": "the referenced chunks."
+    },
+    {
+      "start": 2693.44,
+      "end": 2698.599,
+      "text": "Let's look at the first chunk. And"
+    },
+    {
+      "start": 2700.96,
+      "end": 2707.599,
+      "text": "says Indian curry, but that's not"
+    },
+    {
+      "start": 2703.92,
+      "end": 2711.88,
+      "text": "curried vegetables. Or is it?"
+    },
+    {
+      "start": 2707.599,
+      "end": 2711.88,
+      "text": "Let's take a look at the second chunk."
+    },
+    {
+      "start": 2722.4,
+      "end": 2725.64,
+      "text": "This one."
+    },
+    {
+      "start": 2729.359,
+      "end": 2734.2799999999997,
+      "text": "Here we go. Curry vegetables. You see"
+    },
+    {
+      "start": 2731.28,
+      "end": 2734.28,
+      "text": "that?"
+    },
+    {
+      "start": 2734.72,
+      "end": 2739.8799999999997,
+      "text": "And if we copy this"
+    },
+    {
+      "start": 2740.56,
+      "end": 2746.48,
+      "text": "Let's"
+    },
+    {
+      "start": 2742.24,
+      "end": 2750.68,
+      "text": "confirm that it does come from"
+    },
+    {
+      "start": 2746.48,
+      "end": 2750.68,
+      "text": "our cookbook,"
+    },
+    {
+      "start": 2757.04,
+      "end": 2760.44,
+      "text": "right? Yep."
+    },
+    {
+      "start": 2762.079,
+      "end": 2767.2400000000002,
+      "text": "So, you can see it got most of the"
+    },
+    {
+      "start": 2764.24,
+      "end": 2767.24,
+      "text": "recipe."
+    },
+    {
+      "start": 2770.8,
+      "end": 2778.2400000000002,
+      "text": "1/4 teaspoon pepper,"
+    },
+    {
+      "start": 2774.8,
+      "end": 2781.04,
+      "text": "scalded milk."
+    },
+    {
+      "start": 2778.24,
+      "end": 2783.359,
+      "text": "Yeah, you can see it missed some of the"
+    },
+    {
+      "start": 2781.04,
+      "end": 2786.64,
+      "text": "ingredients. So, what we're going to do"
+    },
+    {
+      "start": 2783.359,
+      "end": 2789.359,
+      "text": "next is we're going to discuss react"
+    },
+    {
+      "start": 2786.64,
+      "end": 2792.48,
+      "text": "agents, which is an abbreviation of"
+    },
+    {
+      "start": 2789.359,
+      "end": 2794.88,
+      "text": "reason and act, right? React agents,"
+    },
+    {
+      "start": 2792.48,
+      "end": 2796.64,
+      "text": "reason and act agents."
+    },
+    {
+      "start": 2794.88,
+      "end": 2800.88,
+      "text": "And what these agents are going to be"
+    },
+    {
+      "start": 2796.64,
+      "end": 2803.68,
+      "text": "able to do is issue multiple queries"
+    },
+    {
+      "start": 2800.88,
+      "end": 2805.359,
+      "text": "against our knowledge base. So that if"
+    },
+    {
+      "start": 2803.68,
+      "end": 2808.0,
+      "text": "it runs into situations like this where"
+    },
+    {
+      "start": 2805.359,
+      "end": 2811.2,
+      "text": "it's not getting the full body of"
+    },
+    {
+      "start": 2808.0,
+      "end": 2813.839,
+      "text": "information needed to answer the prompt,"
+    },
+    {
+      "start": 2811.2,
+      "end": 2816.16,
+      "text": "what it can do is issue multiple queries"
+    },
+    {
+      "start": 2813.839,
+      "end": 2820.0789999999997,
+      "text": "to retrieve all of the chunks around the"
+    },
+    {
+      "start": 2816.16,
+      "end": 2823.68,
+      "text": "one that it's suspecting is related most"
+    },
+    {
+      "start": 2820.079,
+      "end": 2826.88,
+      "text": "to the query. And then it can compile"
+    },
+    {
+      "start": 2823.68,
+      "end": 2828.96,
+      "text": "those and get the overall gist of the"
+    },
+    {
+      "start": 2826.88,
+      "end": 2831.359,
+      "text": "idea and give a complete response"
+    },
+    {
+      "start": 2828.96,
+      "end": 2834.64,
+      "text": "instead of a partial one like we're"
+    },
+    {
+      "start": 2831.359,
+      "end": 2837.92,
+      "text": "seeing here."
+    },
+    {
+      "start": 2834.64,
+      "end": 2841.1189999999997,
+      "text": "Okay. React agents or reason and act"
+    },
+    {
+      "start": 2837.92,
+      "end": 2843.44,
+      "text": "agents. Agents are quite a hot topic at"
+    },
+    {
+      "start": 2841.119,
+      "end": 2845.839,
+      "text": "the time of recording here in 2025 and"
+    },
+    {
+      "start": 2843.44,
+      "end": 2847.599,
+      "text": "rightfully so. If you learn how to use"
+    },
+    {
+      "start": 2845.839,
+      "end": 2850.0,
+      "text": "them, you can get incredible leverage"
+    },
+    {
+      "start": 2847.599,
+      "end": 2852.6400000000003,
+      "text": "for yourself and your company."
+    },
+    {
+      "start": 2850.0,
+      "end": 2854.8,
+      "text": "They're definitely not overhyped, but I"
+    },
+    {
+      "start": 2852.64,
+      "end": 2856.7999999999997,
+      "text": "would premise they are a bit over"
+    },
+    {
+      "start": 2854.8,
+      "end": 2860.88,
+      "text": "complicated."
+    },
+    {
+      "start": 2856.8,
+      "end": 2863.6800000000003,
+      "text": "Here is a diagram of what an agent in a"
+    },
+    {
+      "start": 2860.88,
+      "end": 2867.04,
+      "text": "nutshell is. And this is an actual"
+    },
+    {
+      "start": 2863.68,
+      "end": 2869.68,
+      "text": "agent. A lot of AI systems that people"
+    },
+    {
+      "start": 2867.04,
+      "end": 2872.64,
+      "text": "call an agent are not agents. They're"
+    },
+    {
+      "start": 2869.68,
+      "end": 2874.8799999999997,
+      "text": "actually AI automations. And sometimes"
+    },
+    {
+      "start": 2872.64,
+      "end": 2878.16,
+      "text": "that's actually what you need."
+    },
+    {
+      "start": 2874.88,
+      "end": 2880.96,
+      "text": "So the leverage comes from being able to"
+    },
+    {
+      "start": 2878.16,
+      "end": 2884.8799999999997,
+      "text": "issue a single prompt and have that"
+    },
+    {
+      "start": 2880.96,
+      "end": 2887.52,
+      "text": "single prompt result in multiple very"
+    },
+    {
+      "start": 2884.88,
+      "end": 2890.319,
+      "text": "dynamic LLM calls. And if you can"
+    },
+    {
+      "start": 2887.52,
+      "end": 2893.28,
+      "text": "control them and have them, you know, do"
+    },
+    {
+      "start": 2890.319,
+      "end": 2897.2,
+      "text": "exactly what you need, it can get"
+    },
+    {
+      "start": 2893.28,
+      "end": 2899.6800000000003,
+      "text": "incredible outputs. Right? So here's the"
+    },
+    {
+      "start": 2897.2,
+      "end": 2902.24,
+      "text": "prompt if you're interested that we're"
+    },
+    {
+      "start": 2899.68,
+      "end": 2904.319,
+      "text": "going to use for powering our agent."
+    },
+    {
+      "start": 2902.24,
+      "end": 2906.16,
+      "text": "It's starting with a system message."
+    },
+    {
+      "start": 2904.319,
+      "end": 2909.2,
+      "text": "I've mentioned system message a couple"
+    },
+    {
+      "start": 2906.16,
+      "end": 2912.319,
+      "text": "times in this video. All it is is a"
+    },
+    {
+      "start": 2909.2,
+      "end": 2915.359,
+      "text": "place where you flavor the persona of"
+    },
+    {
+      "start": 2912.319,
+      "end": 2916.88,
+      "text": "the LLM that powers your agent. For"
+    },
+    {
+      "start": 2915.359,
+      "end": 2919.68,
+      "text": "example, you're going to say in the"
+    },
+    {
+      "start": 2916.88,
+      "end": 2922.1600000000003,
+      "text": "system message, act as a lawyer or act"
+    },
+    {
+      "start": 2919.68,
+      "end": 2925.2799999999997,
+      "text": "as a programmer or act as a marketer,"
+    },
+    {
+      "start": 2922.16,
+      "end": 2927.04,
+      "text": "etc. After we specify our system message"
+    },
+    {
+      "start": 2925.28,
+      "end": 2930.8,
+      "text": "in our prompt, the next part of our"
+    },
+    {
+      "start": 2927.04,
+      "end": 2932.88,
+      "text": "prompt is the message list. This is how"
+    },
+    {
+      "start": 2930.8,
+      "end": 2936.2400000000002,
+      "text": "we imbue some sense of memory, right? We"
+    },
+    {
+      "start": 2932.88,
+      "end": 2938.319,
+      "text": "put the chat history. Then we list the"
+    },
+    {
+      "start": 2936.24,
+      "end": 2941.4399999999996,
+      "text": "tools or if you come back to this"
+    },
+    {
+      "start": 2938.319,
+      "end": 2944.4,
+      "text": "diagram, the actions that the agent is"
+    },
+    {
+      "start": 2941.44,
+      "end": 2947.359,
+      "text": "allowed to execute, right?"
+    },
+    {
+      "start": 2944.4,
+      "end": 2948.559,
+      "text": "This is just a list of functions. At the"
+    },
+    {
+      "start": 2947.359,
+      "end": 2951.44,
+      "text": "end of the day, if you're familiar with"
+    },
+    {
+      "start": 2948.559,
+      "end": 2954.48,
+      "text": "programming, a tool is just a function"
+    },
+    {
+      "start": 2951.44,
+      "end": 2956.7200000000003,
+      "text": "that you can call. We're going to cover"
+    },
+    {
+      "start": 2954.48,
+      "end": 2959.359,
+      "text": "tools briefly in the next section and"
+    },
+    {
+      "start": 2956.72,
+      "end": 2962.48,
+      "text": "show how it's not that complicated."
+    },
+    {
+      "start": 2959.359,
+      "end": 2965.7599999999998,
+      "text": "After we specify the tools, we then"
+    },
+    {
+      "start": 2962.48,
+      "end": 2969.52,
+      "text": "provide our prompt, right? And finally,"
+    },
+    {
+      "start": 2965.76,
+      "end": 2971.76,
+      "text": "we give our agent a scratch pad, which"
+    },
+    {
+      "start": 2969.52,
+      "end": 2974.319,
+      "text": "is a place where it can write whatever"
+    },
+    {
+      "start": 2971.76,
+      "end": 2976.1600000000003,
+      "text": "it wants. Depending on our task, it"
+    },
+    {
+      "start": 2974.319,
+      "end": 2978.8,
+      "text": "might need to keep some notes of what's"
+    },
+    {
+      "start": 2976.16,
+      "end": 2982.7999999999997,
+      "text": "going on across all the LLM calls, for"
+    },
+    {
+      "start": 2978.8,
+      "end": 2985.76,
+      "text": "example. And it might write some stuff"
+    },
+    {
+      "start": 2982.8,
+      "end": 2988.1600000000003,
+      "text": "here to help it accomplish the goal"
+    },
+    {
+      "start": 2985.76,
+      "end": 2991.3590000000004,
+      "text": "implied by the prompt."
+    },
+    {
+      "start": 2988.16,
+      "end": 2993.2799999999997,
+      "text": "And that's it. So,"
+    },
+    {
+      "start": 2991.359,
+      "end": 2996.4,
+      "text": "let's"
+    },
+    {
+      "start": 2993.28,
+      "end": 2997.76,
+      "text": "run a little demo here. And"
+    },
+    {
+      "start": 2996.4,
+      "end": 3000.64,
+      "text": "don't pay too much attention to the"
+    },
+    {
+      "start": 2997.76,
+      "end": 3003.2000000000003,
+      "text": "prompt that we're going to issue."
+    },
+    {
+      "start": 3000.64,
+      "end": 3006.72,
+      "text": "Just focus on the fact that for a single"
+    },
+    {
+      "start": 3003.2,
+      "end": 3008.5589999999997,
+      "text": "prompt, it's resulting in multiple LLM"
+    },
+    {
+      "start": 3006.72,
+      "end": 3010.319,
+      "text": "calls under the hood. Up until this"
+    },
+    {
+      "start": 3008.559,
+      "end": 3012.8,
+      "text": "point, we've been sending a prompt and"
+    },
+    {
+      "start": 3010.319,
+      "end": 3015.68,
+      "text": "that has been triggering a single LLM"
+    },
+    {
+      "start": 3012.8,
+      "end": 3019.28,
+      "text": "call. Now, for a single prompt, we're"
+    },
+    {
+      "start": 3015.68,
+      "end": 3023.64,
+      "text": "going to get multiple LLM calls. So,"
+    },
+    {
+      "start": 3019.28,
+      "end": 3023.6400000000003,
+      "text": "here's the prompt we're going to use."
+    },
+    {
+      "start": 3028.72,
+      "end": 3035.9199999999996,
+      "text": "Pretty much what this prompt is doing is"
+    },
+    {
+      "start": 3033.04,
+      "end": 3039.92,
+      "text": "asking our agent to write some marketing"
+    },
+    {
+      "start": 3035.92,
+      "end": 3042.88,
+      "text": "copy and then pass it back into itself"
+    },
+    {
+      "start": 3039.92,
+      "end": 3046.0,
+      "text": "to reflect on how it could be improved."
+    },
+    {
+      "start": 3042.88,
+      "end": 3048.8,
+      "text": "and then pass it back into itself"
+    },
+    {
+      "start": 3046.0,
+      "end": 3051.68,
+      "text": "so it can implement those improvements"
+    },
+    {
+      "start": 3048.8,
+      "end": 3054.88,
+      "text": "and then give us the final product which"
+    },
+    {
+      "start": 3051.68,
+      "end": 3058.319,
+      "text": "we see here. Right? So here we have some"
+    },
+    {
+      "start": 3054.88,
+      "end": 3059.92,
+      "text": "marketing copy for an event."
+    },
+    {
+      "start": 3058.319,
+      "end": 3063.44,
+      "text": "Right?"
+    },
+    {
+      "start": 3059.92,
+      "end": 3067.04,
+      "text": "Perfect. If we come over to Langsmith,"
+    },
+    {
+      "start": 3063.44,
+      "end": 3070.0,
+      "text": "which is a tool that allows us to"
+    },
+    {
+      "start": 3067.04,
+      "end": 3073.7599999999998,
+      "text": "check out what's going on inside"
+    },
+    {
+      "start": 3070.0,
+      "end": 3077.599,
+      "text": "of this little demo,"
+    },
+    {
+      "start": 3073.76,
+      "end": 3079.76,
+      "text": "we can see that for our single prompt,"
+    },
+    {
+      "start": 3077.599,
+      "end": 3083.0,
+      "text": "right,"
+    },
+    {
+      "start": 3079.76,
+      "end": 3083.0,
+      "text": "we had"
+    },
+    {
+      "start": 3083.04,
+      "end": 3091.119,
+      "text": "uh prompt that requested some marketing"
+    },
+    {
+      "start": 3086.72,
+      "end": 3093.2,
+      "text": "copy to be generated, right?"
+    },
+    {
+      "start": 3091.119,
+      "end": 3095.52,
+      "text": "After it writes the marketing copy, we"
+    },
+    {
+      "start": 3093.2,
+      "end": 3097.1189999999997,
+      "text": "ask it to reflect and deliberate and"
+    },
+    {
+      "start": 3095.52,
+      "end": 3099.2,
+      "text": "then return to us the final marketing"
+    },
+    {
+      "start": 3097.119,
+      "end": 3101.28,
+      "text": "copy."
+    },
+    {
+      "start": 3099.2,
+      "end": 3108.24,
+      "text": "So you can see for a single prompt, it"
+    },
+    {
+      "start": 3101.28,
+      "end": 3110.96,
+      "text": "resulted in one 2 3 4 five LLM calls."
+    },
+    {
+      "start": 3108.24,
+      "end": 3116.3999999999996,
+      "text": "And that's the main thing to focus on"
+    },
+    {
+      "start": 3110.96,
+      "end": 3118.0,
+      "text": "here. I would say the downside of agents"
+    },
+    {
+      "start": 3116.4,
+      "end": 3120.88,
+      "text": "despite this incredible amount of"
+    },
+    {
+      "start": 3118.0,
+      "end": 3123.2,
+      "text": "leverage is that it's difficult to"
+    },
+    {
+      "start": 3120.88,
+      "end": 3125.119,
+      "text": "control"
+    },
+    {
+      "start": 3123.2,
+      "end": 3127.2,
+      "text": "what each of these calls does, right?"
+    },
+    {
+      "start": 3125.119,
+      "end": 3130.2400000000002,
+      "text": "So, there are tricks that you can"
+    },
+    {
+      "start": 3127.2,
+      "end": 3132.48,
+      "text": "employ, of course, and as you get"
+    },
+    {
+      "start": 3130.24,
+      "end": 3136.5589999999997,
+      "text": "familiar with them, you'll learn how to"
+    },
+    {
+      "start": 3132.48,
+      "end": 3138.319,
+      "text": "steer them, but it's"
+    },
+    {
+      "start": 3136.559,
+      "end": 3140.4,
+      "text": "difficult to get them to do exactly what"
+    },
+    {
+      "start": 3138.319,
+      "end": 3142.5589999999997,
+      "text": "you want to do every single time. But"
+    },
+    {
+      "start": 3140.4,
+      "end": 3145.92,
+      "text": "anyhow, for some use cases, they're"
+    },
+    {
+      "start": 3142.559,
+      "end": 3147.8390000000004,
+      "text": "appropriate. Anyhow, that's React agent."
+    },
+    {
+      "start": 3145.92,
+      "end": 3150.079,
+      "text": "So,"
+    },
+    {
+      "start": 3147.839,
+      "end": 3153.2,
+      "text": "the reason why I'm focusing on this"
+    },
+    {
+      "start": 3150.079,
+      "end": 3156.559,
+      "text": "React agent term is the React agent"
+    },
+    {
+      "start": 3153.2,
+      "end": 3159.4399999999996,
+      "text": "framework is"
+    },
+    {
+      "start": 3156.559,
+      "end": 3161.8390000000004,
+      "text": "how you can think of most agents under"
+    },
+    {
+      "start": 3159.44,
+      "end": 3163.28,
+      "text": "the hood. So, there's all these agents"
+    },
+    {
+      "start": 3161.839,
+      "end": 3165.2799999999997,
+      "text": "out there. Everybody's building their"
+    },
+    {
+      "start": 3163.28,
+      "end": 3167.599,
+      "text": "own agent,"
+    },
+    {
+      "start": 3165.28,
+      "end": 3171.6800000000003,
+      "text": "but you can"
+    },
+    {
+      "start": 3167.599,
+      "end": 3174.0,
+      "text": "fit most agents that people build or"
+    },
+    {
+      "start": 3171.68,
+      "end": 3176.0,
+      "text": "offer to the world within this React"
+    },
+    {
+      "start": 3174.0,
+      "end": 3179.6,
+      "text": "framework, which"
+    },
+    {
+      "start": 3176.0,
+      "end": 3181.839,
+      "text": "follows this agent loop design, right?"
+    },
+    {
+      "start": 3179.6,
+      "end": 3185.92,
+      "text": "[Music]"
+    },
+    {
+      "start": 3181.839,
+      "end": 3187.2799999999997,
+      "text": "Tools. So tools are nothing more than"
+    },
+    {
+      "start": 3185.92,
+      "end": 3190.48,
+      "text": "functions if you're familiar with"
+    },
+    {
+      "start": 3187.28,
+      "end": 3193.0400000000004,
+      "text": "programming or lists of instructions."
+    },
+    {
+      "start": 3190.48,
+      "end": 3196.72,
+      "text": "Right? In this diagram,"
+    },
+    {
+      "start": 3193.04,
+      "end": 3200.0,
+      "text": "tools refer to step four, right? So the"
+    },
+    {
+      "start": 3196.72,
+      "end": 3203.1189999999997,
+      "text": "actions that an LLM can take are the"
+    },
+    {
+      "start": 3200.0,
+      "end": 3206.079,
+      "text": "tools it has available to it. The way"
+    },
+    {
+      "start": 3203.119,
+      "end": 3209.92,
+      "text": "this works is when we send some prompt"
+    },
+    {
+      "start": 3206.079,
+      "end": 3213.28,
+      "text": "to our LLM, we also include the list of"
+    },
+    {
+      "start": 3209.92,
+      "end": 3217.04,
+      "text": "tools it has available, right? And when"
+    },
+    {
+      "start": 3213.28,
+      "end": 3220.0,
+      "text": "the LLM spits out its output, the LLM"
+    },
+    {
+      "start": 3217.04,
+      "end": 3223.119,
+      "text": "might spit out an output that says when"
+    },
+    {
+      "start": 3220.0,
+      "end": 3225.52,
+      "text": "we parse it, call this tool, right? And"
+    },
+    {
+      "start": 3223.119,
+      "end": 3227.2000000000003,
+      "text": "we call the tool. The tool returns its"
+    },
+    {
+      "start": 3225.52,
+      "end": 3230.559,
+      "text": "results."
+    },
+    {
+      "start": 3227.2,
+      "end": 3232.64,
+      "text": "And we feed that back into the LLM"
+    },
+    {
+      "start": 3230.559,
+      "end": 3236.7200000000003,
+      "text": "again. And the LLM can look at the"
+    },
+    {
+      "start": 3232.64,
+      "end": 3240.4,
+      "text": "output of what the tool call resulted"
+    },
+    {
+      "start": 3236.72,
+      "end": 3243.04,
+      "text": "in. And let's say that accomplished the"
+    },
+    {
+      "start": 3240.4,
+      "end": 3247.52,
+      "text": "task of our prompt. When we parse the"
+    },
+    {
+      "start": 3243.04,
+      "end": 3250.64,
+      "text": "LLM's second output, the LLM might say"
+    },
+    {
+      "start": 3247.52,
+      "end": 3252.48,
+      "text": "stop, right? At which point we break out"
+    },
+    {
+      "start": 3250.64,
+      "end": 3256.319,
+      "text": "of the loop and return that result back"
+    },
+    {
+      "start": 3252.48,
+      "end": 3258.72,
+      "text": "to the caller. So that's tools, right?"
+    },
+    {
+      "start": 3256.319,
+      "end": 3260.96,
+      "text": "So we'll leave it there. I think I don't"
+    },
+    {
+      "start": 3258.72,
+      "end": 3263.2,
+      "text": "need to over complicate it, but pretty"
+    },
+    {
+      "start": 3260.96,
+      "end": 3265.2,
+      "text": "much what we're going to be doing in the"
+    },
+    {
+      "start": 3263.2,
+      "end": 3268.5589999999997,
+      "text": "final step of this video, right, the"
+    },
+    {
+      "start": 3265.2,
+      "end": 3272.319,
+      "text": "finale is we're going to be giving a"
+    },
+    {
+      "start": 3268.559,
+      "end": 3275.76,
+      "text": "React agent access to a retrieval with"
+    },
+    {
+      "start": 3272.319,
+      "end": 3278.72,
+      "text": "reranking tool, right?"
+    },
+    {
+      "start": 3275.76,
+      "end": 3281.119,
+      "text": "Which is going to trigger some query to"
+    },
+    {
+      "start": 3278.72,
+      "end": 3283.1189999999997,
+      "text": "our vector space, right? Or our vector"
+    },
+    {
+      "start": 3281.119,
+      "end": 3285.92,
+      "text": "database."
+    },
+    {
+      "start": 3283.119,
+      "end": 3288.4,
+      "text": "And the LLM is able to decide the"
+    },
+    {
+      "start": 3285.92,
+      "end": 3290.4,
+      "text": "queries, right? instead of us having to"
+    },
+    {
+      "start": 3288.4,
+      "end": 3294.079,
+      "text": "come up with them. So we can give some"
+    },
+    {
+      "start": 3290.4,
+      "end": 3296.319,
+      "text": "prompt to our React agent and the React"
+    },
+    {
+      "start": 3294.079,
+      "end": 3298.319,
+      "text": "agent can break that up into multiple"
+    },
+    {
+      "start": 3296.319,
+      "end": 3301.359,
+      "text": "prompts or"
+    },
+    {
+      "start": 3298.319,
+      "end": 3305.92,
+      "text": "based on our prompt issue multiple calls"
+    },
+    {
+      "start": 3301.359,
+      "end": 3308.16,
+      "text": "to the vector space in order to arrive"
+    },
+    {
+      "start": 3305.92,
+      "end": 3310.48,
+      "text": "at the goal indicated by our prompt etc."
+    },
+    {
+      "start": 3308.16,
+      "end": 3314.0789999999997,
+      "text": "So let's take a look at what that looks"
+    },
+    {
+      "start": 3310.48,
+      "end": 3316.559,
+      "text": "like in step 12."
+    },
+    {
+      "start": 3314.079,
+      "end": 3318.079,
+      "text": "We made it to the finale. Here is the"
+    },
+    {
+      "start": 3316.559,
+      "end": 3321.6800000000003,
+      "text": "state-of-the-art"
+    },
+    {
+      "start": 3318.079,
+      "end": 3325.04,
+      "text": "re-ranking system that we've been"
+    },
+    {
+      "start": 3321.68,
+      "end": 3329.68,
+      "text": "referring to this whole time, right? So,"
+    },
+    {
+      "start": 3325.04,
+      "end": 3332.319,
+      "text": "it's a React agent that has a reranking"
+    },
+    {
+      "start": 3329.68,
+      "end": 3335.1189999999997,
+      "text": "tool included,"
+    },
+    {
+      "start": 3332.319,
+      "end": 3338.319,
+      "text": "aka this is a"
+    },
+    {
+      "start": 3335.119,
+      "end": 3340.96,
+      "text": "form of agentic rag."
+    },
+    {
+      "start": 3338.319,
+      "end": 3344.319,
+      "text": "And we're going to demo this right now."
+    },
+    {
+      "start": 3340.96,
+      "end": 3346.2400000000002,
+      "text": "And for context, we're using the same"
+    },
+    {
+      "start": 3344.319,
+      "end": 3349.44,
+      "text": "vector space that we've been using in"
+    },
+    {
+      "start": 3346.24,
+      "end": 3352.319,
+      "text": "the past few demos or steps. We're going"
+    },
+    {
+      "start": 3349.44,
+      "end": 3354.4,
+      "text": "to be searching across a cookbook that"
+    },
+    {
+      "start": 3352.319,
+      "end": 3358.5589999999997,
+      "text": "consists of about 600 pages worth of"
+    },
+    {
+      "start": 3354.4,
+      "end": 3362.079,
+      "text": "recipes. So, let's issue a prompt like"
+    },
+    {
+      "start": 3358.559,
+      "end": 3363.6800000000003,
+      "text": "this. Give me the best Italian dish that"
+    },
+    {
+      "start": 3362.079,
+      "end": 3366.96,
+      "text": "you know of. It should be quick and"
+    },
+    {
+      "start": 3363.68,
+      "end": 3371.7599999999998,
+      "text": "simple to make. Site your sources. Make"
+    },
+    {
+      "start": 3366.96,
+      "end": 3373.92,
+      "text": "sure that you return the complete recipe"
+    },
+    {
+      "start": 3371.76,
+      "end": 3377.3590000000004,
+      "text": "and refer to your knowledge base for"
+    },
+    {
+      "start": 3373.92,
+      "end": 3381.599,
+      "text": "pulling the recipe. Also, I'd like you"
+    },
+    {
+      "start": 3377.359,
+      "end": 3384.88,
+      "text": "to return the best German recipe that"
+    },
+    {
+      "start": 3381.599,
+      "end": 3387.52,
+      "text": "you have. Same thing. Make sure it's"
+    },
+    {
+      "start": 3384.88,
+      "end": 3390.88,
+      "text": "quick and easy to make and site your"
+    },
+    {
+      "start": 3387.52,
+      "end": 3394.4,
+      "text": "sources and refer to your knowledge base"
+    },
+    {
+      "start": 3390.88,
+      "end": 3396.96,
+      "text": "for returning the German recipe as well."
+    },
+    {
+      "start": 3394.4,
+      "end": 3399.6800000000003,
+      "text": "Also, return"
+    },
+    {
+      "start": 3396.96,
+      "end": 3402.68,
+      "text": "an Indian dish with the same"
+    },
+    {
+      "start": 3399.68,
+      "end": 3402.68,
+      "text": "requirements."
+    },
+    {
+      "start": 3406.319,
+      "end": 3413.7599999999998,
+      "text": "Nice. If we open up the trace or this"
+    },
+    {
+      "start": 3411.04,
+      "end": 3417.2799999999997,
+      "text": "last call to our agentic rag agent, we"
+    },
+    {
+      "start": 3413.76,
+      "end": 3419.92,
+      "text": "can see that three tool calls were made."
+    },
+    {
+      "start": 3417.28,
+      "end": 3423.6800000000003,
+      "text": "This one"
+    },
+    {
+      "start": 3419.92,
+      "end": 3426.2400000000002,
+      "text": "where we searched for Italian dishes."
+    },
+    {
+      "start": 3423.68,
+      "end": 3429.68,
+      "text": "this one where we search for German"
+    },
+    {
+      "start": 3426.24,
+      "end": 3431.68,
+      "text": "dishes and this one where we search for"
+    },
+    {
+      "start": 3429.68,
+      "end": 3433.5989999999997,
+      "text": "Indian dishes,"
+    },
+    {
+      "start": 3431.68,
+      "end": 3435.1189999999997,
+      "text": "right?"
+    },
+    {
+      "start": 3433.599,
+      "end": 3438.079,
+      "text": "And"
+    },
+    {
+      "start": 3435.119,
+      "end": 3440.2400000000002,
+      "text": "we could go down the rabbit hole of"
+    },
+    {
+      "start": 3438.079,
+      "end": 3442.48,
+      "text": "assessing"
+    },
+    {
+      "start": 3440.24,
+      "end": 3445.52,
+      "text": "how accurate this was, but now we're"
+    },
+    {
+      "start": 3442.48,
+      "end": 3449.2,
+      "text": "getting into the realm of evals, which I"
+    },
+    {
+      "start": 3445.52,
+      "end": 3452.24,
+      "text": "will cover in a separate video, but"
+    },
+    {
+      "start": 3449.2,
+      "end": 3455.52,
+      "text": "you get the gist of it, right?"
+    },
+    {
+      "start": 3452.24,
+      "end": 3459.9199999999996,
+      "text": "We have our Italian dish and our German"
+    },
+    {
+      "start": 3455.52,
+      "end": 3461.68,
+      "text": "dish and our Indian dish. Right."
+    },
+    {
+      "start": 3459.92,
+      "end": 3465.0,
+      "text": "So,"
+    },
+    {
+      "start": 3461.68,
+      "end": 3465.0,
+      "text": "welcome to state-of-the-art reranking."
+    }
+  ]
+}

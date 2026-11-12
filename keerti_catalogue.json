@@ -1,0 +1,29 @@
+[
+  {
+    "video_id": "wzssm02u35I",
+    "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+    "channel": "Keerti Purswani",
+    "trainer": "Keerti Purswani",
+    "topic": "RAG",
+    "start_seconds": 0,
+    "end_seconds": 2069.0
+  },
+  {
+    "video_id": "bcCFTk_uwUw",
+    "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+    "channel": "Keerti Purswani",
+    "trainer": "Keerti Purswani",
+    "topic": "LangChain",
+    "start_seconds": 0,
+    "end_seconds": 3064.0
+  },
+  {
+    "video_id": "wvNgKx2e_LA",
+    "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+    "channel": "Keerti Purswani",
+    "trainer": "Keerti Purswani",
+    "topic": "Agents",
+    "start_seconds": 0,
+    "end_seconds": 2705.0
+  }
+]

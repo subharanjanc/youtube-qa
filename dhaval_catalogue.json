@@ -1,0 +1,20 @@
+[
+  {
+    "video_id": "dDkynerzV-Q",
+    "title": "RAG Explained | All about RAG - Retrieval Augmented Generation",
+    "channel": "codebasics",
+    "trainer": "Dhaval Patel",
+    "topic": "RAG",
+    "start_seconds": 0,
+    "end_seconds": 876.0
+  },
+  {
+    "video_id": "vJOGC8QJZJQ",
+    "title": "LangChain vs LangGraph vs LangSmith",
+    "channel": "codebasics",
+    "trainer": "Dhaval Patel",
+    "topic": "LangChain",
+    "start_seconds": 0,
+    "end_seconds": 616.0
+  }
+]

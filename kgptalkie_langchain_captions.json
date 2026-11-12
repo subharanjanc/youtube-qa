@@ -1,0 +1,4588 @@
+{
+  "video_id": "__DATHvlGEY",
+  "title": "LangChain Tutorial for Beginners: Structured Output with Pydantic",
+  "channel": "Laxmi Kant | KGP Talkie",
+  "trainer": "KGP Talkie",
+  "topic": "LangChain",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 2108.0,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 7.12,
+      "text": "Hey everyone, welcome to LangChain Dev"
+    },
+    {
+      "start": 3.48,
+      "end": 9.28,
+      "text": "High Boot Camp. Till now, we have seen"
+    },
+    {
+      "start": 7.12,
+      "end": 12.24,
+      "text": "our first AI program with the LangChain"
+    },
+    {
+      "start": 9.28,
+      "end": 16.6,
+      "text": "and free AI API services. Then we had"
+    },
+    {
+      "start": 12.24,
+      "end": 20.2,
+      "text": "seen LangChain roles and messages. There"
+    },
+    {
+      "start": 16.6,
+      "end": 22.92,
+      "text": "after we had seen LangChain prompts and"
+    },
+    {
+      "start": 20.2,
+      "end": 25.799999999999997,
+      "text": "the template. Then we had seen LangChain"
+    },
+    {
+      "start": 22.92,
+      "end": 27.880000000000003,
+      "text": "chains and the pipe operator."
+    },
+    {
+      "start": 25.8,
+      "end": 30.36,
+      "text": "And it is time to go ahead with the"
+    },
+    {
+      "start": 27.88,
+      "end": 33.04,
+      "text": "structured output. So this is structured"
+    },
+    {
+      "start": 30.36,
+      "end": 34.72,
+      "text": "output is really very important. Once we"
+    },
+    {
+      "start": 33.04,
+      "end": 37.76,
+      "text": "move ahead with this particular lesson,"
+    },
+    {
+      "start": 34.72,
+      "end": 40.16,
+      "text": "then you will understand its importance."
+    },
+    {
+      "start": 37.76,
+      "end": 43.239999999999995,
+      "text": "But before that, let me tell you where"
+    },
+    {
+      "start": 40.16,
+      "end": 45.239999999999995,
+      "text": "we are currently in our boot camp. So"
+    },
+    {
+      "start": 43.24,
+      "end": 46.400000000000006,
+      "text": "this is what we have already covered"
+    },
+    {
+      "start": 45.24,
+      "end": 48.28,
+      "text": "till now."
+    },
+    {
+      "start": 46.4,
+      "end": 50.28,
+      "text": "You will notice this is something which"
+    },
+    {
+      "start": 48.28,
+      "end": 52.6,
+      "text": "we have already covered. And we have"
+    },
+    {
+      "start": 50.28,
+      "end": 54.84,
+      "text": "also covered this one in our previous"
+    },
+    {
+      "start": 52.6,
+      "end": 56.96,
+      "text": "lesson. And this is what we are going to"
+    },
+    {
+      "start": 54.84,
+      "end": 59.84,
+      "text": "cover in this particular lesson. All"
+    },
+    {
+      "start": 56.96,
+      "end": 62.68,
+      "text": "right. Now, let me tell you exactly why"
+    },
+    {
+      "start": 59.84,
+      "end": 65.64,
+      "text": "you need this structured output. Suppose"
+    },
+    {
+      "start": 62.68,
+      "end": 68.08,
+      "text": "that you are designing one sentiment"
+    },
+    {
+      "start": 65.64,
+      "end": 72.08,
+      "text": "analysis"
+    },
+    {
+      "start": 68.08,
+      "end": 73.2,
+      "text": "sentiment analysis model or a system,"
+    },
+    {
+      "start": 72.08,
+      "end": 74.72,
+      "text": "let's say."
+    },
+    {
+      "start": 73.2,
+      "end": 76.32000000000001,
+      "text": "All right. So you are designing this"
+    },
+    {
+      "start": 74.72,
+      "end": 79.12,
+      "text": "particular system."
+    },
+    {
+      "start": 76.32,
+      "end": 82.03999999999999,
+      "text": "In this system, what happen? You provide"
+    },
+    {
+      "start": 79.12,
+      "end": 84.4,
+      "text": "user review here for your product or for"
+    },
+    {
+      "start": 82.04,
+      "end": 87.4,
+      "text": "your services. Then this particular"
+    },
+    {
+      "start": 84.4,
+      "end": 90.92,
+      "text": "system is designed in a such a way that"
+    },
+    {
+      "start": 87.4,
+      "end": 94.92,
+      "text": "it is going to give you the sentiment of"
+    },
+    {
+      "start": 90.92,
+      "end": 97.08,
+      "text": "a user or of the users. Okay. Cool."
+    },
+    {
+      "start": 94.92,
+      "end": 99.84,
+      "text": "Suppose that you have got a positive"
+    },
+    {
+      "start": 97.08,
+      "end": 103.32,
+      "text": "sentiment, and then output is coming"
+    },
+    {
+      "start": 99.84,
+      "end": 106.56,
+      "text": "something like this. Where"
+    },
+    {
+      "start": 103.32,
+      "end": 109.19999999999999,
+      "text": "your model is telling that review is"
+    },
+    {
+      "start": 106.56,
+      "end": 111.56,
+      "text": "moderately positive. There are some"
+    },
+    {
+      "start": 109.2,
+      "end": 113.84,
+      "text": "concern about the negative review as"
+    },
+    {
+      "start": 111.56,
+      "end": 116.72,
+      "text": "well. For example,"
+    },
+    {
+      "start": 113.84,
+      "end": 119.76,
+      "text": "delay was negative, although the product"
+    },
+    {
+      "start": 116.72,
+      "end": 121.92,
+      "text": "quality was good. That is why it is"
+    },
+    {
+      "start": 119.76,
+      "end": 124.72,
+      "text": "positive and then finally customer says"
+    },
+    {
+      "start": 121.92,
+      "end": 127.6,
+      "text": "that the customer will buy it again."
+    },
+    {
+      "start": 124.72,
+      "end": 129.0,
+      "text": "So, if you read all these visually, then"
+    },
+    {
+      "start": 127.6,
+      "end": 131.16,
+      "text": "it is fine."
+    },
+    {
+      "start": 129.0,
+      "end": 134.4,
+      "text": "But, suppose that if you have a millions"
+    },
+    {
+      "start": 131.16,
+      "end": 136.56,
+      "text": "of the review, then in that case reading"
+    },
+    {
+      "start": 134.4,
+      "end": 138.92000000000002,
+      "text": "everything is not possible. Then you"
+    },
+    {
+      "start": 136.56,
+      "end": 141.2,
+      "text": "need the assistant which can analyze"
+    },
+    {
+      "start": 138.92,
+      "end": 143.07999999999998,
+      "text": "everything. For example, how many"
+    },
+    {
+      "start": 141.2,
+      "end": 144.88,
+      "text": "positive reviews are there? How many"
+    },
+    {
+      "start": 143.08,
+      "end": 147.88000000000002,
+      "text": "negative reviews are there? What are the"
+    },
+    {
+      "start": 144.88,
+      "end": 151.88,
+      "text": "percentage? Basically, you cannot do the"
+    },
+    {
+      "start": 147.88,
+      "end": 153.56,
+      "text": "statistics on this particular text data."
+    },
+    {
+      "start": 151.88,
+      "end": 155.51999999999998,
+      "text": "So, ideally what happened with the large"
+    },
+    {
+      "start": 153.56,
+      "end": 158.56,
+      "text": "language model? Large language models"
+    },
+    {
+      "start": 155.52,
+      "end": 160.4,
+      "text": "are designed to generate the text data."
+    },
+    {
+      "start": 158.56,
+      "end": 162.52,
+      "text": "Now, this text data can be something"
+    },
+    {
+      "start": 160.4,
+      "end": 164.48000000000002,
+      "text": "like this, like a running text data like"
+    },
+    {
+      "start": 162.52,
+      "end": 166.959,
+      "text": "you are seeing currently here."
+    },
+    {
+      "start": 164.48,
+      "end": 170.0,
+      "text": "Or this text data could be like"
+    },
+    {
+      "start": 166.959,
+      "end": 172.68,
+      "text": "dictionary or the JSON as well."
+    },
+    {
+      "start": 170.0,
+      "end": 175.36,
+      "text": "So, that is why we need output something"
+    },
+    {
+      "start": 172.68,
+      "end": 176.959,
+      "text": "like this. So, this output which you are"
+    },
+    {
+      "start": 175.36,
+      "end": 179.519,
+      "text": "currently seeing, this is known as a"
+    },
+    {
+      "start": 176.959,
+      "end": 182.32,
+      "text": "structured output."
+    },
+    {
+      "start": 179.519,
+      "end": 185.92000000000002,
+      "text": "Why it is known as a structured output?"
+    },
+    {
+      "start": 182.32,
+      "end": 187.72,
+      "text": "Because its output is structured in a"
+    },
+    {
+      "start": 185.92,
+      "end": 190.64,
+      "text": "particular manner"
+    },
+    {
+      "start": 187.72,
+      "end": 192.88,
+      "text": "so that you can do the analysis."
+    },
+    {
+      "start": 190.64,
+      "end": 194.95899999999997,
+      "text": "For example, here this review score"
+    },
+    {
+      "start": 192.88,
+      "end": 196.68,
+      "text": "which you are seeing here, this is"
+    },
+    {
+      "start": 194.959,
+      "end": 198.20000000000002,
+      "text": "class."
+    },
+    {
+      "start": 196.68,
+      "end": 201.92000000000002,
+      "text": "I'll tell you later how to create this"
+    },
+    {
+      "start": 198.2,
+      "end": 204.2,
+      "text": "class. So, this is your review class"
+    },
+    {
+      "start": 201.92,
+      "end": 206.23899999999998,
+      "text": "which you have defined, let's say. And"
+    },
+    {
+      "start": 204.2,
+      "end": 209.48,
+      "text": "then inside that class you have defined"
+    },
+    {
+      "start": 206.239,
+      "end": 211.519,
+      "text": "these fields. Basically, whatever"
+    },
+    {
+      "start": 209.48,
+      "end": 214.11999999999998,
+      "text": "input reviews are going to come to your"
+    },
+    {
+      "start": 211.519,
+      "end": 218.0,
+      "text": "system, then those reviews are going to"
+    },
+    {
+      "start": 214.12,
+      "end": 219.68,
+      "text": "be classified in these classes only."
+    },
+    {
+      "start": 218.0,
+      "end": 221.76,
+      "text": "So, those classes I mean, in these"
+    },
+    {
+      "start": 219.68,
+      "end": 223.28,
+      "text": "fields of this particular class. So,"
+    },
+    {
+      "start": 221.76,
+      "end": 225.39999999999998,
+      "text": "what are those fields?"
+    },
+    {
+      "start": 223.28,
+      "end": 228.32,
+      "text": "You have a field like rating and then"
+    },
+    {
+      "start": 225.4,
+      "end": 230.36,
+      "text": "the positive and the region. That's all."
+    },
+    {
+      "start": 228.32,
+      "end": 232.56,
+      "text": "No matter what kind of review comes in"
+    },
+    {
+      "start": 230.36,
+      "end": 235.68,
+      "text": "here, all those reviews are going to be"
+    },
+    {
+      "start": 232.56,
+      "end": 238.08,
+      "text": "classified with only these three fields."
+    },
+    {
+      "start": 235.68,
+      "end": 240.4,
+      "text": "If you have a system like this one, then"
+    },
+    {
+      "start": 238.08,
+      "end": 243.04000000000002,
+      "text": "you can use the pandas data frame or you"
+    },
+    {
+      "start": 240.4,
+      "end": 246.44,
+      "text": "can use, you know, the generic Python"
+    },
+    {
+      "start": 243.04,
+      "end": 248.2,
+      "text": "analysis method to analyze all these."
+    },
+    {
+      "start": 246.44,
+      "end": 249.72,
+      "text": "So, this is how it is going to work. All"
+    },
+    {
+      "start": 248.2,
+      "end": 251.92,
+      "text": "right, cool."
+    },
+    {
+      "start": 249.72,
+      "end": 254.8,
+      "text": "All right, now let's go ahead and see"
+    },
+    {
+      "start": 251.92,
+      "end": 258.2,
+      "text": "how this particular class is designed."
+    },
+    {
+      "start": 254.8,
+      "end": 261.0,
+      "text": "So, this is known as the data model."
+    },
+    {
+      "start": 258.2,
+      "end": 262.919,
+      "text": "All right? Because it is stores our"
+    },
+    {
+      "start": 261.0,
+      "end": 264.04,
+      "text": "data, that is why it is known as a data"
+    },
+    {
+      "start": 262.919,
+      "end": 266.52,
+      "text": "model."
+    },
+    {
+      "start": 264.04,
+      "end": 269.56,
+      "text": "And this data model is designed using"
+    },
+    {
+      "start": 266.52,
+      "end": 271.32,
+      "text": "the Pydantic model."
+    },
+    {
+      "start": 269.56,
+      "end": 273.68,
+      "text": "All right."
+    },
+    {
+      "start": 271.32,
+      "end": 275.88,
+      "text": "So, the Pydantic is a Python library"
+    },
+    {
+      "start": 273.68,
+      "end": 278.40000000000003,
+      "text": "that is used for the"
+    },
+    {
+      "start": 275.88,
+      "end": 280.36,
+      "text": "creating the structured output. All"
+    },
+    {
+      "start": 278.4,
+      "end": 282.96,
+      "text": "right, basically it is kind of the data"
+    },
+    {
+      "start": 280.36,
+      "end": 285.88,
+      "text": "model where we can define what kind of"
+    },
+    {
+      "start": 282.96,
+      "end": 288.32,
+      "text": "input fields or output field we need to"
+    },
+    {
+      "start": 285.88,
+      "end": 291.08,
+      "text": "have with our data."
+    },
+    {
+      "start": 288.32,
+      "end": 292.919,
+      "text": "So, here we define as a class, first of"
+    },
+    {
+      "start": 291.08,
+      "end": 295.24,
+      "text": "all, and then this is going to be our"
+    },
+    {
+      "start": 292.919,
+      "end": 297.2,
+      "text": "object, let's say the review score, and"
+    },
+    {
+      "start": 295.24,
+      "end": 299.2,
+      "text": "then we are extending it with the base"
+    },
+    {
+      "start": 297.2,
+      "end": 300.59999999999997,
+      "text": "model. Again, this is the Pydantic base"
+    },
+    {
+      "start": 299.2,
+      "end": 303.03999999999996,
+      "text": "model."
+    },
+    {
+      "start": 300.6,
+      "end": 304.84000000000003,
+      "text": "Then there we are defining here"
+    },
+    {
+      "start": 303.04,
+      "end": 306.76000000000005,
+      "text": "three"
+    },
+    {
+      "start": 304.84,
+      "end": 308.44,
+      "text": "We are defining here uh three fields."
+    },
+    {
+      "start": 306.76,
+      "end": 310.4,
+      "text": "Currently, it seems like we have only"
+    },
+    {
+      "start": 308.44,
+      "end": 312.96,
+      "text": "two fields here. The previously we had"
+    },
+    {
+      "start": 310.4,
+      "end": 314.84,
+      "text": "also seen the reason field as well. All"
+    },
+    {
+      "start": 312.96,
+      "end": 315.88,
+      "text": "right. So, let's say these three fields"
+    },
+    {
+      "start": 314.84,
+      "end": 317.76,
+      "text": "are there."
+    },
+    {
+      "start": 315.88,
+      "end": 319.76,
+      "text": "So, field name comes first, thereafter"
+    },
+    {
+      "start": 317.76,
+      "end": 321.919,
+      "text": "the type of field comes here. So, the"
+    },
+    {
+      "start": 319.76,
+      "end": 323.76,
+      "text": "rating is going to be the integer. And"
+    },
+    {
+      "start": 321.919,
+      "end": 327.2,
+      "text": "then what this field you see here, this"
+    },
+    {
+      "start": 323.76,
+      "end": 330.64,
+      "text": "is going to tell us that"
+    },
+    {
+      "start": 327.2,
+      "end": 333.47999999999996,
+      "text": "what how basically how our LLM is going"
+    },
+    {
+      "start": 330.64,
+      "end": 335.64,
+      "text": "to calculate this, basically. All right?"
+    },
+    {
+      "start": 333.48,
+      "end": 337.56,
+      "text": "So, how our LLM is going to calculate"
+    },
+    {
+      "start": 335.64,
+      "end": 339.84,
+      "text": "this particular rating. So, it is going"
+    },
+    {
+      "start": 337.56,
+      "end": 342.28000000000003,
+      "text": "to calculate like if rating is a"
+    },
+    {
+      "start": 339.84,
+      "end": 344.76,
+      "text": "terrible, then give one rating. If it is"
+    },
+    {
+      "start": 342.28,
+      "end": 346.08,
+      "text": "excellent, then give five rating."
+    },
+    {
+      "start": 344.76,
+      "end": 349.12,
+      "text": "Similarly,"
+    },
+    {
+      "start": 346.08,
+      "end": 350.71999999999997,
+      "text": "if rating is classified as a positive,"
+    },
+    {
+      "start": 349.12,
+      "end": 352.36,
+      "text": "then this is going to be the boolean"
+    },
+    {
+      "start": 350.72,
+      "end": 354.08000000000004,
+      "text": "here. I mean, this particular field is"
+    },
+    {
+      "start": 352.36,
+      "end": 356.76,
+      "text": "going to be the boolean, so it can be"
+    },
+    {
+      "start": 354.08,
+      "end": 359.03999999999996,
+      "text": "either true or it can be false here."
+    },
+    {
+      "start": 356.76,
+      "end": 361.88,
+      "text": "Then again here, this description inside"
+    },
+    {
+      "start": 359.04,
+      "end": 364.44,
+      "text": "this field says that how this positive"
+    },
+    {
+      "start": 361.88,
+      "end": 367.0,
+      "text": "or basically how true and false of this"
+    },
+    {
+      "start": 364.44,
+      "end": 368.12,
+      "text": "positive need to be decided."
+    },
+    {
+      "start": 367.0,
+      "end": 369.8,
+      "text": "Thereafter, let's say if you have a"
+    },
+    {
+      "start": 368.12,
+      "end": 372.44,
+      "text": "reason, then this reason would be here"
+    },
+    {
+      "start": 369.8,
+      "end": 374.6,
+      "text": "the STR type, and then inside the field"
+    },
+    {
+      "start": 372.44,
+      "end": 376.16,
+      "text": "you can say here with the description"
+    },
+    {
+      "start": 374.6,
+      "end": 378.88,
+      "text": "that"
+    },
+    {
+      "start": 376.16,
+      "end": 381.40000000000003,
+      "text": "why LLM thinks that it is positive or"
+    },
+    {
+      "start": 378.88,
+      "end": 383.48,
+      "text": "negative and why LLM gave a particular"
+    },
+    {
+      "start": 381.4,
+      "end": 385.23999999999995,
+      "text": "rating for a particular"
+    },
+    {
+      "start": 383.48,
+      "end": 387.16,
+      "text": "uh for a particular review."
+    },
+    {
+      "start": 385.24,
+      "end": 389.64,
+      "text": "All right. So,"
+    },
+    {
+      "start": 387.16,
+      "end": 391.84000000000003,
+      "text": "finally, if you have your Pydantic data"
+    },
+    {
+      "start": 389.64,
+      "end": 394.76,
+      "text": "model something like this, then it is"
+    },
+    {
+      "start": 391.84,
+      "end": 396.35999999999996,
+      "text": "sent to your LLM something like this."
+    },
+    {
+      "start": 394.76,
+      "end": 398.76,
+      "text": "So, finally it becomes actually the"
+    },
+    {
+      "start": 396.36,
+      "end": 401.08000000000004,
+      "text": "JSON. When it goes to the LLM, then it"
+    },
+    {
+      "start": 398.76,
+      "end": 403.76,
+      "text": "becomes the JSON. So, this JSON data"
+    },
+    {
+      "start": 401.08,
+      "end": 406.4,
+      "text": "goes inside the LLM actually. Now, let's"
+    },
+    {
+      "start": 403.76,
+      "end": 408.88,
+      "text": "go ahead and see how another feature in"
+    },
+    {
+      "start": 406.4,
+      "end": 411.0,
+      "text": "Pydantic data model works. That feature"
+    },
+    {
+      "start": 408.88,
+      "end": 412.84,
+      "text": "is known as literal."
+    },
+    {
+      "start": 411.0,
+      "end": 415.0,
+      "text": "All right. So, this literal is going to"
+    },
+    {
+      "start": 412.84,
+      "end": 417.52,
+      "text": "make sure whenever you are doing a"
+    },
+    {
+      "start": 415.0,
+      "end": 419.56,
+      "text": "classification or a structured output,"
+    },
+    {
+      "start": 417.52,
+      "end": 422.68,
+      "text": "this literal is going to make sure that"
+    },
+    {
+      "start": 419.56,
+      "end": 426.0,
+      "text": "your LLM is going to give only one"
+    },
+    {
+      "start": 422.68,
+      "end": 427.44,
+      "text": "output or only one value out of these"
+    },
+    {
+      "start": 426.0,
+      "end": 428.919,
+      "text": "given value."
+    },
+    {
+      "start": 427.44,
+      "end": 431.2,
+      "text": "For example, let's say if you are trying"
+    },
+    {
+      "start": 428.919,
+      "end": 434.12,
+      "text": "to classify category of a particular"
+    },
+    {
+      "start": 431.2,
+      "end": 436.32,
+      "text": "review or a particular complaint, then"
+    },
+    {
+      "start": 434.12,
+      "end": 438.76,
+      "text": "you just don't want to create a hundreds"
+    },
+    {
+      "start": 436.32,
+      "end": 441.32,
+      "text": "of the category. What you want here, you"
+    },
+    {
+      "start": 438.76,
+      "end": 444.8,
+      "text": "want a particular set of the category in"
+    },
+    {
+      "start": 441.32,
+      "end": 447.15999999999997,
+      "text": "which those reviews or complaints need"
+    },
+    {
+      "start": 444.8,
+      "end": 449.8,
+      "text": "to be classified. So, in that case, you"
+    },
+    {
+      "start": 447.16,
+      "end": 452.08000000000004,
+      "text": "can use the Pydantic literal to define"
+    },
+    {
+      "start": 449.8,
+      "end": 455.40000000000003,
+      "text": "that, \"Okay, here is the list of the"
+    },
+    {
+      "start": 452.08,
+      "end": 459.2,
+      "text": "category which I want to use and then"
+    },
+    {
+      "start": 455.4,
+      "end": 460.88,
+      "text": "classify our complaint and review in"
+    },
+    {
+      "start": 459.2,
+      "end": 462.4,
+      "text": "only those particular"
+    },
+    {
+      "start": 460.88,
+      "end": 465.08,
+      "text": "only"
+    },
+    {
+      "start": 462.4,
+      "end": 467.03999999999996,
+      "text": "in only those particular category."
+    },
+    {
+      "start": 465.08,
+      "end": 468.68,
+      "text": "For example, here you have a billing,"
+    },
+    {
+      "start": 467.04,
+      "end": 470.64000000000004,
+      "text": "you have a delivery, you have a product"
+    },
+    {
+      "start": 468.68,
+      "end": 473.8,
+      "text": "and account. Otherwise, what happened"
+    },
+    {
+      "start": 470.64,
+      "end": 475.52,
+      "text": "here? So, sometimes your LLM can give"
+    },
+    {
+      "start": 473.8,
+      "end": 477.68,
+      "text": "you the category billing, then billing"
+    },
+    {
+      "start": 475.52,
+      "end": 480.24,
+      "text": "department, money problem, payment and"
+    },
+    {
+      "start": 477.68,
+      "end": 482.68,
+      "text": "finance. Ideally, you will notice here"
+    },
+    {
+      "start": 480.24,
+      "end": 485.32,
+      "text": "all these four category which is coming"
+    },
+    {
+      "start": 482.68,
+      "end": 486.84000000000003,
+      "text": "here without providing literal is"
+    },
+    {
+      "start": 485.32,
+      "end": 488.2,
+      "text": "actually the problem of the billing"
+    },
+    {
+      "start": 486.84,
+      "end": 490.32,
+      "text": "itself."
+    },
+    {
+      "start": 488.2,
+      "end": 492.52,
+      "text": "All right? So, you can avoid problem"
+    },
+    {
+      "start": 490.32,
+      "end": 494.28,
+      "text": "something like this if you use here the"
+    },
+    {
+      "start": 492.52,
+      "end": 496.79999999999995,
+      "text": "literal. So, in that case, what"
+    },
+    {
+      "start": 494.28,
+      "end": 498.64,
+      "text": "happened? You can provide a list there"
+    },
+    {
+      "start": 496.8,
+      "end": 501.08,
+      "text": "what kind of the category you want as a"
+    },
+    {
+      "start": 498.64,
+      "end": 504.36,
+      "text": "output, then your LLM is going to select"
+    },
+    {
+      "start": 501.08,
+      "end": 507.03999999999996,
+      "text": "only one category out of all the"
+    },
+    {
+      "start": 504.36,
+      "end": 509.76,
+      "text": "selected or provided category."
+    },
+    {
+      "start": 507.04,
+      "end": 512.36,
+      "text": "All right. Cool. Now, let's go ahead and"
+    },
+    {
+      "start": 509.76,
+      "end": 514.4,
+      "text": "see what is the basic problem with the"
+    },
+    {
+      "start": 512.36,
+      "end": 517.4,
+      "text": "review score which we had seen"
+    },
+    {
+      "start": 514.4,
+      "end": 522.159,
+      "text": "previously. All right? So, at that time"
+    },
+    {
+      "start": 517.4,
+      "end": 526.1999999999999,
+      "text": "in our review score, we had got rating"
+    },
+    {
+      "start": 522.159,
+      "end": 529.28,
+      "text": "and then we had got there uh"
+    },
+    {
+      "start": 526.2,
+      "end": 532.2800000000001,
+      "text": "I guess rating and then it was the"
+    },
+    {
+      "start": 529.28,
+      "end": 532.28,
+      "text": "reason as well."
+    },
+    {
+      "start": 532.4,
+      "end": 537.68,
+      "text": "And another was another one was I don't"
+    },
+    {
+      "start": 535.76,
+      "end": 539.8,
+      "text": "know what was that. I guess the positive"
+    },
+    {
+      "start": 537.68,
+      "end": 543.64,
+      "text": "or the negative I guess it was."
+    },
+    {
+      "start": 539.8,
+      "end": 545.5999999999999,
+      "text": "Okay. So, here it was the positive."
+    },
+    {
+      "start": 543.64,
+      "end": 546.8,
+      "text": "Okay, cool. So, you have all these"
+    },
+    {
+      "start": 545.6,
+      "end": 549.08,
+      "text": "three."
+    },
+    {
+      "start": 546.8,
+      "end": 552.1999999999999,
+      "text": "So, you have defined your data model to"
+    },
+    {
+      "start": 549.08,
+      "end": 554.0,
+      "text": "classify any complaint, any review in"
+    },
+    {
+      "start": 552.2,
+      "end": 556.36,
+      "text": "these three fields."
+    },
+    {
+      "start": 554.0,
+      "end": 558.96,
+      "text": "But the problem happened when your"
+    },
+    {
+      "start": 556.36,
+      "end": 561.28,
+      "text": "review or the complaint is not falling"
+    },
+    {
+      "start": 558.96,
+      "end": 564.44,
+      "text": "in any of these category. For example,"
+    },
+    {
+      "start": 561.28,
+      "end": 566.76,
+      "text": "you cannot say this is a positive review"
+    },
+    {
+      "start": 564.44,
+      "end": 569.2,
+      "text": "or negative review. There is no way to"
+    },
+    {
+      "start": 566.76,
+      "end": 571.52,
+      "text": "telling this as a positive or review."
+    },
+    {
+      "start": 569.2,
+      "end": 573.72,
+      "text": "And similarly, for this one, you don't"
+    },
+    {
+      "start": 571.52,
+      "end": 576.64,
+      "text": "have any way to tell that whether it is"
+    },
+    {
+      "start": 573.72,
+      "end": 579.8000000000001,
+      "text": "positive or negative review."
+    },
+    {
+      "start": 576.64,
+      "end": 581.6,
+      "text": "But you have provided only options here"
+    },
+    {
+      "start": 579.8,
+      "end": 584.3599999999999,
+      "text": "true or false."
+    },
+    {
+      "start": 581.6,
+      "end": 587.52,
+      "text": "And then here in the rating 1 to 5, then"
+    },
+    {
+      "start": 584.36,
+      "end": 589.64,
+      "text": "your LLM is bound to classify it in one"
+    },
+    {
+      "start": 587.52,
+      "end": 592.0,
+      "text": "of these categories."
+    },
+    {
+      "start": 589.64,
+      "end": 593.92,
+      "text": "So, what our LLM is going to tell here"
+    },
+    {
+      "start": 592.0,
+      "end": 595.8,
+      "text": "for this particular problem statement, I"
+    },
+    {
+      "start": 593.92,
+      "end": 598.16,
+      "text": "don't know. But, ideally it might tell"
+    },
+    {
+      "start": 595.8,
+      "end": 600.52,
+      "text": "you positive and gives rating some two"
+    },
+    {
+      "start": 598.16,
+      "end": 603.16,
+      "text": "or three. I don't know exactly. But,"
+    },
+    {
+      "start": 600.52,
+      "end": 605.24,
+      "text": "overall you understand here the problem."
+    },
+    {
+      "start": 603.16,
+      "end": 607.4399999999999,
+      "text": "If you don't provide any way to classify"
+    },
+    {
+      "start": 605.24,
+      "end": 609.92,
+      "text": "that this does not belong with the"
+    },
+    {
+      "start": 607.44,
+      "end": 612.8000000000001,
+      "text": "rating, then your LLM is always going to"
+    },
+    {
+      "start": 609.92,
+      "end": 615.68,
+      "text": "classify these kind of ratings in"
+    },
+    {
+      "start": 612.8,
+      "end": 618.56,
+      "text": "provided options here. I mean"
+    },
+    {
+      "start": 615.68,
+      "end": 621.2399999999999,
+      "text": "I mean in these fields only."
+    },
+    {
+      "start": 618.56,
+      "end": 624.7199999999999,
+      "text": "So, what you can do here, you can"
+    },
+    {
+      "start": 621.24,
+      "end": 626.92,
+      "text": "actually fix this with adding one"
+    },
+    {
+      "start": 624.72,
+      "end": 628.84,
+      "text": "additional fields there."
+    },
+    {
+      "start": 626.92,
+      "end": 631.8,
+      "text": "So, if you add just one additional field"
+    },
+    {
+      "start": 628.84,
+      "end": 635.08,
+      "text": "is a review here. All right. So, if you"
+    },
+    {
+      "start": 631.8,
+      "end": 638.0799999999999,
+      "text": "just add here one additional field here"
+    },
+    {
+      "start": 635.08,
+      "end": 640.08,
+      "text": "is it a review or not at all, right? So,"
+    },
+    {
+      "start": 638.08,
+      "end": 641.96,
+      "text": "if it is a review, then it is going to"
+    },
+    {
+      "start": 640.08,
+      "end": 644.0,
+      "text": "be true. If it is not a review at all,"
+    },
+    {
+      "start": 641.96,
+      "end": 645.72,
+      "text": "then it can be false. And if it is"
+    },
+    {
+      "start": 644.0,
+      "end": 647.6,
+      "text": "false, then you can ignore all these"
+    },
+    {
+      "start": 645.72,
+      "end": 649.52,
+      "text": "automatically. There is no issue in that"
+    },
+    {
+      "start": 647.6,
+      "end": 651.52,
+      "text": "case then. All right, everyone. Now,"
+    },
+    {
+      "start": 649.52,
+      "end": 653.96,
+      "text": "let's go ahead and get started with the"
+    },
+    {
+      "start": 651.52,
+      "end": 656.16,
+      "text": "coding part so that you can understand"
+    },
+    {
+      "start": 653.96,
+      "end": 657.5600000000001,
+      "text": "all the fundamentals which we have just"
+    },
+    {
+      "start": 656.16,
+      "end": 659.1999999999999,
+      "text": "discussed."
+    },
+    {
+      "start": 657.56,
+      "end": 660.76,
+      "text": "So, before I get started with the coding"
+    },
+    {
+      "start": 659.2,
+      "end": 663.0400000000001,
+      "text": "part, let me just make sure you"
+    },
+    {
+      "start": 660.76,
+      "end": 666.24,
+      "text": "understand a few basic things."
+    },
+    {
+      "start": 663.04,
+      "end": 668.0799999999999,
+      "text": "We are using here open router API key."
+    },
+    {
+      "start": 666.24,
+      "end": 670.44,
+      "text": "This is something which I have shown in"
+    },
+    {
+      "start": 668.08,
+      "end": 672.88,
+      "text": "the first lesson so that you can make"
+    },
+    {
+      "start": 670.44,
+      "end": 675.1600000000001,
+      "text": "sure you get started with the free AI"
+    },
+    {
+      "start": 672.88,
+      "end": 678.8389999999999,
+      "text": "API services. I'll be using here a"
+    },
+    {
+      "start": 675.16,
+      "end": 680.24,
+      "text": "Neumotron 3.5 lightning model, which is"
+    },
+    {
+      "start": 678.839,
+      "end": 684.32,
+      "text": "released"
+    },
+    {
+      "start": 680.24,
+      "end": 687.52,
+      "text": "by the Nvidia. And this came just"
+    },
+    {
+      "start": 684.32,
+      "end": 690.2,
+      "text": "few days back. That was the August 11,"
+    },
+    {
+      "start": 687.52,
+      "end": 692.3199999999999,
+      "text": "2026. So, this is really very advanced"
+    },
+    {
+      "start": 690.2,
+      "end": 694.08,
+      "text": "model. I'll be using this one."
+    },
+    {
+      "start": 692.32,
+      "end": 695.7600000000001,
+      "text": "Okay, cool. Let's go ahead and come back"
+    },
+    {
+      "start": 694.08,
+      "end": 698.24,
+      "text": "here and then let me just show you here"
+    },
+    {
+      "start": 695.76,
+      "end": 700.56,
+      "text": "in one minute variable. So, this is open"
+    },
+    {
+      "start": 698.24,
+      "end": 702.76,
+      "text": "router API key and here is the LangSmith"
+    },
+    {
+      "start": 700.56,
+      "end": 705.4399999999999,
+      "text": "setup so that we can do our project"
+    },
+    {
+      "start": 702.76,
+      "end": 706.84,
+      "text": "tracing as well if it is needed at the"
+    },
+    {
+      "start": 705.44,
+      "end": 708.8000000000001,
+      "text": "LangSmith."
+    },
+    {
+      "start": 706.84,
+      "end": 711.48,
+      "text": "All right, having said that, let's go"
+    },
+    {
+      "start": 708.8,
+      "end": 713.28,
+      "text": "ahead and get started with this."
+    },
+    {
+      "start": 711.48,
+      "end": 717.04,
+      "text": "So, as usual, you know, we are going to"
+    },
+    {
+      "start": 713.28,
+      "end": 719.04,
+      "text": "first import the load. env"
+    },
+    {
+      "start": 717.04,
+      "end": 721.56,
+      "text": "and then we are going to import the chat"
+    },
+    {
+      "start": 719.04,
+      "end": 723.7199999999999,
+      "text": "open router. This one is going to use to"
+    },
+    {
+      "start": 721.56,
+      "end": 726.9599999999999,
+      "text": "load this environment variable. This one"
+    },
+    {
+      "start": 723.72,
+      "end": 728.76,
+      "text": "is going to use to connect with our LLM."
+    },
+    {
+      "start": 726.96,
+      "end": 730.9200000000001,
+      "text": "And then finally, we are going to load"
+    },
+    {
+      "start": 728.76,
+      "end": 732.92,
+      "text": "our .env."
+    },
+    {
+      "start": 730.92,
+      "end": 734.76,
+      "text": "So, once you run this cell, then it is"
+    },
+    {
+      "start": 732.92,
+      "end": 737.0,
+      "text": "going to give you true, that means our"
+    },
+    {
+      "start": 734.76,
+      "end": 738.6,
+      "text": "environment variable is loaded. And then"
+    },
+    {
+      "start": 737.0,
+      "end": 741.72,
+      "text": "finally, we are going to get here the"
+    },
+    {
+      "start": 738.6,
+      "end": 744.08,
+      "text": "model instance using chat open router."
+    },
+    {
+      "start": 741.72,
+      "end": 746.6,
+      "text": "And we are using here NVIDIA NeMo Tron"
+    },
+    {
+      "start": 744.08,
+      "end": 748.9200000000001,
+      "text": "3.5 lightning free model. Now, let's go"
+    },
+    {
+      "start": 746.6,
+      "end": 751.72,
+      "text": "ahead and try to understand why do we"
+    },
+    {
+      "start": 748.92,
+      "end": 753.68,
+      "text": "really need structured output? So, I'm"
+    },
+    {
+      "start": 751.72,
+      "end": 756.4,
+      "text": "going to show you this through the code"
+    },
+    {
+      "start": 753.68,
+      "end": 758.2399999999999,
+      "text": "itself. I have a very simple review like"
+    },
+    {
+      "start": 756.4,
+      "end": 760.68,
+      "text": "this, arrived 2 days late, but the"
+    },
+    {
+      "start": 758.24,
+      "end": 763.0,
+      "text": "quality is excellent, would buy again."
+    },
+    {
+      "start": 760.68,
+      "end": 765.8,
+      "text": "And then I'm just going to simply call"
+    },
+    {
+      "start": 763.0,
+      "end": 768.08,
+      "text": "my model here, model.invoke, how"
+    },
+    {
+      "start": 765.8,
+      "end": 769.64,
+      "text": "positive is this review? And that's all"
+    },
+    {
+      "start": 768.08,
+      "end": 770.72,
+      "text": "I'm going to do here."
+    },
+    {
+      "start": 769.64,
+      "end": 773.0,
+      "text": "So,"
+    },
+    {
+      "start": 770.72,
+      "end": 774.96,
+      "text": "this is my prompt and then this review"
+    },
+    {
+      "start": 773.0,
+      "end": 777.32,
+      "text": "gets added here and then finally with"
+    },
+    {
+      "start": 774.96,
+      "end": 778.96,
+      "text": "dot text, I'm going to get the output."
+    },
+    {
+      "start": 777.32,
+      "end": 781.32,
+      "text": "So, this is the output. This is what I"
+    },
+    {
+      "start": 778.96,
+      "end": 783.96,
+      "text": "was talking earlier. So, in our slide,"
+    },
+    {
+      "start": 781.32,
+      "end": 786.1600000000001,
+      "text": "you had seen here how this structured"
+    },
+    {
+      "start": 783.96,
+      "end": 788.6800000000001,
+      "text": "output was, I mean, how the output was"
+    },
+    {
+      "start": 786.16,
+      "end": 790.04,
+      "text": "coming before the structured output."
+    },
+    {
+      "start": 788.68,
+      "end": 792.28,
+      "text": "All right, so this is how we are getting"
+    },
+    {
+      "start": 790.04,
+      "end": 795.0,
+      "text": "here. We are getting the output in"
+    },
+    {
+      "start": 792.28,
+      "end": 796.8,
+      "text": "running text format. And if you have a"
+    },
+    {
+      "start": 795.0,
+      "end": 799.2,
+      "text": "millions of the review and you get all"
+    },
+    {
+      "start": 796.8,
+      "end": 801.24,
+      "text": "these text data, then there is no use of"
+    },
+    {
+      "start": 799.2,
+      "end": 803.72,
+      "text": "the LLM because anyway, you are getting"
+    },
+    {
+      "start": 801.24,
+      "end": 806.12,
+      "text": "text data out of the text data. So, you"
+    },
+    {
+      "start": 803.72,
+      "end": 808.76,
+      "text": "cannot do the analysis. For one and two"
+    },
+    {
+      "start": 806.12,
+      "end": 811.36,
+      "text": "review, it is perfectly fine. All right?"
+    },
+    {
+      "start": 808.76,
+      "end": 813.04,
+      "text": "And even our even after that, if you run"
+    },
+    {
+      "start": 811.36,
+      "end": 815.84,
+      "text": "it multiple time, you will be getting"
+    },
+    {
+      "start": 813.04,
+      "end": 817.9599999999999,
+      "text": "here varied output. Every time you are"
+    },
+    {
+      "start": 815.84,
+      "end": 819.2800000000001,
+      "text": "not going to get the consistent output."
+    },
+    {
+      "start": 817.96,
+      "end": 821.2,
+      "text": "That is something which we had seen"
+    },
+    {
+      "start": 819.28,
+      "end": 823.0799999999999,
+      "text": "previously when we were testing the"
+    },
+    {
+      "start": 821.2,
+      "end": 826.5200000000001,
+      "text": "temperature and we were seeing the"
+    },
+    {
+      "start": 823.08,
+      "end": 828.48,
+      "text": "variability of the LLM models."
+    },
+    {
+      "start": 826.52,
+      "end": 830.3199999999999,
+      "text": "So, how to solve this problem? So, to"
+    },
+    {
+      "start": 828.48,
+      "end": 832.64,
+      "text": "solve this problem, we need to use here"
+    },
+    {
+      "start": 830.32,
+      "end": 835.32,
+      "text": "the Pydantic model like we had used"
+    },
+    {
+      "start": 832.64,
+      "end": 837.16,
+      "text": "previously here. I mean, during our"
+    },
+    {
+      "start": 835.32,
+      "end": 839.08,
+      "text": "presentation, I told you we need to use"
+    },
+    {
+      "start": 837.16,
+      "end": 840.88,
+      "text": "the Pydantic model like you are"
+    },
+    {
+      "start": 839.08,
+      "end": 843.6,
+      "text": "currently seeing here. So, we need to"
+    },
+    {
+      "start": 840.88,
+      "end": 845.64,
+      "text": "define here the Pydantic model or the"
+    },
+    {
+      "start": 843.6,
+      "end": 847.64,
+      "text": "data model something like this."
+    },
+    {
+      "start": 845.64,
+      "end": 849.72,
+      "text": "Let's go ahead and check that."
+    },
+    {
+      "start": 847.64,
+      "end": 851.76,
+      "text": "So, first of all, we need to import base"
+    },
+    {
+      "start": 849.72,
+      "end": 854.6800000000001,
+      "text": "model from the Pydantic and the field"
+    },
+    {
+      "start": 851.76,
+      "end": 857.0,
+      "text": "here. Okay? Then, we define a class"
+    },
+    {
+      "start": 854.68,
+      "end": 859.0799999999999,
+      "text": "here, review score. We are extending it"
+    },
+    {
+      "start": 857.0,
+      "end": 860.76,
+      "text": "with the base model."
+    },
+    {
+      "start": 859.08,
+      "end": 863.0,
+      "text": "Because you are extending this base"
+    },
+    {
+      "start": 860.76,
+      "end": 864.84,
+      "text": "model, because of that, it automatically"
+    },
+    {
+      "start": 863.0,
+      "end": 866.24,
+      "text": "becomes the Pydantic base model. I mean,"
+    },
+    {
+      "start": 864.84,
+      "end": 867.24,
+      "text": "Pydantic model."
+    },
+    {
+      "start": 866.24,
+      "end": 868.36,
+      "text": "So, you are going to have here the"
+    },
+    {
+      "start": 867.24,
+      "end": 870.48,
+      "text": "rating, you are going to have here a"
+    },
+    {
+      "start": 868.36,
+      "end": 871.92,
+      "text": "positive and the reason. So, these are"
+    },
+    {
+      "start": 870.48,
+      "end": 874.72,
+      "text": "the three fields which we are going to"
+    },
+    {
+      "start": 871.92,
+      "end": 876.8389999999999,
+      "text": "have here. Rating is going to be like"
+    },
+    {
+      "start": 874.72,
+      "end": 878.96,
+      "text": "this one. Basically, one means terrible"
+    },
+    {
+      "start": 876.839,
+      "end": 880.8800000000001,
+      "text": "and five means excellent. Similarly, you"
+    },
+    {
+      "start": 878.96,
+      "end": 882.6800000000001,
+      "text": "are going to have for positive as well."
+    },
+    {
+      "start": 880.88,
+      "end": 884.68,
+      "text": "It is going to have here the true if it"
+    },
+    {
+      "start": 882.68,
+      "end": 886.8389999999999,
+      "text": "is actually the true, otherwise, it is"
+    },
+    {
+      "start": 884.68,
+      "end": 888.9599999999999,
+      "text": "going to be false. All right? And then"
+    },
+    {
+      "start": 886.839,
+      "end": 890.2800000000001,
+      "text": "here is the reason, one short sentence"
+    },
+    {
+      "start": 888.96,
+      "end": 892.24,
+      "text": "why"
+    },
+    {
+      "start": 890.28,
+      "end": 894.16,
+      "text": "it has given a particular rating and why"
+    },
+    {
+      "start": 892.24,
+      "end": 896.76,
+      "text": "it has given a particular value for the"
+    },
+    {
+      "start": 894.16,
+      "end": 898.48,
+      "text": "positive field. All right? Excellent."
+    },
+    {
+      "start": 896.76,
+      "end": 901.64,
+      "text": "Let's go ahead and do this. And"
+    },
+    {
+      "start": 898.48,
+      "end": 903.839,
+      "text": "thereafter, let's go ahead and ask here"
+    },
+    {
+      "start": 901.64,
+      "end": 905.92,
+      "text": "basically, let's go ahead and get our"
+    },
+    {
+      "start": 903.839,
+      "end": 907.32,
+      "text": "model as the structured output. This"
+    },
+    {
+      "start": 905.92,
+      "end": 909.36,
+      "text": "particular line is important. There"
+    },
+    {
+      "start": 907.32,
+      "end": 911.6,
+      "text": "after, we can ask our model for the"
+    },
+    {
+      "start": 909.36,
+      "end": 914.96,
+      "text": "classification. So, in this way, what"
+    },
+    {
+      "start": 911.6,
+      "end": 918.44,
+      "text": "happened here? We are attaching this"
+    },
+    {
+      "start": 914.96,
+      "end": 921.72,
+      "text": "particular Pydantic class with our model"
+    },
+    {
+      "start": 918.44,
+      "end": 923.8800000000001,
+      "text": "so that our model is aware here that"
+    },
+    {
+      "start": 921.72,
+      "end": 926.4,
+      "text": "whatever output our model is going to"
+    },
+    {
+      "start": 923.88,
+      "end": 928.32,
+      "text": "give us, that output need to be in this"
+    },
+    {
+      "start": 926.4,
+      "end": 930.48,
+      "text": "particular format only."
+    },
+    {
+      "start": 928.32,
+      "end": 932.48,
+      "text": "All right. Before I move ahead, I wanted"
+    },
+    {
+      "start": 930.48,
+      "end": 934.84,
+      "text": "to show you here something. Now, if you"
+    },
+    {
+      "start": 932.48,
+      "end": 936.64,
+      "text": "check your bare model, I mean, model"
+    },
+    {
+      "start": 934.84,
+      "end": 938.5600000000001,
+      "text": "without the structured output, it look"
+    },
+    {
+      "start": 936.64,
+      "end": 940.52,
+      "text": "like something this. So, you have your"
+    },
+    {
+      "start": 938.56,
+      "end": 943.2399999999999,
+      "text": "model something like this where you have"
+    },
+    {
+      "start": 940.52,
+      "end": 945.84,
+      "text": "a model name, Nvidia Nemo Tron, and you"
+    },
+    {
+      "start": 943.24,
+      "end": 947.8,
+      "text": "don't have anything related to your"
+    },
+    {
+      "start": 945.84,
+      "end": 948.72,
+      "text": "field here. I mean, with your Pydantic"
+    },
+    {
+      "start": 947.8,
+      "end": 950.8,
+      "text": "model."
+    },
+    {
+      "start": 948.72,
+      "end": 953.64,
+      "text": "But here, you have the reader. Now, if I"
+    },
+    {
+      "start": 950.8,
+      "end": 955.3599999999999,
+      "text": "run this and then I check this reader."
+    },
+    {
+      "start": 953.64,
+      "end": 958.1999999999999,
+      "text": "Now, inside this reader, you are going"
+    },
+    {
+      "start": 955.36,
+      "end": 960.28,
+      "text": "to have here the Pydantic tool parser."
+    },
+    {
+      "start": 958.2,
+      "end": 962.12,
+      "text": "And do you notice this one? And do you"
+    },
+    {
+      "start": 960.28,
+      "end": 965.04,
+      "text": "recall anything?"
+    },
+    {
+      "start": 962.12,
+      "end": 968.12,
+      "text": "I'm sure you must recall"
+    },
+    {
+      "start": 965.04,
+      "end": 969.88,
+      "text": "this particular pipe operator is coming"
+    },
+    {
+      "start": 968.12,
+      "end": 972.36,
+      "text": "from the day four."
+    },
+    {
+      "start": 969.88,
+      "end": 974.88,
+      "text": "This is where we learned how we create"
+    },
+    {
+      "start": 972.36,
+      "end": 977.36,
+      "text": "the LangChain chains or how we use the"
+    },
+    {
+      "start": 974.88,
+      "end": 980.64,
+      "text": "pipe operator. All right. So, we have"
+    },
+    {
+      "start": 977.36,
+      "end": 982.44,
+      "text": "our model. Once model gives its output,"
+    },
+    {
+      "start": 980.64,
+      "end": 984.76,
+      "text": "then that output is going inside the"
+    },
+    {
+      "start": 982.44,
+      "end": 986.2,
+      "text": "Pydantic model, and that Pydantic model"
+    },
+    {
+      "start": 984.76,
+      "end": 988.28,
+      "text": "is finally going to give us the"
+    },
+    {
+      "start": 986.2,
+      "end": 989.839,
+      "text": "structured output. All right. Do you see"
+    },
+    {
+      "start": 988.28,
+      "end": 991.88,
+      "text": "here?"
+    },
+    {
+      "start": 989.839,
+      "end": 993.96,
+      "text": "All right. Cool. And apart from that,"
+    },
+    {
+      "start": 991.88,
+      "end": 995.76,
+      "text": "one more thing you will notice here."
+    },
+    {
+      "start": 993.96,
+      "end": 997.48,
+      "text": "Let me just show you here. So, here"
+    },
+    {
+      "start": 995.76,
+      "end": 1000.4,
+      "text": "inside the tools, do you notice here"
+    },
+    {
+      "start": 997.48,
+      "end": 1003.0,
+      "text": "there is basically, this Pydantic model"
+    },
+    {
+      "start": 1000.4,
+      "end": 1006.0799999999999,
+      "text": "which which is defined there, that got"
+    },
+    {
+      "start": 1003.0,
+      "end": 1009.12,
+      "text": "attached as a tool with the model."
+    },
+    {
+      "start": 1006.08,
+      "end": 1010.88,
+      "text": "So, that you can check it here."
+    },
+    {
+      "start": 1009.12,
+      "end": 1013.52,
+      "text": "All right. So, here is the tool, and"
+    },
+    {
+      "start": 1010.88,
+      "end": 1015.92,
+      "text": "then here review score, and then"
+    },
+    {
+      "start": 1013.52,
+      "end": 1017.8389999999999,
+      "text": "description, parameters."
+    },
+    {
+      "start": 1015.92,
+      "end": 1019.4,
+      "text": "All right. For all these parameters, you"
+    },
+    {
+      "start": 1017.839,
+      "end": 1020.8800000000001,
+      "text": "have descriptions and everything here"
+    },
+    {
+      "start": 1019.4,
+      "end": 1023.52,
+      "text": "basically."
+    },
+    {
+      "start": 1020.88,
+      "end": 1026.48,
+      "text": "All right. All these are going to be"
+    },
+    {
+      "start": 1023.52,
+      "end": 1029.839,
+      "text": "passed there to the LLM."
+    },
+    {
+      "start": 1026.48,
+      "end": 1031.16,
+      "text": "All right. Cool. Let's go ahead and try"
+    },
+    {
+      "start": 1029.839,
+      "end": 1033.56,
+      "text": "to get the output. So, this is the"
+    },
+    {
+      "start": 1031.16,
+      "end": 1035.4,
+      "text": "review, original review, and then we are"
+    },
+    {
+      "start": 1033.56,
+      "end": 1037.6399999999999,
+      "text": "invoking this reader. So, reader is a"
+    },
+    {
+      "start": 1035.4,
+      "end": 1039.3600000000001,
+      "text": "structured output actually, structured"
+    },
+    {
+      "start": 1037.64,
+      "end": 1040.92,
+      "text": "model with a structured output or like"
+    },
+    {
+      "start": 1039.36,
+      "end": 1042.28,
+      "text": "that you can say."
+    },
+    {
+      "start": 1040.92,
+      "end": 1044.8390000000002,
+      "text": "And thereafter, let's go ahead and check"
+    },
+    {
+      "start": 1042.28,
+      "end": 1047.68,
+      "text": "the result. So, the result is coming now"
+    },
+    {
+      "start": 1044.839,
+      "end": 1050.3999999999999,
+      "text": "as the Pydantic model. You have a review"
+    },
+    {
+      "start": 1047.68,
+      "end": 1052.4,
+      "text": "score, rating is poor, this is integer,"
+    },
+    {
+      "start": 1050.4,
+      "end": 1054.2800000000002,
+      "text": "and here you have a true, and here is"
+    },
+    {
+      "start": 1052.4,
+      "end": 1056.2800000000002,
+      "text": "the reason. You see?"
+    },
+    {
+      "start": 1054.28,
+      "end": 1058.28,
+      "text": "Now, it doesn't matter how many times"
+    },
+    {
+      "start": 1056.28,
+      "end": 1060.44,
+      "text": "you run this, every time you are going"
+    },
+    {
+      "start": 1058.28,
+      "end": 1063.6399999999999,
+      "text": "to get the output something like this."
+    },
+    {
+      "start": 1060.44,
+      "end": 1065.28,
+      "text": "Even if you change your input,"
+    },
+    {
+      "start": 1063.64,
+      "end": 1066.8000000000002,
+      "text": "even if you change your input, let's say"
+    },
+    {
+      "start": 1065.28,
+      "end": 1068.16,
+      "text": "if you change it to something else,"
+    },
+    {
+      "start": 1066.8,
+      "end": 1071.52,
+      "text": "right?"
+    },
+    {
+      "start": 1068.16,
+      "end": 1073.44,
+      "text": "I'm not going to buy"
+    },
+    {
+      "start": 1071.52,
+      "end": 1075.28,
+      "text": "your product."
+    },
+    {
+      "start": 1073.44,
+      "end": 1077.04,
+      "text": "Let's say if you do it like that. Even"
+    },
+    {
+      "start": 1075.28,
+      "end": 1078.96,
+      "text": "after that, you will see you will get a"
+    },
+    {
+      "start": 1077.04,
+      "end": 1081.48,
+      "text": "review score and then the rating"
+    },
+    {
+      "start": 1078.96,
+      "end": 1083.44,
+      "text": "positive and the reason. Basically, by"
+    },
+    {
+      "start": 1081.48,
+      "end": 1085.4,
+      "text": "defining our data model with the"
+    },
+    {
+      "start": 1083.44,
+      "end": 1088.8400000000001,
+      "text": "Pydantic model,"
+    },
+    {
+      "start": 1085.4,
+      "end": 1091.2800000000002,
+      "text": "we make sure here that we get the output"
+    },
+    {
+      "start": 1088.84,
+      "end": 1093.56,
+      "text": "in only a particular format. That is"
+    },
+    {
+      "start": 1091.28,
+      "end": 1095.56,
+      "text": "what happening here."
+    },
+    {
+      "start": 1093.56,
+      "end": 1097.3999999999999,
+      "text": "So, if you come back here and you check"
+    },
+    {
+      "start": 1095.56,
+      "end": 1099.6399999999999,
+      "text": "here"
+    },
+    {
+      "start": 1097.4,
+      "end": 1100.8000000000002,
+      "text": "LangSmith tracing on the LangSmith"
+    },
+    {
+      "start": 1099.64,
+      "end": 1103.16,
+      "text": "tracing,"
+    },
+    {
+      "start": 1100.8,
+      "end": 1105.48,
+      "text": "you can check how it is working."
+    },
+    {
+      "start": 1103.16,
+      "end": 1107.3600000000001,
+      "text": "So, you have your enable sequence and"
+    },
+    {
+      "start": 1105.48,
+      "end": 1109.44,
+      "text": "then chat open router is there where"
+    },
+    {
+      "start": 1107.36,
+      "end": 1112.36,
+      "text": "Nvidia model is getting used, and then"
+    },
+    {
+      "start": 1109.44,
+      "end": 1114.68,
+      "text": "you can see here all the tokens which is"
+    },
+    {
+      "start": 1112.36,
+      "end": 1117.76,
+      "text": "getting used for this particular model."
+    },
+    {
+      "start": 1114.68,
+      "end": 1119.5600000000002,
+      "text": "So, like you have 348 tokens with a"
+    },
+    {
+      "start": 1117.76,
+      "end": 1121.2,
+      "text": "structured output."
+    },
+    {
+      "start": 1119.56,
+      "end": 1123.04,
+      "text": "Okay? I mean, with the structured input"
+    },
+    {
+      "start": 1121.2,
+      "end": 1125.3600000000001,
+      "text": "definition, and then finally total"
+    },
+    {
+      "start": 1123.04,
+      "end": 1127.04,
+      "text": "output you have 548."
+    },
+    {
+      "start": 1125.36,
+      "end": 1129.28,
+      "text": "And then here you have a Pydantic tool"
+    },
+    {
+      "start": 1127.04,
+      "end": 1131.1599999999999,
+      "text": "parser. So, this Pydantic tool parser is"
+    },
+    {
+      "start": 1129.28,
+      "end": 1133.08,
+      "text": "making sure that you get the correct"
+    },
+    {
+      "start": 1131.16,
+      "end": 1136.2,
+      "text": "output finally."
+    },
+    {
+      "start": 1133.08,
+      "end": 1138.08,
+      "text": "Okay? So, the final output"
+    },
+    {
+      "start": 1136.2,
+      "end": 1139.92,
+      "text": "is going to be like this one. You have a"
+    },
+    {
+      "start": 1138.08,
+      "end": 1141.8,
+      "text": "positive, you have a rating, and this"
+    },
+    {
+      "start": 1139.92,
+      "end": 1144.2,
+      "text": "one you will notice it is coming as the"
+    },
+    {
+      "start": 1141.8,
+      "end": 1146.12,
+      "text": "JSON or the dictionary format."
+    },
+    {
+      "start": 1144.2,
+      "end": 1147.8400000000001,
+      "text": "Okay? Cool. Now, if you click on here,"
+    },
+    {
+      "start": 1146.12,
+      "end": 1149.7199999999998,
+      "text": "then you can see the input as well, how"
+    },
+    {
+      "start": 1147.84,
+      "end": 1152.08,
+      "text": "the input is coming. So, inside the"
+    },
+    {
+      "start": 1149.72,
+      "end": 1153.84,
+      "text": "input you have your user"
+    },
+    {
+      "start": 1152.08,
+      "end": 1155.6,
+      "text": "input, that is the question. I mean,"
+    },
+    {
+      "start": 1153.84,
+      "end": 1157.1599999999999,
+      "text": "that is the review. And then you have"
+    },
+    {
+      "start": 1155.6,
+      "end": 1159.32,
+      "text": "here the tool as well, that is the"
+    },
+    {
+      "start": 1157.16,
+      "end": 1162.0,
+      "text": "review score. All right? In review"
+    },
+    {
+      "start": 1159.32,
+      "end": 1164.4399999999998,
+      "text": "score, you have the description for each"
+    },
+    {
+      "start": 1162.0,
+      "end": 1166.28,
+      "text": "of these fields. You have a positive"
+    },
+    {
+      "start": 1164.44,
+      "end": 1168.2,
+      "text": "I mean, positive field, rating field,"
+    },
+    {
+      "start": 1166.28,
+      "end": 1170.2,
+      "text": "and the reason field. This particular"
+    },
+    {
+      "start": 1168.2,
+      "end": 1172.2,
+      "text": "thing is very important, okay?"
+    },
+    {
+      "start": 1170.2,
+      "end": 1176.04,
+      "text": "So, remember this one, required true. By"
+    },
+    {
+      "start": 1172.2,
+      "end": 1179.4,
+      "text": "default, everything is required true."
+    },
+    {
+      "start": 1176.04,
+      "end": 1182.24,
+      "text": "That means your LLM is bound to give"
+    },
+    {
+      "start": 1179.4,
+      "end": 1183.88,
+      "text": "this particular field output."
+    },
+    {
+      "start": 1182.24,
+      "end": 1185.92,
+      "text": "So, this is what I was talking here"
+    },
+    {
+      "start": 1183.88,
+      "end": 1187.88,
+      "text": "earlier in the slide."
+    },
+    {
+      "start": 1185.92,
+      "end": 1189.8400000000001,
+      "text": "So, what happened if you give output"
+    },
+    {
+      "start": 1187.88,
+      "end": 1192.2,
+      "text": "something like this? I mean, input"
+    },
+    {
+      "start": 1189.84,
+      "end": 1195.04,
+      "text": "complaint or a review something like"
+    },
+    {
+      "start": 1192.2,
+      "end": 1197.4,
+      "text": "this, then your LLM is bound to give the"
+    },
+    {
+      "start": 1195.04,
+      "end": 1199.6399999999999,
+      "text": "value. Then your LLM will assign some"
+    },
+    {
+      "start": 1197.4,
+      "end": 1201.76,
+      "text": "random value if there is no definite"
+    },
+    {
+      "start": 1199.64,
+      "end": 1202.92,
+      "text": "answer. So, that is what we are also"
+    },
+    {
+      "start": 1201.76,
+      "end": 1205.4,
+      "text": "going to see in this particular"
+    },
+    {
+      "start": 1202.92,
+      "end": 1208.4,
+      "text": "notebook. Don't worry about that."
+    },
+    {
+      "start": 1205.4,
+      "end": 1210.48,
+      "text": "Okay. Now, let's go ahead and check how"
+    },
+    {
+      "start": 1208.4,
+      "end": 1212.92,
+      "text": "you can read these values with the"
+    },
+    {
+      "start": 1210.48,
+      "end": 1215.44,
+      "text": "result here. So, result look like as a"
+    },
+    {
+      "start": 1212.92,
+      "end": 1217.44,
+      "text": "Pydantic model, but you can use this as"
+    },
+    {
+      "start": 1215.44,
+      "end": 1218.8400000000001,
+      "text": "a dictionary as well. Like this, you can"
+    },
+    {
+      "start": 1217.44,
+      "end": 1221.0800000000002,
+      "text": "also read these."
+    },
+    {
+      "start": 1218.84,
+      "end": 1224.48,
+      "text": "Okay? Cool. Now, if you want to convert"
+    },
+    {
+      "start": 1221.08,
+      "end": 1226.24,
+      "text": "it as the proper JSON model or the"
+    },
+    {
+      "start": 1224.48,
+      "end": 1228.72,
+      "text": "dictionary, then you can do it like"
+    },
+    {
+      "start": 1226.24,
+      "end": 1230.92,
+      "text": "this. result.model_dump,"
+    },
+    {
+      "start": 1228.72,
+      "end": 1232.8,
+      "text": "then it is going to convert it directly"
+    },
+    {
+      "start": 1230.92,
+      "end": 1234.88,
+      "text": "as the dictionary."
+    },
+    {
+      "start": 1232.8,
+      "end": 1237.68,
+      "text": "As of now, this result is as a Pydantic"
+    },
+    {
+      "start": 1234.88,
+      "end": 1240.2800000000002,
+      "text": "data model, but now it has become here"
+    },
+    {
+      "start": 1237.68,
+      "end": 1242.6000000000001,
+      "text": "as a JSON or the dictionary data."
+    },
+    {
+      "start": 1240.28,
+      "end": 1246.04,
+      "text": "Okay? Cool. Now, let's go ahead and see"
+    },
+    {
+      "start": 1242.6,
+      "end": 1249.76,
+      "text": "how we can make sure our our LLM is"
+    },
+    {
+      "start": 1246.04,
+      "end": 1251.56,
+      "text": "going to give you only a certain values"
+    },
+    {
+      "start": 1249.76,
+      "end": 1254.92,
+      "text": "for a particular field."
+    },
+    {
+      "start": 1251.56,
+      "end": 1257.04,
+      "text": "For example, what we had seen here"
+    },
+    {
+      "start": 1254.92,
+      "end": 1259.68,
+      "text": "in this case. Okay? So, if we define the"
+    },
+    {
+      "start": 1257.04,
+      "end": 1261.68,
+      "text": "category and we don't tell our LLM that"
+    },
+    {
+      "start": 1259.68,
+      "end": 1262.96,
+      "text": "you need to give a category between"
+    },
+    {
+      "start": 1261.68,
+      "end": 1263.88,
+      "text": "category"
+    },
+    {
+      "start": 1262.96,
+      "end": 1265.8400000000001,
+      "text": "uh you know,"
+    },
+    {
+      "start": 1263.88,
+      "end": 1267.88,
+      "text": "category using only these values, then"
+    },
+    {
+      "start": 1265.84,
+      "end": 1270.52,
+      "text": "your LLM can give so many, you know, the"
+    },
+    {
+      "start": 1267.88,
+      "end": 1272.72,
+      "text": "similar categories. So, to solve that"
+    },
+    {
+      "start": 1270.52,
+      "end": 1274.8,
+      "text": "problem, we can use there the literal in"
+    },
+    {
+      "start": 1272.72,
+      "end": 1276.84,
+      "text": "the Pydantic data model. So, how it is"
+    },
+    {
+      "start": 1274.8,
+      "end": 1279.84,
+      "text": "going to work? So, let's say I have here"
+    },
+    {
+      "start": 1276.84,
+      "end": 1282.6799999999998,
+      "text": "a ticket. Basically, let's say some"
+    },
+    {
+      "start": 1279.84,
+      "end": 1284.3999999999999,
+      "text": "complain uh some complain is coming. And"
+    },
+    {
+      "start": 1282.68,
+      "end": 1286.68,
+      "text": "as a customer service agent, I need to"
+    },
+    {
+      "start": 1284.4,
+      "end": 1289.8000000000002,
+      "text": "classify those in"
+    },
+    {
+      "start": 1286.68,
+      "end": 1292.2,
+      "text": "multiple tickets. Okay. Uh I mean,"
+    },
+    {
+      "start": 1289.8,
+      "end": 1294.6399999999999,
+      "text": "in multiple classes. So, how we define"
+    },
+    {
+      "start": 1292.2,
+      "end": 1297.24,
+      "text": "that? So, we can define a particular set"
+    },
+    {
+      "start": 1294.64,
+      "end": 1299.96,
+      "text": "of the category so that our LLM"
+    },
+    {
+      "start": 1297.24,
+      "end": 1302.0,
+      "text": "decides category based on these"
+    },
+    {
+      "start": 1299.96,
+      "end": 1303.52,
+      "text": "particular fields only. I mean, these"
+    },
+    {
+      "start": 1302.0,
+      "end": 1305.6,
+      "text": "fields only."
+    },
+    {
+      "start": 1303.52,
+      "end": 1307.4,
+      "text": "Based on these fields only. So, you have"
+    },
+    {
+      "start": 1305.6,
+      "end": 1309.6399999999999,
+      "text": "here a literal like you have a delivery,"
+    },
+    {
+      "start": 1307.4,
+      "end": 1312.76,
+      "text": "you have a billing, you have a product"
+    },
+    {
+      "start": 1309.64,
+      "end": 1314.8400000000001,
+      "text": "account. So, your LLM is going to give"
+    },
+    {
+      "start": 1312.76,
+      "end": 1318.04,
+      "text": "the output"
+    },
+    {
+      "start": 1314.84,
+      "end": 1321.6799999999998,
+      "text": "out of these four categories only. Your"
+    },
+    {
+      "start": 1318.04,
+      "end": 1322.84,
+      "text": "LLM cannot go outside of these four"
+    },
+    {
+      "start": 1321.68,
+      "end": 1325.0,
+      "text": "category."
+    },
+    {
+      "start": 1322.84,
+      "end": 1326.72,
+      "text": "Okay. So, every time it is going to give"
+    },
+    {
+      "start": 1325.0,
+      "end": 1328.24,
+      "text": "you the delivery, billing, product, or"
+    },
+    {
+      "start": 1326.72,
+      "end": 1330.1200000000001,
+      "text": "account only."
+    },
+    {
+      "start": 1328.24,
+      "end": 1331.72,
+      "text": "Okay. Cool. And in the description, we"
+    },
+    {
+      "start": 1330.12,
+      "end": 1333.1999999999998,
+      "text": "have given which team should handle"
+    },
+    {
+      "start": 1331.72,
+      "end": 1335.52,
+      "text": "this. Ideally, in the production, we"
+    },
+    {
+      "start": 1333.2,
+      "end": 1337.4,
+      "text": "give a better description so that we can"
+    },
+    {
+      "start": 1335.52,
+      "end": 1338.8,
+      "text": "define that what this delivery means,"
+    },
+    {
+      "start": 1337.4,
+      "end": 1341.1200000000001,
+      "text": "what this billing means, what this"
+    },
+    {
+      "start": 1338.8,
+      "end": 1342.52,
+      "text": "product means, what this account means."
+    },
+    {
+      "start": 1341.12,
+      "end": 1344.6,
+      "text": "Another problem with this particular"
+    },
+    {
+      "start": 1342.52,
+      "end": 1346.56,
+      "text": "thing here, which I can uh"
+    },
+    {
+      "start": 1344.6,
+      "end": 1348.52,
+      "text": "give you as a homework, that let's say"
+    },
+    {
+      "start": 1346.56,
+      "end": 1351.1599999999999,
+      "text": "if something else is coming, some other"
+    },
+    {
+      "start": 1348.52,
+      "end": 1353.12,
+      "text": "problem. All right. Let's say not"
+    },
+    {
+      "start": 1351.16,
+      "end": 1355.8400000000001,
+      "text": "complain at all or something like that"
+    },
+    {
+      "start": 1353.12,
+      "end": 1357.84,
+      "text": "comes in. Then in that case, you cannot"
+    },
+    {
+      "start": 1355.84,
+      "end": 1359.28,
+      "text": "you cannot classify in this particular"
+    },
+    {
+      "start": 1357.84,
+      "end": 1361.9599999999998,
+      "text": "given category. So, it will"
+    },
+    {
+      "start": 1359.28,
+      "end": 1363.44,
+      "text": "automatically classify in some category,"
+    },
+    {
+      "start": 1361.96,
+      "end": 1366.64,
+      "text": "but that would be wrong. In that case,"
+    },
+    {
+      "start": 1363.44,
+      "end": 1368.92,
+      "text": "you can also add here others as well."
+    },
+    {
+      "start": 1366.64,
+      "end": 1370.96,
+      "text": "So, you can add it like this one here."
+    },
+    {
+      "start": 1368.92,
+      "end": 1372.96,
+      "text": "Others or something like that."
+    },
+    {
+      "start": 1370.96,
+      "end": 1375.16,
+      "text": "Okay. Cool. Let's go ahead and move"
+    },
+    {
+      "start": 1372.96,
+      "end": 1377.48,
+      "text": "ahead here. And then we can define here"
+    },
+    {
+      "start": 1375.16,
+      "end": 1379.6000000000001,
+      "text": "how urgent particular complaint is"
+    },
+    {
+      "start": 1377.48,
+      "end": 1382.0,
+      "text": "there. For example, urgency. Whether"
+    },
+    {
+      "start": 1379.6,
+      "end": 1383.52,
+      "text": "urgency is low or urgency is medium or"
+    },
+    {
+      "start": 1382.0,
+      "end": 1385.44,
+      "text": "urgency is high."
+    },
+    {
+      "start": 1383.52,
+      "end": 1388.28,
+      "text": "And then we can summarize that here, a"
+    },
+    {
+      "start": 1385.44,
+      "end": 1390.16,
+      "text": "customer problem under 12 words. All"
+    },
+    {
+      "start": 1388.28,
+      "end": 1393.16,
+      "text": "right. Excellent. So, we have got our"
+    },
+    {
+      "start": 1390.16,
+      "end": 1394.0,
+      "text": "Pydantic class here. Let's go ahead and"
+    },
+    {
+      "start": 1393.16,
+      "end": 1396.88,
+      "text": "uh"
+    },
+    {
+      "start": 1394.0,
+      "end": 1399.44,
+      "text": "run our model. So, I get my model here,"
+    },
+    {
+      "start": 1396.88,
+      "end": 1401.1200000000001,
+      "text": "router, with the structured output. And"
+    },
+    {
+      "start": 1399.44,
+      "end": 1403.56,
+      "text": "inside that, this ticket is going to be"
+    },
+    {
+      "start": 1401.12,
+      "end": 1405.9199999999998,
+      "text": "there. So, this router is again a model,"
+    },
+    {
+      "start": 1403.56,
+      "end": 1408.44,
+      "text": "but this time this particular Pydantic"
+    },
+    {
+      "start": 1405.92,
+      "end": 1409.52,
+      "text": "data class is added with our original"
+    },
+    {
+      "start": 1408.44,
+      "end": 1412.0800000000002,
+      "text": "model."
+    },
+    {
+      "start": 1409.52,
+      "end": 1415.0,
+      "text": "Okay. Cool. There after, we are going to"
+    },
+    {
+      "start": 1412.08,
+      "end": 1417.12,
+      "text": "give here a simple review or complaint,"
+    },
+    {
+      "start": 1415.0,
+      "end": 1419.64,
+      "text": "actually. I was charged twice for the"
+    },
+    {
+      "start": 1417.12,
+      "end": 1421.6799999999998,
+      "text": "same order, and nobody has replied for a"
+    },
+    {
+      "start": 1419.64,
+      "end": 1423.2800000000002,
+      "text": "week. Let's go ahead and run this, and"
+    },
+    {
+      "start": 1421.68,
+      "end": 1426.2,
+      "text": "then see what happens here. Ideally,"
+    },
+    {
+      "start": 1423.28,
+      "end": 1428.52,
+      "text": "this should go inside the billing, and"
+    },
+    {
+      "start": 1426.2,
+      "end": 1430.6000000000001,
+      "text": "urgency is high here."
+    },
+    {
+      "start": 1428.52,
+      "end": 1432.6,
+      "text": "So, yes, category is billing, and"
+    },
+    {
+      "start": 1430.6,
+      "end": 1434.52,
+      "text": "urgency is high. Summary is here,"
+    },
+    {
+      "start": 1432.6,
+      "end": 1437.12,
+      "text": "duplicate charge for order, no response"
+    },
+    {
+      "start": 1434.52,
+      "end": 1439.12,
+      "text": "for a week. You see? This is literally"
+    },
+    {
+      "start": 1437.12,
+      "end": 1441.8799999999999,
+      "text": "awesome. All right. So, even if you give"
+    },
+    {
+      "start": 1439.12,
+      "end": 1443.8,
+      "text": "something, as I told you earlier, which"
+    },
+    {
+      "start": 1441.88,
+      "end": 1447.0800000000002,
+      "text": "does not belong to those classes, it"
+    },
+    {
+      "start": 1443.8,
+      "end": 1448.96,
+      "text": "will be actually bound to classify it"
+    },
+    {
+      "start": 1447.08,
+      "end": 1451.1599999999999,
+      "text": "between those classes."
+    },
+    {
+      "start": 1448.96,
+      "end": 1453.88,
+      "text": "For example,"
+    },
+    {
+      "start": 1451.16,
+      "end": 1456.3600000000001,
+      "text": "let's say, do you"
+    },
+    {
+      "start": 1453.88,
+      "end": 1458.96,
+      "text": "sell chips, let's say. This does not"
+    },
+    {
+      "start": 1456.36,
+      "end": 1460.6399999999999,
+      "text": "belong to any of these, actually."
+    },
+    {
+      "start": 1458.96,
+      "end": 1462.0,
+      "text": "All right. Maybe the product it might"
+    },
+    {
+      "start": 1460.64,
+      "end": 1464.16,
+      "text": "belong, but let's go ahead and check"
+    },
+    {
+      "start": 1462.0,
+      "end": 1466.16,
+      "text": "here. All right. So, this is actually"
+    },
+    {
+      "start": 1464.16,
+      "end": 1468.8400000000001,
+      "text": "the general question. Ideally, it it it"
+    },
+    {
+      "start": 1466.16,
+      "end": 1470.44,
+      "text": "also does not belong to the product,"
+    },
+    {
+      "start": 1468.84,
+      "end": 1473.6799999999998,
+      "text": "but this is just a general question."
+    },
+    {
+      "start": 1470.44,
+      "end": 1476.3600000000001,
+      "text": "Seems like we did not get any output."
+    },
+    {
+      "start": 1473.68,
+      "end": 1478.28,
+      "text": "This is not correct."
+    },
+    {
+      "start": 1476.36,
+      "end": 1480.28,
+      "text": "Let's go ahead and check it again."
+    },
+    {
+      "start": 1478.28,
+      "end": 1482.72,
+      "text": "Ideally, we should have got some output."
+    },
+    {
+      "start": 1480.28,
+      "end": 1485.48,
+      "text": "I'm I just want to check this"
+    },
+    {
+      "start": 1482.72,
+      "end": 1488.48,
+      "text": "with the LangSmith as well, so that I"
+    },
+    {
+      "start": 1485.48,
+      "end": 1492.0,
+      "text": "can understand that what was the output."
+    },
+    {
+      "start": 1488.48,
+      "end": 1494.28,
+      "text": "So, output was null, basically. Okay."
+    },
+    {
+      "start": 1492.0,
+      "end": 1498.48,
+      "text": "So, it was not able to classify it in"
+    },
+    {
+      "start": 1494.28,
+      "end": 1499.84,
+      "text": "any of the provided category."
+    },
+    {
+      "start": 1498.48,
+      "end": 1500.52,
+      "text": "All right. So, although the ticket was"
+    },
+    {
+      "start": 1499.84,
+      "end": 1503.24,
+      "text": "cu-"
+    },
+    {
+      "start": 1500.52,
+      "end": 1506.2,
+      "text": "called here, even after that, it was not"
+    },
+    {
+      "start": 1503.24,
+      "end": 1508.64,
+      "text": "able to give us the correct output."
+    },
+    {
+      "start": 1506.2,
+      "end": 1510.4,
+      "text": "Anyway, let's go ahead and check here."
+    },
+    {
+      "start": 1508.64,
+      "end": 1512.72,
+      "text": "And here, the category is product,"
+    },
+    {
+      "start": 1510.4,
+      "end": 1514.52,
+      "text": "urgency is low. You see?"
+    },
+    {
+      "start": 1512.72,
+      "end": 1516.72,
+      "text": "So, again, ideally, it is not the"
+    },
+    {
+      "start": 1514.52,
+      "end": 1518.52,
+      "text": "product one. Okay? Even if you give"
+    },
+    {
+      "start": 1516.72,
+      "end": 1521.4,
+      "text": "something like this,"
+    },
+    {
+      "start": 1518.52,
+      "end": 1522.24,
+      "text": "let's say how how are you? Ideally,"
+    },
+    {
+      "start": 1521.4,
+      "end": 1523.8400000000001,
+      "text": "okay?"
+    },
+    {
+      "start": 1522.24,
+      "end": 1526.28,
+      "text": "How are you?"
+    },
+    {
+      "start": 1523.84,
+      "end": 1529.1999999999998,
+      "text": "Now, it must not belong with any of"
+    },
+    {
+      "start": 1526.28,
+      "end": 1531.68,
+      "text": "these category, but our LLM will still"
+    },
+    {
+      "start": 1529.2,
+      "end": 1533.64,
+      "text": "try to classify it in"
+    },
+    {
+      "start": 1531.68,
+      "end": 1536.48,
+      "text": "in any of these category, as you see"
+    },
+    {
+      "start": 1533.64,
+      "end": 1538.76,
+      "text": "here. So, how to solve this? Now, if you"
+    },
+    {
+      "start": 1536.48,
+      "end": 1541.2,
+      "text": "put here another category like, let's"
+    },
+    {
+      "start": 1538.76,
+      "end": 1542.2,
+      "text": "say if you put here others,"
+    },
+    {
+      "start": 1541.2,
+      "end": 1545.0,
+      "text": "okay?"
+    },
+    {
+      "start": 1542.2,
+      "end": 1546.52,
+      "text": "So, in this case, our LLM is going to"
+    },
+    {
+      "start": 1545.0,
+      "end": 1549.36,
+      "text": "understand here"
+    },
+    {
+      "start": 1546.52,
+      "end": 1551.48,
+      "text": "this is the others category. All right."
+    },
+    {
+      "start": 1549.36,
+      "end": 1553.9599999999998,
+      "text": "This is definitely not the"
+    },
+    {
+      "start": 1551.48,
+      "end": 1556.0,
+      "text": "uh these four category, and you have got"
+    },
+    {
+      "start": 1553.96,
+      "end": 1558.48,
+      "text": "here others. Now, if you want to make"
+    },
+    {
+      "start": 1556.0,
+      "end": 1560.88,
+      "text": "sure that this becomes a little bit more"
+    },
+    {
+      "start": 1558.48,
+      "end": 1562.84,
+      "text": "specific, then what you can do, you can"
+    },
+    {
+      "start": 1560.88,
+      "end": 1565.5200000000002,
+      "text": "provide here the description, so that"
+    },
+    {
+      "start": 1562.84,
+      "end": 1567.4399999999998,
+      "text": "you can explain each of these fields"
+    },
+    {
+      "start": 1565.52,
+      "end": 1569.6,
+      "text": "properly, so that your LLM can"
+    },
+    {
+      "start": 1567.44,
+      "end": 1572.24,
+      "text": "understand that."
+    },
+    {
+      "start": 1569.6,
+      "end": 1575.52,
+      "text": "Okay. Cool. So, this is what we had seen"
+    },
+    {
+      "start": 1572.24,
+      "end": 1578.72,
+      "text": "here, because our LLM is now forced to"
+    },
+    {
+      "start": 1575.52,
+      "end": 1581.68,
+      "text": "classify our complaint in given"
+    },
+    {
+      "start": 1578.72,
+      "end": 1583.2,
+      "text": "category. So, how to solve this? Okay."
+    },
+    {
+      "start": 1581.68,
+      "end": 1585.88,
+      "text": "So, to solve this, what we can do, we"
+    },
+    {
+      "start": 1583.2,
+      "end": 1588.1200000000001,
+      "text": "can make it optional. As of now, what"
+    },
+    {
+      "start": 1585.88,
+      "end": 1591.24,
+      "text": "you had seen here, everything was"
+    },
+    {
+      "start": 1588.12,
+      "end": 1594.1999999999998,
+      "text": "required. Required true means it is not"
+    },
+    {
+      "start": 1591.24,
+      "end": 1596.32,
+      "text": "optional. It is must. So, if you make"
+    },
+    {
+      "start": 1594.2,
+      "end": 1599.68,
+      "text": "that required false, that means if it"
+    },
+    {
+      "start": 1596.32,
+      "end": 1601.8,
+      "text": "becomes optional, then in that case, you"
+    },
+    {
+      "start": 1599.68,
+      "end": 1603.88,
+      "text": "can get the more better output."
+    },
+    {
+      "start": 1601.8,
+      "end": 1605.9199999999998,
+      "text": "Basically, if a particular thing does"
+    },
+    {
+      "start": 1603.88,
+      "end": 1609.48,
+      "text": "not belong to a particular category or"
+    },
+    {
+      "start": 1605.92,
+      "end": 1611.8000000000002,
+      "text": "field, then LLM don't need to classify"
+    },
+    {
+      "start": 1609.48,
+      "end": 1614.56,
+      "text": "that in that particular category."
+    },
+    {
+      "start": 1611.8,
+      "end": 1616.8,
+      "text": "For example, product is here, so product"
+    },
+    {
+      "start": 1614.56,
+      "end": 1618.44,
+      "text": "is not optional, so it is must here."
+    },
+    {
+      "start": 1616.8,
+      "end": 1621.0,
+      "text": "Days late"
+    },
+    {
+      "start": 1618.44,
+      "end": 1622.88,
+      "text": "is must here, but default I mean days"
+    },
+    {
+      "start": 1621.0,
+      "end": 1623.96,
+      "text": "late is actually"
+    },
+    {
+      "start": 1622.88,
+      "end": 1624.7600000000002,
+      "text": "you know"
+    },
+    {
+      "start": 1623.96,
+      "end": 1627.08,
+      "text": "it"
+    },
+    {
+      "start": 1624.76,
+      "end": 1629.36,
+      "text": "it it is default optional actually, so"
+    },
+    {
+      "start": 1627.08,
+      "end": 1631.96,
+      "text": "this is optional because we have defined"
+    },
+    {
+      "start": 1629.36,
+      "end": 1633.9599999999998,
+      "text": "here a none, that means it is optional."
+    },
+    {
+      "start": 1631.96,
+      "end": 1636.3600000000001,
+      "text": "Okay, cool. So, this is a new kind of"
+    },
+    {
+      "start": 1633.96,
+      "end": 1639.04,
+      "text": "class which I am trying to test here."
+    },
+    {
+      "start": 1636.36,
+      "end": 1640.76,
+      "text": "Like let's say I'm a e-commerce company,"
+    },
+    {
+      "start": 1639.04,
+      "end": 1642.1599999999999,
+      "text": "I'm trying to get feedback from the"
+    },
+    {
+      "start": 1640.76,
+      "end": 1644.12,
+      "text": "customer. Customer has given the"
+    },
+    {
+      "start": 1642.16,
+      "end": 1646.16,
+      "text": "feedback on the delivery, let's say."
+    },
+    {
+      "start": 1644.12,
+      "end": 1649.4399999999998,
+      "text": "Okay. So, on the delivery customer is"
+    },
+    {
+      "start": 1646.16,
+      "end": 1652.48,
+      "text": "now trying to write here how many days"
+    },
+    {
+      "start": 1649.44,
+      "end": 1654.48,
+      "text": "delivery was, how many you know days"
+    },
+    {
+      "start": 1652.48,
+      "end": 1656.1200000000001,
+      "text": "later they got the delivery."
+    },
+    {
+      "start": 1654.48,
+      "end": 1659.04,
+      "text": "Okay, cool. Let's go ahead and check"
+    },
+    {
+      "start": 1656.12,
+      "end": 1661.4399999999998,
+      "text": "it's a feedback how it is going to work."
+    },
+    {
+      "start": 1659.04,
+      "end": 1664.28,
+      "text": "So, here we have."
+    },
+    {
+      "start": 1661.44,
+      "end": 1667.0,
+      "text": "So, model with the structured output, we"
+    },
+    {
+      "start": 1664.28,
+      "end": 1669.92,
+      "text": "attach this Pydantic base model with our"
+    },
+    {
+      "start": 1667.0,
+      "end": 1672.12,
+      "text": "model and then we get our"
+    },
+    {
+      "start": 1669.92,
+      "end": 1674.199,
+      "text": "model which is named as here the"
+    },
+    {
+      "start": 1672.12,
+      "end": 1675.12,
+      "text": "optional and then we are just"
+    },
+    {
+      "start": 1674.199,
+      "end": 1677.96,
+      "text": "[clears throat]"
+    },
+    {
+      "start": 1675.12,
+      "end": 1681.6799999999998,
+      "text": "asking our model to classify this."
+    },
+    {
+      "start": 1677.96,
+      "end": 1683.76,
+      "text": "Okay, blue mug is lovely here. Okay, so"
+    },
+    {
+      "start": 1681.68,
+      "end": 1686.88,
+      "text": "in this case you will notice here days"
+    },
+    {
+      "start": 1683.76,
+      "end": 1690.76,
+      "text": "late field is optional, so ideally this"
+    },
+    {
+      "start": 1686.88,
+      "end": 1693.6000000000001,
+      "text": "should be none. Okay, and product is"
+    },
+    {
+      "start": 1690.76,
+      "end": 1696.28,
+      "text": "actually you know required, so it must"
+    },
+    {
+      "start": 1693.6,
+      "end": 1697.28,
+      "text": "give you the output for the product. You"
+    },
+    {
+      "start": 1696.28,
+      "end": 1699.76,
+      "text": "see?"
+    },
+    {
+      "start": 1697.28,
+      "end": 1702.8,
+      "text": "This is awesome. Okay, so this is how"
+    },
+    {
+      "start": 1699.76,
+      "end": 1705.64,
+      "text": "you can control which particular field"
+    },
+    {
+      "start": 1702.8,
+      "end": 1708.1599999999999,
+      "text": "you want to include in the output or"
+    },
+    {
+      "start": 1705.64,
+      "end": 1710.4,
+      "text": "which you want to ignore if output is"
+    },
+    {
+      "start": 1708.16,
+      "end": 1712.52,
+      "text": "not available. I mean, if data is not"
+    },
+    {
+      "start": 1710.4,
+      "end": 1714.48,
+      "text": "available for that particular field. But"
+    },
+    {
+      "start": 1712.52,
+      "end": 1715.68,
+      "text": "it does not stop here. Let me show you"
+    },
+    {
+      "start": 1714.48,
+      "end": 1718.92,
+      "text": "here why."
+    },
+    {
+      "start": 1715.68,
+      "end": 1721.28,
+      "text": "Sometimes what happen, if you add"
+    },
+    {
+      "start": 1718.92,
+      "end": 1724.8400000000001,
+      "text": "optional in the field, then in that case"
+    },
+    {
+      "start": 1721.28,
+      "end": 1727.68,
+      "text": "what happen, your LLM is not bound to"
+    },
+    {
+      "start": 1724.84,
+      "end": 1729.3999999999999,
+      "text": "give you that particular field output."
+    },
+    {
+      "start": 1727.68,
+      "end": 1732.1200000000001,
+      "text": "So, sometimes, even if you have a"
+    },
+    {
+      "start": 1729.4,
+      "end": 1735.8000000000002,
+      "text": "genuine case, even in that case, your"
+    },
+    {
+      "start": 1732.12,
+      "end": 1739.0,
+      "text": "LLM tend to ignore those cases. For"
+    },
+    {
+      "start": 1735.8,
+      "end": 1742.9199999999998,
+      "text": "example, when I tested at that time,"
+    },
+    {
+      "start": 1739.0,
+      "end": 1745.0,
+      "text": "this 4 days late was missing from the"
+    },
+    {
+      "start": 1742.92,
+      "end": 1746.76,
+      "text": "days late. But, I don't know how it is"
+    },
+    {
+      "start": 1745.0,
+      "end": 1748.36,
+      "text": "going to happen right now. Let's go"
+    },
+    {
+      "start": 1746.76,
+      "end": 1751.12,
+      "text": "ahead and check it."
+    },
+    {
+      "start": 1748.36,
+      "end": 1752.6799999999998,
+      "text": "Okay. So, when I was preparing this, at"
+    },
+    {
+      "start": 1751.12,
+      "end": 1755.1599999999999,
+      "text": "that time,"
+    },
+    {
+      "start": 1752.68,
+      "end": 1758.5600000000002,
+      "text": "this days late was missing because our"
+    },
+    {
+      "start": 1755.16,
+      "end": 1761.1200000000001,
+      "text": "LLM was not bound to give it. As of now,"
+    },
+    {
+      "start": 1758.56,
+      "end": 1763.6799999999998,
+      "text": "I can see this. So,"
+    },
+    {
+      "start": 1761.12,
+      "end": 1766.0,
+      "text": "that is perfectly fine as of now. But,"
+    },
+    {
+      "start": 1763.68,
+      "end": 1767.92,
+      "text": "this is the problem. We might run it"
+    },
+    {
+      "start": 1766.0,
+      "end": 1769.12,
+      "text": "multiple time, and thereafter, we might"
+    },
+    {
+      "start": 1767.92,
+      "end": 1771.04,
+      "text": "see that."
+    },
+    {
+      "start": 1769.12,
+      "end": 1773.04,
+      "text": "And also, you might also see that."
+    },
+    {
+      "start": 1771.04,
+      "end": 1776.3999999999999,
+      "text": "Whenever you put optional field, then"
+    },
+    {
+      "start": 1773.04,
+      "end": 1780.2,
+      "text": "your LLM is not always bound to give"
+    },
+    {
+      "start": 1776.4,
+      "end": 1782.0400000000002,
+      "text": "that particular output. Okay. Cool. So,"
+    },
+    {
+      "start": 1780.2,
+      "end": 1783.92,
+      "text": "how to solve that? Let's say if this"
+    },
+    {
+      "start": 1782.04,
+      "end": 1786.2,
+      "text": "particular problem occurs here to you,"
+    },
+    {
+      "start": 1783.92,
+      "end": 1787.88,
+      "text": "then how to solve that? So, to solve"
+    },
+    {
+      "start": 1786.2,
+      "end": 1790.92,
+      "text": "that, what you can do here, you can"
+    },
+    {
+      "start": 1787.88,
+      "end": 1792.3200000000002,
+      "text": "create a better Pydantic model here."
+    },
+    {
+      "start": 1790.92,
+      "end": 1794.5600000000002,
+      "text": "All right. So, how do you create that"
+    },
+    {
+      "start": 1792.32,
+      "end": 1796.48,
+      "text": "better Pydantic model? Then, you can"
+    },
+    {
+      "start": 1794.56,
+      "end": 1798.44,
+      "text": "create it inside"
+    },
+    {
+      "start": 1796.48,
+      "end": 1800.68,
+      "text": "You can create it like this. So, you"
+    },
+    {
+      "start": 1798.44,
+      "end": 1801.88,
+      "text": "have a product, then you mention there"
+    },
+    {
+      "start": 1800.68,
+      "end": 1803.8,
+      "text": "lateness."
+    },
+    {
+      "start": 1801.88,
+      "end": 1806.1200000000001,
+      "text": "Basically, whether user has mentioned"
+    },
+    {
+      "start": 1803.8,
+      "end": 1808.72,
+      "text": "the lateness or not. If user has"
+    },
+    {
+      "start": 1806.12,
+      "end": 1810.08,
+      "text": "mentioned the lateness, only then you"
+    },
+    {
+      "start": 1808.72,
+      "end": 1811.64,
+      "text": "give the"
+    },
+    {
+      "start": 1810.08,
+      "end": 1813.6,
+      "text": "how many days"
+    },
+    {
+      "start": 1811.64,
+      "end": 1815.2,
+      "text": "it is late. Otherwise, you can give"
+    },
+    {
+      "start": 1813.6,
+      "end": 1817.04,
+      "text": "there the zero."
+    },
+    {
+      "start": 1815.2,
+      "end": 1819.8400000000001,
+      "text": "All right. Because if lateness is not"
+    },
+    {
+      "start": 1817.04,
+      "end": 1821.72,
+      "text": "mentioned at all, then days late is"
+    },
+    {
+      "start": 1819.84,
+      "end": 1824.12,
+      "text": "going to be the zero there. That means"
+    },
+    {
+      "start": 1821.72,
+      "end": 1825.76,
+      "text": "the customer has got it on time. And in"
+    },
+    {
+      "start": 1824.12,
+      "end": 1827.6399999999999,
+      "text": "this case, we don't need to make it"
+    },
+    {
+      "start": 1825.76,
+      "end": 1829.16,
+      "text": "optional. All right. As I told you"
+    },
+    {
+      "start": 1827.64,
+      "end": 1831.72,
+      "text": "earlier, if you make it something"
+    },
+    {
+      "start": 1829.16,
+      "end": 1834.3600000000001,
+      "text": "optional, then your LLM is not going to"
+    },
+    {
+      "start": 1831.72,
+      "end": 1836.64,
+      "text": "fight for that particular field. If that"
+    },
+    {
+      "start": 1834.36,
+      "end": 1838.9199999999998,
+      "text": "particular field is a complicated, then"
+    },
+    {
+      "start": 1836.64,
+      "end": 1840.5200000000002,
+      "text": "your LLM is going to ignore that field"
+    },
+    {
+      "start": 1838.92,
+      "end": 1841.3200000000002,
+      "text": "automatically."
+    },
+    {
+      "start": 1840.52,
+      "end": 1843.2,
+      "text": "Okay."
+    },
+    {
+      "start": 1841.32,
+      "end": 1845.56,
+      "text": "Let's go ahead and check this. So, I'm"
+    },
+    {
+      "start": 1843.2,
+      "end": 1848.6000000000001,
+      "text": "going to check this here with the new"
+    },
+    {
+      "start": 1845.56,
+      "end": 1850.56,
+      "text": "input. The blue mug arrived 4 days late,"
+    },
+    {
+      "start": 1848.6,
+      "end": 1852.56,
+      "text": "but it is lovely. And here better"
+    },
+    {
+      "start": 1850.56,
+      "end": 1854.96,
+      "text": "feedback, this one is coming here model"
+    },
+    {
+      "start": 1852.56,
+      "end": 1856.72,
+      "text": "with structured output. All right. Let's"
+    },
+    {
+      "start": 1854.96,
+      "end": 1859.04,
+      "text": "go ahead and run this. Now, this time we"
+    },
+    {
+      "start": 1856.72,
+      "end": 1862.04,
+      "text": "are going to get here three fields here."
+    },
+    {
+      "start": 1859.04,
+      "end": 1864.1599999999999,
+      "text": "Product mentions lateness and days late."
+    },
+    {
+      "start": 1862.04,
+      "end": 1867.2,
+      "text": "All right, everything is there. So, here"
+    },
+    {
+      "start": 1864.16,
+      "end": 1869.48,
+      "text": "mention lateness is true. Now, if you"
+    },
+    {
+      "start": 1867.2,
+      "end": 1871.72,
+      "text": "give here something where"
+    },
+    {
+      "start": 1869.48,
+      "end": 1873.52,
+      "text": "lateness is not mentioned, then in that"
+    },
+    {
+      "start": 1871.72,
+      "end": 1876.16,
+      "text": "case you are going to give mention"
+    },
+    {
+      "start": 1873.52,
+      "end": 1878.84,
+      "text": "lateness equal to the false and days"
+    },
+    {
+      "start": 1876.16,
+      "end": 1880.24,
+      "text": "late equal to zero. That is what you are"
+    },
+    {
+      "start": 1878.84,
+      "end": 1881.12,
+      "text": "going to get here."
+    },
+    {
+      "start": 1880.24,
+      "end": 1883.04,
+      "text": "Okay."
+    },
+    {
+      "start": 1881.12,
+      "end": 1885.32,
+      "text": "Excellent. Now, I hope you have"
+    },
+    {
+      "start": 1883.04,
+      "end": 1888.3999999999999,
+      "text": "understood that how this Pydantic model"
+    },
+    {
+      "start": 1885.32,
+      "end": 1890.48,
+      "text": "works here. Okay, cool. So, now we have"
+    },
+    {
+      "start": 1888.4,
+      "end": 1893.0800000000002,
+      "text": "worked with the Pydantic base models on"
+    },
+    {
+      "start": 1890.48,
+      "end": 1895.24,
+      "text": "a single level only, but you can also"
+    },
+    {
+      "start": 1893.08,
+      "end": 1897.6,
+      "text": "design this Pydantic models on a"
+    },
+    {
+      "start": 1895.24,
+      "end": 1900.48,
+      "text": "multiple levels as well. For example,"
+    },
+    {
+      "start": 1897.6,
+      "end": 1901.8799999999999,
+      "text": "let's say if you have um"
+    },
+    {
+      "start": 1900.48,
+      "end": 1903.96,
+      "text": "address, let's say. If you are defining"
+    },
+    {
+      "start": 1901.88,
+      "end": 1906.6000000000001,
+      "text": "someone address, so then you can have"
+    },
+    {
+      "start": 1903.96,
+      "end": 1908.72,
+      "text": "one class at the address and then inside"
+    },
+    {
+      "start": 1906.6,
+      "end": 1910.08,
+      "text": "that address you can have some, you"
+    },
+    {
+      "start": 1908.72,
+      "end": 1912.6000000000001,
+      "text": "know, the more information about the"
+    },
+    {
+      "start": 1910.08,
+      "end": 1914.84,
+      "text": "person. For example, the person name,"
+    },
+    {
+      "start": 1912.6,
+      "end": 1917.3999999999999,
+      "text": "age, and so on. So, something like that"
+    },
+    {
+      "start": 1914.84,
+      "end": 1920.1599999999999,
+      "text": "you can design, you know, class inside"
+    },
+    {
+      "start": 1917.4,
+      "end": 1922.44,
+      "text": "class. For example, I can define here"
+    },
+    {
+      "start": 1920.16,
+      "end": 1924.88,
+      "text": "issue class first of all, kind and the"
+    },
+    {
+      "start": 1922.44,
+      "end": 1927.68,
+      "text": "details, and then finally I can define"
+    },
+    {
+      "start": 1924.88,
+      "end": 1929.72,
+      "text": "here a parent class as a complaint."
+    },
+    {
+      "start": 1927.68,
+      "end": 1931.44,
+      "text": "So, inside this complaint parent class"
+    },
+    {
+      "start": 1929.72,
+      "end": 1934.6000000000001,
+      "text": "I'm having here child class that is"
+    },
+    {
+      "start": 1931.44,
+      "end": 1937.56,
+      "text": "issues. So, inside this issue I'm going"
+    },
+    {
+      "start": 1934.6,
+      "end": 1940.28,
+      "text": "to get these fields. All right, kind and"
+    },
+    {
+      "start": 1937.56,
+      "end": 1942.52,
+      "text": "the detail because this list is actually"
+    },
+    {
+      "start": 1940.28,
+      "end": 1944.8,
+      "text": "the type of issue here."
+    },
+    {
+      "start": 1942.52,
+      "end": 1948.0,
+      "text": "All right. So, this is going to be a"
+    },
+    {
+      "start": 1944.8,
+      "end": 1950.8,
+      "text": "Pydantic model inside a Pydantic model."
+    },
+    {
+      "start": 1948.0,
+      "end": 1952.48,
+      "text": "This is how you can define it."
+    },
+    {
+      "start": 1950.8,
+      "end": 1954.72,
+      "text": "Now, let me just show you here the final"
+    },
+    {
+      "start": 1952.48,
+      "end": 1957.2,
+      "text": "output how it is going to give you. So,"
+    },
+    {
+      "start": 1954.72,
+      "end": 1959.4,
+      "text": "the final output look like this."
+    },
+    {
+      "start": 1957.2,
+      "end": 1960.72,
+      "text": "So, you have your structured output"
+    },
+    {
+      "start": 1959.4,
+      "end": 1962.8400000000001,
+      "text": "where"
+    },
+    {
+      "start": 1960.72,
+      "end": 1966.04,
+      "text": "this complaint goes. And inside this"
+    },
+    {
+      "start": 1962.84,
+      "end": 1968.04,
+      "text": "complaint, you have issue as well here."
+    },
+    {
+      "start": 1966.04,
+      "end": 1970.44,
+      "text": "All right, everything there. And then"
+    },
+    {
+      "start": 1968.04,
+      "end": 1972.04,
+      "text": "analyst this model is coming, and then"
+    },
+    {
+      "start": 1970.44,
+      "end": 1974.2,
+      "text": "I'm just invoking this with this"
+    },
+    {
+      "start": 1972.04,
+      "end": 1976.24,
+      "text": "particular complaint here. Let's go"
+    },
+    {
+      "start": 1974.2,
+      "end": 1977.68,
+      "text": "ahead and check this how it is going to"
+    },
+    {
+      "start": 1976.24,
+      "end": 1979.52,
+      "text": "give you the output."
+    },
+    {
+      "start": 1977.68,
+      "end": 1982.24,
+      "text": "This is really very important to see"
+    },
+    {
+      "start": 1979.52,
+      "end": 1985.12,
+      "text": "here. So, customer mode annoyed, that is"
+    },
+    {
+      "start": 1982.24,
+      "end": 1987.04,
+      "text": "fine. And then inside this issue,"
+    },
+    {
+      "start": 1985.12,
+      "end": 1990.2399999999998,
+      "text": "you are going to you are going to have"
+    },
+    {
+      "start": 1987.04,
+      "end": 1992.92,
+      "text": "here class issue, this one. Okay. So,"
+    },
+    {
+      "start": 1990.24,
+      "end": 1995.04,
+      "text": "here you are having class inside a class"
+    },
+    {
+      "start": 1992.92,
+      "end": 1997.92,
+      "text": "here. Okay. And then inside that you"
+    },
+    {
+      "start": 1995.04,
+      "end": 2000.0,
+      "text": "have a kind and the detail."
+    },
+    {
+      "start": 1997.92,
+      "end": 2002.0,
+      "text": "All right. Why you need this?"
+    },
+    {
+      "start": 2000.0,
+      "end": 2004.2,
+      "text": "You need this because let's see if there"
+    },
+    {
+      "start": 2002.0,
+      "end": 2006.32,
+      "text": "are multiple issues."
+    },
+    {
+      "start": 2004.2,
+      "end": 2008.44,
+      "text": "Okay. If there are multiple issues need"
+    },
+    {
+      "start": 2006.32,
+      "end": 2010.6399999999999,
+      "text": "to be reported, in that case you need to"
+    },
+    {
+      "start": 2008.44,
+      "end": 2012.28,
+      "text": "create a separate issue class like here"
+    },
+    {
+      "start": 2010.64,
+      "end": 2015.0,
+      "text": "you are seeing. There are multiple"
+    },
+    {
+      "start": 2012.28,
+      "end": 2018.32,
+      "text": "issues. So, each of these issues need to"
+    },
+    {
+      "start": 2015.0,
+      "end": 2020.6,
+      "text": "be recorded separately. So, first issue"
+    },
+    {
+      "start": 2018.32,
+      "end": 2023.3999999999999,
+      "text": "was wrong item. Another issue was the"
+    },
+    {
+      "start": 2020.6,
+      "end": 2027.6,
+      "text": "lateness there. All right. Because of"
+    },
+    {
+      "start": 2023.4,
+      "end": 2029.3200000000002,
+      "text": "this, you need these nested classes."
+    },
+    {
+      "start": 2027.6,
+      "end": 2031.8799999999999,
+      "text": "Okay. Cool. Now, I hope you have"
+    },
+    {
+      "start": 2029.32,
+      "end": 2034.36,
+      "text": "understood here how you can use this in"
+    },
+    {
+      "start": 2031.88,
+      "end": 2037.2,
+      "text": "your company or in your project."
+    },
+    {
+      "start": 2034.36,
+      "end": 2039.08,
+      "text": "Thereafter, let's go ahead and check it"
+    },
+    {
+      "start": 2037.2,
+      "end": 2041.8400000000001,
+      "text": "this in the detail how many issues we"
+    },
+    {
+      "start": 2039.08,
+      "end": 2043.08,
+      "text": "have here. So, first wrong item,"
+    },
+    {
+      "start": 2041.84,
+      "end": 2044.8,
+      "text": "then late,"
+    },
+    {
+      "start": 2043.08,
+      "end": 2046.72,
+      "text": "and thereafter the damaged, and then the"
+    },
+    {
+      "start": 2044.8,
+      "end": 2048.24,
+      "text": "billing. You see?"
+    },
+    {
+      "start": 2046.72,
+      "end": 2050.08,
+      "text": "There are multiple issues there. All"
+    },
+    {
+      "start": 2048.24,
+      "end": 2052.8399999999997,
+      "text": "right. So, there are so many issues, and"
+    },
+    {
+      "start": 2050.08,
+      "end": 2055.2,
+      "text": "then once refund. All of these issues we"
+    },
+    {
+      "start": 2052.84,
+      "end": 2058.08,
+      "text": "cannot combine everything together. We"
+    },
+    {
+      "start": 2055.2,
+      "end": 2060.6789999999996,
+      "text": "need to make sure here these issues are"
+    },
+    {
+      "start": 2058.08,
+      "end": 2062.919,
+      "text": "actually recorded separately. As an"
+    },
+    {
+      "start": 2060.679,
+      "end": 2065.6,
+      "text": "e-commerce company, you need to make"
+    },
+    {
+      "start": 2062.919,
+      "end": 2067.879,
+      "text": "sure that you record each and every"
+    },
+    {
+      "start": 2065.6,
+      "end": 2070.24,
+      "text": "complaint of the customer. And also, you"
+    },
+    {
+      "start": 2067.879,
+      "end": 2072.919,
+      "text": "need to make sure that you dig deeper to"
+    },
+    {
+      "start": 2070.24,
+      "end": 2075.1589999999997,
+      "text": "understand what actually customer is"
+    },
+    {
+      "start": 2072.919,
+      "end": 2076.96,
+      "text": "trying to say. All right, so this is how"
+    },
+    {
+      "start": 2075.159,
+      "end": 2079.8,
+      "text": "you improve your services. This is how"
+    },
+    {
+      "start": 2076.96,
+      "end": 2081.679,
+      "text": "you improve your product. All right,"
+    },
+    {
+      "start": 2079.8,
+      "end": 2083.44,
+      "text": "everyone. I hope you must have liked"
+    },
+    {
+      "start": 2081.679,
+      "end": 2086.28,
+      "text": "this particular video."
+    },
+    {
+      "start": 2083.44,
+      "end": 2088.84,
+      "text": "It is like a 20 to 40 minute probably,"
+    },
+    {
+      "start": 2086.28,
+      "end": 2092.28,
+      "text": "not a 20 minute. So, 30 to 40 minute"
+    },
+    {
+      "start": 2088.84,
+      "end": 2094.84,
+      "text": "long video. And this is the fifth day in"
+    },
+    {
+      "start": 2092.28,
+      "end": 2097.0800000000004,
+      "text": "our LangChain boot camp series."
+    },
+    {
+      "start": 2094.84,
+      "end": 2099.2400000000002,
+      "text": "And please do not forget to like this"
+    },
+    {
+      "start": 2097.08,
+      "end": 2101.4,
+      "text": "video and subscribe this channel. If you"
+    },
+    {
+      "start": 2099.24,
+      "end": 2103.52,
+      "text": "want me to make a video on a particular"
+    },
+    {
+      "start": 2101.4,
+      "end": 2105.44,
+      "text": "let me know. I would be more than happy"
+    },
+    {
+      "start": 2103.52,
+      "end": 2108.0,
+      "text": "to make that. All right, everyone."
+    },
+    {
+      "start": 2105.44,
+      "end": 2108.0,
+      "text": "Bye-bye. Take care."
+    }
+  ]
+}

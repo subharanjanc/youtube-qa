@@ -1,0 +1,2603 @@
+{
+  "video_id": "vmy3HgaKJsY",
+  "title": "Most Popular Framework-Langchain vs LangGraph",
+  "channel": "Krish Naik",
+  "trainer": "Krish Naik",
+  "topic": "LangChain",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1243.0,
+  "segments": [
+    {
+      "start": 0.8,
+      "end": 5.279,
+      "text": "Hello all, my name is Kuresh Naik and uh"
+    },
+    {
+      "start": 2.879,
+      "end": 7.039999999999999,
+      "text": "welcome to my YouTube channel. So guys,"
+    },
+    {
+      "start": 5.279,
+      "end": 9.44,
+      "text": "today in this particular video I'm going"
+    },
+    {
+      "start": 7.04,
+      "end": 11.280000000000001,
+      "text": "to discuss about this amazing topic uh"
+    },
+    {
+      "start": 9.44,
+      "end": 14.559,
+      "text": "to make you understand the differences"
+    },
+    {
+      "start": 11.28,
+      "end": 16.4,
+      "text": "between langin versus langraph. Now I've"
+    },
+    {
+      "start": 14.559,
+      "end": 18.72,
+      "text": "been making similar kind of videos from"
+    },
+    {
+      "start": 16.4,
+      "end": 22.159999999999997,
+      "text": "past couple of weeks uh or from past"
+    },
+    {
+      "start": 18.72,
+      "end": 24.88,
+      "text": "month and here our main aim is to make"
+    },
+    {
+      "start": 22.16,
+      "end": 26.4,
+      "text": "our fundamentals quite stronger. Let's"
+    },
+    {
+      "start": 24.88,
+      "end": 27.84,
+      "text": "say that if I ask you a question in an"
+    },
+    {
+      "start": 26.4,
+      "end": 30.159999999999997,
+      "text": "interview when should we probably go"
+    },
+    {
+      "start": 27.84,
+      "end": 32.399,
+      "text": "ahead and use langraph or what is the"
+    },
+    {
+      "start": 30.16,
+      "end": 34.32,
+      "text": "differences between lang and lang graph"
+    },
+    {
+      "start": 32.399,
+      "end": 36.239000000000004,
+      "text": "what would you probably try to explain"
+    },
+    {
+      "start": 34.32,
+      "end": 38.719,
+      "text": "just write down in the comment section"
+    },
+    {
+      "start": 36.239,
+      "end": 40.32,
+      "text": "before seeing the specific video and"
+    },
+    {
+      "start": 38.719,
+      "end": 42.160000000000004,
+      "text": "then after you write down the comment"
+    },
+    {
+      "start": 40.32,
+      "end": 44.32,
+      "text": "right just go through this entire video"
+    },
+    {
+      "start": 42.16,
+      "end": 46.8,
+      "text": "and then try to see that how many things"
+    },
+    {
+      "start": 44.32,
+      "end": 48.64,
+      "text": "that I've actually told does it matches"
+    },
+    {
+      "start": 46.8,
+      "end": 51.599999999999994,
+      "text": "with all the information that you have"
+    },
+    {
+      "start": 48.64,
+      "end": 53.52,
+      "text": "right so please make sure to do that but"
+    },
+    {
+      "start": 51.6,
+      "end": 55.44,
+      "text": "in this video we are going to have a"
+    },
+    {
+      "start": 53.52,
+      "end": 58.879000000000005,
+      "text": "detailed discussion between lang chain"
+    },
+    {
+      "start": 55.44,
+      "end": 60.399,
+      "text": "versus lang graph. Um trust me just"
+    },
+    {
+      "start": 58.879,
+      "end": 63.28,
+      "text": "watch the till the end you will"
+    },
+    {
+      "start": 60.399,
+      "end": 65.76,
+      "text": "definitely learn a lot many things. Now"
+    },
+    {
+      "start": 63.28,
+      "end": 68.56,
+      "text": "uh if I talk about lang chain you know"
+    },
+    {
+      "start": 65.76,
+      "end": 70.799,
+      "text": "and I hope it is one of the most popular"
+    },
+    {
+      "start": 68.56,
+      "end": 72.96000000000001,
+      "text": "framework which is basically used to"
+    },
+    {
+      "start": 70.799,
+      "end": 74.47900000000001,
+      "text": "create generative AI application. So"
+    },
+    {
+      "start": 72.96,
+      "end": 76.39999999999999,
+      "text": "first of all we will just go ahead and"
+    },
+    {
+      "start": 74.479,
+      "end": 79.28,
+      "text": "talk about langchain. So let's go ahead"
+    },
+    {
+      "start": 76.4,
+      "end": 81.92,
+      "text": "and write it down over here like"
+    },
+    {
+      "start": 79.28,
+      "end": 84.72,
+      "text": "langchain."
+    },
+    {
+      "start": 81.92,
+      "end": 87.119,
+      "text": "Now if I talk about langchain in lang"
+    },
+    {
+      "start": 84.72,
+      "end": 91.2,
+      "text": "chain obviously this is this langchain"
+    },
+    {
+      "start": 87.119,
+      "end": 94.56,
+      "text": "is basically used to create if I"
+    },
+    {
+      "start": 91.2,
+      "end": 96.119,
+      "text": "probably say it is used to create llm"
+    },
+    {
+      "start": 94.56,
+      "end": 99.07900000000001,
+      "text": "powered"
+    },
+    {
+      "start": 96.119,
+      "end": 102.0,
+      "text": "application llm"
+    },
+    {
+      "start": 99.079,
+      "end": 104.83999999999999,
+      "text": "powered chatbot assistant it can be it"
+    },
+    {
+      "start": 102.0,
+      "end": 107.84,
+      "text": "can be an application or generative AI"
+    },
+    {
+      "start": 104.84,
+      "end": 109.36,
+      "text": "application okay now when I say LLM"
+    },
+    {
+      "start": 107.84,
+      "end": 110.96000000000001,
+      "text": "powered that basically means anything"
+    },
+    {
+      "start": 109.36,
+      "end": 113.759,
+      "text": "that you create whether you create a"
+    },
+    {
+      "start": 110.96,
+      "end": 115.91999999999999,
+      "text": "chatbot Whether you create a simple app"
+    },
+    {
+      "start": 113.759,
+      "end": 117.68,
+      "text": "or whether you create any kind of"
+    },
+    {
+      "start": 115.92,
+      "end": 119.71900000000001,
+      "text": "application right at the end of the day"
+    },
+    {
+      "start": 117.68,
+      "end": 124.07900000000001,
+      "text": "you are specifically using"
+    },
+    {
+      "start": 119.719,
+      "end": 126.96,
+      "text": "LLMs right on top of this LLMs there are"
+    },
+    {
+      "start": 124.079,
+      "end": 130.16,
+      "text": "multiple things that can be used here"
+    },
+    {
+      "start": 126.96,
+      "end": 132.12,
+      "text": "you can use prompts along with the LLMs"
+    },
+    {
+      "start": 130.16,
+      "end": 134.56,
+      "text": "you can use"
+    },
+    {
+      "start": 132.12,
+      "end": 136.84,
+      "text": "tools you can use different kind of"
+    },
+    {
+      "start": 134.56,
+      "end": 139.84,
+      "text": "integrations and many more"
+    },
+    {
+      "start": 136.84,
+      "end": 141.599,
+      "text": "things so overall if I probably talk"
+    },
+    {
+      "start": 139.84,
+      "end": 143.36,
+      "text": "about lang chain"
+    },
+    {
+      "start": 141.599,
+      "end": 145.51999999999998,
+      "text": "Any application that is basically"
+    },
+    {
+      "start": 143.36,
+      "end": 147.76000000000002,
+      "text": "developed in Langchain, a generative AI"
+    },
+    {
+      "start": 145.52,
+      "end": 150.31900000000002,
+      "text": "application or LLM powered application"
+    },
+    {
+      "start": 147.76,
+      "end": 152.319,
+      "text": "or a AI chatbot assistant. There are"
+    },
+    {
+      "start": 150.319,
+      "end": 156.319,
+      "text": "three main important steps that happens"
+    },
+    {
+      "start": 152.319,
+      "end": 160.67999999999998,
+      "text": "in Langchain. This is my one step. This"
+    },
+    {
+      "start": 156.319,
+      "end": 162.83999999999997,
+      "text": "is my another step and this is my third"
+    },
+    {
+      "start": 160.68,
+      "end": 165.36,
+      "text": "step."
+    },
+    {
+      "start": 162.84,
+      "end": 167.12,
+      "text": "Okay. So these are the three main"
+    },
+    {
+      "start": 165.36,
+      "end": 168.87900000000002,
+      "text": "components. Now what are these specific"
+    },
+    {
+      "start": 167.12,
+      "end": 170.56,
+      "text": "components? When I say steps, I'm"
+    },
+    {
+      "start": 168.879,
+      "end": 172.39999999999998,
+      "text": "basically talking about components. The"
+    },
+    {
+      "start": 170.56,
+      "end": 173.56,
+      "text": "first component is nothing but it is"
+    },
+    {
+      "start": 172.4,
+      "end": 177.59900000000002,
+      "text": "basically called"
+    },
+    {
+      "start": 173.56,
+      "end": 180.0,
+      "text": "as retrieve. Okay. So here we are"
+    },
+    {
+      "start": 177.599,
+      "end": 183.11999999999998,
+      "text": "basically going to write it as retrieve."
+    },
+    {
+      "start": 180.0,
+      "end": 186.36,
+      "text": "Retrieve or retriever. Then the second"
+    },
+    {
+      "start": 183.12,
+      "end": 188.64000000000001,
+      "text": "important component is nothing but"
+    },
+    {
+      "start": 186.36,
+      "end": 191.08,
+      "text": "summarize. And the third important"
+    },
+    {
+      "start": 188.64,
+      "end": 196.39999999999998,
+      "text": "component is nothing but your final"
+    },
+    {
+      "start": 191.08,
+      "end": 199.12,
+      "text": "answer or output. Okay. Now when we talk"
+    },
+    {
+      "start": 196.4,
+      "end": 200.72,
+      "text": "about this components. Okay. So here I"
+    },
+    {
+      "start": 199.12,
+      "end": 202.959,
+      "text": "will just go ahead and write output."
+    },
+    {
+      "start": 200.72,
+      "end": 204.56,
+      "text": "Okay. When we talk about the specific"
+    },
+    {
+      "start": 202.959,
+      "end": 206.76,
+      "text": "components in lang chain whether you"
+    },
+    {
+      "start": 204.56,
+      "end": 209.4,
+      "text": "generate any kind of generative AI"
+    },
+    {
+      "start": 206.76,
+      "end": 212.07999999999998,
+      "text": "applications empowered application or AI"
+    },
+    {
+      "start": 209.4,
+      "end": 214.48000000000002,
+      "text": "assistant these three components will be"
+    },
+    {
+      "start": 212.08,
+      "end": 217.44000000000003,
+      "text": "definitely there. Now the question rises"
+    },
+    {
+      "start": 214.48,
+      "end": 220.0,
+      "text": "kish what does exactly happen in the"
+    },
+    {
+      "start": 217.44,
+      "end": 221.76,
+      "text": "directory in retrieve? There are three"
+    },
+    {
+      "start": 220.0,
+      "end": 227.36,
+      "text": "main important things that we basically"
+    },
+    {
+      "start": 221.76,
+      "end": 229.04,
+      "text": "do. One is data injection."
+    },
+    {
+      "start": 227.36,
+      "end": 230.4,
+      "text": "Now the question rises what is data"
+    },
+    {
+      "start": 229.04,
+      "end": 233.28,
+      "text": "injection? Data injection is very"
+    },
+    {
+      "start": 230.4,
+      "end": 235.72,
+      "text": "simple, right? We ingest a data right we"
+    },
+    {
+      "start": 233.28,
+      "end": 239.2,
+      "text": "probably load a data from a specific"
+    },
+    {
+      "start": 235.72,
+      "end": 241.04,
+      "text": "source. Now the main thing is that here"
+    },
+    {
+      "start": 239.2,
+      "end": 243.599,
+      "text": "the source can be different different it"
+    },
+    {
+      "start": 241.04,
+      "end": 245.2,
+      "text": "can be a PDF file. It can be an external"
+    },
+    {
+      "start": 243.599,
+      "end": 247.04,
+      "text": "database. It can be an excel file. It"
+    },
+    {
+      "start": 245.2,
+      "end": 249.67999999999998,
+      "text": "can be a website. You need to probably"
+    },
+    {
+      "start": 247.04,
+      "end": 252.239,
+      "text": "web scrap the data. There may be various"
+    },
+    {
+      "start": 249.68,
+      "end": 254.239,
+      "text": "different ways right in data injection."
+    },
+    {
+      "start": 252.239,
+      "end": 257.28000000000003,
+      "text": "So when we talk about data injection"
+    },
+    {
+      "start": 254.239,
+      "end": 259.32,
+      "text": "this is also called as we basically use"
+    },
+    {
+      "start": 257.28,
+      "end": 262.0,
+      "text": "something called as document loader over"
+    },
+    {
+      "start": 259.32,
+      "end": 264.88,
+      "text": "here right. So we use nothing but"
+    },
+    {
+      "start": 262.0,
+      "end": 267.759,
+      "text": "document loader. So in langchain you"
+    },
+    {
+      "start": 264.88,
+      "end": 269.44,
+      "text": "have a specific class uh where you have"
+    },
+    {
+      "start": 267.759,
+      "end": 271.04,
+      "text": "lot of packages and integration"
+    },
+    {
+      "start": 269.44,
+      "end": 274.71999999999997,
+      "text": "specifically with respect to document"
+    },
+    {
+      "start": 271.04,
+      "end": 276.96000000000004,
+      "text": "loader. Here the main aim is that you"
+    },
+    {
+      "start": 274.72,
+      "end": 279.44000000000005,
+      "text": "try to load documents from different"
+    },
+    {
+      "start": 276.96,
+      "end": 282.15999999999997,
+      "text": "different sources. It can be any source."
+    },
+    {
+      "start": 279.44,
+      "end": 285.68,
+      "text": "It can be a PDF file. It can be a excel"
+    },
+    {
+      "start": 282.16,
+      "end": 289.6,
+      "text": "file. It can be a CSV file. It can even"
+    },
+    {
+      "start": 285.68,
+      "end": 292.72,
+      "text": "be some third-party APIs like Wikipedia."
+    },
+    {
+      "start": 289.6,
+      "end": 294.91900000000004,
+      "text": "It can be r. It can be anything as such."
+    },
+    {
+      "start": 292.72,
+      "end": 298.88000000000005,
+      "text": "Right? So they are multiple sources and"
+    },
+    {
+      "start": 294.919,
+      "end": 300.56,
+      "text": "langen has a huge amount of different"
+    },
+    {
+      "start": 298.88,
+      "end": 302.71999999999997,
+      "text": "different kind of integrations already"
+    },
+    {
+      "start": 300.56,
+      "end": 304.4,
+      "text": "provided in terms of document loader."
+    },
+    {
+      "start": 302.72,
+      "end": 306.32000000000005,
+      "text": "And what I feel is that whenever you try"
+    },
+    {
+      "start": 304.4,
+      "end": 308.32,
+      "text": "to develop any of this kind of"
+    },
+    {
+      "start": 306.32,
+      "end": 310.88,
+      "text": "application, this is the most important"
+    },
+    {
+      "start": 308.32,
+      "end": 313.59999999999997,
+      "text": "step because here the parsing of the"
+    },
+    {
+      "start": 310.88,
+      "end": 316.639,
+      "text": "data will happen, right? The parsing of"
+    },
+    {
+      "start": 313.6,
+      "end": 318.47900000000004,
+      "text": "the data will happen. The more in a like"
+    },
+    {
+      "start": 316.639,
+      "end": 320.639,
+      "text": "when you do the parsing, if you do this"
+    },
+    {
+      "start": 318.479,
+      "end": 323.36,
+      "text": "much more accurately, then you will"
+    },
+    {
+      "start": 320.639,
+      "end": 325.759,
+      "text": "definitely be able to generate uh or"
+    },
+    {
+      "start": 323.36,
+      "end": 327.91900000000004,
+      "text": "create a generative AI application with"
+    },
+    {
+      "start": 325.759,
+      "end": 330.639,
+      "text": "much more accuracy. So now there are"
+    },
+    {
+      "start": 327.919,
+      "end": 332.4,
+      "text": "dedicated companies who specifically do"
+    },
+    {
+      "start": 330.639,
+      "end": 333.759,
+      "text": "this particular task who create this"
+    },
+    {
+      "start": 332.4,
+      "end": 336.15999999999997,
+      "text": "kind of packages with respect to"
+    },
+    {
+      "start": 333.759,
+      "end": 338.40000000000003,
+      "text": "document loader right I need to probably"
+    },
+    {
+      "start": 336.16,
+      "end": 340.47900000000004,
+      "text": "I create a document loader to let's say"
+    },
+    {
+      "start": 338.4,
+      "end": 342.71999999999997,
+      "text": "web scrap the data from the internet"
+    },
+    {
+      "start": 340.479,
+      "end": 344.32,
+      "text": "which will be a very important use case"
+    },
+    {
+      "start": 342.72,
+      "end": 346.72,
+      "text": "for most of the use case that we"
+    },
+    {
+      "start": 344.32,
+      "end": 348.479,
+      "text": "specifically implement in the industry."
+    },
+    {
+      "start": 346.72,
+      "end": 350.52000000000004,
+      "text": "So in document loader this basically"
+    },
+    {
+      "start": 348.479,
+      "end": 353.28,
+      "text": "happens right and that is a part of data"
+    },
+    {
+      "start": 350.52,
+      "end": 355.84,
+      "text": "ingestion. Now coming to the second most"
+    },
+    {
+      "start": 353.28,
+      "end": 358.0,
+      "text": "important component. The second most"
+    },
+    {
+      "start": 355.84,
+      "end": 359.79999999999995,
+      "text": "important component is nothing but it is"
+    },
+    {
+      "start": 358.0,
+      "end": 362.24,
+      "text": "called as text"
+    },
+    {
+      "start": 359.8,
+      "end": 364.08,
+      "text": "splitter. Now text splitter is also a"
+    },
+    {
+      "start": 362.24,
+      "end": 366.16,
+      "text": "separate class that is available in lang"
+    },
+    {
+      "start": 364.08,
+      "end": 368.4,
+      "text": "chain or a separate package wherein"
+    },
+    {
+      "start": 366.16,
+      "end": 371.03900000000004,
+      "text": "there are multiple ways of splitting the"
+    },
+    {
+      "start": 368.4,
+      "end": 373.12,
+      "text": "text. Once you read the data from all"
+    },
+    {
+      "start": 371.039,
+      "end": 375.36,
+      "text": "these kind of sources, right? We I"
+    },
+    {
+      "start": 373.12,
+      "end": 377.919,
+      "text": "cannot just directly provide the entire"
+    },
+    {
+      "start": 375.36,
+      "end": 380.16,
+      "text": "data to my LLM model as a context."
+    },
+    {
+      "start": 377.919,
+      "end": 382.4,
+      "text": "Right? So what I have to do why I cannot"
+    },
+    {
+      "start": 380.16,
+      "end": 384.08000000000004,
+      "text": "provide because there is a very"
+    },
+    {
+      "start": 382.4,
+      "end": 387.75899999999996,
+      "text": "important component which is called as"
+    },
+    {
+      "start": 384.08,
+      "end": 389.52,
+      "text": "context window. Every LLM has a"
+    },
+    {
+      "start": 387.759,
+      "end": 392.16,
+      "text": "limitation with respect to the context"
+    },
+    {
+      "start": 389.52,
+      "end": 394.479,
+      "text": "window. So in order to overcome this"
+    },
+    {
+      "start": 392.16,
+      "end": 397.36,
+      "text": "what we do is that once we read the data"
+    },
+    {
+      "start": 394.479,
+      "end": 400.36,
+      "text": "from this data source we try to divide"
+    },
+    {
+      "start": 397.36,
+      "end": 403.52000000000004,
+      "text": "this data into smaller"
+    },
+    {
+      "start": 400.36,
+      "end": 407.039,
+      "text": "chunks into smaller chunks. Smaller"
+    },
+    {
+      "start": 403.52,
+      "end": 410.15999999999997,
+      "text": "chunks smaller chunks. Once we divide"
+    },
+    {
+      "start": 407.039,
+      "end": 412.24,
+      "text": "this data into smaller chunk then the"
+    },
+    {
+      "start": 410.16,
+      "end": 414.40000000000003,
+      "text": "next step because after we divide this"
+    },
+    {
+      "start": 412.24,
+      "end": 416.40000000000003,
+      "text": "we need to store it somewhere right and"
+    },
+    {
+      "start": 414.4,
+      "end": 420.44,
+      "text": "that is where your third important"
+    },
+    {
+      "start": 416.4,
+      "end": 422.79999999999995,
+      "text": "component comes is nothing but vector"
+    },
+    {
+      "start": 420.44,
+      "end": 425.44,
+      "text": "databases. Now inside this vector"
+    },
+    {
+      "start": 422.8,
+      "end": 429.039,
+      "text": "databases when we are specifically using"
+    },
+    {
+      "start": 425.44,
+      "end": 432.639,
+      "text": "vector databases here we also use"
+    },
+    {
+      "start": 429.039,
+      "end": 435.199,
+      "text": "something called as vector embeddings."
+    },
+    {
+      "start": 432.639,
+      "end": 437.199,
+      "text": "Now for vector embeddings it is nothing"
+    },
+    {
+      "start": 435.199,
+      "end": 440.08000000000004,
+      "text": "but we are converting the text into"
+    },
+    {
+      "start": 437.199,
+      "end": 443.36,
+      "text": "vectors that is the main aim with"
+    },
+    {
+      "start": 440.08,
+      "end": 445.44,
+      "text": "respect to vector embeddings right. So"
+    },
+    {
+      "start": 443.36,
+      "end": 447.52000000000004,
+      "text": "this is a kind of a task wherein we"
+    },
+    {
+      "start": 445.44,
+      "end": 449.36,
+      "text": "convert the text into vectors. So once"
+    },
+    {
+      "start": 447.52,
+      "end": 451.35999999999996,
+      "text": "it is basically converted we basically"
+    },
+    {
+      "start": 449.36,
+      "end": 453.52000000000004,
+      "text": "store that into the vector database. Now"
+    },
+    {
+      "start": 451.36,
+      "end": 455.759,
+      "text": "the question arises why do we store it"
+    },
+    {
+      "start": 453.52,
+      "end": 459.039,
+      "text": "right because at the end of the day from"
+    },
+    {
+      "start": 455.759,
+      "end": 461.52000000000004,
+      "text": "my any application if all my data is"
+    },
+    {
+      "start": 459.039,
+      "end": 464.24,
+      "text": "basically stored in a vector database we"
+    },
+    {
+      "start": 461.52,
+      "end": 466.71999999999997,
+      "text": "will definitely be able to do different"
+    },
+    {
+      "start": 464.24,
+      "end": 469.12,
+      "text": "different kind of search. One search"
+    },
+    {
+      "start": 466.72,
+      "end": 472.72,
+      "text": "example is nothing but semantic search."
+    },
+    {
+      "start": 469.12,
+      "end": 475.68,
+      "text": "It can be graph DB search right and with"
+    },
+    {
+      "start": 472.72,
+      "end": 477.68,
+      "text": "the help of this search we will be able"
+    },
+    {
+      "start": 475.68,
+      "end": 479.759,
+      "text": "to retrieve the right amount of context"
+    },
+    {
+      "start": 477.68,
+      "end": 482.879,
+      "text": "and give it to our LLM to finally"
+    },
+    {
+      "start": 479.759,
+      "end": 485.44,
+      "text": "generate the output right and that is"
+    },
+    {
+      "start": 482.879,
+      "end": 487.36,
+      "text": "really important right unless and until"
+    },
+    {
+      "start": 485.44,
+      "end": 489.44,
+      "text": "this is not done accurately and we don't"
+    },
+    {
+      "start": 487.36,
+      "end": 492.72,
+      "text": "get the right kind of context out of the"
+    },
+    {
+      "start": 489.44,
+      "end": 495.039,
+      "text": "directed database we will not be able to"
+    },
+    {
+      "start": 492.72,
+      "end": 498.879,
+      "text": "accurately give the output to the user"
+    },
+    {
+      "start": 495.039,
+      "end": 501.44,
+      "text": "right so in the retrieve component of"
+    },
+    {
+      "start": 498.879,
+      "end": 504.0,
+      "text": "lang chain you really need to be good at"
+    },
+    {
+      "start": 501.44,
+      "end": 506.24,
+      "text": "all the specific things when you go"
+    },
+    {
+      "start": 504.0,
+      "end": 507.599,
+      "text": "tomorrow to any companies to gen and if"
+    },
+    {
+      "start": 506.24,
+      "end": 510.08,
+      "text": "you're probably generating or developing"
+    },
+    {
+      "start": 507.599,
+      "end": 512.08,
+      "text": "a generative AI powered application you"
+    },
+    {
+      "start": 510.08,
+      "end": 514.0,
+      "text": "will be doing all the specific steps you"
+    },
+    {
+      "start": 512.08,
+      "end": 515.9190000000001,
+      "text": "need to parse the data you need to"
+    },
+    {
+      "start": 514.0,
+      "end": 517.68,
+      "text": "probably store the data in exact right"
+    },
+    {
+      "start": 515.919,
+      "end": 520.0799999999999,
+      "text": "format with respect to the document data"
+    },
+    {
+      "start": 517.68,
+      "end": 522.3199999999999,
+      "text": "type you need to make sure that you have"
+    },
+    {
+      "start": 520.08,
+      "end": 524.399,
+      "text": "to do this kind of chunking strategy so"
+    },
+    {
+      "start": 522.32,
+      "end": 525.7600000000001,
+      "text": "that you try to solve this context"
+    },
+    {
+      "start": 524.399,
+      "end": 527.6,
+      "text": "window size with respect to different"
+    },
+    {
+      "start": 525.76,
+      "end": 529.04,
+      "text": "different LLMs that you're using and"
+    },
+    {
+      "start": 527.6,
+      "end": 532.0,
+      "text": "finally you store all this particular"
+    },
+    {
+      "start": 529.04,
+      "end": 534.7199999999999,
+      "text": "data into the vector database. Okay. Now"
+    },
+    {
+      "start": 532.0,
+      "end": 536.32,
+      "text": "coming to the next important step after"
+    },
+    {
+      "start": 534.72,
+      "end": 538.72,
+      "text": "we probably complete this retrieve"
+    },
+    {
+      "start": 536.32,
+      "end": 541.44,
+      "text": "component. It is nothing but summarize."
+    },
+    {
+      "start": 538.72,
+      "end": 542.8000000000001,
+      "text": "Now here is where you know and when we"
+    },
+    {
+      "start": 541.44,
+      "end": 544.32,
+      "text": "talk about summarize or when we talk"
+    },
+    {
+      "start": 542.8,
+      "end": 546.399,
+      "text": "about building generative AI"
+    },
+    {
+      "start": 544.32,
+      "end": 549.7600000000001,
+      "text": "applications uh with the help of lang"
+    },
+    {
+      "start": 546.399,
+      "end": 552.48,
+      "text": "chain here you specifically follow a"
+    },
+    {
+      "start": 549.76,
+      "end": 554.48,
+      "text": "sequential order. Okay, this is really"
+    },
+    {
+      "start": 552.48,
+      "end": 556.0,
+      "text": "important to understand and here you"
+    },
+    {
+      "start": 554.48,
+      "end": 557.519,
+      "text": "will definitely be understanding the"
+    },
+    {
+      "start": 556.0,
+      "end": 559.92,
+      "text": "differences between langin and lang"
+    },
+    {
+      "start": 557.519,
+      "end": 561.9590000000001,
+      "text": "graph. When we talk about sequential"
+    },
+    {
+      "start": 559.92,
+      "end": 565.12,
+      "text": "order, now what does this basically"
+    },
+    {
+      "start": 561.959,
+      "end": 568.0,
+      "text": "mean? In sequential order here, it"
+    },
+    {
+      "start": 565.12,
+      "end": 571.5600000000001,
+      "text": "basically means that the execution of"
+    },
+    {
+      "start": 568.0,
+      "end": 575.12,
+      "text": "any task will just happen"
+    },
+    {
+      "start": 571.56,
+      "end": 577.68,
+      "text": "sequentially. We cannot go back. Okay."
+    },
+    {
+      "start": 575.12,
+      "end": 579.12,
+      "text": "So this entire langen the generative AI"
+    },
+    {
+      "start": 577.68,
+      "end": 582.7199999999999,
+      "text": "application that is developed with the"
+    },
+    {
+      "start": 579.12,
+      "end": 586.64,
+      "text": "help of langchen follows a DAG graph"
+    },
+    {
+      "start": 582.72,
+      "end": 588.1600000000001,
+      "text": "right directed a cyclic graph okay that"
+    },
+    {
+      "start": 586.64,
+      "end": 590.3199999999999,
+      "text": "basically means if my execution is"
+    },
+    {
+      "start": 588.16,
+      "end": 592.0,
+      "text": "basically started from this task it has"
+    },
+    {
+      "start": 590.32,
+      "end": 594.1600000000001,
+      "text": "to probably go to this task it has to go"
+    },
+    {
+      "start": 592.0,
+      "end": 597.16,
+      "text": "to this particular task only sequential"
+    },
+    {
+      "start": 594.16,
+      "end": 601.519,
+      "text": "I cannot come back this option is not"
+    },
+    {
+      "start": 597.16,
+      "end": 603.12,
+      "text": "there this option is not there right so"
+    },
+    {
+      "start": 601.519,
+      "end": 604.9590000000001,
+      "text": "when we talk about this summarize"
+    },
+    {
+      "start": 603.12,
+      "end": 608.519,
+      "text": "component here you'll be able to see"
+    },
+    {
+      "start": 604.959,
+      "end": 611.279,
+      "text": "that we create some kind of chaining"
+    },
+    {
+      "start": 608.519,
+      "end": 613.04,
+      "text": "concept. So in lang chain whenever a"
+    },
+    {
+      "start": 611.279,
+      "end": 616.16,
+      "text": "generative AI application is basically"
+    },
+    {
+      "start": 613.04,
+      "end": 618.48,
+      "text": "developed here we try to implement this"
+    },
+    {
+      "start": 616.16,
+      "end": 621.12,
+      "text": "chaining concept. Now in the chaining"
+    },
+    {
+      "start": 618.48,
+      "end": 622.8000000000001,
+      "text": "concept we first of all go ahead and"
+    },
+    {
+      "start": 621.12,
+      "end": 625.6,
+      "text": "write our prompt chain. So let's say"
+    },
+    {
+      "start": 622.8,
+      "end": 627.3599999999999,
+      "text": "this is my prompt chain right sorry this"
+    },
+    {
+      "start": 625.6,
+      "end": 629.2,
+      "text": "is my prompt. We basically go ahead and"
+    },
+    {
+      "start": 627.36,
+      "end": 631.92,
+      "text": "give a prompt. prompt is just like an"
+    },
+    {
+      "start": 629.2,
+      "end": 636.399,
+      "text": "instruction to an LLM right along with"
+    },
+    {
+      "start": 631.92,
+      "end": 639.04,
+      "text": "this we try to integrate this uh prompt"
+    },
+    {
+      "start": 636.399,
+      "end": 640.56,
+      "text": "with our LLM. So LLM will be my second"
+    },
+    {
+      "start": 639.04,
+      "end": 642.64,
+      "text": "thing in the chain right second"
+    },
+    {
+      "start": 640.56,
+      "end": 644.3199999999999,
+      "text": "important component in the chain and"
+    },
+    {
+      "start": 642.64,
+      "end": 646.24,
+      "text": "then the third important component can"
+    },
+    {
+      "start": 644.32,
+      "end": 648.5600000000001,
+      "text": "be my context the context that I'm"
+    },
+    {
+      "start": 646.24,
+      "end": 650.12,
+      "text": "supplying to the LLM. So this will"
+    },
+    {
+      "start": 648.56,
+      "end": 654.16,
+      "text": "basically be my"
+    },
+    {
+      "start": 650.12,
+      "end": 656.399,
+      "text": "prompt. This will be my llm and this"
+    },
+    {
+      "start": 654.16,
+      "end": 658.079,
+      "text": "will basically be my context and this"
+    },
+    {
+      "start": 656.399,
+      "end": 660.079,
+      "text": "context will be coming from the specific"
+    },
+    {
+      "start": 658.079,
+      "end": 661.92,
+      "text": "vector database. So internally you'll be"
+    },
+    {
+      "start": 660.079,
+      "end": 664.16,
+      "text": "able to see that this vector database"
+    },
+    {
+      "start": 661.92,
+      "end": 666.24,
+      "text": "will be comp connected to this"
+    },
+    {
+      "start": 664.16,
+      "end": 669.0,
+      "text": "particular chain itself wherein we will"
+    },
+    {
+      "start": 666.24,
+      "end": 672.9590000000001,
+      "text": "be providing the context and this"
+    },
+    {
+      "start": 669.0,
+      "end": 676.0,
+      "text": "execution takes place sequentially one"
+    },
+    {
+      "start": 672.959,
+      "end": 678.64,
+      "text": "after the other right and finally"
+    },
+    {
+      "start": 676.0,
+      "end": 681.04,
+      "text": "whatever output you basically get here"
+    },
+    {
+      "start": 678.64,
+      "end": 682.16,
+      "text": "we are basically going to use or here we"
+    },
+    {
+      "start": 681.04,
+      "end": 684.7199999999999,
+      "text": "are going to give the answer of the"
+    },
+    {
+      "start": 682.16,
+      "end": 686.7199999999999,
+      "text": "output here again we can use multiple"
+    },
+    {
+      "start": 684.72,
+      "end": 689.12,
+      "text": "components one component can be my"
+    },
+    {
+      "start": 686.72,
+      "end": 692.1600000000001,
+      "text": "memory right so here we can use some"
+    },
+    {
+      "start": 689.12,
+      "end": 694.16,
+      "text": "kind of persistent memory. So if you"
+    },
+    {
+      "start": 692.16,
+      "end": 697.36,
+      "text": "have been seeing my videos with respect"
+    },
+    {
+      "start": 694.16,
+      "end": 699.279,
+      "text": "to lang lang chain or lang lang graph I"
+    },
+    {
+      "start": 697.36,
+      "end": 701.2,
+      "text": "have covered all this specific thing"
+    },
+    {
+      "start": 699.279,
+      "end": 703.12,
+      "text": "right and next thing after this"
+    },
+    {
+      "start": 701.2,
+      "end": 705.2,
+      "text": "persisting memory I can also go ahead"
+    },
+    {
+      "start": 703.12,
+      "end": 707.839,
+      "text": "and probably combine prompt with a"
+    },
+    {
+      "start": 705.2,
+      "end": 709.6800000000001,
+      "text": "separate LLM over here prompt with a"
+    },
+    {
+      "start": 707.839,
+      "end": 711.839,
+      "text": "separate LLM over here so that we will"
+    },
+    {
+      "start": 709.68,
+      "end": 713.279,
+      "text": "be able to get the output right and"
+    },
+    {
+      "start": 711.839,
+      "end": 715.12,
+      "text": "finally here you can actually see that"
+    },
+    {
+      "start": 713.279,
+      "end": 717.12,
+      "text": "finally we generate this specific output"
+    },
+    {
+      "start": 715.12,
+      "end": 720.24,
+      "text": "so this can also be created in the form"
+    },
+    {
+      "start": 717.12,
+      "end": 722.5600000000001,
+      "text": "of chain but understand one thing"
+    },
+    {
+      "start": 720.24,
+      "end": 724.9590000000001,
+      "text": "everything is basically getting executed"
+    },
+    {
+      "start": 722.56,
+      "end": 727.76,
+      "text": "sequentially. This is the most important"
+    },
+    {
+      "start": 724.959,
+      "end": 729.76,
+      "text": "thing in the entire lang chain with"
+    },
+    {
+      "start": 727.76,
+      "end": 732.56,
+      "text": "respect to developing any generative AI"
+    },
+    {
+      "start": 729.76,
+      "end": 734.0,
+      "text": "powered applications. Okay. So here is"
+    },
+    {
+      "start": 732.56,
+      "end": 736.6389999999999,
+      "text": "what we basically do with the help of"
+    },
+    {
+      "start": 734.0,
+      "end": 738.16,
+      "text": "lang chain right and again I will again"
+    },
+    {
+      "start": 736.639,
+      "end": 739.6,
+      "text": "talk about the differences as we go"
+    },
+    {
+      "start": 738.16,
+      "end": 741.6,
+      "text": "ahead like what are the main exact"
+    },
+    {
+      "start": 739.6,
+      "end": 743.519,
+      "text": "differences and all here you saw that it"
+    },
+    {
+      "start": 741.6,
+      "end": 745.44,
+      "text": "is following a sequential order. It"
+    },
+    {
+      "start": 743.519,
+      "end": 747.519,
+      "text": "follows a directed earth cyclic graph."
+    },
+    {
+      "start": 745.44,
+      "end": 749.6,
+      "text": "You know, uh here everything is in the"
+    },
+    {
+      "start": 747.519,
+      "end": 751.76,
+      "text": "form of chaining. Here we have these"
+    },
+    {
+      "start": 749.6,
+      "end": 753.36,
+      "text": "three important components. How each and"
+    },
+    {
+      "start": 751.76,
+      "end": 755.2,
+      "text": "every component is basically executed"
+    },
+    {
+      "start": 753.36,
+      "end": 758.48,
+      "text": "and how it proceeds to finally getting"
+    },
+    {
+      "start": 755.2,
+      "end": 762.839,
+      "text": "an output. Right? Now, similarly, if I"
+    },
+    {
+      "start": 758.48,
+      "end": 766.04,
+      "text": "talk about langraph, okay,"
+    },
+    {
+      "start": 762.839,
+      "end": 771.639,
+      "text": "langraph. Now when I talk about langraph"
+    },
+    {
+      "start": 766.04,
+      "end": 773.56,
+      "text": "here the main aim is basically to create"
+    },
+    {
+      "start": 771.639,
+      "end": 775.72,
+      "text": "stateful"
+    },
+    {
+      "start": 773.56,
+      "end": 779.3599999999999,
+      "text": "multi-"
+    },
+    {
+      "start": 775.72,
+      "end": 779.36,
+      "text": "AI agentic"
+    },
+    {
+      "start": 780.519,
+      "end": 786.88,
+      "text": "application agentic application or AI"
+    },
+    {
+      "start": 784.16,
+      "end": 790.959,
+      "text": "agents multi-state stateful multiAI"
+    },
+    {
+      "start": 786.88,
+      "end": 792.48,
+      "text": "agents itself right now here the main"
+    },
+    {
+      "start": 790.959,
+      "end": 794.079,
+      "text": "aim if I just want to probably break"
+    },
+    {
+      "start": 792.48,
+      "end": 797.6800000000001,
+      "text": "this down here you'll be able ble to see"
+    },
+    {
+      "start": 794.079,
+      "end": 800.6389999999999,
+      "text": "that we create AI agents and it's not"
+    },
+    {
+      "start": 797.68,
+      "end": 802.3199999999999,
+      "text": "like a simple a single AI agent it'll be"
+    },
+    {
+      "start": 800.639,
+      "end": 804.32,
+      "text": "multiple AI agents which will be doing"
+    },
+    {
+      "start": 802.32,
+      "end": 806.1600000000001,
+      "text": "separately different task and the best"
+    },
+    {
+      "start": 804.32,
+      "end": 810.72,
+      "text": "part about these AI agents is that they"
+    },
+    {
+      "start": 806.16,
+      "end": 813.079,
+      "text": "can communicate with each other to solve"
+    },
+    {
+      "start": 810.72,
+      "end": 816.639,
+      "text": "a complex"
+    },
+    {
+      "start": 813.079,
+      "end": 818.7199999999999,
+      "text": "workflow complex workflow I've already"
+    },
+    {
+      "start": 816.639,
+      "end": 820.399,
+      "text": "started my entire langraph playlist and"
+    },
+    {
+      "start": 818.72,
+      "end": 822.24,
+      "text": "I think if you're following them I've"
+    },
+    {
+      "start": 820.399,
+      "end": 824.48,
+      "text": "explained this entirely in a much more"
+    },
+    {
+      "start": 822.24,
+      "end": 826.16,
+      "text": "detailed manner uh you know in the live"
+    },
+    {
+      "start": 824.48,
+      "end": 830.0790000000001,
+      "text": "classes uh that I've actually taken in"
+    },
+    {
+      "start": 826.16,
+      "end": 831.6,
+      "text": "my YouTube channel right now here the"
+    },
+    {
+      "start": 830.079,
+      "end": 834.4799999999999,
+      "text": "main thing is that it need not be"
+    },
+    {
+      "start": 831.6,
+      "end": 837.36,
+      "text": "directed or cyclic graph it it even need"
+    },
+    {
+      "start": 834.48,
+      "end": 838.8000000000001,
+      "text": "not be sequential this can follow in a"
+    },
+    {
+      "start": 837.36,
+      "end": 840.9590000000001,
+      "text": "different ways okay so first of all"
+    },
+    {
+      "start": 838.8,
+      "end": 843.4399999999999,
+      "text": "we'll talk about what are the important"
+    },
+    {
+      "start": 840.959,
+      "end": 845.279,
+      "text": "components in lang graph okay some of"
+    },
+    {
+      "start": 843.44,
+      "end": 848.24,
+      "text": "the important components in lang graph"
+    },
+    {
+      "start": 845.279,
+      "end": 850.88,
+      "text": "are like tasks second important"
+    },
+    {
+      "start": 848.24,
+      "end": 852.76,
+      "text": "component we basically use as nodes"
+    },
+    {
+      "start": 850.88,
+      "end": 855.8389999999999,
+      "text": "third it'll be something called as"
+    },
+    {
+      "start": 852.76,
+      "end": 858.72,
+      "text": "edges. Fourth is nothing but graph. So"
+    },
+    {
+      "start": 855.839,
+      "end": 860.8800000000001,
+      "text": "that basically means my entire lang"
+    },
+    {
+      "start": 858.72,
+      "end": 863.12,
+      "text": "graph the complex workflows that is"
+    },
+    {
+      "start": 860.88,
+      "end": 866.24,
+      "text": "defined which will be it it'll be in the"
+    },
+    {
+      "start": 863.12,
+      "end": 867.44,
+      "text": "form of a graph and when you see a graph"
+    },
+    {
+      "start": 866.24,
+      "end": 870.0790000000001,
+      "text": "right if you probably have some"
+    },
+    {
+      "start": 867.44,
+      "end": 871.44,
+      "text": "knowledge about graph let's say uh here"
+    },
+    {
+      "start": 870.079,
+      "end": 875.3599999999999,
+      "text": "I will just go ahead and write this is"
+    },
+    {
+      "start": 871.44,
+      "end": 877.44,
+      "text": "my task A okay this is my task A right"
+    },
+    {
+      "start": 875.36,
+      "end": 881.24,
+      "text": "so let's say this is my task A this can"
+    },
+    {
+      "start": 877.44,
+      "end": 886.36,
+      "text": "be my task B this can be my task"
+    },
+    {
+      "start": 881.24,
+      "end": 889.8,
+      "text": "C this can be my task"
+    },
+    {
+      "start": 886.36,
+      "end": 891.639,
+      "text": "E and this can be my final task that is"
+    },
+    {
+      "start": 889.8,
+      "end": 895.3599999999999,
+      "text": "end let's"
+    },
+    {
+      "start": 891.639,
+      "end": 897.76,
+      "text": "say now each and every task over here so"
+    },
+    {
+      "start": 895.36,
+      "end": 901.0790000000001,
+      "text": "let's say if this is my task A this is"
+    },
+    {
+      "start": 897.76,
+      "end": 903.88,
+      "text": "my task B this is my task"
+    },
+    {
+      "start": 901.079,
+      "end": 906.4799999999999,
+      "text": "C this is my task"
+    },
+    {
+      "start": 903.88,
+      "end": 908.56,
+      "text": "D so when we talk about this kind of"
+    },
+    {
+      "start": 906.48,
+      "end": 910.88,
+      "text": "task we basically start from start over"
+    },
+    {
+      "start": 908.56,
+      "end": 913.4399999999999,
+      "text": "here there will be a conditional edge"
+    },
+    {
+      "start": 910.88,
+      "end": 914.72,
+      "text": "then we go to task D then finally we go"
+    },
+    {
+      "start": 913.44,
+      "end": 916.399,
+      "text": "to"
+    },
+    {
+      "start": 914.72,
+      "end": 918.639,
+      "text": "Now here also I'm showing sequential"
+    },
+    {
+      "start": 916.399,
+      "end": 921.519,
+      "text": "only but one important thing is that you"
+    },
+    {
+      "start": 918.639,
+      "end": 924.72,
+      "text": "can go back from task B to task A you"
+    },
+    {
+      "start": 921.519,
+      "end": 926.9590000000001,
+      "text": "can go back to task D to task C you can"
+    },
+    {
+      "start": 924.72,
+      "end": 928.5600000000001,
+      "text": "reexecute this and here you can come so"
+    },
+    {
+      "start": 926.959,
+      "end": 930.8,
+      "text": "that is the reason why I'm saying that"
+    },
+    {
+      "start": 928.56,
+      "end": 932.959,
+      "text": "this two important thing is basically"
+    },
+    {
+      "start": 930.8,
+      "end": 935.04,
+      "text": "happening that is communication within"
+    },
+    {
+      "start": 932.959,
+      "end": 938.8,
+      "text": "this particular task and each and every"
+    },
+    {
+      "start": 935.04,
+      "end": 940.56,
+      "text": "task is executed by a separate AI agent"
+    },
+    {
+      "start": 938.8,
+      "end": 942.56,
+      "text": "you can basically create a separate AI"
+    },
+    {
+      "start": 940.56,
+      "end": 945.04,
+      "text": "agent and perform that task similarly"
+    },
+    {
+      "start": 942.56,
+      "end": 947.279,
+      "text": "and the output of one task can be passed"
+    },
+    {
+      "start": 945.04,
+      "end": 949.639,
+      "text": "to the output of the other task. It can"
+    },
+    {
+      "start": 947.279,
+      "end": 952.8,
+      "text": "also be vice"
+    },
+    {
+      "start": 949.639,
+      "end": 955.199,
+      "text": "versa. Right? So here a feedback"
+    },
+    {
+      "start": 952.8,
+      "end": 957.3199999999999,
+      "text": "mechanism can also be generated and even"
+    },
+    {
+      "start": 955.199,
+      "end": 960.639,
+      "text": "human feedback mechanism can also be"
+    },
+    {
+      "start": 957.32,
+      "end": 964.0790000000001,
+      "text": "included. So this way you are able to"
+    },
+    {
+      "start": 960.639,
+      "end": 966.0,
+      "text": "solve a very complex workflow. In my"
+    },
+    {
+      "start": 964.079,
+      "end": 968.2399999999999,
+      "text": "recent uh live session, I gave a"
+    },
+    {
+      "start": 966.0,
+      "end": 969.6,
+      "text": "hackathon wherein you have to probably"
+    },
+    {
+      "start": 968.24,
+      "end": 972.639,
+      "text": "implement the entire software"
+    },
+    {
+      "start": 969.6,
+      "end": 973.639,
+      "text": "development life cycle with the help of"
+    },
+    {
+      "start": 972.639,
+      "end": 976.32,
+      "text": "human"
+    },
+    {
+      "start": 973.639,
+      "end": 979.04,
+      "text": "feedback with with the help of this"
+    },
+    {
+      "start": 976.32,
+      "end": 981.0400000000001,
+      "text": "entire complex workflow. So what is"
+    },
+    {
+      "start": 979.04,
+      "end": 982.959,
+      "text": "software development life cycle? First"
+    },
+    {
+      "start": 981.04,
+      "end": 985.8389999999999,
+      "text": "requirement gathering, then business"
+    },
+    {
+      "start": 982.959,
+      "end": 988.6389999999999,
+      "text": "understanding, then documentation, then"
+    },
+    {
+      "start": 985.839,
+      "end": 990.5600000000001,
+      "text": "code creation, then unit testing, then"
+    },
+    {
+      "start": 988.639,
+      "end": 993.04,
+      "text": "managers probably reviewing the sorry"
+    },
+    {
+      "start": 990.56,
+      "end": 995.5189999999999,
+      "text": "code peers reviewing the code review,"
+    },
+    {
+      "start": 993.04,
+      "end": 997.04,
+      "text": "providing the feedback, quality check,"
+    },
+    {
+      "start": 995.519,
+      "end": 998.24,
+      "text": "all those kind of check and finally"
+    },
+    {
+      "start": 997.04,
+      "end": 1000.16,
+      "text": "implementing the entire software"
+    },
+    {
+      "start": 998.24,
+      "end": 1002.0790000000001,
+      "text": "development life cycle and people"
+    },
+    {
+      "start": 1000.16,
+      "end": 1004.8,
+      "text": "implement it in a much more beautiful"
+    },
+    {
+      "start": 1002.079,
+      "end": 1007.279,
+      "text": "way. So here if you probably see we"
+    },
+    {
+      "start": 1004.8,
+      "end": 1009.7589999999999,
+      "text": "follow entire graph structure and this"
+    },
+    {
+      "start": 1007.279,
+      "end": 1012.56,
+      "text": "graph structure need not be a directed"
+    },
+    {
+      "start": 1009.759,
+      "end": 1014.32,
+      "text": "or cyclic graph because here my task can"
+    },
+    {
+      "start": 1012.56,
+      "end": 1017.7589999999999,
+      "text": "go from up and down it can go here and"
+    },
+    {
+      "start": 1014.32,
+      "end": 1020.32,
+      "text": "there right. So if you see some of the"
+    },
+    {
+      "start": 1017.759,
+      "end": 1022.16,
+      "text": "important differences with respect to"
+    },
+    {
+      "start": 1020.32,
+      "end": 1025.919,
+      "text": "the component here we use components"
+    },
+    {
+      "start": 1022.16,
+      "end": 1029.52,
+      "text": "like prompt lm context we use data"
+    },
+    {
+      "start": 1025.919,
+      "end": 1032.16,
+      "text": "injection we use persistent memory right"
+    },
+    {
+      "start": 1029.52,
+      "end": 1033.959,
+      "text": "here we specifically use nodes edges so"
+    },
+    {
+      "start": 1032.16,
+      "end": 1038.0790000000002,
+      "text": "these are nothing but these are"
+    },
+    {
+      "start": 1033.959,
+      "end": 1039.799,
+      "text": "nodes right these are edges edges is"
+    },
+    {
+      "start": 1038.079,
+      "end": 1043.12,
+      "text": "basically used for flow of the"
+    },
+    {
+      "start": 1039.799,
+      "end": 1045.52,
+      "text": "information and when I say stateful here"
+    },
+    {
+      "start": 1043.12,
+      "end": 1047.0,
+      "text": "the persistent memory is quite more"
+    },
+    {
+      "start": 1045.52,
+      "end": 1049.44,
+      "text": "efficient"
+    },
+    {
+      "start": 1047.0,
+      "end": 1051.36,
+      "text": "ient and the best part about this is"
+    },
+    {
+      "start": 1049.44,
+      "end": 1053.2,
+      "text": "that the memory is basically shared"
+    },
+    {
+      "start": 1051.36,
+      "end": 1056.24,
+      "text": "between each and every task any update"
+    },
+    {
+      "start": 1053.2,
+      "end": 1058.039,
+      "text": "that I'm doing in one variable this all"
+    },
+    {
+      "start": 1056.24,
+      "end": 1060.48,
+      "text": "nodes will be able to access those"
+    },
+    {
+      "start": 1058.039,
+      "end": 1063.44,
+      "text": "variables and the persistent memory is"
+    },
+    {
+      "start": 1060.48,
+      "end": 1065.52,
+      "text": "quite efficient in langraph right so if"
+    },
+    {
+      "start": 1063.44,
+      "end": 1067.039,
+      "text": "I talk about agentic AI application you"
+    },
+    {
+      "start": 1065.52,
+      "end": 1069.039,
+      "text": "may use some of the components that are"
+    },
+    {
+      "start": 1067.039,
+      "end": 1071.44,
+      "text": "available in the lang chain but at the"
+    },
+    {
+      "start": 1069.039,
+      "end": 1073.12,
+      "text": "end of the day you are building an"
+    },
+    {
+      "start": 1071.44,
+      "end": 1075.559,
+      "text": "amazing agentic application with the"
+    },
+    {
+      "start": 1073.12,
+      "end": 1077.84,
+      "text": "help of langraph"
+    },
+    {
+      "start": 1075.559,
+      "end": 1079.36,
+      "text": "Right. Other than that there are some"
+    },
+    {
+      "start": 1077.84,
+      "end": 1081.84,
+      "text": "more differences which you can probably"
+    },
+    {
+      "start": 1079.36,
+      "end": 1083.6,
+      "text": "find out over here. So these are some of"
+    },
+    {
+      "start": 1081.84,
+      "end": 1085.4399999999998,
+      "text": "the important components. As I said with"
+    },
+    {
+      "start": 1083.6,
+      "end": 1087.84,
+      "text": "respect to persistent memory this is"
+    },
+    {
+      "start": 1085.44,
+      "end": 1089.8400000000001,
+      "text": "much more sufficient efficient. Here we"
+    },
+    {
+      "start": 1087.84,
+      "end": 1091.76,
+      "text": "just use a sequential order. Here it"
+    },
+    {
+      "start": 1089.84,
+      "end": 1094.799,
+      "text": "need not be a sequential order to solve"
+    },
+    {
+      "start": 1091.76,
+      "end": 1096.32,
+      "text": "any kind of use cases. Right? And here"
+    },
+    {
+      "start": 1094.799,
+      "end": 1098.08,
+      "text": "we also understood what are the"
+    },
+    {
+      "start": 1096.32,
+      "end": 1101.2,
+      "text": "important components and here what are"
+    },
+    {
+      "start": 1098.08,
+      "end": 1103.039,
+      "text": "the important components. Right? Now the"
+    },
+    {
+      "start": 1101.2,
+      "end": 1104.96,
+      "text": "reason of making this specific video is"
+    },
+    {
+      "start": 1103.039,
+      "end": 1107.76,
+      "text": "to make your understanding very very"
+    },
+    {
+      "start": 1104.96,
+      "end": 1110.88,
+      "text": "strong. If I ask you a question, hey,"
+    },
+    {
+      "start": 1107.76,
+      "end": 1114.16,
+      "text": "when should we probably go ahead and use"
+    },
+    {
+      "start": 1110.88,
+      "end": 1116.48,
+      "text": "fine-tuning or when should we use rag or"
+    },
+    {
+      "start": 1114.16,
+      "end": 1118.16,
+      "text": "when should we probably go ahead and use"
+    },
+    {
+      "start": 1116.48,
+      "end": 1119.76,
+      "text": "uh let's say prompt engineering many"
+    },
+    {
+      "start": 1118.16,
+      "end": 1122.24,
+      "text": "people are not able to clearly say the"
+    },
+    {
+      "start": 1119.76,
+      "end": 1123.679,
+      "text": "differences right if this is the kind of"
+    },
+    {
+      "start": 1122.24,
+      "end": 1126.08,
+      "text": "question I have already made this kind"
+    },
+    {
+      "start": 1123.679,
+      "end": 1128.48,
+      "text": "of videos this videos like see in the"
+    },
+    {
+      "start": 1126.08,
+      "end": 1130.799,
+      "text": "companies now many people more than 80"
+    },
+    {
+      "start": 1128.48,
+      "end": 1132.76,
+      "text": "to 90%age of the people uh in the"
+    },
+    {
+      "start": 1130.799,
+      "end": 1135.12,
+      "text": "companies are implementing efficient rag"
+    },
+    {
+      "start": 1132.76,
+      "end": 1137.28,
+      "text": "systems so here also you'll be able to"
+    },
+    {
+      "start": 1135.12,
+      "end": 1139.28,
+      "text": "see that when we create these are like"
+    },
+    {
+      "start": 1137.28,
+      "end": 1141.44,
+      "text": "traditional rags okay I'll also talk"
+    },
+    {
+      "start": 1139.28,
+      "end": 1143.2,
+      "text": "about traditional rag and agentic rag so"
+    },
+    {
+      "start": 1141.44,
+      "end": 1147.52,
+      "text": "in the traditional rag you basically"
+    },
+    {
+      "start": 1143.2,
+      "end": 1150.0800000000002,
+      "text": "create an llm right this let's say this"
+    },
+    {
+      "start": 1147.52,
+      "end": 1153.24,
+      "text": "is my llm powered ai application this"
+    },
+    {
+      "start": 1150.08,
+      "end": 1155.52,
+      "text": "will be interacting with my rag"
+    },
+    {
+      "start": 1153.24,
+      "end": 1158.0,
+      "text": "database right so this will basically be"
+    },
+    {
+      "start": 1155.52,
+      "end": 1160.0,
+      "text": "my rag database and this rag database"
+    },
+    {
+      "start": 1158.0,
+      "end": 1162.799,
+      "text": "will provide the context to the lm to"
+    },
+    {
+      "start": 1160.0,
+      "end": 1165.52,
+      "text": "finally provide the output right here if"
+    },
+    {
+      "start": 1162.799,
+      "end": 1167.44,
+      "text": "my input is basically going on"
+    },
+    {
+      "start": 1165.52,
+      "end": 1170.4,
+      "text": "So this is what is basically happening"
+    },
+    {
+      "start": 1167.44,
+      "end": 1172.44,
+      "text": "in a traditional rag. In the case of"
+    },
+    {
+      "start": 1170.4,
+      "end": 1175.919,
+      "text": "agentic rag, we create"
+    },
+    {
+      "start": 1172.44,
+      "end": 1177.76,
+      "text": "agents. We create AI agents and this"
+    },
+    {
+      "start": 1175.919,
+      "end": 1179.919,
+      "text": "agent is responsible whether I have to"
+    },
+    {
+      "start": 1177.76,
+      "end": 1182.16,
+      "text": "make a call to my database, whether I"
+    },
+    {
+      "start": 1179.919,
+      "end": 1184.2,
+      "text": "have to make the call to my tools or"
+    },
+    {
+      "start": 1182.16,
+      "end": 1186.88,
+      "text": "whether I have to take any kind of other"
+    },
+    {
+      "start": 1184.2,
+      "end": 1188.88,
+      "text": "action. Automatically this AI agents"
+    },
+    {
+      "start": 1186.88,
+      "end": 1191.1200000000001,
+      "text": "will be able to take that particular"
+    },
+    {
+      "start": 1188.88,
+      "end": 1192.88,
+      "text": "decision and provide me the response."
+    },
+    {
+      "start": 1191.12,
+      "end": 1194.559,
+      "text": "And then probably let's say that after"
+    },
+    {
+      "start": 1192.88,
+      "end": 1196.3200000000002,
+      "text": "getting this information I need to go"
+    },
+    {
+      "start": 1194.559,
+      "end": 1198.48,
+      "text": "ahead and hit the tool and provide the"
+    },
+    {
+      "start": 1196.32,
+      "end": 1200.76,
+      "text": "get the response. This entire thing is"
+    },
+    {
+      "start": 1198.48,
+      "end": 1202.44,
+      "text": "basically implemented in the form of a"
+    },
+    {
+      "start": 1200.76,
+      "end": 1205.039,
+      "text": "workflow."
+    },
+    {
+      "start": 1202.44,
+      "end": 1206.559,
+      "text": "Right? So this is how things basically"
+    },
+    {
+      "start": 1205.039,
+      "end": 1208.72,
+      "text": "happen. I'm soon going to make a"
+    },
+    {
+      "start": 1206.559,
+      "end": 1210.16,
+      "text": "detailed video on different types of rag"
+    },
+    {
+      "start": 1208.72,
+      "end": 1211.919,
+      "text": "which is one of the most important"
+    },
+    {
+      "start": 1210.16,
+      "end": 1214.0800000000002,
+      "text": "component that is currently required"
+    },
+    {
+      "start": 1211.919,
+      "end": 1216.72,
+      "text": "right now. Right? So I hope you like"
+    },
+    {
+      "start": 1214.08,
+      "end": 1218.3999999999999,
+      "text": "this particular video and uh this was"
+    },
+    {
+      "start": 1216.72,
+      "end": 1220.4,
+      "text": "the basic differences between langin and"
+    },
+    {
+      "start": 1218.4,
+      "end": 1221.919,
+      "text": "langraph. In the upcoming videos I'm"
+    },
+    {
+      "start": 1220.4,
+      "end": 1225.679,
+      "text": "also going to discuss about other"
+    },
+    {
+      "start": 1221.919,
+      "end": 1226.88,
+      "text": "frameworks. let's say crew AI agno and"
+    },
+    {
+      "start": 1225.679,
+      "end": 1228.799,
+      "text": "I'm going to probably go ahead and"
+    },
+    {
+      "start": 1226.88,
+      "end": 1231.3600000000001,
+      "text": "explain you all the specific things and"
+    },
+    {
+      "start": 1228.799,
+      "end": 1233.679,
+      "text": "these all things we detail explain in"
+    },
+    {
+      "start": 1231.36,
+      "end": 1235.12,
+      "text": "our live batches all the information"
+    },
+    {
+      "start": 1233.679,
+      "end": 1236.4,
+      "text": "will be given in the description of this"
+    },
+    {
+      "start": 1235.12,
+      "end": 1239.039,
+      "text": "particular video you can go ahead and"
+    },
+    {
+      "start": 1236.4,
+      "end": 1240.48,
+      "text": "check it out so yes uh this was it for"
+    },
+    {
+      "start": 1239.039,
+      "end": 1241.919,
+      "text": "my side I'll see you in the next video"
+    },
+    {
+      "start": 1240.48,
+      "end": 1243.0,
+      "text": "have a great day thank you and all take"
+    },
+    {
+      "start": 1241.919,
+      "end": 1243.0,
+      "text": "care bye-bye"
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+[
+  {
+    "id": "dd3504afbf2f0bc87ba0d5a3b92a64b8a401841c29a5ee8ce879282595ae5ff4",
+    "text": "hello all my name is krishn and welcome to my YouTube channel so guys in this specific video we are going to implement an amazing hybrid search Rag application initially we will go ahead with the theoretical understanding about hybrid search and then we will proceed with developing an amazing endtoend project where we will be creating Vector database even in Cloud we'll be using Vector database like Pine con and we'll be seeing that how we can Implement an hybrid search on a specific Vector database so all these things will be covered in this particular video so let's go ahead and enjoy this video so before I proceed guys uh here is a quick announcement on this three amazing course that I have recently launched in Udi which is at a very affordable price that is nothing but 3 99 rupees INR uh you'll be able to find out the link in the description of this particular video so here you have this complete gen AI course with Lang chain and hugging face then you have this complete machine learning and NLP boot camp mlops where deployment it has somewhere around 78 hours of content which is quite amazing and I'm also updating this content again and again uh as new things comes up and there is also another course which is",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 0.52,
+      "end_seconds": 73.799,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "77abfc47d573d0c48a9ad1b419b43db0c5e929edfede003aed89e9e72cec7120",
+    "text": "deployment it has somewhere around 78 hours of content which is quite amazing and I'm also updating this content again and again uh as new things comes up and there is also another course which is called as building geni app 12 plus Hands-On project with gini Pro so you can go ahead and check it out any of these courses if you really want it'll be available in the description of this particular video hello guys so in this video we are going to discuss about something called as hybrid search okay and uh uh this kind of search specifically uh we use in our rag applications also right so till now if you are following all the modules uh the rag that we have specifically created you know let's say that if I have a documents let's say if this is my documents then what we do is that we try to divide this documents into chunk of documents let's say this is D1 this is D2 this is D3 like this we usually divide into multiple chunk of documents right and this is D now after dividing all these documents into chunk of documents then we specifically convert this into vectors right so here we are basically converting into embedding vectors then after we convert all this",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 60.0,
+      "end_seconds": 150.59900000000002,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=60s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0441aa3a54bbab453087bd351e6a57a166389aff2f2c76a139ffc8b01488114f",
+    "text": "right and this is D now after dividing all these documents into chunk of documents then we specifically convert this into vectors right so here we are basically converting into embedding vectors then after we convert all this text to vectors the the next step is that we we store all these vectors in some kind of vector database right so let's say one of the vector databases that we have already seen Vector database we also say it as something called as Vector store DB right now once this entire information is basically stored over here right it'll be stored it in the form of vectors right we will be having some kind of numbers over here itself right now when a user queries whenever a user queries right over here then what happens usually in this particular scenario this particular query is also converted into vectors and then a vector dense search or vector search is basically done Vector search is basically done in this particular Vector database so once we have this particular vectors we do a vector search from this particular Vector database and here uh some of the algorithms like U over here one of the algorithm that may uh you know take place over here for basically to match the exact Vector search we can actually",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 123.88,
+      "end_seconds": 235.84,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=123s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "89862907f0d77799bafa6fbb26c66cef417822aa39a7d0b3c8bd1c0e1c0d55bb",
+    "text": "Vector database and here uh some of the algorithms like U over here one of the algorithm that may uh you know take place over here for basically to match the exact Vector search we can actually use cosine similarity right and based on this cosine similarity check we will be able to get the response right once we get this response we can combine this with our prompt template plus llm model and finally we can summarize any information as my final output right so in this scenario you'll be able to see that the kind of search that we are doing right the vector dense search this search is basically called as Sy semantic search semantic search semantic search basically means we are trying to find out the similar vectors from this particular Vector database and based on that when that similarity search is done we are able to get the response and this kind of rag most of the rag application uses this kind of search and if I talk about Vector databases like FS chroma right they have this entire features like this right but I really want to talk about one more amazing search mechanism which is called as hybrid search okay so here I have this hybrid search now inside this hybrid search here we are just not focusing on only",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 220.68,
+      "end_seconds": 322.88,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=220s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b81194000716113da825cbf21fd148401e73e6827682f50e833776b8d422b676",
+    "text": "but I really want to talk about one more amazing search mechanism which is called as hybrid search okay so here I have this hybrid search now inside this hybrid search here we are just not focusing on only Vector dense search mechanism right here we specifically combine combine mult multiple search techniques right and what kind of techniques we will specifically apply over here we will be combining multiple search techniques now specifically if I really want to divide all this particular Technique One is the semantic search the second one is something called as syntatic search okay now I will talk more about it what exactly are this kind of search basically so one is semantic search one is syntactic search semantic search specifically we say it as a dense Vector search so here we are specifically trying to search elements that are similar right and obviously when we are using this dense Vector search we basically are checking out the similar kind of content right if I probably say with respect to syntactic search right or I can also say this as exact search I can also say this as keyword search right keyword search and if I also want to probably provide some more names like exact search uh keyword search uh and this usually happens with",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 300.28,
+      "end_seconds": 418.52,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=300s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b03faaf2b8d287cecb71e05272bef3a6dd5c70cded6be5e1ce683e5a7d668b91",
+    "text": "search I can also say this as keyword search right keyword search and if I also want to probably provide some more names like exact search uh keyword search uh and this usually happens with respect to a SM sparse or I can also say this as sparse Vector search so here you could see in semantic search I have a vector store right which has all the vectors embedded over here right so here all my text is basically converted into dense vectors and this dense Vector is basically stor it in my stored in my uh uh my Vector store DB right in the case of synthetic search you'll be able to see that we will be having sparse metric so all this text Will basically be converted into sparse metric now if you remember or if you know right what is sparse metrix and how do we get a sparse metrix uh if you if you know about this techniques like one hot encoding bag of words or tfidf right whenever we try to use this techniques we will be able to convert our text into sparse metrix now when we say sparse Matrix that basically means there will be maximum numbers of zeros and ones right wherever a specific word will be available in a sentence",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 399.919,
+      "end_seconds": 493.4,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=399s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a519ccbe16715111ea7144bd328c2bcae609e8a057e1266ce2120a93c21cfe23",
+    "text": "convert our text into sparse metrix now when we say sparse Matrix that basically means there will be maximum numbers of zeros and ones right wherever a specific word will be available in a sentence that will be one and remaining all will be zeros right so this this is basically called as a sparse Matrix and with the help of the sparse Matrix here we are just focusing on a specific keyword like this keyword right whatever keyword we are actually trying to search and um this spse metrix also has some very important properties because from this we will be able to probably do the keyword search itself and this is nothing but it can also be considered as an exact search so in the case of hybrid search it is just going to combine both this particular techniques that is semantic search and synthatic search or I can also say this as exact search or keyword search right it is just not going to be dependent on one of the search mechanism and similarly there are different different kind of databases that are available just to show you as an example uh um like there's a database like Cassandra right um we will be using a library called as cashio right and with the help of this cashio you'll be",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 478.039,
+      "end_seconds": 559.32,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=478s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "160dbf9c0c66eeadb6d5c4cd4a9c128d698e662f32baf5dbbaabfa8cf674335d",
+    "text": "that are available just to show you as an example uh um like there's a database like Cassandra right um we will be using a library called as cashio right and with the help of this cashio you'll be able to see that we'll be able to access the cassendra database I will show this as we go ahead okay but right now just try to understand over here what exactly hybrid search is doing right it is providing a is combining multiple search methodologies um and uh if I probably talk about in most of the e-commerce website and all hybrid search is definitely implemented in the back end okay now let's go ahead and see that how does an hybrid search work okay so here we will go ahead and write how does hybrid search work so let's say um in the case of hybrid search what happens let's say if I have a specific documents for all these documents when we are storing this uh when we are storing this in our Vector database let's say this is my Vector database okay and this Vector database supports both right what does it basically supports it supports Vector search dense Vector search along with this it also supports keyword search it has both this particular property right now whenever I have this",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 543.839,
+      "end_seconds": 644.4399999999999,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=543s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d0fb73399a9572fd50ab37ae7c0d68119063c4b3295f70aea1275dccbec4d354",
+    "text": "database supports both right what does it basically supports it supports Vector search dense Vector search along with this it also supports keyword search it has both this particular property right now whenever I have this particular document inside this inside this particular database or inside this particular Vector store DB this documents will also be converted into a sparse Matrix right by using techniques like tfidf or bag of words so this kind of embeddings it will be converted and it will be stored inside this particular Vector database along with that for the same documents we will also try to convert this into vectors which will be my dense vectors dense vectors does not have maximum number of zeros or ones okay that is the difference and we will try to store this particular vectors inside this particular Vector store DB and again here you can use different different techniques uh the techniques can be anything as you want uh like we have seen right we have used different different embedding techniques we have used open AI embedding techniques we have used AMA embedding techniques or if you want hugging face embedding techniques so by all these embedding techniques we can convert our text into dense vectors and we can store this in this particular Vector database now the idea is very simple",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 624.0,
+      "end_seconds": 708.76,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=624s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0f54d886981e735c27d034c3515f17670d17d424fe8c8f4c9da8d7f10345ae4c",
+    "text": "you want hugging face embedding techniques so by all these embedding techniques we can convert our text into dense vectors and we can store this in this particular Vector database now the idea is very simple since we are storing this in both this particular format sparse metrix and dense Vector metrix whenever a user puts up any kind of queries now with respect to this particular query I will be able to retrieve two different kind of result okay one result uh will be something related to my exact match or exact search or keyword search and with respect to this keyword search let's say whatever results I'm getting it will be my top K results right this will be based on this particular keyword search or exact search so here um sorry keyword search I have written it downwards right so here you'll be able to see that I'll be whenever a user probably queries any information over here from this particular Vector database first of all for the user query again their query will also be divided into two types it will be converted into two types one is the sparse vectors and the other one is something like dense vectors right so both these vectors it will be converted then the SP based on the sparse vectors uh here we",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 692.92,
+      "end_seconds": 780.2790000000001,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=692s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f018d1270cd148fcca66296f6dbc7fbe5211b1e5736c25435110a713efc088be",
+    "text": "will be converted into two types one is the sparse vectors and the other one is something like dense vectors right so both these vectors it will be converted then the SP based on the sparse vectors uh here we have specifically going to get the keyword search and here we are going to get the results right let's say the top K results I'll be getting over here based on this dense vectors I'm actually going to do the vector search and again I'll be getting another another results over here right let's say this is my result one result one top K Result One and this is my top K result two okay now top K Result One and top K result two are specifically there this is basically done on the Vector search which is nothing but it is a semantic search this is basically a semantic search similar kind of elements and this is nothing but this is a keyword search right based on the sparse vectors that we have actually taken now in hybrid search what we do is that we combine both of them based on weightage okay and then we finally get the final response now the question Rises how we're going to probably combine this particular Result One and result two weightage based on this information that",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 763.519,
+      "end_seconds": 844.24,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=763s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "65c0a70136cb30c757a8800b22e89f759ecdf3f59e1a3638dccdc20c3d441764",
+    "text": "that we combine both of them based on weightage okay and then we finally get the final response now the question Rises how we're going to probably combine this particular Result One and result two weightage based on this information that we have got and for and finally when we get the response we can then further combine this with our llm model and summarize this entire data okay that is subed but still the question Rises how do we combine Result One and result two and how based on weightage we take our final result right final result and that is what we will be seeing in our next video um the technique is very simple and the technique name is something called as reciprocal reciprocal rank Fusion in hybrid search Okay in hybrid search so this technique we will be discussing in our next video which will be the core behind this particular hybrid search but the idea is very simple in hybrid search we take a combination of two different things we try to do the search based on semantic synthetic which will be the combination of dense Vector search and exact search or keyword search okay so both this particular Technique we basically use when I say top K result one topk result two that I may get Five results right",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 822.199,
+      "end_seconds": 914.6800000000001,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=822s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "dffc5c42cdf9020ed093bb6f43fc12113bdb4da1b4011a1ce179c6d8e679610d",
+    "text": "of dense Vector search and exact search or keyword search okay so both this particular Technique we basically use when I say top K result one topk result two that I may get Five results right based on the keyword SE I may get Five results based on the vector search something like that right so guys now let's go ahead and proceed with the discussion with respect to reciprocal rank Fusion in hybrid S as I said whenever we try to query or whenever user queries from this particular Vector database which supports both Vector search and keyword search which is a combination of semantic search and exact search over here first of all uh to get the keyword search we have to convert this into sparse vectors and the sparse vectors will be probably searching from this particular Vector database and we get top K results similarly with the help of dense vectors we also get a vector search and here we are going to get a result to that is topk results okay now combining both of them we have to probably consider a response right how to probably get the final response that is what I'm actually going to discuss now okay so here uh with the help of reciprocal rank Fusion in hybrid search we will be considering two",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 903.199,
+      "end_seconds": 975.839,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=903s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "453911665430fbd176bf28254fbf574d0da5b101ad2c306f48171a0eb9ce585b",
+    "text": "how to probably get the final response that is what I'm actually going to discuss now okay so here uh with the help of reciprocal rank Fusion in hybrid search we will be considering two important things okay let's say this is my Vector database okay and from this Vector database you know that whenever user queries So based on this queries let's say if this is my dense vectors first we going to do the vector search and we are going to get the top care results right so when I say Top Care results let's say that this is my first document right and this can be my second document right and this can be my third document like this I will be getting lot of documents similarly over here based on my sparse Matrix search that is the keyword search that is nothing but keyword search I'm actually going to get my topk documents so here also I will go ahead and draw this so let's say here I'm going to get some other sentences okay and the ordering will be different right so here uh let's say this is the order that I've actually got but I got document 1 2 3 4 five let's say the five documents I've actually got and here also we have got some other",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 960.48,
+      "end_seconds": 1053.4,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=960s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c374789d4a569aa699ff1cce7d9854b59f437f312d2de9c8be689e2f898fe871",
+    "text": "different right so here uh let's say this is the order that I've actually got but I got document 1 2 3 4 five let's say the five documents I've actually got and here also we have got some other documents so let's say some other documents but here the numbering is different let's say the numbering is like 4 3 2 5 1 okay the numbering is different this is my Result One topk documents and this is my result two topk documents okay now considering this uh see here I've got in this ordering that is 1 2 3 4 5 sentence that is that I got in my top care like document one document two document 3 document 4 document 5 similarly over here document 4 document 3 document 2 document 5 document one this is the ranks that we have specifically got now how to calculate the final score because here this is based on my semantic search this is based on my keyword search when I say semantic search that is basically u based on on cosine similarity okay so we are trying to find out the similar vectors and then we are trying to find out our final score so in order to calculate the final score the formula is very simple here we'll write",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1037.839,
+      "end_seconds": 1127.88,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1037s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c0053c081523a1cde5430e4bc3ed9eeef6dbee73cd67b06a02d9da36c7482466",
+    "text": "similarity okay so we are trying to find out the similar vectors and then we are trying to find out our final score so in order to calculate the final score the formula is very simple here we'll write sumission of 1 / by uh a constant plus plus the rank of documents okay now this particular constant that is C it depends on various database it depends on on various databases okay now with respect to various databases this may range between 1 to 60 okay and this is a constant guys okay in various databases they'll set this value to 10 20 you and some of the databases I've seen the value to 60 okay so since this is a constant we just not going to focus much into this instead I will just take up this formula now sumission of I is equal to um 1 divid rank of t Okay since this is a constant for calculating in every uh the rank of every uh documents uh will probably give you the same answer with respect to the particular constant like same impact it may be creating okay now how do we compute the rank right so for this particular sentence you'll be seeing 1 divided by rank of D so if I go ahead and compute this this is nothing",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1109.48,
+      "end_seconds": 1198.12,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1109s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f5a9d59880debda35a8b52cb2218a6e25422b0a4330163df51e29e38d916ff6e",
+    "text": "like same impact it may be creating okay now how do we compute the rank right so for this particular sentence you'll be seeing 1 divided by rank of D so if I go ahead and compute this this is nothing but 1 by one okay uh this is nothing but 1 by two because this is rank two right this is rank three so I'll get 1x3 it is nothing but 33 then here I have 25 and this is my fifth document let's say the rank is five I'm actually going to get 02 okay similarly in this particular case uh this is my document four right and if I try to compute this particular rank okay it'll be again 1 by one 1 by two uh 1X 3 1X 4 1X 5 so that basically means the document of D4 is basically getting a rank of one in this keyword search here D4 is basically getting 0.25 okay now when we try to combine the final score okay this is important see this so if I finally go ahead and take up document one so if this is my document one and if I try to calculate the overall rank then what we have to do we have to do the submission so let's see document one is giving one over here",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1184.36,
+      "end_seconds": 1261.3999999999999,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1184s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8cf1690d285d662378389bc3ea2640a33b5ed421f8ba19264a6053e67a09abe5",
+    "text": "up document one so if this is my document one and if I try to calculate the overall rank then what we have to do we have to do the submission so let's see document one is giving one over here and 1.5 1X 5 so I will just go ahead and write 1 +. 2 so this will be 1.2 right similarly if I go ahead and calculate for document 2 right so document 2 over here gives 05 right so here I'm actually going to get 0.5 plus the document 2 over here is 1 by3 that is nothing but 33 right so here you can see I'm actually going to get 83 so this is my score that I'm actually going to get and obviously this score is better than this score so I will be getting the document one based on my 50% probability or 50% uh focus on keyword search right and 50% on semantic search right if you change the weightage right if you change the weightage then you'll be able to see that some values may also change similarly you have this document three now in the case of document 3 you'll be able to see that here I have 33 so let's calculate this 33 plus document 3 is nothing but 5 again here I'm going to get the",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1246.6,
+      "end_seconds": 1335.24,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1246s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "87c8fbf14d6f0f4d5590a30301f30bf510fa2b1c141cffd0e4c9f5824122ce08",
+    "text": "three now in the case of document 3 you'll be able to see that here I have 33 so let's calculate this 33 plus document 3 is nothing but 5 again here I'm going to get the same value see 83 now both these ranks are same right so if I want to retrieve the top K result obviously this will be shown first and then based on this two right where the focus is more whether it is on keyword search or semantic search let's say if I say 70% focus is there on the keyword search then over here you can see 0.5 value is higher than3 so it is just going to give you the display the document three in the second rank right so this way the weightage can also be provided in keyword searge and semantic search okay and similarly we go ahead and calculate each and every documents so finally you can see that here we can combine result two and Result One topk elements and then we can use this reciprocal rank Fusion in hybrid search by assigning ranks and and we will be able to calculate a score which will be finally given as a response and here we can also assign weightage and this can be combined within prom template and we can",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1317.44,
+      "end_seconds": 1390.36,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1317s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9c7534b84b2d29a50e62c119350e879bfcc0bd100a506070f2f8eb02eb8ba197",
+    "text": "hybrid search by assigning ranks and and we will be able to calculate a score which will be finally given as a response and here we can also assign weightage and this can be combined within prom template and we can summarize with our llm model right so this uh gives an idea about the entire hybrid search right now uh in this section in this next section what we're going to do is that we're going to also see a practical example of how an hybrid search is basically done but before that if you know about one more search right that is based on on graph knowledge search Okay graph knowledge search so in this graph knowledge search uh I hope you may have heard about graph DB one of the most popular open source graph DB is neo4j okay now if we are specifically using graph knowledge uh sorry graph DB to store the vectors let's say if this is my database and this database is nothing but it is my graph DB in the case of graph DB I will be having like this nodes which will be connected with relationships right so this can be my node one this can be my node two and it will be connected with relationships and we can whenever a user",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1375.679,
+      "end_seconds": 1454.6000000000001,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1375s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b2d194f339ceb8427c45df6058eb83f183bd05b221e1e882a564c41b4323d71a",
+    "text": "be having like this nodes which will be connected with relationships right so this can be my node one this can be my node two and it will be connected with relationships and we can whenever a user tries to query user tries to query in this there are three types of queries that happens one is keyword search which is can also be called as semantic search uh sorry this can be also called as um synthetic search or it can be also called as exact search uh then along with this it's also suppose semantic search right and finally you'll be also able to see that it supports uh keyword search semantic search along with this one more search is there that is called as graph knowledge search graph knowledge search so it supports all this techniques which is quite amazing just imagine hybrid search just supports this two type but now with this help of graph knowledge search we will still be able to create a very good efficient rag application right with the help of graph DB and this uh we will be seeing about graph DB in the upcoming videos uh in the upcoming sections but uh let's go ahead and see some practical example for uh hybrid search hello guys so we are going to continue the discussion with",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1441.08,
+      "end_seconds": 1532.8400000000001,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1441s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ba85dacd5137a8820906729d28dd1a01ea2e05c0f202ede1b5aea44477740370",
+    "text": "graph DB in the upcoming videos uh in the upcoming sections but uh let's go ahead and see some practical example for uh hybrid search hello guys so we are going to continue the discussion with respect to the hybrid search and uh here now we are going to implement a complete amazing project with the help of hybrid search using Lang chin now uh for this uh we will be using a vector database which is called as Pine Cod now pine cone uh Vector database provides you this both right like uh you will be able to do the keyword search you will be able to do the semantic search so uh let's go ahead and first of all we'll set up our account and then with the help of code we will try to write each and everything and we'll try to probably go ahead and create our you know the vector database itself so first of all just go ahead and sign up over here it is completely for free uh first two first two to three instances you can create completely for free so I have already signed up so I will go ahead and login you have to just go to Pine cone. now once you go inside this you'll be able to see that I have already created",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1516.679,
+      "end_seconds": 1586.7600000000002,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1516s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e9856a39485c661b25f0d3c83e4ca3c8f7831fd878dc3c504b30bb89e1e08256",
+    "text": "create completely for free so I have already signed up so I will go ahead and login you have to just go to Pine cone. now once you go inside this you'll be able to see that I have already created one pine cone hybrid search right and if you go inside this there are some kind of data that is already available over here right but as usual uh we will not probably work with this but instead we'll go ahead and create our new index okay but uh since I really want to do everything from with the help of code so uh we will try to create the instance even with the help of code so first of all that you actually require is your API key okay so just click on API key just make sure that this will be the default API key that will be provided over here and uh you can also rotate the key values like you can probably go ahead and change it uh if somebody probably sees it right so here I will copy this particular key value and then I will start my coding over here right so uh here I will be creating my instance everything as such okay now just quickly to go ahead with I have",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1573.72,
+      "end_seconds": 1638.76,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1573s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b72b5ebfacc3f26760d19c0ce100465ae54490aa172da5b85f47790f498e892a",
+    "text": "copy this particular key value and then I will start my coding over here right so uh here I will be creating my instance everything as such okay now just quickly to go ahead with I have some good requirement. txt here you'll be able to see so many different libraries but uh for Lang chain obviously you require a lot of libraries uh but if I probably talk about with respect to pine cone I will be installing some of the libraries over here so let me quickly go ahead and you know just paste it over here so I'll be installing pine cone client Pine con text and pine con notebooks okay so uh these are the initial libraries that we will be requiring so I have already done the installation since I don't want to make my video very long so here you'll be able to see a grin tick and already the entire uh you know the installation has basically happened then I will go ahead and write my API uncore key this API uncore key will basically be replaced with the values over here right so I'm just going to create this particular variable you can also create an environment variable if you want okay perfect now uh since we are using langin so please make sure that we will go",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1623.2,
+      "end_seconds": 1700.32,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1623s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e2e42099ee48fdc4ab394f70852e8a5492f8cba2bb7fd79b42fee11b8fa725af",
+    "text": "so I'm just going to create this particular variable you can also create an environment variable if you want okay perfect now uh since we are using langin so please make sure that we will go ahead and import this from linore Community do retrievers I'm going to import I'm going to import a library which is nothing but pine cone hybrid search retriever now this this class is responsible in doing both the semantic search and synthetic search right so keyword search like it it has the combination of both the sparse metrix and dense Vector search and for that we have to create a retriever and this is the class that we are going to use so uh let's go ahead and execute this and after executing this uh the next thing will be that we need to make sure that we first of all create our index in our pine cone right without this it will be of no use so here uh quickly what I will do I will just go ahead and import import OS since I have already imported pine cone so I will go ahead and write from Pine Cone import pine cone comma serverless spec okay and then I will just go ahead and create my index name now index name over",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1687.12,
+      "end_seconds": 1765.7199999999998,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1687s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e772496665156a30fea6c4569ddd7ea4840e6fb1c34676116d817c508dd98d61",
+    "text": "pine cone so I will go ahead and write from Pine Cone import pine cone comma serverless spec okay and then I will just go ahead and create my index name now index name over here I will say hey this will be my hybrid search example and please make sure that you get give all this in a smaller letter otherwise you'll be getting an error so I will say hey hybrid search Lang chain pine cone okay so this will basically be my index name okay uh once I probably create the index name we have to initialize the pine cone client okay then for initializing the pine cone client I'll write PC is equal to Pine Cone and we will initialize with this API key that I have actually created right so over here is my API key you can create your own API Keys no need to use mine okay because as soon as I upload this video uh this will get deleted okay or I'll rotate the key then uh we will go ahead and create the index and here I'm going to basically write if index uncore name is not in PC do list indexes right we are listing all the indexes if this particular name is not there then only we should probably",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1749.039,
+      "end_seconds": 1829.4799999999998,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1749s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c7f0efb83bfb534b192380e76c90f274435e7d56def06a2a512aee4e637645ab",
+    "text": "index and here I'm going to basically write if index uncore name is not in PC do list indexes right we are listing all the indexes if this particular name is not there then only we should probably go ahead and create this so I will write pc. create index create uncore index and here I'm going to give my name is equal to index uncore name whatever index underscore name we have specifically taken uh whenever we try to create an index we also have to give our Dimension okay so here uh like what will be the vector Dimension so here I'm going to use the vector Dimension is equal to 384 the reason is very simple uh the reason why I'm using and this is nothing but this is my dimension of dense model OKAY dense Vector the reason is very simple why I'm using 384 because U the embedding technique that I'm actually going to use is a hugging face embedding technique which is nothing but sentence Transformer that by default converts any text into 384 Dimension so that is the reason why I'm creating this particular index with this Dimension okay uh along with this the next thing that I'm going to use is metric uh so for my metric here I will be using a DOT product so",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1812.0,
+      "end_seconds": 1888.559,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1812s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "37c36183ec1db98fa0e241952bfd2def3ffaaf88b520162d35819e3adc4c7e8a",
+    "text": "reason why I'm creating this particular index with this Dimension okay uh along with this the next thing that I'm going to use is metric uh so for my metric here I will be using a DOT product so these all in information you specifically get when you are creating an index let's say if I go to over here and create my index so it's ask you for the dimension right over here by default you can see metrix also it asks you whether you want to go with do product cosign and all right you can select any of this particular metrics so that is the reason why I am giving a metric over here right so I'm saying hey just go ahead and do the dot product okay and uh this dot product specifically I am going to do it for sparse values right sparse value supported only for do product because we creating this hybrid search for both of them right and then finally you have the spec is equal to uh for this particular spec I will be using serverless spec and I have to probably give my cloud information like AWS it is and which reason this also you'll be able to get inside that particular uh so I will just go ahead and write Us East one okay so",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1875.279,
+      "end_seconds": 1949.639,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1875s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d7333f742eb489222b8b1e053d5dd9733f4e64fc575b3b1ce8d88488a55355bd",
+    "text": "I have to probably give my cloud information like AWS it is and which reason this also you'll be able to get inside that particular uh so I will just go ahead and write Us East one okay so if you remember remember uh just now we saw this particular index also so if I go ahead and see this here you have the serverless okay all the information is over here let's say and here you can select this us e one and all this is locked so that is the reason I've written this I've selected ews if you go ahead with Google you have to go ahead and write this right so this is just a starter plan to go ahead with so I'm going to use this free one okay perfect so let's see uh whether this gets executed so here I think everything looks good enough I have my index name uh pc. create and here I will just write comma okay okay just a second I will just update this entire thing okay perfect now this looks good exactly right uh I have all the details now let's go ahead and create this index so here you'll be able to see It'll take some amount of time to create this index but this is going to get created",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1934.12,
+      "end_seconds": 2010.519,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1934s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f9eb2c2d286a60391afbfb2965ae8e4768b04375c9d1606de0334a91e771a5f0",
+    "text": "exactly right uh I have all the details now let's go ahead and create this index so here you'll be able to see It'll take some amount of time to create this index but this is going to get created directly inside our Vector database now if I go ahead and click on index if I reload this I think it should get created okay so here is my hybrid search Lang chain Pine con and right now the dimension is 384 I don't have anything the metric is do product the reason of using metric is that I really want to support both uh that is for my sparse metrix and my Vector Index right so here I have my all details now let's go ahead and further do the more coding over here I've already created my API now let's click on my index and I will say hey PC do index okay pc. index and here I'm just going to give my index uncore name so let's go ahead and create see this index over here so this is my pine cone index at this particular memory location and obviously my index name that you'll be able to see over here that index name based on this index name I'm trying to take out that details okay uh now first",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 1999.159,
+      "end_seconds": 2068.119,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=1999s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "606b1a3d0908d51594dd2a5955fcb11a1528998b920bff0e5dad3451e98bea1a",
+    "text": "at this particular memory location and obviously my index name that you'll be able to see over here that index name based on this index name I'm trying to take out that details okay uh now first thing first uh you know that right our entire project is a combination of two different one I'll try to create a vector embedding and the other one I will try to create a sparse metrix okay and that is what hybrid search basically tells you to do it right so first of all what I will do I will go ahead and import OS and uh here I will write from EnV import load. EnV okay and we will be loading all our environment variables right now just to give you an idea about the environment variables uh since I'm going to use an opsource embedding technique from Lang chain from hugging face itself so I will go ahead and import from Lang chain under hugging face okay I'm going to import my hugging face embeddings okay and here one of the embedding technique that we regularly use and with respect to the same dimensions I'll be using this hugging face embeddings and here I'm going to use my model uncore name is equal to all Dash mini this is a sentence Transformer LM",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 2053.24,
+      "end_seconds": 2136.359,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=2053s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d1e55c1b8cce62aee17c3a93c6269571de91cae7c46ae48bb1f6ec9453acd285",
+    "text": "technique that we regularly use and with respect to the same dimensions I'll be using this hugging face embeddings and here I'm going to use my model uncore name is equal to all Dash mini this is a sentence Transformer LM L6 and version V2 okay so this will specifically be my embeddings so here let's go ahead and see the embeddings over here quickly uh yeah so my embedding is getting downloaded and this will probably take some amount of time and here you can see the word embedding is nothing but 384 please note uh before doing this if you directly execute it it will not work because the reason it is working because I have already imported os. nirn you have to create this hugging pH token right HF uncore token and this is already present in my environment variable so I will go ahead and write os. get EnV is nothing but HF token you have to execute along with this if you have not if you do not have the HF underscore token this will not get loaded okay so please make sure that you have this particular code perfect so this was it um now let's go ahead and execute it once again and now I will be having my entire hugging face embedding",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 2115.96,
+      "end_seconds": 2193.7999999999997,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=2115s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "11a286e918a91d05c9aa285d899cbf2eab0f3e2d0d1eb7dbfdded19f3c794941",
+    "text": "loaded okay so please make sure that you have this particular code perfect so this was it um now let's go ahead and execute it once again and now I will be having my entire hugging face embedding now this embedding technique is used to create your dense vectors uh if I go ahead and proceed further uh for my sparse metrix I'm going to use one more that is pine cone do spine concore text for my sparse there is a there is there is an encoder which is called as BM 25 encoder now this particular encoder uses is TF IDF by default okay TF IDF techniques so here I'm going to write pf25 uncore encoder okay is equal to nothing but I will just go ahead and initialize this encoder and I will say hey use the default one which is nothing but TF IDF okay and this basically becomes my bf25 encoder okay and this is responsible in doing the sparse metrix conversion for any queries or for any text okay now uh I I hope uh you are very much clear with all these things now and you are able to probably do all all these amazing stuffs and all right now I will try to create some sentences let's go ahead and create some sentences",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 2180.079,
+      "end_seconds": 2265.2000000000003,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=2180s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "14cb6f86e3267a036d52d53b24cae3b5361f99ebbe383c3b5d2925ba54e7be02",
+    "text": "very much clear with all these things now and you are able to probably do all all these amazing stuffs and all right now I will try to create some sentences let's go ahead and create some sentences and this sentences will be a list okay and just to show you one example I will just be creating some senten over here with respect to this particular list I will have this three sentences let's say uh in 2023 I visited Paris in 2022 I visited New York and in 20 uh and 2021 I visited orlana okay now I will take all this information and quickly I will go ahead and write bm25 uncore incoder dot we just going to fit on this entire sentences okay so once we do this uh in short we just applying TF IDF values on this sentences okay perfect so once I do this fit along with this what I will do I will store the values to a Json file okay so here uh I will just go ahead and write PF BM BM 25 incoder do dump okay now I'm going to basically dump my BM 25 uncore values in the form of Json okay and here you'll be able to see that I'm actually dumping this entire information you can also go ahead and load this just",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 2248.64,
+      "end_seconds": 2346.52,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=2248s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f39465630a140d53ef266656512441afa02a1f427af7dd060414323b124553f0",
+    "text": "to basically dump my BM 25 uncore values in the form of Json okay and here you'll be able to see that I'm actually dumping this entire information you can also go ahead and load this just to make sure that you have that entire dump okay and you can also load it so has no attribute dumpy okay it was dump no worries okay so now here you can see that I have my encoder and this is specifically for sparse metrix okay um now one more thing that you will be able to see over here is that uh once I do this particular sparse metric stump so I've actually created The Spar metrix for this right now let's go ahead and create my Retriever and this retriever will be important because with the help of this specific retriever only I will have the combination of both uh the embedding techniques and uh obviously the sparse embedding techniques right so for that I will go ahead and create this pine cone hybrid search Retriever and here I'm going to use my embeddings is equal to whatever embedding technique I have used that is nothing but hugging face embeddings and then my sparts encoder which will be assigned to my b b b bm25 encoder and I have to also",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 2326.76,
+      "end_seconds": 2406.88,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=2326s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a490efdb71b63103d186455c9d4a80876457e878a6996845214266247a66fd87",
+    "text": "equal to whatever embedding technique I have used that is nothing but hugging face embeddings and then my sparts encoder which will be assigned to my b b b bm25 encoder and I have to also specify my Index right so this will basically be my index now once I execute this this is my retriever now with the help of this particular retriever it supports both embedding the vector dense embedding technique and along with that the sparse Matrix okay so this is my retriever so I'll just go ahead and display my retriever okay so this is my Retriever and this is the entire information that you'll be able to see right so finally uh let's do one thing let's quickly go ahead and add all the text that I want right so I will say hey we will go ahead and add the text and the text that we going to add is all my sentences inside my Index right so what are my sentences here you go I will copy this and I will paste it over here okay so let's go ahead and execute this now here you'll be able to see that it'll get inserted inside that particular Index right the index uh the pine con index we have created now it's time we",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 2391.599,
+      "end_seconds": 2461.7200000000003,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=2391s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "52743c3cffb298895727e6a50c14533e8026d818e61d362ea5fc112bc66faef3",
+    "text": "so let's go ahead and execute this now here you'll be able to see that it'll get inserted inside that particular Index right the index uh the pine con index we have created now it's time we can probably retrieve any results first of all let's see whether it has got inserted or not so if I go over here here you can see see it's loading and all these three sentences are now available and this is all 384 Dimensions right so this one in 2021 I visited context Orleans in 2023 I visited New York Paris and all right now let's go ahead and ask some questions and this time it is going to use the combination of both right your vector d search and the other search so here I'll say with what city did I visit last okay so here you'll be able to see visit last so here you can see I in 20121 I visited New Orleans then New York then visited Paris all this page content is basically able to come over here and it is used both uh because this entire hybrid search retriever is using both Bings and the sparse metrics okay if I say recent so in 2021 all this information is basically coming up okay with city did I",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 2448.8,
+      "end_seconds": 2533.64,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=2448s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "107b7ceb38a2dc00e564586214f0019a8b6f350e3b136d2936e1e4d573dc45d9",
+    "text": "is used both uh because this entire hybrid search retriever is using both Bings and the sparse metrics okay if I say recent so in 2021 all this information is basically coming up okay with city did I visit first okay so here you can see in 2021 I visited you so all the information are basically you are able to see it over here but internally it is taking a combination of both hybrid search and uh this is what is an amazing example which you can also go ahead and do it okay so I hope uh you like this particular video uh I will see you all in the next video thank you take care bye-bye",
+    "metadata": {
+      "video_id": "CK0ExcCWDP4",
+      "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "RAG",
+      "start_seconds": 2511.68,
+      "end_seconds": 2555.0,
+      "url": "https://www.youtube.com/watch?v=CK0ExcCWDP4&t=2511s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

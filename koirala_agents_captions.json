@@ -1,0 +1,3718 @@
+{
+  "video_id": "eOhTv5WhvSM",
+  "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+  "channel": "Data Science Basics | AI",
+  "trainer": "Sudarshan Koirala",
+  "topic": "Agents",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1858.0,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 4.12,
+      "text": "hello guys welcome back let's talk about"
+    },
+    {
+      "start": 2.12,
+      "end": 6.6000000000000005,
+      "text": "agents right I haven't created the video"
+    },
+    {
+      "start": 4.12,
+      "end": 8.84,
+      "text": "for quite a long about the agents and"
+    },
+    {
+      "start": 6.6,
+      "end": 10.559,
+      "text": "agent seems to be the top of the town"
+    },
+    {
+      "start": 8.84,
+      "end": 12.32,
+      "text": "right now right there are many agents"
+    },
+    {
+      "start": 10.559,
+      "end": 15.36,
+      "text": "out there or the let's say the platforms"
+    },
+    {
+      "start": 12.32,
+      "end": 16.92,
+      "text": "from where you can create the llm agents"
+    },
+    {
+      "start": 15.36,
+      "end": 19.279,
+      "text": "one as you can see on the screen it is"
+    },
+    {
+      "start": 16.92,
+      "end": 21.48,
+      "text": "the lcraft and to name some of those"
+    },
+    {
+      "start": 19.279,
+      "end": 24.84,
+      "text": "there is this autogen and open source"
+    },
+    {
+      "start": 21.48,
+      "end": 26.8,
+      "text": "programming framework for agentic AI and"
+    },
+    {
+      "start": 24.84,
+      "end": 28.8,
+      "text": "there is this crew AI I hope you know"
+    },
+    {
+      "start": 26.8,
+      "end": 31.64,
+      "text": "about this also AI agents for real use"
+    },
+    {
+      "start": 28.8,
+      "end": 34.92,
+      "text": "cases and there is also this introducing"
+    },
+    {
+      "start": 31.64,
+      "end": 37.079,
+      "text": "the Transformers agent from hugging face"
+    },
+    {
+      "start": 34.92,
+      "end": 40.480000000000004,
+      "text": "that is just to name some of those but"
+    },
+    {
+      "start": 37.079,
+      "end": 43.44,
+      "text": "then the focus of this video as well as"
+    },
+    {
+      "start": 40.48,
+      "end": 46.038999999999994,
+      "text": "some of the videos in the future will be"
+    },
+    {
+      "start": 43.44,
+      "end": 48.0,
+      "text": "related to The Lang graph this will be"
+    },
+    {
+      "start": 46.039,
+      "end": 49.399,
+      "text": "just the introductory video let's get"
+    },
+    {
+      "start": 48.0,
+      "end": 51.399,
+      "text": "started okay as you can see on the"
+    },
+    {
+      "start": 49.399,
+      "end": 53.76,
+      "text": "screen it is Lang graph so just to"
+    },
+    {
+      "start": 51.399,
+      "end": 56.44,
+      "text": "mention what is Lang graph here it says"
+    },
+    {
+      "start": 53.76,
+      "end": 58.839999999999996,
+      "text": "the gain precise and control with lra to"
+    },
+    {
+      "start": 56.44,
+      "end": 62.839999999999996,
+      "text": "build agents that reliably handle"
+    },
+    {
+      "start": 58.84,
+      "end": 65.799,
+      "text": "complex task at the end what agent does"
+    },
+    {
+      "start": 62.84,
+      "end": 68.2,
+      "text": "is because agents were there from for"
+    },
+    {
+      "start": 65.799,
+      "end": 71.32000000000001,
+      "text": "quite quite a long time now right what"
+    },
+    {
+      "start": 68.2,
+      "end": 74.52000000000001,
+      "text": "it does is it helps you to connect or"
+    },
+    {
+      "start": 71.32,
+      "end": 76.19999999999999,
+      "text": "let's say do different task at the same"
+    },
+    {
+      "start": 74.52,
+      "end": 78.2,
+      "text": "time let's say you have five different"
+    },
+    {
+      "start": 76.2,
+      "end": 80.119,
+      "text": "task to perform for the llm you can"
+    },
+    {
+      "start": 78.2,
+      "end": 83.24000000000001,
+      "text": "create agent and say okay these are the"
+    },
+    {
+      "start": 80.119,
+      "end": 85.28,
+      "text": "tools that you need to go and Source the"
+    },
+    {
+      "start": 83.24,
+      "end": 87.36,
+      "text": "information for it goes through these"
+    },
+    {
+      "start": 85.28,
+      "end": 90.6,
+      "text": "tools and you get the information that"
+    },
+    {
+      "start": 87.36,
+      "end": 92.92,
+      "text": "is how the high level agent uh works"
+    },
+    {
+      "start": 90.6,
+      "end": 96.119,
+      "text": "right here it says that which is just a"
+    },
+    {
+      "start": 92.92,
+      "end": 99.119,
+      "text": "program driven by an llm and the agent"
+    },
+    {
+      "start": 96.119,
+      "end": 102.799,
+      "text": "is empowered by tools to help to perform"
+    },
+    {
+      "start": 99.119,
+      "end": 104.68,
+      "text": "the actions right that's it so yeah for"
+    },
+    {
+      "start": 102.799,
+      "end": 107.07900000000001,
+      "text": "starting about the Lang graph what you"
+    },
+    {
+      "start": 104.68,
+      "end": 108.759,
+      "text": "can do if you want to explore more is"
+    },
+    {
+      "start": 107.079,
+      "end": 110.32,
+      "text": "this is the documentation you can see"
+    },
+    {
+      "start": 108.759,
+      "end": 112.719,
+      "text": "from here there are different things"
+    },
+    {
+      "start": 110.32,
+      "end": 115.479,
+      "text": "with the Lang graph and one exploration"
+    },
+    {
+      "start": 112.719,
+      "end": 117.36,
+      "text": "before going into this Lang graph video"
+    },
+    {
+      "start": 115.479,
+      "end": 119.96,
+      "text": "I just want to make sure there might be"
+    },
+    {
+      "start": 117.36,
+      "end": 123.68,
+      "text": "some questions okay and this Lang graph"
+    },
+    {
+      "start": 119.96,
+      "end": 125.91999999999999,
+      "text": "fq clearly answers those doubts which I"
+    },
+    {
+      "start": 123.68,
+      "end": 128.75900000000001,
+      "text": "had also before it says here do I need"
+    },
+    {
+      "start": 125.92,
+      "end": 131.0,
+      "text": "to use Lang chain to use the L graph one"
+    },
+    {
+      "start": 128.759,
+      "end": 133.67999999999998,
+      "text": "thing to remember is Lang graph Lang"
+    },
+    {
+      "start": 131.0,
+      "end": 135.959,
+      "text": "Smith and Lang chain are from the same"
+    },
+    {
+      "start": 133.68,
+      "end": 137.76000000000002,
+      "text": "company Lang chain right so there might"
+    },
+    {
+      "start": 135.959,
+      "end": 140.28,
+      "text": "be some confusion okay do I need to"
+    },
+    {
+      "start": 137.76,
+      "end": 142.39999999999998,
+      "text": "learn Lang chain to use the Lang graph"
+    },
+    {
+      "start": 140.28,
+      "end": 144.76,
+      "text": "or not and so on no Lang graph is an"
+    },
+    {
+      "start": 142.4,
+      "end": 147.8,
+      "text": "orchestration framework for complex"
+    },
+    {
+      "start": 144.76,
+      "end": 151.28,
+      "text": "agentic systems and is a more low level"
+    },
+    {
+      "start": 147.8,
+      "end": 153.519,
+      "text": "and control level than L chain agents"
+    },
+    {
+      "start": 151.28,
+      "end": 155.2,
+      "text": "right we know that okay it is not uh we"
+    },
+    {
+      "start": 153.519,
+      "end": 157.36,
+      "text": "don't need to use the Lang chain and"
+    },
+    {
+      "start": 155.2,
+      "end": 159.56,
+      "text": "also how is Lang graph different from"
+    },
+    {
+      "start": 157.36,
+      "end": 162.239,
+      "text": "others so other agentic Frameworks can"
+    },
+    {
+      "start": 159.56,
+      "end": 164.84,
+      "text": "work for simple generic task but for but"
+    },
+    {
+      "start": 162.239,
+      "end": 167.12,
+      "text": "fall short for complex task so we'll"
+    },
+    {
+      "start": 164.84,
+      "end": 168.92000000000002,
+      "text": "we'll be going in the future let's see"
+    },
+    {
+      "start": 167.12,
+      "end": 171.64000000000001,
+      "text": "how how it goes I will try to create"
+    },
+    {
+      "start": 168.92,
+      "end": 173.76,
+      "text": "more complex agents also but yeah just"
+    },
+    {
+      "start": 171.64,
+      "end": 175.83999999999997,
+      "text": "go and look here is langra open source"
+    },
+    {
+      "start": 173.76,
+      "end": 178.64,
+      "text": "yes it is open source is lcraft cloud"
+    },
+    {
+      "start": 175.84,
+      "end": 180.64000000000001,
+      "text": "open source no it is not open source"
+    },
+    {
+      "start": 178.64,
+      "end": 182.95899999999997,
+      "text": "because they need to make some money and"
+    },
+    {
+      "start": 180.64,
+      "end": 184.64,
+      "text": "then they have this lcraft Cloud I will"
+    },
+    {
+      "start": 182.959,
+      "end": 187.31900000000002,
+      "text": "create more more videos into that in the"
+    },
+    {
+      "start": 184.64,
+      "end": 188.55999999999997,
+      "text": "future but now you can go just go"
+    },
+    {
+      "start": 187.319,
+      "end": 190.76,
+      "text": "through this and there is this get"
+    },
+    {
+      "start": 188.56,
+      "end": 192.519,
+      "text": "started with python and get started with"
+    },
+    {
+      "start": 190.76,
+      "end": 194.64,
+      "text": "JavaScript I'm going to go with this"
+    },
+    {
+      "start": 192.519,
+      "end": 196.68,
+      "text": "python one if you want to follow along"
+    },
+    {
+      "start": 194.64,
+      "end": 199.07999999999998,
+      "text": "with me this is the place where I will"
+    },
+    {
+      "start": 196.68,
+      "end": 201.68,
+      "text": "be taking the examples from if you want"
+    },
+    {
+      "start": 199.08,
+      "end": 205.92000000000002,
+      "text": "to run this it's fine but how I will be"
+    },
+    {
+      "start": 201.68,
+      "end": 207.519,
+      "text": "doing is in my GitHub repository here"
+    },
+    {
+      "start": 205.92,
+      "end": 210.83999999999997,
+      "text": "you can see there is a folder called"
+    },
+    {
+      "start": 207.519,
+      "end": 212.20000000000002,
+      "text": "Lang graph and there is one I python or"
+    },
+    {
+      "start": 210.84,
+      "end": 214.799,
+      "text": "let's say jupyter notebook which is"
+    },
+    {
+      "start": 212.2,
+      "end": 216.76,
+      "text": "already here I already cloned this in my"
+    },
+    {
+      "start": 214.799,
+      "end": 219.92000000000002,
+      "text": "computer you can see here I'm inside"
+    },
+    {
+      "start": 216.76,
+      "end": 222.0,
+      "text": "this YouTube stuff if I do LS you can"
+    },
+    {
+      "start": 219.92,
+      "end": 224.64,
+      "text": "see that there is already the Lang graph"
+    },
+    {
+      "start": 222.0,
+      "end": 228.28,
+      "text": "folder I will go inside the Lang graph"
+    },
+    {
+      "start": 224.64,
+      "end": 230.39999999999998,
+      "text": "uh folder here and if I do lsli a I have"
+    },
+    {
+      "start": 228.28,
+      "end": 232.68,
+      "text": "already created the virtual environment"
+    },
+    {
+      "start": 230.4,
+      "end": 234.64000000000001,
+      "text": "but it is not activated yet right but if"
+    },
+    {
+      "start": 232.68,
+      "end": 236.12,
+      "text": "you want if you don't know how to create"
+    },
+    {
+      "start": 234.64,
+      "end": 238.39999999999998,
+      "text": "the virtual environment there is just"
+    },
+    {
+      "start": 236.12,
+      "end": 239.92000000000002,
+      "text": "one command that you can run so python"
+    },
+    {
+      "start": 238.4,
+      "end": 243.72,
+      "text": "3-m"
+    },
+    {
+      "start": 239.92,
+      "end": 246.95899999999997,
+      "text": "V EnV and you you can give the name VNV"
+    },
+    {
+      "start": 243.72,
+      "end": 248.879,
+      "text": "and Source being activate I have already"
+    },
+    {
+      "start": 246.959,
+      "end": 251.2,
+      "text": "created the virtual environment there I"
+    },
+    {
+      "start": 248.879,
+      "end": 252.599,
+      "text": "will just activate that virtual"
+    },
+    {
+      "start": 251.2,
+      "end": 255.2,
+      "text": "environment this is the good practice"
+    },
+    {
+      "start": 252.599,
+      "end": 257.12,
+      "text": "for you also always create the virtual"
+    },
+    {
+      "start": 255.2,
+      "end": 259.199,
+      "text": "environment before you do some python"
+    },
+    {
+      "start": 257.12,
+      "end": 261.759,
+      "text": "stuff the packages that you install will"
+    },
+    {
+      "start": 259.199,
+      "end": 264.0,
+      "text": "be just inside this virtual"
+    },
+    {
+      "start": 261.759,
+      "end": 266.91900000000004,
+      "text": "environment so yeah now what we can do"
+    },
+    {
+      "start": 264.0,
+      "end": 269.08,
+      "text": "is we can open this in uh vs code I will"
+    },
+    {
+      "start": 266.919,
+      "end": 270.79999999999995,
+      "text": "be opening this in vs code so it is"
+    },
+    {
+      "start": 269.08,
+      "end": 273.15999999999997,
+      "text": "opened here here I will just bring the"
+    },
+    {
+      "start": 270.8,
+      "end": 275.56,
+      "text": "vs code here so yeah this is the Jupiter"
+    },
+    {
+      "start": 273.16,
+      "end": 278.0,
+      "text": "notebook right for first thing first you"
+    },
+    {
+      "start": 275.56,
+      "end": 279.56,
+      "text": "need to attach this to the virtual"
+    },
+    {
+      "start": 278.0,
+      "end": 281.88,
+      "text": "environment that we just created it's"
+    },
+    {
+      "start": 279.56,
+      "end": 283.639,
+      "text": "already shown here vnb but for you if"
+    },
+    {
+      "start": 281.88,
+      "end": 285.919,
+      "text": "it's the first time you need there will"
+    },
+    {
+      "start": 283.639,
+      "end": 288.44,
+      "text": "be WR here Corel and you need to click"
+    },
+    {
+      "start": 285.919,
+      "end": 290.32,
+      "text": "here and choose the virtual environment"
+    },
+    {
+      "start": 288.44,
+      "end": 292.0,
+      "text": "that you want this is already here for"
+    },
+    {
+      "start": 290.32,
+      "end": 295.08,
+      "text": "the first time it might also need to"
+    },
+    {
+      "start": 292.0,
+      "end": 296.479,
+      "text": "install the carel so that's that so yeah"
+    },
+    {
+      "start": 295.08,
+      "end": 298.919,
+      "text": "now let's go through this through this"
+    },
+    {
+      "start": 296.479,
+      "end": 301.639,
+      "text": "Jupiter notebook what we will be doing"
+    },
+    {
+      "start": 298.919,
+      "end": 304.19899999999996,
+      "text": "here right simple graph with two nodes"
+    },
+    {
+      "start": 301.639,
+      "end": 306.56,
+      "text": "connected by ages to get you started we"
+    },
+    {
+      "start": 304.199,
+      "end": 308.40000000000003,
+      "text": "need to know how the graph works first"
+    },
+    {
+      "start": 306.56,
+      "end": 310.84,
+      "text": "right and then we'll build a basic"
+    },
+    {
+      "start": 308.4,
+      "end": 313.12,
+      "text": "chatboard and then we will enhance the"
+    },
+    {
+      "start": 310.84,
+      "end": 315.44,
+      "text": "basic chatboard with the tools because"
+    },
+    {
+      "start": 313.12,
+      "end": 317.639,
+      "text": "agent uh is better with the tools right"
+    },
+    {
+      "start": 315.44,
+      "end": 319.759,
+      "text": "we can attach different tools and we"
+    },
+    {
+      "start": 317.639,
+      "end": 321.40000000000003,
+      "text": "will be using ol Lama in this case"
+    },
+    {
+      "start": 319.759,
+      "end": 323.68,
+      "text": "because what I try to do is here this is"
+    },
+    {
+      "start": 321.4,
+      "end": 326.63899999999995,
+      "text": "the basic uh Lang graph example we can"
+    },
+    {
+      "start": 323.68,
+      "end": 330.08,
+      "text": "use AMA and I'm going to use the Lama"
+    },
+    {
+      "start": 326.639,
+      "end": 332.88,
+      "text": "3.18 B for basic testing before going"
+    },
+    {
+      "start": 330.08,
+      "end": 335.0,
+      "text": "through this what you need to do now is"
+    },
+    {
+      "start": 332.88,
+      "end": 337.44,
+      "text": "you need to have Ama installed in your"
+    },
+    {
+      "start": 335.0,
+      "end": 340.08,
+      "text": "machine you can see this is the AMA link"
+    },
+    {
+      "start": 337.44,
+      "end": 343.84,
+      "text": "you can go here and download it for your"
+    },
+    {
+      "start": 340.08,
+      "end": 345.56,
+      "text": "machine and open it once you open it on"
+    },
+    {
+      "start": 343.84,
+      "end": 348.67999999999995,
+      "text": "the on the top of the screen you will be"
+    },
+    {
+      "start": 345.56,
+      "end": 352.0,
+      "text": "seeing the AMA logo on the top then we"
+    },
+    {
+      "start": 348.68,
+      "end": 354.40000000000003,
+      "text": "we know that ama is there so if that is"
+    },
+    {
+      "start": 352.0,
+      "end": 356.28,
+      "text": "done then you are fine and also I will"
+    },
+    {
+      "start": 354.4,
+      "end": 360.15999999999997,
+      "text": "show you from the terminal let me go to"
+    },
+    {
+      "start": 356.28,
+      "end": 362.63899999999995,
+      "text": "the terminal also if I do here AMA list"
+    },
+    {
+      "start": 360.16,
+      "end": 365.03900000000004,
+      "text": "it shows here different different llms"
+    },
+    {
+      "start": 362.639,
+      "end": 367.0,
+      "text": "that I have downloaded and I will be"
+    },
+    {
+      "start": 365.039,
+      "end": 369.4,
+      "text": "using the Lama 3 and if you are new to"
+    },
+    {
+      "start": 367.0,
+      "end": 371.599,
+      "text": "AMA again I have created the playlist"
+    },
+    {
+      "start": 369.4,
+      "end": 373.79999999999995,
+      "text": "already you can watch uh the videos"
+    },
+    {
+      "start": 371.599,
+      "end": 377.15999999999997,
+      "text": "there right now let's say that you have"
+    },
+    {
+      "start": 373.8,
+      "end": 380.68,
+      "text": "installed AMA and also you have pulled"
+    },
+    {
+      "start": 377.16,
+      "end": 383.68,
+      "text": "the Lama 3.18 or any llms you want what"
+    },
+    {
+      "start": 380.68,
+      "end": 386.96,
+      "text": "we can do now is we can install Lang"
+    },
+    {
+      "start": 383.68,
+      "end": 389.36,
+      "text": "Smith and langra L Smith is there"
+    },
+    {
+      "start": 386.96,
+      "end": 390.08,
+      "text": "because we want to have the traces into"
+    },
+    {
+      "start": 389.36,
+      "end": 392.28000000000003,
+      "text": "the"
+    },
+    {
+      "start": 390.08,
+      "end": 394.28,
+      "text": "into the langage Smith and it is"
+    },
+    {
+      "start": 392.28,
+      "end": 396.4,
+      "text": "recommended it's not mandatory but"
+    },
+    {
+      "start": 394.28,
+      "end": 398.52,
+      "text": "recommended and also the Lang CH open AI"
+    },
+    {
+      "start": 396.4,
+      "end": 400.67999999999995,
+      "text": "is there I will show you why it is there"
+    },
+    {
+      "start": 398.52,
+      "end": 402.479,
+      "text": "now we need to First install this and"
+    },
+    {
+      "start": 400.68,
+      "end": 404.88,
+      "text": "there is this Dash Das percentage"
+    },
+    {
+      "start": 402.479,
+      "end": 407.31899999999996,
+      "text": "percentage capture just it does not show"
+    },
+    {
+      "start": 404.88,
+      "end": 409.4,
+      "text": "the output of the installation this is a"
+    },
+    {
+      "start": 407.319,
+      "end": 411.47900000000004,
+      "text": "good uh way of writing in the Jupiter"
+    },
+    {
+      "start": 409.4,
+      "end": 414.4,
+      "text": "notebooks now let's go first with the"
+    },
+    {
+      "start": 411.479,
+      "end": 416.56,
+      "text": "simple example right from Lang graph do"
+    },
+    {
+      "start": 414.4,
+      "end": 418.44,
+      "text": "graph we import the graph we need to"
+    },
+    {
+      "start": 416.56,
+      "end": 421.96,
+      "text": "import the graph and then we Define a"
+    },
+    {
+      "start": 418.44,
+      "end": 425.28,
+      "text": "lang chain graph so we say graph Builder"
+    },
+    {
+      "start": 421.96,
+      "end": 429.19899999999996,
+      "text": "equals to graph right when we do this"
+    },
+    {
+      "start": 425.28,
+      "end": 431.15999999999997,
+      "text": "now we can create a functions so here it"
+    },
+    {
+      "start": 429.199,
+      "end": 434.28000000000003,
+      "text": "says let's first understand how the"
+    },
+    {
+      "start": 431.16,
+      "end": 436.759,
+      "text": "graph things work right nodes act like"
+    },
+    {
+      "start": 434.28,
+      "end": 438.23999999999995,
+      "text": "functions that can be called as needed"
+    },
+    {
+      "start": 436.759,
+      "end": 441.0,
+      "text": "so two things that you need to be"
+    },
+    {
+      "start": 438.24,
+      "end": 443.40000000000003,
+      "text": "careful if you don't know already there"
+    },
+    {
+      "start": 441.0,
+      "end": 446.28,
+      "text": "is called there is a thing called nodes"
+    },
+    {
+      "start": 443.4,
+      "end": 448.75899999999996,
+      "text": "and there is a thing called ages in in"
+    },
+    {
+      "start": 446.28,
+      "end": 451.0,
+      "text": "graph and ages connects the nodes just"
+    },
+    {
+      "start": 448.759,
+      "end": 453.12,
+      "text": "remember this for now right now we have"
+    },
+    {
+      "start": 451.0,
+      "end": 457.28,
+      "text": "SIMPLE function here function that it"
+    },
+    {
+      "start": 453.12,
+      "end": 459.08,
+      "text": "takes input returns input plus High we"
+    },
+    {
+      "start": 457.28,
+      "end": 462.79999999999995,
+      "text": "have another function let's say another"
+    },
+    {
+      "start": 459.08,
+      "end": 464.919,
+      "text": "tool it it takes the input two and input"
+    },
+    {
+      "start": 462.8,
+      "end": 468.24,
+      "text": "two plus there here it says graph"
+    },
+    {
+      "start": 464.919,
+      "end": 471.31899999999996,
+      "text": "Builder this is what we have here do add"
+    },
+    {
+      "start": 468.24,
+      "end": 473.479,
+      "text": "node it is clear like we add the node"
+    },
+    {
+      "start": 471.319,
+      "end": 475.68,
+      "text": "and we say here node one as it is"
+    },
+    {
+      "start": 473.479,
+      "end": 477.68,
+      "text": "mentioned here and then function one"
+    },
+    {
+      "start": 475.68,
+      "end": 479.08,
+      "text": "which we created here this is the name"
+    },
+    {
+      "start": 477.68,
+      "end": 481.40000000000003,
+      "text": "unique name that you can provide"
+    },
+    {
+      "start": 479.08,
+      "end": 484.96,
+      "text": "anything but this must be the function"
+    },
+    {
+      "start": 481.4,
+      "end": 487.84,
+      "text": "that you created once we run this we"
+    },
+    {
+      "start": 484.96,
+      "end": 490.4,
+      "text": "created two nodes right and now what we"
+    },
+    {
+      "start": 487.84,
+      "end": 492.96,
+      "text": "can do is we can we can create or let's"
+    },
+    {
+      "start": 490.4,
+      "end": 495.56,
+      "text": "say uh add the ages to connect the two"
+    },
+    {
+      "start": 492.96,
+      "end": 498.23999999999995,
+      "text": "nodes so here we are saying let me make"
+    },
+    {
+      "start": 495.56,
+      "end": 501.639,
+      "text": "this up here it's saying graph builder."
+    },
+    {
+      "start": 498.24,
+      "end": 505.12,
+      "text": "add age so we are adding the age from"
+    },
+    {
+      "start": 501.639,
+      "end": 507.40000000000003,
+      "text": "node one to node two it is saying where"
+    },
+    {
+      "start": 505.12,
+      "end": 509.639,
+      "text": "to go right and then the graph Builder"
+    },
+    {
+      "start": 507.4,
+      "end": 511.56,
+      "text": "the set entry point let's say you you"
+    },
+    {
+      "start": 509.639,
+      "end": 514.12,
+      "text": "have your nodes and the edes but you"
+    },
+    {
+      "start": 511.56,
+      "end": 517.12,
+      "text": "need to provide the entry point let's"
+    },
+    {
+      "start": 514.12,
+      "end": 519.719,
+      "text": "say from where it needs to start and say"
+    },
+    {
+      "start": 517.12,
+      "end": 522.719,
+      "text": "where it needs to close so I'm saying"
+    },
+    {
+      "start": 519.719,
+      "end": 524.6,
+      "text": "here set entry point to node one so node"
+    },
+    {
+      "start": 522.719,
+      "end": 528.32,
+      "text": "one will be the entry point and node two"
+    },
+    {
+      "start": 524.6,
+      "end": 530.88,
+      "text": "will be our finish point right it's"
+    },
+    {
+      "start": 528.32,
+      "end": 533.1600000000001,
+      "text": "simple simple commands here and now we"
+    },
+    {
+      "start": 530.88,
+      "end": 535.959,
+      "text": "can say after we do all this we need to"
+    },
+    {
+      "start": 533.16,
+      "end": 538.1999999999999,
+      "text": "compile this this this is how it works"
+    },
+    {
+      "start": 535.959,
+      "end": 541.5189999999999,
+      "text": "you can just write this do compile if I"
+    },
+    {
+      "start": 538.2,
+      "end": 543.399,
+      "text": "run this and then once this is compiled"
+    },
+    {
+      "start": 541.519,
+      "end": 545.519,
+      "text": "this is a simple code provided in the"
+    },
+    {
+      "start": 543.399,
+      "end": 548.839,
+      "text": "documentation which we can use to"
+    },
+    {
+      "start": 545.519,
+      "end": 550.92,
+      "text": "visualize the graph so yeah when we run"
+    },
+    {
+      "start": 548.839,
+      "end": 553.399,
+      "text": "this you can see this is good part of"
+    },
+    {
+      "start": 550.92,
+      "end": 556.64,
+      "text": "langra because whatever I have mentioned"
+    },
+    {
+      "start": 553.399,
+      "end": 559.04,
+      "text": "until now it might be okay what is going"
+    },
+    {
+      "start": 556.64,
+      "end": 561.68,
+      "text": "on here why are you saying this okay I"
+    },
+    {
+      "start": 559.04,
+      "end": 564.76,
+      "text": "still didn't get it but now the good"
+    },
+    {
+      "start": 561.68,
+      "end": 567.3599999999999,
+      "text": "part of graph things is now once you"
+    },
+    {
+      "start": 564.76,
+      "end": 569.4399999999999,
+      "text": "just look into this diagram or figure"
+    },
+    {
+      "start": 567.36,
+      "end": 572.36,
+      "text": "you understand okay there is a starting"
+    },
+    {
+      "start": 569.44,
+      "end": 574.48,
+      "text": "point there is a end point once we start"
+    },
+    {
+      "start": 572.36,
+      "end": 577.0,
+      "text": "there is node one and node one goes to"
+    },
+    {
+      "start": 574.48,
+      "end": 579.16,
+      "text": "the node two and there is the end so"
+    },
+    {
+      "start": 577.0,
+      "end": 581.32,
+      "text": "it's clear right that is the important"
+    },
+    {
+      "start": 579.16,
+      "end": 583.399,
+      "text": "or that's the good part of Lang graph"
+    },
+    {
+      "start": 581.32,
+      "end": 585.7600000000001,
+      "text": "also well that is the good part of graph"
+    },
+    {
+      "start": 583.399,
+      "end": 588.24,
+      "text": "but also in Lang graph you can know uh"
+    },
+    {
+      "start": 585.76,
+      "end": 590.12,
+      "text": "which uh nodes is going one after the"
+    },
+    {
+      "start": 588.24,
+      "end": 593.519,
+      "text": "another and so on now what we can do is"
+    },
+    {
+      "start": 590.12,
+      "end": 595.76,
+      "text": "we can invoke it right the main purpose"
+    },
+    {
+      "start": 593.519,
+      "end": 598.24,
+      "text": "of creating the graph is to invoke it"
+    },
+    {
+      "start": 595.76,
+      "end": 601.6,
+      "text": "isn't it we can just say here hello why"
+    },
+    {
+      "start": 598.24,
+      "end": 604.279,
+      "text": "is it here hello High there we have here"
+    },
+    {
+      "start": 601.6,
+      "end": 607.2,
+      "text": "in the beginning we have high and there"
+    },
+    {
+      "start": 604.279,
+      "end": 610.32,
+      "text": "is there right and now we are invoking"
+    },
+    {
+      "start": 607.2,
+      "end": 613.76,
+      "text": "with with the hello meaning that it goes"
+    },
+    {
+      "start": 610.32,
+      "end": 615.7600000000001,
+      "text": "hello High there so that is how the"
+    },
+    {
+      "start": 613.76,
+      "end": 618.88,
+      "text": "graph works so this is the simple"
+    },
+    {
+      "start": 615.76,
+      "end": 621.399,
+      "text": "example of of the graph which contains"
+    },
+    {
+      "start": 618.88,
+      "end": 623.68,
+      "text": "the node and edges now I hope you get"
+    },
+    {
+      "start": 621.399,
+      "end": 626.0,
+      "text": "little bit of the idea uh about the"
+    },
+    {
+      "start": 623.68,
+      "end": 628.92,
+      "text": "graph things and and the L graph how it"
+    },
+    {
+      "start": 626.0,
+      "end": 630.32,
+      "text": "works right now let's build a basic uh"
+    },
+    {
+      "start": 628.92,
+      "end": 632.56,
+      "text": "chat boo"
+    },
+    {
+      "start": 630.32,
+      "end": 634.279,
+      "text": "so for that as I said you I'll be using"
+    },
+    {
+      "start": 632.56,
+      "end": 636.3199999999999,
+      "text": "the Lang Smith for the debugging"
+    },
+    {
+      "start": 634.279,
+      "end": 638.4399999999999,
+      "text": "collaboration test and monitor your Alam"
+    },
+    {
+      "start": 636.32,
+      "end": 641.639,
+      "text": "applications you can go"
+    },
+    {
+      "start": 638.44,
+      "end": 643.9200000000001,
+      "text": "here and here you can you can go here"
+    },
+    {
+      "start": 641.639,
+      "end": 647.04,
+      "text": "and create uh account and so on so you"
+    },
+    {
+      "start": 643.92,
+      "end": 651.3199999999999,
+      "text": "can get a demo or just go here and and"
+    },
+    {
+      "start": 647.04,
+      "end": 654.16,
+      "text": "and see the things I will go back to the"
+    },
+    {
+      "start": 651.32,
+      "end": 656.48,
+      "text": "Jupiter notebook so here this is a thing"
+    },
+    {
+      "start": 654.16,
+      "end": 658.04,
+      "text": "a small small function which takes into"
+    },
+    {
+      "start": 656.48,
+      "end": 661.48,
+      "text": "the environment variable so it is not"
+    },
+    {
+      "start": 658.04,
+      "end": 664.16,
+      "text": "visible in the in the in the duper"
+    },
+    {
+      "start": 661.48,
+      "end": 665.8000000000001,
+      "text": "notebook so I will run this and once I"
+    },
+    {
+      "start": 664.16,
+      "end": 668.36,
+      "text": "run this as you can see here I have"
+    },
+    {
+      "start": 665.8,
+      "end": 670.399,
+      "text": "taken the environment variables from"
+    },
+    {
+      "start": 668.36,
+      "end": 672.0790000000001,
+      "text": "Lang Lang Smith although it is saying"
+    },
+    {
+      "start": 670.399,
+      "end": 674.399,
+      "text": "here Lang chain Lang chain it is the"
+    },
+    {
+      "start": 672.079,
+      "end": 676.8,
+      "text": "Lang Smith things right so these things"
+    },
+    {
+      "start": 674.399,
+      "end": 678.959,
+      "text": "you will get it from the Lang Smith"
+    },
+    {
+      "start": 676.8,
+      "end": 681.12,
+      "text": "project you can just give some name here"
+    },
+    {
+      "start": 678.959,
+      "end": 683.6389999999999,
+      "text": "it will be created there and we need to"
+    },
+    {
+      "start": 681.12,
+      "end": 687.6,
+      "text": "get the API key for example if I run"
+    },
+    {
+      "start": 683.639,
+      "end": 690.8,
+      "text": "this it will ask me here provide the API"
+    },
+    {
+      "start": 687.6,
+      "end": 693.9590000000001,
+      "text": "key right for that what I need to do is"
+    },
+    {
+      "start": 690.8,
+      "end": 696.8389999999999,
+      "text": "I need to go here and probably I have"
+    },
+    {
+      "start": 693.959,
+      "end": 700.2399999999999,
+      "text": "somewhere here upon Lang Smith so this"
+    },
+    {
+      "start": 696.839,
+      "end": 702.44,
+      "text": "is the Lang Smith it is reloading let's"
+    },
+    {
+      "start": 700.24,
+      "end": 704.5600000000001,
+      "text": "see so yeah this is the Lang graph"
+    },
+    {
+      "start": 702.44,
+      "end": 706.6800000000001,
+      "text": "tutorial the name that I have used right"
+    },
+    {
+      "start": 704.56,
+      "end": 710.16,
+      "text": "I'm going to use this and if you go to"
+    },
+    {
+      "start": 706.68,
+      "end": 711.8,
+      "text": "the settings and here are the API keys I"
+    },
+    {
+      "start": 710.16,
+      "end": 714.48,
+      "text": "have here Lang graph and Lang graph"
+    },
+    {
+      "start": 711.8,
+      "end": 716.56,
+      "text": "Studio two API keys right I have already"
+    },
+    {
+      "start": 714.48,
+      "end": 718.76,
+      "text": "taken this but now I forget what it is"
+    },
+    {
+      "start": 716.56,
+      "end": 721.8389999999999,
+      "text": "so I will what I will do is I will"
+    },
+    {
+      "start": 718.76,
+      "end": 724.48,
+      "text": "create a new API key I will just say"
+    },
+    {
+      "start": 721.839,
+      "end": 727.2,
+      "text": "here test for now I will create it I'm"
+    },
+    {
+      "start": 724.48,
+      "end": 729.6,
+      "text": "showing you this because I'm going to"
+    },
+    {
+      "start": 727.2,
+      "end": 732.72,
+      "text": "roke it it once I create the video so"
+    },
+    {
+      "start": 729.6,
+      "end": 736.44,
+      "text": "what I do here I go here and I will"
+    },
+    {
+      "start": 732.72,
+      "end": 740.0400000000001,
+      "text": "paste it here right I will do enter okay"
+    },
+    {
+      "start": 736.44,
+      "end": 742.639,
+      "text": "now I'm I provided the langage Smith API"
+    },
+    {
+      "start": 740.04,
+      "end": 745.04,
+      "text": "key and these other things from where I"
+    },
+    {
+      "start": 742.639,
+      "end": 748.0790000000001,
+      "text": "get I will just quickly show you so here"
+    },
+    {
+      "start": 745.04,
+      "end": 749.56,
+      "text": "if you go to this let's go to back let's"
+    },
+    {
+      "start": 748.079,
+      "end": 751.7199999999999,
+      "text": "say you want to create a new project"
+    },
+    {
+      "start": 749.56,
+      "end": 753.5999999999999,
+      "text": "right you go to new project you can see"
+    },
+    {
+      "start": 751.72,
+      "end": 755.9590000000001,
+      "text": "these things are already being provided"
+    },
+    {
+      "start": 753.6,
+      "end": 759.519,
+      "text": "here you just copy these things I'm"
+    },
+    {
+      "start": 755.959,
+      "end": 761.8389999999999,
+      "text": "using the EU you might be using USA so"
+    },
+    {
+      "start": 759.519,
+      "end": 764.24,
+      "text": "the the inpoint might be different but"
+    },
+    {
+      "start": 761.839,
+      "end": 766.12,
+      "text": "you can provide different names here and"
+    },
+    {
+      "start": 764.24,
+      "end": 768.16,
+      "text": "just copy this you don't need to create"
+    },
+    {
+      "start": 766.12,
+      "end": 769.6,
+      "text": "the project here when you run the code"
+    },
+    {
+      "start": 768.16,
+      "end": 772.8,
+      "text": "the project will be automatically"
+    },
+    {
+      "start": 769.6,
+      "end": 775.399,
+      "text": "created here right now let's get back"
+    },
+    {
+      "start": 772.8,
+      "end": 776.92,
+      "text": "here so yeah that is done and now as I"
+    },
+    {
+      "start": 775.399,
+      "end": 779.639,
+      "text": "said you before I'm not going to use the"
+    },
+    {
+      "start": 776.92,
+      "end": 782.12,
+      "text": "open a but I install the open AI Lang"
+    },
+    {
+      "start": 779.639,
+      "end": 785.44,
+      "text": "chain open a package why because there"
+    },
+    {
+      "start": 782.12,
+      "end": 788.32,
+      "text": "is a thing called AMA has now built in"
+    },
+    {
+      "start": 785.44,
+      "end": 791.1600000000001,
+      "text": "compatibility with the open a chat"
+    },
+    {
+      "start": 788.32,
+      "end": 794.839,
+      "text": "completions meaning that you can use"
+    },
+    {
+      "start": 791.16,
+      "end": 797.079,
+      "text": "this chat open AI but you can use the"
+    },
+    {
+      "start": 794.839,
+      "end": 798.8000000000001,
+      "text": "models from the AMA so you if you want"
+    },
+    {
+      "start": 797.079,
+      "end": 801.68,
+      "text": "to know more just go through this and"
+    },
+    {
+      "start": 798.8,
+      "end": 804.0,
+      "text": "here you can uh read about this but the"
+    },
+    {
+      "start": 801.68,
+      "end": 806.4799999999999,
+      "text": "good part here is what what we can do is"
+    },
+    {
+      "start": 804.0,
+      "end": 809.88,
+      "text": "we can import the chat open AI from Lang"
+    },
+    {
+      "start": 806.48,
+      "end": 812.1990000000001,
+      "text": "chain open AI right and then as I said"
+    },
+    {
+      "start": 809.88,
+      "end": 815.88,
+      "text": "you here you need to provide the base"
+    },
+    {
+      "start": 812.199,
+      "end": 818.3599999999999,
+      "text": "URL and that is where the AMA listens to"
+    },
+    {
+      "start": 815.88,
+      "end": 820.92,
+      "text": "make sure that you have Ama installed or"
+    },
+    {
+      "start": 818.36,
+      "end": 824.04,
+      "text": "not this will not work if you don't have"
+    },
+    {
+      "start": 820.92,
+      "end": 826.199,
+      "text": "the AMA already running you install that"
+    },
+    {
+      "start": 824.04,
+      "end": 829.519,
+      "text": "is one part and then you need to run"
+    },
+    {
+      "start": 826.199,
+      "end": 832.24,
+      "text": "also if you click this if it shows AMA"
+    },
+    {
+      "start": 829.519,
+      "end": 833.759,
+      "text": "is running then it it is running so you"
+    },
+    {
+      "start": 832.24,
+      "end": 837.399,
+      "text": "make sure that it is running in this"
+    },
+    {
+      "start": 833.759,
+      "end": 839.44,
+      "text": "Local Host 11 1434 so yeah this is the"
+    },
+    {
+      "start": 837.399,
+      "end": 841.759,
+      "text": "simple thing chat open AI you can you"
+    },
+    {
+      "start": 839.44,
+      "end": 844.399,
+      "text": "don't need to provide API key because we"
+    },
+    {
+      "start": 841.759,
+      "end": 846.16,
+      "text": "are using local local model so you can"
+    },
+    {
+      "start": 844.399,
+      "end": 848.399,
+      "text": "just write here anything example for"
+    },
+    {
+      "start": 846.16,
+      "end": 851.36,
+      "text": "here I'm writing provide anything"
+    },
+    {
+      "start": 848.399,
+      "end": 853.839,
+      "text": "anything here so yeah anything here"
+    },
+    {
+      "start": 851.36,
+      "end": 855.92,
+      "text": "model is you can use the models the one"
+    },
+    {
+      "start": 853.839,
+      "end": 859.8800000000001,
+      "text": "that you downloaded from the olama and"
+    },
+    {
+      "start": 855.92,
+      "end": 862.079,
+      "text": "base URL is this one once I run this now"
+    },
+    {
+      "start": 859.88,
+      "end": 865.24,
+      "text": "I can use for example it say chat open"
+    },
+    {
+      "start": 862.079,
+      "end": 868.12,
+      "text": "AI okay I need to import this and then"
+    },
+    {
+      "start": 865.24,
+      "end": 871.16,
+      "text": "it's there meaning that now we have the"
+    },
+    {
+      "start": 868.12,
+      "end": 873.88,
+      "text": "model with this chat open a class right"
+    },
+    {
+      "start": 871.16,
+      "end": 875.92,
+      "text": "that's that's easier and now we need to"
+    },
+    {
+      "start": 873.88,
+      "end": 878.0,
+      "text": "start by creating the state graph our"
+    },
+    {
+      "start": 875.92,
+      "end": 880.5999999999999,
+      "text": "state graph object defines the structure"
+    },
+    {
+      "start": 878.0,
+      "end": 882.92,
+      "text": "of our chatbot as the state machine and"
+    },
+    {
+      "start": 880.6,
+      "end": 885.6800000000001,
+      "text": "we will be adding nodes to represent llm"
+    },
+    {
+      "start": 882.92,
+      "end": 887.68,
+      "text": "and functions and then as is to specify"
+    },
+    {
+      "start": 885.68,
+      "end": 889.4799999999999,
+      "text": "how the B should transition between"
+    },
+    {
+      "start": 887.68,
+      "end": 891.399,
+      "text": "these functions as I show you before"
+    },
+    {
+      "start": 889.48,
+      "end": 892.9590000000001,
+      "text": "also right this is the code that I have"
+    },
+    {
+      "start": 891.399,
+      "end": 894.56,
+      "text": "taken from the Lang and documentation"
+    },
+    {
+      "start": 892.959,
+      "end": 896.88,
+      "text": "it's just importing the things here you"
+    },
+    {
+      "start": 894.56,
+      "end": 900.3199999999999,
+      "text": "can see we import the state graph we"
+    },
+    {
+      "start": 896.88,
+      "end": 903.56,
+      "text": "need to start end and and there is a uh"
+    },
+    {
+      "start": 900.32,
+      "end": 905.88,
+      "text": "class called and this is the type dict"
+    },
+    {
+      "start": 903.56,
+      "end": 908.199,
+      "text": "messages annotated this is a list and we"
+    },
+    {
+      "start": 905.88,
+      "end": 910.639,
+      "text": "have this add message function so this"
+    },
+    {
+      "start": 908.199,
+      "end": 912.68,
+      "text": "is you can see here it is already being"
+    },
+    {
+      "start": 910.639,
+      "end": 915.0,
+      "text": "imported and if you want to know what is"
+    },
+    {
+      "start": 912.68,
+      "end": 916.8,
+      "text": "inside this add message what you can do"
+    },
+    {
+      "start": 915.0,
+      "end": 918.759,
+      "text": "let me first uh build this graph and I"
+    },
+    {
+      "start": 916.8,
+      "end": 921.3599999999999,
+      "text": "will just uh show you what is inside"
+    },
+    {
+      "start": 918.759,
+      "end": 924.24,
+      "text": "this add message you can just say add"
+    },
+    {
+      "start": 921.36,
+      "end": 927.32,
+      "text": "messages two question marks and shift"
+    },
+    {
+      "start": 924.24,
+      "end": 929.72,
+      "text": "enter you can see the documentation of"
+    },
+    {
+      "start": 927.32,
+      "end": 931.6800000000001,
+      "text": "add message here it says merge to list"
+    },
+    {
+      "start": 929.72,
+      "end": 933.639,
+      "text": "of messages updating existing ones by"
+    },
+    {
+      "start": 931.68,
+      "end": 935.519,
+      "text": "the ID right you can just go through"
+    },
+    {
+      "start": 933.639,
+      "end": 939.199,
+      "text": "this and see what is doing it under the"
+    },
+    {
+      "start": 935.519,
+      "end": 942.9590000000001,
+      "text": "hood this is the good way of how you can"
+    },
+    {
+      "start": 939.199,
+      "end": 945.68,
+      "text": "view the documentation let's go into the"
+    },
+    {
+      "start": 942.959,
+      "end": 948.68,
+      "text": "next one now where was I I Was Here and"
+    },
+    {
+      "start": 945.68,
+      "end": 950.88,
+      "text": "Now our graph knows two things right"
+    },
+    {
+      "start": 948.68,
+      "end": 953.0,
+      "text": "every node we Define will receive the"
+    },
+    {
+      "start": 950.88,
+      "end": 956.279,
+      "text": "current state as input and return of"
+    },
+    {
+      "start": 953.0,
+      "end": 958.759,
+      "text": "value that updates that state right and"
+    },
+    {
+      "start": 956.279,
+      "end": 960.68,
+      "text": "there is the messages will be appended"
+    },
+    {
+      "start": 958.759,
+      "end": 963.319,
+      "text": "to to the current list rather than"
+    },
+    {
+      "start": 960.68,
+      "end": 965.4399999999999,
+      "text": "directly over written that's what I just"
+    },
+    {
+      "start": 963.319,
+      "end": 968.36,
+      "text": "showed you right this is communicated"
+    },
+    {
+      "start": 965.44,
+      "end": 971.759,
+      "text": "via the pre-built add messages function"
+    },
+    {
+      "start": 968.36,
+      "end": 974.44,
+      "text": "in the annotated syntax that's what I"
+    },
+    {
+      "start": 971.759,
+      "end": 976.399,
+      "text": "just uh showed you so yeah now what we"
+    },
+    {
+      "start": 974.44,
+      "end": 978.1990000000001,
+      "text": "can do is we need to create a function"
+    },
+    {
+      "start": 976.399,
+      "end": 982.519,
+      "text": "same as before now we need to create a"
+    },
+    {
+      "start": 978.199,
+      "end": 984.8389999999999,
+      "text": "function that function behaves as a node"
+    },
+    {
+      "start": 982.519,
+      "end": 987.24,
+      "text": "right here we says Define chatbot we"
+    },
+    {
+      "start": 984.839,
+      "end": 989.639,
+      "text": "have we Define the state messages llm"
+    },
+    {
+      "start": 987.24,
+      "end": 992.279,
+      "text": "local is what we created invo book and"
+    },
+    {
+      "start": 989.639,
+      "end": 994.759,
+      "text": "we provide the state and the messages"
+    },
+    {
+      "start": 992.279,
+      "end": 997.12,
+      "text": "right and now we can just say add node"
+    },
+    {
+      "start": 994.759,
+      "end": 999.9590000000001,
+      "text": "here this is the simple function and we"
+    },
+    {
+      "start": 997.12,
+      "end": 1002.88,
+      "text": "add the node I will run this one now"
+    },
+    {
+      "start": 999.959,
+      "end": 1005.16,
+      "text": "here we can say Okay add ages we want to"
+    },
+    {
+      "start": 1002.88,
+      "end": 1007.72,
+      "text": "add the ages I'm saying here start"
+    },
+    {
+      "start": 1005.16,
+      "end": 1009.7199999999999,
+      "text": "because we want to start from that and"
+    },
+    {
+      "start": 1007.72,
+      "end": 1013.0,
+      "text": "into the chatbot and from chatbot we"
+    },
+    {
+      "start": 1009.72,
+      "end": 1014.9590000000001,
+      "text": "want to end so the flow is is there"
+    },
+    {
+      "start": 1013.0,
+      "end": 1017.399,
+      "text": "right and we need to compile after this"
+    },
+    {
+      "start": 1014.959,
+      "end": 1020.2399999999999,
+      "text": "this is what I just showed you and again"
+    },
+    {
+      "start": 1017.399,
+      "end": 1022.839,
+      "text": "the same code as before we can run this"
+    },
+    {
+      "start": 1020.24,
+      "end": 1024.959,
+      "text": "to see the flow or the graph there is"
+    },
+    {
+      "start": 1022.839,
+      "end": 1027.959,
+      "text": "the start we have one function in this"
+    },
+    {
+      "start": 1024.959,
+      "end": 1030.6000000000001,
+      "text": "case chatbot and then the end and now we"
+    },
+    {
+      "start": 1027.959,
+      "end": 1033.16,
+      "text": "can run this so this is just the code"
+    },
+    {
+      "start": 1030.6,
+      "end": 1035.8799999999999,
+      "text": "again to run it all the comment is"
+    },
+    {
+      "start": 1033.16,
+      "end": 1037.6000000000001,
+      "text": "written here we are calling the llm we"
+    },
+    {
+      "start": 1035.88,
+      "end": 1040.48,
+      "text": "are getting the answer there is"
+    },
+    {
+      "start": 1037.6,
+      "end": 1043.4389999999999,
+      "text": "assistant there is human and we go"
+    },
+    {
+      "start": 1040.48,
+      "end": 1045.28,
+      "text": "through the as a chatbot right there is"
+    },
+    {
+      "start": 1043.439,
+      "end": 1046.76,
+      "text": "nothing fancy here but you can go"
+    },
+    {
+      "start": 1045.28,
+      "end": 1049.6789999999999,
+      "text": "through each and every line if you feel"
+    },
+    {
+      "start": 1046.76,
+      "end": 1051.6,
+      "text": "if you feel confused so I will run this"
+    },
+    {
+      "start": 1049.679,
+      "end": 1054.2,
+      "text": "once that is run you can see here on the"
+    },
+    {
+      "start": 1051.6,
+      "end": 1057.32,
+      "text": "top there is this user it says please"
+    },
+    {
+      "start": 1054.2,
+      "end": 1059.1200000000001,
+      "text": "enter or uh to confirm or escape to"
+    },
+    {
+      "start": 1057.32,
+      "end": 1061.96,
+      "text": "cancel so I will say here just is a"
+    },
+    {
+      "start": 1059.12,
+      "end": 1064.52,
+      "text": "simple example I will say what okay I"
+    },
+    {
+      "start": 1061.96,
+      "end": 1066.3600000000001,
+      "text": "will say just hi let's see what happens"
+    },
+    {
+      "start": 1064.52,
+      "end": 1069.36,
+      "text": "when I say hi from the human now there"
+    },
+    {
+      "start": 1066.36,
+      "end": 1072.6789999999999,
+      "text": "will be the assistant part right so here"
+    },
+    {
+      "start": 1069.36,
+      "end": 1074.559,
+      "text": "in the in the beginning you can see yeah"
+    },
+    {
+      "start": 1072.679,
+      "end": 1076.3200000000002,
+      "text": "now there is the assistant because"
+    },
+    {
+      "start": 1074.559,
+      "end": 1078.96,
+      "text": "before there is the user and you can see"
+    },
+    {
+      "start": 1076.32,
+      "end": 1081.039,
+      "text": "user is here and how are you doing today"
+    },
+    {
+      "start": 1078.96,
+      "end": 1084.08,
+      "text": "is there something I want to help with"
+    },
+    {
+      "start": 1081.039,
+      "end": 1086.0,
+      "text": "our chart what I can do here is I will"
+    },
+    {
+      "start": 1084.08,
+      "end": 1090.1589999999999,
+      "text": "say what is"
+    },
+    {
+      "start": 1086.0,
+      "end": 1094.919,
+      "text": "the weather of hink key right I will"
+    },
+    {
+      "start": 1090.159,
+      "end": 1097.3600000000001,
+      "text": "type enter and now assistant is the llm"
+    },
+    {
+      "start": 1094.919,
+      "end": 1100.48,
+      "text": "that goes through and tries to get the"
+    },
+    {
+      "start": 1097.36,
+      "end": 1102.32,
+      "text": "answer for us right now let's wait for"
+    },
+    {
+      "start": 1100.48,
+      "end": 1104.3600000000001,
+      "text": "the answer this is I'm using local"
+    },
+    {
+      "start": 1102.32,
+      "end": 1106.6399999999999,
+      "text": "machine or local llm so it is taking"
+    },
+    {
+      "start": 1104.36,
+      "end": 1109.12,
+      "text": "some time right so here you can see as"
+    },
+    {
+      "start": 1106.64,
+      "end": 1111.88,
+      "text": "Helsinki the capital city of Finland has"
+    },
+    {
+      "start": 1109.12,
+      "end": 1113.7199999999998,
+      "text": "this this this and it says uh year round"
+    },
+    {
+      "start": 1111.88,
+      "end": 1116.919,
+      "text": "temperature and so on but it does not"
+    },
+    {
+      "start": 1113.72,
+      "end": 1119.1200000000001,
+      "text": "provide me the exact temperature because"
+    },
+    {
+      "start": 1116.919,
+      "end": 1121.72,
+      "text": "this is just the basic information from"
+    },
+    {
+      "start": 1119.12,
+      "end": 1124.76,
+      "text": "the llm right we haven't attached any"
+    },
+    {
+      "start": 1121.72,
+      "end": 1126.96,
+      "text": "tools into it so later we'll be using"
+    },
+    {
+      "start": 1124.76,
+      "end": 1130.36,
+      "text": "the same example but then we'll attach"
+    },
+    {
+      "start": 1126.96,
+      "end": 1132.559,
+      "text": "the tool to go and find from internet"
+    },
+    {
+      "start": 1130.36,
+      "end": 1135.84,
+      "text": "the latest information now I will just"
+    },
+    {
+      "start": 1132.559,
+      "end": 1139.3999999999999,
+      "text": "type here q and enter so now it says"
+    },
+    {
+      "start": 1135.84,
+      "end": 1141.76,
+      "text": "goodbye right it goes out and this is"
+    },
+    {
+      "start": 1139.4,
+      "end": 1143.8400000000001,
+      "text": "just the simple example I'm showing here"
+    },
+    {
+      "start": 1141.76,
+      "end": 1146.4,
+      "text": "the next or the final part now is"
+    },
+    {
+      "start": 1143.84,
+      "end": 1148.1999999999998,
+      "text": "enhancing the chart B with the tools"
+    },
+    {
+      "start": 1146.4,
+      "end": 1150.24,
+      "text": "right and one thing and then we'll be"
+    },
+    {
+      "start": 1148.2,
+      "end": 1152.28,
+      "text": "using the web search tool as I said you"
+    },
+    {
+      "start": 1150.24,
+      "end": 1154.96,
+      "text": "before and this one thing you need to be"
+    },
+    {
+      "start": 1152.28,
+      "end": 1157.9189999999999,
+      "text": "careful here is it relies on the llms"
+    },
+    {
+      "start": 1154.96,
+      "end": 1161.28,
+      "text": "tool calling support So if you are doing"
+    },
+    {
+      "start": 1157.919,
+      "end": 1163.8400000000001,
+      "text": "some let's say the advanced uh tool"
+    },
+    {
+      "start": 1161.28,
+      "end": 1165.9189999999999,
+      "text": "calling then you need to be careful in"
+    },
+    {
+      "start": 1163.84,
+      "end": 1167.84,
+      "text": "choosing the llms because it says here"
+    },
+    {
+      "start": 1165.919,
+      "end": 1169.72,
+      "text": "tool calling support which is available"
+    },
+    {
+      "start": 1167.84,
+      "end": 1172.1589999999999,
+      "text": "in anthropic opening Google JY and"
+    },
+    {
+      "start": 1169.72,
+      "end": 1174.44,
+      "text": "number of other llm providers when you"
+    },
+    {
+      "start": 1172.159,
+      "end": 1176.0800000000002,
+      "text": "test locally something might not work at"
+    },
+    {
+      "start": 1174.44,
+      "end": 1179.039,
+      "text": "some point if that doesn't work then"
+    },
+    {
+      "start": 1176.08,
+      "end": 1181.28,
+      "text": "switch into these these model providers"
+    },
+    {
+      "start": 1179.039,
+      "end": 1183.36,
+      "text": "then it should work right for us this is"
+    },
+    {
+      "start": 1181.28,
+      "end": 1186.08,
+      "text": "the normal simple thing so it will work"
+    },
+    {
+      "start": 1183.36,
+      "end": 1188.76,
+      "text": "what will be what will we be doing now"
+    },
+    {
+      "start": 1186.08,
+      "end": 1191.76,
+      "text": "is in order to connect to this internet"
+    },
+    {
+      "start": 1188.76,
+      "end": 1194.52,
+      "text": "we will be using the Tav search engine"
+    },
+    {
+      "start": 1191.76,
+      "end": 1197.52,
+      "text": "for that first we need to install"
+    },
+    {
+      "start": 1194.52,
+      "end": 1199.48,
+      "text": "necessary packages again and when this"
+    },
+    {
+      "start": 1197.52,
+      "end": 1201.76,
+      "text": "is installing okay it already installed"
+    },
+    {
+      "start": 1199.48,
+      "end": 1205.24,
+      "text": "I will go to this tavil sorts engine"
+    },
+    {
+      "start": 1201.76,
+      "end": 1206.96,
+      "text": "because we need to get this Tav API key"
+    },
+    {
+      "start": 1205.24,
+      "end": 1209.44,
+      "text": "so this is the link to the documentation"
+    },
+    {
+      "start": 1206.96,
+      "end": 1213.64,
+      "text": "into the Lang chain you can see here how"
+    },
+    {
+      "start": 1209.44,
+      "end": 1217.0800000000002,
+      "text": "to use this but in order to get the API"
+    },
+    {
+      "start": 1213.64,
+      "end": 1219.2800000000002,
+      "text": "key here is this T AI I will provide the"
+    },
+    {
+      "start": 1217.08,
+      "end": 1221.28,
+      "text": "link in the description so from here you"
+    },
+    {
+      "start": 1219.28,
+      "end": 1224.8799999999999,
+      "text": "need to create the API ke and you can"
+    },
+    {
+      "start": 1221.28,
+      "end": 1227.72,
+      "text": "see there is 1,000 request is free so"
+    },
+    {
+      "start": 1224.88,
+      "end": 1229.48,
+      "text": "this is the API key I will copy this one"
+    },
+    {
+      "start": 1227.72,
+      "end": 1232.039,
+      "text": "I will go back to to the Jupiter"
+    },
+    {
+      "start": 1229.48,
+      "end": 1235.24,
+      "text": "notebook and here I will run this"
+    },
+    {
+      "start": 1232.039,
+      "end": 1239.36,
+      "text": "Command right shift enter it ask me here"
+    },
+    {
+      "start": 1235.24,
+      "end": 1241.72,
+      "text": "the API key I will say contrl V enter"
+    },
+    {
+      "start": 1239.36,
+      "end": 1244.559,
+      "text": "and now I provided the API key meaning"
+    },
+    {
+      "start": 1241.72,
+      "end": 1246.64,
+      "text": "that whenever we call this it will now"
+    },
+    {
+      "start": 1244.559,
+      "end": 1249.2,
+      "text": "go and search uh into the internet and"
+    },
+    {
+      "start": 1246.64,
+      "end": 1251.5200000000002,
+      "text": "we will create a tool for that so yeah"
+    },
+    {
+      "start": 1249.2,
+      "end": 1254.44,
+      "text": "let's define the tool so from Lang chain"
+    },
+    {
+      "start": 1251.52,
+      "end": 1257.039,
+      "text": "community. tools do table Source we"
+    },
+    {
+      "start": 1254.44,
+      "end": 1259.799,
+      "text": "import this table Source results that's"
+    },
+    {
+      "start": 1257.039,
+      "end": 1262.36,
+      "text": "it tool this is the table is for maximum"
+    },
+    {
+      "start": 1259.799,
+      "end": 1265.4,
+      "text": "result equals to two if you just want"
+    },
+    {
+      "start": 1262.36,
+      "end": 1267.8799999999999,
+      "text": "one then that's fine also and then tools"
+    },
+    {
+      "start": 1265.4,
+      "end": 1270.72,
+      "text": "equals to Tool this is as simple as it"
+    },
+    {
+      "start": 1267.88,
+      "end": 1273.4,
+      "text": "is and just to see if it works or not we"
+    },
+    {
+      "start": 1270.72,
+      "end": 1277.039,
+      "text": "can say tool. invo what is the weather"
+    },
+    {
+      "start": 1273.4,
+      "end": 1279.919,
+      "text": "of hinki in Celsius right I will run"
+    },
+    {
+      "start": 1277.039,
+      "end": 1281.919,
+      "text": "this it it must get the answer from the"
+    },
+    {
+      "start": 1279.919,
+      "end": 1283.7990000000002,
+      "text": "internet so you can see here it says"
+    },
+    {
+      "start": 1281.919,
+      "end": 1286.0,
+      "text": "location name hinki region Southern"
+    },
+    {
+      "start": 1283.799,
+      "end": 1289.0,
+      "text": "Finland this this this okay latitude"
+    },
+    {
+      "start": 1286.0,
+      "end": 1292.84,
+      "text": "longitude and so on right and then if"
+    },
+    {
+      "start": 1289.0,
+      "end": 1295.559,
+      "text": "you go here okay last updated 24811"
+    },
+    {
+      "start": 1292.84,
+      "end": 1300.279,
+      "text": "today is 811 1105 when I record this"
+    },
+    {
+      "start": 1295.559,
+      "end": 1302.3999999999999,
+      "text": "video it says 11 temperature is 19.9 De"
+    },
+    {
+      "start": 1300.279,
+      "end": 1305.48,
+      "text": "right so yeah it provides the answer and"
+    },
+    {
+      "start": 1302.4,
+      "end": 1307.679,
+      "text": "it's correct now what we can do is the"
+    },
+    {
+      "start": 1305.48,
+      "end": 1310.2,
+      "text": "llm was before without the tools now we"
+    },
+    {
+      "start": 1307.679,
+      "end": 1314.039,
+      "text": "need to have the llm with tools so here"
+    },
+    {
+      "start": 1310.2,
+      "end": 1317.88,
+      "text": "is the llm local. bind tools and we just"
+    },
+    {
+      "start": 1314.039,
+      "end": 1320.279,
+      "text": "gave it the tools that's it now same as"
+    },
+    {
+      "start": 1317.88,
+      "end": 1323.0800000000002,
+      "text": "before we need to go through this this"
+    },
+    {
+      "start": 1320.279,
+      "end": 1325.24,
+      "text": "process of creating the node as you can"
+    },
+    {
+      "start": 1323.08,
+      "end": 1326.76,
+      "text": "see here we are using the llm with tools"
+    },
+    {
+      "start": 1325.24,
+      "end": 1328.88,
+      "text": "graph Builder we need to create the"
+    },
+    {
+      "start": 1326.76,
+      "end": 1330.96,
+      "text": "graph and same as before we need to"
+    },
+    {
+      "start": 1328.88,
+      "end": 1333.7600000000002,
+      "text": "create a function here and we need to"
+    },
+    {
+      "start": 1330.96,
+      "end": 1335.96,
+      "text": "add the node so I added the node here"
+    },
+    {
+      "start": 1333.76,
+      "end": 1338.72,
+      "text": "that is great now we create a function"
+    },
+    {
+      "start": 1335.96,
+      "end": 1341.72,
+      "text": "to actually run the tools if they are"
+    },
+    {
+      "start": 1338.72,
+      "end": 1343.2,
+      "text": "called before we just have the normal LM"
+    },
+    {
+      "start": 1341.72,
+      "end": 1345.799,
+      "text": "uh function but now we need to create"
+    },
+    {
+      "start": 1343.2,
+      "end": 1347.88,
+      "text": "the tool for that as you can see here"
+    },
+    {
+      "start": 1345.799,
+      "end": 1349.6399999999999,
+      "text": "this code might be a little bit long but"
+    },
+    {
+      "start": 1347.88,
+      "end": 1352.3200000000002,
+      "text": "then this is all because I have added"
+    },
+    {
+      "start": 1349.64,
+      "end": 1355.1200000000001,
+      "text": "the dock strings also there so a class"
+    },
+    {
+      "start": 1352.32,
+      "end": 1357.48,
+      "text": "representing a node that processes and"
+    },
+    {
+      "start": 1355.12,
+      "end": 1360.52,
+      "text": "executes the tool request embedded in"
+    },
+    {
+      "start": 1357.48,
+      "end": 1363.08,
+      "text": "the last AI message we have this basic"
+    },
+    {
+      "start": 1360.52,
+      "end": 1364.6399999999999,
+      "text": "Tool uh node right and we import the"
+    },
+    {
+      "start": 1363.08,
+      "end": 1367.039,
+      "text": "tool message here you can see here we"
+    },
+    {
+      "start": 1364.64,
+      "end": 1369.3200000000002,
+      "text": "have init function initializes the basic"
+    },
+    {
+      "start": 1367.039,
+      "end": 1370.8799999999999,
+      "text": "tool node with a list of available tools"
+    },
+    {
+      "start": 1369.32,
+      "end": 1373.279,
+      "text": "right this is just the normal thing we"
+    },
+    {
+      "start": 1370.88,
+      "end": 1375.3200000000002,
+      "text": "are doing here and the second thing here"
+    },
+    {
+      "start": 1373.279,
+      "end": 1378.799,
+      "text": "is the same as before but what we are"
+    },
+    {
+      "start": 1375.32,
+      "end": 1380.8799999999999,
+      "text": "trying to do is we and it is mention"
+    },
+    {
+      "start": 1378.799,
+      "end": 1382.679,
+      "text": "here process the input data to extract"
+    },
+    {
+      "start": 1380.88,
+      "end": 1384.159,
+      "text": "the latest message and execute the"
+    },
+    {
+      "start": 1382.679,
+      "end": 1386.5590000000002,
+      "text": "responses tools so there are different"
+    },
+    {
+      "start": 1384.159,
+      "end": 1388.72,
+      "text": "arguments and it return something and if"
+    },
+    {
+      "start": 1386.559,
+      "end": 1390.8799999999999,
+      "text": "there is some error it raises the"
+    },
+    {
+      "start": 1388.72,
+      "end": 1394.0,
+      "text": "message error message and so on so the"
+    },
+    {
+      "start": 1390.88,
+      "end": 1396.4,
+      "text": "the code is quite straightforward so it"
+    },
+    {
+      "start": 1394.0,
+      "end": 1399.2,
+      "text": "first list list to accumulate the output"
+    },
+    {
+      "start": 1396.4,
+      "end": 1400.88,
+      "text": "of each tool iterate over each tool in"
+    },
+    {
+      "start": 1399.2,
+      "end": 1402.96,
+      "text": "the message invoking the corresponding"
+    },
+    {
+      "start": 1400.88,
+      "end": 1405.279,
+      "text": "tool and collecting the results right"
+    },
+    {
+      "start": 1402.96,
+      "end": 1406.919,
+      "text": "you can see for Tool call in messages"
+    },
+    {
+      "start": 1405.279,
+      "end": 1408.76,
+      "text": "message the tool calls and so we just"
+    },
+    {
+      "start": 1406.919,
+      "end": 1411.76,
+      "text": "have one tool now but imagine that might"
+    },
+    {
+      "start": 1408.76,
+      "end": 1413.919,
+      "text": "be many tools also provided and then"
+    },
+    {
+      "start": 1411.76,
+      "end": 1417.4,
+      "text": "here is the append into the tool message"
+    },
+    {
+      "start": 1413.919,
+      "end": 1419.8400000000001,
+      "text": "content name uh tool ID and so on and"
+    },
+    {
+      "start": 1417.4,
+      "end": 1422.3200000000002,
+      "text": "then last we just uh return the message"
+    },
+    {
+      "start": 1419.84,
+      "end": 1425.12,
+      "text": "output return so dictionary with the key"
+    },
+    {
+      "start": 1422.32,
+      "end": 1428.559,
+      "text": "message and then what we do is example"
+    },
+    {
+      "start": 1425.12,
+      "end": 1430.9189999999999,
+      "text": "uses in instantiating the basic tool"
+    },
+    {
+      "start": 1428.559,
+      "end": 1433.52,
+      "text": "node with a list of tools but we just"
+    },
+    {
+      "start": 1430.919,
+      "end": 1435.919,
+      "text": "have one tool isn't it so we just pass"
+    },
+    {
+      "start": 1433.52,
+      "end": 1438.6399999999999,
+      "text": "that into the basic tool node and we add"
+    },
+    {
+      "start": 1435.919,
+      "end": 1441.0800000000002,
+      "text": "that at a node it seems to be little bit"
+    },
+    {
+      "start": 1438.64,
+      "end": 1442.7990000000002,
+      "text": "more or okay what is going on here but"
+    },
+    {
+      "start": 1441.08,
+      "end": 1445.559,
+      "text": "as I said you before also when you know"
+    },
+    {
+      "start": 1442.799,
+      "end": 1448.679,
+      "text": "the picture or diagram you know that we"
+    },
+    {
+      "start": 1445.559,
+      "end": 1451.6399999999999,
+      "text": "are just creating our tool which does"
+    },
+    {
+      "start": 1448.679,
+      "end": 1455.3200000000002,
+      "text": "the thing that we want right and then we"
+    },
+    {
+      "start": 1451.64,
+      "end": 1457.919,
+      "text": "have this add node uh tools so I run"
+    },
+    {
+      "start": 1455.32,
+      "end": 1459.8799999999999,
+      "text": "this one and now let's define the"
+    },
+    {
+      "start": 1457.919,
+      "end": 1462.039,
+      "text": "conditional ages there is now one"
+    },
+    {
+      "start": 1459.88,
+      "end": 1465.679,
+      "text": "additional thing that we need to do so"
+    },
+    {
+      "start": 1462.039,
+      "end": 1468.96,
+      "text": "we have the node right and there is this"
+    },
+    {
+      "start": 1465.679,
+      "end": 1472.799,
+      "text": "conditional ages meaning that we want"
+    },
+    {
+      "start": 1468.96,
+      "end": 1475.039,
+      "text": "the llm to go to that if needed only"
+    },
+    {
+      "start": 1472.799,
+      "end": 1478.08,
+      "text": "it's not mandatory that it needs to go"
+    },
+    {
+      "start": 1475.039,
+      "end": 1480.36,
+      "text": "to that particular tool but then if we"
+    },
+    {
+      "start": 1478.08,
+      "end": 1483.279,
+      "text": "have this conditional edes it says that"
+    },
+    {
+      "start": 1480.36,
+      "end": 1485.7199999999998,
+      "text": "if you need to go to that node please go"
+    },
+    {
+      "start": 1483.279,
+      "end": 1487.679,
+      "text": "there and return the answer right here"
+    },
+    {
+      "start": 1485.72,
+      "end": 1489.559,
+      "text": "you can see this is the conditional"
+    },
+    {
+      "start": 1487.679,
+      "end": 1492.279,
+      "text": "things here we are saying Define the"
+    },
+    {
+      "start": 1489.559,
+      "end": 1494.6789999999999,
+      "text": "root tool so determines the next node in"
+    },
+    {
+      "start": 1492.279,
+      "end": 1498.44,
+      "text": "the processing graph based on the last"
+    },
+    {
+      "start": 1494.679,
+      "end": 1500.24,
+      "text": "AI message in the state so here also"
+    },
+    {
+      "start": 1498.44,
+      "end": 1503.279,
+      "text": "everything as you can see here it's the"
+    },
+    {
+      "start": 1500.24,
+      "end": 1505.039,
+      "text": "same right but then we need to not"
+    },
+    {
+      "start": 1503.279,
+      "end": 1507.48,
+      "text": "notify two things I think one this"
+    },
+    {
+      "start": 1505.039,
+      "end": 1510.08,
+      "text": "message makes it makes it clear this"
+    },
+    {
+      "start": 1507.48,
+      "end": 1513.48,
+      "text": "function is used as a in a conditional"
+    },
+    {
+      "start": 1510.08,
+      "end": 1517.0,
+      "text": "age to decide whether to Route the flow"
+    },
+    {
+      "start": 1513.48,
+      "end": 1520.64,
+      "text": "to the tools node if the last message"
+    },
+    {
+      "start": 1517.0,
+      "end": 1523.36,
+      "text": "contains the tool calls or the end node"
+    },
+    {
+      "start": 1520.64,
+      "end": 1526.1200000000001,
+      "text": "if no tool calls are present meaning"
+    },
+    {
+      "start": 1523.36,
+      "end": 1528.0,
+      "text": "that if it says okay go to the tools it"
+    },
+    {
+      "start": 1526.12,
+      "end": 1530.12,
+      "text": "will go to the tools and get the answer"
+    },
+    {
+      "start": 1528.0,
+      "end": 1532.52,
+      "text": "and go go to the end one otherwise it"
+    },
+    {
+      "start": 1530.12,
+      "end": 1534.84,
+      "text": "will just go to the end one again it"
+    },
+    {
+      "start": 1532.52,
+      "end": 1536.679,
+      "text": "seems to be confusing but then if you"
+    },
+    {
+      "start": 1534.84,
+      "end": 1538.52,
+      "text": "see the graph it will be it will be"
+    },
+    {
+      "start": 1536.679,
+      "end": 1541.159,
+      "text": "clear I will run this one and once this"
+    },
+    {
+      "start": 1538.52,
+      "end": 1543.1589999999999,
+      "text": "is done we add the conditional edges"
+    },
+    {
+      "start": 1541.159,
+      "end": 1546.0390000000002,
+      "text": "from the chart B the function determines"
+    },
+    {
+      "start": 1543.159,
+      "end": 1548.3600000000001,
+      "text": "the next node is the route tools and"
+    },
+    {
+      "start": 1546.039,
+      "end": 1550.08,
+      "text": "tools uh tools mapping the function"
+    },
+    {
+      "start": 1548.36,
+      "end": 1552.0,
+      "text": "return values to specific if the"
+    },
+    {
+      "start": 1550.08,
+      "end": 1554.6399999999999,
+      "text": "function returns tools route to the"
+    },
+    {
+      "start": 1552.0,
+      "end": 1558.039,
+      "text": "tools if the function Returns the end"
+    },
+    {
+      "start": 1554.64,
+      "end": 1561.8400000000001,
+      "text": "route to the end right and then we add"
+    },
+    {
+      "start": 1558.039,
+      "end": 1564.8799999999999,
+      "text": "the ages and tools from tools it goes to"
+    },
+    {
+      "start": 1561.84,
+      "end": 1568.12,
+      "text": "the uh chatbot start from the chatbot"
+    },
+    {
+      "start": 1564.88,
+      "end": 1571.919,
+      "text": "and so on and then we compile this if I"
+    },
+    {
+      "start": 1568.12,
+      "end": 1574.6,
+      "text": "run this and now this is the graph"
+    },
+    {
+      "start": 1571.919,
+      "end": 1576.72,
+      "text": "viewer I think this is what makes it"
+    },
+    {
+      "start": 1574.6,
+      "end": 1580.9599999999998,
+      "text": "easier now for you to understand so"
+    },
+    {
+      "start": 1576.72,
+      "end": 1584.159,
+      "text": "before what we had we had the start one"
+    },
+    {
+      "start": 1580.96,
+      "end": 1586.64,
+      "text": "chb one chatbot two and end it needs to"
+    },
+    {
+      "start": 1584.159,
+      "end": 1589.88,
+      "text": "go through one to two and then to the"
+    },
+    {
+      "start": 1586.64,
+      "end": 1593.279,
+      "text": "end right so here what we are doing is"
+    },
+    {
+      "start": 1589.88,
+      "end": 1596.0390000000002,
+      "text": "we said okay start it goes to the"
+    },
+    {
+      "start": 1593.279,
+      "end": 1598.559,
+      "text": "chatbot and here if it gets the answer"
+    },
+    {
+      "start": 1596.039,
+      "end": 1600.8799999999999,
+      "text": "it goes to the end that is what the"
+    },
+    {
+      "start": 1598.559,
+      "end": 1603.12,
+      "text": "agent uh building agent is all about"
+    },
+    {
+      "start": 1600.88,
+      "end": 1606.24,
+      "text": "right and then there this conditional"
+    },
+    {
+      "start": 1603.12,
+      "end": 1609.32,
+      "text": "things if it needs to go here into tools"
+    },
+    {
+      "start": 1606.24,
+      "end": 1613.0,
+      "text": "it goes to the tools it gets the answer"
+    },
+    {
+      "start": 1609.32,
+      "end": 1615.12,
+      "text": "and from the chatbot it goes to the end"
+    },
+    {
+      "start": 1613.0,
+      "end": 1617.84,
+      "text": "right so meaning that because here we"
+    },
+    {
+      "start": 1615.12,
+      "end": 1620.4799999999998,
+      "text": "are going to ask the web sorts things so"
+    },
+    {
+      "start": 1617.84,
+      "end": 1623.52,
+      "text": "what it needs to do is first go to the"
+    },
+    {
+      "start": 1620.48,
+      "end": 1625.96,
+      "text": "chatbot it needs to call the tools get"
+    },
+    {
+      "start": 1623.52,
+      "end": 1627.48,
+      "text": "the answer and then end so that is how"
+    },
+    {
+      "start": 1625.96,
+      "end": 1630.48,
+      "text": "it works this figure might be"
+    },
+    {
+      "start": 1627.48,
+      "end": 1632.96,
+      "text": "complicated if you add more tools and"
+    },
+    {
+      "start": 1630.48,
+      "end": 1636.52,
+      "text": "how you want to behave the agent to"
+    },
+    {
+      "start": 1632.96,
+      "end": 1638.24,
+      "text": "perform right so now what we can do is"
+    },
+    {
+      "start": 1636.52,
+      "end": 1640.0,
+      "text": "the simple thing that this is the same"
+    },
+    {
+      "start": 1638.24,
+      "end": 1642.679,
+      "text": "code that I have shown you before also"
+    },
+    {
+      "start": 1640.0,
+      "end": 1644.72,
+      "text": "now we can ask the questions right so I"
+    },
+    {
+      "start": 1642.679,
+      "end": 1647.1200000000001,
+      "text": "will draun this one what I can do is the"
+    },
+    {
+      "start": 1644.72,
+      "end": 1651.559,
+      "text": "same question here okay what is the"
+    },
+    {
+      "start": 1647.12,
+      "end": 1653.9599999999998,
+      "text": "weather of H in key today let's say"
+    },
+    {
+      "start": 1651.559,
+      "end": 1657.2,
+      "text": "right and then I can"
+    },
+    {
+      "start": 1653.96,
+      "end": 1659.32,
+      "text": "say yeah provide in Celsius let's see so"
+    },
+    {
+      "start": 1657.2,
+      "end": 1661.519,
+      "text": "that is the that is the query that we"
+    },
+    {
+      "start": 1659.32,
+      "end": 1664.279,
+      "text": "provide for the LMS okay it says here"
+    },
+    {
+      "start": 1661.519,
+      "end": 1665.919,
+      "text": "this this this and then it should"
+    },
+    {
+      "start": 1664.279,
+      "end": 1668.159,
+      "text": "provide us the answer here okay"
+    },
+    {
+      "start": 1665.919,
+      "end": 1669.72,
+      "text": "temperature based on the tool call"
+    },
+    {
+      "start": 1668.159,
+      "end": 1671.7600000000002,
+      "text": "response the current weather in hingi"
+    },
+    {
+      "start": 1669.72,
+      "end": 1674.08,
+      "text": "today is temperature this feels like"
+    },
+    {
+      "start": 1671.76,
+      "end": 1676.12,
+      "text": "19.9 humidity this this let me know if"
+    },
+    {
+      "start": 1674.08,
+      "end": 1678.32,
+      "text": "you have any other further assistant so"
+    },
+    {
+      "start": 1676.12,
+      "end": 1680.7199999999998,
+      "text": "that's correct right so it just wait"
+    },
+    {
+      "start": 1678.32,
+      "end": 1682.24,
+      "text": "through this and finds the finds the"
+    },
+    {
+      "start": 1680.72,
+      "end": 1684.679,
+      "text": "correct correct answer and you can see"
+    },
+    {
+      "start": 1682.24,
+      "end": 1687.36,
+      "text": "here what it sorts into this query is"
+    },
+    {
+      "start": 1684.679,
+      "end": 1690.0800000000002,
+      "text": "also location name hinki region this and"
+    },
+    {
+      "start": 1687.36,
+      "end": 1692.76,
+      "text": "today is 2024 811 so yeah it goes"
+    },
+    {
+      "start": 1690.08,
+      "end": 1695.399,
+      "text": "through the 811 also the time is the"
+    },
+    {
+      "start": 1692.76,
+      "end": 1697.559,
+      "text": "same as what I asked uh currently right"
+    },
+    {
+      "start": 1695.399,
+      "end": 1699.5189999999998,
+      "text": "so it gets all the information from here"
+    },
+    {
+      "start": 1697.559,
+      "end": 1701.6,
+      "text": "so yeah that's how we can use the I'll"
+    },
+    {
+      "start": 1699.519,
+      "end": 1704.679,
+      "text": "will just quit it here that's how we can"
+    },
+    {
+      "start": 1701.6,
+      "end": 1706.6399999999999,
+      "text": "use the tools with the Lang graph okay"
+    },
+    {
+      "start": 1704.679,
+      "end": 1709.159,
+      "text": "so now quickly what I want to show you"
+    },
+    {
+      "start": 1706.64,
+      "end": 1711.64,
+      "text": "is how these all the traces is being"
+    },
+    {
+      "start": 1709.159,
+      "end": 1713.679,
+      "text": "logged into the Lang Smith because we"
+    },
+    {
+      "start": 1711.64,
+      "end": 1716.44,
+      "text": "configure the Lang Smith in order to"
+    },
+    {
+      "start": 1713.679,
+      "end": 1718.88,
+      "text": "have the traces into the Lang Smith for"
+    },
+    {
+      "start": 1716.44,
+      "end": 1720.919,
+      "text": "Clear visibility right I will go through"
+    },
+    {
+      "start": 1718.88,
+      "end": 1722.88,
+      "text": "the Lang Smith portal here and you can"
+    },
+    {
+      "start": 1720.919,
+      "end": 1725.44,
+      "text": "see this is this Lang graph tutorial"
+    },
+    {
+      "start": 1722.88,
+      "end": 1727.3990000000001,
+      "text": "that I provided when I initialize this"
+    },
+    {
+      "start": 1725.44,
+      "end": 1730.159,
+      "text": "or when I pasted the environment"
+    },
+    {
+      "start": 1727.399,
+      "end": 1732.08,
+      "text": "variables so if I go inside this you can"
+    },
+    {
+      "start": 1730.159,
+      "end": 1733.88,
+      "text": "see all the things that I have asked"
+    },
+    {
+      "start": 1732.08,
+      "end": 1735.559,
+      "text": "from the Lang graph so what is the"
+    },
+    {
+      "start": 1733.88,
+      "end": 1738.5590000000002,
+      "text": "wether inhal Sy key and all the things"
+    },
+    {
+      "start": 1735.559,
+      "end": 1741.519,
+      "text": "are being logged into the Lang"
+    },
+    {
+      "start": 1738.559,
+      "end": 1743.2,
+      "text": "so if I click inside one of this I will"
+    },
+    {
+      "start": 1741.519,
+      "end": 1745.76,
+      "text": "make this little bit bigger as you can"
+    },
+    {
+      "start": 1743.2,
+      "end": 1747.3600000000001,
+      "text": "see here all the steps that it goes"
+    },
+    {
+      "start": 1745.76,
+      "end": 1749.64,
+      "text": "through when answering the question is"
+    },
+    {
+      "start": 1747.36,
+      "end": 1751.1999999999998,
+      "text": "being provided here so here you can see"
+    },
+    {
+      "start": 1749.64,
+      "end": 1753.519,
+      "text": "I asked what is the weather of heny"
+    },
+    {
+      "start": 1751.2,
+      "end": 1756.3990000000001,
+      "text": "provid in Celsius there is the human"
+    },
+    {
+      "start": 1753.519,
+      "end": 1758.76,
+      "text": "part here and it goes through this T SS"
+    },
+    {
+      "start": 1756.399,
+      "end": 1761.4799999999998,
+      "text": "results right query and the query that"
+    },
+    {
+      "start": 1758.76,
+      "end": 1764.08,
+      "text": "it asked into that particular API was"
+    },
+    {
+      "start": 1761.48,
+      "end": 1766.88,
+      "text": "Helsinki weather today in Celsius and"
+    },
+    {
+      "start": 1764.08,
+      "end": 1768.9189999999999,
+      "text": "from here tool we have this um answer"
+    },
+    {
+      "start": 1766.88,
+      "end": 1770.7990000000002,
+      "text": "from it and if you scroll a little bit"
+    },
+    {
+      "start": 1768.919,
+      "end": 1773.72,
+      "text": "down and this is the AI based on this"
+    },
+    {
+      "start": 1770.799,
+      "end": 1775.8799999999999,
+      "text": "and that is the answer so it shows us"
+    },
+    {
+      "start": 1773.72,
+      "end": 1778.2,
+      "text": "step by step things how it goes and"
+    },
+    {
+      "start": 1775.88,
+      "end": 1781.279,
+      "text": "calls there and from here also you can"
+    },
+    {
+      "start": 1778.2,
+      "end": 1784.159,
+      "text": "see what is the number of tokens 767"
+    },
+    {
+      "start": 1781.279,
+      "end": 1787.039,
+      "text": "promt tokens 103 completion tokens and"
+    },
+    {
+      "start": 1784.159,
+      "end": 1789.7990000000002,
+      "text": "so on and yeah you can just scroll one"
+    },
+    {
+      "start": 1787.039,
+      "end": 1791.399,
+      "text": "one by one to see how it performs uh and"
+    },
+    {
+      "start": 1789.799,
+      "end": 1794.0,
+      "text": "you can see here this is the this is the"
+    },
+    {
+      "start": 1791.399,
+      "end": 1796.32,
+      "text": "tools and and so on I have already"
+    },
+    {
+      "start": 1794.0,
+      "end": 1798.159,
+      "text": "created videos long ago about the Lang"
+    },
+    {
+      "start": 1796.32,
+      "end": 1800.039,
+      "text": "Smith if you want to get started you can"
+    },
+    {
+      "start": 1798.159,
+      "end": 1801.679,
+      "text": "watch those videos but yeah just go"
+    },
+    {
+      "start": 1800.039,
+      "end": 1804.039,
+      "text": "through here provide those environment"
+    },
+    {
+      "start": 1801.679,
+      "end": 1806.64,
+      "text": "variables and you will see a good"
+    },
+    {
+      "start": 1804.039,
+      "end": 1808.919,
+      "text": "looking uh thing in the UI itself which"
+    },
+    {
+      "start": 1806.64,
+      "end": 1810.76,
+      "text": "helps you to uh see what is happening"
+    },
+    {
+      "start": 1808.919,
+      "end": 1812.3200000000002,
+      "text": "under the hood and also debug some"
+    },
+    {
+      "start": 1810.76,
+      "end": 1815.44,
+      "text": "things if"
+    },
+    {
+      "start": 1812.32,
+      "end": 1818.08,
+      "text": "necessary I hope by going through these"
+    },
+    {
+      "start": 1815.44,
+      "end": 1821.799,
+      "text": "simple examples you get to know how L"
+    },
+    {
+      "start": 1818.08,
+      "end": 1823.399,
+      "text": "graph works but one thing which might be"
+    },
+    {
+      "start": 1821.799,
+      "end": 1825.9189999999999,
+      "text": "difficult is you want to see the"
+    },
+    {
+      "start": 1823.399,
+      "end": 1828.279,
+      "text": "visualization of what is happening under"
+    },
+    {
+      "start": 1825.919,
+      "end": 1830.3600000000001,
+      "text": "the hood when the flow goes right let's"
+    },
+    {
+      "start": 1828.279,
+      "end": 1832.799,
+      "text": "say that for example in this simple"
+    },
+    {
+      "start": 1830.36,
+      "end": 1834.399,
+      "text": "example it it's it's better if we can"
+    },
+    {
+      "start": 1832.799,
+      "end": 1836.1589999999999,
+      "text": "know okay now it is going into the"
+    },
+    {
+      "start": 1834.399,
+      "end": 1837.9599999999998,
+      "text": "chatbot and then now it is going to call"
+    },
+    {
+      "start": 1836.159,
+      "end": 1840.72,
+      "text": "the tools getting the answer from the"
+    },
+    {
+      "start": 1837.96,
+      "end": 1843.96,
+      "text": "tools and going into the end uh node"
+    },
+    {
+      "start": 1840.72,
+      "end": 1845.84,
+      "text": "right end end part here so that is uh"
+    },
+    {
+      "start": 1843.96,
+      "end": 1848.8400000000001,
+      "text": "what I will be creating in the next"
+    },
+    {
+      "start": 1845.84,
+      "end": 1851.24,
+      "text": "video about this Lang graph Studio which"
+    },
+    {
+      "start": 1848.84,
+      "end": 1854.279,
+      "text": "helps you to visualize the things from"
+    },
+    {
+      "start": 1851.24,
+      "end": 1856.72,
+      "text": "the UI so that is the Lang graph UI"
+    },
+    {
+      "start": 1854.279,
+      "end": 1858.0,
+      "text": "until that thank you for watching and"
+    },
+    {
+      "start": 1856.72,
+      "end": 1858.0,
+      "text": "see you in the next video"
+    }
+  ]
+}

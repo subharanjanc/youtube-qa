@@ -1,0 +1,114 @@
+[
+  {
+    "id": "741fe7a2fcc1a7d971520f4b15bde6167d8c7563538a1e18be9b8f1c8193118a",
+    "text": "[Music] Okay, React agents or reason and act agents. Agents are quite a hot topic at the time of recording here in 2025 and rightfully so. If you learn how to use them, you can get incredible leverage for yourself and your company. They're definitely not overhyped, but I would premise they are a bit over complicated. Here is a diagram of what an agent in a nutshell is. And this is an actual agent. A lot of AI systems that people call an agent are not agents. They're actually AI automations. And sometimes that's actually what you need. So the leverage comes from being able to issue a single prompt and have that single prompt result in multiple very dynamic LLM calls. And if you can control them and have them, you know, do exactly what you need, it can get incredible outputs, right? So, here's the prompt if you're interested that we're going to use for powering our agent. It's starting with a system message. For example, you're going to say in the system message, act as a lawyer or act as a programmer or act as a marketer, etc. After we specify our system message in our prompt, the next part of our prompt is the message list. This is how we imbue some sense of memory, right? We",
+    "metadata": {
+      "video_id": "ivjZ5XJZ2bs",
+      "title": "A ReAct Agent Demo AND An Agentic RAG Demo",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 0.0,
+      "end_seconds": 92.79899999999999,
+      "url": "https://www.youtube.com/watch?v=ivjZ5XJZ2bs&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "066439ab1fc61c77c526436fc7fd7d158fe7bac8f1d24c99f25702abf5c2798c",
+    "text": "act as a marketer, etc. After we specify our system message in our prompt, the next part of our prompt is the message list. This is how we imbue some sense of memory, right? We put the chat history. Then we list the tools or if you come back to this diagram, the actions that the agent is allowed to execute, right? This is just a list of functions. At the end of the day, if you're familiar with programming, a tool is just a function that you can call. We're going to cover tools briefly in the next section and show how it's not that complicated. After we specify the tools, we then provide our prompt, right? And finally, we give our agent a scratch pad, which is a place where it can write whatever it wants. Depending on our task, it might need to keep some notes of what's going on across all the LLM calls, for example, and it might write some stuff here, help it accomplish the goal implied by the prompt. And that's it. So, let's run a little demo here. And don't pay too much attention to the prompt that we're going to issue. Just focus on the fact that for a single prompt, it's resulting in multiple LLM calls under the hood. Here's the prompt",
+    "metadata": {
+      "video_id": "ivjZ5XJZ2bs",
+      "title": "A ReAct Agent Demo AND An Agentic RAG Demo",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 77.439,
+      "end_seconds": 169.0,
+      "url": "https://www.youtube.com/watch?v=ivjZ5XJZ2bs&t=77s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "efcd225b28481c61eb542eb27281e8efc5e2d18848c32f6d0290c067631ad594",
+    "text": "don't pay too much attention to the prompt that we're going to issue. Just focus on the fact that for a single prompt, it's resulting in multiple LLM calls under the hood. Here's the prompt we're going to use. Pretty much what this prompt is doing is asking our agent to write some marketing copy and then pass it back into itself to reflect on how it could be improved and then pass it back into itself. So it can implement those improvements and then give us the final product which we see here. Right? So here we have some marketing copy for an event. Right, perfect. If we come over to Langsmith, which is a tool that allows us to check out what's going on inside of this little demo, we can see that for our single prompt, right, we had uh prompt that requested some marketing copy to be generated, right? After it writes the marketing copy, we ask it to reflect and deliberate and then return to us the final marketing copy. So you can see for a single prompt, it resulted in one 2 3 4 five LLM calls. And that's the main thing to focus on here. I would say the downside of agents despite this incredible amount of leverage is that it's difficult to",
+    "metadata": {
+      "video_id": "ivjZ5XJZ2bs",
+      "title": "A ReAct Agent Demo AND An Agentic RAG Demo",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 152.959,
+      "end_seconds": 268.56,
+      "url": "https://www.youtube.com/watch?v=ivjZ5XJZ2bs&t=152s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2302945b44d85ac3f9f1ae1299405c2eafe01a2b1bdce105f68cfb11ab147f29",
+    "text": "resulted in one 2 3 4 five LLM calls. And that's the main thing to focus on here. I would say the downside of agents despite this incredible amount of leverage is that it's difficult to control what each of these calls does, right? So, there are tricks that you can employ, of course, and as you get familiar with them, you'll learn how to steer them, but it's difficult to get them to do exactly what you want to do every single time. But anyhow, for some use cases, they're appropriate. Anyhow, that's React agent. So, the reason why I'm focusing on this React agent term is the React agent framework is how you can think of most agents under the hood. So, there's all these agents out there. where everybody's building their own agent, but you can fit most agents that people build or offer to the world within this React framework, which follows this agent loop design, right? [Music] Tools. So tools are nothing more than functions if you're familiar with programming or lists of instructions. Right? In this diagram, tools refer to step four, right? So the actions that an LLM can take are the tools it has available to it. The way this works is when we send some prompt to our LLM, we also include the list of",
+    "metadata": {
+      "video_id": "ivjZ5XJZ2bs",
+      "title": "A ReAct Agent Demo AND An Agentic RAG Demo",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 246.64,
+      "end_seconds": 358.639,
+      "url": "https://www.youtube.com/watch?v=ivjZ5XJZ2bs&t=246s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "85c208dc3953d21f62c13bd021c4b6653d62d4eb8e45085725a387bb6f098bf2",
+    "text": "tools refer to step four, right? So the actions that an LLM can take are the tools it has available to it. The way this works is when we send some prompt to our LLM, we also include the list of tools it has available, right? And when the LLM spits out its output, the LLM might spit out an output that says when we parse it, call this tool, right? And we call the tool. The tool returns its results. And we feed that back into the LLM again. And the LLM can look at the output of what the tool call resulted in. And let's say that accomplished the task of our prompt. When we parse the LLM's second output, the LLM might say stop, right? At which point we break out of the loop and return that result back to the caller. So that's tools, right? So we'll leave it there. I think I don't need to over complicate it, but pretty much what we're going to be doing in the final step of this video, right, the finale is we're going to be giving a React agent access to a retrieval with reranking tool, right? Which is going to trigger some query to our vector space, right? Or our vector database. And the LLM is able to decide the",
+    "metadata": {
+      "video_id": "ivjZ5XJZ2bs",
+      "title": "A ReAct Agent Demo AND An Agentic RAG Demo",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 338.4,
+      "end_seconds": 433.67999999999995,
+      "url": "https://www.youtube.com/watch?v=ivjZ5XJZ2bs&t=338s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "081685c8f7b04657211cf278af5197e09934ddcd4657feccef90283855ae1bd7",
+    "text": "is we're going to be giving a React agent access to a retrieval with reranking tool, right? Which is going to trigger some query to our vector space, right? Or our vector database. And the LLM is able to decide the queries, right? instead of us having to come up with them. So we can give some prompt to our React agent and the React agent can break that up into multiple prompts or based on our prompt issue multiple calls to the vector space. We made it to the finale. It's a React agent that has a reranking tool included, aka this is a form of agentic rag. And we're going to demo this right now. And for context, we're going to be searching across a cookbook that consists of about 600 pages worth of recipes. So, let's issue a prompt like this. Give me the best Italian dish that you know of. It should be quick and simple to make. Site your sources. Make sure that you return the complete recipe and refer to your knowledge base for pulling the recipe. Also, I'd like you to return the best German recipe that you have. Same thing. Make sure it's quick and easy to make and site your sources and refer to your knowledge base for returning the German recipe as well.",
+    "metadata": {
+      "video_id": "ivjZ5XJZ2bs",
+      "title": "A ReAct Agent Demo AND An Agentic RAG Demo",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 412.0,
+      "end_seconds": 516.8000000000001,
+      "url": "https://www.youtube.com/watch?v=ivjZ5XJZ2bs&t=412s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "da6e98156fcbbb014a7aacffcccf9e9b097ebdf312f94d377da22de2fa01a0a3",
+    "text": "the recipe. Also, I'd like you to return the best German recipe that you have. Same thing. Make sure it's quick and easy to make and site your sources and refer to your knowledge base for returning the German recipe as well. Also, return an Indian dish with the same requirements. Nice. If we open up the trace or this last call to our agentic rag agent, we can see that three tool calls were made. This one where we searched for Italian dishes, this one where we searched for German dishes, and this one where we searched for Indian dishes, right? And we could go down the rabbit hole of assessing how accurate this was, but now we're getting into the realm of evals, which I will cover in a separate video. But you get the gist of it, right? We have our Italian dish and our German dish and our Indian dish, right? So, welcome to state-of-the-art reranking.",
+    "metadata": {
+      "video_id": "ivjZ5XJZ2bs",
+      "title": "A ReAct Agent Demo AND An Agentic RAG Demo",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 494.319,
+      "end_seconds": 593.0,
+      "url": "https://www.youtube.com/watch?v=ivjZ5XJZ2bs&t=494s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

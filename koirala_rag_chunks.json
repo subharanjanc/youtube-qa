@@ -1,0 +1,370 @@
+[
+  {
+    "id": "12bccfcfea5f1336c12688bfd603e398568376ca85f3eb075e3f372a2b6dddba",
+    "text": "hello guys welcome back in this video Let's create a fully local retrial augmented generation rag application using the dips and that will be using from the AMA right so this is the architecture that we will be following on the top we will be using dock Ling which is one of the Python package that we can use in order to extract the information from the PDF and that is really good package after we use lock link the PDF will be extracted pages from the PDF we'll split that into different chunks in the embedding model we will be using the hugging face embeddings once we have the embeddings we'll store that into a knowledge base and in this case I will be using quadrant with Docker so we have the quadrant running locally in our machine and then when we ask the question for example here we use the same embedding models the embedding is done the semantic sorts is done from the knowledge base and we get the uh results out of it and that result is passed in into the deeps then we'll get the answer based on the question we ask and the context out of it so this looks complicated but at the end what we will be seeing is something like this for the",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 0.04,
+      "end_seconds": 73.96,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ddd9d0af514930b9d50c4f5e0dda60a8232e7df99c79e80ffe76e566180e5e1e",
+    "text": "into the deeps then we'll get the answer based on the question we ask and the context out of it so this looks complicated but at the end what we will be seeing is something like this for the UI part I'm using the chain lead in order to orchestrate all the different things and Lang chain is used under the hood you can see I'm asking a question here and it does different steps there is the thinking part which is good uh the dips model so it first goes through all the informations before it provides us the answer and at the end you can see here is the thinking process is done then it provides us the answer this will be a in to end implementation of rag fully local using Advanced tools so that you can take benefit of the tools available without connecting it via any apis let's get started okay I have already uploaded the code into the GitHub so you can go inside YouTube I have provided the steps how you can follow along with me in the video please clone this repository I have already cloned here you can see this is the chain lit and all these informations are here and I'm already running this in my VSS code if I go here this is the same",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 60.0,
+      "end_seconds": 134.44,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=60s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b8ff902c782c9ec439e8466f3a317465d2de4299d986e75583cda1820f3ac735",
+    "text": "clone this repository I have already cloned here you can see this is the chain lit and all these informations are here and I'm already running this in my VSS code if I go here this is the same instructions and I have all the code in the vs code right so first thing first in order to use this I'm trying to First ingest the documents so that whenever you run the application you don't need to upload the PDF and all the steps does not need to be done there once you ingest it you can ask the questions out of it but before that let me go to the read me because there is some initial steps that you need to do okay this is the normal cloning process you can use any other python package manager but I'm using UV to handle the virtual environments and so on if you are new to this you can refer to this videos but we need to install Docker locally if you don't have Docker you need to install Docker I have already install Docker and here is the link first we need to run the quadrant here you can see I'm already running this quadrant with this command as you can see here this is the same command which I have provided here",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 119.92,
+      "end_seconds": 188.51899999999998,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=119s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2b00f36cd86769e56af40839172add9eaa6e490344ab41e9a0a1a7c4e1c75a28",
+    "text": "here is the link first we need to run the quadrant here you can see I'm already running this quadrant with this command as you can see here this is the same command which I have provided here please run that and you will be up with the docker right and then down here I'm saying quadrant URL Local Host because when you run the quadrant locally it will provide us the Local Host as I have already done this rename env. example to EnV so I have already renamed this and inside this I have the same URL Local Host once that is done we are good to go with this part and now let's go and see the ingesting part then we run the application with the chain lad first thing first with the inest by the way I'm not going through other aspects of quadrant UV docking and so on because I have already created different videos related to those if you want more informations you can go there and also I will provide the link in the description of the video some of the important links will be here for example if you want to create more advanced functionalities out of what I'm showing here you can refer to the official document so yeah first thing first let's go with the ingesting",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 174.64,
+      "end_seconds": 248.319,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=174s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "edeb3945d5c9775c77dfdf7ac69836d6ef3415339d902258b7f55646a0f79cd0",
+    "text": "will be here for example if you want to create more advanced functionalities out of what I'm showing here you can refer to the official document so yeah first thing first let's go with the ingesting part so here these are the normal importing things that I'm doing here from Lang chain we need to have this markdown splitter and hugging face we have the hugging face embeddings from the quadrant we have the quadrant Vector story and so on right URL and you can see this is what it is loading the environment variables from theb I'm just having one now but if you have many it's a good practice of having that into the EnV and you can just uh uh use that into your python code in this case I'm using the ined model ID as sentence Transformer and this is the model that I'm using export type and the file path I'm taking the example of DPS R1 PDF the same model this is what I will be providing as the source of document for us to do the rag applications and we'll be asking questions out of it later so now I'll go back to ingest I'll make this little bit bigger so yeah let's see what what are the steps we need to do to",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 235.079,
+      "end_seconds": 302.919,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=235s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c5dae8bbe6a95b9ba719c55fac769da320f745b38edfe043e4e372d138cf84bc",
+    "text": "us to do the rag applications and we'll be asking questions out of it later so now I'll go back to ingest I'll make this little bit bigger so yeah let's see what what are the steps we need to do to create the vector database there is a function called uh create uh Vector database inside that as you can see I'm using the dock link loader inside that you need to pass the file in this case our dips R1 PDF export type and I'm passing the export type as doc chunks then you need to pass the chunker hybrid chunker and I'm passing the tokenizer as ined model ID so this is what the dock Ling is good into it so you can pass all the information already inside the duckling loader so it does thing for you it's just a simple thing duckling goes to load right and this is the second part I'm saying here determining the splints this is directly from the documentations if the export type is doc. Chun equals to Doling documents right but if the export type is marked down and we we mention that okay header to split on heading one heading two heading three this is done here else you can see if this is not there just uh raise the error so",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 289.56,
+      "end_seconds": 360.919,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=289s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1e5cccc2f5bbfda31b121dc6db899d8ce137a862281b9263b4b393ba5d7c3b6e",
+    "text": "is marked down and we we mention that okay header to split on heading one heading two heading three this is done here else you can see if this is not there just uh raise the error so unexpected error type is found so this is the good idea of of providing the informations in it after that I'm saving the documents that I get from the dock link so that I can view what is there this is a good idea also for you to see okay what you provided the PDF and it did the extraction of the documents from the PDF and you want to know what it did with this code it will be saving as a output duckling I already have it here but I will run the code first and then point you here for now I will just delete this uh thing because I don't need it I will create it later so that is deleted and now we initialize the embeddings for the embeddings As I said you before I'm using the hogging face embeddings and embedding model after that is the next step we need to create the vector uh database for the vector database and we set from documents and documents we pass the splits as you can see here the splits and we have the",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 348.36,
+      "end_seconds": 420.0,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=348s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5e060b1ff80ae8fda51609ded42c494df7f13fb8b6eacc5f39bff1845f7e82f3",
+    "text": "that is the next step we need to create the vector uh database for the vector database and we set from documents and documents we pass the splits as you can see here the splits and we have the eddings which pass the edings here URL is quadrant URL because we are listening in our Local Host collect so once we pass all these different things our first part of the diagram that I showed you this first part is complete because we have the ducklink to read the PDF extract the contents we have the hugging face embeddings to do the embedding part and we are storing that into the quadrant vectory store if we split this in one file then later we can just go into this lower half part so we don't need to do the ingesting all the time what I want to do uh is I want to run the file or maybe it's easier if I run the thing already in vs code itself I will open a terminal here you can see what I'm doing so I'm inside the chain lit here so here I can say UV because I'm using the UV UV run ingest dop right ingesting now just remember we have the data if I run this now it it will do the",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 404.52,
+      "end_seconds": 480.36,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=404s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "25f60cdec2b69856b0f0a3d5da24909ae895cffca51f1101c9e7ec30ebd2c275",
+    "text": "lit here so here I can say UV because I'm using the UV UV run ingest dop right ingesting now just remember we have the data if I run this now it it will do the inest part by the way I have already done the UV sync so all the packages are being installed for me already this is the step in the documentation as you can see here once you go inside the CD CH just run the UV sync it will install all the necessary packages for you so you don't need to do peep install and all the different things here it says token indices sequence length is this this is the error that we get from dock link so we don't need to worry about this and it says here Vector DB created successfully so now you can see here there is this output ducklink if I click this one so this is the markdown format of our PDF which is this one right so everything is being now converted from PDF to the markdown we can ask the questions from this markdown now this is done here now the second file which runs the application so here we have the same embedding models needs to be import and all the importing things one thing to",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 462.56,
+      "end_seconds": 539.04,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=462s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a9c8e3b75c4aaa21bd8f6e9016db6042476ea9fb4b5fb6f76bdb724cabb07e63",
+    "text": "this markdown now this is done here now the second file which runs the application so here we have the same embedding models needs to be import and all the importing things one thing to point out here is I'm using the AMA llm from chain you need to have the AMA being installed in order to make sure that you have Ama installed you need to see something like this and if you do AMA list you will see all the models you need to download the model from the AMA just go to ama's website I just want to show you this because if you are new then you might be confused so you need to go to this ama's website download AMA first if you don't have because when you run it locally you need to install many things Loc in order for the rag application to work because if you just do a API call to some of the llms you don't need to set up all the different things one thing to point out is also that how well the llm will perform will be also dependent on your uh local machine how big or how powerful is your uh machine right from here you can just go here and you can just choose any of the models you want",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 526.279,
+      "end_seconds": 596.72,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=526s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d8aef19d161bf0378c3a633bbcb8d05173ae8e857c2eecf8f2e557a8566c4b5f",
+    "text": "will perform will be also dependent on your uh local machine how big or how powerful is your uh machine right from here you can just go here and you can just choose any of the models you want you can see the size of the model TV and so on right for running the smallest model you need to have some power let's say in a way if I go to GitHub has mentioned also this in their GitHub if I scroll little be down here so you can see here you should have at least 8 GB of RAM available to run the 7B models so if you don't have this 8 GB of RAM in your machine or you need to have a little bit more also because other things will be also running in your computer it also needs some power there just keep this in mind which model you want to use because when you you see the documentations or videos like this you see that it's running so smoothly in the machine presenting this for example for me I'm using the 36 GB of RAM and the response time is quite fast but for you you need to have some level of power for the applications to run there once the AMA is ready it's okay you need to have",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 581.88,
+      "end_seconds": 652.399,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=581s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7e40f6c0b31b40487c19354a47ac2f8fbc56494e5bc9e0ecca086e8659fee5dd",
+    "text": "me I'm using the 36 GB of RAM and the response time is quite fast but for you you need to have some level of power for the applications to run there once the AMA is ready it's okay you need to have the model downloaded in your machine right then same thing here I'm passing the quadrant URL because we need to Now read the uh collection being created and this is the embed model here this is the custom prompt you can just change whatever you want here and then I'm using the llm you can see here llm llm and I'm using the model which I downloaded in my local machine dpse R1 latest so after that I'm just running this uh formatting and now comes the chain lead part there was no chain lead involved here we just have the template answer the following questions okay I have this in two places I don't even need to I would testing with different prompts here and there I can delete this one and now we have the template already here and this is the prompt uh chat prompt template and we pass the template here so this is the part where you can make or have your own template and here this is the formatting things okay I",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 636.68,
+      "end_seconds": 708.519,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=636s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "739d53849c7739b598f325ecd7a59ca5b603a4db0223e68b2c2f83ee01762d9e",
+    "text": "here and this is the prompt uh chat prompt template and we pass the template here so this is the part where you can make or have your own template and here this is the formatting things okay I have in two places because now I was before testing outside the functions and now I have inside the functions so that's good and now comes the embedding part you need to use the same edding here and the vector is store we created the vector store before but now we are going to retrieve from the existing collection so we need to have the same embedding same collection name and the quadrant URL and then there is the retriever called vectory stored as retriever if I go back to the diagram this is exactly what is going here you will have the question that needs to go to the embeddings and then that needs to be done with the semantic sorts and going into the knowledge base that is the quadrant in our case now we need to go to the quadrant uh database right here you can see there is the docker and it is listening in Port 6333 so if I click this it will take me here but if I then just go Dash dashboard so here you can see there is",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 694.279,
+      "end_seconds": 768.44,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=694s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "933ba6dc2116c5696a317230b0725cc3ca7ac410f606b3e7e9632c546319821e",
+    "text": "here you can see there is the docker and it is listening in Port 6333 so if I click this it will take me here but if I then just go Dash dashboard so here you can see there is the uh rag here and all the splits that we did is being stored here and you can see here there is all the metadata also being stored inside it so you can get okay from where it is taking from so you can see here source is data DPS R1 and this is the schema also mentioned here this is the version one table two informations parent and label is table and so on because everything that is coming as a metadata is coming from the dock link so we don't need to do anything so when we sarch the question it is going to take these informations into account and provide us the answer so I hope this is this is uh clear for you and now if I go back to our code here and this is the runable now from the langen right so here we have have the context retrieval format docs question is runable pass through we have the prompt right here and then we pass the llm which was here and then we pass",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 751.199,
+      "end_seconds": 822.079,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=751s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "846af47e2b376b05ed90e71ad0923015cad78314c58535106460ffb4b9c59b4c",
+    "text": "the langen right so here we have have the context retrieval format docs question is runable pass through we have the prompt right here and then we pass the llm which was here and then we pass the structure output parser and then we use this as a runable so this is the code taken from documentation of the chain lit and Lang chain both of this and now this comes on message so here there is two parts on start chat and on message now on message is when you ask the question we use the user session get runable right message context and then we pass the context here you can see this is the class and all this information here you can see there is the init call back Handler for handling the retrieval and llm processes so I have taken this directly from this documentation from the Chan it is getting the on rable end Source page pair and on llm end and so on right I don't need to go through each and every step and once this is done then we will get the answer out of it this is what the chain documentation is from now what we can do is we can just go to the terminal it's here I will run now UV",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 807.639,
+      "end_seconds": 883.16,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=807s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a9c51b75f640a10d58cc18ffd5bc699df47f462906c2a69277193be8e7d43c4d",
+    "text": "step and once this is done then we will get the answer out of it this is what the chain documentation is from now what we can do is we can just go to the terminal it's here I will run now UV run chain lead and this is the file rag chain lad D.P and dhw is we can see all the debug things here but you don't need to do this also because if you do DW if there was some modifications that you need to do it will refresh automatically but let's do uh deskt also no problem now we will have the UI this is the UI that is popping up here so now you can ask questions from that particular uh PDF we can go to the PDF so you can see under the hood it is using the pyour device MPS load pre-train sentence Transformer and it is taking the collection from Local Host 6333 collection rack these are the things going under the hood in the terminal I will just bring this down and from here you can ask the questions whatever you want let's see some questions maybe let's ask this can you provide me about the training template so I will go back here and I will ask can you provide me",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 863.88,
+      "end_seconds": 937.6,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=863s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "dc3796aa2c2b9a59b1fa7a98dcffdd9fb448d4e9754c946c5b875ff62a515bf6",
+    "text": "you can ask the questions whatever you want let's see some questions maybe let's ask this can you provide me about the training template so I will go back here and I will ask can you provide me some info about training template now this is the good part of CH Al so here you can see it is saying use runable pass through use Vector is toore retrial so if I go inside here you can see it ask this question and it went through this and it gets the answer already from here and this is the formatting docs and now it is using AMA now comes the dips part so it is doing the thinking now so I need to figure out how to answer about the training template in their context this this this and is it already sees here the user has given a section title 2.2.3 training template because now this is for the AMA llm right this is the retrieval part which already retrieve the informations and here we have 2.2.3 training template that is being extracted already right just to show you the diagram so you understand we ask the question it went so this is the question now it does the embedding API hugging face embeddings embedding is done we did",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 921.48,
+      "end_seconds": 999.44,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=921s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a57cbc6a7a4dd2c76fd2b6ab793267d914b506c2e528bcf6d50a3286253a4066",
+    "text": "already right just to show you the diagram so you understand we ask the question it went so this is the question now it does the embedding API hugging face embeddings embedding is done we did the semantic sarch with the base on the question we asked and then here is the vector database we use the quadrant and now we have the answer out of it and that is being passed for the llm in our case llm is the Deep seek so you can see all these things was being passed and then the LM was thinking because we passed something for it to get the answer that is the part where where it did some thinking let me see which one was it yeah here you can see it was thinking here the user gave this which explains they desired a template for running this this this this template instruct this template structure avoiding biases and so on it went through all the different things now the user is asking for information about this now it finishes thinking here and now it provides the answer the training template is designed to guide the training process of dips r10 by providing a structured approach key aspects of reasoning process first straightforward structure so if we go to this",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 983.16,
+      "end_seconds": 1057.7199999999998,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=983s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4e796a8ace5727c93a7f3e41d88a7c1f0d02b4f99a4e4dd466023a7d651dc69c",
+    "text": "now it provides the answer the training template is designed to guide the training process of dips r10 by providing a structured approach key aspects of reasoning process first straightforward structure so if we go to this here so here to train this this this this template D requ the produce reasoning task followed by the final answer we intentionally use this and so on so it gets the answer from there we intentionally limit our constants to this structure format avoiding any specific things exactly it even formats in a two different headings right so here is a resoning model first the model is instructed to to generate detail reasoning it provides us the straightforward structure and so on so you get the answer how it reasons first and provides you the answer and so on and it now let's ask some question from uh table table informations right here what we can do is this is the performance by dips r10 we can ask the questions from this particular table also if it can provide us or not let me ask the math 500 for open AI 01 let's see see what I can do I can ask the question can you provide me the math okay no can you provide me the math 500 score of open",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 1040.76,
+      "end_seconds": 1131.52,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=1040s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d9db3f19840b8043e502f50437e84e328e28db268b840a848f02f5278ee9fcda",
+    "text": "ask the math 500 for open AI 01 let's see see what I can do I can ask the question can you provide me the math okay no can you provide me the math 500 score of open AI 01 Mini compared to deep seek one Z this is the question now it goes through all the step again this is the good part here and if if we go here it retrieve some informations okay all right so I need to figure out the math 500 score of open a01 mini and DPS r10 right before going into the llm one thing that you need to be thinking is llm just provides us the answer in drag the context that is taking from right here it says the open AI 01 Mini model achieved a pass one score of 90 in the ma math is it 90 okay it it's actually correct so here it says Math 500 90 right it went through this math uh 590 and 95.9 so it is 95.9 by DPS r10 so it is going to the right right document so you can see that it relies on the retrieved informations from here this is the one surpassing this this this in Math 500 so it gets the informations from there and then based on that it",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 1103.559,
+      "end_seconds": 1199.76,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=1103s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8ad3a5e8eb91d83d7015b7a938ea52f9fa498d6b26ff4658bb6d491a3cb7f716",
+    "text": "so you can see that it relies on the retrieved informations from here this is the one surpassing this this this in Math 500 so it gets the informations from there and then based on that it provides the answer the good part you can see here how it does the reasoning this is the main part about the rag with DPS it's all right I need to figure out this let's break this down step by step first I will look through the given informations to identify relevant data points the user is ask specifically about the math 500 Cod of both models so it knows that it needs to go through both of that looking at the first section under summary of evaluation results it mentions several benchmarks on MML these things it provides this one then in another part it talks about Math 500 DPS R1 attention impressive score of this this from this I can gather that for the math 500 benchmarks DPS R1 has 97.3 and then open AI has 97.3 also has the similar score of 97.3 but wait the user is asking about open AI Z here you can see it went through 12 177 in the same section under summary of evaluation there is another table comparing the models so now it went to the table two",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 1186.559,
+      "end_seconds": 1267.039,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=1186s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1653ef536c105e0622812cf361d966c97aa5c75d957004bb0ea59a5f6dc9ff44",
+    "text": "user is asking about open AI Z here you can see it went through 12 177 in the same section under summary of evaluation there is another table comparing the models so now it went to the table two right and now if I go back I think it's table two you can see here that is the table two and here it says in table two performance for each model right for open AI this it has this one open AI DPS r10 putting this together open AI 01 mini math this and this so I should make sure there are no other conflicting data points in table two that might affect these scores scanning through all the entries for Math 500 across different models only this and this are respectively no other numbers pop up for the Benchmark therefore I can confidently State the scores as per the given data you can see how it does the thinking based on how we think right this is the powerful thing people are talking about the reasoning capability of dip R1 getting the data is one part right which Vector data you have to use which bedding models you want to use and passing that information into the llm and llm synthesizing the answer based on that is another lib right so yeah you",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 1249.919,
+      "end_seconds": 1329.279,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=1249s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "94bfb8e93f222247147ef42c2c69e7be24e9d682d9f25b9ed03b16ccab4f110a",
+    "text": "right which Vector data you have to use which bedding models you want to use and passing that information into the llm and llm synthesizing the answer based on that is another lib right so yeah you can see this is what it is shown now you can just try it yourself that's all for this video thank you for watching and see you in the next one",
+    "metadata": {
+      "video_id": "MCHOam13JSk",
+      "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+      "trainer": "Sudarshan Koirala",
+      "channel": "Data Science Basics | AI",
+      "topic": "RAG",
+      "start_seconds": 1316.44,
+      "end_seconds": 1334.0,
+      "url": "https://www.youtube.com/watch?v=MCHOam13JSk&t=1316s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

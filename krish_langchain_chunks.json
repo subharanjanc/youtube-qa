@@ -1,0 +1,306 @@
+[
+  {
+    "id": "a47fcc87ff6aeda1f71ca262777511992ebb34451da42e3e3d3817fc12703849",
+    "text": "Hello all, my name is Kuresh Naik and uh welcome to my YouTube channel. So guys, today in this particular video I'm going to discuss about this amazing topic uh to make you understand the differences between langin versus langraph. Now I've been making similar kind of videos from past couple of weeks uh or from past month and here our main aim is to make our fundamentals quite stronger. Let's say that if I ask you a question in an interview when should we probably go ahead and use langraph or what is the differences between lang and lang graph what would you probably try to explain just write down in the comment section before seeing the specific video and then after you write down the comment right just go through this entire video and then try to see that how many things that I've actually told does it matches with all the information that you have right so please make sure to do that but in this video we are going to have a detailed discussion between lang chain versus lang graph. Um trust me just watch the till the end you will definitely learn a lot many things. Now uh if I talk about lang chain you know and I hope it is one of the most popular",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 0.8,
+      "end_seconds": 70.799,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0f0e5b8ba5d5e941823a9f85b966d9edc79a7d01770dd28ca54bdb2fde0fa100",
+    "text": "versus lang graph. Um trust me just watch the till the end you will definitely learn a lot many things. Now uh if I talk about lang chain you know and I hope it is one of the most popular framework which is basically used to create generative AI application. So first of all we will just go ahead and talk about langchain. So let's go ahead and write it down over here like langchain. Now if I talk about langchain in lang chain obviously this is this langchain is basically used to create if I probably say it is used to create llm powered application llm powered chatbot assistant it can be it can be an application or generative AI application okay now when I say LLM powered that basically means anything that you create whether you create a chatbot Whether you create a simple app or whether you create any kind of application right at the end of the day you are specifically using LLMs right on top of this LLMs there are multiple things that can be used here you can use prompts along with the LLMs you can use tools you can use different kind of integrations and many more things so overall if I probably talk about lang chain Any application that is basically developed in Langchain, a generative AI",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 55.44,
+      "end_seconds": 147.76000000000002,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=55s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fa08dc015e962f2800baf7bf1c2fe271325c86d1aa99c71ec246da83a284ece8",
+    "text": "you can use tools you can use different kind of integrations and many more things so overall if I probably talk about lang chain Any application that is basically developed in Langchain, a generative AI application or LLM powered application or a AI chatbot assistant. There are three main important steps that happens in Langchain. This is my one step. This is my another step and this is my third step. Okay. So these are the three main components. Now what are these specific components? When I say steps, I'm basically talking about components. The first component is nothing but it is basically called as retrieve. Okay. So here we are basically going to write it as retrieve. Retrieve or retriever. Then the second important component is nothing but summarize. And the third important component is nothing but your final answer or output. Okay. Now when we talk about this components. Okay. So here I will just go ahead and write output. Okay. When we talk about the specific components in lang chain whether you generate any kind of generative AI applications empowered application or AI assistant these three components will be definitely there. Now the question rises kish what does exactly happen in the directory in retrieve? There are three main important things that we basically do. One is data injection.",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 130.16,
+      "end_seconds": 229.04,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=130s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b708a7f36b944edf375c2c3d8d06500bc9d22ba7c1dc5e1999d3f0f5f28262d2",
+    "text": "assistant these three components will be definitely there. Now the question rises kish what does exactly happen in the directory in retrieve? There are three main important things that we basically do. One is data injection. Now the question rises what is data injection? Data injection is very simple, right? We ingest a data right we probably load a data from a specific source. Now the main thing is that here the source can be different different it can be a PDF file. It can be an external database. It can be an excel file. It can be a website. You need to probably web scrap the data. There may be various different ways right in data injection. So when we talk about data injection this is also called as we basically use something called as document loader over here right. So we use nothing but document loader. So in langchain you have a specific class uh where you have lot of packages and integration specifically with respect to document loader. Here the main aim is that you try to load documents from different different sources. It can be any source. It can be a PDF file. It can be a excel file. It can be a CSV file. It can even be some third-party APIs like Wikipedia. It can be r. It can be anything as such.",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 209.4,
+      "end_seconds": 294.91900000000004,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=209s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2c6496a4b42a70477b5e913593c0e86c461b0a19e0a87c7ba8d1c68c3b922107",
+    "text": "It can be a PDF file. It can be a excel file. It can be a CSV file. It can even be some third-party APIs like Wikipedia. It can be r. It can be anything as such. Right? So they are multiple sources and langen has a huge amount of different different kind of integrations already provided in terms of document loader. And what I feel is that whenever you try to develop any of this kind of application, this is the most important step because here the parsing of the data will happen, right? The parsing of the data will happen. The more in a like when you do the parsing, if you do this much more accurately, then you will definitely be able to generate uh or create a generative AI application with much more accuracy. So now there are dedicated companies who specifically do this particular task who create this kind of packages with respect to document loader right I need to probably I create a document loader to let's say web scrap the data from the internet which will be a very important use case for most of the use case that we specifically implement in the industry. So in document loader this basically happens right and that is a part of data ingestion. Now coming to the second most",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 279.44,
+      "end_seconds": 355.84,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=279s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c20884683ce6f6ace67361e3ddd5ebda90f92ac366fe96c3f0578498e2b5953f",
+    "text": "for most of the use case that we specifically implement in the industry. So in document loader this basically happens right and that is a part of data ingestion. Now coming to the second most important component. The second most important component is nothing but it is called as text splitter. Now text splitter is also a separate class that is available in lang chain or a separate package wherein there are multiple ways of splitting the text. Once you read the data from all these kind of sources, right? We I cannot just directly provide the entire data to my LLM model as a context. Right? So what I have to do why I cannot provide because there is a very important component which is called as context window. Every LLM has a limitation with respect to the context window. So in order to overcome this what we do is that once we read the data from this data source we try to divide this data into smaller chunks into smaller chunks. Smaller chunks smaller chunks. Once we divide this data into smaller chunk then the next step because after we divide this we need to store it somewhere right and that is where your third important component comes is nothing but vector databases. Now inside this vector databases when we are specifically using",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 342.72,
+      "end_seconds": 429.039,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=342s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "01916aad838fab20f172d4e27a944f5d3017eff3f6244b6b04393f7b63e8c0bd",
+    "text": "next step because after we divide this we need to store it somewhere right and that is where your third important component comes is nothing but vector databases. Now inside this vector databases when we are specifically using vector databases here we also use something called as vector embeddings. Now for vector embeddings it is nothing but we are converting the text into vectors that is the main aim with respect to vector embeddings right. So this is a kind of a task wherein we convert the text into vectors. So once it is basically converted we basically store that into the vector database. Now the question arises why do we store it right because at the end of the day from my any application if all my data is basically stored in a vector database we will definitely be able to do different different kind of search. One search example is nothing but semantic search. It can be graph DB search right and with the help of this search we will be able to retrieve the right amount of context and give it to our LLM to finally generate the output right and that is really important right unless and until this is not done accurately and we don't get the right kind of context out of the directed database we will not be able to",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 410.16,
+      "end_seconds": 495.039,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=410s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1af7553194c5121c54658fe355bfc74b34eee71f88db74853e78de7d339efe09",
+    "text": "generate the output right and that is really important right unless and until this is not done accurately and we don't get the right kind of context out of the directed database we will not be able to accurately give the output to the user right so in the retrieve component of lang chain you really need to be good at all the specific things when you go tomorrow to any companies to gen and if you're probably generating or developing a generative AI powered application you will be doing all the specific steps you need to parse the data you need to probably store the data in exact right format with respect to the document data type you need to make sure that you have to do this kind of chunking strategy so that you try to solve this context window size with respect to different different LLMs that you're using and finally you store all this particular data into the vector database. Okay. Now coming to the next important step after we probably complete this retrieve component. It is nothing but summarize. Now here is where you know and when we talk about summarize or when we talk about building generative AI applications uh with the help of lang chain here you specifically follow a sequential order. Okay, this is really",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 479.759,
+      "end_seconds": 554.48,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=479s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5468210cb9a2b5528126331b2db01b93329f1a0743943859c594a089cf8274a9",
+    "text": "Now here is where you know and when we talk about summarize or when we talk about building generative AI applications uh with the help of lang chain here you specifically follow a sequential order. Okay, this is really important to understand and here you will definitely be understanding the differences between langin and lang graph. When we talk about sequential order, now what does this basically mean? In sequential order here, it basically means that the execution of any task will just happen sequentially. We cannot go back. Okay. So this entire langen the generative AI application that is developed with the help of langchen follows a DAG graph right directed a cyclic graph okay that basically means if my execution is basically started from this task it has to probably go to this task it has to go to this particular task only sequential I cannot come back this option is not there this option is not there right so when we talk about this summarize component here you'll be able to see that we create some kind of chaining concept. So in lang chain whenever a generative AI application is basically developed here we try to implement this chaining concept. Now in the chaining concept we first of all go ahead and write our prompt chain. So let's say",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 538.72,
+      "end_seconds": 625.6,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=538s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "174ca76607bfe9a93fced957da581006dab0d8244408d9fe9f44eea0a9475fcd",
+    "text": "concept. So in lang chain whenever a generative AI application is basically developed here we try to implement this chaining concept. Now in the chaining concept we first of all go ahead and write our prompt chain. So let's say this is my prompt chain right sorry this is my prompt. We basically go ahead and give a prompt. prompt is just like an instruction to an LLM right along with this we try to integrate this uh prompt with our LLM. So LLM will be my second thing in the chain right second important component in the chain and then the third important component can be my context the context that I'm supplying to the LLM. So this will basically be my prompt. This will be my llm and this will basically be my context and this context will be coming from the specific vector database. So internally you'll be able to see that this vector database will be comp connected to this particular chain itself wherein we will be providing the context and this execution takes place sequentially one after the other right and finally whatever output you basically get here we are basically going to use or here we are going to give the answer of the output here again we can use multiple components one component can be my",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 608.519,
+      "end_seconds": 689.12,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=608s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4f995ea1de3684497b57e0d78c82d0eeacdcfd65b9e8d33f67c516175f03f218",
+    "text": "whatever output you basically get here we are basically going to use or here we are going to give the answer of the output here again we can use multiple components one component can be my memory right so here we can use some kind of persistent memory. So if you have been seeing my videos with respect to lang lang chain or lang lang graph I have covered all this specific thing right and next thing after this persisting memory I can also go ahead and probably combine prompt with a separate LLM over here prompt with a separate LLM over here so that we will be able to get the output right and finally here you can actually see that finally we generate this specific output so this can also be created in the form of chain but understand one thing everything is basically getting executed sequentially. This is the most important thing in the entire lang chain with respect to developing any generative AI powered applications. Okay. So here is what we basically do with the help of lang chain right and again I will again talk about the differences as we go ahead like what are the main exact differences and all here you saw that it is following a sequential order. It follows a directed earth cyclic graph.",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 676.0,
+      "end_seconds": 747.519,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=676s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "214c3a8e3fbb4561131a7876a94d3beeef719f0bc861466f4689192ffacf6ad3",
+    "text": "lang chain right and again I will again talk about the differences as we go ahead like what are the main exact differences and all here you saw that it is following a sequential order. It follows a directed earth cyclic graph. You know, uh here everything is in the form of chaining. Here we have these three important components. How each and every component is basically executed and how it proceeds to finally getting an output. Right? Now, similarly, if I talk about langraph, okay, langraph. Now when I talk about langraph here the main aim is basically to create stateful multi- AI agentic application agentic application or AI agents multi-state stateful multiAI agents itself right now here the main aim if I just want to probably break this down here you'll be able ble to see that we create AI agents and it's not like a simple a single AI agent it'll be multiple AI agents which will be doing separately different task and the best part about these AI agents is that they can communicate with each other to solve a complex workflow complex workflow I've already started my entire langraph playlist and I think if you're following them I've explained this entirely in a much more detailed manner uh you know in the live classes uh that I've actually taken in",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 734.0,
+      "end_seconds": 830.0790000000001,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=734s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "42bf762673fe1d29cef5898b187634155c403571e1a122156cf4d5f61d097bbf",
+    "text": "started my entire langraph playlist and I think if you're following them I've explained this entirely in a much more detailed manner uh you know in the live classes uh that I've actually taken in my YouTube channel right now here the main thing is that it need not be directed or cyclic graph it it even need not be sequential this can follow in a different ways okay so first of all we'll talk about what are the important components in lang graph okay some of the important components in lang graph are like tasks second important component we basically use as nodes third it'll be something called as edges. Fourth is nothing but graph. So that basically means my entire lang graph the complex workflows that is defined which will be it it'll be in the form of a graph and when you see a graph right if you probably have some knowledge about graph let's say uh here I will just go ahead and write this is my task A okay this is my task A right so let's say this is my task A this can be my task B this can be my task C this can be my task E and this can be my final task that is end let's say now each and every task over here so",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 816.639,
+      "end_seconds": 897.76,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=816s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1a928526b10b17bd07c2b8dcc9b93d62735c0b28f94a2d071a2c4db006945f1c",
+    "text": "be my task B this can be my task C this can be my task E and this can be my final task that is end let's say now each and every task over here so let's say if this is my task A this is my task B this is my task C this is my task D so when we talk about this kind of task we basically start from start over here there will be a conditional edge then we go to task D then finally we go to Now here also I'm showing sequential only but one important thing is that you can go back from task B to task A you can go back to task D to task C you can reexecute this and here you can come so that is the reason why I'm saying that this two important thing is basically happening that is communication within this particular task and each and every task is executed by a separate AI agent you can basically create a separate AI agent and perform that task similarly and the output of one task can be passed to the output of the other task. It can also be vice versa. Right? So here a feedback mechanism can also be generated and even human feedback mechanism can also be",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 877.44,
+      "end_seconds": 960.639,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=877s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "58ef9d5b9dc02fc56c85fa8c48f6d83b6ad865496e53afddc6dc6e040e565391",
+    "text": "and the output of one task can be passed to the output of the other task. It can also be vice versa. Right? So here a feedback mechanism can also be generated and even human feedback mechanism can also be included. So this way you are able to solve a very complex workflow. In my recent uh live session, I gave a hackathon wherein you have to probably implement the entire software development life cycle with the help of human feedback with with the help of this entire complex workflow. So what is software development life cycle? First requirement gathering, then business understanding, then documentation, then code creation, then unit testing, then managers probably reviewing the sorry code peers reviewing the code review, providing the feedback, quality check, all those kind of check and finally implementing the entire software development life cycle and people implement it in a much more beautiful way. So here if you probably see we follow entire graph structure and this graph structure need not be a directed or cyclic graph because here my task can go from up and down it can go here and there right. So if you see some of the important differences with respect to the component here we use components like prompt lm context we use data injection we use persistent memory right",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 942.56,
+      "end_seconds": 1032.16,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=942s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f4908af95cf29f9dc2be907ffa3d102793d5acc4f78ab0bfbe3111183c2bb13d",
+    "text": "go from up and down it can go here and there right. So if you see some of the important differences with respect to the component here we use components like prompt lm context we use data injection we use persistent memory right here we specifically use nodes edges so these are nothing but these are nodes right these are edges edges is basically used for flow of the information and when I say stateful here the persistent memory is quite more efficient ient and the best part about this is that the memory is basically shared between each and every task any update that I'm doing in one variable this all nodes will be able to access those variables and the persistent memory is quite efficient in langraph right so if I talk about agentic AI application you may use some of the components that are available in the lang chain but at the end of the day you are building an amazing agentic application with the help of langraph Right. Other than that there are some more differences which you can probably find out over here. So these are some of the important components. As I said with respect to persistent memory this is much more sufficient efficient. Here we just use a sequential order. Here it need not be a sequential order to solve",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 1012.56,
+      "end_seconds": 1094.799,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=1012s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ed098ba47f07be7efe3e94ad9e3f0c1651be2c95268466e9e4408c467d6c67c4",
+    "text": "find out over here. So these are some of the important components. As I said with respect to persistent memory this is much more sufficient efficient. Here we just use a sequential order. Here it need not be a sequential order to solve any kind of use cases. Right? And here we also understood what are the important components and here what are the important components. Right? Now the reason of making this specific video is to make your understanding very very strong. If I ask you a question, hey, when should we probably go ahead and use fine-tuning or when should we use rag or when should we probably go ahead and use uh let's say prompt engineering many people are not able to clearly say the differences right if this is the kind of question I have already made this kind of videos this videos like see in the companies now many people more than 80 to 90%age of the people uh in the companies are implementing efficient rag systems so here also you'll be able to see that when we create these are like traditional rags okay I'll also talk about traditional rag and agentic rag so in the traditional rag you basically create an llm right this let's say this is my llm powered ai application this",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 1079.36,
+      "end_seconds": 1153.24,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=1079s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "25b15f5ebc640cdf2d17e2140385fb46cc79a5e110b082d15aedba15efe4b700",
+    "text": "see that when we create these are like traditional rags okay I'll also talk about traditional rag and agentic rag so in the traditional rag you basically create an llm right this let's say this is my llm powered ai application this will be interacting with my rag database right so this will basically be my rag database and this rag database will provide the context to the lm to finally provide the output right here if my input is basically going on So this is what is basically happening in a traditional rag. In the case of agentic rag, we create agents. We create AI agents and this agent is responsible whether I have to make a call to my database, whether I have to make the call to my tools or whether I have to take any kind of other action. Automatically this AI agents will be able to take that particular decision and provide me the response. And then probably let's say that after getting this information I need to go ahead and hit the tool and provide the get the response. This entire thing is basically implemented in the form of a workflow. Right? So this is how things basically happen. I'm soon going to make a detailed video on different types of rag which is one of the most important",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 1135.12,
+      "end_seconds": 1211.919,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=1135s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f500f8bda3bb28912fe56e2c1eae538e5f75545d3d747cb6e909f9c674d34b8e",
+    "text": "basically implemented in the form of a workflow. Right? So this is how things basically happen. I'm soon going to make a detailed video on different types of rag which is one of the most important component that is currently required right now. Right? So I hope you like this particular video and uh this was the basic differences between langin and langraph. In the upcoming videos I'm also going to discuss about other frameworks. let's say crew AI agno and I'm going to probably go ahead and explain you all the specific things and these all things we detail explain in our live batches all the information will be given in the description of this particular video you can go ahead and check it out so yes uh this was it for my side I'll see you in the next video have a great day thank you and all take care bye-bye",
+    "metadata": {
+      "video_id": "vmy3HgaKJsY",
+      "title": "Most Popular Framework-Langchain vs LangGraph",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "LangChain",
+      "start_seconds": 1198.48,
+      "end_seconds": 1243.0,
+      "url": "https://www.youtube.com/watch?v=vmy3HgaKJsY&t=1198s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

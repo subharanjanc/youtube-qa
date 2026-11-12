@@ -1,0 +1,242 @@
+[
+  {
+    "id": "8fa1966f04341e0e962cc8a4d660ad4c6bbf7a824007afb374439a29ab759d66",
+    "text": "[Music] The first part of reranking is similarity search. Remember, reranking is sometimes called two-stage retrieval. The first stage of reranking is similarity search and the second stage of reranking is relevancy scoring or sometimes it's just called ranking as well. Anyhow, when you're applying ranking, the first thing is to convert some immense body of data into vectors. Once you have all of your data converted into vectors, you need to store those vectors into a database so that you can easily search across them. There are many databases you can use for storing vectors. For example, you can use Pine Cone, you can use Milvis, you can use Reddus, etc. There's many, many others you can choose from. I'm going to go with a vector database called Pine Cone. So once again, when you're using reranking, you're going to start with some immense body of data, you're going to convert that body of data into vectors, and then you need to store those vectors into a vector database so you can easily search across them. Let's see what that looks like. If we pop open this side drawer, I've built out some functionality that allows me to easily upload data into a pine cone database. FYI, the embedding model that we're going to use to convert our data into",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 0.0,
+      "end_seconds": 96.63999999999999,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4e479315d76dd33b97d341e10fe1803c8401350847b0d8bb0a611e259ce597c8",
+    "text": "see what that looks like. If we pop open this side drawer, I've built out some functionality that allows me to easily upload data into a pine cone database. FYI, the embedding model that we're going to use to convert our data into vectors is all mini LM L6V2. It generates vectors with 384 dimensions. And you can see inside of our vector database, we currently have zero vectors. So if I click over here, I'll be able to upload these Q&As's. Pretty much the way this mini demo application works is it allows you to ingest Q&As's into the vector database. You can see these Q&As's are related to workouts, right? You can imagine a huge database, which in essence is what this is, right? You can imagine a huge database with every workout in the planet, right? And in this little demo application, we're going to search for workouts related to some terms, right? Maybe we're doing a session and we just worked out our arms and now we want to work out our abs and we want to mix it up. We want to get some new ideas for workouts that we can do that target our abs, etc. Right? Now, if I drag this CSV and upload it into the vector database, you can see that we now",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 73.2,
+      "end_seconds": 187.04,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=73s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "114a9434d4247993f3c7b7cf836f2ef7d402e904e127956296123cc0b9671e47",
+    "text": "want to get some new ideas for workouts that we can do that target our abs, etc. Right? Now, if I drag this CSV and upload it into the vector database, you can see that we now have vectors inside of our vector database. And now when we search for information, let's see what we get back. So, I'll type ABS. And you can see we get results that are related to our query. Bicycle crunches is the top suggested result, right? Then we get scissor kicks, which also is an exercise that targets abs. We also get reverse crunches, which is on point. And if I click this little cog icon, we can grow this list to include more nearby vectors to our query vector. So once again, if this is not making sense, when we search across our vector database or our vector space, we're going to start with a query. In this case, it's ABS. And what's going to happen is we're going to be placed into some location in our vector space. And the way that we get results using similarity search is we're going to grab the nearby vectors, right, to wherever we're placed by our query vector. Hopefully that makes sense. Right? Right now we're pulling five results, but we can adjust the hyperparameters of",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 164.16,
+      "end_seconds": 271.44,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=164s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "63ec54a5e8368585045dc07cd50d1f52c98de80e4e2b624bc8bf3513e56974de",
+    "text": "search is we're going to grab the nearby vectors, right, to wherever we're placed by our query vector. Hopefully that makes sense. Right? Right now we're pulling five results, but we can adjust the hyperparameters of our similarity search to include more results. So let's switch to 10. And now you can see we get 10 results. And as we go further down the list, we're getting further away from our point, which means less similar results. We have a lot of ab exercises in this database. Let's go to 20 and see what we get at the bottom of this list. Yeah. So you can see as we get further away, right, as we start grabbing more and more vectors, right, from wherever we are in vector space, right, as we get further from our location, we're getting further and further away, right, from the semantic meaning of our query. Another way that we can filter our results is by adjusting the similarity threshold, which is this score right here. We're using cosine similarity in order to measure the similarity of our vectors. And if we increase our similarity threshold, that's going to filter out more records. Right? So I've increased the similarity threshold to 50%. So we should get zero results cuz nothing in this result set is above 50,",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 249.76,
+      "end_seconds": 360.08,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=249s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fbf66e1323f65a844cee1c5a24102aaaffe25a326b9199533ec0df90abd546a3",
+    "text": "And if we increase our similarity threshold, that's going to filter out more records. Right? So I've increased the similarity threshold to 50%. So we should get zero results cuz nothing in this result set is above 50, right? Zero results. If we take that down to let's say 40, we get nine results, right? Everything that crosses the similarity threshold of 40%. So hopefully that makes sense. Let's do a search for calves, right? calf raises, single leg calf raises, donkey kicks. So yeah, that's similarity search. So once again, zooming out, reranking is a two-step algorithm, right? The first step of reranking is similarity search and the second step is what we're going to be covering shortly. And once again, the usefulness of learning this is if we have use cases where a lot of data is needing to be processed, these are tools in our tool belt that we can use to filter out all of the irrelevant information based on our current task. Before we move on to the second stage of re-ranking, remember reranking is sometimes called two-stage retrieval. The first stage being similarity search that we covered in the previous part and the second stage being relevancy scoring or sometimes it's just called ranking as well. We're going to cover that next. Anyhow, before we demo the second stage",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 335.919,
+      "end_seconds": 454.31899999999996,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=335s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "86c87ef18007856320d4a4c87e18ce97d831384aa8d48a13be4f9eaefa7cd5f8",
+    "text": "that we covered in the previous part and the second stage being relevancy scoring or sometimes it's just called ranking as well. We're going to cover that next. Anyhow, before we demo the second stage of re-ranking, I wanted to briefly discuss the topic of chunking. Tokenization refers to how you break up data into its elementary units for feeding into an AI system. Chunking, on the other hand, is how we group our tokens so as to best retrieve relevant information for our AI or reranking related application. It's okay if this seems a little bit abstract. It took me a while to wrap my head around these concepts, right? So, it's okay if you feel a little bit lost and it's probably going to sound like mumbo jumbo, but anyhow, if we take a closer look at the previous demo, the one related to workouts, what we did was go through a CSV file full of Q&As's where each Q&A shared some information about a workout that targets a particular part of your body. And what we did is we appended the Q part to the A part and that's what we fed into our embedding model that converted this raw data into a vector for us. Just to clarify, the embedding model that we're using for this two-stage retrieval demo",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 440.639,
+      "end_seconds": 538.88,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=440s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "89db4c55fb67da2de893ebfaeac0b364916ab6ef8dbeb5b61731944f18bd733d",
+    "text": "A part and that's what we fed into our embedding model that converted this raw data into a vector for us. Just to clarify, the embedding model that we're using for this two-stage retrieval demo is all mini LM L6V2. And for some insight into the details, the input context limit of all mini LM L6V2 is 256 tokens. These Q&As are quite short, so they fit within that 256 input token limit of all mini LM L6V2. So the vectors that get generated to represent each Q&A are able to take into account the full Q&A. If the Q&A was longer than the 256 input context limit of all Mini LM L6V2, we would need to chunk it, right? There are a couple different approaches for how to chunk data. Here's a demo from an engineer who lives in SF by the name of Greg Camrat. Hopefully I'm pronouncing his name correctly. But here we can see a passage of text. And we can play around with different ways of chunking it by adjusting these sliders. Right? So here you can see we're reducing the size of our chunks. Once again, a chunk is composed of multiple tokens. The token is the elementary unit here. And another thing we can do that might get us better results is include an overlap. Right? What this is",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 516.399,
+      "end_seconds": 636.72,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=516s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "24a2aeed289cf1e4b573b5ca01a78d2a2933916f27121cc6d9760f81bb8a2ca2",
+    "text": "Once again, a chunk is composed of multiple tokens. The token is the elementary unit here. And another thing we can do that might get us better results is include an overlap. Right? What this is doing is instead of each chunk not including any information from its previous chunk, it overlaps each subsequent chunk so that there's some information shared. Sometimes this is very handy because you can increase the likelihood of matching against two subsequent chunks. And when that gets fed into your LLM for subsequent processing, the LLM is able to piece together that these are supposed to be one larger unit of data. So you can kind of hack this to feed in larger chunks of data that are contiguous into the LLM. This is going to make sense later. By the way, it's okay once again if this seems a little bit abstract. But anyhow, I think we'll leave it there for now. This is a rabbit hole you can go deeper on. For example, there's this article from another vector database company called Chroma. And in this article, they analyzed a bunch of different chunking strategies and they analyzed the performance of them. How accurate are the results generated by your AI applications when you use various chunking strategies? So they found the best",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 616.64,
+      "end_seconds": 725.279,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=616s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8adde02a848c57e7b7f8bad01a954c386f53f04c1872a9ac2cee07ceabae018a",
+    "text": "And in this article, they analyzed a bunch of different chunking strategies and they analyzed the performance of them. How accurate are the results generated by your AI applications when you use various chunking strategies? So they found the best approach to chunking data at least in the context of text to be using an LLM to decide what the chunks should be. Right? That's the LLM semantic chunker approach. Anyhow, we're going to keep it simple for this video. And yeah, that's chunking. Let's move on to the second stage of re-ranking. [Music] Here we go. Reranking. So, we're going to follow the same general process. In order to leverage this technology, we have to first convert some large body of information into vectors. And we can do that via this side right drawer. You can see that we have no vectors in our vector database. So let's upload some information. And for this relevancy scoring demo or second stage of reranking demo, we're actually going to use a cookbook that consists of it looks like over 600 pages of recipes. So let's ingest this into our vector database and take reranking for a spin. After our data is uploaded, we should see some vectors inside of our vector database. And this should be the same number we're seeing in pine cone. And now we can test",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 702.24,
+      "end_seconds": 835.12,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=702s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "697c5ef7edea0a4b75dcd62f91582e69fc1acc00772e803ff366f1a72b225c13",
+    "text": "for a spin. After our data is uploaded, we should see some vectors inside of our vector database. And this should be the same number we're seeing in pine cone. And now we can test out reranking. So, as this is a cookbook, let's ask some culinary questions. Starting with what's a delicious Indian dish. Here are the results we get. And you can see that we have two columns of results. The first column corresponds to the first stage of reranking and the second column corresponds to the second stage of reanking. The metric that we're using to rank the similarity search results is called similarity. And the metric we're using to rank the reranked results is relevance. Here's an article that let's quickly browse through to get a better idea of what's going on. So when you're comparing two pieces of information or two sequences of tokens, there's multiple techniques for doing so. Hopefully, we're very familiar with similarity search, which is also sometimes called uh by encoder. It's a bit confusing of a name but anyhow here you can see we have some query input that we convert into a vector and some chunk of data or document that we convert into a vector and we calculate their similarity using cosine similarity. Right? That tells us how",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 816.32,
+      "end_seconds": 925.12,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=816s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "49582497482f227286d00c28a1f4050d148a8417fddfa07f8f6feaa261bf954b",
+    "text": "you can see we have some query input that we convert into a vector and some chunk of data or document that we convert into a vector and we calculate their similarity using cosine similarity. Right? That tells us how similar these two pieces of data are. There is another technique for measuring the similarity or relevance of two pieces of data. And this other approach is called the cross encoder approach. Internally, this uses an algorithm called cross attention, which is the same algorithm found inside of most LLMs. If you're familiar with the history of ML, you might know that the transformer, which is the type of system an LLM is based on, was introduced in a paper called attention is all you need. This way of measuring the similarity or relevance, I'm going to use the term relevance in reference to cross encoders and the term similarity in reference to similarity search or by encoders. This way of measuring the relevance of two pieces of information is much more accurate, but the trade-off is it's much more computationally intensive. If we only use the cross encoder, we would be waiting a very long time to get matches as it's usually about 10 to 200 maybe even more times slower of an algorithm compared to the bencoder approach. And that's why we",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 906.32,
+      "end_seconds": 1007.1990000000001,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=906s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "741ee5f81c685b9cda41c748f0a066670cc6b710fc6a3df336dc13d1905a1e0c",
+    "text": "encoder, we would be waiting a very long time to get matches as it's usually about 10 to 200 maybe even more times slower of an algorithm compared to the bencoder approach. And that's why we have to combine them into this reranking technique in practice. Right? So in a nutshell, what we're doing if we come back is we're first grabbing a bunch of generally similar pieces of information from our search space or our immense body of data. And once we have those initial samples or initial chunks of data, we then analyze those for relevance to our query using a reranker or a cross encoder. A lot of lingo in AI or ML, another name for a cross encoder is a reranker. The re-ranker we're using, FYI, is provided to us by a company called Cohhere here. They have one of the best rerankers on the market. There are other ones that are open source. Anyhow, what you do here is pass in a query along with a list of documents and the reranker gives you back a relevance score that measures how similar the query is to each document or chunk of your overall search space. Let's tweak the hyperparameters of this re-ranking pipeline and see this in a more extreme manner. So let's increase our similarity search results",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 988.56,
+      "end_seconds": 1101.28,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=988s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fc83af3703af084d472069162cf4ad9b3335d8ebb8f2f61def27b9af45bed097",
+    "text": "how similar the query is to each document or chunk of your overall search space. Let's tweak the hyperparameters of this re-ranking pipeline and see this in a more extreme manner. So let's increase our similarity search results from 10 to 20. Right? We can see that the first record returned from similarity search, the fourth one, the 13th one and the 15th and the 16th one are the ones that are actually most relevant to our search query, not the top five. What I'm trying to highlight here is when similarity search tells you these documents are the most similar, it's not necessarily the case because similarity search is a very crude way of measuring the similarity of two pieces of data. A much more accurate way is to use a reranker. And you can see here that the first search result returned by similarity search was actually assessed to be the fifth most relevant reranked result. You can see that right. So chunk 2379 was scored first right according to similarity search or cosign similarity but according to the cross encoder it's actually the fifth most relevant document and it actually scores quite low and the most relevant document which is 476 was actually the 16th rank result according to similarity search. So as you can see here, what the",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1070.88,
+      "end_seconds": 1209.44,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=1070s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3039c614bc0932cf29bac7402dc6cc2ead7a9744374d5d22df6108efcbaa6b01",
+    "text": "actually the fifth most relevant document and it actually scores quite low and the most relevant document which is 476 was actually the 16th rank result according to similarity search. So as you can see here, what the reranker does for us is helps us identify what's actually most relevant. And I think that's it. So you now understand reranking. [Music] Next up, we're going to show how you can run a reranking pipeline. And after you retrieve your results from the re-ranking pipeline, you can pass them into an LLM or LMM along with your query or prompt so that the LLM can perform all of the analysis and synthesis for you and give you a response back that is more natural. And when you slap a nice UI on top of the LLM's output along the lines of what we prepared here, you get an effect like this. FYI, we're going to be searching across the same exact vector space that we used in the previous demo. If you recall, we ingested a cookbook that had about 600 pages of recipes in it. So, let's send a prompt along the lines of, \"What's an Italian dish that's quick and easy to make? Cite your sources and pull the dish from your knowledge base. Great. Classic spaghetti with tomato",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1180.96,
+      "end_seconds": 1296.96,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=1180s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b0b48ee18eb24cc7ba1621c51ccd4493b7e9736bef341a5b3d40277725462670",
+    "text": "pages of recipes in it. So, let's send a prompt along the lines of, \"What's an Italian dish that's quick and easy to make? Cite your sources and pull the dish from your knowledge base. Great. Classic spaghetti with tomato sauce. That's on point. It gives me the ingredients, the instructions, and if we click on this button, we can see the chunks that were retrieved from our knowledge base. This was the top chunk. And it does mention spaghetti. And I don't see anything. Okay, here you see it says spaghetti with tomato sauce, right? And let's run one more query just for fun. What's an Indian dish? that's quick and easy to make. Site your sources and pull the dish from your knowledge base. Great. We get curried vegetables. Here are the ingredients and the instructions. And let's take a look at the referenced chunks. Let's look at the first chunk. And says Indian curry, but that's not curried vegetables. Or is it? Let's take a look at the second chunk. H this one. Here we go. Curry vegetables. You see that?",
+    "metadata": {
+      "video_id": "QuYlSSYWogE",
+      "title": "MASTER AI RERANKING IN 23 MINUTES",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1269.44,
+      "end_seconds": 1404.52,
+      "url": "https://www.youtube.com/watch?v=QuYlSSYWogE&t=1269s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

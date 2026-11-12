@@ -1,0 +1,642 @@
+[
+  {
+    "id": "79306b3b2d6d05cbb478b0f4f76a2a59e1f731d0572208710aea5226eba7147a",
+    "text": "Heads up, the target audience for this video is AI engineers, AI product owners, and AI project managers. If you're a general AI enthusiast, you will get a lot of value out of understanding what re-ranking is. But just know that we're going to be diving deep on the details of how it works under the hood. What is re-ranking? Reranking or as it's sometimes called two-stage retrieval is an advanced technique for searching through and analyzing lots of data and I mean lots of data. The use cases for re-ranking are vast, but to name a few, you can use reranking for rag, which is a loose term for collecting relevant information given a prompt that you then feed into a more sophisticated AI system, like for example, an LLM or LMM for subsequent processing. You can also use reranking as a long-term memory solution for some agent that you're building. For example, let's say you're building an email responder agent that responds to emails on your behalf, or at least generates draft responses that you can then review. Over time, you're going to feed in lots of transcripts and email threads and notes and files into the memory bank of your email responder agent. And when your email responder agent receives some request, the first step it has to do in order to respond to",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1.6,
+      "end_seconds": 84.799,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7d8a8d8515b99307b48bceb7448e53996216f938a69ec2c93fb5e26132ab5106",
+    "text": "threads and notes and files into the memory bank of your email responder agent. And when your email responder agent receives some request, the first step it has to do in order to respond to said request is pull in the most relevant bits of information in its memory bank so that it can generate a response that reflects your experiences and that takes into account the interactions that you've had with the outside world. Another common use case for reranking would be doing research across the internet. A common pattern that you'll see is you'll scrape data from a number of websites and dump that data into some local database or some data lake that's sitting within your company and then you'll use summary ranking technique to sift through all of that information in order to accomplish some task or goal that you have. The general pattern with all of these use cases is that you have some immense amount of information, right? It's way more information than the LLM or LMM you're using can process at one go, right? GBT5, for example, has a 128,000 token limit, meaning it can only process 380ish pages of information at a time. So, if you're doing some sort of task that requires analyzing or sifting through more than 380 pages of data,",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 70.4,
+      "end_seconds": 153.84,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=70s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b2ea132fec182dd61d4eb29e9c73ad1742e15cb76b435f3e7a8accd016419dd7",
+    "text": "has a 128,000 token limit, meaning it can only process 380ish pages of information at a time. So, if you're doing some sort of task that requires analyzing or sifting through more than 380 pages of data, a common technique is to filter out all of the noise and trash from the body of data you have available to you and identify only what's relevant to the given task. Once you've identified that information, you then build a prompt that contains the instructions or outline of the task you're accomplishing along with the relevant information. Then you can feed that into your LLM and then generate an output that at least partially hopefully completely accomplishes your goal. Now, we're going to walk through the outline of a state-of-the-art re-ranking system in 12 steps. Let's go. In the context of this video, tokenizers or tokenization refers to breaking data down into its elementary units. I'm not going to expand upon this topic too much. It can get boring very quickly, but I thought it was a good place to start as it's quite a fundamental building block. From what I've seen, every AI system starts with this step of breaking data down into its elementary units. Let me show you a few examples. Here is a little playground app provided by OpenAI. And we can see tokenization",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 132.16,
+      "end_seconds": 233.519,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=132s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "71196789d6f88ac6d82ef41a804b5403cbb61def8c24d0cb33eb0143d1cc3300",
+    "text": "every AI system starts with this step of breaking data down into its elementary units. Let me show you a few examples. Here is a little playground app provided by OpenAI. And we can see tokenization in action. If we paste some text here, for example, if I paste this in, you can see on the bottom how the AI system breaks it up into subwords, right? I don't know if you're like me, but I would think most humans would break this particular sentence down into three components, right? Because it has three words. Penguins love cheese. But as you can see, AI systems think about this a little bit differently. Let me just give you another example so you get a good feel for this. Right? Here's the same sentence, but in Spanish, right? And this step of breaking data down into elementary units is quite generalizable. For example, if we wanted our AI system to be able to understand images, the tokenization step would look something like this. Our images would get broken up into sub patches, right? Or if you wanted our AI system to be able to process audio, we would feed in some spoken audio or audio and that audio would get converted into its subcomponents. For example, in the case of spoken audio phonms, right?",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 212.879,
+      "end_seconds": 317.44,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=212s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d0e6538a922a1238dec2d4bb90c65fca2df4ccb2d7a9fca859e375a8fc0b5fe6",
+    "text": "Or if you wanted our AI system to be able to process audio, we would feed in some spoken audio or audio and that audio would get converted into its subcomponents. For example, in the case of spoken audio phonms, right? So hopefully you have an understanding of what this tokenizer step is doing and what tokens mean. I've already mentioned the term once. I mentioned previously that GBT5 for example has a context limit of 128,000 tokens. So now you can understand what that means. And once we've identified the subunits of our data, each subunit gets converted into an ID. Let's now move on to step two. All right. Now let's have some fun. Here is a little web application that I've put together to accompany this video. All of the code for this web application is included in the description. It's completely open source. And I thought next up we should explore a little bit very quickly. We're not going to go too deep how an LLM or LMM works so that it'll then motivate why we need reanking or why reanking is a good thing. Right? So, let's send a prompt to this LLM. Right? I'm going to say my name is Tad. And we get a decent response. And next up, let's send another prompt",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 297.04,
+      "end_seconds": 404.24,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=297s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b5f654bd74f0a3b34dba5a5b2b9df5abaeceb3806ce629f016390cbe898dcd6e",
+    "text": "or why reanking is a good thing. Right? So, let's send a prompt to this LLM. Right? I'm going to say my name is Tad. And we get a decent response. And next up, let's send another prompt asking, \"What is my name?\" Do you think it's going to know my name or not? Remember, we're interacting directly with an LLM. Let's find out. No. Right. So, hopefully that clears up the first aspect of how an LLM works. It does not remember anything about the data that runs through it. after it's been trained, I should say, right? You can train it to gain more information, but once it's been trained, it doesn't remember anything about the data that runs through it. Now, let's open up this little side drawer. And here I've listed some of the most popular LLM or LMMs on the market today. Remember most of these systems at this point are not only trained on text but also audio, images, video, etc. Anyhow, here I've outlined the token limits for each of these LLM or LMM. And this is the beginning of the motivation for why re-ranking is important or a good technique to know. So, if we're going to do some sort of task or send some type of prompt to an LLM that is not a little message like",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 382.4,
+      "end_seconds": 489.11999999999995,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=382s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "291297098b9657396abaf5b03ce8943109b56ebbaa2a5f63ced6ba9ae6991552",
+    "text": "motivation for why re-ranking is important or a good technique to know. So, if we're going to do some sort of task or send some type of prompt to an LLM that is not a little message like these ones, right? But imagine it's a really large message that includes a bunch of data. We can only send this amount of data max. Let's focus on GBT5, right? If we want to pipe in more than 128,000 tokens of data, we're going to have to resort to some tricks. And this is where reranking comes in. What reranking is going to do for us is based on our task or prompt along with a body of data that we need to analyze or process to accomplish said prompt. Ranking is going to extract the most relevant parts of that body of data for us. And that has impact on costs as well as time. So it's a very useful thing to be able to from a body of data or from a large prompt to extract only what's relevant, right? And only pipe in to the LLM absolutely what's necessary. So this is why reranking is useful or necessary at times especially when we want to process more data than is allowed by the token limit. Now let's move on to step three.",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 472.72,
+      "end_seconds": 566.9590000000001,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=472s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f7590e1d2da35efe5011aa86c21a4c197895afd5e00334e3094aa10637b2fddd",
+    "text": "what's necessary. So this is why reranking is useful or necessary at times especially when we want to process more data than is allowed by the token limit. Now let's move on to step three. We are now going to quickly explore the topic of memory in the context of LLMs. And here we have a little demo that's very similar to the previous demo. And we're actually going to send the same prompts and see what happens. So let's say my name is Tad. Great. We get an identical, if not almost identical response. And now, drum roll. Let's ask what is my name? And let's see what happens. Now it remembers my name. So the difference between this application and the previous one is in the previous one we were sending each message by itself to the LLM, right? Whereas in this little demo, we're sending each message associated with the current session along with every previous message that has either been sent or received to or from the LLM. And that's our little memory hack, right? So the gist of what I'm trying to get across here is a certain percentage of the input context is going to have to be reserved for memory if you want to have an AI application that has any semblance of memory at least in the",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 547.519,
+      "end_seconds": 665.68,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=547s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "65fd31aeb9103ed9a8cf0e9a4be3ce163c55495176ef176aa71ec4f07bb87a39",
+    "text": "I'm trying to get across here is a certain percentage of the input context is going to have to be reserved for memory if you want to have an AI application that has any semblance of memory at least in the context of LLM applications right so we can definitely fit a long chat session right a long history of messages into for example 128,000 token context in the case of GPT5 but eventually we will run out right another thing to keep in mind is as we have a really long message history there will be parts of the message history that are irrelevant to the latest prompt we send to our AI application right so it becomes useful to extract the most relevant parts based on what we're currently needing done. And once again, I'm just giving context for the motivation of reranking. Let me show this which is pretty cool. Each demo that I've prepared that involves an interaction with an LLM has been set up for being monitored by this application which is called Langsmith. FYI, the agent framework that I'm using or AI framework that I'm using to build a lot of these demos is called Langchain. Anyways, there's many other tools you could use, but pretty much what I'm showing you here is the messages that were sent",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 644.72,
+      "end_seconds": 749.36,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=644s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ab3e157d686cf352bbf69663c4320df094572659e8efb30084a7b298f3d22506",
+    "text": "or AI framework that I'm using to build a lot of these demos is called Langchain. Anyways, there's many other tools you could use, but pretty much what I'm showing you here is the messages that were sent to and from the LLM. Right? These two are the ones to focus on. So if we click this we see we sent a system message which is very simple right along with our initial message or prompt and this was the output we received and then we sent this right. So we just appended the next message to the history of messages. Then we received this output, right? And as we would continue to add messages to this chat history, this list of inputs would just grow and grow and grow until eventually we exceeded the context limit. So this is a simple example that shows how you can imbue a sense of memory into your LLM applications or AI systems. Now let's move on to step four. Okay, embeddings or embedding models. Here is the most concise diagram I could think of putting together that explains what an embedding model is doing. An embedding model is this thing that takes in data. It doesn't matter what type of data it is. It could be text data or image data or video data etc. It takes",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 728.16,
+      "end_seconds": 828.16,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=728s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "13d007fa97746f0eafcc3dd454452f39fffb9c3161a75a9cb9b3bc8fc86eb1ee",
+    "text": "what an embedding model is doing. An embedding model is this thing that takes in data. It doesn't matter what type of data it is. It could be text data or image data or video data etc. It takes in data and then it converts that data into a list of numbers. This list of numbers is also called a vector. Right? So if I say the term vector, you know what I mean. A vector is just a list of numbers. Technically speaking, you don't have to understand what an embedded model does internally. It's sort of like a car. You don't need to understand how to fix or build a car in order to drive one, right? But in case you're interested, here are some resources you can read up on that cover the subject. There's also this YouTube channel that has a number of videos on the subject, too. This one is great, for example. Anyhow, I vibecoded this little interactive animation that I will now play in order to give us a gist of what the embedding process, as it's so-called, looks like. So let's play it. So we start off with some data. It gets tokenized. We run the tokens through an embedding model and then we're left with a list of numbers that represents the",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 815.6,
+      "end_seconds": 892.0790000000001,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=815s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6c85589b91c4dfb2cc4d67a9a72fc80d04986369afa0b34d4ab54f11d15f8b7c",
+    "text": "so-called, looks like. So let's play it. So we start off with some data. It gets tokenized. We run the tokens through an embedding model and then we're left with a list of numbers that represents the input data. Right? So input tokenization embedding and then we're left with a list of numbers aka a vector. If we take a step back, remember how we were playing with this tokenizer app from OpenAI and how we saw it breaking up our data into tokens and mapping each token to a token ID. As it turns out, using a single number to represent a token is not very useful. If we want to measure things like how similar a token is to another token or how similar a collection of tokens are to another collection of tokens or how dissimilar a token is to another token etc. using a list of numbers is more practical, right? And the other thing I'll mention is generally speaking, the larger the list of numbers that you use to represent a token or the larger the vector you use to represent a token, then the more nuance that vector is capable of carrying, which when you start to build more advanced AI systems on top of these vectors, that means that your AI system is going to become more",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 877.04,
+      "end_seconds": 964.079,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=877s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e99a04cd9abe21571352d3d13071c129135b3dc4d13abaf064703386c89c50d7",
+    "text": "then the more nuance that vector is capable of carrying, which when you start to build more advanced AI systems on top of these vectors, that means that your AI system is going to become more intelligent. But there is a trade-off. If you start to use huge vectors, eventually that slows your system down. But blah blah blah. The last thing I'll mention or show you is an overview of some of the most popular embedding models on the market today. The one that we're going to be using for the most part moving forward is this one called All Mini LM L6V2. It's pretty lightweight. There are better ones, but this is cool because you can run it locally and you can host it on a cheap machine in the cloud. It only allows you to feed in 256 tokens of data at a time, whereas some of the other ones allow you to build vectors that represent larger sequences of tokens. But anyhow, hopefully you get the gist of it and let's move on to step five. In step five, we're going to explore visualizing these vectors, and that's going to give us a better feel for what they're doing and how we can use them. Now, let's visualize some of these vectors so we get a better feel for what",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 949.04,
+      "end_seconds": 1035.199,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=949s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "39ca5b099d3a053ba8b1bb5351443168bede1cf2eb8b01aaf4920b2a3ee55a6b",
+    "text": "explore visualizing these vectors, and that's going to give us a better feel for what they're doing and how we can use them. Now, let's visualize some of these vectors so we get a better feel for what they are and how we can use them. And the way that we're going to do that is by using this free tool called the TensorFlow projector. And what this is doing is visualizing vectors generated by the word tovec embedding model. This embedding model generates vectors or lists of numbers that represent the text fed into the model, right? In 200 dimensions, right? Or put another way, the list of numbers generated by the word embedding model have 200 numbers inside of them. Of course, this is a three-dimensional visualization. So, what's happening here is those 200dimensional vectors are getting down projected, I think is the technical term. Excuse me if I'm incorrect. They're getting down projected into three dimensions. The way I think about this is it's sort of like how a cube can get projected into 2D as a square or a hyper cube can get projected into 3D as a cube. But anyhow, if we check out a certain area of this vector space and hover over some of the points, we should see similar concepts. This seems to me to be",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1017.68,
+      "end_seconds": 1119.1599999999999,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1017s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8fbacd1d4337ba1a5ce405daf2920d80fe4fa4773edcdc8092040354eb8caa6d",
+    "text": "hyper cube can get projected into 3D as a cube. But anyhow, if we check out a certain area of this vector space and hover over some of the points, we should see similar concepts. This seems to me to be like military or political kind of concepts. Yeah, politician. Let's come over to one more area so you can fully understand what's going on. Yeah. Here we have like chemicals. Yeah. Right. Or more scientific related words. Yeah. So hopefully that's enough to drive this home. But what an embedding model is doing is giving us a way to measure how similar two tokens are in a body of data or how similar a collection of tokens are to another collection of tokens in a body of data. Once again, in practical AI applications, the size of the vectors are going to be at least 100 long, probably even a thousand long. And before we move on, I want to show you this other way of visualizing highdimensional vectors. I learned this way of visualizing high dimensional vectors from this YouTuber called Adam Lusk. If I'm pronouncing his name correct, shout out to him. Here is a technique that uses color bands. And this for example is the embedding for dog. The higher the number in the list of",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1090.799,
+      "end_seconds": 1214.32,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1090s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8c1cc0d20f7cccb133efc099ff7af278ee08a91e1b15110ffec98f5718ccc87e",
+    "text": "YouTuber called Adam Lusk. If I'm pronouncing his name correct, shout out to him. Here is a technique that uses color bands. And this for example is the embedding for dog. The higher the number in the list of numbers, the more red color band is, the lower the value of the number is in the list of numbers, the more blue it shows. Right? So that's one way of visualizing the embedding for the word dog. This is how you visualize the embedding for the word mango, etc. And once we have tokens or collections of tokens converted into vectors, we can run very simple math formulas on them. What we can do is measure the distance between two vectors, right? And the smaller the distance, that means the more similar the underlying data represented by the vectors is. Or another way that we can measure similarity is we can take two vectors and measure the angle between them when we draw a line from the origin of the vector space to each vector. Right? The smaller the angle means the more similar the underlying data represented by the vectors is I think that covers all of the fundamentals we need to start building our reanking system. So let's jump into that. Finally, we made it to the re-ranking",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1188.72,
+      "end_seconds": 1287.5200000000002,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1188s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c7bcaa2f575b276d2a9a66a5fac083c1dc59af75792a2fcb72c7a21a5426e4d0",
+    "text": "more similar the underlying data represented by the vectors is I think that covers all of the fundamentals we need to start building our reanking system. So let's jump into that. Finally, we made it to the re-ranking part of this journey. The first part of re-ranking is similarity search. Remember, reranking is sometimes called two-stage retrieval. The first stage of reranking is similarity search and the second stage of re-ranking is relevancy scoring or sometimes it's just called ranking as well. Excuse the terminology, but welcome to the world of AI/ML. There's a lot of very confusing terms. Anyhow, when you're applying ranking, the first thing is to convert some immense body of data into vectors. Once you have all of your data converted into vectors, you need to store those vectors into a database so that you can easily search across them. There are many databases you can use for storing vectors. For example, you can use Pine Cone, you can use Milvis, you can use Reddus, etc. There's many, many others you can choose from. I'm going to go with a vector database called Pine Cone. So, once again, when you're using reranking, you're going to start with some immense body of data. You're going to convert that body of data into vectors and then you need to store those",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1266.64,
+      "end_seconds": 1362.64,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1266s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8008369f2a86cde0df72f54ad80b4ef52f58974065f6e4a8de13623933280b3e",
+    "text": "Cone. So, once again, when you're using reranking, you're going to start with some immense body of data. You're going to convert that body of data into vectors and then you need to store those vectors into a vector database so you can easily search across them. Let's see what that looks like. If we pop open this side drawer, I've built out some functionality that allows me to easily upload data into a pine cone database. FYI, the embedding model that we're going to use to convert our data into vectors is all mini LM L6V2. It generates vectors with 384 dimensions. And you can see inside of our vector database, we currently have zero vectors. So, if I click over here, I'll be able to upload these Q&As's. Pretty much the way this mini demo application works is it allows you to ingest Q&As's into the vector database. You can see these Q&As's are related to workouts, right? You can imagine a huge database, which in essence is what this is, right? You can imagine a huge database with every workout in the planet, right? And in this little demo application, we're going to search for workouts related to some terms, right? Maybe we're doing a session and we just worked out our arms and now we want to work out",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1348.48,
+      "end_seconds": 1458.24,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1348s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2a3912ae59e6e3dceb131da8fe402d48953cd00caa358c938793b1c5db0bf89c",
+    "text": "workout in the planet, right? And in this little demo application, we're going to search for workouts related to some terms, right? Maybe we're doing a session and we just worked out our arms and now we want to work out our abs and we want to mix it up. We want to get some new ideas for workouts that we can do that target our abs, etc. Right? So, if I drag this CSV and upload it into the vector database, you can see that we now have vectors inside of our vector database. And now when we search for information, let's see what we get back. So I'll type ABS. And you can see we get results that are related to our query. Bicycle crunches is the top suggested result. Right? Then we get scissor kicks, which also is an exercise that targets abs. We also get reverse crunches which is on point. And if I click this little cog icon, we can grow this list to include more nearby vectors to our query vector. So once again, if this is not making sense, if you remember that visualization of vectors in space, right? When we search across our vector database or our vector space, we're going to start with a query. In this case, it's ABS. And",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1440.88,
+      "end_seconds": 1546.4,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1440s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e923547467b1708e3d4a803a4d67e6b7a142d8a5b42c5c44200288ba09ec577e",
+    "text": "once again, if this is not making sense, if you remember that visualization of vectors in space, right? When we search across our vector database or our vector space, we're going to start with a query. In this case, it's ABS. And what's going to happen is we're going to be placed into some location in our vector space. And the way that we get results using similarity search is we're going to grab the nearby vectors, right, to wherever we're placed by our query vector. Hopefully that makes sense. Right? Right now we're pulling five results, but we can adjust the hyperparameters of our similarity search to include more results. So let's switch to 10. And now you can see we get 10 results. And as we go further down the list, we're getting further away from our point, which means less similar results. We have a lot of ab exercises in this database. Let's go to 20 and see what we get at the bottom of this list. Yeah. So you can see as we get further away, right, as we start grabbing more and more vectors, right, from wherever we are in vector space, right, as we get further from our location, we're getting further and further away, right, from the semantic meaning of our query. Another way that we can filter",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1527.44,
+      "end_seconds": 1625.9189999999999,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1527s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1d5ee07adac7e8e2fb74707c34e65db90331364a714d58239d27ea517854c319",
+    "text": "and more vectors, right, from wherever we are in vector space, right, as we get further from our location, we're getting further and further away, right, from the semantic meaning of our query. Another way that we can filter our results is by adjusting the similarity threshold, which is this score right here. We're using cosine similarity in order to measure the similarity of our vectors. And if we increase our similarity threshold, that's going to filter out more records, right? So, I've increased the similarity threshold to 50%. So you should get zero results cuz nothing in this result set is above 50, right? Zero results. If we take that down to let's say 40, we get nine results, right? Everything that crosses the similarity threshold of 40%. So hopefully that makes sense. Let's do a search for calves, right? calf raises, single leg calf raises, donkey kicks. So yeah, that's similarity search. So once again, zooming out, reranking is a two-step algorithm, right? The first step of reanking is similarity search and the second step is what we're going to be covering shortly. And once again, the usefulness of learning this is if we have use cases where a lot of data is needing to be processed, these are tools in our tool belt that we can use to",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1608.64,
+      "end_seconds": 1730.08,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1608s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d532a3b128fab6101a381e641f9a551f81bb753fffe8546a442ec15a13555483",
+    "text": "And once again, the usefulness of learning this is if we have use cases where a lot of data is needing to be processed, these are tools in our tool belt that we can use to filter out all of the irrelevant information based on our current task. Before we move on to the second stage of re-ranking, remember reranking is sometimes called two-stage retrieval. The first stage being similarity search that we covered in the previous part and the second stage being relevancy scoring or sometimes it's just called reanking as well. We're going to cover that next. Anyhow, before we demo the second stage of re-ranking, I wanted to briefly discuss the topic of chunking. We already discussed the topic of tokenization, right? Tokenization refers to how you break up data into its elementary units for feeding into an AI system. Chunking, on the other hand, is how we group our tokens so as to best retrieve relevant information for our AI or re-ranking related application. It's okay if this seems a little bit abstract. It took me a while to wrap my head around these concepts, right? So, it's okay if you feel a little bit lost and it's probably going to sound like mumbo jumbo, but anyhow, if we take a closer look at the previous demo, the",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1710.88,
+      "end_seconds": 1809.2,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1710s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "29e5b534e6194d5dc6ee6abfbf4cfa53ccc8fec8dbc546f78bb0258c362f3cca",
+    "text": "head around these concepts, right? So, it's okay if you feel a little bit lost and it's probably going to sound like mumbo jumbo, but anyhow, if we take a closer look at the previous demo, the one related to workouts, what we did was go through a CSV file full of Q&As's where each Q&A shared some information about a workout that targets a particular part of your body. And what we did is we appended the Q part to the A part and that's what we fed into our embedding model that converted this raw data into a vector for us. Just to clarify, the embedding model that we're using for this two-stage retrieval demo is all mini LM L6V2. And for some insight into the details, the input context limit of all mini LM L6V2 is 256 tokens. These Q&As are quite short, so they fit within that 256 input token limit of all mini LM L6V2. So the vectors that get generated to represent each Q&A are able to take into account the full Q&A. If the Q&A was longer than the 256 input context limit of all Mini LML L6V2, we would need to chunk it, right? There are a couple different approaches for how to chunk data. Here's a demo from an engineer who lives",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1791.6,
+      "end_seconds": 1904.9599999999998,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1791s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e037e9dc9ecc6b54a7a32e723be9d7eb70400ac1286450dac21a3e08d9a05828",
+    "text": "the 256 input context limit of all Mini LML L6V2, we would need to chunk it, right? There are a couple different approaches for how to chunk data. Here's a demo from an engineer who lives in SF by the name of Greg Camrat. Hopefully I'm pronouncing his name correctly. But here we can see a passage of text. And we can play around with different ways of chunking it by adjusting these sliders. Right? So here you can see we're reducing the size of our chunks. Once again, a chunk is composed of multiple tokens. The token is the elementary unit here. And another thing we can do that might get us better results is include an overlap. Right? What this is doing is instead of each chunk not including any information from its previous chunk, it overlaps each subsequent chunk so that there's some information shared. Sometimes this is very handy because you can increase the likelihood of matching against two subsequent chunks. And when that gets fed into your LLM for subsequent processing, the LLM is able to piece together that these are supposed to be one larger unit of data. So, you can kind of hack this to feed in larger chunks of data that are contiguous into the LLM. This is going to make sense later, by the way. It's",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1879.76,
+      "end_seconds": 1995.6000000000001,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1879s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1e8a52327da187637b472b0deed203000591aa0cb1b7797c6e381efe63da54a0",
+    "text": "supposed to be one larger unit of data. So, you can kind of hack this to feed in larger chunks of data that are contiguous into the LLM. This is going to make sense later, by the way. It's okay once again if this seems a little bit abstract. But anyhow, I think we'll leave it there for now. This is a rabbit hole you can go deeper on. For example, there's this article from another vector database company called Chroma. And in this article, they analyzed a bunch of different chunking strategies and they analyzed the performance of them. How accurate are the results generated by your AI applications when you use various chunking strategies? So they found the best approach to chunking data at least in the context of text to be using an LLM to decide what the chunks should be. Right? That's the LLM semantic chunker approach. Anyhow, we're going to keep it simple for this video. And yeah, that's chunking. Let's move on to the second stage of re-ranking. [Music] Here we go. Reranking. So, we're going to follow the same general process. In order to leverage this technology, we have to first convert some large body of information into vectors. And we can do that via this side right drawer. You can see that we have no vectors in our",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 1979.6,
+      "end_seconds": 2094.8,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=1979s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "674b2d72a5df4f6ff78ca22846b5fcf1d28bdea6022014b929cba12d4e1258e1",
+    "text": "In order to leverage this technology, we have to first convert some large body of information into vectors. And we can do that via this side right drawer. You can see that we have no vectors in our vector database. So let's upload some information. And for this relevancy scoring demo or second stage of reanking demo, we're actually going to use a cookbook. This is a cookbook that I found on Gutenberg or Project Gutenberg I think it's called. But anyhow, this is a cookbook that consists of it looks like over 600 pages of recipes. So, let's ingest this into our vector database and take reranking for a spin. After our data is uploaded, we should see some vectors inside of our vector database. And this should be the same number we're seeing in Pine Cone. And now we can test out reranking. So as this is a cookbook, let's ask some culinary questions starting with what's a delicious Indian dish. Here are the results we get. And you can see that we have two columns of results. The first column corresponds to the first stage of re-ranking and the second column corresponds to the second stage of reranking. The metric that we're using to rank the similarity search results is called similarity. And the metric we're using to rank the",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 2073.919,
+      "end_seconds": 2197.119,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=2073s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9fb54f0466ea91f8c7e3cb7829e134f8e360275cc496e5221456d79c6d3192c0",
+    "text": "to the first stage of re-ranking and the second column corresponds to the second stage of reranking. The metric that we're using to rank the similarity search results is called similarity. And the metric we're using to rank the reranked results is relevance. Here's an article that let's quickly browse through to get a better idea of what's going on. So, when you're comparing two pieces of information or two sequences of tokens, there's multiple techniques for doing so. Hopefully, we're very familiar with similarity search, which is also sometimes called by encoder. It's a bit confusing of a name but anyhow here you can see we have some query input that we convert into a vector and some chunk of data or document that we convert into a vector and we calculate their similarity using cosine similarity. Right? That tells us how similar these two pieces of data are. There is another technique for measuring the similarity or relevance of two pieces of data and this other approach is called the cross encoder approach. Internally this uses an algorithm called cross attention which is the same algorithm found inside of most LLMs. If you're familiar with the history of ML, you might know that the transformer, which is the type of system an LLM is based on, was introduced in a paper",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 2173.76,
+      "end_seconds": 2282.7200000000003,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=2173s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3be506b8fdc65b54da1ff359c66ee1779f038469b05d5f66f617f4718e18c5a2",
+    "text": "is the same algorithm found inside of most LLMs. If you're familiar with the history of ML, you might know that the transformer, which is the type of system an LLM is based on, was introduced in a paper called attention is all you need. This way of measuring the similarity or relevance, I'm going to use the term relevance in reference to cross encoders and the term similarity reference to similarity search or by encoders. This way of measuring the relevance of two pieces of information is much more accurate, but the trade-off is it's much more computationally intensive. If we only used the cross encoder, we would be waiting a very long time to get matches as it's usually about 10 to 200 maybe even more times slower of an algorithm compared to the buy encoder approach. And that's why we have to combine them into this reranking technique in practice. Right? So in a nutshell, what we're doing if we come back is we're first grabbing a bunch of generally similar pieces of information from our search space or our immense body of data. And once we have those initial samples or initial chunks of data, we then analyze those for relevance to our query using a reranker or a cross encoder. A lot of lingo in AI or ML, another name for a",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 2260.72,
+      "end_seconds": 2364.7200000000003,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=2260s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e6963ee4acd2913176f940d1a6908278b83362e9811f95e9a0c45fca0e2776d5",
+    "text": "initial samples or initial chunks of data, we then analyze those for relevance to our query using a reranker or a cross encoder. A lot of lingo in AI or ML, another name for a cross encoder is a reranker. The reranker we're using, FYI, is provided to us by a company called Cohhere. They have one of the best free rankers on the market. There are other ones that are open source. Anyhow, what you do here is pass in a query along with a list of documents and the reranker gives you back a relevance score that measures how similar the query is to each document or chunk of your overall search space. Let's tweak the hyperparameters of this reranking pipeline and see this in a more extreme manner. So let's increase our similarity search results from 10 to 20. Right? We can see that the first record returned from similarity search, the fourth one, the 13th one, and the 15th and the 16th one are the ones that are actually most relevant to our search query, not the top five. What I'm trying to highlight here is when similarity search tells you these documents are the most similar, it's not necessarily the case because similarity search is a very crude way of measuring the similarity of two pieces",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 2344.0,
+      "end_seconds": 2466.319,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=2344s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "da01e804a7b428736b9711e4a0bbd853894e8bd5c88d4db5b7b62573fc888553",
+    "text": "What I'm trying to highlight here is when similarity search tells you these documents are the most similar, it's not necessarily the case because similarity search is a very crude way of measuring the similarity of two pieces of data. A much more accurate way is to use a reranker. And you can see here that the first search result returned by similarity search was actually assessed to be the fifth most relevant reranked result. You can see that right. So chunk 2379 was scored first right according to similarity search or cosign similarity but according to the cross encoder it's actually the fifth most relevant document and it actually scores quite low and the most relevant document which is 476 six was actually the 16th ranked result according to similarity search. So as you can see here what the reranker does for us is helps us identify what's actually most relevant. And I think that's it. So, you now understand re-ranking and in the remaining steps of this journey, we're going to layer on a few more tricks that makes this even more powerful and usable. Next up, we're going to show how you can run a reranking pipeline and after you retrieve your results from the re-ranking pipeline, you can pass them into an LLM or LMM along with your query",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 2446.88,
+      "end_seconds": 2569.52,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=2446s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a413f18eee1d7051e11f2af8cdb5b9e91f43a68a97ab513de8577f5fcb810388",
+    "text": "Next up, we're going to show how you can run a reranking pipeline and after you retrieve your results from the re-ranking pipeline, you can pass them into an LLM or LMM along with your query or prompt so that the LLM can perform all of the analysis and synthesis for you and give you a response back that is more natural. And when you slap a nice UI on top of the LLM's output along the lines of what we prepared here, you get an effect like this. FYI, we're going to be searching across the same exact vector space that we used in the previous demo. If you recall, we ingested a cookbook that had about 600 pages of recipes in it. So, let's send a prompt along the lines of, \"What's an Italian dish that's quick and easy to make?\" Site your sources and pull the dish from your knowledge base. Great. Classic spaghetti with tomato sauce. That's on point. It gives me the ingredients, the instructions, and if we click on this button, we can see the chunks that were retrieved from our knowledge base. This was the top chunk, and it does mention spaghetti. And I don't see anything. Okay, here you see it says spaghetti with tomato sauce. Right. And let's run one more query just for fun.",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 2553.44,
+      "end_seconds": 2670.56,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=2553s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "de216f1b6de32bf2a4876bf03625b6c99e4901e3de61560a9e75e66aa915d5bb",
+    "text": "knowledge base. This was the top chunk, and it does mention spaghetti. And I don't see anything. Okay, here you see it says spaghetti with tomato sauce. Right. And let's run one more query just for fun. What's an Indian dish that's quick and easy to make? Site your sources and pull the dish from your knowledge base. Great. We get curried vegetables. Here are the ingredients and the instructions. And let's take a look at the referenced chunks. Let's look at the first chunk. And says Indian curry, but that's not curried vegetables. Or is it? Let's take a look at the second chunk. This one. Here we go. Curry vegetables. You see that? And if we copy this Let's confirm that it does come from our cookbook, right? Yep. So, you can see it got most of the recipe. 1/4 teaspoon pepper, scalded milk. Yeah, you can see it missed some of the ingredients. So, what we're going to do next is we're going to discuss react agents, which is an abbreviation of reason and act, right? React agents, reason and act agents. And what these agents are going to be able to do is issue multiple queries against our knowledge base. So that if it runs into situations like this where it's not getting the full body of",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 2636.4,
+      "end_seconds": 2811.2,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=2636s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "bb579640b314f36c964565ad4319ff072c4482aa705e610e29823f344156681f",
+    "text": "And what these agents are going to be able to do is issue multiple queries against our knowledge base. So that if it runs into situations like this where it's not getting the full body of information needed to answer the prompt, what it can do is issue multiple queries to retrieve all of the chunks around the one that it's suspecting is related most to the query. And then it can compile those and get the overall gist of the idea and give a complete response instead of a partial one like we're seeing here. Okay. React agents or reason and act agents. Agents are quite a hot topic at the time of recording here in 2025 and rightfully so. If you learn how to use them, you can get incredible leverage for yourself and your company. They're definitely not overhyped, but I would premise they are a bit over complicated. Here is a diagram of what an agent in a nutshell is. And this is an actual agent. A lot of AI systems that people call an agent are not agents. They're actually AI automations. And sometimes that's actually what you need. So the leverage comes from being able to issue a single prompt and have that single prompt result in multiple very dynamic LLM calls. And if you can",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 2794.88,
+      "end_seconds": 2890.319,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=2794s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e49f35e9d8421731c40457856287f19b1835da909e214f12af05bdf869097970",
+    "text": "actually AI automations. And sometimes that's actually what you need. So the leverage comes from being able to issue a single prompt and have that single prompt result in multiple very dynamic LLM calls. And if you can control them and have them, you know, do exactly what you need, it can get incredible outputs. Right? So here's the prompt if you're interested that we're going to use for powering our agent. It's starting with a system message. I've mentioned system message a couple times in this video. All it is is a place where you flavor the persona of the LLM that powers your agent. For example, you're going to say in the system message, act as a lawyer or act as a programmer or act as a marketer, etc. After we specify our system message in our prompt, the next part of our prompt is the message list. This is how we imbue some sense of memory, right? We put the chat history. Then we list the tools or if you come back to this diagram, the actions that the agent is allowed to execute, right? This is just a list of functions. At the end of the day, if you're familiar with programming, a tool is just a function that you can call. We're going to cover",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 2869.68,
+      "end_seconds": 2956.7200000000003,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=2869s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4c2f780fd3510dca5609dee67f5cd800fbb34a0a41e95323000cd626d1b4bd12",
+    "text": "allowed to execute, right? This is just a list of functions. At the end of the day, if you're familiar with programming, a tool is just a function that you can call. We're going to cover tools briefly in the next section and show how it's not that complicated. After we specify the tools, we then provide our prompt, right? And finally, we give our agent a scratch pad, which is a place where it can write whatever it wants. Depending on our task, it might need to keep some notes of what's going on across all the LLM calls, for example. And it might write some stuff here to help it accomplish the goal implied by the prompt. And that's it. So, let's run a little demo here. And don't pay too much attention to the prompt that we're going to issue. Just focus on the fact that for a single prompt, it's resulting in multiple LLM calls under the hood. Up until this point, we've been sending a prompt and that has been triggering a single LLM call. Now, for a single prompt, we're going to get multiple LLM calls. So, here's the prompt we're going to use. Pretty much what this prompt is doing is asking our agent to write some marketing copy and then pass it back into itself",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 2941.44,
+      "end_seconds": 3042.88,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=2941s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8a7d28123dc6f9501a5839fb6dbe97cbfc854d6989925e63ad554252bce2c953",
+    "text": "going to get multiple LLM calls. So, here's the prompt we're going to use. Pretty much what this prompt is doing is asking our agent to write some marketing copy and then pass it back into itself to reflect on how it could be improved. and then pass it back into itself so it can implement those improvements and then give us the final product which we see here. Right? So here we have some marketing copy for an event. Right? Perfect. If we come over to Langsmith, which is a tool that allows us to check out what's going on inside of this little demo, we can see that for our single prompt, right, we had uh prompt that requested some marketing copy to be generated, right? After it writes the marketing copy, we ask it to reflect and deliberate and then return to us the final marketing copy. So you can see for a single prompt, it resulted in one 2 3 4 five LLM calls. And that's the main thing to focus on here. I would say the downside of agents despite this incredible amount of leverage is that it's difficult to control what each of these calls does, right? So, there are tricks that you can employ, of course, and as you get familiar with them, you'll learn how to",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 3015.68,
+      "end_seconds": 3136.5589999999997,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=3015s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c328815a61f546a5d8f63987f6e0e46a72b17e71e6011c5d1311ff8698c2b95d",
+    "text": "leverage is that it's difficult to control what each of these calls does, right? So, there are tricks that you can employ, of course, and as you get familiar with them, you'll learn how to steer them, but it's difficult to get them to do exactly what you want to do every single time. But anyhow, for some use cases, they're appropriate. Anyhow, that's React agent. So, the reason why I'm focusing on this React agent term is the React agent framework is how you can think of most agents under the hood. So, there's all these agents out there. Everybody's building their own agent, but you can fit most agents that people build or offer to the world within this React framework, which follows this agent loop design, right? [Music] Tools. So tools are nothing more than functions if you're familiar with programming or lists of instructions. Right? In this diagram, tools refer to step four, right? So the actions that an LLM can take are the tools it has available to it. The way this works is when we send some prompt to our LLM, we also include the list of tools it has available, right? And when the LLM spits out its output, the LLM might spit out an output that says when we parse it, call this tool, right? And",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 3118.0,
+      "end_seconds": 3225.52,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=3118s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "aa62153864f0ad8de2b09d7c57d5e61b5b77953c7116f3566d3b6ac37a11c776",
+    "text": "to our LLM, we also include the list of tools it has available, right? And when the LLM spits out its output, the LLM might spit out an output that says when we parse it, call this tool, right? And we call the tool. The tool returns its results. And we feed that back into the LLM again. And the LLM can look at the output of what the tool call resulted in. And let's say that accomplished the task of our prompt. When we parse the LLM's second output, the LLM might say stop, right? At which point we break out of the loop and return that result back to the caller. So that's tools, right? So we'll leave it there. I think I don't need to over complicate it, but pretty much what we're going to be doing in the final step of this video, right, the finale is we're going to be giving a React agent access to a retrieval with reranking tool, right? Which is going to trigger some query to our vector space, right? Or our vector database. And the LLM is able to decide the queries, right? instead of us having to come up with them. So we can give some prompt to our React agent and the React agent can break that up into multiple",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 3206.079,
+      "end_seconds": 3298.319,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=3206s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e3d7de5b5af3a7e6fa9273561c5cb497281072e57bb20aa9241fc376f23e17fa",
+    "text": "And the LLM is able to decide the queries, right? instead of us having to come up with them. So we can give some prompt to our React agent and the React agent can break that up into multiple prompts or based on our prompt issue multiple calls to the vector space in order to arrive at the goal indicated by our prompt etc. So let's take a look at what that looks like in step 12. We made it to the finale. Here is the state-of-the-art re-ranking system that we've been referring to this whole time, right? So, it's a React agent that has a reranking tool included, aka this is a form of agentic rag. And we're going to demo this right now. And for context, we're using the same vector space that we've been using in the past few demos or steps. We're going to be searching across a cookbook that consists of about 600 pages worth of recipes. So, let's issue a prompt like this. Give me the best Italian dish that you know of. It should be quick and simple to make. Site your sources. Make sure that you return the complete recipe and refer to your knowledge base for pulling the recipe. Also, I'd like you to return the best German recipe that you have. Same thing. Make sure it's",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 3283.119,
+      "end_seconds": 3387.52,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=3283s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1dffc6549d1c128779f98d2bc3c643d16c1144ddce0dc48ee47821e07d809cf1",
+    "text": "sure that you return the complete recipe and refer to your knowledge base for pulling the recipe. Also, I'd like you to return the best German recipe that you have. Same thing. Make sure it's quick and easy to make and site your sources and refer to your knowledge base for returning the German recipe as well. Also, return an Indian dish with the same requirements. Nice. If we open up the trace or this last call to our agentic rag agent, we can see that three tool calls were made. This one where we searched for Italian dishes. this one where we search for German dishes and this one where we search for Indian dishes, right? And we could go down the rabbit hole of assessing how accurate this was, but now we're getting into the realm of evals, which I will cover in a separate video, but you get the gist of it, right? We have our Italian dish and our German dish and our Indian dish. Right. So, welcome to state-of-the-art reranking.",
+    "metadata": {
+      "video_id": "Vq3oCOVVwwM",
+      "title": "The Hidden Power of Rerankers in AI Systems",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "RAG",
+      "start_seconds": 3366.96,
+      "end_seconds": 3465.0,
+      "url": "https://www.youtube.com/watch?v=Vq3oCOVVwwM&t=3366s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

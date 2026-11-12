@@ -1,0 +1,29 @@
+[
+  {
+    "video_id": "MCHOam13JSk",
+    "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+    "channel": "Data Science Basics | AI",
+    "trainer": "Sudarshan Koirala",
+    "topic": "RAG",
+    "start_seconds": 0,
+    "end_seconds": 1334.0
+  },
+  {
+    "video_id": "eOhTv5WhvSM",
+    "title": "Introduction to LangGraph: Building and Enhancing LLM Agents",
+    "channel": "Data Science Basics | AI",
+    "trainer": "Sudarshan Koirala",
+    "topic": "Agents",
+    "start_seconds": 0,
+    "end_seconds": 1858.0
+  },
+  {
+    "video_id": "HI5b0g_mELA",
+    "title": "Amazon Bedrock RAG Evaluation ( LLM as a Judge ) | Step-by-Step Guide",
+    "channel": "Data Science Basics | AI",
+    "trainer": "Sudarshan Koirala",
+    "topic": "Evaluation",
+    "start_seconds": 0,
+    "end_seconds": 1647.0
+  }
+]

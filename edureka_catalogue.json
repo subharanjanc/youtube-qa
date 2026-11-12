@@ -1,0 +1,29 @@
+[
+  {
+    "video_id": "iLO6yEnIuaA",
+    "title": "Build a RAG Pipeline from Scratch | Retrieval-Augmented Generation (RAG) Tutorial | Edureka",
+    "channel": "edureka!",
+    "trainer": "Edureka",
+    "topic": "RAG",
+    "start_seconds": 0,
+    "end_seconds": 4544.0
+  },
+  {
+    "video_id": "V6ddMAUCOys",
+    "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+    "channel": "edureka!",
+    "trainer": "Edureka",
+    "topic": "LangChain",
+    "start_seconds": 0,
+    "end_seconds": 1162.0
+  },
+  {
+    "video_id": "KEeolG9JlC4",
+    "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+    "channel": "edureka!",
+    "trainer": "Edureka",
+    "topic": "Agents",
+    "start_seconds": 0,
+    "end_seconds": 1033.0
+  }
+]

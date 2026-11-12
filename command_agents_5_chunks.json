@@ -1,0 +1,98 @@
+[
+  {
+    "id": "68152eebec8c5eca293ae6dd639df2853ab38cb75864940125a6f7e2c22f948a",
+    "text": "now we're going to add in some AI let's update the requirements.txt to contain the following thirdparty packages and let's update the main.py file to contain the following contents and you can see a number of import errors at the top so let's sort those out by creating the following files let's create another helper file let's add folder for storing the schema for this application we'll be building and let's add a config folder with a tasks. yo file and an agents. yo file and let's populate the helper and schema folder and the agents. file and the tasks. file and of course let's pip install if we look closely at this config folder we can see we're creating a team of agents who are reporting the latest news regarding Haiti this is what we're going to roll with for demonstration purposes and you can easily tweak these prompts according to the niche you're interested in let's now run this updated application and see what happens all right we get an error that says missing open AI API Key by default crew AI the multi-agent framework we're using uses open AI for powering llms it supports other llms but as I mentioned open AI is the one that it supports by default if you're new to all this agent",
+    "metadata": {
+      "video_id": "AesaLzudK9M",
+      "title": "Hierarchical Agents vs. Sequential Agents with CrewAI",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 0.28,
+      "end_seconds": 132.04,
+      "url": "https://www.youtube.com/watch?v=AesaLzudK9M&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c7f048dcc276fbb419aa8afd243e2a88f612acc4a2878c2a230b0aff40b9c311",
+    "text": "crew AI the multi-agent framework we're using uses open AI for powering llms it supports other llms but as I mentioned open AI is the one that it supports by default if you're new to all this agent stuff here's a diagram that shows what I mean and in the context of this video an agent is a virtual person and the llm acts as this virtual person's brain we can get an open AI API Key by coming over to platform. open.com and signing up after you're signed up make sure to add some credits to your account open AIS platform is payer use it's like a gas station and I suggest adding whatever the minimum allowed amount is because the cost of what we'll be doing here is only going to be in the pennies after you have credits added to your account come over to the dashboard API key section and create a new API key call that whatever you want you can leave every option default by the way and then copy the provisioned API key into your project by coming over to the EMV file and adding a new entry that reads open AI API key equals then paste in the API key and when that's all set up let's try running our application again and see",
+    "metadata": {
+      "video_id": "AesaLzudK9M",
+      "title": "Hierarchical Agents vs. Sequential Agents with CrewAI",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 118.28,
+      "end_seconds": 209.879,
+      "url": "https://www.youtube.com/watch?v=AesaLzudK9M&t=118s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f76e760fdb5ca8927c6cb90de66e095895938de1689136a857a864952e2457c3",
+    "text": "the EMV file and adding a new entry that reads open AI API key equals then paste in the API key and when that's all set up let's try running our application again and see what happens it looks like it's working if we take a closer look at this config code we can see we're creating two agents a manager agent and a reporter agent and this is the task that we're assigning to these agents we would like them to perform research across this list of websites and if we come to the main.py file online 56 the configuration gets tied together as of the time of recording crei lets you run your agents in two modes sequential mode and hierarchical mode sequential mode means that the agents are going to perform the tasks outlined in the tasks. yo file sequentially from top to bottom one by one with sequential mode you have to map each task to the agent you want to perform it in hierarchical mode which is what we're using we assign one of the agents in our crew as the manager and we assign tasks to the the manager the manager will automatically break up the task to be assigned into subtasks and will automatically assign each subtask to the appropriate agents in the crew if you're",
+    "metadata": {
+      "video_id": "AesaLzudK9M",
+      "title": "Hierarchical Agents vs. Sequential Agents with CrewAI",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 190.04,
+      "end_seconds": 281.84000000000003,
+      "url": "https://www.youtube.com/watch?v=AesaLzudK9M&t=190s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "426172d3db8c390b2a0734a84f3b5b41d2a15bfcd83f2fd3295320fc0df6c4f0",
+    "text": "crew as the manager and we assign tasks to the the manager the manager will automatically break up the task to be assigned into subtasks and will automatically assign each subtask to the appropriate agents in the crew if you're familiar with this agent stuff one way of thinking about it is the worker agents become tools of the manager agents depending on the llm and other implementation details the reliability and reproducibility of running hierarchical mode agents can sometimes be impressive and can sometimes be atrocious but for the job of synthesizing information across a number of websites I find hierarchical mode to be a worthy match let's run this crew of Agents a few times to get a better feel for what it's doing let's come over to the tasks. yo file and let's edit this list of links to only have one and then let's run our crew if we come back to the main.py file we can see that the crew will be spitting out its results into a file called report. MD this file right here so let's wait till the crew has finished running and let's see what it spits out into this report. MD file all right it finished running and let's open this up and we can see that we're getting news from the one website that we have",
+    "metadata": {
+      "video_id": "AesaLzudK9M",
+      "title": "Hierarchical Agents vs. Sequential Agents with CrewAI",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 266.96,
+      "end_seconds": 349.72,
+      "url": "https://www.youtube.com/watch?v=AesaLzudK9M&t=266s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "75f6274d3dbea1652c6844d7d90a237037c695dc8fadb33613a4cfadad8a23a9",
+    "text": "see what it spits out into this report. MD file all right it finished running and let's open this up and we can see that we're getting news from the one website that we have listed in the prompt all of these are coming from the same Source now let's add the second website in this list so if this is working as expected we should see news results from two websites all right it finish running and you can see now we're getting news results from two different websites right you can see in the sources The Source link is coming from the two websites we have listed in the prompt all right just to make sure this is working as expected let's add a third website to this list and have our agents perform research on these three news outlets and when I say research what's happening is the agents are instructed to load all of the text on each web page and they're prompted to extract the most meaningful or the most relevant information given the current date so here we are if this works we should see news results from three separate sources all right so our crew finish running and yeah so this first result is coming from hai. Loop news.com this second result is coming",
+    "metadata": {
+      "video_id": "AesaLzudK9M",
+      "title": "Hierarchical Agents vs. Sequential Agents with CrewAI",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 334.24,
+      "end_seconds": 445.08000000000004,
+      "url": "https://www.youtube.com/watch?v=AesaLzudK9M&t=334s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e87ac05eab55a142ba323d3879f3987ff3465546219d64e779a419bb1e42b793",
+    "text": "date so here we are if this works we should see news results from three separate sources all right so our crew finish running and yeah so this first result is coming from hai. Loop news.com this second result is coming from l.com and this third result is coming from Haitian times.com so things appear to be working and I hope that gives you a good feel for what this little multiagent application is doing okay so using this report. MD file is useful for debugging but we don't need to track it in git so let's add another entry to the git ignore and now we're ready to move on to part six in part six we're going to send this AI generated news report via email to a list of subscribers",
+    "metadata": {
+      "video_id": "AesaLzudK9M",
+      "title": "Hierarchical Agents vs. Sequential Agents with CrewAI",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 417.16,
+      "end_seconds": 485.0,
+      "url": "https://www.youtube.com/watch?v=AesaLzudK9M&t=417s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

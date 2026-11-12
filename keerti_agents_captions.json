@@ -1,0 +1,5818 @@
+{
+  "video_id": "wvNgKx2e_LA",
+  "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+  "channel": "Keerti Purswani",
+  "trainer": "Keerti Purswani",
+  "topic": "Agents",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 2705.0,
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.7600000000000002,
+      "text": "I'm going to escalate to the recruiter."
+    },
+    {
+      "start": 2.08,
+      "end": 5.2,
+      "text": "First thing you do when you define a"
+    },
+    {
+      "start": 3.76,
+      "end": 6.879,
+      "text": "graph based on the entire job"
+    },
+    {
+      "start": 5.2,
+      "end": 8.96,
+      "text": "application, we are going to assess and"
+    },
+    {
+      "start": 6.879,
+      "end": 11.36,
+      "text": "we want to add the conditional edges"
+    },
+    {
+      "start": 8.96,
+      "end": 13.440000000000001,
+      "text": "after this assess skill set because it"
+    },
+    {
+      "start": 11.36,
+      "end": 15.599,
+      "text": "was a senior level person. It escalated"
+    },
+    {
+      "start": 13.44,
+      "end": 18.64,
+      "text": "to recruiters. I have 5 years of"
+    },
+    {
+      "start": 15.599,
+      "end": 20.72,
+      "text": "experience in C++. Now that so many LLMs"
+    },
+    {
+      "start": 18.64,
+      "end": 22.72,
+      "text": "are so easily available to all of us,"
+    },
+    {
+      "start": 20.72,
+      "end": 25.439,
+      "text": "creating awesome projects is actually"
+    },
+    {
+      "start": 22.72,
+      "end": 27.919999999999998,
+      "text": "very easy. Now honestly think of any"
+    },
+    {
+      "start": 25.439,
+      "end": 29.92,
+      "text": "domain like healthcare, finance, tech,"
+    },
+    {
+      "start": 27.92,
+      "end": 31.599,
+      "text": "e-commerce, customer support, anything"
+    },
+    {
+      "start": 29.92,
+      "end": 33.760000000000005,
+      "text": "and you can create a mind-blowing"
+    },
+    {
+      "start": 31.599,
+      "end": 36.32,
+      "text": "projects for your resume or for learning"
+    },
+    {
+      "start": 33.76,
+      "end": 38.718999999999994,
+      "text": "purposes and these projects will be damn"
+    },
+    {
+      "start": 36.32,
+      "end": 41.04,
+      "text": "impressive and honestly I'm saying it"
+    },
+    {
+      "start": 38.719,
+      "end": 43.04,
+      "text": "again. It is not hard. It is very easy"
+    },
+    {
+      "start": 41.04,
+      "end": 45.44,
+      "text": "to create these projects. Now let's get"
+    },
+    {
+      "start": 43.04,
+      "end": 47.68,
+      "text": "started with Langraph. I created this"
+    },
+    {
+      "start": 45.44,
+      "end": 50.0,
+      "text": "video on building LLM based apps using"
+    },
+    {
+      "start": 47.68,
+      "end": 51.6,
+      "text": "lang. And I told you that lang is"
+    },
+    {
+      "start": 50.0,
+      "end": 53.44,
+      "text": "awesome. You can build so many apps"
+    },
+    {
+      "start": 51.6,
+      "end": 55.36,
+      "text": "using it. Then why are we talking about"
+    },
+    {
+      "start": 53.44,
+      "end": 57.599999999999994,
+      "text": "lang graph in this video why is it even"
+    },
+    {
+      "start": 55.36,
+      "end": 59.6,
+      "text": "needed? See from the name itself lang"
+    },
+    {
+      "start": 57.6,
+      "end": 61.120000000000005,
+      "text": "chain stands for what? Lang stands for"
+    },
+    {
+      "start": 59.6,
+      "end": 63.28,
+      "text": "the large language models because we're"
+    },
+    {
+      "start": 61.12,
+      "end": 65.03999999999999,
+      "text": "building LLM based apps. And chain"
+    },
+    {
+      "start": 63.28,
+      "end": 66.96000000000001,
+      "text": "stands for what? Chain represents what?"
+    },
+    {
+      "start": 65.04,
+      "end": 69.60000000000001,
+      "text": "Chain is nothing but we are talking"
+    },
+    {
+      "start": 66.96,
+      "end": 71.67999999999999,
+      "text": "about a chain of any executables any"
+    },
+    {
+      "start": 69.6,
+      "end": 73.52,
+      "text": "runnables any task or function that we"
+    },
+    {
+      "start": 71.68,
+      "end": 75.119,
+      "text": "are performing in very simple terms. But"
+    },
+    {
+      "start": 73.52,
+      "end": 76.64,
+      "text": "the point here to note is that we are"
+    },
+    {
+      "start": 75.119,
+      "end": 79.04,
+      "text": "talking about chain. We are talking"
+    },
+    {
+      "start": 76.64,
+      "end": 80.799,
+      "text": "about linear workflows that do this then"
+    },
+    {
+      "start": 79.04,
+      "end": 82.72000000000001,
+      "text": "do this then do this then do this. So"
+    },
+    {
+      "start": 80.799,
+      "end": 84.56,
+      "text": "it's a linear workflow of any"
+    },
+    {
+      "start": 82.72,
+      "end": 86.79899999999999,
+      "text": "executables or any task that we are"
+    },
+    {
+      "start": 84.56,
+      "end": 88.56,
+      "text": "performing. But in reality, in real"
+    },
+    {
+      "start": 86.799,
+      "end": 90.4,
+      "text": "cases, you can think of them. There are"
+    },
+    {
+      "start": 88.56,
+      "end": 92.0,
+      "text": "so many and we are going to take real"
+    },
+    {
+      "start": 90.4,
+      "end": 93.92,
+      "text": "examples. We're going to build so many"
+    },
+    {
+      "start": 92.0,
+      "end": 95.6,
+      "text": "apps. In reality, what is going to"
+    },
+    {
+      "start": 93.92,
+      "end": 97.68,
+      "text": "happen is that the workflows that we are"
+    },
+    {
+      "start": 95.6,
+      "end": 100.079,
+      "text": "going to have is often going to be"
+    },
+    {
+      "start": 97.68,
+      "end": 102.24000000000001,
+      "text": "nonlinear. Right? So, how do we deal"
+    },
+    {
+      "start": 100.079,
+      "end": 104.96,
+      "text": "with these nonlinear workflows?"
+    },
+    {
+      "start": 102.24,
+      "end": 107.759,
+      "text": "Introducing Langraph. Langraph is part"
+    },
+    {
+      "start": 104.96,
+      "end": 110.479,
+      "text": "of Langchain ecosystem. It uses as the"
+    },
+    {
+      "start": 107.759,
+      "end": 113.439,
+      "text": "name suggests a graph-based approach to"
+    },
+    {
+      "start": 110.479,
+      "end": 116.079,
+      "text": "handle complex and dynamic workflows for"
+    },
+    {
+      "start": 113.439,
+      "end": 118.32,
+      "text": "building LLM based apps. Repeating that"
+    },
+    {
+      "start": 116.079,
+      "end": 120.079,
+      "text": "it is graph based as the name suggests."
+    },
+    {
+      "start": 118.32,
+      "end": 122.79899999999999,
+      "text": "So we'll be able to build very very"
+    },
+    {
+      "start": 120.079,
+      "end": 124.719,
+      "text": "complex workflows in very easy way. But"
+    },
+    {
+      "start": 122.799,
+      "end": 126.56,
+      "text": "does that mean that you need to know"
+    },
+    {
+      "start": 124.719,
+      "end": 128.319,
+      "text": "lang chain before knowing langraph"
+    },
+    {
+      "start": 126.56,
+      "end": 130.239,
+      "text": "because it is like an extension of lang"
+    },
+    {
+      "start": 128.319,
+      "end": 132.16,
+      "text": "chain right? Not necessarily. You should"
+    },
+    {
+      "start": 130.239,
+      "end": 133.84,
+      "text": "still be able to follow this video. But"
+    },
+    {
+      "start": 132.16,
+      "end": 135.68,
+      "text": "I highly recommend that after watching"
+    },
+    {
+      "start": 133.84,
+      "end": 137.36,
+      "text": "this do watch the lang also because"
+    },
+    {
+      "start": 135.68,
+      "end": 139.28,
+      "text": "first some of your concepts will get"
+    },
+    {
+      "start": 137.36,
+      "end": 141.52,
+      "text": "like the basic concepts will get clearer"
+    },
+    {
+      "start": 139.28,
+      "end": 143.2,
+      "text": "like chat models and all of that. So I"
+    },
+    {
+      "start": 141.52,
+      "end": 145.04000000000002,
+      "text": "will not be repeating that in a lot of"
+    },
+    {
+      "start": 143.2,
+      "end": 146.79999999999998,
+      "text": "detail. So after watching this make sure"
+    },
+    {
+      "start": 145.04,
+      "end": 148.16,
+      "text": "that you watch lang video as well."
+    },
+    {
+      "start": 146.8,
+      "end": 149.84,
+      "text": "Before we move ahead I would like to"
+    },
+    {
+      "start": 148.16,
+      "end": 151.599,
+      "text": "take a moment over here to say something"
+    },
+    {
+      "start": 149.84,
+      "end": 153.76,
+      "text": "to those who are technically interested"
+    },
+    {
+      "start": 151.599,
+      "end": 155.599,
+      "text": "in geni. See there are two sides of"
+    },
+    {
+      "start": 153.76,
+      "end": 157.35999999999999,
+      "text": "geni. One is if you are learning to"
+    },
+    {
+      "start": 155.599,
+      "end": 159.599,
+      "text": "build your own lms build your own"
+    },
+    {
+      "start": 157.36,
+      "end": 162.0,
+      "text": "version of ch. The other side is when"
+    },
+    {
+      "start": 159.599,
+      "end": 164.16,
+      "text": "you are learning to use LLMs to build"
+    },
+    {
+      "start": 162.0,
+      "end": 165.68,
+      "text": "your own apps. Now if you're learning to"
+    },
+    {
+      "start": 164.16,
+      "end": 167.2,
+      "text": "build your own LLMs, you need to"
+    },
+    {
+      "start": 165.68,
+      "end": 169.28,
+      "text": "understand transformer architecture"
+    },
+    {
+      "start": 167.2,
+      "end": 170.72,
+      "text": "based on which chat GPT is built. And"
+    },
+    {
+      "start": 169.28,
+      "end": 173.28,
+      "text": "for that the prerequisite is"
+    },
+    {
+      "start": 170.72,
+      "end": 175.04,
+      "text": "understanding LSTM and RNN for which the"
+    },
+    {
+      "start": 173.28,
+      "end": 176.48,
+      "text": "prerequisite is neural network. So this"
+    },
+    {
+      "start": 175.04,
+      "end": 178.64,
+      "text": "is how you will be able to build your"
+    },
+    {
+      "start": 176.48,
+      "end": 181.76,
+      "text": "own version of chat GPT neural networks"
+    },
+    {
+      "start": 178.64,
+      "end": 183.11999999999998,
+      "text": "ANN CNN RNN LSTM transformer"
+    },
+    {
+      "start": 181.76,
+      "end": 184.879,
+      "text": "architecture and then you will be ready"
+    },
+    {
+      "start": 183.12,
+      "end": 186.56,
+      "text": "to build. And when you're talking about"
+    },
+    {
+      "start": 184.879,
+      "end": 188.319,
+      "text": "building your own apps, that is where"
+    },
+    {
+      "start": 186.56,
+      "end": 190.8,
+      "text": "lang chain rag and all of this comes"
+    },
+    {
+      "start": 188.319,
+      "end": 192.95899999999997,
+      "text": "into picture. In our 7 weeks hands-on"
+    },
+    {
+      "start": 190.8,
+      "end": 195.44,
+      "text": "genative AI course with educosis, we"
+    },
+    {
+      "start": 192.959,
+      "end": 197.28,
+      "text": "have covered both of these sites in 7"
+    },
+    {
+      "start": 195.44,
+      "end": 199.04,
+      "text": "weeks. Now this is a very very"
+    },
+    {
+      "start": 197.28,
+      "end": 201.12,
+      "text": "comprehensive course which I'm teaching"
+    },
+    {
+      "start": 199.04,
+      "end": 203.67999999999998,
+      "text": "live currently. All the recordings are"
+    },
+    {
+      "start": 201.12,
+      "end": 205.04,
+      "text": "available for lifetime notes code"
+    },
+    {
+      "start": 203.68,
+      "end": 206.72,
+      "text": "everything is available. You can check"
+    },
+    {
+      "start": 205.04,
+      "end": 208.79999999999998,
+      "text": "out the curriculum. You can check out"
+    },
+    {
+      "start": 206.72,
+      "end": 210.959,
+      "text": "the testimonials of our courses for this"
+    },
+    {
+      "start": 208.8,
+      "end": 213.04000000000002,
+      "text": "course also. We already have such great"
+    },
+    {
+      "start": 210.959,
+      "end": 215.28,
+      "text": "feedback. I'm thoroughly enjoying this"
+    },
+    {
+      "start": 213.04,
+      "end": 217.44,
+      "text": "course and I'm so proud of it. If you're"
+    },
+    {
+      "start": 215.28,
+      "end": 219.36,
+      "text": "interested in learning live with me or"
+    },
+    {
+      "start": 217.44,
+      "end": 220.879,
+      "text": "watch the recordings seven weeks, this"
+    },
+    {
+      "start": 219.36,
+      "end": 222.48000000000002,
+      "text": "is very very comprehensive and we are"
+    },
+    {
+      "start": 220.879,
+      "end": 224.0,
+      "text": "covering everything. It's very beginner"
+    },
+    {
+      "start": 222.48,
+      "end": 225.76,
+      "text": "friendly. At least check out the details"
+    },
+    {
+      "start": 224.0,
+      "end": 226.879,
+      "text": "in the description. For now, let's get"
+    },
+    {
+      "start": 225.76,
+      "end": 228.56,
+      "text": "back to the video. We will be"
+    },
+    {
+      "start": 226.879,
+      "end": 230.159,
+      "text": "understanding Lang graph using this"
+    },
+    {
+      "start": 228.56,
+      "end": 232.56,
+      "text": "particular example. This will be the"
+    },
+    {
+      "start": 230.159,
+      "end": 234.72,
+      "text": "goal of our video. And you can see this"
+    },
+    {
+      "start": 232.56,
+      "end": 237.36,
+      "text": "looks like a typical graph. So there are"
+    },
+    {
+      "start": 234.72,
+      "end": 238.879,
+      "text": "many nodes. There are going to be edges."
+    },
+    {
+      "start": 237.36,
+      "end": 241.04000000000002,
+      "text": "So you can see these are different"
+    },
+    {
+      "start": 238.879,
+      "end": 242.79899999999998,
+      "text": "edges. You can see there is one start"
+    },
+    {
+      "start": 241.04,
+      "end": 244.4,
+      "text": "node. You can see there is one end node"
+    },
+    {
+      "start": 242.799,
+      "end": 246.31900000000002,
+      "text": "and there are some other nodes with some"
+    },
+    {
+      "start": 244.4,
+      "end": 247.92000000000002,
+      "text": "names. So what exactly is happening?"
+    },
+    {
+      "start": 246.319,
+      "end": 250.159,
+      "text": "What example have we picked up? Let's"
+    },
+    {
+      "start": 247.92,
+      "end": 252.0,
+      "text": "first discuss that. So here what I'm"
+    },
+    {
+      "start": 250.159,
+      "end": 253.84,
+      "text": "doing is I'm building an app where we"
+    },
+    {
+      "start": 252.0,
+      "end": 256.239,
+      "text": "are going to get applications for a"
+    },
+    {
+      "start": 253.84,
+      "end": 259.12,
+      "text": "particular job role. So for example, our"
+    },
+    {
+      "start": 256.239,
+      "end": 260.959,
+      "text": "job role is say for Python role and we"
+    },
+    {
+      "start": 259.12,
+      "end": 263.36,
+      "text": "are going to get a lot of applications."
+    },
+    {
+      "start": 260.959,
+      "end": 264.479,
+      "text": "So we are building an app to see that"
+    },
+    {
+      "start": 263.36,
+      "end": 266.72,
+      "text": "what should be done with these"
+    },
+    {
+      "start": 264.479,
+      "end": 269.12,
+      "text": "applications. What is the next step to"
+    },
+    {
+      "start": 266.72,
+      "end": 271.199,
+      "text": "be done for any particular candidate? So"
+    },
+    {
+      "start": 269.12,
+      "end": 272.479,
+      "text": "once we have an application the first"
+    },
+    {
+      "start": 271.199,
+      "end": 276.32,
+      "text": "thing that we're going to do over here"
+    },
+    {
+      "start": 272.479,
+      "end": 278.88,
+      "text": "is to make one call to LLM. Now the"
+    },
+    {
+      "start": 276.32,
+      "end": 281.36,
+      "text": "entire benefit of using lang chain lang"
+    },
+    {
+      "start": 278.88,
+      "end": 284.0,
+      "text": "graph is that you can be making the call"
+    },
+    {
+      "start": 281.36,
+      "end": 285.84000000000003,
+      "text": "to literally any lm even at different"
+    },
+    {
+      "start": 284.0,
+      "end": 288.4,
+      "text": "points. Suppose over here I am making"
+    },
+    {
+      "start": 285.84,
+      "end": 290.56,
+      "text": "one call to GPT and over here I'm making"
+    },
+    {
+      "start": 288.4,
+      "end": 292.88,
+      "text": "another call to DC. That is also"
+    },
+    {
+      "start": 290.56,
+      "end": 294.8,
+      "text": "possible right? So it is very very easy"
+    },
+    {
+      "start": 292.88,
+      "end": 298.479,
+      "text": "to use literally there's like one line"
+    },
+    {
+      "start": 294.8,
+      "end": 300.56,
+      "text": "change and it is very simple. Right? So"
+    },
+    {
+      "start": 298.479,
+      "end": 303.199,
+      "text": "let's assume that we are making the call"
+    },
+    {
+      "start": 300.56,
+      "end": 304.8,
+      "text": "to open AAI GPT. That is what we'll be"
+    },
+    {
+      "start": 303.199,
+      "end": 308.40000000000003,
+      "text": "doing over here. We'll be making the"
+    },
+    {
+      "start": 304.8,
+      "end": 310.639,
+      "text": "calls to the same GPT um LLM over here."
+    },
+    {
+      "start": 308.4,
+      "end": 312.56,
+      "text": "So here what I'm making the call for is"
+    },
+    {
+      "start": 310.639,
+      "end": 314.40000000000003,
+      "text": "that whatever is the application that I"
+    },
+    {
+      "start": 312.56,
+      "end": 317.039,
+      "text": "got I'm just going to send that to our"
+    },
+    {
+      "start": 314.4,
+      "end": 319.19899999999996,
+      "text": "LLM which is our GPT in this case and"
+    },
+    {
+      "start": 317.039,
+      "end": 321.039,
+      "text": "we're going to say categorize this"
+    },
+    {
+      "start": 319.199,
+      "end": 322.88,
+      "text": "particular experience into one of the"
+    },
+    {
+      "start": 321.039,
+      "end": 324.71999999999997,
+      "text": "levels. Now the levels can be entry"
+    },
+    {
+      "start": 322.88,
+      "end": 327.52,
+      "text": "level, mid-level or senior level"
+    },
+    {
+      "start": 324.72,
+      "end": 330.08000000000004,
+      "text": "experience. Basically application will"
+    },
+    {
+      "start": 327.52,
+      "end": 332.32,
+      "text": "have like huge text or suppose it is"
+    },
+    {
+      "start": 330.08,
+      "end": 334.96,
+      "text": "generated from rum or anything right. So"
+    },
+    {
+      "start": 332.32,
+      "end": 338.0,
+      "text": "now from that text our LLM is going to"
+    },
+    {
+      "start": 334.96,
+      "end": 340.23999999999995,
+      "text": "analyze it and it is going to categorize"
+    },
+    {
+      "start": 338.0,
+      "end": 342.32,
+      "text": "the application into one of the three"
+    },
+    {
+      "start": 340.24,
+      "end": 344.40000000000003,
+      "text": "levels. So the candidate can be entry"
+    },
+    {
+      "start": 342.32,
+      "end": 346.0,
+      "text": "level, mid-level or senior level. So"
+    },
+    {
+      "start": 344.4,
+      "end": 349.039,
+      "text": "this task is going to be performed by"
+    },
+    {
+      "start": 346.0,
+      "end": 351.36,
+      "text": "LLM. Right? So every node you see is"
+    },
+    {
+      "start": 349.039,
+      "end": 354.08,
+      "text": "going to have a name. Every node has a"
+    },
+    {
+      "start": 351.36,
+      "end": 355.91900000000004,
+      "text": "name and a function associated with it."
+    },
+    {
+      "start": 354.08,
+      "end": 357.35999999999996,
+      "text": "So in this categorize experience"
+    },
+    {
+      "start": 355.919,
+      "end": 358.79999999999995,
+      "text": "function we are going to make the call"
+    },
+    {
+      "start": 357.36,
+      "end": 360.47900000000004,
+      "text": "and we are going to get the response"
+    },
+    {
+      "start": 358.8,
+      "end": 362.40000000000003,
+      "text": "from there that okay this is one of the"
+    },
+    {
+      "start": 360.479,
+      "end": 364.24,
+      "text": "three levels to which our particular"
+    },
+    {
+      "start": 362.4,
+      "end": 365.67999999999995,
+      "text": "candidate belongs and once we have"
+    },
+    {
+      "start": 364.24,
+      "end": 367.52,
+      "text": "categorized the experience of our"
+    },
+    {
+      "start": 365.68,
+      "end": 369.919,
+      "text": "candidate the next thing that we are"
+    },
+    {
+      "start": 367.52,
+      "end": 371.68,
+      "text": "going to do is assess the skills. See we"
+    },
+    {
+      "start": 369.919,
+      "end": 373.35999999999996,
+      "text": "are hiring for a particular role like"
+    },
+    {
+      "start": 371.68,
+      "end": 375.6,
+      "text": "for example we are hiring for a python"
+    },
+    {
+      "start": 373.36,
+      "end": 377.759,
+      "text": "role. Now in this particular application"
+    },
+    {
+      "start": 375.6,
+      "end": 380.639,
+      "text": "we will have something written in the"
+    },
+    {
+      "start": 377.759,
+      "end": 382.72,
+      "text": "application right suppose from there our"
+    },
+    {
+      "start": 380.639,
+      "end": 384.319,
+      "text": "LLM is going to assess the application"
+    },
+    {
+      "start": 382.72,
+      "end": 386.16,
+      "text": "is going to understand that this"
+    },
+    {
+      "start": 384.319,
+      "end": 388.319,
+      "text": "particular candidate is a skilled in"
+    },
+    {
+      "start": 386.16,
+      "end": 391.03900000000004,
+      "text": "what domain like for example Java or"
+    },
+    {
+      "start": 388.319,
+      "end": 392.72,
+      "text": "Python or C++ or whatever and it is"
+    },
+    {
+      "start": 391.039,
+      "end": 394.96,
+      "text": "going to assess the skill. So we are"
+    },
+    {
+      "start": 392.72,
+      "end": 396.319,
+      "text": "going to tell LLM that this is my job"
+    },
+    {
+      "start": 394.96,
+      "end": 397.919,
+      "text": "description or this is the role for"
+    },
+    {
+      "start": 396.319,
+      "end": 400.47900000000004,
+      "text": "which I am hiring and this is the"
+    },
+    {
+      "start": 397.919,
+      "end": 402.71999999999997,
+      "text": "application. Now you assess it and you"
+    },
+    {
+      "start": 400.479,
+      "end": 404.4,
+      "text": "tell me whether it is a match or not."
+    },
+    {
+      "start": 402.72,
+      "end": 406.56,
+      "text": "Understood? So we are not doing the"
+    },
+    {
+      "start": 404.4,
+      "end": 408.71999999999997,
+      "text": "assessment. Our LLM will do it for us."
+    },
+    {
+      "start": 406.56,
+      "end": 410.4,
+      "text": "We just going to make a call over here."
+    },
+    {
+      "start": 408.72,
+      "end": 412.24,
+      "text": "So this was the first node. This is the"
+    },
+    {
+      "start": 410.4,
+      "end": 414.31899999999996,
+      "text": "next second node. Right? So first we"
+    },
+    {
+      "start": 412.24,
+      "end": 416.72,
+      "text": "categorize the experience. After that"
+    },
+    {
+      "start": 414.319,
+      "end": 418.88,
+      "text": "happened, we will go to our next node."
+    },
+    {
+      "start": 416.72,
+      "end": 420.8,
+      "text": "And here again what is going to happen?"
+    },
+    {
+      "start": 418.88,
+      "end": 422.4,
+      "text": "Our LLM is going to do perform the"
+    },
+    {
+      "start": 420.8,
+      "end": 424.24,
+      "text": "action. We're just going to tell that"
+    },
+    {
+      "start": 422.4,
+      "end": 426.0,
+      "text": "this is the job description. This is the"
+    },
+    {
+      "start": 424.24,
+      "end": 428.0,
+      "text": "application that we received. Do the"
+    },
+    {
+      "start": 426.0,
+      "end": 429.599,
+      "text": "assignment and let me know. Now there"
+    },
+    {
+      "start": 428.0,
+      "end": 431.919,
+      "text": "are two things that are possible. our"
+    },
+    {
+      "start": 429.599,
+      "end": 434.0,
+      "text": "LLM will either say it is a match or it"
+    },
+    {
+      "start": 431.919,
+      "end": 435.75899999999996,
+      "text": "is a mismatch. So what we are going to"
+    },
+    {
+      "start": 434.0,
+      "end": 438.24,
+      "text": "do is in this particular example how"
+    },
+    {
+      "start": 435.759,
+      "end": 441.36,
+      "text": "I've designed it is that if it is a"
+    },
+    {
+      "start": 438.24,
+      "end": 443.039,
+      "text": "match if the job skills is what we are"
+    },
+    {
+      "start": 441.36,
+      "end": 444.72,
+      "text": "looking for if the candidate has exactly"
+    },
+    {
+      "start": 443.039,
+      "end": 446.479,
+      "text": "that skills that is what we are looking"
+    },
+    {
+      "start": 444.72,
+      "end": 449.84000000000003,
+      "text": "for then we are just going to schedule"
+    },
+    {
+      "start": 446.479,
+      "end": 452.08,
+      "text": "the HR interview right otherwise so if"
+    },
+    {
+      "start": 449.84,
+      "end": 454.08,
+      "text": "there is a mismatch then I'm going to"
+    },
+    {
+      "start": 452.08,
+      "end": 456.31899999999996,
+      "text": "check the experience of the person if it"
+    },
+    {
+      "start": 454.08,
+      "end": 459.12,
+      "text": "is a very senior level person then the"
+    },
+    {
+      "start": 456.319,
+      "end": 461.68,
+      "text": "mismatch can be okay so for that case"
+    },
+    {
+      "start": 459.12,
+      "end": 463.919,
+      "text": "I'm going to escalate to the recruiter"
+    },
+    {
+      "start": 461.68,
+      "end": 465.36,
+      "text": "but for entry level and mid-level people"
+    },
+    {
+      "start": 463.919,
+      "end": 467.84,
+      "text": "because there are so many people who"
+    },
+    {
+      "start": 465.36,
+      "end": 469.68,
+      "text": "apply for just job application without"
+    },
+    {
+      "start": 467.84,
+      "end": 471.44,
+      "text": "even checking it out. I'm going to"
+    },
+    {
+      "start": 469.68,
+      "end": 474.16,
+      "text": "reject the application then and there"
+    },
+    {
+      "start": 471.44,
+      "end": 476.4,
+      "text": "itself. So I'm repeating it here. I will"
+    },
+    {
+      "start": 474.16,
+      "end": 479.44,
+      "text": "have one condition. Once I get the reply"
+    },
+    {
+      "start": 476.4,
+      "end": 481.52,
+      "text": "from LLM, the response from LLM, I will"
+    },
+    {
+      "start": 479.44,
+      "end": 483.36,
+      "text": "know whether the candidate matches the"
+    },
+    {
+      "start": 481.52,
+      "end": 485.75899999999996,
+      "text": "job description that I had put and if"
+    },
+    {
+      "start": 483.36,
+      "end": 487.68,
+      "text": "the application is match or not. If it"
+    },
+    {
+      "start": 485.759,
+      "end": 491.199,
+      "text": "is match, I'm going to just schedule the"
+    },
+    {
+      "start": 487.68,
+      "end": 494.319,
+      "text": "HR interview. if it is a mismatch but if"
+    },
+    {
+      "start": 491.199,
+      "end": 496.16,
+      "text": "it is a senior level person then I will"
+    },
+    {
+      "start": 494.319,
+      "end": 497.36,
+      "text": "assume that senior level person so might"
+    },
+    {
+      "start": 496.16,
+      "end": 499.12,
+      "text": "have thought of something before"
+    },
+    {
+      "start": 497.36,
+      "end": 501.28000000000003,
+      "text": "applying so I'm going to escalate that"
+    },
+    {
+      "start": 499.12,
+      "end": 504.16,
+      "text": "to the recruiter and let recruiter"
+    },
+    {
+      "start": 501.28,
+      "end": 505.919,
+      "text": "decide what to do but if it is entry-"
+    },
+    {
+      "start": 504.16,
+      "end": 507.59900000000005,
+      "text": "level or mid-level candidate I'm just"
+    },
+    {
+      "start": 505.919,
+      "end": 510.0,
+      "text": "going to reject the application then and"
+    },
+    {
+      "start": 507.599,
+      "end": 512.0,
+      "text": "there so if you'll see over here there"
+    },
+    {
+      "start": 510.0,
+      "end": 513.919,
+      "text": "is a conditional edge so that is why"
+    },
+    {
+      "start": 512.0,
+      "end": 516.159,
+      "text": "there are toted edges over here there is"
+    },
+    {
+      "start": 513.919,
+      "end": 517.919,
+      "text": "a conditional edge based on the response"
+    },
+    {
+      "start": 516.159,
+      "end": 520.56,
+      "text": "that I'm getting over here or based on"
+    },
+    {
+      "start": 517.919,
+      "end": 522.88,
+      "text": "some condition I'm making the call uh"
+    },
+    {
+      "start": 520.56,
+      "end": 524.8,
+      "text": "that which is the next node that we"
+    },
+    {
+      "start": 522.88,
+      "end": 526.32,
+      "text": "should go to. So this is the graph that"
+    },
+    {
+      "start": 524.8,
+      "end": 528.4799999999999,
+      "text": "we'll be building to understand lang"
+    },
+    {
+      "start": 526.32,
+      "end": 530.32,
+      "text": "graph. Again I'm suggesting just like"
+    },
+    {
+      "start": 528.48,
+      "end": 531.9200000000001,
+      "text": "other videos. So I'll be going through"
+    },
+    {
+      "start": 530.32,
+      "end": 534.1600000000001,
+      "text": "the documentation and teaching your"
+    },
+    {
+      "start": 531.92,
+      "end": 536.24,
+      "text": "langraph. So I highly recommend it for"
+    },
+    {
+      "start": 534.16,
+      "end": 538.399,
+      "text": "all the new frameworks libraries that"
+    },
+    {
+      "start": 536.24,
+      "end": 540.16,
+      "text": "are coming up. Try to do the same learn"
+    },
+    {
+      "start": 538.399,
+      "end": 542.399,
+      "text": "to go through the documentation because"
+    },
+    {
+      "start": 540.16,
+      "end": 544.8,
+      "text": "the frameworks and libraries are getting"
+    },
+    {
+      "start": 542.399,
+      "end": 546.48,
+      "text": "changed very frequently and it is"
+    },
+    {
+      "start": 544.8,
+      "end": 547.92,
+      "text": "happening for all the libraries out"
+    },
+    {
+      "start": 546.48,
+      "end": 550.0,
+      "text": "there. There's a lot of development"
+    },
+    {
+      "start": 547.92,
+      "end": 551.519,
+      "text": "going on over here. If there's any major"
+    },
+    {
+      "start": 550.0,
+      "end": 553.519,
+      "text": "update, obviously I'm going to let you"
+    },
+    {
+      "start": 551.519,
+      "end": 555.279,
+      "text": "know and this is there to stay I think"
+    },
+    {
+      "start": 553.519,
+      "end": 556.8,
+      "text": "because lang graph is a very very"
+    },
+    {
+      "start": 555.279,
+      "end": 558.959,
+      "text": "important thing and these concepts are"
+    },
+    {
+      "start": 556.8,
+      "end": 560.64,
+      "text": "going to stay. But still it is a good"
+    },
+    {
+      "start": 558.959,
+      "end": 562.0,
+      "text": "habit to go through documentation and"
+    },
+    {
+      "start": 560.64,
+      "end": 564.08,
+      "text": "learn things and that is how I'm"
+    },
+    {
+      "start": 562.0,
+      "end": 566.56,
+      "text": "teaching as well. So you also try to do"
+    },
+    {
+      "start": 564.08,
+      "end": 568.24,
+      "text": "the same thing open documentation and"
+    },
+    {
+      "start": 566.56,
+      "end": 570.0,
+      "text": "try writing the code yourself after"
+    },
+    {
+      "start": 568.24,
+      "end": 571.6800000000001,
+      "text": "watching the video. So watch the video"
+    },
+    {
+      "start": 570.0,
+      "end": 575.56,
+      "text": "then open the documentation and write"
+    },
+    {
+      "start": 571.68,
+      "end": 575.56,
+      "text": "the entire code yourself."
+    },
+    {
+      "start": 576.399,
+      "end": 579.44,
+      "text": "If you come to the langchain"
+    },
+    {
+      "start": 577.6,
+      "end": 580.8000000000001,
+      "text": "documentation here in the ecosystem"
+    },
+    {
+      "start": 579.44,
+      "end": 583.12,
+      "text": "itself, they have mentioned that lang"
+    },
+    {
+      "start": 580.8,
+      "end": 585.3599999999999,
+      "text": "graph and lang is part of the ecosystem."
+    },
+    {
+      "start": 583.12,
+      "end": 587.279,
+      "text": "Langsmith is basically for inspection,"
+    },
+    {
+      "start": 585.36,
+      "end": 589.92,
+      "text": "monitoring and evaluation. So you can"
+    },
+    {
+      "start": 587.279,
+      "end": 592.32,
+      "text": "see they have written it for debugging,"
+    },
+    {
+      "start": 589.92,
+      "end": 594.7199999999999,
+      "text": "testing, monitoring. Use lang. Uh"
+    },
+    {
+      "start": 592.32,
+      "end": 596.1600000000001,
+      "text": "langraph is very very important. So"
+    },
+    {
+      "start": 594.72,
+      "end": 598.399,
+      "text": "there is also deployment. There's"
+    },
+    {
+      "start": 596.16,
+      "end": 600.64,
+      "text": "langraph platform for that. Let's go to"
+    },
+    {
+      "start": 598.399,
+      "end": 602.16,
+      "text": "the langraph documentation. It is again"
+    },
+    {
+      "start": 600.64,
+      "end": 604.16,
+      "text": "very awesome, right? Everything is"
+    },
+    {
+      "start": 602.16,
+      "end": 605.92,
+      "text": "mentioned very nicely. tutorials"
+    },
+    {
+      "start": 604.16,
+      "end": 608.88,
+      "text": "concepts. So tutorials are actually"
+    },
+    {
+      "start": 605.92,
+      "end": 610.8,
+      "text": "given very nicely. The chatbot tutorial"
+    },
+    {
+      "start": 608.88,
+      "end": 612.48,
+      "text": "that is given literally you just have to"
+    },
+    {
+      "start": 610.8,
+      "end": 614.56,
+      "text": "follow it step by step and we'll do that"
+    },
+    {
+      "start": 612.48,
+      "end": 616.64,
+      "text": "in the coming videos. We'll also do the"
+    },
+    {
+      "start": 614.56,
+      "end": 618.88,
+      "text": "UI part of that using streamllet."
+    },
+    {
+      "start": 616.64,
+      "end": 621.04,
+      "text": "There's also documentation given for rag"
+    },
+    {
+      "start": 618.88,
+      "end": 623.36,
+      "text": "and there's a lot of it given. So we'll"
+    },
+    {
+      "start": 621.04,
+      "end": 625.4399999999999,
+      "text": "go through all of this one by one. But"
+    },
+    {
+      "start": 623.36,
+      "end": 627.519,
+      "text": "one very uh nice section that I found"
+    },
+    {
+      "start": 625.44,
+      "end": 629.0400000000001,
+      "text": "like really really helpful for learning"
+    },
+    {
+      "start": 627.519,
+      "end": 630.64,
+      "text": "the basics. So other than learning the"
+    },
+    {
+      "start": 629.04,
+      "end": 633.519,
+      "text": "basics, what I really suggest you to go"
+    },
+    {
+      "start": 630.64,
+      "end": 635.6,
+      "text": "through is go to concepts and go through"
+    },
+    {
+      "start": 633.519,
+      "end": 637.92,
+      "text": "glossery because here they have"
+    },
+    {
+      "start": 635.6,
+      "end": 639.76,
+      "text": "explained all the important concepts in"
+    },
+    {
+      "start": 637.92,
+      "end": 641.8389999999999,
+      "text": "such a nice way and this is what we'll"
+    },
+    {
+      "start": 639.76,
+      "end": 644.0,
+      "text": "be following today to build our graph to"
+    },
+    {
+      "start": 641.839,
+      "end": 645.6,
+      "text": "understand the concepts in very easy"
+    },
+    {
+      "start": 644.0,
+      "end": 648.32,
+      "text": "way. They have mentioned everything what"
+    },
+    {
+      "start": 645.6,
+      "end": 651.76,
+      "text": "to do then the steps right everything is"
+    },
+    {
+      "start": 648.32,
+      "end": 651.7600000000001,
+      "text": "given we just have to follow"
+    },
+    {
+      "start": 652.279,
+      "end": 656.8,
+      "text": "this we'll be writing the code in Google"
+    },
+    {
+      "start": 654.72,
+      "end": 659.0400000000001,
+      "text": "collab and the link to notes of all the"
+    },
+    {
+      "start": 656.8,
+      "end": 660.4799999999999,
+      "text": "videos in the ML series and the code"
+    },
+    {
+      "start": 659.04,
+      "end": 662.16,
+      "text": "everything is available in the"
+    },
+    {
+      "start": 660.48,
+      "end": 663.9200000000001,
+      "text": "description you can check that out the"
+    },
+    {
+      "start": 662.16,
+      "end": 665.36,
+      "text": "link is there and we are going to get"
+    },
+    {
+      "start": 663.92,
+      "end": 667.519,
+      "text": "started with some boiler plate code"
+    },
+    {
+      "start": 665.36,
+      "end": 668.9590000000001,
+      "text": "first I'm going to be installing all the"
+    },
+    {
+      "start": 667.519,
+      "end": 671.519,
+      "text": "libraries that we need so we are going"
+    },
+    {
+      "start": 668.959,
+      "end": 673.5999999999999,
+      "text": "to be using lang chain lang chain core"
+    },
+    {
+      "start": 671.519,
+      "end": 678.88,
+      "text": "lang chain community lang graphs I'm"
+    },
+    {
+      "start": 673.6,
+      "end": 678.88,
+      "text": "just quickly just installing out of"
+    },
+    {
+      "start": 683.079,
+      "end": 686.7199999999999,
+      "text": "it. Give it a"
+    },
+    {
+      "start": 693.079,
+      "end": 697.04,
+      "text": "minute. Now that the installation is"
+    },
+    {
+      "start": 695.279,
+      "end": 699.519,
+      "text": "complete, we are going to set up OpenAI"
+    },
+    {
+      "start": 697.04,
+      "end": 701.36,
+      "text": "API keys. So if you go to the keys part"
+    },
+    {
+      "start": 699.519,
+      "end": 703.2,
+      "text": "over here, you can see that I have a lot"
+    },
+    {
+      "start": 701.36,
+      "end": 705.12,
+      "text": "of keys and all of them are disabled. So"
+    },
+    {
+      "start": 703.2,
+      "end": 707.76,
+      "text": "I'm just going to enable it. Copy the"
+    },
+    {
+      "start": 705.12,
+      "end": 710.24,
+      "text": "name of it and I'm going to start using"
+    },
+    {
+      "start": 707.76,
+      "end": 712.6,
+      "text": "it. I so I need to load it. So basically"
+    },
+    {
+      "start": 710.24,
+      "end": 716.519,
+      "text": "from google"
+    },
+    {
+      "start": 712.6,
+      "end": 720.0,
+      "text": "collab I need to import user"
+    },
+    {
+      "start": 716.519,
+      "end": 722.64,
+      "text": "data and I'm going to be using os to set"
+    },
+    {
+      "start": 720.0,
+      "end": 722.64,
+      "text": "the environment"
+    },
+    {
+      "start": 723.0,
+      "end": 727.12,
+      "text": "variables. It is already giving me"
+    },
+    {
+      "start": 725.12,
+      "end": 729.36,
+      "text": "autocomplete but here instead of the"
+    },
+    {
+      "start": 727.12,
+      "end": 731.6,
+      "text": "name I had this name. So I'm just going"
+    },
+    {
+      "start": 729.36,
+      "end": 735.04,
+      "text": "to copy paste that. So we have the key."
+    },
+    {
+      "start": 731.6,
+      "end": 735.0400000000001,
+      "text": "So we can also print it to"
+    },
+    {
+      "start": 735.56,
+      "end": 738.959,
+      "text": "check. Before starting to build our"
+    },
+    {
+      "start": 737.68,
+      "end": 740.56,
+      "text": "graph, there's just one more thing that"
+    },
+    {
+      "start": 738.959,
+      "end": 742.8,
+      "text": "we need to do. We need to be able to"
+    },
+    {
+      "start": 740.56,
+      "end": 744.7199999999999,
+      "text": "connect with our LLM. And for that, we"
+    },
+    {
+      "start": 742.8,
+      "end": 746.4799999999999,
+      "text": "create something called chat models."
+    },
+    {
+      "start": 744.72,
+      "end": 748.1600000000001,
+      "text": "This part I had already covered in the"
+    },
+    {
+      "start": 746.48,
+      "end": 750.16,
+      "text": "lang video, but still just quickly"
+    },
+    {
+      "start": 748.16,
+      "end": 751.92,
+      "text": "covering it again. See, whenever we need"
+    },
+    {
+      "start": 750.16,
+      "end": 753.76,
+      "text": "to interact with the LLMs, we create"
+    },
+    {
+      "start": 751.92,
+      "end": 755.76,
+      "text": "chat models. Now these are different"
+    },
+    {
+      "start": 753.76,
+      "end": 757.279,
+      "text": "different models for LLMs. Like for"
+    },
+    {
+      "start": 755.76,
+      "end": 759.4399999999999,
+      "text": "example, because here we are going to be"
+    },
+    {
+      "start": 757.279,
+      "end": 761.4399999999999,
+      "text": "using OpenAI LM. So I'm going to be"
+    },
+    {
+      "start": 759.44,
+      "end": 764.32,
+      "text": "creating chat open like this. You can"
+    },
+    {
+      "start": 761.44,
+      "end": 767.36,
+      "text": "use chat anthropic model or any model"
+    },
+    {
+      "start": 764.32,
+      "end": 769.519,
+      "text": "that you like mistrill anyone. Okay. So"
+    },
+    {
+      "start": 767.36,
+      "end": 773.24,
+      "text": "I'm going to be creating for openi. So I"
+    },
+    {
+      "start": 769.519,
+      "end": 776.519,
+      "text": "am going to be importing from langchain"
+    },
+    {
+      "start": 773.24,
+      "end": 779.2,
+      "text": "openai. So they have chat"
+    },
+    {
+      "start": 776.519,
+      "end": 781.079,
+      "text": "models and I'm going to be importing"
+    },
+    {
+      "start": 779.2,
+      "end": 783.839,
+      "text": "chat"
+    },
+    {
+      "start": 781.079,
+      "end": 786.4799999999999,
+      "text": "openai and I don't need this. I just"
+    },
+    {
+      "start": 783.839,
+      "end": 786.48,
+      "text": "need to create"
+    },
+    {
+      "start": 787.639,
+      "end": 791.92,
+      "text": "lm and just to show you some basic"
+    },
+    {
+      "start": 790.079,
+      "end": 796.04,
+      "text": "stuff. So now you can invoke any"
+    },
+    {
+      "start": 791.92,
+      "end": 800.16,
+      "text": "messages like this. So you can do who is"
+    },
+    {
+      "start": 796.04,
+      "end": 801.519,
+      "text": "the PM of India and you should be able"
+    },
+    {
+      "start": 800.16,
+      "end": 803.04,
+      "text": "to run this and you should be able to"
+    },
+    {
+      "start": 801.519,
+      "end": 805.76,
+      "text": "get the response. So you can see it is"
+    },
+    {
+      "start": 803.04,
+      "end": 807.8389999999999,
+      "text": "under the content section. Right? So I'm"
+    },
+    {
+      "start": 805.76,
+      "end": 809.279,
+      "text": "not going to be focusing a lot on this."
+    },
+    {
+      "start": 807.839,
+      "end": 812.8000000000001,
+      "text": "This part we have already covered. Now"
+    },
+    {
+      "start": 809.279,
+      "end": 812.8,
+      "text": "let's get started with building our"
+    },
+    {
+      "start": 813.32,
+      "end": 817.839,
+      "text": "graph. Coming back to the documentation"
+    },
+    {
+      "start": 815.76,
+      "end": 820.399,
+      "text": "here we can see our graphs basically"
+    },
+    {
+      "start": 817.839,
+      "end": 822.639,
+      "text": "have three key components. See from the"
+    },
+    {
+      "start": 820.399,
+      "end": 823.839,
+      "text": "names nodes and edges you should be able"
+    },
+    {
+      "start": 822.639,
+      "end": 825.6800000000001,
+      "text": "to understand a bit from the"
+    },
+    {
+      "start": 823.839,
+      "end": 827.9200000000001,
+      "text": "visualization of the graphs itself."
+    },
+    {
+      "start": 825.68,
+      "end": 829.76,
+      "text": "Nodes are the nodes of the graph and the"
+    },
+    {
+      "start": 827.92,
+      "end": 832.639,
+      "text": "connections are called edges. This is"
+    },
+    {
+      "start": 829.76,
+      "end": 835.519,
+      "text": "fairly easy. But the most important part"
+    },
+    {
+      "start": 832.639,
+      "end": 837.36,
+      "text": "in lang in lang graph is actually state."
+    },
+    {
+      "start": 835.519,
+      "end": 839.839,
+      "text": "So it is very very important. If you see"
+    },
+    {
+      "start": 837.36,
+      "end": 842.5600000000001,
+      "text": "over here even in nodes see nodes"
+    },
+    {
+      "start": 839.839,
+      "end": 845.12,
+      "text": "receive the current state as input. They"
+    },
+    {
+      "start": 842.56,
+      "end": 847.92,
+      "text": "perform some computation or side effect"
+    },
+    {
+      "start": 845.12,
+      "end": 851.12,
+      "text": "and return an updated state. So state is"
+    },
+    {
+      "start": 847.92,
+      "end": 853.199,
+      "text": "very very important even edges. So what"
+    },
+    {
+      "start": 851.12,
+      "end": 855.76,
+      "text": "they do is they determine which node to"
+    },
+    {
+      "start": 853.199,
+      "end": 858.4799999999999,
+      "text": "execute next based on the current state."
+    },
+    {
+      "start": 855.76,
+      "end": 861.04,
+      "text": "Again state is very very important. So"
+    },
+    {
+      "start": 858.48,
+      "end": 863.279,
+      "text": "if I go down you can see the first thing"
+    },
+    {
+      "start": 861.04,
+      "end": 865.04,
+      "text": "you do when you define a graph is define"
+    },
+    {
+      "start": 863.279,
+      "end": 866.88,
+      "text": "the state of the graph. So we know we"
+    },
+    {
+      "start": 865.04,
+      "end": 868.7199999999999,
+      "text": "need to define the state of the graph."
+    },
+    {
+      "start": 866.88,
+      "end": 871.12,
+      "text": "How do we do that? And what is state?"
+    },
+    {
+      "start": 868.72,
+      "end": 873.1990000000001,
+      "text": "First of all see state is nothing but"
+    },
+    {
+      "start": 871.12,
+      "end": 874.72,
+      "text": "schema of the graph. Now what is schema"
+    },
+    {
+      "start": 873.199,
+      "end": 876.959,
+      "text": "of the graph? Basically in very simple"
+    },
+    {
+      "start": 874.72,
+      "end": 878.9590000000001,
+      "text": "terms the data that we are storing like"
+    },
+    {
+      "start": 876.959,
+      "end": 880.4799999999999,
+      "text": "for example the example that we have"
+    },
+    {
+      "start": 878.959,
+      "end": 882.959,
+      "text": "taken what all things will we store we"
+    },
+    {
+      "start": 880.48,
+      "end": 884.72,
+      "text": "will store application we will store"
+    },
+    {
+      "start": 882.959,
+      "end": 886.3199999999999,
+      "text": "experience level we will store whether"
+    },
+    {
+      "start": 884.72,
+      "end": 888.399,
+      "text": "the skills matched or not and some"
+    },
+    {
+      "start": 886.32,
+      "end": 891.519,
+      "text": "response right so these are all the data"
+    },
+    {
+      "start": 888.399,
+      "end": 893.68,
+      "text": "that we need to save and this data is"
+    },
+    {
+      "start": 891.519,
+      "end": 896.0,
+      "text": "going to be updated as we go across the"
+    },
+    {
+      "start": 893.68,
+      "end": 899.199,
+      "text": "nodes. So initially suppose we were in"
+    },
+    {
+      "start": 896.0,
+      "end": 901.68,
+      "text": "one node and after that we analyze the"
+    },
+    {
+      "start": 899.199,
+      "end": 903.3599999999999,
+      "text": "experience level. Now when we go to the"
+    },
+    {
+      "start": 901.68,
+      "end": 905.4399999999999,
+      "text": "next node the state would be updated"
+    },
+    {
+      "start": 903.36,
+      "end": 908.32,
+      "text": "right. So that is exactly what do what"
+    },
+    {
+      "start": 905.44,
+      "end": 910.24,
+      "text": "we do in nodes. So we take the input we"
+    },
+    {
+      "start": 908.32,
+      "end": 913.7600000000001,
+      "text": "perform some computation and we return"
+    },
+    {
+      "start": 910.24,
+      "end": 916.0,
+      "text": "an updated state. So state is that data"
+    },
+    {
+      "start": 913.76,
+      "end": 917.6,
+      "text": "that is being updated. So that is going"
+    },
+    {
+      "start": 916.0,
+      "end": 919.68,
+      "text": "to be there throughout a workflow."
+    },
+    {
+      "start": 917.6,
+      "end": 921.9200000000001,
+      "text": "Workflow meaning the graph flow that we"
+    },
+    {
+      "start": 919.68,
+      "end": 923.8389999999999,
+      "text": "have. So in one entire workflow you're"
+    },
+    {
+      "start": 921.92,
+      "end": 925.4399999999999,
+      "text": "going to have one particular state. So"
+    },
+    {
+      "start": 923.839,
+      "end": 927.839,
+      "text": "if you execute again your state is"
+    },
+    {
+      "start": 925.44,
+      "end": 929.6,
+      "text": "obviously going to change but in that"
+    },
+    {
+      "start": 927.839,
+      "end": 930.9590000000001,
+      "text": "workflow your state is going to be"
+    },
+    {
+      "start": 929.6,
+      "end": 932.72,
+      "text": "updated. Your data is going to be"
+    },
+    {
+      "start": 930.959,
+      "end": 934.56,
+      "text": "updated. We understood that we need to"
+    },
+    {
+      "start": 932.72,
+      "end": 937.0400000000001,
+      "text": "define the state of the graph. But how"
+    },
+    {
+      "start": 934.56,
+      "end": 939.279,
+      "text": "does it look like? See state of the"
+    },
+    {
+      "start": 937.04,
+      "end": 940.959,
+      "text": "graph is nothing but a type dictionary."
+    },
+    {
+      "start": 939.279,
+      "end": 943.519,
+      "text": "In very simple terms it's just a"
+    },
+    {
+      "start": 940.959,
+      "end": 945.92,
+      "text": "dictionary where we are having extra tag"
+    },
+    {
+      "start": 943.519,
+      "end": 947.279,
+      "text": "checking. Basically for every data that"
+    },
+    {
+      "start": 945.92,
+      "end": 949.12,
+      "text": "we're going to store like for example"
+    },
+    {
+      "start": 947.279,
+      "end": 951.199,
+      "text": "we're going to store application or"
+    },
+    {
+      "start": 949.12,
+      "end": 952.72,
+      "text": "we're going to store anything right. So"
+    },
+    {
+      "start": 951.199,
+      "end": 954.88,
+      "text": "that we are going to tell that this is"
+    },
+    {
+      "start": 952.72,
+      "end": 956.72,
+      "text": "going to be of what type. So in our case"
+    },
+    {
+      "start": 954.88,
+      "end": 958.88,
+      "text": "suppose we say that our application is"
+    },
+    {
+      "start": 956.72,
+      "end": 960.32,
+      "text": "of going to be of the type string. So we"
+    },
+    {
+      "start": 958.88,
+      "end": 962.32,
+      "text": "need to mention over there so that there"
+    },
+    {
+      "start": 960.32,
+      "end": 964.399,
+      "text": "is type checking to make sure that the"
+    },
+    {
+      "start": 962.32,
+      "end": 965.9200000000001,
+      "text": "state is like the data in the state is"
+    },
+    {
+      "start": 964.399,
+      "end": 968.639,
+      "text": "of the same type throughout the"
+    },
+    {
+      "start": 965.92,
+      "end": 970.16,
+      "text": "workflow. So we are going to create type"
+    },
+    {
+      "start": 968.639,
+      "end": 971.839,
+      "text": "dictionary and that is how we're going"
+    },
+    {
+      "start": 970.16,
+      "end": 974.56,
+      "text": "to create the state. So let's go back to"
+    },
+    {
+      "start": 971.839,
+      "end": 977.6800000000001,
+      "text": "our code and let's start creating it. So"
+    },
+    {
+      "start": 974.56,
+      "end": 981.279,
+      "text": "we are going to create state and here I"
+    },
+    {
+      "start": 977.68,
+      "end": 983.519,
+      "text": "need to have typed dictionary and how to"
+    },
+    {
+      "start": 981.279,
+      "end": 985.4399999999999,
+      "text": "import that see it already gave from"
+    },
+    {
+      "start": 983.519,
+      "end": 987.68,
+      "text": "typing I'm importing or you can also"
+    },
+    {
+      "start": 985.44,
+      "end": 989.9200000000001,
+      "text": "import from typing extensions I'm"
+    },
+    {
+      "start": 987.68,
+      "end": 991.279,
+      "text": "importing type dictionary and in this"
+    },
+    {
+      "start": 989.92,
+      "end": 994.36,
+      "text": "state what are the things that we are"
+    },
+    {
+      "start": 991.279,
+      "end": 996.639,
+      "text": "going to keep we are going to keep"
+    },
+    {
+      "start": 994.36,
+      "end": 998.72,
+      "text": "application so that is going to be of"
+    },
+    {
+      "start": 996.639,
+      "end": 1000.279,
+      "text": "the type string we are going to have"
+    },
+    {
+      "start": 998.72,
+      "end": 1003.519,
+      "text": "experience"
+    },
+    {
+      "start": 1000.279,
+      "end": 1007.6,
+      "text": "level again of the type string we are"
+    },
+    {
+      "start": 1003.519,
+      "end": 1009.12,
+      "text": "going to have skill match again of the"
+    },
+    {
+      "start": 1007.6,
+      "end": 1012.399,
+      "text": "type string. So currently I'm just"
+    },
+    {
+      "start": 1009.12,
+      "end": 1012.399,
+      "text": "taking everything as a string"
+    },
+    {
+      "start": 1014.04,
+      "end": 1017.8389999999999,
+      "text": "itself. So we are done defining the"
+    },
+    {
+      "start": 1016.32,
+      "end": 1019.0,
+      "text": "state of the graph. Let's see what to do"
+    },
+    {
+      "start": 1017.839,
+      "end": 1021.6800000000001,
+      "text": "next. Let's go back to the"
+    },
+    {
+      "start": 1019.0,
+      "end": 1022.959,
+      "text": "documentation. So here if we go back the"
+    },
+    {
+      "start": 1021.68,
+      "end": 1025.28,
+      "text": "next thing that we obviously have to do"
+    },
+    {
+      "start": 1022.959,
+      "end": 1027.9189999999999,
+      "text": "is create the graph. So here it is given"
+    },
+    {
+      "start": 1025.28,
+      "end": 1031.039,
+      "text": "the state graph class is the main graph"
+    },
+    {
+      "start": 1027.919,
+      "end": 1033.679,
+      "text": "class to use. This is parameterized by a"
+    },
+    {
+      "start": 1031.039,
+      "end": 1035.52,
+      "text": "userdefined state object. So we just"
+    },
+    {
+      "start": 1033.679,
+      "end": 1037.6000000000001,
+      "text": "defined one state object right? So that"
+    },
+    {
+      "start": 1035.52,
+      "end": 1039.439,
+      "text": "is the userdefined state object. We need"
+    },
+    {
+      "start": 1037.6,
+      "end": 1041.9189999999999,
+      "text": "to send that as a parameter to create"
+    },
+    {
+      "start": 1039.439,
+      "end": 1047.439,
+      "text": "the state graph. Obvious right? So let's"
+    },
+    {
+      "start": 1041.919,
+      "end": 1047.439,
+      "text": "do that. Let's run this and from lang"
+    },
+    {
+      "start": 1047.799,
+      "end": 1054.0,
+      "text": "graph I'm going to import state"
+    },
+    {
+      "start": 1051.559,
+      "end": 1056.28,
+      "text": "graph and we are going to create a state"
+    },
+    {
+      "start": 1054.0,
+      "end": 1059.28,
+      "text": "graph that is going to be our"
+    },
+    {
+      "start": 1056.28,
+      "end": 1063.08,
+      "text": "workflow and in this I obviously need to"
+    },
+    {
+      "start": 1059.28,
+      "end": 1063.08,
+      "text": "send my state"
+    },
+    {
+      "start": 1064.48,
+      "end": 1068.559,
+      "text": "So we are done defining our state graph."
+    },
+    {
+      "start": 1066.559,
+      "end": 1070.559,
+      "text": "Now we need to start adding the nodes at"
+    },
+    {
+      "start": 1068.559,
+      "end": 1072.3999999999999,
+      "text": "the edges to it. In order to add nodes,"
+    },
+    {
+      "start": 1070.559,
+      "end": 1075.039,
+      "text": "let's go back to our documentation. And"
+    },
+    {
+      "start": 1072.4,
+      "end": 1077.6000000000001,
+      "text": "here if we go to the node section here,"
+    },
+    {
+      "start": 1075.039,
+      "end": 1079.52,
+      "text": "we can see that see how they are doing"
+    },
+    {
+      "start": 1077.6,
+      "end": 1081.4399999999998,
+      "text": "it. Let's look at the example first. So"
+    },
+    {
+      "start": 1079.52,
+      "end": 1082.8799999999999,
+      "text": "they are also building one state graph."
+    },
+    {
+      "start": 1081.44,
+      "end": 1085.52,
+      "text": "They are calling it builder. We called"
+    },
+    {
+      "start": 1082.88,
+      "end": 1086.96,
+      "text": "it workflow. Right? And here in order to"
+    },
+    {
+      "start": 1085.52,
+      "end": 1089.52,
+      "text": "add node, they have called a function"
+    },
+    {
+      "start": 1086.96,
+      "end": 1091.8400000000001,
+      "text": "called add node. And here they are"
+    },
+    {
+      "start": 1089.52,
+      "end": 1093.52,
+      "text": "passing one node name. So this can be"
+    },
+    {
+      "start": 1091.84,
+      "end": 1094.9599999999998,
+      "text": "either my node or the node. This can be"
+    },
+    {
+      "start": 1093.52,
+      "end": 1096.8799999999999,
+      "text": "anything. This is the name of the node"
+    },
+    {
+      "start": 1094.96,
+      "end": 1098.64,
+      "text": "that you will see in the diagram. And"
+    },
+    {
+      "start": 1096.88,
+      "end": 1101.2800000000002,
+      "text": "this is the function corresponding to"
+    },
+    {
+      "start": 1098.64,
+      "end": 1103.1200000000001,
+      "text": "it. So every node is supposed to perform"
+    },
+    {
+      "start": 1101.28,
+      "end": 1105.52,
+      "text": "some action, right? That action will be"
+    },
+    {
+      "start": 1103.12,
+      "end": 1107.9189999999999,
+      "text": "obviously written in a function in a"
+    },
+    {
+      "start": 1105.52,
+      "end": 1109.76,
+      "text": "method. Now what will it take? See, it"
+    },
+    {
+      "start": 1107.919,
+      "end": 1112.3200000000002,
+      "text": "takes here it is given. So the first"
+    },
+    {
+      "start": 1109.76,
+      "end": 1114.48,
+      "text": "positional argument is the state, right?"
+    },
+    {
+      "start": 1112.32,
+      "end": 1116.6399999999999,
+      "text": "So state is what we need to pass. That"
+    },
+    {
+      "start": 1114.48,
+      "end": 1118.96,
+      "text": "is what we had seen at the top as well."
+    },
+    {
+      "start": 1116.64,
+      "end": 1121.039,
+      "text": "So here we saw that they receive the"
+    },
+    {
+      "start": 1118.96,
+      "end": 1123.039,
+      "text": "current state as the input perform some"
+    },
+    {
+      "start": 1121.039,
+      "end": 1125.44,
+      "text": "computation or side effect and return an"
+    },
+    {
+      "start": 1123.039,
+      "end": 1127.76,
+      "text": "updated state. So we also need to return"
+    },
+    {
+      "start": 1125.44,
+      "end": 1130.3200000000002,
+      "text": "an updated state. Right? So if I go back"
+    },
+    {
+      "start": 1127.76,
+      "end": 1132.48,
+      "text": "over here we are passing one state and"
+    },
+    {
+      "start": 1130.32,
+      "end": 1133.9189999999999,
+      "text": "we will also return one state. This is"
+    },
+    {
+      "start": 1132.48,
+      "end": 1136.24,
+      "text": "basically returning a dictionary which"
+    },
+    {
+      "start": 1133.919,
+      "end": 1137.5200000000002,
+      "text": "is state itself. Right? Here if you see"
+    },
+    {
+      "start": 1136.24,
+      "end": 1139.52,
+      "text": "they have also given one second"
+    },
+    {
+      "start": 1137.52,
+      "end": 1141.12,
+      "text": "positional argument but that is optional"
+    },
+    {
+      "start": 1139.52,
+      "end": 1142.799,
+      "text": "and that is configuration. We are not"
+    },
+    {
+      "start": 1141.12,
+      "end": 1144.8799999999999,
+      "text": "going to be talking about that not"
+    },
+    {
+      "start": 1142.799,
+      "end": 1146.6399999999999,
+      "text": "needed in our example. So what we are"
+    },
+    {
+      "start": 1144.88,
+      "end": 1148.5590000000002,
+      "text": "going to do is we just need to do"
+    },
+    {
+      "start": 1146.64,
+      "end": 1150.16,
+      "text": "workflow dot add node. Give the name of"
+    },
+    {
+      "start": 1148.559,
+      "end": 1152.08,
+      "text": "the node and the function corresponding"
+    },
+    {
+      "start": 1150.16,
+      "end": 1153.52,
+      "text": "to it. So let's quickly write that code."
+    },
+    {
+      "start": 1152.08,
+      "end": 1155.76,
+      "text": "What is the first node that we should be"
+    },
+    {
+      "start": 1153.52,
+      "end": 1157.039,
+      "text": "creating? Uh in our example, what was"
+    },
+    {
+      "start": 1155.76,
+      "end": 1158.799,
+      "text": "the first thing that we were supposed to"
+    },
+    {
+      "start": 1157.039,
+      "end": 1160.799,
+      "text": "do? Whatever application we are getting"
+    },
+    {
+      "start": 1158.799,
+      "end": 1162.799,
+      "text": "of the candidate, we need to categorize"
+    },
+    {
+      "start": 1160.799,
+      "end": 1164.72,
+      "text": "it to one of the three levels entry"
+    },
+    {
+      "start": 1162.799,
+      "end": 1166.72,
+      "text": "level, mid-level or senior level. Right?"
+    },
+    {
+      "start": 1164.72,
+      "end": 1168.799,
+      "text": "So let's do that. We have the workflow"
+    },
+    {
+      "start": 1166.72,
+      "end": 1172.24,
+      "text": "now. So now I need to start adding the"
+    },
+    {
+      "start": 1168.799,
+      "end": 1174.48,
+      "text": "nodes. So I'm going to do workflow dot"
+    },
+    {
+      "start": 1172.24,
+      "end": 1176.76,
+      "text": "add node. And here I'm going to give the"
+    },
+    {
+      "start": 1174.48,
+      "end": 1179.559,
+      "text": "name as say"
+    },
+    {
+      "start": 1176.76,
+      "end": 1181.679,
+      "text": "categorize"
+    },
+    {
+      "start": 1179.559,
+      "end": 1184.0,
+      "text": "experience. This will be the name of the"
+    },
+    {
+      "start": 1181.679,
+      "end": 1185.8400000000001,
+      "text": "node. And I need to write a function. So"
+    },
+    {
+      "start": 1184.0,
+      "end": 1188.799,
+      "text": "I'm going to give the same name to that."
+    },
+    {
+      "start": 1185.84,
+      "end": 1190.559,
+      "text": "So I need to write the function now. Now"
+    },
+    {
+      "start": 1188.799,
+      "end": 1192.24,
+      "text": "when I define the function, what is"
+    },
+    {
+      "start": 1190.559,
+      "end": 1193.84,
+      "text": "going to be the input? See it is giving"
+    },
+    {
+      "start": 1192.24,
+      "end": 1195.36,
+      "text": "me autocomplete. It is going to take the"
+    },
+    {
+      "start": 1193.84,
+      "end": 1197.1999999999998,
+      "text": "state as the input and it is going to"
+    },
+    {
+      "start": 1195.36,
+      "end": 1199.12,
+      "text": "return the state itself. So obviously"
+    },
+    {
+      "start": 1197.2,
+      "end": 1201.3600000000001,
+      "text": "the return part I don't need to write"
+    },
+    {
+      "start": 1199.12,
+      "end": 1203.4399999999998,
+      "text": "but it is obviously nice to write it."
+    },
+    {
+      "start": 1201.36,
+      "end": 1205.6,
+      "text": "I'm going to write a simple print"
+    },
+    {
+      "start": 1203.44,
+      "end": 1208.44,
+      "text": "statement over here just to for further"
+    },
+    {
+      "start": 1205.6,
+      "end": 1212.24,
+      "text": "clarity and I'm going to write"
+    },
+    {
+      "start": 1208.44,
+      "end": 1212.24,
+      "text": "categorizing the experience"
+    },
+    {
+      "start": 1212.919,
+      "end": 1216.7990000000002,
+      "text": "level and in this function what am I"
+    },
+    {
+      "start": 1215.36,
+      "end": 1219.6,
+      "text": "supposed to do I am basically supposed"
+    },
+    {
+      "start": 1216.799,
+      "end": 1222.16,
+      "text": "to make a call to my LLM and say that"
+    },
+    {
+      "start": 1219.6,
+      "end": 1224.1599999999999,
+      "text": "you categorize the candidate I am not"
+    },
+    {
+      "start": 1222.16,
+      "end": 1226.24,
+      "text": "actually doing it LLM is going to do us"
+    },
+    {
+      "start": 1224.16,
+      "end": 1228.72,
+      "text": "we are leveraging LLM right that is why"
+    },
+    {
+      "start": 1226.24,
+      "end": 1231.039,
+      "text": "LLM based apps so what do I need to do I"
+    },
+    {
+      "start": 1228.72,
+      "end": 1234.159,
+      "text": "need to create a prompt to be able to"
+    },
+    {
+      "start": 1231.039,
+      "end": 1236.48,
+      "text": "sent to my uh LLM. Now in order to do"
+    },
+    {
+      "start": 1234.159,
+      "end": 1238.3200000000002,
+      "text": "that I need to import. See I could have"
+    },
+    {
+      "start": 1236.48,
+      "end": 1240.96,
+      "text": "actually imported in once and kept"
+    },
+    {
+      "start": 1238.32,
+      "end": 1242.72,
+      "text": "everything but I just wanted you to"
+    },
+    {
+      "start": 1240.96,
+      "end": 1244.48,
+      "text": "understand that why am I importing"
+    },
+    {
+      "start": 1242.72,
+      "end": 1246.88,
+      "text": "whatever I am importing. So just for"
+    },
+    {
+      "start": 1244.48,
+      "end": 1248.6,
+      "text": "further clarity I'm just doing it as we"
+    },
+    {
+      "start": 1246.88,
+      "end": 1252.4,
+      "text": "are writing the"
+    },
+    {
+      "start": 1248.6,
+      "end": 1254.76,
+      "text": "code. So from the prompts I am going to"
+    },
+    {
+      "start": 1252.4,
+      "end": 1257.039,
+      "text": "import chat prompt"
+    },
+    {
+      "start": 1254.76,
+      "end": 1259.44,
+      "text": "template and I'm going to create a"
+    },
+    {
+      "start": 1257.039,
+      "end": 1261.6,
+      "text": "prompt now. And this part we have"
+    },
+    {
+      "start": 1259.44,
+      "end": 1263.52,
+      "text": "already covered it in the lang chain"
+    },
+    {
+      "start": 1261.6,
+      "end": 1267.1999999999998,
+      "text": "video but just quickly covering it"
+    },
+    {
+      "start": 1263.52,
+      "end": 1270.0,
+      "text": "again. See whenever we need to send uh"
+    },
+    {
+      "start": 1267.2,
+      "end": 1272.72,
+      "text": "something to our LLM right so we could"
+    },
+    {
+      "start": 1270.0,
+      "end": 1275.12,
+      "text": "either do just chain.invoke like that."
+    },
+    {
+      "start": 1272.72,
+      "end": 1276.88,
+      "text": "But what if I want to give something as"
+    },
+    {
+      "start": 1275.12,
+      "end": 1278.6399999999999,
+      "text": "input like in this case we have to give"
+    },
+    {
+      "start": 1276.88,
+      "end": 1281.1200000000001,
+      "text": "application as the input right? So I"
+    },
+    {
+      "start": 1278.64,
+      "end": 1282.7990000000002,
+      "text": "need to form a prompt and pass that. Now"
+    },
+    {
+      "start": 1281.12,
+      "end": 1284.8799999999999,
+      "text": "again the prompt can be formed either"
+    },
+    {
+      "start": 1282.799,
+      "end": 1286.559,
+      "text": "from me messages or from templates. So"
+    },
+    {
+      "start": 1284.88,
+      "end": 1288.7990000000002,
+      "text": "if you already know lang is like a quick"
+    },
+    {
+      "start": 1286.559,
+      "end": 1290.8799999999999,
+      "text": "revision for you. So I could also do it"
+    },
+    {
+      "start": 1288.799,
+      "end": 1292.799,
+      "text": "from messages which is a concept if you"
+    },
+    {
+      "start": 1290.88,
+      "end": 1294.88,
+      "text": "don't know that it's fine for now. So"
+    },
+    {
+      "start": 1292.799,
+      "end": 1297.2,
+      "text": "what I'm doing is I am forming from"
+    },
+    {
+      "start": 1294.88,
+      "end": 1300.5590000000002,
+      "text": "template which is basically very simple."
+    },
+    {
+      "start": 1297.2,
+      "end": 1303.1200000000001,
+      "text": "I am basically going to just pass this"
+    },
+    {
+      "start": 1300.559,
+      "end": 1304.96,
+      "text": "string and this string is going to be"
+    },
+    {
+      "start": 1303.12,
+      "end": 1308.2399999999998,
+      "text": "used as the template. Now in this string"
+    },
+    {
+      "start": 1304.96,
+      "end": 1310.159,
+      "text": "I could also pass my uh whatever is the"
+    },
+    {
+      "start": 1308.24,
+      "end": 1311.84,
+      "text": "input like in this case the application"
+    },
+    {
+      "start": 1310.159,
+      "end": 1313.679,
+      "text": "itself is going to be the input that I'm"
+    },
+    {
+      "start": 1311.84,
+      "end": 1315.1999999999998,
+      "text": "going to pass over here. Right? So I'm"
+    },
+    {
+      "start": 1313.679,
+      "end": 1317.2800000000002,
+      "text": "just going to write a simple string that"
+    },
+    {
+      "start": 1315.2,
+      "end": 1319.039,
+      "text": "based on the application like the job"
+    },
+    {
+      "start": 1317.28,
+      "end": 1322.48,
+      "text": "application just categorize into one of"
+    },
+    {
+      "start": 1319.039,
+      "end": 1322.48,
+      "text": "the three levels. So just give me one"
+    },
+    {
+      "start": 1328.36,
+      "end": 1333.28,
+      "text": "sec and I obviously need to tell that"
+    },
+    {
+      "start": 1331.12,
+      "end": 1335.039,
+      "text": "you you can categorize into what levels"
+    },
+    {
+      "start": 1333.28,
+      "end": 1336.48,
+      "text": "right so that we are telling the LLM"
+    },
+    {
+      "start": 1335.039,
+      "end": 1338.799,
+      "text": "that these are the different levels that"
+    },
+    {
+      "start": 1336.48,
+      "end": 1338.799,
+      "text": "can be"
+    },
+    {
+      "start": 1340.84,
+      "end": 1345.32,
+      "text": "possible and in order to pass the input"
+    },
+    {
+      "start": 1343.44,
+      "end": 1348.559,
+      "text": "I'm just going to write it"
+    },
+    {
+      "start": 1345.32,
+      "end": 1351.039,
+      "text": "properly I can just give the input also"
+    },
+    {
+      "start": 1348.559,
+      "end": 1353.24,
+      "text": "over So I'm going to pass my application"
+    },
+    {
+      "start": 1351.039,
+      "end": 1357.28,
+      "text": "as the"
+    },
+    {
+      "start": 1353.24,
+      "end": 1357.28,
+      "text": "input and this is my"
+    },
+    {
+      "start": 1357.32,
+      "end": 1362.24,
+      "text": "input. So we are done creating a prompt."
+    },
+    {
+      "start": 1359.919,
+      "end": 1363.44,
+      "text": "Now in order to send it to our LLM, we"
+    },
+    {
+      "start": 1362.24,
+      "end": 1365.36,
+      "text": "are obviously going to create a chain."
+    },
+    {
+      "start": 1363.44,
+      "end": 1367.2,
+      "text": "This is the lang chain chain. And"
+    },
+    {
+      "start": 1365.36,
+      "end": 1369.84,
+      "text": "whatever is the output from this prompt,"
+    },
+    {
+      "start": 1367.2,
+      "end": 1372.64,
+      "text": "I am going to pass it to my llm. Right?"
+    },
+    {
+      "start": 1369.84,
+      "end": 1374.9599999999998,
+      "text": "I could also in uh like just I could"
+    },
+    {
+      "start": 1372.64,
+      "end": 1378.3200000000002,
+      "text": "also parse it out over here. Just do a"
+    },
+    {
+      "start": 1374.96,
+      "end": 1380.08,
+      "text": "str out parser. But why do I need to"
+    },
+    {
+      "start": 1378.32,
+      "end": 1382.1589999999999,
+      "text": "parse? Because whatever is the output"
+    },
+    {
+      "start": 1380.08,
+      "end": 1384.559,
+      "text": "that I get from the LLM is going to have"
+    },
+    {
+      "start": 1382.159,
+      "end": 1386.159,
+      "text": "a lot of things. One of the things like"
+    },
+    {
+      "start": 1384.559,
+      "end": 1387.6789999999999,
+      "text": "the output that we want like in this"
+    },
+    {
+      "start": 1386.159,
+      "end": 1389.1200000000001,
+      "text": "case we want this experience level,"
+    },
+    {
+      "start": 1387.679,
+      "end": 1391.44,
+      "text": "right? This is going to be present under"
+    },
+    {
+      "start": 1389.12,
+      "end": 1394.08,
+      "text": "the content section. So I could also use"
+    },
+    {
+      "start": 1391.44,
+      "end": 1395.919,
+      "text": "this parser to take it out and I see it"
+    },
+    {
+      "start": 1394.08,
+      "end": 1398.08,
+      "text": "is giving me autocomplete just parse it"
+    },
+    {
+      "start": 1395.919,
+      "end": 1399.919,
+      "text": "and give it as the state right. So this"
+    },
+    {
+      "start": 1398.08,
+      "end": 1402.6399999999999,
+      "text": "is the state. I could either write code"
+    },
+    {
+      "start": 1399.919,
+      "end": 1404.159,
+      "text": "that like that also or just to print it"
+    },
+    {
+      "start": 1402.64,
+      "end": 1407.4,
+      "text": "I am just going to assign it in a"
+    },
+    {
+      "start": 1404.159,
+      "end": 1407.4,
+      "text": "different variable."
+    },
+    {
+      "start": 1407.6,
+      "end": 1414.24,
+      "text": "And I'm going to invoke chain like"
+    },
+    {
+      "start": 1410.36,
+      "end": 1416.4799999999998,
+      "text": "this. And in this chain, so basically"
+    },
+    {
+      "start": 1414.24,
+      "end": 1419.039,
+      "text": "whatever needs to be passed to the"
+    },
+    {
+      "start": 1416.48,
+      "end": 1420.96,
+      "text": "prompt as an input. So in this case it"
+    },
+    {
+      "start": 1419.039,
+      "end": 1423.12,
+      "text": "is application that I need to give over"
+    },
+    {
+      "start": 1420.96,
+      "end": 1425.8400000000001,
+      "text": "here as dictionary. So I need to pass"
+    },
+    {
+      "start": 1423.12,
+      "end": 1428.0,
+      "text": "this application right and from where am"
+    },
+    {
+      "start": 1425.84,
+      "end": 1430.48,
+      "text": "I going to get the application? So in my"
+    },
+    {
+      "start": 1428.0,
+      "end": 1433.2,
+      "text": "node what is there? State is there. So"
+    },
+    {
+      "start": 1430.48,
+      "end": 1435.76,
+      "text": "that state has the application, right?"
+    },
+    {
+      "start": 1433.2,
+      "end": 1439.72,
+      "text": "So our state has application. So how am"
+    },
+    {
+      "start": 1435.76,
+      "end": 1442.24,
+      "text": "I going to get this application from my"
+    },
+    {
+      "start": 1439.72,
+      "end": 1444.4,
+      "text": "state? So now that I have passed"
+    },
+    {
+      "start": 1442.24,
+      "end": 1446.88,
+      "text": "application as a dictionary, my prompt"
+    },
+    {
+      "start": 1444.4,
+      "end": 1448.5590000000002,
+      "text": "will have access to the application. So"
+    },
+    {
+      "start": 1446.88,
+      "end": 1450.88,
+      "text": "prompt is there. Whatever is going to be"
+    },
+    {
+      "start": 1448.559,
+      "end": 1453.12,
+      "text": "the output of the prompt uh will be"
+    },
+    {
+      "start": 1450.88,
+      "end": 1455.1200000000001,
+      "text": "passed to LLM. Then from LLM, I'm going"
+    },
+    {
+      "start": 1453.12,
+      "end": 1456.9599999999998,
+      "text": "to get some response and I'm going to"
+    },
+    {
+      "start": 1455.12,
+      "end": 1460.2399999999998,
+      "text": "take out the content of that and that is"
+    },
+    {
+      "start": 1456.96,
+      "end": 1462.799,
+      "text": "my experience level. Now I can just"
+    },
+    {
+      "start": 1460.24,
+      "end": 1462.799,
+      "text": "return the"
+    },
+    {
+      "start": 1463.72,
+      "end": 1468.32,
+      "text": "dictionary and for further clarity let"
+    },
+    {
+      "start": 1466.24,
+      "end": 1471.919,
+      "text": "me just add a print statement as well so"
+    },
+    {
+      "start": 1468.32,
+      "end": 1471.9189999999999,
+      "text": "that we also can see it"
+    },
+    {
+      "start": 1475.08,
+      "end": 1480.32,
+      "text": "properly and that's it. We are done"
+    },
+    {
+      "start": 1477.679,
+      "end": 1482.0,
+      "text": "adding one node to our workflow. So"
+    },
+    {
+      "start": 1480.32,
+      "end": 1483.84,
+      "text": "basically we have added one node to our"
+    },
+    {
+      "start": 1482.0,
+      "end": 1485.44,
+      "text": "graph. Similarly for the other nodes"
+    },
+    {
+      "start": 1483.84,
+      "end": 1487.1999999999998,
+      "text": "also we need to start writing the"
+    },
+    {
+      "start": 1485.44,
+      "end": 1488.96,
+      "text": "different functions. So let me just"
+    },
+    {
+      "start": 1487.2,
+      "end": 1490.4,
+      "text": "quickly first write the functions for"
+    },
+    {
+      "start": 1488.96,
+      "end": 1493.039,
+      "text": "all the nodes and then we are going to"
+    },
+    {
+      "start": 1490.4,
+      "end": 1495.279,
+      "text": "form our proper graph by adding the"
+    },
+    {
+      "start": 1493.039,
+      "end": 1497.2,
+      "text": "different nodes and the ed edges. First"
+    },
+    {
+      "start": 1495.279,
+      "end": 1498.799,
+      "text": "let's quickly write the functions right."
+    },
+    {
+      "start": 1497.2,
+      "end": 1500.48,
+      "text": "So what are the different nodes that I'm"
+    },
+    {
+      "start": 1498.799,
+      "end": 1502.0,
+      "text": "going to have? One is categorize"
+    },
+    {
+      "start": 1500.48,
+      "end": 1503.84,
+      "text": "experience that we have already written."
+    },
+    {
+      "start": 1502.0,
+      "end": 1505.36,
+      "text": "The next one was assess skills right"
+    },
+    {
+      "start": 1503.84,
+      "end": 1508.0,
+      "text": "where we were actually assessing the"
+    },
+    {
+      "start": 1505.36,
+      "end": 1509.84,
+      "text": "skills of the candidates. And here again"
+    },
+    {
+      "start": 1508.0,
+      "end": 1512.08,
+      "text": "I'm going to pass the state. So it is"
+    },
+    {
+      "start": 1509.84,
+      "end": 1514.32,
+      "text": "actually giving me the autocomplete"
+    },
+    {
+      "start": 1512.08,
+      "end": 1515.9189999999999,
+      "text": "state and we are have we have added a"
+    },
+    {
+      "start": 1514.32,
+      "end": 1518.48,
+      "text": "print statement assessing the skill set"
+    },
+    {
+      "start": 1515.919,
+      "end": 1520.24,
+      "text": "of the candidate. So that is great. See"
+    },
+    {
+      "start": 1518.48,
+      "end": 1522.96,
+      "text": "here also I'm just going to form a"
+    },
+    {
+      "start": 1520.24,
+      "end": 1524.96,
+      "text": "prompt then do the change exactly the"
+    },
+    {
+      "start": 1522.96,
+      "end": 1527.3600000000001,
+      "text": "same thing. Oh it is also giving me an"
+    },
+    {
+      "start": 1524.96,
+      "end": 1529.679,
+      "text": "autocomplete prompt chat form template"
+    },
+    {
+      "start": 1527.36,
+      "end": 1532.32,
+      "text": "based on the following job application"
+    },
+    {
+      "start": 1529.679,
+      "end": 1534.48,
+      "text": "assess the candidates skill set but here"
+    },
+    {
+      "start": 1532.32,
+      "end": 1536.799,
+      "text": "also let's also mention that what are"
+    },
+    {
+      "start": 1534.48,
+      "end": 1540.24,
+      "text": "the job requirements right? So based on"
+    },
+    {
+      "start": 1536.799,
+      "end": 1544.279,
+      "text": "the following job application. So based"
+    },
+    {
+      "start": 1540.24,
+      "end": 1548.08,
+      "text": "on the job application say for a Python"
+    },
+    {
+      "start": 1544.279,
+      "end": 1549.919,
+      "text": "developer. So I'm just giving two words"
+    },
+    {
+      "start": 1548.08,
+      "end": 1551.9189999999999,
+      "text": "right. But in reality obviously job"
+    },
+    {
+      "start": 1549.919,
+      "end": 1554.4,
+      "text": "description can be a lot like you can"
+    },
+    {
+      "start": 1551.919,
+      "end": 1555.8400000000001,
+      "text": "give that what are the other text tags"
+    },
+    {
+      "start": 1554.4,
+      "end": 1557.8400000000001,
+      "text": "or the number of years of experience or"
+    },
+    {
+      "start": 1555.84,
+      "end": 1559.6789999999999,
+      "text": "anything right? So you can give a lot of"
+    },
+    {
+      "start": 1557.84,
+      "end": 1562.0,
+      "text": "things. What are the libraries the"
+    },
+    {
+      "start": 1559.679,
+      "end": 1563.919,
+      "text": "frameworks the person has worked on or"
+    },
+    {
+      "start": 1562.0,
+      "end": 1565.76,
+      "text": "anything like that right? So to the"
+    },
+    {
+      "start": 1563.919,
+      "end": 1567.2,
+      "text": "person does the person have like DevOps"
+    },
+    {
+      "start": 1565.76,
+      "end": 1569.44,
+      "text": "experience. So you can give a lot of"
+    },
+    {
+      "start": 1567.2,
+      "end": 1571.44,
+      "text": "things over here and based on the entire"
+    },
+    {
+      "start": 1569.44,
+      "end": 1575.64,
+      "text": "job application we are going to assess"
+    },
+    {
+      "start": 1571.44,
+      "end": 1578.64,
+      "text": "and here I also want our LLM to"
+    },
+    {
+      "start": 1575.64,
+      "end": 1578.64,
+      "text": "respond"
+    },
+    {
+      "start": 1578.919,
+      "end": 1585.2,
+      "text": "with"
+    },
+    {
+      "start": 1581.32,
+      "end": 1585.2,
+      "text": "either match or no"
+    },
+    {
+      "start": 1587.24,
+      "end": 1593.039,
+      "text": "match. Again I have the prompt. I need"
+    },
+    {
+      "start": 1589.679,
+      "end": 1593.039,
+      "text": "to pass that to my"
+    },
+    {
+      "start": 1593.72,
+      "end": 1598.48,
+      "text": "LLM. And again I'm going to get the"
+    },
+    {
+      "start": 1596.08,
+      "end": 1601.76,
+      "text": "response which will be skill match. And"
+    },
+    {
+      "start": 1598.48,
+      "end": 1603.52,
+      "text": "we are going to invoke our chain in our"
+    },
+    {
+      "start": 1601.76,
+      "end": 1604.96,
+      "text": "application. We are going to have state"
+    },
+    {
+      "start": 1603.52,
+      "end": 1606.48,
+      "text": "application and we are going to get the"
+    },
+    {
+      "start": 1604.96,
+      "end": 1608.559,
+      "text": "content out of it from which we'll get"
+    },
+    {
+      "start": 1606.48,
+      "end": 1610.799,
+      "text": "the skill match and we just printing it"
+    },
+    {
+      "start": 1608.559,
+      "end": 1612.32,
+      "text": "and returning it. Right? Similarly, so"
+    },
+    {
+      "start": 1610.799,
+      "end": 1614.08,
+      "text": "this is the second note. What is what"
+    },
+    {
+      "start": 1612.32,
+      "end": 1616.1589999999999,
+      "text": "are the other notes that we have? So one"
+    },
+    {
+      "start": 1614.08,
+      "end": 1617.84,
+      "text": "is going to be for scheduling the HR"
+    },
+    {
+      "start": 1616.159,
+      "end": 1621.279,
+      "text": "interview. So when is this going to"
+    },
+    {
+      "start": 1617.84,
+      "end": 1623.1999999999998,
+      "text": "happen? If we have a match, right? So in"
+    },
+    {
+      "start": 1621.279,
+      "end": 1624.96,
+      "text": "reality, see in real cases, obviously"
+    },
+    {
+      "start": 1623.2,
+      "end": 1627.679,
+      "text": "scheduling can be a task that you can"
+    },
+    {
+      "start": 1624.96,
+      "end": 1629.679,
+      "text": "perform like you can probably uh trigger"
+    },
+    {
+      "start": 1627.679,
+      "end": 1631.919,
+      "text": "a mail or something like that, right? Uh"
+    },
+    {
+      "start": 1629.679,
+      "end": 1633.44,
+      "text": "you can schedule properly, but currently"
+    },
+    {
+      "start": 1631.919,
+      "end": 1635.76,
+      "text": "obviously this is demo. So I'm just"
+    },
+    {
+      "start": 1633.44,
+      "end": 1638.0,
+      "text": "going to add basic print statements and"
+    },
+    {
+      "start": 1635.76,
+      "end": 1638.0,
+      "text": "return it"
+    },
+    {
+      "start": 1638.679,
+      "end": 1642.5590000000002,
+      "text": "on and we are going to be scheduling the"
+    },
+    {
+      "start": 1641.44,
+      "end": 1643.919,
+      "text": "interview. So this is the print"
+    },
+    {
+      "start": 1642.559,
+      "end": 1647.44,
+      "text": "statement. I'm just returning the"
+    },
+    {
+      "start": 1643.919,
+      "end": 1647.44,
+      "text": "response from there."
+    },
+    {
+      "start": 1665.44,
+      "end": 1669.52,
+      "text": "And for further clarity, let's just call"
+    },
+    {
+      "start": 1667.279,
+      "end": 1671.44,
+      "text": "this schedule HR interview. So what were"
+    },
+    {
+      "start": 1669.52,
+      "end": 1673.76,
+      "text": "the three possibilities? One is schedule"
+    },
+    {
+      "start": 1671.44,
+      "end": 1675.919,
+      "text": "HR interview. The other is escalate to"
+    },
+    {
+      "start": 1673.76,
+      "end": 1678.0,
+      "text": "recruiter. Right? So when were we doing"
+    },
+    {
+      "start": 1675.919,
+      "end": 1679.76,
+      "text": "that? So in case there is senior level"
+    },
+    {
+      "start": 1678.0,
+      "end": 1681.6,
+      "text": "but there is senior level basically"
+    },
+    {
+      "start": 1679.76,
+      "end": 1683.44,
+      "text": "candidate and there is a mismatch then"
+    },
+    {
+      "start": 1681.6,
+      "end": 1685.1999999999998,
+      "text": "we can escalate to the recruiter. So"
+    },
+    {
+      "start": 1683.44,
+      "end": 1686.96,
+      "text": "that is the logic that I am writing. You"
+    },
+    {
+      "start": 1685.2,
+      "end": 1688.24,
+      "text": "can write anything right. So you must be"
+    },
+    {
+      "start": 1686.96,
+      "end": 1690.32,
+      "text": "thinking where to write that logic."
+    },
+    {
+      "start": 1688.24,
+      "end": 1692.32,
+      "text": "We'll look at that as well. Don't worry."
+    },
+    {
+      "start": 1690.32,
+      "end": 1695.32,
+      "text": "So we are going to scale it to"
+    },
+    {
+      "start": 1692.32,
+      "end": 1695.32,
+      "text": "recruiter."
+    },
+    {
+      "start": 1713.679,
+      "end": 1718.72,
+      "text": "And the last case is that when we are"
+    },
+    {
+      "start": 1716.0,
+      "end": 1718.72,
+      "text": "going to simply"
+    },
+    {
+      "start": 1727.399,
+      "end": 1732.559,
+      "text": "reject here again you could be actually"
+    },
+    {
+      "start": 1730.24,
+      "end": 1734.32,
+      "text": "sending the email but so this could be"
+    },
+    {
+      "start": 1732.559,
+      "end": 1736.559,
+      "text": "automated right. So here you just have"
+    },
+    {
+      "start": 1734.32,
+      "end": 1738.8799999999999,
+      "text": "to send the mail. So they could be logic"
+    },
+    {
+      "start": 1736.559,
+      "end": 1740.96,
+      "text": "say to Mailchimp or something. But"
+    },
+    {
+      "start": 1738.88,
+      "end": 1743.679,
+      "text": "obviously for demo purposes I'm just"
+    },
+    {
+      "start": 1740.96,
+      "end": 1743.679,
+      "text": "adding a print"
+    },
+    {
+      "start": 1753.24,
+      "end": 1757.52,
+      "text": "statement. So these are all the"
+    },
+    {
+      "start": 1755.44,
+      "end": 1759.679,
+      "text": "functions that we needed. We already"
+    },
+    {
+      "start": 1757.52,
+      "end": 1761.52,
+      "text": "have one node and let's start adding the"
+    },
+    {
+      "start": 1759.679,
+      "end": 1763.44,
+      "text": "other nodes as well. Quickly adding the"
+    },
+    {
+      "start": 1761.52,
+      "end": 1765.44,
+      "text": "other workflow nodes as well. So"
+    },
+    {
+      "start": 1763.44,
+      "end": 1767.52,
+      "text": "workflow do add node and we're just"
+    },
+    {
+      "start": 1765.44,
+      "end": 1769.3600000000001,
+      "text": "going to quickly give the names and add."
+    },
+    {
+      "start": 1767.52,
+      "end": 1770.799,
+      "text": "So I'm not adding over here because it"
+    },
+    {
+      "start": 1769.36,
+      "end": 1772.8799999999999,
+      "text": "is going to give me the error that this"
+    },
+    {
+      "start": 1770.799,
+      "end": 1775.52,
+      "text": "is already present. So I'm just going to"
+    },
+    {
+      "start": 1772.88,
+      "end": 1777.6000000000001,
+      "text": "add in the other cell. So I'm just going"
+    },
+    {
+      "start": 1775.52,
+      "end": 1780.32,
+      "text": "to just copy paste all the functions and"
+    },
+    {
+      "start": 1777.6,
+      "end": 1782.1589999999999,
+      "text": "give the same names. So as a skill set"
+    },
+    {
+      "start": 1780.32,
+      "end": 1784.08,
+      "text": "and this is going to be the function."
+    },
+    {
+      "start": 1782.159,
+      "end": 1787.24,
+      "text": "Similarly let's just give for others as"
+    },
+    {
+      "start": 1784.08,
+      "end": 1787.24,
+      "text": "well quickly."
+    },
+    {
+      "start": 1796.559,
+      "end": 1801.6789999999999,
+      "text": "Now that we have added all the nodes,"
+    },
+    {
+      "start": 1798.48,
+      "end": 1801.679,
+      "text": "it's time to add the"
+    },
+    {
+      "start": 1802.52,
+      "end": 1806.48,
+      "text": "edges. In order to add edges, let's go"
+    },
+    {
+      "start": 1805.039,
+      "end": 1808.32,
+      "text": "back to the documentation. Let's go to"
+    },
+    {
+      "start": 1806.48,
+      "end": 1810.24,
+      "text": "the edges part. And here it is given"
+    },
+    {
+      "start": 1808.32,
+      "end": 1812.08,
+      "text": "that there are different types of edges."
+    },
+    {
+      "start": 1810.24,
+      "end": 1814.0,
+      "text": "So first let's look at normal edges."
+    },
+    {
+      "start": 1812.08,
+      "end": 1815.84,
+      "text": "Here basically we have to go we have to"
+    },
+    {
+      "start": 1814.0,
+      "end": 1817.76,
+      "text": "give that we want to go directly from"
+    },
+    {
+      "start": 1815.84,
+      "end": 1820.48,
+      "text": "one node to the next. So we can just do"
+    },
+    {
+      "start": 1817.76,
+      "end": 1822.8799999999999,
+      "text": "graph add edge and node A to node B we"
+    },
+    {
+      "start": 1820.48,
+      "end": 1824.88,
+      "text": "want to go. So here we can just mention"
+    },
+    {
+      "start": 1822.88,
+      "end": 1827.6000000000001,
+      "text": "that these two nodes add an edge between"
+    },
+    {
+      "start": 1824.88,
+      "end": 1829.3600000000001,
+      "text": "them. So the first edge that we also"
+    },
+    {
+      "start": 1827.6,
+      "end": 1831.9189999999999,
+      "text": "want to add is actually very simple. So"
+    },
+    {
+      "start": 1829.36,
+      "end": 1833.52,
+      "text": "all I'm going to do is add edge and what"
+    },
+    {
+      "start": 1831.919,
+      "end": 1835.8400000000001,
+      "text": "are the different nodes between which I"
+    },
+    {
+      "start": 1833.52,
+      "end": 1838.9189999999999,
+      "text": "need to create. So I want to create from"
+    },
+    {
+      "start": 1835.84,
+      "end": 1842.24,
+      "text": "categorize experience from categorize"
+    },
+    {
+      "start": 1838.919,
+      "end": 1846.159,
+      "text": "experience to the assess skill set part."
+    },
+    {
+      "start": 1842.24,
+      "end": 1848.3990000000001,
+      "text": "So here I am adding a simple normal edge"
+    },
+    {
+      "start": 1846.159,
+      "end": 1851.279,
+      "text": "between categorize experience and assess"
+    },
+    {
+      "start": 1848.399,
+      "end": 1853.279,
+      "text": "skill set. But what after assess a skill"
+    },
+    {
+      "start": 1851.279,
+      "end": 1855.76,
+      "text": "set? See after we are done assessing"
+    },
+    {
+      "start": 1853.279,
+      "end": 1858.159,
+      "text": "skill set we are making a decision based"
+    },
+    {
+      "start": 1855.76,
+      "end": 1859.919,
+      "text": "on the skills that whether we want to"
+    },
+    {
+      "start": 1858.159,
+      "end": 1861.7600000000002,
+      "text": "schedule HR interview or we want to"
+    },
+    {
+      "start": 1859.919,
+      "end": 1863.6000000000001,
+      "text": "escalate or do we want to reject the"
+    },
+    {
+      "start": 1861.76,
+      "end": 1865.279,
+      "text": "application. So let's go back to the"
+    },
+    {
+      "start": 1863.6,
+      "end": 1868.08,
+      "text": "documentation. Here there is something"
+    },
+    {
+      "start": 1865.279,
+      "end": 1870.399,
+      "text": "called conditional edges. And here it is"
+    },
+    {
+      "start": 1868.08,
+      "end": 1873.279,
+      "text": "given to us that when we do graft at add"
+    },
+    {
+      "start": 1870.399,
+      "end": 1876.2399999999998,
+      "text": "conditional edges we can give after"
+    },
+    {
+      "start": 1873.279,
+      "end": 1878.799,
+      "text": "which node do we want to route. So here"
+    },
+    {
+      "start": 1876.24,
+      "end": 1881.36,
+      "text": "it is given accepts the name of a node"
+    },
+    {
+      "start": 1878.799,
+      "end": 1884.32,
+      "text": "and routing function to call after that"
+    },
+    {
+      "start": 1881.36,
+      "end": 1887.039,
+      "text": "node is executed. So after which node do"
+    },
+    {
+      "start": 1884.32,
+      "end": 1889.279,
+      "text": "I want the condition conditioning to"
+    },
+    {
+      "start": 1887.039,
+      "end": 1890.8799999999999,
+      "text": "happen after the assess skill set."
+    },
+    {
+      "start": 1889.279,
+      "end": 1893.279,
+      "text": "Right? So that is what we are going to"
+    },
+    {
+      "start": 1890.88,
+      "end": 1896.48,
+      "text": "do. We are going to do add workflow dot"
+    },
+    {
+      "start": 1893.279,
+      "end": 1898.24,
+      "text": "add conditional edges and we want to add"
+    },
+    {
+      "start": 1896.48,
+      "end": 1900.64,
+      "text": "the conditional edges after this"
+    },
+    {
+      "start": 1898.24,
+      "end": 1903.159,
+      "text": "assessor skill set. Right? So this is"
+    },
+    {
+      "start": 1900.64,
+      "end": 1905.919,
+      "text": "the node after which I want to make the"
+    },
+    {
+      "start": 1903.159,
+      "end": 1908.0800000000002,
+      "text": "decision. But there has to be a routing"
+    },
+    {
+      "start": 1905.919,
+      "end": 1910.5590000000002,
+      "text": "function that needs to be given. Right?"
+    },
+    {
+      "start": 1908.08,
+      "end": 1912.399,
+      "text": "And what does this accept? The routing"
+    },
+    {
+      "start": 1910.559,
+      "end": 1914.72,
+      "text": "function accepts the current state of"
+    },
+    {
+      "start": 1912.399,
+      "end": 1916.559,
+      "text": "the graph and returns a value just like"
+    },
+    {
+      "start": 1914.72,
+      "end": 1918.72,
+      "text": "our simple nodes as well. Right? Similar"
+    },
+    {
+      "start": 1916.559,
+      "end": 1920.6399999999999,
+      "text": "to nodes. So that's what we need to do."
+    },
+    {
+      "start": 1918.72,
+      "end": 1922.96,
+      "text": "We need to write a routing function. So"
+    },
+    {
+      "start": 1920.64,
+      "end": 1926.0800000000002,
+      "text": "we are just going to maybe write route"
+    },
+    {
+      "start": 1922.96,
+      "end": 1929.919,
+      "text": "app right and we need to write this"
+    },
+    {
+      "start": 1926.08,
+      "end": 1933.4399999999998,
+      "text": "function. So I'm going to call it route"
+    },
+    {
+      "start": 1929.919,
+      "end": 1936.0,
+      "text": "app and as it said we need to pass a"
+    },
+    {
+      "start": 1933.44,
+      "end": 1938.0800000000002,
+      "text": "state to it and it is also going to"
+    },
+    {
+      "start": 1936.0,
+      "end": 1940.799,
+      "text": "return something. But what is it going"
+    },
+    {
+      "start": 1938.08,
+      "end": 1942.6399999999999,
+      "text": "to return? Let's look at that. By"
+    },
+    {
+      "start": 1940.799,
+      "end": 1945.519,
+      "text": "default the return value routing"
+    },
+    {
+      "start": 1942.64,
+      "end": 1947.8400000000001,
+      "text": "function is used as the name of the node"
+    },
+    {
+      "start": 1945.519,
+      "end": 1950.799,
+      "text": "or the list of the nodes to send the"
+    },
+    {
+      "start": 1947.84,
+      "end": 1953.1999999999998,
+      "text": "state to next. So which is the next node"
+    },
+    {
+      "start": 1950.799,
+      "end": 1955.2,
+      "text": "to call after this right? So we are"
+    },
+    {
+      "start": 1953.2,
+      "end": 1957.1200000000001,
+      "text": "going to give the name of that you can"
+    },
+    {
+      "start": 1955.2,
+      "end": 1958.72,
+      "text": "also configure it if the names are"
+    },
+    {
+      "start": 1957.12,
+      "end": 1960.399,
+      "text": "different then you can also configure"
+    },
+    {
+      "start": 1958.72,
+      "end": 1962.3990000000001,
+      "text": "it. Currently I'm going to have the same"
+    },
+    {
+      "start": 1960.399,
+      "end": 1964.2399999999998,
+      "text": "name. So let's quickly write that code."
+    },
+    {
+      "start": 1962.399,
+      "end": 1965.9189999999999,
+      "text": "So because I have to return a name I'm"
+    },
+    {
+      "start": 1964.24,
+      "end": 1968.08,
+      "text": "basically returning a string itself."
+    },
+    {
+      "start": 1965.919,
+      "end": 1971.519,
+      "text": "Right? So what do I need to check? I"
+    },
+    {
+      "start": 1968.08,
+      "end": 1973.279,
+      "text": "need to check the state of like what"
+    },
+    {
+      "start": 1971.519,
+      "end": 1975.679,
+      "text": "value am I going to check? I'm going to"
+    },
+    {
+      "start": 1973.279,
+      "end": 1977.519,
+      "text": "check skill match value. Right? That is"
+    },
+    {
+      "start": 1975.679,
+      "end": 1980.0,
+      "text": "what I'm returning from here. Right?"
+    },
+    {
+      "start": 1977.519,
+      "end": 1982.72,
+      "text": "This is skill match. This is basically"
+    },
+    {
+      "start": 1980.0,
+      "end": 1986.24,
+      "text": "what I'm going to be comparing. Now, if"
+    },
+    {
+      "start": 1982.72,
+      "end": 1988.08,
+      "text": "skill match is equal to match, see I"
+    },
+    {
+      "start": 1986.24,
+      "end": 1990.559,
+      "text": "could have obviously written this code"
+    },
+    {
+      "start": 1988.08,
+      "end": 1993.12,
+      "text": "better because here I am doing an exact"
+    },
+    {
+      "start": 1990.559,
+      "end": 1994.6399999999999,
+      "text": "match because I'm using open EI. It is"
+    },
+    {
+      "start": 1993.12,
+      "end": 1997.279,
+      "text": "good enough and it will be able to do"
+    },
+    {
+      "start": 1994.64,
+      "end": 2000.48,
+      "text": "the exact match. But I have tried this"
+    },
+    {
+      "start": 1997.279,
+      "end": 2002.399,
+      "text": "with say other LLMs. It does not always"
+    },
+    {
+      "start": 2000.48,
+      "end": 2004.64,
+      "text": "return this in one word. Okay. So, we"
+    },
+    {
+      "start": 2002.399,
+      "end": 2006.559,
+      "text": "have written respond with either match"
+    },
+    {
+      "start": 2004.64,
+      "end": 2008.64,
+      "text": "or no match. So sometimes it might"
+    },
+    {
+      "start": 2006.559,
+      "end": 2011.279,
+      "text": "respond with here is your one-word"
+    },
+    {
+      "start": 2008.64,
+      "end": 2014.88,
+      "text": "answer match or no match right. So"
+    },
+    {
+      "start": 2011.279,
+      "end": 2016.559,
+      "text": "instead of comparing the exact answer we"
+    },
+    {
+      "start": 2014.88,
+      "end": 2019.1200000000001,
+      "text": "should be doing contains or something"
+    },
+    {
+      "start": 2016.559,
+      "end": 2020.96,
+      "text": "like that or maybe while assigning we"
+    },
+    {
+      "start": 2019.12,
+      "end": 2023.279,
+      "text": "should be doing that that from the"
+    },
+    {
+      "start": 2020.96,
+      "end": 2025.3600000000001,
+      "text": "content I am just taking out the word as"
+    },
+    {
+      "start": 2023.279,
+      "end": 2027.44,
+      "text": "match or no match and assigning that."
+    },
+    {
+      "start": 2025.36,
+      "end": 2029.1999999999998,
+      "text": "Currently I'm keeping the demo as very"
+    },
+    {
+      "start": 2027.44,
+      "end": 2032.0800000000002,
+      "text": "simple right. So obviously these things"
+    },
+    {
+      "start": 2029.2,
+      "end": 2034.24,
+      "text": "can be done. Currently I'm just going to"
+    },
+    {
+      "start": 2032.08,
+      "end": 2036.1589999999999,
+      "text": "so if there is a match what is the next"
+    },
+    {
+      "start": 2034.24,
+      "end": 2038.88,
+      "text": "thing that I need to do? I need to oh it"
+    },
+    {
+      "start": 2036.159,
+      "end": 2040.96,
+      "text": "is actually finishing the function for"
+    },
+    {
+      "start": 2038.88,
+      "end": 2042.88,
+      "text": "me but okay let's write it down okay"
+    },
+    {
+      "start": 2040.96,
+      "end": 2044.88,
+      "text": "let's see what it is giving so it is"
+    },
+    {
+      "start": 2042.88,
+      "end": 2046.88,
+      "text": "giving if there is a match then I need"
+    },
+    {
+      "start": 2044.88,
+      "end": 2048.879,
+      "text": "to schedule the HR interview which is"
+    },
+    {
+      "start": 2046.88,
+      "end": 2051.52,
+      "text": "correct if there is a proper match then"
+    },
+    {
+      "start": 2048.879,
+      "end": 2055.2799999999997,
+      "text": "I need to schedule the HR interview else"
+    },
+    {
+      "start": 2051.52,
+      "end": 2058.159,
+      "text": "if only if the experience level is equal"
+    },
+    {
+      "start": 2055.28,
+      "end": 2060.3590000000004,
+      "text": "to senior level okay only if that is the"
+    },
+    {
+      "start": 2058.159,
+      "end": 2063.2400000000002,
+      "text": "case I'm going to escalate to the"
+    },
+    {
+      "start": 2060.359,
+      "end": 2065.359,
+      "text": "recruiter else I'm going to reject the"
+    },
+    {
+      "start": 2063.24,
+      "end": 2066.6389999999997,
+      "text": "application right? Else I'm going to"
+    },
+    {
+      "start": 2065.359,
+      "end": 2069.119,
+      "text": "reject the application. So I am"
+    },
+    {
+      "start": 2066.639,
+      "end": 2071.9190000000003,
+      "text": "rejecting in all the other cases like"
+    },
+    {
+      "start": 2069.119,
+      "end": 2074.3990000000003,
+      "text": "for example if it is mid or entry level"
+    },
+    {
+      "start": 2071.919,
+      "end": 2076.3199999999997,
+      "text": "I'm going to reject it or if it is not a"
+    },
+    {
+      "start": 2074.399,
+      "end": 2077.919,
+      "text": "match I'm going to reject it. So in all"
+    },
+    {
+      "start": 2076.32,
+      "end": 2080.52,
+      "text": "the other cases I am rejecting the"
+    },
+    {
+      "start": 2077.919,
+      "end": 2083.1189999999997,
+      "text": "application. So this is my"
+    },
+    {
+      "start": 2080.52,
+      "end": 2084.72,
+      "text": "route. We are done adding all our nodes"
+    },
+    {
+      "start": 2083.119,
+      "end": 2085.9190000000003,
+      "text": "and edges. But if you remember the"
+    },
+    {
+      "start": 2084.72,
+      "end": 2087.919,
+      "text": "diagram that I showed you in the"
+    },
+    {
+      "start": 2085.919,
+      "end": 2089.679,
+      "text": "starting there was also something called"
+    },
+    {
+      "start": 2087.919,
+      "end": 2091.52,
+      "text": "start node and end node. So let's go"
+    },
+    {
+      "start": 2089.679,
+      "end": 2093.119,
+      "text": "back to the documentation and let's"
+    },
+    {
+      "start": 2091.52,
+      "end": 2095.119,
+      "text": "actually go to the nodes. And here you"
+    },
+    {
+      "start": 2093.119,
+      "end": 2097.119,
+      "text": "can see that add node was the simple"
+    },
+    {
+      "start": 2095.119,
+      "end": 2099.119,
+      "text": "thing that we did. We also have"
+    },
+    {
+      "start": 2097.119,
+      "end": 2100.8,
+      "text": "something called start node and end node"
+    },
+    {
+      "start": 2099.119,
+      "end": 2103.76,
+      "text": "which which are nothing but special"
+    },
+    {
+      "start": 2100.8,
+      "end": 2105.44,
+      "text": "nodes. So these are already given uh and"
+    },
+    {
+      "start": 2103.76,
+      "end": 2107.76,
+      "text": "we don't need to create them. It is just"
+    },
+    {
+      "start": 2105.44,
+      "end": 2110.0,
+      "text": "that this is how langraph will know that"
+    },
+    {
+      "start": 2107.76,
+      "end": 2111.6800000000003,
+      "text": "this is where I need to start from and"
+    },
+    {
+      "start": 2110.0,
+      "end": 2113.599,
+      "text": "this is my terminal node. So this is"
+    },
+    {
+      "start": 2111.68,
+      "end": 2116.16,
+      "text": "where I need to end. Right? So I just"
+    },
+    {
+      "start": 2113.599,
+      "end": 2118.48,
+      "text": "need to add these edges. So from the"
+    },
+    {
+      "start": 2116.16,
+      "end": 2122.56,
+      "text": "start node and till the end node. Right?"
+    },
+    {
+      "start": 2118.48,
+      "end": 2122.56,
+      "text": "So let's just quickly do that."
+    },
+    {
+      "start": 2122.839,
+      "end": 2128.0789999999997,
+      "text": "So, so what was our starting point? A"
+    },
+    {
+      "start": 2125.76,
+      "end": 2130.2400000000002,
+      "text": "starting point was basically categorize"
+    },
+    {
+      "start": 2128.079,
+      "end": 2132.2000000000003,
+      "text": "experience, right? So, I need to add"
+    },
+    {
+      "start": 2130.24,
+      "end": 2135.4399999999996,
+      "text": "edge from"
+    },
+    {
+      "start": 2132.2,
+      "end": 2138.0789999999997,
+      "text": "start till over here, right? And for"
+    },
+    {
+      "start": 2135.44,
+      "end": 2139.839,
+      "text": "this, I need to import the start and the"
+    },
+    {
+      "start": 2138.079,
+      "end": 2141.6800000000003,
+      "text": "end from the langraph. This is not"
+    },
+    {
+      "start": 2139.839,
+      "end": 2143.839,
+      "text": "there, right? And by the way, if you"
+    },
+    {
+      "start": 2141.68,
+      "end": 2145.9199999999996,
+      "text": "ever get stuck, you can also always do"
+    },
+    {
+      "start": 2143.839,
+      "end": 2147.92,
+      "text": "explain in Google Collab. It is very,"
+    },
+    {
+      "start": 2145.92,
+      "end": 2150.56,
+      "text": "very helpful. It just tells you that you"
+    },
+    {
+      "start": 2147.92,
+      "end": 2153.2000000000003,
+      "text": "need to import. So I'm going to go up."
+    },
+    {
+      "start": 2150.56,
+      "end": 2156.88,
+      "text": "So where I imported state graph there"
+    },
+    {
+      "start": 2153.2,
+      "end": 2157.56,
+      "text": "I'm going to import start and end."
+    },
+    {
+      "start": 2156.88,
+      "end": 2160.839,
+      "text": "That's"
+    },
+    {
+      "start": 2157.56,
+      "end": 2164.88,
+      "text": "it. And we are going"
+    },
+    {
+      "start": 2160.839,
+      "end": 2167.56,
+      "text": "to come back and let me just quickly add"
+    },
+    {
+      "start": 2164.88,
+      "end": 2170.48,
+      "text": "the other edges as"
+    },
+    {
+      "start": 2167.56,
+      "end": 2172.7999999999997,
+      "text": "well. And we are going to add to the"
+    },
+    {
+      "start": 2170.48,
+      "end": 2175.92,
+      "text": "end. Oh so it is giving me autocomplete."
+    },
+    {
+      "start": 2172.8,
+      "end": 2177.76,
+      "text": "So from all the other ones SS skill set,"
+    },
+    {
+      "start": 2175.92,
+      "end": 2180.16,
+      "text": "escalate to recruiter, reject"
+    },
+    {
+      "start": 2177.76,
+      "end": 2182.0,
+      "text": "application, schedule. So we are just"
+    },
+    {
+      "start": 2180.16,
+      "end": 2184.64,
+      "text": "going to add the end edges right. So"
+    },
+    {
+      "start": 2182.0,
+      "end": 2186.24,
+      "text": "that's it. Now we are actually done"
+    },
+    {
+      "start": 2184.64,
+      "end": 2188.16,
+      "text": "adding all the nodes adding all the"
+    },
+    {
+      "start": 2186.24,
+      "end": 2190.24,
+      "text": "edges. What we need to do now is"
+    },
+    {
+      "start": 2188.16,
+      "end": 2192.72,
+      "text": "compile. So actually I think I saw"
+    },
+    {
+      "start": 2190.24,
+      "end": 2196.72,
+      "text": "somewhere in caps it was given that we"
+    },
+    {
+      "start": 2192.72,
+      "end": 2196.72,
+      "text": "must compile. So let me actually search"
+    },
+    {
+      "start": 2197.079,
+      "end": 2201.52,
+      "text": "it. So here you can see it is given you"
+    },
+    {
+      "start": 2199.68,
+      "end": 2203.2,
+      "text": "must compile your graph before you can"
+    },
+    {
+      "start": 2201.52,
+      "end": 2205.2,
+      "text": "use it. Right? So we need to compile a"
+    },
+    {
+      "start": 2203.2,
+      "end": 2207.7599999999998,
+      "text": "graph something like this graph builder"
+    },
+    {
+      "start": 2205.2,
+      "end": 2209.839,
+      "text": "dot compile right. So maybe we can call"
+    },
+    {
+      "start": 2207.76,
+      "end": 2212.5600000000004,
+      "text": "it our app. That is what we are going to"
+    },
+    {
+      "start": 2209.839,
+      "end": 2214.88,
+      "text": "get from our workflow. So after"
+    },
+    {
+      "start": 2212.56,
+      "end": 2218.48,
+      "text": "compiling the workflow we will have an"
+    },
+    {
+      "start": 2214.88,
+      "end": 2220.0,
+      "text": "app and we are ready to use it. Okay."
+    },
+    {
+      "start": 2218.48,
+      "end": 2222.16,
+      "text": "Okay. I know why this is happening"
+    },
+    {
+      "start": 2220.0,
+      "end": 2224.079,
+      "text": "because I just ran this again. So it"
+    },
+    {
+      "start": 2222.16,
+      "end": 2226.3199999999997,
+      "text": "created basically the workflow from the"
+    },
+    {
+      "start": 2224.079,
+      "end": 2228.32,
+      "text": "starting. So let's just quickly restart"
+    },
+    {
+      "start": 2226.32,
+      "end": 2230.96,
+      "text": "the session and let me just run all of"
+    },
+    {
+      "start": 2228.32,
+      "end": 2232.88,
+      "text": "this once more because I created the"
+    },
+    {
+      "start": 2230.96,
+      "end": 2234.48,
+      "text": "workflow again. So it does not have"
+    },
+    {
+      "start": 2232.88,
+      "end": 2236.8,
+      "text": "these nodes and we are going to run into"
+    },
+    {
+      "start": 2234.48,
+      "end": 2239.44,
+      "text": "problems. So instead of that let me just"
+    },
+    {
+      "start": 2236.8,
+      "end": 2240.8,
+      "text": "write the code properly and just rerun"
+    },
+    {
+      "start": 2239.44,
+      "end": 2244.079,
+      "text": "the entire thing. And I'm going to"
+    },
+    {
+      "start": 2240.8,
+      "end": 2248.119,
+      "text": "remove this and let me just add it over"
+    },
+    {
+      "start": 2244.079,
+      "end": 2251.28,
+      "text": "here and let me try running it"
+    },
+    {
+      "start": 2248.119,
+      "end": 2253.359,
+      "text": "again. I could also run all these cells."
+    },
+    {
+      "start": 2251.28,
+      "end": 2255.599,
+      "text": "So I could also go over here restart"
+    },
+    {
+      "start": 2253.359,
+      "end": 2257.64,
+      "text": "session and run all but just to show you"
+    },
+    {
+      "start": 2255.599,
+      "end": 2260.56,
+      "text": "quickly we're going to do it. So I have"
+    },
+    {
+      "start": 2257.64,
+      "end": 2262.24,
+      "text": "restarted going to set the open AI keys."
+    },
+    {
+      "start": 2260.56,
+      "end": 2263.4,
+      "text": "This will be also a good revision. We"
+    },
+    {
+      "start": 2262.24,
+      "end": 2266.16,
+      "text": "created the"
+    },
+    {
+      "start": 2263.4,
+      "end": 2267.52,
+      "text": "LLM. So whenever we need to form the"
+    },
+    {
+      "start": 2266.16,
+      "end": 2270.16,
+      "text": "state graph the first thing that we need"
+    },
+    {
+      "start": 2267.52,
+      "end": 2271.7599999999998,
+      "text": "to do is define the state. The next"
+    },
+    {
+      "start": 2270.16,
+      "end": 2274.48,
+      "text": "thing that we need to do is define the"
+    },
+    {
+      "start": 2271.76,
+      "end": 2276.48,
+      "text": "state graph. Then we added all the"
+    },
+    {
+      "start": 2274.48,
+      "end": 2279.76,
+      "text": "functions corresponding to our nodes. We"
+    },
+    {
+      "start": 2276.48,
+      "end": 2281.76,
+      "text": "added our nodes. Then we added the"
+    },
+    {
+      "start": 2279.76,
+      "end": 2283.92,
+      "text": "routing function. And we added our edge"
+    },
+    {
+      "start": 2281.76,
+      "end": 2285.599,
+      "text": "the conditional edges. We added the"
+    },
+    {
+      "start": 2283.92,
+      "end": 2289.359,
+      "text": "start and the end edges. And then we"
+    },
+    {
+      "start": 2285.599,
+      "end": 2289.3590000000004,
+      "text": "compiled. So it is compiling now."
+    },
+    {
+      "start": 2290.119,
+      "end": 2294.56,
+      "text": "Great. Now that we have compiled our"
+    },
+    {
+      "start": 2292.48,
+      "end": 2296.2400000000002,
+      "text": "graph, we are actually ready to run it."
+    },
+    {
+      "start": 2294.56,
+      "end": 2298.32,
+      "text": "But if you also want to visualize it,"
+    },
+    {
+      "start": 2296.24,
+      "end": 2301.2,
+      "text": "you're also ready to visualize it. So"
+    },
+    {
+      "start": 2298.32,
+      "end": 2302.88,
+      "text": "let me actually search and show you how"
+    },
+    {
+      "start": 2301.2,
+      "end": 2306.24,
+      "text": "to visualize. So if you just go over"
+    },
+    {
+      "start": 2302.88,
+      "end": 2308.2400000000002,
+      "text": "here, let's go down. So here they have"
+    },
+    {
+      "start": 2306.24,
+      "end": 2310.56,
+      "text": "given this code. Let's just copy paste"
+    },
+    {
+      "start": 2308.24,
+      "end": 2312.4799999999996,
+      "text": "this and let me show it to you."
+    },
+    {
+      "start": 2310.56,
+      "end": 2314.88,
+      "text": "So this is basically for some"
+    },
+    {
+      "start": 2312.48,
+      "end": 2317.839,
+      "text": "configurations we don't need this. All"
+    },
+    {
+      "start": 2314.88,
+      "end": 2320.32,
+      "text": "I'm doing is basically drawing the graph"
+    },
+    {
+      "start": 2317.839,
+      "end": 2323.2799999999997,
+      "text": "in PNG format. So here you can see"
+    },
+    {
+      "start": 2320.32,
+      "end": 2323.28,
+      "text": "right. So if I run"
+    },
+    {
+      "start": 2326.04,
+      "end": 2331.119,
+      "text": "this, it took some time but here it is"
+    },
+    {
+      "start": 2328.8,
+      "end": 2332.88,
+      "text": "our beautiful graph. So congratulations."
+    },
+    {
+      "start": 2331.119,
+      "end": 2334.32,
+      "text": "Let's just go through this once more. So"
+    },
+    {
+      "start": 2332.88,
+      "end": 2336.32,
+      "text": "this was the first node that we added"
+    },
+    {
+      "start": 2334.32,
+      "end": 2338.56,
+      "text": "categorize experience. Then we added"
+    },
+    {
+      "start": 2336.32,
+      "end": 2341.119,
+      "text": "these nodes. We added this conditional"
+    },
+    {
+      "start": 2338.56,
+      "end": 2344.0,
+      "text": "edges, right? We started from start, we"
+    },
+    {
+      "start": 2341.119,
+      "end": 2346.48,
+      "text": "ended at end. So this is how our graph"
+    },
+    {
+      "start": 2344.0,
+      "end": 2348.72,
+      "text": "looks like. Let's put it to test now."
+    },
+    {
+      "start": 2346.48,
+      "end": 2350.4,
+      "text": "Right? So we have the app. Now we need"
+    },
+    {
+      "start": 2348.72,
+      "end": 2351.839,
+      "text": "to invoke it and we need to see the"
+    },
+    {
+      "start": 2350.4,
+      "end": 2353.6800000000003,
+      "text": "results whether it is actually working"
+    },
+    {
+      "start": 2351.839,
+      "end": 2356.0,
+      "text": "or not. Right? So we will actually be"
+    },
+    {
+      "start": 2353.68,
+      "end": 2358.56,
+      "text": "making the calls to LLM and let's see if"
+    },
+    {
+      "start": 2356.0,
+      "end": 2360.16,
+      "text": "we are able to actually see this. So we"
+    },
+    {
+      "start": 2358.56,
+      "end": 2363.0,
+      "text": "I'm going to just write a simple"
+    },
+    {
+      "start": 2360.16,
+      "end": 2365.64,
+      "text": "function uh maybe run candidate"
+    },
+    {
+      "start": 2363.0,
+      "end": 2368.079,
+      "text": "screening and we are going to pass the"
+    },
+    {
+      "start": 2365.64,
+      "end": 2369.52,
+      "text": "application in this particular function"
+    },
+    {
+      "start": 2368.079,
+      "end": 2372.8,
+      "text": "which is going to be nothing but a"
+    },
+    {
+      "start": 2369.52,
+      "end": 2374.24,
+      "text": "string for now. It could also be a PDF"
+    },
+    {
+      "start": 2372.8,
+      "end": 2376.4,
+      "text": "which you're going to read and then"
+    },
+    {
+      "start": 2374.24,
+      "end": 2377.52,
+      "text": "probably you can assess that as well. So"
+    },
+    {
+      "start": 2376.4,
+      "end": 2379.2000000000003,
+      "text": "there are a lot of things that you can"
+    },
+    {
+      "start": 2377.52,
+      "end": 2380.48,
+      "text": "do but for now keeping things simple"
+    },
+    {
+      "start": 2379.2,
+      "end": 2383.2799999999997,
+      "text": "suppose we're getting an application in"
+    },
+    {
+      "start": 2380.48,
+      "end": 2386.0,
+      "text": "the string form then we are going to get"
+    },
+    {
+      "start": 2383.28,
+      "end": 2388.88,
+      "text": "the results by invoking our app. So I'm"
+    },
+    {
+      "start": 2386.0,
+      "end": 2391.68,
+      "text": "just going to do app.invoke invoke and I"
+    },
+    {
+      "start": 2388.88,
+      "end": 2393.6800000000003,
+      "text": "am going to pass the application as the"
+    },
+    {
+      "start": 2391.68,
+      "end": 2395.2799999999997,
+      "text": "dictionary and I'm going to whatever"
+    },
+    {
+      "start": 2393.68,
+      "end": 2398.16,
+      "text": "response I'm going to get I'm going to"
+    },
+    {
+      "start": 2395.28,
+      "end": 2400.6400000000003,
+      "text": "print it right but instead of print for"
+    },
+    {
+      "start": 2398.16,
+      "end": 2403.359,
+      "text": "now just let's return the whole thing"
+    },
+    {
+      "start": 2400.64,
+      "end": 2407.72,
+      "text": "right because I'm going to print that as"
+    },
+    {
+      "start": 2403.359,
+      "end": 2409.839,
+      "text": "well so let's just let me write it"
+    },
+    {
+      "start": 2407.72,
+      "end": 2413.68,
+      "text": "properly I know this is kind of"
+    },
+    {
+      "start": 2409.839,
+      "end": 2413.68,
+      "text": "redundant but this is for clarity"
+    },
+    {
+      "start": 2417.64,
+      "end": 2423.0,
+      "text": "Okay. So whatever we are getting it in"
+    },
+    {
+      "start": 2420.64,
+      "end": 2426.359,
+      "text": "the response, we are just returning that"
+    },
+    {
+      "start": 2423.0,
+      "end": 2428.96,
+      "text": "itself as the"
+    },
+    {
+      "start": 2426.359,
+      "end": 2430.88,
+      "text": "dictionary. So this is my function. I"
+    },
+    {
+      "start": 2428.96,
+      "end": 2433.2,
+      "text": "obviously need to call it. Let's take"
+    },
+    {
+      "start": 2430.88,
+      "end": 2436.96,
+      "text": "one example application text. This could"
+    },
+    {
+      "start": 2433.2,
+      "end": 2438.48,
+      "text": "be anything. See currently the code that"
+    },
+    {
+      "start": 2436.96,
+      "end": 2441.359,
+      "text": "I have written is that we are checking"
+    },
+    {
+      "start": 2438.48,
+      "end": 2444.079,
+      "text": "for Python job role. Right? Let's maybe"
+    },
+    {
+      "start": 2441.359,
+      "end": 2445.839,
+      "text": "pass for one Java role and let's see the"
+    },
+    {
+      "start": 2444.079,
+      "end": 2447.52,
+      "text": "application. Suppose I'm sending that I"
+    },
+    {
+      "start": 2445.839,
+      "end": 2449.2,
+      "text": "have experience in Java and I have"
+    },
+    {
+      "start": 2447.52,
+      "end": 2451.52,
+      "text": "experience in Python. Let's see what is"
+    },
+    {
+      "start": 2449.2,
+      "end": 2454.48,
+      "text": "the response and let's see if our LM is"
+    },
+    {
+      "start": 2451.52,
+      "end": 2457.0,
+      "text": "able to distinguish or not. So if I have"
+    },
+    {
+      "start": 2454.48,
+      "end": 2460.76,
+      "text": "10 years of"
+    },
+    {
+      "start": 2457.0,
+      "end": 2465.28,
+      "text": "experience in software"
+    },
+    {
+      "start": 2460.76,
+      "end": 2467.8390000000004,
+      "text": "engineering with expertise in Java."
+    },
+    {
+      "start": 2465.28,
+      "end": 2470.4,
+      "text": "Okay. So if I write this and if I try to"
+    },
+    {
+      "start": 2467.839,
+      "end": 2472.16,
+      "text": "get the results from my app. So I just"
+    },
+    {
+      "start": 2470.4,
+      "end": 2474.319,
+      "text": "need to call this function. I need to"
+    },
+    {
+      "start": 2472.16,
+      "end": 2477.2799999999997,
+      "text": "pass the application. So I'm going to"
+    },
+    {
+      "start": 2474.319,
+      "end": 2477.2799999999997,
+      "text": "pass the application"
+    },
+    {
+      "start": 2478.119,
+      "end": 2482.6400000000003,
+      "text": "text and whatever are the results I'm"
+    },
+    {
+      "start": 2481.119,
+      "end": 2483.76,
+      "text": "quickly going to print it as well. I"
+    },
+    {
+      "start": 2482.64,
+      "end": 2487.52,
+      "text": "know I could have just printed over"
+    },
+    {
+      "start": 2483.76,
+      "end": 2487.5200000000004,
+      "text": "there but just printing it properly"
+    },
+    {
+      "start": 2494.52,
+      "end": 2499.7599999999998,
+      "text": "again. So whatever the results I'm just"
+    },
+    {
+      "start": 2497.2,
+      "end": 2501.52,
+      "text": "going to print them again quickly."
+    },
+    {
+      "start": 2499.76,
+      "end": 2504.079,
+      "text": "And let's just try running this and"
+    },
+    {
+      "start": 2501.52,
+      "end": 2506.0,
+      "text": "let's see if it works or not. So"
+    },
+    {
+      "start": 2504.079,
+      "end": 2508.2400000000002,
+      "text": "categorizing the experience level of"
+    },
+    {
+      "start": 2506.0,
+      "end": 2510.64,
+      "text": "candidate as senior level. So 10 years"
+    },
+    {
+      "start": 2508.24,
+      "end": 2512.8799999999997,
+      "text": "it thought if as senior level assessing"
+    },
+    {
+      "start": 2510.64,
+      "end": 2515.2799999999997,
+      "text": "the match it assessed it and it was able"
+    },
+    {
+      "start": 2512.88,
+      "end": 2518.8,
+      "text": "to say that there is no match because we"
+    },
+    {
+      "start": 2515.28,
+      "end": 2521.0400000000004,
+      "text": "said in Java and it had what it had in"
+    },
+    {
+      "start": 2518.8,
+      "end": 2523.52,
+      "text": "Python. The job role that was expected"
+    },
+    {
+      "start": 2521.04,
+      "end": 2526.48,
+      "text": "the job description was in Python right"
+    },
+    {
+      "start": 2523.52,
+      "end": 2528.8,
+      "text": "because it was a senior level person so"
+    },
+    {
+      "start": 2526.48,
+      "end": 2530.8,
+      "text": "it escalated to recruiter. Right? if it"
+    },
+    {
+      "start": 2528.8,
+      "end": 2532.8,
+      "text": "was mid-level or if it was entry level,"
+    },
+    {
+      "start": 2530.8,
+      "end": 2534.1600000000003,
+      "text": "it would not have uh done that. Let's"
+    },
+    {
+      "start": 2532.8,
+      "end": 2536.0,
+      "text": "actually check it out. And I've just"
+    },
+    {
+      "start": 2534.16,
+      "end": 2537.359,
+      "text": "printed the same thing again. So these"
+    },
+    {
+      "start": 2536.0,
+      "end": 2538.8,
+      "text": "are the print statements that we added"
+    },
+    {
+      "start": 2537.359,
+      "end": 2541.44,
+      "text": "in the nodes. And this is the final"
+    },
+    {
+      "start": 2538.8,
+      "end": 2544.2400000000002,
+      "text": "computed result. So if I have one years"
+    },
+    {
+      "start": 2541.44,
+      "end": 2545.52,
+      "text": "of experience and suppose in Java"
+    },
+    {
+      "start": 2544.24,
+      "end": 2548.56,
+      "text": "itself, let's see what's going to"
+    },
+    {
+      "start": 2545.52,
+      "end": 2550.319,
+      "text": "happen. So because I I have only one"
+    },
+    {
+      "start": 2548.56,
+      "end": 2552.56,
+      "text": "year of experience, I am now entry"
+    },
+    {
+      "start": 2550.319,
+      "end": 2554.16,
+      "text": "level. The candidate is entry level. And"
+    },
+    {
+      "start": 2552.56,
+      "end": 2555.68,
+      "text": "because there is no match, we just"
+    },
+    {
+      "start": 2554.16,
+      "end": 2558.0789999999997,
+      "text": "rejected, right? So we send the"
+    },
+    {
+      "start": 2555.68,
+      "end": 2560.24,
+      "text": "rejection mail. See here because there"
+    },
+    {
+      "start": 2558.079,
+      "end": 2562.7200000000003,
+      "text": "was a senior person we had escalated to"
+    },
+    {
+      "start": 2560.24,
+      "end": 2564.0789999999997,
+      "text": "recruiter because now there is one year"
+    },
+    {
+      "start": 2562.72,
+      "end": 2566.9599999999996,
+      "text": "of experience we are sending the"
+    },
+    {
+      "start": 2564.079,
+      "end": 2569.2000000000003,
+      "text": "rejection mail let's try more suppose I"
+    },
+    {
+      "start": 2566.96,
+      "end": 2571.44,
+      "text": "have any years of experience okay so"
+    },
+    {
+      "start": 2569.2,
+      "end": 2574.16,
+      "text": "suppose I have no experience I have"
+    },
+    {
+      "start": 2571.44,
+      "end": 2577.52,
+      "text": "experience in software engineering in"
+    },
+    {
+      "start": 2574.16,
+      "end": 2577.52,
+      "text": "Python let's see what's going to"
+    },
+    {
+      "start": 2578.92,
+      "end": 2584.8,
+      "text": "happen so it by default set it to midle"
+    },
+    {
+      "start": 2582.16,
+      "end": 2588.0,
+      "text": "and it set a m match and it scheduled"
+    },
+    {
+      "start": 2584.8,
+      "end": 2591.2000000000003,
+      "text": "the interview correct So let's try maybe"
+    },
+    {
+      "start": 2588.0,
+      "end": 2595.88,
+      "text": "a bit more. Let's try for C++. Suppose I"
+    },
+    {
+      "start": 2591.2,
+      "end": 2599.56,
+      "text": "have uh 5 years of experience in"
+    },
+    {
+      "start": 2595.88,
+      "end": 2603.2000000000003,
+      "text": "C++ and let's see what's going to happen"
+    },
+    {
+      "start": 2599.56,
+      "end": 2604.96,
+      "text": "now. So again midle there's no match. So"
+    },
+    {
+      "start": 2603.2,
+      "end": 2607.4399999999996,
+      "text": "send the rejection made right."
+    },
+    {
+      "start": 2604.96,
+      "end": 2610.4,
+      "text": "Beautiful. So this is working nicely. I"
+    },
+    {
+      "start": 2607.44,
+      "end": 2611.92,
+      "text": "hope you are enjoying it. And this"
+    },
+    {
+      "start": 2610.4,
+      "end": 2614.0,
+      "text": "brings us to the end of the video. I"
+    },
+    {
+      "start": 2611.92,
+      "end": 2616.48,
+      "text": "hope you enjoyed. I know there's a lot"
+    },
+    {
+      "start": 2614.0,
+      "end": 2617.839,
+      "text": "more to Langraph obviously but this is a"
+    },
+    {
+      "start": 2616.48,
+      "end": 2619.68,
+      "text": "great place to start. You are ready to"
+    },
+    {
+      "start": 2617.839,
+      "end": 2621.7599999999998,
+      "text": "build so many apps now. I'm sure you"
+    },
+    {
+      "start": 2619.68,
+      "end": 2623.68,
+      "text": "must have a lot of ideas. It is so easy."
+    },
+    {
+      "start": 2621.76,
+      "end": 2625.3590000000004,
+      "text": "You can make LLMs do all your work and"
+    },
+    {
+      "start": 2623.68,
+      "end": 2627.5989999999997,
+      "text": "you can have conditions. You can have"
+    },
+    {
+      "start": 2625.359,
+      "end": 2630.24,
+      "text": "decision making and it is so easy to"
+    },
+    {
+      "start": 2627.599,
+      "end": 2631.92,
+      "text": "build so many cool apps. Now let me know"
+    },
+    {
+      "start": 2630.24,
+      "end": 2634.319,
+      "text": "your ideas in the comment section. And"
+    },
+    {
+      "start": 2631.92,
+      "end": 2636.8,
+      "text": "guys I am planning to cover so many"
+    },
+    {
+      "start": 2634.319,
+      "end": 2638.56,
+      "text": "projects in these next two three months."
+    },
+    {
+      "start": 2636.8,
+      "end": 2640.319,
+      "text": "Especially next month I am planning to"
+    },
+    {
+      "start": 2638.56,
+      "end": 2642.319,
+      "text": "cover a lot of projects. I'm going to be"
+    },
+    {
+      "start": 2640.319,
+      "end": 2644.079,
+      "text": "recording them. So if you have any"
+    },
+    {
+      "start": 2642.319,
+      "end": 2645.44,
+      "text": "particular topics or any particular"
+    },
+    {
+      "start": 2644.079,
+      "end": 2647.599,
+      "text": "projects that you would like me to work"
+    },
+    {
+      "start": 2645.44,
+      "end": 2650.0,
+      "text": "on for YouTube, let me know. I would"
+    },
+    {
+      "start": 2647.599,
+      "end": 2652.1600000000003,
+      "text": "love to do that. Also guys, please"
+    },
+    {
+      "start": 2650.0,
+      "end": 2653.599,
+      "text": "consider sharing this video on LinkedIn"
+    },
+    {
+      "start": 2652.16,
+      "end": 2656.16,
+      "text": "or with your friends or consider"
+    },
+    {
+      "start": 2653.599,
+      "end": 2658.1600000000003,
+      "text": "subscribing please. Uh because a lot of"
+    },
+    {
+      "start": 2656.16,
+      "end": 2660.0789999999997,
+      "text": "efforts goes behind this obviously I"
+    },
+    {
+      "start": 2658.16,
+      "end": 2661.92,
+      "text": "hope you can see that I'm literally"
+    },
+    {
+      "start": 2660.079,
+      "end": 2664.4,
+      "text": "making an entire playlist on machine"
+    },
+    {
+      "start": 2661.92,
+      "end": 2666.16,
+      "text": "learning covering huge videos like most"
+    },
+    {
+      "start": 2664.4,
+      "end": 2668.56,
+      "text": "of the videos are like 1 hour long"
+    },
+    {
+      "start": 2666.16,
+      "end": 2670.319,
+      "text": "bigger videos as well right. So please"
+    },
+    {
+      "start": 2668.56,
+      "end": 2671.52,
+      "text": "if you appreciate the effort, consider"
+    },
+    {
+      "start": 2670.319,
+      "end": 2673.119,
+      "text": "subscribing and sharing with your"
+    },
+    {
+      "start": 2671.52,
+      "end": 2675.359,
+      "text": "friends. I it would mean the world to"
+    },
+    {
+      "start": 2673.119,
+      "end": 2676.96,
+      "text": "me. Uh like all the effort would be"
+    },
+    {
+      "start": 2675.359,
+      "end": 2679.04,
+      "text": "completely worth it if you could just"
+    },
+    {
+      "start": 2676.96,
+      "end": 2681.119,
+      "text": "give the reach to the video that it"
+    },
+    {
+      "start": 2679.04,
+      "end": 2683.7599999999998,
+      "text": "really deserves. I truly believe that"
+    },
+    {
+      "start": 2681.119,
+      "end": 2685.92,
+      "text": "the videos deserve a lot more reach and"
+    },
+    {
+      "start": 2683.76,
+      "end": 2688.079,
+      "text": "let me know if you have any doubts. I'm"
+    },
+    {
+      "start": 2685.92,
+      "end": 2690.319,
+      "text": "here to help you out. Please comment"
+    },
+    {
+      "start": 2688.079,
+      "end": 2691.6800000000003,
+      "text": "section is there for that and let me"
+    },
+    {
+      "start": 2690.319,
+      "end": 2693.359,
+      "text": "know that you watch the video till the"
+    },
+    {
+      "start": 2691.68,
+      "end": 2696.95,
+      "text": "end. I would be very happy to read about"
+    },
+    {
+      "start": 2693.359,
+      "end": 2705.0,
+      "text": "it. See you next time guys. Bye."
+    },
+    {
+      "start": 2696.95,
+      "end": 2705.0,
+      "text": "[Music]"
+    }
+  ]
+}

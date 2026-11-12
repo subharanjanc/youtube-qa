@@ -1,0 +1,392 @@
+[
+  {
+    "id": "330c08f63b105dac910b42696913c41ec6d095569233b8bbf45f03fd531646ee",
+    "text": "your responsibility to consume that content as well right so I know you will do that I know I know I know so let's get started with the video and I oh there we have some more okay congratulations to all of these as well so now these are my handles if you want to follow me if you want to just uh let's say connect with me. These are my handles and that's it. Nothing special. So let's get started with this amazing masterass and let's try to master rag in a step-by-step approach. Let's see. So now it's time to discuss rag masterass. Okay. So rag is a very wide term to be honest. Okay, very wide term. It's equivalent to like I'm talking about term rag term is like in terms of um you can say use cases. So rag in today's era rag is equivalent to a database literally yes rag is equivalent to a database in today's era. So if I ask you a question let's talk about database you'll be like wait what kind of database what is the use case that you want to perform with that database? um what is the end goal to create the database and so many other questions right similarly with rag as well rag earlier was just a term to talk about",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 600.0,
+      "end_seconds": 687.44,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=600s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d40fb567df0ea38c10071efaadc15e4e99a4defe7a77ecf8264799d18b6f4d55",
+    "text": "want to perform with that database? um what is the end goal to create the database and so many other questions right similarly with rag as well rag earlier was just a term to talk about databases and AI but not now rag is much more than that because we perform data modeling with rag we perform so many other things that we're going to discuss today okay so just for your kind information do not feel like rag is just a term that we need to learn learn in just 10 to 15 minutes and that's it. This is just one of the terms that we can learn in AI. Rag is the backbone of AI data engineering. Okay, let me just write it for you. Rag is the backbone of AI data engineering. Now just tell me one thing. You are a data engineer. or you want to become a data engineer or whatever. If you want to do anything in today's era, if you want to do anything, you need to know rack. Okay? Because the heart of data engineers is data warehouse, database, data lakehouse, data mods and all those things, right? data modeling rag is the new player that has joined this group. Make sense? So earlier we used to talk about let's say uh we used to talk about",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 670.959,
+      "end_seconds": 774.8,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=670s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3f12eb45281093446dd147422fa93291e5bb966523a14d216a2450c8694d3a68",
+    "text": "data lakehouse, data mods and all those things, right? data modeling rag is the new player that has joined this group. Make sense? So earlier we used to talk about let's say uh we used to talk about let's say databases. We used to talk about databases. Okay. Then we used to talk about let's say SQL databases. Let's say MySQL post gray or so many other things right? So many other things. Let's say data warehouse. So we used to talk about these things. So far this was the traditional stack and don't worry I'll just provide all of these notes. Okay don't worry at all. So we used to talk about all of these things databases MySQL database data warehouse data lakehouse that we just got it from data bricks [clears throat] and then data lake as well. So we used to talk about all of these things in the world of data engineering. This was I would say these were the topics that were really popular till um so currently it's like almost 2026. So these topics were really really popular till 2024 or I would say 2025. Okay. Till 2025. So this was the era till you can say 2024 to 2025. Okay. I'm not saying like this is over but now this is transi trans transitioned to a different one",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 754.079,
+      "end_seconds": 850.0790000000001,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=754s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "eda600e5639df2ab921b9cf31c08aa216cff09e7d426fbf056f2d290f695d281",
+    "text": "till 2024 or I would say 2025. Okay. Till 2025. So this was the era till you can say 2024 to 2025. Okay. I'm not saying like this is over but now this is transi trans transitioned to a different one where we have all of these things all of these things okay but along with it we have something called as rag as well so this is the new era of data in children make sense make sense and this will be like let's say 25 because 25 is almost over And [clears throat] why I'm writing 2025? Because in 2025 we saw so many use cases of rack. So yes 2025 till future. Okay I can say that it can replace so many traditional database approaches replace so many but not all. In some areas it it will integrate with those um services. In some areas it will totally replace those services or it will just replace the approach how we used to perform the data modeling. Okay. Because see you are evident of the evolution of data. Earlier we just used to work with structured data then we started working with semiructured data. Then we started working with files and then we started working with unstructured data. So now we are into the era where we want to",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 829.04,
+      "end_seconds": 927.2790000000001,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=829s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "94cab4af9cd6df121ab71d7ec42e16ab69fd3038ec7906a149facdc3fbf75977",
+    "text": "Earlier we just used to work with structured data then we started working with semiructured data. Then we started working with files and then we started working with unstructured data. So now we are into the era where we want to work with the embeddings. Now what are embeddings? Don't worry. Don't worry at all. I know it's a new word but we [clears throat] will cover that as well. So this is the era where we want to talk about embeddings meanings of the context that we are passing user history user chat messages. So we want to perform data modeling using that as well. So this is the new era. Make sense? So this is a transition that you would see in the industry very very soon and I would say it is already started in 226 you will see a great wave of this thing and then do not say like hey we do not know these things. So this is the best time to learn all of these things. Make sense? So do not feel like this is not important we will learn it in let's say next year or let's say next to next year it is not very very popular. Just go and check the job descriptions and you will see the reality. Okay. So this was the",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 909.839,
+      "end_seconds": 979.519,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=909s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "27f449cebd1fbfceb2bf83ebf099c3d27f37263723c19b8f487df7b046f95b47",
+    "text": "important we will learn it in let's say next year or let's say next to next year it is not very very popular. Just go and check the job descriptions and you will see the reality. Okay. So this was the era. Now we know that why we need to learn rag and we also know the importance of rag that is also like evident and that is also sorted. Now ancha you said in the introduction that we do not need any kind of prior knowledge. True I agree. So bro we do not even know the back um the full form of rag. So first of all just tell us the full form of rag. Okay very good question. So, rag is nothing but retrieval augmented generation. Now, I know this is a very very very fancy word. Trust me, this will be very clear in just few few minutes. Okay, let me put it here. And don't worry, I'm just creating these notes so that you do not need to do the hard work. Okay, you just need to do the smart work and I will just create notes, all of these notes for you. And I will just provide all of these notes to you as well. So just relax and learn and enjoy. Okay, make sense? So now we know that we need",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 965.12,
+      "end_seconds": 1043.6789999999999,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=965s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ab8d518097c6693ad15a4ee23ac2f97a2a2df272bc702023e2ae6edf53cc6f08",
+    "text": "will just create notes, all of these notes for you. And I will just provide all of these notes to you as well. So just relax and learn and enjoy. Okay, make sense? So now we know that we need to learn rag. But you cannot learn rag directly. There are some dependencies, there are some knowledge sources that you need to first acquire. There are some you can say terms, terminologies and those things that you need to first of all understand. And why do we need to store anything in rag? If we have all the databases, you should have all of these questions in mind if you are focused so far in this video. Okay? Because these are the curious questions that any developer should have. Okay? Yes, all of these questions will be answered. But you should have more and more questions in your mind if you're studying rag. Because when I was studying rag, I was like, \"Bro, hold on. What is this thing? Why is this thing? Okay, why not this thing?\" So obviously I was just referring to so many sources to gather all of the all of that information and then I thought let's provide this contensed form of knowledge to my data fam so that they do not need to go here and there and need to just um",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1028.64,
+      "end_seconds": 1101.84,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1028s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "39602da712816d19a8c0a5599b32ca5dedc1a59facfe9b32d3d8bf6b3b26abdc",
+    "text": "to gather all of the all of that information and then I thought let's provide this contensed form of knowledge to my data fam so that they do not need to go here and there and need to just um look at so many sources. Okay. So first of all you need to understand the concept called embeddings that I used okay in the beginning. Let's see what is that embeddings. Do you have any idea like anyone if you are familiar with this term embeddings? Anyone if you have any understanding with this word embeddings? So embeddings is that particular term which is the most popular I would say the most popular term right now in the market. Why? There's a reason behind it. Because everything we are doing right now it is based upon the embeddings really yes it is based upon the embeddings. So let's talk about this embeddings first of all. So now what are embeddings? So let's say you want to let's say you are interacting with um um any chatbot. Okay let me just bring any chatbot if I have [snorts] let's say chat GPT. So currently you know like every organization is trying to build chat bots and it's not just about chat bots. Building chatbots was like an era when every industry was just focusing on",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1087.2,
+      "end_seconds": 1176.48,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1087s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ac5e751bb4e0b8379922d193368cfc550a009f63eb06d1ed97b8121d000118fb",
+    "text": "[snorts] let's say chat GPT. So currently you know like every organization is trying to build chat bots and it's not just about chat bots. Building chatbots was like an era when every industry was just focusing on building chatbots but now they are doing amazing stuff. Chatbot is just like a piece of cake for them because it is so so so easy right now to build. Okay. But still let's say you are building a chatbot not for the customers let's say for the business. Why and how? Let's say you are working as a data engineer in your organization. Makes sense. You are a developer. You want to enable AI capabilities for your manager. So that let's say you they have the data obviously but they do not know how to um interact with SQL databases. They do not know how to work with SQL databases or not just about databases literally with anything because they do not know how to write code. Not like all the managers. Some managers are good but yeah most of them are like you know the answer. So they do not know how to perform all of these things right. So now in that particular situation you can build an AI assistant for them and you not like you can you have to because now this is a",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1160.018,
+      "end_seconds": 1233.1200000000001,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1160s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "55068105cb46282356d4207094e6fec554fcf8c37f5b36798bf4d076a69e07d7",
+    "text": "they do not know how to perform all of these things right. So now in that particular situation you can build an AI assistant for them and you not like you can you have to because now this is a requirement in the industry so you need to enable those AI capabilities for the non- tech people as well make sense. So now let's say I am the director of the company okay and if I say hey I know I have the data in my lakehouse data lake cloud whatever I know I have the data I have the access to the data I will simply say um I want to know how much sales or let's say how much revenue we made last month I just want to ask this question make sense Now I am using chart GPD. Okay, I'm using chart GPD. Okay, let's say I am providing some context as well. So let's try to ask this question. Okay, so what I have given I have provided the revenue details which is like very arbitrary number. Let's say XYZ a kind of placeholder whatever. Okay. And then I'm asking like how much revenue we made last month. Simple. Let's try to hit enter. So what will happen? It will give us some reply obviously. So it is saying I",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1217.52,
+      "end_seconds": 1303.8400000000001,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1217s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ffd7dd7c65e9abbed15a58c022bde902b7d900c756899b95f40a4ad62adaea46",
+    "text": "of placeholder whatever. Okay. And then I'm asking like how much revenue we made last month. Simple. Let's try to hit enter. So what will happen? It will give us some reply obviously. So it is saying I am missing the actual numbers here. When you say my last month or let's say last month revenue was XYZ. Could you please clarify what does XYZ present and what figures you have for the last month? Once you share the actual data, I can calculate the last month revenue for you right away. Boom. you will say anala um it didn't provide you the actual answer but wait that's not the intent of the question I wrote this thing this question using my natural language okay using my language that I'm using on a day-to-day activity English how this machine this chart GPT is able to understand this thing how chat GPT or basically this model behind this chat GPT is able to understand that the meaning of this line means that I'm providing some context and the meaning of this line is I'm asking a question how how it knows that I'm asking this question and this is a context see look at the response I am missing the actual numbers when you say my last month was XYZ could you please clarify",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1288.64,
+      "end_seconds": 1377.679,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1288s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a6aabe9a0e588a47fb83967cd041c567592fa8e8de9705d3278aade7bebb1c44",
+    "text": "how it knows that I'm asking this question and this is a context see look at the response I am missing the actual numbers when you say my last month was XYZ could you please clarify this response I would expect from a human being because the human being can understand the context only human being can understand my context like what I'm trying to say but how this machine is able to understand that I am providing some context here I am providing some reference and this is my question how this is possible because of embeddings okay this is possible because of embeddings so what happened what happened when we passed Let's say I okay I I passed this input or you can say prompt. Prompt is a very technical word for input. Nowadays you can say prompt. Okay. When you passed this prompt this English it can be Hindi, it can be Telu, it can be any language, Spanish, French, German, anything. When you pass this thing and obviously English is the most popular one right now in among AI models but let's say you pass English. Okay. But I'm so sure even if you will pass any natural language, it will work because nowadays models are very very powerful and strong. So let's say you pass this thing in your model. Okay,",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1364.32,
+      "end_seconds": 1452.24,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1364s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b9fed5678d9ce409b50cf61a1b39a5ebf91b9aab07aa6a63e663ce0143a70759",
+    "text": "But I'm so sure even if you will pass any natural language, it will work because nowadays models are very very powerful and strong. So let's say you pass this thing in your model. Okay, you pass this prompt. So now what will happen? Not exactly this thing will go into the model and it will work. This prompt, this prompt, let me just bring my blackboard. I love that. So this prompt, the prompt that we have passed. So let's say you are a human. Okay. Or let's say any user. So let's say you are a user. Okay. And you passed a prompt. Okay. You passed a prompt. Any command, anything. Okay. It can be anything. Make sense? Or let's say message. Let's say you pass this message to what? To llm. Make sense? to LLM. So let's say you pass this to chat GPD or it can be anything Google whatever your favorite um model is. Okay. So I passed this prompt to this chat GPD. Do you know what will happen? Do you know? Now this prompt whatever message you have sent it will go to chat GPD obviously. Obviously it will go to ch it will go to the chart GBD chart GPT or basically open AI if you have some knowledge in in the AI world I would",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1438.159,
+      "end_seconds": 1530.0,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1438s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5e7323b22df1bfa2ccd2b0b90e03a2683a6bcc2b8f2b4536913ce1ce31f162f6",
+    "text": "have sent it will go to chat GPD obviously. Obviously it will go to ch it will go to the chart GBD chart GPT or basically open AI if you have some knowledge in in the AI world I would expect a little bit of news articles that you would have read or some post that you would have seen in AI or let's say you have not seen anything you are very busy so basically chart GPD uses um you can say models called open AI models because openi the is the parent company for chart GPD okay so let's say you have passed this prompt and it is going to the OpenAI model. Now this OpenAI model like this OpenAI company has so many models has so many models. So what it will do? It will convert this message this message because this is the input. Okay. Let's say this is the input or let's remove it from here. So let's say this is the input. Yeah, perfect. So let's say this is the input. This open AI model will convert this text, convert this English, convert this any prompt into something called as vector. It can be any vector. It can be any vector. Let's say a kind of graph. If we have any kind of you can say vector.",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1515.6,
+      "end_seconds": 1602.88,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1515s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "47edfebf094db86efcbea22ee5f404b104c77adc0899d669126756d0052ca390",
+    "text": "this text, convert this English, convert this any prompt into something called as vector. It can be any vector. It can be any vector. Let's say a kind of graph. If we have any kind of you can say vector. Okay, this is better. So this will convert it into a vector. And do you know what this vector is called? Embedding. This vector is called embedding vector. What's so special in this embedding vector? What's so special? Why we are talking about this thing like this is like embedding vector. And what's so special? Let me just tell you what's so special. So what will happen? Your message will be converted using this openi model into embedding vector. Now your text message is not just a text. It's not just like something very um random text that you have provided. This text is converted into a vector embedding vector which machine can understand which a model can understand. Make sense? So how does it look like? So it will look like a normal vector. If you have seen a vector in your school, let's say if you would have like studied about vectors in mathematics, physics or any I would say not in chemistry obviously but yeah in physics or mathematics in your school in 10th grade or whatever. So",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1579.76,
+      "end_seconds": 1671.76,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1579s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0aef766f225a24936342a1d4605fdaefef2d6a0f99dcd390ab7ac3361e10ade1",
+    "text": "if you would have like studied about vectors in mathematics, physics or any I would say not in chemistry obviously but yeah in physics or mathematics in your school in 10th grade or whatever. So vector looks like this. Let's say you want to um create a vector. So it will look like this. Let's say this is the opening braces. Then it will have some number. So let's say minus 1.0 O then comma then 2.3 then 4.1 and so on. So this is your vector. This is your vector. This is your vector. Okay. This is your vector. Simple. Okay. Make sense? So now how it will convert this text into the vector that is the power of this model. That is all the things that is that that is being done using this model. You do not need to do anything. That is why we are saying nowadays LLMs or basically models are actually making our life easy because you do not need to do all those stuff from scratch again and again. So how this vector is converted? How this vector is converted using this open AAI model. This is called embedding model that we have used and don't worry I will just show you everything with the practical thing as well. Currently we are understanding the concepts. Make",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1659.36,
+      "end_seconds": 1738.32,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1659s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f6ff14835c98eaa3879d1e92deb7c6cbf59a44c04af7283ba3322e3b55a0abde",
+    "text": "vector is converted using this open AAI model. This is called embedding model that we have used and don't worry I will just show you everything with the practical thing as well. Currently we are understanding the concepts. Make sense? Okay sorted. So we use this model we convert it into embedding vector. Now this embedding vector will go to another openhg model or let's say any other model. Okay. And then it will provide us the response in the form of normal language message that we have. Make sense? Or let me just remove this. It will provide me the message back to to the user like it can be you it can be anything. Okay. So it will provide the message to me. Okay. Make sense? And this will be also NLP. Why? Because it has the model to convert the vector into the message. Make sense? So this is the flow. This is the flow that it will perform. Understood? So if you use chat GP on a day-to-day activity, you should know what is happening behind the scenes. Whatever input you are giving, let's say this is your input. This is your input. It will first get converted into an embedding vector and then embedding vector will be go to will be will uh will go to the openi model again and",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1725.679,
+      "end_seconds": 1814.08,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1725s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ca059d12fc61ade47a4969f2ae70ab1f702351e722f498b1093faec8ef5d8734",
+    "text": "your input. This is your input. It will first get converted into an embedding vector and then embedding vector will be go to will be will uh will go to the openi model again and then it will generate the output. That's why you see that hey we have so many models we have this model. We have that model. So that is why we have so many models in the market because it depends which model you want to use. which model you want to use to get your work done. This is the power of embeddings. Make sense? So we understood what what are embeddings? Make sense? We understood this. What are embeddings? So now where does this concept of embedding come into the picture? Okay. Have you heard about SQL database? Have you? Yes. What type of data you put in that SQL database? Now you will say I put structured data. Okay. Very good. Very good. Now if I say if you have ever heard about MongoDB which is a very popular you can say uh semiructured database. What kind of data you put in that? Key value bears similar to JSON. Okay. Very good. Now if I say what kind of data what kind of data you will add in rag database? The answer is embeddings.",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1794.799,
+      "end_seconds": 1884.8799999999999,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1794s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "269fcebb499a9aa3faf6d9d5f53c483e7cc047ca0662223ee52f38a43b6a849e",
+    "text": "database. What kind of data you put in that? Key value bears similar to JSON. Okay. Very good. Now if I say what kind of data what kind of data you will add in rag database? The answer is embeddings. Oh, so embeddings is nothing but you can say your data type that you add in your rag database just embeddings not really embeddings plus metadata because metadata is very important to manage those embeddings okay now let's see it visually so that you can understand better so let's say let's talk about this let's say myql so if you have myql okay what kind of data you will add here obviously it will be tabular data make sense you will be having tabular data okay simple like nothing fancy okay so this will be like this my SQL is mapped to the tabular data now if I talk about MongoDB or any you can say um database that we use to store key value pairs so this will be This will be my key value pairs. Okay. Do we have key value pairs or let me just write it for you? JSON. Let's say key and value. Simple. Okay. Simple. Okay. You store this value. I'm not assuming that you would have worked with MongoDB to be honest. I",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1863.2,
+      "end_seconds": 1963.1200000000001,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1863s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "214edb8a46b33e56cca06809b2ab1824b0288bff46e9fb61caa20baad13e8398",
+    "text": "Do we have key value pairs or let me just write it for you? JSON. Let's say key and value. Simple. Okay. Simple. Okay. You store this value. I'm not assuming that you would have worked with MongoDB to be honest. I also haven't worked with MongoDB much. I have rarely used MongoDB because I use Azure Cosmos DB and all. But I'm just telling you that you would have heard about this term. Okay. But when I talk about rag, when I talk about rag, so in case of rag, you will use embeddings. Simple, nothing fancy. Let's say minus 1 something blah blah blah. Okay. One important question, one very important question that you should ask. Okay. Anala we know that tables have let's say some limits let let's say we want to store um rows and columns makes sense MongoDB stores the data in the form of key value pairs makes sense but Anal lamba just tell us one thing this is a rag okay and we are storing embeddings and embeddings we understood that embeddings are just the meanings of our text in such a form that machine can understand and in that format called a vector. Okay. But Angela what is the size of this vector? Because let's say I have provided this input this prompt.",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 1945.2,
+      "end_seconds": 2036.72,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=1945s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5ab16d9cbfa050e57dce0569d60f664c12a94cc7333f85e7084e4687e56ee9d9",
+    "text": "the meanings of our text in such a form that machine can understand and in that format called a vector. Okay. But Angela what is the size of this vector? Because let's say I have provided this input this prompt. I know this will be converted into a vector. I know that you have explained that thing. But what will be the size of the vector? Will it be the same? Will it be different for each prompt or it will depend on how much um text I am putting? Like what what what's about what what what will happen in that particular case? Let's say I'm providing a huge paragraph and I'm providing just one line. Will there be any difference? Very good question if you have asked this question. So let me just tell you what happens. So whenever we use any model, remember we used um open a model. Okay. And let me just say embedding model. Embedding embed model. Okay. Remember we use this model. Now whatever input you pass in the embed model okay it can be a huge paragraph it can be one line it can be even one word each each you can say prompt each prompt when it will go to the generation model will have the same number of the vector or",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 2018.159,
+      "end_seconds": 2103.04,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=2018s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d201ef42eb1d6d08e7ea2b62eae36677023b65b0051348198b8086093400551b",
+    "text": "paragraph it can be one line it can be even one word each each you can say prompt each prompt when it will go to the generation model will have the same number of the vector or basically the same size of the vector and what can be the size there are multiple options that we have in the open eye models A very popular one is536. So the size of this will be 1536. Okay, if you want to note it down,536. That is like one of the examples that we have, one of the models that uses. So what what it will do? It will create it will convert that text into vector and the size of that vector will be 1536. Now what is this 15 or 36 and what where from where this number came into the picture from where these numbers are decided by open AI it is not decided by you these are basically the features these are basically the dimensions that open AI has created to convert your text into something which can be understood just tell me one thing if I if I ask you hey convert this thing or basically decode this thing or let's say encode this thing into such a format so that you can understand you will say an",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 2083.679,
+      "end_seconds": 2173.28,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=2083s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "bae18b5b72de97c966d807b01eb907ca4335b3398224cff5e9ae3748d4ae68d5",
+    "text": "understood just tell me one thing if I if I ask you hey convert this thing or basically decode this thing or let's say encode this thing into such a format so that you can understand you will say an lamba I can understand English let's imagine that you cannot understand English or let's say you want to encode this thing to someone who can understand this who doesn't know English okay but that person understands a special language that only you know how will you do that you will have some dimensions or features Right? So let's say I have 1536 dimensions. I have 1536 features to convert this text into a vector. So those features can be let's say um regarding um is this a kind of u money talk? Okay. Is this regarding let's say um animals? Is this regarding let's say a kind of assumption? All these kind of features all these kind of features and these features are called dimensions. So there will be 1536 parameters or not like parameters 1536 dimensions on which we want to evaluate on we on which we want to evaluate our prompt to convert it into a vector. Make sense? And there are so many popular embedding models. Let me just show it to you. OpenAI embedding model. So let's try to explore their website.",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 2156.72,
+      "end_seconds": 2254.16,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=2156s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f571182ebe76396bc0eb850b5fb752c483664649367b0999a942ca085e4e2b93",
+    "text": "on we on which we want to evaluate our prompt to convert it into a vector. Make sense? And there are so many popular embedding models. Let me just show it to you. OpenAI embedding model. So let's try to explore their website. So new embedding models and API updates. See they just launch so many um different different models on a regular basis. So they have okay see how they're just converting text into a vector. Embedding is a sequence of numbers. New embedding models with lower pricing. So this is the model and this is the model which are the most popular ones right now. And this model has 100 1,536 that means 1536 dimensions and I think this is more than 3,000. Yeah. But we usually use small model. Okay. But if you want richer uh understanding you can use this model as well. How to use these models? Do not worry. I'll just show you everything. Okay. Do not worry at all. Make sense? So you can explore this particular blog as well where you can see more and more things like how they just using it. But you know what you do not need to worry about knowing all of these things because there are so many models in the market. You can use openi models. You",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 2232.88,
+      "end_seconds": 2311.92,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=2232s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4136bcdf49f07a605ff9e17ff4a3eee3944f5b376cf8d7973d06abafa775ccbe",
+    "text": "things like how they just using it. But you know what you do not need to worry about knowing all of these things because there are so many models in the market. You can use openi models. You can use I think I I would say Google models. There are so many models. So you do not need to worry about just these models. You just need to understand the concept. That's it. Because there are so many embedding models in hugging face as well that you can use. So nothing to worry. Okay. Nothing to worry. Okay. Makes sense. Makes sense. So now you know how we can convert this number and let me just remove it because it varies as per the models that you use. Make sense? So these are the embeddings. Now we know that we store embeddings in the database. Okay. And that database is called rag. Okay. Now I will write a word and you should know about this word or you would have heard about this word vector database. Okay, vector database. You would have heard about this word vector database. I would say vector database is nothing but is nothing but rag. Okay. So there are two popular names for rag. One is rag and second is vector db. That means vector database",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 2301.76,
+      "end_seconds": 2379.04,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=2301s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5f8f80c5ac1cffc1829a6113a4dea3f61e9da78d03c91e2727077219933f6fb3",
+    "text": "heard about this word vector database. I would say vector database is nothing but is nothing but rag. Okay. So there are two popular names for rag. One is rag and second is vector db. That means vector database and there's one more word called vector store. So if you hear any word any word rag vector db vector store the concept is same the intent is same the motive behind that conversation will be the same I'm so sure. So do not feel confused an lamb. So why do we have",
+    "metadata": {
+      "video_id": "71MW5WeHdz8",
+      "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+      "trainer": "Ansh Lamba",
+      "topic": "RAG",
+      "start_seconds": 2360.4,
+      "end_seconds": 2400,
+      "url": "https://www.youtube.com/watch?v=71MW5WeHdz8&t=2360s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

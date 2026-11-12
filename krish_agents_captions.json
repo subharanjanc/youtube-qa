@@ -1,0 +1,1813 @@
+{
+  "video_id": "HodCjnGv8Ag",
+  "title": "What Is Agentic RAG?",
+  "channel": "Krish Naik",
+  "trainer": "Krish Naik",
+  "topic": "Agents",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 890.0,
+  "segments": [
+    {
+      "start": 0.48,
+      "end": 4.720000000000001,
+      "text": "Hello all, my name is Krishna and"
+    },
+    {
+      "start": 2.48,
+      "end": 6.24,
+      "text": "welcome to my YouTube channel. So guys,"
+    },
+    {
+      "start": 4.72,
+      "end": 7.919,
+      "text": "today in this particular video we are"
+    },
+    {
+      "start": 6.24,
+      "end": 10.0,
+      "text": "going to discuss about the basic"
+    },
+    {
+      "start": 7.919,
+      "end": 13.599,
+      "text": "differences between a traditional rag"
+    },
+    {
+      "start": 10.0,
+      "end": 14.96,
+      "text": "system versus agentic rag. I hope you"
+    },
+    {
+      "start": 13.599,
+      "end": 16.48,
+      "text": "have heard about agentic AI"
+    },
+    {
+      "start": 14.96,
+      "end": 18.92,
+      "text": "applications, you have heard about AI"
+    },
+    {
+      "start": 16.48,
+      "end": 21.6,
+      "text": "agents, you may have also heard about"
+    },
+    {
+      "start": 18.92,
+      "end": 23.92,
+      "text": "rag. Many people have this specific"
+    },
+    {
+      "start": 21.6,
+      "end": 26.400000000000002,
+      "text": "confusion because now the recent trend"
+    },
+    {
+      "start": 23.92,
+      "end": 27.92,
+      "text": "is moving towards agentic rag. Many"
+    },
+    {
+      "start": 26.4,
+      "end": 30.4,
+      "text": "people know how to develop traditional"
+    },
+    {
+      "start": 27.92,
+      "end": 32.559000000000005,
+      "text": "rag. So in this particular video I will"
+    },
+    {
+      "start": 30.4,
+      "end": 34.64,
+      "text": "be showcasing you one complete end to-"
+    },
+    {
+      "start": 32.559,
+      "end": 36.48,
+      "text": "end example but before that we'll try to"
+    },
+    {
+      "start": 34.64,
+      "end": 38.879,
+      "text": "find out the basic differences between"
+    },
+    {
+      "start": 36.48,
+      "end": 40.48,
+      "text": "both of them. Please make sure that you"
+    },
+    {
+      "start": 38.879,
+      "end": 42.879,
+      "text": "watch this video till the end because"
+    },
+    {
+      "start": 40.48,
+      "end": 45.36,
+      "text": "these all videos are super important"
+    },
+    {
+      "start": 42.879,
+      "end": 47.039,
+      "text": "because at the end of the day you will"
+    },
+    {
+      "start": 45.36,
+      "end": 49.079,
+      "text": "be able to understand many things. It"
+    },
+    {
+      "start": 47.039,
+      "end": 52.559,
+      "text": "will be helpful for your interview also."
+    },
+    {
+      "start": 49.079,
+      "end": 54.8,
+      "text": "Okay. So let's first of all I I'll draw"
+    },
+    {
+      "start": 52.559,
+      "end": 57.039,
+      "text": "a lot of diagrams so that you know your"
+    },
+    {
+      "start": 54.8,
+      "end": 59.519999999999996,
+      "text": "understanding will be super super clear."
+    },
+    {
+      "start": 57.039,
+      "end": 61.28,
+      "text": "Okay. So first of all what I am actually"
+    },
+    {
+      "start": 59.52,
+      "end": 63.92,
+      "text": "going to do is that let's say that uh"
+    },
+    {
+      "start": 61.28,
+      "end": 65.6,
+      "text": "there is an user over here. Okay. And"
+    },
+    {
+      "start": 63.92,
+      "end": 67.04,
+      "text": "when we talk about user let's say that"
+    },
+    {
+      "start": 65.6,
+      "end": 69.19999999999999,
+      "text": "we are trying to develop some kind of"
+    },
+    {
+      "start": 67.04,
+      "end": 71.52000000000001,
+      "text": "generative AI application. Okay. And if"
+    },
+    {
+      "start": 69.2,
+      "end": 74.64,
+      "text": "you don't know what is rag rag basically"
+    },
+    {
+      "start": 71.52,
+      "end": 77.03999999999999,
+      "text": "means retrieval augumented generation."
+    },
+    {
+      "start": 74.64,
+      "end": 79.04,
+      "text": "Why do we use rag? Please write down in"
+    },
+    {
+      "start": 77.04,
+      "end": 81.68,
+      "text": "the comment section and then I will also"
+    },
+    {
+      "start": 79.04,
+      "end": 84.64,
+      "text": "explain you in the specific video. Okay."
+    },
+    {
+      "start": 81.68,
+      "end": 89.119,
+      "text": "So let's say this is a user. So a user"
+    },
+    {
+      "start": 84.64,
+      "end": 92.0,
+      "text": "is over here. Okay. and user is making a"
+    },
+    {
+      "start": 89.119,
+      "end": 94.88,
+      "text": "query. Okay, so let's say this is my"
+    },
+    {
+      "start": 92.0,
+      "end": 96.88,
+      "text": "query that is basically happening. Okay,"
+    },
+    {
+      "start": 94.88,
+      "end": 100.56,
+      "text": "I will just go ahead and click create"
+    },
+    {
+      "start": 96.88,
+      "end": 102.88,
+      "text": "some dots. So this is a query, right? As"
+    },
+    {
+      "start": 100.56,
+      "end": 105.92,
+      "text": "soon as a query is basically given by"
+    },
+    {
+      "start": 102.88,
+      "end": 109.439,
+      "text": "the user here we have something called"
+    },
+    {
+      "start": 105.92,
+      "end": 111.92,
+      "text": "as LLM application, right? So this is my"
+    },
+    {
+      "start": 109.439,
+      "end": 115.88,
+      "text": "LLM because whenever we talk about a"
+    },
+    {
+      "start": 111.92,
+      "end": 118.399,
+      "text": "generative AI application in short"
+    },
+    {
+      "start": 115.88,
+      "end": 120.479,
+      "text": "here we have a query this can be a"
+    },
+    {
+      "start": 118.399,
+      "end": 123.84,
+      "text": "chatbot this can be anything as such"
+    },
+    {
+      "start": 120.479,
+      "end": 126.479,
+      "text": "right. So based on this particular query"
+    },
+    {
+      "start": 123.84,
+      "end": 130.16,
+      "text": "here along with this particular query we"
+    },
+    {
+      "start": 126.479,
+      "end": 132.72,
+      "text": "also combine some kind of prompt right"
+    },
+    {
+      "start": 130.16,
+      "end": 134.959,
+      "text": "some kind of prompt and based on this"
+    },
+    {
+      "start": 132.72,
+      "end": 136.56,
+      "text": "particular prompt we give it along with"
+    },
+    {
+      "start": 134.959,
+      "end": 138.72,
+      "text": "this particular query we combine this"
+    },
+    {
+      "start": 136.56,
+      "end": 140.879,
+      "text": "prompt and this prompt is nothing but it"
+    },
+    {
+      "start": 138.72,
+      "end": 143.76,
+      "text": "is a kind of instruction how the LLM"
+    },
+    {
+      "start": 140.879,
+      "end": 145.67999999999998,
+      "text": "should behave I can say that hey um act"
+    },
+    {
+      "start": 143.76,
+      "end": 148.07999999999998,
+      "text": "like a data scientist and probably take"
+    },
+    {
+      "start": 145.68,
+      "end": 149.68,
+      "text": "an interview right ask interview"
+    },
+    {
+      "start": 148.08,
+      "end": 151.28,
+      "text": "questions that may be related to data"
+    },
+    {
+      "start": 149.68,
+      "end": 153.59900000000002,
+      "text": "science so that can be a prompt So"
+    },
+    {
+      "start": 151.28,
+      "end": 155.68,
+      "text": "whenever I probably try to add a query"
+    },
+    {
+      "start": 153.599,
+      "end": 158.07999999999998,
+      "text": "along with this prompt we integrate it"
+    },
+    {
+      "start": 155.68,
+      "end": 161.20000000000002,
+      "text": "and we send it to the LLM and finally"
+    },
+    {
+      "start": 158.08,
+      "end": 164.12,
+      "text": "LLM provides us some kind of output. So"
+    },
+    {
+      "start": 161.2,
+      "end": 167.56,
+      "text": "this is a normal generative AI"
+    },
+    {
+      "start": 164.12,
+      "end": 171.04,
+      "text": "application gen AI application"
+    },
+    {
+      "start": 167.56,
+      "end": 172.48,
+      "text": "right now we'll try to understand if I"
+    },
+    {
+      "start": 171.04,
+      "end": 175.44,
+      "text": "want to probably convert this generative"
+    },
+    {
+      "start": 172.48,
+      "end": 177.67999999999998,
+      "text": "AI application into a rag system then"
+    },
+    {
+      "start": 175.44,
+      "end": 180.879,
+      "text": "what I will do I will first of all go"
+    },
+    {
+      "start": 177.68,
+      "end": 182.8,
+      "text": "ahead and use some kind of vector"
+    },
+    {
+      "start": 180.879,
+      "end": 183.79999999999998,
+      "text": "database it can be a vector store it can"
+    },
+    {
+      "start": 182.8,
+      "end": 186.48000000000002,
+      "text": "be a vector"
+    },
+    {
+      "start": 183.8,
+      "end": 188.48000000000002,
+      "text": "database now when we add this vector"
+    },
+    {
+      "start": 186.48,
+      "end": 191.76,
+      "text": "store or vector database let's say this"
+    },
+    {
+      "start": 188.48,
+      "end": 194.319,
+      "text": "is my DB okay this is my database itself"
+    },
+    {
+      "start": 191.76,
+      "end": 196.39999999999998,
+      "text": "right I can also say it as vector DB"
+    },
+    {
+      "start": 194.319,
+      "end": 199.11999999999998,
+      "text": "okay let's say in this particular vector"
+    },
+    {
+      "start": 196.4,
+      "end": 202.59900000000002,
+      "text": "DB and if I probably consider let's say"
+    },
+    {
+      "start": 199.12,
+      "end": 205.36,
+      "text": "that u this vector DB has some"
+    },
+    {
+      "start": 202.599,
+      "end": 208.0,
+      "text": "information related to let's say my"
+    },
+    {
+      "start": 205.36,
+      "end": 210.4,
+      "text": "YouTube videos okay if I have any"
+    },
+    {
+      "start": 208.0,
+      "end": 213.08,
+      "text": "questions to ask related to my YouTube"
+    },
+    {
+      "start": 210.4,
+      "end": 216.08,
+      "text": "videos so that that YouTube video"
+    },
+    {
+      "start": 213.08,
+      "end": 218.4,
+      "text": "content content is available inside this"
+    },
+    {
+      "start": 216.08,
+      "end": 220.64000000000001,
+      "text": "particular vector database not only that"
+    },
+    {
+      "start": 218.4,
+      "end": 224.04,
+      "text": "let's say that I I have some of the"
+    },
+    {
+      "start": 220.64,
+      "end": 226.23899999999998,
+      "text": "Udemy courses information right courses"
+    },
+    {
+      "start": 224.04,
+      "end": 230.0,
+      "text": "information right and I'm trying to"
+    },
+    {
+      "start": 226.239,
+      "end": 232.239,
+      "text": "create a chatbot this chatbot what it"
+    },
+    {
+      "start": 230.0,
+      "end": 234.799,
+      "text": "does is that whenever you ask him hey"
+    },
+    {
+      "start": 232.239,
+      "end": 237.12,
+      "text": "Chris uh hey is there any Udemy coupons"
+    },
+    {
+      "start": 234.799,
+      "end": 238.87900000000002,
+      "text": "available for crush courses so that"
+    },
+    {
+      "start": 237.12,
+      "end": 241.20000000000002,
+      "text": "particular information will be available"
+    },
+    {
+      "start": 238.879,
+      "end": 243.04,
+      "text": "in this particular vector DB okay or"
+    },
+    {
+      "start": 241.2,
+      "end": 244.72,
+      "text": "what all new courses are there with for"
+    },
+    {
+      "start": 243.04,
+      "end": 247.35999999999999,
+      "text": "generative AI you can basically ask this"
+    },
+    {
+      "start": 244.72,
+      "end": 249.04,
+      "text": "chatbot assistant okay now in this"
+    },
+    {
+      "start": 247.36,
+      "end": 251.20000000000002,
+      "text": "particular scenario obviously the LLM"
+    },
+    {
+      "start": 249.04,
+      "end": 253.67999999999998,
+      "text": "want to be able to answer right llm do"
+    },
+    {
+      "start": 251.2,
+      "end": 254.879,
+      "text": "not has that specific information. Now"
+    },
+    {
+      "start": 253.68,
+      "end": 257.12,
+      "text": "if I want to probably convert this"
+    },
+    {
+      "start": 254.879,
+      "end": 259.12,
+      "text": "generative AI application into a"
+    },
+    {
+      "start": 257.12,
+      "end": 262.0,
+      "text": "traditional rag then what I will do I"
+    },
+    {
+      "start": 259.12,
+      "end": 264.24,
+      "text": "will put this DB and this DB will have"
+    },
+    {
+      "start": 262.0,
+      "end": 267.44,
+      "text": "all the data that data is basically"
+    },
+    {
+      "start": 264.24,
+      "end": 269.759,
+      "text": "converted from text to vectors text to"
+    },
+    {
+      "start": 267.44,
+      "end": 272.08,
+      "text": "vectors you can use any DB Astra DB"
+    },
+    {
+      "start": 269.759,
+      "end": 275.52000000000004,
+      "text": "MongoDB whatever and that vectors are"
+    },
+    {
+      "start": 272.08,
+      "end": 277.52,
+      "text": "basically stored over here. Now in a"
+    },
+    {
+      "start": 275.52,
+      "end": 279.24,
+      "text": "traditional rack whenever a query comes"
+    },
+    {
+      "start": 277.52,
+      "end": 281.28,
+      "text": "first of all that"
+    },
+    {
+      "start": 279.24,
+      "end": 284.0,
+      "text": "queries request will go to this"
+    },
+    {
+      "start": 281.28,
+      "end": 287.59999999999997,
+      "text": "particular DB and from this DB I get a"
+    },
+    {
+      "start": 284.0,
+      "end": 290.0,
+      "text": "specific response or context right we"
+    },
+    {
+      "start": 287.6,
+      "end": 292.84000000000003,
+      "text": "get some kind of response or context and"
+    },
+    {
+      "start": 290.0,
+      "end": 295.84,
+      "text": "this context is combined along with this"
+    },
+    {
+      "start": 292.84,
+      "end": 297.32,
+      "text": "prompt along with this prompt and sent"
+    },
+    {
+      "start": 295.84,
+      "end": 301.59999999999997,
+      "text": "to this particular"
+    },
+    {
+      "start": 297.32,
+      "end": 303.919,
+      "text": "LLM. So when we add a rags rag uh when"
+    },
+    {
+      "start": 301.6,
+      "end": 305.68,
+      "text": "we add a vector database the main aim"
+    },
+    {
+      "start": 303.919,
+      "end": 308.15999999999997,
+      "text": "over here is to probably provide"
+    },
+    {
+      "start": 305.68,
+      "end": 310.56,
+      "text": "information which my LLM cannot do it"
+    },
+    {
+      "start": 308.16,
+      "end": 312.47900000000004,
+      "text": "right my LLM do not has any information"
+    },
+    {
+      "start": 310.56,
+      "end": 314.639,
+      "text": "regarding my Udemy courses it may be"
+    },
+    {
+      "start": 312.479,
+      "end": 316.56,
+      "text": "trained in the future with the recent"
+    },
+    {
+      "start": 314.639,
+      "end": 320.0,
+      "text": "data but this kind of data is only"
+    },
+    {
+      "start": 316.56,
+      "end": 321.84,
+      "text": "specific to my use case right to my use"
+    },
+    {
+      "start": 320.0,
+      "end": 324.08,
+      "text": "case it is specific so what it will do"
+    },
+    {
+      "start": 321.84,
+      "end": 325.84,
+      "text": "it will take a probably a query get the"
+    },
+    {
+      "start": 324.08,
+      "end": 327.84,
+      "text": "context combine with the prompt give the"
+    },
+    {
+      "start": 325.84,
+      "end": 330.23999999999995,
+      "text": "LLM and then the LLM will finally give"
+    },
+    {
+      "start": 327.84,
+      "end": 333.84,
+      "text": "me output. So this is nothing but this"
+    },
+    {
+      "start": 330.24,
+      "end": 337.44,
+      "text": "is a traditional rag system. traditional"
+    },
+    {
+      "start": 333.84,
+      "end": 340.15999999999997,
+      "text": "rag right here precisely I'm able to get"
+    },
+    {
+      "start": 337.44,
+      "end": 342.32,
+      "text": "the right context precisely I'll be"
+    },
+    {
+      "start": 340.16,
+      "end": 344.47900000000004,
+      "text": "getting the good output right accurate"
+    },
+    {
+      "start": 342.32,
+      "end": 346.32,
+      "text": "output right and that is what is the"
+    },
+    {
+      "start": 344.479,
+      "end": 348.24,
+      "text": "meaning of rag by that is the reason we"
+    },
+    {
+      "start": 346.32,
+      "end": 349.919,
+      "text": "have this external database you know"
+    },
+    {
+      "start": 348.24,
+      "end": 351.84000000000003,
+      "text": "which has specific information and from"
+    },
+    {
+      "start": 349.919,
+      "end": 354.0,
+      "text": "this information I want a specific"
+    },
+    {
+      "start": 351.84,
+      "end": 356.63899999999995,
+      "text": "information to be given or displayed to"
+    },
+    {
+      "start": 354.0,
+      "end": 360.0,
+      "text": "the front end users right so this"
+    },
+    {
+      "start": 356.639,
+      "end": 361.84000000000003,
+      "text": "becomes a traditional rag now understand"
+    },
+    {
+      "start": 360.0,
+      "end": 363.36,
+      "text": "in this traditional rag there's some"
+    },
+    {
+      "start": 361.84,
+      "end": 366.71999999999997,
+      "text": "very important properties that you need"
+    },
+    {
+      "start": 363.36,
+      "end": 370.8,
+      "text": "to keep a note on. First of all, the LLM"
+    },
+    {
+      "start": 366.72,
+      "end": 372.84000000000003,
+      "text": "is only used once right here. Why is LLM"
+    },
+    {
+      "start": 370.8,
+      "end": 376.68,
+      "text": "used? Just to probably summarize the"
+    },
+    {
+      "start": 372.84,
+      "end": 378.96,
+      "text": "output, right? Summarize the"
+    },
+    {
+      "start": 376.68,
+      "end": 381.28000000000003,
+      "text": "output. That is why it is specifically"
+    },
+    {
+      "start": 378.96,
+      "end": 383.19899999999996,
+      "text": "used. Don't you see that I have a query"
+    },
+    {
+      "start": 381.28,
+      "end": 384.96,
+      "text": "this query is going to the database it"
+    },
+    {
+      "start": 383.199,
+      "end": 387.28000000000003,
+      "text": "is being retrieved. So that is the"
+    },
+    {
+      "start": 384.96,
+      "end": 389.12,
+      "text": "reason we say this as retrieval, right?"
+    },
+    {
+      "start": 387.28,
+      "end": 391.59999999999997,
+      "text": "We also say whenever we are using some"
+    },
+    {
+      "start": 389.12,
+      "end": 393.36,
+      "text": "kind of rag database it becomes a"
+    },
+    {
+      "start": 391.6,
+      "end": 395.36,
+      "text": "retriever tool and from that retriever"
+    },
+    {
+      "start": 393.36,
+      "end": 397.44,
+      "text": "we get a context we combine with the"
+    },
+    {
+      "start": 395.36,
+      "end": 399.68,
+      "text": "prompt then we send it to the LLM and"
+    },
+    {
+      "start": 397.44,
+      "end": 401.6,
+      "text": "finally we get the output here only LLM"
+    },
+    {
+      "start": 399.68,
+      "end": 405.6,
+      "text": "is used specifically to summarize the"
+    },
+    {
+      "start": 401.6,
+      "end": 408.24,
+      "text": "output but LLM has much more"
+    },
+    {
+      "start": 405.6,
+      "end": 411.36,
+      "text": "capabilities that is the reason and you"
+    },
+    {
+      "start": 408.24,
+      "end": 414.88,
+      "text": "need to understand this point LLM has"
+    },
+    {
+      "start": 411.36,
+      "end": 417.36,
+      "text": "huge capabilities now what capabilities"
+    },
+    {
+      "start": 414.88,
+      "end": 419.759,
+      "text": "I'm talking about now if I want convert"
+    },
+    {
+      "start": 417.36,
+      "end": 421.40000000000003,
+      "text": "this traditional rag into agentic rag"
+    },
+    {
+      "start": 419.759,
+      "end": 426.56,
+      "text": "then how do I do this"
+    },
+    {
+      "start": 421.4,
+      "end": 428.88,
+      "text": "okay here in agentic rag the llm can be"
+    },
+    {
+      "start": 426.56,
+      "end": 430.479,
+      "text": "used for some other capabilities also so"
+    },
+    {
+      "start": 428.88,
+      "end": 433.68,
+      "text": "now what I will do let's say I have a"
+    },
+    {
+      "start": 430.479,
+      "end": 435.52,
+      "text": "use case in this use case I have one of"
+    },
+    {
+      "start": 433.68,
+      "end": 437.52,
+      "text": "the vector database let's say in my"
+    },
+    {
+      "start": 435.52,
+      "end": 439.599,
+      "text": "company I have a requirement now I will"
+    },
+    {
+      "start": 437.52,
+      "end": 441.52,
+      "text": "just not use only one vector database I"
+    },
+    {
+      "start": 439.599,
+      "end": 443.28,
+      "text": "will use two vector database let's say"
+    },
+    {
+      "start": 441.52,
+      "end": 445.479,
+      "text": "this is my one vector database this is"
+    },
+    {
+      "start": 443.28,
+      "end": 448.79999999999995,
+      "text": "my another vector ve vector database"
+    },
+    {
+      "start": 445.479,
+      "end": 450.479,
+      "text": "okay Let's say since I have been"
+    },
+    {
+      "start": 448.8,
+      "end": 454.24,
+      "text": "uploading continuously YouTube videos"
+    },
+    {
+      "start": 450.479,
+      "end": 456.4,
+      "text": "also I haven't also uploading new Udemy"
+    },
+    {
+      "start": 454.24,
+      "end": 458.56,
+      "text": "courses I've been also uploading I have"
+    },
+    {
+      "start": 456.4,
+      "end": 461.44,
+      "text": "also been coming up with live courses on"
+    },
+    {
+      "start": 458.56,
+      "end": 464.0,
+      "text": "agentki so this vector database let's"
+    },
+    {
+      "start": 461.44,
+      "end": 466.96,
+      "text": "consider that this is my DB2 I will just"
+    },
+    {
+      "start": 464.0,
+      "end": 470.479,
+      "text": "go ahead and write it as DB2 this will"
+    },
+    {
+      "start": 466.96,
+      "end": 472.35999999999996,
+      "text": "have my Udemy information let's say"
+    },
+    {
+      "start": 470.479,
+      "end": 474.96,
+      "text": "Udemy"
+    },
+    {
+      "start": 472.36,
+      "end": 479.44,
+      "text": "information okay this will be having my"
+    },
+    {
+      "start": 474.96,
+      "end": 481.56,
+      "text": "Udemy information This DB3 will have my"
+    },
+    {
+      "start": 479.44,
+      "end": 485.039,
+      "text": "live courses"
+    },
+    {
+      "start": 481.56,
+      "end": 488.68,
+      "text": "information. Live courses information."
+    },
+    {
+      "start": 485.039,
+      "end": 491.52,
+      "text": "Okay, live courses information."
+    },
+    {
+      "start": 488.68,
+      "end": 494.72,
+      "text": "Now you'll be able to see that once"
+    },
+    {
+      "start": 491.52,
+      "end": 498.52,
+      "text": "whenever we give a query let's say if I"
+    },
+    {
+      "start": 494.72,
+      "end": 502.68,
+      "text": "ask this chatbot hey provide"
+    },
+    {
+      "start": 498.52,
+      "end": 505.599,
+      "text": "recent recent Udemy courses by"
+    },
+    {
+      "start": 502.68,
+      "end": 508.0,
+      "text": "crush or provide Udemy courses on"
+    },
+    {
+      "start": 505.599,
+      "end": 510.44,
+      "text": "generative AI or agentic AI let's say my"
+    },
+    {
+      "start": 508.0,
+      "end": 512.68,
+      "text": "question is provide Udemy courses"
+    },
+    {
+      "start": 510.44,
+      "end": 516.479,
+      "text": "on agentic"
+    },
+    {
+      "start": 512.68,
+      "end": 518.159,
+      "text": "AI okay agentic AI now as soon as the"
+    },
+    {
+      "start": 516.479,
+      "end": 520.76,
+      "text": "query comes Now the question arises"
+    },
+    {
+      "start": 518.159,
+      "end": 523.36,
+      "text": "should we go ahead and hit DB2 or"
+    },
+    {
+      "start": 520.76,
+      "end": 525.68,
+      "text": "DB3? Obviously by seeing this you can"
+    },
+    {
+      "start": 523.36,
+      "end": 527.519,
+      "text": "understand that Udemy information is"
+    },
+    {
+      "start": 525.68,
+      "end": 531.519,
+      "text": "present in DB2. So we have to probably"
+    },
+    {
+      "start": 527.519,
+      "end": 533.04,
+      "text": "go ahead and hit DB2. But here who will"
+    },
+    {
+      "start": 531.519,
+      "end": 534.32,
+      "text": "be taking this particular decision. Do"
+    },
+    {
+      "start": 533.04,
+      "end": 537.04,
+      "text": "you think that we have to go ahead and"
+    },
+    {
+      "start": 534.32,
+      "end": 538.36,
+      "text": "write some manual code? No. We can use"
+    },
+    {
+      "start": 537.04,
+      "end": 541.5999999999999,
+      "text": "this same"
+    },
+    {
+      "start": 538.36,
+      "end": 542.6800000000001,
+      "text": "LLM. We can use the capabilities of the"
+    },
+    {
+      "start": 541.6,
+      "end": 545.9200000000001,
+      "text": "same"
+    },
+    {
+      "start": 542.68,
+      "end": 548.12,
+      "text": "LLM and this LLM capabilities we can"
+    },
+    {
+      "start": 545.92,
+      "end": 550.04,
+      "text": "convert this in the form"
+    },
+    {
+      "start": 548.12,
+      "end": 553.6,
+      "text": "of"
+    },
+    {
+      "start": 550.04,
+      "end": 558.0799999999999,
+      "text": "agents. Okay, I will convert this in the"
+    },
+    {
+      "start": 553.6,
+      "end": 562.08,
+      "text": "form of agents. Right now what happens"
+    },
+    {
+      "start": 558.08,
+      "end": 565.12,
+      "text": "is that when we convert this into agent"
+    },
+    {
+      "start": 562.08,
+      "end": 567.519,
+      "text": "whenever a user query comes the agent"
+    },
+    {
+      "start": 565.12,
+      "end": 571.64,
+      "text": "will have the cap capability to route"
+    },
+    {
+      "start": 567.519,
+      "end": 574.88,
+      "text": "the query either to DB1 or DB2 or"
+    },
+    {
+      "start": 571.64,
+      "end": 577.6,
+      "text": "DB3. It has this particular capability."
+    },
+    {
+      "start": 574.88,
+      "end": 579.76,
+      "text": "Okay. Because this agent is already"
+    },
+    {
+      "start": 577.6,
+      "end": 582.36,
+      "text": "integrated with this specific tools."
+    },
+    {
+      "start": 579.76,
+      "end": 586.48,
+      "text": "These are called as retriever"
+    },
+    {
+      "start": 582.36,
+      "end": 588.8000000000001,
+      "text": "tools. Retriever tools."
+    },
+    {
+      "start": 586.48,
+      "end": 590.72,
+      "text": "Okay. So if you are probably developing"
+    },
+    {
+      "start": 588.8,
+      "end": 592.8,
+      "text": "with the help of lang or lang graph"
+    },
+    {
+      "start": 590.72,
+      "end": 594.48,
+      "text": "sorry lang graph at that point of time"
+    },
+    {
+      "start": 592.8,
+      "end": 596.8,
+      "text": "you can create this independent agents"
+    },
+    {
+      "start": 594.48,
+      "end": 598.8000000000001,
+      "text": "and you can add this as tools. So when"
+    },
+    {
+      "start": 596.8,
+      "end": 601.68,
+      "text": "you add this as a tools agent will have"
+    },
+    {
+      "start": 598.8,
+      "end": 603.279,
+      "text": "the information that whenever we have"
+    },
+    {
+      "start": 601.68,
+      "end": 607.04,
+      "text": "this kind of information coming from"
+    },
+    {
+      "start": 603.279,
+      "end": 608.959,
+      "text": "Udemy we need to route the query to DB2."
+    },
+    {
+      "start": 607.04,
+      "end": 610.959,
+      "text": "Otherwise if it is coming from live"
+    },
+    {
+      "start": 608.959,
+      "end": 615.04,
+      "text": "courses we need to route the query to"
+    },
+    {
+      "start": 610.959,
+      "end": 619.1199999999999,
+      "text": "DB3. Now what happens if I am trying to"
+    },
+    {
+      "start": 615.04,
+      "end": 621.48,
+      "text": "route this query to this specific DB2 my"
+    },
+    {
+      "start": 619.12,
+      "end": 624.399,
+      "text": "context which will be much more"
+    },
+    {
+      "start": 621.48,
+      "end": 626.16,
+      "text": "accurate. So my context the information"
+    },
+    {
+      "start": 624.399,
+      "end": 628.32,
+      "text": "that is coming from the DB2 which"
+    },
+    {
+      "start": 626.16,
+      "end": 630.7199999999999,
+      "text": "matches this particular query will be"
+    },
+    {
+      "start": 628.32,
+      "end": 633.44,
+      "text": "much more accurate and then my LLM will"
+    },
+    {
+      "start": 630.72,
+      "end": 635.839,
+      "text": "summarize otherwise it'll go to DB3 and"
+    },
+    {
+      "start": 633.44,
+      "end": 639.9200000000001,
+      "text": "again from here also it is possible that"
+    },
+    {
+      "start": 635.839,
+      "end": 642.48,
+      "text": "I will be able to get my context right"
+    },
+    {
+      "start": 639.92,
+      "end": 644.56,
+      "text": "but the best thing over here is that the"
+    },
+    {
+      "start": 642.48,
+      "end": 647.6800000000001,
+      "text": "agent is specifically taking this"
+    },
+    {
+      "start": 644.56,
+      "end": 650.2399999999999,
+      "text": "particular decision and it is also using"
+    },
+    {
+      "start": 647.68,
+      "end": 653.279,
+      "text": "rag in between. So similarly tomorrow"
+    },
+    {
+      "start": 650.24,
+      "end": 656.0790000000001,
+      "text": "you try to develop any kind of use cases"
+    },
+    {
+      "start": 653.279,
+      "end": 658.16,
+      "text": "right there may be more databases that"
+    },
+    {
+      "start": 656.079,
+      "end": 659.92,
+      "text": "you can add there will be one vector"
+    },
+    {
+      "start": 658.16,
+      "end": 662.48,
+      "text": "database let's say this is for company"
+    },
+    {
+      "start": 659.92,
+      "end": 664.399,
+      "text": "policy information it may be for other"
+    },
+    {
+      "start": 662.48,
+      "end": 665.9200000000001,
+      "text": "information now you may be thinking kish"
+    },
+    {
+      "start": 664.399,
+      "end": 667.6,
+      "text": "can't we just only use one vector"
+    },
+    {
+      "start": 665.92,
+      "end": 671.04,
+      "text": "database and put all the information out"
+    },
+    {
+      "start": 667.6,
+      "end": 674.32,
+      "text": "there you can but here I'm trying to"
+    },
+    {
+      "start": 671.04,
+      "end": 676.3199999999999,
+      "text": "probably get much more accurate result"
+    },
+    {
+      "start": 674.32,
+      "end": 678.0790000000001,
+      "text": "right because if I have a specific"
+    },
+    {
+      "start": 676.32,
+      "end": 679.6,
+      "text": "vector database let's say this is"
+    },
+    {
+      "start": 678.079,
+      "end": 682.0,
+      "text": "another database another database"
+    },
+    {
+      "start": 679.6,
+      "end": 684.6800000000001,
+      "text": "another database and we have those"
+    },
+    {
+      "start": 682.0,
+      "end": 687.92,
+      "text": "specific information those specific"
+    },
+    {
+      "start": 684.68,
+      "end": 690.3199999999999,
+      "text": "information my agent is basic uh is"
+    },
+    {
+      "start": 687.92,
+      "end": 692.959,
+      "text": "taking that decision what I should"
+    },
+    {
+      "start": 690.32,
+      "end": 695.36,
+      "text": "basically call right which vector"
+    },
+    {
+      "start": 692.959,
+      "end": 696.76,
+      "text": "database we should specifically call to"
+    },
+    {
+      "start": 695.36,
+      "end": 699.36,
+      "text": "get the"
+    },
+    {
+      "start": 696.76,
+      "end": 701.92,
+      "text": "context and more accurately if you get"
+    },
+    {
+      "start": 699.36,
+      "end": 704.32,
+      "text": "the context then we will also be able to"
+    },
+    {
+      "start": 701.92,
+      "end": 707.8389999999999,
+      "text": "get the output much more accurately"
+    },
+    {
+      "start": 704.32,
+      "end": 709.48,
+      "text": "right and this is what is all about"
+    },
+    {
+      "start": 707.839,
+      "end": 712.519,
+      "text": "agentic"
+    },
+    {
+      "start": 709.48,
+      "end": 715.519,
+      "text": "rag right agentic"
+    },
+    {
+      "start": 712.519,
+      "end": 718.0,
+      "text": "rag here the agents are taking that"
+    },
+    {
+      "start": 715.519,
+      "end": 719.76,
+      "text": "particular decision right agents are"
+    },
+    {
+      "start": 718.0,
+      "end": 721.44,
+      "text": "specifically taking the decision so if I"
+    },
+    {
+      "start": 719.76,
+      "end": 723.6,
+      "text": "probably go ahead and explain you it is"
+    },
+    {
+      "start": 721.44,
+      "end": 726.5600000000001,
+      "text": "a framework that enhances traditional"
+    },
+    {
+      "start": 723.6,
+      "end": 728.5600000000001,
+      "text": "rack system by interpolating inter sorry"
+    },
+    {
+      "start": 726.56,
+      "end": 730.959,
+      "text": "in incorporating intelligent agents to"
+    },
+    {
+      "start": 728.56,
+      "end": 734.6389999999999,
+      "text": "handle complex task and make decision"
+    },
+    {
+      "start": 730.959,
+      "end": 736.959,
+      "text": "dynamically right and uh if you see I"
+    },
+    {
+      "start": 734.639,
+      "end": 739.519,
+      "text": "was uh you know preparing lot of"
+    },
+    {
+      "start": 736.959,
+      "end": 742.6389999999999,
+      "text": "materials for my class students and all"
+    },
+    {
+      "start": 739.519,
+      "end": 744.399,
+      "text": "right and that is where we have to make"
+    },
+    {
+      "start": 742.639,
+      "end": 747.36,
+      "text": "sure to teach in such a way so that"
+    },
+    {
+      "start": 744.399,
+      "end": 750.32,
+      "text": "everybody understands right so if you"
+    },
+    {
+      "start": 747.36,
+      "end": 753.36,
+      "text": "see over here right see uh this is the"
+    },
+    {
+      "start": 750.32,
+      "end": 755.6800000000001,
+      "text": "code okay here uh what I have done is"
+    },
+    {
+      "start": 753.36,
+      "end": 759.44,
+      "text": "that you'll be able to see I have some"
+    },
+    {
+      "start": 755.68,
+      "end": 761.92,
+      "text": "langraph blogs okay this is inserted in"
+    },
+    {
+      "start": 759.44,
+      "end": 765.6800000000001,
+      "text": "one vector database then I have some"
+    },
+    {
+      "start": 761.92,
+      "end": 768.959,
+      "text": "langin blogs which is inserted in some"
+    },
+    {
+      "start": 765.68,
+      "end": 770.8,
+      "text": "vector database vector control then what"
+    },
+    {
+      "start": 768.959,
+      "end": 774.3199999999999,
+      "text": "we have done is that we have created"
+    },
+    {
+      "start": 770.8,
+      "end": 776.76,
+      "text": "this kind of workflow see this workflow"
+    },
+    {
+      "start": 774.32,
+      "end": 780.639,
+      "text": "now this agent is connected to DB1"
+    },
+    {
+      "start": 776.76,
+      "end": 782.24,
+      "text": "DB2 and when DB1 let's say one once a"
+    },
+    {
+      "start": 780.639,
+      "end": 784.24,
+      "text": "request is coming what is lang graph it"
+    },
+    {
+      "start": 782.24,
+      "end": 786.88,
+      "text": "will redirect or route to DB1 because"
+    },
+    {
+      "start": 784.24,
+      "end": 788.639,
+      "text": "DB1 has that particular information and"
+    },
+    {
+      "start": 786.88,
+      "end": 790.399,
+      "text": "then you can see that the entire"
+    },
+    {
+      "start": 788.639,
+      "end": 792.72,
+      "text": "workflow is designed in this specific"
+    },
+    {
+      "start": 790.399,
+      "end": 796.0,
+      "text": "way and just to show you give you an"
+    },
+    {
+      "start": 792.72,
+      "end": 798.72,
+      "text": "idea how it works right let's say I ask"
+    },
+    {
+      "start": 796.0,
+      "end": 800.399,
+      "text": "a question over here what is lang chain"
+    },
+    {
+      "start": 798.72,
+      "end": 802.399,
+      "text": "this is present in one vector database"
+    },
+    {
+      "start": 800.399,
+      "end": 804.0,
+      "text": "so if I just go ahead and execute it you"
+    },
+    {
+      "start": 802.399,
+      "end": 806.24,
+      "text": "can see agent is basically getting"
+    },
+    {
+      "start": 804.0,
+      "end": 808.32,
+      "text": "called then it is checking the relevance"
+    },
+    {
+      "start": 806.24,
+      "end": 810.0,
+      "text": "whether it matches the input it finds"
+    },
+    {
+      "start": 808.32,
+      "end": 813.2,
+      "text": "the docs relevant and then it is"
+    },
+    {
+      "start": 810.0,
+      "end": 815.279,
+      "text": "generating this entire content right"
+    },
+    {
+      "start": 813.2,
+      "end": 817.279,
+      "text": "let's say that if some of the data is"
+    },
+    {
+      "start": 815.279,
+      "end": 818.88,
+      "text": "not present in my vector database how"
+    },
+    {
+      "start": 817.279,
+      "end": 821.68,
+      "text": "does it work so I'll just go ahead and"
+    },
+    {
+      "start": 818.88,
+      "end": 823.12,
+      "text": "ask what is machine learning right and"
+    },
+    {
+      "start": 821.68,
+      "end": 824.6389999999999,
+      "text": "here you'll be able to see that it'll"
+    },
+    {
+      "start": 823.12,
+      "end": 826.639,
+      "text": "it'll just go ahead and call the agent"
+    },
+    {
+      "start": 824.639,
+      "end": 828.639,
+      "text": "but it sees that the vector database"
+    },
+    {
+      "start": 826.639,
+      "end": 830.399,
+      "text": "does not have this particular data. So"
+    },
+    {
+      "start": 828.639,
+      "end": 832.399,
+      "text": "it will just continue with the execution"
+    },
+    {
+      "start": 830.399,
+      "end": 834.639,
+      "text": "and the LLM will be giving it. If the"
+    },
+    {
+      "start": 832.399,
+      "end": 837.36,
+      "text": "LLM does not know that also we can"
+    },
+    {
+      "start": 834.639,
+      "end": 839.6800000000001,
+      "text": "specifically handle. So we can add any"
+    },
+    {
+      "start": 837.36,
+      "end": 841.44,
+      "text": "number of conditions over here and this"
+    },
+    {
+      "start": 839.68,
+      "end": 844.16,
+      "text": "is nothing but this is called as"
+    },
+    {
+      "start": 841.44,
+      "end": 848.0,
+      "text": "routing. Okay. So routing you can add"
+    },
+    {
+      "start": 844.16,
+      "end": 850.959,
+      "text": "any number of routers. Right? So I hope"
+    },
+    {
+      "start": 848.0,
+      "end": 853.44,
+      "text": "you understood this amazing explanation"
+    },
+    {
+      "start": 850.959,
+      "end": 856.16,
+      "text": "about traditional rag versus a gentic"
+    },
+    {
+      "start": 853.44,
+      "end": 858.1600000000001,
+      "text": "rag. Super amazing. Now tomorrow you"
+    },
+    {
+      "start": 856.16,
+      "end": 860.079,
+      "text": "build a use case of your own any number"
+    },
+    {
+      "start": 858.16,
+      "end": 862.88,
+      "text": "of vector databases you can probably"
+    },
+    {
+      "start": 860.079,
+      "end": 865.04,
+      "text": "create add create it as a retriever tool"
+    },
+    {
+      "start": 862.88,
+      "end": 867.12,
+      "text": "and try to integrate as a tools to this"
+    },
+    {
+      "start": 865.04,
+      "end": 868.88,
+      "text": "particular agent the agent will be able"
+    },
+    {
+      "start": 867.12,
+      "end": 870.88,
+      "text": "to handle that particular task of"
+    },
+    {
+      "start": 868.88,
+      "end": 872.48,
+      "text": "routing your query and getting the"
+    },
+    {
+      "start": 870.88,
+      "end": 874.88,
+      "text": "response and from the LLM you'll be able"
+    },
+    {
+      "start": 872.48,
+      "end": 876.639,
+      "text": "to get the output right so I hope you"
+    },
+    {
+      "start": 874.88,
+      "end": 878.16,
+      "text": "like this particular video this was it"
+    },
+    {
+      "start": 876.639,
+      "end": 879.6,
+      "text": "from my side I'll see you all in the"
+    },
+    {
+      "start": 878.16,
+      "end": 881.4399999999999,
+      "text": "next video have a great day thank you"
+    },
+    {
+      "start": 879.6,
+      "end": 884.16,
+      "text": "one and all take care and these all"
+    },
+    {
+      "start": 881.44,
+      "end": 886.72,
+      "text": "videos are specifically created to make"
+    },
+    {
+      "start": 884.16,
+      "end": 888.16,
+      "text": "your basics really really strong. So"
+    },
+    {
+      "start": 886.72,
+      "end": 890.0,
+      "text": "yes, this was it for my side. I'll see"
+    },
+    {
+      "start": 888.16,
+      "end": 890.0,
+      "text": "you in the next video. Thank you."
+    }
+  ]
+}

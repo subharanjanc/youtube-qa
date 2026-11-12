@@ -1,0 +1,850 @@
+[
+  {
+    "id": "2678e534ac86e46d2f3d8408e41227c0e4e529c632a0a02e5977fefbba500ba4",
+    "text": "Lang stands for language models chain stands for what isn't it beautiful custom functions used as rebles are called reenable LTS there are three types of chaining that variable I'm passing to The Prompt that I'm passing to the llm and then I'm going to pass now we are ready to create our parallel rebles this is actually deprecated smart software Engineers are learning to build apps based on llms and congratulations if you're trying to do the same because you are in the right place now imagine that you have already built your app using openi API now let's think of some problems that you can run into suppose with time what happened was that open ai's API became very costly and there are other llms out there which actually started offering better Solutions at cheaper price so now you want to switch from GPT to say llama Or Gemini but now you will have to switch all your code you will have to make the calls again and again and it is going to be such a complex process another problem that can happen is that you have your own startup now you have some data that is that belongs to you right now if you're just making call to GPT GPT has no idea about your data right so how do you make sure",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 0.04,
+      "end_seconds": 70.03999999999999,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7c493dbb9e9abb03fb9d4c66302b3ebdbaafd173fee6888d9b66a6fcf4a0a080",
+    "text": "happen is that you have your own startup now you have some data that is that belongs to you right now if you're just making call to GPT GPT has no idea about your data right so how do you make sure that that data can also be read so you need some tool so that you know your app can also understand your data and also learn from GPT and based on this give you combined really good responses now another problem that you can run into is that GPT does not have latest information so you also want to be able to read latest information from the net so how are you going to do all of this exactly this is why we need a common framework where switching llm should be very easy today you using GPT tomorrow if you want to use llama or you want to use Gemini it should be very easy such complex processes should become very easy having external tools integration should be very very easy and this is exactly what Lang chain does for us so Lang chain is the framework that is going to help you build apps using llms so I hope you have understood why is Lang chain very very important for you to understand it is going to be",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 55.12,
+      "end_seconds": 125.52,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=55s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6689597a9c3b38b5c397d24f3a63e418a7ef4ff34833fa831bd2c808eb8682f5",
+    "text": "Lang chain is the framework that is going to help you build apps using llms so I hope you have understood why is Lang chain very very important for you to understand it is going to be extremely famous and you really need to understand this it is going to help you save so much of your time and it is very easy to understand and we have so much to cover in this video so let's get started this is the official documentation of Lang chain and this is what we'll be referring to this is about building a simple llm application with chat models and prom templates so as you can understand chat models and prom templates are very very important topics and we'll be focusing on them the the documentation over here is just amazing but let's get started with simple setup for now see the focus is going to be on building the app in this video so the setup that we are going to use is going to be very simple just run jupyter notebook and the pandas tutorial was also on jupyter notebooks for but for absolute beginers what you have to do is just go over here go to install the notebook and all you have to do is pimp install notebook and jupyter notebook",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 112.079,
+      "end_seconds": 172.31900000000002,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=112s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "02860fd2bf396a03144a73fe2253008bc4a1010f3219e587b42383f423cb91e7",
+    "text": "also on jupyter notebooks for but for absolute beginers what you have to do is just go over here go to install the notebook and all you have to do is pimp install notebook and jupyter notebook and that's it focus on building the app for now okay now moving on to the documentation see the awesome part about this documentation is that it is not just book focus on open although in this video we'll be using openi API to build our application the awesome thing is that after this video you'll be able to use any llm and still be able to build the app that is the whole point of using Lang chain right so here if I select like Google so you can just use gini model similarly if I just say Nvidia you can use the metal Lama 3 Model so like this all you have to do is just say I want to use so and so API and you'll be able to go ahead with this so to be able to use the open AI we have to set up an open AI API key so this is the very first step in order to get started we have to set up the open AI API key and then we'll move ahead and understand it",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 161.159,
+      "end_seconds": 222.67999999999998,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=161s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ecedcbd8451e270bc2679d0484e19f4fdad5fa4563210628773539cbdd1ceec5",
+    "text": "to use the open AI we have to set up an open AI API key so this is the very first step in order to get started we have to set up the open AI API key and then we'll move ahead and understand it how can we get started so let's do this first before we move ahead I would just like to take a moment over here to share something with you over the last few months I think all of us have realized that m is the future and that is why you're watching the video it makes sense to read about it to study it and be future ready and I've been doing the same over the last few months I've spent so much time m in fact we have a product called tax stop which is currently live only for the educ cour students but we are integrating a lot of a stuff into it and I'm learning so much over there also we have been designing a live Hands-On generative AI course we have finally launched it it's a 7 weeks course you can check out the curriculum over here it has 10 projects some small some quite big projects but it is going to be completely live and I'm just so much excited for it because here you will not",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 209.599,
+      "end_seconds": 269.16,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=209s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "097d8e29bc401d7c2d1f9c8cb23371fbc4a6fb41f25827da698a3d258b6756b0",
+    "text": "can check out the curriculum over here it has 10 projects some small some quite big projects but it is going to be completely live and I'm just so much excited for it because here you will not only be learning about gen VI you'll be building deploying and applying generative AI the last Hands-On course that we did was Hands-On high level system design course which we call hhld that was M plus devops plus hld that is still one of the most enrolled courses on edu courses I have seen so many students not only develop end to end projects skillable projects but deploy them and add them to their resume it was one of the most satisfying things that I have done as part of edu courses as a software engineer as a teacher that's when I decided that I want to do more Hands-On courses and I really excited for this and it's going be live so I hope to see you there like all the other courses you will get access to the recordings to all the future live batches and you will get the access to code notes everything you can check out the details you can check out the testimonials of all the other courses and I'm really excited for this but for",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 257.079,
+      "end_seconds": 316.91900000000004,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=257s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a7fded8d18ba02f6a66b97ca4f7e72727c8b1e50192e6f90e8a0557168cba3ff",
+    "text": "batches and you will get the access to code notes everything you can check out the details you can check out the testimonials of all the other courses and I'm really excited for this but for now let's continue I hope to see you there for now let's continue in order to set up openi API key just go to platform. open.com you will be able to see all the documents M ation over here a lot of details is there but just go to dashboard go to API Keys see right now I have two secret Keys these are for my projects what you can do is create a new secret key over here just give some name like for example text project and create the secret key and copy it and keep it somewhere make sure you save it because you will not be able to access it later and we'll be needing it so I'll be using this one and I'm deleting the one that I just created this is how you can also delete it so what you have to do now is the cop copy secret key just go to the same folder where you'll be creating your notebook file create a EnV file over here and just write open AI API key and whatever key that you had saved it",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 305.12,
+      "end_seconds": 375.24,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=305s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "982a383be84b5f70322c3be8d7158bb4f38ab6919641fbd24a4585767ecb5681",
+    "text": "the cop copy secret key just go to the same folder where you'll be creating your notebook file create a EnV file over here and just write open AI API key and whatever key that you had saved it will be something like SK something right so just paste it over here I will do the same right now and after this we are ready to get started with writing our code I have pasted the secret key. EnV file and let's finally get started with writing the code in our notebook I'm going to be doing pip install python. EnV so that's fine and now what I'm going to do is I'm going to be importing OS so anything whenever you are dealing with operating system right now we need to load the environment variables so this is just to load at open API key okay so just some boiler plate code right now I'm going to be importing OS and then from EnV we are going to be importing load. EnV so that we can load our environment variables so I've loaded the environment variables now and now I can get our open AP I key and I can read it like this so os. get EnV and over here we we had used the variable open AI API key so now that we",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 359.199,
+      "end_seconds": 434.12,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=359s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "eefbc35b010ef16097094748b39f810d471a366b47782c904577889fc02b9225",
+    "text": "now and now I can get our open AP I key and I can read it like this so os. get EnV and over here we we had used the variable open AI API key so now that we have loaded our open API key we can finally get started with writing our code and let's go back to the langage documentation we are going to start interacting with our llm in our case it is going to be GPT and you're going to be Amazed by how simple Lang chain makes it for us just check it out so here it is given that from Lang chain open open we have to import chat openi what is chat open it is a chat model what is a chat model let's finally understand it let's go back to the top here it was mentioned that we are going to build the application with chat models and promt templates what are chat models let's check out this documentation using language models I'm just going to go over here here it is mentioned l are typically accessed through a chat model interface let me make it very simple to you basically whenever you want to interact with any model with any llm okay you're going to be accessing it you're going to be interacting with it",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 416.879,
+      "end_seconds": 497.0,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=416s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "81881c57e3de28aa925e4e2e65f4e5c556230150e923b0084686193cb48763a6",
+    "text": "interface let me make it very simple to you basically whenever you want to interact with any model with any llm okay you're going to be accessing it you're going to be interacting with it via chat model interface so in L chain what they have done is they have created separate packages for each provider like for example if we we are using the openi provider the package is going to be Lang chain Dash provider so let me show it to you over here also so because we have selected openi we are going to be using which package Lang chain openi suppose it was Google then the chat model name is chat vertex Ai and we are importing from where from Lang chain Google vertex AI similarly if it was Nvidia then the chat model name would have been chat Nvidia importing from where from Lang chain Nvidia AI points right so it makes it so simple for us we are going to be using openi the chat model that we are using so basically this is just just a way of interacting with the llm with the GPT so we are going to be creating a chat model which is chat openi okay so that is what we are going to be importing let me actually just copy",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 482.24,
+      "end_seconds": 552.92,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=482s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "53b07adbc70041f2aeb52583aab2a0778c786bfc6a63758f670ebd6e48e5ca7c",
+    "text": "way of interacting with the llm with the GPT so we are going to be creating a chat model which is chat openi okay so that is what we are going to be importing let me actually just copy paste this also to be able to get this chat model we have to use any of these packages okay one is Lang chain openi or we can use the community also Lang chain Community it is given that the models are mostly contributed and supported by the community so we can use this as well and see the models are named with the convention that starts with chat so the names are like chatama chat entropic chat openi the documentation is just beautiful so if I show you this documentation also here they have mentioned all of this right so we have already done the API key part we just need to create our model and start invoking some messages right basically we are going to send some instructions to our llm so what do we need to do firstly I need to import this chat open first let's install the packages so I can uh install either L chain open I could also do Lang chain Community uh let me actually show both so Lang chain community and I'm going to just run this",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 539.72,
+      "end_seconds": 612.079,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=539s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "01dbc6485310ce76aaca511be2cd96189e4c9193ac22fb26ab29f770c6f3564a",
+    "text": "first let's install the packages so I can uh install either L chain open I could also do Lang chain Community uh let me actually show both so Lang chain community and I'm going to just run this and now I'm going to be just pasting this so I'm importing chat open okay and we are done with this we can finally get started with calling our llm so I'm calling it llm you can call it anything most people call it llm you can call it open llm model you can call it anything okay so I'm calling this method chat open a to create our llm so open AI we can mention the model over here just like it is mentioned in the documentation we can mention the model I'm leaving it as it is for now just to get started and now I can invoke the method in work and what I'm going to do is I'm just going to give us give an instruction like how to CH jptv give instructions right tell me this tell me that just like that I'm going to give an instruction suggest me uh title of movie to watch okay so any movie to watch so suggest me some title and we are going to save the response over here and let's check out what",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 592.92,
+      "end_seconds": 673.639,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=592s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6e4c985c2f9f7ffde67ea7f37fe9f7d59b8294b1080f7ce5bd9272772c2058f3",
+    "text": "instruction suggest me uh title of movie to watch okay so any movie to watch so suggest me some title and we are going to save the response over here and let's check out what response we are going to get and I'm going to just run this and here we have gotten a good response here in the content we can see there is a name that is present over here right so let me actually also just uh print response content so if I do that I can see the midnight sky if I run it again then it is midnight serenate okay suppose movie in Hindi to watch okay and let me run this so it is saying abbut yatra okay so we can watch adut yatra so congratulations we just interacted with GPT actually we gave an instruction to GPT and it responded us with some content also for those of you are interested just wanted to show you something cool see L chain has a amazing documentation okay so here you can check out all the providers that they support and the package names and the additional functionalities that they have so over here if you go back to the documentation you can see uh these chat models usually offer these additional capabilities so suppose tool call it we'll be discussing",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 656.36,
+      "end_seconds": 738.5600000000001,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=656s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "29445b92018bf7b04fdac96704a82f925e29f76f0a9f303f3e1be1e538647dea",
+    "text": "and the package names and the additional functionalities that they have so over here if you go back to the documentation you can see uh these chat models usually offer these additional capabilities so suppose tool call it we'll be discussing and seeing these in a lot of detail in the coming videos also but this is like a higher level idea we will check out other providers as well right so right now in this video we are using openi uh but these are the usual capabilities right right so tool calling meaning do they support external tools structured output meaning can they respond in a structured format like for example Json multimodality meaning do they support only text or do they also support images audio video so that is multimodality so like this they have mentioned that these are the providers these are the functionalities that they support if suppose you want to explore for example vertex AI so you can see okay these are the functionalities this is the package name so you can see the documentation and you can actually check it out right one more thing that I wanted to show you was that if you when you creating the model like chat open AI right you can obviously give a lot of configurations we had seen in the documentation we can",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 723.839,
+      "end_seconds": 790.44,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=723s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7cc8353eec9aa1126123320c87e536baade86130717f0e22db65ce998c5094bb",
+    "text": "one more thing that I wanted to show you was that if you when you creating the model like chat open AI right you can obviously give a lot of configurations we had seen in the documentation we can mention the model right we can see over here the default model that we using is GPT 3.5 turbo but you can use 4o for mini like this you can mention which model you want to use another very common thing that usually people mention is temperature okay so let me actually show it to you so you could actually give it like this temperature the value is between 0er and one so zero means that you want your model to be very very precise okay basically you do not want any Randomness you do not want any creativity so suppose you're doing any summarizations or any calculations uh when you want a lot of precision that is when you give temperature equal to zero when you're giving the when you're creating the model itself you're saying that this is how I want my model to be behave suppose you want your model to be very very creative suppose your you know tasks are poetry storytelling or any creative task so you can give a higher temperature so suppose one one is the",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 778.36,
+      "end_seconds": 843.639,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=778s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b081c4835712d9eed53dd0e265474e5aef7b64af091c5edd2a30c43b3346739c",
+    "text": "behave suppose you want your model to be very very creative suppose your you know tasks are poetry storytelling or any creative task so you can give a higher temperature so suppose one one is the highest temperature so your model is going to be very very creative so the usual temperature that people give are like 6 7 7 is a good enough temperature right so that is like a medium level not like extremely random not very very precise so it basically plays around and gives you good responses coming back to the code that we written every time I'm running this you can see I'm getting a new movie I'm just deleting this start open AI new model now here what we had done was lm. invoke we had called the method invoke if we look at the documentation over here we had called the invoke like this we had just passed the instruction but if you see over here here we are passing something called messages and they have formed some message here also there's something happening role content so what is exactly happening over here if we go back to the definition of chat models here it was written that llms are typically accessed through a chat model interace interface that takes a list of",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 830.36,
+      "end_seconds": 903.36,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=830s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1c1b99754a8e21132cf9924c3a0a2bd3f0fb6dd6c9641b30796eca023d3a33c2",
+    "text": "is exactly happening over here if we go back to the definition of chat models here it was written that llms are typically accessed through a chat model interace interface that takes a list of messages as input and returns a message as output so message seems something very important right let's check out the documentation of messages so if we go over here it is mentioned messages are the unit of communication in chat models they represent the input and output of chat model as well as any additional context or metadata that may be associated with a conversation and two very important things that you need to understand in a message are that every message is going to have a role and some content okay and they have given a very good table showing that see the possible roles are system user assistant and so on system role meaning that you're telling a chat model that you have to behave like this like for example you have to behave like a teacher or a software engineer or an expert in something a marketing specialist what role do you have to take that is the role that you're assigning okay user meaning you're giving the input okay assistant the output that you're getting the response so here you can see",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 889.92,
+      "end_seconds": 962.3190000000001,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=889s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "90044d66555903a40da476bab7e22a845dbf75cbc679408f78f796231b22e769",
+    "text": "something a marketing specialist what role do you have to take that is the role that you're assigning okay user meaning you're giving the input okay assistant the output that you're getting the response so here you can see messages can be of the type system message for the content which should be passed to direct the conversation that you have to behave like this human message for the content in the input AI message the response and then multimodality for the information on multimodal content so this is how we can give the invoke also so here if we see let me actually just copy paste this entire thing and whatever was given okay so the whatever is given in the documentation I'm just copy pasting that and I'm inv invoking our llm okay so invoke and I'm going to pass this messages and if I run this so it said can translate the following from English to Italian okay we have not imported it so we have to import also Lang chain. core messages uh and let me just okay and let me run this again and here we can see the content is CH okay chiao and if I run this again here we can see okay I have not put put it in the response so let me put this in the",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 947.8,
+      "end_seconds": 1025.6789999999999,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=947s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "95c4711d801d86968173ccd0d2a60e6fe7e1d9ee7f6ca0b8243db3567b4d1057",
+    "text": "here we can see the content is CH okay chiao and if I run this again here we can see okay I have not put put it in the response so let me put this in the response and once I run this now it is there in the response and if I run this you can see ch right so this means that now the response is CH so if I actually run it like this okay this is how you can pass messages system message human message AI message so this is what you should understand over here also instead of messages what they have given is they have actually given the message see this is one message role user content this hello so this is one message right so like this you can give a list of messages also so here by default when we did this it was by default a human message saying hello so that is what it is taking as the input in this code that we had written we had passed this instruction suggest me a title of movie in Hindi to watch now suppose I want to do this I want my user to be able to select in which language they want to to watch the movie here I have hardcoded Hindi right now I",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1011.279,
+      "end_seconds": 1084.2,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1011s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1054b8bfbcccdd414b4eca3753ecbd31484e48acfe1bcddf818d09e267cb48c5",
+    "text": "me a title of movie in Hindi to watch now suppose I want to do this I want my user to be able to select in which language they want to to watch the movie here I have hardcoded Hindi right now I want my user to be able to select I want to watch suppose in English Hindi Malayalam Tamil Telo French Spanish anything right so I want to take an input from the user then transform the string and then send to our llm so then I will send suggest me a title of a movie in this particular language to watch now not just language I can also take more inputs from the user like for example Jer I can take that my user wants to watch in this particular JRE it can be comedy sci-fi horror anything right so I want to be able to take inputs from the user transform it and then send to llm similarly in this example I want to be able to take the input from the user and tell translate the following from English into some other language or from some language into another language it can be from Hindi to malam it can be telu to Tamil it can be anything right so I want to be able to take from the user transform it",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1071.48,
+      "end_seconds": 1137.44,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1071s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "72d5e088fe79c946b4ffc1dc51a0c8c811586b211a4b6bcc3d0046f2bb95f5e1",
+    "text": "other language or from some language into another language it can be from Hindi to malam it can be telu to Tamil it can be anything right so I want to be able to take from the user transform it send to the llm now let's go back to the documentation and see how it can be done so there is one more concept that we saw which is very important other than chart models and that is promt templates and it is very simple to understand okay just look over here it is constructed from the combination of user input and application logic just what I told you right so application logic usually takes the raw user input and transforms it into a list of messages ready to be passed to the language model prompt templates are a concept in Lang chain designed to assist with this transform they take in the Raw user input return the data a prompt that is ready to be passed to language model so what is going to be passed to the language model The Prompt is going to be passed so for now let's just copy paste the example that is given to us and then we will do the same thing for our movie example also so I'm just going to copy paste",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1123.48,
+      "end_seconds": 1189.559,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1123s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "aeddcbf40196ce67a50cf2294bab4b547d8aad58d96907ea69993b284a7546e0",
+    "text": "The Prompt is going to be passed so for now let's just copy paste the example that is given to us and then we will do the same thing for our movie example also so I'm just going to copy paste this and try it out okay and let's copy this part also this is where we are forming the prompt okay uh okay first let's run this okay so here what did we do we imported chat prom template from Lang chain core. promps then we gave a template and let me actually run this so here we can see that we actually created one prompt okay what was there in system messages we the system message was translate the following from English to Italian see here if we had given translate the following from English into some language now where did we take the input the input was given over here see this is a dictionary where it is given that in in place of language pass Italian okay in place of the text Pass High that is why we we got the output as ch right we can pass anything suppose we want to pass it in Hindi and instead of high we want to say suppose how are you okay and let's try running this and now when I",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1178.2,
+      "end_seconds": 1252.0,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1178s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "548bf50d716dbfa8461c23cfa008c6101e64b3aa104f5004828f84f728b1a839",
+    "text": "is why we we got the output as ch right we can pass anything suppose we want to pass it in Hindi and instead of high we want to say suppose how are you okay and let's try running this and now when I run this translate the following from English to Hindi and what is the text how are you so this is just the prompt now we can invoke the the llm by passing this prompt so now when I pass the prompt let's run it uh okay I have to okay and I can also save it in response and I can just print the content also so I have I have transformed it to now similarly suppose we want to do in Spanish that is again how are you right so Spanish how are you let's try running it so this is the Spanish of how are you okay similarly suppose if you want to see in English and Hindi only in Hindi suppose um what is your age simple okay and let's run this and we should be able to see correct so if we go and look at the documentation what did we do so far we created prompt from The Prompt template and then we passed it to the model model. invoke and then we were able to",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1236.799,
+      "end_seconds": 1319.12,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1236s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6103a9e69410066af0ea495a75e7a4ecbd3882911596844279b2c0417cede71d",
+    "text": "see correct so if we go and look at the documentation what did we do so far we created prompt from The Prompt template and then we passed it to the model model. invoke and then we were able to get the response right so we have followed this but see now there are many ways of creating the promt template so if we actually go to the documentation of promt template uh let me do that okay let's go to the promt templates and here you can see we can also create prompt templates from template itself so what we had done so far is we had created The Prompt template from messages so we had obviously passed messages over here system message user message and so on right we can also create it from template itself so if I actually go over here chat from template and I do dot so you will be able to see from messages from roles strings from strings from template so similarly let's try this example also and then we will try writing the code for the movie example that we took right so let me just copy paste this here when we do prompt template. invoke what are we going to get in return so let me actually run this we got a string prompt value tell",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1305.44,
+      "end_seconds": 1376.799,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1305s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4d2bb527e3618be97963e841d015ebf6e71a9cd8500c40cedf011a482d80dad8",
+    "text": "that we took right so let me just copy paste this here when we do prompt template. invoke what are we going to get in return so let me actually run this we got a string prompt value tell me a joke about cats how did it get cats it got from this topic we had passed it in the dictionary right so this is essentially a prompt so I'm going to assign it to the prompt and then when we do llm do invoke I can pass this prompt value okay and now let me run this and you can see the output right why did the cat sit on the computer so this is a joke okay to keep an eye on the mouse okay so this is supposedly a joke if you want to see just the content you can also do this response equal to lm. inoke and then you can just do response. content okay and why was the cat sitting on the computer because it wanted to keep an eye on the mouse so you can see just the content so what did we do we created prom template from template then we got the prompt and then we passed it to the llm so this is one way of writing code now let's try for",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1362.0,
+      "end_seconds": 1433.52,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1362s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a4fce0008023f44b07b3e75ddbf3dbc235385a19c59feaf03ca2f92fcc82facf",
+    "text": "you can see just the content so what did we do we created prom template from template then we got the prompt and then we passed it to the llm so this is one way of writing code now let's try for the movie example that we had taken let's get started with creating a template first so I'm going to call it movie title template and I'm going to be creating from prom template so from template and I'm going to say suggest me a movie to watch in language and of Jer and to be clear let's tell uh suggest me a title of a movie to watch okay in this language and in this Jer so this is the template now we are going to create the prompt so movie title prompt and we are going to get it from template right so movie title template and we are going to invoke it and now we have to pass the inputs that we want to give right so we have to pass it as a dictionary so I'm going to pass language as for example English and uh Jor suppose horror and then we are going to get response lm. invoke and let's see the response for our movie title prompt let's run this and let's print the response on.",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1421.279,
+      "end_seconds": 1532.96,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1421s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "62d38d07732c217b08e1663dde25ac5b090e85ac813701005a98d84bf0530f82",
+    "text": "English and uh Jor suppose horror and then we are going to get response lm. invoke and let's see the response for our movie title prompt let's run this and let's print the response on. content and here we can see title of a movie if I run again we'll be able to see different different and if I suppose change the Jer to say for example comedy you can see and if I suppose change it to Hindi you will be able to see Gman now we are going to discuss the core concept of L chain probably the most important concept of Lang chain so listen carefully see from the name itself Lang stands for language models chain stands for what so in L chain we can create chains of a lot of things now chain of what what is each component or what is each step in this chain so think of any function any process any action any task that you can perform you can create a chain of that so in this chain each task or each step or each component or this function or task or action or anything that you're performing that action is called a runnable now let me explain it to you in very simple terms what did we do so far in order to create",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1502.52,
+      "end_seconds": 1602.12,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1502s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2cd977df5dfc9414fc429c0f5e2e4a497b6fcb502fc928a6acd609b8a4c62e7a",
+    "text": "or this function or task or action or anything that you're performing that action is called a runnable now let me explain it to you in very simple terms what did we do so far in order to create our application we created a prompt that is one task we did something right we created a prompt then we passed it to the llm that is one task that we performed then we got a response from the llm now the response at a lot of things content was one of the things that we wanted to pass and get out right so that passing is also one task one function that we are doing right so any task that you can run any function that you can call any action that you can perform can be a runable and you can chain these runnables so you can change these steps or tasks or actions okay and you will be amazed to see how beautiful and simple Lang chain makes it so right now all the code that we have written it is very very simple to just write it in form of a chain and let me show it to you we are back to the Lang chain documentation and I am at docs Concepts enables and the document ation is just",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1588.52,
+      "end_seconds": 1651.24,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1588s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8228efa48635987f91f847a633d95c97b968858042413a2222cf7ef819ff4a79",
+    "text": "is very very simple to just write it in form of a chain and let me show it to you we are back to the Lang chain documentation and I am at docs Concepts enables and the document ation is just awesome let's read about rebles reenable interface is the foundation for working with Lang chain components and if you go down they have given the different components that can be runnables every runnable is characterized by an input and output type so each of these components are different enables for these components these are the inputs and these are the outputs let's check them out so the prompt that we had created what did we give a dictionary that for this language like put this value in the dictionary right so like fill the variable with this value like for example we had given Hindi or English genre we had given right comedy or horror so we gave in a dictionary and what did we get as the output prompt value similarly in chat model and in llm like to talk to the llm we use chat models right so what can we give as the input a string a list of chat messages or a prompt value so when you're using chat model what are you going to get as",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1639.279,
+      "end_seconds": 1700.8799999999999,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1639s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "55be71e1e4f619f69921ebfa1fd3e18ec96b76a43d86861d0392358ca8b39190",
+    "text": "like to talk to the llm we use chat models right so what can we give as the input a string a list of chat messages or a prompt value so when you're using chat model what are you going to get as the output chat message llm we are going to get a string then we can have output passes so the output that we got from the llm we were passing what we were are passing out content so there are different passes that we can use and we can get the output accordingly then there are retrievers there are different tools right so these are all components so you can have chains of these components these will be each task or action or process or function that you have performing right and if you go down and look at the examples this is one of the examples that they have given us okay you can create a chain of prompt then pass it to your model and then you can pass it to your output parcel so each step is ided by this pipe operator okay it is very easy to understand whatever will be the output from this prompt that will be passed to the chat model whatever will be the output from this chart model that will be passed to",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1689.039,
+      "end_seconds": 1751.1200000000001,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1689s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "488872819a5a2b6e3e362be28bab5e97f5c20276ed60cf8b1aaa04ed62a1abc8",
+    "text": "okay it is very easy to understand whatever will be the output from this prompt that will be passed to the chat model whatever will be the output from this chart model that will be passed to this output parcel I think we are ready to convert our code into this format and see if this works or not let's do this so what I'm going to do is I'm going to create a chain now and I'm going to call it movie title chain so we already have a prompt right and I just need to pass the template Actually I don't even need to invoke it so just going to take this and I'm going to pass it to the llm now I can also pass it but for now let's just have two things in the chain and let's run it and then we will also pass the output okay now you can see that I have created the chain chain is there I can invoke this chain now now you will think where will I give this input right at language and Jer is this that is when you invoke the chain you will give that this is the input that I want to go that I want to give to this particular template right so what I'm going to do",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1739.88,
+      "end_seconds": 1801.559,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1739s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "399710139d8ad1712884ceed0c17a3e70252a5f29502f625998b872b631af28e",
+    "text": "at language and Jer is this that is when you invoke the chain you will give that this is the input that I want to go that I want to give to this particular template right so what I'm going to do is I'm going to invoke the chain and in this I'm going to pass our dictionary so this is the input that I want to be passed to my first component for now okay so let's run this and let's see the output see we got the output and we got this right now in this only I want to add another component in the chain and I want to pass this output so I'm going to add yet another component and what I can do is from Lang chain code I am going to do parsers I'm going to import St Str output parcel and I am going to add another component Str Str output parcel and I'm going to call this and now if I run it again see PTI and if I run it again isn't it beautiful right so now if I have pass English if I pass suppose uh horror I don't know why but okay haunting off a LS so this is so beautiful right so simple way of writing the code here we had to do so much we",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1788.32,
+      "end_seconds": 1868.84,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1788s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e013776bd024900f4d593a580ff35b4c91ebb75a65775499ad827b543b58f740",
+    "text": "I have pass English if I pass suppose uh horror I don't know why but okay haunting off a LS so this is so beautiful right so simple way of writing the code here we had to do so much we had to create the template we had to invoke then we had to do invoke this is a very simple way of writing code okay and one more thing in most of the tutorials that you will see on YouTube you will see that they are creating the uh the llm chain using this okay and you can you will see that they are importing so you will see most of those videos are like one year ago and all of that this is actually deprecated and I'll show it to you in the documentation also so just see as of today like you can think of early February 2025 this is the documentation and I think they plan to keep this uh like because this is part of LC so I think this will be continued this way of writing the code so I think this you can use but in case if there is any update I will be updating in the comments but I think this is what they are planning to keep in the future also",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1854.08,
+      "end_seconds": 1916.559,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1854s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4affec7d88ee05c7c94510672d13a8d80662e01712e2ac92cdd0285b31c9b05e",
+    "text": "this way of writing the code so I think this you can use but in case if there is any update I will be updating in the comments but I think this is what they are planning to keep in the future also because this is very easy to understand right you just have to add the pipe of operators just showing you in the documentation also see over here they have mentioned that this class the llm chain class is deprecated and they're telling use the pipe operator instead and if you go down also I think here it is mentioned that call is now deprecated use invoke instead right so just refer to the code that I have written by the way the link is in the description so you'll be able to refer to all of this code basically use the pipe operator save your time don't go behind llm chain class let's come back to the code that we had written and now what we are going to do is we are going to add one more step over here and till now what is the output that we got we got the title of a movie we are going to make another call to the llm and we are going to say give me summary of this particular movie you",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1905.24,
+      "end_seconds": 1966.9599999999998,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1905s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "11a0b25d3473e7a6459bf5846110f2f078179654d3c376f8dc59e6a33f35cc23",
+    "text": "output that we got we got the title of a movie we are going to make another call to the llm and we are going to say give me summary of this particular movie you might be thinking that KY that is not required in whatever uh template that we had given whatever instruction we had given over here itself you can just say ke give me the title and then give me summary also over here and you're right while it is true that I am giving you a simplified example right now let me also make you think that why would we want to add more and more steps see sometimes it might happen that uh for one particular task like for example for getting the title of a movie I want to use a particular llm suppose I myself have some database and from there itself I want to get a title but to generate the summary maybe I want to use another llm maybe in order to save some cost or maybe I want to use my own llm right so there can be multip reasons why I want to make different calls to different llms also having different steps in the chain makes it easier to debug makes it easier to uh log makes it more flexible",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 1956.679,
+      "end_seconds": 2023.24,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=1956s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d470ad0bcb486a5f6f23750180c46a688421162f3b42b10c08c1a4b8f9d56c77",
+    "text": "there can be multip reasons why I want to make different calls to different llms also having different steps in the chain makes it easier to debug makes it easier to uh log makes it more flexible you can understand right yes our basic uh software engineering principle also come into picture over here we want to keep our chain as flexible as possible so actually let's get back to writing the code what I'm going to do now is create another prompt and I'm going to call it movie summary prompt okay and this is going to be similar to the movie title prompt and what I'm what I'm going to do is just like how we did prompt template right so prompt template and from template we are going to do and we are going to give uh give me suppose let's make it very specific two three line summary of the movie and let's give the variable movie title so we have this prompt now now I want to create another chain with this new step right so I'm going to create a compost chain and what I need to do is first I need to call the movie title only right the movie title chain so I need to invoke the movie title chain and then from that I'm going to get the",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2007.039,
+      "end_seconds": 2084.48,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2007s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4dd42e917d3a9a90db926ca467d8045518407f43f21fde40353939c6c4dc8027",
+    "text": "compost chain and what I need to do is first I need to call the movie title only right the movie title chain so I need to invoke the movie title chain and then from that I'm going to get the output that I'm going to pass to the movie summary prompt right so I'm going to call movie title chain I'm going to pass it whatever is the output to the movie summary prompt whatever is the out put I am going to pass to the llm whatever is the output I am going to pass to the output parcel correct now this movie title chain okay whatever is the output I need to save it in this particular variable right movie title so what I'm going to do over here is I'm going to put it in a dictionary that for this movie title you will get the output from this chain and this chain internally is doing what it is seeing okay this is the template I'm going to call the llm and I'm going to pass it it is going to pass and get me out the movie title I'm going to save it in this particular variable and that variable I'm passing to The Prompt uh the summary prompt that I'm passing to the llm and",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2071.399,
+      "end_seconds": 2143.28,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2071s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9746dcbab87ceb87df84d34be9f65fc15b258e72d665102e97d14925decc83f5",
+    "text": "is going to pass and get me out the movie title I'm going to save it in this particular variable and that variable I'm passing to The Prompt uh the summary prompt that I'm passing to the llm and then I'm going to pass it so let's run it and see okay I have created the chain now I need to I need to call it right obviously so invoke and now when I invoke this this is where I am going to give the language and the journal so this is the input that I'm giving to the first uh to the first component of this chain which is the movie title chain right so let me actually pass it and let's run it okay I added one extra braces and let me run it now so after inheriting an old mansion a young something something right so we did not get the movie title over here why not because I'm not printing the title what I did was I just caught the summary in order to print the title also there are obviously many ways but I want to introduce One More Concept and let me actually show it to you so if we see how to run custom functions so right now what we are doing is we are just",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2130.119,
+      "end_seconds": 2204.04,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2130s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a7f82279c7bd0015122f658d47dd7c99cae4a7d38f1aa575edcab4cf580b7f56",
+    "text": "are obviously many ways but I want to introduce One More Concept and let me actually show it to you so if we see how to run custom functions so right now what we are doing is we are just creating the prompt and then passing it to llm parer and all of that what if I want to write my own custom function in between as a step like in our example what we are going to do is write a function to print the title so I just want to introduce how to do that right so here you can see so you can use arbitrary functions as runnables this is useful for formatting when you need functionality not provided by other Lang chain components and custom functions used at r as rebles are called reenable lambdas so for custom functions we are going to use something called runnable Lambda okay now before going through the documentation let me actually make it very simple to you and write it myself so what we are going to do is first we need to obviously import reenable Lambda so I'm going to just copy paste this from the documentation and let's go back and over here so in this chain only first I am going to import it and here",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2192.839,
+      "end_seconds": 2256.56,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2192s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f7c75e252c0131abffd66d5da68beeaa326e3f6ac87e72bf9fd2b25ed62cbf5a",
+    "text": "need to obviously import reenable Lambda so I'm going to just copy paste this from the documentation and let's go back and over here so in this chain only first I am going to import it and here before like sending to The Prompt for the movie summary prompt I'm going to add another step okay and I'm going to call it as uh print title step okay print title step and we are going to write our own custom runnable Lambda over here and for this I'm just going to do uh runable Lambda and what I'm going to to pass over here is so I'm going to write a Lambda function and whatever X is the input right now I'm just going to print the X at as it is okay if you notice over here the input that I am giving is this dictionary okay why I had created this dictionary because prompt expects a dictionary that is why I created the dictionary so if I actually run this now let's do that and if I do this you can see that I got this as the output movie title Haunting of something and then the summary of it right so instead of getting the dictionary if I want to print just the movie title I can",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2242.28,
+      "end_seconds": 2315.96,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2242s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7c5fd24bb457f206073f20980cf20d37235baffd0b9cb084511c13757564bec2",
+    "text": "this you can see that I got this as the output movie title Haunting of something and then the summary of it right so instead of getting the dictionary if I want to print just the movie title I can do this okay right now I created the dictionary because I wanted to pass to The Prompt but okay I'm just simplifying it for you for now and if I run this here you can see the title a nightmare in the wordss and then the description the summary of it right now it is not necessary that I have to write it separately by the way if I just comment this out and I copy paste the step over here this will also work but this is obviously not a very nice way of writing code right so you can create a separate function all together okay so you can see again the title and then this so there are many ways of writing this code let me actually undo and uh so that it will be there in the code let's look at one more example that's given in the documentation to be absolutely sure that you are understanding what's happening over here so here they have created a prompt and the input that they giving to the promp that the topic is Bears okay",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2301.48,
+      "end_seconds": 2365.6400000000003,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2301s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3846d69dbad97729206a7324cca03159168f909b597ec0e5d1383782caf51fbc",
+    "text": "documentation to be absolutely sure that you are understanding what's happening over here so here they have created a prompt and the input that they giving to the promp that the topic is Bears okay so this is the dictionary input that they giving tell me a story about so the topic is Bears right now they created the model and in this so they created The Prompt passed it to the model and then whatever was the output they got the content so the content would be just the joke and then uh sorry tell me the story right so it would be the story and then you're slicing the first five letters out of it right so the story must be starting something from Once Upon a Time or something like that so when you slice it down you get only once as the output right so this is how you can actually play around with it you can write your own custom lambdas here they they have actually mentioned that when writing a custom functions in Chains with the pipe operator you can omit the runable Lambda or chain Constructor and rely on coercion right so you can actually check out the examples over here and you can try writing different different uh examples you can play",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2354.76,
+      "end_seconds": 2416.16,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2354s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fc74fa01f5d6f0573fa827c73fc11258abb2354ba60969540f3b8835b03dc32f",
+    "text": "with the pipe operator you can omit the runable Lambda or chain Constructor and rely on coercion right so you can actually check out the examples over here and you can try writing different different uh examples you can play around with it write your own custom functions it will be a lot of fun let's talk about chaining a bit more see there are three types of chaining let's talk about the the kind of chaining that we already saw so what did we see one task happened and after that task finished another task happened after that task finished another task happened so these tasks happened in sequence so that is why this type of chaining is called sequential chaining or extended chaining now you can imagine that if I am talking about sequential chaining what would be the other type of chaining that I can perform the task in pattern at the same time I can perform the task concurrently so this type of chaining is called parallel chaining I'm sure you can think of so many examples let's consider the example that we are only seeing and we will write the code for this also suppose I have the movie summary now now I want to translate and see this movie summary in other languages so suppose I have it in",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2402.8,
+      "end_seconds": 2470.48,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2402s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "518316aaa229a453e890dbca9867f14b4e763eeecacae11aa61337f1d96576f6",
+    "text": "only seeing and we will write the code for this also suppose I have the movie summary now now I want to translate and see this movie summary in other languages so suppose I have it in English I want to translate it to Malayalam Hindi telu Tamil Spanish French whatever right so these translations can happen at the same time they can happen parall I don't need to wait okay you will translate first to Hindi and then to Spanish or then to French no right I can do these parall so the second type of is called parallel chaining the third type of chaining is called conditional chaining and from the name itself you can understand that based on some condition some tasks will happen and some tasks will not happen so that conditions will decide which task to do and which task to not to do so in short there are three types of chaining sequential or extended chaining parallel chaining and conditional chaining so the code that we had written was using the pipe operator but we can also use something called runable sequence so if we go to the documentation you can see that all we have to do is write runable sequence and then just give what all task we have to perform so over here in this code only",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2459.96,
+      "end_seconds": 2529.319,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2459s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "70551f4ae2b69446f06cb1368536f13a2d6ff32d7f97199aef12cd869a849996",
+    "text": "sequence so if we go to the documentation you can see that all we have to do is write runable sequence and then just give what all task we have to perform so over here in this code only let's try writing the same thing using runnable sequence so what I'm going to do here just how we imported uh runnable Lambda we are going to be importing runnable sequence and then we are going to create the compos chain using the runnable sequence okay and here we just have to pass pass all the task that we have to perform and instead of the pipe operator all you have to do is pass commas that's it so instead of the pipe operators I'm going to pass comma so just different ways of writing code I'm just showing you because the other two ways are very similar to runable sequence so you should know these types right so I'm just going to run this and I'm going to call it again and let's see The Haunting shadows and the uh summary is also s so this is how you can actually write this coming to invoking runnables in parallel we can use something called runnable parallel and here in the diagram also they have shown that the same input is",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2517.72,
+      "end_seconds": 2589.0,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2517s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9a73df8a4bb4a98e1cd9084b11caa21185bfed8af4f6cae314aaf9ee00cf1f76",
+    "text": "and the uh summary is also s so this is how you can actually write this coming to invoking runnables in parallel we can use something called runnable parallel and here in the diagram also they have shown that the same input is given to multiple branches and then they combine later okay and if you want to see the code example you can just click on this and we can see the examples over here so we can just call runable parallel let's see this example this is very nice so here they have created Two Chains joke chain and po chain so this is just going to tell a joke about topic and this is going to write a poem about topic you can see that the input is same in both topic right so here they are doing I think do stream runable do stream you can do runable do invoke and you can give the common topic so the topic over here is bear and these two chains you're going to pass in the runable panel and you will be able to run them so here also let's come back to the example and I'm going to be importing just how we had imported sequence and Lambda so I'm importing a runnable parel and now I need to create",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2569.92,
+      "end_seconds": 2637.44,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2569s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3c4b2c9b69c100392b818f07027b785e5f9906d96eeab2dbe0384beacb57e2dc",
+    "text": "run them so here also let's come back to the example and I'm going to be importing just how we had imported sequence and Lambda so I'm importing a runnable parel and now I need to create two chains that I'm going to be in parall for example let's do translate to Hindi and translate to Spanish so let me just create the two chains translate to Hindi chain and I'm first going to create the prompt so actually let's create the prompt first and I'm going to do chat from template and from template and I'm just going to write translate the summary to Hindi similarly translate Spanish okay now we have both the prompts and now we are going to chain these right so if I actually just call this as chain itself and I'm going to chain it over here so this is the prompt and I'm going to pass it to the llm and I am going to also pass it right so I'll have the output similarly I'm going to pass this to the llm and pass this to the output parel now we are ready to create our parallel reenable so I'm going to call it parallel reenable or let's call it translate reenable so that it is clear that what we are trying to do and here",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2624.079,
+      "end_seconds": 2720.2400000000002,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2624s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2306f06ff150a7a4cd070b00c62c8eb3824ff99d81fd9deb567b333ec0e40cf3",
+    "text": "parel now we are ready to create our parallel reenable so I'm going to call it parallel reenable or let's call it translate reenable so that it is clear that what we are trying to do and here I'm going to do reenable parallel and I'm going to pass these two okay so suppose I am saying Hindi Translate and I'm going to put translate in the chain over here and similarly I'm going to say Spanish translate and I'm going to put translate Spanish over here so I've created the parallel and now we just need to uh invoke it this should be called translate miss the S over here so translate enable do invoke and what do I need to pass I need to pass the output from this as summary okay so it is expecting summary as the input so I'm going to pass it in the dictionary so I'm going to do summary and from where will I get it whatever output I got from over here right so I'm going to uh call this as summary and I'm going to put it over here and now we can run this and see uh we will have to run this again to get the summary and we have it and now let's run this by the way if you're wondering why I did",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2705.119,
+      "end_seconds": 2790.3590000000004,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2705s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "582e14c35082055d6ebccb8c387ffbedd6dff767074aefc7a1eb1d4ca816e900",
+    "text": "over here and now we can run this and see uh we will have to run this again to get the summary and we have it and now let's run this by the way if you're wondering why I did not print the summary because I am not printing I'm just assigning the value so if I write here print summary it is going to print it so let me just run it so that it is completely clear because as I it it is not printing right and now here you can see I have the Hindi translate and the Spanish translate and if you want me to print just that we can also do that as well so here in this uh suppose let's do translated summary and over here I'm going to print translated Sam Hindi the translate and the Spanish translate and let me also write that what we are printing so that it is clear so Hindi summary and Spanish some and let me run this and now you can see this is the Hindi summary and this is the Spanish summary awesome coming to the third type of chaining which is called conditional chaining now imagine if I tell you that based on whatever we have learned so far you can actually achieve conditional",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2773.68,
+      "end_seconds": 2870.2400000000002,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2773s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "840e1f7da8393a9d8df8fc8a8e5119f6b95b7aeb629eb1a3bb4e78ba8895be0f",
+    "text": "Hindi summary and this is the Spanish summary awesome coming to the third type of chaining which is called conditional chaining now imagine if I tell you that based on whatever we have learned so far you can actually achieve conditional chaining think of it we learned something called reenable Lambda let me know in the comments how many of you could actually think about reenable lambdas over here if not all the time stamps are there okay so the video is divided properly just uh revise and practice all of this try writing the code yourself and you will understand these things okay the basic concept is that we can write our own function our own logic in runable Lambda right so what we can do is pass in some uh variable some input to the runable Lambda and have logic that if this is the variable or based on some logic I want to call this Branch or I want to call this Branch invoke this or do this right and coming to the documentation that is what they have also mentioned firstly what is routing routing allows you to create non-deterministic chains where the output of a previous steps defines the next step and there are two ways to perform routing the first is conditionally return runnables from",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2851.839,
+      "end_seconds": 2923.28,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2851s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3fd5b1d5efd007a89f9af205d0c0ca57823782136089f7d9f6193fee589f748c",
+    "text": "firstly what is routing routing allows you to create non-deterministic chains where the output of a previous steps defines the next step and there are two ways to perform routing the first is conditionally return runnables from runable Lambda and this is what they're actually recommending there's one more way using runable Branch but this is Legacy so what they have also given the example that just write your own runable Lambda suppose here there is some info and you can have something like if else if this this is the info just convert it to lower and then use this chain otherwise use this chain right so they are taking the input and if it is anthropic they are calling the anthropic chain otherwise they're calling the Lang chain chain right so like this you can have your own functions and so because we have already done runable Lambda I am not going to be writing the code again for this I hope you have understood let me know in the comments if you still have any issue and they have actually WR it in the documentation that this is a special type of runable but it does not offer anything that you cannot not achieve from a custom function as described above so we recommend using a custom function instead so that is why I",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2908.48,
+      "end_seconds": 2975.2,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2908s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "eede6db030cf2847c3a47e1ea497e1d4553bb83fbe601a1ead901cf583493f31",
+    "text": "special type of runable but it does not offer anything that you cannot not achieve from a custom function as described above so we recommend using a custom function instead so that is why I also don't recommend because it is given in the documentation don't use renable Branch uh just write your own custom functions this brings us to the end of the video I hope you like the content a lot of effort goes behind every single video see now there are two more topics that are remaining in Lang chain one is creating rags and the other one is Agents so I want to create dedicated videos on both of them how to build them uh the details about them what are there for beginners right all the videos in the machine learning playlist right now are actually very beginner friendly I'm literally going to the documentation telling you this is how you can get started and I'm showing you everything right I'm telling you reasoning behind every single thing and I know that there are still so many software Engineers who are not accepted that this is the future they should be upskilling right now so you have no idea how much it will mean to me if you can just share it on comment share it with one of your",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 2962.92,
+      "end_seconds": 3023.04,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=2962s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3fa836c787e654e6052596a78656eefbc3463257f28e543f2774baa468dd91b9",
+    "text": "are not accepted that this is the future they should be upskilling right now so you have no idea how much it will mean to me if you can just share it on comment share it with one of your friends it will really help me reach more people because I genuinely truly believe that these videos deserve to reach more people and if you also think so help me reach more people so I'll be motivated more and I will be able to deliver more and more content right I want to create a lot of free content but I really need your support so please do help me out and see you next time all the best please try out writing the code yourself and let me know if you have any doubts see you next time bye [Music]",
+    "metadata": {
+      "video_id": "bcCFTk_uwUw",
+      "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "LangChain",
+      "start_seconds": 3012.319,
+      "end_seconds": 3055.719,
+      "url": "https://www.youtube.com/watch?v=bcCFTk_uwUw&t=3012s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

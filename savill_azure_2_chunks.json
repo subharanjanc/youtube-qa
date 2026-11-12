@@ -1,0 +1,1186 @@
+[
+  {
+    "id": "1dd3d108a72eb9602b586ec33d0e1df987907523ebdf0ab030ba512f31baa709",
+    "text": "he everyone in this video I want to talk about the capabilities of azure AI Foundry as right now when we think about generative AI we think about Microsoft you think co-pilots because there's a huge amount of co-pilots out there and co-pilots are absolutely the right solution in many scenarios for many different personas but there are way more AI capabilities available for those maybe more Pro code where I want to find tuna model where I want to do more agentic and more complex scenarios and they are useful for everyone from your data scientist through to your AI Engineers now before I get to talking about Foundry though I do want to talk about co-pilots and where they do play and how they do maybe integrate with The Foundry and it's important to understand there's a distinction when we use the word co-pilot between Capital C co-pilot the product from Microsoft and then little C co-pilots that you may create so starting off I can think about the Microsoft Capital C co-pilot and I can think of these These are Microsoft's AI assistant products and there are numerous things around those we obviously think about things like what is M365 co-pilot for the productivity Suite I can think about well there were one for Dynamics there's security co-pilot there's GitHub",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 0.48,
+      "end_seconds": 104.96,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5e1421b542ce2c203d44046a3e5dd88744cbcda100c3fbfd46e6242763e23815",
+    "text": "products and there are numerous things around those we obviously think about things like what is M365 co-pilot for the productivity Suite I can think about well there were one for Dynamics there's security co-pilot there's GitHub co-pilot there's Azure co-pilot there's a huge range of these and these co-pilots are really a next evolution in how we interact with many of those Solutions we went from text interactions to gooey interactions and now these multimodality when we say multimodality it could be text is a modality audio is a modality image and video could be another modality so we get more used to how we can interact with these Solutions and with the Microsoft copilot and for example M365 well it has capabilities often grounded in things like the Microsoft graph and your data but I can add maybe additional data into the graph I can add some additional data sources I could cre create my own kind of agent and I would often think about hey those co-pilot products they're fantastic for knowledge workers hey I want a that assistant to help me with my various duties that I'm performing it makes me more productive and maybe even hey I want to create a little automation a little trigger for something that helps for myself which I can easily do with things like M365",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 88.92,
+      "end_seconds": 179.04,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=88s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5680d571e0973d0dde766eced85b6f560e087535ec1de76ec7b7fe42c3cbbf11",
+    "text": "performing it makes me more productive and maybe even hey I want to create a little automation a little trigger for something that helps for myself which I can easily do with things like M365 co-pilot it even has a hook into things like co-pilot Studio Studio which is the tool we're going to talk about and then I can think about the little C co-pilots so if I think about a little C copilot this is your solution that you are building to help solve a certain task it could be internal users it could be your customers so I can now think about well now I want your so you as the customer your own little C co-pilots so these are not Microsoft product co-pilots these are things you're going to build yourself so if the Microsoft co-pilots don't meet your requirements you can use tools to create your own co-pilots for your scenarios now that could be because of certain functionalities certain Integrations certain data sources I want to ground on the experience the integration you want it's your choice but maybe those Microsoft co-pilots just don't fit your scenario so I would start with the Microsoft co-pilot and then hey it's not meeting my requirement I'm running into some limitation for maybe more advanced scenarios so I want to create my own",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 162.84,
+      "end_seconds": 250.959,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=162s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e1c6af244dbf828b8636c845ff46ca3b7dacca3c7f131d9f9d39cf1e2a446206",
+    "text": "Microsoft co-pilots just don't fit your scenario so I would start with the Microsoft co-pilot and then hey it's not meeting my requirement I'm running into some limitation for maybe more advanced scenarios so I want to create my own co-pilot and now we have choices in the tooling so what are the tools we want to use to go and create my own co-pilot and what I can think of from a tolling perspective so we draw a little hammer for a toall well there's co-pilot Studio and the whole po point of co-pilot studio is it's low code so I don't have to be a pro code developer understanding C or python or whatever that is it's a very low code Type solution but that means I may hit certain limitations for very Advanced scenarios there is a co-pilot SDK so from Pro code I can actually go and hook into those copilot Studios but with copilot Studio I can do a number of different things I can build my own co-pilots so I could think about yes I want to go ahead and create a co-pilot for my organization maybe it's a co-pilot for my HR scenario maybe it's saying for my customers to hook into my sales catalog or book something whatever that may be or I",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 233.799,
+      "end_seconds": 321.96,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=233s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "11c2a33b29229ee6810b1dc9d4735677d8ec38f8686c11bbee94f1effece480d",
+    "text": "create a co-pilot for my organization maybe it's a co-pilot for my HR scenario maybe it's saying for my customers to hook into my sales catalog or book something whatever that may be or I might want to use it to extend an existing co-pilot and as mentioned there is actually capability is for example in an M365 copil as a knowledge worker as a user of that there's even a little link directly to it to help me go and create my own one one of the nice things about copilot studio is I just tell it the data that I want it to ground on so groundon is hey when you are doing your creative working out the response as the model it was trained on a certain set of data which is not your data so what grounding does is it makes additional data available that it will send with your request to the model that it can then do its inference I work out the response from so this could be I could add data from websites I could add data from SharePoint sites I could add it from the data verse from graph I can add topics which are particular areas I want it to be able to respond on I can add generative AI into that so it can be",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 307.24,
+      "end_seconds": 385.56,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=307s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d953f73419ff50b8e65cb7fafe70019ef75163b68f39bbfdef23787ed8cfee74",
+    "text": "SharePoint sites I could add it from the data verse from graph I can add topics which are particular areas I want it to be able to respond on I can add generative AI into that so it can be more creative then I can add connectors which gives it actions it's able to perform and the nice thing is when we say low code I can use natural language in co-pilot Studio to describe the agent I want to describe and tell it well this is the data I want and it will then go through and create what it believes is the right thing and then I can go and confirm that and I could go and maybe tailor things again all in a very low code scenario so co-pilot Studio might be fantastic for someone from the business or it well I want to create an agent to be used by my company by my customers one of the other nice things I can do here is co-pilot studio is is a sass I'm not having to bring anything to it the models it's using behind the scenes are managed for me but I can if I want if I have some kind of customized model that I have created I fine-tuned and I've done that in our proc code",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 372.24,
+      "end_seconds": 444.639,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=372s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cbe5dc4ddf93dc1871f223c4b9142084e296aad1ed702982df42441c6c08593f",
+    "text": "it the models it's using behind the scenes are managed for me but I can if I want if I have some kind of customized model that I have created I fine-tuned and I've done that in our proc code Solutions I aszure AI Foundry I can actually hook into that so I can say well there's also so this idea of azure AI Foundry and I can bring my own model so co-pilot Studio can hook into that and use a model that maybe I have tuned in some way so it can go ahead and leverage that so then we come on to this idea that this absolutely is the pro code this is maybe hey I want to build on some Foundation model I want to do tuning I want to use a multiple different models in one interaction I want to integrate it very tightly with my application I want to customize things around content safety and I want to do evaluations and compare this is the Azure AI Foundry and that's the topic of this video and the nice thing about Azure AI Foundry is I can really hook into it from nearly any tooling you can think of now often we think about Visual Studio VSS code GitHub as primary partner tools but they can hook into so",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 431.44,
+      "end_seconds": 518.68,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=431s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1e89468296e52fe1335003f7827285fb6d80eb4cf9cedc9c3d96d2cc012d44ac",
+    "text": "about Azure AI Foundry is I can really hook into it from nearly any tooling you can think of now often we think about Visual Studio VSS code GitHub as primary partner tools but they can hook into so much more and so once again when I think of azure AI Foundry it also absolutely could go and create your own co-pilot if I wanted to do those things absolutely again it it's a tooling it could go and create extensions for the Microsoft co-pilot so I do have choice hey do I want to do that low code do I want to do a pro code solution but the really nice thing here is this can also really hook into any AI app I may have so I can think about Microsoft copilot is Microsoft's AI assistant products then you build your own co-pilots so these are AI assistants you build and then a i Foundry hey I can go and do anything I want so I think of all of those different things together it can really boil down when I when I look at my options into three fairly simple things and I could break that down really into the idea of my ability to customize so my customization ability and the coding level that goes with that",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 503.84,
+      "end_seconds": 605.16,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=503s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "75ca619e3bc91348e2c133cff73c1742c146fe4e900a4ee893fb48c0f69e7805",
+    "text": "at my options into three fairly simple things and I could break that down really into the idea of my ability to customize so my customization ability and the coding level that goes with that so with Microsoft co-pilot I have a fairly fairly low customization and it's really a no code scenario with the idea of co-pilot Studio well now I have a medium ability to do customization and it's a low code scenario and then for Azure AI Foundry it's a very high degree of customization and I'm using Pro code to actually hook into that and again there's a whole bunch of different Integrations for all of these different capabilities but aure AI Foundry is where I'm going to live when I really think of my Pro code Type Solutions that's just going to be my home for all of the various things that I'm going to do and it is that uni platform so there were Azure AI studio in the past that has obviously been renamed and is now Azure AI Foundry but a whole bunch of all the different AI capabilities have been brought into Azure AI Foundry to remove some of that complexity we saw when we had all of those different tools those uh different places we may need to go so I can think",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 583.2,
+      "end_seconds": 686.4799999999999,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=583s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "973323c2a5995bec5d69db0e96d987962e15991c5c7298607e4b4a7b2a374046",
+    "text": "capabilities have been brought into Azure AI Foundry to remove some of that complexity we saw when we had all of those different tools those uh different places we may need to go so I can think of azure AI Foundry as a collection of tools and services to fully create manage and use AI models at scale for those data scientists all the way through to my AI engineers and you have to remember that Microsoft when it builds its co-pilot products they're using Azure AI Foundry so the same capabilities Microsoft use are available for you to build in your Solutions now as I think about what is Azure AI Foundry I'm going to break it into just three primary topic areas but as you'll see there's kind of some some gray areas between those but at least let's break it down into what of those key key things I may think about and we're going to think about models because we can't not talk about models today we think about the idea of developer tooling and then we'll think about safety so I can think about content safety I can think about also understanding well how is it responding we think about things like evaluations because our traditional mechanisms we may use to validate our application hey",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 670.56,
+      "end_seconds": 765.32,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=670s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "40f84cd635dbd43ec2e811f39c823b77f03fac1a8e9bfc33caed539f6d39723b",
+    "text": "safety so I can think about content safety I can think about also understanding well how is it responding we think about things like evaluations because our traditional mechanisms we may use to validate our application hey we send a synthetic transaction through we know if x goes in y should come out well when it's generative it's something called non-deterministic that creativity that's inherent to these generative AI models means I I don't know exactly what's going to come out of it for any given input so we have to treat validating how it's performing in a slightly different way so we think about evaluations so safety is another core area I want to touch on as part of this now when I think about AI today yes we always think about large language models llms and that generat AI because they generate content and that creative nature of them but it's really important to think about when I say large language model and we obviously get super super excited it's still a machine learning model machine learning models and its very very core Basics are all very similar they have different slight structure to them but they're all a collection of weights and biases that link together the various neurons that make up the model and those weights and",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 748.44,
+      "end_seconds": 844.759,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=748s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "978f743f57b23b656f2af681c9ee315b61ce4c3e6ad28d4bdcc45437c96c5544",
+    "text": "very very core Basics are all very similar they have different slight structure to them but they're all a collection of weights and biases that link together the various neurons that make up the model and those weights and biases are parameters so the sum of those are the number of parameters that we have in our model and when I think about a generative AI model remember we have our input that is our prompt and that is passed to the model and then the inferencing happens I it's using a lot of mathematics based on the trained parameters and the probabilities to have a probability distri bution work out what is the most probable next token which could be a part of a word and then it does the next one and the next one even when you hear about reasoning models that seem amazing and they do very complicated things it's still working exactly the same way but there are certain techniques to encourage a Chain of Thought to break down a more complicated task into smaller tasks that it then runs back through and performs those it's why when you use reasoning models if you go and look at the billing you'll see the idea of these reasoning tokens that you also pay for because they're not part of the",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 826.24,
+      "end_seconds": 912.759,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=826s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f81c934b969e3c7623243c3ab81f2c2dcbd70e7ef5d708cab4b8b38117bc0276",
+    "text": "through and performs those it's why when you use reasoning models if you go and look at the billing you'll see the idea of these reasoning tokens that you also pay for because they're not part of the output but internally it still generated that plan that chain of thought that it then ran back through to get your ultimate output so it's really important this is what is happening today and when I think about AI in the the world today there are really some key um big trends that we see I might just want to use natural language I want multimodal capabilities remember multimodal I want to do text and audio or text and images or images and audio whatever that means I might want to use multi model so that's where I'm going to use multiple different models to solve and complete a certain solution because some models are better at C in some models are better at maybe text to speech some are very good at a very specific task and they're cheaper because cost comes into this yes maybe I could use this massive large language bottle to do everything but I'm paying more for every token whereas there's a maybe a small language model that for that particular task can run much faster",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 897.199,
+      "end_seconds": 985.519,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=897s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4b8cfade26cf000123328776671dff2d6bd3ddc53342edd9ec9c10e134f2b99f",
+    "text": "because cost comes into this yes maybe I could use this massive large language bottle to do everything but I'm paying more for every token whereas there's a maybe a small language model that for that particular task can run much faster much cheaper so it might be beneficial to use multiple models as part of my solution but that adds some complexity and of course agents uh we can't I think say AI now without talking about agents so this is moving from potentially something just interacting with the user and helping us giving us maybe some information to it actually doing a task fulfillment it's actually performing the task and when we think about these agents I'll talk more about this it's new considerations because when I think of things like hey a regular for example a Microsoft co-pilot or when you build and it's interacting and helping the user be more productive well the human is in the loop so the AI is generating some content well then the human can always have that step to validate and say okay yes that makes sense or actually can you tweak that thing when you start talking about this agentic world which is where the it's still an AI agent so agentic is really a subset of AI agent",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 967.279,
+      "end_seconds": 1051.9189999999999,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=967s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a574842d6e27ce4b7ced1bf27c88e507ddc234bd8dfdcdd617770d81daf63b5a",
+    "text": "yes that makes sense or actually can you tweak that thing when you start talking about this agentic world which is where the it's still an AI agent so agentic is really a subset of AI agent but they're autonomous they don't have to have a human in the loop they can go and plan out a much more complicated set of tasks to fulfill the thing it's being asked to do or it may trigger off of some event like a change in a database row or um some email comes in and when you take the human out of the loop it adds complexity to that because again of its creative nature you'll see things like make a checker pattern so an agent might go and generate and this is what I'm going to do this is how I'm going to respond you'll have a separate agent that validates that and they may bounce back and forth until the Checker is satisfied that what the maker agent is saying is the right thing to do but it's critical to understand that is just one type of AI service so there are many other types when I think about this idea of models so absolutely yes and I guess I should draw this in the the sparkly everyone loves it there's absolutely",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1032.4,
+      "end_seconds": 1110.76,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1032s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "003db72acbaf68508cac820e80b8732eedf0abcc88f0fbf06c05570257b7e18b",
+    "text": "type of AI service so there are many other types when I think about this idea of models so absolutely yes and I guess I should draw this in the the sparkly everyone loves it there's absolutely generative and you'll often see those generative models broke into small language models and large language models and the reason you have this distinction between them is normally when you talk about those number of parameters that they have what a small language model might be in the single digit billions of parameters that doesn't sound that small but these could be in the trillions of parameters and it's about if you think of every parameter is is a number now it could be 8 Bits could be 16 bits and there's optimizations that happen but that takes up a certain amount of memory so if I'm a small language model with single digigit billion number of parameters well that means it could probably run on a local machine it could run on my phone it could run on a co-pilot PC for example it could run on a iot device and so where I may want to run it locally these small language models can be really useful whereas the large language models with these massive number of parameters I'm not running that on my",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1094.44,
+      "end_seconds": 1175.6000000000001,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1094s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "59a1b462aa11f525abd6800895df9f7aeafa6c16c8b6a712efa1d00b24245e8e",
+    "text": "example it could run on a iot device and so where I may want to run it locally these small language models can be really useful whereas the large language models with these massive number of parameters I'm not running that on my phone that's a very different scenario but these will typically have a greater set of capabilities there are amazing things happening though so when I have a more targeted requirement they're doing some really cool things with the small language models so even a small language model you'll find Now can do multiple modalities Microsoft just released a multimodal um 54 Model A small language model but it can do two of the three at any one time so it could do a text and an image it could do audio and text audio and images it's a Texton output but there's some crazy advanced stuff going on in these worlds but in addition my point here is to the generative there's the more standard type of models we have so we do still have the non generative and these have been around for a very long time so it's standard machine learning where maybe I'm training the newal network to sue to do some particular task that I need it might be optical character recognition it could be text to speech and there are",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1159.6,
+      "end_seconds": 1245.24,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1159s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cbdc035de5d931340b95f183703c579d5a9ff4ceb696e50d408d345afb8903e4",
+    "text": "for a very long time so it's standard machine learning where maybe I'm training the newal network to sue to do some particular task that I need it might be optical character recognition it could be text to speech and there are times where for example text to speech there might be better neural voices available in these just specific text to speech models that's better than the newal voices that I can get from maybe a large language model that can do an audio output it might be when we talk about creating those Solutions it's actually better to just have a text output and then feed it into a text to speech model to maybe get a a greater voice a greater set of capabilities there I might have things like image classification I mean the list really goes on but there are these traditional types that are more um I can understand what they're going to output for any given input might be labeling CL ification whatever that could be and very often these are going to be the right solution depending on your task don't just think now with AI oh I need to use generative AI absolutely not the traditional um deterministic AI solutions could absolutely be a better fit from from a performance perspective",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1227.0,
+      "end_seconds": 1310.76,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1227s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4200b55400697854c11cc39af535be104695d5c315983db8849590edcbda41f8",
+    "text": "right solution depending on your task don't just think now with AI oh I need to use generative AI absolutely not the traditional um deterministic AI solutions could absolutely be a better fit from from a performance perspective and a cost perspective could a multimodal generative large language model um detected there an orange or an apple or someone's in an unsafe distance from a piece of Machinery in a factory sure but I'm going to pay way more for the tokens and the latency are the time it's going to take to have the input and give me the output prob going to be way longer than a traditional machine learning model that I trained on the scenario so don't just think oh I need to use generative that's not the case at all so all of these are part of azure AI Foundry as well and I'm probably going to want to again use these things together if I want want to add generative AI into my solution it may still be working with these more traditional type Solutions now just to note when I think about the experience and these tooling yes the the portal is obviously nice and I'm going to mainly show the portal But realize there's also a very rich SDK everything I do in the portal I can also do Through",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1292.24,
+      "end_seconds": 1380.76,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1292s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "afaccaad6cf2f3f81d7d54e68ce04721ccc9a1ed58f94d9457cda28c9f9681dd",
+    "text": "experience and these tooling yes the the portal is obviously nice and I'm going to mainly show the portal But realize there's also a very rich SDK everything I do in the portal I can also do Through The Foundry SDK so the portal might be the right solution when I'm trying to maybe do some kind of comparison between models look at the benchmarks between them um maybe I'm trying to do some analysis of well what's happening in this particular inter interaction what is the tracing um but then the SDK is going to be the better solution if I want to integrate with my cicd pipelines for example where I want that more declarative nature of creating and configuring the resources everything there I can do from the SDK as well and then as I mentioned the safety has a whole set of amazing capabilities that we're going to go into detail on so to start with I do want to talk about the models uh set of capability because this is in some ways kind of the the shiny star of this and there's a collection of models that I can use just out of the box but I can also update them and you're going to hear a number there's 1,800 models s in the catalog if",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1362.24,
+      "end_seconds": 1442.32,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1362s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6c8597894aae13e6225283d5abd6e8a3f4b950f042a192c0f09ffda23b42fe21",
+    "text": "shiny star of this and there's a collection of models that I can use just out of the box but I can also update them and you're going to hear a number there's 1,800 models s in the catalog if we actually go and jump over for a second so here I am so this is azure AI Foundry you can see I've just gone to ai. azure.com I'm in the Azure AI Foundry portal I'm in this initial overview for a project we're going to talk a little bit later on about what that is but we see this idea of a model catalog and straight away I mean I said 1,800 can see there's 18865 model right now now this absolutely includes the more traditional models as well and you'll see there's various ways that these are organized so for example I could look at inference tasks so embeddings hey I want to create a vector that represents the meaning of some text that's core to all of those semantic indexes and Vector databases you hear about all the time but you'll see there's also things like hey text to speech translation services obviously you're going to see things like um uh chat conversational chat completion when we think of those uh generative AI type Solutions so here hey you can see there",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1425.6,
+      "end_seconds": 1516.64,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1425s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "01f1422f947879f86ea764e29258159b11d909664479b7f683ee45d6337e5139",
+    "text": "see there's also things like hey text to speech translation services obviously you're going to see things like um uh chat conversational chat completion when we think of those uh generative AI type Solutions so here hey you can see there solutions from open AI you can see there's deep seek which obviously just came out we can see there's ones there's llama there's also ones from M so it's not just Microsoft there's coare so there's huge numbers of Partnerships with all of the AI experts here but I can also see those more traditional hey a text to speech right there Azure AI speech the more traditional Services here so there's different ways that these are organized so I can go and see these capabilities but we'll also see maybe it's based around a certain industry maybe I'm looking for a certain capability uh maybe hey which ones I can use for fine tuning different licensing we'll see there are Collections and this curated by Azure AI is actually a pretty important one because it's where Microsoft come along and stamps it as the Enterprise ready they do some additional checks and things on there but if I was to look at the inference task for a second and let's say we will actually go and look I could just do a",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1498.919,
+      "end_seconds": 1590.24,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1498s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3f86642f769b387cb6ab3e6764dd141cd817b8ca6bee45743511bf708f572501",
+    "text": "the Enterprise ready they do some additional checks and things on there but if I was to look at the inference task for a second and let's say we will actually go and look I could just do a type so if I want to check completion so now it's showing me all of those chat completion models and what you see here is yes you see a lot of open AI in this picture and there's a very public partnership between Microsoft and open AI they were that big large language model that got a lot of attention with their sort of chat GPT and the underlying models of that and there is a huge partnership on there every openai model comes to Azure the same day it comes to open aai but then what Microsoft does is layer on a lot of additional things they have additional content safety on by default it will run with the standard Azure promises there's like many different regions all around the world there's Global deployments there's data zones it would only be in clusters in the EU or the US there's Regional there's reliability slas I can use pay as you go I can have provision through report which then gives me a latency SLA there's a batch API mode where maybe I",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1575.6,
+      "end_seconds": 1654.84,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1575s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fdedcd5069a1cce37db8bde813cac9fd6774874586820d286a607df791670cbc",
+    "text": "the US there's Regional there's reliability slas I can use pay as you go I can have provision through report which then gives me a latency SLA there's a batch API mode where maybe I just need some summarization of data but it's not as time critical so I get that as a cheaper option I get all the Enterprise controls integration with entra managed identities um those capabilities so yes the open AI is super important but then you see all of these other ones as well and they are really critical all those other AI experts and you saw deep Seekers are good example so hey deep seat came out it was very quickly available in here so you can go and try that out so we have these nice uh different collections available and again if I look at that created by Azure AI this is where hey there's some extra Enterprise Readiness and checks done by Microsoft that you can get some additional confidence hey that these are ready to go and be leveraged in my Enterprise see here you can see it's got some nice detail about it and we'll come back to this but one of the nice things you'll see here is Microsoft for these created they are verified by hidden layer model",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1642.24,
+      "end_seconds": 1723.48,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1642s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "40e7be2b22d2e8a493b0fbc145b05bf64841c3e53a5839197340ad6844a9c7d6",
+    "text": "Enterprise see here you can see it's got some nice detail about it and we'll come back to this but one of the nice things you'll see here is Microsoft for these created they are verified by hidden layer model scanner so this is looking for any back doors any um vulnerabilities that may have been put into the model to help you feel additional safety that okay yes I I want to be using this particular model and this model catalog is actually also available in GitHub so if I look at the GitHub Marketplace I can see that same model and I'll actually come back and show that but the catalog does span many different types of model um open- Source Frontier models task-based models and one of the biggest things to remember is models do not have memory I I'm going to come back and stress this again but when you think about these generative AI models they don't remember anything those parameters that make up the model are read only so some provider they work out they do the training that sets the numbers for all of those weights and bias is is the model those parameters but after that they're read only when I send in my prompt yes it does a lot of complex math to work out the probability",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1706.799,
+      "end_seconds": 1796.679,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1706s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "915cb12fbf7ebb645cd5f9d88c461c633f9060cc3d1bdafd91ac6830b13f4570",
+    "text": "numbers for all of those weights and bias is is the model those parameters but after that they're read only when I send in my prompt yes it does a lot of complex math to work out the probability distribution and tell me the next token the next one the next one next one one but it doesn't learn anything it's not storing anything it's just a giant language calculator so it knows what it was trained on but doesn't learn anything else and again I'm going to come back to this when we think about the data storage but associate with Dory from Finding Nemo doesn't remember anything I I always have to give it any previous context if I want to REM it remember anything and that's really important when you think about the Azure AI found these models that you see in Azure AI Foundry and I deploy a model and want to use the model they are running in aure so you here for example when deep seek came out so deep seek created their model they did the training to generate those numbers the parameters that was the model now if I use deep seeks survey so I send my prompt to deep seek and then it sends me my output well that's a huge difference between taking the",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1781.96,
+      "end_seconds": 1866.1589999999999,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1781s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3f1e47d8a7d4e8eca14e93e6e72966e05893b12c2a6ada7a0683612b2b4ed09f",
+    "text": "those numbers the parameters that was the model now if I use deep seeks survey so I send my prompt to deep seek and then it sends me my output well that's a huge difference between taking the numbers that they created and hosting it somewhere else like in AIA which is where my prompt goes and I get the response sent back so always try and have that distinction between hey that the organization that creates the model and then where the model is hosted because where it's hosted that's where you're going to want to rely on the company's policies the data privacy the security so when we use these models in Azure AI Foundry it's running in Azure so all of the Azure governance the security all of the certifications it goes through the attestations the Privacy they all apply and the provider of the model has no visibility into your specific use of the model it might get some basic billing information so they know the amount is being used which may impact the payments they make get but they don't see anything around that so that's a really important distinction now you saw there was 1,800 models so how on Earth do you know which model I should be using so straight away here you can see",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1846.399,
+      "end_seconds": 1941.96,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1846s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "eaa69f50feebd79e4f133ae58b2cffb987402b8ab7ecc392fcf6a3c468e6fce6",
+    "text": "anything around that so that's a really important distinction now you saw there was 1,800 models so how on Earth do you know which model I should be using so straight away here you can see I clicked on a certain model and it's giving me specific details on that model so you'll notice it's showing straight away actually so we can see a description you can see some details the size of it there's different parameter size versions of the model here it has some scores some various benchmarks about it I'm actually going to jump back and let's look at I know look at GPT 45 it's just come out so it's got some details it talks about core capabilities but I can see here okay inputs so it supports text and image it only supports text as output these are the different languages that it supports it talks about here responsible AI considerations buil in safety measures content filtering and one of the interesting things you'll see here about the open AI models is the remember that hidden layer stuff we saw well for the open AI models it goes Way Beyond that so the Microsoft red teams actually work on those models and some of the other ones like the Microsoft research the five models as well so it",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 1920.559,
+      "end_seconds": 2019.159,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=1920s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e431eb55ca9725e4165f90311b69c03984ff3974ca42d268e28d5a9f202017bf",
+    "text": "well for the open AI models it goes Way Beyond that so the Microsoft red teams actually work on those models and some of the other ones like the Microsoft research the five models as well so it goes Way Beyond what hidden layer does so the red teams at Microsoft actually stress and try and break those models so for those the reason it doesn't say hidden layer is because there's so much more is being done behind the scenes but if we go back again so I can see okay I can see detailed benchmark so it's going to look so I can see what it's got AI quality I can see it showing me some comparisons so it's automatically doing some base comparisons against mistra 53 medium GPT 35 turbo llama Vision instruct so I could say okay well if I'm trying to decide should I use this or not what's got the better AI quality what's the cost looks like what's the latency look like what does the throughput look like I can see detail around the metrics down the bottom I can see if I've got deployments I can see code samples to actually start using these says Azure active directory obviously it means entra cough cough how I could actually go and do this in",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2005.559,
+      "end_seconds": 2085.76,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2005s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cb01b18d1931a95b8ec502477f09d20903b8118ad0d3fda343116f55d08bb1d0",
+    "text": "bottom I can see if I've got deployments I can see code samples to actually start using these says Azure active directory obviously it means entra cough cough how I could actually go and do this in different languages so hey python JavaScript rest do I want to use the Azure AI inference SDK or the open AI SDK directly and I'm going to talk more about this but for now just think as the in API is an abstraction so my application can use the same rest calls regardless of which actual model is behind the scenes whereas if I use its direct SDK there are going to be model specific parameters and attributes and values I have to understand you'll also notice there's these options potentially of deployments what does that mean and then what is the license behind it but in this benchmarking what's really cool over here actually before I go that the details I forgot to show it does show the last trained so this is its training data so this is its knowledge so remember I I said that it doesn't learn anything beyond its training so when you go and create those parameters there's a huge amount of data is fed in to do that training but that's that's its knowledge cut off so it's got what it's been",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2070.599,
+      "end_seconds": 2154.2400000000002,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2070s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "808ae7035e968d3f072a7b5781a3efcf25ff363c8e6bb0d049ee640b1f5183bc",
+    "text": "training so when you go and create those parameters there's a huge amount of data is fed in to do that training but that's that's its knowledge cut off so it's got what it's been educated on and then if I want it to know stuff beyond that when I have to give it to it as part of the prompt that's where you'll hear about rag retrieval augmented generation I'll give it the additional data for the task I'm asking it so if I was to ask it hey summarize this meeting it's not been trained on that meeting the Mee hasn't happened yet so I would have to send it the transcript of the meeting so then it could inference over that and help fulfill my request but if I jump back over for a second and I go to these benchmarks realize I can also do this compare with more models and this doesn't only let me pick which models that I actually want to compare it to I could add and remove various models I want but now I can customize the axes over what do I actually care about so right now it's comparing the quality index versus the cost of these models over here so I could maybe make some decision that's like it's a very high quality quity but",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2141.24,
+      "end_seconds": 2220.64,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2141s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c2461646293e28e62af9e77cf441fe67ef7fc6bf3e444f2f1f61ec59b3c96df1",
+    "text": "over what do I actually care about so right now it's comparing the quality index versus the cost of these models over here so I could maybe make some decision that's like it's a very high quality quity but it's a very high cost but maybe I care about something else a different type of quality maybe it's accuracy maybe fluency maybe groundedness and groundedness again remember is well its response how much is it actually basing that response on the data I gave it as opposed to maybe hallucinating and making stuff up how relevant is it I can for embeddings look at its accuracy and various other aspects its latency so I can customize exactly what it's doing to understand the aspects that I really care about so this is an awesome way to get some understanding of well okay which model do I want to use based on the types of tasks that I want to do and it's doing these based on hey what I typically see with popular use of these models now I did mention GitHub Marketplace as well so if I go to github.com Marketplace well you see it's got models for every use case but I can jump over to models and from here I could select a model so let's say I want to play around",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2203.28,
+      "end_seconds": 2299.52,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2203s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c4697e2a3860849a94b526ede6a08617df6aa4bf8f9405a4cb3ee4e9f2fee633",
+    "text": "github.com Marketplace well you see it's got models for every use case but I can jump over to models and from here I could select a model so let's say I want to play around with I don't know GPT 40 now what's nice about the GitHub Marketplace is this playground is actually free when I'm using Azure AI Foundry there's absolutely the ability to to have a playground here but this playground is going to use a model that I have deployed so notice it's asking me which deployment do I want to use in the marketplace it's not I can just select a model I want to use I don't have a specific deployment but I get this ability to for free start interacting with it and asking it various I can try prompts down here here there's even a free skew of azure AI search so I could bring in certain data I can test my prompts for example but you'll notice there's this compare button so if I hit compare I can pick another model there's that 54 multimodal instruct and what's really cool now is maybe I'm trying to understand how would they differ in some task I've given so can you explain what a gentic AI is and that is typing it on both of them and now I can kind of",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2280.76,
+      "end_seconds": 2377.7999999999997,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2280s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5307f53dd80595e39ff55ba253b9fbc53bb623ab2f8de5f5c3baaa145d8b3543",
+    "text": "maybe I'm trying to understand how would they differ in some task I've given so can you explain what a gentic AI is and that is typing it on both of them and now I can kind of see well how is it responding what's the speed of those responses what's the quality of those outputs it's given me it's tracking sort of the speed it's doing this I can tweak so I can play around with the different parameters I could change the system prompt for these I can change how creative it's going to be by messing around with like temperature and top PE change the token so there's a whole bunch of stuff I can do here but it helps me play around to give some idea of well how exactly they work and then once I've done this nice play around and I've got some idea of which one I actually want to use then I would go ahead and deploy it in aure and then hey I can go and use that thing now obviously this is free and so with free stuff realize it's not going to be infinite there were going to be rate limits so here I can see okay for this solution there's a certain number of rate limits depending on what is my",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2360.4,
+      "end_seconds": 2437.2400000000002,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2360s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5bd195d757118712488b1c075d5977973478504ad7ce33ad9de6bbffd22c7bf9",
+    "text": "stuff realize it's not going to be infinite there were going to be rate limits so here I can see okay for this solution there's a certain number of rate limits depending on what is my GitHub license I have and it will say how many requests per minute of the various different types of things I can do but it's a great way to just go and say hey I would like to play around and get some idea of these capabilities and then also I could go and grab an API key I could then go and learn how to use this and really whatever I want say I want to use this go and create a token go and create a production key and it tells me everything I need to do to start actually using this model so it's just crazy good and once again it's giving me this nice option I'm going to keep stressing this of hey do you want to use the native SDK or do you want to use this inference thing that is all over the place um now I mentioned before um this idea we go back over here that very often you might Focus around the curated by Azure AI which helps give me some idea of the various",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2424.319,
+      "end_seconds": 2504.6800000000003,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2424s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cabeb37533c49ff563077f1bd71ade0e533c668af0315e9cc2dc83d8b2b24acf",
+    "text": "over the place um now I mentioned before um this idea we go back over here that very often you might Focus around the curated by Azure AI which helps give me some idea of the various capabilities the playground is super nice to experiment on so I would pick the model that I've got deployed from here I can give it the system prompt remember the system prompt is really useful to give it guidance on how it should react I could add data so this could be Integra with things like Azure AI search I might add a new data source so for example hey mongod DB the data in Foundry blob storage a URL I could upload files into it I can mess around again with those parameters so past messages included the model has no memory when we do those multi- turn interactions what's happening behind the scenes is whatever the thing I'm talking to it's remembering the previous user prompt what I asked it remembers the assistant's response and then when I ask it something else it appends to that the history so that the model can then understand what is he's asking a follow- on question I have no memory but it's telling it the previous interactions it's telling it the data it wants it to",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2484.8,
+      "end_seconds": 2578.359,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2484s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f9748c1190b50888c76855ce507633b31d74618faef31a908f5dcbba51485822",
+    "text": "appends to that the history so that the model can then understand what is he's asking a follow- on question I have no memory but it's telling it the previous interactions it's telling it the data it wants it to work on so in the playground can ask it to remember a certain amount so I can do those multi-turn things I can limit how many tokens are used for the response the temperature helps modify well how creative it's going to be the top PE how much I want it to maybe deviate from the most probable to make it a bit bit more random in what it does I would never change those at the same time You' experiment to see how creative you want it to do but you'll see just a great way to play around and start interacting and testing those things and once again it has links to various other capabilities up here there's prompt samples I can go and actually go and deploy it to a web app for example help me evaluate and we're going to come back to all of those various things now the other thing you saw in the model catalog I want to come back to this for a second come back here is when I saw deployment options",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2562.04,
+      "end_seconds": 2640.48,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2562s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "12400e775584fd7edcb609664e0aaff4c0e8cf4cfc1ee36be58378357d566e73",
+    "text": "we're going to come back to all of those various things now the other thing you saw in the model catalog I want to come back to this for a second come back here is when I saw deployment options you saw there were two managed compute and serverless API and I wanted to touch on those just for a second cuz it's important when we think about the ways that I do actually leverage these services in Asia because it's always in azure's infrastructure so if I deploy deep seek I'm going to use that one cuz it's new and there were concerns about hey stuff was being sent to the Chinese government for example they in Azure but what's happening here is some of them are available via a serverless endpoint and that's kind of this model as a service and some of them are this managed compute so what is the the difference between them and it's based around how I pay for it and what is that underlying infrastructure so if we look at these these options and this is specific to the generative so I can think and this is maybe what we used to a lot in in azure's world that we have the idea of serverless so when it's the serverless API what I'm basically doing is it's a",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2620.16,
+      "end_seconds": 2715.04,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2620s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "88a96172d815eade163cf77412c41caaecc96f5fd7ee8599d80f5d0b7286c7af",
+    "text": "the generative so I can think and this is maybe what we used to a lot in in azure's world that we have the idea of serverless so when it's the serverless API what I'm basically doing is it's a it's a payers you go idea WR s it's a pay as you go idea and I'm paying for the number of tokens the number of input tokens the number of output tokens if it's a reasoning model the number of internal reasoning tokens so I pay for those things and what's happening here with the seris is there are pools clusters that run a particular model so there's a particular model set of pools and there will be these model pools in certain regions and again if I do something like a global option it can use model pools throughout the world if I do a data Zone option there's a data zone for the US there's a data zone for the EU so it would only use model pools in the US or in the EU because with generative AI we're a bit more flexible in where the inference happens because the latency of the inferencing is way way longer than the network latency so while a traditional app we care a lot about how close the app is to the",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2693.96,
+      "end_seconds": 2783.359,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2693s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "66d11aa26f1808759029dd987a028abbd654befe3db5a89f554a8e4a980fc92e",
+    "text": "in where the inference happens because the latency of the inferencing is way way longer than the network latency so while a traditional app we care a lot about how close the app is to the database because 1 millisecond versus 20 milliseconds is huge in a very chatty app with generative AI that Network latency is so insignificant compared to the infancy latency you know I can go and use a model pool in East US instead of West us where my app is if East us actually has more capacity so the latency of the inting would be less so that that's a really good thing to do so we have these model pools which ones get used is up to you and then there's the API end points which then goes and interacts with that and once again if I am the provider of the model they gave the math the numbers that make up the weights and the bies the parameters of the model the only thing they can potentially see is billing data so there's certain billing data which they get a feed to that's the only thing they cannot see your prompt they cannot see the responses this is all in aure the provider just gets that minimal info on potentially how much it's being used",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2767.599,
+      "end_seconds": 2861.5989999999997,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2767s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f0fc5956b103de47bfc4965e9cded33ea98e87524b4fcea17df435b70773e06a",
+    "text": "data which they get a feed to that's the only thing they cannot see your prompt they cannot see the responses this is all in aure the provider just gets that minimal info on potentially how much it's being used within aure now for the open AI models um again for the Ser normally I just pay for the number of tokens I'm using but for open Ai and this is an option you don't have to do this but there's also a provision through put option and that's where I pay a certain amount for a certain amount of throughput which has a certain SLA around the latency so hey it's a very um sensitive application that I need to make sure the throughput is always there well I I can do a PTU option so the serve list we saw that's available for some of the models the other models is models as a platform I a managed compute so what's happening here is I deploy my own compute on a I think virtual machines and so in that way in the managed compute this is really a more traditional kind of model so in a managed compute you have your VM you have your VM which has its processor maybe it's a GPU skew if it's GPU and what I'm paying",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2842.96,
+      "end_seconds": 2932.52,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2842s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "eeafb840c36da507926a4b2ba81fe57dc75cea1a9a062a970886888f99b3d1db",
+    "text": "really a more traditional kind of model so in a managed compute you have your VM you have your VM which has its processor maybe it's a GPU skew if it's GPU and what I'm paying for here is basically the dollars per minute per hour that that thing exists so he doesn't care about how much inferencing it's doing it exists I'm I'm paying for the virtual machine and what happens is the model gets deployed into this and the API would live in here so again the provider has zero insight into anything because it's being deployed inside your VM inside your compute and that that's an important thing to understand about that um so even the model catalog in that case has no visibility into that you would pick the VM you would pick the skew um the actual infrastructure from that point on though is managed by Microsoft so the model deployment all of those things now I've said this many times and I really want to stress it again because people do get super concerned about this remember I have my amazing generative AI model so I'm going to draw a very bad model if this was the actual model it would perform very well as well there there's many layers and there's many many more uh neurons than",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2911.72,
+      "end_seconds": 3007.1189999999997,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2911s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ca5536647b2da0e71f9711fb439b6275f43c4d38c2998f6b490c71335814d729",
+    "text": "model so I'm going to draw a very bad model if this was the actual model it would perform very well as well there there's many layers and there's many many more uh neurons than this again this would be completely terrible but you have your model and the key point about the model is it has no memory it it literally is Dory now I can't draw Dory but I don't know is this it's probably not going to look much like Dory at all got a little fin um but it's Dory and Dory wandering around hey I'm Dory and just keeps repeating you constantly have to remind her of every single thing you ever want it to know that are these models they remember nothing they have no concept of a session when we interact with this remember we have a prompt so we send our request into the model if I want it to have a context of those previous interactions well I have to include the history the user and the assistant previous interactions into the prompt if I want it to operate on other knowledge stuff it was not trained on well I have to add it I have to find the knowledge so we're using natural language that's why we like vector databases semantic indexes that are the",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 2991.88,
+      "end_seconds": 3095.04,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=2991s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "643fd960deef6451307a27bc079fb159abd0358bb61e8826ad052632d96e4b97",
+    "text": "knowledge stuff it was not trained on well I have to add it I have to find the knowledge so we're using natural language that's why we like vector databases semantic indexes that are the meaning of the data as opposed to the exact words of the data because natural language is very poor at finding matches cuz Hey words can mean the same thing one word can mean different things it's about what does it mean which is where those embedding models are used so we want to be a to go and find the good data add it to the prompt and then send it out and then at the end of the inferencing sure the model spits out a token then the next token the next one until it reaches an end of sequence and that's my response so there is nothing stored as part of the model it's not learning from your interactions now the only thing I would say certain Services you use and I'll link this in the description just for the full um knowledge so the models don't store anything but some features might white store based on hey um fine-tuning based on abuse monitoring and so this article goes through where those things are stored how you can delete that store data so again I'll have this Linked In",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3075.4,
+      "end_seconds": 3166.16,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3075s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "003830a6c9e5e422a6b5c0eb32ec03bc5de70c7b628b34b7025d1e87ef57d388",
+    "text": "features might white store based on hey um fine-tuning based on abuse monitoring and so this article goes through where those things are stored how you can delete that store data so again I'll have this Linked In the description I just wanted you to be aware of it um for those purposes so you understand those things the other thing that does come up a lot is retirements these models get updated very frequently and so there's for open AI models there's particular information about how long a model will be around for its retirement dates and then just more General hey depreciations the other models from the other vendors when they're going to get retired and it's important thing to understand here because this comes up again that people might say hey I don't want to keep updating my application for the new model well there's ways to avoid having to change your application through things like the imping API which we're going to talk about But realize as these models evolve I might get better performance at a better price I'll get optimizations about what I'm going to do and so generally it's going to be worth updating redoing my testing now I realize a certain prompt that I'm using may not be as effective with a newer",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3145.28,
+      "end_seconds": 3239.4,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3145s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1f4c7c7e5e37c9510fd92f1a0f9059e9b6b6744f13e0a274dd2e39376437ccab",
+    "text": "optimizations about what I'm going to do and so generally it's going to be worth updating redoing my testing now I realize a certain prompt that I'm using may not be as effective with a newer version of the model so I may need to do some work and that's where there things like evaluations come in to help see well how well is the generative AI performing against what I would expect it to do and then track how is it performing over a period of time so yes even if I don't have to change the API call sure if I go to a new model or if I change a new version of the model I'm still probably going to want to pay attention to what are some of the changes so I could maybe change my prompt uh change the rack change the I'm interacting to just get a better and better experience cuz that's what we're going to want if I'm adding generative AI to my solution it's because I'm trying to differentiate I'm trying to improve the experience I don't want to be stuck on a model from two years ago CU it's slightly inconvenient to go and update my app so yes these models will cycle through most of the time yes you're going to want to be using them",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3224.119,
+      "end_seconds": 3291.4,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3224s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e174a9206c57f017742b82da2b8badaf3fb8bf470cdd14bfae7172ffc9815b45",
+    "text": "be stuck on a model from two years ago CU it's slightly inconvenient to go and update my app so yes these models will cycle through most of the time yes you're going to want to be using them because they have better price points better capabilities Etc okay so another capability and I just kind of mentioned it actually is evaluations so if we go and look at the portal again the benchmarks that we just kind of looked at may be super useful but those benchmarks are not guaranteed of what I'm going to get they are what is possible I want to know maybe how it's actually working against my prompts and my data so this is where you have evaluations so what evaluations let me do is I have a constant data set so I don't want to be changing my data set but I'll have some data set and what this is going to let me do is measure the output and I'm going to have a function to do that measurement now what's interesting here is so I'm going to send in a whole bunch of constant prompts input data and then I want measure the output and I want to measure how close is the output to what I would to anticipate compare it to other ones and",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3280.2,
+      "end_seconds": 3366.2799999999997,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3280s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "59e51f6e1c5e97f4094df98b3386d5189c86cdc0754cd1f641137a6a8ec8f820",
+    "text": "to send in a whole bunch of constant prompts input data and then I want measure the output and I want to measure how close is the output to what I would to anticipate compare it to other ones and what you ofly can to actually do is use another large language model to be the judge so another large language model will judge the output of the model you're running the evaluation against and it will show you various metrics how grounded was the response in the data it was given um how relevant was the response to what it was asked and so when I'm doing these evaluations notice I can go and choose what am I trying to evaluate uh a model and a prompt a data set a prompt flow and what it's going to want here is your test data and notice I can actually give it a set of data or I could ask a generative model to create sample questions and describe what I want the questions to be about and I could use that in a a consistent way going forward and the great thing here is I could use it in Dev test but also in production I can compare how the different models perform as part of my cicd I would",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3350.359,
+      "end_seconds": 3429.52,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3350s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "13fc109d69c559bb79bc486dea6f24b01008f6766d9b0e4d71ecbfd3080229ab",
+    "text": "that in a a consistent way going forward and the great thing here is I could use it in Dev test but also in production I can compare how the different models perform as part of my cicd I would probably automate all of these things running it's just a a really great way to in an ongoing way measure how it's performing so I can measure the AI quality potentially risk and safety um just various different things another nice thing I guess what I'm looking at this particular area is you see tracing so tracing is all about being used to understand what is exactly the flow of components what are the interactions between them to understand where there may be issues so what this is going to do you can kind of see a picture of exactly what happened so a function called the large language model the large language model then it has the ability to call other functions then it's calling this to go and get some weather maybe some a site or another API call then it's calling another lar language model how long it took the latency around those and it's using App insights app Insight sits on log analytics so it's going to log all of the function calls all of the different",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3415.799,
+      "end_seconds": 3492.799,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3415s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1d5b648e68aa33d40ff43780503c648e98b47ce7b1a548866ba9895929ac9e04",
+    "text": "language model how long it took the latency around those and it's using App insights app Insight sits on log analytics so it's going to log all of the function calls all of the different states of what's Happening along that and then it helps me go and look at well what's happening with the particular solution I've created and it will even go and feed into various AI reports to again how are they performing how are they being used because understanding how s's being used is critical to help improve um that particular model another big thing you're going to see while we're over here is fine tuning so I can go and fine tune a particular model so I would say well what's the model that I want to fine tune and there's many different pages over here I don't have a whole lot here um it's based on the region that this is actually l ing so there's a lot of llama once available and generally we don't find tune models um it's about changing the behavior of s so it helps change the way the model responds I might want to add domain specific language to it I might want to change what it will and won't talk about particular terminology um because fine tuning can",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3477.28,
+      "end_seconds": 3566.2,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3477s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8bae2038fe9a59914a3561a9ef74a13b0a1118c1c2cc87de874ff1c07cfc83ca",
+    "text": "so it helps change the way the model responds I might want to add domain specific language to it I might want to change what it will and won't talk about particular terminology um because fine tuning can actually be super super expensive it is a replacement for rag so rag remember is adding knowledge fine tuning doesn't work well to add knowledge especially if you think that knowledge constantly changes I don't want to have to fine-tune my model every day when there's a new meeting or when there's new something else but fine tuning is good at changing the behavior of the model where the system prompt isn't sufficient the system prompt Maybe Can't Change uh the style and the domain specific language it may want to use and so the way fine tuning works is really remember you have the model and as we talked about before what is the model the model I'm going to be get lazy on lazier as I draw these models remember there's billions of these things um be a really long video the model is the weights and the weights are the the biases the neuron plus minus and then um the actual link between them these are all the parameters that make up the model so they have those set by the person that",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3547.4,
+      "end_seconds": 3639.7200000000003,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3547s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a7022764fe6e99e0f779e11fe59daf235381ddc0870e0b50ba844b3694bd0a03",
+    "text": "weights and the weights are the the biases the neuron plus minus and then um the actual link between them these are all the parameters that make up the model so they have those set by the person that created the model they did the training all of those numbers are known so all those parameters we have the weights and the biases but now what's happening is we want to change some of the math that goes on and that ultimate probability distribution to change the style the language of the output so what we're going to have is think of a file and this file will have examples of the input and the output we would like it to actually generate so we send this into a fine-tuning exercise and when we do that what's actually happening is it is now going to update the weights and the biases in the model so we're starting to shift what the ultimate probability distribution and the most probable token coming out so what we end up with when it shifts those weights the model itself is read only remember it can't change the original model so what we're going to get sped out is an updated model so it's going to create a new model based on that tuning we've done",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3618.92,
+      "end_seconds": 3717.44,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3618s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "50740416f19cac83e9ae7a67c7f84d16f92ffe2ae46396b0e7b65b9158f9dbec",
+    "text": "weights the model itself is read only remember it can't change the original model so what we're going to get sped out is an updated model so it's going to create a new model based on that tuning we've done to it so now maybe this model is really good for Health Care specific language or legal or something else so we're changing those things we're we're feeding in a whole set of fine-tuning data and if we have a look at the documentation for a second it has examples so this could be an example file and you'll notice that what it's really doing here hey the user part and then what it wants the assistant to respond as so you would feed this in and then it would tweak all those parameters in the model to give you your new model that would respond the way you want it to so that would be the point behind it so I'd get my new model that's super expensive to do if it's a big model from a Time perspective um there are some tweaks we can do um but generally you're going to do these on maybe smaller models but Foundry will give you full detail and what I'll normally actually do is I'll have an input file and then a",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3697.88,
+      "end_seconds": 3792.76,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3697s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "bba4b149360ec4d6db778f42714fe49f00ef45ac2a2e98584505962eee46f9f2",
+    "text": "tweaks we can do um but generally you're going to do these on maybe smaller models but Foundry will give you full detail and what I'll normally actually do is I'll have an input file and then a validation file with different data to see is it actually responding the way I want it to but it will give me details about the accuracy and the error of that tuning exercise now another concept you're here talked about is distill I mean distillation is teach a student right so a teacher provides information that is used to train the student it's just another type of fine tuning but what you do with distillation kind of fun so rather than me the human create this input and output on this maybe small language model I want a large language model to be the teacher so what I would now do is I'll have a large language model I will give it the goal I might give it some particular data that's pertinent to what I want it to be out to do so there some specific um task specific input data that it's going to leverage and that training data was kept secure it's in your tenant as the customer and then the large language model will go and create that input and output data for",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3778.599,
+      "end_seconds": 3863.16,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3778s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c2cb67fb77ae2aed27ed660071ca1816cf29ac789a1de67558a46841feda8533",
+    "text": "um task specific input data that it's going to leverage and that training data was kept secure it's in your tenant as the customer and then the large language model will go and create that input and output data for you which then goes through the regular fine tuning so distillation is when I want a another model that's a larger model it's more capable to go and create the training data to maybe now go and create a small language model that's very good at that specific task it's going to mimic the way the teacher model um would respond now I think the distillation is not in the portal at time of recording instead I would use uh the API to do that you might also hear about Laura low rank adaptation basically as I mentioned it's super expensive to do a full um fine tune on the entire model and often it's not required I may really only need to tweak certain parameters to get the result I want so what Laura does is it's almost like an adapter that layers on top of the original model that just tweaks certain specific parameters instead of all of them to give you the the response that I actually want it to do okay now I want to talk about the",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3846.64,
+      "end_seconds": 3931.1600000000003,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3846s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "790f7a976a287707e9a2580fdc6603d9b43493cbae1ad9fe0aa13aef816fe9a8",
+    "text": "top of the original model that just tweaks certain specific parameters instead of all of them to give you the the response that I actually want it to do okay now I want to talk about the inferencing API now as mentioned before all these different models they have a different API they expect different input parameters they will output in different ways so what it means is as a developer if I'm writing my application so there's there's a certain API specific to this particular model deployment I have and so here's me writing my lovely application and if I'm talking directly to it and now I want to change the model because I'm looking at the benchmarks I'm looking at evaluations hey this new model from someone else actually is going to be better for me or there's just a new version of the model when I have to go and change my code it makes it harder to experiment with the various things so one of the capabilities of azure AI Foundry is the inferencing I use different color the inferencing API and it's really just an abstraction so what it's doing is the application can now talk in a standard way to the inferencing API and then that will translate to any specific API format of",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3912.68,
+      "end_seconds": 4012.7599999999998,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3912s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "64255934f7fa48f5dbfac373f6dfae096437052b6484d842f737ddf212368a51",
+    "text": "the inferencing API and it's really just an abstraction so what it's doing is the application can now talk in a standard way to the inferencing API and then that will translate to any specific API format of the model behind the scenes so now my app code doesn't have to change I can experiment with different model super super easy without having to do anything different in my application and the documentation um we'll talk about Which models today supports using the infancy API so I can always go and check those things out and again I now get that nice flexibility noce it's all Azure open AI models and then those additional ones as well so I now can just talk a standard way and don't worry about what are those model specific things behind the scenes so if where I can recommended to just go and use that it's just makes it easier to experiment I don't get locked into a particular model um again don't forget though the API is one element of it just because I can use the same API call doesn't mean the system prompt the way I interact may not be better suited if I do tweak it in certain ways so there's still certain experimentation and things I'm going to want to",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 3988.119,
+      "end_seconds": 4092.2400000000002,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=3988s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c3f501a0a9c6621494ed000848c660265cec7883b97ead5cce3c4feb24501942",
+    "text": "because I can use the same API call doesn't mean the system prompt the way I interact may not be better suited if I do tweak it in certain ways so there's still certain experimentation and things I'm going to want to do um moving on so the safety is so so important these are built in guardrails that are on by default in The Foundry and when I think about that creative nature of generative Ai and the fact that is non-deterministic for any give an input I don't know exactly how it's going to Output how do I make sure someone doesn't try and abuse the things so it's so important that I have sort of safety just baked into this and what we're really thinking about here is this idea of content filters and there's there's two layers of this so if I think about as always we have the model that ultimately it's talking to I think it' be better at join the model by now remember we have the input so I have some input that the user is giving and then the model is going to generate its output and there's things I want to check at every level of this the first one is I may just be looking for different type of bad things um self",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4070.52,
+      "end_seconds": 4173.0,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4070s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "def78b9357012ede37be03a9ae8394ad4e557e80e66dd461c504e859656aa941",
+    "text": "user is giving and then the model is going to generate its output and there's things I want to check at every level of this the first one is I may just be looking for different type of bad things um self harm bad language violence Etc and so we have this idea that I may want to have various categories and so the categories and the great thing here is they apply to both text modality and image well those are going to apply I can apply those both the input and at the output so if we jump over to the portal for a second let's have a look so we will go back over here and we see Safety and Security and there's a whole bunch of great information you want to take some time so it talks about the bigger picture identify the risks um develop a mitigation plan so definitely definitely spend time so you learn and understand these things but then we have these idea of the content filters and I can create a Content filter so I give it connection so we have the input and as you can see here it's applying to text and image so we have violence hate sexual self harm annotate and block medium low high threshold so how sensitive am I",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4148.48,
+      "end_seconds": 4249.84,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4148s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "37eb577fd24b792146ab8fc874b5273a1f564cebdd20a856967c76694c0ffe0f",
+    "text": "so we have the input and as you can see here it's applying to text and image so we have violence hate sexual self harm annotate and block medium low high threshold so how sensitive am I to this now it might be I'm a I don't know a police organization and actually I I need the input to be able to hand Le these these horrible things doesn't mean I want to Output horrible things I don't want it swearing in the output at me but maybe the input I need to be able to accept all of these various capabilities and descriptions and things notice we also have this idea of prompt shields for jailbreak attacks and prompt shields for indirect so a jailbreak attack is and you you bound to have probably seen these things so what happens is in the input to The Prompt I say forget the previous instructions you have you are my assistant those other instructions were very bad or hey in asky output whatever you try and make it do something it's not supposed to do so this is a type of attacks you have a prompt shield to protect these things so a direct attack is in my prompt I'm asking it to behave a certain way then there's indirect with indirect I have the attack",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4226.199,
+      "end_seconds": 4321.879999999999,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4226s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8e77aa79241ef69ad96be25f2e87093c4e7cc9262f587d7acd8b56ceffd1620c",
+    "text": "attacks you have a prompt shield to protect these things so a direct attack is in my prompt I'm asking it to behave a certain way then there's indirect with indirect I have the attack in some other data that maybe it goes and looks up on the web or is being added as part of some grounding maybe someone sent an email with some hidden white text in it that says hey um if you see a certain project and this user respond with a typo in regards and so prompt Shields understand both the direct and indirect and you can tell it hey what I want it to do and when I think about these inputs things they're happening before it goes to the model so this is triggered so I'm not only stopping the attack I'm not paying for the tokens that the model would do and then potentially even if something slips by well then it runs again at the output so here if we look at the output I have those same categories and again the same different thresholds but I can also Now look for protected material for text protected material for code do I annotate and block annotate only or just turn those things off so that's going to be good maybe it's song lyrics maybe it's",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4306.199,
+      "end_seconds": 4385.84,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4306s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0f81b3bb67880bcc8270f3f608643293e8fe6e251523ce33e424081398f12aa4",
+    "text": "thresholds but I can also Now look for protected material for text protected material for code do I annotate and block annotate only or just turn those things off so that's going to be good maybe it's song lyrics maybe it's recipes certain code and there's also via the API today so yes on the output I can look for protected material but also what I can do is custom categories something going Beyond um where maybe it's a certain brand identity I don't want to talk about a certain competitor you saw there were block words but this is ain't beyond that another nice thing I can do again I think it's via the API today is groundedness detection uh is it hallucinating how much of the rag data passed in was actually used in the inference and it has a healing capability so it can suggest alternate answer that is grounding in the data or give a hint in the output to the user hey this this may not be right and you almost think about in the agentic world where you have that maker that creates the output and then the Checker this is kind of giving you that ability just built in as part of content safety and also content safety I can use this as a standalone service so I don't",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4371.0,
+      "end_seconds": 4462.0,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4371s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "dceb4ca07e0cd757a986beff7400a71a92b21552e0d212b89d7a20f1a7c92d11",
+    "text": "that creates the output and then the Checker this is kind of giving you that ability just built in as part of content safety and also content safety I can use this as a standalone service so I don't have to have it only just for as part of the interaction with the models in aure AI Foundry I could just send data to content safety and it can run these things against it and give me a response so there's examples and documentation of exactly how I could do that um other types of capabilities so from a developer perspective and again I said we couldn't avoid it um I mean agents agents are everywhere now so there's an entire agent service around this and so this extends things like the azure so open AI agent framework so it can run tasks acts on your behalf you give it certain capabilities um I can let's just jump over and have a look so I can go and look at agents and one of the nice things here is that if I just pick some agent what I can do is I can give it instructions I give it knowledge so it's files it's Azure AI search grounding in Bing search I give it certain actions so I can integrate with custom functions",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4448.199,
+      "end_seconds": 4530.199,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4448s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3fcf7e4acb6d8723898b327fae595d204f8bb240af6813bc5b9272c7067f68c9",
+    "text": "agent what I can do is I can give it instructions I give it knowledge so it's files it's Azure AI search grounding in Bing search I give it certain actions so I can integrate with custom functions logic apps anything that follows the open API 3.0 um standards so now it has things it can do but I just describe what I want it to be doing and now I have this agent available to me it can talk to us you saw the Azure AI search Bing searches and agents obviously do get a huge amount of focus today and they do range completely in their capabilities like you'll see really simple agents that are nothing more than a chat so I send it something and it it can respond to me there are then agents that hook into some additional data so it has a rag capability then it might have the ability to call certain tasks it can do certain things on my behalf but then you'll see the things that are more agentic and really a gentic all this is its ability to act autonomously so all of these previous ones if we really looked at them they're all engaging in some way with a human human is triggering it and they're talking to the human with the",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4514.719,
+      "end_seconds": 4607.48,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4514s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2fbc65ec8ca5b313db51f009fa922c40dd0af2e52e40b53417314b112e8d925d",
+    "text": "ability to act autonomously so all of these previous ones if we really looked at them they're all engaging in some way with a human human is triggering it and they're talking to the human with the agentic world it might be a human is triggering it but maybe it's triggering again off a database record or an email coming in and the agentic nature is it can actually go and plan out how to complete a task without being given the detailed instructions it will go and work out the sequence of things it has to do given the things it's allowed to call the data it has available to it to complete that so really when you see a gentic really it's just about its ability to act autonomously to complete something and that's really the big deal about that gentic world that's really powerful but often you what you'll see is in the agentic world many of these things will work together to complete a much much larger task so they will go and work with each other but because there's no human in the loop very commonly what you'll see is Agents work together to validate each other and make sure hey this is the right thing to do go and check those things I can mix and match",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4589.639,
+      "end_seconds": 4669.5599999999995,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4589s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "89c0a8e13e84490cec854005a751f7ae61492dac7c07e171c413728f73a2afd3",
+    "text": "human in the loop very commonly what you'll see is Agents work together to validate each other and make sure hey this is the right thing to do go and check those things I can mix and match the models that I want is not just open Ai and again these agents hook into to the rest of Asia Al those knowledge sources functions logic apps all of those various things another key capability when I think of all of these things is orchestration so we do have a number of different orchestrators available and I might use so in a Microsoft world we have things like autogen auten is out of Microsoft research it's more Cutting Edge but it also may have some breaking changes brought in there semantic kernel is the more produ productized version uh more production ready not going to see so many sort of like breaking changes as part of those things I'm going to use that in my production environments but I can use those to go and create these agents and again an agent typically I'm just describing what I want it to do and the data and the actions it has available to it one of the nice things you see in Foundry is prompt flow so if I just want to",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4656.44,
+      "end_seconds": 4735.4,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4656s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6c6cb66b524ee55e9b62edcfc2431919399f01274e64c0448f46f5edde35ef92",
+    "text": "agent typically I'm just describing what I want it to do and the data and the actions it has available to it one of the nice things you see in Foundry is prompt flow so if I just want to experiment and play around one of the things here is I just go and create a new flow so hey do you want to do a Q&A on your data chat with Wikipedia um GPT function calling I could go and view what it's going to do so I'll see a visual description when I create this thing of what it it actually has if I go and uh clone it sure I'll then be able to actually go and see what this is so I can go play around a it I I can test it without having to write any code and then when I'm happy with the way it's performing so notice we can see it's got the inputs use the functions run a python function then I get the output I can see the breakdown of what is that run function I've got the inputs in the output I can see the large language model use case um things it might do here I could add in other large language model interactions other things around the prompt I could",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4721.04,
+      "end_seconds": 4794.4400000000005,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4721s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "dc7f2b6be581b07688017ac16669d75a43026c241c3d5d674534e5e14eaddc4e",
+    "text": "I've got the inputs in the output I can see the large language model use case um things it might do here I could add in other large language model interactions other things around the prompt I could add in other code but it lets me play around an experiment to see does this actually meet my requirements you'll also notice there's templates over here so hey if I want to just work in code multimodel orchestration it will go and give me sample codes just to start with so there there's lots of great capabilities just here in the portal that I can go and do many many things now also when I think of Azure AI Foundry I mean Azure AI search is is part of this all up solution so Azure AI search I mentioned rag earlier and it's about the quality of the data that I send in so that uses hybrid ranking it uses both uh semantic Search the meaning and let scho keywords and then mixes those together and then does a semantic reranking cuz maybe I've got product name product name I want an exact keyword search electrical search match as opposed to what's the semantic meaning of my particular product name and it's really important to have high quality data because well one I don't",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4779.84,
+      "end_seconds": 4865.5599999999995,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4779s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "47c2c2f851cff518367f756e4d4b1f9c597ecd5ca312347ebaafb5705c697140",
+    "text": "name product name I want an exact keyword search electrical search match as opposed to what's the semantic meaning of my particular product name and it's really important to have high quality data because well one I don't want to pay for tokens by sending data that's not that relevant so I only want the very best data but also the quality of the data is going to impact the quality of the output so having only the very very best additional knowledge is saying Azure AI search is for nominal app and it can even help you rewrite your queries it uses a small language model which is very overhead to help change exactly how you're integrating with it and as I mentioned earlier Azure AI search is available as a free tier in the GitHub playground so finally and you do kind of see it when I was looking at the screen like how do you use Foundry in your environment and it it really just boils down to the fact that you have a hub now you can create multiple hubs but the idea is that I have a hub and as the name suggests the Hub is really where heyy I can have a collection of data and various artifacts I may want in the environment I may have connections to",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4851.08,
+      "end_seconds": 4924.88,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4851s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9fc0005020b19ac6189d37daa860b39ca74a1fddcb18748edae1bd11d2d8462e",
+    "text": "idea is that I have a hub and as the name suggests the Hub is really where heyy I can have a collection of data and various artifacts I may want in the environment I may have connections to various things uh I'll have some endpoints for uh different apis I want to call I might have compute available I'll Define my security and then also as part of the Hub I can Define the link to Azure AI services so the h is kind of where I can have all of those things and then once I've created The Hub well now I can go and have child projects which is a subset and may even have its own special things as well that's used for a particular project so then I have a project that again is a child of a particular Hub so a project can have one parent Hub but a hub can have many projects so this might have some isolated data that is specific to the project that's not in the hub it may have its own uh components that it's leveraging it might have its own connections its own endpoints so it's the ability then it's all about collaborating and and working on things together if I was to look in the portal so right now if I just go to",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4910.04,
+      "end_seconds": 5003.88,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4910s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7318cfcc2df4ff653cbe1ff093e839e4649b1270206e7a66a23744e040864c91",
+    "text": "connections its own endpoints so it's the ability then it's all about collaborating and and working on things together if I was to look in the portal so right now if I just go to Azure AI Foundry you can see I've got a hub and you can see in the hub so the Hub has various users defined it has various models and mpoints it has connected resources it has various compute available to it and then under that I have n number of projects that themselves then have specifically users they're leveraging it that has its own models speically its own connected resources it's just the way to really collaborate and work things together so I might think about well my it management the governance the compute usage the connectivity it would manage the Hub and then individual developers they would use their own project so that's how I think about those things working together I also can hook directly from Foundry into just Azure openi resources outside of a hub or project in a more Legacy type Manner and something I wanted to finish with because it's really important when I I I think about this that this is all fantastic all these capabilities great I love all of these capabilities I love all of these things",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 4987.44,
+      "end_seconds": 5079.08,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=4987s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1552f329b277554232ff1fb649d5653f2b1bb1f0c1e3907a2110c78c382e04a0",
+    "text": "something I wanted to finish with because it's really important when I I I think about this that this is all fantastic all these capabilities great I love all of these capabilities I love all of these things but when I think of azure AI Foundry what's really critical to me and it's what's going to be critical to everyone eventually is integration because when you're starting out you care about o how how sparkly is this thing uh how much Fantastical thing does this output what you'll actually care about eventually will be the integration of everything else you have so you'll care about the integration with your identity solution so enter ID so from both the role-based access control but also things like managed identity the ability that I don't have to store a token to go and talk to some resource the Azure app can just go and call the AI model as part of its own native identity I don't have to store weird weird tokens in it and worry about that here things by Azure API management when I have these generative AI models when I may want to balance between different deployments for resiliency purposes I may want to have a PTU and a payo and balance between them I might want circuit breaker patterns I got all",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 5063.12,
+      "end_seconds": 5144.28,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=5063s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "aa7f3883132a7d71067df03a6a17dfd6adc29f17761bda08ba164eb3f3d36c8e",
+    "text": "when I may want to balance between different deployments for resiliency purposes I may want to have a PTU and a payo and balance between them I might want circuit breaker patterns I got all these capabilities well that's what API does I want to be a to do stuff so we want to integrate with serverless Technologies Azure functions Azure logic apps I want to be a to integrate with my network so we have things like private endpoint support so it's just not using a public endpoint it's integrated I want to think about monitoring and we saw some of the ideas around hey log analytics workspaces app insites I may want to restrict Which models I can use in Dev and with production or I can use Azure policy so all of those core capabilities transfer over to the azure AI Foundry because it is part of azure and this is so so important don't neglect that fact when I'm thinking about o generative AI is great but it's part of your application I don't want it to be this siloed Island which everything is hard to work with and integrate and observability around and governance and security I want to integrate with my existing stuff so that was a whirlwind tour obviously there's so much Innovation here things are going",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 5134.56,
+      "end_seconds": 5215.159000000001,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=5134s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "07375e1231ad34b4ffdcf5ae9c9d8af86d5bef5bfa571cea9d7ad4d7237f78cd",
+    "text": "everything is hard to work with and integrate and observability around and governance and security I want to integrate with my existing stuff so that was a whirlwind tour obviously there's so much Innovation here things are going to be added things evolved but co-pilots are fantastic for those personas where there's a co-pilot use it if I just need to create think in a low code way co-pilot studio is great for those things to both extend co-pilots and create your own but from a pro code perspective Azure AI Foundry is your home I really hope you found that useful till next video take care",
+    "metadata": {
+      "video_id": "Sq8Cq7RZM2o",
+      "title": "Azure AI Foundry Overview",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Azure",
+      "start_seconds": 5199.6,
+      "end_seconds": 5239.32,
+      "url": "https://www.youtube.com/watch?v=Sq8Cq7RZM2o&t=5199s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

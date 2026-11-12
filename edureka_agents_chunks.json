@@ -1,0 +1,210 @@
+[
+  {
+    "id": "274f41a80678c79d093a8ccbad0d3ad0010b05721f44b350913a3d5a8d6df8a4",
+    "text": "[music] Hello everyone and welcome back to another video by Edureka. In today's video, we are going to explore agentic rag or agentic retrieval augmented generation. Whether you're new to generative AI or looking to understand how intelligent agents can dynamically interact with knowledge sources to improve performance and decision making, this is your perfect starting point. But before we begin, make sure to like, share, and subscribe to Edureka's YouTube channel and hit the bell icon to stay updated on the latest tech content from Edureka. Also check out the agentic AI certification training course crafted by industry experts to equip you with the cutting edge skills needed to roles like generative AI engineer, LLM engineer and AI agent engineer. This comprehensive program dives deep into agentic AI development and AI architecture design empowering you to master complex concepts such as conversation patterns and optimizing performance in no code AI environments. You will get hands-on experience through real world projects that translate directly into practical expertise. Whether you're aiming to build intelligent AI agents or advance your career in generative AI, this course provides the tools, frameworks, and support you need to succeed in the evolving AI landscape. So let's start with how compar GMBB has transformed a major German bank's operations using agentic rack. A universal bank in",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 3.274,
+      "end_seconds": 99.36000000000001,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=3s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8b24b842ab0a10e6a2545f8f98c2d9caae880d017b1c3c8a0e1300c4dae6ff46",
+    "text": "provides the tools, frameworks, and support you need to succeed in the evolving AI landscape. So let's start with how compar GMBB has transformed a major German bank's operations using agentic rack. A universal bank in Germany dependent on over,200 different processes from archive searches and form management to sending emails and SMS to support customers and manage its back office task. For example, a single workflow like issuing a power of attorney required more than 30 distinct system calls and manual transfers. This complexity resulted in a process that was slow, expensive, and sustainable to errors. So, how did they turn this around? Let's see the agentic rack solution in action. Compare collaborated with IBM to develop a conversational banking assistant utilizing agentic rack. And here's how the process operated. The planning agent outlined every individual step in the power of attorney procedure. Retrieval agents access various systems such as core banking, archives, form management, email and SMS APIs to gather exactly what was needed to each phase. The validation loop ensured that each step was completed before proceeding, preventing any overlooked details. The generation agent utilizing IBM Watsonic.ai created clear user-friendly messages that guided the customer through every stage. And what did this translate to in real numbers? Let's look at the impact. Once the agentic rack powered assistant",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 80.4,
+      "end_seconds": 180.72,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=80s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c043f79557dcef5c4089c9c284b0690da10dd0cf144f9317031493f537628048",
+    "text": "generation agent utilizing IBM Watsonic.ai created clear user-friendly messages that guided the customer through every stage. And what did this translate to in real numbers? Let's look at the impact. Once the agentic rack powered assistant went live, the bank saw its overall process effort cut in half. Team spent 50% less time on the power of attorney workflow. At the same time, customer support tickets dropped by 30% since most routine questions were handled end to end by the system. And best of all, customer enjoyed faster and more accurate service. All because of automated and contextaware pipeline. This example shows how Agentic Rag isn't just better search plus generation. It's about coordinating multiple tools and data sources, validating results on the fly, and delivering fully automated and contextaware workflows. All right, now that you have seen agentic rag in action at a German bank, now let's break it down from the ground up. What is agentic rag exactly? Agentic rag stands for agentic retrieval augmented generation. In simple terms, I can say that it's a system where your AI doesn't just retrieve information once and split out an answer. Instead, it spins up autonomous agents that plan their own next steps, fetch information from multiple sources, validate each piece of data, and generate a final polish response without human handholding. So,",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 161.84,
+      "end_seconds": 258.32,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=161s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "67fa1a8706a2461dff3f3968160f7a907a0d7b7d245001e5bdd1a921d8ee9d8c",
+    "text": "retrieve information once and split out an answer. Instead, it spins up autonomous agents that plan their own next steps, fetch information from multiple sources, validate each piece of data, and generate a final polish response without human handholding. So, agentic rag transform a single retrieve and generate call into a smart multi-step workflow. So, your AI can adapt, correct itself, and tap into the new data. Great. So, we know what agentic rag is. Next up, let's unpack the four core building blocks that make it all work. Imagine agentic rag as a well orchestrated factory. It begins with your prompt which serves as the job order you submit. The LLM acts as the master planner which reviews the order, comprehends what needs to be accomplished and outlines the highlevel vision. Next, the task transitions to the agent layer where the true magic occurs. Imagine each agent as an expert on the factory floor. A planning agent takes the master plan and breaks it down into individual task like gathering customer data or checking document status. Retrieval agents then spring into action. Quering vector databases, calling web APIs or pulling files from your document store to fetch exactly the information needed. Once data come back, a validation agent steps in to verify accuracy. retrying a failed lookup or switching to a backup source if",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 238.319,
+      "end_seconds": 334.24,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=238s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4b1a2428e05f3ce9a161b7aa109aa13f60f03d2cd0946278a00a0baad530e1eb",
+    "text": "calling web APIs or pulling files from your document store to fetch exactly the information needed. Once data come back, a validation agent steps in to verify accuracy. retrying a failed lookup or switching to a backup source if something's off. Finally, a generation agent assembles the verified pieces and crafts the polished user ready response. All these agents rely on the knowledge base and tools. This is the AI's toolbox filled with everything from semantic search indexes and CRM system to calculators and external web services. It's a valuable resource that the agents rely on to effectively get their job done. And finally is the feedback loop. Every time an agent completes a step, it logs whether it succeeded or not. That feedback gets fed back into the system, helping the agents learn which data sources are reliable and which queries need fine-tuning. Over time, the entire pipeline becomes faster, more accurate, and more resilient. With the elements laid out, let's explore step by step how they interact in a real query. Imagine a customer ask what's the status of my power of attorney and here's how agentic rag handles it. So first it decide. So the planning agent kicks things off. It reads the question and breaks it into subtask such as fetching customer details, checking document status and",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 315.36,
+      "end_seconds": 407.759,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=315s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "24a0d9c8a252ca3c92983995ad3f823a5dc520bd4d445eb19352c4bd7c276a8d",
+    "text": "power of attorney and here's how agentic rag handles it. So first it decide. So the planning agent kicks things off. It reads the question and breaks it into subtask such as fetching customer details, checking document status and preparing a notification plan. Next, one or more retrieval agents spring into action. They query the core banking system for account information, hit the document archive for the signed form, and even ping the SMS API to prepare a message template. As each piece of data comes back, the validation agent checks it for a completeness and accuracy. If the archive lookup fails or returns stable data, it retries or switches to a backup index, making sure nothing slips through the cracks. Once all the facts are verified, the generation agents call the LLM to put together everything into a clear conversational reply like this. Finally, every step logs its outcome success and hiccups alike. That data feeds back into the system so future queries run even smoother and more accurately. And that's the agentic loop. plan, retrieve, validate, generate, and learn working together to deliver fast, reliable, and contextrich answers. Now that we have seen the full agentic loop in action, let's see how agentic rack stacks up against traditional rack. Traditional rag operates simply. You submit a query to a retriever, retrieve",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 389.919,
+      "end_seconds": 480.72,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=389s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8ddd65a86a8215345ed7947afaa02c402df1d27e82e6edbb47fd9cd2e811cb5a",
+    "text": "reliable, and contextrich answers. Now that we have seen the full agentic loop in action, let's see how agentic rack stacks up against traditional rack. Traditional rag operates simply. You submit a query to a retriever, retrieve the most relevant documents or data, and pass everything to your LLM for response generation. While it's easy to implement, it lacks the ability to adapt in real time. So if your retrieve overlooks something, the LLM is unaware and cannot revisit the retrieval process. Agit rag on the other hand treats each query like a multi-stage mission. First, a planning agent breaks your question into a discrete task. Then retrieval agents deal into multi-systems like databases, web APIs, and even calculators. So you're not limited to a single source. As each piece of data comes in, a validation agent checks for accuracy and completeness. Retrying or switching sources if something falls short. Only once every fact is verified does a generation agent create the final answer together. Because of this orchestration, agentic rack delivers far greater flexibility. You can tap into any tool your workflow demands while adapting on the fly to missing or stable data. Built-in validation loops dramatically reduce hallucinations and parallel agent execution keeps latency in checks even as complexity grows. Unlike traditional racks, texton pipeline and agentic system can",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 463.68,
+      "end_seconds": 561.12,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=463s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2174edc7ccec27c577dd9cb24d45a3115b4597e8a0738010cd3786760bdd9f6e",
+    "text": "adapting on the fly to missing or stable data. Built-in validation loops dramatically reduce hallucinations and parallel agent execution keeps latency in checks even as complexity grows. Unlike traditional racks, texton pipeline and agentic system can seamlessly integrate images, audio or structured data when the use case calls for it. So in short while traditional rag gives you one and done retrieve and generate call agentic rag delivers a smart self-correcting workflow that adapts to the problem making it ideal for high stakes and multi-step task. All right you have seen how agentic rag outperforms traditional rag. Now let's talk about its core features and the benefits you will get from adapting it. First, agentic rack brings autonomous decision making to your AI pipeline. Instead of you having to script every single step, the system itself figures out what to do next. Whether that means quering a vector database, calling an external API, or running a calculation. Next, it offers dynamic retrieval. Imagine your AI not just fetching one set of documents but hinging between multiple tools and data sources in real time so you always get the unique and most relevant information because it orchestrate multiple checks. Agentic rack dramatically improves accuracy. Those built-in validation loops catches mistakes on the fly. So you see favor hallucination and more reliable answers.",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 540.56,
+      "end_seconds": 637.2,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=540s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1d4b911f9bbbfbc4dc70ea99e222b9ed1b8d63275f2219752fc2583293503519",
+    "text": "time so you always get the unique and most relevant information because it orchestrate multiple checks. Agentic rack dramatically improves accuracy. Those built-in validation loops catches mistakes on the fly. So you see favor hallucination and more reliable answers. And under the hood there's a continuous feedback loop. Every successful look up and every retry gets logged, teaching your agents where to look first and how to handle edge cases. Over time, the whole system becomes faster and smarter without manual tuning. Finally, agentic rag is inherently multimodel and extensible. Whether you need to integrate images, audio analysis, structured data queries or specialized calculators, your agents can call those tools seamlessly and put together the result into a cohesive response. In short, Agentic Rag offers an AI that autonomously charts its own course, retrieves precisely what it requires, verifies its results, learn from every execution, and utilizes any tool you provide. All contributing to more intelligent, quicker and more reliable results. Now that you have seen the features and benefits, you might be wondering how can I implement Agentic Rack for my own use cases. Well, let's dive into the two main approaches for building your very own agentic pipeline. There are two key ways to get started with Agentic Rack. The initial method involves utilizing function calling LLMs including robust models such as openis",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 617.279,
+      "end_seconds": 717.76,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=617s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "355e2c5ddc19f02b14f54233a15f9ece2429c6fdd6b9500caef1d6d3fc53410b",
+    "text": "dive into the two main approaches for building your very own agentic pipeline. There are two key ways to get started with Agentic Rack. The initial method involves utilizing function calling LLMs including robust models such as openis GP4 co-hire anthropic and these models enable direct interaction with the external APIs or services. Consequently, you can create a system where your LLM not only produces text but also executes functions, queries databases or invokes external tools like calculators all within a single conversation. This approach enables rapid and scalable setup without requiring an additional orchestration layer. The second option involves utilizing dedicated agent frameworks. These specialized libraries facilitate the management and coordination of multiple agents that can gather data, verify results, and operate concurrently. Frameworks such as lchain, lamb index, and land graph are excellent for developing tailor agent pipelines. They enable you to integrate various tools and data sources, orchestrate your agents, and refine workflows to meet your specific requirements. Moreover, libraries like DSPI and Crew AI provide advanced features for multi- aent coordination and distributed task allowing you to scale as necessary. Both approaches offer different level of flexibility depending on your project needs. So, if you want a quick and straightforward solution that integrates multiple tools within the same LLM, go for function calling models. But if",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 698.399,
+      "end_seconds": 800.48,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=698s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ed8a129fc6682552bf346d97ee0a9bc5375b91ded6b06a15881725a2f44e47e2",
+    "text": "approaches offer different level of flexibility depending on your project needs. So, if you want a quick and straightforward solution that integrates multiple tools within the same LLM, go for function calling models. But if you're looking for full control over the agents and the interactions, then frameworks like lchain is the way to go. We have covered the architecture, the core features and how you can implement agentic rack for your own projects. But the real power of agentic rack is in its versatility. Agentic rack can be applied across a wide variety of industries and task. So let's walk through some key examples. So first in customer support and ITSM which is IT service management envision an AI that goes beyond merely searching frequently asked questions. It smartly manages tickets by accessing various knowledge bases reviewing recent customer interaction, monitoring system status and providing immediate solutions. With Agentic Rack, your customer support system can independently address issues or escalate them when necessary, resulting in quicker resolutions and improved customer satisfaction. Next, infrequently asked questions and scheduling. Agentic Rag excels at optimizing tasks such as scheduling meetings, sending reminders, or responding to common inquiries by utilizing various data sources including calendars, contact list, and knowledge bases. It effectively manages intricate requests like rescheduling meetings, arranging appointments or retrieving information based on context. Next,",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 784.959,
+      "end_seconds": 886.24,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=784s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0241c8c9498f739c01cbbcec87b21cf4b056b716342ca2b732f3df3d34a95fa6",
+    "text": "meetings, sending reminders, or responding to common inquiries by utilizing various data sources including calendars, contact list, and knowledge bases. It effectively manages intricate requests like rescheduling meetings, arranging appointments or retrieving information based on context. Next, agentic rack can be used in healthcare. In healthcare where precise data and timely decision making are essential, agentic rack assist clinicals by retrieving patient records, medical histories and the latest research information. Additionally, it checks for drug interactions, identifies irregularies in medical tests and aids in diagnosis, serving as a dependable medical assistant. Next, in education, envision a tailored learning assistant that adjusts to the needs of each student. Agentic rag offers personalized tailoring, suggests resources, addresses specific inquiries, and provides feedback based on individual progress by engaging with a flexible database of learning materials. It fosters student engagement and enhances educational results. Next, in enterprise knowledge management for businesses, agentic rag has the potential to transform knowledge organization and management. It can navigate extensive document repositories, extract patient insights for staff, produce reports and even automate decision using historical data. This ensures that employees have immediate access to the necessary information which saves time and boosts productivity. Next in data analysis and research. Agentic rag automates the extraction, analyszis and generation of data insights. Imagine a research assistant that not only gathers and",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 864.16,
+      "end_seconds": 976.6389999999999,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=864s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "413bfa57fd48b1a9cdcb84cacfeda5045dde7e0c18803e43eb7a4d58086eaba8",
+    "text": "immediate access to the necessary information which saves time and boosts productivity. Next in data analysis and research. Agentic rag automates the extraction, analyszis and generation of data insights. Imagine a research assistant that not only gathers and synthesize information from multiple sources, but also conducts initial analysis, generates reports and identifies trends without requiring manual input. There are just a few examples how agentic rag is already transforming industries, making processes more efficient and enhancing decision making. Whether it's in customer service, healthcare or even education, the potential is huge. And with this we have come to an end to this video on agentic rag. If you enjoyed listening to this video, please be kind enough to like it and you can comment on any of your doubts and queries. We will reply to them at the earliest. And do look out for more videos and playlist and subscribe to Edureka's YouTube channel to learn more. Thank you for watching and happy learning.",
+    "metadata": {
+      "video_id": "KEeolG9JlC4",
+      "title": "What is Agentic RAG? | Agentic RAG Explained |  Step-by-Step Workflow of Agentic RAG | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "Agents",
+      "start_seconds": 955.92,
+      "end_seconds": 1024.04,
+      "url": "https://www.youtube.com/watch?v=KEeolG9JlC4&t=955s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

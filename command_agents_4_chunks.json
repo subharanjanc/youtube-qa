@@ -1,0 +1,242 @@
+[
+  {
+    "id": "e6c818f128d4082f5f7801c4155fd2552873fcbee14d54743609fa161dbc16fa",
+    "text": "in this two-part video we are going to take a close look at the latest developments in the realm of computer use agents computer use agents are exactly what you think they would be they allow multimodal Transformers like Cloud 3.5 Sonet or GPT 40 to execute actions on your computer in the same manner you would the multimodal aspect is key as they rely on taking screenshots to deduce context in addition to deducing context from the usual format of text my goal is to leave you with a deep understanding of how these agents work and highlight some of the challenges they present in part one we are going to show how to run a computer use agent in a Docker container part one's content should apply to pretty much everybody as Docker containers are supported on Mac windows and Linux and in part two we're going to show how to run a computer use agent directly on a Mac general concepts demoed in part two will apply to Windows and Linux users but let's be real part two's content is going to be of particular interest to those who use Mac based machines as I've not tested a particular windows or Linux computer use agent implementation I cannot safely recommend one at this time along the way",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 0.16,
+      "end_seconds": 66.72,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2be91427339d3f8673c755e439262e07b00e1ebbfb0f91bf200d7c4f9f69e13a",
+    "text": "two's content is going to be of particular interest to those who use Mac based machines as I've not tested a particular windows or Linux computer use agent implementation I cannot safely recommend one at this time along the way we're also going to show how to set up these agents for monitoring using a tool called AG Ops the only prxs you'll need to follow along are a a laptop or desktop B Docker CVS code D familiarity with Git e an anthropic API key and F an agent Ops API key you can get Docker by coming over to www.dr.com and then downloading and installing the appropriate version for your machine this should be pretty painless leave a comment if you have an issue installing Docker you can get vs code by coming over to code. visual studio.com and then downloading and installing the appropriate version for your machine likewise this should be pretty painless leave a comment if you have an issue installing VSS code git is a free software for sharing and editing code with others on the internet and you can install git a number of ways for example you can come over to g-.& Agents from GitHub the process for getting an anthropic API key is very similar to how you would provision an",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 53.44,
+      "end_seconds": 128.08,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=53s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6cc70a220aee656f01ed41679e393ccbc3d1f6694371a72f0d3c039f2150bdaa",
+    "text": "with others on the internet and you can install git a number of ways for example you can come over to g-.& Agents from GitHub the process for getting an anthropic API key is very similar to how you would provision an open aai API key come over to console. anthropic dcom and sign up purchase credits and provision an API key just like open aai anthropic pricing model is usage based like a gas station so you will need credits you can start with whatever the minimum allowed amount is and always purchase more credits later if needed to get an agent Ops API key come over to app. aent ops. and sign up then come over to the API key section and copy the default key or create a new project to provision a non-default API key for organizational purposes if you like that takes care of all the PRX for part one if you want to try out this containerized computer use agent stuff for yourself for the Mac users watching I'm pretty sure you're excited to get to part two but I highly recommend you watch part one before watching part two for additional context part two is going to be simpler to set up than part one but it comes with a tradeoff of increased risk to your personal data",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 105.96,
+      "end_seconds": 179.519,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=105s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "650a0d2398d50ef196041e9c34cc6eff84545d8032df9e8020a0db675f2fa83d",
+    "text": "watch part one before watching part two for additional context part two is going to be simpler to set up than part one but it comes with a tradeoff of increased risk to your personal data being either damaged or exposed depending depending on what you ask the agent to [Music] do here is a diagram showing how to set up a containerized computer use agent the benefit of running a computer use agent inside of a container is that it adds a layer of protection for the data that sits on our base machine yes this is not fullprof there are crazy hacks that can cause the software running in the container to affect data on the base machine but the whole premise and design of what a container is does is intended to isolate whatever software runs inside of the container from the base machine itself to make this a bit more practical if there is some data that sits on our machine that we'd like the computer use agent that we run to access or work with we'll need to explicitly copy that data into the Container so that the agent can work with and access it to give another analogy running a computer use agent inside of a container is sort of like putting a dog inside of a pen yes the",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 168.0,
+      "end_seconds": 240.48,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=168s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ddc5c289a2f103082c1fbdd91ed490030b7b9e2a2f38b74a16a29001d1680c83",
+    "text": "into the Container so that the agent can work with and access it to give another analogy running a computer use agent inside of a container is sort of like putting a dog inside of a pen yes the dog can get over under around through the pen the whole purpose of the pen though is to confine the dog or to limit the blast radius of how the dog can affect its surrounding environment the combined approach of being very thoughtful about the tasks that you assign to your computer use agents along with running them in isolated or containerized or virtualized environments sums up the general approach being presented here in part one for how to run these types of Agents with respect to data privacy and protection okay let's give this containerized computer use agent stuff a spin anthropics original computer use implementation can be found at this URL inside of this repo there's a number of example projects this is the one that we want let's click into it and let's take a moment to read through this cautionary message that welcomes US computer use is a beta feature Please be aware that computer use poses unique risks that are distinct from standard API features to minimize risks consider one us using a dedicated virtual machine",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 226.64,
+      "end_seconds": 303.56,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=226s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "54f535317906493ef1ccf81cf250f594a7ff5c885606e1f52785dff970140d78",
+    "text": "cautionary message that welcomes US computer use is a beta feature Please be aware that computer use poses unique risks that are distinct from standard API features to minimize risks consider one us using a dedicated virtual machine or container two avoid giving the model access to sensitive data three limit internet access to a white list of domains and for ask a human to confirm decisions that may result in meaningful real world consequences in some circumstances Cloud will follow commands found in content even if it conflicts with the user's instructions for example instructions on web pages may override user instructions or cause claw to make mistakes okay that was not reassuring at all but let's move forward anyways let's clone that anthropic quick starts repo onto our machine and let's enter the cloned or copied project that we downloaded from GitHub and here we see all of the projects let's enter the computer use demo project and open it with vs code in this project we see a setup.sh script and let's run that here you can see this script is confirming we have Python and cargo installed and it's going to set up a virtual environment for us and download all of the dependencies this project needs Etc so let me be quiet and let's just run",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 287.32,
+      "end_seconds": 393.919,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=287s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1b194afd869b30fdcb65d43be84cc2aa4e9890b1aaebdb48ad7f30d648ff73cc",
+    "text": "script is confirming we have Python and cargo installed and it's going to set up a virtual environment for us and download all of the dependencies this project needs Etc so let me be quiet and let's just run this all right so the setup script finished and next up we have to build the docker image that's going to power our computer use agent hopefully you're familiar with Docker lingo so Docker file is to image is to container as recipe is to frozen food is to meal as blueprint is to manufacture good is to purchase good sort of abstract but that's how it works Docker file image container anyways next up we will set our anthropic API key I will censor this so I don't expose my key clear the terminal and now we can run our Docker container that will power our computer use agent here we see the computer use agent booting up and we see it's ready for us to load and here we see the same image that we saw on the architecture diagram of how to set up a computer use agent in a Docker container here is a simple web application that consists of two panels you see this left panel and this right panel the left panel holds an iframe",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 373.759,
+      "end_seconds": 489.52,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=373s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a52b267bce89eb616dfeed56b61792e628f77eb83b75af108b09d026bb7e3a58",
+    "text": "set up a computer use agent in a Docker container here is a simple web application that consists of two panels you see this left panel and this right panel the left panel holds an iframe powering a little chat application for interacting with our computer use agent and on the right is the desktop guey of the computer that the agent is controlling so if I say for example hello right we see the agent taking screenshots of the machine and let's try this out now open the calculator and add 2 + 2 right that's pretty incredible right so next up let's show how to copy data on our base machine into the Container so that we can do some more practical work okay here's the technique so we are going to mount a folder in our project into a folder in the container and whatever files or data we add to this folder will be visible to the agent in the container so for demonstration purposes I am going to add this service agreement contract that I've used a few times over the past year or two it comes from Liam Atley I don't know if you've ever heard of him he's a YouTuber as well and what usually happens is a perspective client will come into my",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 471.919,
+      "end_seconds": 583.5600000000001,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=471s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "19f11cc2773ea0201c085e0aff86aa83b7d150408ddb08a69fbb9431c9482181",
+    "text": "the past year or two it comes from Liam Atley I don't know if you've ever heard of him he's a YouTuber as well and what usually happens is a perspective client will come into my Pipeline and I'll need to draft a proposal for them and customize a template and let's see if the computer use agent can do this work instead of me doing it so we've created the scratch folder and this is how we mount it to The Container the computer use agent has rebooted and here's the prompt that we're going to send to have our agent customize this service agreement template for us right and you can see the agent has extracted the text from this PDF document all right so it extracted the text and it modified the service agreement with the information I provided and in the prompt I requested the final document to be a PDF so let's see if it does that part two all right eventually it got pretty much there it's not the best looking agreement the original one is formatted much more nicely but you get a feel for how this works now we're going to add in agent Ops and rerun this PDF customization request to confirm everything regarding our agent's activity is being monitored appropriately okay to do this first we",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 567.8,
+      "end_seconds": 697.639,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=567s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "97ccd28e850e3f321f9fae7d5e040d35c8f2ba8e792b5ef8b765eec73eabeeaf",
+    "text": "nicely but you get a feel for how this works now we're going to add in agent Ops and rerun this PDF customization request to confirm everything regarding our agent's activity is being monitored appropriately okay to do this first we come over to the requirements.txt file in the computer _ demo folder and add another dependency that reads like this agent Ops is still testing this computer use agent tracking feature that's why we have to import this special unreleased version that was authored by to NS AKA Romanian Raiden or Romanian Ryden however you want to pronounce it if and when this is released you'll simply import it like this but for now we have to go with this the next thing that we have to do is come over to the streamlit dopy file and initialize agent Ops to track all of the llm calls our application makes and now we can build our image again and now we have to set our agent Ops API key as a shell variable this is the API key that you copied from the agent Ops console and now we can run our computer use agent again with this command and make sure you reference the agent Ops AP key okay the computer use agent has rebooted and we see agent Ops appears to",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 682.04,
+      "end_seconds": 791.279,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=682s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ca1b177b36c154dac41cacb828a8fa208a9d1e2395e18934debcec7c05468792",
+    "text": "console and now we can run our computer use agent again with this command and make sure you reference the agent Ops AP key okay the computer use agent has rebooted and we see agent Ops appears to be working and now if we send our agreement customization prompt let's see if agent Ops is indeed tracking all of the agent's activity okay so monitoring is set up and this is an advisable way to use this system so that you can audit what it does and you know make sure you have a personal track of everything that it's doing in case it goes off the rails so to speak we are now going to skirt cautiously on the edge of Pandora's box-like territory we are going to run a computer use agent directly on a Mac while anthropics original implementation was designed to run the agent on an auntu machine within a container a rather creative and exceptional fellow by the name of DD forked or customized this original implementation so that the agent runs directly in mac-based environments here is a diagram outlining the design of this Mac computer use agent and immediately we can see that it's simpler than the original containerized computer use implementation that anthropic published keep in mind that this Mac computer use agent implementation will",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 770.12,
+      "end_seconds": 880.279,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=770s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c7de8045f16d71abdba55b72489756270b0b1d461a3dc806d0421e817763cb4b",
+    "text": "is a diagram outlining the design of this Mac computer use agent and immediately we can see that it's simpler than the original containerized computer use implementation that anthropic published keep in mind that this Mac computer use agent implementation will periodically take screenshots of your monitor and other snapshots of your machine for upload to AWS and Google Cloud as that's where I understand anthropic models are currently hosted after this data is uploaded to these clouds it will be ran through multiple layers of processing and Analysis the exact details of which are not publicly known secondly due to the probabilistic nature of how multimodal Transformers work they by their very nature are capable of doing unexpected things which in the realm of personal data is not that reassuring let's say for example that for maybe prompt injection reasons one of the models you're using were to edit or delete sensitive data on your computer this would be disastrous if backups were never taken thirdly there is the fundamental concern that we are literally handing over control of our computer to another entity yes there are already many ways that big Tech players and government actors are are monitoring and restricting our personal computer usage but this setup makes it explicit you're literally handing over control to another entity at the very least what",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 864.12,
+      "end_seconds": 939.6,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=864s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "33fa1f4704fd4cfa569e4803e361529513692a5923d0664ff96a7ef75aef0b63",
+    "text": "already many ways that big Tech players and government actors are are monitoring and restricting our personal computer usage but this setup makes it explicit you're literally handing over control to another entity at the very least what you should do is make sure that the prompts you send to your computer use agents include human in the loop steps so that you stay involved at key points in the tasks that you're assigning to them that's the very least you can do in order to make sure this doesn't have unintended consequences you'll probably need additional layers of protection like virtualization you know fire walls moving on now let's take this Mac computer use agent for a spin DD's Mac computer use implementation can be found at this URL and let's clone this project onto our computer and enter the project and open it with vs code and then there is this setup.sh script that's going to inst install all the requirements we need to run this application on our computer for us so let's run it and then let's create aemv file with these variables [Music] and next up we want to activate our virtual environment and you can see our environment is activated by this change in the prompt I'm surprised it's not set up out of the box for us but we have to rename",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 925.839,
+      "end_seconds": 1034.919,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=925s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cd617eb043e4f24638338930c4a47b337bb82bf189b21ff546975e3055ff3bb3",
+    "text": "to activate our virtual environment and you can see our environment is activated by this change in the prompt I'm surprised it's not set up out of the box for us but we have to rename this streamlit dopy file to be called streamlit app.py maybe try running it as is see if it works for you but for me I have to rename it and then when I run this application with this command it hopefully should work and it looks like it does let's run a quick smoke test write the text Hello to a new file called hello.txt on A's desktop a is the Mac User running this prompt voila see that hello so that's immediately stop this nonsense and shut this down I'm pretty sure on this channel that's as far as we're ever going to go on this direct host-based computer use agent setup stuff in conclusion computer use agents are an amazing Innovation but I'd highly advise against using them without thoroughly assessing potential consequences the trickiest thing about them is that they can perform undesired actions even after being explicitly configured to not do so if you'd still like to experiment with them however here is the list of precautions to take as a starting point if you'd like to experiment with developing the source code of a computer",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1016.44,
+      "end_seconds": 1120.919,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=1016s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5e3e473943a3f1f2a15cf17a0105085898848ef592823ae2c868835cca59dec0",
+    "text": "configured to not do so if you'd still like to experiment with them however here is the list of precautions to take as a starting point if you'd like to experiment with developing the source code of a computer use agent here is a fork of the original anthropic implementation that I'm particularly fond of it was authored by tocns AKA Romanian Raiden and it features outof the-box breakpoint debugging and a more streamlined project setup as a challenge to the community one thing I'd love to see integrated into this Fork would be the use of an open-source multimodal model like for example llama 3.2 multimodal 90b using a locally hosted model for powering a computer use agent is going to be a huge step up from a data protection standpoint finally in the description for this video you should see a links section I've included the links for downloading git Docker and VSS code I've also included the links for signing up to anthropic and agent Ops plus I've included a link for buying me a metaphorical coffee and I've included an affiliate link for buying this yoga ball useful for stretching for bouncing for exercise Etc wishing us all the highest of blessings",
+    "metadata": {
+      "video_id": "t9kz9P6cEYM",
+      "title": "Computer Use Agents DEEP DIVE",
+      "trainer": "COMMAND",
+      "channel": "COMMAND",
+      "topic": "Agents",
+      "start_seconds": 1106.12,
+      "end_seconds": 1179.0,
+      "url": "https://www.youtube.com/watch?v=t9kz9P6cEYM&t=1106s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

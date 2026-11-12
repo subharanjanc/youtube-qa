@@ -1,0 +1,5023 @@
+{
+  "video_id": "CK0ExcCWDP4",
+  "title": "Hybrid Search RAG With Langchain And Pinecone Vector DB",
+  "channel": "Krish Naik",
+  "trainer": "Krish Naik",
+  "topic": "RAG",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 2555.0,
+  "segments": [
+    {
+      "start": 0.52,
+      "end": 4.319,
+      "text": "hello all my name is krishn and welcome"
+    },
+    {
+      "start": 2.679,
+      "end": 6.48,
+      "text": "to my YouTube channel so guys in this"
+    },
+    {
+      "start": 4.319,
+      "end": 10.32,
+      "text": "specific video we are going to implement"
+    },
+    {
+      "start": 6.48,
+      "end": 11.84,
+      "text": "an amazing hybrid search Rag application"
+    },
+    {
+      "start": 10.32,
+      "end": 14.120000000000001,
+      "text": "initially we will go ahead with the"
+    },
+    {
+      "start": 11.84,
+      "end": 16.92,
+      "text": "theoretical understanding about hybrid"
+    },
+    {
+      "start": 14.12,
+      "end": 19.0,
+      "text": "search and then we will proceed with"
+    },
+    {
+      "start": 16.92,
+      "end": 20.68,
+      "text": "developing an amazing endtoend project"
+    },
+    {
+      "start": 19.0,
+      "end": 22.68,
+      "text": "where we will be creating Vector"
+    },
+    {
+      "start": 20.68,
+      "end": 24.92,
+      "text": "database even in Cloud we'll be using"
+    },
+    {
+      "start": 22.68,
+      "end": 26.88,
+      "text": "Vector database like Pine con and we'll"
+    },
+    {
+      "start": 24.92,
+      "end": 29.199,
+      "text": "be seeing that how we can Implement an"
+    },
+    {
+      "start": 26.88,
+      "end": 31.279,
+      "text": "hybrid search on a specific Vector"
+    },
+    {
+      "start": 29.199,
+      "end": 32.759,
+      "text": "database so all these things will be"
+    },
+    {
+      "start": 31.279,
+      "end": 35.04,
+      "text": "covered in this particular video so"
+    },
+    {
+      "start": 32.759,
+      "end": 37.28,
+      "text": "let's go ahead and enjoy this video so"
+    },
+    {
+      "start": 35.04,
+      "end": 39.44,
+      "text": "before I proceed guys uh here is a quick"
+    },
+    {
+      "start": 37.28,
+      "end": 41.559,
+      "text": "announcement on this three amazing"
+    },
+    {
+      "start": 39.44,
+      "end": 44.64,
+      "text": "course that I have recently launched in"
+    },
+    {
+      "start": 41.559,
+      "end": 48.559,
+      "text": "Udi which is at a very affordable price"
+    },
+    {
+      "start": 44.64,
+      "end": 50.32,
+      "text": "that is nothing but 3 99 rupees INR uh"
+    },
+    {
+      "start": 48.559,
+      "end": 51.76,
+      "text": "you'll be able to find out the link in"
+    },
+    {
+      "start": 50.32,
+      "end": 53.68,
+      "text": "the description of this particular video"
+    },
+    {
+      "start": 51.76,
+      "end": 55.92,
+      "text": "so here you have this complete gen AI"
+    },
+    {
+      "start": 53.68,
+      "end": 57.84,
+      "text": "course with Lang chain and hugging face"
+    },
+    {
+      "start": 55.92,
+      "end": 60.0,
+      "text": "then you have this complete machine"
+    },
+    {
+      "start": 57.84,
+      "end": 62.879000000000005,
+      "text": "learning and NLP boot camp mlops where"
+    },
+    {
+      "start": 60.0,
+      "end": 65.119,
+      "text": "deployment it has somewhere around 78"
+    },
+    {
+      "start": 62.879,
+      "end": 67.2,
+      "text": "hours of content which is quite amazing"
+    },
+    {
+      "start": 65.119,
+      "end": 69.759,
+      "text": "and I'm also updating this content again"
+    },
+    {
+      "start": 67.2,
+      "end": 71.24000000000001,
+      "text": "and again uh as new things comes up and"
+    },
+    {
+      "start": 69.759,
+      "end": 73.799,
+      "text": "there is also another course which is"
+    },
+    {
+      "start": 71.24,
+      "end": 75.36,
+      "text": "called as building geni app 12 plus"
+    },
+    {
+      "start": 73.799,
+      "end": 77.08000000000001,
+      "text": "Hands-On project with gini Pro so you"
+    },
+    {
+      "start": 75.36,
+      "end": 79.159,
+      "text": "can go ahead and check it out any of"
+    },
+    {
+      "start": 77.08,
+      "end": 80.84,
+      "text": "these courses if you really want it'll"
+    },
+    {
+      "start": 79.159,
+      "end": 83.96000000000001,
+      "text": "be available in the description of this"
+    },
+    {
+      "start": 80.84,
+      "end": 86.2,
+      "text": "particular video hello guys so in this"
+    },
+    {
+      "start": 83.96,
+      "end": 89.55999999999999,
+      "text": "video we are going to discuss about"
+    },
+    {
+      "start": 86.2,
+      "end": 91.24000000000001,
+      "text": "something called as hybrid search okay"
+    },
+    {
+      "start": 89.56,
+      "end": 95.04,
+      "text": "and uh uh this kind of search"
+    },
+    {
+      "start": 91.24,
+      "end": 98.28,
+      "text": "specifically uh we use in our rag"
+    },
+    {
+      "start": 95.04,
+      "end": 101.47900000000001,
+      "text": "applications also right so till now if"
+    },
+    {
+      "start": 98.28,
+      "end": 103.6,
+      "text": "you are following all the modules uh the"
+    },
+    {
+      "start": 101.479,
+      "end": 106.28,
+      "text": "rag that we have specifically created"
+    },
+    {
+      "start": 103.6,
+      "end": 108.91999999999999,
+      "text": "you know let's say that if I have a"
+    },
+    {
+      "start": 106.28,
+      "end": 111.6,
+      "text": "documents let's say if this is my"
+    },
+    {
+      "start": 108.92,
+      "end": 113.92,
+      "text": "documents then what we do is that we try"
+    },
+    {
+      "start": 111.6,
+      "end": 117.32,
+      "text": "to divide this documents into chunk of"
+    },
+    {
+      "start": 113.92,
+      "end": 120.92,
+      "text": "documents let's say this is D1 this is"
+    },
+    {
+      "start": 117.32,
+      "end": 123.88,
+      "text": "D2 this is D3 like this we usually"
+    },
+    {
+      "start": 120.92,
+      "end": 126.32000000000001,
+      "text": "divide into multiple chunk of documents"
+    },
+    {
+      "start": 123.88,
+      "end": 129.399,
+      "text": "right and this is"
+    },
+    {
+      "start": 126.32,
+      "end": 131.51999999999998,
+      "text": "D now after dividing all these documents"
+    },
+    {
+      "start": 129.399,
+      "end": 135.36,
+      "text": "into chunk of documents then we"
+    },
+    {
+      "start": 131.52,
+      "end": 139.44,
+      "text": "specifically convert this into vectors"
+    },
+    {
+      "start": 135.36,
+      "end": 143.08,
+      "text": "right so here we are basically"
+    },
+    {
+      "start": 139.44,
+      "end": 147.04,
+      "text": "converting into embedding"
+    },
+    {
+      "start": 143.08,
+      "end": 150.59900000000002,
+      "text": "vectors then after we convert all this"
+    },
+    {
+      "start": 147.04,
+      "end": 154.12,
+      "text": "text to vectors the the next step is"
+    },
+    {
+      "start": 150.599,
+      "end": 157.04,
+      "text": "that we we store all these vectors in"
+    },
+    {
+      "start": 154.12,
+      "end": 159.76,
+      "text": "some kind of vector"
+    },
+    {
+      "start": 157.04,
+      "end": 160.79999999999998,
+      "text": "database right so let's say one of the"
+    },
+    {
+      "start": 159.76,
+      "end": 163.159,
+      "text": "vector"
+    },
+    {
+      "start": 160.8,
+      "end": 166.48000000000002,
+      "text": "databases that we have already"
+    },
+    {
+      "start": 163.159,
+      "end": 169.28,
+      "text": "seen Vector"
+    },
+    {
+      "start": 166.48,
+      "end": 172.23899999999998,
+      "text": "database we also say it as something"
+    },
+    {
+      "start": 169.28,
+      "end": 174.28,
+      "text": "called as Vector store"
+    },
+    {
+      "start": 172.239,
+      "end": 177.4,
+      "text": "DB"
+    },
+    {
+      "start": 174.28,
+      "end": 179.48,
+      "text": "right now once this entire information"
+    },
+    {
+      "start": 177.4,
+      "end": 181.239,
+      "text": "is basically stored over here right"
+    },
+    {
+      "start": 179.48,
+      "end": 183.35999999999999,
+      "text": "it'll be stored it in the form of"
+    },
+    {
+      "start": 181.239,
+      "end": 186.64000000000001,
+      "text": "vectors right we will be having some"
+    },
+    {
+      "start": 183.36,
+      "end": 190.08,
+      "text": "kind of numbers over here itself right"
+    },
+    {
+      "start": 186.64,
+      "end": 194.319,
+      "text": "now when a user"
+    },
+    {
+      "start": 190.08,
+      "end": 196.799,
+      "text": "queries whenever a user queries right"
+    },
+    {
+      "start": 194.319,
+      "end": 198.48,
+      "text": "over here then what happens usually in"
+    },
+    {
+      "start": 196.799,
+      "end": 201.64000000000001,
+      "text": "this particular scenario this particular"
+    },
+    {
+      "start": 198.48,
+      "end": 206.319,
+      "text": "query is also converted into"
+    },
+    {
+      "start": 201.64,
+      "end": 210.27999999999997,
+      "text": "vectors and then a vector dense search"
+    },
+    {
+      "start": 206.319,
+      "end": 214.35999999999999,
+      "text": "or vector search is basically done"
+    },
+    {
+      "start": 210.28,
+      "end": 217.04,
+      "text": "Vector search is basically done in this"
+    },
+    {
+      "start": 214.36,
+      "end": 218.72000000000003,
+      "text": "particular Vector database so once we"
+    },
+    {
+      "start": 217.04,
+      "end": 220.67999999999998,
+      "text": "have this particular vectors we do a"
+    },
+    {
+      "start": 218.72,
+      "end": 223.68,
+      "text": "vector search from this particular"
+    },
+    {
+      "start": 220.68,
+      "end": 227.4,
+      "text": "Vector database and here uh some of the"
+    },
+    {
+      "start": 223.68,
+      "end": 229.959,
+      "text": "algorithms like U over here one of the"
+    },
+    {
+      "start": 227.4,
+      "end": 232.04,
+      "text": "algorithm that may uh you know take"
+    },
+    {
+      "start": 229.959,
+      "end": 234.56,
+      "text": "place over here for basically to match"
+    },
+    {
+      "start": 232.04,
+      "end": 235.84,
+      "text": "the exact Vector search we can actually"
+    },
+    {
+      "start": 234.56,
+      "end": 237.799,
+      "text": "use cosine"
+    },
+    {
+      "start": 235.84,
+      "end": 240.76,
+      "text": "similarity right and based on this"
+    },
+    {
+      "start": 237.799,
+      "end": 244.4,
+      "text": "cosine similarity check we will be able"
+    },
+    {
+      "start": 240.76,
+      "end": 247.48,
+      "text": "to get the response right once we get"
+    },
+    {
+      "start": 244.4,
+      "end": 250.92000000000002,
+      "text": "this response we can combine this with"
+    },
+    {
+      "start": 247.48,
+      "end": 250.92,
+      "text": "our prompt"
+    },
+    {
+      "start": 251.68,
+      "end": 258.28000000000003,
+      "text": "template plus llm model and finally we"
+    },
+    {
+      "start": 255.36,
+      "end": 262.04,
+      "text": "can summarize any information as my"
+    },
+    {
+      "start": 258.28,
+      "end": 263.75899999999996,
+      "text": "final output right so in this scenario"
+    },
+    {
+      "start": 262.04,
+      "end": 265.72,
+      "text": "you'll be able to see that the kind of"
+    },
+    {
+      "start": 263.759,
+      "end": 268.32,
+      "text": "search that we are doing right the"
+    },
+    {
+      "start": 265.72,
+      "end": 271.44000000000005,
+      "text": "vector dense search this search is"
+    },
+    {
+      "start": 268.32,
+      "end": 274.4,
+      "text": "basically called as Sy semantic"
+    },
+    {
+      "start": 271.44,
+      "end": 276.8,
+      "text": "search semantic search semantic search"
+    },
+    {
+      "start": 274.4,
+      "end": 278.44,
+      "text": "basically means we are trying to find"
+    },
+    {
+      "start": 276.8,
+      "end": 280.28000000000003,
+      "text": "out the similar vectors from this"
+    },
+    {
+      "start": 278.44,
+      "end": 282.919,
+      "text": "particular Vector database and based on"
+    },
+    {
+      "start": 280.28,
+      "end": 284.79999999999995,
+      "text": "that when that similarity search is done"
+    },
+    {
+      "start": 282.919,
+      "end": 287.68,
+      "text": "we are able to get the"
+    },
+    {
+      "start": 284.8,
+      "end": 289.32,
+      "text": "response and this kind of rag most of"
+    },
+    {
+      "start": 287.68,
+      "end": 291.12,
+      "text": "the rag application uses this kind of"
+    },
+    {
+      "start": 289.32,
+      "end": 293.08,
+      "text": "search and if I talk about Vector"
+    },
+    {
+      "start": 291.12,
+      "end": 295.88,
+      "text": "databases like"
+    },
+    {
+      "start": 293.08,
+      "end": 298.28,
+      "text": "FS chroma"
+    },
+    {
+      "start": 295.88,
+      "end": 300.28,
+      "text": "right they have this entire features"
+    },
+    {
+      "start": 298.28,
+      "end": 302.67999999999995,
+      "text": "like this right"
+    },
+    {
+      "start": 300.28,
+      "end": 305.0,
+      "text": "but I really want to talk about one more"
+    },
+    {
+      "start": 302.68,
+      "end": 307.479,
+      "text": "amazing search mechanism which is called"
+    },
+    {
+      "start": 305.0,
+      "end": 310.24,
+      "text": "as hybrid search okay so"
+    },
+    {
+      "start": 307.479,
+      "end": 313.08,
+      "text": "here I have"
+    },
+    {
+      "start": 310.24,
+      "end": 315.96000000000004,
+      "text": "this hybrid"
+    },
+    {
+      "start": 313.08,
+      "end": 319.35999999999996,
+      "text": "search now inside this hybrid search"
+    },
+    {
+      "start": 315.96,
+      "end": 322.88,
+      "text": "here we are just not focusing on only"
+    },
+    {
+      "start": 319.36,
+      "end": 326.0,
+      "text": "Vector dense search mechanism right here"
+    },
+    {
+      "start": 322.88,
+      "end": 328.319,
+      "text": "we specifically"
+    },
+    {
+      "start": 326.0,
+      "end": 333.639,
+      "text": "combine"
+    },
+    {
+      "start": 328.319,
+      "end": 333.639,
+      "text": "combine mult multiple search"
+    },
+    {
+      "start": 336.28,
+      "end": 342.52,
+      "text": "techniques right and what kind of"
+    },
+    {
+      "start": 340.08,
+      "end": 344.71999999999997,
+      "text": "techniques we will"
+    },
+    {
+      "start": 342.52,
+      "end": 347.79999999999995,
+      "text": "specifically apply over here we will be"
+    },
+    {
+      "start": 344.72,
+      "end": 349.68,
+      "text": "combining multiple search techniques now"
+    },
+    {
+      "start": 347.8,
+      "end": 352.6,
+      "text": "specifically if I really want to divide"
+    },
+    {
+      "start": 349.68,
+      "end": 355.199,
+      "text": "all this particular Technique One is the"
+    },
+    {
+      "start": 352.6,
+      "end": 355.199,
+      "text": "semantic"
+    },
+    {
+      "start": 356.6,
+      "end": 361.52000000000004,
+      "text": "search the second one is something"
+    },
+    {
+      "start": 359.36,
+      "end": 365.08000000000004,
+      "text": "called as syntatic"
+    },
+    {
+      "start": 361.52,
+      "end": 367.52,
+      "text": "search okay now I will talk more about"
+    },
+    {
+      "start": 365.08,
+      "end": 370.0,
+      "text": "it what exactly are this kind of search"
+    },
+    {
+      "start": 367.52,
+      "end": 372.4,
+      "text": "basically so one is semantic search one"
+    },
+    {
+      "start": 370.0,
+      "end": 377.919,
+      "text": "is syntactic search semantic search"
+    },
+    {
+      "start": 372.4,
+      "end": 381.08,
+      "text": "specifically we say it as a dense Vector"
+    },
+    {
+      "start": 377.919,
+      "end": 383.68,
+      "text": "search so here we are specifically"
+    },
+    {
+      "start": 381.08,
+      "end": 386.28,
+      "text": "trying to search elements that are"
+    },
+    {
+      "start": 383.68,
+      "end": 387.919,
+      "text": "similar right and obviously when we are"
+    },
+    {
+      "start": 386.28,
+      "end": 390.79999999999995,
+      "text": "using this dense Vector search we"
+    },
+    {
+      "start": 387.919,
+      "end": 393.639,
+      "text": "basically are checking out the similar"
+    },
+    {
+      "start": 390.8,
+      "end": 395.88,
+      "text": "kind of content right if I probably say"
+    },
+    {
+      "start": 393.639,
+      "end": 399.919,
+      "text": "with respect to syntactic search right"
+    },
+    {
+      "start": 395.88,
+      "end": 403.759,
+      "text": "or I can also say this as exact"
+    },
+    {
+      "start": 399.919,
+      "end": 407.919,
+      "text": "search I can also say this as keyword"
+    },
+    {
+      "start": 403.759,
+      "end": 410.84000000000003,
+      "text": "search right keyword search and if I"
+    },
+    {
+      "start": 407.919,
+      "end": 413.28,
+      "text": "also want to probably provide some more"
+    },
+    {
+      "start": 410.84,
+      "end": 416.039,
+      "text": "names like exact search uh keyword"
+    },
+    {
+      "start": 413.28,
+      "end": 418.52,
+      "text": "search uh and this usually happens with"
+    },
+    {
+      "start": 416.039,
+      "end": 421.52,
+      "text": "respect to a SM"
+    },
+    {
+      "start": 418.52,
+      "end": 423.4,
+      "text": "sparse or I can also say this as sparse"
+    },
+    {
+      "start": 421.52,
+      "end": 426.31899999999996,
+      "text": "Vector"
+    },
+    {
+      "start": 423.4,
+      "end": 430.28,
+      "text": "search so here you could see in semantic"
+    },
+    {
+      "start": 426.319,
+      "end": 432.8,
+      "text": "search I have a vector store right which"
+    },
+    {
+      "start": 430.28,
+      "end": 436.23999999999995,
+      "text": "has all the vectors embedded over here"
+    },
+    {
+      "start": 432.8,
+      "end": 438.68,
+      "text": "right so here all my text is basically"
+    },
+    {
+      "start": 436.24,
+      "end": 440.759,
+      "text": "converted into dense"
+    },
+    {
+      "start": 438.68,
+      "end": 444.639,
+      "text": "vectors and this dense Vector is"
+    },
+    {
+      "start": 440.759,
+      "end": 448.16,
+      "text": "basically stor it in my stored in my uh"
+    },
+    {
+      "start": 444.639,
+      "end": 449.84000000000003,
+      "text": "uh my Vector store DB right in the case"
+    },
+    {
+      "start": 448.16,
+      "end": 452.59900000000005,
+      "text": "of synthetic search you'll be able to"
+    },
+    {
+      "start": 449.84,
+      "end": 455.11999999999995,
+      "text": "see that we will be having sparse metric"
+    },
+    {
+      "start": 452.599,
+      "end": 457.87899999999996,
+      "text": "so all this text Will basically be"
+    },
+    {
+      "start": 455.12,
+      "end": 461.199,
+      "text": "converted into sparse metric now if you"
+    },
+    {
+      "start": 457.879,
+      "end": 463.28000000000003,
+      "text": "remember or if you know right what is"
+    },
+    {
+      "start": 461.199,
+      "end": 466.479,
+      "text": "sparse metrix and how do we get a sparse"
+    },
+    {
+      "start": 463.28,
+      "end": 471.159,
+      "text": "metrix uh if you if you know about this"
+    },
+    {
+      "start": 466.479,
+      "end": 475.639,
+      "text": "techniques like one hot encoding bag of"
+    },
+    {
+      "start": 471.159,
+      "end": 478.039,
+      "text": "words or tfidf right whenever we try to"
+    },
+    {
+      "start": 475.639,
+      "end": 480.56,
+      "text": "use this techniques we will be able to"
+    },
+    {
+      "start": 478.039,
+      "end": 483.599,
+      "text": "convert our text into sparse metrix now"
+    },
+    {
+      "start": 480.56,
+      "end": 486.759,
+      "text": "when we say sparse Matrix that basically"
+    },
+    {
+      "start": 483.599,
+      "end": 489.96,
+      "text": "means there will be maximum numbers of"
+    },
+    {
+      "start": 486.759,
+      "end": 491.68,
+      "text": "zeros and ones right wherever a specific"
+    },
+    {
+      "start": 489.96,
+      "end": 493.4,
+      "text": "word will be available in a sentence"
+    },
+    {
+      "start": 491.68,
+      "end": 497.40000000000003,
+      "text": "that will be one and remaining all will"
+    },
+    {
+      "start": 493.4,
+      "end": 499.039,
+      "text": "be zeros right so this this is basically"
+    },
+    {
+      "start": 497.4,
+      "end": 501.31899999999996,
+      "text": "called as a sparse"
+    },
+    {
+      "start": 499.039,
+      "end": 504.479,
+      "text": "Matrix and with the help of the sparse"
+    },
+    {
+      "start": 501.319,
+      "end": 507.12,
+      "text": "Matrix here we are just focusing on a"
+    },
+    {
+      "start": 504.479,
+      "end": 508.84,
+      "text": "specific keyword like this keyword right"
+    },
+    {
+      "start": 507.12,
+      "end": 510.44,
+      "text": "whatever keyword we are actually trying"
+    },
+    {
+      "start": 508.84,
+      "end": 514.1999999999999,
+      "text": "to search"
+    },
+    {
+      "start": 510.44,
+      "end": 516.44,
+      "text": "and um this spse metrix also has some"
+    },
+    {
+      "start": 514.2,
+      "end": 519.0390000000001,
+      "text": "very important properties because from"
+    },
+    {
+      "start": 516.44,
+      "end": 521.24,
+      "text": "this we will be able to probably do the"
+    },
+    {
+      "start": 519.039,
+      "end": 523.08,
+      "text": "keyword search itself and this is"
+    },
+    {
+      "start": 521.24,
+      "end": 526.32,
+      "text": "nothing but it can also be considered as"
+    },
+    {
+      "start": 523.08,
+      "end": 529.32,
+      "text": "an exact search so in the case of hybrid"
+    },
+    {
+      "start": 526.32,
+      "end": 530.7600000000001,
+      "text": "search it is just going to combine both"
+    },
+    {
+      "start": 529.32,
+      "end": 533.24,
+      "text": "this particular techniques that is"
+    },
+    {
+      "start": 530.76,
+      "end": 535.08,
+      "text": "semantic search and synthatic search or"
+    },
+    {
+      "start": 533.24,
+      "end": 537.32,
+      "text": "I can also say this as exact search or"
+    },
+    {
+      "start": 535.08,
+      "end": 539.839,
+      "text": "keyword search right it is just not"
+    },
+    {
+      "start": 537.32,
+      "end": 542.0400000000001,
+      "text": "going to be dependent on one of the"
+    },
+    {
+      "start": 539.839,
+      "end": 543.839,
+      "text": "search mechanism and similarly there are"
+    },
+    {
+      "start": 542.04,
+      "end": 546.279,
+      "text": "different different kind of databases"
+    },
+    {
+      "start": 543.839,
+      "end": 550.44,
+      "text": "that are available just to show you as"
+    },
+    {
+      "start": 546.279,
+      "end": 553.8,
+      "text": "an example uh um like there's a database"
+    },
+    {
+      "start": 550.44,
+      "end": 556.2790000000001,
+      "text": "like Cassandra right um we will be using"
+    },
+    {
+      "start": 553.8,
+      "end": 557.8389999999999,
+      "text": "a library called as cashio right and"
+    },
+    {
+      "start": 556.279,
+      "end": 559.32,
+      "text": "with the help of this cashio you'll be"
+    },
+    {
+      "start": 557.839,
+      "end": 561.6800000000001,
+      "text": "able to see that we'll be able to access"
+    },
+    {
+      "start": 559.32,
+      "end": 564.44,
+      "text": "the cassendra database I will show this"
+    },
+    {
+      "start": 561.68,
+      "end": 566.279,
+      "text": "as we go ahead okay but right now just"
+    },
+    {
+      "start": 564.44,
+      "end": 568.7600000000001,
+      "text": "try to understand over here what exactly"
+    },
+    {
+      "start": 566.279,
+      "end": 571.519,
+      "text": "hybrid search is doing right it is"
+    },
+    {
+      "start": 568.76,
+      "end": 574.12,
+      "text": "providing a is combining multiple search"
+    },
+    {
+      "start": 571.519,
+      "end": 576.44,
+      "text": "methodologies um and uh if I probably"
+    },
+    {
+      "start": 574.12,
+      "end": 578.68,
+      "text": "talk about in most of the e-commerce"
+    },
+    {
+      "start": 576.44,
+      "end": 580.6800000000001,
+      "text": "website and all hybrid search is"
+    },
+    {
+      "start": 578.68,
+      "end": 583.399,
+      "text": "definitely implemented in the back end"
+    },
+    {
+      "start": 580.68,
+      "end": 587.8389999999999,
+      "text": "okay now let's go ahead and see that how"
+    },
+    {
+      "start": 583.399,
+      "end": 591.2,
+      "text": "does an hybrid search work okay so"
+    },
+    {
+      "start": 587.839,
+      "end": 593.9200000000001,
+      "text": "here we will go ahead and write how"
+    },
+    {
+      "start": 591.2,
+      "end": 597.9200000000001,
+      "text": "does hybrid"
+    },
+    {
+      "start": 593.92,
+      "end": 597.92,
+      "text": "search work"
+    },
+    {
+      "start": 600.24,
+      "end": 606.48,
+      "text": "so let's"
+    },
+    {
+      "start": 602.839,
+      "end": 610.44,
+      "text": "say um in the case of hybrid search what"
+    },
+    {
+      "start": 606.48,
+      "end": 613.32,
+      "text": "happens let's say if I have a specific"
+    },
+    {
+      "start": 610.44,
+      "end": 615.1600000000001,
+      "text": "documents for all these documents when"
+    },
+    {
+      "start": 613.32,
+      "end": 618.9590000000001,
+      "text": "we are storing"
+    },
+    {
+      "start": 615.16,
+      "end": 621.079,
+      "text": "this uh when we are storing this in our"
+    },
+    {
+      "start": 618.959,
+      "end": 624.0,
+      "text": "Vector database let's say this is my"
+    },
+    {
+      "start": 621.079,
+      "end": 627.0,
+      "text": "Vector database okay and this Vector"
+    },
+    {
+      "start": 624.0,
+      "end": 629.839,
+      "text": "database supports both right what does"
+    },
+    {
+      "start": 627.0,
+      "end": 632.839,
+      "text": "it basically supports it supports"
+    },
+    {
+      "start": 629.839,
+      "end": 636.1600000000001,
+      "text": "Vector search dense Vector search along"
+    },
+    {
+      "start": 632.839,
+      "end": 638.6800000000001,
+      "text": "with this it also supports keyword"
+    },
+    {
+      "start": 636.16,
+      "end": 641.16,
+      "text": "search it has both this particular"
+    },
+    {
+      "start": 638.68,
+      "end": 644.4399999999999,
+      "text": "property right now whenever I have this"
+    },
+    {
+      "start": 641.16,
+      "end": 646.079,
+      "text": "particular document inside this inside"
+    },
+    {
+      "start": 644.44,
+      "end": 648.12,
+      "text": "this particular database or inside this"
+    },
+    {
+      "start": 646.079,
+      "end": 650.4399999999999,
+      "text": "particular Vector store DB this"
+    },
+    {
+      "start": 648.12,
+      "end": 651.6,
+      "text": "documents will also be converted into a"
+    },
+    {
+      "start": 650.44,
+      "end": 655.48,
+      "text": "sparse"
+    },
+    {
+      "start": 651.6,
+      "end": 657.9590000000001,
+      "text": "Matrix right by using techniques like"
+    },
+    {
+      "start": 655.48,
+      "end": 660.5600000000001,
+      "text": "tfidf or bag of"
+    },
+    {
+      "start": 657.959,
+      "end": 661.8389999999999,
+      "text": "words so this kind of embeddings it will"
+    },
+    {
+      "start": 660.56,
+      "end": 663.279,
+      "text": "be converted and it will be stored"
+    },
+    {
+      "start": 661.839,
+      "end": 665.519,
+      "text": "inside this particular Vector database"
+    },
+    {
+      "start": 663.279,
+      "end": 667.32,
+      "text": "along with that for the same documents"
+    },
+    {
+      "start": 665.519,
+      "end": 669.88,
+      "text": "we will also try to convert this into"
+    },
+    {
+      "start": 667.32,
+      "end": 672.0400000000001,
+      "text": "vectors which will be my dense vectors"
+    },
+    {
+      "start": 669.88,
+      "end": 673.72,
+      "text": "dense vectors does not have maximum"
+    },
+    {
+      "start": 672.04,
+      "end": 675.92,
+      "text": "number of zeros or ones okay that is the"
+    },
+    {
+      "start": 673.72,
+      "end": 677.2,
+      "text": "difference and we will try to store this"
+    },
+    {
+      "start": 675.92,
+      "end": 679.04,
+      "text": "particular vectors inside this"
+    },
+    {
+      "start": 677.2,
+      "end": 680.639,
+      "text": "particular Vector store DB and again"
+    },
+    {
+      "start": 679.04,
+      "end": 682.8,
+      "text": "here you can use different different"
+    },
+    {
+      "start": 680.639,
+      "end": 684.72,
+      "text": "techniques uh the techniques can be"
+    },
+    {
+      "start": 682.8,
+      "end": 686.4799999999999,
+      "text": "anything as you want uh like we have"
+    },
+    {
+      "start": 684.72,
+      "end": 688.0,
+      "text": "seen right we have used different"
+    },
+    {
+      "start": 686.48,
+      "end": 689.88,
+      "text": "different embedding techniques we have"
+    },
+    {
+      "start": 688.0,
+      "end": 692.92,
+      "text": "used open AI embedding techniques we"
+    },
+    {
+      "start": 689.88,
+      "end": 694.959,
+      "text": "have used AMA embedding techniques or if"
+    },
+    {
+      "start": 692.92,
+      "end": 697.399,
+      "text": "you want hugging face embedding"
+    },
+    {
+      "start": 694.959,
+      "end": 700.3599999999999,
+      "text": "techniques so by all these embedding"
+    },
+    {
+      "start": 697.399,
+      "end": 702.32,
+      "text": "techniques we can convert our text into"
+    },
+    {
+      "start": 700.36,
+      "end": 703.9590000000001,
+      "text": "dense vectors and we can store this in"
+    },
+    {
+      "start": 702.32,
+      "end": 706.8000000000001,
+      "text": "this particular Vector"
+    },
+    {
+      "start": 703.959,
+      "end": 708.76,
+      "text": "database now the idea is very simple"
+    },
+    {
+      "start": 706.8,
+      "end": 710.3199999999999,
+      "text": "since we are storing this in both this"
+    },
+    {
+      "start": 708.76,
+      "end": 714.56,
+      "text": "particular format sparse metrix and"
+    },
+    {
+      "start": 710.32,
+      "end": 716.5600000000001,
+      "text": "dense Vector metrix whenever a user puts"
+    },
+    {
+      "start": 714.56,
+      "end": 718.7199999999999,
+      "text": "up any kind of"
+    },
+    {
+      "start": 716.56,
+      "end": 720.3199999999999,
+      "text": "queries now with respect to this"
+    },
+    {
+      "start": 718.72,
+      "end": 723.6800000000001,
+      "text": "particular query I will be able to"
+    },
+    {
+      "start": 720.32,
+      "end": 727.519,
+      "text": "retrieve two different kind of result"
+    },
+    {
+      "start": 723.68,
+      "end": 729.92,
+      "text": "okay one result uh will be something"
+    },
+    {
+      "start": 727.519,
+      "end": 731.8,
+      "text": "related to my exact match or exact"
+    },
+    {
+      "start": 729.92,
+      "end": 734.16,
+      "text": "search or keyword"
+    },
+    {
+      "start": 731.8,
+      "end": 736.199,
+      "text": "search and with respect to this keyword"
+    },
+    {
+      "start": 734.16,
+      "end": 739.48,
+      "text": "search let's say whatever results I'm"
+    },
+    {
+      "start": 736.199,
+      "end": 741.5999999999999,
+      "text": "getting it will be my top K results"
+    },
+    {
+      "start": 739.48,
+      "end": 742.9590000000001,
+      "text": "right this will be based on this"
+    },
+    {
+      "start": 741.6,
+      "end": 744.24,
+      "text": "particular keyword search or exact"
+    },
+    {
+      "start": 742.959,
+      "end": 747.0,
+      "text": "search so"
+    },
+    {
+      "start": 744.24,
+      "end": 749.279,
+      "text": "here um sorry keyword search I have"
+    },
+    {
+      "start": 747.0,
+      "end": 752.6,
+      "text": "written it downwards right so here"
+    },
+    {
+      "start": 749.279,
+      "end": 755.4399999999999,
+      "text": "you'll be able to see that I'll be"
+    },
+    {
+      "start": 752.6,
+      "end": 756.72,
+      "text": "whenever a user probably queries any"
+    },
+    {
+      "start": 755.44,
+      "end": 759.2790000000001,
+      "text": "information over here from this"
+    },
+    {
+      "start": 756.72,
+      "end": 761.399,
+      "text": "particular Vector database first of all"
+    },
+    {
+      "start": 759.279,
+      "end": 763.519,
+      "text": "for the user query again their query"
+    },
+    {
+      "start": 761.399,
+      "end": 766.24,
+      "text": "will also be divided into two types it"
+    },
+    {
+      "start": 763.519,
+      "end": 768.519,
+      "text": "will be converted into two types one is"
+    },
+    {
+      "start": 766.24,
+      "end": 770.639,
+      "text": "the sparse"
+    },
+    {
+      "start": 768.519,
+      "end": 773.72,
+      "text": "vectors and the other one is something"
+    },
+    {
+      "start": 770.639,
+      "end": 776.44,
+      "text": "like dense vectors right so both these"
+    },
+    {
+      "start": 773.72,
+      "end": 779.0,
+      "text": "vectors it will be converted then the SP"
+    },
+    {
+      "start": 776.44,
+      "end": 780.2790000000001,
+      "text": "based on the sparse vectors uh here we"
+    },
+    {
+      "start": 779.0,
+      "end": 782.199,
+      "text": "have specifically going to get the"
+    },
+    {
+      "start": 780.279,
+      "end": 784.639,
+      "text": "keyword search and here we are going to"
+    },
+    {
+      "start": 782.199,
+      "end": 786.4399999999999,
+      "text": "get the results right let's say the top"
+    },
+    {
+      "start": 784.639,
+      "end": 788.32,
+      "text": "K results I'll be getting over here"
+    },
+    {
+      "start": 786.44,
+      "end": 789.72,
+      "text": "based on this dense vectors I'm actually"
+    },
+    {
+      "start": 788.32,
+      "end": 791.9200000000001,
+      "text": "going to do the vector search and again"
+    },
+    {
+      "start": 789.72,
+      "end": 794.1990000000001,
+      "text": "I'll be getting another another results"
+    },
+    {
+      "start": 791.92,
+      "end": 795.959,
+      "text": "over here right let's say this is my"
+    },
+    {
+      "start": 794.199,
+      "end": 799.68,
+      "text": "result"
+    },
+    {
+      "start": 795.959,
+      "end": 803.959,
+      "text": "one result one top K Result One and this"
+    },
+    {
+      "start": 799.68,
+      "end": 806.04,
+      "text": "is my top K result two okay now top K"
+    },
+    {
+      "start": 803.959,
+      "end": 808.2399999999999,
+      "text": "Result One and top K result two are"
+    },
+    {
+      "start": 806.04,
+      "end": 809.8389999999999,
+      "text": "specifically there this is basically"
+    },
+    {
+      "start": 808.24,
+      "end": 811.72,
+      "text": "done on the Vector search which is"
+    },
+    {
+      "start": 809.839,
+      "end": 813.7600000000001,
+      "text": "nothing but it is a semantic search this"
+    },
+    {
+      "start": 811.72,
+      "end": 816.36,
+      "text": "is basically a semantic search similar"
+    },
+    {
+      "start": 813.76,
+      "end": 818.0,
+      "text": "kind of elements and this is nothing but"
+    },
+    {
+      "start": 816.36,
+      "end": 819.8000000000001,
+      "text": "this is a keyword search right based on"
+    },
+    {
+      "start": 818.0,
+      "end": 822.199,
+      "text": "the sparse vectors that we have actually"
+    },
+    {
+      "start": 819.8,
+      "end": 825.8389999999999,
+      "text": "taken now in hybrid search what we do is"
+    },
+    {
+      "start": 822.199,
+      "end": 828.959,
+      "text": "that we combine both of them based on"
+    },
+    {
+      "start": 825.839,
+      "end": 830.36,
+      "text": "weightage okay and then we finally get"
+    },
+    {
+      "start": 828.959,
+      "end": 834.079,
+      "text": "the final"
+    },
+    {
+      "start": 830.36,
+      "end": 836.1990000000001,
+      "text": "response now the question Rises how"
+    },
+    {
+      "start": 834.079,
+      "end": 837.92,
+      "text": "we're going to probably combine this"
+    },
+    {
+      "start": 836.199,
+      "end": 840.56,
+      "text": "particular Result One and result two"
+    },
+    {
+      "start": 837.92,
+      "end": 844.24,
+      "text": "weightage based on this information that"
+    },
+    {
+      "start": 840.56,
+      "end": 845.7589999999999,
+      "text": "we have got and for and finally when we"
+    },
+    {
+      "start": 844.24,
+      "end": 847.48,
+      "text": "get the response we can then further"
+    },
+    {
+      "start": 845.759,
+      "end": 850.44,
+      "text": "combine this with our llm model and"
+    },
+    {
+      "start": 847.48,
+      "end": 853.36,
+      "text": "summarize this entire data okay that is"
+    },
+    {
+      "start": 850.44,
+      "end": 855.8800000000001,
+      "text": "subed but still the question Rises how"
+    },
+    {
+      "start": 853.36,
+      "end": 859.0790000000001,
+      "text": "do we combine Result One and result two"
+    },
+    {
+      "start": 855.88,
+      "end": 860.6,
+      "text": "and how based on weightage we take our"
+    },
+    {
+      "start": 859.079,
+      "end": 864.12,
+      "text": "final"
+    },
+    {
+      "start": 860.6,
+      "end": 867.639,
+      "text": "result right final result and that is"
+    },
+    {
+      "start": 864.12,
+      "end": 869.36,
+      "text": "what we will be seeing in our next video"
+    },
+    {
+      "start": 867.639,
+      "end": 871.72,
+      "text": "um the technique is very simple and the"
+    },
+    {
+      "start": 869.36,
+      "end": 873.839,
+      "text": "technique name is something called as"
+    },
+    {
+      "start": 871.72,
+      "end": 876.399,
+      "text": "reciprocal"
+    },
+    {
+      "start": 873.839,
+      "end": 878.44,
+      "text": "reciprocal"
+    },
+    {
+      "start": 876.399,
+      "end": 881.48,
+      "text": "rank"
+    },
+    {
+      "start": 878.44,
+      "end": 884.519,
+      "text": "Fusion in hybrid"
+    },
+    {
+      "start": 881.48,
+      "end": 887.5600000000001,
+      "text": "search Okay in hybrid search so this"
+    },
+    {
+      "start": 884.519,
+      "end": 889.04,
+      "text": "technique we will be discussing in our"
+    },
+    {
+      "start": 887.56,
+      "end": 891.68,
+      "text": "next"
+    },
+    {
+      "start": 889.04,
+      "end": 893.24,
+      "text": "video which will be the core behind this"
+    },
+    {
+      "start": 891.68,
+      "end": 895.3599999999999,
+      "text": "particular hybrid search but the idea is"
+    },
+    {
+      "start": 893.24,
+      "end": 898.12,
+      "text": "very simple in hybrid search we take a"
+    },
+    {
+      "start": 895.36,
+      "end": 900.72,
+      "text": "combination of two different things we"
+    },
+    {
+      "start": 898.12,
+      "end": 903.199,
+      "text": "try to do the search based on semantic"
+    },
+    {
+      "start": 900.72,
+      "end": 904.9200000000001,
+      "text": "synthetic which will be the combination"
+    },
+    {
+      "start": 903.199,
+      "end": 906.56,
+      "text": "of dense Vector search and exact search"
+    },
+    {
+      "start": 904.92,
+      "end": 908.56,
+      "text": "or keyword search okay so both this"
+    },
+    {
+      "start": 906.56,
+      "end": 910.7589999999999,
+      "text": "particular Technique we basically use"
+    },
+    {
+      "start": 908.56,
+      "end": 912.56,
+      "text": "when I say top K result one topk result"
+    },
+    {
+      "start": 910.759,
+      "end": 914.6800000000001,
+      "text": "two that I may get Five results right"
+    },
+    {
+      "start": 912.56,
+      "end": 916.16,
+      "text": "based on the keyword SE I may get Five"
+    },
+    {
+      "start": 914.68,
+      "end": 918.519,
+      "text": "results based on the vector search"
+    },
+    {
+      "start": 916.16,
+      "end": 920.12,
+      "text": "something like that right so guys now"
+    },
+    {
+      "start": 918.519,
+      "end": 921.9590000000001,
+      "text": "let's go ahead and proceed with the"
+    },
+    {
+      "start": 920.12,
+      "end": 925.32,
+      "text": "discussion with respect to reciprocal"
+    },
+    {
+      "start": 921.959,
+      "end": 927.4399999999999,
+      "text": "rank Fusion in hybrid S as I said"
+    },
+    {
+      "start": 925.32,
+      "end": 929.519,
+      "text": "whenever we try to query or whenever"
+    },
+    {
+      "start": 927.44,
+      "end": 931.5600000000001,
+      "text": "user queries from this particular Vector"
+    },
+    {
+      "start": 929.519,
+      "end": 933.759,
+      "text": "database which supports both Vector"
+    },
+    {
+      "start": 931.56,
+      "end": 936.079,
+      "text": "search and keyword search which is a"
+    },
+    {
+      "start": 933.759,
+      "end": 939.12,
+      "text": "combination of semantic search and exact"
+    },
+    {
+      "start": 936.079,
+      "end": 940.92,
+      "text": "search over here first of all uh to get"
+    },
+    {
+      "start": 939.12,
+      "end": 942.72,
+      "text": "the keyword search we have to convert"
+    },
+    {
+      "start": 940.92,
+      "end": 944.759,
+      "text": "this into sparse vectors and the sparse"
+    },
+    {
+      "start": 942.72,
+      "end": 946.839,
+      "text": "vectors will be probably searching from"
+    },
+    {
+      "start": 944.759,
+      "end": 949.519,
+      "text": "this particular Vector database and we"
+    },
+    {
+      "start": 946.839,
+      "end": 951.36,
+      "text": "get top K results similarly with the"
+    },
+    {
+      "start": 949.519,
+      "end": 952.88,
+      "text": "help of dense vectors we also get a"
+    },
+    {
+      "start": 951.36,
+      "end": 955.319,
+      "text": "vector search and here we are going to"
+    },
+    {
+      "start": 952.88,
+      "end": 958.319,
+      "text": "get a result to that is topk results"
+    },
+    {
+      "start": 955.319,
+      "end": 960.4799999999999,
+      "text": "okay now combining both of them we have"
+    },
+    {
+      "start": 958.319,
+      "end": 962.4799999999999,
+      "text": "to probably consider a response right"
+    },
+    {
+      "start": 960.48,
+      "end": 963.72,
+      "text": "how to probably get the final response"
+    },
+    {
+      "start": 962.48,
+      "end": 966.72,
+      "text": "that is what I'm actually going to"
+    },
+    {
+      "start": 963.72,
+      "end": 969.639,
+      "text": "discuss now okay so here uh with the"
+    },
+    {
+      "start": 966.72,
+      "end": 972.5600000000001,
+      "text": "help of reciprocal rank Fusion in hybrid"
+    },
+    {
+      "start": 969.639,
+      "end": 975.839,
+      "text": "search we will be considering two"
+    },
+    {
+      "start": 972.56,
+      "end": 979.0,
+      "text": "important things okay let's say this is"
+    },
+    {
+      "start": 975.839,
+      "end": 981.48,
+      "text": "my Vector database"
+    },
+    {
+      "start": 979.0,
+      "end": 985.279,
+      "text": "okay and from this Vector database you"
+    },
+    {
+      "start": 981.48,
+      "end": 989.04,
+      "text": "know that whenever user queries So based"
+    },
+    {
+      "start": 985.279,
+      "end": 990.319,
+      "text": "on this queries let's say if this is my"
+    },
+    {
+      "start": 989.04,
+      "end": 992.639,
+      "text": "dense"
+    },
+    {
+      "start": 990.319,
+      "end": 994.92,
+      "text": "vectors first we going to do the vector"
+    },
+    {
+      "start": 992.639,
+      "end": 996.5600000000001,
+      "text": "search and we are going to get the top"
+    },
+    {
+      "start": 994.92,
+      "end": 998.279,
+      "text": "care results right so when I say Top"
+    },
+    {
+      "start": 996.56,
+      "end": 999.16,
+      "text": "Care results let's say that this is my"
+    },
+    {
+      "start": 998.279,
+      "end": 1003.759,
+      "text": "first"
+    },
+    {
+      "start": 999.16,
+      "end": 1007.399,
+      "text": "document right and this can be my second"
+    },
+    {
+      "start": 1003.759,
+      "end": 1009.759,
+      "text": "document right and this can be my third"
+    },
+    {
+      "start": 1007.399,
+      "end": 1012.839,
+      "text": "document like this I will be getting lot"
+    },
+    {
+      "start": 1009.759,
+      "end": 1014.04,
+      "text": "of documents similarly over here based"
+    },
+    {
+      "start": 1012.839,
+      "end": 1016.9200000000001,
+      "text": "on"
+    },
+    {
+      "start": 1014.04,
+      "end": 1019.399,
+      "text": "my sparse Matrix search that is the"
+    },
+    {
+      "start": 1016.92,
+      "end": 1023.0,
+      "text": "keyword search"
+    },
+    {
+      "start": 1019.399,
+      "end": 1026.559,
+      "text": "that is nothing but keyword"
+    },
+    {
+      "start": 1023.0,
+      "end": 1028.16,
+      "text": "search I'm actually going to get my topk"
+    },
+    {
+      "start": 1026.559,
+      "end": 1032.16,
+      "text": "documents so here also I will go ahead"
+    },
+    {
+      "start": 1028.16,
+      "end": 1032.16,
+      "text": "and draw this so let's"
+    },
+    {
+      "start": 1032.559,
+      "end": 1037.839,
+      "text": "say here I'm going to get some other"
+    },
+    {
+      "start": 1035.079,
+      "end": 1040.039,
+      "text": "sentences okay and the ordering will be"
+    },
+    {
+      "start": 1037.839,
+      "end": 1042.039,
+      "text": "different right so here uh let's say"
+    },
+    {
+      "start": 1040.039,
+      "end": 1045.919,
+      "text": "this is the order that I've actually got"
+    },
+    {
+      "start": 1042.039,
+      "end": 1048.439,
+      "text": "but I got document 1 2 3 4 five let's"
+    },
+    {
+      "start": 1045.919,
+      "end": 1051.0,
+      "text": "say the five documents I've actually got"
+    },
+    {
+      "start": 1048.439,
+      "end": 1053.4,
+      "text": "and here also we have got some other"
+    },
+    {
+      "start": 1051.0,
+      "end": 1055.2,
+      "text": "documents so let's say some other"
+    },
+    {
+      "start": 1053.4,
+      "end": 1057.679,
+      "text": "documents but here the numbering is"
+    },
+    {
+      "start": 1055.2,
+      "end": 1063.88,
+      "text": "different let's say the numbering is"
+    },
+    {
+      "start": 1057.679,
+      "end": 1068.4,
+      "text": "like 4 3 2 5 1 okay the numbering is"
+    },
+    {
+      "start": 1063.88,
+      "end": 1072.64,
+      "text": "different this is my Result One topk"
+    },
+    {
+      "start": 1068.4,
+      "end": 1077.52,
+      "text": "documents and this is my result two topk"
+    },
+    {
+      "start": 1072.64,
+      "end": 1079.159,
+      "text": "documents okay now considering this uh"
+    },
+    {
+      "start": 1077.52,
+      "end": 1081.4,
+      "text": "see"
+    },
+    {
+      "start": 1079.159,
+      "end": 1084.4,
+      "text": "here I've got in this ordering that is 1"
+    },
+    {
+      "start": 1081.4,
+      "end": 1086.039,
+      "text": "2 3 4 5 sentence that is that I got in"
+    },
+    {
+      "start": 1084.4,
+      "end": 1087.919,
+      "text": "my top care like document one document"
+    },
+    {
+      "start": 1086.039,
+      "end": 1090.12,
+      "text": "two document 3 document 4 document 5"
+    },
+    {
+      "start": 1087.919,
+      "end": 1092.0,
+      "text": "similarly over here document 4 document"
+    },
+    {
+      "start": 1090.12,
+      "end": 1093.3999999999999,
+      "text": "3 document 2 document 5 document one"
+    },
+    {
+      "start": 1092.0,
+      "end": 1097.24,
+      "text": "this is the ranks that we have"
+    },
+    {
+      "start": 1093.4,
+      "end": 1100.2800000000002,
+      "text": "specifically got now how to calculate"
+    },
+    {
+      "start": 1097.24,
+      "end": 1102.52,
+      "text": "the final score because here this is"
+    },
+    {
+      "start": 1100.28,
+      "end": 1104.28,
+      "text": "based on my semantic search this is"
+    },
+    {
+      "start": 1102.52,
+      "end": 1106.6,
+      "text": "based on my keyword search when I say"
+    },
+    {
+      "start": 1104.28,
+      "end": 1109.48,
+      "text": "semantic search that is"
+    },
+    {
+      "start": 1106.6,
+      "end": 1112.52,
+      "text": "basically u based on on cosine"
+    },
+    {
+      "start": 1109.48,
+      "end": 1114.799,
+      "text": "similarity okay so we are trying to find"
+    },
+    {
+      "start": 1112.52,
+      "end": 1117.0,
+      "text": "out the similar vectors and then we are"
+    },
+    {
+      "start": 1114.799,
+      "end": 1118.96,
+      "text": "trying to find out our final score so in"
+    },
+    {
+      "start": 1117.0,
+      "end": 1121.36,
+      "text": "order to calculate the final score the"
+    },
+    {
+      "start": 1118.96,
+      "end": 1127.88,
+      "text": "formula is very simple here we'll write"
+    },
+    {
+      "start": 1121.36,
+      "end": 1132.32,
+      "text": "sumission of 1 / by uh a constant plus"
+    },
+    {
+      "start": 1127.88,
+      "end": 1135.44,
+      "text": "plus the rank of documents okay now this"
+    },
+    {
+      "start": 1132.32,
+      "end": 1137.0,
+      "text": "particular constant that is C it depends"
+    },
+    {
+      "start": 1135.44,
+      "end": 1139.52,
+      "text": "on various"
+    },
+    {
+      "start": 1137.0,
+      "end": 1142.52,
+      "text": "database it depends on"
+    },
+    {
+      "start": 1139.52,
+      "end": 1146.32,
+      "text": "on"
+    },
+    {
+      "start": 1142.52,
+      "end": 1148.2,
+      "text": "various databases okay now with respect"
+    },
+    {
+      "start": 1146.32,
+      "end": 1152.08,
+      "text": "to various databases this may range"
+    },
+    {
+      "start": 1148.2,
+      "end": 1154.52,
+      "text": "between 1 to 60 okay and this is a"
+    },
+    {
+      "start": 1152.08,
+      "end": 1157.96,
+      "text": "constant guys okay in various databases"
+    },
+    {
+      "start": 1154.52,
+      "end": 1159.4,
+      "text": "they'll set this value to 10 20 you and"
+    },
+    {
+      "start": 1157.96,
+      "end": 1162.52,
+      "text": "some of the databases I've seen the"
+    },
+    {
+      "start": 1159.4,
+      "end": 1164.679,
+      "text": "value to 60 okay so since this is a"
+    },
+    {
+      "start": 1162.52,
+      "end": 1166.9189999999999,
+      "text": "constant we just not going to focus much"
+    },
+    {
+      "start": 1164.679,
+      "end": 1169.799,
+      "text": "into this instead I will just take up"
+    },
+    {
+      "start": 1166.919,
+      "end": 1174.2,
+      "text": "this formula now sumission of I is equal"
+    },
+    {
+      "start": 1169.799,
+      "end": 1177.28,
+      "text": "to um 1 divid rank of t Okay since this"
+    },
+    {
+      "start": 1174.2,
+      "end": 1180.8400000000001,
+      "text": "is a constant for calculating in every"
+    },
+    {
+      "start": 1177.28,
+      "end": 1182.72,
+      "text": "uh the rank of every uh documents uh"
+    },
+    {
+      "start": 1180.84,
+      "end": 1184.36,
+      "text": "will probably give you the same answer"
+    },
+    {
+      "start": 1182.72,
+      "end": 1187.48,
+      "text": "with respect to the particular constant"
+    },
+    {
+      "start": 1184.36,
+      "end": 1189.7199999999998,
+      "text": "like same impact it may be creating okay"
+    },
+    {
+      "start": 1187.48,
+      "end": 1191.159,
+      "text": "now how do we compute the rank right so"
+    },
+    {
+      "start": 1189.72,
+      "end": 1194.0,
+      "text": "for this particular sentence you'll be"
+    },
+    {
+      "start": 1191.159,
+      "end": 1195.4,
+      "text": "seeing 1 divided by rank of D so if I go"
+    },
+    {
+      "start": 1194.0,
+      "end": 1198.12,
+      "text": "ahead and compute this this is nothing"
+    },
+    {
+      "start": 1195.4,
+      "end": 1200.52,
+      "text": "but 1 by one okay uh this is nothing but"
+    },
+    {
+      "start": 1198.12,
+      "end": 1203.32,
+      "text": "1 by two because this is rank two right"
+    },
+    {
+      "start": 1200.52,
+      "end": 1207.32,
+      "text": "this is rank three so I'll get 1x3 it is"
+    },
+    {
+      "start": 1203.32,
+      "end": 1209.48,
+      "text": "nothing but 33 then here I have 25 and"
+    },
+    {
+      "start": 1207.32,
+      "end": 1211.6399999999999,
+      "text": "this is my fifth document let's say the"
+    },
+    {
+      "start": 1209.48,
+      "end": 1214.3600000000001,
+      "text": "rank is five I'm actually going to get"
+    },
+    {
+      "start": 1211.64,
+      "end": 1217.5200000000002,
+      "text": "02 okay similarly in this particular"
+    },
+    {
+      "start": 1214.36,
+      "end": 1219.1999999999998,
+      "text": "case uh this is my document four right"
+    },
+    {
+      "start": 1217.52,
+      "end": 1222.32,
+      "text": "and if I try to compute this particular"
+    },
+    {
+      "start": 1219.2,
+      "end": 1227.96,
+      "text": "rank okay it'll be again 1 by one 1 by"
+    },
+    {
+      "start": 1222.32,
+      "end": 1231.6399999999999,
+      "text": "two uh 1X 3 1X 4 1X 5 so that basically"
+    },
+    {
+      "start": 1227.96,
+      "end": 1234.919,
+      "text": "means the document of D4 is basically"
+    },
+    {
+      "start": 1231.64,
+      "end": 1238.159,
+      "text": "getting a rank of one in this keyword"
+    },
+    {
+      "start": 1234.919,
+      "end": 1241.5590000000002,
+      "text": "search here D4 is basically getting 0.25"
+    },
+    {
+      "start": 1238.159,
+      "end": 1244.3200000000002,
+      "text": "okay now when we try to combine the"
+    },
+    {
+      "start": 1241.559,
+      "end": 1246.6,
+      "text": "final score okay this is important see"
+    },
+    {
+      "start": 1244.32,
+      "end": 1249.9189999999999,
+      "text": "this so if I finally go ahead and take"
+    },
+    {
+      "start": 1246.6,
+      "end": 1252.1589999999999,
+      "text": "up document one so if this is my"
+    },
+    {
+      "start": 1249.919,
+      "end": 1255.159,
+      "text": "document one and if I try to calculate"
+    },
+    {
+      "start": 1252.159,
+      "end": 1256.6000000000001,
+      "text": "the overall rank then what we have to do"
+    },
+    {
+      "start": 1255.159,
+      "end": 1258.96,
+      "text": "we have to do the submission so let's"
+    },
+    {
+      "start": 1256.6,
+      "end": 1261.3999999999999,
+      "text": "see document one is giving one over here"
+    },
+    {
+      "start": 1258.96,
+      "end": 1265.919,
+      "text": "and 1.5 1X 5 so I will just go ahead and"
+    },
+    {
+      "start": 1261.4,
+      "end": 1267.52,
+      "text": "write 1 +. 2 so this will be 1.2 right"
+    },
+    {
+      "start": 1265.919,
+      "end": 1269.7990000000002,
+      "text": "similarly if I go ahead and calculate"
+    },
+    {
+      "start": 1267.52,
+      "end": 1275.1589999999999,
+      "text": "for document"
+    },
+    {
+      "start": 1269.799,
+      "end": 1277.36,
+      "text": "2 right so document 2 over here gives 05"
+    },
+    {
+      "start": 1275.159,
+      "end": 1280.88,
+      "text": "right so here I'm actually going to get"
+    },
+    {
+      "start": 1277.36,
+      "end": 1284.7199999999998,
+      "text": "0.5 plus the document 2 over here is 1"
+    },
+    {
+      "start": 1280.88,
+      "end": 1288.8400000000001,
+      "text": "by3 that is nothing but 33 right so here"
+    },
+    {
+      "start": 1284.72,
+      "end": 1290.72,
+      "text": "you can see I'm actually going to get 83"
+    },
+    {
+      "start": 1288.84,
+      "end": 1293.24,
+      "text": "so this is my score that I'm actually"
+    },
+    {
+      "start": 1290.72,
+      "end": 1294.76,
+      "text": "going to get and obviously this score is"
+    },
+    {
+      "start": 1293.24,
+      "end": 1298.76,
+      "text": "better than this score so I will be"
+    },
+    {
+      "start": 1294.76,
+      "end": 1300.24,
+      "text": "getting the document one based on my 50%"
+    },
+    {
+      "start": 1298.76,
+      "end": 1304.12,
+      "text": "probability or"
+    },
+    {
+      "start": 1300.24,
+      "end": 1309.64,
+      "text": "50% uh focus on keyword"
+    },
+    {
+      "start": 1304.12,
+      "end": 1312.1999999999998,
+      "text": "search right and 50% on semantic search"
+    },
+    {
+      "start": 1309.64,
+      "end": 1313.6000000000001,
+      "text": "right if you change the weightage right"
+    },
+    {
+      "start": 1312.2,
+      "end": 1315.76,
+      "text": "if you change the weightage then you'll"
+    },
+    {
+      "start": 1313.6,
+      "end": 1317.4399999999998,
+      "text": "be able to see that some values may also"
+    },
+    {
+      "start": 1315.76,
+      "end": 1320.32,
+      "text": "change similarly you have this document"
+    },
+    {
+      "start": 1317.44,
+      "end": 1323.279,
+      "text": "three now in the case of document 3"
+    },
+    {
+      "start": 1320.32,
+      "end": 1327.279,
+      "text": "you'll be able to see that here I have"
+    },
+    {
+      "start": 1323.279,
+      "end": 1329.52,
+      "text": "33 so let's calculate this 33 plus"
+    },
+    {
+      "start": 1327.279,
+      "end": 1332.48,
+      "text": "document 3 is nothing"
+    },
+    {
+      "start": 1329.52,
+      "end": 1335.24,
+      "text": "but 5 again here I'm going to get the"
+    },
+    {
+      "start": 1332.48,
+      "end": 1338.0,
+      "text": "same value see 83 now both these ranks"
+    },
+    {
+      "start": 1335.24,
+      "end": 1339.96,
+      "text": "are same right so if I want to retrieve"
+    },
+    {
+      "start": 1338.0,
+      "end": 1342.88,
+      "text": "the top K result obviously this will be"
+    },
+    {
+      "start": 1339.96,
+      "end": 1344.64,
+      "text": "shown first and then based on this two"
+    },
+    {
+      "start": 1342.88,
+      "end": 1346.64,
+      "text": "right where the focus is more whether it"
+    },
+    {
+      "start": 1344.64,
+      "end": 1349.44,
+      "text": "is on keyword search or semantic search"
+    },
+    {
+      "start": 1346.64,
+      "end": 1350.919,
+      "text": "let's say if I say 70% focus is there on"
+    },
+    {
+      "start": 1349.44,
+      "end": 1353.3200000000002,
+      "text": "the keyword search then over here you"
+    },
+    {
+      "start": 1350.919,
+      "end": 1355.6000000000001,
+      "text": "can see 0.5 value is higher than3 so it"
+    },
+    {
+      "start": 1353.32,
+      "end": 1357.9189999999999,
+      "text": "is just going to give you the display"
+    },
+    {
+      "start": 1355.6,
+      "end": 1360.9189999999999,
+      "text": "the document three in the second rank"
+    },
+    {
+      "start": 1357.919,
+      "end": 1362.5200000000002,
+      "text": "right so this way the weightage can also"
+    },
+    {
+      "start": 1360.919,
+      "end": 1364.76,
+      "text": "be provided in keyword searge and"
+    },
+    {
+      "start": 1362.52,
+      "end": 1366.2,
+      "text": "semantic search okay and similarly we go"
+    },
+    {
+      "start": 1364.76,
+      "end": 1369.36,
+      "text": "ahead and calculate each and every"
+    },
+    {
+      "start": 1366.2,
+      "end": 1371.52,
+      "text": "documents so finally you can see that"
+    },
+    {
+      "start": 1369.36,
+      "end": 1373.6789999999999,
+      "text": "here we can combine result two and"
+    },
+    {
+      "start": 1371.52,
+      "end": 1375.679,
+      "text": "Result One topk elements and then we can"
+    },
+    {
+      "start": 1373.679,
+      "end": 1378.5590000000002,
+      "text": "use this reciprocal rank Fusion in"
+    },
+    {
+      "start": 1375.679,
+      "end": 1380.6000000000001,
+      "text": "hybrid search by assigning ranks and and"
+    },
+    {
+      "start": 1378.559,
+      "end": 1382.08,
+      "text": "we will be able to calculate a score"
+    },
+    {
+      "start": 1380.6,
+      "end": 1384.12,
+      "text": "which will be finally given as a"
+    },
+    {
+      "start": 1382.08,
+      "end": 1386.12,
+      "text": "response and here we can also assign"
+    },
+    {
+      "start": 1384.12,
+      "end": 1387.4799999999998,
+      "text": "weightage and this can be combined"
+    },
+    {
+      "start": 1386.12,
+      "end": 1390.36,
+      "text": "within prom template and we can"
+    },
+    {
+      "start": 1387.48,
+      "end": 1392.919,
+      "text": "summarize with our llm model right so"
+    },
+    {
+      "start": 1390.36,
+      "end": 1396.08,
+      "text": "this uh gives an idea about the entire"
+    },
+    {
+      "start": 1392.919,
+      "end": 1397.919,
+      "text": "hybrid search right now uh in this"
+    },
+    {
+      "start": 1396.08,
+      "end": 1399.24,
+      "text": "section in this next section what we're"
+    },
+    {
+      "start": 1397.919,
+      "end": 1401.72,
+      "text": "going to do is that we're going to also"
+    },
+    {
+      "start": 1399.24,
+      "end": 1404.2,
+      "text": "see a practical example of how an hybrid"
+    },
+    {
+      "start": 1401.72,
+      "end": 1407.6000000000001,
+      "text": "search is basically done but before that"
+    },
+    {
+      "start": 1404.2,
+      "end": 1410.2,
+      "text": "if you know about one more search right"
+    },
+    {
+      "start": 1407.6,
+      "end": 1414.84,
+      "text": "that is based on on graph knowledge"
+    },
+    {
+      "start": 1410.2,
+      "end": 1417.919,
+      "text": "search Okay graph knowledge"
+    },
+    {
+      "start": 1414.84,
+      "end": 1420.9599999999998,
+      "text": "search so in this graph knowledge search"
+    },
+    {
+      "start": 1417.919,
+      "end": 1424.0800000000002,
+      "text": "uh I hope you may have heard about graph"
+    },
+    {
+      "start": 1420.96,
+      "end": 1427.96,
+      "text": "DB one of the most popular open source"
+    },
+    {
+      "start": 1424.08,
+      "end": 1431.24,
+      "text": "graph DB is neo4j okay now if we are"
+    },
+    {
+      "start": 1427.96,
+      "end": 1433.72,
+      "text": "specifically using graph knowledge uh"
+    },
+    {
+      "start": 1431.24,
+      "end": 1436.88,
+      "text": "sorry graph DB to store the vectors"
+    },
+    {
+      "start": 1433.72,
+      "end": 1438.96,
+      "text": "let's say if this is my database and"
+    },
+    {
+      "start": 1436.88,
+      "end": 1441.0800000000002,
+      "text": "this database is nothing but it is my"
+    },
+    {
+      "start": 1438.96,
+      "end": 1443.76,
+      "text": "graph DB in the case of graph DB I will"
+    },
+    {
+      "start": 1441.08,
+      "end": 1447.24,
+      "text": "be having like this nodes which will be"
+    },
+    {
+      "start": 1443.76,
+      "end": 1449.12,
+      "text": "connected with relationships right so"
+    },
+    {
+      "start": 1447.24,
+      "end": 1450.679,
+      "text": "this can be my node one this can be my"
+    },
+    {
+      "start": 1449.12,
+      "end": 1453.3999999999999,
+      "text": "node two and it will be connected with"
+    },
+    {
+      "start": 1450.679,
+      "end": 1454.6000000000001,
+      "text": "relationships and we can whenever a user"
+    },
+    {
+      "start": 1453.4,
+      "end": 1458.5590000000002,
+      "text": "tries to"
+    },
+    {
+      "start": 1454.6,
+      "end": 1460.84,
+      "text": "query user tries to query in this there"
+    },
+    {
+      "start": 1458.559,
+      "end": 1461.6,
+      "text": "are three types of queries that happens"
+    },
+    {
+      "start": 1460.84,
+      "end": 1464.36,
+      "text": "one"
+    },
+    {
+      "start": 1461.6,
+      "end": 1467.08,
+      "text": "is keyword"
+    },
+    {
+      "start": 1464.36,
+      "end": 1469.039,
+      "text": "search which is can also be called as"
+    },
+    {
+      "start": 1467.08,
+      "end": 1472.52,
+      "text": "semantic search uh sorry"
+    },
+    {
+      "start": 1469.039,
+      "end": 1474.8799999999999,
+      "text": "this can be also called as um synthetic"
+    },
+    {
+      "start": 1472.52,
+      "end": 1477.72,
+      "text": "search or it can be also called as exact"
+    },
+    {
+      "start": 1474.88,
+      "end": 1479.88,
+      "text": "search uh then along with this it's also"
+    },
+    {
+      "start": 1477.72,
+      "end": 1483.799,
+      "text": "suppose semantic"
+    },
+    {
+      "start": 1479.88,
+      "end": 1485.96,
+      "text": "search right and finally you'll be also"
+    },
+    {
+      "start": 1483.799,
+      "end": 1488.24,
+      "text": "able to see that it"
+    },
+    {
+      "start": 1485.96,
+      "end": 1489.8400000000001,
+      "text": "supports uh keyword search semantic"
+    },
+    {
+      "start": 1488.24,
+      "end": 1491.84,
+      "text": "search along with this one more search"
+    },
+    {
+      "start": 1489.84,
+      "end": 1493.1999999999998,
+      "text": "is there that is called as graph"
+    },
+    {
+      "start": 1491.84,
+      "end": 1496.279,
+      "text": "knowledge"
+    },
+    {
+      "start": 1493.2,
+      "end": 1498.88,
+      "text": "search graph knowledge search so it"
+    },
+    {
+      "start": 1496.279,
+      "end": 1500.36,
+      "text": "supports all this techniques which is"
+    },
+    {
+      "start": 1498.88,
+      "end": 1502.679,
+      "text": "quite amazing just"
+    },
+    {
+      "start": 1500.36,
+      "end": 1505.0,
+      "text": "imagine hybrid search just supports this"
+    },
+    {
+      "start": 1502.679,
+      "end": 1506.48,
+      "text": "two type but now with this help of graph"
+    },
+    {
+      "start": 1505.0,
+      "end": 1509.76,
+      "text": "knowledge search we will still be able"
+    },
+    {
+      "start": 1506.48,
+      "end": 1513.3990000000001,
+      "text": "to create a very good efficient rag"
+    },
+    {
+      "start": 1509.76,
+      "end": 1516.679,
+      "text": "application right with the help of graph"
+    },
+    {
+      "start": 1513.399,
+      "end": 1519.1589999999999,
+      "text": "DB and this uh we will be seeing about"
+    },
+    {
+      "start": 1516.679,
+      "end": 1522.039,
+      "text": "graph DB in the upcoming videos uh in"
+    },
+    {
+      "start": 1519.159,
+      "end": 1524.5200000000002,
+      "text": "the upcoming sections but uh let's go"
+    },
+    {
+      "start": 1522.039,
+      "end": 1527.44,
+      "text": "ahead and see some practical example for"
+    },
+    {
+      "start": 1524.52,
+      "end": 1529.12,
+      "text": "uh hybrid search hello guys so we are"
+    },
+    {
+      "start": 1527.44,
+      "end": 1532.8400000000001,
+      "text": "going to continue the discussion with"
+    },
+    {
+      "start": 1529.12,
+      "end": 1535.0,
+      "text": "respect to the hybrid search and uh here"
+    },
+    {
+      "start": 1532.84,
+      "end": 1536.76,
+      "text": "now we are going to implement a complete"
+    },
+    {
+      "start": 1535.0,
+      "end": 1540.36,
+      "text": "amazing project with the help of hybrid"
+    },
+    {
+      "start": 1536.76,
+      "end": 1543.12,
+      "text": "search using Lang chin now uh for this"
+    },
+    {
+      "start": 1540.36,
+      "end": 1545.52,
+      "text": "uh we will be using a vector database"
+    },
+    {
+      "start": 1543.12,
+      "end": 1548.12,
+      "text": "which is called as Pine Cod now pine"
+    },
+    {
+      "start": 1545.52,
+      "end": 1550.96,
+      "text": "cone uh Vector database provides you"
+    },
+    {
+      "start": 1548.12,
+      "end": 1552.36,
+      "text": "this both right like uh you will be able"
+    },
+    {
+      "start": 1550.96,
+      "end": 1554.919,
+      "text": "to do the keyword search you will be"
+    },
+    {
+      "start": 1552.36,
+      "end": 1556.4399999999998,
+      "text": "able to do the semantic search so uh"
+    },
+    {
+      "start": 1554.919,
+      "end": 1558.64,
+      "text": "let's go ahead and first of all we'll"
+    },
+    {
+      "start": 1556.44,
+      "end": 1560.48,
+      "text": "set up our account and then with the"
+    },
+    {
+      "start": 1558.64,
+      "end": 1562.72,
+      "text": "help of code we will try to write each"
+    },
+    {
+      "start": 1560.48,
+      "end": 1565.24,
+      "text": "and everything and we'll try to probably"
+    },
+    {
+      "start": 1562.72,
+      "end": 1567.159,
+      "text": "go ahead and create our you know the"
+    },
+    {
+      "start": 1565.24,
+      "end": 1569.1200000000001,
+      "text": "vector database itself so first of all"
+    },
+    {
+      "start": 1567.159,
+      "end": 1571.7600000000002,
+      "text": "just go ahead and sign up over here it"
+    },
+    {
+      "start": 1569.12,
+      "end": 1573.7199999999998,
+      "text": "is completely for free uh first two"
+    },
+    {
+      "start": 1571.76,
+      "end": 1575.96,
+      "text": "first two to three instances you can"
+    },
+    {
+      "start": 1573.72,
+      "end": 1577.679,
+      "text": "create completely for free so I have"
+    },
+    {
+      "start": 1575.96,
+      "end": 1580.679,
+      "text": "already signed up so I will go ahead and"
+    },
+    {
+      "start": 1577.679,
+      "end": 1582.159,
+      "text": "login you have to just go to Pine cone."
+    },
+    {
+      "start": 1580.679,
+      "end": 1583.919,
+      "text": "now once you go inside this you'll be"
+    },
+    {
+      "start": 1582.159,
+      "end": 1586.7600000000002,
+      "text": "able to see that I have already created"
+    },
+    {
+      "start": 1583.919,
+      "end": 1588.64,
+      "text": "one pine cone hybrid search right and if"
+    },
+    {
+      "start": 1586.76,
+      "end": 1590.399,
+      "text": "you go inside this there are some kind"
+    },
+    {
+      "start": 1588.64,
+      "end": 1594.039,
+      "text": "of data that is already available over"
+    },
+    {
+      "start": 1590.399,
+      "end": 1595.7199999999998,
+      "text": "here right but as usual uh we will not"
+    },
+    {
+      "start": 1594.039,
+      "end": 1597.679,
+      "text": "probably work with this but instead"
+    },
+    {
+      "start": 1595.72,
+      "end": 1599.96,
+      "text": "we'll go ahead and create our new index"
+    },
+    {
+      "start": 1597.679,
+      "end": 1602.44,
+      "text": "okay but uh since I really want to do"
+    },
+    {
+      "start": 1599.96,
+      "end": 1604.159,
+      "text": "everything from with the help of code so"
+    },
+    {
+      "start": 1602.44,
+      "end": 1606.159,
+      "text": "uh we will try to create the instance"
+    },
+    {
+      "start": 1604.159,
+      "end": 1608.0,
+      "text": "even with the help of code so first of"
+    },
+    {
+      "start": 1606.159,
+      "end": 1610.48,
+      "text": "all that you actually require is your"
+    },
+    {
+      "start": 1608.0,
+      "end": 1611.96,
+      "text": "API key okay so just click on API key"
+    },
+    {
+      "start": 1610.48,
+      "end": 1613.76,
+      "text": "just make sure that this will be the"
+    },
+    {
+      "start": 1611.96,
+      "end": 1617.32,
+      "text": "default API key that will be provided"
+    },
+    {
+      "start": 1613.76,
+      "end": 1618.919,
+      "text": "over here and uh you can also rotate the"
+    },
+    {
+      "start": 1617.32,
+      "end": 1620.96,
+      "text": "key values like you can probably go"
+    },
+    {
+      "start": 1618.919,
+      "end": 1623.2,
+      "text": "ahead and change it uh if somebody"
+    },
+    {
+      "start": 1620.96,
+      "end": 1625.2,
+      "text": "probably sees it right so here I will"
+    },
+    {
+      "start": 1623.2,
+      "end": 1628.559,
+      "text": "copy this particular key value and then"
+    },
+    {
+      "start": 1625.2,
+      "end": 1631.3600000000001,
+      "text": "I will start my coding over here right"
+    },
+    {
+      "start": 1628.559,
+      "end": 1633.96,
+      "text": "so uh here I will be creating my"
+    },
+    {
+      "start": 1631.36,
+      "end": 1636.4799999999998,
+      "text": "instance everything as such okay now"
+    },
+    {
+      "start": 1633.96,
+      "end": 1638.76,
+      "text": "just quickly to go ahead with I have"
+    },
+    {
+      "start": 1636.48,
+      "end": 1640.08,
+      "text": "some good requirement. txt here you'll"
+    },
+    {
+      "start": 1638.76,
+      "end": 1642.799,
+      "text": "be able to see so many different"
+    },
+    {
+      "start": 1640.08,
+      "end": 1644.6399999999999,
+      "text": "libraries but uh for Lang chain"
+    },
+    {
+      "start": 1642.799,
+      "end": 1646.76,
+      "text": "obviously you require a lot of libraries"
+    },
+    {
+      "start": 1644.64,
+      "end": 1648.6000000000001,
+      "text": "uh but if I probably talk about with"
+    },
+    {
+      "start": 1646.76,
+      "end": 1650.279,
+      "text": "respect to pine cone I will be"
+    },
+    {
+      "start": 1648.6,
+      "end": 1653.36,
+      "text": "installing some of the libraries over"
+    },
+    {
+      "start": 1650.279,
+      "end": 1655.72,
+      "text": "here so let me quickly go ahead and you"
+    },
+    {
+      "start": 1653.36,
+      "end": 1658.039,
+      "text": "know just paste it over here so I'll be"
+    },
+    {
+      "start": 1655.72,
+      "end": 1661.44,
+      "text": "installing pine cone client Pine con"
+    },
+    {
+      "start": 1658.039,
+      "end": 1663.08,
+      "text": "text and pine con notebooks okay so uh"
+    },
+    {
+      "start": 1661.44,
+      "end": 1665.279,
+      "text": "these are the initial libraries that we"
+    },
+    {
+      "start": 1663.08,
+      "end": 1667.1999999999998,
+      "text": "will be requiring so I have already done"
+    },
+    {
+      "start": 1665.279,
+      "end": 1669.159,
+      "text": "the installation since I don't want to"
+    },
+    {
+      "start": 1667.2,
+      "end": 1672.24,
+      "text": "make my video very long so here you'll"
+    },
+    {
+      "start": 1669.159,
+      "end": 1675.8400000000001,
+      "text": "be able to see a grin tick and already"
+    },
+    {
+      "start": 1672.24,
+      "end": 1677.88,
+      "text": "the entire uh you know the installation"
+    },
+    {
+      "start": 1675.84,
+      "end": 1680.12,
+      "text": "has basically happened then I will go"
+    },
+    {
+      "start": 1677.88,
+      "end": 1682.72,
+      "text": "ahead and write my API uncore key this"
+    },
+    {
+      "start": 1680.12,
+      "end": 1687.12,
+      "text": "API uncore key will basically be"
+    },
+    {
+      "start": 1682.72,
+      "end": 1688.279,
+      "text": "replaced with the values over here right"
+    },
+    {
+      "start": 1687.12,
+      "end": 1689.559,
+      "text": "so I'm just going to create this"
+    },
+    {
+      "start": 1688.279,
+      "end": 1692.64,
+      "text": "particular variable you can also create"
+    },
+    {
+      "start": 1689.559,
+      "end": 1696.279,
+      "text": "an environment variable if you want okay"
+    },
+    {
+      "start": 1692.64,
+      "end": 1698.0,
+      "text": "perfect now uh since we are using langin"
+    },
+    {
+      "start": 1696.279,
+      "end": 1700.32,
+      "text": "so please make sure that we will go"
+    },
+    {
+      "start": 1698.0,
+      "end": 1704.48,
+      "text": "ahead and import this from linore"
+    },
+    {
+      "start": 1700.32,
+      "end": 1708.12,
+      "text": "Community do retrievers I'm going to"
+    },
+    {
+      "start": 1704.48,
+      "end": 1711.039,
+      "text": "import I'm going to import a library"
+    },
+    {
+      "start": 1708.12,
+      "end": 1714.4799999999998,
+      "text": "which is nothing but pine cone hybrid"
+    },
+    {
+      "start": 1711.039,
+      "end": 1717.12,
+      "text": "search retriever now this this class is"
+    },
+    {
+      "start": 1714.48,
+      "end": 1719.44,
+      "text": "responsible in doing both the semantic"
+    },
+    {
+      "start": 1717.12,
+      "end": 1721.799,
+      "text": "search and synthetic search right so"
+    },
+    {
+      "start": 1719.44,
+      "end": 1723.48,
+      "text": "keyword search like it it has the"
+    },
+    {
+      "start": 1721.799,
+      "end": 1725.519,
+      "text": "combination of both the sparse metrix"
+    },
+    {
+      "start": 1723.48,
+      "end": 1727.519,
+      "text": "and dense Vector search and for that we"
+    },
+    {
+      "start": 1725.519,
+      "end": 1730.36,
+      "text": "have to create a retriever and this is"
+    },
+    {
+      "start": 1727.519,
+      "end": 1732.159,
+      "text": "the class that we are going to use so uh"
+    },
+    {
+      "start": 1730.36,
+      "end": 1734.279,
+      "text": "let's go ahead and execute this and"
+    },
+    {
+      "start": 1732.159,
+      "end": 1737.0390000000002,
+      "text": "after executing this uh the next thing"
+    },
+    {
+      "start": 1734.279,
+      "end": 1739.679,
+      "text": "will be that we need to make sure that"
+    },
+    {
+      "start": 1737.039,
+      "end": 1741.559,
+      "text": "we first of all create our index in our"
+    },
+    {
+      "start": 1739.679,
+      "end": 1744.799,
+      "text": "pine cone right without this it will be"
+    },
+    {
+      "start": 1741.559,
+      "end": 1746.6,
+      "text": "of no use so here uh quickly what I will"
+    },
+    {
+      "start": 1744.799,
+      "end": 1749.039,
+      "text": "do I will just go ahead and import"
+    },
+    {
+      "start": 1746.6,
+      "end": 1750.4399999999998,
+      "text": "import OS since I have already imported"
+    },
+    {
+      "start": 1749.039,
+      "end": 1753.279,
+      "text": "pine cone so I will go ahead and write"
+    },
+    {
+      "start": 1750.44,
+      "end": 1758.159,
+      "text": "from Pine Cone"
+    },
+    {
+      "start": 1753.279,
+      "end": 1760.36,
+      "text": "import pine cone comma serverless spec"
+    },
+    {
+      "start": 1758.159,
+      "end": 1763.159,
+      "text": "okay and then I will just go ahead and"
+    },
+    {
+      "start": 1760.36,
+      "end": 1765.7199999999998,
+      "text": "create my index name now index name over"
+    },
+    {
+      "start": 1763.159,
+      "end": 1767.44,
+      "text": "here I will say hey this will be my"
+    },
+    {
+      "start": 1765.72,
+      "end": 1769.24,
+      "text": "hybrid search example and please make"
+    },
+    {
+      "start": 1767.44,
+      "end": 1770.559,
+      "text": "sure that you get give all this in a"
+    },
+    {
+      "start": 1769.24,
+      "end": 1773.0,
+      "text": "smaller letter otherwise you'll be"
+    },
+    {
+      "start": 1770.559,
+      "end": 1775.559,
+      "text": "getting an error so I will say hey"
+    },
+    {
+      "start": 1773.0,
+      "end": 1778.159,
+      "text": "hybrid search Lang chain pine cone okay"
+    },
+    {
+      "start": 1775.559,
+      "end": 1780.6789999999999,
+      "text": "so this will basically be my index name"
+    },
+    {
+      "start": 1778.159,
+      "end": 1782.96,
+      "text": "okay uh once I probably create the index"
+    },
+    {
+      "start": 1780.679,
+      "end": 1785.8400000000001,
+      "text": "name we have to"
+    },
+    {
+      "start": 1782.96,
+      "end": 1790.279,
+      "text": "initialize the pine"
+    },
+    {
+      "start": 1785.84,
+      "end": 1791.799,
+      "text": "cone client okay then for initializing"
+    },
+    {
+      "start": 1790.279,
+      "end": 1794.36,
+      "text": "the pine cone client I'll write PC is"
+    },
+    {
+      "start": 1791.799,
+      "end": 1796.799,
+      "text": "equal to Pine Cone and we will"
+    },
+    {
+      "start": 1794.36,
+      "end": 1799.08,
+      "text": "initialize with this API key that I have"
+    },
+    {
+      "start": 1796.799,
+      "end": 1801.279,
+      "text": "actually created right so over here is"
+    },
+    {
+      "start": 1799.08,
+      "end": 1803.399,
+      "text": "my API key you can create your own API"
+    },
+    {
+      "start": 1801.279,
+      "end": 1806.279,
+      "text": "Keys no need to use mine okay because as"
+    },
+    {
+      "start": 1803.399,
+      "end": 1809.2399999999998,
+      "text": "soon as I upload this video uh this will"
+    },
+    {
+      "start": 1806.279,
+      "end": 1812.0,
+      "text": "get deleted okay or I'll rotate the key"
+    },
+    {
+      "start": 1809.24,
+      "end": 1814.159,
+      "text": "then uh we will go ahead and create the"
+    },
+    {
+      "start": 1812.0,
+      "end": 1819.919,
+      "text": "index and here I'm going to basically"
+    },
+    {
+      "start": 1814.159,
+      "end": 1822.8400000000001,
+      "text": "write if index uncore name is not in PC"
+    },
+    {
+      "start": 1819.919,
+      "end": 1824.3600000000001,
+      "text": "do list indexes right we are listing all"
+    },
+    {
+      "start": 1822.84,
+      "end": 1826.9599999999998,
+      "text": "the indexes if this particular name is"
+    },
+    {
+      "start": 1824.36,
+      "end": 1829.4799999999998,
+      "text": "not there then only we should probably"
+    },
+    {
+      "start": 1826.96,
+      "end": 1834.279,
+      "text": "go ahead and create this so I will write"
+    },
+    {
+      "start": 1829.48,
+      "end": 1837.159,
+      "text": "pc. create index create uncore index and"
+    },
+    {
+      "start": 1834.279,
+      "end": 1839.72,
+      "text": "here I'm going to give my name is equal"
+    },
+    {
+      "start": 1837.159,
+      "end": 1841.519,
+      "text": "to index uncore name whatever index"
+    },
+    {
+      "start": 1839.72,
+      "end": 1843.799,
+      "text": "underscore name we have specifically"
+    },
+    {
+      "start": 1841.519,
+      "end": 1846.2,
+      "text": "taken uh whenever we try to create an"
+    },
+    {
+      "start": 1843.799,
+      "end": 1848.24,
+      "text": "index we also have to give our Dimension"
+    },
+    {
+      "start": 1846.2,
+      "end": 1849.8400000000001,
+      "text": "okay so here uh like what will be the"
+    },
+    {
+      "start": 1848.24,
+      "end": 1852.799,
+      "text": "vector Dimension so here I'm going to"
+    },
+    {
+      "start": 1849.84,
+      "end": 1855.799,
+      "text": "use the vector Dimension is equal to 384"
+    },
+    {
+      "start": 1852.799,
+      "end": 1857.519,
+      "text": "the reason is very simple uh the reason"
+    },
+    {
+      "start": 1855.799,
+      "end": 1860.72,
+      "text": "why I'm using and this is nothing but"
+    },
+    {
+      "start": 1857.519,
+      "end": 1863.76,
+      "text": "this is my dimension of dense model OKAY"
+    },
+    {
+      "start": 1860.72,
+      "end": 1866.48,
+      "text": "dense Vector the reason is very simple"
+    },
+    {
+      "start": 1863.76,
+      "end": 1867.799,
+      "text": "why I'm using 384 because U the"
+    },
+    {
+      "start": 1866.48,
+      "end": 1869.3990000000001,
+      "text": "embedding technique that I'm actually"
+    },
+    {
+      "start": 1867.799,
+      "end": 1871.2,
+      "text": "going to use is a hugging face embedding"
+    },
+    {
+      "start": 1869.399,
+      "end": 1873.36,
+      "text": "technique which is nothing but sentence"
+    },
+    {
+      "start": 1871.2,
+      "end": 1875.279,
+      "text": "Transformer that by default converts any"
+    },
+    {
+      "start": 1873.36,
+      "end": 1877.639,
+      "text": "text into 384 Dimension so that is the"
+    },
+    {
+      "start": 1875.279,
+      "end": 1880.84,
+      "text": "reason why I'm creating this particular"
+    },
+    {
+      "start": 1877.639,
+      "end": 1882.399,
+      "text": "index with this Dimension okay uh along"
+    },
+    {
+      "start": 1880.84,
+      "end": 1885.1999999999998,
+      "text": "with this the next thing that I'm going"
+    },
+    {
+      "start": 1882.399,
+      "end": 1887.4399999999998,
+      "text": "to use is metric uh so for my metric"
+    },
+    {
+      "start": 1885.2,
+      "end": 1888.559,
+      "text": "here I will be using a DOT product so"
+    },
+    {
+      "start": 1887.44,
+      "end": 1891.799,
+      "text": "these all in information you"
+    },
+    {
+      "start": 1888.559,
+      "end": 1894.08,
+      "text": "specifically get when you are creating"
+    },
+    {
+      "start": 1891.799,
+      "end": 1896.559,
+      "text": "an index let's say if I go to over here"
+    },
+    {
+      "start": 1894.08,
+      "end": 1899.0,
+      "text": "and create my index so it's ask you for"
+    },
+    {
+      "start": 1896.559,
+      "end": 1900.639,
+      "text": "the dimension right over here by default"
+    },
+    {
+      "start": 1899.0,
+      "end": 1902.2,
+      "text": "you can see metrix also it asks you"
+    },
+    {
+      "start": 1900.639,
+      "end": 1904.1589999999999,
+      "text": "whether you want to go with do product"
+    },
+    {
+      "start": 1902.2,
+      "end": 1905.44,
+      "text": "cosign and all right you can select any"
+    },
+    {
+      "start": 1904.159,
+      "end": 1908.279,
+      "text": "of this particular metrics so that is"
+    },
+    {
+      "start": 1905.44,
+      "end": 1909.88,
+      "text": "the reason why I am giving a metric over"
+    },
+    {
+      "start": 1908.279,
+      "end": 1913.039,
+      "text": "here right so I'm saying hey just go"
+    },
+    {
+      "start": 1909.88,
+      "end": 1915.8400000000001,
+      "text": "ahead and do the dot product okay and uh"
+    },
+    {
+      "start": 1913.039,
+      "end": 1918.559,
+      "text": "this dot product specifically I am going"
+    },
+    {
+      "start": 1915.84,
+      "end": 1920.399,
+      "text": "to do it for sparse values right"
+    },
+    {
+      "start": 1918.559,
+      "end": 1923.8799999999999,
+      "text": "sparse value"
+    },
+    {
+      "start": 1920.399,
+      "end": 1925.6,
+      "text": "supported only for do product because we"
+    },
+    {
+      "start": 1923.88,
+      "end": 1928.0390000000002,
+      "text": "creating this hybrid search for both of"
+    },
+    {
+      "start": 1925.6,
+      "end": 1931.24,
+      "text": "them right and then finally you have the"
+    },
+    {
+      "start": 1928.039,
+      "end": 1934.12,
+      "text": "spec is equal to uh for this particular"
+    },
+    {
+      "start": 1931.24,
+      "end": 1936.679,
+      "text": "spec I will be using serverless spec and"
+    },
+    {
+      "start": 1934.12,
+      "end": 1939.12,
+      "text": "I have to probably give my cloud"
+    },
+    {
+      "start": 1936.679,
+      "end": 1940.799,
+      "text": "information like AWS it is and which"
+    },
+    {
+      "start": 1939.12,
+      "end": 1943.799,
+      "text": "reason this also you'll be able to get"
+    },
+    {
+      "start": 1940.799,
+      "end": 1947.44,
+      "text": "inside that particular uh so I will just"
+    },
+    {
+      "start": 1943.799,
+      "end": 1949.639,
+      "text": "go ahead and write Us East one okay so"
+    },
+    {
+      "start": 1947.44,
+      "end": 1952.2,
+      "text": "if you remember remember uh just now we"
+    },
+    {
+      "start": 1949.639,
+      "end": 1954.559,
+      "text": "saw this particular index also so if I"
+    },
+    {
+      "start": 1952.2,
+      "end": 1956.919,
+      "text": "go ahead and see this here you have the"
+    },
+    {
+      "start": 1954.559,
+      "end": 1959.6789999999999,
+      "text": "serverless okay all the information is"
+    },
+    {
+      "start": 1956.919,
+      "end": 1961.5590000000002,
+      "text": "over here let's say and here you can"
+    },
+    {
+      "start": 1959.679,
+      "end": 1962.88,
+      "text": "select this us e one and all this is"
+    },
+    {
+      "start": 1961.559,
+      "end": 1965.279,
+      "text": "locked so that is the reason I've"
+    },
+    {
+      "start": 1962.88,
+      "end": 1967.44,
+      "text": "written this I've selected ews if you go"
+    },
+    {
+      "start": 1965.279,
+      "end": 1969.519,
+      "text": "ahead with Google you have to go ahead"
+    },
+    {
+      "start": 1967.44,
+      "end": 1971.279,
+      "text": "and write this right so this is just a"
+    },
+    {
+      "start": 1969.519,
+      "end": 1974.279,
+      "text": "starter plan to go ahead with so I'm"
+    },
+    {
+      "start": 1971.279,
+      "end": 1976.48,
+      "text": "going to use this free one okay perfect"
+    },
+    {
+      "start": 1974.279,
+      "end": 1978.279,
+      "text": "so let's see uh whether this gets"
+    },
+    {
+      "start": 1976.48,
+      "end": 1981.96,
+      "text": "executed so here I think everything"
+    },
+    {
+      "start": 1978.279,
+      "end": 1985.08,
+      "text": "looks good enough I have my index name"
+    },
+    {
+      "start": 1981.96,
+      "end": 1987.679,
+      "text": "uh pc. create and here I will just write"
+    },
+    {
+      "start": 1985.08,
+      "end": 1987.6789999999999,
+      "text": "comma"
+    },
+    {
+      "start": 1989.519,
+      "end": 1995.919,
+      "text": "okay okay just a second I will just"
+    },
+    {
+      "start": 1993.2,
+      "end": 1999.159,
+      "text": "update this entire"
+    },
+    {
+      "start": 1995.919,
+      "end": 2001.44,
+      "text": "thing okay perfect now this looks good"
+    },
+    {
+      "start": 1999.159,
+      "end": 2003.159,
+      "text": "exactly right uh I have all the details"
+    },
+    {
+      "start": 2001.44,
+      "end": 2004.519,
+      "text": "now let's go ahead and create this index"
+    },
+    {
+      "start": 2003.159,
+      "end": 2006.679,
+      "text": "so here you'll be able to see It'll take"
+    },
+    {
+      "start": 2004.519,
+      "end": 2007.96,
+      "text": "some amount of time to create this index"
+    },
+    {
+      "start": 2006.679,
+      "end": 2010.519,
+      "text": "but this is going to get created"
+    },
+    {
+      "start": 2007.96,
+      "end": 2012.44,
+      "text": "directly inside our Vector database now"
+    },
+    {
+      "start": 2010.519,
+      "end": 2015.559,
+      "text": "if I go ahead and click on index if I"
+    },
+    {
+      "start": 2012.44,
+      "end": 2018.279,
+      "text": "reload this I think it should get"
+    },
+    {
+      "start": 2015.559,
+      "end": 2020.44,
+      "text": "created okay so here is my hybrid search"
+    },
+    {
+      "start": 2018.279,
+      "end": 2022.36,
+      "text": "Lang chain Pine con and right now the"
+    },
+    {
+      "start": 2020.44,
+      "end": 2024.3990000000001,
+      "text": "dimension is 384 I don't have anything"
+    },
+    {
+      "start": 2022.36,
+      "end": 2026.1589999999999,
+      "text": "the metric is do product the reason of"
+    },
+    {
+      "start": 2024.399,
+      "end": 2028.6789999999999,
+      "text": "using metric is that I really want to"
+    },
+    {
+      "start": 2026.159,
+      "end": 2031.3600000000001,
+      "text": "support both uh that is for my sparse"
+    },
+    {
+      "start": 2028.679,
+      "end": 2033.799,
+      "text": "metrix and my Vector Index right so here"
+    },
+    {
+      "start": 2031.36,
+      "end": 2036.08,
+      "text": "I have my all details now let's go ahead"
+    },
+    {
+      "start": 2033.799,
+      "end": 2038.519,
+      "text": "and further do the more coding over here"
+    },
+    {
+      "start": 2036.08,
+      "end": 2041.1999999999998,
+      "text": "I've already created my API now let's"
+    },
+    {
+      "start": 2038.519,
+      "end": 2042.76,
+      "text": "click on my index and I will say hey PC"
+    },
+    {
+      "start": 2041.2,
+      "end": 2046.279,
+      "text": "do"
+    },
+    {
+      "start": 2042.76,
+      "end": 2048.76,
+      "text": "index okay pc. index and here I'm just"
+    },
+    {
+      "start": 2046.279,
+      "end": 2051.0,
+      "text": "going to give my index uncore name so"
+    },
+    {
+      "start": 2048.76,
+      "end": 2053.2400000000002,
+      "text": "let's go ahead and create see this index"
+    },
+    {
+      "start": 2051.0,
+      "end": 2055.079,
+      "text": "over here so this is my pine cone index"
+    },
+    {
+      "start": 2053.24,
+      "end": 2057.2,
+      "text": "at this particular memory location and"
+    },
+    {
+      "start": 2055.079,
+      "end": 2059.04,
+      "text": "obviously my index name that you'll be"
+    },
+    {
+      "start": 2057.2,
+      "end": 2060.48,
+      "text": "able to see over here that index name"
+    },
+    {
+      "start": 2059.04,
+      "end": 2065.32,
+      "text": "based on this index name I'm trying to"
+    },
+    {
+      "start": 2060.48,
+      "end": 2068.119,
+      "text": "take out that details okay uh now first"
+    },
+    {
+      "start": 2065.32,
+      "end": 2070.9190000000003,
+      "text": "thing first uh you know that right our"
+    },
+    {
+      "start": 2068.119,
+      "end": 2073.159,
+      "text": "entire project is a combination of two"
+    },
+    {
+      "start": 2070.919,
+      "end": 2075.2799999999997,
+      "text": "different one I'll try to create a"
+    },
+    {
+      "start": 2073.159,
+      "end": 2077.56,
+      "text": "vector embedding and the other one I"
+    },
+    {
+      "start": 2075.28,
+      "end": 2079.079,
+      "text": "will try to create a sparse metrix okay"
+    },
+    {
+      "start": 2077.56,
+      "end": 2081.48,
+      "text": "and that is what hybrid search basically"
+    },
+    {
+      "start": 2079.079,
+      "end": 2082.599,
+      "text": "tells you to do it right so first of all"
+    },
+    {
+      "start": 2081.48,
+      "end": 2086.28,
+      "text": "what I will do I will go ahead and"
+    },
+    {
+      "start": 2082.599,
+      "end": 2091.679,
+      "text": "import OS and uh here I will write from"
+    },
+    {
+      "start": 2086.28,
+      "end": 2093.5600000000004,
+      "text": "EnV import load. EnV okay and we will be"
+    },
+    {
+      "start": 2091.679,
+      "end": 2096.28,
+      "text": "loading all our environment variables"
+    },
+    {
+      "start": 2093.56,
+      "end": 2098.119,
+      "text": "right now just to give you an idea about"
+    },
+    {
+      "start": 2096.28,
+      "end": 2100.4,
+      "text": "the environment variables uh since I'm"
+    },
+    {
+      "start": 2098.119,
+      "end": 2102.359,
+      "text": "going to use an opsource embedding"
+    },
+    {
+      "start": 2100.4,
+      "end": 2103.64,
+      "text": "technique from Lang chain from hugging"
+    },
+    {
+      "start": 2102.359,
+      "end": 2106.2,
+      "text": "face itself so I will go ahead and"
+    },
+    {
+      "start": 2103.64,
+      "end": 2110.04,
+      "text": "import from Lang chain"
+    },
+    {
+      "start": 2106.2,
+      "end": 2113.56,
+      "text": "under hugging face okay I'm going to"
+    },
+    {
+      "start": 2110.04,
+      "end": 2115.96,
+      "text": "import my hugging face embeddings okay"
+    },
+    {
+      "start": 2113.56,
+      "end": 2118.48,
+      "text": "and here one of the embedding"
+    },
+    {
+      "start": 2115.96,
+      "end": 2120.56,
+      "text": "technique that we regularly use and with"
+    },
+    {
+      "start": 2118.48,
+      "end": 2122.2,
+      "text": "respect to the same dimensions I'll be"
+    },
+    {
+      "start": 2120.56,
+      "end": 2124.24,
+      "text": "using this hugging face embeddings and"
+    },
+    {
+      "start": 2122.2,
+      "end": 2128.4399999999996,
+      "text": "here I'm going to use my model uncore"
+    },
+    {
+      "start": 2124.24,
+      "end": 2132.1189999999997,
+      "text": "name is equal to all Dash mini this is a"
+    },
+    {
+      "start": 2128.44,
+      "end": 2136.359,
+      "text": "sentence Transformer LM"
+    },
+    {
+      "start": 2132.119,
+      "end": 2138.7200000000003,
+      "text": "L6 and version V2 okay so this will"
+    },
+    {
+      "start": 2136.359,
+      "end": 2140.88,
+      "text": "specifically be my"
+    },
+    {
+      "start": 2138.72,
+      "end": 2144.24,
+      "text": "embeddings so here let's go ahead and"
+    },
+    {
+      "start": 2140.88,
+      "end": 2146.7200000000003,
+      "text": "see the embeddings over here"
+    },
+    {
+      "start": 2144.24,
+      "end": 2147.8799999999997,
+      "text": "quickly uh yeah so my embedding is"
+    },
+    {
+      "start": 2146.72,
+      "end": 2149.16,
+      "text": "getting downloaded and this will"
+    },
+    {
+      "start": 2147.88,
+      "end": 2150.92,
+      "text": "probably take some amount of time and"
+    },
+    {
+      "start": 2149.16,
+      "end": 2154.1189999999997,
+      "text": "here you can see the word embedding is"
+    },
+    {
+      "start": 2150.92,
+      "end": 2156.04,
+      "text": "nothing but 384 please note uh before"
+    },
+    {
+      "start": 2154.119,
+      "end": 2157.92,
+      "text": "doing this if you directly execute it it"
+    },
+    {
+      "start": 2156.04,
+      "end": 2160.319,
+      "text": "will not work because the reason it is"
+    },
+    {
+      "start": 2157.92,
+      "end": 2163.0,
+      "text": "working because I have already imported"
+    },
+    {
+      "start": 2160.319,
+      "end": 2166.599,
+      "text": "os. nirn you have to create this hugging"
+    },
+    {
+      "start": 2163.0,
+      "end": 2168.119,
+      "text": "pH token right HF uncore token and this"
+    },
+    {
+      "start": 2166.599,
+      "end": 2169.96,
+      "text": "is already present in my environment"
+    },
+    {
+      "start": 2168.119,
+      "end": 2174.079,
+      "text": "variable so I will go ahead and write"
+    },
+    {
+      "start": 2169.96,
+      "end": 2177.079,
+      "text": "os. get EnV is nothing but HF token you"
+    },
+    {
+      "start": 2174.079,
+      "end": 2178.92,
+      "text": "have to execute along with this if you"
+    },
+    {
+      "start": 2177.079,
+      "end": 2180.079,
+      "text": "have not if you do not have the HF"
+    },
+    {
+      "start": 2178.92,
+      "end": 2182.2400000000002,
+      "text": "underscore token this will not get"
+    },
+    {
+      "start": 2180.079,
+      "end": 2184.44,
+      "text": "loaded okay so please make sure that you"
+    },
+    {
+      "start": 2182.24,
+      "end": 2187.0789999999997,
+      "text": "have this particular code perfect so"
+    },
+    {
+      "start": 2184.44,
+      "end": 2189.7200000000003,
+      "text": "this was it um now let's go ahead and"
+    },
+    {
+      "start": 2187.079,
+      "end": 2192.0,
+      "text": "execute it once again and now I will be"
+    },
+    {
+      "start": 2189.72,
+      "end": 2193.7999999999997,
+      "text": "having my entire hugging face embedding"
+    },
+    {
+      "start": 2192.0,
+      "end": 2196.04,
+      "text": "now this embedding technique is used to"
+    },
+    {
+      "start": 2193.8,
+      "end": 2198.92,
+      "text": "create your dense vectors uh if I go"
+    },
+    {
+      "start": 2196.04,
+      "end": 2202.079,
+      "text": "ahead and proceed further uh for my"
+    },
+    {
+      "start": 2198.92,
+      "end": 2207.839,
+      "text": "sparse metrix I'm going to use one more"
+    },
+    {
+      "start": 2202.079,
+      "end": 2210.48,
+      "text": "that is pine cone do spine concore text"
+    },
+    {
+      "start": 2207.839,
+      "end": 2213.68,
+      "text": "for my sparse there is a there is there"
+    },
+    {
+      "start": 2210.48,
+      "end": 2216.8,
+      "text": "is an encoder which is called as"
+    },
+    {
+      "start": 2213.68,
+      "end": 2220.0,
+      "text": "BM 25 encoder now this particular"
+    },
+    {
+      "start": 2216.8,
+      "end": 2222.3590000000004,
+      "text": "encoder uses is TF IDF by default okay"
+    },
+    {
+      "start": 2220.0,
+      "end": 2224.079,
+      "text": "TF IDF techniques so here I'm going to"
+    },
+    {
+      "start": 2222.359,
+      "end": 2228.16,
+      "text": "write"
+    },
+    {
+      "start": 2224.079,
+      "end": 2229.5600000000004,
+      "text": "pf25 uncore encoder okay is equal to"
+    },
+    {
+      "start": 2228.16,
+      "end": 2232.68,
+      "text": "nothing but I will just go ahead and"
+    },
+    {
+      "start": 2229.56,
+      "end": 2234.72,
+      "text": "initialize this encoder and I will say"
+    },
+    {
+      "start": 2232.68,
+      "end": 2237.839,
+      "text": "hey use the default one which is nothing"
+    },
+    {
+      "start": 2234.72,
+      "end": 2240.68,
+      "text": "but TF IDF okay and this basically"
+    },
+    {
+      "start": 2237.839,
+      "end": 2242.48,
+      "text": "becomes my bf25 encoder okay and this is"
+    },
+    {
+      "start": 2240.68,
+      "end": 2244.3999999999996,
+      "text": "responsible in doing the sparse metrix"
+    },
+    {
+      "start": 2242.48,
+      "end": 2248.64,
+      "text": "conversion for any queries or for any"
+    },
+    {
+      "start": 2244.4,
+      "end": 2250.92,
+      "text": "text okay now uh I I hope uh you are"
+    },
+    {
+      "start": 2248.64,
+      "end": 2255.0789999999997,
+      "text": "very much clear with all these things"
+    },
+    {
+      "start": 2250.92,
+      "end": 2257.4,
+      "text": "now and you are able to probably do all"
+    },
+    {
+      "start": 2255.079,
+      "end": 2259.92,
+      "text": "all these amazing stuffs and all right"
+    },
+    {
+      "start": 2257.4,
+      "end": 2261.839,
+      "text": "now I will try to create some sentences"
+    },
+    {
+      "start": 2259.92,
+      "end": 2265.2000000000003,
+      "text": "let's go ahead and create some sentences"
+    },
+    {
+      "start": 2261.839,
+      "end": 2267.359,
+      "text": "and this sentences will be a list okay"
+    },
+    {
+      "start": 2265.2,
+      "end": 2269.56,
+      "text": "and just to show you one example I will"
+    },
+    {
+      "start": 2267.359,
+      "end": 2271.64,
+      "text": "just be creating some senten over here"
+    },
+    {
+      "start": 2269.56,
+      "end": 2274.2799999999997,
+      "text": "with respect to this particular list I"
+    },
+    {
+      "start": 2271.64,
+      "end": 2277.56,
+      "text": "will have this three sentences let's say"
+    },
+    {
+      "start": 2274.28,
+      "end": 2280.5600000000004,
+      "text": "uh in 2023 I visited Paris in 2022 I"
+    },
+    {
+      "start": 2277.56,
+      "end": 2283.48,
+      "text": "visited New York and in 20 uh and 2021 I"
+    },
+    {
+      "start": 2280.56,
+      "end": 2285.92,
+      "text": "visited orlana okay now I will take all"
+    },
+    {
+      "start": 2283.48,
+      "end": 2288.119,
+      "text": "this information and quickly I will go"
+    },
+    {
+      "start": 2285.92,
+      "end": 2291.76,
+      "text": "ahead and write"
+    },
+    {
+      "start": 2288.119,
+      "end": 2295.119,
+      "text": "bm25 uncore incoder dot we just going to"
+    },
+    {
+      "start": 2291.76,
+      "end": 2298.7200000000003,
+      "text": "fit on this entire sentences okay so"
+    },
+    {
+      "start": 2295.119,
+      "end": 2305.0,
+      "text": "once we do this uh in short we just"
+    },
+    {
+      "start": 2298.72,
+      "end": 2308.7599999999998,
+      "text": "applying TF IDF values on this sentences"
+    },
+    {
+      "start": 2305.0,
+      "end": 2311.24,
+      "text": "okay perfect so once I do this fit along"
+    },
+    {
+      "start": 2308.76,
+      "end": 2313.44,
+      "text": "with this what I will do I will"
+    },
+    {
+      "start": 2311.24,
+      "end": 2319.0789999999997,
+      "text": "store"
+    },
+    {
+      "start": 2313.44,
+      "end": 2322.16,
+      "text": "the values to a Json file okay so here"
+    },
+    {
+      "start": 2319.079,
+      "end": 2326.76,
+      "text": "uh I will just go ahead and write PF BM"
+    },
+    {
+      "start": 2322.16,
+      "end": 2328.52,
+      "text": "BM 25 incoder do dump okay now I'm going"
+    },
+    {
+      "start": 2326.76,
+      "end": 2330.599,
+      "text": "to basically dump"
+    },
+    {
+      "start": 2328.52,
+      "end": 2335.92,
+      "text": "my"
+    },
+    {
+      "start": 2330.599,
+      "end": 2337.96,
+      "text": "BM 25 uncore values in the form of Json"
+    },
+    {
+      "start": 2335.92,
+      "end": 2340.119,
+      "text": "okay"
+    },
+    {
+      "start": 2337.96,
+      "end": 2342.2400000000002,
+      "text": "and here you'll be able to see that I'm"
+    },
+    {
+      "start": 2340.119,
+      "end": 2344.599,
+      "text": "actually dumping this entire information"
+    },
+    {
+      "start": 2342.24,
+      "end": 2346.52,
+      "text": "you can also go ahead and load this just"
+    },
+    {
+      "start": 2344.599,
+      "end": 2350.0,
+      "text": "to make sure that you have that entire"
+    },
+    {
+      "start": 2346.52,
+      "end": 2352.88,
+      "text": "dump okay and you can also load it so"
+    },
+    {
+      "start": 2350.0,
+      "end": 2355.079,
+      "text": "has no attribute dumpy okay it was dump"
+    },
+    {
+      "start": 2352.88,
+      "end": 2356.359,
+      "text": "no worries okay so now here you can see"
+    },
+    {
+      "start": 2355.079,
+      "end": 2359.76,
+      "text": "that I have my encoder and this is"
+    },
+    {
+      "start": 2356.359,
+      "end": 2361.7999999999997,
+      "text": "specifically for sparse metrix okay um"
+    },
+    {
+      "start": 2359.76,
+      "end": 2364.3190000000004,
+      "text": "now one more thing that you will be able"
+    },
+    {
+      "start": 2361.8,
+      "end": 2366.2400000000002,
+      "text": "to see over here is that uh once I do"
+    },
+    {
+      "start": 2364.319,
+      "end": 2367.7599999999998,
+      "text": "this particular sparse metric stump so"
+    },
+    {
+      "start": 2366.24,
+      "end": 2371.0789999999997,
+      "text": "I've actually created The Spar metrix"
+    },
+    {
+      "start": 2367.76,
+      "end": 2373.8,
+      "text": "for this right now let's go ahead and"
+    },
+    {
+      "start": 2371.079,
+      "end": 2375.7200000000003,
+      "text": "create my Retriever and this retriever"
+    },
+    {
+      "start": 2373.8,
+      "end": 2378.079,
+      "text": "will be important because with the help"
+    },
+    {
+      "start": 2375.72,
+      "end": 2380.7599999999998,
+      "text": "of this specific retriever only I will"
+    },
+    {
+      "start": 2378.079,
+      "end": 2383.0,
+      "text": "have the combination of both uh the"
+    },
+    {
+      "start": 2380.76,
+      "end": 2385.3190000000004,
+      "text": "embedding techniques and uh obviously"
+    },
+    {
+      "start": 2383.0,
+      "end": 2387.28,
+      "text": "the sparse embedding techniques right so"
+    },
+    {
+      "start": 2385.319,
+      "end": 2389.92,
+      "text": "for that I will go ahead and create this"
+    },
+    {
+      "start": 2387.28,
+      "end": 2391.599,
+      "text": "pine cone hybrid search Retriever and"
+    },
+    {
+      "start": 2389.92,
+      "end": 2393.2400000000002,
+      "text": "here I'm going to use my embeddings is"
+    },
+    {
+      "start": 2391.599,
+      "end": 2394.76,
+      "text": "equal to whatever embedding technique I"
+    },
+    {
+      "start": 2393.24,
+      "end": 2397.5989999999997,
+      "text": "have used that is nothing but hugging"
+    },
+    {
+      "start": 2394.76,
+      "end": 2401.0400000000004,
+      "text": "face embeddings and then my sparts"
+    },
+    {
+      "start": 2397.599,
+      "end": 2404.6800000000003,
+      "text": "encoder which will be assigned to my b b"
+    },
+    {
+      "start": 2401.04,
+      "end": 2406.88,
+      "text": "b bm25 encoder and I have to also"
+    },
+    {
+      "start": 2404.68,
+      "end": 2409.2,
+      "text": "specify my Index right so this will"
+    },
+    {
+      "start": 2406.88,
+      "end": 2411.359,
+      "text": "basically be my index now once I execute"
+    },
+    {
+      "start": 2409.2,
+      "end": 2412.96,
+      "text": "this this is my retriever now with the"
+    },
+    {
+      "start": 2411.359,
+      "end": 2415.68,
+      "text": "help of this particular retriever it"
+    },
+    {
+      "start": 2412.96,
+      "end": 2417.2400000000002,
+      "text": "supports both embedding the vector dense"
+    },
+    {
+      "start": 2415.68,
+      "end": 2420.1189999999997,
+      "text": "embedding technique and along with that"
+    },
+    {
+      "start": 2417.24,
+      "end": 2421.64,
+      "text": "the sparse Matrix okay so this is my"
+    },
+    {
+      "start": 2420.119,
+      "end": 2425.0,
+      "text": "retriever so I'll just go ahead and"
+    },
+    {
+      "start": 2421.64,
+      "end": 2426.16,
+      "text": "display my retriever okay so this is my"
+    },
+    {
+      "start": 2425.0,
+      "end": 2427.88,
+      "text": "Retriever and this is the entire"
+    },
+    {
+      "start": 2426.16,
+      "end": 2430.72,
+      "text": "information that you'll be able to see"
+    },
+    {
+      "start": 2427.88,
+      "end": 2433.079,
+      "text": "right so finally uh let's do one thing"
+    },
+    {
+      "start": 2430.72,
+      "end": 2435.64,
+      "text": "let's quickly go ahead and add all the"
+    },
+    {
+      "start": 2433.079,
+      "end": 2437.4,
+      "text": "text that I want right so I will say hey"
+    },
+    {
+      "start": 2435.64,
+      "end": 2439.48,
+      "text": "we will go ahead and add the text and"
+    },
+    {
+      "start": 2437.4,
+      "end": 2441.92,
+      "text": "the text that we going to add is all my"
+    },
+    {
+      "start": 2439.48,
+      "end": 2444.92,
+      "text": "sentences inside my Index right so what"
+    },
+    {
+      "start": 2441.92,
+      "end": 2448.8,
+      "text": "are my sentences here you go I will copy"
+    },
+    {
+      "start": 2444.92,
+      "end": 2450.52,
+      "text": "this and I will paste it over here okay"
+    },
+    {
+      "start": 2448.8,
+      "end": 2451.8,
+      "text": "so let's go ahead and execute this now"
+    },
+    {
+      "start": 2450.52,
+      "end": 2454.48,
+      "text": "here you'll be able to see that it'll"
+    },
+    {
+      "start": 2451.8,
+      "end": 2456.88,
+      "text": "get inserted inside that particular"
+    },
+    {
+      "start": 2454.48,
+      "end": 2459.599,
+      "text": "Index right the index uh the pine con"
+    },
+    {
+      "start": 2456.88,
+      "end": 2461.7200000000003,
+      "text": "index we have created now it's time we"
+    },
+    {
+      "start": 2459.599,
+      "end": 2463.079,
+      "text": "can probably retrieve any results first"
+    },
+    {
+      "start": 2461.72,
+      "end": 2464.9599999999996,
+      "text": "of all let's see whether it has got"
+    },
+    {
+      "start": 2463.079,
+      "end": 2467.3590000000004,
+      "text": "inserted or not so if I go over here"
+    },
+    {
+      "start": 2464.96,
+      "end": 2468.96,
+      "text": "here you can see see it's loading and"
+    },
+    {
+      "start": 2467.359,
+      "end": 2473.16,
+      "text": "all these three sentences are now"
+    },
+    {
+      "start": 2468.96,
+      "end": 2475.96,
+      "text": "available and this is all 384 Dimensions"
+    },
+    {
+      "start": 2473.16,
+      "end": 2478.7599999999998,
+      "text": "right so this one in 2021 I visited"
+    },
+    {
+      "start": 2475.96,
+      "end": 2481.44,
+      "text": "context Orleans in 2023 I visited New"
+    },
+    {
+      "start": 2478.76,
+      "end": 2483.1600000000003,
+      "text": "York Paris and all right now let's go"
+    },
+    {
+      "start": 2481.44,
+      "end": 2484.76,
+      "text": "ahead and ask some questions and this"
+    },
+    {
+      "start": 2483.16,
+      "end": 2487.96,
+      "text": "time it is going to use the combination"
+    },
+    {
+      "start": 2484.76,
+      "end": 2490.0400000000004,
+      "text": "of both right your vector d search and"
+    },
+    {
+      "start": 2487.96,
+      "end": 2491.359,
+      "text": "the other search so here I'll say with"
+    },
+    {
+      "start": 2490.04,
+      "end": 2496.68,
+      "text": "what"
+    },
+    {
+      "start": 2491.359,
+      "end": 2498.64,
+      "text": "city did I visit last okay so here"
+    },
+    {
+      "start": 2496.68,
+      "end": 2500.48,
+      "text": "you'll be able to see"
+    },
+    {
+      "start": 2498.64,
+      "end": 2503.92,
+      "text": "visit"
+    },
+    {
+      "start": 2500.48,
+      "end": 2508.04,
+      "text": "last so here you can see I in 20121 I"
+    },
+    {
+      "start": 2503.92,
+      "end": 2509.96,
+      "text": "visited New Orleans then New York then"
+    },
+    {
+      "start": 2508.04,
+      "end": 2511.68,
+      "text": "visited Paris all this page content is"
+    },
+    {
+      "start": 2509.96,
+      "end": 2515.119,
+      "text": "basically able to come over here and it"
+    },
+    {
+      "start": 2511.68,
+      "end": 2517.359,
+      "text": "is used both uh because this entire"
+    },
+    {
+      "start": 2515.119,
+      "end": 2519.839,
+      "text": "hybrid search retriever is using both"
+    },
+    {
+      "start": 2517.359,
+      "end": 2523.16,
+      "text": "Bings and the sparse metrics"
+    },
+    {
+      "start": 2519.839,
+      "end": 2526.0,
+      "text": "okay if I say"
+    },
+    {
+      "start": 2523.16,
+      "end": 2528.52,
+      "text": "recent so in 2021 all this information"
+    },
+    {
+      "start": 2526.0,
+      "end": 2529.52,
+      "text": "is basically coming up okay with city"
+    },
+    {
+      "start": 2528.52,
+      "end": 2533.64,
+      "text": "did I"
+    },
+    {
+      "start": 2529.52,
+      "end": 2535.56,
+      "text": "visit first okay so here you can see in"
+    },
+    {
+      "start": 2533.64,
+      "end": 2537.48,
+      "text": "2021 I visited you so all the"
+    },
+    {
+      "start": 2535.56,
+      "end": 2539.839,
+      "text": "information are basically you are able"
+    },
+    {
+      "start": 2537.48,
+      "end": 2541.44,
+      "text": "to see it over here but internally it is"
+    },
+    {
+      "start": 2539.839,
+      "end": 2544.52,
+      "text": "taking a combination of both hybrid"
+    },
+    {
+      "start": 2541.44,
+      "end": 2546.52,
+      "text": "search and uh this is what is an amazing"
+    },
+    {
+      "start": 2544.52,
+      "end": 2547.96,
+      "text": "example which you can also go ahead and"
+    },
+    {
+      "start": 2546.52,
+      "end": 2549.52,
+      "text": "do it okay"
+    },
+    {
+      "start": 2547.96,
+      "end": 2552.7200000000003,
+      "text": "so I hope uh you like this particular"
+    },
+    {
+      "start": 2549.52,
+      "end": 2555.0,
+      "text": "video uh I will see you all in the next"
+    },
+    {
+      "start": 2552.72,
+      "end": 2555.0,
+      "text": "video thank you take care bye-bye"
+    }
+  ]
+}

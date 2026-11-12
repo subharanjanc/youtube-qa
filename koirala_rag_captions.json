@@ -1,0 +1,2773 @@
+{
+  "video_id": "MCHOam13JSk",
+  "title": "100% Local RAG Using LangChain, DeepSeek, Ollama, Qdrant, Docling, Huggingface & Chainlit",
+  "channel": "Data Science Basics | AI",
+  "trainer": "Sudarshan Koirala",
+  "topic": "RAG",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 1334.0,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 4.319,
+      "text": "hello guys welcome back in this video"
+    },
+    {
+      "start": 1.839,
+      "end": 6.6,
+      "text": "Let's create a fully local retrial"
+    },
+    {
+      "start": 4.319,
+      "end": 9.719000000000001,
+      "text": "augmented generation rag application"
+    },
+    {
+      "start": 6.6,
+      "end": 11.2,
+      "text": "using the dips and that will be using"
+    },
+    {
+      "start": 9.719,
+      "end": 13.12,
+      "text": "from the AMA right so this is the"
+    },
+    {
+      "start": 11.2,
+      "end": 15.639,
+      "text": "architecture that we will be following"
+    },
+    {
+      "start": 13.12,
+      "end": 18.119,
+      "text": "on the top we will be using dock Ling"
+    },
+    {
+      "start": 15.639,
+      "end": 20.32,
+      "text": "which is one of the Python package that"
+    },
+    {
+      "start": 18.119,
+      "end": 22.16,
+      "text": "we can use in order to extract the"
+    },
+    {
+      "start": 20.32,
+      "end": 24.92,
+      "text": "information from the PDF and that is"
+    },
+    {
+      "start": 22.16,
+      "end": 27.48,
+      "text": "really good package after we use lock"
+    },
+    {
+      "start": 24.92,
+      "end": 29.279000000000003,
+      "text": "link the PDF will be extracted pages"
+    },
+    {
+      "start": 27.48,
+      "end": 31.519,
+      "text": "from the PDF we'll split that into"
+    },
+    {
+      "start": 29.279,
+      "end": 33.519999999999996,
+      "text": "different chunks in the embedding model"
+    },
+    {
+      "start": 31.519,
+      "end": 35.96,
+      "text": "we will be using the hugging face"
+    },
+    {
+      "start": 33.52,
+      "end": 38.440000000000005,
+      "text": "embeddings once we have the embeddings"
+    },
+    {
+      "start": 35.96,
+      "end": 40.32,
+      "text": "we'll store that into a knowledge base"
+    },
+    {
+      "start": 38.44,
+      "end": 43.44,
+      "text": "and in this case I will be using"
+    },
+    {
+      "start": 40.32,
+      "end": 46.399,
+      "text": "quadrant with Docker so we have the"
+    },
+    {
+      "start": 43.44,
+      "end": 48.16,
+      "text": "quadrant running locally in our machine"
+    },
+    {
+      "start": 46.399,
+      "end": 50.480000000000004,
+      "text": "and then when we ask the question for"
+    },
+    {
+      "start": 48.16,
+      "end": 52.48,
+      "text": "example here we use the same embedding"
+    },
+    {
+      "start": 50.48,
+      "end": 54.8,
+      "text": "models the embedding is done the"
+    },
+    {
+      "start": 52.48,
+      "end": 57.64,
+      "text": "semantic sorts is done from the"
+    },
+    {
+      "start": 54.8,
+      "end": 60.0,
+      "text": "knowledge base and we get the uh results"
+    },
+    {
+      "start": 57.64,
+      "end": 62.6,
+      "text": "out of it and that result is passed in"
+    },
+    {
+      "start": 60.0,
+      "end": 64.519,
+      "text": "into the deeps then we'll get the answer"
+    },
+    {
+      "start": 62.6,
+      "end": 66.119,
+      "text": "based on the question we ask and the"
+    },
+    {
+      "start": 64.519,
+      "end": 68.72,
+      "text": "context out of it so this looks"
+    },
+    {
+      "start": 66.119,
+      "end": 71.2,
+      "text": "complicated but at the end what we will"
+    },
+    {
+      "start": 68.72,
+      "end": 73.96,
+      "text": "be seeing is something like this for the"
+    },
+    {
+      "start": 71.2,
+      "end": 75.52000000000001,
+      "text": "UI part I'm using the chain lead in"
+    },
+    {
+      "start": 73.96,
+      "end": 78.08,
+      "text": "order to orchestrate all the different"
+    },
+    {
+      "start": 75.52,
+      "end": 79.79899999999999,
+      "text": "things and Lang chain is used under the"
+    },
+    {
+      "start": 78.08,
+      "end": 82.92,
+      "text": "hood you can see I'm asking a question"
+    },
+    {
+      "start": 79.799,
+      "end": 85.52000000000001,
+      "text": "here and it does different steps there"
+    },
+    {
+      "start": 82.92,
+      "end": 87.84,
+      "text": "is the thinking part which is good uh"
+    },
+    {
+      "start": 85.52,
+      "end": 90.15899999999999,
+      "text": "the dips model so it first goes through"
+    },
+    {
+      "start": 87.84,
+      "end": 92.96000000000001,
+      "text": "all the informations before it provides"
+    },
+    {
+      "start": 90.159,
+      "end": 95.04,
+      "text": "us the answer and at the end you can see"
+    },
+    {
+      "start": 92.96,
+      "end": 97.55999999999999,
+      "text": "here is the thinking process is done"
+    },
+    {
+      "start": 95.04,
+      "end": 100.07900000000001,
+      "text": "then it provides us the answer this will"
+    },
+    {
+      "start": 97.56,
+      "end": 103.60000000000001,
+      "text": "be a in to end implementation of rag"
+    },
+    {
+      "start": 100.079,
+      "end": 105.83999999999999,
+      "text": "fully local using Advanced tools so that"
+    },
+    {
+      "start": 103.6,
+      "end": 109.24,
+      "text": "you can take benefit of the tools"
+    },
+    {
+      "start": 105.84,
+      "end": 111.60000000000001,
+      "text": "available without connecting it via any"
+    },
+    {
+      "start": 109.24,
+      "end": 113.32,
+      "text": "apis let's get started okay I have"
+    },
+    {
+      "start": 111.6,
+      "end": 115.6,
+      "text": "already uploaded the code into the"
+    },
+    {
+      "start": 113.32,
+      "end": 117.6,
+      "text": "GitHub so you can go inside YouTube I"
+    },
+    {
+      "start": 115.6,
+      "end": 119.91999999999999,
+      "text": "have provided the steps how you can"
+    },
+    {
+      "start": 117.6,
+      "end": 121.64,
+      "text": "follow along with me in the video please"
+    },
+    {
+      "start": 119.92,
+      "end": 123.159,
+      "text": "clone this repository I have already"
+    },
+    {
+      "start": 121.64,
+      "end": 125.84,
+      "text": "cloned here you can see this is the"
+    },
+    {
+      "start": 123.159,
+      "end": 129.84,
+      "text": "chain lit and all these informations are"
+    },
+    {
+      "start": 125.84,
+      "end": 132.28,
+      "text": "here and I'm already running this in my"
+    },
+    {
+      "start": 129.84,
+      "end": 134.44,
+      "text": "VSS code if I go here this is the same"
+    },
+    {
+      "start": 132.28,
+      "end": 137.08,
+      "text": "instructions and I have all the code in"
+    },
+    {
+      "start": 134.44,
+      "end": 139.48,
+      "text": "the vs code right so first thing first"
+    },
+    {
+      "start": 137.08,
+      "end": 141.76000000000002,
+      "text": "in order to use this I'm trying to First"
+    },
+    {
+      "start": 139.48,
+      "end": 143.23899999999998,
+      "text": "ingest the documents so that whenever"
+    },
+    {
+      "start": 141.76,
+      "end": 146.07999999999998,
+      "text": "you run the application you don't need"
+    },
+    {
+      "start": 143.239,
+      "end": 148.44,
+      "text": "to upload the PDF and all the steps does"
+    },
+    {
+      "start": 146.08,
+      "end": 150.92000000000002,
+      "text": "not need to be done there once you"
+    },
+    {
+      "start": 148.44,
+      "end": 152.84,
+      "text": "ingest it you can ask the questions out"
+    },
+    {
+      "start": 150.92,
+      "end": 154.79999999999998,
+      "text": "of it but before that let me go to the"
+    },
+    {
+      "start": 152.84,
+      "end": 156.4,
+      "text": "read me because there is some initial"
+    },
+    {
+      "start": 154.8,
+      "end": 159.28,
+      "text": "steps that you need to do okay this is"
+    },
+    {
+      "start": 156.4,
+      "end": 161.159,
+      "text": "the normal cloning process you can use"
+    },
+    {
+      "start": 159.28,
+      "end": 163.8,
+      "text": "any other python package manager but I'm"
+    },
+    {
+      "start": 161.159,
+      "end": 166.0,
+      "text": "using UV to handle the virtual"
+    },
+    {
+      "start": 163.8,
+      "end": 168.28,
+      "text": "environments and so on if you are new to"
+    },
+    {
+      "start": 166.0,
+      "end": 170.72,
+      "text": "this you can refer to this videos but we"
+    },
+    {
+      "start": 168.28,
+      "end": 172.239,
+      "text": "need to install Docker locally if you"
+    },
+    {
+      "start": 170.72,
+      "end": 174.64,
+      "text": "don't have Docker you need to install"
+    },
+    {
+      "start": 172.239,
+      "end": 177.20000000000002,
+      "text": "Docker I have already install Docker and"
+    },
+    {
+      "start": 174.64,
+      "end": 179.319,
+      "text": "here is the link first we need to run"
+    },
+    {
+      "start": 177.2,
+      "end": 181.51899999999998,
+      "text": "the quadrant here you can see I'm"
+    },
+    {
+      "start": 179.319,
+      "end": 183.599,
+      "text": "already running this quadrant with this"
+    },
+    {
+      "start": 181.519,
+      "end": 185.4,
+      "text": "command as you can see here this is the"
+    },
+    {
+      "start": 183.599,
+      "end": 188.51899999999998,
+      "text": "same command which I have provided here"
+    },
+    {
+      "start": 185.4,
+      "end": 191.44,
+      "text": "please run that and you will be up with"
+    },
+    {
+      "start": 188.519,
+      "end": 194.31900000000002,
+      "text": "the docker right and then down here I'm"
+    },
+    {
+      "start": 191.44,
+      "end": 196.56,
+      "text": "saying quadrant URL Local Host because"
+    },
+    {
+      "start": 194.319,
+      "end": 199.76,
+      "text": "when you run the quadrant locally it"
+    },
+    {
+      "start": 196.56,
+      "end": 203.08,
+      "text": "will provide us the Local Host as I have"
+    },
+    {
+      "start": 199.76,
+      "end": 205.519,
+      "text": "already done this rename env. example to"
+    },
+    {
+      "start": 203.08,
+      "end": 208.68,
+      "text": "EnV so I have already renamed this and"
+    },
+    {
+      "start": 205.519,
+      "end": 211.59900000000002,
+      "text": "inside this I have the same URL Local"
+    },
+    {
+      "start": 208.68,
+      "end": 213.92000000000002,
+      "text": "Host once that is done we are good to go"
+    },
+    {
+      "start": 211.599,
+      "end": 216.07999999999998,
+      "text": "with this part and now let's go and see"
+    },
+    {
+      "start": 213.92,
+      "end": 217.64,
+      "text": "the ingesting part then we run the"
+    },
+    {
+      "start": 216.08,
+      "end": 219.519,
+      "text": "application with the chain lad first"
+    },
+    {
+      "start": 217.64,
+      "end": 221.599,
+      "text": "thing first with the inest by the way"
+    },
+    {
+      "start": 219.519,
+      "end": 224.68,
+      "text": "I'm not going through other aspects of"
+    },
+    {
+      "start": 221.599,
+      "end": 226.319,
+      "text": "quadrant UV docking and so on because I"
+    },
+    {
+      "start": 224.68,
+      "end": 228.56,
+      "text": "have already created different videos"
+    },
+    {
+      "start": 226.319,
+      "end": 230.79899999999998,
+      "text": "related to those if you want more"
+    },
+    {
+      "start": 228.56,
+      "end": 232.68,
+      "text": "informations you can go there and also I"
+    },
+    {
+      "start": 230.799,
+      "end": 235.079,
+      "text": "will provide the link in the description"
+    },
+    {
+      "start": 232.68,
+      "end": 237.48000000000002,
+      "text": "of the video some of the important links"
+    },
+    {
+      "start": 235.079,
+      "end": 240.04000000000002,
+      "text": "will be here for example if you want to"
+    },
+    {
+      "start": 237.48,
+      "end": 242.159,
+      "text": "create more advanced functionalities out"
+    },
+    {
+      "start": 240.04,
+      "end": 244.0,
+      "text": "of what I'm showing here you can refer"
+    },
+    {
+      "start": 242.159,
+      "end": 245.79899999999998,
+      "text": "to the official document so yeah first"
+    },
+    {
+      "start": 244.0,
+      "end": 248.319,
+      "text": "thing first let's go with the ingesting"
+    },
+    {
+      "start": 245.799,
+      "end": 250.0,
+      "text": "part so here these are the normal"
+    },
+    {
+      "start": 248.319,
+      "end": 252.35999999999999,
+      "text": "importing things that I'm doing here"
+    },
+    {
+      "start": 250.0,
+      "end": 254.799,
+      "text": "from Lang chain we need to have this"
+    },
+    {
+      "start": 252.36,
+      "end": 256.639,
+      "text": "markdown splitter and hugging face we"
+    },
+    {
+      "start": 254.799,
+      "end": 258.32,
+      "text": "have the hugging face embeddings from"
+    },
+    {
+      "start": 256.639,
+      "end": 260.759,
+      "text": "the quadrant we have the quadrant Vector"
+    },
+    {
+      "start": 258.32,
+      "end": 262.36,
+      "text": "story and so on right URL and you can"
+    },
+    {
+      "start": 260.759,
+      "end": 265.32,
+      "text": "see this is what it is loading the"
+    },
+    {
+      "start": 262.36,
+      "end": 267.36,
+      "text": "environment variables from theb I'm just"
+    },
+    {
+      "start": 265.32,
+      "end": 269.71999999999997,
+      "text": "having one now but if you have many it's"
+    },
+    {
+      "start": 267.36,
+      "end": 272.8,
+      "text": "a good practice of having that into the"
+    },
+    {
+      "start": 269.72,
+      "end": 275.32000000000005,
+      "text": "EnV and you can just uh uh use that into"
+    },
+    {
+      "start": 272.8,
+      "end": 277.32,
+      "text": "your python code in this case I'm using"
+    },
+    {
+      "start": 275.32,
+      "end": 279.0,
+      "text": "the ined model ID as sentence"
+    },
+    {
+      "start": 277.32,
+      "end": 281.71999999999997,
+      "text": "Transformer and this is the model that"
+    },
+    {
+      "start": 279.0,
+      "end": 284.84,
+      "text": "I'm using export type and the file path"
+    },
+    {
+      "start": 281.72,
+      "end": 286.96000000000004,
+      "text": "I'm taking the example of DPS R1 PDF the"
+    },
+    {
+      "start": 284.84,
+      "end": 289.56,
+      "text": "same model this is what I will be"
+    },
+    {
+      "start": 286.96,
+      "end": 291.59999999999997,
+      "text": "providing as the source of document for"
+    },
+    {
+      "start": 289.56,
+      "end": 295.0,
+      "text": "us to do the rag applications and we'll"
+    },
+    {
+      "start": 291.6,
+      "end": 297.36,
+      "text": "be asking questions out of it later so"
+    },
+    {
+      "start": 295.0,
+      "end": 299.479,
+      "text": "now I'll go back to ingest I'll make"
+    },
+    {
+      "start": 297.36,
+      "end": 301.24,
+      "text": "this little bit bigger so yeah let's see"
+    },
+    {
+      "start": 299.479,
+      "end": 302.919,
+      "text": "what what are the steps we need to do to"
+    },
+    {
+      "start": 301.24,
+      "end": 305.12,
+      "text": "create the vector database there is a"
+    },
+    {
+      "start": 302.919,
+      "end": 307.68,
+      "text": "function called uh create uh Vector"
+    },
+    {
+      "start": 305.12,
+      "end": 310.32,
+      "text": "database inside that as you can see I'm"
+    },
+    {
+      "start": 307.68,
+      "end": 312.639,
+      "text": "using the dock link loader inside that"
+    },
+    {
+      "start": 310.32,
+      "end": 316.36,
+      "text": "you need to pass the file in this case"
+    },
+    {
+      "start": 312.639,
+      "end": 319.039,
+      "text": "our dips R1 PDF export type and I'm"
+    },
+    {
+      "start": 316.36,
+      "end": 321.47900000000004,
+      "text": "passing the export type as doc chunks"
+    },
+    {
+      "start": 319.039,
+      "end": 323.96,
+      "text": "then you need to pass the chunker hybrid"
+    },
+    {
+      "start": 321.479,
+      "end": 326.15999999999997,
+      "text": "chunker and I'm passing the tokenizer as"
+    },
+    {
+      "start": 323.96,
+      "end": 328.919,
+      "text": "ined model ID so this is what the dock"
+    },
+    {
+      "start": 326.16,
+      "end": 330.319,
+      "text": "Ling is good into it so you can pass all"
+    },
+    {
+      "start": 328.919,
+      "end": 332.31899999999996,
+      "text": "the information"
+    },
+    {
+      "start": 330.319,
+      "end": 334.24,
+      "text": "already inside the duckling loader so it"
+    },
+    {
+      "start": 332.319,
+      "end": 337.0,
+      "text": "does thing for you it's just a simple"
+    },
+    {
+      "start": 334.24,
+      "end": 338.72,
+      "text": "thing duckling goes to load right and"
+    },
+    {
+      "start": 337.0,
+      "end": 340.4,
+      "text": "this is the second part I'm saying here"
+    },
+    {
+      "start": 338.72,
+      "end": 342.68,
+      "text": "determining the splints this is directly"
+    },
+    {
+      "start": 340.4,
+      "end": 345.52,
+      "text": "from the documentations if the export"
+    },
+    {
+      "start": 342.68,
+      "end": 348.36,
+      "text": "type is doc. Chun equals to Doling"
+    },
+    {
+      "start": 345.52,
+      "end": 350.88,
+      "text": "documents right but if the export type"
+    },
+    {
+      "start": 348.36,
+      "end": 353.40000000000003,
+      "text": "is marked down and we we mention that"
+    },
+    {
+      "start": 350.88,
+      "end": 355.08,
+      "text": "okay header to split on heading one"
+    },
+    {
+      "start": 353.4,
+      "end": 357.08,
+      "text": "heading two heading three this is done"
+    },
+    {
+      "start": 355.08,
+      "end": 358.96,
+      "text": "here else you can see if this is not"
+    },
+    {
+      "start": 357.08,
+      "end": 360.919,
+      "text": "there just uh raise the error so"
+    },
+    {
+      "start": 358.96,
+      "end": 363.479,
+      "text": "unexpected error type is found so this"
+    },
+    {
+      "start": 360.919,
+      "end": 367.08,
+      "text": "is the good idea of of providing the"
+    },
+    {
+      "start": 363.479,
+      "end": 369.15999999999997,
+      "text": "informations in it after that I'm saving"
+    },
+    {
+      "start": 367.08,
+      "end": 371.4,
+      "text": "the documents that I get from the dock"
+    },
+    {
+      "start": 369.16,
+      "end": 374.03900000000004,
+      "text": "link so that I can view what is there"
+    },
+    {
+      "start": 371.4,
+      "end": 376.88,
+      "text": "this is a good idea also for you to see"
+    },
+    {
+      "start": 374.039,
+      "end": 379.84,
+      "text": "okay what you provided the PDF and it"
+    },
+    {
+      "start": 376.88,
+      "end": 382.319,
+      "text": "did the extraction of the documents from"
+    },
+    {
+      "start": 379.84,
+      "end": 385.11999999999995,
+      "text": "the PDF and you want to know what it did"
+    },
+    {
+      "start": 382.319,
+      "end": 387.24,
+      "text": "with this code it will be saving as a"
+    },
+    {
+      "start": 385.12,
+      "end": 388.919,
+      "text": "output duckling I already have it here"
+    },
+    {
+      "start": 387.24,
+      "end": 391.319,
+      "text": "but I will run the code first and then"
+    },
+    {
+      "start": 388.919,
+      "end": 393.35999999999996,
+      "text": "point you here for now I will just"
+    },
+    {
+      "start": 391.319,
+      "end": 396.599,
+      "text": "delete this uh thing because I don't"
+    },
+    {
+      "start": 393.36,
+      "end": 399.08000000000004,
+      "text": "need it I will create it later so that"
+    },
+    {
+      "start": 396.599,
+      "end": 400.71999999999997,
+      "text": "is deleted and now we initialize the"
+    },
+    {
+      "start": 399.08,
+      "end": 402.24,
+      "text": "embeddings for the embeddings As I said"
+    },
+    {
+      "start": 400.72,
+      "end": 404.52000000000004,
+      "text": "you before I'm using the hogging face"
+    },
+    {
+      "start": 402.24,
+      "end": 406.68,
+      "text": "embeddings and embedding model after"
+    },
+    {
+      "start": 404.52,
+      "end": 409.599,
+      "text": "that is the next step we need to create"
+    },
+    {
+      "start": 406.68,
+      "end": 412.319,
+      "text": "the vector uh database for the vector"
+    },
+    {
+      "start": 409.599,
+      "end": 414.52,
+      "text": "database and we set from documents and"
+    },
+    {
+      "start": 412.319,
+      "end": 416.72,
+      "text": "documents we pass the splits as you can"
+    },
+    {
+      "start": 414.52,
+      "end": 420.0,
+      "text": "see here the splits and we have the"
+    },
+    {
+      "start": 416.72,
+      "end": 422.16,
+      "text": "eddings which pass the edings here URL"
+    },
+    {
+      "start": 420.0,
+      "end": 424.72,
+      "text": "is quadrant URL because we are listening"
+    },
+    {
+      "start": 422.16,
+      "end": 427.72,
+      "text": "in our Local Host collect so once we"
+    },
+    {
+      "start": 424.72,
+      "end": 429.639,
+      "text": "pass all these different things our"
+    },
+    {
+      "start": 427.72,
+      "end": 431.56,
+      "text": "first part of the diagram that I showed"
+    },
+    {
+      "start": 429.639,
+      "end": 433.479,
+      "text": "you this first part is complete because"
+    },
+    {
+      "start": 431.56,
+      "end": 435.319,
+      "text": "we have the ducklink to read the PDF"
+    },
+    {
+      "start": 433.479,
+      "end": 437.039,
+      "text": "extract the contents we have the hugging"
+    },
+    {
+      "start": 435.319,
+      "end": 438.639,
+      "text": "face embeddings to do the embedding part"
+    },
+    {
+      "start": 437.039,
+      "end": 442.24,
+      "text": "and we are storing that into the"
+    },
+    {
+      "start": 438.639,
+      "end": 445.36,
+      "text": "quadrant vectory store if we split this"
+    },
+    {
+      "start": 442.24,
+      "end": 447.84000000000003,
+      "text": "in one file then later we can just go"
+    },
+    {
+      "start": 445.36,
+      "end": 450.759,
+      "text": "into this lower half part so we don't"
+    },
+    {
+      "start": 447.84,
+      "end": 452.96,
+      "text": "need to do the ingesting all the time"
+    },
+    {
+      "start": 450.759,
+      "end": 455.52000000000004,
+      "text": "what I want to do uh is I want to run"
+    },
+    {
+      "start": 452.96,
+      "end": 457.84,
+      "text": "the file or maybe it's easier if I run"
+    },
+    {
+      "start": 455.52,
+      "end": 460.599,
+      "text": "the thing already in vs code itself I"
+    },
+    {
+      "start": 457.84,
+      "end": 462.56,
+      "text": "will open a terminal here you can see"
+    },
+    {
+      "start": 460.599,
+      "end": 465.96,
+      "text": "what I'm doing so I'm inside the chain"
+    },
+    {
+      "start": 462.56,
+      "end": 471.28000000000003,
+      "text": "lit here so here I can say UV because"
+    },
+    {
+      "start": 465.96,
+      "end": 473.599,
+      "text": "I'm using the UV UV run ingest dop right"
+    },
+    {
+      "start": 471.28,
+      "end": 478.63899999999995,
+      "text": "ingesting now just remember we have the"
+    },
+    {
+      "start": 473.599,
+      "end": 480.36,
+      "text": "data if I run this now it it will do the"
+    },
+    {
+      "start": 478.639,
+      "end": 483.919,
+      "text": "inest part by the way I have already"
+    },
+    {
+      "start": 480.36,
+      "end": 485.72,
+      "text": "done the UV sync so all the packages are"
+    },
+    {
+      "start": 483.919,
+      "end": 487.84,
+      "text": "being installed for me already this is"
+    },
+    {
+      "start": 485.72,
+      "end": 490.08000000000004,
+      "text": "the step in the documentation as you can"
+    },
+    {
+      "start": 487.84,
+      "end": 492.71999999999997,
+      "text": "see here once you go inside the CD CH"
+    },
+    {
+      "start": 490.08,
+      "end": 494.87899999999996,
+      "text": "just run the UV sync it will install all"
+    },
+    {
+      "start": 492.72,
+      "end": 496.40000000000003,
+      "text": "the necessary packages for you so you"
+    },
+    {
+      "start": 494.879,
+      "end": 498.12,
+      "text": "don't need to do peep install and all"
+    },
+    {
+      "start": 496.4,
+      "end": 500.35999999999996,
+      "text": "the different things here it says token"
+    },
+    {
+      "start": 498.12,
+      "end": 502.36,
+      "text": "indices sequence length is this this is"
+    },
+    {
+      "start": 500.36,
+      "end": 504.199,
+      "text": "the error that we get from dock link so"
+    },
+    {
+      "start": 502.36,
+      "end": 507.24,
+      "text": "we don't need to worry about this and it"
+    },
+    {
+      "start": 504.199,
+      "end": 509.56,
+      "text": "says here Vector DB created successfully"
+    },
+    {
+      "start": 507.24,
+      "end": 512.88,
+      "text": "so now you can see here there is this"
+    },
+    {
+      "start": 509.56,
+      "end": 517.2,
+      "text": "output ducklink if I click this one so"
+    },
+    {
+      "start": 512.88,
+      "end": 520.24,
+      "text": "this is the markdown format of our PDF"
+    },
+    {
+      "start": 517.2,
+      "end": 524.08,
+      "text": "which is this one right so everything is"
+    },
+    {
+      "start": 520.24,
+      "end": 526.279,
+      "text": "being now converted from PDF to the"
+    },
+    {
+      "start": 524.08,
+      "end": 529.2,
+      "text": "markdown we can ask the questions from"
+    },
+    {
+      "start": 526.279,
+      "end": 530.88,
+      "text": "this markdown now this is done here now"
+    },
+    {
+      "start": 529.2,
+      "end": 532.6800000000001,
+      "text": "the second file which runs the"
+    },
+    {
+      "start": 530.88,
+      "end": 534.279,
+      "text": "application so here we have the same"
+    },
+    {
+      "start": 532.68,
+      "end": 535.76,
+      "text": "embedding models needs to be import and"
+    },
+    {
+      "start": 534.279,
+      "end": 539.04,
+      "text": "all the importing things one thing to"
+    },
+    {
+      "start": 535.76,
+      "end": 541.64,
+      "text": "point out here is I'm using the AMA llm"
+    },
+    {
+      "start": 539.04,
+      "end": 543.4399999999999,
+      "text": "from chain you need to have the AMA"
+    },
+    {
+      "start": 541.64,
+      "end": 546.04,
+      "text": "being installed in order to make sure"
+    },
+    {
+      "start": 543.44,
+      "end": 548.519,
+      "text": "that you have Ama installed you need to"
+    },
+    {
+      "start": 546.04,
+      "end": 551.68,
+      "text": "see something like this and if you do"
+    },
+    {
+      "start": 548.519,
+      "end": 555.04,
+      "text": "AMA list you will see all the models you"
+    },
+    {
+      "start": 551.68,
+      "end": 557.399,
+      "text": "need to download the model from the AMA"
+    },
+    {
+      "start": 555.04,
+      "end": 559.24,
+      "text": "just go to ama's website I just want to"
+    },
+    {
+      "start": 557.399,
+      "end": 561.16,
+      "text": "show you this because if you are new"
+    },
+    {
+      "start": 559.24,
+      "end": 564.44,
+      "text": "then you might be confused so you need"
+    },
+    {
+      "start": 561.16,
+      "end": 566.3199999999999,
+      "text": "to go to this ama's website download AMA"
+    },
+    {
+      "start": 564.44,
+      "end": 568.7600000000001,
+      "text": "first if you don't have because when you"
+    },
+    {
+      "start": 566.32,
+      "end": 569.9590000000001,
+      "text": "run it locally you need to install many"
+    },
+    {
+      "start": 568.76,
+      "end": 573.04,
+      "text": "things Loc"
+    },
+    {
+      "start": 569.959,
+      "end": 575.7199999999999,
+      "text": "in order for the rag application to work"
+    },
+    {
+      "start": 573.04,
+      "end": 577.36,
+      "text": "because if you just do a API call to"
+    },
+    {
+      "start": 575.72,
+      "end": 579.2,
+      "text": "some of the llms you don't need to set"
+    },
+    {
+      "start": 577.36,
+      "end": 581.88,
+      "text": "up all the different things one thing to"
+    },
+    {
+      "start": 579.2,
+      "end": 584.279,
+      "text": "point out is also that how well the llm"
+    },
+    {
+      "start": 581.88,
+      "end": 586.88,
+      "text": "will perform will be also dependent on"
+    },
+    {
+      "start": 584.279,
+      "end": 590.12,
+      "text": "your uh local machine how big or how"
+    },
+    {
+      "start": 586.88,
+      "end": 592.399,
+      "text": "powerful is your uh machine right from"
+    },
+    {
+      "start": 590.12,
+      "end": 594.72,
+      "text": "here you can just go here and you can"
+    },
+    {
+      "start": 592.399,
+      "end": 596.72,
+      "text": "just choose any of the models you want"
+    },
+    {
+      "start": 594.72,
+      "end": 599.519,
+      "text": "you can see the size of the model TV and"
+    },
+    {
+      "start": 596.72,
+      "end": 602.1600000000001,
+      "text": "so on right for running the smallest"
+    },
+    {
+      "start": 599.519,
+      "end": 604.36,
+      "text": "model you need to have some power let's"
+    },
+    {
+      "start": 602.16,
+      "end": 606.7199999999999,
+      "text": "say in a way if I go to GitHub has"
+    },
+    {
+      "start": 604.36,
+      "end": 609.24,
+      "text": "mentioned also this in their GitHub if I"
+    },
+    {
+      "start": 606.72,
+      "end": 612.399,
+      "text": "scroll little be down here so you can"
+    },
+    {
+      "start": 609.24,
+      "end": 615.6,
+      "text": "see here you should have at least 8 GB"
+    },
+    {
+      "start": 612.399,
+      "end": 618.519,
+      "text": "of RAM available to run the 7B models so"
+    },
+    {
+      "start": 615.6,
+      "end": 620.44,
+      "text": "if you don't have this 8 GB of RAM in"
+    },
+    {
+      "start": 618.519,
+      "end": 621.88,
+      "text": "your machine or you need to have a"
+    },
+    {
+      "start": 620.44,
+      "end": 623.399,
+      "text": "little bit more also because other"
+    },
+    {
+      "start": 621.88,
+      "end": 626.16,
+      "text": "things will be also running in your"
+    },
+    {
+      "start": 623.399,
+      "end": 628.16,
+      "text": "computer it also needs some power there"
+    },
+    {
+      "start": 626.16,
+      "end": 630.279,
+      "text": "just keep this in mind which model you"
+    },
+    {
+      "start": 628.16,
+      "end": 632.519,
+      "text": "want to use because when you you see the"
+    },
+    {
+      "start": 630.279,
+      "end": 634.519,
+      "text": "documentations or videos like this you"
+    },
+    {
+      "start": 632.519,
+      "end": 636.68,
+      "text": "see that it's running so smoothly in the"
+    },
+    {
+      "start": 634.519,
+      "end": 639.8,
+      "text": "machine presenting this for example for"
+    },
+    {
+      "start": 636.68,
+      "end": 641.8,
+      "text": "me I'm using the 36 GB of RAM and the"
+    },
+    {
+      "start": 639.8,
+      "end": 644.4799999999999,
+      "text": "response time is quite fast but for you"
+    },
+    {
+      "start": 641.8,
+      "end": 647.12,
+      "text": "you need to have some level of power for"
+    },
+    {
+      "start": 644.48,
+      "end": 650.12,
+      "text": "the applications to run there once the"
+    },
+    {
+      "start": 647.12,
+      "end": 652.399,
+      "text": "AMA is ready it's okay you need to have"
+    },
+    {
+      "start": 650.12,
+      "end": 654.36,
+      "text": "the model downloaded in your machine"
+    },
+    {
+      "start": 652.399,
+      "end": 657.0,
+      "text": "right then same thing here I'm passing"
+    },
+    {
+      "start": 654.36,
+      "end": 660.279,
+      "text": "the quadrant URL because we need to Now"
+    },
+    {
+      "start": 657.0,
+      "end": 662.6,
+      "text": "read the uh collection being created and"
+    },
+    {
+      "start": 660.279,
+      "end": 665.0,
+      "text": "this is the embed model here this is the"
+    },
+    {
+      "start": 662.6,
+      "end": 667.399,
+      "text": "custom prompt you can just change"
+    },
+    {
+      "start": 665.0,
+      "end": 670.92,
+      "text": "whatever you want here and then I'm"
+    },
+    {
+      "start": 667.399,
+      "end": 672.519,
+      "text": "using the llm you can see here llm llm"
+    },
+    {
+      "start": 670.92,
+      "end": 675.8,
+      "text": "and I'm using the model which I"
+    },
+    {
+      "start": 672.519,
+      "end": 678.24,
+      "text": "downloaded in my local machine dpse R1"
+    },
+    {
+      "start": 675.8,
+      "end": 680.16,
+      "text": "latest so after that I'm just running"
+    },
+    {
+      "start": 678.24,
+      "end": 682.32,
+      "text": "this uh formatting and now comes the"
+    },
+    {
+      "start": 680.16,
+      "end": 684.56,
+      "text": "chain lead part there was no chain lead"
+    },
+    {
+      "start": 682.32,
+      "end": 685.88,
+      "text": "involved here we just have the template"
+    },
+    {
+      "start": 684.56,
+      "end": 687.8,
+      "text": "answer the following questions okay I"
+    },
+    {
+      "start": 685.88,
+      "end": 690.16,
+      "text": "have this in two places I don't even"
+    },
+    {
+      "start": 687.8,
+      "end": 692.1999999999999,
+      "text": "need to I would testing with different"
+    },
+    {
+      "start": 690.16,
+      "end": 694.279,
+      "text": "prompts here and there I can delete this"
+    },
+    {
+      "start": 692.2,
+      "end": 696.44,
+      "text": "one and now we have the template already"
+    },
+    {
+      "start": 694.279,
+      "end": 698.88,
+      "text": "here and this is the prompt uh chat"
+    },
+    {
+      "start": 696.44,
+      "end": 701.0790000000001,
+      "text": "prompt template and we pass the template"
+    },
+    {
+      "start": 698.88,
+      "end": 704.76,
+      "text": "here so this is the part where you can"
+    },
+    {
+      "start": 701.079,
+      "end": 706.7199999999999,
+      "text": "make or have your own template and here"
+    },
+    {
+      "start": 704.76,
+      "end": 708.519,
+      "text": "this is the formatting things okay I"
+    },
+    {
+      "start": 706.72,
+      "end": 711.44,
+      "text": "have in two places because now I was"
+    },
+    {
+      "start": 708.519,
+      "end": 713.48,
+      "text": "before testing outside the functions and"
+    },
+    {
+      "start": 711.44,
+      "end": 715.48,
+      "text": "now I have inside the functions so"
+    },
+    {
+      "start": 713.48,
+      "end": 717.5600000000001,
+      "text": "that's good and now comes the embedding"
+    },
+    {
+      "start": 715.48,
+      "end": 720.0790000000001,
+      "text": "part you need to use the same edding"
+    },
+    {
+      "start": 717.56,
+      "end": 722.04,
+      "text": "here and the vector is store we created"
+    },
+    {
+      "start": 720.079,
+      "end": 724.88,
+      "text": "the vector store before but now we are"
+    },
+    {
+      "start": 722.04,
+      "end": 726.5999999999999,
+      "text": "going to retrieve from the existing"
+    },
+    {
+      "start": 724.88,
+      "end": 729.399,
+      "text": "collection so we need to have the same"
+    },
+    {
+      "start": 726.6,
+      "end": 731.32,
+      "text": "embedding same collection name and the"
+    },
+    {
+      "start": 729.399,
+      "end": 733.16,
+      "text": "quadrant URL and then there is the"
+    },
+    {
+      "start": 731.32,
+      "end": 736.6800000000001,
+      "text": "retriever called vectory stored as"
+    },
+    {
+      "start": 733.16,
+      "end": 738.399,
+      "text": "retriever if I go back to the diagram"
+    },
+    {
+      "start": 736.68,
+      "end": 739.959,
+      "text": "this is exactly what is going here you"
+    },
+    {
+      "start": 738.399,
+      "end": 742.36,
+      "text": "will have the question that needs to go"
+    },
+    {
+      "start": 739.959,
+      "end": 744.0,
+      "text": "to the embeddings and then that needs to"
+    },
+    {
+      "start": 742.36,
+      "end": 745.92,
+      "text": "be done with the semantic sorts and"
+    },
+    {
+      "start": 744.0,
+      "end": 748.16,
+      "text": "going into the knowledge base that is"
+    },
+    {
+      "start": 745.92,
+      "end": 751.199,
+      "text": "the quadrant in our case now we need to"
+    },
+    {
+      "start": 748.16,
+      "end": 752.959,
+      "text": "go to the quadrant uh database right"
+    },
+    {
+      "start": 751.199,
+      "end": 756.04,
+      "text": "here you can see there is the docker and"
+    },
+    {
+      "start": 752.959,
+      "end": 758.76,
+      "text": "it is listening in Port 6333 so if I"
+    },
+    {
+      "start": 756.04,
+      "end": 761.399,
+      "text": "click this it will take me here but if I"
+    },
+    {
+      "start": 758.76,
+      "end": 763.8389999999999,
+      "text": "then just go Dash"
+    },
+    {
+      "start": 761.399,
+      "end": 768.44,
+      "text": "dashboard so here you can see there is"
+    },
+    {
+      "start": 763.839,
+      "end": 770.7600000000001,
+      "text": "the uh rag here and all the splits that"
+    },
+    {
+      "start": 768.44,
+      "end": 773.2790000000001,
+      "text": "we did is being stored here and you can"
+    },
+    {
+      "start": 770.76,
+      "end": 776.0,
+      "text": "see here there is all the metadata also"
+    },
+    {
+      "start": 773.279,
+      "end": 777.6,
+      "text": "being stored inside it so you can get"
+    },
+    {
+      "start": 776.0,
+      "end": 780.519,
+      "text": "okay from where it is taking from so you"
+    },
+    {
+      "start": 777.6,
+      "end": 782.72,
+      "text": "can see here source is data DPS R1 and"
+    },
+    {
+      "start": 780.519,
+      "end": 784.519,
+      "text": "this is the schema also mentioned here"
+    },
+    {
+      "start": 782.72,
+      "end": 787.24,
+      "text": "this is the version one table two"
+    },
+    {
+      "start": 784.519,
+      "end": 789.279,
+      "text": "informations parent and label is table"
+    },
+    {
+      "start": 787.24,
+      "end": 791.04,
+      "text": "and so on because everything that is"
+    },
+    {
+      "start": 789.279,
+      "end": 792.8,
+      "text": "coming as a metadata is coming from the"
+    },
+    {
+      "start": 791.04,
+      "end": 794.8389999999999,
+      "text": "dock link so we don't need to do"
+    },
+    {
+      "start": 792.8,
+      "end": 796.7199999999999,
+      "text": "anything so when we sarch the question"
+    },
+    {
+      "start": 794.839,
+      "end": 800.12,
+      "text": "it is going to take these informations"
+    },
+    {
+      "start": 796.72,
+      "end": 802.1600000000001,
+      "text": "into account and provide us the answer"
+    },
+    {
+      "start": 800.12,
+      "end": 805.44,
+      "text": "so I hope this is this is uh clear for"
+    },
+    {
+      "start": 802.16,
+      "end": 807.639,
+      "text": "you and now if I go back to our code"
+    },
+    {
+      "start": 805.44,
+      "end": 809.2790000000001,
+      "text": "here and this is the runable now from"
+    },
+    {
+      "start": 807.639,
+      "end": 811.44,
+      "text": "the langen right so here we have have"
+    },
+    {
+      "start": 809.279,
+      "end": 813.399,
+      "text": "the context retrieval format docs"
+    },
+    {
+      "start": 811.44,
+      "end": 816.1600000000001,
+      "text": "question is runable pass through we have"
+    },
+    {
+      "start": 813.399,
+      "end": 819.279,
+      "text": "the prompt right here and then we pass"
+    },
+    {
+      "start": 816.16,
+      "end": 822.079,
+      "text": "the llm which was here and then we pass"
+    },
+    {
+      "start": 819.279,
+      "end": 824.56,
+      "text": "the structure output parser and then we"
+    },
+    {
+      "start": 822.079,
+      "end": 826.519,
+      "text": "use this as a runable so this is the"
+    },
+    {
+      "start": 824.56,
+      "end": 829.0,
+      "text": "code taken from documentation of the"
+    },
+    {
+      "start": 826.519,
+      "end": 831.48,
+      "text": "chain lit and Lang chain both of this"
+    },
+    {
+      "start": 829.0,
+      "end": 834.959,
+      "text": "and now this comes on message so here"
+    },
+    {
+      "start": 831.48,
+      "end": 837.32,
+      "text": "there is two parts on start chat and on"
+    },
+    {
+      "start": 834.959,
+      "end": 839.279,
+      "text": "message now on message is when you ask"
+    },
+    {
+      "start": 837.32,
+      "end": 842.0400000000001,
+      "text": "the question we use the user session get"
+    },
+    {
+      "start": 839.279,
+      "end": 843.56,
+      "text": "runable right message context and then"
+    },
+    {
+      "start": 842.04,
+      "end": 845.959,
+      "text": "we pass the context here you can see"
+    },
+    {
+      "start": 843.56,
+      "end": 847.4399999999999,
+      "text": "this is the class and all this"
+    },
+    {
+      "start": 845.959,
+      "end": 849.88,
+      "text": "information here you can see there is"
+    },
+    {
+      "start": 847.44,
+      "end": 852.12,
+      "text": "the init call back Handler for handling"
+    },
+    {
+      "start": 849.88,
+      "end": 854.0,
+      "text": "the retrieval and llm processes so I"
+    },
+    {
+      "start": 852.12,
+      "end": 855.519,
+      "text": "have taken this directly from this"
+    },
+    {
+      "start": 854.0,
+      "end": 858.839,
+      "text": "documentation from the Chan it is"
+    },
+    {
+      "start": 855.519,
+      "end": 862.36,
+      "text": "getting the on rable end Source page"
+    },
+    {
+      "start": 858.839,
+      "end": 863.8800000000001,
+      "text": "pair and on llm end and so on right I"
+    },
+    {
+      "start": 862.36,
+      "end": 866.44,
+      "text": "don't need to go through each and every"
+    },
+    {
+      "start": 863.88,
+      "end": 868.519,
+      "text": "step and once this is done then we will"
+    },
+    {
+      "start": 866.44,
+      "end": 871.32,
+      "text": "get the answer out of it this is what"
+    },
+    {
+      "start": 868.519,
+      "end": 874.199,
+      "text": "the chain documentation is from now what"
+    },
+    {
+      "start": 871.32,
+      "end": 879.0400000000001,
+      "text": "we can do is we can just go to the"
+    },
+    {
+      "start": 874.199,
+      "end": 883.16,
+      "text": "terminal it's here I will run now UV"
+    },
+    {
+      "start": 879.04,
+      "end": 886.68,
+      "text": "run chain lead and this is the file rag"
+    },
+    {
+      "start": 883.16,
+      "end": 889.3199999999999,
+      "text": "chain lad D.P and dhw is we can see all"
+    },
+    {
+      "start": 886.68,
+      "end": 891.56,
+      "text": "the debug things here but you don't need"
+    },
+    {
+      "start": 889.32,
+      "end": 893.279,
+      "text": "to do this also because if you do DW if"
+    },
+    {
+      "start": 891.56,
+      "end": 895.04,
+      "text": "there was some modifications that you"
+    },
+    {
+      "start": 893.279,
+      "end": 897.639,
+      "text": "need to do it will refresh automatically"
+    },
+    {
+      "start": 895.04,
+      "end": 900.399,
+      "text": "but let's do uh deskt also no problem"
+    },
+    {
+      "start": 897.639,
+      "end": 902.639,
+      "text": "now we will have the UI this is the UI"
+    },
+    {
+      "start": 900.399,
+      "end": 905.399,
+      "text": "that is popping up here so now you can"
+    },
+    {
+      "start": 902.639,
+      "end": 907.759,
+      "text": "ask questions from that particular uh"
+    },
+    {
+      "start": 905.399,
+      "end": 909.72,
+      "text": "PDF we can go to the PDF so you can see"
+    },
+    {
+      "start": 907.759,
+      "end": 912.639,
+      "text": "under the hood it is using the pyour"
+    },
+    {
+      "start": 909.72,
+      "end": 914.639,
+      "text": "device MPS load pre-train sentence"
+    },
+    {
+      "start": 912.639,
+      "end": 916.6,
+      "text": "Transformer and it is taking the"
+    },
+    {
+      "start": 914.639,
+      "end": 918.0790000000001,
+      "text": "collection from Local Host 6333"
+    },
+    {
+      "start": 916.6,
+      "end": 919.72,
+      "text": "collection rack these are the things"
+    },
+    {
+      "start": 918.079,
+      "end": 921.4799999999999,
+      "text": "going under the hood in the terminal I"
+    },
+    {
+      "start": 919.72,
+      "end": 923.48,
+      "text": "will just bring this down and from here"
+    },
+    {
+      "start": 921.48,
+      "end": 926.16,
+      "text": "you can ask the questions whatever you"
+    },
+    {
+      "start": 923.48,
+      "end": 928.3190000000001,
+      "text": "want let's see some questions maybe"
+    },
+    {
+      "start": 926.16,
+      "end": 931.519,
+      "text": "let's ask this can you provide me about"
+    },
+    {
+      "start": 928.319,
+      "end": 936.04,
+      "text": "the training template so I will go back"
+    },
+    {
+      "start": 931.519,
+      "end": 937.6,
+      "text": "here and I will ask can you provide me"
+    },
+    {
+      "start": 936.04,
+      "end": 941.68,
+      "text": "some"
+    },
+    {
+      "start": 937.6,
+      "end": 943.36,
+      "text": "info about training template now this is"
+    },
+    {
+      "start": 941.68,
+      "end": 945.4399999999999,
+      "text": "the good part of CH Al so here you can"
+    },
+    {
+      "start": 943.36,
+      "end": 947.6,
+      "text": "see it is saying use runable pass"
+    },
+    {
+      "start": 945.44,
+      "end": 950.0400000000001,
+      "text": "through use Vector is toore retrial so"
+    },
+    {
+      "start": 947.6,
+      "end": 951.9200000000001,
+      "text": "if I go inside here you can see it ask"
+    },
+    {
+      "start": 950.04,
+      "end": 954.399,
+      "text": "this question and it went through this"
+    },
+    {
+      "start": 951.92,
+      "end": 956.04,
+      "text": "and it gets the answer already from here"
+    },
+    {
+      "start": 954.399,
+      "end": 958.959,
+      "text": "and this is the formatting docs and now"
+    },
+    {
+      "start": 956.04,
+      "end": 960.56,
+      "text": "it is using AMA now comes the dips part"
+    },
+    {
+      "start": 958.959,
+      "end": 962.319,
+      "text": "so it is doing the thinking now so I"
+    },
+    {
+      "start": 960.56,
+      "end": 964.319,
+      "text": "need to figure out how to answer about"
+    },
+    {
+      "start": 962.319,
+      "end": 966.639,
+      "text": "the training template in their context"
+    },
+    {
+      "start": 964.319,
+      "end": 968.88,
+      "text": "this this this and is it already sees"
+    },
+    {
+      "start": 966.639,
+      "end": 971.48,
+      "text": "here the user has given a section title"
+    },
+    {
+      "start": 968.88,
+      "end": 974.519,
+      "text": "2.2.3 training template because now this"
+    },
+    {
+      "start": 971.48,
+      "end": 977.04,
+      "text": "is for the AMA llm right this is the"
+    },
+    {
+      "start": 974.519,
+      "end": 980.399,
+      "text": "retrieval part which already retrieve"
+    },
+    {
+      "start": 977.04,
+      "end": 981.959,
+      "text": "the informations and here we have 2.2.3"
+    },
+    {
+      "start": 980.399,
+      "end": 983.16,
+      "text": "training template that is being"
+    },
+    {
+      "start": 981.959,
+      "end": 986.2399999999999,
+      "text": "extracted"
+    },
+    {
+      "start": 983.16,
+      "end": 989.0,
+      "text": "already right just to show you the"
+    },
+    {
+      "start": 986.24,
+      "end": 991.8,
+      "text": "diagram so you understand we ask the"
+    },
+    {
+      "start": 989.0,
+      "end": 994.24,
+      "text": "question it went so this is the question"
+    },
+    {
+      "start": 991.8,
+      "end": 997.0,
+      "text": "now it does the embedding API hugging"
+    },
+    {
+      "start": 994.24,
+      "end": 999.44,
+      "text": "face embeddings embedding is done we did"
+    },
+    {
+      "start": 997.0,
+      "end": 1001.759,
+      "text": "the semantic sarch with the base on the"
+    },
+    {
+      "start": 999.44,
+      "end": 1003.9590000000001,
+      "text": "question we asked and then here is the"
+    },
+    {
+      "start": 1001.759,
+      "end": 1006.72,
+      "text": "vector database we use the quadrant and"
+    },
+    {
+      "start": 1003.959,
+      "end": 1009.16,
+      "text": "now we have the answer out of it and"
+    },
+    {
+      "start": 1006.72,
+      "end": 1012.0400000000001,
+      "text": "that is being passed for the llm in our"
+    },
+    {
+      "start": 1009.16,
+      "end": 1014.079,
+      "text": "case llm is the Deep seek so you can see"
+    },
+    {
+      "start": 1012.04,
+      "end": 1015.8389999999999,
+      "text": "all these things was being passed and"
+    },
+    {
+      "start": 1014.079,
+      "end": 1017.6389999999999,
+      "text": "then the LM was thinking because we"
+    },
+    {
+      "start": 1015.839,
+      "end": 1019.2790000000001,
+      "text": "passed something for it to get the"
+    },
+    {
+      "start": 1017.639,
+      "end": 1022.279,
+      "text": "answer that is the part where where it"
+    },
+    {
+      "start": 1019.279,
+      "end": 1024.52,
+      "text": "did some thinking let me see which one"
+    },
+    {
+      "start": 1022.279,
+      "end": 1026.72,
+      "text": "was it yeah here you can see it was"
+    },
+    {
+      "start": 1024.52,
+      "end": 1028.24,
+      "text": "thinking here the user gave this which"
+    },
+    {
+      "start": 1026.72,
+      "end": 1029.64,
+      "text": "explains they desired a template for"
+    },
+    {
+      "start": 1028.24,
+      "end": 1031.88,
+      "text": "running this this this this template"
+    },
+    {
+      "start": 1029.64,
+      "end": 1034.3190000000002,
+      "text": "instruct this template structure"
+    },
+    {
+      "start": 1031.88,
+      "end": 1035.72,
+      "text": "avoiding biases and so on it went"
+    },
+    {
+      "start": 1034.319,
+      "end": 1037.559,
+      "text": "through all the different things now the"
+    },
+    {
+      "start": 1035.72,
+      "end": 1040.76,
+      "text": "user is asking for information about"
+    },
+    {
+      "start": 1037.559,
+      "end": 1042.3999999999999,
+      "text": "this now it finishes thinking here and"
+    },
+    {
+      "start": 1040.76,
+      "end": 1043.8799999999999,
+      "text": "now it provides the answer the training"
+    },
+    {
+      "start": 1042.4,
+      "end": 1046.76,
+      "text": "template is designed to guide the"
+    },
+    {
+      "start": 1043.88,
+      "end": 1048.3190000000002,
+      "text": "training process of dips r10 by"
+    },
+    {
+      "start": 1046.76,
+      "end": 1050.36,
+      "text": "providing a structured approach key"
+    },
+    {
+      "start": 1048.319,
+      "end": 1053.36,
+      "text": "aspects of reasoning process first"
+    },
+    {
+      "start": 1050.36,
+      "end": 1054.1999999999998,
+      "text": "straightforward structure so if we go to"
+    },
+    {
+      "start": 1053.36,
+      "end": 1057.7199999999998,
+      "text": "this"
+    },
+    {
+      "start": 1054.2,
+      "end": 1059.559,
+      "text": "here so here to train this this this"
+    },
+    {
+      "start": 1057.72,
+      "end": 1060.919,
+      "text": "this template D requ the produce"
+    },
+    {
+      "start": 1059.559,
+      "end": 1063.799,
+      "text": "reasoning task followed by the final"
+    },
+    {
+      "start": 1060.919,
+      "end": 1066.0800000000002,
+      "text": "answer we intentionally use this and so"
+    },
+    {
+      "start": 1063.799,
+      "end": 1067.84,
+      "text": "on so it gets the answer from there we"
+    },
+    {
+      "start": 1066.08,
+      "end": 1069.48,
+      "text": "intentionally limit our constants to"
+    },
+    {
+      "start": 1067.84,
+      "end": 1072.0,
+      "text": "this structure format avoiding any"
+    },
+    {
+      "start": 1069.48,
+      "end": 1074.32,
+      "text": "specific things exactly it even formats"
+    },
+    {
+      "start": 1072.0,
+      "end": 1076.48,
+      "text": "in a two different headings right so"
+    },
+    {
+      "start": 1074.32,
+      "end": 1078.84,
+      "text": "here is a resoning model first the model"
+    },
+    {
+      "start": 1076.48,
+      "end": 1080.559,
+      "text": "is instructed to to generate detail"
+    },
+    {
+      "start": 1078.84,
+      "end": 1082.28,
+      "text": "reasoning it provides us the"
+    },
+    {
+      "start": 1080.559,
+      "end": 1085.039,
+      "text": "straightforward structure and so on so"
+    },
+    {
+      "start": 1082.28,
+      "end": 1087.8799999999999,
+      "text": "you get the answer how it reasons first"
+    },
+    {
+      "start": 1085.039,
+      "end": 1090.64,
+      "text": "and provides you the answer and so on"
+    },
+    {
+      "start": 1087.88,
+      "end": 1093.44,
+      "text": "and it now let's ask some question from"
+    },
+    {
+      "start": 1090.64,
+      "end": 1095.2,
+      "text": "uh table table informations right here"
+    },
+    {
+      "start": 1093.44,
+      "end": 1098.919,
+      "text": "what we can do is this is the"
+    },
+    {
+      "start": 1095.2,
+      "end": 1101.159,
+      "text": "performance by dips r10 we can ask the"
+    },
+    {
+      "start": 1098.919,
+      "end": 1103.5590000000002,
+      "text": "questions from this particular table"
+    },
+    {
+      "start": 1101.159,
+      "end": 1108.64,
+      "text": "also if it can provide us or not let me"
+    },
+    {
+      "start": 1103.559,
+      "end": 1114.72,
+      "text": "ask the math 500 for open AI 01 let's"
+    },
+    {
+      "start": 1108.64,
+      "end": 1119.0800000000002,
+      "text": "see see what I can do I can ask the"
+    },
+    {
+      "start": 1114.72,
+      "end": 1124.159,
+      "text": "question can you provide me the math"
+    },
+    {
+      "start": 1119.08,
+      "end": 1126.32,
+      "text": "okay no can you provide me the math"
+    },
+    {
+      "start": 1124.159,
+      "end": 1128.96,
+      "text": "500 score"
+    },
+    {
+      "start": 1126.32,
+      "end": 1131.52,
+      "text": "of open"
+    },
+    {
+      "start": 1128.96,
+      "end": 1134.24,
+      "text": "AI 01"
+    },
+    {
+      "start": 1131.52,
+      "end": 1136.559,
+      "text": "Mini"
+    },
+    {
+      "start": 1134.24,
+      "end": 1140.64,
+      "text": "compared to deep"
+    },
+    {
+      "start": 1136.559,
+      "end": 1142.36,
+      "text": "seek one Z this is the question now it"
+    },
+    {
+      "start": 1140.64,
+      "end": 1145.5200000000002,
+      "text": "goes through all the step again this is"
+    },
+    {
+      "start": 1142.36,
+      "end": 1147.4799999999998,
+      "text": "the good part here and if if we go here"
+    },
+    {
+      "start": 1145.52,
+      "end": 1149.44,
+      "text": "it retrieve some informations okay all"
+    },
+    {
+      "start": 1147.48,
+      "end": 1152.559,
+      "text": "right so I need to figure out the math"
+    },
+    {
+      "start": 1149.44,
+      "end": 1154.76,
+      "text": "500 score of open a01 mini and DPS r10"
+    },
+    {
+      "start": 1152.559,
+      "end": 1157.1589999999999,
+      "text": "right before going into the llm one"
+    },
+    {
+      "start": 1154.76,
+      "end": 1160.2,
+      "text": "thing that you need to be thinking is"
+    },
+    {
+      "start": 1157.159,
+      "end": 1162.64,
+      "text": "llm just provides us the answer in drag"
+    },
+    {
+      "start": 1160.2,
+      "end": 1165.159,
+      "text": "the context that is taking from right"
+    },
+    {
+      "start": 1162.64,
+      "end": 1168.5200000000002,
+      "text": "here it says the open AI 01 Mini model"
+    },
+    {
+      "start": 1165.159,
+      "end": 1170.5200000000002,
+      "text": "achieved a pass one score of 90 in the"
+    },
+    {
+      "start": 1168.52,
+      "end": 1173.1589999999999,
+      "text": "ma math is it"
+    },
+    {
+      "start": 1170.52,
+      "end": 1176.4,
+      "text": "90 okay it it's actually correct so here"
+    },
+    {
+      "start": 1173.159,
+      "end": 1179.0390000000002,
+      "text": "it says Math 500 90 right it went"
+    },
+    {
+      "start": 1176.4,
+      "end": 1184.88,
+      "text": "through this math uh"
+    },
+    {
+      "start": 1179.039,
+      "end": 1186.559,
+      "text": "590 and 95.9 so it is 95.9 by DPS r10 so"
+    },
+    {
+      "start": 1184.88,
+      "end": 1188.96,
+      "text": "it is going to the right right document"
+    },
+    {
+      "start": 1186.559,
+      "end": 1192.32,
+      "text": "so you can see that it relies on the"
+    },
+    {
+      "start": 1188.96,
+      "end": 1194.039,
+      "text": "retrieved informations from here this is"
+    },
+    {
+      "start": 1192.32,
+      "end": 1196.08,
+      "text": "the one surpassing this this this in"
+    },
+    {
+      "start": 1194.039,
+      "end": 1198.2,
+      "text": "Math 500 so it gets the informations"
+    },
+    {
+      "start": 1196.08,
+      "end": 1199.76,
+      "text": "from there and then based on that it"
+    },
+    {
+      "start": 1198.2,
+      "end": 1201.88,
+      "text": "provides the answer the good part you"
+    },
+    {
+      "start": 1199.76,
+      "end": 1204.799,
+      "text": "can see here how it does the reasoning"
+    },
+    {
+      "start": 1201.88,
+      "end": 1207.0800000000002,
+      "text": "this is the main part about the rag with"
+    },
+    {
+      "start": 1204.799,
+      "end": 1209.559,
+      "text": "DPS it's all right I need to figure out"
+    },
+    {
+      "start": 1207.08,
+      "end": 1211.52,
+      "text": "this let's break this down step by step"
+    },
+    {
+      "start": 1209.559,
+      "end": 1213.3999999999999,
+      "text": "first I will look through the given"
+    },
+    {
+      "start": 1211.52,
+      "end": 1215.84,
+      "text": "informations to identify relevant data"
+    },
+    {
+      "start": 1213.4,
+      "end": 1218.48,
+      "text": "points the user is ask specifically"
+    },
+    {
+      "start": 1215.84,
+      "end": 1220.1589999999999,
+      "text": "about the math 500 Cod of both models so"
+    },
+    {
+      "start": 1218.48,
+      "end": 1221.039,
+      "text": "it knows that it needs to go through"
+    },
+    {
+      "start": 1220.159,
+      "end": 1223.6000000000001,
+      "text": "both of"
+    },
+    {
+      "start": 1221.039,
+      "end": 1225.12,
+      "text": "that looking at the first section under"
+    },
+    {
+      "start": 1223.6,
+      "end": 1228.1999999999998,
+      "text": "summary of evaluation results it"
+    },
+    {
+      "start": 1225.12,
+      "end": 1229.9599999999998,
+      "text": "mentions several benchmarks on MML these"
+    },
+    {
+      "start": 1228.2,
+      "end": 1233.1200000000001,
+      "text": "things it provides this one then in"
+    },
+    {
+      "start": 1229.96,
+      "end": 1235.28,
+      "text": "another part it talks about Math 500 DPS"
+    },
+    {
+      "start": 1233.12,
+      "end": 1238.52,
+      "text": "R1 attention impressive score of this"
+    },
+    {
+      "start": 1235.28,
+      "end": 1242.559,
+      "text": "this from this I can gather that for the"
+    },
+    {
+      "start": 1238.52,
+      "end": 1246.6,
+      "text": "math 500 benchmarks DPS R1 has"
+    },
+    {
+      "start": 1242.559,
+      "end": 1249.9189999999999,
+      "text": "97.3 and then open AI has 97.3 also has"
+    },
+    {
+      "start": 1246.6,
+      "end": 1254.12,
+      "text": "the similar score of 97.3 but wait the"
+    },
+    {
+      "start": 1249.919,
+      "end": 1257.88,
+      "text": "user is asking about open AI Z here you"
+    },
+    {
+      "start": 1254.12,
+      "end": 1260.1999999999998,
+      "text": "can see it went through 12 177 in the"
+    },
+    {
+      "start": 1257.88,
+      "end": 1262.679,
+      "text": "same section under summary of evaluation"
+    },
+    {
+      "start": 1260.2,
+      "end": 1265.159,
+      "text": "there is another table comparing the"
+    },
+    {
+      "start": 1262.679,
+      "end": 1267.039,
+      "text": "models so now it went to the table two"
+    },
+    {
+      "start": 1265.159,
+      "end": 1268.72,
+      "text": "right and now if I go back I think it's"
+    },
+    {
+      "start": 1267.039,
+      "end": 1272.48,
+      "text": "table two you can see here that is the"
+    },
+    {
+      "start": 1268.72,
+      "end": 1274.919,
+      "text": "table two and here it says in table two"
+    },
+    {
+      "start": 1272.48,
+      "end": 1278.96,
+      "text": "performance for each model right for"
+    },
+    {
+      "start": 1274.919,
+      "end": 1282.5590000000002,
+      "text": "open AI this it has this one open AI DPS"
+    },
+    {
+      "start": 1278.96,
+      "end": 1284.96,
+      "text": "r10 putting this together open AI 01"
+    },
+    {
+      "start": 1282.559,
+      "end": 1287.76,
+      "text": "mini math this and this so I should make"
+    },
+    {
+      "start": 1284.96,
+      "end": 1290.44,
+      "text": "sure there are no other conflicting data"
+    },
+    {
+      "start": 1287.76,
+      "end": 1292.76,
+      "text": "points in table two that might affect"
+    },
+    {
+      "start": 1290.44,
+      "end": 1294.799,
+      "text": "these scores scanning through all the"
+    },
+    {
+      "start": 1292.76,
+      "end": 1296.36,
+      "text": "entries for Math 500 across different"
+    },
+    {
+      "start": 1294.799,
+      "end": 1298.96,
+      "text": "models only this and this are"
+    },
+    {
+      "start": 1296.36,
+      "end": 1300.6,
+      "text": "respectively no other numbers pop up for"
+    },
+    {
+      "start": 1298.96,
+      "end": 1303.52,
+      "text": "the Benchmark therefore I can"
+    },
+    {
+      "start": 1300.6,
+      "end": 1306.08,
+      "text": "confidently State the scores as per the"
+    },
+    {
+      "start": 1303.52,
+      "end": 1309.039,
+      "text": "given data you can see how it does the"
+    },
+    {
+      "start": 1306.08,
+      "end": 1311.36,
+      "text": "thinking based on how we think right"
+    },
+    {
+      "start": 1309.039,
+      "end": 1313.4,
+      "text": "this is the powerful thing people are"
+    },
+    {
+      "start": 1311.36,
+      "end": 1316.4399999999998,
+      "text": "talking about the reasoning capability"
+    },
+    {
+      "start": 1313.4,
+      "end": 1318.159,
+      "text": "of dip R1 getting the data is one part"
+    },
+    {
+      "start": 1316.44,
+      "end": 1320.039,
+      "text": "right which Vector data you have to use"
+    },
+    {
+      "start": 1318.159,
+      "end": 1322.279,
+      "text": "which bedding models you want to use and"
+    },
+    {
+      "start": 1320.039,
+      "end": 1325.039,
+      "text": "passing that information into the llm"
+    },
+    {
+      "start": 1322.279,
+      "end": 1327.279,
+      "text": "and llm synthesizing the answer based on"
+    },
+    {
+      "start": 1325.039,
+      "end": 1329.279,
+      "text": "that is another lib right so yeah you"
+    },
+    {
+      "start": 1327.279,
+      "end": 1331.48,
+      "text": "can see this is what it is shown now you"
+    },
+    {
+      "start": 1329.279,
+      "end": 1333.279,
+      "text": "can just try it yourself that's all for"
+    },
+    {
+      "start": 1331.48,
+      "end": 1334.0,
+      "text": "this video thank you for watching and"
+    },
+    {
+      "start": 1333.279,
+      "end": 1334.0,
+      "text": "see you in the next one"
+    }
+  ]
+}

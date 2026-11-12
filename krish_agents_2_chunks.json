@@ -1,0 +1,274 @@
+[
+  {
+    "id": "923027ed4281aa24aadf864d799fe5470387bfd11d667f6299430ee9570b1e3b",
+    "text": "Hello all, my name is Krishna and welcome to my YouTube channel. So guys, today in this particular video we are going to discuss about the basic differences between generative AI versus AI agents versus agentic AI. Now this is one of the most trending topics that is currently going on and it is necessary that you need to have your understanding very much clear when you are specifically working in all the specific topics. Okay. So one by one we will try to understand about each and every topics that I have actually mentioned over here. We'll go step by step. Okay. So first thing is that I hope you may be knowing large language models. Okay. You may be knowing about large image models also. Right? So let's say that I'll also go ahead and write large image models. When we talk about large language models or large image model, these models are actually very huge models, right? These are like huge models, bigger models, right? It can be of billions of parameters and they have trained with huge amount of data, right? This data that it is specifically used to train this model is huge. So you may have seen various models like llama 3. You may have been seeing OpenAI models right from GPT4 to GPT4 mini. Many many",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 0.48,
+      "end_seconds": 78.72,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a1b3e81ab6c99eb02dea91d5178fcdd209c4983386c7dce962847b43e41b6277",
+    "text": "that it is specifically used to train this model is huge. So you may have seen various models like llama 3. You may have been seeing OpenAI models right from GPT4 to GPT4 mini. Many many different models are there. And these models are specifically trained with huge amount of data. And at the end of the day, all these particular models are generating what are they basically doing? They're generating new content, right? Generating new content. Now, when we talk about generating new content, the models can probably generate new images, it can generate new text, it can generate video frames, it can generate anything as such, right? audio it can also generate audio right and it can also generate videos so I've written each and everything about over here right so here what this LLM is basically doing since it is trained with huge amount of data in short it is basically generating new content whenever we try to give any kind of input right if I say hey please generate a new image related to aentic AI so this LLA model it if it has that multimodel capabilities it will be able to generate that particular image or video whatever specific things we require whenever we talk in this specific way this is something related to generative AI okay",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 63.92,
+      "end_seconds": 146.879,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=63s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fc2fb695577e638301b9c11148ab9280917bee06dda7a3e5faf2009732b9803f",
+    "text": "LLA model it if it has that multimodel capabilities it will be able to generate that particular image or video whatever specific things we require whenever we talk in this specific way this is something related to generative AI okay so this is something related to generative AI right now when we say hey uh let's go ahead and build a generative AI application wherein we create a chatbot okay and that chatbot should be able to do this specific ch uh task wherein the main aim is generating new content you can definitely do it right so There we specifically say hey we are specifically working in generative AI applications right here the most important thing is that there's some few properties that everybody should keep in mind right whenever we talk about generative AI application these are specifically reactive okay reactive there is this word that we use which we basically say it as reactive now what does this basically reactive mean right see in order to work with this LLM models right we definitely have to write some kind of prompts okay prompts and based on this particular prompt this LLM model will generate new content this is really important to understand now what does this prompt basically means this prompt is just like some sentence where we",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 131.12,
+      "end_seconds": 218.799,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=131s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f7aae0707081dbf928ee5a64ada6235d1edadfaf5b2760aeb555f09842511ae4",
+    "text": "prompts okay prompts and based on this particular prompt this LLM model will generate new content this is really important to understand now what does this prompt basically means this prompt is just like some sentence where we specify something and we tell the LLM to behave in that way I may say hey that uh hey please try to uh act as a data scientist and take an interview for me right so I that is a kind of prompt that is a kind of instruction that I'm actually giving to the LLM model right so here the most important thing with respect to the generative AI content uh generative AI application is that obviously you will be having some kind of models LLM models LM models multimodel right along with these models we specifically write prompts right like how this particular LML model should be behaving and that is how it'll go ahead and generate the new content. Okay. So this is with respect to the generative AI applications. Right? Here uh there are lot of different different kind of libraries. There are libraries like langraph right. There are libraries like lang chain which you can specifically use and you can get started with right lang chain. There are different different libraries like let's say llama index. Llama index right? If you don't",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 200.36,
+      "end_seconds": 282.0,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=200s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "21db5d762b5904309817a045ce7e576e8d3ecc275bda63667e38559fb24fab47",
+    "text": "langraph right. There are libraries like lang chain which you can specifically use and you can get started with right lang chain. There are different different libraries like let's say llama index. Llama index right? If you don't want to go ahead and use this you can also go ahead and use grock. Grock also has a specific set of code or you can also go ahead and use OpenAI code in order to probably go ahead and start working and developing geni applications. Okay. Now this is one of the thing. Okay. Now the next two topics that we are specifically going to discuss about is something called as AI agents and agentic AI. And this is super important right now because the thing that we work on right agentic AI application it is trending in every field. people are thinking that how they can automate the entire complex task the entire workflow with the help of agent application and obviously bring human feedback in between them. Okay. Now let's go ahead and discuss about this and I hope I have already made a video related to generative way. I have developed so many different videos from lang chain to lang graph you can definitely go ahead and watch. Okay. Now let's go ahead and discuss about the second thing which is nothing",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 265.24,
+      "end_seconds": 339.84,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=265s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "620069dff27e3c1816f40f6695b40270e6a95f667755b161a3e25f686b2ea614",
+    "text": "related to generative way. I have developed so many different videos from lang chain to lang graph you can definitely go ahead and watch. Okay. Now let's go ahead and discuss about the second thing which is nothing but the second category that we're going to focus on is AI agents versus agentic AI versus agentic AI. Now people do think that AI agents and agentic AI one and the same but it is not like that. Okay. So here just please focus on for the next 10 minutes because I'm going to explain each and everything that you really need to understand and that is how you'll be able to understand between what is the basic difference between AI agents and agent AI. Okay. Now let's say that I have some kind of LLMs. Okay. So let's say and at all these places LLM is the most important thing right because LLM is something that will be acting like an AI agent. It can act like an AI agent. it can also work in an agentic AI application. Okay. And it will it will be very important how this AI agents is different when compared to the LLM also. Okay. So let's say that I have a specific LLM. Okay. And now this LLM can be any model. Okay. Let's let's consider",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 326.4,
+      "end_seconds": 406.15999999999997,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=326s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7efb5798da866ecf557bbbfc2b616b2482aeb85a5fcd3c8c7a95c7e855768786",
+    "text": "be very important how this AI agents is different when compared to the LLM also. Okay. So let's say that I have a specific LLM. Okay. And now this LLM can be any model. Okay. Let's let's consider that it is it is some model that we are going to use from graph. It can be lama 3. We are using this specific model. Okay. Now you know that all these LLM or LM models they're trained with some specific past data okay they don't have like let's say if I ask this particular LLM hey what is the news for today or hey or who won this particular IPL match between this and this like let's say Bangalore is going to happen have some matches tomorrow or today if it has right and LLM will not know the result because it's not connected to the internet okay so in that kind of scenario Whenever I ask this particular question, the LLM will not be able to give an output to us. Okay, obviously it will not be able to give because it does not have that specific information. Now, this is one major disadvantage of LLM, right? Yes, LLM will be able to generate new content. These models will be able to generate the new content. But what about the current information? Okay, it",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 391.28,
+      "end_seconds": 464.16,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=391s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7a6a1e37c78a4294eccf1e2fcc622ff8134336a254c99339f232cd49c63f28c9",
+    "text": "this is one major disadvantage of LLM, right? Yes, LLM will be able to generate new content. These models will be able to generate the new content. But what about the current information? Okay, it will not be able to give you, right? Let's say that I'm going to ask some specific information of a company. Obviously this LLM will not be trained with that company data because the company data will be private to that company itself. Right? So that way also that LLM will not be able to give you that unless and until it is connected to some kind of external database or external data source. This is just one example now what is basically happening is that as soon as I asked a question hey who won this particular match within RCB or any other place any other um any other team that happened today it will not be able to give you the output. So what it will be dependent on it will be dependent on the third party source. Let's say there is one third party source I will consider in this particular scenario. I will just go ahead and connect it to some kind of database. Okay. Let's say one of the data source is something called as taby. I will go ahead and write tabi. So if",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 451.44,
+      "end_seconds": 518.56,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=451s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "83986e85006342550ce0d9ab052d7bed2bad6e39189c3011ded49a5bb6647836",
+    "text": "particular scenario. I will just go ahead and connect it to some kind of database. Okay. Let's say one of the data source is something called as taby. I will go ahead and write tabi. So if you don't know about tabi it provides you some kind of internet search. Okay. It you can use that particular API. You can write this specific wrapper and you can probably go ahead and write this. Now the question arises how this llm is basically going to call this tavly API. Now there is one very important property if you're learning lang chain or lang graph any of the specific libraries there is a concept of something called as tool call. Tool call. Okay tool call. Now what is this tool call? Let's say that if the LLM is not able to provide the response for this particular input, it will keep on looking for external things that will be able to handle this particular input. Now in this particular case when I ask the input saying that hey what is the current news? What is the current news for this specific date that is today's date? The LLM will not be able to give the answer. So the LLM will look for whether it is connected to any third-party APIs, third party APIs or",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 505.12,
+      "end_seconds": 579.04,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=505s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "31f83be46850579d884d9b4fb1b228c1a458a1070010d057835d4d82675e3cbf",
+    "text": "for this specific date that is today's date? The LLM will not be able to give the answer. So the LLM will look for whether it is connected to any third-party APIs, third party APIs or data source from which I will be able to get this kind of information. So that is where it will be making the specific tool call. Okay, it will be making the specific tool call. Now this tool call will be something like this. The tool call will be made and based on this I will be getting a response. Okay, I'll be getting a response. Now the as soon as the LLM made this tool call the it got this specific response. So this is my request and this is my response. Okay, this is my response and as soon as I got the response the LLM is smart enough to finally summarize that particular output uh that response and give you the output and this is what I'm actually looking for. Okay. Now you need to really understand over here the kind of task that is happening right a request is going I'm getting the information I'm getting giving back the response this is basically happening by an AI agent just a single AI agent I can consider this as an AI agent okay here",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 564.72,
+      "end_seconds": 642.56,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=564s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a8110d01b76ce2f151b6b6b4f1784d75f4c4404ba927842e55e37790a8c8f633",
+    "text": "right a request is going I'm getting the information I'm getting giving back the response this is basically happening by an AI agent just a single AI agent I can consider this as an AI agent okay here my main aim is that I have asked an input saying that hey give me the some current information about today AI news I really want to see for this particular date AI news which my LLM was not able to do it. So what it has done is that the LLM is smart enough to understand which tool to probably call and based on this tool call functional it is calling this and it is getting the response. So this is a specific task okay and this task is basically solved by this tavly okay tavly which is responsible for the internet search. So this task can be considered as an AI agent. Okay, for a specific task we have defined this. Okay, very simple definition. Okay, so for a specific task we are able to probably go ahead and call this and we are getting the response. Now the question rises, now the question rises then what is agentic AI? AI agents have understood okay fine for a specific task I'm calling something from the LLM, right? The LM is responsible for making",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 626.32,
+      "end_seconds": 699.12,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=626s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3afe8dce0b77240eca23932071723349a0106e3795e8e71be45cd2e5b626b902",
+    "text": "are getting the response. Now the question rises, now the question rises then what is agentic AI? AI agents have understood okay fine for a specific task I'm calling something from the LLM, right? The LM is responsible for making that tool call and getting the output and summarizing the output and giving it over here. Here also we can add the prompt. Here also once I get the response I can add the prompt and based on that I can summarize the output. I can do that. Okay. But this is only for one kind of task. Now if I talk about agentic AI okay and for discussing about the agentic AI application let's consider that let's consider that I have a task and this task is nothing but let's consider I want to probably convert a YT video that I really want to upload to a blog okay to a blog and now to convert a YT video YouTube video into a blog let's say that I have been uploading so many videos. Just imagine if I just create an agenti system which takes my YouTube video and convert that into a blog and publish it in my website. Would it will that not be good? It will definitely be good. Right now here if I probably see I",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 682.959,
+      "end_seconds": 757.68,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=682s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7a839584e134d53224d8afdf809bb76da8a21e59b25611c3a12cc97831fb5959",
+    "text": "agenti system which takes my YouTube video and convert that into a blog and publish it in my website. Would it will that not be good? It will definitely be good. Right now here if I probably see I can divide this into multiple subtask. First of all I will take this YT video. I will convert I will take the transcript from the YT video. Transcript from the YT video. Okay. After considering the transcript from this my second task will be creating title. Creating title. Okay. Third it can be creating description. Okay. So this will be my third task creating description and my fourth task will be writing the conclusion. Let's say so I've defined this task into four different task right four different tasks. Now for the same task, don't you think converting a YT YT video into transcript, I can create one AI agent. Then similarly for my second AI agent, I can basically take this transcript and this AI agent should be able to give me the title. Yeah. Yeah. And just to show you how these things will happen, don't you think I can just go ahead see this? Okay, see this magic. Okay. So, so what what I will be doing is that my first task will be that this AI agent",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 744.32,
+      "end_seconds": 834.56,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=744s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5206017b2c47a2c3385bb42dd694e073f512693a32c4dbda25019de22eb3d239",
+    "text": "show you how these things will happen, don't you think I can just go ahead see this? Okay, see this magic. Okay. So, so what what I will be doing is that my first task will be that this AI agent will be responsible in getting me the transcript from my YouTube video. Okay. This AI agent will be responsible for creating the title from the transcript that I get. Okay. Then my next agent over here which will be parallelly will be responsible to probably create the description from this particular transcript. Yeah. And finally, don't you think I can have one more one more AI agent which will be responsible in creating the conclusion. Right? Now here this is my AI agent one. Let's consider this. Okay. So this is my AI agent one. This is my AI agent 2. This is my AI agent three. And this is my AI agent 4. Each and every agent can use LLM. It can use prompt to perform its task. Each each here it can or it cannot it is not composite it needs to use all the LLM but since we are working with respect to text related things then obviously we can use LLM okay for now this is just like a one kind of workflow so this",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 820.24,
+      "end_seconds": 916.88,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=820s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "bce4f9bacec5f212e6da9750dc54eb2d23374f5d5418b8b6a6e08b4f307bfa2f",
+    "text": "composite it needs to use all the LLM but since we are working with respect to text related things then obviously we can use LLM okay for now this is just like a one kind of workflow so this workflow goes on like this right so first of all I give my YT video URL YT video URL then this agent is responsible in taking from this and giving the output a transcript. Now this transcript is sent to all the agents and finally we can combine all these outputs and give my final blog. Right? So what does this basically mean? Before an AI agent only used to do one task in an agentic AI system. So this is my entire complex workflow with respect to my agentic AI system and this is performing this entire task together. Here every agent is communicating with each other. Right? I can add one more thing over here. I can add human feedback. Human feedback also over here. So here what is basically happening? AI agents are communicating with each other. Right. I can also make sure to probably before this AI agent, let's say this agent is responsible in probably creating a description. For creating a description, it also wants the title. So it will just go ahead this AI agent 2",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 902.959,
+      "end_seconds": 998.0,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=902s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2dde78bbbcaa0064e7a7293fb2758eb98a5aa77fde17173b8b8677796b9270dc",
+    "text": "Right. I can also make sure to probably before this AI agent, let's say this agent is responsible in probably creating a description. For creating a description, it also wants the title. So it will just go ahead this AI agent 2 whatever output it is creating for the title, it will give it to the agent 3. And this will take that information and do this. So internally you'll be able to see we can also make this agent communicate with each other to solve a complex workflow and finally achieve a goal. Right? So just to understand what is the difference between AI agents versus agentic AI here AI agent is doing only one task. In an agentic AI system this AI agents will be collaborating with each other. This is really important. Collaborating collaborating with each other to solve a goal. This is really really important to understand. So I hope you understood this particular video. I hope you liked this particular video. This was the basic differences between generative AI versus AI agent versus agentic AI. And I hope you are able to understand this. Okay. Similar kind of videos I'm also going to come up in this specific series so that you get your fundamental rights. I hope you like this particular video. This was it from my side. I'll see you",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 982.72,
+      "end_seconds": 1064.96,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=982s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b5449951b37381461086022939f98ec435c380d33e99f4f5a7b77cf39b34dc43",
+    "text": "Okay. Similar kind of videos I'm also going to come up in this specific series so that you get your fundamental rights. I hope you like this particular video. This was it from my side. I'll see you in the next video. Have a great day. Thank you and all. Take care. Bye-bye.",
+    "metadata": {
+      "video_id": "p4pHsuEf4Ms",
+      "title": "Generative AI Vs Agentic AI Vs AI Agents",
+      "trainer": "Krish Naik",
+      "channel": "Krish Naik",
+      "topic": "Agents",
+      "start_seconds": 1054.16,
+      "end_seconds": 1067.0,
+      "url": "https://www.youtube.com/watch?v=p4pHsuEf4Ms&t=1054s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

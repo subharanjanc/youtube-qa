@@ -1,0 +1,162 @@
+[
+  {
+    "id": "56cb5745dcf104ae88251e978d497e5b65814b85b1caf3c2ebcb437e7ea1b7c1",
+    "text": "When you start learning about agentic AI frameworks, you come across so many terms that it's easy to get confused. In this video, I will make an attempt to give a very simple explanation of the difference between these three. So let's start with the basics. When you take any LLM, GPD, claim etc., it is trained on some huge volume of internet data. So if you ask a general question like this, it will be able to answer. But let's say you have this clothing store called Surma E-commerce for which you're building a chatboard which is powered by LLM and if you ask a question what is a refund policy on t-shirt it won't be able to answer it because it doesn't have access to your private organizational data to solve this problem you build a rag chatbot which is retrieval augmented generation where you provide your policy documents to LLM and it will be able to then fetch the answer out of those documents. ments. So here step by step what you're doing is you are first retrieving the documents then you're splitting it into chunks to take care of the context window for llm then you store it in vector database for semantic search later on then you retrieve and call llm and so on. Now you",
+    "metadata": {
+      "video_id": "vJOGC8QJZJQ",
+      "title": "LangChain vs LangGraph vs LangSmith",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "LangChain",
+      "start_seconds": 0.08,
+      "end_seconds": 78.96000000000001,
+      "url": "https://www.youtube.com/watch?v=vJOGC8QJZJQ&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cc13bb8ecca4ce12c58d9e8b5d39979b2ac8735ae1c8c82b30164dbfd446e26b",
+    "text": "you're splitting it into chunks to take care of the context window for llm then you store it in vector database for semantic search later on then you retrieve and call llm and so on. Now you can do all of this in Python but lang chain is a beautiful framework that makes these things easier by providing readymade classes. So for this it will have text loader. These are all the classes from lang chain library. If you categorize LLM powered application into two groups then those two groups uh as per anthropics building effective agent guide are workflows and agents. Workflows is basically a software where one of the component is LLM and remaining things are joined by a predefined core path just like any usual software. So let's say you might be loading data from somewhere. Then you're doing some pre-processing and then you use LLM let's say to extract information out of that text or to do something else. Okay. Then you have one other step. Then you might have another LLM call. So this is like a usual software. It is just that LLM is one or more component in in that software ecosystem. This kind of uh thing is called chain and lang chain is a framework that makes building llm powered application easy.",
+    "metadata": {
+      "video_id": "vJOGC8QJZJQ",
+      "title": "LangChain vs LangGraph vs LangSmith",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "LangChain",
+      "start_seconds": 62.16,
+      "end_seconds": 152.319,
+      "url": "https://www.youtube.com/watch?v=vJOGC8QJZJQ&t=62s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "deeac016ff965ebf95b91c528c13cb8757cef3edc673987b12be98af3f2e6dc1",
+    "text": "It is just that LLM is one or more component in in that software ecosystem. This kind of uh thing is called chain and lang chain is a framework that makes building llm powered application easy. Especially it is used mainly to build straightforward chains whatever we saw. So there are steps that you follow to build your application and one of the step is LLM. So here LLM is not making any autonomous decision. It is given a predefined task that okay from this text extract this information or summarize this information and remaining thing is all your Python or whatever programming language you're using is just code. Okay. Now let's say you want to build a complex chatboard where customer is asking I want to exchange my t-shirt for a different item and you will then ask for order ID. Right? This is not something you can just answer in one shot. Then they will provide order ID. Now you'll say okay now with which item you want to replace. So they provide SKU and there is some interaction there is some kind of a multi-turn approach here to summarize the steps you have to check first the refund policy for the item that they are returning then you check order details in the database to make sure that you know uh the item is",
+    "metadata": {
+      "video_id": "vJOGC8QJZJQ",
+      "title": "LangChain vs LangGraph vs LangSmith",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "LangChain",
+      "start_seconds": 135.599,
+      "end_seconds": 212.0,
+      "url": "https://www.youtube.com/watch?v=vJOGC8QJZJQ&t=135s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e16d0f308b797f3cfb4b3eafda7fd63e5e88085fa2aef59ff4b5cbdf252bf777",
+    "text": "to summarize the steps you have to check first the refund policy for the item that they are returning then you check order details in the database to make sure that you know uh the item is eligible and what was the price and so on. Then you check availability of the new item order new item print shipping label for old item. So this is not like a simple question okay what is my refund policy 30 days this requires multiple steps multiple clarification it's a complex flow and in each of the flow for refund policy you might have to access your policy documents for checking order details you might have to hit some database for checking availability of a new item you might be calling some micros service some API and to print label or you might be using some other software and in each of these steps LLM will be involved Okay. So, LLM either in all the steps or some of the steps LLM will be there and along with LLM you have documents, database, API etc. which will help you perform all these task. So, you are essentially doing goal oriented planning for a return that customer want to perform in the exchange of a new item. You first figure out all these four steps. Then you do multi-step",
+    "metadata": {
+      "video_id": "vJOGC8QJZJQ",
+      "title": "LangChain vs LangGraph vs LangSmith",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "LangChain",
+      "start_seconds": 199.519,
+      "end_seconds": 274.639,
+      "url": "https://www.youtube.com/watch?v=vJOGC8QJZJQ&t=199s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c6e2de645841f9e7af51591854f1c4691ff5742eb5c013f41919e503a6d29d81",
+    "text": "So, you are essentially doing goal oriented planning for a return that customer want to perform in the exchange of a new item. You first figure out all these four steps. Then you do multi-step reasoning, multi-step planning. You perform these steps uh one by one. Now let's say some of the steps might fail. Okay. So check the availability of new item. Let's say it fails. You might have to hit different API different color something something like that. You know then you have access to tools, right? These are tools. Knowledge knowledge is all PDF and database knowledge API etc. are called tools. All right. So this is an agentic chatboard. Agentic chatboard works on a complex task. It will divide it into multiple subtask. Then it will perform them one by one. Let's say second step fails. It will retry it. Okay. So there is a component of retry, feedback, etc. Just like how as humans we do the work. Let's say you are doing coding. You run the code, you find an error, then you fix the error, you know, you again run the code, then you find let's say another issue, then you fix that. So it's iterative approach. Agentic chatboard has some kind of autonomy and it will do this kind of multi-step iterative approach to",
+    "metadata": {
+      "video_id": "vJOGC8QJZJQ",
+      "title": "LangChain vs LangGraph vs LangSmith",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "LangChain",
+      "start_seconds": 261.12,
+      "end_seconds": 339.52000000000004,
+      "url": "https://www.youtube.com/watch?v=vJOGC8QJZJQ&t=261s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "42ac2a91b5c52c3ec6f8fca28a08410546cfb0d0e9249740b995d7e12a9585af",
+    "text": "you again run the code, then you find let's say another issue, then you fix that. So it's iterative approach. Agentic chatboard has some kind of autonomy and it will do this kind of multi-step iterative approach to accomplish a goal. Now one of the popular design for building agentic application is graph based stateful workflow. What I mean by that is let's say you start somewhere and you are making an LLM call. Okay. And then LLM will decide what to do as a next step. So let's say there is some conditional logic and LLM might decide to perform step A or step B or it might decide to make another call to a different LLM and same way when you're here this LLM can also autonomously I mean there will be some kind of prompt that will be given but the actual decision is made by this LLM in autonomous way it can perform either step C D E etc or it can actually call back to the original LLM. So there are four possible core paths. So this is a stateful workflow represented as a graph and langraph is a framework to orchestrate multi-step stateful workflows using graph-based structure. Here I'm showing you a code of one of the graphs we built in in Langraph. So you import all these",
+    "metadata": {
+      "video_id": "vJOGC8QJZJQ",
+      "title": "LangChain vs LangGraph vs LangSmith",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "LangChain",
+      "start_seconds": 322.479,
+      "end_seconds": 415.84000000000003,
+      "url": "https://www.youtube.com/watch?v=vJOGC8QJZJQ&t=322s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f4abd2b5a86cfa55372ce7aa84486b7c69906fcc4533484b5ce159bb4988981a",
+    "text": "graph and langraph is a framework to orchestrate multi-step stateful workflows using graph-based structure. Here I'm showing you a code of one of the graphs we built in in Langraph. So you import all these libraries. Okay. And then uh you have a this tool. So tool is a dummy python tool. It just gets the latest price of any stock Microsoft, Apple etc. And then uh you design the graph like this. So if I show you the graph is nothing but you start then there's a chatboard and as a tool you have that function the you know get stock price function. Okay. So when you perform all these steps eventually when you say I want to buy 20 Amazon stocks it will be able to call that function get the price and then you know it's performing those steps to kind of call the tool multiple times and then give you a total amount for your entire stock transaction. If you want to learn lang graph in detail then I have this uh tutorial. It's like more than 1 hour tutorial which will walk you through the entire framework from the very beginning. Let's summarize the difference between these two. So lang chain is a toolkit that allows you to build llm apps chains tools agents. Whereas lang graph is a framework that",
+    "metadata": {
+      "video_id": "vJOGC8QJZJQ",
+      "title": "LangChain vs LangGraph vs LangSmith",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "LangChain",
+      "start_seconds": 396.0,
+      "end_seconds": 480.639,
+      "url": "https://www.youtube.com/watch?v=vJOGC8QJZJQ&t=396s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1d73986ebb5888b0653f4db96c8eabc5485df494d0b487059cd36c54950880bb",
+    "text": "entire framework from the very beginning. Let's summarize the difference between these two. So lang chain is a toolkit that allows you to build llm apps chains tools agents. Whereas lang graph is a framework that is used mainly for agent. So just remember if you are writing a simple linear workflows you use lang chain but if you want to build complex agents use lang graph. style for lang chain is linear and reactive. Reactive means like you give some task it will return the response okay input output whereas lang graph has a graph base supports it supports loops retries you know it will retry to fix the error and kind of get the thing done it also has a memory base use case for lang chain is simple chatboard rag etc lang graph is as I said multi-step workflows complex agents and lang chain is partially stateful where lang graph has a state in that graph. So if you refer to my lang graph tutorial, you will get better understanding just in case if you don't know about graphs and states. Uh and here are the example use cases. Now what is lang? Well, lang is a debugging and observability platform folks. So if you look at the architecture, see this is an entire like ecosystem where you have lang and langraph they",
+    "metadata": {
+      "video_id": "vJOGC8QJZJQ",
+      "title": "LangChain vs LangGraph vs LangSmith",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "LangChain",
+      "start_seconds": 465.44,
+      "end_seconds": 549.44,
+      "url": "https://www.youtube.com/watch?v=vJOGC8QJZJQ&t=465s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a9a15e192bc0e517ce41d9fd7dbe5e6272f8da10608fe6bdc0e012ec70a2ff66",
+    "text": "here are the example use cases. Now what is lang? Well, lang is a debugging and observability platform folks. So if you look at the architecture, see this is an entire like ecosystem where you have lang and langraph they both are open source. Okay. Then you have langsmith which is uh doing the work of debugging playground prompt management monitoring you know so let's say if you deploy the aentki system in the production you want to monitor whether it's performing well you want to monitor your token cost okay it's not like you're spending millions of dollars in your token cost so all of those failures evaluation all of those things are done through langmmith so here is a lang UI where there's this demo demo app and really here you can see all the individual calls right you called vector database then you called chat GPT okay what was the input what was the output how many tokens did you use 390 what was the latency so you can monitor all of that this is just tracing but you can do much more than this if you want to learn these things in detail once again I have complete tutorials if you have any questions please post in the comment box below I hope you got some understanding",
+    "metadata": {
+      "video_id": "vJOGC8QJZJQ",
+      "title": "LangChain vs LangGraph vs LangSmith",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "LangChain",
+      "start_seconds": 529.36,
+      "end_seconds": 608.88,
+      "url": "https://www.youtube.com/watch?v=vJOGC8QJZJQ&t=529s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3577fb61ac32325acefcc7e4afb076b0ee349148986f822bac4365ffcbec53dd",
+    "text": "much more than this if you want to learn these things in detail once again I have complete tutorials if you have any questions please post in the comment box below I hope you got some understanding of lang lang graph and Lang Smith. If you like this video, give it a thumbs up and share it with your friends. [Music]",
+    "metadata": {
+      "video_id": "vJOGC8QJZJQ",
+      "title": "LangChain vs LangGraph vs LangSmith",
+      "trainer": "Dhaval Patel",
+      "channel": "codebasics",
+      "topic": "LangChain",
+      "start_seconds": 596.08,
+      "end_seconds": 616.0,
+      "url": "https://www.youtube.com/watch?v=vJOGC8QJZJQ&t=596s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

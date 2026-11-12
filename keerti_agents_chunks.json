@@ -1,0 +1,738 @@
+[
+  {
+    "id": "2ef767e7673ab83a1b32aaccca00383dacf3b03cc95119ea8ab9f02ef82dfc4f",
+    "text": "I'm going to escalate to the recruiter. First thing you do when you define a graph based on the entire job application, we are going to assess and we want to add the conditional edges after this assess skill set because it was a senior level person. It escalated to recruiters. I have 5 years of experience in C++. Now that so many LLMs are so easily available to all of us, creating awesome projects is actually very easy. Now honestly think of any domain like healthcare, finance, tech, e-commerce, customer support, anything and you can create a mind-blowing projects for your resume or for learning purposes and these projects will be damn impressive and honestly I'm saying it again. It is not hard. It is very easy to create these projects. Now let's get started with Langraph. I created this video on building LLM based apps using lang. And I told you that lang is awesome. You can build so many apps using it. Then why are we talking about lang graph in this video why is it even needed? See from the name itself lang chain stands for what? Lang stands for the large language models because we're building LLM based apps. And chain stands for what? Chain represents what? Chain is nothing but we are talking about a chain of any executables any",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 0.08,
+      "end_seconds": 71.67999999999999,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2fb3388795caa78fd7747020c4370d4f528b35fdc2afc78e08775f91b058d5f6",
+    "text": "chain stands for what? Lang stands for the large language models because we're building LLM based apps. And chain stands for what? Chain represents what? Chain is nothing but we are talking about a chain of any executables any runnables any task or function that we are performing in very simple terms. But the point here to note is that we are talking about chain. We are talking about linear workflows that do this then do this then do this then do this. So it's a linear workflow of any executables or any task that we are performing. But in reality, in real cases, you can think of them. There are so many and we are going to take real examples. We're going to build so many apps. In reality, what is going to happen is that the workflows that we are going to have is often going to be nonlinear. Right? So, how do we deal with these nonlinear workflows? Introducing Langraph. Langraph is part of Langchain ecosystem. It uses as the name suggests a graph-based approach to handle complex and dynamic workflows for building LLM based apps. Repeating that it is graph based as the name suggests. So we'll be able to build very very complex workflows in very easy way. But does that mean that you need to know",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 57.6,
+      "end_seconds": 126.56,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=57s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "572672eb7ee9d2ddcadd6b5e3ef3711508ad2f7b59a5f1b15216c5728d866ca4",
+    "text": "building LLM based apps. Repeating that it is graph based as the name suggests. So we'll be able to build very very complex workflows in very easy way. But does that mean that you need to know lang chain before knowing langraph because it is like an extension of lang chain right? Not necessarily. You should still be able to follow this video. But I highly recommend that after watching this do watch the lang also because first some of your concepts will get like the basic concepts will get clearer like chat models and all of that. So I will not be repeating that in a lot of detail. So after watching this make sure that you watch lang video as well. Before we move ahead I would like to take a moment over here to say something to those who are technically interested in geni. See there are two sides of geni. One is if you are learning to build your own lms build your own version of ch. The other side is when you are learning to use LLMs to build your own apps. Now if you're learning to build your own LLMs, you need to understand transformer architecture based on which chat GPT is built. And for that the prerequisite is understanding LSTM and RNN for which the",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 113.439,
+      "end_seconds": 175.04,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=113s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c82f82e8ce7f0266d18398bf7ea2819ddee78dce53575dc1c8fc87a937f6cacc",
+    "text": "your own apps. Now if you're learning to build your own LLMs, you need to understand transformer architecture based on which chat GPT is built. And for that the prerequisite is understanding LSTM and RNN for which the prerequisite is neural network. So this is how you will be able to build your own version of chat GPT neural networks ANN CNN RNN LSTM transformer architecture and then you will be ready to build. And when you're talking about building your own apps, that is where lang chain rag and all of this comes into picture. In our 7 weeks hands-on genative AI course with educosis, we have covered both of these sites in 7 weeks. Now this is a very very comprehensive course which I'm teaching live currently. All the recordings are available for lifetime notes code everything is available. You can check out the curriculum. You can check out the testimonials of our courses for this course also. We already have such great feedback. I'm thoroughly enjoying this course and I'm so proud of it. If you're interested in learning live with me or watch the recordings seven weeks, this is very very comprehensive and we are covering everything. It's very beginner friendly. At least check out the details in the description. For now, let's get back to the video. We will be",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 162.0,
+      "end_seconds": 228.56,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=162s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1389ca4295a0a6ea16e044ae7cbe241d42dd2aea7d2cff38c9121ba520712dc9",
+    "text": "watch the recordings seven weeks, this is very very comprehensive and we are covering everything. It's very beginner friendly. At least check out the details in the description. For now, let's get back to the video. We will be understanding Lang graph using this particular example. This will be the goal of our video. And you can see this looks like a typical graph. So there are many nodes. There are going to be edges. So you can see these are different edges. You can see there is one start node. You can see there is one end node and there are some other nodes with some names. So what exactly is happening? What example have we picked up? Let's first discuss that. So here what I'm doing is I'm building an app where we are going to get applications for a particular job role. So for example, our job role is say for Python role and we are going to get a lot of applications. So we are building an app to see that what should be done with these applications. What is the next step to be done for any particular candidate? So once we have an application the first thing that we're going to do over here is to make one call to LLM. Now the entire benefit of using lang chain lang",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 217.44,
+      "end_seconds": 281.36,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=217s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0e1c10100ee87fdb2362b75765011309106e2fec566798808d6c09264e97b66d",
+    "text": "be done for any particular candidate? So once we have an application the first thing that we're going to do over here is to make one call to LLM. Now the entire benefit of using lang chain lang graph is that you can be making the call to literally any lm even at different points. Suppose over here I am making one call to GPT and over here I'm making another call to DC. That is also possible right? So it is very very easy to use literally there's like one line change and it is very simple. Right? So let's assume that we are making the call to open AAI GPT. That is what we'll be doing over here. We'll be making the calls to the same GPT um LLM over here. So here what I'm making the call for is that whatever is the application that I got I'm just going to send that to our LLM which is our GPT in this case and we're going to say categorize this particular experience into one of the levels. Now the levels can be entry level, mid-level or senior level experience. Basically application will have like huge text or suppose it is generated from rum or anything right. So now from that text our LLM is going to analyze it and it is going to categorize",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 266.72,
+      "end_seconds": 340.23999999999995,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=266s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d766da89bf1f7f3824bfdf594c558ecdd40aa85dd1286e90cb6b57b246912208",
+    "text": "experience. Basically application will have like huge text or suppose it is generated from rum or anything right. So now from that text our LLM is going to analyze it and it is going to categorize the application into one of the three levels. So the candidate can be entry level, mid-level or senior level. So this task is going to be performed by LLM. Right? So every node you see is going to have a name. Every node has a name and a function associated with it. So in this categorize experience function we are going to make the call and we are going to get the response from there that okay this is one of the three levels to which our particular candidate belongs and once we have categorized the experience of our candidate the next thing that we are going to do is assess the skills. See we are hiring for a particular role like for example we are hiring for a python role. Now in this particular application we will have something written in the application right suppose from there our LLM is going to assess the application is going to understand that this particular candidate is a skilled in what domain like for example Java or Python or C++ or whatever and it is going to assess the skill. So we are",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 324.72,
+      "end_seconds": 394.96,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=324s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "410d894e97a867f1c225f5bb9918dfe0a267bbb51d776b75018b5c0e77b20c63",
+    "text": "is going to understand that this particular candidate is a skilled in what domain like for example Java or Python or C++ or whatever and it is going to assess the skill. So we are going to tell LLM that this is my job description or this is the role for which I am hiring and this is the application. Now you assess it and you tell me whether it is a match or not. Understood? So we are not doing the assessment. Our LLM will do it for us. We just going to make a call over here. So this was the first node. This is the next second node. Right? So first we categorize the experience. After that happened, we will go to our next node. And here again what is going to happen? Our LLM is going to do perform the action. We're just going to tell that this is the job description. This is the application that we received. Do the assignment and let me know. Now there are two things that are possible. our LLM will either say it is a match or it is a mismatch. So what we are going to do is in this particular example how I've designed it is that if it is a match if the job skills is what we are",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 382.72,
+      "end_seconds": 443.039,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=382s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e2de9935ad604fe1714da3ca5bc79db870ddd23fda6b73b84e07394eb2301b89",
+    "text": "LLM will either say it is a match or it is a mismatch. So what we are going to do is in this particular example how I've designed it is that if it is a match if the job skills is what we are looking for if the candidate has exactly that skills that is what we are looking for then we are just going to schedule the HR interview right otherwise so if there is a mismatch then I'm going to check the experience of the person if it is a very senior level person then the mismatch can be okay so for that case I'm going to escalate to the recruiter but for entry level and mid-level people because there are so many people who apply for just job application without even checking it out. I'm going to reject the application then and there itself. So I'm repeating it here. I will have one condition. Once I get the reply from LLM, the response from LLM, I will know whether the candidate matches the job description that I had put and if the application is match or not. If it is match, I'm going to just schedule the HR interview. if it is a mismatch but if it is a senior level person then I will assume that senior level person so might",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 429.599,
+      "end_seconds": 497.36,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=429s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4051f318dd21b67c0c088717cae3ef95e86d8ec0cdf95284993609f67460c957",
+    "text": "the application is match or not. If it is match, I'm going to just schedule the HR interview. if it is a mismatch but if it is a senior level person then I will assume that senior level person so might have thought of something before applying so I'm going to escalate that to the recruiter and let recruiter decide what to do but if it is entry- level or mid-level candidate I'm just going to reject the application then and there so if you'll see over here there is a conditional edge so that is why there are toted edges over here there is a conditional edge based on the response that I'm getting over here or based on some condition I'm making the call uh that which is the next node that we should go to. So this is the graph that we'll be building to understand lang graph. Again I'm suggesting just like other videos. So I'll be going through the documentation and teaching your langraph. So I highly recommend it for all the new frameworks libraries that are coming up. Try to do the same learn to go through the documentation because the frameworks and libraries are getting changed very frequently and it is happening for all the libraries out there. There's a lot of development",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 483.36,
+      "end_seconds": 550.0,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=483s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "46c72af83ce06e157bb1c7d561ff4704906c8043666954fd9af110857c664910",
+    "text": "are coming up. Try to do the same learn to go through the documentation because the frameworks and libraries are getting changed very frequently and it is happening for all the libraries out there. There's a lot of development going on over here. If there's any major update, obviously I'm going to let you know and this is there to stay I think because lang graph is a very very important thing and these concepts are going to stay. But still it is a good habit to go through documentation and learn things and that is how I'm teaching as well. So you also try to do the same thing open documentation and try writing the code yourself after watching the video. So watch the video then open the documentation and write the entire code yourself. If you come to the langchain documentation here in the ecosystem itself, they have mentioned that lang graph and lang is part of the ecosystem. Langsmith is basically for inspection, monitoring and evaluation. So you can see they have written it for debugging, testing, monitoring. Use lang. Uh langraph is very very important. So there is also deployment. There's langraph platform for that. Let's go to the langraph documentation. It is again very awesome, right? Everything is mentioned very nicely. tutorials concepts. So tutorials are actually",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 536.24,
+      "end_seconds": 608.88,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=536s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "306b493a12faa4a0d8ab18957177cd44154e7def1ee1f41e79447f3f4a8779f4",
+    "text": "langraph is very very important. So there is also deployment. There's langraph platform for that. Let's go to the langraph documentation. It is again very awesome, right? Everything is mentioned very nicely. tutorials concepts. So tutorials are actually given very nicely. The chatbot tutorial that is given literally you just have to follow it step by step and we'll do that in the coming videos. We'll also do the UI part of that using streamllet. There's also documentation given for rag and there's a lot of it given. So we'll go through all of this one by one. But one very uh nice section that I found like really really helpful for learning the basics. So other than learning the basics, what I really suggest you to go through is go to concepts and go through glossery because here they have explained all the important concepts in such a nice way and this is what we'll be following today to build our graph to understand the concepts in very easy way. They have mentioned everything what to do then the steps right everything is given we just have to follow this we'll be writing the code in Google collab and the link to notes of all the videos in the ML series and the code everything is available in the",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 592.32,
+      "end_seconds": 662.16,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=592s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "55c08367a8ffe4757ea72be443a344afeb037c0f9af2e1b49f9e3fef8aa3715f",
+    "text": "given we just have to follow this we'll be writing the code in Google collab and the link to notes of all the videos in the ML series and the code everything is available in the description you can check that out the link is there and we are going to get started with some boiler plate code first I'm going to be installing all the libraries that we need so we are going to be using lang chain lang chain core lang chain community lang graphs I'm just quickly just installing out of it. Give it a minute. Now that the installation is complete, we are going to set up OpenAI API keys. So if you go to the keys part over here, you can see that I have a lot of keys and all of them are disabled. So I'm just going to enable it. Copy the name of it and I'm going to start using it. I so I need to load it. So basically from google collab I need to import user data and I'm going to be using os to set the environment variables. It is already giving me autocomplete but here instead of the name I had this name. So I'm just going to copy paste that. So we have the key. So we can also print it to",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 648.32,
+      "end_seconds": 735.0400000000001,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=648s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "129133970c1521cff00f7b0d5d8afeef62b9bd5ee25bc1bf1add4c0c699e7345",
+    "text": "variables. It is already giving me autocomplete but here instead of the name I had this name. So I'm just going to copy paste that. So we have the key. So we can also print it to check. Before starting to build our graph, there's just one more thing that we need to do. We need to be able to connect with our LLM. And for that, we create something called chat models. This part I had already covered in the lang video, but still just quickly covering it again. See, whenever we need to interact with the LLMs, we create chat models. Now these are different different models for LLMs. Like for example, because here we are going to be using OpenAI LM. So I'm going to be creating chat open like this. You can use chat anthropic model or any model that you like mistrill anyone. Okay. So I'm going to be creating for openi. So I am going to be importing from langchain openai. So they have chat models and I'm going to be importing chat openai and I don't need this. I just need to create lm and just to show you some basic stuff. So now you can invoke any messages like this. So you can do who is the PM of India and you should be able",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 723.0,
+      "end_seconds": 801.519,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=723s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e1d227d570802337991e23a150e9147918a6ac7f46c8f9724c69b8ef6092a9da",
+    "text": "need to create lm and just to show you some basic stuff. So now you can invoke any messages like this. So you can do who is the PM of India and you should be able to run this and you should be able to get the response. So you can see it is under the content section. Right? So I'm not going to be focusing a lot on this. This part we have already covered. Now let's get started with building our graph. Coming back to the documentation here we can see our graphs basically have three key components. See from the names nodes and edges you should be able to understand a bit from the visualization of the graphs itself. Nodes are the nodes of the graph and the connections are called edges. This is fairly easy. But the most important part in lang in lang graph is actually state. So it is very very important. If you see over here even in nodes see nodes receive the current state as input. They perform some computation or side effect and return an updated state. So state is very very important even edges. So what they do is they determine which node to execute next based on the current state. Again state is very very important. So if I go down you can see the first thing",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 783.839,
+      "end_seconds": 863.279,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=783s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ee4523784efb5e53bf99153b115071078dda1ce08d74fddaa417a6cf81db9d78",
+    "text": "very very important even edges. So what they do is they determine which node to execute next based on the current state. Again state is very very important. So if I go down you can see the first thing you do when you define a graph is define the state of the graph. So we know we need to define the state of the graph. How do we do that? And what is state? First of all see state is nothing but schema of the graph. Now what is schema of the graph? Basically in very simple terms the data that we are storing like for example the example that we have taken what all things will we store we will store application we will store experience level we will store whether the skills matched or not and some response right so these are all the data that we need to save and this data is going to be updated as we go across the nodes. So initially suppose we were in one node and after that we analyze the experience level. Now when we go to the next node the state would be updated right. So that is exactly what do what we do in nodes. So we take the input we perform some computation and we return an updated state. So state is that data",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 847.92,
+      "end_seconds": 916.0,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=847s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e1100b226ffc39199186f33a380e93c4f8fa31dd55a5a89a14d800db0056796a",
+    "text": "next node the state would be updated right. So that is exactly what do what we do in nodes. So we take the input we perform some computation and we return an updated state. So state is that data that is being updated. So that is going to be there throughout a workflow. Workflow meaning the graph flow that we have. So in one entire workflow you're going to have one particular state. So if you execute again your state is obviously going to change but in that workflow your state is going to be updated. Your data is going to be updated. We understood that we need to define the state of the graph. But how does it look like? See state of the graph is nothing but a type dictionary. In very simple terms it's just a dictionary where we are having extra tag checking. Basically for every data that we're going to store like for example we're going to store application or we're going to store anything right. So that we are going to tell that this is going to be of what type. So in our case suppose we say that our application is of going to be of the type string. So we need to mention over there so that there is type checking to make sure that the",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 901.68,
+      "end_seconds": 964.399,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=901s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9c7434fe06e65489f2620f3e7c751a60cd9aae79fc322a64c9c37b466846024d",
+    "text": "going to be of what type. So in our case suppose we say that our application is of going to be of the type string. So we need to mention over there so that there is type checking to make sure that the state is like the data in the state is of the same type throughout the workflow. So we are going to create type dictionary and that is how we're going to create the state. So let's go back to our code and let's start creating it. So we are going to create state and here I need to have typed dictionary and how to import that see it already gave from typing I'm importing or you can also import from typing extensions I'm importing type dictionary and in this state what are the things that we are going to keep we are going to keep application so that is going to be of the type string we are going to have experience level again of the type string we are going to have skill match again of the type string. So currently I'm just taking everything as a string itself. So we are done defining the state of the graph. Let's see what to do next. Let's go back to the documentation. So here if we go back the",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 952.72,
+      "end_seconds": 1022.959,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=952s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4ea8c9ccc1fb532e211fcbd16aca73b3e18ef53e5fb04f0922adbb8a80f2a248",
+    "text": "taking everything as a string itself. So we are done defining the state of the graph. Let's see what to do next. Let's go back to the documentation. So here if we go back the next thing that we obviously have to do is create the graph. So here it is given the state graph class is the main graph class to use. This is parameterized by a userdefined state object. So we just defined one state object right? So that is the userdefined state object. We need to send that as a parameter to create the state graph. Obvious right? So let's do that. Let's run this and from lang graph I'm going to import state graph and we are going to create a state graph that is going to be our workflow and in this I obviously need to send my state So we are done defining our state graph. Now we need to start adding the nodes at the edges to it. In order to add nodes, let's go back to our documentation. And here if we go to the node section here, we can see that see how they are doing it. Let's look at the example first. So they are also building one state graph. They are calling it builder. We called it workflow. Right? And here in order to",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1009.12,
+      "end_seconds": 1086.96,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1009s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2b87264f69462ac89e88e2d5794937e1a055d56743de13423b7cee12e1c0ca0f",
+    "text": "we can see that see how they are doing it. Let's look at the example first. So they are also building one state graph. They are calling it builder. We called it workflow. Right? And here in order to add node, they have called a function called add node. And here they are passing one node name. So this can be either my node or the node. This can be anything. This is the name of the node that you will see in the diagram. And this is the function corresponding to it. So every node is supposed to perform some action, right? That action will be obviously written in a function in a method. Now what will it take? See, it takes here it is given. So the first positional argument is the state, right? So state is what we need to pass. That is what we had seen at the top as well. So here we saw that they receive the current state as the input perform some computation or side effect and return an updated state. So we also need to return an updated state. Right? So if I go back over here we are passing one state and we will also return one state. This is basically returning a dictionary which is state itself. Right? Here if you see",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1075.039,
+      "end_seconds": 1137.5200000000002,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1075s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6cbe9c25d2c3f6b9b0c6cf5cfdfcd5a20caa7f286bb34578436ff0c102469a1e",
+    "text": "an updated state. Right? So if I go back over here we are passing one state and we will also return one state. This is basically returning a dictionary which is state itself. Right? Here if you see they have also given one second positional argument but that is optional and that is configuration. We are not going to be talking about that not needed in our example. So what we are going to do is we just need to do workflow dot add node. Give the name of the node and the function corresponding to it. So let's quickly write that code. What is the first node that we should be creating? Uh in our example, what was the first thing that we were supposed to do? Whatever application we are getting of the candidate, we need to categorize it to one of the three levels entry level, mid-level or senior level. Right? So let's do that. We have the workflow now. So now I need to start adding the nodes. So I'm going to do workflow dot add node. And here I'm going to give the name as say categorize experience. This will be the name of the node. And I need to write a function. So I'm going to give the same name to that. So I need to write the function now. Now",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1125.44,
+      "end_seconds": 1190.559,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1125s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fd38640d596f577c2f7df4ddefe0d618ae32284beeacb71ae11a18b28fba9bd4",
+    "text": "experience. This will be the name of the node. And I need to write a function. So I'm going to give the same name to that. So I need to write the function now. Now when I define the function, what is going to be the input? See it is giving me autocomplete. It is going to take the state as the input and it is going to return the state itself. So obviously the return part I don't need to write but it is obviously nice to write it. I'm going to write a simple print statement over here just to for further clarity and I'm going to write categorizing the experience level and in this function what am I supposed to do I am basically supposed to make a call to my LLM and say that you categorize the candidate I am not actually doing it LLM is going to do us we are leveraging LLM right that is why LLM based apps so what do I need to do I need to create a prompt to be able to sent to my uh LLM. Now in order to do that I need to import. See I could have actually imported in once and kept everything but I just wanted you to understand that why am I importing",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1179.559,
+      "end_seconds": 1244.48,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1179s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "206fce59acf5e0ffd6337c07c0b801a615bbea3aedb9258d42be464d6a474238",
+    "text": "sent to my uh LLM. Now in order to do that I need to import. See I could have actually imported in once and kept everything but I just wanted you to understand that why am I importing whatever I am importing. So just for further clarity I'm just doing it as we are writing the code. So from the prompts I am going to import chat prompt template and I'm going to create a prompt now. And this part we have already covered it in the lang chain video but just quickly covering it again. See whenever we need to send uh something to our LLM right so we could either do just chain.invoke like that. But what if I want to give something as input like in this case we have to give application as the input right? So I need to form a prompt and pass that. Now again the prompt can be formed either from me messages or from templates. So if you already know lang is like a quick revision for you. So I could also do it from messages which is a concept if you don't know that it's fine for now. So what I'm doing is I am forming from template which is basically very simple. I am basically going to just pass this",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1231.039,
+      "end_seconds": 1303.1200000000001,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1231s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a5e415abb699e239c60d74c73ec69e7d7e07023116af377310f25a126ef473b4",
+    "text": "from messages which is a concept if you don't know that it's fine for now. So what I'm doing is I am forming from template which is basically very simple. I am basically going to just pass this string and this string is going to be used as the template. Now in this string I could also pass my uh whatever is the input like in this case the application itself is going to be the input that I'm going to pass over here. Right? So I'm just going to write a simple string that based on the application like the job application just categorize into one of the three levels. So just give me one sec and I obviously need to tell that you you can categorize into what levels right so that we are telling the LLM that these are the different levels that can be possible and in order to pass the input I'm just going to write it properly I can just give the input also over So I'm going to pass my application as the input and this is my input. So we are done creating a prompt. Now in order to send it to our LLM, we are obviously going to create a chain. This is the lang chain chain. And whatever is the output from this prompt,",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1288.799,
+      "end_seconds": 1369.84,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1288s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "21495f54da002757968d56afeb05a6019281d4baa340d59eba9645a902ee3ce2",
+    "text": "input. So we are done creating a prompt. Now in order to send it to our LLM, we are obviously going to create a chain. This is the lang chain chain. And whatever is the output from this prompt, I am going to pass it to my llm. Right? I could also in uh like just I could also parse it out over here. Just do a str out parser. But why do I need to parse? Because whatever is the output that I get from the LLM is going to have a lot of things. One of the things like the output that we want like in this case we want this experience level, right? This is going to be present under the content section. So I could also use this parser to take it out and I see it is giving me autocomplete just parse it and give it as the state right. So this is the state. I could either write code that like that also or just to print it I am just going to assign it in a different variable. And I'm going to invoke chain like this. And in this chain, so basically whatever needs to be passed to the prompt as an input. So in this case it is application that I need to give over",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1357.32,
+      "end_seconds": 1423.12,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1357s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "81d199da296d9da64ffb2139c17fdbb722edfe64c78c2f1abb65ef4531fcd0cb",
+    "text": "And I'm going to invoke chain like this. And in this chain, so basically whatever needs to be passed to the prompt as an input. So in this case it is application that I need to give over here as dictionary. So I need to pass this application right and from where am I going to get the application? So in my node what is there? State is there. So that state has the application, right? So our state has application. So how am I going to get this application from my state? So now that I have passed application as a dictionary, my prompt will have access to the application. So prompt is there. Whatever is going to be the output of the prompt uh will be passed to LLM. Then from LLM, I'm going to get some response and I'm going to take out the content of that and that is my experience level. Now I can just return the dictionary and for further clarity let me just add a print statement as well so that we also can see it properly and that's it. We are done adding one node to our workflow. So basically we have added one node to our graph. Similarly for the other nodes also we need to start writing the different functions. So let me just",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1407.6,
+      "end_seconds": 1488.96,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1407s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3ae966632e77c7f76fc4acee0ae7f911100fc55110544dae1d11f6e8c71c4670",
+    "text": "properly and that's it. We are done adding one node to our workflow. So basically we have added one node to our graph. Similarly for the other nodes also we need to start writing the different functions. So let me just quickly first write the functions for all the nodes and then we are going to form our proper graph by adding the different nodes and the ed edges. First let's quickly write the functions right. So what are the different nodes that I'm going to have? One is categorize experience that we have already written. The next one was assess skills right where we were actually assessing the skills of the candidates. And here again I'm going to pass the state. So it is actually giving me the autocomplete state and we are have we have added a print statement assessing the skill set of the candidate. So that is great. See here also I'm just going to form a prompt then do the change exactly the same thing. Oh it is also giving me an autocomplete prompt chat form template based on the following job application assess the candidates skill set but here also let's also mention that what are the job requirements right? So based on the following job application. So based on the job application say for a Python",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1475.08,
+      "end_seconds": 1548.08,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1475s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a8196aaccac51288bf963819a62e4fe75cd2f74625c69f387f430695cb677f1f",
+    "text": "assess the candidates skill set but here also let's also mention that what are the job requirements right? So based on the following job application. So based on the job application say for a Python developer. So I'm just giving two words right. But in reality obviously job description can be a lot like you can give that what are the other text tags or the number of years of experience or anything right? So you can give a lot of things. What are the libraries the frameworks the person has worked on or anything like that right? So to the person does the person have like DevOps experience. So you can give a lot of things over here and based on the entire job application we are going to assess and here I also want our LLM to respond with either match or no match. Again I have the prompt. I need to pass that to my LLM. And again I'm going to get the response which will be skill match. And we are going to invoke our chain in our application. We are going to have state application and we are going to get the content out of it from which we'll get the skill match and we just printing it and returning it. Right? Similarly, so this is the second note. What is what",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1529.679,
+      "end_seconds": 1614.08,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1529s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "35d7a7ca045563949637b11056d55200a2b04d78ca0bb64ca494a1092bf9bc35",
+    "text": "application and we are going to get the content out of it from which we'll get the skill match and we just printing it and returning it. Right? Similarly, so this is the second note. What is what are the other notes that we have? So one is going to be for scheduling the HR interview. So when is this going to happen? If we have a match, right? So in reality, see in real cases, obviously scheduling can be a task that you can perform like you can probably uh trigger a mail or something like that, right? Uh you can schedule properly, but currently obviously this is demo. So I'm just going to add basic print statements and return it on and we are going to be scheduling the interview. So this is the print statement. I'm just returning the response from there. And for further clarity, let's just call this schedule HR interview. So what were the three possibilities? One is schedule HR interview. The other is escalate to recruiter. Right? So when were we doing that? So in case there is senior level but there is senior level basically candidate and there is a mismatch then we can escalate to the recruiter. So that is the logic that I am writing. You can write anything right. So you must be",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1603.52,
+      "end_seconds": 1688.24,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1603s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "82f0137aea635d7a6efc638781e007ec61bcefe7c21505953af2e5146a1ce4c2",
+    "text": "but there is senior level basically candidate and there is a mismatch then we can escalate to the recruiter. So that is the logic that I am writing. You can write anything right. So you must be thinking where to write that logic. We'll look at that as well. Don't worry. So we are going to scale it to recruiter. And the last case is that when we are going to simply reject here again you could be actually sending the email but so this could be automated right. So here you just have to send the mail. So they could be logic say to Mailchimp or something. But obviously for demo purposes I'm just adding a print statement. So these are all the functions that we needed. We already have one node and let's start adding the other nodes as well. Quickly adding the other workflow nodes as well. So workflow do add node and we're just going to quickly give the names and add. So I'm not adding over here because it is going to give me the error that this is already present. So I'm just going to add in the other cell. So I'm just going to just copy paste all the functions and give the same names. So as a skill set and this is going to be the function.",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1678.0,
+      "end_seconds": 1784.08,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1678s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e69fa4593ad665a9c099ec352ba62f1d4f59dafbe288e1b4e96ad0d80d2ceed9",
+    "text": "is already present. So I'm just going to add in the other cell. So I'm just going to just copy paste all the functions and give the same names. So as a skill set and this is going to be the function. Similarly let's just give for others as well quickly. Now that we have added all the nodes, it's time to add the edges. In order to add edges, let's go back to the documentation. Let's go to the edges part. And here it is given that there are different types of edges. So first let's look at normal edges. Here basically we have to go we have to give that we want to go directly from one node to the next. So we can just do graph add edge and node A to node B we want to go. So here we can just mention that these two nodes add an edge between them. So the first edge that we also want to add is actually very simple. So all I'm going to do is add edge and what are the different nodes between which I need to create. So I want to create from categorize experience from categorize experience to the assess skill set part. So here I am adding a simple normal edge between categorize experience and assess",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1770.799,
+      "end_seconds": 1851.279,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1770s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b892655a2bb4a25bd5e1a33b90dd02a0e928f70ce22a63ed28f45b00ac24ef86",
+    "text": "are the different nodes between which I need to create. So I want to create from categorize experience from categorize experience to the assess skill set part. So here I am adding a simple normal edge between categorize experience and assess skill set. But what after assess a skill set? See after we are done assessing skill set we are making a decision based on the skills that whether we want to schedule HR interview or we want to escalate or do we want to reject the application. So let's go back to the documentation. Here there is something called conditional edges. And here it is given to us that when we do graft at add conditional edges we can give after which node do we want to route. So here it is given accepts the name of a node and routing function to call after that node is executed. So after which node do I want the condition conditioning to happen after the assess skill set. Right? So that is what we are going to do. We are going to do add workflow dot add conditional edges and we want to add the conditional edges after this assessor skill set. Right? So this is the node after which I want to make the decision. But there has to be a routing",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1831.919,
+      "end_seconds": 1908.0800000000002,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1831s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "46ea3a2c435bb2508aaf67dd09291e369d2089b59d73f81597777dc344a00326",
+    "text": "add conditional edges and we want to add the conditional edges after this assessor skill set. Right? So this is the node after which I want to make the decision. But there has to be a routing function that needs to be given. Right? And what does this accept? The routing function accepts the current state of the graph and returns a value just like our simple nodes as well. Right? Similar to nodes. So that's what we need to do. We need to write a routing function. So we are just going to maybe write route app right and we need to write this function. So I'm going to call it route app and as it said we need to pass a state to it and it is also going to return something. But what is it going to return? Let's look at that. By default the return value routing function is used as the name of the node or the list of the nodes to send the state to next. So which is the next node to call after this right? So we are going to give the name of that you can also configure it if the names are different then you can also configure it. Currently I'm going to have the same name. So let's quickly write that code.",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1893.279,
+      "end_seconds": 1964.2399999999998,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1893s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0db084dc984d300cea66da54d12fd6721d44ac43428c88e4267c5c56a45b04ab",
+    "text": "going to give the name of that you can also configure it if the names are different then you can also configure it. Currently I'm going to have the same name. So let's quickly write that code. So because I have to return a name I'm basically returning a string itself. Right? So what do I need to check? I need to check the state of like what value am I going to check? I'm going to check skill match value. Right? That is what I'm returning from here. Right? This is skill match. This is basically what I'm going to be comparing. Now, if skill match is equal to match, see I could have obviously written this code better because here I am doing an exact match because I'm using open EI. It is good enough and it will be able to do the exact match. But I have tried this with say other LLMs. It does not always return this in one word. Okay. So, we have written respond with either match or no match. So sometimes it might respond with here is your one-word answer match or no match right. So instead of comparing the exact answer we should be doing contains or something like that or maybe while assigning we should be doing that that from the",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 1953.2,
+      "end_seconds": 2023.279,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=1953s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2f175f696f933668aba6e7aad3e2ef2f6fdcf1d4cad9b3b2e38d5337f46aa577",
+    "text": "respond with here is your one-word answer match or no match right. So instead of comparing the exact answer we should be doing contains or something like that or maybe while assigning we should be doing that that from the content I am just taking out the word as match or no match and assigning that. Currently I'm keeping the demo as very simple right. So obviously these things can be done. Currently I'm just going to so if there is a match what is the next thing that I need to do? I need to oh it is actually finishing the function for me but okay let's write it down okay let's see what it is giving so it is giving if there is a match then I need to schedule the HR interview which is correct if there is a proper match then I need to schedule the HR interview else if only if the experience level is equal to senior level okay only if that is the case I'm going to escalate to the recruiter else I'm going to reject the application right? Else I'm going to reject the application. So I am rejecting in all the other cases like for example if it is mid or entry level I'm going to reject it or if it is not a",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2006.559,
+      "end_seconds": 2076.3199999999997,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2006s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "00a334dd8009d0283de1d2e8b4d51261eab80b3ac2d8e6a121287dd08e00b5b6",
+    "text": "application right? Else I'm going to reject the application. So I am rejecting in all the other cases like for example if it is mid or entry level I'm going to reject it or if it is not a match I'm going to reject it. So in all the other cases I am rejecting the application. So this is my route. We are done adding all our nodes and edges. But if you remember the diagram that I showed you in the starting there was also something called start node and end node. So let's go back to the documentation and let's actually go to the nodes. And here you can see that add node was the simple thing that we did. We also have something called start node and end node which which are nothing but special nodes. So these are already given uh and we don't need to create them. It is just that this is how langraph will know that this is where I need to start from and this is my terminal node. So this is where I need to end. Right? So I just need to add these edges. So from the start node and till the end node. Right? So let's just quickly do that. So, so what was our starting point? A starting point was basically categorize",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2063.24,
+      "end_seconds": 2130.2400000000002,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2063s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7f36142066f65891ad1d31763f5cc7ba200a58650735d112473d30ab28b69e7b",
+    "text": "need to add these edges. So from the start node and till the end node. Right? So let's just quickly do that. So, so what was our starting point? A starting point was basically categorize experience, right? So, I need to add edge from start till over here, right? And for this, I need to import the start and the end from the langraph. This is not there, right? And by the way, if you ever get stuck, you can also always do explain in Google Collab. It is very, very helpful. It just tells you that you need to import. So I'm going to go up. So where I imported state graph there I'm going to import start and end. That's it. And we are going to come back and let me just quickly add the other edges as well. And we are going to add to the end. Oh so it is giving me autocomplete. So from all the other ones SS skill set, escalate to recruiter, reject application, schedule. So we are just going to add the end edges right. So that's it. Now we are actually done adding all the nodes adding all the edges. What we need to do now is compile. So actually I think I saw somewhere in caps it was given that we",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2113.599,
+      "end_seconds": 2196.72,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2113s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "392833b87f50666f0c0ebb7665ff1d8a1a651ae423bd1d3997754ba511cdae40",
+    "text": "that's it. Now we are actually done adding all the nodes adding all the edges. What we need to do now is compile. So actually I think I saw somewhere in caps it was given that we must compile. So let me actually search it. So here you can see it is given you must compile your graph before you can use it. Right? So we need to compile a graph something like this graph builder dot compile right. So maybe we can call it our app. That is what we are going to get from our workflow. So after compiling the workflow we will have an app and we are ready to use it. Okay. Okay. I know why this is happening because I just ran this again. So it created basically the workflow from the starting. So let's just quickly restart the session and let me just run all of this once more because I created the workflow again. So it does not have these nodes and we are going to run into problems. So instead of that let me just write the code properly and just rerun the entire thing. And I'm going to remove this and let me just add it over here and let me try running it again. I could also run all these cells.",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2182.0,
+      "end_seconds": 2253.359,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2182s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c6d4a673de7cab539c4406f64f03bc83dd17313c6a1a00736cbddfd893bb9251",
+    "text": "write the code properly and just rerun the entire thing. And I'm going to remove this and let me just add it over here and let me try running it again. I could also run all these cells. So I could also go over here restart session and run all but just to show you quickly we're going to do it. So I have restarted going to set the open AI keys. This will be also a good revision. We created the LLM. So whenever we need to form the state graph the first thing that we need to do is define the state. The next thing that we need to do is define the state graph. Then we added all the functions corresponding to our nodes. We added our nodes. Then we added the routing function. And we added our edge the conditional edges. We added the start and the end edges. And then we compiled. So it is compiling now. Great. Now that we have compiled our graph, we are actually ready to run it. But if you also want to visualize it, you're also ready to visualize it. So let me actually search and show you how to visualize. So if you just go over here, let's go down. So here they have given this code. Let's just copy paste",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2236.8,
+      "end_seconds": 2310.56,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2236s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "42dd898dc37a713f727d9787cf805705b041cc062cf45b70627cfb8f6cf14bd0",
+    "text": "you're also ready to visualize it. So let me actually search and show you how to visualize. So if you just go over here, let's go down. So here they have given this code. Let's just copy paste this and let me show it to you. So this is basically for some configurations we don't need this. All I'm doing is basically drawing the graph in PNG format. So here you can see right. So if I run this, it took some time but here it is our beautiful graph. So congratulations. Let's just go through this once more. So this was the first node that we added categorize experience. Then we added these nodes. We added this conditional edges, right? We started from start, we ended at end. So this is how our graph looks like. Let's put it to test now. Right? So we have the app. Now we need to invoke it and we need to see the results whether it is actually working or not. Right? So we will actually be making the calls to LLM and let's see if we are able to actually see this. So we I'm going to just write a simple function uh maybe run candidate screening and we are going to pass the application in this particular function which is going to be nothing but a",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2296.24,
+      "end_seconds": 2372.8,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2296s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8ef8dc6f9546a0e1e1ebb0dc08e2965bf77cc418b26229a611df4ba4887b88c2",
+    "text": "we are able to actually see this. So we I'm going to just write a simple function uh maybe run candidate screening and we are going to pass the application in this particular function which is going to be nothing but a string for now. It could also be a PDF which you're going to read and then probably you can assess that as well. So there are a lot of things that you can do but for now keeping things simple suppose we're getting an application in the string form then we are going to get the results by invoking our app. So I'm just going to do app.invoke invoke and I am going to pass the application as the dictionary and I'm going to whatever response I'm going to get I'm going to print it right but instead of print for now just let's return the whole thing right because I'm going to print that as well so let's just let me write it properly I know this is kind of redundant but this is for clarity Okay. So whatever we are getting it in the response, we are just returning that itself as the dictionary. So this is my function. I obviously need to call it. Let's take one example application text. This could be anything. See currently the code that",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2356.0,
+      "end_seconds": 2438.48,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2356s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "31718e6ab4b8a13b351ce86694ab7ddc75c93ac41a4c33784351a9ccc7496d19",
+    "text": "the response, we are just returning that itself as the dictionary. So this is my function. I obviously need to call it. Let's take one example application text. This could be anything. See currently the code that I have written is that we are checking for Python job role. Right? Let's maybe pass for one Java role and let's see the application. Suppose I'm sending that I have experience in Java and I have experience in Python. Let's see what is the response and let's see if our LM is able to distinguish or not. So if I have 10 years of experience in software engineering with expertise in Java. Okay. So if I write this and if I try to get the results from my app. So I just need to call this function. I need to pass the application. So I'm going to pass the application text and whatever are the results I'm quickly going to print it as well. I know I could have just printed over there but just printing it properly again. So whatever the results I'm just going to print them again quickly. And let's just try running this and let's see if it works or not. So categorizing the experience level of candidate as senior level. So 10 years it thought if as senior level assessing",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2420.64,
+      "end_seconds": 2512.8799999999997,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2420s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "13bc95e73a3c6f0d4a39be8e24b6413f8e60068e3a8f35a96588547357cf3a9a",
+    "text": "going to print them again quickly. And let's just try running this and let's see if it works or not. So categorizing the experience level of candidate as senior level. So 10 years it thought if as senior level assessing the match it assessed it and it was able to say that there is no match because we said in Java and it had what it had in Python. The job role that was expected the job description was in Python right because it was a senior level person so it escalated to recruiter. Right? if it was mid-level or if it was entry level, it would not have uh done that. Let's actually check it out. And I've just printed the same thing again. So these are the print statements that we added in the nodes. And this is the final computed result. So if I have one years of experience and suppose in Java itself, let's see what's going to happen. So because I I have only one year of experience, I am now entry level. The candidate is entry level. And because there is no match, we just rejected, right? So we send the rejection mail. See here because there was a senior person we had escalated to recruiter because now there is one year of experience we are sending the",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2497.2,
+      "end_seconds": 2566.9599999999996,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2497s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d7506bfc0f7a4555b19f57d5eb876a1e13098c3145a4259e639ba75f91174bc3",
+    "text": "because there is no match, we just rejected, right? So we send the rejection mail. See here because there was a senior person we had escalated to recruiter because now there is one year of experience we are sending the rejection mail let's try more suppose I have any years of experience okay so suppose I have no experience I have experience in software engineering in Python let's see what's going to happen so it by default set it to midle and it set a m match and it scheduled the interview correct So let's try maybe a bit more. Let's try for C++. Suppose I have uh 5 years of experience in C++ and let's see what's going to happen now. So again midle there's no match. So send the rejection made right. Beautiful. So this is working nicely. I hope you are enjoying it. And this brings us to the end of the video. I hope you enjoyed. I know there's a lot more to Langraph obviously but this is a great place to start. You are ready to build so many apps now. I'm sure you must have a lot of ideas. It is so easy. You can make LLMs do all your work and you can have conditions. You can have decision making and it is so easy to",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2552.56,
+      "end_seconds": 2630.24,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2552s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ae77e7c9635c4c4a549340666a0961d4ea67813b314980127deee670dbb95866",
+    "text": "build so many apps now. I'm sure you must have a lot of ideas. It is so easy. You can make LLMs do all your work and you can have conditions. You can have decision making and it is so easy to build so many cool apps. Now let me know your ideas in the comment section. And guys I am planning to cover so many projects in these next two three months. Especially next month I am planning to cover a lot of projects. I'm going to be recording them. So if you have any particular topics or any particular projects that you would like me to work on for YouTube, let me know. I would love to do that. Also guys, please consider sharing this video on LinkedIn or with your friends or consider subscribing please. Uh because a lot of efforts goes behind this obviously I hope you can see that I'm literally making an entire playlist on machine learning covering huge videos like most of the videos are like 1 hour long bigger videos as well right. So please if you appreciate the effort, consider subscribing and sharing with your friends. I it would mean the world to me. Uh like all the effort would be completely worth it if you could just give the reach to the video that it",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2617.839,
+      "end_seconds": 2681.119,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2617s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a77eabd9907094d8287e020729ec504c61b6ef4ab3c933e3bf8e045611bf8ebf",
+    "text": "subscribing and sharing with your friends. I it would mean the world to me. Uh like all the effort would be completely worth it if you could just give the reach to the video that it really deserves. I truly believe that the videos deserve a lot more reach and let me know if you have any doubts. I'm here to help you out. Please comment section is there for that and let me know that you watch the video till the end. I would be very happy to read about it. See you next time guys. Bye. [Music]",
+    "metadata": {
+      "video_id": "wvNgKx2e_LA",
+      "title": "LangGraph in One Video - Recruitment Agency Workflow | Beginner Friendly Explanation with Code",
+      "trainer": "Keerti Purswani",
+      "channel": "Keerti Purswani",
+      "topic": "Agents",
+      "start_seconds": 2670.319,
+      "end_seconds": 2705.0,
+      "url": "https://www.youtube.com/watch?v=wvNgKx2e_LA&t=2670s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

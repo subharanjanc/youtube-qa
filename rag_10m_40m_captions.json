@@ -1,0 +1,3436 @@
+{
+  "video_id": "71MW5WeHdz8",
+  "title": "RAG Tutorial For Data Engineers (From ZERO To PRO)",
+  "channel": "Ansh Lamba",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 600,
+  "end_seconds": 2400,
+  "segments": [
+    {
+      "start": 600.0,
+      "end": 603.6,
+      "text": "your responsibility to consume that"
+    },
+    {
+      "start": 601.44,
+      "end": 605.6800000000001,
+      "text": "content as well right so I know you will"
+    },
+    {
+      "start": 603.6,
+      "end": 608.24,
+      "text": "do that I know I know I know so let's"
+    },
+    {
+      "start": 605.68,
+      "end": 609.519,
+      "text": "get started with the video and I oh"
+    },
+    {
+      "start": 608.24,
+      "end": 611.6,
+      "text": "there we have some more okay"
+    },
+    {
+      "start": 609.519,
+      "end": 614.0,
+      "text": "congratulations to all of these as well"
+    },
+    {
+      "start": 611.6,
+      "end": 616.0,
+      "text": "so now these are my handles if you want"
+    },
+    {
+      "start": 614.0,
+      "end": 617.6,
+      "text": "to follow me if you want to just uh"
+    },
+    {
+      "start": 616.0,
+      "end": 620.16,
+      "text": "let's say connect with me. These are my"
+    },
+    {
+      "start": 617.6,
+      "end": 622.32,
+      "text": "handles and that's it. Nothing special."
+    },
+    {
+      "start": 620.16,
+      "end": 625.4399999999999,
+      "text": "So let's get started with this amazing"
+    },
+    {
+      "start": 622.32,
+      "end": 629.279,
+      "text": "masterass and let's try to master rag in"
+    },
+    {
+      "start": 625.44,
+      "end": 633.44,
+      "text": "a step-by-step approach. Let's see. So"
+    },
+    {
+      "start": 629.279,
+      "end": 636.16,
+      "text": "now it's time to discuss rag masterass."
+    },
+    {
+      "start": 633.44,
+      "end": 640.48,
+      "text": "Okay. So"
+    },
+    {
+      "start": 636.16,
+      "end": 644.7199999999999,
+      "text": "rag is a very wide term to be honest."
+    },
+    {
+      "start": 640.48,
+      "end": 648.88,
+      "text": "Okay, very wide term. It's equivalent to"
+    },
+    {
+      "start": 644.72,
+      "end": 652.0790000000001,
+      "text": "like I'm talking about term rag term is"
+    },
+    {
+      "start": 648.88,
+      "end": 655.36,
+      "text": "like in terms of um you can say use"
+    },
+    {
+      "start": 652.079,
+      "end": 658.079,
+      "text": "cases. So rag in today's era rag is"
+    },
+    {
+      "start": 655.36,
+      "end": 661.6800000000001,
+      "text": "equivalent to a database"
+    },
+    {
+      "start": 658.079,
+      "end": 664.4799999999999,
+      "text": "literally yes rag is equivalent to a"
+    },
+    {
+      "start": 661.68,
+      "end": 666.399,
+      "text": "database in today's era. So if I ask you"
+    },
+    {
+      "start": 664.48,
+      "end": 668.64,
+      "text": "a question let's talk about database"
+    },
+    {
+      "start": 666.399,
+      "end": 670.959,
+      "text": "you'll be like wait what kind of"
+    },
+    {
+      "start": 668.64,
+      "end": 672.959,
+      "text": "database what is the use case that you"
+    },
+    {
+      "start": 670.959,
+      "end": 674.399,
+      "text": "want to perform with that database? um"
+    },
+    {
+      "start": 672.959,
+      "end": 675.68,
+      "text": "what is the end goal to create the"
+    },
+    {
+      "start": 674.399,
+      "end": 679.6,
+      "text": "database and so many other questions"
+    },
+    {
+      "start": 675.68,
+      "end": 683.68,
+      "text": "right similarly with rag as well rag"
+    },
+    {
+      "start": 679.6,
+      "end": 687.44,
+      "text": "earlier was just a term to talk about"
+    },
+    {
+      "start": 683.68,
+      "end": 690.079,
+      "text": "databases and AI but not now rag is much"
+    },
+    {
+      "start": 687.44,
+      "end": 692.8000000000001,
+      "text": "more than that because we perform data"
+    },
+    {
+      "start": 690.079,
+      "end": 693.92,
+      "text": "modeling with rag we perform so many"
+    },
+    {
+      "start": 692.8,
+      "end": 697.5999999999999,
+      "text": "other things that we're going to discuss"
+    },
+    {
+      "start": 693.92,
+      "end": 700.16,
+      "text": "today okay so just for your kind"
+    },
+    {
+      "start": 697.6,
+      "end": 702.48,
+      "text": "information do not feel like rag is just"
+    },
+    {
+      "start": 700.16,
+      "end": 704.48,
+      "text": "a term that we need to learn learn in"
+    },
+    {
+      "start": 702.48,
+      "end": 706.0,
+      "text": "just 10 to 15 minutes and that's it."
+    },
+    {
+      "start": 704.48,
+      "end": 709.44,
+      "text": "This is just one of the terms that we"
+    },
+    {
+      "start": 706.0,
+      "end": 713.2,
+      "text": "can learn in AI. Rag is the backbone of"
+    },
+    {
+      "start": 709.44,
+      "end": 718.839,
+      "text": "AI data engineering. Okay, let me just"
+    },
+    {
+      "start": 713.2,
+      "end": 718.839,
+      "text": "write it for you. Rag is the"
+    },
+    {
+      "start": 720.56,
+      "end": 723.56,
+      "text": "backbone"
+    },
+    {
+      "start": 723.839,
+      "end": 731.9200000000001,
+      "text": "of AI data engineering. Now just tell me"
+    },
+    {
+      "start": 728.079,
+      "end": 733.8389999999999,
+      "text": "one thing. You are a data engineer."
+    },
+    {
+      "start": 731.92,
+      "end": 736.4799999999999,
+      "text": "or you want to become a data engineer or"
+    },
+    {
+      "start": 733.839,
+      "end": 739.7600000000001,
+      "text": "whatever."
+    },
+    {
+      "start": 736.48,
+      "end": 742.0,
+      "text": "If you want to do anything"
+    },
+    {
+      "start": 739.76,
+      "end": 745.6,
+      "text": "in today's era, if you want to do"
+    },
+    {
+      "start": 742.0,
+      "end": 748.56,
+      "text": "anything, you need to know rack."
+    },
+    {
+      "start": 745.6,
+      "end": 754.0790000000001,
+      "text": "Okay? Because the heart of data"
+    },
+    {
+      "start": 748.56,
+      "end": 757.5189999999999,
+      "text": "engineers is data warehouse, database,"
+    },
+    {
+      "start": 754.079,
+      "end": 760.399,
+      "text": "data lakehouse, data mods and all those"
+    },
+    {
+      "start": 757.519,
+      "end": 764.32,
+      "text": "things, right? data modeling"
+    },
+    {
+      "start": 760.399,
+      "end": 767.2,
+      "text": "rag is the new player that has joined"
+    },
+    {
+      "start": 764.32,
+      "end": 769.519,
+      "text": "this group."
+    },
+    {
+      "start": 767.2,
+      "end": 771.839,
+      "text": "Make sense? So earlier we used to talk"
+    },
+    {
+      "start": 769.519,
+      "end": 774.8,
+      "text": "about let's say uh we used to talk about"
+    },
+    {
+      "start": 771.839,
+      "end": 776.9590000000001,
+      "text": "let's say databases."
+    },
+    {
+      "start": 774.8,
+      "end": 779.5999999999999,
+      "text": "We used to talk about databases. Okay."
+    },
+    {
+      "start": 776.959,
+      "end": 783.5999999999999,
+      "text": "Then we used to talk about let's say SQL"
+    },
+    {
+      "start": 779.6,
+      "end": 785.2,
+      "text": "databases. Let's say MySQL post gray or"
+    },
+    {
+      "start": 783.6,
+      "end": 789.279,
+      "text": "so many other things right? So many"
+    },
+    {
+      "start": 785.2,
+      "end": 791.6,
+      "text": "other things. Let's say data warehouse."
+    },
+    {
+      "start": 789.279,
+      "end": 794.079,
+      "text": "So we used to talk about these things."
+    },
+    {
+      "start": 791.6,
+      "end": 796.24,
+      "text": "So far"
+    },
+    {
+      "start": 794.079,
+      "end": 797.4399999999999,
+      "text": "this was the traditional stack and don't"
+    },
+    {
+      "start": 796.24,
+      "end": 800.5600000000001,
+      "text": "worry I'll just provide all of these"
+    },
+    {
+      "start": 797.44,
+      "end": 802.0790000000001,
+      "text": "notes. Okay don't worry at all. So we"
+    },
+    {
+      "start": 800.56,
+      "end": 805.3599999999999,
+      "text": "used to talk about all of these things"
+    },
+    {
+      "start": 802.079,
+      "end": 807.68,
+      "text": "databases MySQL database data warehouse"
+    },
+    {
+      "start": 805.36,
+      "end": 809.589,
+      "text": "data lakehouse that we just got it from"
+    },
+    {
+      "start": 807.68,
+      "end": 810.16,
+      "text": "data bricks"
+    },
+    {
+      "start": 809.589,
+      "end": 813.0400000000001,
+      "text": "[clears throat]"
+    },
+    {
+      "start": 810.16,
+      "end": 814.7199999999999,
+      "text": "and then data lake as well. So we used"
+    },
+    {
+      "start": 813.04,
+      "end": 817.8389999999999,
+      "text": "to talk about all of these things in the"
+    },
+    {
+      "start": 814.72,
+      "end": 820.72,
+      "text": "world of data engineering. This was I"
+    },
+    {
+      "start": 817.839,
+      "end": 823.6800000000001,
+      "text": "would say these were the topics that"
+    },
+    {
+      "start": 820.72,
+      "end": 825.6800000000001,
+      "text": "were really popular till"
+    },
+    {
+      "start": 823.68,
+      "end": 827.76,
+      "text": "um"
+    },
+    {
+      "start": 825.68,
+      "end": 829.04,
+      "text": "so currently it's like almost 2026. So"
+    },
+    {
+      "start": 827.76,
+      "end": 832.8,
+      "text": "these topics were really really popular"
+    },
+    {
+      "start": 829.04,
+      "end": 834.56,
+      "text": "till 2024 or I would say 2025. Okay."
+    },
+    {
+      "start": 832.8,
+      "end": 838.0,
+      "text": "Till 2025."
+    },
+    {
+      "start": 834.56,
+      "end": 842.16,
+      "text": "So this was the era till you can say"
+    },
+    {
+      "start": 838.0,
+      "end": 844.72,
+      "text": "2024 to 2025. Okay. I'm not saying like"
+    },
+    {
+      "start": 842.16,
+      "end": 847.68,
+      "text": "this is over but now this is transi"
+    },
+    {
+      "start": 844.72,
+      "end": 850.0790000000001,
+      "text": "trans transitioned to a different one"
+    },
+    {
+      "start": 847.68,
+      "end": 852.7199999999999,
+      "text": "where we have all of these things all of"
+    },
+    {
+      "start": 850.079,
+      "end": 855.4399999999999,
+      "text": "these things okay"
+    },
+    {
+      "start": 852.72,
+      "end": 860.72,
+      "text": "but along with it we have something"
+    },
+    {
+      "start": 855.44,
+      "end": 865.12,
+      "text": "called as rag as well so this is the new"
+    },
+    {
+      "start": 860.72,
+      "end": 868.48,
+      "text": "era of data in children make sense make"
+    },
+    {
+      "start": 865.12,
+      "end": 870.504,
+      "text": "sense and this will be like let's say 25"
+    },
+    {
+      "start": 868.48,
+      "end": 871.36,
+      "text": "because 25 is almost over And"
+    },
+    {
+      "start": 870.504,
+      "end": 874.639,
+      "text": "[clears throat]"
+    },
+    {
+      "start": 871.36,
+      "end": 877.92,
+      "text": "why I'm writing 2025? Because in 2025 we"
+    },
+    {
+      "start": 874.639,
+      "end": 879.76,
+      "text": "saw so many use cases of rack. So yes"
+    },
+    {
+      "start": 877.92,
+      "end": 883.5999999999999,
+      "text": "2025"
+    },
+    {
+      "start": 879.76,
+      "end": 887.4399999999999,
+      "text": "till future. Okay"
+    },
+    {
+      "start": 883.6,
+      "end": 890.16,
+      "text": "I can say that it can replace so many"
+    },
+    {
+      "start": 887.44,
+      "end": 894.24,
+      "text": "traditional database approaches replace"
+    },
+    {
+      "start": 890.16,
+      "end": 896.56,
+      "text": "so many but not all. In some areas it it"
+    },
+    {
+      "start": 894.24,
+      "end": 898.24,
+      "text": "will integrate with those um services."
+    },
+    {
+      "start": 896.56,
+      "end": 900.2399999999999,
+      "text": "In some areas it will totally replace"
+    },
+    {
+      "start": 898.24,
+      "end": 903.519,
+      "text": "those services or it will just replace"
+    },
+    {
+      "start": 900.24,
+      "end": 906.9590000000001,
+      "text": "the approach how we used to perform the"
+    },
+    {
+      "start": 903.519,
+      "end": 909.839,
+      "text": "data modeling. Okay. Because see you are"
+    },
+    {
+      "start": 906.959,
+      "end": 912.56,
+      "text": "evident of the evolution of data."
+    },
+    {
+      "start": 909.839,
+      "end": 914.639,
+      "text": "Earlier we just used to work with"
+    },
+    {
+      "start": 912.56,
+      "end": 917.199,
+      "text": "structured data then we started working"
+    },
+    {
+      "start": 914.639,
+      "end": 919.12,
+      "text": "with semiructured data. Then we started"
+    },
+    {
+      "start": 917.199,
+      "end": 921.8389999999999,
+      "text": "working with files and then we started"
+    },
+    {
+      "start": 919.12,
+      "end": 924.16,
+      "text": "working with unstructured data. So now"
+    },
+    {
+      "start": 921.839,
+      "end": 927.2790000000001,
+      "text": "we are into the era where we want to"
+    },
+    {
+      "start": 924.16,
+      "end": 929.04,
+      "text": "work with the embeddings. Now what are"
+    },
+    {
+      "start": 927.279,
+      "end": 930.765,
+      "text": "embeddings? Don't worry. Don't worry at"
+    },
+    {
+      "start": 929.04,
+      "end": 932.56,
+      "text": "all. I know it's a new word but we"
+    },
+    {
+      "start": 930.765,
+      "end": 934.8,
+      "text": "[clears throat] will cover that as well."
+    },
+    {
+      "start": 932.56,
+      "end": 938.079,
+      "text": "So this is the era where we want to talk"
+    },
+    {
+      "start": 934.8,
+      "end": 941.68,
+      "text": "about embeddings meanings of the context"
+    },
+    {
+      "start": 938.079,
+      "end": 944.4799999999999,
+      "text": "that we are passing user history user"
+    },
+    {
+      "start": 941.68,
+      "end": 946.16,
+      "text": "chat messages. So we want to perform"
+    },
+    {
+      "start": 944.48,
+      "end": 949.36,
+      "text": "data modeling using that as well. So"
+    },
+    {
+      "start": 946.16,
+      "end": 951.4399999999999,
+      "text": "this is the new era. Make sense? So this"
+    },
+    {
+      "start": 949.36,
+      "end": 952.88,
+      "text": "is a transition that you would see in"
+    },
+    {
+      "start": 951.44,
+      "end": 955.0400000000001,
+      "text": "the industry very very soon and I would"
+    },
+    {
+      "start": 952.88,
+      "end": 957.68,
+      "text": "say it is already started in 226 you"
+    },
+    {
+      "start": 955.04,
+      "end": 959.8389999999999,
+      "text": "will see a great wave of this thing and"
+    },
+    {
+      "start": 957.68,
+      "end": 961.4399999999999,
+      "text": "then do not say like hey we do not know"
+    },
+    {
+      "start": 959.839,
+      "end": 963.6,
+      "text": "these things. So this is the best time"
+    },
+    {
+      "start": 961.44,
+      "end": 965.12,
+      "text": "to learn all of these things. Make"
+    },
+    {
+      "start": 963.6,
+      "end": 967.44,
+      "text": "sense? So do not feel like this is not"
+    },
+    {
+      "start": 965.12,
+      "end": 969.44,
+      "text": "important we will learn it in let's say"
+    },
+    {
+      "start": 967.44,
+      "end": 971.1990000000001,
+      "text": "next year or let's say next to next year"
+    },
+    {
+      "start": 969.44,
+      "end": 973.1990000000001,
+      "text": "it is not very very popular. Just go and"
+    },
+    {
+      "start": 971.199,
+      "end": 976.56,
+      "text": "check the job descriptions and you will"
+    },
+    {
+      "start": 973.199,
+      "end": 979.519,
+      "text": "see the reality. Okay. So this was the"
+    },
+    {
+      "start": 976.56,
+      "end": 981.279,
+      "text": "era. Now we know that why we need to"
+    },
+    {
+      "start": 979.519,
+      "end": 983.6,
+      "text": "learn rag and we also know the"
+    },
+    {
+      "start": 981.279,
+      "end": 986.8,
+      "text": "importance of rag that is also like"
+    },
+    {
+      "start": 983.6,
+      "end": 989.44,
+      "text": "evident and that is also sorted. Now"
+    },
+    {
+      "start": 986.8,
+      "end": 992.16,
+      "text": "ancha you said in the introduction that"
+    },
+    {
+      "start": 989.44,
+      "end": 997.1990000000001,
+      "text": "we do not need any kind of prior"
+    },
+    {
+      "start": 992.16,
+      "end": 998.959,
+      "text": "knowledge. True I agree. So bro we do"
+    },
+    {
+      "start": 997.199,
+      "end": 1000.56,
+      "text": "not even know the back um the full form"
+    },
+    {
+      "start": 998.959,
+      "end": 1002.399,
+      "text": "of rag. So first of all just tell us the"
+    },
+    {
+      "start": 1000.56,
+      "end": 1007.92,
+      "text": "full form of rag. Okay very good"
+    },
+    {
+      "start": 1002.399,
+      "end": 1009.68,
+      "text": "question. So, rag is nothing but"
+    },
+    {
+      "start": 1007.92,
+      "end": 1012.399,
+      "text": "retrieval"
+    },
+    {
+      "start": 1009.68,
+      "end": 1015.279,
+      "text": "augmented generation. Now, I know this"
+    },
+    {
+      "start": 1012.399,
+      "end": 1017.68,
+      "text": "is a very very very fancy word. Trust"
+    },
+    {
+      "start": 1015.279,
+      "end": 1021.199,
+      "text": "me, this will be very clear in just few"
+    },
+    {
+      "start": 1017.68,
+      "end": 1023.4399999999999,
+      "text": "few minutes. Okay,"
+    },
+    {
+      "start": 1021.199,
+      "end": 1025.12,
+      "text": "let me put it here. And don't worry, I'm"
+    },
+    {
+      "start": 1023.44,
+      "end": 1027.199,
+      "text": "just creating these notes so that you do"
+    },
+    {
+      "start": 1025.12,
+      "end": 1028.6399999999999,
+      "text": "not need to do the hard work. Okay, you"
+    },
+    {
+      "start": 1027.199,
+      "end": 1030.16,
+      "text": "just need to do the smart work and I"
+    },
+    {
+      "start": 1028.64,
+      "end": 1031.2800000000002,
+      "text": "will just create notes, all of these"
+    },
+    {
+      "start": 1030.16,
+      "end": 1033.199,
+      "text": "notes for you. And I will just provide"
+    },
+    {
+      "start": 1031.28,
+      "end": 1037.6,
+      "text": "all of these notes to you as well. So"
+    },
+    {
+      "start": 1033.199,
+      "end": 1041.1200000000001,
+      "text": "just relax and learn and enjoy. Okay,"
+    },
+    {
+      "start": 1037.6,
+      "end": 1043.6789999999999,
+      "text": "make sense? So now we know that we need"
+    },
+    {
+      "start": 1041.12,
+      "end": 1046.4799999999998,
+      "text": "to learn rag. But you cannot learn rag"
+    },
+    {
+      "start": 1043.679,
+      "end": 1049.039,
+      "text": "directly. There are some dependencies,"
+    },
+    {
+      "start": 1046.48,
+      "end": 1051.1200000000001,
+      "text": "there are some knowledge sources that"
+    },
+    {
+      "start": 1049.039,
+      "end": 1053.76,
+      "text": "you need to first acquire. There are"
+    },
+    {
+      "start": 1051.12,
+      "end": 1055.12,
+      "text": "some you can say terms, terminologies"
+    },
+    {
+      "start": 1053.76,
+      "end": 1057.2,
+      "text": "and those things that you need to first"
+    },
+    {
+      "start": 1055.12,
+      "end": 1059.28,
+      "text": "of all understand. And why do we need to"
+    },
+    {
+      "start": 1057.2,
+      "end": 1062.0,
+      "text": "store anything in rag? If we have all"
+    },
+    {
+      "start": 1059.28,
+      "end": 1064.0,
+      "text": "the databases, you should have all of"
+    },
+    {
+      "start": 1062.0,
+      "end": 1067.039,
+      "text": "these questions in mind if you are"
+    },
+    {
+      "start": 1064.0,
+      "end": 1068.48,
+      "text": "focused so far in this video. Okay?"
+    },
+    {
+      "start": 1067.039,
+      "end": 1072.32,
+      "text": "Because these are the curious questions"
+    },
+    {
+      "start": 1068.48,
+      "end": 1073.84,
+      "text": "that any developer should have. Okay?"
+    },
+    {
+      "start": 1072.32,
+      "end": 1075.76,
+      "text": "Yes, all of these questions will be"
+    },
+    {
+      "start": 1073.84,
+      "end": 1077.28,
+      "text": "answered. But you should have more and"
+    },
+    {
+      "start": 1075.76,
+      "end": 1078.32,
+      "text": "more questions in your mind if you're"
+    },
+    {
+      "start": 1077.28,
+      "end": 1081.039,
+      "text": "studying rag. Because when I was"
+    },
+    {
+      "start": 1078.32,
+      "end": 1082.96,
+      "text": "studying rag, I was like, \"Bro, hold on."
+    },
+    {
+      "start": 1081.039,
+      "end": 1085.52,
+      "text": "What is this thing? Why is this thing?"
+    },
+    {
+      "start": 1082.96,
+      "end": 1087.2,
+      "text": "Okay, why not this thing?\" So obviously"
+    },
+    {
+      "start": 1085.52,
+      "end": 1088.6399999999999,
+      "text": "I was just referring to so many sources"
+    },
+    {
+      "start": 1087.2,
+      "end": 1091.039,
+      "text": "to gather all of the all of that"
+    },
+    {
+      "start": 1088.64,
+      "end": 1093.76,
+      "text": "information and then I thought let's"
+    },
+    {
+      "start": 1091.039,
+      "end": 1095.76,
+      "text": "provide this contensed form of knowledge"
+    },
+    {
+      "start": 1093.76,
+      "end": 1099.28,
+      "text": "to my data fam so that they do not need"
+    },
+    {
+      "start": 1095.76,
+      "end": 1101.84,
+      "text": "to go here and there and need to just um"
+    },
+    {
+      "start": 1099.28,
+      "end": 1103.76,
+      "text": "look at so many sources. Okay. So first"
+    },
+    {
+      "start": 1101.84,
+      "end": 1106.0,
+      "text": "of all you need to understand the"
+    },
+    {
+      "start": 1103.76,
+      "end": 1108.799,
+      "text": "concept called embeddings that I used"
+    },
+    {
+      "start": 1106.0,
+      "end": 1111.919,
+      "text": "okay in the beginning. Let's see what is"
+    },
+    {
+      "start": 1108.799,
+      "end": 1114.24,
+      "text": "that embeddings."
+    },
+    {
+      "start": 1111.919,
+      "end": 1117.039,
+      "text": "Do you have any idea like anyone if you"
+    },
+    {
+      "start": 1114.24,
+      "end": 1120.039,
+      "text": "are familiar with this term embeddings?"
+    },
+    {
+      "start": 1117.039,
+      "end": 1120.039,
+      "text": "Anyone"
+    },
+    {
+      "start": 1122.4,
+      "end": 1126.0800000000002,
+      "text": "if you have any understanding with this"
+    },
+    {
+      "start": 1124.16,
+      "end": 1128.96,
+      "text": "word embeddings?"
+    },
+    {
+      "start": 1126.08,
+      "end": 1132.799,
+      "text": "So embeddings is that particular term"
+    },
+    {
+      "start": 1128.96,
+      "end": 1134.88,
+      "text": "which is the most popular I would say"
+    },
+    {
+      "start": 1132.799,
+      "end": 1137.36,
+      "text": "the most popular term right now in the"
+    },
+    {
+      "start": 1134.88,
+      "end": 1138.96,
+      "text": "market. Why? There's a reason behind it."
+    },
+    {
+      "start": 1137.36,
+      "end": 1141.6789999999999,
+      "text": "Because everything we are doing right"
+    },
+    {
+      "start": 1138.96,
+      "end": 1143.44,
+      "text": "now it is based upon the embeddings"
+    },
+    {
+      "start": 1141.679,
+      "end": 1146.0,
+      "text": "really yes it is based upon the"
+    },
+    {
+      "start": 1143.44,
+      "end": 1148.72,
+      "text": "embeddings. So let's talk about this"
+    },
+    {
+      "start": 1146.0,
+      "end": 1151.52,
+      "text": "embeddings first of all. So now what are"
+    },
+    {
+      "start": 1148.72,
+      "end": 1154.08,
+      "text": "embeddings? So let's say"
+    },
+    {
+      "start": 1151.52,
+      "end": 1156.799,
+      "text": "you want to let's say you are"
+    },
+    {
+      "start": 1154.08,
+      "end": 1160.018,
+      "text": "interacting with um um any chatbot. Okay"
+    },
+    {
+      "start": 1156.799,
+      "end": 1163.28,
+      "text": "let me just bring any chatbot if I have"
+    },
+    {
+      "start": 1160.018,
+      "end": 1164.559,
+      "text": "[snorts] let's say chat GPT. So"
+    },
+    {
+      "start": 1163.28,
+      "end": 1166.96,
+      "text": "currently you know like every"
+    },
+    {
+      "start": 1164.559,
+      "end": 1169.6,
+      "text": "organization is trying to build chat"
+    },
+    {
+      "start": 1166.96,
+      "end": 1172.96,
+      "text": "bots and it's not just about chat bots."
+    },
+    {
+      "start": 1169.6,
+      "end": 1174.9599999999998,
+      "text": "Building chatbots was like an era when"
+    },
+    {
+      "start": 1172.96,
+      "end": 1176.48,
+      "text": "every industry was just focusing on"
+    },
+    {
+      "start": 1174.96,
+      "end": 1178.64,
+      "text": "building chatbots but now they are doing"
+    },
+    {
+      "start": 1176.48,
+      "end": 1180.4,
+      "text": "amazing stuff. Chatbot is just like a"
+    },
+    {
+      "start": 1178.64,
+      "end": 1182.72,
+      "text": "piece of cake for them because it is so"
+    },
+    {
+      "start": 1180.4,
+      "end": 1184.799,
+      "text": "so so easy right now to build. Okay. But"
+    },
+    {
+      "start": 1182.72,
+      "end": 1186.799,
+      "text": "still let's say you are building a"
+    },
+    {
+      "start": 1184.799,
+      "end": 1190.16,
+      "text": "chatbot not for the customers let's say"
+    },
+    {
+      "start": 1186.799,
+      "end": 1191.52,
+      "text": "for the business. Why and how? Let's say"
+    },
+    {
+      "start": 1190.16,
+      "end": 1193.2,
+      "text": "you are working as a data engineer in"
+    },
+    {
+      "start": 1191.52,
+      "end": 1196.0,
+      "text": "your organization. Makes sense. You are"
+    },
+    {
+      "start": 1193.2,
+      "end": 1198.0800000000002,
+      "text": "a developer. You want to enable AI"
+    },
+    {
+      "start": 1196.0,
+      "end": 1200.08,
+      "text": "capabilities for your manager. So that"
+    },
+    {
+      "start": 1198.08,
+      "end": 1202.96,
+      "text": "let's say you they have the data"
+    },
+    {
+      "start": 1200.08,
+      "end": 1205.28,
+      "text": "obviously but they do not know how to um"
+    },
+    {
+      "start": 1202.96,
+      "end": 1207.919,
+      "text": "interact with SQL databases. They do not"
+    },
+    {
+      "start": 1205.28,
+      "end": 1209.6,
+      "text": "know how to work with SQL databases or"
+    },
+    {
+      "start": 1207.919,
+      "end": 1210.88,
+      "text": "not just about databases literally with"
+    },
+    {
+      "start": 1209.6,
+      "end": 1212.8799999999999,
+      "text": "anything because they do not know how to"
+    },
+    {
+      "start": 1210.88,
+      "end": 1214.7990000000002,
+      "text": "write code. Not like all the managers."
+    },
+    {
+      "start": 1212.88,
+      "end": 1217.5200000000002,
+      "text": "Some managers are good but yeah most of"
+    },
+    {
+      "start": 1214.799,
+      "end": 1219.039,
+      "text": "them are like you know the answer. So"
+    },
+    {
+      "start": 1217.52,
+      "end": 1222.08,
+      "text": "they do not know how to perform all of"
+    },
+    {
+      "start": 1219.039,
+      "end": 1225.6,
+      "text": "these things right. So now in that"
+    },
+    {
+      "start": 1222.08,
+      "end": 1228.8799999999999,
+      "text": "particular situation you can build an AI"
+    },
+    {
+      "start": 1225.6,
+      "end": 1230.9599999999998,
+      "text": "assistant for them and you not like you"
+    },
+    {
+      "start": 1228.88,
+      "end": 1233.1200000000001,
+      "text": "can you have to because now this is a"
+    },
+    {
+      "start": 1230.96,
+      "end": 1235.52,
+      "text": "requirement in the industry so you need"
+    },
+    {
+      "start": 1233.12,
+      "end": 1238.7199999999998,
+      "text": "to enable those AI capabilities for the"
+    },
+    {
+      "start": 1235.52,
+      "end": 1242.0,
+      "text": "non- tech people as well make sense. So"
+    },
+    {
+      "start": 1238.72,
+      "end": 1245.6000000000001,
+      "text": "now let's say I am the director of the"
+    },
+    {
+      "start": 1242.0,
+      "end": 1248.08,
+      "text": "company okay and if I say hey I know I"
+    },
+    {
+      "start": 1245.6,
+      "end": 1250.08,
+      "text": "have the data in my lakehouse data lake"
+    },
+    {
+      "start": 1248.08,
+      "end": 1251.52,
+      "text": "cloud whatever I know I have the data I"
+    },
+    {
+      "start": 1250.08,
+      "end": 1256.24,
+      "text": "have the access to the data I will"
+    },
+    {
+      "start": 1251.52,
+      "end": 1260.48,
+      "text": "simply say um I want to know how much"
+    },
+    {
+      "start": 1256.24,
+      "end": 1264.24,
+      "text": "sales or let's say how much revenue"
+    },
+    {
+      "start": 1260.48,
+      "end": 1269.039,
+      "text": "we made last month I just want to ask"
+    },
+    {
+      "start": 1264.24,
+      "end": 1272.159,
+      "text": "this question make sense Now"
+    },
+    {
+      "start": 1269.039,
+      "end": 1276.24,
+      "text": "I am using chart GPD. Okay, I'm using"
+    },
+    {
+      "start": 1272.159,
+      "end": 1279.8400000000001,
+      "text": "chart GPD. Okay, let's say"
+    },
+    {
+      "start": 1276.24,
+      "end": 1282.72,
+      "text": "I am providing some context as well. So"
+    },
+    {
+      "start": 1279.84,
+      "end": 1285.36,
+      "text": "let's try to ask this question. Okay, so"
+    },
+    {
+      "start": 1282.72,
+      "end": 1286.88,
+      "text": "what I have given I have provided the"
+    },
+    {
+      "start": 1285.36,
+      "end": 1288.6399999999999,
+      "text": "revenue details which is like very"
+    },
+    {
+      "start": 1286.88,
+      "end": 1290.7990000000002,
+      "text": "arbitrary number. Let's say XYZ a kind"
+    },
+    {
+      "start": 1288.64,
+      "end": 1292.64,
+      "text": "of placeholder whatever. Okay. And then"
+    },
+    {
+      "start": 1290.799,
+      "end": 1294.559,
+      "text": "I'm asking like how much revenue we made"
+    },
+    {
+      "start": 1292.64,
+      "end": 1297.2,
+      "text": "last month. Simple. Let's try to hit"
+    },
+    {
+      "start": 1294.559,
+      "end": 1299.6789999999999,
+      "text": "enter."
+    },
+    {
+      "start": 1297.2,
+      "end": 1302.559,
+      "text": "So what will happen? It will give us"
+    },
+    {
+      "start": 1299.679,
+      "end": 1303.8400000000001,
+      "text": "some reply obviously. So it is saying I"
+    },
+    {
+      "start": 1302.559,
+      "end": 1306.3999999999999,
+      "text": "am missing the actual numbers here. When"
+    },
+    {
+      "start": 1303.84,
+      "end": 1308.799,
+      "text": "you say my last month or let's say last"
+    },
+    {
+      "start": 1306.4,
+      "end": 1311.2,
+      "text": "month revenue was XYZ. Could you please"
+    },
+    {
+      "start": 1308.799,
+      "end": 1313.44,
+      "text": "clarify what does XYZ present and what"
+    },
+    {
+      "start": 1311.2,
+      "end": 1314.96,
+      "text": "figures you have for the last month?"
+    },
+    {
+      "start": 1313.44,
+      "end": 1316.24,
+      "text": "Once you share the actual data, I can"
+    },
+    {
+      "start": 1314.96,
+      "end": 1321.679,
+      "text": "calculate the last month revenue for you"
+    },
+    {
+      "start": 1316.24,
+      "end": 1323.76,
+      "text": "right away. Boom. you will say anala"
+    },
+    {
+      "start": 1321.679,
+      "end": 1326.48,
+      "text": "um it didn't provide you the actual"
+    },
+    {
+      "start": 1323.76,
+      "end": 1328.4,
+      "text": "answer but wait that's not the intent of"
+    },
+    {
+      "start": 1326.48,
+      "end": 1331.44,
+      "text": "the question"
+    },
+    {
+      "start": 1328.4,
+      "end": 1335.44,
+      "text": "I wrote this thing"
+    },
+    {
+      "start": 1331.44,
+      "end": 1337.8400000000001,
+      "text": "this question using my natural language"
+    },
+    {
+      "start": 1335.44,
+      "end": 1342.24,
+      "text": "okay using my language that I'm using on"
+    },
+    {
+      "start": 1337.84,
+      "end": 1345.6,
+      "text": "a day-to-day activity English"
+    },
+    {
+      "start": 1342.24,
+      "end": 1350.32,
+      "text": "how this machine this chart GPT is able"
+    },
+    {
+      "start": 1345.6,
+      "end": 1352.8799999999999,
+      "text": "to understand this thing how chat GPT or"
+    },
+    {
+      "start": 1350.32,
+      "end": 1355.6,
+      "text": "basically this model behind this chat"
+    },
+    {
+      "start": 1352.88,
+      "end": 1358.0,
+      "text": "GPT is able to understand that the"
+    },
+    {
+      "start": 1355.6,
+      "end": 1360.0,
+      "text": "meaning of this line means that I'm"
+    },
+    {
+      "start": 1358.0,
+      "end": 1362.64,
+      "text": "providing some context and the meaning"
+    },
+    {
+      "start": 1360.0,
+      "end": 1364.32,
+      "text": "of this line is I'm asking a question"
+    },
+    {
+      "start": 1362.64,
+      "end": 1366.3200000000002,
+      "text": "how"
+    },
+    {
+      "start": 1364.32,
+      "end": 1368.6399999999999,
+      "text": "how it knows that I'm asking this"
+    },
+    {
+      "start": 1366.32,
+      "end": 1371.039,
+      "text": "question and this is a context"
+    },
+    {
+      "start": 1368.64,
+      "end": 1372.48,
+      "text": "see look at the response I am missing"
+    },
+    {
+      "start": 1371.039,
+      "end": 1375.039,
+      "text": "the actual numbers when you say my last"
+    },
+    {
+      "start": 1372.48,
+      "end": 1377.679,
+      "text": "month was XYZ could you please clarify"
+    },
+    {
+      "start": 1375.039,
+      "end": 1380.559,
+      "text": "this response I would expect from a"
+    },
+    {
+      "start": 1377.679,
+      "end": 1383.2,
+      "text": "human being because the human being can"
+    },
+    {
+      "start": 1380.559,
+      "end": 1384.72,
+      "text": "understand the context"
+    },
+    {
+      "start": 1383.2,
+      "end": 1387.1200000000001,
+      "text": "only human being can understand my"
+    },
+    {
+      "start": 1384.72,
+      "end": 1389.2,
+      "text": "context like what I'm trying to say but"
+    },
+    {
+      "start": 1387.12,
+      "end": 1391.4399999999998,
+      "text": "how this machine is able to understand"
+    },
+    {
+      "start": 1389.2,
+      "end": 1392.96,
+      "text": "that I am providing some context here I"
+    },
+    {
+      "start": 1391.44,
+      "end": 1397.76,
+      "text": "am providing some reference and this is"
+    },
+    {
+      "start": 1392.96,
+      "end": 1399.52,
+      "text": "my question how this is possible because"
+    },
+    {
+      "start": 1397.76,
+      "end": 1401.2,
+      "text": "of embeddings"
+    },
+    {
+      "start": 1399.52,
+      "end": 1403.76,
+      "text": "okay this is possible because of"
+    },
+    {
+      "start": 1401.2,
+      "end": 1406.24,
+      "text": "embeddings so what happened what"
+    },
+    {
+      "start": 1403.76,
+      "end": 1409.84,
+      "text": "happened"
+    },
+    {
+      "start": 1406.24,
+      "end": 1412.559,
+      "text": "when we passed Let's say I okay I I"
+    },
+    {
+      "start": 1409.84,
+      "end": 1414.08,
+      "text": "passed this input or you can say prompt."
+    },
+    {
+      "start": 1412.559,
+      "end": 1416.1589999999999,
+      "text": "Prompt is a very technical word for"
+    },
+    {
+      "start": 1414.08,
+      "end": 1420.72,
+      "text": "input. Nowadays you can say prompt."
+    },
+    {
+      "start": 1416.159,
+      "end": 1423.919,
+      "text": "Okay. When you passed this prompt"
+    },
+    {
+      "start": 1420.72,
+      "end": 1427.28,
+      "text": "this English it can be Hindi, it can be"
+    },
+    {
+      "start": 1423.919,
+      "end": 1430.64,
+      "text": "Telu, it can be any language, Spanish,"
+    },
+    {
+      "start": 1427.28,
+      "end": 1432.6399999999999,
+      "text": "French, German, anything."
+    },
+    {
+      "start": 1430.64,
+      "end": 1434.0,
+      "text": "When you pass this thing and obviously"
+    },
+    {
+      "start": 1432.64,
+      "end": 1435.919,
+      "text": "English is the most popular one right"
+    },
+    {
+      "start": 1434.0,
+      "end": 1438.159,
+      "text": "now in among AI models but let's say you"
+    },
+    {
+      "start": 1435.919,
+      "end": 1440.72,
+      "text": "pass English. Okay."
+    },
+    {
+      "start": 1438.159,
+      "end": 1442.24,
+      "text": "But I'm so sure even if you will pass"
+    },
+    {
+      "start": 1440.72,
+      "end": 1444.4,
+      "text": "any natural language, it will work"
+    },
+    {
+      "start": 1442.24,
+      "end": 1448.0,
+      "text": "because nowadays models are very very"
+    },
+    {
+      "start": 1444.4,
+      "end": 1450.64,
+      "text": "powerful and strong. So let's say"
+    },
+    {
+      "start": 1448.0,
+      "end": 1452.24,
+      "text": "you pass this thing in your model. Okay,"
+    },
+    {
+      "start": 1450.64,
+      "end": 1454.5590000000002,
+      "text": "you pass this prompt. So now what will"
+    },
+    {
+      "start": 1452.24,
+      "end": 1457.36,
+      "text": "happen? Not exactly this thing will go"
+    },
+    {
+      "start": 1454.559,
+      "end": 1460.48,
+      "text": "into the model and it will work. This"
+    },
+    {
+      "start": 1457.36,
+      "end": 1462.9599999999998,
+      "text": "prompt, this prompt, let me just bring"
+    },
+    {
+      "start": 1460.48,
+      "end": 1464.559,
+      "text": "my blackboard. I love that. So this"
+    },
+    {
+      "start": 1462.96,
+      "end": 1466.799,
+      "text": "prompt, the prompt that we have passed."
+    },
+    {
+      "start": 1464.559,
+      "end": 1469.36,
+      "text": "So let's say you are a human. Okay. Or"
+    },
+    {
+      "start": 1466.799,
+      "end": 1473.44,
+      "text": "let's say any user. So let's say you are"
+    },
+    {
+      "start": 1469.36,
+      "end": 1477.12,
+      "text": "a user. Okay. And you"
+    },
+    {
+      "start": 1473.44,
+      "end": 1479.3600000000001,
+      "text": "passed a prompt. Okay."
+    },
+    {
+      "start": 1477.12,
+      "end": 1482.4799999999998,
+      "text": "You passed a prompt. Any command,"
+    },
+    {
+      "start": 1479.36,
+      "end": 1486.4399999999998,
+      "text": "anything. Okay. It can be anything. Make"
+    },
+    {
+      "start": 1482.48,
+      "end": 1486.44,
+      "text": "sense? Or let's say message."
+    },
+    {
+      "start": 1487.36,
+      "end": 1496.8799999999999,
+      "text": "Let's say you pass this message"
+    },
+    {
+      "start": 1491.44,
+      "end": 1500.64,
+      "text": "to what? To llm. Make sense? to LLM."
+    },
+    {
+      "start": 1496.88,
+      "end": 1502.4,
+      "text": "So let's say you pass this to chat GPD"
+    },
+    {
+      "start": 1500.64,
+      "end": 1505.679,
+      "text": "or it can be anything Google whatever"
+    },
+    {
+      "start": 1502.4,
+      "end": 1509.679,
+      "text": "your favorite um model is. Okay. So I"
+    },
+    {
+      "start": 1505.679,
+      "end": 1512.799,
+      "text": "passed this prompt to this chat GPD. Do"
+    },
+    {
+      "start": 1509.679,
+      "end": 1515.6000000000001,
+      "text": "you know what will happen? Do you know?"
+    },
+    {
+      "start": 1512.799,
+      "end": 1517.679,
+      "text": "Now this prompt whatever message you"
+    },
+    {
+      "start": 1515.6,
+      "end": 1520.9599999999998,
+      "text": "have sent it will go to chat GPD"
+    },
+    {
+      "start": 1517.679,
+      "end": 1523.76,
+      "text": "obviously. Obviously it will go to ch it"
+    },
+    {
+      "start": 1520.96,
+      "end": 1525.679,
+      "text": "will go to the chart GBD chart GPT or"
+    },
+    {
+      "start": 1523.76,
+      "end": 1527.36,
+      "text": "basically open AI if you have some"
+    },
+    {
+      "start": 1525.679,
+      "end": 1530.0,
+      "text": "knowledge in in the AI world I would"
+    },
+    {
+      "start": 1527.36,
+      "end": 1531.6,
+      "text": "expect a little bit of news articles"
+    },
+    {
+      "start": 1530.0,
+      "end": 1533.76,
+      "text": "that you would have read or some post"
+    },
+    {
+      "start": 1531.6,
+      "end": 1535.36,
+      "text": "that you would have seen in AI or let's"
+    },
+    {
+      "start": 1533.76,
+      "end": 1539.2,
+      "text": "say you have not seen anything you are"
+    },
+    {
+      "start": 1535.36,
+      "end": 1541.279,
+      "text": "very busy so basically chart GPD uses um"
+    },
+    {
+      "start": 1539.2,
+      "end": 1543.1200000000001,
+      "text": "you can say models called open AI models"
+    },
+    {
+      "start": 1541.279,
+      "end": 1546.32,
+      "text": "because openi the is the parent company"
+    },
+    {
+      "start": 1543.12,
+      "end": 1547.9189999999999,
+      "text": "for chart GPD okay so let's say you have"
+    },
+    {
+      "start": 1546.32,
+      "end": 1551.6,
+      "text": "passed this prompt and it is going to"
+    },
+    {
+      "start": 1547.919,
+      "end": 1553.6000000000001,
+      "text": "the OpenAI model. Now this OpenAI model"
+    },
+    {
+      "start": 1551.6,
+      "end": 1556.3999999999999,
+      "text": "like this OpenAI company has so many"
+    },
+    {
+      "start": 1553.6,
+      "end": 1561.279,
+      "text": "models has so many models. So what it"
+    },
+    {
+      "start": 1556.4,
+      "end": 1563.44,
+      "text": "will do? It will convert this message"
+    },
+    {
+      "start": 1561.279,
+      "end": 1565.84,
+      "text": "this message because this is the input."
+    },
+    {
+      "start": 1563.44,
+      "end": 1567.1200000000001,
+      "text": "Okay. Let's say this is the input or"
+    },
+    {
+      "start": 1565.84,
+      "end": 1570.4399999999998,
+      "text": "let's remove it from here. So let's say"
+    },
+    {
+      "start": 1567.12,
+      "end": 1570.4399999999998,
+      "text": "this is the input."
+    },
+    {
+      "start": 1573.039,
+      "end": 1579.76,
+      "text": "Yeah, perfect. So let's say this is the"
+    },
+    {
+      "start": 1575.12,
+      "end": 1583.36,
+      "text": "input. This open AI model will convert"
+    },
+    {
+      "start": 1579.76,
+      "end": 1589.6,
+      "text": "this text, convert this English, convert"
+    },
+    {
+      "start": 1583.36,
+      "end": 1592.6,
+      "text": "this any prompt into something called as"
+    },
+    {
+      "start": 1589.6,
+      "end": 1592.6,
+      "text": "vector."
+    },
+    {
+      "start": 1593.2,
+      "end": 1598.24,
+      "text": "It can be any vector. It can be any"
+    },
+    {
+      "start": 1595.44,
+      "end": 1600.0800000000002,
+      "text": "vector. Let's say a kind of graph. If we"
+    },
+    {
+      "start": 1598.24,
+      "end": 1602.88,
+      "text": "have any kind of you can say vector."
+    },
+    {
+      "start": 1600.08,
+      "end": 1605.039,
+      "text": "Okay, this is better. So this will"
+    },
+    {
+      "start": 1602.88,
+      "end": 1607.8400000000001,
+      "text": "convert it into"
+    },
+    {
+      "start": 1605.039,
+      "end": 1610.799,
+      "text": "a vector. And do you know what this"
+    },
+    {
+      "start": 1607.84,
+      "end": 1612.799,
+      "text": "vector is called? Embedding. This vector"
+    },
+    {
+      "start": 1610.799,
+      "end": 1615.2,
+      "text": "is called"
+    },
+    {
+      "start": 1612.799,
+      "end": 1616.4,
+      "text": "embedding vector."
+    },
+    {
+      "start": 1615.2,
+      "end": 1619.279,
+      "text": "What's so special in this embedding"
+    },
+    {
+      "start": 1616.4,
+      "end": 1620.5590000000002,
+      "text": "vector? What's so special? Why we are"
+    },
+    {
+      "start": 1619.279,
+      "end": 1622.08,
+      "text": "talking about this thing like this is"
+    },
+    {
+      "start": 1620.559,
+      "end": 1623.9189999999999,
+      "text": "like embedding vector. And what's so"
+    },
+    {
+      "start": 1622.08,
+      "end": 1626.799,
+      "text": "special? Let me just tell you what's so"
+    },
+    {
+      "start": 1623.919,
+      "end": 1629.6000000000001,
+      "text": "special. So what will happen? Your"
+    },
+    {
+      "start": 1626.799,
+      "end": 1632.0,
+      "text": "message will be converted using this"
+    },
+    {
+      "start": 1629.6,
+      "end": 1635.52,
+      "text": "openi model into embedding vector. Now"
+    },
+    {
+      "start": 1632.0,
+      "end": 1638.24,
+      "text": "your text message is not just a text."
+    },
+    {
+      "start": 1635.52,
+      "end": 1640.559,
+      "text": "It's not just like something very um"
+    },
+    {
+      "start": 1638.24,
+      "end": 1643.679,
+      "text": "random text that you have provided. This"
+    },
+    {
+      "start": 1640.559,
+      "end": 1647.36,
+      "text": "text is converted into a vector"
+    },
+    {
+      "start": 1643.679,
+      "end": 1651.919,
+      "text": "embedding vector which machine can"
+    },
+    {
+      "start": 1647.36,
+      "end": 1653.76,
+      "text": "understand which a model can understand."
+    },
+    {
+      "start": 1651.919,
+      "end": 1655.5200000000002,
+      "text": "Make sense?"
+    },
+    {
+      "start": 1653.76,
+      "end": 1657.039,
+      "text": "So how does it look like? So it will"
+    },
+    {
+      "start": 1655.52,
+      "end": 1659.36,
+      "text": "look like a normal vector. If you have"
+    },
+    {
+      "start": 1657.039,
+      "end": 1660.8799999999999,
+      "text": "seen a vector in your school, let's say"
+    },
+    {
+      "start": 1659.36,
+      "end": 1663.039,
+      "text": "if you would have like studied about"
+    },
+    {
+      "start": 1660.88,
+      "end": 1664.64,
+      "text": "vectors in mathematics, physics or any I"
+    },
+    {
+      "start": 1663.039,
+      "end": 1666.559,
+      "text": "would say not in chemistry obviously but"
+    },
+    {
+      "start": 1664.64,
+      "end": 1669.1200000000001,
+      "text": "yeah in physics or mathematics in your"
+    },
+    {
+      "start": 1666.559,
+      "end": 1671.76,
+      "text": "school in 10th grade or whatever. So"
+    },
+    {
+      "start": 1669.12,
+      "end": 1674.559,
+      "text": "vector looks like this. Let's say you"
+    },
+    {
+      "start": 1671.76,
+      "end": 1676.0,
+      "text": "want to um create a vector. So it will"
+    },
+    {
+      "start": 1674.559,
+      "end": 1678.24,
+      "text": "look like this. Let's say this is the"
+    },
+    {
+      "start": 1676.0,
+      "end": 1681.679,
+      "text": "opening braces. Then it will have some"
+    },
+    {
+      "start": 1678.24,
+      "end": 1684.559,
+      "text": "number. So let's say minus 1.0 O then"
+    },
+    {
+      "start": 1681.679,
+      "end": 1688.3200000000002,
+      "text": "comma then 2.3"
+    },
+    {
+      "start": 1684.559,
+      "end": 1690.0,
+      "text": "then 4.1 and so on. So this is your"
+    },
+    {
+      "start": 1688.32,
+      "end": 1692.8799999999999,
+      "text": "vector."
+    },
+    {
+      "start": 1690.0,
+      "end": 1695.12,
+      "text": "This is your vector."
+    },
+    {
+      "start": 1692.88,
+      "end": 1699.44,
+      "text": "This is your vector."
+    },
+    {
+      "start": 1695.12,
+      "end": 1703.9189999999999,
+      "text": "Okay. This is your vector. Simple. Okay."
+    },
+    {
+      "start": 1699.44,
+      "end": 1706.3200000000002,
+      "text": "Make sense? So now how it will convert"
+    },
+    {
+      "start": 1703.919,
+      "end": 1709.279,
+      "text": "this text into the vector that is the"
+    },
+    {
+      "start": 1706.32,
+      "end": 1711.12,
+      "text": "power of this model. That is all the"
+    },
+    {
+      "start": 1709.279,
+      "end": 1712.799,
+      "text": "things that is that that is being done"
+    },
+    {
+      "start": 1711.12,
+      "end": 1714.4799999999998,
+      "text": "using this model. You do not need to do"
+    },
+    {
+      "start": 1712.799,
+      "end": 1717.2,
+      "text": "anything. That is why we are saying"
+    },
+    {
+      "start": 1714.48,
+      "end": 1718.799,
+      "text": "nowadays LLMs or basically models are"
+    },
+    {
+      "start": 1717.2,
+      "end": 1720.24,
+      "text": "actually making our life easy because"
+    },
+    {
+      "start": 1718.799,
+      "end": 1723.36,
+      "text": "you do not need to do all those stuff"
+    },
+    {
+      "start": 1720.24,
+      "end": 1725.679,
+      "text": "from scratch again and again. So how"
+    },
+    {
+      "start": 1723.36,
+      "end": 1727.76,
+      "text": "this vector is converted? How this"
+    },
+    {
+      "start": 1725.679,
+      "end": 1729.919,
+      "text": "vector is converted using this open AAI"
+    },
+    {
+      "start": 1727.76,
+      "end": 1731.279,
+      "text": "model. This is called embedding model"
+    },
+    {
+      "start": 1729.919,
+      "end": 1732.3200000000002,
+      "text": "that we have used and don't worry I will"
+    },
+    {
+      "start": 1731.279,
+      "end": 1733.6,
+      "text": "just show you everything with the"
+    },
+    {
+      "start": 1732.32,
+      "end": 1735.6789999999999,
+      "text": "practical thing as well. Currently we"
+    },
+    {
+      "start": 1733.6,
+      "end": 1738.32,
+      "text": "are understanding the concepts. Make"
+    },
+    {
+      "start": 1735.679,
+      "end": 1739.8400000000001,
+      "text": "sense? Okay sorted. So we use this model"
+    },
+    {
+      "start": 1738.32,
+      "end": 1744.0,
+      "text": "we convert it into embedding vector. Now"
+    },
+    {
+      "start": 1739.84,
+      "end": 1746.24,
+      "text": "this embedding vector will go to"
+    },
+    {
+      "start": 1744.0,
+      "end": 1750.64,
+      "text": "another openhg model or let's say any"
+    },
+    {
+      "start": 1746.24,
+      "end": 1753.76,
+      "text": "other model. Okay. And then it will"
+    },
+    {
+      "start": 1750.64,
+      "end": 1756.159,
+      "text": "provide us the response in the form of"
+    },
+    {
+      "start": 1753.76,
+      "end": 1759.52,
+      "text": "normal language message that we have."
+    },
+    {
+      "start": 1756.159,
+      "end": 1763.919,
+      "text": "Make sense? Or let me just remove this."
+    },
+    {
+      "start": 1759.52,
+      "end": 1765.679,
+      "text": "It will provide me the message back to"
+    },
+    {
+      "start": 1763.919,
+      "end": 1768.0800000000002,
+      "text": "to the user like it can be you it can be"
+    },
+    {
+      "start": 1765.679,
+      "end": 1773.039,
+      "text": "anything. Okay. So it will provide the"
+    },
+    {
+      "start": 1768.08,
+      "end": 1776.1589999999999,
+      "text": "message to me. Okay. Make sense?"
+    },
+    {
+      "start": 1773.039,
+      "end": 1778.72,
+      "text": "And this will be also NLP. Why? Because"
+    },
+    {
+      "start": 1776.159,
+      "end": 1781.8400000000001,
+      "text": "it has the model to convert the vector"
+    },
+    {
+      "start": 1778.72,
+      "end": 1784.32,
+      "text": "into the message. Make sense? So this is"
+    },
+    {
+      "start": 1781.84,
+      "end": 1786.1589999999999,
+      "text": "the flow. This is the flow that it will"
+    },
+    {
+      "start": 1784.32,
+      "end": 1789.12,
+      "text": "perform."
+    },
+    {
+      "start": 1786.159,
+      "end": 1790.72,
+      "text": "Understood? So if"
+    },
+    {
+      "start": 1789.12,
+      "end": 1792.0,
+      "text": "you use chat GP on a day-to-day"
+    },
+    {
+      "start": 1790.72,
+      "end": 1793.279,
+      "text": "activity, you should know what is"
+    },
+    {
+      "start": 1792.0,
+      "end": 1794.799,
+      "text": "happening behind the scenes. Whatever"
+    },
+    {
+      "start": 1793.279,
+      "end": 1797.52,
+      "text": "input you are giving, let's say this is"
+    },
+    {
+      "start": 1794.799,
+      "end": 1797.52,
+      "text": "your input."
+    },
+    {
+      "start": 1798.24,
+      "end": 1802.559,
+      "text": "This is your input."
+    },
+    {
+      "start": 1800.399,
+      "end": 1804.399,
+      "text": "It will first get converted into an"
+    },
+    {
+      "start": 1802.559,
+      "end": 1808.799,
+      "text": "embedding vector and then embedding"
+    },
+    {
+      "start": 1804.399,
+      "end": 1811.279,
+      "text": "vector will be go to will be will uh"
+    },
+    {
+      "start": 1808.799,
+      "end": 1814.08,
+      "text": "will go to the openi model again and"
+    },
+    {
+      "start": 1811.279,
+      "end": 1816.24,
+      "text": "then it will generate the output."
+    },
+    {
+      "start": 1814.08,
+      "end": 1817.9189999999999,
+      "text": "That's why you see that hey we have so"
+    },
+    {
+      "start": 1816.24,
+      "end": 1819.76,
+      "text": "many models we have this model. We have"
+    },
+    {
+      "start": 1817.919,
+      "end": 1821.5200000000002,
+      "text": "that model. So that is why we have so"
+    },
+    {
+      "start": 1819.76,
+      "end": 1823.919,
+      "text": "many models in the market because it"
+    },
+    {
+      "start": 1821.52,
+      "end": 1826.08,
+      "text": "depends which model you want to use."
+    },
+    {
+      "start": 1823.919,
+      "end": 1828.48,
+      "text": "which model you want to use to get your"
+    },
+    {
+      "start": 1826.08,
+      "end": 1830.72,
+      "text": "work done. This is the power of"
+    },
+    {
+      "start": 1828.48,
+      "end": 1832.72,
+      "text": "embeddings. Make sense? So we understood"
+    },
+    {
+      "start": 1830.72,
+      "end": 1834.799,
+      "text": "what what are embeddings? Make sense? We"
+    },
+    {
+      "start": 1832.72,
+      "end": 1837.84,
+      "text": "understood this. What are embeddings? So"
+    },
+    {
+      "start": 1834.799,
+      "end": 1841.039,
+      "text": "now where does this concept of embedding"
+    },
+    {
+      "start": 1837.84,
+      "end": 1845.6789999999999,
+      "text": "come into the picture? Okay. Have you"
+    },
+    {
+      "start": 1841.039,
+      "end": 1847.84,
+      "text": "heard about SQL database? Have you? Yes."
+    },
+    {
+      "start": 1845.679,
+      "end": 1851.2,
+      "text": "What type of data you put in that SQL"
+    },
+    {
+      "start": 1847.84,
+      "end": 1854.72,
+      "text": "database? Now you will say I put"
+    },
+    {
+      "start": 1851.2,
+      "end": 1858.0800000000002,
+      "text": "structured data. Okay. Very good. Very"
+    },
+    {
+      "start": 1854.72,
+      "end": 1860.96,
+      "text": "good. Now if I say if you have ever"
+    },
+    {
+      "start": 1858.08,
+      "end": 1863.1999999999998,
+      "text": "heard about MongoDB which is a very"
+    },
+    {
+      "start": 1860.96,
+      "end": 1865.279,
+      "text": "popular you can say uh semiructured"
+    },
+    {
+      "start": 1863.2,
+      "end": 1868.48,
+      "text": "database. What kind of data you put in"
+    },
+    {
+      "start": 1865.279,
+      "end": 1871.6,
+      "text": "that? Key value bears similar to JSON."
+    },
+    {
+      "start": 1868.48,
+      "end": 1873.52,
+      "text": "Okay. Very good. Now if I say what kind"
+    },
+    {
+      "start": 1871.6,
+      "end": 1877.12,
+      "text": "of data"
+    },
+    {
+      "start": 1873.52,
+      "end": 1881.84,
+      "text": "what kind of data you will add in rag"
+    },
+    {
+      "start": 1877.12,
+      "end": 1884.8799999999999,
+      "text": "database? The answer is embeddings."
+    },
+    {
+      "start": 1881.84,
+      "end": 1887.84,
+      "text": "Oh, so embeddings is nothing but you can"
+    },
+    {
+      "start": 1884.88,
+      "end": 1891.3600000000001,
+      "text": "say your data type that you add in your"
+    },
+    {
+      "start": 1887.84,
+      "end": 1893.6,
+      "text": "rag database just embeddings not really"
+    },
+    {
+      "start": 1891.36,
+      "end": 1895.76,
+      "text": "embeddings plus metadata because"
+    },
+    {
+      "start": 1893.6,
+      "end": 1897.6789999999999,
+      "text": "metadata is very important to manage"
+    },
+    {
+      "start": 1895.76,
+      "end": 1900.08,
+      "text": "those embeddings"
+    },
+    {
+      "start": 1897.679,
+      "end": 1902.24,
+      "text": "okay now let's see it visually so that"
+    },
+    {
+      "start": 1900.08,
+      "end": 1905.279,
+      "text": "you can understand better so let's say"
+    },
+    {
+      "start": 1902.24,
+      "end": 1908.799,
+      "text": "let's talk about this let's say myql"
+    },
+    {
+      "start": 1905.279,
+      "end": 1910.96,
+      "text": "so if you have myql okay what kind of"
+    },
+    {
+      "start": 1908.799,
+      "end": 1915.2,
+      "text": "data you will add here obviously it will"
+    },
+    {
+      "start": 1910.96,
+      "end": 1917.279,
+      "text": "be tabular data"
+    },
+    {
+      "start": 1915.2,
+      "end": 1919.6000000000001,
+      "text": "make sense you will be having tabular"
+    },
+    {
+      "start": 1917.279,
+      "end": 1922.96,
+      "text": "data"
+    },
+    {
+      "start": 1919.6,
+      "end": 1925.519,
+      "text": "okay simple like nothing fancy okay so"
+    },
+    {
+      "start": 1922.96,
+      "end": 1928.32,
+      "text": "this will be like this my SQL is mapped"
+    },
+    {
+      "start": 1925.519,
+      "end": 1933.1200000000001,
+      "text": "to the tabular data now if I talk about"
+    },
+    {
+      "start": 1928.32,
+      "end": 1936.72,
+      "text": "MongoDB or any you can say um database"
+    },
+    {
+      "start": 1933.12,
+      "end": 1940.1999999999998,
+      "text": "that we use to store key value pairs so"
+    },
+    {
+      "start": 1936.72,
+      "end": 1940.2,
+      "text": "this will be"
+    },
+    {
+      "start": 1941.039,
+      "end": 1946.799,
+      "text": "This will be my key value pairs. Okay."
+    },
+    {
+      "start": 1945.2,
+      "end": 1950.0,
+      "text": "Do we have key value pairs or let me"
+    },
+    {
+      "start": 1946.799,
+      "end": 1954.8799999999999,
+      "text": "just write it for you? JSON. Let's say"
+    },
+    {
+      "start": 1950.0,
+      "end": 1957.919,
+      "text": "key and value. Simple."
+    },
+    {
+      "start": 1954.88,
+      "end": 1959.679,
+      "text": "Okay. Simple. Okay. You store this"
+    },
+    {
+      "start": 1957.919,
+      "end": 1961.279,
+      "text": "value. I'm not assuming that you would"
+    },
+    {
+      "start": 1959.679,
+      "end": 1963.1200000000001,
+      "text": "have worked with MongoDB to be honest. I"
+    },
+    {
+      "start": 1961.279,
+      "end": 1965.2,
+      "text": "also haven't worked with MongoDB much. I"
+    },
+    {
+      "start": 1963.12,
+      "end": 1967.4399999999998,
+      "text": "have rarely used MongoDB because I use"
+    },
+    {
+      "start": 1965.2,
+      "end": 1968.559,
+      "text": "Azure Cosmos DB and all. But I'm just"
+    },
+    {
+      "start": 1967.44,
+      "end": 1970.96,
+      "text": "telling you that you would have heard"
+    },
+    {
+      "start": 1968.559,
+      "end": 1974.72,
+      "text": "about this term. Okay. But when I talk"
+    },
+    {
+      "start": 1970.96,
+      "end": 1976.88,
+      "text": "about rag, when I talk about rag, so in"
+    },
+    {
+      "start": 1974.72,
+      "end": 1979.84,
+      "text": "case of rag,"
+    },
+    {
+      "start": 1976.88,
+      "end": 1981.519,
+      "text": "you will"
+    },
+    {
+      "start": 1979.84,
+      "end": 1985.76,
+      "text": "use"
+    },
+    {
+      "start": 1981.519,
+      "end": 1989.2,
+      "text": "embeddings. Simple, nothing fancy."
+    },
+    {
+      "start": 1985.76,
+      "end": 1991.519,
+      "text": "Let's say minus 1 something blah blah"
+    },
+    {
+      "start": 1989.2,
+      "end": 1993.3600000000001,
+      "text": "blah. Okay. One important question, one"
+    },
+    {
+      "start": 1991.519,
+      "end": 1996.799,
+      "text": "very important question that you should"
+    },
+    {
+      "start": 1993.36,
+      "end": 2000.32,
+      "text": "ask. Okay. Anala"
+    },
+    {
+      "start": 1996.799,
+      "end": 2004.08,
+      "text": "we know that tables have let's say some"
+    },
+    {
+      "start": 2000.32,
+      "end": 2007.4399999999998,
+      "text": "limits let let's say we want to store um"
+    },
+    {
+      "start": 2004.08,
+      "end": 2008.96,
+      "text": "rows and columns makes sense MongoDB"
+    },
+    {
+      "start": 2007.44,
+      "end": 2010.799,
+      "text": "stores the data in the form of key value"
+    },
+    {
+      "start": 2008.96,
+      "end": 2014.159,
+      "text": "pairs makes sense but Anal lamba just"
+    },
+    {
+      "start": 2010.799,
+      "end": 2016.559,
+      "text": "tell us one thing this is a rag okay and"
+    },
+    {
+      "start": 2014.159,
+      "end": 2018.159,
+      "text": "we are storing embeddings and embeddings"
+    },
+    {
+      "start": 2016.559,
+      "end": 2022.399,
+      "text": "we understood that embeddings are just"
+    },
+    {
+      "start": 2018.159,
+      "end": 2024.159,
+      "text": "the meanings of our text in such a form"
+    },
+    {
+      "start": 2022.399,
+      "end": 2027.5189999999998,
+      "text": "that machine can understand and in that"
+    },
+    {
+      "start": 2024.159,
+      "end": 2029.679,
+      "text": "format called a vector. Okay. But Angela"
+    },
+    {
+      "start": 2027.519,
+      "end": 2032.88,
+      "text": "what is the size of this vector? Because"
+    },
+    {
+      "start": 2029.679,
+      "end": 2035.279,
+      "text": "let's say I have provided this input"
+    },
+    {
+      "start": 2032.88,
+      "end": 2036.72,
+      "text": "this prompt."
+    },
+    {
+      "start": 2035.279,
+      "end": 2038.159,
+      "text": "I know this will be converted into a"
+    },
+    {
+      "start": 2036.72,
+      "end": 2039.76,
+      "text": "vector. I know that you have explained"
+    },
+    {
+      "start": 2038.159,
+      "end": 2043.0390000000002,
+      "text": "that thing. But what will be the size of"
+    },
+    {
+      "start": 2039.76,
+      "end": 2046.24,
+      "text": "the vector? Will it be the same? Will it"
+    },
+    {
+      "start": 2043.039,
+      "end": 2048.72,
+      "text": "be different for each prompt or it will"
+    },
+    {
+      "start": 2046.24,
+      "end": 2050.079,
+      "text": "depend on how much um text I am putting?"
+    },
+    {
+      "start": 2048.72,
+      "end": 2051.839,
+      "text": "Like what what what's about what what"
+    },
+    {
+      "start": 2050.079,
+      "end": 2053.28,
+      "text": "what will happen in that particular"
+    },
+    {
+      "start": 2051.839,
+      "end": 2055.2799999999997,
+      "text": "case? Let's say I'm providing a huge"
+    },
+    {
+      "start": 2053.28,
+      "end": 2057.28,
+      "text": "paragraph and I'm providing just one"
+    },
+    {
+      "start": 2055.28,
+      "end": 2058.48,
+      "text": "line. Will there be any difference? Very"
+    },
+    {
+      "start": 2057.28,
+      "end": 2060.159,
+      "text": "good question if you have asked this"
+    },
+    {
+      "start": 2058.48,
+      "end": 2063.76,
+      "text": "question. So let me just tell you what"
+    },
+    {
+      "start": 2060.159,
+      "end": 2066.48,
+      "text": "happens. So whenever we use any model,"
+    },
+    {
+      "start": 2063.76,
+      "end": 2070.8390000000004,
+      "text": "remember we used um open a model. Okay."
+    },
+    {
+      "start": 2066.48,
+      "end": 2070.839,
+      "text": "And let me just say embedding model."
+    },
+    {
+      "start": 2071.28,
+      "end": 2076.3990000000003,
+      "text": "Embedding"
+    },
+    {
+      "start": 2074.159,
+      "end": 2081.119,
+      "text": "embed model. Okay. Remember we use this"
+    },
+    {
+      "start": 2076.399,
+      "end": 2083.679,
+      "text": "model. Now whatever input you pass in"
+    },
+    {
+      "start": 2081.119,
+      "end": 2085.599,
+      "text": "the embed model okay it can be a huge"
+    },
+    {
+      "start": 2083.679,
+      "end": 2089.52,
+      "text": "paragraph it can be one line it can be"
+    },
+    {
+      "start": 2085.599,
+      "end": 2094.2400000000002,
+      "text": "even one word each"
+    },
+    {
+      "start": 2089.52,
+      "end": 2096.32,
+      "text": "each you can say prompt each prompt when"
+    },
+    {
+      "start": 2094.24,
+      "end": 2100.0789999999997,
+      "text": "it will go to the generation model will"
+    },
+    {
+      "start": 2096.32,
+      "end": 2103.04,
+      "text": "have the same number of the vector or"
+    },
+    {
+      "start": 2100.079,
+      "end": 2104.7200000000003,
+      "text": "basically the same size of the vector"
+    },
+    {
+      "start": 2103.04,
+      "end": 2106.079,
+      "text": "and what can be the size there are"
+    },
+    {
+      "start": 2104.72,
+      "end": 2108.24,
+      "text": "multiple options that we have in the"
+    },
+    {
+      "start": 2106.079,
+      "end": 2110.8,
+      "text": "open eye models A very popular one"
+    },
+    {
+      "start": 2108.24,
+      "end": 2114.24,
+      "text": "is536."
+    },
+    {
+      "start": 2110.8,
+      "end": 2118.88,
+      "text": "So the size of this will be 1536."
+    },
+    {
+      "start": 2114.24,
+      "end": 2121.52,
+      "text": "Okay, if you want to note it down,536."
+    },
+    {
+      "start": 2118.88,
+      "end": 2124.079,
+      "text": "That is like one of the examples that we"
+    },
+    {
+      "start": 2121.52,
+      "end": 2126.32,
+      "text": "have, one of the models that uses. So"
+    },
+    {
+      "start": 2124.079,
+      "end": 2129.2000000000003,
+      "text": "what what it will do? It will create it"
+    },
+    {
+      "start": 2126.32,
+      "end": 2131.599,
+      "text": "will convert that text into vector and"
+    },
+    {
+      "start": 2129.2,
+      "end": 2133.839,
+      "text": "the size of that vector will be 1536."
+    },
+    {
+      "start": 2131.599,
+      "end": 2137.28,
+      "text": "Now what is this 15 or 36 and what where"
+    },
+    {
+      "start": 2133.839,
+      "end": 2140.0789999999997,
+      "text": "from where this number"
+    },
+    {
+      "start": 2137.28,
+      "end": 2143.0400000000004,
+      "text": "came into the picture from where"
+    },
+    {
+      "start": 2140.079,
+      "end": 2145.44,
+      "text": "these numbers are decided by open AI it"
+    },
+    {
+      "start": 2143.04,
+      "end": 2147.68,
+      "text": "is not decided by you these are"
+    },
+    {
+      "start": 2145.44,
+      "end": 2150.16,
+      "text": "basically the features these are"
+    },
+    {
+      "start": 2147.68,
+      "end": 2154.3999999999996,
+      "text": "basically the dimensions"
+    },
+    {
+      "start": 2150.16,
+      "end": 2156.72,
+      "text": "that open AI has created to convert your"
+    },
+    {
+      "start": 2154.4,
+      "end": 2159.2000000000003,
+      "text": "text into something which can be"
+    },
+    {
+      "start": 2156.72,
+      "end": 2163.4399999999996,
+      "text": "understood just tell me one thing if I"
+    },
+    {
+      "start": 2159.2,
+      "end": 2165.359,
+      "text": "if I ask you hey convert this thing or"
+    },
+    {
+      "start": 2163.44,
+      "end": 2168.96,
+      "text": "basically decode this thing or let's say"
+    },
+    {
+      "start": 2165.359,
+      "end": 2171.839,
+      "text": "encode this thing into such a format so"
+    },
+    {
+      "start": 2168.96,
+      "end": 2173.28,
+      "text": "that you can understand you will say an"
+    },
+    {
+      "start": 2171.839,
+      "end": 2174.48,
+      "text": "lamba I can understand English let's"
+    },
+    {
+      "start": 2173.28,
+      "end": 2177.0400000000004,
+      "text": "imagine that you cannot understand"
+    },
+    {
+      "start": 2174.48,
+      "end": 2179.839,
+      "text": "English or let's say you want to encode"
+    },
+    {
+      "start": 2177.04,
+      "end": 2182.079,
+      "text": "this thing to someone who can understand"
+    },
+    {
+      "start": 2179.839,
+      "end": 2183.599,
+      "text": "this who doesn't know English okay but"
+    },
+    {
+      "start": 2182.079,
+      "end": 2186.2400000000002,
+      "text": "that person understands a special"
+    },
+    {
+      "start": 2183.599,
+      "end": 2189.92,
+      "text": "language that only you know how will you"
+    },
+    {
+      "start": 2186.24,
+      "end": 2195.52,
+      "text": "do that you will have some dimensions or"
+    },
+    {
+      "start": 2189.92,
+      "end": 2198.64,
+      "text": "features Right? So let's say I have 1536"
+    },
+    {
+      "start": 2195.52,
+      "end": 2201.92,
+      "text": "dimensions. I have 1536"
+    },
+    {
+      "start": 2198.64,
+      "end": 2204.3199999999997,
+      "text": "features to convert this text into a"
+    },
+    {
+      "start": 2201.92,
+      "end": 2209.28,
+      "text": "vector. So those features can be let's"
+    },
+    {
+      "start": 2204.32,
+      "end": 2212.96,
+      "text": "say um regarding um is this a kind of u"
+    },
+    {
+      "start": 2209.28,
+      "end": 2216.0,
+      "text": "money talk? Okay. Is this regarding"
+    },
+    {
+      "start": 2212.96,
+      "end": 2218.48,
+      "text": "let's say um animals?"
+    },
+    {
+      "start": 2216.0,
+      "end": 2220.8,
+      "text": "Is this regarding let's say a kind of"
+    },
+    {
+      "start": 2218.48,
+      "end": 2222.2400000000002,
+      "text": "assumption? All these kind of features"
+    },
+    {
+      "start": 2220.8,
+      "end": 2224.32,
+      "text": "all these kind of features and these"
+    },
+    {
+      "start": 2222.24,
+      "end": 2227.2799999999997,
+      "text": "features are called dimensions. So there"
+    },
+    {
+      "start": 2224.32,
+      "end": 2230.7200000000003,
+      "text": "will be 1536 parameters or not like"
+    },
+    {
+      "start": 2227.28,
+      "end": 2232.88,
+      "text": "parameters 1536 dimensions on which we"
+    },
+    {
+      "start": 2230.72,
+      "end": 2235.68,
+      "text": "want to evaluate"
+    },
+    {
+      "start": 2232.88,
+      "end": 2240.1600000000003,
+      "text": "on we on which we want to evaluate our"
+    },
+    {
+      "start": 2235.68,
+      "end": 2241.359,
+      "text": "prompt to convert it into a vector."
+    },
+    {
+      "start": 2240.16,
+      "end": 2242.7999999999997,
+      "text": "Make sense? And there are so many"
+    },
+    {
+      "start": 2241.359,
+      "end": 2246.88,
+      "text": "popular embedding models. Let me just"
+    },
+    {
+      "start": 2242.8,
+      "end": 2249.44,
+      "text": "show it to you. OpenAI embedding"
+    },
+    {
+      "start": 2246.88,
+      "end": 2252.2400000000002,
+      "text": "model."
+    },
+    {
+      "start": 2249.44,
+      "end": 2254.16,
+      "text": "So let's try to explore their website."
+    },
+    {
+      "start": 2252.24,
+      "end": 2255.839,
+      "text": "So new embedding models and API updates."
+    },
+    {
+      "start": 2254.16,
+      "end": 2257.839,
+      "text": "See they just launch so many um"
+    },
+    {
+      "start": 2255.839,
+      "end": 2263.52,
+      "text": "different different models on a regular"
+    },
+    {
+      "start": 2257.839,
+      "end": 2265.2799999999997,
+      "text": "basis. So they have okay see"
+    },
+    {
+      "start": 2263.52,
+      "end": 2267.52,
+      "text": "how they're just converting text into a"
+    },
+    {
+      "start": 2265.28,
+      "end": 2269.0400000000004,
+      "text": "vector."
+    },
+    {
+      "start": 2267.52,
+      "end": 2270.72,
+      "text": "Embedding is a sequence of numbers. New"
+    },
+    {
+      "start": 2269.04,
+      "end": 2273.44,
+      "text": "embedding models with lower pricing. So"
+    },
+    {
+      "start": 2270.72,
+      "end": 2275.2,
+      "text": "this is the model"
+    },
+    {
+      "start": 2273.44,
+      "end": 2277.599,
+      "text": "and this is the model which are the most"
+    },
+    {
+      "start": 2275.2,
+      "end": 2283.04,
+      "text": "popular ones right now. And this model"
+    },
+    {
+      "start": 2277.599,
+      "end": 2285.52,
+      "text": "has 100 1,536 that means 1536 dimensions"
+    },
+    {
+      "start": 2283.04,
+      "end": 2288.64,
+      "text": "and I think this is more than 3,000."
+    },
+    {
+      "start": 2285.52,
+      "end": 2290.72,
+      "text": "Yeah. But we usually use small model."
+    },
+    {
+      "start": 2288.64,
+      "end": 2292.48,
+      "text": "Okay. But if you want richer uh"
+    },
+    {
+      "start": 2290.72,
+      "end": 2294.3999999999996,
+      "text": "understanding you can use this model as"
+    },
+    {
+      "start": 2292.48,
+      "end": 2295.839,
+      "text": "well. How to use these models? Do not"
+    },
+    {
+      "start": 2294.4,
+      "end": 2298.4,
+      "text": "worry. I'll just show you everything."
+    },
+    {
+      "start": 2295.839,
+      "end": 2300.24,
+      "text": "Okay. Do not worry at all. Make sense?"
+    },
+    {
+      "start": 2298.4,
+      "end": 2301.76,
+      "text": "So you can explore this particular blog"
+    },
+    {
+      "start": 2300.24,
+      "end": 2303.5989999999997,
+      "text": "as well where you can see more and more"
+    },
+    {
+      "start": 2301.76,
+      "end": 2305.0400000000004,
+      "text": "things like how they just using it. But"
+    },
+    {
+      "start": 2303.599,
+      "end": 2306.4,
+      "text": "you know what you do not need to worry"
+    },
+    {
+      "start": 2305.04,
+      "end": 2307.839,
+      "text": "about knowing all of these things"
+    },
+    {
+      "start": 2306.4,
+      "end": 2309.76,
+      "text": "because there are so many models in the"
+    },
+    {
+      "start": 2307.839,
+      "end": 2311.92,
+      "text": "market. You can use openi models. You"
+    },
+    {
+      "start": 2309.76,
+      "end": 2313.76,
+      "text": "can use I think I I would say Google"
+    },
+    {
+      "start": 2311.92,
+      "end": 2315.2000000000003,
+      "text": "models. There are so many models. So you"
+    },
+    {
+      "start": 2313.76,
+      "end": 2316.5600000000004,
+      "text": "do not need to worry about just these"
+    },
+    {
+      "start": 2315.2,
+      "end": 2318.7999999999997,
+      "text": "models. You just need to understand the"
+    },
+    {
+      "start": 2316.56,
+      "end": 2320.56,
+      "text": "concept. That's it. Because there are so"
+    },
+    {
+      "start": 2318.8,
+      "end": 2322.8,
+      "text": "many embedding models in hugging face as"
+    },
+    {
+      "start": 2320.56,
+      "end": 2325.119,
+      "text": "well that you can use. So nothing to"
+    },
+    {
+      "start": 2322.8,
+      "end": 2327.2000000000003,
+      "text": "worry. Okay. Nothing to worry. Okay."
+    },
+    {
+      "start": 2325.119,
+      "end": 2328.56,
+      "text": "Makes sense. Makes sense. So now you"
+    },
+    {
+      "start": 2327.2,
+      "end": 2330.3199999999997,
+      "text": "know how we can convert this number and"
+    },
+    {
+      "start": 2328.56,
+      "end": 2332.32,
+      "text": "let me just remove it because it varies"
+    },
+    {
+      "start": 2330.32,
+      "end": 2336.48,
+      "text": "as per the models that you use. Make"
+    },
+    {
+      "start": 2332.32,
+      "end": 2340.079,
+      "text": "sense? So these are the embeddings. Now"
+    },
+    {
+      "start": 2336.48,
+      "end": 2342.48,
+      "text": "we know that we store embeddings in the"
+    },
+    {
+      "start": 2340.079,
+      "end": 2344.4,
+      "text": "database. Okay. And that database is"
+    },
+    {
+      "start": 2342.48,
+      "end": 2347.4,
+      "text": "called rag."
+    },
+    {
+      "start": 2344.4,
+      "end": 2347.4,
+      "text": "Okay."
+    },
+    {
+      "start": 2347.599,
+      "end": 2353.28,
+      "text": "Now I will write a word and you should"
+    },
+    {
+      "start": 2350.4,
+      "end": 2356.0,
+      "text": "know about this word or you would have"
+    },
+    {
+      "start": 2353.28,
+      "end": 2357.92,
+      "text": "heard about this word vector"
+    },
+    {
+      "start": 2356.0,
+      "end": 2360.4,
+      "text": "database."
+    },
+    {
+      "start": 2357.92,
+      "end": 2362.96,
+      "text": "Okay, vector database. You would have"
+    },
+    {
+      "start": 2360.4,
+      "end": 2366.64,
+      "text": "heard about this word vector database. I"
+    },
+    {
+      "start": 2362.96,
+      "end": 2369.92,
+      "text": "would say vector database is nothing but"
+    },
+    {
+      "start": 2366.64,
+      "end": 2372.64,
+      "text": "is nothing but"
+    },
+    {
+      "start": 2369.92,
+      "end": 2374.64,
+      "text": "rag. Okay. So there are two popular"
+    },
+    {
+      "start": 2372.64,
+      "end": 2377.2,
+      "text": "names for rag. One is rag and second is"
+    },
+    {
+      "start": 2374.64,
+      "end": 2379.04,
+      "text": "vector db. That means vector database"
+    },
+    {
+      "start": 2377.2,
+      "end": 2384.3199999999997,
+      "text": "and there's one more word called vector"
+    },
+    {
+      "start": 2379.04,
+      "end": 2389.599,
+      "text": "store. So if you hear any word any word"
+    },
+    {
+      "start": 2384.32,
+      "end": 2394.48,
+      "text": "rag vector db vector store the concept"
+    },
+    {
+      "start": 2389.599,
+      "end": 2396.0,
+      "text": "is same the intent is same the motive"
+    },
+    {
+      "start": 2394.48,
+      "end": 2397.52,
+      "text": "behind that conversation will be the"
+    },
+    {
+      "start": 2396.0,
+      "end": 2400,
+      "text": "same I'm so sure. So do not feel"
+    },
+    {
+      "start": 2397.52,
+      "end": 2400,
+      "text": "confused an lamb. So why do we have"
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+[
+  {
+    "id": "706a53a6dc5f94a20e611a34eb5a16e2e4de3bb3c53c6630c29c805eb39bec3d",
+    "text": "So finally what is my thought going on, add three and four, whatever result will come then multiply that, that means this and its addition seven right and it divided by two, it means whatever came after multiplying this, now let's see what happens, okay hey everyone. Welcome back, welcome to another exciting video and in this video we are going to cover Lang Graph, Lang Chain and Lang Smith. So don't worry if these words, these technologies seem completely new to you, in the world of AI these technologies are very dominating. In this video we will understand what these three technologies do, how they are useful in building AI agents and we will also see a practical example. So with that let's start with the video. Just in case, as you know, the era of AI agents is going on, so if you are working on any AI agent, these three words will be very visible in your research, in your search results. So let's see what is Lang Graph, Lang Chain and Lang Smith and trust me these are very easy topics. Okay, so typically what does an AI agent look like or if you are building an AI-based application, right? So let's say you have an application, let's say you can use Nut.js, you can use Python's LLM models, for example we have OpenAI, right? So OpenAI has",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 0.04,
+      "end_seconds": 95.84,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=0s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "67d407cdfa68f8c11f1333bfc14b4d40450d4c65721b4efea68383f983f0934f",
+    "text": "Okay, so typically what does an AI agent look like or if you are building an AI-based application, right? So let's say you have an application, let's say you can use Nut.js, you can use Python's LLM models, for example we have OpenAI, right? So OpenAI has going to be enough, as we advance in technology, as we advance in our AI applications, what AI calling is, this is also getting complicated. There are scenarios where you need to call this back and forth, there are scenarios where you need to call this. But with a context, you need to call this with some tools. So there are many types of patterns that we need to use here and many types of frameworks are already there in the market that make these particular things easier just for your context. Recently we uploaded a video in which we discussed how I can give an AI agent access to function calling, right? So just in case you haven't seen that video, I would highly recommend that you watch that video first. In it, we created tools, for example, a tool to get weather data. Right, we created a tool like calculate. So to scale these things, these three tools come into play. Okay, so let's understand these three tools. I hope we have understood a little bit of the problem statement that basically LLM calling is not that straightforward, we need a",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 63.879,
+      "end_seconds": 187.879,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=63s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "f0606305cd79809152562280ec551e077378f8a103acdb783a470d8d11e9b5d1",
+    "text": "Right, we created a tool like calculate. So to scale these things, these three tools come into play. Okay, so let's understand these three tools. I hope we have understood a little bit of the problem statement that basically LLM calling is not that straightforward, we need a lot of tools, we need a lot of frameworks to make it possible that we can do our AI calling in an efficient way. Okay, so let's start with Lang Chain first. So I would like to start with Lang Chain first. So what is Lang Chain? Okay, there are many LLMs in the market. For example, you know there are many LLMs from OpenAI, okay? So OpenAI has LLMs, you have Gemini, you have Claude, you have DeepSea also now, so you have a lot of LLMs, okay if you need something like that. You need to create a platform or an application where you are doing multimodal AI calling. It may be that some data is coming from OpenAI, some data is coming from Gemini, and some from Claude. So the first method is to install all their SDKs. Install npm install openai npm install npm install deepseek. So the first method is to install all of them in your packages, then each AI calling payload, right, the API payload is different. How you interact",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 169.44,
+      "end_seconds": 253.48,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=169s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "588aaf57d1796ee057b8d8ecec69f54f1e01aa1852f0796ab6ee10a3ef3a55f5",
+    "text": "Install npm install openai npm install npm install deepseek. So the first method is to install all of them in your packages, then each AI calling payload, right, the API payload is different. How you interact with OpenAI is different from how you interact with Gemini because their API payload and API signature are different. So what does LangChain do? LangChain basically unifies your AI API calling. So what can you do? Instead of installing all these packages separately, you can just install the LangChain package, and all the useful functions are already written in it about how you can call OpenAI by changing some parameters in that function, how you can call with Gemini, you can use Claude, correct? So basically, what it is doing is acting like a unified interface which makes it easy to interact with OpenAI, Gemini, and whatever future elements come So this is one part of LangChain. Plus, it has a lot of community plugins or community packages. So what is in the community packages? Let's say you have a PDF file. So let's say you have a PDF file. Now look, a PDF file can be very large. Can you give a whole PDF file, which may have like 100,000 characters, to OpenAI at once? Let's say you want to chat about this file. So can you give this whole file to OpenAI at once? No, because it's 100,000 characters, right? There isn't enough context window.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 234.879,
+      "end_seconds": 333.039,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=234s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "0be626c6caed28b2fed67195aa7b3a58f4ddd65db9dc52c95e8780588309ba87",
+    "text": "Can you give a whole PDF file, which may have like 100,000 characters, to OpenAI at once? Let's say you want to chat about this file. So can you give this whole file to OpenAI at once? No, because it's 100,000 characters, right? There isn't enough context window. So what LangChain does is, in its community packages, you get a lot of utility tools. For example, you have a PDF loader in it. So what does this PDF loader do? It says, \"You do one thing, give me the path of the PDF file, and I will automatically divide it into chunks.\" So I will automatically divide it into chunks. So 100,000 can become maybe 100 chunks, right? Small chunks, and then it will automatically give these chunks to OpenAI. So basically, what happened here is I can also build a PDF loader, meaning I need to read a file, I need to divide it into chunks, and then I need to retrieve those chunks and give them to OpenAI. So what does this mean? The community package in LangChain already has this. Similarly, if you want to play with vectors, right? With vectors, you may need to convert a PDF into vectors. Then you need to search something on those vectors. Okay, what did I write? Not 'venter', 'vector'. Then you need to store that vector in some database. So either you write all this functionality from scratch.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 315.759,
+      "end_seconds": 396.44,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=315s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "f9c3585091f8fd495ab227c5e3ff2c03a0b1c1c8727ab10fa46bbbff429f0ba8",
+    "text": "Then you need to search something on those vectors. Okay, what did I write? Not 'venter', 'vector'. Then you need to store that vector in some database. So either you write all this functionality from scratch. फिर आपको उस वेक्टर्स के ऊपर कुछ सर्च करना है ठीक है आपको उस अ ये मैंने क्या लिखा है वेंटर नहीं वेक्टर फिर आपको उस वेक्टर को ठीक है उस वेक्टर को किसी डेटाबेस के अंदर स्टोर करना है तो या तो सारी ये फंक्शनैलिटी आप स्क्रैच से लिखो Which is not at all so difficult right but what is inside LangChain all these functionalities are already written because look if you write all these functionalities from scratch then what will be the problem maybe you are using Postgres for vector store DB that is PG Vector you might be using PG vector you might be using v8 you might be using Pinecone DB or you might be using Chroma DB so one way is that you write all the plugins for all these functions like insert etc. yourself but it's a very difficult thing right means it will be a lot of tedious work so what LangChain does is it simplifies your AI API calling how pre-built utility tools pre-built packages everything is pre-built inside it so this was our LangChain okay what is this",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 378.599,
+      "end_seconds": 459.96,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=378s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "3de8f7db791453184a2cdb961f70d49c2842b5272897c2a9f9af33c04e312f35",
+    "text": "thing right means it will be a lot of tedious work so what LangChain does is it simplifies your AI API calling how pre-built utility tools pre-built packages everything is pre-built inside it so this was our LangChain okay what is this This was basically our LangChain which handles AI API calling clear I hope there will be no doubt in this okay let's move forward okay let's move towards LangGraph okay LangGraph is something very new because originally not everything was LangChain if you also see their URL lch.com then LangChain was their sole product that dominated in AI okay after that the same company LangChain company launched another product that is LangGraph okay what is LangGraph now This is something that might seem a little confusing to you but don't worry here we are to simplify it right when you create an AI agent okay an agent okay when you create an agent then your flow of calls changes a little If you are creating a simple AI application then what happens is as a developer I decide the flow and where I need to make what kind of AI call I will write a function there a Let's take an example let's say you are creating a blogging application okay you have created a blog application okay now inside this blog application let's say you have given a button that hey summarize this particular block okay the user will click this button",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 441.28,
+      "end_seconds": 539.16,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=441s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "67e6d94035791771dea04be614083894ab1b1913c0c7dc2201427c8b6becc042",
+    "text": "Let's take an example let's say you are creating a blogging application okay you have created a blog application okay now inside this blog application let's say you have given a button that hey summarize this particular block okay the user will click this button So whatever block log will be in front of him will be summarized very simple use case okay very simple straightforward use case in this scenario what will happen when the user clicks this button maybe a backend call will go to your server what will your server do it will retrieve the contents of the block okay it will read the contents of the block from the database then what we will do is using LangChain we will make an API call an AI API call that bro this is the block means since we will chunk it LangChain will handle it okay so if the block is very large it will be divided into chunks and I will give it a prompt hey summarize this for me and whatever result I get back I will return it to the user So what happened here is that I decided the flow that the application flow here I decided that on the user's click of the button there will be a backend call I will first retrieve the blog from the database using LangChain I will use LangChain",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 522.399,
+      "end_seconds": 603.88,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=522s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "d5b6ab37f96b9c1f9384d38b5b7444c9f1bf04e2324758b18df6661df8e94898",
+    "text": "So what happened here is that I decided the flow that the application flow here I decided that on the user's click of the button there will be a backend call I will first retrieve the blog from the database using LangChain I will use LangChain I will prepare a prompt inside which will include a blog and this prompt will be there, and whatever result comes from it, I will return it to the user. So in my flow, what I did with AI is that I embedded AI, okay? But still, overall flow is decided by me as a developer. But if you create an agent, Okay, if you create an agent, then there the flow is not something you have to offload to AI because that is the job of the agent. What is an agent? It can do anything based on what the user needs. It can do anything, so different users can have different flows. For example, let's say you created a flight booking agent, okay? You created a flight booking agent. Now here you did what? You gave the user a chart on the front end, and what can they do? They can book flights, see available seats, So here the flow is something you cannot decide if you really think about it, okay? So if the user says, 'I want to book a flight,' okay? 'I want to book a flight,' then obviously AI will respond, 'What kind of flight do you want? From where,'",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 586.48,
+      "end_seconds": 669.3599999999999,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=586s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "bc0c4e57a3b3842e67bb8e18b8a7c94011ebec1b69a3ab1affed01382fb2a111",
+    "text": "So here the flow is something you cannot decide if you really think about it, okay? So if the user says, 'I want to book a flight,' okay? 'I want to book a flight,' then obviously AI will respond, 'What kind of flight do you want? From where,' 'Where do you want it from? Tell me the places,' then it will show the available flights. Another user might say, 'I have a booking, when is my flight?' Okay? 'When is my flight?' So in this particular scenario, what will happen? It will retrieve the booking number, search in the database, 'When is this flight?' So can you see that too? There are different flows for users, meaning based on how the user is chatting, they can have different flows. So here we need to create a smart agent that knows how to search, that knows how to book a flight, how to search for a flight. So it knows that, but when to do what depends on what the user is chatting about. So here if you see the flow, it's a dynamic flow, I cannot write a static flow, so here you use a language graph. Inside the plan graph, what happens is you can create a graph flow. Okay, let's say I will show a small graph. Let's say this is a node where the user has given some chat messages. Now based on the chat, either",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 651.76,
+      "end_seconds": 733.839,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=651s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "35b2f10929b298d41a5421f82b86669e2d7ffcba3c235ca9f0af6be92d5ad1ab",
+    "text": "here you use a language graph. Inside the plan graph, what happens is you can create a graph flow. Okay, let's say I will show a small graph. Let's say this is a node where the user has given some chat messages. Now based on the chat, either what will you do? I mean, what possible scenarios can there be? Possible scenarios can be that either they need to book a new flight, so the flow can be that they need to book a new flight. This is a flow, okay? Or it could be that they just need to read their booking, or it could be that there is some cancellation, okay? So this flow has been created. If it is a new flight, then in that case, what can happen? We need to look at available flights too, okay? We need to look at available flights, and if you really think about it, along with available flights, we also need to see if it is already booked or not. We also need to read the already booked booking because if you are allowing a new user to book a flight, then you need to justify whether there is space in that airplane or not, right? So we need to read the booking. After that, it could be that we will show the user, 'This is your flight, this means",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 716.48,
+      "end_seconds": 768.0400000000001,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=716s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "e2c93ae5282e1df264a94e6a715f1e762969497294b74841ab3c3f5bcf9df4bb",
+    "text": "it is already booked or not. We also need to read the already booked booking because if you are allowing a new user to book a flight, then you need to justify whether there is space in that airplane or not, right? So we need to read the booking. After that, it could be that we will show the user, 'This is your flight, this means you know, available seats.' They will book one seat. We will perform some database operations here. Then if they say, 'No, I mean I did it, I need to cancel,' then they might go to cancel from here, okay? If a user comes and says, 'I need to cancel my booking,' then for cancellation too, we will handle the booking. यू नो अवेलेबल सीट्स हैं वो एक सीट को बुक करेगा हम यहां पे कुछ डेटाबेस ऑपरेशन करेंगे फिर अगर वो कहता है यार नहीं मेरे को मतलब मैंने कर तो दिया मेरे को कैंसिल करना है तो हो सकता है वो यहां से कैंसिल करने पे चला जाए ठीक है अगर कोई यूजर आता है कि यार मेरे को मेरी बुकिंग डि कैंसिल करनी है तो कैंसिल के लिए भी हम बुकिंग We will read it and then cancel it, so can you see that when you talk about a dynamic flow, you are actually building a graph, okay? So what is happening there is that this graph construction, this graph orchestration is your Lang.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 747.88,
+      "end_seconds": 816.0,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=747s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "ac2fa14dd53d9cdd7b6f7ab2bf8ac1d3bda421ee9cc4367fef8661fdc68712c0",
+    "text": "We will read it and then cancel it, so can you see that when you talk about a dynamic flow, you are actually building a graph, okay? So what is happening there is that this graph construction, this graph orchestration is your Lang. The graph does, so what can you do? You can create a graph, you can decide the code flow, okay? You can create a graph and inside each node, you know what a node is, this is a node, this is a node, this is a node. Inside each node, you can do a database operation, you can either do an open. LLM calling, so basically this is how your graph flows, got it? Let me give you an example, okay? Let's say you want to create a weather forecast application, a weather application, okay? Using AI, so what will its flow be like? Okay, if we try to create a little flow for it, you will first have a node, okay? So this is your start node where the user will give some prompt, so user charts, okay? The user might have asked, 'What is the weather of Patiala tomorrow?' Something like that, so from here you will call a node, this node is let's say responsible for getting weather data, okay? So what will it do? Getting weather data, okay? Inside this, what can you do? You can call the LLM, inside its code you will call the LLM, the user has",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 798.36,
+      "end_seconds": 885.079,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=798s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "e8ee571c6b3001ea76e96eaac539514df2bb7894ea04d1391d80679f3d28c6d0",
+    "text": "node, this node is let's say responsible for getting weather data, okay? So what will it do? Getting weather data, okay? Inside this, what can you do? You can call the LLM, inside its code you will call the LLM, the user has given a prompt like, 'What is the weather for Patiala tomorrow?' Okay, now the LLM will say, 'I need to call a tool in my graph, a node that can bring the weather data, okay?' So let's say that was this call, okay? So this is the actual node where you actually make the weather API call, okay? So you would have given Patiala here and what it did was return the result back. So at this particular point, AI is happy, AI got the data, AI figured out, 'Yes, I got the weather data,' and now finally what can we do? By giving this output to the user, we can end it. We gave this output to the user and we ended our graph. So what happened? This became my agent that can work on the weather, correct? How? The user will ask to get weather data, in the LLM call we will give that prompt, the LLM will say, 'I need weather data for Patiala, so I have a tool, the weather API, I will call it.' Our Lang graph will call the weather API, inside it we will call whatever weather data we have, then we will give that weather data back to the user, we will give that output to the user. It might be",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 866.44,
+      "end_seconds": 949.0,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=866s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "6cc41b376f271772329638418f687fb1926ea9a60f1572eb832e0a63445f705e",
+    "text": "will say, 'I need weather data for Patiala, so I have a tool, the weather API, I will call it.' Our Lang graph will call the weather API, inside it we will call whatever weather data we have, then we will give that weather data back to the user, we will give that output to the user. It might be that if the user just says hi here, then what do we do? Here the LLM sees, 'Oh, he is just saying hi, he has nothing to do with the weather,' so it quietly says hello and exits. So here we did not even call this node. So what is happening here is that I have created a framework for what kind of flow can happen, but which node to call and how many times, that is being decided by your LLM. So this is your Lang graph, okay? So what does the Lang graph do? If you read the definition here, the Lang graph is a stateful orchestration framework that brings added control to the agent workforce. So this is your Lang graph. So inside each node, you will basically be using LangChain for making API calls. So did you understand what LangChain is? Did you understand what Lang graph is? Now what is LangSmith? Hey Lang Smith, look, there is a term that I'm sure you've heard of, which we call OpenTelemetry. If we write traditional backends, we write a lot of code, we perform many database operations, so we",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 931.04,
+      "end_seconds": 1013.959,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=931s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "896d50ec8271a42ff83dfe1e0800aedb54839f0ff23b01bb5a851da165c78818",
+    "text": "Hey Lang Smith, look, there is a term that I'm sure you've heard of, which we call OpenTelemetry. If we write traditional backends, we write a lot of code, we perform many database operations, so we instrument our application, record its performance, its logs, its metrics, we keep all this information in some OpenTelemetry systems so that we can later see the performance of our application when there was a lot of load, how our applications performed, right? An example is DataDog, you must have heard of New Relic, Grafana, Loki, Prometheus, and you must have heard about New Relic. So what do all these do? They monitor your traditional applications, backend applications, frontend applications, so that you can see that debugging becomes easier to understand what happened in reality. Similarly, if you want to instrument this, okay, now this is a new thing, correct? Technically, it's not that straightforward, it's a new thing that which node was called when, what state was running, then what AI call might have happened from there. So to instrument these things, to record them, for debugging, you have LangSmith. So LangSmith is nothing but a platform if you want to track this whole thing in LangSmith, you know, if you say yes, I want to track this on LangSmith, then LangSmith will give you a debug flow, okay, what happened so that if tomorrow a customer complains that this thing didn't work or you want to see its performance, you can",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 995.319,
+      "end_seconds": 1096.28,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=995s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "da8dcdf74adfa08ba8d95fcfe27532d354a23a4a7ef31ee3058cd5dad8dffeee",
+    "text": "if you want to track this whole thing in LangSmith, you know, if you say yes, I want to track this on LangSmith, then LangSmith will give you a debug flow, okay, what happened so that if tomorrow a customer complains that this thing didn't work or you want to see its performance, you can see in the LangSmith dashboard how your entire application flowed. So LangSmith gives you a complete detailed overview of what time which node ran, what API calling it did, what result came, what was the input, what was the output, did it fail, did it pass, so all those things are provided to you by LangSmith. So LangSmith is basically an instrumentation tool. So let's do one thing, I think you must have understood enough of the theory about what LangChain, LangGraph, and LangSmith are. So here I searched for LangGraph and this is the official page of LangGraph, okay, so you can see that here we have three products. Okay, let me show you one by one: LangChain, LangSmith, LangGraph. Alright, we are already on LangGraph. So what is LangChain? The largest community building the future of LLMs. Okay, LangChain is flexible abstraction and AI-first tool that makes it the number one choice for developers when building with generative AI. Okay, so this is basically what your LangChain is. So you can see that here we have selectors, tools, models, splitters, document loaders, vector sources, so all these",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1078.039,
+      "end_seconds": 1161.0,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1078s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "4e10af7b71d9159db03a7a7b6d4410109e2568a59016d30873cbabc1fef02b78",
+    "text": "abstraction and AI-first tool that makes it the number one choice for developers when building with generative AI. Okay, so this is basically what your LangChain is. So you can see that here we have selectors, tools, models, splitters, document loaders, vector sources, so all these come under LangChain, okay? So this is your LangChain. After that, let me show you LangGraph. So if we go down in LangGraph, what does LangGraph do? It controls, moderates, and guides your agent's actions. And then if we go down, first-class streaming support for better yes design. And if we go down a bit, look, I have been more productive in morning coffee. Could it be coffee? So you can see retrieving memory, inside this, you know, you have a memory context, a lot of things. Okay, so this is how your LangGraph looks, so you can see that this is your LangGraph, so this is one of their products. The Lang Graph Studio allows you to see whatever you are coding, how the calls are actually happening. Look, an action started, the agent is doing something, then it will go inside that action, continue, and end. So this is basically your Lang Graph, okay? So this is your Lang Graph, Lang Smith, get your LLM. Application from prototype to production, okay? So this basically tracks your application life cycle. It debugs, collaborates, tests, and monitors your LLM applications. Let me show you how it looks. If we scroll down, you can see monitor, develop, collaborate, test, and",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1141.28,
+      "end_seconds": 1228.6,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1141s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "fb483b87414151de01721111c7ef1fd4f380eea4c947fb20710b67834d1cae50",
+    "text": "Application from prototype to production, okay? So this basically tracks your application life cycle. It debugs, collaborates, tests, and monitors your LLM applications. Let me show you how it looks. If we scroll down, you can see monitor, develop, collaborate, test, and deploy. We ran this node first, then this node, then we retrieved the document, then we responded, then we made an OpenAI call. This was the input, this was the output. So this way it gives you complete tracking so that you can debug it actually. Okay, so how much latency came, how much cost you bore on each LLM call, how many tokens were used. So all those things are provided to you here. This is your Lang Smith. So these three products together create a very powerful framework for your LLM applications. So here if we go to the documentation, it has been used in python-pip, and it's a very nice support but there is also for JavaScript. So let's open the Lang Graph documentation, okay? So you can see that here you have learn the basics, yes. Which is fine. Here there are tutorials too, okay? Tutorials, so quick start, okay? Cloud start with common workflow is here, and you can create customer support agents, create rag applications. So let's do one thing, I will show you a basic application right here.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1208.64,
+      "end_seconds": 1294.84,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1208s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "5e972d1a941b0a6c238a68557a13bdebb51554e2620d94414f04a30d82c05fb7",
+    "text": "Which is fine. Here there are tutorials too, okay? Tutorials, so quick start, okay? Cloud start with common workflow is here, and you can create customer support agents, create rag applications. So let's do one thing, I will show you a basic application right here. Somewhere, yes, like for example, this is it, okay? So what we are going to do here, what they are building, they are using Anthropic. Look, they are importing from Lang Chain, meaning Clut. This way, okay? So building blocks have been done. So this is how we create our tool. So we see what we did. We said, 'I want to build a tool from Lang Chain code tools.' Okay? And we imported the code. What we did is we created a tool here. Multiply. So what does the Multiply tool do? It takes an A, takes a B, and gives A * B. This means this can be a weather application. We gave it a name, a description, and provided its schema. Okay? Now what we did is we created LLM with tools, okay? So now our LLM knows about this tool. Then we said LLM with tools, do in work with 2 multiplied by 3 and message the tool calls. So what will this do? It will basically try to call your tool. So now what you can do is LLM call get, so you can either fail it or you can execute that tool. So this is your",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1275.919,
+      "end_seconds": 1359.52,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1275s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "1c54965e62fa73305d38e58e24f4f8fa1353ebdbc730c96c93c19cc1b6b7d45a",
+    "text": "Then we said LLM with tools, do in work with 2 multiplied by 3 and message the tool calls. So what will this do? It will basically try to call your tool. So now what you can do is LLM call get, so you can either fail it or you can execute that tool. So this is your state. These are your topics. I will explain what this is, okay? There is no need to be afraid of them. They are very simple things. So here there are many examples, okay? So you can see that here there are examples we have. So let me show you what happens, how the Lang Graph works, okay? Lang Chain straight forward. Inside the Lang Graph, you have a global level above, a state. Okay? Let's say I have a state of messages, okay? An array of messages. Now whatever graph you create. Let's say you are creating a graph that is very complicated, so every graph, every node takes this state as input and keeps modifying this state, and at the end when you reach the very end. When you reach the end, your state will have all the data, so basically you create a state, all nodes have access to that state, any node can mutate that state, okay, and can add things to the state, can read things from the state, and",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1339.919,
+      "end_seconds": 1425.2,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1339s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "ff71ba9aa9abc8da98492d359e427266d5bfc971ce0159d2bc123aafd0a93892",
+    "text": "When you reach the end, your state will have all the data, so basically you create a state, all nodes have access to that state, any node can mutate that state, okay, and can add things to the state, can read things from the state, and based on that you get a result, okay, so that means if I go back, so here I show you, for example, look they created a joke application, so this is the state, what data I have inside my state, I have a topic, a joke, a story, a poem. Combined output, so what I have done is, let's start from here, wait, I will show you the start, we created a flow here, okay, a workflow that I want to create a state graph, this is my state, first we will call LLM1, okay, and this is not, wait, add node, add node, add h, look, start, go from start to call LLM1 function or you can also call LLM2 or you can also call LLM3, so from start there are three nodes, any of these can be called, okay, then LLM1 to aggregator, LLM2 to aggregator, LLM 3 to aggregator, and aggregator to end, so what is happening now, okay, here I show you what LLM1 does, write a joke about this thing, okay, so what it did is it gave me a joke, what is LLM2 doing, it writes a story about the topic, okay,",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1406.279,
+      "end_seconds": 1494.2,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1406s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "827f8584066dc2f4494a6bae240d513435215e558d158dcec0cbce6f08f67147",
+    "text": "3 to aggregator, and aggregator to end, so what is happening now, okay, here I show you what LLM1 does, write a joke about this thing, okay, so what it did is it gave me a joke, what is LLM2 doing, it writes a story about the topic, okay, bro, and what is call three doing, write a poem, so here we executed all three in parallel, I got three outputs, what is the aggregator doing, the last output combines them and gives us back the combined output, got it, so you got it, right, what is happening here? Okay, so this way we can create an LLM workflow, so we called all three nodes in parallel and all three nodes gave their data to the aggregator, what did the aggregator do, look, the aggregator basically got the state, it combined state.story, joke, and poem into the combined output. So this became your LLM, similarly, okay, what is this, this is also a different poem one, okay, so here what is the state, input, decision, output, so here there is also a decision in between, okay, there will be a conditional node in between, so look here, what is it that if it is a story, then call LLM1, if it is a joke, then call LLM2, so here you can also create conditions like this, okay, and if we go down here, there was a very good example, you know, I need that example, I think this is it.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1473.44,
+      "end_seconds": 1559.44,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1473s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "7578a7e7f523a9f30507fd25a2957e6c7aafdb7932f0d60501c43c3914263b34",
+    "text": "story, then call LLM1, if it is a joke, then call LLM2, so here you can also create conditions like this, okay, and if we go down here, there was a very good example, you know, I need that example, I think this is it. Yes, this is an example, at least, okay, so what is this, this is the numbers one, okay, this is the numbers example, so what does it do, let's code this, okay, let's see coding it, so I will work, I will open the terminal, so I think coding will be understood better, what we will do is, we will create a directory inside coding and we will name it long graph test, so long graph test. And code dot okay so here you can use any AI okay here there is no restriction that you have to use OpenAI but I would like to use OpenAI okay so let's do npm init npm init done enter enter enter npm init yes yes yes could also do and here we will create an xdz file okay so you can also do TypeScript but okay I want to use JS so we need to install something here okay if you see here we have its code example too somewhere here because I just want to see if we have this here okay so let's open it is this a GitHub link nice so here we go oh it's a Python they have given an example inside Python okay so we need to install",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1540.32,
+      "end_seconds": 1638.159,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1540s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "a5476339ddce30a28a02773d9486cc55a2bc1d7446b30ead2900bc43c5e20b63",
+    "text": "somewhere here because I just want to see if we have this here okay so let's open it is this a GitHub link nice so here we go oh it's a Python they have given an example inside Python okay so we need to install LangChain core okay and one LangChain LangGraph so let's install this package okay so npm install langchain core okay I will also show you my package and we need to install Zod here so nice npm install zod okay Zod is done and we need to install LangChain LangGraph here too so npm install langchain langgraph okay so LangGraph is also done so look LangChain API calling for LangGraph is done and I will also show LangSum okay so this is our done so now let's start coding it's simple I will import here okay I will just import something from @langchain/tools so I need to create a tool here for that we will use this tool okay how to create a tool so const multiply so const multiply equals to yeah this is a tool okay that this is a tool and inside this tool what we need to do is we need to give an async callback okay an async and just a second we have given an async callback and inside this what can we do we can take numbers here can you see a and b we have taken one number",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1620.2,
+      "end_seconds": 1720.1589999999999,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1620s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "f73ede20f722368995c8e5f10489014901cf84e3e700b6108480fd732a3ae3c6",
+    "text": "tool and inside this tool what we need to do is we need to give an async callback okay an async and just a second we have given an async callback and inside this what can we do we can take numbers here can you see a and b we have taken one number and returned okay so here I will say I need an a and I need a b and in as a return I will give you a * b this can also be your AI calling this can be your API call for example if you need to get weather data so it's a tool and second we need to give another parameter that is schema we need to give schema here okay so what do we give schema so schema how do we give so here you can see we give it a name that this is our multiply I will copy this that this is my multiply I will give it a description that multiply two numbers okay right and after that we import z okay Zod and here we need to give schema so schema we give so schema how will it be z object okay I am taking an a which is a z number okay let's do one thing let's copy this who will code this much",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1702.12,
+      "end_seconds": 1772.8799999999999,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1702s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "43fb38a9e1ed52df9f21ba6e33b3e8b1465a6b9811d0906998618cd515737586",
+    "text": "we import z okay Zod and here we need to give schema so schema we give so schema how will it be z object okay I am taking an a which is a z number okay let's do one thing let's copy this who will code this much first number second number okay so the AI gets the context that what does a mean what does b mean my tool is done okay similarly you see we can also create an add tool let's copy this okay we can create a divide tool so these are my three tools so you can see that very nice tools have been created and here this is the type If there is no script, let's remove this, and similarly, this is also not TypeScript, so we will remove this too. So, right now my file looks something like this. This is my multiply tool, this is my add tool, and this is my divide tool. Okay, so I hope you understood the tools. What a tool is, okay, the tool is ready. Now what we need to do is create an instance of an LLM here. So first, let's create an array of tools. So, these are all my available tools: add, multiply, divide. Okay, tools by name. So, we mapped the tool to the tool name.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1755.44,
+      "end_seconds": 1822.799,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1755s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "e3988c13acb8d04fcac148ea3f07baac8d88fe9c3330c10b3cbc371d35fb99e1",
+    "text": "What a tool is, okay, the tool is ready. Now what we need to do is create an instance of an LLM here. So first, let's create an array of tools. So, these are all my available tools: add, multiply, divide. Okay, tools by name. So, we mapped the tool to the tool name. So, we mapped whatever name the tool has to the tool, and now what we will do is create LLM with tools. Okay, now where did the LLM come from? We will have to import the LLM. Okay, let me show you where the LLM came from. That is how an LLM instance is created. They haven't included an example here, which is bad, but okay, let me show you how it works. So, let's import something from slash. Let's say I want to use OpenAI. Okay, so here I could see that there was an example of code. Look, a LangChain rate core will not come. Let's say OpenAI, create an entropic. Okay, one second, what are the dependencies? LangChain, LangGraph, I want to use LangChain OpenAI. Okay, so npm install langchain slash. Let's check the documentation once so that there are no spelling mistakes. OpenAI, okay, so how to install this? And this is pythonanywhere.com. Yes, LangChain is OpenAI. Okay, so for OpenAI, we need to use this package. So, @langchain/openai. And how will we create the LLM? If we don't go here, let's copy this and paste it. So, LangChain OpenAI will not come, Chat OpenAI will not come, and then what can we do?",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1803.08,
+      "end_seconds": 1908.24,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1803s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "02db432e173c94f3e4b60978ba74cd6aa679eafe50c3883a89133ca5b1a193f5",
+    "text": "Yes, LangChain is OpenAI. Okay, so for OpenAI, we need to use this package. So, @langchain/openai. And how will we create the LLM? If we don't go here, let's copy this and paste it. So, LangChain OpenAI will not come, Chat OpenAI will not come, and then what can we do? We can create an LLM here like this. Okay, so here I will create an LLM, LLM Chat OpenAI. Okay, so which model do we need to use? I need to use 4o, so suggestions do not come. What GPT is it? 4o, okay, so I need to use GPT 4o process.env AI. So, I will have to give my OpenAI here. Okay, so here let's create a dot env. Okay, so here we will have to provide our OpenAI API. So, one second, let me just copy my OpenAI API key and do not use my key because I will revoke it anyway. So, platform on A. Okay, so I will do one thing, I will go to my own project. So, this is my personal account. Create an account and inside this, we say LangGraph. Okay, so create a secret key copy. And this was the previous vector ding from the last video. Did I copy it? Yes, it got copied. Nice. Okay, so we have copied this, and this was created at the time of vector modeling.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1889.88,
+      "end_seconds": 1972.399,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1889s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "87a4eebf72bce437e55dda2d82bc120cecc5082121d7f9ffcb53faf59d38135c",
+    "text": "inside this, we say LangGraph. Okay, so create a secret key copy. And this was the previous vector ding from the last video. Did I copy it? Yes, it got copied. Nice. Okay, so we have copied this, and this was created at the time of vector modeling. So, let's delete this. So, revoke. Okay, so LangGraph is nice right now. So, this is done. Correct. This is done. This is done. Nice. Now what we need to do is if we go back to the documentation, let's search for multiply. Let's take it, okay, so here we were, so what did we do? We have to do it with the mind tools, okay, let's go down, let's go down, okay, I lost where it went, yes, this one, right? So we multiplied it. LLM by tools, so we created an instance of an LLM, okay, this became our LLM. Now let's see what we will do. Now we are saying LLM dot bond tools here, and this LLM with tools has the context of all the tools, okay. Inside this LLM with tools, the LLM knows which tools are available. Now what we need to do is create a graph. Let's create a graph, messages, Enosh state graph, so let's quietly import this, okay, I will explain it to you slowly later.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 1954.36,
+      "end_seconds": 2040.96,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=1954s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "91949f3feacf3c058938f20059a189727c4bfdad0089e4da7cf0e65c971baf56",
+    "text": "Inside this LLM with tools, the LLM knows which tools are available. Now what we need to do is create a graph. Let's create a graph, messages, Enosh state graph, so let's quietly import this, okay, I will explain it to you slowly later. So look, I imported a state graph and a message notation, okay. Then what do we need to do? System message, tool message, so we will see what this is later. So LLM call, this is a node, okay, this is your one node, this is also what? A node, so state. Where are we building it? I need to see this. So where are they building a state? So message on okay, so here our state is our messages, so it is an inbuilt state, okay. So let's say my first node is this, so let's copy this and we will paste it here. So what does this node say? Okay, remove this. So what did this node say? Dude, an LLM call is my first node. The state came, I said LLM with tools, a sim message, you are a helpful assistant with performing arithmetic on a set of inputs. And whatever the user's message was, it was given and returned a new state messages of result. Okay, this became my first node. What is the second node? This actually calls the tools. The second node, if you see, we do what? We call our tools.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2022.72,
+      "end_seconds": 2103.8,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2022s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "79a72a989b004baced88882a3b3f82c396b0b52f2abe09c9b22d4780ad27e9c4",
+    "text": "And whatever the user's message was, it was given and returned a new state messages of result. Okay, this became my first node. What is the second node? This actually calls the tools. The second node, if you see, we do what? We call our tools. Okay, from whatever available tools we have, we call this tool and extract observations. Remember my last video? So what are we doing here? Let me just remove this types because we are not working in TypeScript, okay, let's remove this too. So you can see what we did, dude, if our AI is trying to call a tool, then what will we do? We called tools by name, okay, we had created tools by name here, and inside it, we will extract observations by calling the tool and push the results into the new messages state and finally a we will create a function that, dude, has our work finished? Is there any other tool to call? If not, then okay, do it. If yes, then do it, if not, then end it quietly. So this became our conditional state, okay, this became our conditional state. This has become our conditional state. Now what will we do? We will create a new state graph, okay. How do we create it? Look, I said agent builder state graph, add a node, first we are naming the nodes, brother, this is the node of LLM call, okay, and the name of the tools",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2085.96,
+      "end_seconds": 2169.72,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2085s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "49a1411595d162d611e63eee6185e61cafee9523147dc00dee1d48b9b1462b9c",
+    "text": "This has become our conditional state. Now what will we do? We will create a new state graph, okay. How do we create it? Look, I said agent builder state graph, add a node, first we are naming the nodes, brother, this is the node of LLM call, okay, and the name of the tools call is this, okay, done. Now what will we do? We can start connecting them. How? Like, look, as soon as it starts, first call the LLM call from start, then create a conditional edge, okay, create a conditional edge, how? After the LLM call, call should continue. If the output action comes, then call the tools; otherwise, end it. Mix sense and finally after the tools, the LLM call is fine. So after the tools, it will go back to the LLM call and finally you will compile this. Done, so what happened? Okay, let me explain what happened. Here a very lovely thing happened. We said, 'Dude, my first is the LLM call.' Okay, what can the LLM call do? After the LLM call, the next call will go to a conditional H. Now what can the condition be? If a tool needs to be called, there is a node called tool that will go into it. The tool will return whatever result to the condition, meaning basically it will give it to the LLM. Okay, my bad here, the tool's call will give it to the LLM call, so this condition will keep running. And if it doesn't need any other tool, it might end here.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2150.56,
+      "end_seconds": 2236.04,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2150s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "cd777f851ae4bb66e3c296db182f039629a0c27b248d83df26313e085ea8a1b8",
+    "text": "If a tool needs to be called, there is a node called tool that will go into it. The tool will return whatever result to the condition, meaning basically it will give it to the LLM. Okay, my bad here, the tool's call will give it to the LLM call, so this condition will keep running. And if it doesn't need any other tool, it might end here. So suppose you asked, 'What is 2 multiplied by 3 and add 10 to it?' So first it will call to multiply 2 and 3, then after that it will call to add 6 to 10, then whatever call comes, no more calls, and that's how it is. Okay, I think the diagram I made here will be anyway. So here let's create a message. Okay, so here I made a message. The user said, 'Add three and four,' and we invoked the result, invoked our agent graph, and finally locked the console. Done, okay, so here we need to install a package, .env, okay? Because we also need to load the ENV, so let's import something from .env. Okay, it has a config function, right? And call on config so that your env also gets loaded. Run let's see what happened. Okay, so what comes when adding four? So node links just and we got an error: a sync is not",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2218.359,
+      "end_seconds": 2298.92,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2218s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "3fdf3d08c23076123be9e73767df380c86d7577c7ed6bb43bd36f5df305c73c8",
+    "text": "we need to install a package, .env, okay? Because we also need to load the ENV, so let's import something from .env. Okay, it has a config function, right? And call on config so that your env also gets loaded. Run let's see what happened. Okay, so what comes when adding four? So node links just and we got an error: a sync is not defined. Okay, we made some mistake in creating the tool. Wait, remove this. It was doing something wrong, right? I mean, it's a sync function, so it wasn't doing this, right? Okay, I think there will be a syntax error. Anyway, return a multiply by B. Okay, it's fine. Now it's working, and what did we get? Our result is that this program crashed. Why? Tool message is not defined. Okay, we will have to import the tool message from somewhere. Yes, we didn't import the tool message. Okay, my bad, let's do it again. Where did this error come from? A new bad request just. Fine, where is this error coming from? It's coming inside the LLM call, but got an integer instead. Messages are 3. Contact expected one of the string. Where did this happen? Error is fine, let's debug this a bit. Tell me, is there an error in their examples too?",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2269.56,
+      "end_seconds": 2422.56,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2269s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "d392c66f3ff63ce1f3b537cb5a0769a1681b5e88ff95488e1b74c3d8cc429f68",
+    "text": "Fine, where is this error coming from? It's coming inside the LLM call, but got an integer instead. Messages are 3. Contact expected one of the string. Where did this happen? Error is fine, let's debug this a bit. Tell me, is there an error in their examples too? Okay, now can you see how difficult it is to track where the error occurred? So here, what should we use? We should use LangSmith. Okay, let's use LangSmith. So, LangSmith's sign up for free. LangSmith is free, so now I will show you how LangSmith works. And how we will track this, I will come to know what the problem is here. Okay, so continue with this. I will show you how this was the problem I wanted to show you. Okay, get started setting up your organization. Come on, set up whatever it is quickly. Yes, so what we need to do here is use TypeScript. We have already installed LangChain, so what we have to do is just set up these environment variables. Okay, so one Let's generate an API key. So this will automatically put the API key inside, right? Okay, it didn't put it. Let's copy it. Let's go back to the nav and just paste it here. LangSmith tracing true, this is and whatever API key we created, copy this and paste it here.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2387.319,
+      "end_seconds": 2497.64,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2387s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "63cd8258a67598fd4534d4513a20ce68b0b52c278a1398f2e2c473bfd1bdc6bc",
+    "text": "Let's generate an API key. So this will automatically put the API key inside, right? Okay, it didn't put it. Let's copy it. Let's go back to the nav and just paste it here. LangSmith tracing true, this is and whatever API key we created, copy this and paste it here. It's done. Okay, now we will run this again. Now what this will do is send its traces on LangSmith. So, okay, let's let it fail. Invalid. Oh wait, okay. Here, I think we should not give this thing. Oh, it was supposed to give the OpenAI API key. Sorry, my bad, my bad, my bad. Okay, we have given the OpenAI API key. Okay, let's go back. Okay, an error came, right? Now refresh Let's do it. Okay, so I refreshed. So you can see that I can see all the traces here. So let's click here. Let's see what is happening here. Okay, let's expand this a bit. Which node is failing? Now we will find out. So look what happened. Okay, here traces are coming as we mentioned. So LLM call happened, it called Chat OpenAI. Okay, it's still running. One second, let's refresh it. I think this should be done. And because I can see an error has come, so where actually did the error",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2477.56,
+      "end_seconds": 2563.559,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2477s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "5cddaf8ea9d2a1254c73461cff8d469195a04d4b2e41a5b6e88bac1442cc7e0f",
+    "text": "traces are coming as we mentioned. So LLM call happened, it called Chat OpenAI. Okay, it's still running. One second, let's refresh it. I think this should be done. And because I can see an error has come, so where actually did the error come? I just want to see that. So LLM call happened, it called Chat OpenAI that these are your available functions. You are a helpful assistant and we said add the end 4. So look what AI did, it called the add function on the end 4. Okay, Very good. Then we went to tools. Which tool would we have called? We called add. Okay, we called the add function on 3 and 4 and returned 7. Now what happened here is 7 came. I think we should also return it as a string. Here the problem is content 7. I can see the error, that error was related to some numbers, okay, but got an integer, yes, okay, it means I got the point. So here, our tool call is kind of, here the observation is, we can call it a string return, okay? So let's just do one thing, whatever result we are getting, let's return it as a string, okay? So, okay, it's a model-specific problem, that's why I said that for these things, Python is best. In Python, such errors do not occur, okay? Python is a bit more mature in this, but anyway, it's fine, okay? Terminal, let's run it again.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2545.16,
+      "end_seconds": 2626.1189999999997,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2545s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "104ad05663e918c151f39ad2745cea4f5d3b57436be2416e8a06a5d7902a8204",
+    "text": "So, okay, it's a model-specific problem, that's why I said that for these things, Python is best. In Python, such errors do not occur, okay? Python is a bit more mature in this, but anyway, it's fine, okay? Terminal, let's run it again. We are running, running, running, nice, nice, nice, let's see what came out. So our human message has ended, so in the end, what output did it give us? I want to see that, okay? It must have given us somewhere seven, and you can see the result of adding three and four. So we can give this to our user. So if we look at its output, okay, I would like to refresh here. So if we look at our output here, you can see this is the execution. This execution failed because the previous one did not complete, so it said you used the lang graph for so many seconds. And you used so many tokens, this cost me this much, okay? So you called the LLM, you sent it to Chat OpenAI, we called add, then it went to Chat OpenAI, and it said not to call any function, so it quietly gave us seven. Now let's do one thing, this is the output. Okay, the result of adding three and four is seven. Now let's do one thing, I will show you a cool thing, okay? In this, we will say what tools are available to us. We had available tools: add, multiply, divide, add, multiply, divide, okay?",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2606.559,
+      "end_seconds": 2690.4,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2606s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "3829a8465e617f9a57665a5a4a3b0a4f144f151d5b364fe756451d2bd69adff0",
+    "text": "Okay, the result of adding three and four is seven. Now let's do one thing, I will show you a cool thing, okay? In this, we will say what tools are available to us. We had available tools: add, multiply, divide, add, multiply, divide, okay? So I will say add three and four, then multiply the result by ten and divide by two. Do you see how it chains? Add this, whatever comes out, multiply it, and then multiply that. Let's do one thing, let's say that, okay? Now what is that? Add three and four, then multiply that by ten and divide it by five. So finally, what is my thought? Add three and four, whatever result comes out, then multiply that. That means this and its addition is seven, right? And it divided by two, meaning whatever came after multiplying this. Now let's see what happens, okay? So let's run this, let me just run it, okay? Here, the lang graphic invocation will be made, so let's see here too. So we have the result, the result of adding three and four is seven. Multiplying that by ten gives you seventy, and dividing seventy by two gives you thirty-five. Okay, so let's see what happened, so what did my AI do? The LLM call, it called Chat OpenAI and gave my input: add three and four, then multiply by ten, then do this. Then what did it do? It first called the add function, giving three and four, then it called multiply, giving seven and ten.",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2673.0,
+      "end_seconds": 2757.2400000000002,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2673s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "1d1bdfb478e1600d75583d6b16fb4cb59d6ead5f8ccae75767de0e1c7b33d7da",
+    "text": "The LLM call, it called Chat OpenAI and gave my input: add three and four, then multiply by ten, then do this. Then what did it do? It first called the add function, giving three and four, then it called multiply, giving seven and ten. So, it called the add function with three and four, then it called multiply with seven and ten. So, it called the add function with three and four, then it called multiply with seven and ten. Then he finally called the divide giving 70 and 2 and finally he gave me in the output that the result of adding three the result of adding three and 4 is 7 multiplying by 10 gives you 70 and then this is this is this and how many tokens used used 475 this is my cost so if I go here on the dashboard you can see everything that I have here two projects so this is the project that we are using I can see here what LLM calls were made I can see all runs okay which ones failed so this is basically our Lang Smith okay here we can monitor this we can create datasets here so this is what the Lang Smith gives you so debugging makes it easy okay and yes we had some error so it got stuck here which is fine so this was basically net met your what all Lang graph Lang chain and Lang Smith so this was all about in",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2738.119,
+      "end_seconds": 2841.0,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2738s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "058f3aef02aa22fd3fd7dbf1e6d165485d2bb71604a3287386f150daf6a0077f",
+    "text": "so this is what the Lang Smith gives you so debugging makes it easy okay and yes we had some error so it got stuck here which is fine so this was basically net met your what all Lang graph Lang chain and Lang Smith so this was all about in this particular video how you can use Lang graph Lang chain and Lang Smith in collaboration for building a very powerful AI agent so I hope you liked this particular video and learned something new if you liked this video then do like the video how did you like the video let me know in the comments do let me know see you in the next video until then take care",
+    "metadata": {
+      "video_id": "_XMwQ5X3llA",
+      "title": "Build AI Agents with Langgraph, Langchain and Langsmith - Javascript",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "LangChain",
+      "start_seconds": 2821.48,
+      "end_seconds": 2860.0,
+      "url": "https://www.youtube.com/watch?v=_XMwQ5X3llA&t=2821s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  }
+]

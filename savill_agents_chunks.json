@@ -1,0 +1,1362 @@
+[
+  {
+    "id": "716082c8998929d30db58aa78154ad8511afb90de1c7869f2ecaf401aa94d4d4",
+    "text": "Hey everyone, welcome to this AI 103 develop AI apps and agents on Azure study cra. So the AI 103 replaces the AI 102. Now as normal I would suggest the best thing to do is make sure you go through the Microsoft exam site, look at the learn modules, try all the various things out. So if you jump over to the actual certification page gives you all the details about the certification how to prepare what the key responsibilities are but go through this course and when I say go through don't just look at it make sure you actually go and get the hands on that's going to be key to actually be able to program using the various capabilities. Um, make sure you also go and try out the exam sandbox if you've never done a certification before. You don't want to be surprised by what it's actually like. So, go and give that a go. If you're going to go and take it in person, then make sure you know where the exam center is. Uh, make sure you get there in plenty of time. Get settled. You don't want to add additional stress to what's going on. Okay. So, with that, let's get going. Now when we think about AI so artificial intelligence we [clears throat] have to think about",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1.12,
+      "end_seconds": 88.159,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "684dcc8d65f1be3f21f05907bb448214ff31a0e406ac1a056ad2bceac99f337a",
+    "text": "plenty of time. Get settled. You don't want to add additional stress to what's going on. Okay. So, with that, let's get going. Now when we think about AI so artificial intelligence we [clears throat] have to think about there's actually layers of this. So I can think about well there's artificial intelligence which is very broad. It's about hey look a computer is performing some aspect of what we associate with the human brain. So vision, speech, understanding, decision making, maybe we're programming how to do that. And I did a tech in five episode on what is AI. Now a subset of AI is machine learning. And machine learning is where instead of programming the rules, we feed in data and algorithms learn based on those data how to make new predictions, how to do classifications, how to make decisions. On top of that, we have something called deep learning, which is where we have neural networks kind of inspired by the brain with more than two hidden layers of neurons basically driving how it works. And then what's powering a lot of the excitement right now is the idea of generative AI which we hear about large language models and this is all unlocking a lot of these creative capabilities we see. So this is our initial focus. This is",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 70.56,
+      "end_seconds": 176.56,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=70s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f067c4c146e6f538c8d98e3fb6a6046c8a7338445a6ee73093b4bb88a6bc47de",
+    "text": "right now is the idea of generative AI which we hear about large language models and this is all unlocking a lot of these creative capabilities we see. So this is our initial focus. This is where we generate new text, code, images, audio. It can involve reasoning. Now since we're dealing with artificial intelligence and since we're dealing with specifically about this new creativity performing critical duties the idea of responsible AI becomes very very critical. So across any time I think about anything AI related, we have to think about responsible AI and there's different aspects to this. So a big one is around fairness. So AI systems should treat all people fairly. there's no bias based on gender um if ethnicity um other factors that might result in some unfair advantage or disadvantage to specific groups of applicants. Um when we think about machine learning that can have various learning capabilities based on data. If the data wasn't fair, then what it's going to predict isn't fair. So we need to make sure we don't have bias in what we're generating. I have to think about reliability and safety. So all systems should perform reliably and safely. Imagine I've got AI based software system for an autonomous vehicle. Well, it's really important that is a safe and I can trust what it's",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 156.0,
+      "end_seconds": 279.68,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=156s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "18735e77cadaaa3c71ff0da738f5cb3ce50b52b442f5545fb2dd828e51b7e624",
+    "text": "and safety. So all systems should perform reliably and safely. Imagine I've got AI based software system for an autonomous vehicle. Well, it's really important that is a safe and I can trust what it's doing. A machine learning model that diagnoses patient symptoms, recommends prescriptions. Um, unreliability in these kinds of systems can result in substantial risk to human life. So, we have to make sure we have rigorous testing, deployment management processes to make sure they always behave as expected before release. We think about this idea of privacy and security. The machine learning models on which AI system are based rely on large volumes of data that is may have personal details that must be kept private even after they're trained and the systems in production. Well, if there's new data to make predictions or take action that may be subject to privacy or security concerns. and then inclusiveness. So when I think about this idea that all systems should empower everyone, they should engage people. AI should bring benefits to all parts of society. Again, regardless of physical ability, gender, sexual orientation, um ethnicity, can't say that word, or other factors. um transparency. So AI systems should be understandable. So users should be made fully aware of especially where AI is being used, the purpose of the system, how it works, and",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 263.12,
+      "end_seconds": 375.199,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=263s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a46f523671ac15ee23e82088902ec7180cda24c35b483c3895b502caca2142f3",
+    "text": "that word, or other factors. um transparency. So AI systems should be understandable. So users should be made fully aware of especially where AI is being used, the purpose of the system, how it works, and what limitations may be expected. And even though we have AI doing these things, there's still accountability. So people should be accountable for AI systems. Designers, developers of AI based solutions. There should be a framework of governance. There should be organizational principles. There should be make sure we're meeting ethical legal standards. They need to be clearly defined. So when we think of AI, you can't just say, \"Oh, well AI is doing it. I'm good.\" It doesn't work that way. There still has to be a very clear understanding of who is accountable for these things. So with those foundations around AI, then we think about actually developing generative AI apps in Azure. Now the core platform we're going to use here is Microsoft Foundry. So I can think okay all of this is based around Foundry and on this we build apps and agents. Now the way this is actually structured is we create a foundry resource and this we actually create in Azure and then within the resource we have one or more foundry products projects. Think of those as isolated work environments.",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 351.759,
+      "end_seconds": 466.56,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=351s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "701c85a8c8f7bb29f4ff31c7e7a4415ed4093da824f978a398e45563e1b1c7a0",
+    "text": "Now the way this is actually structured is we create a foundry resource and this we actually create in Azure and then within the resource we have one or more foundry products projects. Think of those as isolated work environments. Now it's going to be a default project um for your foundry instance. You can create additional projects as children of the main project. Um or you can just come and create brand new projects which will create brand new foundry resource. Now within a project we work with models, agents, tools, knowledge across all key areas. So I can think about that foundry resource then has this idea of the default project and now we're actually in the foundry experience. So there's two different portals we can think about. So if we jump over for a second, if I'm in Azure, so I'm in the Azure portal right now, portal.asure.com. azure.com I can see I have foundry I have foundry resources for example this resource right here my foundry agent project resource and then this when I open it in foundry itself so now I'm in ai.asure.com azure.com. This is the foundry portal and I'm looking at that project and here I can see well there's an API key I can use with it there's an endpoint to talk",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 442.479,
+      "end_seconds": 546.48,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=442s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e0f76cc2ad5c70496a93a1e0839def90638abaaf217ae976fab83637a08323a9",
+    "text": "itself so now I'm in ai.asure.com azure.com. This is the foundry portal and I'm looking at that project and here I can see well there's an API key I can use with it there's an endpoint to talk to it there's an open AI endpoint we're going to talk more about that and then it's really based around three phases discover build operate and then there's various management docs help around those things so when I think of the life cycle about how I'm going to deal with all those models, agents, tools, knowledge. Think of that idea of discovery. So learning what models exist, what tools exist, what services exist, what knowledge exists, and then I'm going to build my solution. Then I'm going to operate my solution. Think about observability, of tracing, of continuous improvement. Now for all of these things they get exposed via an endpoint. So if I think about that foundry and you saw that when I showed you that screen. So in foundry from a programmatic perspective there is the idea of hey there there is an endpoint that I'm going to talk to and we saw there was both a foundry endpoint and there was also the idea of an open AI endpoint. Now you might actually wonder a little bit about that.",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 530.32,
+      "end_seconds": 625.12,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=530s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7b9dc0a57c5b80edb5f9bd75866a746947705d1316aac91169092bff0d1c5b82",
+    "text": "an endpoint that I'm going to talk to and we saw there was both a foundry endpoint and there was also the idea of an open AI endpoint. Now you might actually wonder a little bit about that. It's like okay why are there two different endpoints and is foundry only open AI models? Not at all. So yes, OpenAI models are in Foundry, but as we're going to see, so are a huge number of other models, but OpenAI has an API and an SDK that many other model providers, many open-source models have actually adopted. So think of the Open AI API and its SDK as actually being usable across many different types. Now, we're using those terms here. So think about I have an endpoint which is talking to the service. Well the way I leverage that is hey there are APIs application program interfaces normally restful. So I do a REST API call. The API is available when I'm using the format, make a request to the endpoint, I get a response back. But rather than having to use the raw APIs when we develop, very often what we use is an SDK, a software development kit, which really abstracts and is using the API, but it makes it more intuitive. It makes it easy within our language and I can",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 608.959,
+      "end_seconds": 696.88,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=608s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b48a2678093567b8066ae8150f5cab122cbe70a6cf00d687b27d6c10eb10a5f3",
+    "text": "develop, very often what we use is an SDK, a software development kit, which really abstracts and is using the API, but it makes it more intuitive. It makes it easy within our language and I can use it across many languages Python, JavaScript, C, Java, etc. So, Foundry has its own API and associated SDK for interacting with generative models using chat completions. The open AP AI API also supports a rich set of capabilities and again open AAI, Grock, Llama, Deepseek and many more. And the open AI APIs are really about directly talking to a model. And I have a lot of options around talking to the model. Whereas Foundry, yes, I can talk to a model, but I can also manage the full life cycle of my agentic solution. So, it's more than just talking to a model. And they're mainly orthogonal to each other. For model interactions, very often you're going to use the open AI API and SDK. Um, again, because most models implement the open AI API schema and then I'll use Foundry for maybe that more holistic life cycle. So, there's all these different ones available for you to use. Now when you use an SDK in your development environment and I'm going to focus here there are many idees development editors you can use",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 681.44,
+      "end_seconds": 781.24,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=681s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a0266e12b8a7ce25e730ed0ab67e2c58a8b9f0bbe904ecab69c88711cf935b3a",
+    "text": "So, there's all these different ones available for you to use. Now when you use an SDK in your development environment and I'm going to focus here there are many idees development editors you can use but let's say you're using VS code the way this is normally going to work there are many different extensions you can add which makes that development environment easier and often you're going to nowadays have an AI my partner with what you're doing and GitHub copilot is obviously Microsoft solution and what you're going to then do is when I think about working with my code writing your applications we want version control we want to be able to deploy it we want to be able to share and collaborate with others we want to see what's changed between versions and the standard in that today is using the git format And Microsoft solution is git pub. So this is a cloud-based repository. So my code I can make commits when I make significant changes or progress and it goes and updates that. So GitHub via Git is going to maintain versions of my code. But then using DevOps, I can then have things like pipelines to actually deploy, to test, to run it through, and I get all those great capabilities. So there's a whole rich set of abilities",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 762.48,
+      "end_seconds": 867.76,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=762s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6654a30024b4c906ed36accb6c7c2cc24bcc22fe05a8f03aa257de37b3c1bf8a",
+    "text": "code. But then using DevOps, I can then have things like pipelines to actually deploy, to test, to run it through, and I get all those great capabilities. So there's a whole rich set of abilities I'm really going to take advantage of as part of this this whole solution. Okay. So great. So then we get to the idea of probably the coolest area today. The thing we all kind of focus on is this idea of models. The models themselves. Now there are a vast number of different models available. And again most of the models we're going to focus on are large language models but there are small language models as well which is based around the number of parameters they have. Now there is a whole catalog of models as part of the discovery experience in the portal. So if we actually jump over for a second. So again I want to investigate. So here I'm going to start with this idea of discovery. So if I go to discovery notice it's basing my discovery experience around models, agents, tools, services, solution templates. It has featured models and notice this is not just open AI. So there's ones from anthropic with their claw set. Yes, there's open AAI. There's ones from Microsoft AI. Here we have Deep Seek",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 846.959,
+      "end_seconds": 946.88,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=846s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "baa54d8709ac57357b4eca4687c0f1d74dc640fc6f0d140bea1f8772e8a0b15c",
+    "text": "It has featured models and notice this is not just open AI. So there's ones from anthropic with their claw set. Yes, there's open AAI. There's ones from Microsoft AI. Here we have Deep Seek ones exposed via Fireworks. We're going to go through a huge number of these. But if I go to models, so there's ones I have available in my project. And if I look at all models, there's just a staggeringly huge number um of models that actually are available to me. And you can see again there's this big list. And on the left hand side, you can see some of these major ways they are provided. But once again, OpenAI, the GPT, Anthropic, the Claude, XAI, the Grock, Microsoft AI, DeepSync, Mistro, many many more. Now many of these models we're looking at here are closed weights. So when I think of the sets of models, we have this idea of closed weights. And again the weights are the parameters that get assigned to the different neurons that are in the model and then the connections between the neurons. And these weights these parameters get set during the training phase. They enable the capabilities So some are going to be closed weight especially the the frontier models some of them will be open weight",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 931.76,
+      "end_seconds": 1023.2399999999999,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=931s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7348c10a22ef1091dcae73d9f583004658dd44def15ae1f369ba716b33b4cbd9",
+    "text": "neurons. And these weights these parameters get set during the training phase. They enable the capabilities So some are going to be closed weight especially the the frontier models some of them will be open weight and if it's open weight I can actually go and see those values so again the frontier labs typically going to be closed weights open athropic but they may actually have some ones that are open weight with open weight well anyone can run them you can just download it because I can see the weights now it assumes you have enough compute power to run them. Just because it's open weight doesn't mean it's small. There were some openweight models that have trillions of parameters which means you would need clusters of hardware to be able to run them. But if it is openweight and I can run it myself, I could have total privacy. I can customize it. I tune it as you see fit. And I guess from one perspective, no one could ever turn it off. I've downloaded it. I have the weights. I could run this thing forever. So when I I think of these different models then as we saw Azure has all these different types of models and there are ones that you purchase directly from Azure there ones you",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1004.56,
+      "end_seconds": 1081.8400000000001,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1004s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "774d0b588e1abe48f4f12c81aa43da3d08a3a803e02cdaf97652cde5c2aee26b",
+    "text": "could run this thing forever. So when I I think of these different models then as we saw Azure has all these different types of models and there are ones that you purchase directly from Azure there ones you purchase from the provider and within that catalog I can search and filter. So if I go back again I can see the ones that are direct from Azure. So all of these I can just buy. They're sold under Microsoft terms. They have internal Microsoft reviews. they integrate tightly with the platform. So, OpenAI models, Microsoft AI, lots of major partners are available here. Now, if these ones I'm looking at, if I just selected one, if I was to go ahead and deploy this. So, right now I'm just doing the the builtin. And I've got this now deployed. So is like the biggest version. What I'm actually would get build for is the amount I'm using it. It's serverless. So let's actually do that one more time, but this time we'll do custom. And you have a number of different options on this. But you see, hey, there's there's different model version settings. Do you want it to auto upgrade? how I want to deploy it and there might be different options depending on the model but with",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1067.52,
+      "end_seconds": 1163.28,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1067s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1142f10468d1119039faa27a1cf61d9c9b635a1c36df47543e44b33b9e39f6b2",
+    "text": "But you see, hey, there's there's different model version settings. Do you want it to auto upgrade? how I want to deploy it and there might be different options depending on the model but with those Microsoft provided it's operating in a serverless way and these are not directly related to closed or open weight so serverless well with serverless again Microsoft has halls of these deployed you get your own endpoint to consume it still but you just pay for what you actually use. Now, anthropic models um show as well and there are some special um considerations around those today. And then there were models from partners from community and they're actually the majority. So if we go back over for a second. So if we go back to our models and again we do all models, we do our collections. So direct from Azure again we had 102. So compared to those over 10,000 that's a fairly small number. So a lot of them are actually coming from hugging face 11,000. So hugging face is a created library of openweight open-source models. They can easily be deployed onto dedicated CPU or GPU known as managed compute. So some of the models are available just there's broad farms of those models deployed and I just pay for what I use",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1149.919,
+      "end_seconds": 1260.559,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1149s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f0aa24d2d35f6cf19d3877a8fcd44b3ce1cd520e2bd3c0c4bd1325eddaf17d51",
+    "text": "can easily be deployed onto dedicated CPU or GPU known as managed compute. So some of the models are available just there's broad farms of those models deployed and I just pay for what I use on like a for token the work it does but many others available something called managed compute and so here it gets deployed onto dedicated CPU or GPU for you to use and you don't have to set up the inferencing the the run times you get your own endpoint because it's managed compute but I pay per hour based on the type of instance and the number of instances. Now the instances will scale automatically based on traffic but I am paying just for instances to be running the model just for me outside of the scaling the number instances the actual amount of work it's doing if within a certain instance doesn't impact the price I'm paying obviously I'm doing a lot of work it's going to scale out the instances more instances more money but it's not a per tokenbased cost now you also this idea of fireworks and then fireworks AI is actually a compilation and runtime engine for really low latency high throughput for running open weight models. Now this is serverless just like the Microsoft deployed. So here I would pay",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1242.0,
+      "end_seconds": 1340.799,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1242s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "79a86bf2744f64be410e35da97139e1cb075f0ff8d9931871437a8d8dae8f61c",
+    "text": "and then fireworks AI is actually a compilation and runtime engine for really low latency high throughput for running open weight models. Now this is serverless just like the Microsoft deployed. So here I would pay based on the actual tokens. So the work done. So if I was to select one of these you have kind of a model card. You see this for all of them. But if I looked at view pricing on this one, so we can see here it's based on tokens. So this is also serless. You get these various different ways you can use this. But notice when I'm looking at these models, I get a lot of different ways to actually filter. So I can look at things like hey do I have the ability to for example fine-tune it. So I could go and check on those. I can look at again where is it coming from what lab. I can look at what is the type of inferencing task I need to do my deployment options. So again, this is where I can see, hey, which ones are serverless, which ones I can use on manage compute, different deployment SKUs, region. So I get all of these different options. Now, one really cool thing I can do here, let's just go to this is notice over",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1322.72,
+      "end_seconds": 1417.9189999999999,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1322s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e70410586a0f120b2b93cb0570301c95c53e77362729b96cd53fc3a75a5d9caa",
+    "text": "serverless, which ones I can use on manage compute, different deployment SKUs, region. So I get all of these different options. Now, one really cool thing I can do here, let's just go to this is notice over here there is a view leaderboard. So on the view leaderboard I can see the current top models and I can see the top models based on a number of different aspects. So I can see based on quality, safety, throughput, benchmarking cost. So quality you can have the idea that hey higher is better safety attack success rate. So lower is better throughput output tokens per second. So higher is better and then benchmark cost. Well, lower is better. How much am I paying for a million tokens? But then you can also see the details of those values. Then if I keep going down there's trade-off charts. So I can think about well what is the idea of quality versus price? I can select which models I want to show. I can compare against that was cost but throughput. I can compare against safety. So it helps me evaluate well what are the models I actually care about and I can see leaderboards by different scenarios. Harmful behavior, copyright violations like a whole set of really really good information here. But",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1397.52,
+      "end_seconds": 1499.679,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1397s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f77ae792148af5e82e6ffe8743de02338cb4b0269d3606c0df2afff3391ed2e0",
+    "text": "compare against safety. So it helps me evaluate well what are the models I actually care about and I can see leaderboards by different scenarios. Harmful behavior, copyright violations like a whole set of really really good information here. But if we were paying attention I go back. I can also compare models. So here it's showing me these particular models. I can see the different aspects between them, capabilities. I can change it. All of these great things. Now before I can actually use a model, I have to deploy it. And again, there are different deployment options. So like great, I want to use this model. Well to use the model I have to deploy the model. When I do that deployment I have different levels of maybe cluster I can use. So if we go back and this time we'll pick let's have a look. So I'm going to use just GPT5. So we'll look at GT5 option and if I do deploy but custom then I can see my different options. Now you notice there's actually quite a lot of them here. So let's break down. So we can see there's global standard data zone standard and then there's the idea of um global batch data zone batch and then global provisioned units. So you get these throughput unit options",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1478.4,
+      "end_seconds": 1595.279,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1478s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0944bf91f9b87c10b962c2a926bc845049f9d86d3d3b0e6c65565a9a6bfa4e93",
+    "text": "lot of them here. So let's break down. So we can see there's global standard data zone standard and then there's the idea of um global batch data zone batch and then global provisioned units. So you get these throughput unit options for both regional data zone and global. And so the idea of these is I have control of maybe where the model clusters I'm going to use are actually running. So I can deploy for example just to standard regional. So if I just do standard regional well it's deploying into a particular region. I can only use a cluster in that region. So it's very narrow. I also have the option of a data zone and there's three different data zones. Now we have US, the European Union and Asia-Pacific. So what that means is it can use a cluster for the inferencing anywhere within that geopolitical boundary. So maybe I've got certain data sovereignty and certain regulations but it gives me more flexibility to go and do my inferencing and then there's also just the idea of global. So it could use any cluster in the world. So if I don't have any regulatory requirements um that might be a really good option. Now obviously you might think why I don't want global I want it",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1569.84,
+      "end_seconds": 1667.919,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1569s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4df4efb7c2f66359ac208448070e6742400c13c283ec0ee11662848d5461962f",
+    "text": "it could use any cluster in the world. So if I don't have any regulatory requirements um that might be a really good option. Now obviously you might think why I don't want global I want it close to me. realize the network latency when I'm talking about inferencing unless it's a streaming like a real time is probably not the biggest latency factor. The latency will be the model inferencing. So it might be better to use a model that's further away but has a lot more availability, less work on it. So the infrasing will be much faster than just trying to use a model closer to me that actually may be really busy and therefore sure the network latency might be smaller but it's going to be a much longer latency if you're actually doing the work. So where you can you want to try and go to as broader area is allowed because you're probably going to get the better overall inferencing uh performance. Now there are different options around like sometimes for somebody it's a priority option so I pay a bit more and I'll get priority using the clusters I'll get a lower latency if I want a guaranteed throughput and latency then you saw that provision provision throughput units so an option I have for",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1656.0,
+      "end_seconds": 1730.799,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1656s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f0ccbfc45aeb2d426db8aaf19e0e29c736beeb5234bebffb40d4ef85c608e3ff",
+    "text": "priority option so I pay a bit more and I'll get priority using the clusters I'll get a lower latency if I want a guaranteed throughput and latency then you saw that provision provision throughput units so an option I have for many of them is provisioned so I get a guaranteed amount of throughput up to whatever I'm paying for now I pay for that whether I use it or not and then once you use up all your PTUs then further requests would fail or there's a feature called spillover at which point it would then spill over into the regular kind of pay as you go non-provision set of capacity. Now for global and data zone uh you also see an option of batch. So the idea here is it's cheaper inferencing but it's asynchronous. It has a much broader time to complete and it lets Foundry basically use it underutilized capacity. So if I had large scale um processing I wanted to do great. If I'm not in a hurry I can use batch I pay less money. Now once you actually have deployed your model very often you're going to have an idea of a playground and this is really useful to start testing. I can try changing parameters. It'll even show me sample code on how to",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1712.32,
+      "end_seconds": 1812.039,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1712s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4b3e8fa0d71ac5c74d7596b5204e9885aea6ebd6a6ef6868b6ff59cbc0e15a9e",
+    "text": "Now once you actually have deployed your model very often you're going to have an idea of a playground and this is really useful to start testing. I can try changing parameters. It'll even show me sample code on how to get going. So if we jump over and this time now once you deploy it will jump over. If I go to build so these are models I have deployed and then I can see the different types. So I've got like the GPT 56 soul 56 terror all these different ones available. But if I go to my let's say my 56 terror and actually before I do that I should point out over here as I select these models on this right hand side it's giving me options around hey opening the playground edit the deployment giving me the endpoint the API key it's showing me like the code so it gives me this little code window and different options. And again, I'm going to get all of this in the playground as well. So, I'm going to go ahead and open this in the playground. And from here, I can do a lot of different things. So, it's showing me the model. And again, I could switch between the models. But notice I've also got these little parameters. Now, this",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1785.76,
+      "end_seconds": 1888.399,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1785s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "76200fc17ddc9ce8af49be4aa5ec4994b52333bc8cdd2ce8683389f2de21340d",
+    "text": "And from here, I can do a lot of different things. So, it's showing me the model. And again, I could switch between the models. But notice I've also got these little parameters. Now, this is going to vary by model. Some of them let you change things like temperature and randomness or the probability. This one is max completion tokens. I can set a reasoning effort. So how much planning, how much sort of thinking it's allowed to do. It shows me details about the endpoint and the keys to use this. It has the instructions. So this is like the system prompt that guides its behavior. I can configure tools to use. By default, it's got web search, but I could add my own knowledge to this. I could configure it with memory as a service. I can change the guard rails that kind of enforce certain things. Again, it's showing me the code over here and it's showing me Python, but I could do JavaScript, C. It's let me pick the authentication method, enter or key. So, it shows you exactly how to do. So, this is phenomenal when I think about just trying to understand how to do this. So I have all these different ways to understand what are the options available to use. So then we could test",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1871.919,
+      "end_seconds": 1958.159,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1871s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7d94b7a95f84fd44e78b8701f2f4ee7f878b7d6d75a4611e51522dff69b67955",
+    "text": "is phenomenal when I think about just trying to understand how to do this. So I have all these different ways to understand what are the options available to use. So then we could test this um who is John Savile. Now maybe the model has got some programming of who I am but remember from a tools perspective we gave it web search. So the other thing now in this playground it can go and search the web and we can see exactly that. So I can see the model it used, how long it spent, how many tokens it used. It used a web search and I can see what the references were. So I can kind of understand it's not hallucinating because it's showing me the citation of where it got the information from. That builds my confidence. So I have this detail and it's showing me based on the parameters I said. Great. I can see exactly what it's doing. And then what I could do if I'm trying to tune how I want to use this, I might change the various parameters. I can test adding in different capabilities. I could try using different models. And I'm using it to evaluate, hey, what what do I actually need to do here? Maybe I want to try a",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 1939.6,
+      "end_seconds": 2022.159,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=1939s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "326757d93f57eca95eed9645459c235a48276afa210903b42e6cbee2bb22cb4d",
+    "text": "might change the various parameters. I can test adding in different capabilities. I could try using different models. And I'm using it to evaluate, hey, what what do I actually need to do here? Maybe I want to try a different reasoning level. Maybe I want to try a different model. Now the focus often is using many models because there is no one best model today. There is a best model at a particular type of outcome today. Not every activity requires the highest capability model at its highest reasoning effort. We have a mix of needs. Sometimes I want a simple model. Sometimes I need a powerful model. Sometimes I want a fast response. Sometimes I want it to reason. Sometimes I need a huge context window blah blah blah. So you're going to end up with lots of deployments of models and you could code yourself trying to look at the request and pick which model to use. But the other option here is when I think about all these different models. So Microsoft actually provides this concept of a model router. And the whole point of the model router is instead of my app talking directly to a model, my app talks to the model router which has been configured to use a whole bunch of different models. So",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2009.84,
+      "end_seconds": 2102.56,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2009s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fca9d384b6e5c7ada9c0dc8211f72e78f879b3cc98eb1cd8a816a49aea4064f0",
+    "text": "And the whole point of the model router is instead of my app talking directly to a model, my app talks to the model router which has been configured to use a whole bunch of different models. So big models, small models and it uses a small language model to decide what is the best option and then it routes. So it helps optimize the cost. So if you don't want to have to try and code all that yourself, model router does that. You see this in things like um M365 copilot, GitHub copilot, the little auto option is doing a similar type of thing. So we can see this. So if I jump back out for a second, I do actually have the model router deployed. And you just deploy it like any other model. And if I look at this and if I do edit, one of the things you can do in this is actually select well which models is it allowed to use. So right now you can see it's got mini models, nano models, GPT models. It's also using llama, deepseek, can use anthropic models, grock models, like this huge set. Or I could say actually I only want you to use specific ones. So I do have control over what ones it actually uses",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2084.24,
+      "end_seconds": 2182.079,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2084s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "dce12e979d1768f8121e264ef4906a050d3380316502736321e610b8083269d2",
+    "text": "It's also using llama, deepseek, can use anthropic models, grock models, like this huge set. Or I could say actually I only want you to use specific ones. So I do have control over what ones it actually uses for exactly what I need. But then if I open this one up, let's just do a test on this one. So this is now using the model router. And I can say, okay, who is John Savile again? So this time it will look at that and notice that was pretty quick. And this time it used Grock 41 fast reasoning. So it picked the model that was the most accurate to actually use that. Now I didn't configure any tools. So this means this is just the model that actually knows who I am, which is kind of weird. Um but that is the power of the model router and there are actually because it's going to change over time but you can see hey based on this particular version these are the all the different models it may go and use. Now with anthropic um you do have to have it deployed. So that's the only one. So you have to have your own deployment of anthropic to be able to use the anthropic models. Now the nice benefit here obviously as",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2160.8,
+      "end_seconds": 2255.52,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2160s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2d47e0f4f3a9ddad4d62fd2083b91679210e2a7c41465f734972ea59f9848dcd",
+    "text": "um you do have to have it deployed. So that's the only one. So you have to have your own deployment of anthropic to be able to use the anthropic models. Now the nice benefit here obviously as we think about this is as new models are arriving you get their capabilities you start taking advantage of them so in addition to just getting the most optimal model for whatever it is you're doing you get model flexibility and I can use both the foundry responses API and the openi chat completions API when I do this now one thing to consider with all of this though is okay this this sounds fantastic but if you're changing the models and the model is kind of the brain how do you know as hey the model changes as the model uses a bunch of different models how do you know your application is fit for purpose it's not regressing it's doing what it's supposed to do and this is where we have this concept of evaluations conditions. And this is key. We use these automated evaluations based on sets of tests. And what they actually do often is they use a language model as a judge to make sure the response it's getting from the agent is fit for purposes, what you would",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2238.16,
+      "end_seconds": 2329.2000000000003,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2238s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "fb9cfc458b5afdc544385b158b1e06a616ae0bd9062fcd500ce574254e4db6a9",
+    "text": "evaluations based on sets of tests. And what they actually do often is they use a language model as a judge to make sure the response it's getting from the agent is fit for purposes, what you would expect. Now, the reason for this, you might say, why do I have to do this? I've written software before. I just have test cases. And I would say this input should yield that output. Your traditional apps were deterministic. The same input will yield the same output. Generative AI is not deterministic. The same input will not yield the same output. Therefore, I can't just say, I'm going to give it this input and make sure I get this exact output. Instead, we have to interpret the input and the output and check it's doing what we want it to do. And there is a whole set of these available. Now, notice we have this idea of evaluation as part of this. There's automatic evaluations, there's red teaming, but what we're really doing here is there's a whole evaluation catalog. Now, if I open up this catalog, we'll see there's a huge number. So, here there are ones that are checking things like um accuracy in using the tool calling. Um adherance, so it's making sure it's actually doing what we",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2314.56,
+      "end_seconds": 2403.76,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2314s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "303fb8bf673128634e8cf774c0e1e8a0eb21c2c5a7206607996ffcde114405bf",
+    "text": "Now, if I open up this catalog, we'll see there's a huge number. So, here there are ones that are checking things like um accuracy in using the tool calling. Um adherance, so it's making sure it's actually doing what we should be doing. Is it complete? Is it relevant? Um is it fluent? So, natural and grammatically correct responses. the coherence, is it logically consistent and connected? Uh, is it groundedness? It's not making stuff up. I can create my own. So, if I go to create evaluator, what's really nice here, you have this idea of autogenerate rubric. And a rubric is really just like a grading sheet. It's how you evaluate something. So, I could just select a model that's going to be used as part of generating this. I select the agent and I just describe well what it is it this should be doing and it will generate that full grading sheet for me. So is it super powerful? There's a red teaming to help attack it and and checking exactly what's going on. So the whole goal of evaluations is about building trust that the AI app is doing and ensuring they keep doing the thing that we want it to be enabling for our organization. What is the outcome? And it's also kind of an element to that",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2384.56,
+      "end_seconds": 2475.44,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2384s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2d4a6f02e9984663aee7b7b638fd60486e7cefad29ff753862d18fdfe5943a8f",
+    "text": "building trust that the AI app is doing and ensuring they keep doing the thing that we want it to be enabling for our organization. What is the outcome? And it's also kind of an element to that responsible AI like yes there's safety there's responsibility but also to trust what it's doing. Evaluations are a huge part of that. Okay, so I showed you the playground, but we're developers. The playground is great from an experimentation. I can tweak the parameters. I can kind of see what it's doing, but as a developer, I need to use those models through the APIs, through the SDKs. And we saw in the code, we had that idea of it would actually show us the code. So, if we go back over And I'll go back to one of my models and I'll just pick the terror again. And we go to core model. It's giving us the full information. Now what I want you to notice on this is their sample ends in open AI v1. So this means that it's using the open AI API and SDK. We can also see that because it's opening up OpenAI. So it's using that from a library perspective. Now because we're using OpenAI, we have the option of entra authentication. So there's going to be a",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2458.319,
+      "end_seconds": 2564.72,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2458s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "a96a1f4d18cc629b1d5a837d08349abaaf6915c85a9662ed565f9ec852170a19",
+    "text": "We can also see that because it's opening up OpenAI. So it's using that from a library perspective. Now because we're using OpenAI, we have the option of entra authentication. So there's going to be a token or we can use the API key. Remember the API key, it's showing us here if we wanted to use it. That is a project level. An entra is nice because obviously Entra is just native as part of the identity provider. So if I was running this as an Azure service or in Foundry, it can have its own identity. I don't have to try and store a key anywhere. If I was running my agent in Foundry in an Azure resource, it can have a managed identity. If I'm using a key, if I need to store it in something like a key vault. Now the other thing to notice in this code is I'm using response a response.create. So client.response.create. So this is using the responses API. The other thing I can actually check from this and understand the why is because it's using input. So that's all about hey this is using the responses API. So as part of my how my app can use this. So I've done my deployment. Remember my deployment my foundry resource has the endpoint. So",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2545.599,
+      "end_seconds": 2645.119,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2545s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3eadd44edede719f273310fdcf455238df789dcb1c46aa63772a6f0f7f472f64",
+    "text": "So that's all about hey this is using the responses API. So as part of my how my app can use this. So I've done my deployment. Remember my deployment my foundry resource has the endpoint. So we're kind of working with the APIs over here. So at this point, one option I can leverage is responses. Now what's great about responses is it's stateful. So I can have multi-turn interactions and the server is actually storing the state. So it's a serverside state because models themselves are stateless. They have no concept of what has come before. But the responses API is actually storing the previous interactions. So I can just use an identifier that gets returned to me and use that for my next interaction and it will understand from a system prompt. you specify instructions. So that's how you tell it how you want the thing to act. So responses generally preferred over my other option which is chat completion. Um responses I can use both for foundry and open API. Chat completions is going to be Open AI API only. So that is more limited. So let's have actually start looking at some code that we have written. So if I jump over to VS code. So we're going to start with an AI basic responses.",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2624.24,
+      "end_seconds": 2753.68,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2624s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ccfb0d77a38d4d37dabae08eb8795785c317bba6380b2182f50b4010e0fd4d36",
+    "text": "So that is more limited. So let's have actually start looking at some code that we have written. So if I jump over to VS code. So we're going to start with an AI basic responses. And so what you can see here is yes, I'm using that from open AAI import open AI. Now in my environment, I've got a little script here that sets up does all the pip installs for all the different modules I'm using. But you can see, okay, I've got the model, the deployment I've got. I am using entry authentication. I'm just grabbing the default as a credential because I've got like the AZ CLI and I've authenticated with that. I'm creating a new client and then I'm using the responses API. I've got the input kind of the user prompt but I've also got instructions. So this is the system prompt and my system prompt is saying hey you always answer like a pirate. Okay. But what I want you to take note of is in my response, I'm going to output the responses identifier. And then I'm going to send a second request where I'm going to ask what about France. I'm not going to tell it what about France. I'm not going to say what's the capital. But because I'm",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2734.72,
+      "end_seconds": 2822.24,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2734s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d9651924c5bfb4c1c6fa5a2de71f46c10e7b7bd280938346f9a690cf3edcbf66",
+    "text": "identifier. And then I'm going to send a second request where I'm going to ask what about France. I'm not going to tell it what about France. I'm not going to say what's the capital. But because I'm referencing the previous response, it has that state and it should know what is asking about the capital. So that's the whole goal around this. So I'm creating a client connection using the open SDK. I'm using responses.create and then well let's see what it does. So if I do Python and my AI basic response again I've asked it to talk like a pirate because I don't know why the capital of England be London and then I've got my responses ID and And then oh the capital of France is Paris. So it knew because I'm within the same basic session. Now if responses was not supported then I would get a 400 model not supported in this case use chat completions API instead. That doesn't store history server side. You'd have to include the full history of every interaction meaning your context grows over time. um the system prompt would be kind of an array. So with the chat completions, if I wanted to know the history, I have to include an entire array. So I use a messages",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2807.44,
+      "end_seconds": 2914.44,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2807s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "debc6ea9bb8c1bfa905e026f62786a855f8eca0a5bcedca2fd6387ca4557a818",
+    "text": "over time. um the system prompt would be kind of an array. So with the chat completions, if I wanted to know the history, I have to include an entire array. So I use a messages and that would be an array. And what I would have to do is you have this idea of for the instructions for the system prompt the first entry in that messages array would be a roll system where I would include those kind of system instructions. So that's big difference. So the chat completions the payload would be an array of messages and he said we would use chat completions create. So in the interest of being complete, I have that as well. So this time I'm still using the OpenAI SDK, but this time it's a chat.comp completions.create and I've got this messages array. And so instead of instructions, it's just the first message is ro of system. You're a helpful assistant that talks like a pirate. And then the actual request is a role of a user. What is the capital of England? And then I'm going to print off the first content of those messages. So let's try and one this one. and it worked, which I would hope it would. Oh, the capital of England be London. Okay, great.",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2895.2,
+      "end_seconds": 3004.96,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2895s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2cdcd546af4aac0681c7de15d67c4f313ef8cdce18d08a6242df205f33e3a670",
+    "text": "And then I'm going to print off the first content of those messages. So let's try and one this one. and it worked, which I would hope it would. Oh, the capital of England be London. Okay, great. Now, I've written other samples if you were really interested in this where you see me actually create the array and show you'd have to manage all of that yourself. But nothing is stored server side, which is really kind of the key point here. I would have to take that response, store it as kind of what what the system has responded to me and just keep sending it back and forth. So, it's going to grow longer and longer. Both of mine I'm using entry integrated off. So, I don't have to store a key. Now, since we're here, I used OpenAI. It has the broadest support, but for something simple, I could actually use the Foundry SDK and API. So let's see the difference where that is used and so if I'm using foundry again so this was using open AI remember it's the open AI kind of endpoint with foundry that changes so firstly I'm not opening up the open AI I'm opening up the Azure AI projects and I'm pulling in things from here I'm talking to my",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 2980.48,
+      "end_seconds": 3077.7200000000003,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=2980s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "92d54ba959a2ca1c3b7d9fef87c7df76527381a56da8ddc2545ed889769b51b8",
+    "text": "it's the open AI kind of endpoint with foundry that changes so firstly I'm not opening up the open AI I'm opening up the Azure AI projects and I'm pulling in things from here I'm talking to my project, but I'm still then using responses. So, I'm still creating responses.create, but I'm using the project. So, I create a project client talking to Foundry and I create a client for the project. And the rest of it looks very very similar except I still do this multi-turn because I've got the server side. But because I'm now talking to the foundry API, I can also do broader things. I'm going to ask it tell me about all of my models. So I just want to demonstrate the the foundry is broader in its scope. So this time there. So let's run that. So, if I scroll up, okay, we got the same thing as before, but then it could dump out all of my model deployments. Now, a little bit of fun. Um, while we're here, remember we talked about the model router. Well, let's use that. So, the only thing I'm really changing here is my deployment name is I'm just pointing at the model router. I'm not changing anything else. I'm still using the responses. I'm still asking it the same thing. The",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3058.0,
+      "end_seconds": 3155.7599999999998,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3058s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ee085d93904492038fdcd605a70f38f691529dd9d675c2c436725c4aa297f54a",
+    "text": "Well, let's use that. So, the only thing I'm really changing here is my deployment name is I'm just pointing at the model router. I'm not changing anything else. I'm still using the responses. I'm still asking it the same thing. The only difference this time in the response, I'm going to output what model the router actually chose. So, let's run this one. And again, the only difference here is well, the output will vary anyway because it's generative. It's nondeterministic. But it decided this was really simple. I'm going to use GPT5 mini and it's a bit more chatty. Oh, England be London. Ye can find your royal treasure by the temps near Big Ben, the Queen's well-known king's castle. Ouch. Okay. Bit of fun. Okay, so this is all [snorts] great. that's mainly been built on the pre-trained knowledge of the model. Now we saw earlier it went and searched the web. Now how it searched the web was it was a tool and so tools are critical to provide additional capability to what we can do. So if I think about okay we had the models we had those evaluations the next key aspect of things we use are this idea of tools. Now they're used by apps, they're used by agents. Um there are a set of",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3140.72,
+      "end_seconds": 3245.52,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3140s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5723e4a434e21c6619cbad154e3efff8e031182201cb79286bb1f2c69416c7fe",
+    "text": "okay we had the models we had those evaluations the next key aspect of things we use are this idea of tools. Now they're used by apps, they're used by agents. Um there are a set of pre-built capabilities that are known as services. And basically the idea of those services, they are things to avoid you having to go and recreate them. But before I get into these kind of tools, there are also certain tools that are actually part of this responses API. Now the goal of this is there are some things that are very very common that just on its own generative AI may not be that great for. For example, math. math generative AI, a word probability distribution is not that great. It'll be way more effective to just let the generative AI write a bit of code to do the math. Think of web searching, file searching, functions to do custom stuff. So as part of this responses, we do have these tools when I'm using the open AI um APIs and there are ones for coding, for searching the web, for doing file searches and also I can write my own custom bits of code that I want it to do things with. So, it's just a nice way to be able to plug in doing something better.",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3225.599,
+      "end_seconds": 3337.92,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3225s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b6e1bb8b05f20ffbb943b4106784ba2db867d74375d6b03c1d0aa543f5218596",
+    "text": "for doing file searches and also I can write my own custom bits of code that I want it to do things with. So, it's just a nice way to be able to plug in doing something better. And I've got one of these. So, if we jump over for a second. So, our next sample. Let's slide over. What I'm doing here is I've added a tool code interpreter. So, we can write code And what I've told it is to use a Python tool for any math problem. So these are part of the instructions. Remember this is basically the system prompt. And then I've given it a question. What is the square root of 1764? And then I'm doing a little bit extra on the output just to show you because what I'm looking for is I'm checking as part of the responses output, did it call at all? So I can show you that it called a tool. So this is just about making it very transparent what the thing is doing. So if we do the AI basic response tool, see what it spits out. Hopefully we'll see it actually writes some Python to solve the problem instead of trying to use it. And we can see that. So what we can see is it called the code interpreter",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3322.319,
+      "end_seconds": 3421.44,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3322s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e5561bae304a406c352231f35150b8f1624deafcd2d64dffbc09055ed5a53087",
+    "text": "see what it spits out. Hopefully we'll see it actually writes some Python to solve the problem instead of trying to use it. And we can see that. So what we can see is it called the code interpreter and the code it wrote was import math math dot is square<unk> 764 math dots square<unk> 1764 and then it gave us in the pirate thing square root 1764 be 42 and yes I did that liberty um 42 the ultimate answer to life the universe and that AI example And so we can see all of that in place. But there are a broader set of tools available as far of Foundry as well. Now I'm going to come back to these ones. But just super quick just to show you. If I'm in Foundry, I look at services for a second. These are a whole set of capabilities around very common things. So speech to text, text to speech, text translation, um understanding a document and pulling out structured data. We're going to come back to this because there's there's a whole set of different capabilities here. But just see, they've got all those different areas of functionality. But then the other thing we have is this concept of tools. And when we think about tools and actually if we go in here",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3402.96,
+      "end_seconds": 3509.68,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3402s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d01578935f6723576a7d9f69ab87edaa5be6ae567215427b3c013d936122ce33",
+    "text": "But just see, they've got all those different areas of functionality. But then the other thing we have is this concept of tools. And when we think about tools and actually if we go in here and connect to tool we can see there's a whole bunch of them. We look at the catalog. So there are tools across all different types of things that I may want to do. Now let's break those down just a little bit so we can understand when we think about what are we using these tools for. So when I think about tools again we have these concepts of those core services but we're going to come back and go into those in detail. So yes, there were the built-in common services, but then one of the things you saw in there were these idea of IQ's and there's there's a number of these IQs and they're growing, but the goal of these are to bring enterprise and web knowledge. Now, there's one called Foundry IQ, which I'm going to go into a lot more detail about. It's about institutional curated knowledge. So there's foundry, then there's work. So work is all about how you work. Your chats, your emails, your meetings, your documents, how they relate to each other, how they relate to",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3486.24,
+      "end_seconds": 3587.76,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3486s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e5a5034e7eb77288b01729c823e097274eddb29ed60c15d2891c489ef2ca0ada",
+    "text": "detail about. It's about institutional curated knowledge. So there's foundry, then there's work. So work is all about how you work. Your chats, your emails, your meetings, your documents, how they relate to each other, how they relate to people, your style, bringing all of that information to agents. Then there's fabric IQ. Fabric IQ is about building these ontologies. So these enterprise entities and how they relate and um rules around them, constraints around them, goals around them and then they link back to data in your one lake which has its own storage but is also acts as a data virtualization layer for data that could be anywhere in the enterprise. There's web IQ which is about getting the latest realtime information from the web super low latency optimized for how AI want stuff. So I just give me the passage of the page not the whole page to optimize my tokens. You can add custom tools. So I can add tools around things like well hey open AAI sorry open API that's a standard. There's MCP model context protocol. This is getting a lot of attention today because it's a very standard way that I can have an MCP server. I can have my little AI app. It can have an MCP client that talks to the MCP server. And what's",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3568.4,
+      "end_seconds": 3672.7200000000003,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3568s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b1ae2d631c0296581326168d8157d08b417c55bae52cee64e53ea9626803ba27",
+    "text": "is getting a lot of attention today because it's a very standard way that I can have an MCP server. I can have my little AI app. It can have an MCP client that talks to the MCP server. And what's really nice here is the MCP server can expose lots of different types of capability. It could offer knowledge. It could offer resources. It could offer example prompts. And it reflects back its capabilities. So the client says, \"What can you do?\" The MCB server says, \"These are the things I can do.\" The MCB client just then sends that because this is obviously talking to a large language model. Large language model can then understand it. Say, \"Oh, I want to use this tool. Send this tool this request.\" and they talk MCP protocol and the AI app doesn't have to understand it. I can talk to many different types of service. I don't have to reinvent custom ways to talk to it. And if I'm a service, I just have one MCP server and then everything around the ecosystem can talk to me. So this is really taken a big hold. Think of it like a USB but for AI. There's also things like A to A, agent to agent. It's a way agents can discover and talk to other agents.",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3651.599,
+      "end_seconds": 3739.0400000000004,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3651s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "55fc20807202419179143f5352424817883095e4e1cc040bca807e698660058b",
+    "text": "really taken a big hold. Think of it like a USB but for AI. There's also things like A to A, agent to agent. It's a way agents can discover and talk to other agents. There are um custom tools. I could write custom tools. Um use up a lot of space there. So I could write something using an Azure function which is procode serless. I could write a logic app which is no um no code or low code graphical way. all these different ways that I can enhance beyond just what the model on its own could do because model on its own is super restricted really in usefulness. I need to give it additional capabilities. So tools are way to really open it up to new knowledge, new types of actions it can do. Now another big option we have is this idea of do a different color skills skills are telling it how to do something. Uh we have this idea of a skill.mmd file and it's progressive disclosure. What that means is initially whatever is talking to the model doesn't give it the entire skill. It just has the description. this is what the skill does. So it's not using up a lot of tokens talking to the model and then if the model decides actually I want to use",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3722.4,
+      "end_seconds": 3816.1600000000003,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3722s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cbae2c5d9fbd03c4277a2d93c6cd8eee03eb07ec3083ca930dcaac94d667b027",
+    "text": "give it the entire skill. It just has the description. this is what the skill does. So it's not using up a lot of tokens talking to the model and then if the model decides actually I want to use that skill then it will get the entire skill sent to it. So now it analyzes, it understands what to do and then that skill would probably actually use tools very commonly. And so then you get this idea of okay, now it knows how to do certain things and the tooling that it needs to do that thing. And then the next really cool thing we have is the concept of a tool box. And a toolbox can contain as you would guess lots of uh uh different tools and it can contain skills. And the idea of a toolbox is I can bring together multiple tools MCP servers skills and now expose it as a single endpoint. So my AI agent doesn't have to go and talk to lots of different servers and capabilities. It talks to the toolbox. The toolbox can expose a search ability. So it exposes a search that's supposed to be a magnifying glass. I don't know what that is. And so now whatever is talking to it doesn't even have to just get a",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3802.319,
+      "end_seconds": 3882.96,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3802s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "27203e805f754da2c85db9b749fea5f7e1d8bb8ad75a2fdf033057a97871cd6d",
+    "text": "expose a search ability. So it exposes a search that's supposed to be a magnifying glass. I don't know what that is. And so now whatever is talking to it doesn't even have to just get a whole list of everything it does. It could say, \"Hey, do you have anything that can help me with this?\" And it could then go and return that. And if we want to curious about what I can do with that. So, so notice we have as part of our build we have tools and we have this idea of a toolbox and I created a toolbox and in my toolbox you add certain things. And so I added web search and then an Azure AI search. But there's many other things. I could add tools. I could add skills. Here's an example of some of the common tools. But again, I can use the catalog. Show me how to use it in code. But then these are all of the things today I can use in a toolbox. So MCP servers, web search, Azure AI search, code, file search, open APIs, agent to agent, browsers, all the IQs, tools, like it's really cool um to be actually go and add these things and then we get to the idea of knowledge. So we'll see this in the portal,",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3867.76,
+      "end_seconds": 3960.44,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3867s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6caff1a2a3f34a3c52932b4292361cedbca26adaa4124a4b86a75ff3cc2134bc",
+    "text": "agent to agent, browsers, all the IQs, tools, like it's really cool um to be actually go and add these things and then we get to the idea of knowledge. So we'll see this in the portal, but then I have knowledge And when we think of knowledge, it is foundry IQ which is built on the former sort of Azure AI search. And again, we need this because no matter how great the model is, the model was trained on a finite set of data. It's not going to know anything about your private data and it's going to have a cutoff date. And also, if I rely on pre-trained knowledge only in a model, how do you actually know it's true? How do you validate that as the source? It could be hallucinating. It could be making it up without a source shown. I don't know. It introduces compliance risks. When I when we saw that last number, who is John S. all that stuff out, I don't know where that came from. It could be hallucinating half of that stuff. So when we think about yes those IQ's we talked about earlier and other tools as well they're bringing knowledge in and with foundry IQ and the knowledge the goal here is it brings in knowledge but it will give me citations I will",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 3935.839,
+      "end_seconds": 4032.48,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=3935s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "208c262eaebfe9c66f1e9b216bd845c56a2406e394bca5e4c5d081edbe3c5cb2",
+    "text": "IQ's we talked about earlier and other tools as well they're bringing knowledge in and with foundry IQ and the knowledge the goal here is it brings in knowledge but it will give me citations I will know where it's coming from. So what I do in this foundry IQ is I create knowledge bases and knowledge bases use one or more knowledge sources. So it's that created set of knowledge. So if we looked at this, I just down. So if I go to knowledge, I could open up my John Savile and I've got two. So again I'm using a a Azure AI search index which is a basically an index to a blob storage container in Azure that contains text files of the transcripts of all my YouTube videos and then also you can go and search the web and what's really nice here in this case for example these knowledge sources can be Azure AI search let's see these so yes it's Azure AI search indexes. It can be the web. I can actually point it a blob and it will go and create the index. I can point it the fabric IQ's catalog from the ontologies. It can use work IQ and also I can point it at for example the existing index on a SharePoint site",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4014.24,
+      "end_seconds": 4131.04,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4014s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "93c8efe5c26be337f83d78e6399bfdf1b9e348e0d506ee521f3f46709fd1d3b3",
+    "text": "a blob and it will go and create the index. I can point it the fabric IQ's catalog from the ontologies. It can use work IQ and also I can point it at for example the existing index on a SharePoint site but also I could index myself SharePoint in content. I can index rows from Azure SQL. I could upload files. I can do to MCP servers. So have all of these different types of knowledge source. And then what's fantastic about this is Foundry IQ has different options for returning what I ask. It could either return just the answers, just the pieces of data, but it can also create a natural language answer that I could then just use directly. It has different reasoning efforts that can tune. Well, how does it decide which knowledge sources? It could actually send different queries per knowledge source depending on how to get the most relevant information and it will then again site that. And when I'm using things like an Azure AI search index, what's actually happening here is imagine for example this was actually stuff stored in a blob. What it does is it runs an indexer which chunks up the document. It cracks it open. If there's images, it's going to go and look at what they are. It",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4105.759,
+      "end_seconds": 4212.56,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4105s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "ba289c34ec07332bdbaaaf18305d8228eb039201131b6b47e4d981081732d9b3",
+    "text": "stuff stored in a blob. What it does is it runs an indexer which chunks up the document. It cracks it open. If there's images, it's going to go and look at what they are. It understands tables and then the indexer goes and populates an index which could be lexical. So it's exact word matching. It could be semantic. So it creates a vector index which is representation of the meaning of the data. It can do hybrid so I get the best of both worlds. It can do semantic reranking to get the best combinations of them. And so you get this this really fantastic ability to find information like that. That's key to all of this. And so once I have all of these things, I've brought all of this together. So I have models, I have tools, I have evaluations, I have skills, the toolbox, the knowledge. I have to be able to optimize that behavior over time. It it's not a one time, oh, I've done it and I'm good because models do change. I get new knowledge. I might do a new type of vector database. I gather traces, understand how people are using it. That Microsoft has a phase phrase called hill climbing. I want to be able to constantly evolve and improve.",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4191.12,
+      "end_seconds": 4291.36,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4191s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7d3f4a8a3cd3cb8359425b4e98ad93611b008e6e684e1fe285a6a5cb1cc8999b",
+    "text": "knowledge. I might do a new type of vector database. I gather traces, understand how people are using it. That Microsoft has a phase phrase called hill climbing. I want to be able to constantly evolve and improve. And so how we think about doing that that process is around optimizing. And I'm going to optimize on different dimensions. So I can think about what can I optimize with what I'm doing and I can think about optimizing the context what I send to the model. So there is context optimization and I can also think about the model itself. So I can think about model optimization. So these kind of two dimensions. Now how did we think about this historically? So we started with prompt engineering that that was the original thing we heard about dealing with large language models. So we saw the system prompt instructions uh the system role and I can tune that. I can tweak the system prompt. So I can think about oh prompt engineering. I can tweak exactly the user prompt. I can tweak and give examples of how I want it to respond. I can use one or few shot. I can give it formatting of how I want it. I might include chain of thought patterns to encourage it to think step",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4273.84,
+      "end_seconds": 4382.88,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4273s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b02984b508c80e6cd320bebbb528cb5bced77d8fbd9783eccd10cdf4fc1b5da5",
+    "text": "give examples of how I want it to respond. I can use one or few shot. I can give it formatting of how I want it. I might include chain of thought patterns to encourage it to think step by step. It's changing how the model acts. But I might want to add knowledge. We talked about that before. And this is where we use rag. So the context context optimization is well retrieval augmented generation. I'm adding additional knowledge. It gets added to the prompt. I perform a search against knowledge sources and just add that stuff in. Foundry IQ as we talked about is an example of kind of a super rack. But some models, as we saw in that search, I can actually do fine-tuning. So if it's open weight or maybe there's a model that's provided by a provider and they can enable you to tune it on their platform, it tweaks the values of the parameters. Now, normally we would use this to inject domain specific reasoning or tone. It's not normally used to add knowledge. rag is better because it's more dynamic. It handles updating. But if it was non-changing knowledge that is constantly being asked about, so I'm constantly having to add it, I'm constantly paying for the tokens, it could be cheaper to inject the knowledge",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4368.56,
+      "end_seconds": 4451.360000000001,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4368s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0db289b26811d991804a851943e8bc67e3e3b704d025dc2f03840d936dae074b",
+    "text": "more dynamic. It handles updating. But if it was non-changing knowledge that is constantly being asked about, so I'm constantly having to add it, I'm constantly paying for the tokens, it could be cheaper to inject the knowledge into the model using fine-tuning because it would reduce the size of every call. It may offset. Normally to fine-tune, we have a set of training data which are sets of prompts and responses that we then apply against an existing model to create your fine-tuned model. Uh there are technologies that only update a portion of the model. Now the goals can be things like instructional fine-tuning. I teach it how to behave. There could be domain fine-tuning, teaching it what to know. Preference fine-tuning, teaching it what answer is best. And very often I am going to use multiple approaches. My system prompt and rag often context engineering but I may also use fine-tuning. So maybe it's all of them, maybe it's those two and we talk about context engineering. But you're going to need to optimize over time. That that really is a just a huge element of this. Now, another huge element when we talk about responsible AI is how do I know the output is behaving as I need it to behave? How do I know it's not being abused? How do I",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4435.84,
+      "end_seconds": 4530.08,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4435s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9c0e2c2e27410d0fb863c3e8479bd7bbf2c158f9afb13347e7b17bc84fe10575",
+    "text": "Now, another huge element when we talk about responsible AI is how do I know the output is behaving as I need it to behave? How do I know it's not being abused? How do I know someone isn't trying to jailbreak it or use um prompt injection to make it do something it shouldn't be doing? Like, how do I protect it and think about the safety? And this is where we have guardrails. So big focus here is all about safety. And then there's other capabilities as well. You saw this when we deployed our model. You saw this little default V2 at the bottom of it. So if we jump over for a second and we go back to our models and if I look at my deployment. So we look at terror again. We go to guardrail. You actually see it. I'm using Microsoft.default v2. So what are the various controls? Okay, it's looking for jailbreaking, content safety, protected materials, but there were these risks that it's not currently protecting me against. If I actually jump over to guard rails, so you can see there's the Microsoft defaults, but I could create my own. And here you can specify well what are the types of risk you want to protect. So jailbreaking is selected, block it,",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4512.239,
+      "end_seconds": 4610.48,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4512s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6accbf28b132e29185874dd668eb840b1e554acd3b977b86f2e1114bd11883b8",
+    "text": "so you can see there's the Microsoft defaults, but I could create my own. And here you can specify well what are the types of risk you want to protect. So jailbreaking is selected, block it, but I could also add indirect prompt injection. So maybe the it's gone to some document and that document has a prompt injection or it's attaching something. Well, I could protect that as well. the types of harm both input and output hate sexual self harm violence I can have block lists I can detect protected materials in code for text PII leakage we can hook into other types of tooling task adherance egress rule so I can configure and modify what I need and then save this and then use this guard guardrail with particular deployments and the API can specify guardrails I want to be able to use. So these are really powerful to help ensure that it's doing what I need it to do. And then I really think about I bring all of these elements together. So if I think that how do I actually use this thing? Well, for all of this, for all of these different capabilities, ultimately what's happened here, I'm going to create an agent and it's going to be yes, obviously, I'm going to have a model. I'm going to want",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4594.719,
+      "end_seconds": 4692.4800000000005,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4594s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e241607143ddf00655dec15bbbc7324cbdf77163c60e6380fc1cc56b100ea1a8",
+    "text": "thing? Well, for all of this, for all of these different capabilities, ultimately what's happened here, I'm going to create an agent and it's going to be yes, obviously, I'm going to have a model. I'm going to want evaluations running. I'm going to use sets of tooling. Hey, I'm probably going to use skills toolbox. I'm going to need knowledge added to this thing. Hey, I'm definitely going to need guardrails. All of these come together to create my agent. And evaluations, for example, is not a one-time thing. While I'm developing, sure, I use evaluations to make sure it's doing what I need it to do. In production, I'll take the traces that have gone to app insights and I run it against evaluations to make sure it stays that way. And so then the usage of this is well, the agent is going to get an input and it's going to use all these things. Hey, it goes and gets some knowledge. It's the skills, all of those different capabilities. It's then going to send it to the model, a request. The model will inference and it will get a response. So then the output of the agent and that output might be text but the output could be it does certain actions. So all of these protected by the guardrails,",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4673.6,
+      "end_seconds": 4758.4,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4673s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "b92e7691395637d66da3e60c196806be723f5b2ce677f6d21d48e01c6e69c32e",
+    "text": "inference and it will get a response. So then the output of the agent and that output might be text but the output could be it does certain actions. So all of these protected by the guardrails, the observability, the tracing. And when I think of this, realize we started off using this sort of AI as an assistant. It's always worked with a human, responded to the human. But agents are a step beyond that. They can run autonomously. They can be triggered by an event. They can automate many things. They take things off our plates. So we get these very rich things. often these agents they need their own identity is where you hear about agent 365 um agent ID agent user ID I have to have that full governance around it. So if I want to create my agent that uses these things how now there are many ways to create agents but again for the AI 103 you need to focus on the Microsoft agent framework like that that is the huge focus area for this. So if we think about that Microsoft agent framework there's different capabilities. I want to make sure I don't run out of space. So the Microsoft agent framework. So this is going to help me create my agent. It's got a set of core components",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4740.88,
+      "end_seconds": 4837.199,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4740s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9d48ba55e33c65ed3f4b986778ac2f76869b319b4e4b4284d3d9aa72ffbf1d6d",
+    "text": "there's different capabilities. I want to make sure I don't run out of space. So the Microsoft agent framework. So this is going to help me create my agent. It's got a set of core components make it really easy. Now for agents, we have this idea as you would guess of agents, workflows and then also agent harness. For agents, there's a whole set of capabilities. So it supports things like multi- aent which is huge. Very commonly today, you'll actually end up using more than one agent and they work together. But it also sports things like um multi-turn conversations where I talked about having to create that array. Hey, it just does all that plumbing for you. It has a concept of an agent session to maintain context across multiple calls. It can do tool calling. Um, it can have memory. Memory is huge today. The idea of actually being able to based on interactions across the past store key aspects about personal preferences and then bring that in where appropriate. So maybe in the past I'm like, hey, I hate vegetables. Uh, I don't eat seafood. I don't like anything green. And then maybe it's like, oh, I'm really hungry. and this is like days later it'll be like oh I probably shouldn't suggest vegetables or hey why",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4817.12,
+      "end_seconds": 4930.159,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4817s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "2c2e249c032e122d7d0799846509218ce37a9a45431d1da53dc9eac433892109",
+    "text": "don't eat seafood. I don't like anything green. And then maybe it's like, oh, I'm really hungry. and this is like days later it'll be like oh I probably shouldn't suggest vegetables or hey why don't we get pizza so it's about that personalization capabilities and what's nice here is I wire up the capabilities I need now something I want to dive into a bit more is this multi- aent part because this this is really really powerful and there's different ways we can use multiple agents so one way we can use the multi- aent is idea of concurrent So concurrent would be there's some kind of trigger. So there's some input, but then all of the agents, they kind of run in parallel and then they'd feed into some kind of collector that would go and aggregate it and spit out an output. Then they're sequential and again some kind of input. But now the agents run one after another until they spit out an output. It's a more they're dependent on the previous step. It's more predictable. It's an ordered flow. What I think is the most interesting is the idea of a group chat. Now with a group chat, the agents kind of collaborate. They share a common conversation with control shifting. Now in the middle of this we have a",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4917.44,
+      "end_seconds": 5017.679,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4917s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "66053b990d0e36cbf0923587acbf4914cb46bd493406efe878e4d97496cf49f2",
+    "text": "What I think is the most interesting is the idea of a group chat. Now with a group chat, the agents kind of collaborate. They share a common conversation with control shifting. Now in the middle of this we have a group chat manager. Now there's still some kind of trigger some input and then but this can now go and talk to lots of different agents. I can include actually pinging a human to get some cer feedback and then yes it will spit out some output at the end. So let's actually have a look at one of these cuz this actually is fun. So if we go back to our code. So this is an example of multi- aent. So this time I'm using the agent framework and I'm using the group chat capabilities. Now what I'm using is the foundry endpoint. I'm using GPT56 terror model. I'm maximizing it to four turns. And then I'm saying all my video title is the AI 103 study cra. And I'm giving it a description. So this is an overview of key concepts covered in the AI 103 Microsoft AI exam includes whiteboarding and demos. And what I'm now doing is I'm defining two different agents. One of them is a hashtag creator. Create five to eight relevant LinkedIn hashtags I could use",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 4997.04,
+      "end_seconds": 5111.44,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=4997s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "09ed293e94ed8d214105364b9f81283a19690a73b7731d349adc6863b39f182a",
+    "text": "Microsoft AI exam includes whiteboarding and demos. And what I'm now doing is I'm defining two different agents. One of them is a hashtag creator. Create five to eight relevant LinkedIn hashtags I could use for the video. And then I give the exact instructions. My second agent is a critic. make sure they're decent and then I'm going to put them together in a group chat that are participants in I'm using round robin so they each get a chance but there's different options I can use here to actually come up and create me an example and what I'm going to do is show you them chatting to each other so if we run this one everyone likes chatty agents. So I'm outputting okay what is the user input I gave it and the hashtag creator uh AI 103 Azure Azure certification artificial intelligence the critic good start several tags are too broad okay keep these ones replace these ones consider these hashtag creator what about these ones hashtag critic approved with a minor refinement is repetitive replace it with this and it gives me the approved set. So that's agents working together and that's a very common pattern kind of the off the critic but I could have more agents than that but that that is a a really powerful one",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 5092.56,
+      "end_seconds": 5203.4,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=5092s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f997bb013d9047809e35c993dcae4826db6a3121576ad5496ad5707d4bb49ae1",
+    "text": "approved set. So that's agents working together and that's a very common pattern kind of the off the critic but I could have more agents than that but that that is a a really powerful one to use and there's there's one handoff. So hand off again there's some input that goes to an agent but now what the agents can do is they can transfer control to another hey actually based on description you be the good one now that agent says actually now I'm going to give it to you and maybe that one now says a human I need your input and then the human gives it back and then okay goes and does something else and eventually there's an output and there's something called um magentic So we have all these different types. Now magentic looks a lot like group chat but it's more advanced. The whole goal here is it's adaptive. It can dynamically decide how to contribute to this like it plays that group chat manager. So you can work for complex open-ended tasks. So it's based on magentic one which was designed by autogen. So again it's very similar but it uses planning as part of the coordination but hey if I have simpler asks you would just use group chat. So then if that was agents what is this",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 5183.199,
+      "end_seconds": 5283.92,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=5183s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5be563c1660ae3dca4b7eea0246d89b5723cff58cb1b084338a07dd76dab4e99",
+    "text": "autogen. So again it's very similar but it uses planning as part of the coordination but hey if I have simpler asks you would just use group chat. So then if that was agents what is this workflow? So remember generative AI is nondeterministic. Same input doesn't yield the same output. There's going to be some times I want determinism. I don't want this creative don't know exactly what it's going to do. So workflows enable us to define a sequence of steps that describe exactly what should happen. Now there don't if was is the right term a graphical workflow capability in foundry but it's being retired. Instead what we should use is the Microsoft agent framework workflow and this is codebased now it's made up of basically executors. So you you basically have these particular flow of things. I can have lot of logic splits etc. If I want I can still have generative AI as part of these nodes that I'm connecting. I could pause for a human in the loop approval but it's far more deterministic in what it's doing. And then we have this concept of the agentic harness. And really the goal of the agent harness is it it wraps the agent part but basically in a set of pre-built capabilities. Basically it means it's",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 5265.6,
+      "end_seconds": 5365.4,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=5265s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f7607c433ef24d8e4244d2a224f45ab6ec3584e78f19df021cb716dd1008d925",
+    "text": "And then we have this concept of the agentic harness. And really the goal of the agent harness is it it wraps the agent part but basically in a set of pre-built capabilities. Basically it means it's ready to go. I can still customize and tweak stuff but it's got building blocks. So research, coding, data analysis, long running work because as we saw here, right, a large language model on its own is really not that great. I have to plummet with tools, context. I have loops. That's what a harness does. A harness supports all of the things that makes a large language model actually useful. Um, for that context, remember it can get bigger and bigger. It can do compaction, so [snorts] it shrinks it down so it's more manageable. Uh we can think about skill support, web search, tool approval with don't ask me again, uh open telemetry. So it's just ready to go. I bring the model, the instructions and tools. The agent harness takes care of everything else. And then I might think about, well, okay, where do I actually run my my agents? And you have huge choices here. But Foundry has the agent service. It's a managed platform for building, hosting, scaling the agents. And there's two options here. So the first one is a",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 5343.6,
+      "end_seconds": 5448.6,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=5343s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "6d2c6665423a79036baf5464b695d094e0c8a6e3afacae80fc555bebf420893d",
+    "text": "my my agents? And you have huge choices here. But Foundry has the agent service. It's a managed platform for building, hosting, scaling the agents. And there's two options here. So the first one is a prompt agent. And as the name kind of suggests, you just give it instructions. You wire it up with the various things it needs, but there's no code. I can add knowledge, memory, all those things we saw in that playground, I can do here. So if I look at my agents, I'm in build. I've got my Johnbot agent 2. This is be building an agent. Notice I could do a voice agent if I wanted to. I pick the model I want to use for my agent. I'm using the model router. So, it's going to use the most effective one. I've got instructions. I've given it tools that I want it to use. So, it's web search, but it's like, okay, maybe I want to add other things. Maybe I could go and add in my my YouTube content. So you want to go and add in that as well. I got my knowledge which is actually using my YouTube content which is why I'm going to remove that one. So I can plum in knowledge. I can give it a memory. So I've given it",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 5423.76,
+      "end_seconds": 5530.719,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=5423s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "de19e15cdfa0a0a0dd16dbb5c91a43d153f234d15dc035d1ad4e8e60defc3e51",
+    "text": "I got my knowledge which is actually using my YouTube content which is why I'm going to remove that one. So I can plum in knowledge. I can give it a memory. So I've given it a custom memory so it would remember information between different exchanges of use. I've got guardrails configured the default and once again I can just go and ask it stuff. Um so what is express route global reach? So it might go and search the web. It might go and search my I would be more prescriptive. um for example here in the knowledge base for example but it's going to show me also how I can call the agent so there's code examples of using my agent it's giving me information here it's telling me where it got the information from. So it's from my search index. So it actually uses information from my articles. So I can feel confident in that. I know it used my knowledge base to give me that answer. I can see the tokens it used. So I get great information. And this is me just playing around. But again, I can see the token metrics information. I could see a trace. So trace shows me exactly what did it do. So okay, there's the response and it",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 5516.88,
+      "end_seconds": 5614.719,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=5516s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e5806f6059b4ef4f48210aac042f9950c63caf67f4ed8fd4259a76fdd6fef741",
+    "text": "information. And this is me just playing around. But again, I can see the token metrics information. I could see a trace. So trace shows me exactly what did it do. So okay, there's the response and it used the MCP list tools and it used the knowledge base and then hey I actually got this is the bit it got returned from it. So I get this really great information again these traces I could also then go and search like app insights so it could be maintained. I can see metrics about all the different aspects of what is going on in my environment but there's the details of my agent. Again, I've got different traces for different runs that I can be doing. I can monitor exactly what's happened with my agent. I've only just not done that much with it right now. I can optimize over a period of time. Like it's really powerful way to create really awesome agents. And then you have hosted agents. So with a hosted agent, it's code So I write my code. It ends up being in a container that goes to the Azure container registry that then gets hosted by a managed endpoint the identity observability scaling. It's just taken care of for you. It it's super. And I",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 5600.0,
+      "end_seconds": 5687.28,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=5600s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f101e03f1a68b13ceb9c83b2377da3d9d9dfa0c51226541d7e25a708a95befa9",
+    "text": "So I write my code. It ends up being in a container that goes to the Azure container registry that then gets hosted by a managed endpoint the identity observability scaling. It's just taken care of for you. It it's super. And I can write that yes with the agent framework but I could also use langraph really anything else I want. I don't I'm not restricted for anything we use. And then of course I want people to use the agents. So we publish it. We saw that with my little agent. So if I jump back, I've got my publish option and I could maybe go to web. I could publish it to teams and M365 co-pilot. Remember it's really hard to change user behavior. So where possible you want to meet people where they are. So people are in co-pilot, people in teams, let's publish your agent there. They're going to see it. They're going to use it. When we publish, hey, our agent gets things like the identity. It gets its own URL, right? I can actually go and leverage the thing and it's all isolated from any other agent. So with all of that, that's a lot of sort of using those generative AI capabilities, bringing it all together, creating your agent. But one of the things I mentioned at the",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 5670.639,
+      "end_seconds": 5764.400000000001,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=5670s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "e82ffa5cc5757b24aae4a53afe8aa3e277045e8deab113267119eeb8eed8b437",
+    "text": "it's all isolated from any other agent. So with all of that, that's a lot of sort of using those generative AI capabilities, bringing it all together, creating your agent. But one of the things I mentioned at the start were these services, these pre-built capabilities, and I said we would come back to them. So I think I need to come back to them. So the first capability is around language and there's really three purposes around language. One is language detection. It's English, Spanish. There's things about detecting named entities. for example, a person's name, a place, an organization. But then there's also kind of an inverse of that is around personally identifiable information. So again, a person, a social security number, a phone number, you pass in text along with the specific type of request and it meets that requirement. Maybe it's redacting PII. So now we go back to the portal. We're in build. So I'm going to go to services and here we can see all of them. So we're focusing right now on this idea of language and you can see here there's language detection which we just talked about PII redaction from a text or a document conversational PII reduction and then various types of analytics. So for example if I was to just let's",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 5742.0,
+      "end_seconds": 5854.119000000001,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=5742s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3e5619808b508b94b1898d7aee3a9232fef8f0430d748f491d66585cbbc8fbb7",
+    "text": "and you can see here there's language detection which we just talked about PII redaction from a text or a document conversational PII reduction and then various types of analytics. So for example if I was to just let's just do language detection. So, what is this? Detect. It's not super hard. It is a 100% confident this is English. Yep, that's pretty easy. Likewise, there's other things here. So, I could do text PII redaction. So, there's samples here. Let's do um email. If I do text, notice it's redacted. person type, person location, date. Pretty powerful capabilities. And again, there's code on how I could do this. Likewise, there's document PII reduction. So, here's a medical report detect. It's redacted from the document. So, from the code, this this works the same way as before. So when I think about how you use these, this is going to be common across all of this. If you think you have the foundry endpoint and the goal here is you have your app and these are just very common capabilities. So you're going to talk to the foundry endpoint. Yes, I can use an API key or I can use an entra identity and then I send a request and I'm going to get a response back. So this could be my app and then I'm just",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 5832.96,
+      "end_seconds": 5955.1990000000005,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=5832s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "89034e078a97f9e35f334309b5b340f47e5d0e8002af7b01066da8f4fdd9c1b0",
+    "text": "endpoint. Yes, I can use an API key or I can use an entra identity and then I send a request and I'm going to get a response back. So this could be my app and then I'm just using that and I've got an example of this as you probably guessed. So here, go to our next example. So I've got two documents. Super exciting. You can see I'm creating a text analytics client this time. I'm just going to send it the documents. So basic language. Now for some of these there were different end points but that was really quick and you can see my confidence. Confidence one. It's 100% confident this is French. 100% confidence that is English. So super super easy to use. And another nice thing here actually, so I'm using the API, but additionally, imagine we're using this in agents. So if I'm an agent, I can actually use these same capabilities talking to an MCP server. So I I can leverage that as well. Then we get to speech. And when we think of speech, the goal here is it's in each direction. So I can think about text to speech, speech to text. So text to speech is speech synthesis. You give it text, it creates audio. Speech to text you're",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 5934.4,
+      "end_seconds": 6052.96,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=5934s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5fc1adf55e0108cb41ba0a256f68634c3a870321144eb9f73bbcc1d6ba274e25",
+    "text": "the goal here is it's in each direction. So I can think about text to speech, speech to text. So text to speech is speech synthesis. You give it text, it creates audio. Speech to text you're transcribing. You provide the binary audio data and you get back transcribed text. Now there are different models available from many labs. uh OpenAI, Microsoft AI, others enable you to do these things. So if we go and look now, I'll actually start off here just in discover mode cuz I can just use models for this. So if I was to search for Mi Voice, Mi Voice 2 and I'll open in playground. I have a whole bunch of different things. I can pick different voices and there's more voices. I'm showing the model. I can tune pitch, rate, volume. Um, let's actually change this to John Savile's AI 103 study cra. I'm actually not even sure if you'll hear this because the way I've got the audio set up, but let's try it. >> Welcome to John Savile's AI 103 study cra. So that's voice synthesis. But there's also other specific services available which build on speech trans um capabilities like speech translation that's building on speech recognition. There are speech avatars which add things like visual and voice. There's voice live for realtime birectional",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 6036.8,
+      "end_seconds": 6152.799999999999,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=6036s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "483387c358ee531d94fb730171f305c94a71f9ec248509f3c9fb203bbc202db8",
+    "text": "But there's also other specific services available which build on speech trans um capabilities like speech translation that's building on speech recognition. There are speech avatars which add things like visual and voice. There's voice live for realtime birectional interactions. So there's a whole set of capabilities. If I go back here around speech. So voice live. Voice live could be really useful for like a live um call service and I would just be able to interact in live time. There are let's go back to another one. The speech to text where it would do that transcription. The avatar would actually create a person with whatever voice I select and it would animate the person with the voice. You can create custom versions of these as well. There are advanced markup formats available where I can tell it maybe phonetically how to pronounce something say it like this and many many more. So I have all these great capabilities around speech. So yes for speech there are many models available that I can use but then we have these whole sets of other services where yes I can also do translation. I have voice live real time in again a call center would be fantastic for that. There are those avatars and the whole goal here is these are",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 6131.28,
+      "end_seconds": 6243.759999999999,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=6131s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "cefa85d00b23cd998071dca81fb536e4a27392cf06489a6a2c0423bbe074046e",
+    "text": "where yes I can also do translation. I have voice live real time in again a call center would be fantastic for that. There are those avatars and the whole goal here is these are just like pre-baked out the box really really easy for you to use like that that's the whole goal around this and again there's an MCP server available there's also Azure translator now you might say well speech had translation capabilities but that was focused around where speech is involved So translator is all around. It's text or a document that I either want to translate. So translate would be around um what it means. I'm translating it to another language but it can also transliterate which is changing the alphabet. So imagine I was moving from Chinese to the English alphabet. So it's showing me how it sounds maybe for me. So it can do both of those different things. So once again we jump over and this time we go and look at the translate and I can see that text and document translation. So I select text There's you can detect [clears throat] what the source is. And this can't type. This still can't type. Is a test. And I can just pick any language I want. And there it translated it for me.",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 6220.8,
+      "end_seconds": 6342.08,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=6220s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "587e3d68a1df02eb6c83a0371beda8b545d49dafe28f3cbb4c24aeceb73016e7",
+    "text": "you can detect [clears throat] what the source is. And this can't type. This still can't type. Is a test. And I can just pick any language I want. And there it translated it for me. But there's all different types of capabilities. I can code exactly what I want it to do. And there are global endpoints, there's regional endpoints, there's adaptive models. It can show me the code on how to use these things using the REST endpoint to actually um leverage this. Different languages are shown. Again, all of these give this a try. Understand exactly what these things can do. And then we move on to vision. And vision is actually at a super interesting place because of generative models and these new multimodal models. So the one option for vision is we just use generative models. Now many of these today are multi-modal. Now if you remember a modality could be text, it could be image, could be audio and we send these into our generative model. If something if a model supports two or more it means it is multi-odal. It supports more than one modality. And then sometimes these things might only it might be multimodal in so text and image but out is only one. So maybe it can only output text or maybe it can",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 6320.88,
+      "end_seconds": 6442.0,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=6320s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "7faa9bfc78fad37059e2a61054e0be66f04c1988e8f4e3c85fed7abcb3e9218c",
+    "text": "It supports more than one modality. And then sometimes these things might only it might be multimodal in so text and image but out is only one. So maybe it can only output text or maybe it can only output images or maybe it can output videos. We have different options here. That's different from multimodel. Multimodel is where we use multiple models. Um, but what's really common here is with multimodal, we can send it text and an image and we can either ask questions about it or maybe ask it to do something else. So, what I've got here in my code, this is my last example. So what I'm doing now is I'm actually grabbing an image. So I'm grabbing some image data and this time for the input for the model I'm sending it what's in this picture and I'm sending it the picture and I'm just using my GPT56 Terra which is a multimodal model. Now, the actual image I'm sending it is uh which one is it? Oh, 500k normal. That it's me celebrating. Oh, I hit 500,000 subscribers. So, if we try and run this, it's going to send the text. is going to send the image and basically we're saying look what what is it? What is this picture? So I'm asking the model to",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 6427.28,
+      "end_seconds": 6545.76,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=6427s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "13fc6d74882ad9ff05528dd2b8457987fc3fc12f6f9ef2bcf3429ec295d18414",
+    "text": "if we try and run this, it's going to send the text. is going to send the image and basically we're saying look what what is it? What is this picture? So I'm asking the model to describe to me what is in this and it describes it salary graphic for John Sav's technical training shows a cartoon bold person just once. It' be nice if it didn't say bold. Um raising Bose fist alongside a sign reading the background is tech themed. It's got cloud circuit graphic and normal network diagram and a clock. So it described exactly what was in the picture. Now prior to generative AI and technically still around we had custom vision. I could have a large set of labeled images. I could train a model to detect an apple and an orange or blah blah. Generally they're being phased out just in favor of generative AI today. But they are still available if you wanted to go that direction. Now likewise there are many models that can actually create images based on text or text and an image. So if we jump back over and this time we'll go back to discover for a second. We'll go to models and remember the inference task. So the inference task actually I'll select all models that could be possible",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 6522.639,
+      "end_seconds": 6619.52,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=6522s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "d481dec182b5cdcd4b0c50bcb98efa7de9ab68801f5314c024c49e576f3ccf2d",
+    "text": "text and an image. So if we jump back over and this time we'll go back to discover for a second. We'll go to models and remember the inference task. So the inference task actually I'll select all models that could be possible and the inference task we're thinking about here is this idea of text to image and it's showing me all the different ones available that I might want to use. So I know for example I think I've got flux deployed And what we'll actually do is we'll jump over to see it. This is something I created with it previously in the playground. So I asked it to create a cartoon of a cheeseburger. um that has arms and eyes and it's typing on a computer. So that's an example of something I did in the past but I could view code to see how to use this one or if I want to use for example GPT image too here I would go ahead and use the client images generate. So I have different options for using that. So it's using the OpenAI image API. There are also ones um that can actually generate full videos. So if I went back to my discover for a second models and this time my inference task would be",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 6598.639,
+      "end_seconds": 6716.799999999999,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=6598s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "9facbe5d66cf574d7aad51cd7ca2a1b71f51695b32cb5214ec148a1833d48702",
+    "text": "So it's using the OpenAI image API. There are also ones um that can actually generate full videos. So if I went back to my discover for a second models and this time my inference task would be video generation like Sora 2 and video cosmos 3 super. So there's different ones available here. But if I look at my deployment, this is my playground. So I played around with this. Um I did this yesterday. I actually got it to create an image beforehand and then got it to create a video and then I said animate it. They said, \"Hey, animate a 4 secondond video.\" So you can see when you use these things stop, but when you put in a request, you can put in the time you want for the video, the aspect ratio. You can attach pictures, which is what I did. I attached a picture of it. And again, I can monitor like all of the models, hey, how many requests I've made, the estimated cost, so 40 cents uh to create that stunning video. Uh, I guess while we're in here, if I looked at my duty 56 Terra, which I use more often, see the token costs. So, I mean, for all the stuff I've been playing around with it, like it's not",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 6697.04,
+      "end_seconds": 6791.76,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=6697s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "f60e8e3b8d3aef1205f6a36cd31803fa30798401455598b4fb7e5ac73bf63a10",
+    "text": "Uh, I guess while we're in here, if I looked at my duty 56 Terra, which I use more often, see the token costs. So, I mean, for all the stuff I've been playing around with it, like it's not even a scent yet, just not not really done a whole bunch. Um, if I looked, let's maybe actually go back to that second last seven days. Okay, I've sent 10 cents in all of the usage. So you you have really good information and details on exactly um what is happening in the environment and then we have Azure content understanding. So this was using generative models and content understanding uses these behind the scenes as well but this is like a pre-baked service for specific things. And the whole idea here is that I can give it um images, documents, forms, uh audio, video. And what I'm doing is I'm sending this to Azure Content Understanding, which runs it through an analyzer. And there are pre-built ones or I can create custom ones based on specific things I need. What it's going to spit out is structured data of what is actually in that document. And the goal is then I could feed that into other applications into other systems. If I'm doing custom, I would define my own schema, the fields that I",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 6777.92,
+      "end_seconds": 6885.759999999999,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=6777s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "4a20546b5b19730b3cb7a6855d05843bfed68b00188f80d0de5446f8ee6212f6",
+    "text": "of what is actually in that document. And the goal is then I could feed that into other applications into other systems. If I'm doing custom, I would define my own schema, the fields that I want to extract, uh fields I want to generate. I would point it to a base analyzer and then a generative model that I want to be able to leverage. So let's take a look at these. And here you can see all these different content understanding ones. I'm just going to select anyone doesn't matter right now. So this is a document analyzer and there's samples you can play around with but it's showing me. So it gives you a markdown the paragraphs the tables it found. I could change it from layout to like a US tax example. Instead of a document, maybe it's an image. So, it's describing the image. Again, the markdown details, the resulting code, there's audio. If I go back to documents for a second, payment and banking examples again pulling out the fields, the markdown, what are the paragraphs, it it understands exactly what's happening inside here. So I get all of the full detail. So of course the goal of these are if this is my requirement why recreate the wheel like go and use these services and plug them into my app",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 6872.719,
+      "end_seconds": 6968.08,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=6872s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1d1e008f32e925fce94fa11fd08f370f83b1ccfd1ffd575e32c958a57dd8015c",
+    "text": "happening inside here. So I get all of the full detail. So of course the goal of these are if this is my requirement why recreate the wheel like go and use these services and plug them into my app or whatever else then I have all of this other flexibility and so that is exam crap. I think that's trying to refresh the really core concepts to be aware of. But the biggest thing is go through the Microsoft learn, try all the technologies, use the APIs, use the SDK, use an API key, use entra where there's different types of endpoints, try them out. Um, if you don't pass the first time, look at the scoring. It will show you where you are weakest and just try again. Everyone fails sometimes. It's just learn from it and come back stronger. I hope that helps. Till next video, take care.",
+    "metadata": {
+      "video_id": "WK2BvjOYTCQ",
+      "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+      "trainer": "John Savill",
+      "channel": "John Savill's Technical Training",
+      "topic": "Agents",
+      "start_seconds": 6951.119,
+      "end_seconds": 7007.08,
+      "url": "https://www.youtube.com/watch?v=WK2BvjOYTCQ&t=6951s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]

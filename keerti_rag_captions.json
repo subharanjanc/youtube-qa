@@ -1,0 +1,4603 @@
+{
+  "video_id": "wzssm02u35I",
+  "title": "Simplest RAG Explanation with Working Code! Beginner Friendly Step-by-Step Example",
+  "channel": "Keerti Purswani",
+  "trainer": "Keerti Purswani",
+  "topic": "RAG",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 2069.0,
+  "segments": [
+    {
+      "start": 0.4,
+      "end": 4.16,
+      "text": "use this information to answer the"
+    },
+    {
+      "start": 2.32,
+      "end": 6.24,
+      "text": "question. We are also sending the data"
+    },
+    {
+      "start": 4.16,
+      "end": 7.9190000000000005,
+      "text": "or the context along with it. Now I need"
+    },
+    {
+      "start": 6.24,
+      "end": 9.440000000000001,
+      "text": "to scrape my site and add the"
+    },
+    {
+      "start": 7.919,
+      "end": 11.759,
+      "text": "information in the vector database."
+    },
+    {
+      "start": 9.44,
+      "end": 13.599,
+      "text": "These splits we need to embed them into"
+    },
+    {
+      "start": 11.759,
+      "end": 16.0,
+      "text": "vectors and we need to store them in a"
+    },
+    {
+      "start": 13.599,
+      "end": 18.08,
+      "text": "database. I am creating a dictionary."
+    },
+    {
+      "start": 16.0,
+      "end": 20.56,
+      "text": "Now whatever prompt I'm going to get"
+    },
+    {
+      "start": 18.08,
+      "end": 22.799999999999997,
+      "text": "that I am passing as an input to our LM."
+    },
+    {
+      "start": 20.56,
+      "end": 26.24,
+      "text": "Also if you want to see the exact prompt"
+    },
+    {
+      "start": 22.8,
+      "end": 28.080000000000002,
+      "text": "that is going LLMs are trained on a lot"
+    },
+    {
+      "start": 26.24,
+      "end": 29.919999999999998,
+      "text": "of data and they are awesome at"
+    },
+    {
+      "start": 28.08,
+      "end": 32.0,
+      "text": "answering queries related to that"
+    },
+    {
+      "start": 29.92,
+      "end": 33.84,
+      "text": "information. But now what if I want my"
+    },
+    {
+      "start": 32.0,
+      "end": 36.16,
+      "text": "LLM to be able to answer questions"
+    },
+    {
+      "start": 33.84,
+      "end": 38.0,
+      "text": "related to my company specific data. For"
+    },
+    {
+      "start": 36.16,
+      "end": 40.16,
+      "text": "example, what if I have an e-commerce"
+    },
+    {
+      "start": 38.0,
+      "end": 41.84,
+      "text": "platform like Amazon? Now I want our"
+    },
+    {
+      "start": 40.16,
+      "end": 43.199999999999996,
+      "text": "LLMs to be able to answer questions"
+    },
+    {
+      "start": 41.84,
+      "end": 45.28,
+      "text": "related to the products that are"
+    },
+    {
+      "start": 43.2,
+      "end": 47.36,
+      "text": "specific to my particular platform or"
+    },
+    {
+      "start": 45.28,
+      "end": 50.0,
+      "text": "what if I have courses right? I want to"
+    },
+    {
+      "start": 47.36,
+      "end": 52.48,
+      "text": "create a bot where I'm using LLM to"
+    },
+    {
+      "start": 50.0,
+      "end": 54.079,
+      "text": "answer questions related to our courses."
+    },
+    {
+      "start": 52.48,
+      "end": 55.839999999999996,
+      "text": "How can we do that? There are a couple"
+    },
+    {
+      "start": 54.079,
+      "end": 57.52,
+      "text": "of things that we can do. The first one"
+    },
+    {
+      "start": 55.84,
+      "end": 59.039,
+      "text": "is fine-tuning. And for those of you who"
+    },
+    {
+      "start": 57.52,
+      "end": 61.120000000000005,
+      "text": "understand finetuning, you will know the"
+    },
+    {
+      "start": 59.039,
+      "end": 63.199,
+      "text": "problems associated with it. It is very"
+    },
+    {
+      "start": 61.12,
+      "end": 65.51899999999999,
+      "text": "very costly. It is very computationally"
+    },
+    {
+      "start": 63.199,
+      "end": 67.03999999999999,
+      "text": "expensive. It will need a lot of time."
+    },
+    {
+      "start": 65.519,
+      "end": 68.4,
+      "text": "You will need to pre-process your data."
+    },
+    {
+      "start": 67.04,
+      "end": 70.4,
+      "text": "You will need to clean it. You will need"
+    },
+    {
+      "start": 68.4,
+      "end": 73.52000000000001,
+      "text": "ML engineers to actually do the"
+    },
+    {
+      "start": 70.4,
+      "end": 75.52000000000001,
+      "text": "finetuning. Also, if your data is being"
+    },
+    {
+      "start": 73.52,
+      "end": 76.88,
+      "text": "updated very frequently, for example, we"
+    },
+    {
+      "start": 75.52,
+      "end": 78.39999999999999,
+      "text": "are going to add on products or I'm"
+    },
+    {
+      "start": 76.88,
+      "end": 79.92,
+      "text": "going to add on my courses, right? Then"
+    },
+    {
+      "start": 78.4,
+      "end": 82.0,
+      "text": "my company specific data is being"
+    },
+    {
+      "start": 79.92,
+      "end": 83.92,
+      "text": "updated again and again. So, I will need"
+    },
+    {
+      "start": 82.0,
+      "end": 85.84,
+      "text": "to fine-tune my model again and again."
+    },
+    {
+      "start": 83.92,
+      "end": 87.43900000000001,
+      "text": "So, it is going to be hard to update."
+    },
+    {
+      "start": 85.84,
+      "end": 88.88000000000001,
+      "text": "Plus, if I need to remove some"
+    },
+    {
+      "start": 87.439,
+      "end": 90.24,
+      "text": "information, then it is very hard to"
+    },
+    {
+      "start": 88.88,
+      "end": 92.0,
+      "text": "remove the particular course or"
+    },
+    {
+      "start": 90.24,
+      "end": 93.36,
+      "text": "particular products also. So, there are"
+    },
+    {
+      "start": 92.0,
+      "end": 95.52,
+      "text": "a lot of problems associated with"
+    },
+    {
+      "start": 93.36,
+      "end": 97.52,
+      "text": "fine-tuning. So, introducing the second"
+    },
+    {
+      "start": 95.52,
+      "end": 100.92,
+      "text": "solution, rack, which is what we'll be"
+    },
+    {
+      "start": 97.52,
+      "end": 100.92,
+      "text": "discussing now."
+    },
+    {
+      "start": 101.6,
+      "end": 105.83999999999999,
+      "text": "The concept behind rag is very very"
+    },
+    {
+      "start": 103.84,
+      "end": 107.36,
+      "text": "simple and very very logical. Let me"
+    },
+    {
+      "start": 105.84,
+      "end": 109.759,
+      "text": "explain it in very simple terms. Forget"
+    },
+    {
+      "start": 107.36,
+      "end": 111.36,
+      "text": "the term right now. See we have LLM"
+    },
+    {
+      "start": 109.759,
+      "end": 113.36,
+      "text": "which is very good at answering"
+    },
+    {
+      "start": 111.36,
+      "end": 114.96,
+      "text": "questions but it does not have our data."
+    },
+    {
+      "start": 113.36,
+      "end": 117.28,
+      "text": "Where is our data? Our data is present"
+    },
+    {
+      "start": 114.96,
+      "end": 119.83999999999999,
+      "text": "in the database. Now what can we do?"
+    },
+    {
+      "start": 117.28,
+      "end": 122.24,
+      "text": "What if we fetch or we take out the"
+    },
+    {
+      "start": 119.84,
+      "end": 124.32000000000001,
+      "text": "relevant information from this database"
+    },
+    {
+      "start": 122.24,
+      "end": 126.24,
+      "text": "and when we are quering RLM when we are"
+    },
+    {
+      "start": 124.32,
+      "end": 128.319,
+      "text": "sending the query to LLM at that time we"
+    },
+    {
+      "start": 126.24,
+      "end": 130.0,
+      "text": "are just going to tell see this is the"
+    },
+    {
+      "start": 128.319,
+      "end": 132.319,
+      "text": "information that we have already gotten"
+    },
+    {
+      "start": 130.0,
+      "end": 134.879,
+      "text": "from the database use this information"
+    },
+    {
+      "start": 132.319,
+      "end": 137.04,
+      "text": "to answer the question exactly this is"
+    },
+    {
+      "start": 134.879,
+      "end": 138.879,
+      "text": "as simple as that this is rag so what do"
+    },
+    {
+      "start": 137.04,
+      "end": 140.64,
+      "text": "we do let me repeat it we have a"
+    },
+    {
+      "start": 138.879,
+      "end": 142.959,
+      "text": "database present what are we going to do"
+    },
+    {
+      "start": 140.64,
+      "end": 144.64,
+      "text": "we are going to get a query now based on"
+    },
+    {
+      "start": 142.959,
+      "end": 146.31900000000002,
+      "text": "this query we are going to fetch only"
+    },
+    {
+      "start": 144.64,
+      "end": 148.23899999999998,
+      "text": "the relevant information from the"
+    },
+    {
+      "start": 146.319,
+      "end": 149.599,
+      "text": "database So we're going to retrieve the"
+    },
+    {
+      "start": 148.239,
+      "end": 150.72,
+      "text": "information from database or we are"
+    },
+    {
+      "start": 149.599,
+      "end": 152.72,
+      "text": "going to get the information from"
+    },
+    {
+      "start": 150.72,
+      "end": 154.64,
+      "text": "database and that we are going to send"
+    },
+    {
+      "start": 152.72,
+      "end": 156.319,
+      "text": "to our LLM as a prompt along with the"
+    },
+    {
+      "start": 154.64,
+      "end": 158.16,
+      "text": "question we're going to send listen this"
+    },
+    {
+      "start": 156.319,
+      "end": 159.83999999999997,
+      "text": "is the context this is the data just use"
+    },
+    {
+      "start": 158.16,
+      "end": 161.35999999999999,
+      "text": "this to answer this particular question"
+    },
+    {
+      "start": 159.84,
+      "end": 163.20000000000002,
+      "text": "so we are sending the question but we"
+    },
+    {
+      "start": 161.36,
+      "end": 165.59900000000002,
+      "text": "are also sending the data or the context"
+    },
+    {
+      "start": 163.2,
+      "end": 167.76,
+      "text": "along with it which our LLM will use and"
+    },
+    {
+      "start": 165.599,
+      "end": 169.51899999999998,
+      "text": "it will answer the question our LLM is"
+    },
+    {
+      "start": 167.76,
+      "end": 171.12,
+      "text": "awesome at answering questions but it"
+    },
+    {
+      "start": 169.519,
+      "end": 172.72,
+      "text": "does not have the data so all we are"
+    },
+    {
+      "start": 171.12,
+      "end": 174.48000000000002,
+      "text": "doing is fetching the data from our"
+    },
+    {
+      "start": 172.72,
+      "end": 176.879,
+      "text": "database and sending it along with the"
+    },
+    {
+      "start": 174.48,
+      "end": 178.72,
+      "text": "question as simple as that. So rag"
+    },
+    {
+      "start": 176.879,
+      "end": 180.79999999999998,
+      "text": "stands for retrieval augmented"
+    },
+    {
+      "start": 178.72,
+      "end": 182.48,
+      "text": "generation. Retrieval meaning we are"
+    },
+    {
+      "start": 180.8,
+      "end": 184.48000000000002,
+      "text": "retrieving or we are fetching out the"
+    },
+    {
+      "start": 182.48,
+      "end": 186.72,
+      "text": "relevant information from the database."
+    },
+    {
+      "start": 184.48,
+      "end": 189.67999999999998,
+      "text": "Augmented meaning we are augmenting or"
+    },
+    {
+      "start": 186.72,
+      "end": 191.519,
+      "text": "we are enhancing the query by adding the"
+    },
+    {
+      "start": 189.68,
+      "end": 193.20000000000002,
+      "text": "context of the data that we have gotten"
+    },
+    {
+      "start": 191.519,
+      "end": 195.12,
+      "text": "from the database. So we retrieve the"
+    },
+    {
+      "start": 193.2,
+      "end": 196.64,
+      "text": "information we enhanced our query. We"
+    },
+    {
+      "start": 195.12,
+      "end": 198.72,
+      "text": "added the context of this extra"
+    },
+    {
+      "start": 196.64,
+      "end": 200.64,
+      "text": "information and then who is generating"
+    },
+    {
+      "start": 198.72,
+      "end": 202.8,
+      "text": "the answer? The LM is generating the"
+    },
+    {
+      "start": 200.64,
+      "end": 205.27999999999997,
+      "text": "answer. So retrieval augmented"
+    },
+    {
+      "start": 202.8,
+      "end": 206.8,
+      "text": "generation simple. Before we move ahead,"
+    },
+    {
+      "start": 205.28,
+      "end": 208.239,
+      "text": "I would like to take a moment over here"
+    },
+    {
+      "start": 206.8,
+      "end": 210.4,
+      "text": "to say something to those who are"
+    },
+    {
+      "start": 208.239,
+      "end": 212.56,
+      "text": "technically interested in Geni. See,"
+    },
+    {
+      "start": 210.4,
+      "end": 214.4,
+      "text": "there are two sides of Genai. One is if"
+    },
+    {
+      "start": 212.56,
+      "end": 216.4,
+      "text": "you are learning to build your own LMS,"
+    },
+    {
+      "start": 214.4,
+      "end": 218.4,
+      "text": "build your own version of chat GPT. The"
+    },
+    {
+      "start": 216.4,
+      "end": 221.12,
+      "text": "other side is when you are learning to"
+    },
+    {
+      "start": 218.4,
+      "end": 222.87900000000002,
+      "text": "use LLMs to build your own apps. Now, if"
+    },
+    {
+      "start": 221.12,
+      "end": 224.31900000000002,
+      "text": "you're learning to build your own LLMs,"
+    },
+    {
+      "start": 222.879,
+      "end": 226.239,
+      "text": "you need to understand transformer"
+    },
+    {
+      "start": 224.319,
+      "end": 228.39999999999998,
+      "text": "architecture based on which chat GPT is"
+    },
+    {
+      "start": 226.239,
+      "end": 230.879,
+      "text": "built. And for that, the prerequisite is"
+    },
+    {
+      "start": 228.4,
+      "end": 232.72,
+      "text": "understanding LSTM and RNN for which the"
+    },
+    {
+      "start": 230.879,
+      "end": 234.07999999999998,
+      "text": "prerequisite is neural network. So this"
+    },
+    {
+      "start": 232.72,
+      "end": 236.239,
+      "text": "is how you will be able to build your"
+    },
+    {
+      "start": 234.08,
+      "end": 239.36,
+      "text": "own version of chatgity neural networks"
+    },
+    {
+      "start": 236.239,
+      "end": 240.799,
+      "text": "ANN CNN RNN LSTMs transformer"
+    },
+    {
+      "start": 239.36,
+      "end": 242.48000000000002,
+      "text": "architecture and then you will be ready"
+    },
+    {
+      "start": 240.799,
+      "end": 244.239,
+      "text": "to build and when you're talking about"
+    },
+    {
+      "start": 242.48,
+      "end": 245.92,
+      "text": "building your own apps that is where"
+    },
+    {
+      "start": 244.239,
+      "end": 248.4,
+      "text": "lang chain rag and all of this comes"
+    },
+    {
+      "start": 245.92,
+      "end": 250.64,
+      "text": "into picture in our 7 weeks hands-on"
+    },
+    {
+      "start": 248.4,
+      "end": 252.72,
+      "text": "generative AI course with educosis we"
+    },
+    {
+      "start": 250.64,
+      "end": 254.879,
+      "text": "have covered both of these sites in"
+    },
+    {
+      "start": 252.72,
+      "end": 256.639,
+      "text": "seven weeks now this is a very very"
+    },
+    {
+      "start": 254.879,
+      "end": 258.71999999999997,
+      "text": "comprehensive course which I'm teaching"
+    },
+    {
+      "start": 256.639,
+      "end": 261.28000000000003,
+      "text": "live currently all the recordings are"
+    },
+    {
+      "start": 258.72,
+      "end": 262.72,
+      "text": "available for lifetime notes code"
+    },
+    {
+      "start": 261.28,
+      "end": 264.4,
+      "text": "everything is available You can check"
+    },
+    {
+      "start": 262.72,
+      "end": 266.47900000000004,
+      "text": "out the curriculum. You can check out"
+    },
+    {
+      "start": 264.4,
+      "end": 268.56,
+      "text": "the testimonials of our courses for this"
+    },
+    {
+      "start": 266.479,
+      "end": 270.639,
+      "text": "course also. We already have such great"
+    },
+    {
+      "start": 268.56,
+      "end": 272.96,
+      "text": "feedback. I'm thoroughly enjoying this"
+    },
+    {
+      "start": 270.639,
+      "end": 275.04,
+      "text": "course and I'm so proud of it. If you're"
+    },
+    {
+      "start": 272.96,
+      "end": 277.12,
+      "text": "interested in learning live with me or"
+    },
+    {
+      "start": 275.04,
+      "end": 278.56,
+      "text": "watch the recordings 7 weeks, this is"
+    },
+    {
+      "start": 277.12,
+      "end": 280.08,
+      "text": "very very comprehensive and we are"
+    },
+    {
+      "start": 278.56,
+      "end": 281.68,
+      "text": "covering everything. It's very beginner"
+    },
+    {
+      "start": 280.08,
+      "end": 283.35999999999996,
+      "text": "friendly. At least check out the details"
+    },
+    {
+      "start": 281.68,
+      "end": 284.88,
+      "text": "in the description. For now, let's get"
+    },
+    {
+      "start": 283.36,
+      "end": 286.88,
+      "text": "back to the video. Let's get started"
+    },
+    {
+      "start": 284.88,
+      "end": 288.4,
+      "text": "with our code. And for the example, what"
+    },
+    {
+      "start": 286.88,
+      "end": 290.8,
+      "text": "I'm going to be doing is I'm going to be"
+    },
+    {
+      "start": 288.4,
+      "end": 292.79999999999995,
+      "text": "creating a bot for my courses. So I'm"
+    },
+    {
+      "start": 290.8,
+      "end": 295.28000000000003,
+      "text": "going to retrieve information for a"
+    },
+    {
+      "start": 292.8,
+      "end": 297.199,
+      "text": "particular query from a database and I'm"
+    },
+    {
+      "start": 295.28,
+      "end": 299.28,
+      "text": "going to send this information to our"
+    },
+    {
+      "start": 297.199,
+      "end": 301.04,
+      "text": "LLM and I'm going to fetch the answers."
+    },
+    {
+      "start": 299.28,
+      "end": 303.03999999999996,
+      "text": "So I'm going to be creating this entire"
+    },
+    {
+      "start": 301.04,
+      "end": 304.639,
+      "text": "rack pipeline. But what is the first"
+    },
+    {
+      "start": 303.04,
+      "end": 306.47900000000004,
+      "text": "thing that I need to do? I need to make"
+    },
+    {
+      "start": 304.639,
+      "end": 309.12,
+      "text": "sure that the information is present in"
+    },
+    {
+      "start": 306.479,
+      "end": 310.71999999999997,
+      "text": "some database. See in your case in your"
+    },
+    {
+      "start": 309.12,
+      "end": 312.56,
+      "text": "example you might already have this"
+    },
+    {
+      "start": 310.72,
+      "end": 314.40000000000003,
+      "text": "information present in the database. So"
+    },
+    {
+      "start": 312.56,
+      "end": 316.16,
+      "text": "you can directly start from there. But"
+    },
+    {
+      "start": 314.4,
+      "end": 318.15999999999997,
+      "text": "in order to demo it I'm going to show"
+    },
+    {
+      "start": 316.16,
+      "end": 319.91900000000004,
+      "text": "you that how you can also put the"
+    },
+    {
+      "start": 318.16,
+      "end": 321.68,
+      "text": "information in the vector database. So"
+    },
+    {
+      "start": 319.919,
+      "end": 323.28,
+      "text": "I'm going to be using Chromma DB as the"
+    },
+    {
+      "start": 321.68,
+      "end": 326.08,
+      "text": "vector database in our particular"
+    },
+    {
+      "start": 323.28,
+      "end": 327.75899999999996,
+      "text": "example and I need to make sure that the"
+    },
+    {
+      "start": 326.08,
+      "end": 329.68,
+      "text": "information for my courses is present"
+    },
+    {
+      "start": 327.759,
+      "end": 331.28000000000003,
+      "text": "over here. Now this is going to be a"
+    },
+    {
+      "start": 329.68,
+      "end": 333.44,
+      "text": "one-time effort to put the information"
+    },
+    {
+      "start": 331.28,
+      "end": 335.28,
+      "text": "in the vector database. Right? So I'll"
+    },
+    {
+      "start": 333.44,
+      "end": 336.919,
+      "text": "also demo that. So in our case what I'm"
+    },
+    {
+      "start": 335.28,
+      "end": 339.19899999999996,
+      "text": "going to be doing is I have a site"
+    },
+    {
+      "start": 336.919,
+      "end": 341.039,
+      "text": "educes.com. I'm going to be scraping"
+    },
+    {
+      "start": 339.199,
+      "end": 343.199,
+      "text": "this site. I'm going to be scraping it"
+    },
+    {
+      "start": 341.039,
+      "end": 345.36,
+      "text": "and putting that relevant information of"
+    },
+    {
+      "start": 343.199,
+      "end": 346.72,
+      "text": "the courses. Whatever information I have"
+    },
+    {
+      "start": 345.36,
+      "end": 349.039,
+      "text": "about the courses, I'm going to be"
+    },
+    {
+      "start": 346.72,
+      "end": 351.28000000000003,
+      "text": "putting it into the vector database. So"
+    },
+    {
+      "start": 349.039,
+      "end": 353.44,
+      "text": "that is one time effort and then in the"
+    },
+    {
+      "start": 351.28,
+      "end": 354.96,
+      "text": "rack pipeline for a particular query I'm"
+    },
+    {
+      "start": 353.44,
+      "end": 356.32,
+      "text": "going to retrieve the relevant"
+    },
+    {
+      "start": 354.96,
+      "end": 360.23999999999995,
+      "text": "information and I'm going to send it to"
+    },
+    {
+      "start": 356.32,
+      "end": 360.24,
+      "text": "the LLM. So let's get started with the"
+    },
+    {
+      "start": 360.759,
+      "end": 364.40000000000003,
+      "text": "code. Let's get started with writing"
+    },
+    {
+      "start": 362.96,
+      "end": 365.75899999999996,
+      "text": "some boiler plate code. So I'm just"
+    },
+    {
+      "start": 364.4,
+      "end": 367.12,
+      "text": "quickly installing all the libraries"
+    },
+    {
+      "start": 365.759,
+      "end": 368.8,
+      "text": "that we are going to need. I'm going to"
+    },
+    {
+      "start": 367.12,
+      "end": 370.96,
+      "text": "be starting with Lang community. We are"
+    },
+    {
+      "start": 368.8,
+      "end": 372.319,
+      "text": "going to be using lang hub and I will"
+    },
+    {
+      "start": 370.96,
+      "end": 374.08,
+      "text": "let you know for what are we using all"
+    },
+    {
+      "start": 372.319,
+      "end": 376.08000000000004,
+      "text": "of this. We are going to be using ChromB"
+    },
+    {
+      "start": 374.08,
+      "end": 378.88,
+      "text": "as our vector database and we are going"
+    },
+    {
+      "start": 376.08,
+      "end": 381.52,
+      "text": "to be using OpenAI as our LLM. So we are"
+    },
+    {
+      "start": 378.88,
+      "end": 381.52,
+      "text": "going to be using"
+    },
+    {
+      "start": 382.68,
+      "end": 388.72,
+      "text": "GPT. This is going to take a couple of"
+    },
+    {
+      "start": 385.12,
+      "end": 388.72,
+      "text": "minutes. So just give me a"
+    },
+    {
+      "start": 392.12,
+      "end": 398.0,
+      "text": "second and let's quickly set our OpenAI"
+    },
+    {
+      "start": 394.96,
+      "end": 399.75899999999996,
+      "text": "API key. So in Google Collab itself, if"
+    },
+    {
+      "start": 398.0,
+      "end": 401.919,
+      "text": "you just go to keys, I have a lot of"
+    },
+    {
+      "start": 399.759,
+      "end": 403.68,
+      "text": "keys over here. I'll be using this"
+    },
+    {
+      "start": 401.919,
+      "end": 405.84,
+      "text": "particular key. So you can just create"
+    },
+    {
+      "start": 403.68,
+      "end": 407.44,
+      "text": "your OpenAI API key. It's fairly simple."
+    },
+    {
+      "start": 405.84,
+      "end": 409.84,
+      "text": "I've shown it earlier as well. I'll just"
+    },
+    {
+      "start": 407.44,
+      "end": 412.319,
+      "text": "add the screen recording over here. In"
+    },
+    {
+      "start": 409.84,
+      "end": 413.31899999999996,
+      "text": "order to set up OpenAI API key, just go"
+    },
+    {
+      "start": 412.319,
+      "end": 415.28000000000003,
+      "text": "to"
+    },
+    {
+      "start": 413.319,
+      "end": 417.44,
+      "text": "platform.opi.com. You will be able to"
+    },
+    {
+      "start": 415.28,
+      "end": 419.52,
+      "text": "see all the documentation over here. A"
+    },
+    {
+      "start": 417.44,
+      "end": 422.08,
+      "text": "lot of details is there. But just go to"
+    },
+    {
+      "start": 419.52,
+      "end": 423.919,
+      "text": "dashboard, go to API keys. See, right"
+    },
+    {
+      "start": 422.08,
+      "end": 425.75899999999996,
+      "text": "now I have two secret keys. These are"
+    },
+    {
+      "start": 423.919,
+      "end": 427.68,
+      "text": "for my projects. What you can do is"
+    },
+    {
+      "start": 425.759,
+      "end": 429.8,
+      "text": "create a new secret key over here. Just"
+    },
+    {
+      "start": 427.68,
+      "end": 432.639,
+      "text": "give some name like for example text"
+    },
+    {
+      "start": 429.8,
+      "end": 434.8,
+      "text": "project and create the secret key and"
+    },
+    {
+      "start": 432.639,
+      "end": 436.319,
+      "text": "copy it and keep it somewhere. Make sure"
+    },
+    {
+      "start": 434.8,
+      "end": 438.199,
+      "text": "you save it because you will not be able"
+    },
+    {
+      "start": 436.319,
+      "end": 441.68,
+      "text": "to access it later and we'll be needing"
+    },
+    {
+      "start": 438.199,
+      "end": 443.84000000000003,
+      "text": "it. Right? And I'm going to import user"
+    },
+    {
+      "start": 441.68,
+      "end": 446.0,
+      "text": "data. So we are going to have our keys"
+    },
+    {
+      "start": 443.84,
+      "end": 448.08,
+      "text": "and our user data and I'm going to be"
+    },
+    {
+      "start": 446.0,
+      "end": 449.72,
+      "text": "using OS. So I'm just going to set the"
+    },
+    {
+      "start": 448.08,
+      "end": 452.88,
+      "text": "environment variables"
+    },
+    {
+      "start": 449.72,
+      "end": 455.52000000000004,
+      "text": "quickly. So it's as simple as that. Here"
+    },
+    {
+      "start": 452.88,
+      "end": 459.12,
+      "text": "our name was this. So this is it. We are"
+    },
+    {
+      "start": 455.52,
+      "end": 459.12,
+      "text": "done with setting our open API"
+    },
+    {
+      "start": 460.039,
+      "end": 464.24,
+      "text": "key. Now I need to scrape my site and"
+    },
+    {
+      "start": 462.88,
+      "end": 466.15999999999997,
+      "text": "add the information in the vector"
+    },
+    {
+      "start": 464.24,
+      "end": 467.52,
+      "text": "database. So let's go to the lang chain"
+    },
+    {
+      "start": 466.16,
+      "end": 469.12,
+      "text": "documentation. Here you can see there"
+    },
+    {
+      "start": 467.52,
+      "end": 471.68,
+      "text": "are a lot of document loaders that are"
+    },
+    {
+      "start": 469.12,
+      "end": 474.4,
+      "text": "available. So you can load PDF file, CSV"
+    },
+    {
+      "start": 471.68,
+      "end": 476.08,
+      "text": "data, HTML data, JSON data and so on. So"
+    },
+    {
+      "start": 474.4,
+      "end": 477.52,
+      "text": "we have a web page that we want to"
+    },
+    {
+      "start": 476.08,
+      "end": 479.919,
+      "text": "scrape, right? So that is what we want"
+    },
+    {
+      "start": 477.52,
+      "end": 481.12,
+      "text": "to load. So we are going to be using web"
+    },
+    {
+      "start": 479.919,
+      "end": 482.639,
+      "text": "based loader. So this is the"
+    },
+    {
+      "start": 481.12,
+      "end": 485.039,
+      "text": "documentation that I went through to"
+    },
+    {
+      "start": 482.639,
+      "end": 486.40000000000003,
+      "text": "understand how to load web pages. So"
+    },
+    {
+      "start": 485.039,
+      "end": 487.919,
+      "text": "everything is available in the"
+    },
+    {
+      "start": 486.4,
+      "end": 490.4,
+      "text": "documentation. I keep saying this in"
+    },
+    {
+      "start": 487.919,
+      "end": 492.4,
+      "text": "every video. Everything is available."
+    },
+    {
+      "start": 490.4,
+      "end": 494.0,
+      "text": "Don't get too overwhelmed that how will"
+    },
+    {
+      "start": 492.4,
+      "end": 495.52,
+      "text": "I understand this. Everything is"
+    },
+    {
+      "start": 494.0,
+      "end": 497.68,
+      "text": "available. It is for free. Don't worry"
+    },
+    {
+      "start": 495.52,
+      "end": 500.15999999999997,
+      "text": "about it. Okay. My job is to make things"
+    },
+    {
+      "start": 497.68,
+      "end": 502.639,
+      "text": "easier for you. So let's do that. I am"
+    },
+    {
+      "start": 500.16,
+      "end": 505.36,
+      "text": "going to be using web page loader and"
+    },
+    {
+      "start": 502.639,
+      "end": 508.479,
+      "text": "that is available in langu. So let's"
+    },
+    {
+      "start": 505.36,
+      "end": 512.12,
+      "text": "just quickly from the document loaders"
+    },
+    {
+      "start": 508.479,
+      "end": 515.12,
+      "text": "let's just quickly import webbased"
+    },
+    {
+      "start": 512.12,
+      "end": 517.44,
+      "text": "loader and in the loader I can just give"
+    },
+    {
+      "start": 515.12,
+      "end": 519.44,
+      "text": "the paths that I want to load. So in"
+    },
+    {
+      "start": 517.44,
+      "end": 521.9190000000001,
+      "text": "this web based loader if I go see you"
+    },
+    {
+      "start": 519.44,
+      "end": 523.7600000000001,
+      "text": "can give a single path like this or you"
+    },
+    {
+      "start": 521.919,
+      "end": 525.4399999999999,
+      "text": "could also give multiple paths. So if"
+    },
+    {
+      "start": 523.76,
+      "end": 527.519,
+      "text": "you go over here say let me just"
+    },
+    {
+      "start": 525.44,
+      "end": 529.12,
+      "text": "actually write it. So if I write web"
+    },
+    {
+      "start": 527.519,
+      "end": 530.72,
+      "text": "path you can see you can give either one"
+    },
+    {
+      "start": 529.12,
+      "end": 532.5600000000001,
+      "text": "path or you can give multiple paths. So"
+    },
+    {
+      "start": 530.72,
+      "end": 534.8000000000001,
+      "text": "you can see this right? I can give a"
+    },
+    {
+      "start": 532.56,
+      "end": 537.04,
+      "text": "list of parts that I want to basically"
+    },
+    {
+      "start": 534.8,
+      "end": 538.8,
+      "text": "load. So in our case, I am just loading"
+    },
+    {
+      "start": 537.04,
+      "end": 540.88,
+      "text": "the Educosis site and I'm just loading"
+    },
+    {
+      "start": 538.8,
+      "end": 542.399,
+      "text": "the Geni course right now. Okay. So I am"
+    },
+    {
+      "start": 540.88,
+      "end": 545.2,
+      "text": "loading one. But you can also give a"
+    },
+    {
+      "start": 542.399,
+      "end": 547.2,
+      "text": "list of sites like this. Okay. Just"
+    },
+    {
+      "start": 545.2,
+      "end": 548.9590000000001,
+      "text": "explaining you how you can do that. And"
+    },
+    {
+      "start": 547.2,
+      "end": 552.24,
+      "text": "once you have the loader, all you have"
+    },
+    {
+      "start": 548.959,
+      "end": 554.2399999999999,
+      "text": "to do is loader.load. That's it. It's as"
+    },
+    {
+      "start": 552.24,
+      "end": 555.76,
+      "text": "simple as that. And we will have all the"
+    },
+    {
+      "start": 554.24,
+      "end": 557.839,
+      "text": "documents. And if you want to see the"
+    },
+    {
+      "start": 555.76,
+      "end": 560.88,
+      "text": "documents, let's just quickly print them"
+    },
+    {
+      "start": 557.839,
+      "end": 563.12,
+      "text": "and see how it looks like."
+    },
+    {
+      "start": 560.88,
+      "end": 565.4399999999999,
+      "text": "So you can see this is awesome. We have"
+    },
+    {
+      "start": 563.12,
+      "end": 567.76,
+      "text": "the source. The title is hands-on geni"
+    },
+    {
+      "start": 565.44,
+      "end": 570.0,
+      "text": "course. The description is something."
+    },
+    {
+      "start": 567.76,
+      "end": 571.6,
+      "text": "This is the content and if you go down"
+    },
+    {
+      "start": 570.0,
+      "end": 573.2,
+      "text": "you will be able to see the entire"
+    },
+    {
+      "start": 571.6,
+      "end": 575.2,
+      "text": "thing. You will be able to see that it"
+    },
+    {
+      "start": 573.2,
+      "end": 577.76,
+      "text": "is seven weeks. You will be able to see"
+    },
+    {
+      "start": 575.2,
+      "end": 580.08,
+      "text": "the entire curriculum. The entire FAQ"
+    },
+    {
+      "start": 577.76,
+      "end": 582.48,
+      "text": "section. You will be able to see the"
+    },
+    {
+      "start": 580.08,
+      "end": 586.44,
+      "text": "entire content of the page is now"
+    },
+    {
+      "start": 582.48,
+      "end": 586.44,
+      "text": "available in this documents."
+    },
+    {
+      "start": 587.68,
+      "end": 592.16,
+      "text": "Now that I have the entire page content"
+    },
+    {
+      "start": 589.839,
+      "end": 594.5600000000001,
+      "text": "available with me in this docs variable,"
+    },
+    {
+      "start": 592.16,
+      "end": 596.88,
+      "text": "do I store the entire docs as it is in"
+    },
+    {
+      "start": 594.56,
+      "end": 598.88,
+      "text": "the vector database? What do you think?"
+    },
+    {
+      "start": 596.88,
+      "end": 601.8389999999999,
+      "text": "Think about it. See, when I have to send"
+    },
+    {
+      "start": 598.88,
+      "end": 604.0,
+      "text": "some context to my data, to my LLM, do I"
+    },
+    {
+      "start": 601.839,
+      "end": 605.7600000000001,
+      "text": "send the entire content of the page?"
+    },
+    {
+      "start": 604.0,
+      "end": 608.08,
+      "text": "Think about it. Because our page can be"
+    },
+    {
+      "start": 605.76,
+      "end": 610.8,
+      "text": "huge. Currently, I'm scraping only the"
+    },
+    {
+      "start": 608.08,
+      "end": 612.08,
+      "text": "geni part. Maybe I'm scraping all the"
+    },
+    {
+      "start": 610.8,
+      "end": 614.88,
+      "text": "courses like I'm just scraping"
+    },
+    {
+      "start": 612.08,
+      "end": 616.72,
+      "text": "educes.com. then the information of all"
+    },
+    {
+      "start": 614.88,
+      "end": 618.88,
+      "text": "the courses is there. Now if someone is"
+    },
+    {
+      "start": 616.72,
+      "end": 620.8000000000001,
+      "text": "asking just about jennyang, do I send"
+    },
+    {
+      "start": 618.88,
+      "end": 623.68,
+      "text": "the information of all the courses to"
+    },
+    {
+      "start": 620.8,
+      "end": 625.4399999999999,
+      "text": "our LLM? No. Right? Why do I send so"
+    },
+    {
+      "start": 623.68,
+      "end": 627.04,
+      "text": "much of irrelevant information? If"
+    },
+    {
+      "start": 625.44,
+      "end": 629.12,
+      "text": "someone is asking about the duration of"
+    },
+    {
+      "start": 627.04,
+      "end": 631.76,
+      "text": "the course, why do I send the curriculum"
+    },
+    {
+      "start": 629.12,
+      "end": 633.6,
+      "text": "and the FAQ to the LLM? Right? It is"
+    },
+    {
+      "start": 631.76,
+      "end": 635.36,
+      "text": "just going to be too many tokens that I"
+    },
+    {
+      "start": 633.6,
+      "end": 637.6800000000001,
+      "text": "am sending to LLM. It is just going to"
+    },
+    {
+      "start": 635.36,
+      "end": 640.32,
+      "text": "be too much processing that I am making"
+    },
+    {
+      "start": 637.68,
+      "end": 642.079,
+      "text": "LLM do for no reason at all. So what do"
+    },
+    {
+      "start": 640.32,
+      "end": 643.7600000000001,
+      "text": "I want to do? I want to send just the"
+    },
+    {
+      "start": 642.079,
+      "end": 645.68,
+      "text": "relevant information which is going to"
+    },
+    {
+      "start": 643.76,
+      "end": 648.24,
+      "text": "be useful in answering the query to our"
+    },
+    {
+      "start": 645.68,
+      "end": 651.4399999999999,
+      "text": "LLM. So in order to do that I want to"
+    },
+    {
+      "start": 648.24,
+      "end": 654.0790000000001,
+      "text": "send just some part of this entire"
+    },
+    {
+      "start": 651.44,
+      "end": 656.5600000000001,
+      "text": "document right so it makes sense that I"
+    },
+    {
+      "start": 654.079,
+      "end": 658.959,
+      "text": "split this entire document into some"
+    },
+    {
+      "start": 656.56,
+      "end": 661.04,
+      "text": "chunks or into some splits and I save it"
+    },
+    {
+      "start": 658.959,
+      "end": 662.959,
+      "text": "in our vector database. So that is what"
+    },
+    {
+      "start": 661.04,
+      "end": 665.1999999999999,
+      "text": "we are going to be doing now. And how do"
+    },
+    {
+      "start": 662.959,
+      "end": 667.04,
+      "text": "I convert this entire data into splits?"
+    },
+    {
+      "start": 665.2,
+      "end": 669.12,
+      "text": "Again go back to the lang documentation."
+    },
+    {
+      "start": 667.04,
+      "end": 670.399,
+      "text": "And I'm just going back just below the"
+    },
+    {
+      "start": 669.12,
+      "end": 672.079,
+      "text": "document loaders, we have text"
+    },
+    {
+      "start": 670.399,
+      "end": 674.399,
+      "text": "splitters. And we have documentation"
+    },
+    {
+      "start": 672.079,
+      "end": 676.64,
+      "text": "about how to recursively split text, how"
+    },
+    {
+      "start": 674.399,
+      "end": 679.04,
+      "text": "to split HTML, how to split code, how to"
+    },
+    {
+      "start": 676.64,
+      "end": 681.279,
+      "text": "recursively split JSON and so on. So we"
+    },
+    {
+      "start": 679.04,
+      "end": 682.88,
+      "text": "just need to split our text, right? I'm"
+    },
+    {
+      "start": 681.279,
+      "end": 684.959,
+      "text": "going to be using recursive character"
+    },
+    {
+      "start": 682.88,
+      "end": 686.56,
+      "text": "text splitter. Again, very simple. I'm"
+    },
+    {
+      "start": 684.959,
+      "end": 688.4799999999999,
+      "text": "just going to be using the documentation"
+    },
+    {
+      "start": 686.56,
+      "end": 690.399,
+      "text": "itself. We are going to have something"
+    },
+    {
+      "start": 688.48,
+      "end": 692.32,
+      "text": "called chunk size and chunk overlap."
+    },
+    {
+      "start": 690.399,
+      "end": 694.32,
+      "text": "What is this chunk size from the name"
+    },
+    {
+      "start": 692.32,
+      "end": 695.7600000000001,
+      "text": "itself? How big we want our chunk to be."
+    },
+    {
+      "start": 694.32,
+      "end": 697.36,
+      "text": "Right? So here they have taken really"
+    },
+    {
+      "start": 695.76,
+      "end": 698.8,
+      "text": "small chunk size 100. We are going to"
+    },
+    {
+      "start": 697.36,
+      "end": 700.64,
+      "text": "take for demo. We are going to maybe"
+    },
+    {
+      "start": 698.8,
+      "end": 702.399,
+      "text": "take 1 th00and you can make it smaller"
+    },
+    {
+      "start": 700.64,
+      "end": 703.92,
+      "text": "obviously. They have also taken"
+    },
+    {
+      "start": 702.399,
+      "end": 706.0,
+      "text": "something called chunk overlap which"
+    },
+    {
+      "start": 703.92,
+      "end": 708.7199999999999,
+      "text": "they have kept 20. In our case maybe"
+    },
+    {
+      "start": 706.0,
+      "end": 711.04,
+      "text": "we'll keep 200. And let me explain you"
+    },
+    {
+      "start": 708.72,
+      "end": 713.839,
+      "text": "why do we need chunk overlap. Let's take"
+    },
+    {
+      "start": 711.04,
+      "end": 716.3199999999999,
+      "text": "an example. Suppose in my content"
+    },
+    {
+      "start": 713.839,
+      "end": 719.2,
+      "text": "currently I have it's a 7 weeks course."
+    },
+    {
+      "start": 716.32,
+      "end": 721.6800000000001,
+      "text": "Now suppose I split at between seven and"
+    },
+    {
+      "start": 719.2,
+      "end": 723.6,
+      "text": "weeks. Now seven is present in one chunk"
+    },
+    {
+      "start": 721.68,
+      "end": 726.399,
+      "text": "and weeks course is present in the other"
+    },
+    {
+      "start": 723.6,
+      "end": 728.72,
+      "text": "chunk. So now the context of seven weeks"
+    },
+    {
+      "start": 726.399,
+      "end": 731.279,
+      "text": "is neither present in chunk one nor nor"
+    },
+    {
+      "start": 728.72,
+      "end": 733.44,
+      "text": "chunk two. Right? So when I split in"
+    },
+    {
+      "start": 731.279,
+      "end": 735.2,
+      "text": "between I will need to do some"
+    },
+    {
+      "start": 733.44,
+      "end": 736.9590000000001,
+      "text": "processing to understand that okay this"
+    },
+    {
+      "start": 735.2,
+      "end": 738.5600000000001,
+      "text": "was seven which was there in chunk one"
+    },
+    {
+      "start": 736.959,
+      "end": 740.399,
+      "text": "and weeks which was present in chunk"
+    },
+    {
+      "start": 738.56,
+      "end": 742.079,
+      "text": "two. Instead of doing all of that,"
+    },
+    {
+      "start": 740.399,
+      "end": 744.079,
+      "text": "instead of making it more complex, we"
+    },
+    {
+      "start": 742.079,
+      "end": 746.2399999999999,
+      "text": "just have some overlap of chunks. So"
+    },
+    {
+      "start": 744.079,
+      "end": 748.3199999999999,
+      "text": "that the last 200 characters that were"
+    },
+    {
+      "start": 746.24,
+      "end": 750.0790000000001,
+      "text": "there in the say chunk one will also be"
+    },
+    {
+      "start": 748.32,
+      "end": 751.6800000000001,
+      "text": "there in the starting of the chunk two."
+    },
+    {
+      "start": 750.079,
+      "end": 754.0,
+      "text": "So like this, you're making sure that"
+    },
+    {
+      "start": 751.68,
+      "end": 755.5999999999999,
+      "text": "context is present. If if needed, you"
+    },
+    {
+      "start": 754.0,
+      "end": 757.76,
+      "text": "can send both chunk one, chunk two to"
+    },
+    {
+      "start": 755.6,
+      "end": 759.36,
+      "text": "lm. That is okay. But you're just saving"
+    },
+    {
+      "start": 757.76,
+      "end": 761.36,
+      "text": "on your computation and you're making"
+    },
+    {
+      "start": 759.36,
+      "end": 762.8000000000001,
+      "text": "sure that the entire context is present."
+    },
+    {
+      "start": 761.36,
+      "end": 765.04,
+      "text": "Just to give you another example,"
+    },
+    {
+      "start": 762.8,
+      "end": 767.92,
+      "text": "suppose my text was no prerequisite"
+    },
+    {
+      "start": 765.04,
+      "end": 770.3199999999999,
+      "text": "needed. And I split the chunks between"
+    },
+    {
+      "start": 767.92,
+      "end": 772.079,
+      "text": "no and prerequisite needed. So in my"
+    },
+    {
+      "start": 770.32,
+      "end": 774.1600000000001,
+      "text": "second chunk, we have prerequisite"
+    },
+    {
+      "start": 772.079,
+      "end": 775.5999999999999,
+      "text": "needed and no went in the first chunk."
+    },
+    {
+      "start": 774.16,
+      "end": 778.24,
+      "text": "You get the point that the entire"
+    },
+    {
+      "start": 775.6,
+      "end": 780.72,
+      "text": "context is lots, right? So it makes"
+    },
+    {
+      "start": 778.24,
+      "end": 782.399,
+      "text": "sense that I have some overlap between"
+    },
+    {
+      "start": 780.72,
+      "end": 784.48,
+      "text": "the chunks. I hope that part is clear."
+    },
+    {
+      "start": 782.399,
+      "end": 786.24,
+      "text": "If not, let me know in the comments and"
+    },
+    {
+      "start": 784.48,
+      "end": 787.839,
+      "text": "think of different examples for which"
+    },
+    {
+      "start": 786.24,
+      "end": 789.6,
+      "text": "you know chunk overlap would make a lot"
+    },
+    {
+      "start": 787.839,
+      "end": 793.2,
+      "text": "of sense. So let's get back to writing"
+    },
+    {
+      "start": 789.6,
+      "end": 794.839,
+      "text": "our code. And from lang chain I am going"
+    },
+    {
+      "start": 793.2,
+      "end": 798.839,
+      "text": "to be using text"
+    },
+    {
+      "start": 794.839,
+      "end": 801.839,
+      "text": "splitters and I'm going to be importing"
+    },
+    {
+      "start": 798.839,
+      "end": 804.9590000000001,
+      "text": "recursive character text splitter and"
+    },
+    {
+      "start": 801.839,
+      "end": 804.9590000000001,
+      "text": "I'm going to be creating the"
+    },
+    {
+      "start": 805.16,
+      "end": 811.68,
+      "text": "splitter and chunk size as we discussed"
+    },
+    {
+      "start": 808.16,
+      "end": 811.68,
+      "text": "I'm probably going to give say"
+    },
+    {
+      "start": 812.44,
+      "end": 819.9590000000001,
+      "text": "1,000. You could also give chunk overlap"
+    },
+    {
+      "start": 815.12,
+      "end": 819.9590000000001,
+      "text": "is zero but I am giving it as 200."
+    },
+    {
+      "start": 820.72,
+      "end": 825.9200000000001,
+      "text": "And here we have these"
+    },
+    {
+      "start": 823.24,
+      "end": 828.16,
+      "text": "splits. And it is as simple as that. You"
+    },
+    {
+      "start": 825.92,
+      "end": 830.3199999999999,
+      "text": "can also print your splits. So let's see"
+    },
+    {
+      "start": 828.16,
+      "end": 832.639,
+      "text": "how our splits look like. So suppose you"
+    },
+    {
+      "start": 830.32,
+      "end": 836.279,
+      "text": "want to see splits of zero, splits of"
+    },
+    {
+      "start": 832.639,
+      "end": 839.04,
+      "text": "one. You can just check it out like"
+    },
+    {
+      "start": 836.279,
+      "end": 840.56,
+      "text": "this. So this is the first split and"
+    },
+    {
+      "start": 839.04,
+      "end": 842.079,
+      "text": "this is going to be of thousand"
+    },
+    {
+      "start": 840.56,
+      "end": 844.8,
+      "text": "characters and there's going to be some"
+    },
+    {
+      "start": 842.079,
+      "end": 847.3599999999999,
+      "text": "overlap. So if you see in the end part"
+    },
+    {
+      "start": 844.8,
+      "end": 851.4399999999999,
+      "text": "there was uh tensorboard mini project"
+    },
+    {
+      "start": 847.36,
+      "end": 853.36,
+      "text": "implement GAN uh two handwritten digents"
+    },
+    {
+      "start": 851.44,
+      "end": 856.0790000000001,
+      "text": "and then it was starting with mini"
+    },
+    {
+      "start": 853.36,
+      "end": 859.36,
+      "text": "project something I think and then if we"
+    },
+    {
+      "start": 856.079,
+      "end": 861.76,
+      "text": "come to the starting of this you can see"
+    },
+    {
+      "start": 859.36,
+      "end": 864.0790000000001,
+      "text": "the GAN part is going to be there again."
+    },
+    {
+      "start": 861.76,
+      "end": 865.76,
+      "text": "So you can say implement a GAN to uh"
+    },
+    {
+      "start": 864.079,
+      "end": 867.279,
+      "text": "generate handwritten digits mini"
+    },
+    {
+      "start": 865.76,
+      "end": 869.12,
+      "text": "project. The next one is coming like"
+    },
+    {
+      "start": 867.279,
+      "end": 871.4399999999999,
+      "text": "this. Right? So there is some overlap."
+    },
+    {
+      "start": 869.12,
+      "end": 873.6,
+      "text": "So the entire VA part was ending over"
+    },
+    {
+      "start": 871.44,
+      "end": 875.0400000000001,
+      "text": "there and then the after that GAN part"
+    },
+    {
+      "start": 873.6,
+      "end": 876.48,
+      "text": "started again. So there is some overlap"
+    },
+    {
+      "start": 875.04,
+      "end": 877.8389999999999,
+      "text": "between chunk one and chunk two."
+    },
+    {
+      "start": 876.48,
+      "end": 879.279,
+      "text": "Similarly it's going to be there for the"
+    },
+    {
+      "start": 877.839,
+      "end": 881.12,
+      "text": "rest of the chunks also. I hope you"
+    },
+    {
+      "start": 879.279,
+      "end": 882.88,
+      "text": "understood that point. But also if you"
+    },
+    {
+      "start": 881.12,
+      "end": 884.8,
+      "text": "want to see the total number of splits"
+    },
+    {
+      "start": 882.88,
+      "end": 887.199,
+      "text": "it is as simple as just printing the"
+    },
+    {
+      "start": 884.8,
+      "end": 889.279,
+      "text": "length of the splits. So if we see that"
+    },
+    {
+      "start": 887.199,
+      "end": 890.959,
+      "text": "the total number of splits is 11. So you"
+    },
+    {
+      "start": 889.279,
+      "end": 892.959,
+      "text": "can actually try printing all of the"
+    },
+    {
+      "start": 890.959,
+      "end": 894.88,
+      "text": "splits and you can see right so you can"
+    },
+    {
+      "start": 892.959,
+      "end": 896.6389999999999,
+      "text": "also write like a for loop or something"
+    },
+    {
+      "start": 894.88,
+      "end": 898.32,
+      "text": "there just right so here you can see"
+    },
+    {
+      "start": 896.639,
+      "end": 900.48,
+      "text": "again you will be able to see some"
+    },
+    {
+      "start": 898.32,
+      "end": 902.0,
+      "text": "overlap between this and the last one so"
+    },
+    {
+      "start": 900.48,
+      "end": 905.279,
+      "text": "here you can see it is starting from"
+    },
+    {
+      "start": 902.0,
+      "end": 908.959,
+      "text": "nodes state graph so in the second split"
+    },
+    {
+      "start": 905.279,
+      "end": 910.8389999999999,
+      "text": "if I go over here there should be nodes"
+    },
+    {
+      "start": 908.959,
+      "end": 914.3199999999999,
+      "text": "so I'm basically talking"
+    },
+    {
+      "start": 910.839,
+      "end": 916.0790000000001,
+      "text": "about graph and let's see so you can see"
+    },
+    {
+      "start": 914.32,
+      "end": 918.32,
+      "text": "right lang graph nodes a state state"
+    },
+    {
+      "start": 916.079,
+      "end": 919.5999999999999,
+      "text": "graph so you can see the simple Q&A"
+    },
+    {
+      "start": 918.32,
+      "end": 921.519,
+      "text": "application ation that is going to be"
+    },
+    {
+      "start": 919.6,
+      "end": 924.8000000000001,
+      "text": "present in this particular third chunk"
+    },
+    {
+      "start": 921.519,
+      "end": 924.8,
+      "text": "as well. So you can see that"
+    },
+    {
+      "start": 925.56,
+      "end": 930.399,
+      "text": "right now that we have the splits is"
+    },
+    {
+      "start": 928.16,
+      "end": 931.8389999999999,
+      "text": "time that we add these splits into a"
+    },
+    {
+      "start": 930.399,
+      "end": 934.72,
+      "text": "vector database. We are going to be"
+    },
+    {
+      "start": 931.839,
+      "end": 936.9590000000001,
+      "text": "using chromb. But see again these splits"
+    },
+    {
+      "start": 934.72,
+      "end": 938.72,
+      "text": "are just text and vector database from"
+    },
+    {
+      "start": 936.959,
+      "end": 941.5189999999999,
+      "text": "the name itself we are supposed to store"
+    },
+    {
+      "start": 938.72,
+      "end": 943.44,
+      "text": "vectors right everything internally in"
+    },
+    {
+      "start": 941.519,
+      "end": 945.6,
+      "text": "mli is basically numbers it's all"
+    },
+    {
+      "start": 943.44,
+      "end": 947.6,
+      "text": "vectors. So what do we need to do these"
+    },
+    {
+      "start": 945.6,
+      "end": 949.6,
+      "text": "splits we need to embed them into"
+    },
+    {
+      "start": 947.6,
+      "end": 951.6800000000001,
+      "text": "vectors and we need to store them in a"
+    },
+    {
+      "start": 949.6,
+      "end": 953.759,
+      "text": "database. It sounds fancy. It's actually"
+    },
+    {
+      "start": 951.68,
+      "end": 957.12,
+      "text": "very simple. We are just converting this"
+    },
+    {
+      "start": 953.759,
+      "end": 959.6,
+      "text": "text into numbers into vectors and we"
+    },
+    {
+      "start": 957.12,
+      "end": 962.5600000000001,
+      "text": "are trying to understand the meaning of"
+    },
+    {
+      "start": 959.6,
+      "end": 964.72,
+      "text": "the words in that. Okay. And we are"
+    },
+    {
+      "start": 962.56,
+      "end": 966.2399999999999,
+      "text": "going to be using everything from"
+    },
+    {
+      "start": 964.72,
+      "end": 968.0790000000001,
+      "text": "libraries. So it's not like we have to"
+    },
+    {
+      "start": 966.24,
+      "end": 970.0790000000001,
+      "text": "write the code for that. Oh, it's giving"
+    },
+    {
+      "start": 968.079,
+      "end": 972.4799999999999,
+      "text": "me autocomplete. So let's actually do"
+    },
+    {
+      "start": 970.079,
+      "end": 975.04,
+      "text": "that. So I'm going to be using chromb"
+    },
+    {
+      "start": 972.48,
+      "end": 977.1990000000001,
+      "text": "and here I'm using openi embeddings to"
+    },
+    {
+      "start": 975.04,
+      "end": 979.279,
+      "text": "convert our splits into embeddings."
+    },
+    {
+      "start": 977.199,
+      "end": 982.24,
+      "text": "Okay. So this is what we are going to"
+    },
+    {
+      "start": 979.279,
+      "end": 984.0,
+      "text": "use to convert this textual information"
+    },
+    {
+      "start": 982.24,
+      "end": 986.0790000000001,
+      "text": "into numbers into vectors. We are"
+    },
+    {
+      "start": 984.0,
+      "end": 988.24,
+      "text": "embedding these texts. Okay. And we are"
+    },
+    {
+      "start": 986.079,
+      "end": 991.279,
+      "text": "embedding splits and that is what we are"
+    },
+    {
+      "start": 988.24,
+      "end": 993.12,
+      "text": "storing in a vector store. So after this"
+    },
+    {
+      "start": 991.279,
+      "end": 995.519,
+      "text": "we have the information present in a"
+    },
+    {
+      "start": 993.12,
+      "end": 998.88,
+      "text": "vector DB. And once we have that we can"
+    },
+    {
+      "start": 995.519,
+      "end": 1000.639,
+      "text": "actually also print the collection to"
+    },
+    {
+      "start": 998.88,
+      "end": 1004.36,
+      "text": "see that how it is right. So in our"
+    },
+    {
+      "start": 1000.639,
+      "end": 1007.04,
+      "text": "vector store if you want to see the"
+    },
+    {
+      "start": 1004.36,
+      "end": 1008.6800000000001,
+      "text": "collection and if we see the suppose"
+    },
+    {
+      "start": 1007.04,
+      "end": 1012.079,
+      "text": "count of"
+    },
+    {
+      "start": 1008.68,
+      "end": 1014.3199999999999,
+      "text": "it you can see there are 11 splits"
+    },
+    {
+      "start": 1012.079,
+      "end": 1016.6389999999999,
+      "text": "embedded and stored over here. Right? If"
+    },
+    {
+      "start": 1014.32,
+      "end": 1019.759,
+      "text": "you also want to see so instead of the"
+    },
+    {
+      "start": 1016.639,
+      "end": 1023.279,
+      "text": "count if you also want to see the uh"
+    },
+    {
+      "start": 1019.759,
+      "end": 1026.079,
+      "text": "suppose ids of these collections. So if"
+    },
+    {
+      "start": 1023.279,
+      "end": 1028.64,
+      "text": "I just do this these are the ids for the"
+    },
+    {
+      "start": 1026.079,
+      "end": 1030.48,
+      "text": "11 splits that we had embedded into"
+    },
+    {
+      "start": 1028.64,
+      "end": 1032.679,
+      "text": "vector store. And if you also want to"
+    },
+    {
+      "start": 1030.48,
+      "end": 1035.28,
+      "text": "print it, we can also print the"
+    },
+    {
+      "start": 1032.679,
+      "end": 1038.3190000000002,
+      "text": "collections. And I'm just printing the"
+    },
+    {
+      "start": 1035.28,
+      "end": 1038.319,
+      "text": "first collection for"
+    },
+    {
+      "start": 1041.079,
+      "end": 1045.1599999999999,
+      "text": "now. And I'm just giving the ID of the"
+    },
+    {
+      "start": 1044.079,
+      "end": 1048.0,
+      "text": "first"
+    },
+    {
+      "start": 1045.16,
+      "end": 1049.76,
+      "text": "collection. And in Chroma database, so"
+    },
+    {
+      "start": 1048.0,
+      "end": 1052.4,
+      "text": "it stores in different values the"
+    },
+    {
+      "start": 1049.76,
+      "end": 1054.559,
+      "text": "embeddings in and the documents. So here"
+    },
+    {
+      "start": 1052.4,
+      "end": 1056.3200000000002,
+      "text": "I'm just going to tell it to include the"
+    },
+    {
+      "start": 1054.559,
+      "end": 1058.16,
+      "text": "embeddings. So I want to see the"
+    },
+    {
+      "start": 1056.32,
+      "end": 1059.6,
+      "text": "embeddings and the documents over here."
+    },
+    {
+      "start": 1058.16,
+      "end": 1061.2,
+      "text": "So you can see if you want to see the"
+    },
+    {
+      "start": 1059.6,
+      "end": 1064.6399999999999,
+      "text": "metadata as the document. So you can"
+    },
+    {
+      "start": 1061.2,
+      "end": 1064.64,
+      "text": "just give what all you want to"
+    },
+    {
+      "start": 1064.919,
+      "end": 1069.6000000000001,
+      "text": "see. So you can see this is the"
+    },
+    {
+      "start": 1067.2,
+      "end": 1071.76,
+      "text": "embedding. So this is the array and in"
+    },
+    {
+      "start": 1069.6,
+      "end": 1074.32,
+      "text": "the document you can see the entire"
+    },
+    {
+      "start": 1071.76,
+      "end": 1076.64,
+      "text": "document. So document is basically the"
+    },
+    {
+      "start": 1074.32,
+      "end": 1078.6399999999999,
+      "text": "original text that you had that is"
+    },
+    {
+      "start": 1076.64,
+      "end": 1080.48,
+      "text": "embedded and stored into the embedding."
+    },
+    {
+      "start": 1078.64,
+      "end": 1082.16,
+      "text": "So like this you can also try printing"
+    },
+    {
+      "start": 1080.48,
+      "end": 1083.679,
+      "text": "for multiple collections for any of the"
+    },
+    {
+      "start": 1082.16,
+      "end": 1086.24,
+      "text": "collections in fact and you can try"
+    },
+    {
+      "start": 1083.679,
+      "end": 1089.2,
+      "text": "checking it out. So okay let me just"
+    },
+    {
+      "start": 1086.24,
+      "end": 1089.2,
+      "text": "change this"
+    },
+    {
+      "start": 1091.679,
+      "end": 1095.76,
+      "text": "So like this you can see that these are"
+    },
+    {
+      "start": 1093.52,
+      "end": 1098.48,
+      "text": "the embeddings for these particular"
+    },
+    {
+      "start": 1095.76,
+      "end": 1100.32,
+      "text": "chunks. So it is only creating the ID."
+    },
+    {
+      "start": 1098.48,
+      "end": 1101.6,
+      "text": "It is only saving the documents and"
+    },
+    {
+      "start": 1100.32,
+      "end": 1104.8799999999999,
+      "text": "embedding. So how are we doing the"
+    },
+    {
+      "start": 1101.6,
+      "end": 1104.8799999999999,
+      "text": "embedding? Using open"
+    },
+    {
+      "start": 1105.96,
+      "end": 1111.2,
+      "text": "embedding till now I was just adding the"
+    },
+    {
+      "start": 1109.039,
+      "end": 1112.559,
+      "text": "information into my vector database. So"
+    },
+    {
+      "start": 1111.2,
+      "end": 1114.16,
+      "text": "you might already have the information"
+    },
+    {
+      "start": 1112.559,
+      "end": 1116.16,
+      "text": "in vector database and you might not"
+    },
+    {
+      "start": 1114.16,
+      "end": 1118.48,
+      "text": "need to do all of this. Now I'm going to"
+    },
+    {
+      "start": 1116.16,
+      "end": 1120.72,
+      "text": "get started with the rack pipeline. So I"
+    },
+    {
+      "start": 1118.48,
+      "end": 1123.3600000000001,
+      "text": "need this vector store to act as my"
+    },
+    {
+      "start": 1120.72,
+      "end": 1126.48,
+      "text": "retriever. So I'm just going to create a"
+    },
+    {
+      "start": 1123.36,
+      "end": 1130.0,
+      "text": "variable retriever and I'm going to make"
+    },
+    {
+      "start": 1126.48,
+      "end": 1131.32,
+      "text": "my vector store act as retriever. That's"
+    },
+    {
+      "start": 1130.0,
+      "end": 1133.84,
+      "text": "it. As simple as"
+    },
+    {
+      "start": 1131.32,
+      "end": 1137.039,
+      "text": "that. And what is the next step that I"
+    },
+    {
+      "start": 1133.84,
+      "end": 1137.039,
+      "text": "need to do? I need to do the"
+    },
+    {
+      "start": 1138.36,
+      "end": 1142.559,
+      "text": "augmentation. For augmentation, what do"
+    },
+    {
+      "start": 1140.64,
+      "end": 1144.3200000000002,
+      "text": "we need to do? See in our vector"
+    },
+    {
+      "start": 1142.559,
+      "end": 1146.08,
+      "text": "database, there is a lot of documents."
+    },
+    {
+      "start": 1144.32,
+      "end": 1148.24,
+      "text": "Now we are going to fetch the relevant"
+    },
+    {
+      "start": 1146.08,
+      "end": 1150.24,
+      "text": "document and along with the question"
+    },
+    {
+      "start": 1148.24,
+      "end": 1152.96,
+      "text": "that we are getting we are going to send"
+    },
+    {
+      "start": 1150.24,
+      "end": 1155.52,
+      "text": "this context this relevant documentation"
+    },
+    {
+      "start": 1152.96,
+      "end": 1157.6000000000001,
+      "text": "to our LLM. Correct? Now see we can"
+    },
+    {
+      "start": 1155.52,
+      "end": 1158.8799999999999,
+      "text": "create our own prompt and send to LLM"
+    },
+    {
+      "start": 1157.6,
+      "end": 1161.4399999999998,
+      "text": "that see this is the question this is"
+    },
+    {
+      "start": 1158.88,
+      "end": 1163.0390000000002,
+      "text": "the context but there are lot of prompts"
+    },
+    {
+      "start": 1161.44,
+      "end": 1165.28,
+      "text": "that are already available and I just"
+    },
+    {
+      "start": 1163.039,
+      "end": 1167.2,
+      "text": "wanted to show it to you. See in lang"
+    },
+    {
+      "start": 1165.28,
+      "end": 1169.12,
+      "text": "itself if you see there are so many"
+    },
+    {
+      "start": 1167.2,
+      "end": 1171.1200000000001,
+      "text": "prompts that are available. So we are"
+    },
+    {
+      "start": 1169.12,
+      "end": 1172.8799999999999,
+      "text": "going to be using this rack prompt. You"
+    },
+    {
+      "start": 1171.12,
+      "end": 1175.1999999999998,
+      "text": "could actually just copy this and you"
+    },
+    {
+      "start": 1172.88,
+      "end": 1177.5200000000002,
+      "text": "could write it yourself also. But I want"
+    },
+    {
+      "start": 1175.2,
+      "end": 1179.52,
+      "text": "to also show you how you can use the"
+    },
+    {
+      "start": 1177.52,
+      "end": 1181.6,
+      "text": "prompts that are available in the hub."
+    },
+    {
+      "start": 1179.52,
+      "end": 1183.2,
+      "text": "So what this is saying is that you are"
+    },
+    {
+      "start": 1181.6,
+      "end": 1185.1999999999998,
+      "text": "an assistant for question answering"
+    },
+    {
+      "start": 1183.2,
+      "end": 1186.72,
+      "text": "task. So this is the question, this is"
+    },
+    {
+      "start": 1185.2,
+      "end": 1189.28,
+      "text": "the context and you're supposed to"
+    },
+    {
+      "start": 1186.72,
+      "end": 1191.52,
+      "text": "answer in three sentences maximum and"
+    },
+    {
+      "start": 1189.28,
+      "end": 1193.28,
+      "text": "keep the answer concise. So you can also"
+    },
+    {
+      "start": 1191.52,
+      "end": 1195.76,
+      "text": "write your own prompt. You can say that"
+    },
+    {
+      "start": 1193.28,
+      "end": 1198.48,
+      "text": "no I want a more detailed information or"
+    },
+    {
+      "start": 1195.76,
+      "end": 1199.679,
+      "text": "I want maybe three-word answer or"
+    },
+    {
+      "start": 1198.48,
+      "end": 1201.679,
+      "text": "something like that. Whatever you want,"
+    },
+    {
+      "start": 1199.679,
+      "end": 1203.679,
+      "text": "right? You can customize your own prompt"
+    },
+    {
+      "start": 1201.679,
+      "end": 1205.039,
+      "text": "and you can write your own prompt. I"
+    },
+    {
+      "start": 1203.679,
+      "end": 1207.6000000000001,
+      "text": "just want to show you that there are"
+    },
+    {
+      "start": 1205.039,
+      "end": 1209.44,
+      "text": "prompts available in the hub and you can"
+    },
+    {
+      "start": 1207.6,
+      "end": 1211.1999999999998,
+      "text": "just use them like this. Okay. So we are"
+    },
+    {
+      "start": 1209.44,
+      "end": 1212.88,
+      "text": "going to be using them like this. I'm"
+    },
+    {
+      "start": 1211.2,
+      "end": 1215.76,
+      "text": "again saying it you this is just"
+    },
+    {
+      "start": 1212.88,
+      "end": 1218.48,
+      "text": "basically copy paste of text. So I can"
+    },
+    {
+      "start": 1215.76,
+      "end": 1220.64,
+      "text": "copy it and I can create a prompt or I"
+    },
+    {
+      "start": 1218.48,
+      "end": 1222.24,
+      "text": "can use it from the hub as it is. So"
+    },
+    {
+      "start": 1220.64,
+      "end": 1225.919,
+      "text": "let's write the code for pulling the"
+    },
+    {
+      "start": 1222.24,
+      "end": 1229.44,
+      "text": "prompt. And from lang chain itself I'm"
+    },
+    {
+      "start": 1225.919,
+      "end": 1235.0,
+      "text": "going to be importing hub and we are"
+    },
+    {
+      "start": 1229.44,
+      "end": 1238.0800000000002,
+      "text": "going to be pulling the prompt from the"
+    },
+    {
+      "start": 1235.0,
+      "end": 1240.24,
+      "text": "hub and let's run this. So we have the"
+    },
+    {
+      "start": 1238.08,
+      "end": 1242.799,
+      "text": "prompt now. Now now we need to send this"
+    },
+    {
+      "start": 1240.24,
+      "end": 1245.2,
+      "text": "prompt to whom to our LLM. So we need to"
+    },
+    {
+      "start": 1242.799,
+      "end": 1245.2,
+      "text": "use our"
+    },
+    {
+      "start": 1245.88,
+      "end": 1250.159,
+      "text": "LLM. We are going to be using GPT as our"
+    },
+    {
+      "start": 1248.799,
+      "end": 1252.72,
+      "text": "LLM. So we are going to be using"
+    },
+    {
+      "start": 1250.159,
+      "end": 1257.1200000000001,
+      "text": "OpenAI's LLM. So let me just quickly"
+    },
+    {
+      "start": 1252.72,
+      "end": 1259.6000000000001,
+      "text": "create the LLM. So we are using open AI"
+    },
+    {
+      "start": 1257.12,
+      "end": 1261.6,
+      "text": "and whenever we need to talk to LLMs,"
+    },
+    {
+      "start": 1259.6,
+      "end": 1263.6,
+      "text": "what do we create? CH chat models. We"
+    },
+    {
+      "start": 1261.6,
+      "end": 1266.32,
+      "text": "have covered this in multiple videos. So"
+    },
+    {
+      "start": 1263.6,
+      "end": 1267.9189999999999,
+      "text": "I hope this should be clear now. If not,"
+    },
+    {
+      "start": 1266.32,
+      "end": 1269.52,
+      "text": "check out the lang and the langraph"
+    },
+    {
+      "start": 1267.919,
+      "end": 1271.5200000000002,
+      "text": "videos. You should be clear with these"
+    },
+    {
+      "start": 1269.52,
+      "end": 1274.24,
+      "text": "concepts. And we can just create the"
+    },
+    {
+      "start": 1271.52,
+      "end": 1275.76,
+      "text": "chat model for chat open AI, right? And"
+    },
+    {
+      "start": 1274.24,
+      "end": 1278.08,
+      "text": "uh we can give the model name and the"
+    },
+    {
+      "start": 1275.76,
+      "end": 1279.919,
+      "text": "temperature or we can just do this. And"
+    },
+    {
+      "start": 1278.08,
+      "end": 1283.52,
+      "text": "we are going to use the default values."
+    },
+    {
+      "start": 1279.919,
+      "end": 1286.72,
+      "text": "So we have our LLM. Now we are ready to"
+    },
+    {
+      "start": 1283.52,
+      "end": 1286.72,
+      "text": "create our rack"
+    },
+    {
+      "start": 1287.559,
+      "end": 1292.1589999999999,
+      "text": "chain. What do we send to our LM? We"
+    },
+    {
+      "start": 1290.32,
+      "end": 1294.3999999999999,
+      "text": "send the prompt. And what does our"
+    },
+    {
+      "start": 1292.159,
+      "end": 1296.4,
+      "text": "prompt need? So if we go to the prompt"
+    },
+    {
+      "start": 1294.4,
+      "end": 1298.64,
+      "text": "that we are using, we need the question"
+    },
+    {
+      "start": 1296.4,
+      "end": 1300.0,
+      "text": "and the context. So first we need the"
+    },
+    {
+      "start": 1298.64,
+      "end": 1302.0,
+      "text": "context. From where are we going to get"
+    },
+    {
+      "start": 1300.0,
+      "end": 1304.0,
+      "text": "the context? From our retriever. So the"
+    },
+    {
+      "start": 1302.0,
+      "end": 1306.559,
+      "text": "first thing that I need to do is have"
+    },
+    {
+      "start": 1304.0,
+      "end": 1309.919,
+      "text": "the variables that I need to send to our"
+    },
+    {
+      "start": 1306.559,
+      "end": 1312.559,
+      "text": "prompt. So I need to send context."
+    },
+    {
+      "start": 1309.919,
+      "end": 1315.44,
+      "text": "So I need to send context and that I'm"
+    },
+    {
+      "start": 1312.559,
+      "end": 1317.12,
+      "text": "going to get from the retriever. Right?"
+    },
+    {
+      "start": 1315.44,
+      "end": 1318.88,
+      "text": "Other than this what do I need to send?"
+    },
+    {
+      "start": 1317.12,
+      "end": 1320.559,
+      "text": "I need to send the question. So I am"
+    },
+    {
+      "start": 1318.88,
+      "end": 1322.64,
+      "text": "sending it in a dictionary. Right? So"
+    },
+    {
+      "start": 1320.559,
+      "end": 1324.48,
+      "text": "here you can see I have to send context"
+    },
+    {
+      "start": 1322.64,
+      "end": 1326.159,
+      "text": "and question. So I am sending these"
+    },
+    {
+      "start": 1324.48,
+      "end": 1328.84,
+      "text": "values in a dictionary. So I have the"
+    },
+    {
+      "start": 1326.159,
+      "end": 1331.5200000000002,
+      "text": "context now. Now I need to send the"
+    },
+    {
+      "start": 1328.84,
+      "end": 1334.0,
+      "text": "question. See whenever we need to just"
+    },
+    {
+      "start": 1331.52,
+      "end": 1335.84,
+      "text": "pass the input as it is. So our question"
+    },
+    {
+      "start": 1334.0,
+      "end": 1337.84,
+      "text": "is going to be the input. Whenever we"
+    },
+    {
+      "start": 1335.84,
+      "end": 1339.4399999999998,
+      "text": "just need to pass the input as it is, we"
+    },
+    {
+      "start": 1337.84,
+      "end": 1341.36,
+      "text": "use something called runnable pass"
+    },
+    {
+      "start": 1339.44,
+      "end": 1344.159,
+      "text": "through. So let me just quickly import"
+    },
+    {
+      "start": 1341.36,
+      "end": 1345.6789999999999,
+      "text": "that. So in lang itself there are a lot"
+    },
+    {
+      "start": 1344.159,
+      "end": 1347.1200000000001,
+      "text": "of runnables that are available. So"
+    },
+    {
+      "start": 1345.679,
+      "end": 1349.039,
+      "text": "langchain concepts are very very"
+    },
+    {
+      "start": 1347.12,
+      "end": 1351.28,
+      "text": "important over here. So whenever you"
+    },
+    {
+      "start": 1349.039,
+      "end": 1353.12,
+      "text": "just need to pass the question as it is,"
+    },
+    {
+      "start": 1351.28,
+      "end": 1355.52,
+      "text": "whatever is there, whatever you need to"
+    },
+    {
+      "start": 1353.12,
+      "end": 1357.84,
+      "text": "pass as it is, you use something called"
+    },
+    {
+      "start": 1355.52,
+      "end": 1359.44,
+      "text": "runnable pass through. So it is a"
+    },
+    {
+      "start": 1357.84,
+      "end": 1361.1999999999998,
+      "text": "runnable. So basically a task that"
+    },
+    {
+      "start": 1359.44,
+      "end": 1363.1200000000001,
+      "text": "you're going to be running where we are"
+    },
+    {
+      "start": 1361.2,
+      "end": 1365.52,
+      "text": "just passing through the information,"
+    },
+    {
+      "start": 1363.12,
+      "end": 1367.4399999999998,
+      "text": "right? So here because I need to pass"
+    },
+    {
+      "start": 1365.52,
+      "end": 1369.679,
+      "text": "the question I am using runnable pass"
+    },
+    {
+      "start": 1367.44,
+      "end": 1372.0800000000002,
+      "text": "through. Now another point over here is"
+    },
+    {
+      "start": 1369.679,
+      "end": 1374.88,
+      "text": "that whatever I'm going to be retrieving"
+    },
+    {
+      "start": 1372.08,
+      "end": 1376.96,
+      "text": "from my vector store. It doesn't have to"
+    },
+    {
+      "start": 1374.88,
+      "end": 1378.24,
+      "text": "be a single document. Maybe I'm asking"
+    },
+    {
+      "start": 1376.96,
+      "end": 1380.08,
+      "text": "something maybe I'm asking the"
+    },
+    {
+      "start": 1378.24,
+      "end": 1381.76,
+      "text": "curriculum for all the five weeks. So"
+    },
+    {
+      "start": 1380.08,
+      "end": 1383.52,
+      "text": "the curriculum might be present in"
+    },
+    {
+      "start": 1381.76,
+      "end": 1386.1589999999999,
+      "text": "multiple splits instead of just one"
+    },
+    {
+      "start": 1383.52,
+      "end": 1389.2,
+      "text": "split. Right? So whatever context I'm"
+    },
+    {
+      "start": 1386.159,
+      "end": 1391.2,
+      "text": "getting I need to join these relevant"
+    },
+    {
+      "start": 1389.2,
+      "end": 1393.919,
+      "text": "splits. So maybe there were a total of"
+    },
+    {
+      "start": 1391.2,
+      "end": 1396.799,
+      "text": "thousand splits and from that I got say"
+    },
+    {
+      "start": 1393.919,
+      "end": 1399.039,
+      "text": "five or four relevant splits right now I"
+    },
+    {
+      "start": 1396.799,
+      "end": 1401.36,
+      "text": "need to join them and send them together"
+    },
+    {
+      "start": 1399.039,
+      "end": 1403.84,
+      "text": "to in my context right it is not like"
+    },
+    {
+      "start": 1401.36,
+      "end": 1406.1589999999999,
+      "text": "I'm sending a list of four or five"
+    },
+    {
+      "start": 1403.84,
+      "end": 1408.08,
+      "text": "different splits so our rack chain I"
+    },
+    {
+      "start": 1406.159,
+      "end": 1409.919,
+      "text": "just need to send the context so the"
+    },
+    {
+      "start": 1408.08,
+      "end": 1411.84,
+      "text": "entire whatever is the context so"
+    },
+    {
+      "start": 1409.919,
+      "end": 1414.7990000000002,
+      "text": "whatever relevant information I got from"
+    },
+    {
+      "start": 1411.84,
+      "end": 1416.3999999999999,
+      "text": "the vector store I need to join that and"
+    },
+    {
+      "start": 1414.799,
+      "end": 1418.8799999999999,
+      "text": "send it in the context I'm repeating"
+    },
+    {
+      "start": 1416.4,
+      "end": 1421.52,
+      "text": "that see in our splits right now in our"
+    },
+    {
+      "start": 1418.88,
+      "end": 1423.1200000000001,
+      "text": "case we 11 splits. In real cases, maybe"
+    },
+    {
+      "start": 1421.52,
+      "end": 1425.6399999999999,
+      "text": "we have a lot of data. We have say"
+    },
+    {
+      "start": 1423.12,
+      "end": 1428.2399999999998,
+      "text": "thousand splits and the relevant"
+    },
+    {
+      "start": 1425.64,
+      "end": 1430.4,
+      "text": "information might be in say four to five"
+    },
+    {
+      "start": 1428.24,
+      "end": 1432.4,
+      "text": "splits. So I need to join this relevant"
+    },
+    {
+      "start": 1430.4,
+      "end": 1434.64,
+      "text": "information and send it together in this"
+    },
+    {
+      "start": 1432.4,
+      "end": 1437.2800000000002,
+      "text": "context. So I need to do that joining"
+    },
+    {
+      "start": 1434.64,
+      "end": 1439.76,
+      "text": "also. Right? So here I have whatever the"
+    },
+    {
+      "start": 1437.28,
+      "end": 1441.2,
+      "text": "retriever sent me but I need to do one"
+    },
+    {
+      "start": 1439.76,
+      "end": 1443.6,
+      "text": "more thing. So whatever is the output"
+    },
+    {
+      "start": 1441.2,
+      "end": 1446.0,
+      "text": "from this retriever I'm going to pass to"
+    },
+    {
+      "start": 1443.6,
+      "end": 1449.6789999999999,
+      "text": "my own function and I'm going to call"
+    },
+    {
+      "start": 1446.0,
+      "end": 1452.08,
+      "text": "this as maybe format documents. Okay."
+    },
+    {
+      "start": 1449.679,
+      "end": 1454.3200000000002,
+      "text": "And let's just write this function. And"
+    },
+    {
+      "start": 1452.08,
+      "end": 1456.3999999999999,
+      "text": "here all I am doing is basically"
+    },
+    {
+      "start": 1454.32,
+      "end": 1458.8799999999999,
+      "text": "formatting whatever relevant information"
+    },
+    {
+      "start": 1456.4,
+      "end": 1460.88,
+      "text": "I have. So in this I'm going to be"
+    },
+    {
+      "start": 1458.88,
+      "end": 1462.48,
+      "text": "passing the documents that I have. How"
+    },
+    {
+      "start": 1460.88,
+      "end": 1464.88,
+      "text": "am I getting this documents from the"
+    },
+    {
+      "start": 1462.48,
+      "end": 1467.039,
+      "text": "retriever? So retriever is responsible"
+    },
+    {
+      "start": 1464.88,
+      "end": 1468.96,
+      "text": "for doing it that whatever is relevant"
+    },
+    {
+      "start": 1467.039,
+      "end": 1471.279,
+      "text": "for this particular question give me the"
+    },
+    {
+      "start": 1468.96,
+      "end": 1474.08,
+      "text": "documents for that and all that we have"
+    },
+    {
+      "start": 1471.279,
+      "end": 1477.039,
+      "text": "to do is join those documents. Okay. So"
+    },
+    {
+      "start": 1474.08,
+      "end": 1481.039,
+      "text": "here whatever information is there I'm"
+    },
+    {
+      "start": 1477.039,
+      "end": 1481.039,
+      "text": "just going to join"
+    },
+    {
+      "start": 1482.36,
+      "end": 1488.559,
+      "text": "them. So in the page content and I'm"
+    },
+    {
+      "start": 1486.24,
+      "end": 1491.159,
+      "text": "going to go through all the talks and"
+    },
+    {
+      "start": 1488.559,
+      "end": 1494.24,
+      "text": "I'm just going to"
+    },
+    {
+      "start": 1491.159,
+      "end": 1496.5590000000002,
+      "text": "join and that's it. So now I have the"
+    },
+    {
+      "start": 1494.24,
+      "end": 1498.72,
+      "text": "context in the question. Where do I need"
+    },
+    {
+      "start": 1496.559,
+      "end": 1501.279,
+      "text": "to pass this context and question to the"
+    },
+    {
+      "start": 1498.72,
+      "end": 1503.84,
+      "text": "prompt right? So this is the first"
+    },
+    {
+      "start": 1501.279,
+      "end": 1506.559,
+      "text": "thing. Now this needs to be passed to"
+    },
+    {
+      "start": 1503.84,
+      "end": 1509.84,
+      "text": "the prompt. So the input is to the"
+    },
+    {
+      "start": 1506.559,
+      "end": 1512.6399999999999,
+      "text": "prompt. Right? Now when I get the prompt"
+    },
+    {
+      "start": 1509.84,
+      "end": 1514.6399999999999,
+      "text": "that has to be sent to our LLM, right?"
+    },
+    {
+      "start": 1512.64,
+      "end": 1516.96,
+      "text": "and from arm I'm going to get the"
+    },
+    {
+      "start": 1514.64,
+      "end": 1518.96,
+      "text": "output. Now the output is going to have"
+    },
+    {
+      "start": 1516.96,
+      "end": 1521.279,
+      "text": "a lot of information. I just need the"
+    },
+    {
+      "start": 1518.96,
+      "end": 1523.2,
+      "text": "content out of it. So whenever we have"
+    },
+    {
+      "start": 1521.279,
+      "end": 1525.52,
+      "text": "we have to take out the content we can"
+    },
+    {
+      "start": 1523.2,
+      "end": 1527.6000000000001,
+      "text": "use str output parser. Again we have"
+    },
+    {
+      "start": 1525.52,
+      "end": 1529.6,
+      "text": "used this also in previous videos. It's"
+    },
+    {
+      "start": 1527.6,
+      "end": 1531.4399999999998,
+      "text": "okay if you don't know these things just"
+    },
+    {
+      "start": 1529.6,
+      "end": 1532.9599999999998,
+      "text": "you'll get used to them as you write"
+    },
+    {
+      "start": 1531.44,
+      "end": 1535.3600000000001,
+      "text": "more and more code or just go through"
+    },
+    {
+      "start": 1532.96,
+      "end": 1537.679,
+      "text": "the langraph videos and you'll get used"
+    },
+    {
+      "start": 1535.36,
+      "end": 1540.36,
+      "text": "to these things. Okay. So we need to use"
+    },
+    {
+      "start": 1537.679,
+      "end": 1543.679,
+      "text": "the str output parser and let me just"
+    },
+    {
+      "start": 1540.36,
+      "end": 1543.6789999999999,
+      "text": "quickly import"
+    },
+    {
+      "start": 1547.159,
+      "end": 1553.0390000000002,
+      "text": "that and whatever is the output I'm"
+    },
+    {
+      "start": 1550.64,
+      "end": 1555.919,
+      "text": "going to basically parse out the content"
+    },
+    {
+      "start": 1553.039,
+      "end": 1558.32,
+      "text": "from it and that is what I'm going to"
+    },
+    {
+      "start": 1555.919,
+      "end": 1560.7990000000002,
+      "text": "get as the output. So we have made our"
+    },
+    {
+      "start": 1558.32,
+      "end": 1564.6789999999999,
+      "text": "rank chain. Let's quickly revise it once"
+    },
+    {
+      "start": 1560.799,
+      "end": 1564.679,
+      "text": "what's happening over here."
+    },
+    {
+      "start": 1565.6,
+      "end": 1570.0,
+      "text": "See whenever we create a chain we create"
+    },
+    {
+      "start": 1567.679,
+      "end": 1571.919,
+      "text": "a chain of some runnables or tasks. So"
+    },
+    {
+      "start": 1570.0,
+      "end": 1574.24,
+      "text": "what are the different tasks over here"
+    },
+    {
+      "start": 1571.919,
+      "end": 1576.7990000000002,
+      "text": "this is one task and what am I doing? I"
+    },
+    {
+      "start": 1574.24,
+      "end": 1578.88,
+      "text": "am creating a dictionary of where I am"
+    },
+    {
+      "start": 1576.799,
+      "end": 1580.6399999999999,
+      "text": "passing the retriever and I'm formatting"
+    },
+    {
+      "start": 1578.88,
+      "end": 1582.72,
+      "text": "the documents and I'm passing it as"
+    },
+    {
+      "start": 1580.64,
+      "end": 1585.1200000000001,
+      "text": "context and the question I'm passing it"
+    },
+    {
+      "start": 1582.72,
+      "end": 1587.2,
+      "text": "as it is. So now these are going to be"
+    },
+    {
+      "start": 1585.12,
+      "end": 1588.799,
+      "text": "the inputs to the prompt. Now what is"
+    },
+    {
+      "start": 1587.2,
+      "end": 1591.1200000000001,
+      "text": "the prompt? This is the prompt and it"
+    },
+    {
+      "start": 1588.799,
+      "end": 1592.96,
+      "text": "needed these two as the inputs. Right?"
+    },
+    {
+      "start": 1591.12,
+      "end": 1594.9599999999998,
+      "text": "Now what am I going to get output from"
+    },
+    {
+      "start": 1592.96,
+      "end": 1596.96,
+      "text": "this? I'm going to get the prompt. I"
+    },
+    {
+      "start": 1594.96,
+      "end": 1598.48,
+      "text": "could have just done create prompt from"
+    },
+    {
+      "start": 1596.96,
+      "end": 1600.4,
+      "text": "chat prompt template and I could have"
+    },
+    {
+      "start": 1598.48,
+      "end": 1602.24,
+      "text": "passed this as it is with the inputs. So"
+    },
+    {
+      "start": 1600.4,
+      "end": 1604.5590000000002,
+      "text": "this these inputs I have passed them as"
+    },
+    {
+      "start": 1602.24,
+      "end": 1606.559,
+      "text": "dictionary. Now whatever prompt I'm"
+    },
+    {
+      "start": 1604.559,
+      "end": 1608.559,
+      "text": "going to get that I am passing as an"
+    },
+    {
+      "start": 1606.559,
+      "end": 1610.72,
+      "text": "input to our LM. So I am passing the"
+    },
+    {
+      "start": 1608.559,
+      "end": 1612.32,
+      "text": "prompt to our LLM. Now what is the"
+    },
+    {
+      "start": 1610.72,
+      "end": 1614.159,
+      "text": "output that I get from LM? There are a"
+    },
+    {
+      "start": 1612.32,
+      "end": 1615.9189999999999,
+      "text": "lot of things present. I'm going to take"
+    },
+    {
+      "start": 1614.159,
+      "end": 1618.72,
+      "text": "out just the content of it and I'm"
+    },
+    {
+      "start": 1615.919,
+      "end": 1620.7990000000002,
+      "text": "parsing out the content. Okay. So I'm"
+    },
+    {
+      "start": 1618.72,
+      "end": 1623.2,
+      "text": "parsing out the content over here. So"
+    },
+    {
+      "start": 1620.799,
+      "end": 1625.2,
+      "text": "basically here the runnables are or the"
+    },
+    {
+      "start": 1623.2,
+      "end": 1627.3600000000001,
+      "text": "different tasks are divided by this pipe"
+    },
+    {
+      "start": 1625.2,
+      "end": 1629.44,
+      "text": "operator and whatever is the output from"
+    },
+    {
+      "start": 1627.36,
+      "end": 1631.6789999999999,
+      "text": "this prompt is passed into the LLM."
+    },
+    {
+      "start": 1629.44,
+      "end": 1633.279,
+      "text": "Whatever is the output from the LLM is"
+    },
+    {
+      "start": 1631.679,
+      "end": 1635.279,
+      "text": "passed to the parser and we take out the"
+    },
+    {
+      "start": 1633.279,
+      "end": 1638.159,
+      "text": "content. And what are we doing over"
+    },
+    {
+      "start": 1635.279,
+      "end": 1640.24,
+      "text": "here? See why do we need this function?"
+    },
+    {
+      "start": 1638.159,
+      "end": 1641.3600000000001,
+      "text": "So I have a retriever. Retriever is"
+    },
+    {
+      "start": 1640.24,
+      "end": 1643.2,
+      "text": "going to take out the relevant"
+    },
+    {
+      "start": 1641.36,
+      "end": 1645.52,
+      "text": "documents. Now maybe they might be like"
+    },
+    {
+      "start": 1643.2,
+      "end": 1648.0,
+      "text": "two documents or three documents. I need"
+    },
+    {
+      "start": 1645.52,
+      "end": 1650.08,
+      "text": "to join those documents. So here I'm"
+    },
+    {
+      "start": 1648.0,
+      "end": 1652.159,
+      "text": "just going through the documents and I'm"
+    },
+    {
+      "start": 1650.08,
+      "end": 1653.76,
+      "text": "joining the entire content. All I'm"
+    },
+    {
+      "start": 1652.159,
+      "end": 1655.279,
+      "text": "doing over here is adding one line"
+    },
+    {
+      "start": 1653.76,
+      "end": 1656.559,
+      "text": "between those documents and I'm just"
+    },
+    {
+      "start": 1655.279,
+      "end": 1658.88,
+      "text": "putting the documents together,"
+    },
+    {
+      "start": 1656.559,
+      "end": 1660.799,
+      "text": "formatting them together and passing the"
+    },
+    {
+      "start": 1658.88,
+      "end": 1662.72,
+      "text": "context and the question forming the"
+    },
+    {
+      "start": 1660.799,
+      "end": 1664.799,
+      "text": "prompt passing to the NLM. Whatever is"
+    },
+    {
+      "start": 1662.72,
+      "end": 1666.88,
+      "text": "the output I am just passing it out."
+    },
+    {
+      "start": 1664.799,
+      "end": 1671.0,
+      "text": "It's time that we actually check whether"
+    },
+    {
+      "start": 1666.88,
+      "end": 1671.0,
+      "text": "this chain is working or not."
+    },
+    {
+      "start": 1671.44,
+      "end": 1677.2,
+      "text": "Let's run this chain and let all we have"
+    },
+    {
+      "start": 1673.76,
+      "end": 1679.2,
+      "text": "to do now is invoke the chain and we can"
+    },
+    {
+      "start": 1677.2,
+      "end": 1682.76,
+      "text": "just pass the query over here. So"
+    },
+    {
+      "start": 1679.2,
+      "end": 1685.3990000000001,
+      "text": "suppose let's ask are the"
+    },
+    {
+      "start": 1682.76,
+      "end": 1689.1589999999999,
+      "text": "recordings of the course"
+    },
+    {
+      "start": 1685.399,
+      "end": 1692.6399999999999,
+      "text": "available for how long? Let's"
+    },
+    {
+      "start": 1689.159,
+      "end": 1695.919,
+      "text": "see. Okay, there is some error in"
+    },
+    {
+      "start": 1692.64,
+      "end": 1698.6000000000001,
+      "text": "runnable pass through. Okay. Oh, sorry."
+    },
+    {
+      "start": 1695.919,
+      "end": 1700.7990000000002,
+      "text": "So I missed this. Let's run it"
+    },
+    {
+      "start": 1698.6,
+      "end": 1702.559,
+      "text": "again. Here's the recordings of the"
+    },
+    {
+      "start": 1700.799,
+      "end": 1705.52,
+      "text": "course are available for lifetime"
+    },
+    {
+      "start": 1702.559,
+      "end": 1708.36,
+      "text": "access. Nice. So let's probably try for"
+    },
+    {
+      "start": 1705.52,
+      "end": 1711.36,
+      "text": "some more queries. Let's try something"
+    },
+    {
+      "start": 1708.36,
+      "end": 1713.1999999999998,
+      "text": "like um are the testimonials for the"
+    },
+    {
+      "start": 1711.36,
+      "end": 1716.1589999999999,
+      "text": "course available? Because I just added"
+    },
+    {
+      "start": 1713.2,
+      "end": 1717.8400000000001,
+      "text": "the testimonials like right before uh"
+    },
+    {
+      "start": 1716.159,
+      "end": 1720.3200000000002,
+      "text": "recording this video. I was just adding"
+    },
+    {
+      "start": 1717.84,
+      "end": 1722.559,
+      "text": "them because the course just ended the"
+    },
+    {
+      "start": 1720.32,
+      "end": 1722.559,
+      "text": "live"
+    },
+    {
+      "start": 1722.919,
+      "end": 1726.72,
+      "text": "classes. Yes, the testimonials for the"
+    },
+    {
+      "start": 1725.12,
+      "end": 1728.6399999999999,
+      "text": "course are available on this website."
+    },
+    {
+      "start": 1726.72,
+      "end": 1731.1200000000001,
+      "text": "Shows real stories and satisfaction from"
+    },
+    {
+      "start": 1728.64,
+      "end": 1734.3600000000001,
+      "text": "the courses. Uh let's see if it can name"
+    },
+    {
+      "start": 1731.12,
+      "end": 1734.36,
+      "text": "these students."
+    },
+    {
+      "start": 1737.279,
+      "end": 1741.2,
+      "text": "Nice. So it has named some of the"
+    },
+    {
+      "start": 1739.039,
+      "end": 1742.799,
+      "text": "students. Sahitya, Manika, Ashish,"
+    },
+    {
+      "start": 1741.2,
+      "end": 1744.88,
+      "text": "Satish. So these are all my students"
+    },
+    {
+      "start": 1742.799,
+      "end": 1745.9189999999999,
+      "text": "from the HNI course. So these are some"
+    },
+    {
+      "start": 1744.88,
+      "end": 1748.5590000000002,
+      "text": "of the students. There are more"
+    },
+    {
+      "start": 1745.919,
+      "end": 1751.44,
+      "text": "testimonials but this is good enough. Uh"
+    },
+    {
+      "start": 1748.559,
+      "end": 1754.32,
+      "text": "we can also probably check for something"
+    },
+    {
+      "start": 1751.44,
+      "end": 1758.2,
+      "text": "some more questions like for example are"
+    },
+    {
+      "start": 1754.32,
+      "end": 1758.2,
+      "text": "these certificates provided?"
+    },
+    {
+      "start": 1761.36,
+      "end": 1765.039,
+      "text": "certificates are provided for the course"
+    },
+    {
+      "start": 1763.12,
+      "end": 1766.559,
+      "text": "probably let's say what all projects are"
+    },
+    {
+      "start": 1765.039,
+      "end": 1768.799,
+      "text": "covered as part of the course so maybe"
+    },
+    {
+      "start": 1766.559,
+      "end": 1770.559,
+      "text": "it will go through the curriculum and it"
+    },
+    {
+      "start": 1768.799,
+      "end": 1773.52,
+      "text": "will tell what all projects are covered"
+    },
+    {
+      "start": 1770.559,
+      "end": 1773.52,
+      "text": "right so that would be"
+    },
+    {
+      "start": 1775.24,
+      "end": 1781.039,
+      "text": "nice oh nice so it is saying okay"
+    },
+    {
+      "start": 1777.84,
+      "end": 1784.1589999999999,
+      "text": "implementing can training VA uh then"
+    },
+    {
+      "start": 1781.039,
+      "end": 1785.919,
+      "text": "there is uh fine-tuning techniques"
+    },
+    {
+      "start": 1784.159,
+      "end": 1787.8400000000001,
+      "text": "offers hands-on learning experiences"
+    },
+    {
+      "start": 1785.919,
+      "end": 1790.0,
+      "text": "allows participants for mini and major"
+    },
+    {
+      "start": 1787.84,
+      "end": 1790.0,
+      "text": "projects"
+    },
+    {
+      "start": 1791.919,
+      "end": 1796.0800000000002,
+      "text": "Nice. This is so cool. We created a rack"
+    },
+    {
+      "start": 1794.08,
+      "end": 1797.6789999999999,
+      "text": "pipeline and we are able to create"
+    },
+    {
+      "start": 1796.08,
+      "end": 1799.4399999999998,
+      "text": "basically a pot where we are able to"
+    },
+    {
+      "start": 1797.679,
+      "end": 1801.52,
+      "text": "answer questions based on our site."
+    },
+    {
+      "start": 1799.44,
+      "end": 1803.679,
+      "text": "Right? So like this I have courses. You"
+    },
+    {
+      "start": 1801.52,
+      "end": 1805.84,
+      "text": "could be having any products and you can"
+    },
+    {
+      "start": 1803.679,
+      "end": 1808.159,
+      "text": "make LLM answer questions related to"
+    },
+    {
+      "start": 1805.84,
+      "end": 1810.1589999999999,
+      "text": "your products. Also if you want to see"
+    },
+    {
+      "start": 1808.159,
+      "end": 1813.1200000000001,
+      "text": "the exact prompt that is going into the"
+    },
+    {
+      "start": 1810.159,
+      "end": 1815.3600000000001,
+      "text": "LLM, you can also add probably a print"
+    },
+    {
+      "start": 1813.12,
+      "end": 1817.6789999999999,
+      "text": "after this. So let's try doing that. So"
+    },
+    {
+      "start": 1815.36,
+      "end": 1822.76,
+      "text": "what I'm going to do is probably create"
+    },
+    {
+      "start": 1817.679,
+      "end": 1825.679,
+      "text": "a new chain. So rack chain with"
+    },
+    {
+      "start": 1822.76,
+      "end": 1827.44,
+      "text": "print something like this. Okay. And"
+    },
+    {
+      "start": 1825.679,
+      "end": 1829.6000000000001,
+      "text": "whatever is the output from this prompt."
+    },
+    {
+      "start": 1827.44,
+      "end": 1833.279,
+      "text": "So I'm getting the prompt, right? I need"
+    },
+    {
+      "start": 1829.6,
+      "end": 1836.0,
+      "text": "to print it and I need to again pass the"
+    },
+    {
+      "start": 1833.279,
+      "end": 1837.919,
+      "text": "prompt to my LLM, right? So in order to"
+    },
+    {
+      "start": 1836.0,
+      "end": 1840.799,
+      "text": "print it, what I'm going to do is I'm"
+    },
+    {
+      "start": 1837.919,
+      "end": 1842.88,
+      "text": "going to create my own custom"
+    },
+    {
+      "start": 1840.799,
+      "end": 1845.6,
+      "text": "uh function where I'm going to basically"
+    },
+    {
+      "start": 1842.88,
+      "end": 1847.7600000000002,
+      "text": "create a runnable lambda. And to create"
+    },
+    {
+      "start": 1845.6,
+      "end": 1849.36,
+      "text": "your own custom function, you need to"
+    },
+    {
+      "start": 1847.76,
+      "end": 1851.279,
+      "text": "create reneable lambda. Okay. So there"
+    },
+    {
+      "start": 1849.36,
+      "end": 1852.9599999999998,
+      "text": "are different kinds of runnables. So if"
+    },
+    {
+      "start": 1851.279,
+      "end": 1854.72,
+      "text": "you want to just pass the information as"
+    },
+    {
+      "start": 1852.96,
+      "end": 1856.96,
+      "text": "it is, we have reable pass through. If"
+    },
+    {
+      "start": 1854.72,
+      "end": 1859.2,
+      "text": "you want to create your own function, uh"
+    },
+    {
+      "start": 1856.96,
+      "end": 1861.039,
+      "text": "you can basically use renable lambda. So"
+    },
+    {
+      "start": 1859.2,
+      "end": 1865.1200000000001,
+      "text": "let me just quickly import that from"
+    },
+    {
+      "start": 1861.039,
+      "end": 1865.12,
+      "text": "blankchain core"
+    },
+    {
+      "start": 1867.72,
+      "end": 1872.48,
+      "text": "and and I'm going to be using that and I"
+    },
+    {
+      "start": 1870.64,
+      "end": 1874.5590000000002,
+      "text": "need to give a function over here right"
+    },
+    {
+      "start": 1872.48,
+      "end": 1876.44,
+      "text": "so the function that we are going to be"
+    },
+    {
+      "start": 1874.559,
+      "end": 1880.799,
+      "text": "writing is probably going to be print"
+    },
+    {
+      "start": 1876.44,
+      "end": 1883.559,
+      "text": "prompt and let's just define it and I'm"
+    },
+    {
+      "start": 1880.799,
+      "end": 1886.0,
+      "text": "going to be getting the prompt text over"
+    },
+    {
+      "start": 1883.559,
+      "end": 1889.279,
+      "text": "here and I'm just going to be printing"
+    },
+    {
+      "start": 1886.0,
+      "end": 1889.279,
+      "text": "it just to show it to"
+    },
+    {
+      "start": 1891.279,
+      "end": 1895.44,
+      "text": "And also see whatever will be the output"
+    },
+    {
+      "start": 1893.52,
+      "end": 1898.0,
+      "text": "from this renable lambda that will be"
+    },
+    {
+      "start": 1895.44,
+      "end": 1900.3200000000002,
+      "text": "passed to the LLM. So LM is still"
+    },
+    {
+      "start": 1898.0,
+      "end": 1902.72,
+      "text": "expecting the prompt right. So I'm going"
+    },
+    {
+      "start": 1900.32,
+      "end": 1904.6399999999999,
+      "text": "to be returning the prompt as it is. So"
+    },
+    {
+      "start": 1902.72,
+      "end": 1906.24,
+      "text": "that I am making sure that it is passed"
+    },
+    {
+      "start": 1904.64,
+      "end": 1908.64,
+      "text": "to the LLM. Right? So don't do this"
+    },
+    {
+      "start": 1906.24,
+      "end": 1910.96,
+      "text": "mistake. If you add a print like if you"
+    },
+    {
+      "start": 1908.64,
+      "end": 1912.5590000000002,
+      "text": "are adding in between for enable lambda,"
+    },
+    {
+      "start": 1910.96,
+      "end": 1914.32,
+      "text": "you need to make sure that the same is"
+    },
+    {
+      "start": 1912.559,
+      "end": 1916.399,
+      "text": "passed to the LLM. Right? So whatever"
+    },
+    {
+      "start": 1914.32,
+      "end": 1918.32,
+      "text": "prompt was the output, same thing I am"
+    },
+    {
+      "start": 1916.399,
+      "end": 1920.9189999999999,
+      "text": "passing to the LL. Okay. So let's"
+    },
+    {
+      "start": 1918.32,
+      "end": 1924.96,
+      "text": "quickly run"
+    },
+    {
+      "start": 1920.919,
+      "end": 1927.8400000000001,
+      "text": "this and let's try again. So in this"
+    },
+    {
+      "start": 1924.96,
+      "end": 1931.519,
+      "text": "particular chain I'm going to probably"
+    },
+    {
+      "start": 1927.84,
+      "end": 1932.76,
+      "text": "invoke something else. Suppose is there"
+    },
+    {
+      "start": 1931.519,
+      "end": 1936.88,
+      "text": "doubt"
+    },
+    {
+      "start": 1932.76,
+      "end": 1936.8799999999999,
+      "text": "support and let's try running"
+    },
+    {
+      "start": 1937.159,
+      "end": 1944.159,
+      "text": "this. So it is saying I don't know. So"
+    },
+    {
+      "start": 1940.64,
+      "end": 1946.76,
+      "text": "maybe it was not able to get that part."
+    },
+    {
+      "start": 1944.159,
+      "end": 1949.519,
+      "text": "So let's probably try for this"
+    },
+    {
+      "start": 1946.76,
+      "end": 1953.2,
+      "text": "itself. Maybe I need to be better at my"
+    },
+    {
+      "start": 1949.519,
+      "end": 1955.36,
+      "text": "FAQ. Right. Uh so here we are getting"
+    },
+    {
+      "start": 1953.2,
+      "end": 1957.3600000000001,
+      "text": "you are an assistant answering questions"
+    },
+    {
+      "start": 1955.36,
+      "end": 1959.279,
+      "text": "for question answering task. Right? So"
+    },
+    {
+      "start": 1957.36,
+      "end": 1960.7199999999998,
+      "text": "this was basically the same thing that"
+    },
+    {
+      "start": 1959.279,
+      "end": 1961.919,
+      "text": "is going you are an assistant for"
+    },
+    {
+      "start": 1960.72,
+      "end": 1963.919,
+      "text": "question answering task. Use the"
+    },
+    {
+      "start": 1961.919,
+      "end": 1966.72,
+      "text": "following pieces of retrieved context."
+    },
+    {
+      "start": 1963.919,
+      "end": 1968.48,
+      "text": "So the same thing is basically going and"
+    },
+    {
+      "start": 1966.72,
+      "end": 1971.039,
+      "text": "we are passing the question and the"
+    },
+    {
+      "start": 1968.48,
+      "end": 1973.679,
+      "text": "context. So if I just go ahead this is"
+    },
+    {
+      "start": 1971.039,
+      "end": 1975.76,
+      "text": "the context and these are probably some"
+    },
+    {
+      "start": 1973.679,
+      "end": 1979.039,
+      "text": "chunks that the retriever has taken out"
+    },
+    {
+      "start": 1975.76,
+      "end": 1981.44,
+      "text": "for us. Uh maybe you know for what part"
+    },
+    {
+      "start": 1979.039,
+      "end": 1983.76,
+      "text": "it did not work maybe because my uh"
+    },
+    {
+      "start": 1981.44,
+      "end": 1986.0800000000002,
+      "text": "chunk size was too huge. So maybe using"
+    },
+    {
+      "start": 1983.76,
+      "end": 1987.679,
+      "text": "that we'll get better and so the"
+    },
+    {
+      "start": 1986.08,
+      "end": 1989.1999999999998,
+      "text": "question in the context is passed. So"
+    },
+    {
+      "start": 1987.679,
+      "end": 1990.88,
+      "text": "you can see the question is passed what"
+    },
+    {
+      "start": 1989.2,
+      "end": 1993.6000000000001,
+      "text": "all projects are covered in the course"
+    },
+    {
+      "start": 1990.88,
+      "end": 1995.8400000000001,
+      "text": "and then the entire context basically uh"
+    },
+    {
+      "start": 1993.6,
+      "end": 1999.36,
+      "text": "the splits are passed. Now you remember"
+    },
+    {
+      "start": 1995.84,
+      "end": 2001.519,
+      "text": "I had joined the documents with a end"
+    },
+    {
+      "start": 1999.36,
+      "end": 2003.1999999999998,
+      "text": "line in between right. So that is why"
+    },
+    {
+      "start": 2001.519,
+      "end": 2004.72,
+      "text": "these are in new lines. So these are the"
+    },
+    {
+      "start": 2003.2,
+      "end": 2006.32,
+      "text": "different chunks that are being passed"
+    },
+    {
+      "start": 2004.72,
+      "end": 2009.519,
+      "text": "and based on that we are getting the"
+    },
+    {
+      "start": 2006.32,
+      "end": 2011.36,
+      "text": "response. So nice and this brings us to"
+    },
+    {
+      "start": 2009.519,
+      "end": 2013.279,
+      "text": "the end of the video. I hope you enjoyed"
+    },
+    {
+      "start": 2011.36,
+      "end": 2014.799,
+      "text": "and you understood drag very well. If"
+    },
+    {
+      "start": 2013.279,
+      "end": 2016.32,
+      "text": "there are any questions please let me"
+    },
+    {
+      "start": 2014.799,
+      "end": 2018.799,
+      "text": "know in the comments and I would love to"
+    },
+    {
+      "start": 2016.32,
+      "end": 2021.6789999999999,
+      "text": "answer them. Also guys I'm planning to"
+    },
+    {
+      "start": 2018.799,
+      "end": 2023.44,
+      "text": "be extremely active on YouTube now. I am"
+    },
+    {
+      "start": 2021.679,
+      "end": 2024.72,
+      "text": "creating a lot of content on YouTube,"
+    },
+    {
+      "start": 2023.44,
+      "end": 2026.48,
+      "text": "LinkedIn as well as on my personal"
+    },
+    {
+      "start": 2024.72,
+      "end": 2028.08,
+      "text": "Instagram that is the personal side. But"
+    },
+    {
+      "start": 2026.48,
+      "end": 2030.3990000000001,
+      "text": "for YouTube and LinkedIn, I am creating"
+    },
+    {
+      "start": 2028.08,
+      "end": 2032.1589999999999,
+      "text": "so much of free content and I it would"
+    },
+    {
+      "start": 2030.399,
+      "end": 2034.2399999999998,
+      "text": "really really motivate me if you could"
+    },
+    {
+      "start": 2032.159,
+      "end": 2035.919,
+      "text": "support me a bit more. Hit the like"
+    },
+    {
+      "start": 2034.24,
+      "end": 2037.279,
+      "text": "button, share with your friends, share"
+    },
+    {
+      "start": 2035.919,
+      "end": 2039.2,
+      "text": "on LinkedIn. If you are finding it"
+    },
+    {
+      "start": 2037.279,
+      "end": 2040.64,
+      "text": "useful, if you have watched it here, I"
+    },
+    {
+      "start": 2039.2,
+      "end": 2043.6000000000001,
+      "text": "am hoping that you really found it"
+    },
+    {
+      "start": 2040.64,
+      "end": 2045.279,
+      "text": "useful. Please do let me know and please"
+    },
+    {
+      "start": 2043.6,
+      "end": 2047.039,
+      "text": "consider sharing more of your support"
+    },
+    {
+      "start": 2045.279,
+      "end": 2049.28,
+      "text": "and love. It is going to mean the world"
+    },
+    {
+      "start": 2047.039,
+      "end": 2051.359,
+      "text": "to me. It is really going to motivate me"
+    },
+    {
+      "start": 2049.28,
+      "end": 2056.09,
+      "text": "a lot. And see you next time. I promise"
+    },
+    {
+      "start": 2051.359,
+      "end": 2068.65,
+      "text": "a lot more videos coming up. Stay tuned."
+    },
+    {
+      "start": 2056.09,
+      "end": 2068.65,
+      "text": "[Music]"
+    }
+  ]
+}

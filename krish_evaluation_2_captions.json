@@ -1,0 +1,1418 @@
+{
+  "video_id": "r0q1n8BJ0QI",
+  "title": "What Is LLM HAllucination And How to Reduce It?",
+  "channel": "Krish Naik",
+  "trainer": "Krish Naik",
+  "topic": "Evaluation",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 720.0,
+  "segments": [
+    {
+      "start": 0.4,
+      "end": 4.640000000000001,
+      "text": "Hello all, my name is Krishna and"
+    },
+    {
+      "start": 2.399,
+      "end": 6.08,
+      "text": "welcome to my YouTube channel. So guys,"
+    },
+    {
+      "start": 4.64,
+      "end": 7.919,
+      "text": "today in this specific video we are"
+    },
+    {
+      "start": 6.08,
+      "end": 9.679,
+      "text": "going to discuss about a very important"
+    },
+    {
+      "start": 7.919,
+      "end": 12.879999999999999,
+      "text": "topic which is called as LLM"
+    },
+    {
+      "start": 9.679,
+      "end": 14.96,
+      "text": "hallucination. This topic can be very"
+    },
+    {
+      "start": 12.88,
+      "end": 17.119,
+      "text": "important for your interviews because"
+    },
+    {
+      "start": 14.96,
+      "end": 19.6,
+      "text": "nowadays everybody is thinking about"
+    },
+    {
+      "start": 17.119,
+      "end": 22.4,
+      "text": "building rag applications and my plan"
+    },
+    {
+      "start": 19.6,
+      "end": 25.279000000000003,
+      "text": "after this specific video is to create"
+    },
+    {
+      "start": 22.4,
+      "end": 27.68,
+      "text": "some set of videos related to rag,"
+    },
+    {
+      "start": 25.279,
+      "end": 29.84,
+      "text": "different types of rag, how rag can be"
+    },
+    {
+      "start": 27.68,
+      "end": 31.599,
+      "text": "implemented. But before we go ahead"
+    },
+    {
+      "start": 29.84,
+      "end": 33.36,
+      "text": "towards rack, you really need to"
+    },
+    {
+      "start": 31.599,
+      "end": 36.480000000000004,
+      "text": "understand this topic. What is LLM"
+    },
+    {
+      "start": 33.36,
+      "end": 40.0,
+      "text": "hallucination? I hope everybody may have"
+    },
+    {
+      "start": 36.48,
+      "end": 42.718999999999994,
+      "text": "used chat GPT, you may have used cloud,"
+    },
+    {
+      "start": 40.0,
+      "end": 44.559,
+      "text": "you may had used different kind of or"
+    },
+    {
+      "start": 42.719,
+      "end": 46.239000000000004,
+      "text": "let's say Google Germany, different"
+    },
+    {
+      "start": 44.559,
+      "end": 48.48,
+      "text": "different AI assistants you have used."
+    },
+    {
+      "start": 46.239,
+      "end": 52.07899999999999,
+      "text": "And whenever you ask some specific set"
+    },
+    {
+      "start": 48.48,
+      "end": 55.038999999999994,
+      "text": "of questions, sometimes you get answers"
+    },
+    {
+      "start": 52.079,
+      "end": 56.96,
+      "text": "that may not be factually right and"
+    },
+    {
+      "start": 55.039,
+      "end": 58.800000000000004,
+      "text": "sometimes LLM may generate their own"
+    },
+    {
+      "start": 56.96,
+      "end": 60.160000000000004,
+      "text": "answer as they like. Right? I hope"
+    },
+    {
+      "start": 58.8,
+      "end": 63.12,
+      "text": "everybody has seen this kind of"
+    },
+    {
+      "start": 60.16,
+      "end": 64.79899999999999,
+      "text": "scenarios. So this is nothing but this"
+    },
+    {
+      "start": 63.12,
+      "end": 66.479,
+      "text": "is basically called as LLM is"
+    },
+    {
+      "start": 64.799,
+      "end": 68.4,
+      "text": "hallucinating. You know they are trying"
+    },
+    {
+      "start": 66.479,
+      "end": 70.96,
+      "text": "to give or they are making their own"
+    },
+    {
+      "start": 68.4,
+      "end": 73.2,
+      "text": "answers even though the answer is not"
+    },
+    {
+      "start": 70.96,
+      "end": 75.28,
+      "text": "actually correct. Right? So in this"
+    },
+    {
+      "start": 73.2,
+      "end": 78.0,
+      "text": "specific video we'll talk more about LLM"
+    },
+    {
+      "start": 75.28,
+      "end": 80.0,
+      "text": "halifination. How do you prevent it? You"
+    },
+    {
+      "start": 78.0,
+      "end": 81.84,
+      "text": "know whenever you are developing a any"
+    },
+    {
+      "start": 80.0,
+      "end": 83.28,
+      "text": "kind of applications let it be a rag"
+    },
+    {
+      "start": 81.84,
+      "end": 85.119,
+      "text": "application or a generative a"
+    },
+    {
+      "start": 83.28,
+      "end": 87.759,
+      "text": "application. So let me go ahead and"
+    },
+    {
+      "start": 85.119,
+      "end": 89.6,
+      "text": "discuss this step by step. uh we will"
+    },
+    {
+      "start": 87.759,
+      "end": 91.43900000000001,
+      "text": "make sure to I'll I'll make sure to"
+    },
+    {
+      "start": 89.6,
+      "end": 94.079,
+      "text": "teach you this particular topic in a way"
+    },
+    {
+      "start": 91.439,
+      "end": 96.72,
+      "text": "that everybody should be able to"
+    },
+    {
+      "start": 94.079,
+      "end": 98.55999999999999,
+      "text": "understand things right so LLM"
+    },
+    {
+      "start": 96.72,
+      "end": 101.439,
+      "text": "hallucination"
+    },
+    {
+      "start": 98.56,
+      "end": 104.24000000000001,
+      "text": "u as you all know that every LLM model"
+    },
+    {
+      "start": 101.439,
+      "end": 107.75899999999999,
+      "text": "so let's say that this is my LLM model"
+    },
+    {
+      "start": 104.24,
+      "end": 109.6,
+      "text": "okay now whenever we talk about LLM"
+    },
+    {
+      "start": 107.759,
+      "end": 112.88,
+      "text": "model"
+    },
+    {
+      "start": 109.6,
+      "end": 119.759,
+      "text": "every LLM model has a training cutff"
+    },
+    {
+      "start": 112.88,
+      "end": 123.119,
+      "text": "date okay training cutff of date."
+    },
+    {
+      "start": 119.759,
+      "end": 125.2,
+      "text": "That basically means let's say right now"
+    },
+    {
+      "start": 123.119,
+      "end": 128.56,
+      "text": "in open AAI we have something called a"
+    },
+    {
+      "start": 125.2,
+      "end": 132.0,
+      "text": "GPD5 model right and this GP5 let's"
+    },
+    {
+      "start": 128.56,
+      "end": 133.52,
+      "text": "consider that the training date is 1st"
+    },
+    {
+      "start": 132.0,
+      "end": 137.12,
+      "text": "August"
+    },
+    {
+      "start": 133.52,
+      "end": 140.16,
+      "text": "2025 okay so let's say that this is the"
+    },
+    {
+      "start": 137.12,
+      "end": 142.239,
+      "text": "date that we have specifically for this"
+    },
+    {
+      "start": 140.16,
+      "end": 144.0,
+      "text": "particular model when we say training"
+    },
+    {
+      "start": 142.239,
+      "end": 147.76,
+      "text": "cutff date that basically means whatever"
+    },
+    {
+      "start": 144.0,
+      "end": 149.28,
+      "text": "data we had before 1st of August with"
+    },
+    {
+      "start": 147.76,
+      "end": 152.879,
+      "text": "all those datas we have trained this"
+    },
+    {
+      "start": 149.28,
+      "end": 155.12,
+      "text": "specific specific model. Okay. And the"
+    },
+    {
+      "start": 152.879,
+      "end": 158.239,
+      "text": "recent new data, the LLM will not have"
+    },
+    {
+      "start": 155.12,
+      "end": 161.04,
+      "text": "any clue or any idea about it. So"
+    },
+    {
+      "start": 158.239,
+      "end": 163.04,
+      "text": "whenever I ask any questions to this"
+    },
+    {
+      "start": 161.04,
+      "end": 166.319,
+      "text": "LLM, it will be able to generate the"
+    },
+    {
+      "start": 163.04,
+      "end": 168.72,
+      "text": "output and if I say like anything that I"
+    },
+    {
+      "start": 166.319,
+      "end": 172.39999999999998,
+      "text": "asked before 1st of August, I think it"
+    },
+    {
+      "start": 168.72,
+      "end": 176.8,
+      "text": "will be able to answer us accurately"
+    },
+    {
+      "start": 172.4,
+      "end": 179.12,
+      "text": "accurately. Okay. Now LLM is also some"
+    },
+    {
+      "start": 176.8,
+      "end": 181.76000000000002,
+      "text": "kind of arrogant friends. I have lot of"
+    },
+    {
+      "start": 179.12,
+      "end": 184.159,
+      "text": "arrogant friends that I have connected"
+    },
+    {
+      "start": 181.76,
+      "end": 187.92,
+      "text": "to with you know in my life. So these"
+    },
+    {
+      "start": 184.159,
+      "end": 190.959,
+      "text": "are some arrogant friends. Okay. What"
+    },
+    {
+      "start": 187.92,
+      "end": 193.11999999999998,
+      "text": "happens is that"
+    },
+    {
+      "start": 190.959,
+      "end": 196.0,
+      "text": "now sometimes I ask some questions"
+    },
+    {
+      "start": 193.12,
+      "end": 198.72,
+      "text": "through the LLM. Okay. And just like my"
+    },
+    {
+      "start": 196.0,
+      "end": 201.84,
+      "text": "arrogant friend even though this friend"
+    },
+    {
+      "start": 198.72,
+      "end": 203.76,
+      "text": "does not know that answer you know this"
+    },
+    {
+      "start": 201.84,
+      "end": 206.56,
+      "text": "person will come first and he'll try to"
+    },
+    {
+      "start": 203.76,
+      "end": 209.76,
+      "text": "answer this even though the answer is"
+    },
+    {
+      "start": 206.56,
+      "end": 211.76,
+      "text": "not factually right you know"
+    },
+    {
+      "start": 209.76,
+      "end": 214.959,
+      "text": "I know this I know this hey this may be"
+    },
+    {
+      "start": 211.76,
+      "end": 216.879,
+      "text": "this this this this okay so let's say if"
+    },
+    {
+      "start": 214.959,
+      "end": 219.92000000000002,
+      "text": "I've asked question this person is an"
+    },
+    {
+      "start": 216.879,
+      "end": 223.599,
+      "text": "expert in AI you know and I have asked a"
+    },
+    {
+      "start": 219.92,
+      "end": 225.28,
+      "text": "question hey what is what is"
+    },
+    {
+      "start": 223.599,
+      "end": 228.159,
+      "text": "hallucination"
+    },
+    {
+      "start": 225.28,
+      "end": 229.68,
+      "text": "Okay, what is hallucination?"
+    },
+    {
+      "start": 228.159,
+      "end": 232.39999999999998,
+      "text": "Now let's say that this arrogant friend"
+    },
+    {
+      "start": 229.68,
+      "end": 234.72,
+      "text": "does not know the answer. He will try to"
+    },
+    {
+      "start": 232.4,
+      "end": 237.439,
+      "text": "even though tell us some kind of answer"
+    },
+    {
+      "start": 234.72,
+      "end": 240.72,
+      "text": "over here. Okay, and he will tell the"
+    },
+    {
+      "start": 237.439,
+      "end": 244.159,
+      "text": "answer in such a way that you know"
+    },
+    {
+      "start": 240.72,
+      "end": 247.12,
+      "text": "most of us will start believing it."
+    },
+    {
+      "start": 244.159,
+      "end": 250.48,
+      "text": "Okay, most of us will start believing it"
+    },
+    {
+      "start": 247.12,
+      "end": 254.0,
+      "text": "because he has said this answer much"
+    },
+    {
+      "start": 250.48,
+      "end": 255.84,
+      "text": "more in a way that once you understand"
+    },
+    {
+      "start": 254.0,
+      "end": 259.04,
+      "text": "what he is basically saying, you may"
+    },
+    {
+      "start": 255.84,
+      "end": 262.32,
+      "text": "think, hey, it may be factually right,"
+    },
+    {
+      "start": 259.04,
+      "end": 264.24,
+      "text": "you know, and this is what is all about"
+    },
+    {
+      "start": 262.32,
+      "end": 267.68,
+      "text": "hallucination. Even though the answer is"
+    },
+    {
+      "start": 264.24,
+      "end": 270.40000000000003,
+      "text": "not right, this arrogant friend or my"
+    },
+    {
+      "start": 267.68,
+      "end": 272.56,
+      "text": "LLM model has anyhow made up that"
+    },
+    {
+      "start": 270.4,
+      "end": 275.919,
+      "text": "particular answer and given it in front"
+    },
+    {
+      "start": 272.56,
+      "end": 277.68,
+      "text": "of you. Okay. And it will try to give"
+    },
+    {
+      "start": 275.919,
+      "end": 280.08,
+      "text": "the answer in such a way that whenever"
+    },
+    {
+      "start": 277.68,
+      "end": 283.36,
+      "text": "we talk about statistics, whenever we"
+    },
+    {
+      "start": 280.08,
+      "end": 285.919,
+      "text": "talk about factual information that all"
+    },
+    {
+      "start": 283.36,
+      "end": 288.47900000000004,
+      "text": "information will be available over here,"
+    },
+    {
+      "start": 285.919,
+      "end": 291.19899999999996,
+      "text": "right? when I say statistics let's say"
+    },
+    {
+      "start": 288.479,
+      "end": 293.199,
+      "text": "it will say hey 83%"
+    },
+    {
+      "start": 291.199,
+      "end": 296.32,
+      "text": "it will probably provide some factual"
+    },
+    {
+      "start": 293.199,
+      "end": 298.8,
+      "text": "information from some random use case"
+    },
+    {
+      "start": 296.32,
+      "end": 301.919,
+      "text": "right even though this use cases are not"
+    },
+    {
+      "start": 298.8,
+      "end": 304.24,
+      "text": "true okay and this is one of the major"
+    },
+    {
+      "start": 301.919,
+      "end": 307.19899999999996,
+      "text": "problem throughout all the LLMs that is"
+    },
+    {
+      "start": 304.24,
+      "end": 310.88,
+      "text": "being trained by uh companies out there"
+    },
+    {
+      "start": 307.199,
+      "end": 315.039,
+      "text": "right so nowadays you consider any"
+    },
+    {
+      "start": 310.88,
+      "end": 316.4,
+      "text": "platform chat GPT you consider cloud you"
+    },
+    {
+      "start": 315.039,
+      "end": 318.71999999999997,
+      "text": "even consider"
+    },
+    {
+      "start": 316.4,
+      "end": 321.75899999999996,
+      "text": "Google Germany, right? What they are"
+    },
+    {
+      "start": 318.72,
+      "end": 325.759,
+      "text": "doing is that they are trying to"
+    },
+    {
+      "start": 321.759,
+      "end": 328.16,
+      "text": "integrate with external tools,"
+    },
+    {
+      "start": 325.759,
+      "end": 332.16,
+      "text": "right? They are trying to integrate with"
+    },
+    {
+      "start": 328.16,
+      "end": 334.08000000000004,
+      "text": "external tools, right? And the main aim"
+    },
+    {
+      "start": 332.16,
+      "end": 336.47900000000004,
+      "text": "of integrating this external tools is"
+    },
+    {
+      "start": 334.08,
+      "end": 340.24,
+      "text": "that whenever a new kind of information"
+    },
+    {
+      "start": 336.479,
+      "end": 342.24,
+      "text": "is asked for this kind of models, LLM"
+    },
+    {
+      "start": 340.24,
+      "end": 344.16,
+      "text": "models, they're not going to go ahead"
+    },
+    {
+      "start": 342.24,
+      "end": 346.479,
+      "text": "and make up that answer. Instead they"
+    },
+    {
+      "start": 344.16,
+      "end": 348.72,
+      "text": "will be having their dependencies on"
+    },
+    {
+      "start": 346.479,
+      "end": 351.75899999999996,
+      "text": "these external tools. These external"
+    },
+    {
+      "start": 348.72,
+      "end": 354.8,
+      "text": "tools can be a web search tool. It can"
+    },
+    {
+      "start": 351.759,
+      "end": 357.36,
+      "text": "be a rag. It can be connected to any"
+    },
+    {
+      "start": 354.8,
+      "end": 360.88,
+      "text": "kind of databases. It can be connected"
+    },
+    {
+      "start": 357.36,
+      "end": 363.28000000000003,
+      "text": "to let's say search engine"
+    },
+    {
+      "start": 360.88,
+      "end": 366.15999999999997,
+      "text": "any thirdparty APIs it may be connected"
+    },
+    {
+      "start": 363.28,
+      "end": 368.31899999999996,
+      "text": "to that basically means now the LM is"
+    },
+    {
+      "start": 366.16,
+      "end": 370.47900000000004,
+      "text": "not taking the responsibility in"
+    },
+    {
+      "start": 368.319,
+      "end": 372.47900000000004,
+      "text": "answering the answer directly. Instead"
+    },
+    {
+      "start": 370.479,
+      "end": 375.68,
+      "text": "it is being dependent on some kind of"
+    },
+    {
+      "start": 372.479,
+      "end": 376.96,
+      "text": "external tool out there right now I hope"
+    },
+    {
+      "start": 375.68,
+      "end": 379.6,
+      "text": "everybody is able to understand"
+    },
+    {
+      "start": 376.96,
+      "end": 381.52,
+      "text": "hallucination right now what are why why"
+    },
+    {
+      "start": 379.6,
+      "end": 383.199,
+      "text": "this hallucination actually happens you"
+    },
+    {
+      "start": 381.52,
+      "end": 385.68,
+      "text": "know so one of the major reason I've"
+    },
+    {
+      "start": 383.199,
+      "end": 389.6,
+      "text": "told you obviously there is a training"
+    },
+    {
+      "start": 385.68,
+      "end": 393.52,
+      "text": "cutff date okay training cutff date"
+    },
+    {
+      "start": 389.6,
+      "end": 395.68,
+      "text": "let's say my LLM is not been trained"
+    },
+    {
+      "start": 393.52,
+      "end": 398.479,
+      "text": "my LLM is not being trained with"
+    },
+    {
+      "start": 395.68,
+      "end": 400.56,
+      "text": "sufficient amount of data"
+    },
+    {
+      "start": 398.479,
+      "end": 403.36,
+      "text": "sufficient amount of data data. So this"
+    },
+    {
+      "start": 400.56,
+      "end": 405.6,
+      "text": "scenario may also happen right I was"
+    },
+    {
+      "start": 403.36,
+      "end": 406.88,
+      "text": "just seeing as soon as GPT5 got launched"
+    },
+    {
+      "start": 405.6,
+      "end": 410.8,
+      "text": "you know someone was trying to answer"
+    },
+    {
+      "start": 406.88,
+      "end": 416.88,
+      "text": "hey Chris what hey hey LM what is 8.11"
+    },
+    {
+      "start": 410.8,
+      "end": 418.24,
+      "text": "minus 8.90 okay or sorry 8.9 okay so"
+    },
+    {
+      "start": 416.88,
+      "end": 420.479,
+      "text": "this kind of questions were also"
+    },
+    {
+      "start": 418.24,
+      "end": 422.8,
+      "text": "basically getting asked and LLM was not"
+    },
+    {
+      "start": 420.479,
+      "end": 424.8,
+      "text": "able to generate the output it was"
+    },
+    {
+      "start": 422.8,
+      "end": 426.639,
+      "text": "giving a wrong answers why this is"
+    },
+    {
+      "start": 424.8,
+      "end": 428.72,
+      "text": "basically happening because similar kind"
+    },
+    {
+      "start": 426.639,
+      "end": 430.0,
+      "text": "of examples the LLM may have not been"
+    },
+    {
+      "start": 428.72,
+      "end": 431.52000000000004,
+      "text": "sufficiently trained"
+    },
+    {
+      "start": 430.0,
+      "end": 433.68,
+      "text": "So there also it is starting to"
+    },
+    {
+      "start": 431.52,
+      "end": 435.599,
+      "text": "hallucinate. It is giving you some wrong"
+    },
+    {
+      "start": 433.68,
+      "end": 437.28000000000003,
+      "text": "answers. It will generate a kind of"
+    },
+    {
+      "start": 435.599,
+      "end": 439.199,
+      "text": "answer. It will say that hey this is the"
+    },
+    {
+      "start": 437.28,
+      "end": 440.71999999999997,
+      "text": "right answer and then suddenly you'll"
+    },
+    {
+      "start": 439.199,
+      "end": 442.319,
+      "text": "say that hey you're not telling it"
+    },
+    {
+      "start": 440.72,
+      "end": 444.56,
+      "text": "right. Then it'll start thinking and"
+    },
+    {
+      "start": 442.319,
+      "end": 446.96000000000004,
+      "text": "it'll and it'll have some kind of you"
+    },
+    {
+      "start": 444.56,
+      "end": 449.039,
+      "text": "know backoff theorem uh which may be"
+    },
+    {
+      "start": 446.96,
+      "end": 451.12,
+      "text": "applied out there for the LLM models and"
+    },
+    {
+      "start": 449.039,
+      "end": 453.52,
+      "text": "it'll try to give some other answers out"
+    },
+    {
+      "start": 451.12,
+      "end": 455.12,
+      "text": "there. Right? So that is the main"
+    },
+    {
+      "start": 453.52,
+      "end": 457.68,
+      "text": "reason. Now how do we go ahead and"
+    },
+    {
+      "start": 455.12,
+      "end": 459.199,
+      "text": "prevent this LLM hallucination? Right?"
+    },
+    {
+      "start": 457.68,
+      "end": 462.16,
+      "text": "See"
+    },
+    {
+      "start": 459.199,
+      "end": 464.319,
+      "text": "one basic example for companies you know"
+    },
+    {
+      "start": 462.16,
+      "end": 466.16,
+      "text": "see when LLM is giving you some wrong"
+    },
+    {
+      "start": 464.319,
+      "end": 469.199,
+      "text": "answer it is fine but when you're"
+    },
+    {
+      "start": 466.16,
+      "end": 471.28000000000003,
+      "text": "developing some applications"
+    },
+    {
+      "start": 469.199,
+      "end": 473.44,
+      "text": "right this kind of generative AI"
+    },
+    {
+      "start": 471.28,
+      "end": 475.19899999999996,
+      "text": "application or AI agentic AI"
+    },
+    {
+      "start": 473.44,
+      "end": 478.24,
+      "text": "applications or you're developing AI"
+    },
+    {
+      "start": 475.199,
+      "end": 480.8,
+      "text": "agents for companies right it is always"
+    },
+    {
+      "start": 478.24,
+      "end": 484.8,
+      "text": "better that whenever you try to use some"
+    },
+    {
+      "start": 480.8,
+      "end": 490.40000000000003,
+      "text": "kind of LLM you try to integrate this"
+    },
+    {
+      "start": 484.8,
+      "end": 493.12,
+      "text": "LLM with external rack system right so"
+    },
+    {
+      "start": 490.4,
+      "end": 496.0,
+      "text": "let's say that this is my vector store"
+    },
+    {
+      "start": 493.12,
+      "end": 498.4,
+      "text": "it can be a vector databases and this is"
+    },
+    {
+      "start": 496.0,
+      "end": 502.319,
+      "text": "what you are basically connected to so"
+    },
+    {
+      "start": 498.4,
+      "end": 505.919,
+      "text": "whenever a question is asked to an LLM"
+    },
+    {
+      "start": 502.319,
+      "end": 507.44,
+      "text": "related to any info right I'm not"
+    },
+    {
+      "start": 505.919,
+      "end": 509.28,
+      "text": "talking about public I'm I'm talking"
+    },
+    {
+      "start": 507.44,
+      "end": 511.84,
+      "text": "about companies right it is always good"
+    },
+    {
+      "start": 509.28,
+      "end": 515.8389999999999,
+      "text": "that LLM is connected to a rack system"
+    },
+    {
+      "start": 511.84,
+      "end": 518.0,
+      "text": "here I have a vector databases and for"
+    },
+    {
+      "start": 515.839,
+      "end": 520.6400000000001,
+      "text": "this particular vector databases we may"
+    },
+    {
+      "start": 518.0,
+      "end": 522.64,
+      "text": "get some kind of context information and"
+    },
+    {
+      "start": 520.64,
+      "end": 525.04,
+      "text": "then this LLM will be able to generate"
+    },
+    {
+      "start": 522.64,
+      "end": 528.24,
+      "text": "the output right and that is where your"
+    },
+    {
+      "start": 525.04,
+      "end": 530.959,
+      "text": "rack system come into picture right rag"
+    },
+    {
+      "start": 528.24,
+      "end": 533.36,
+      "text": "comes into picture because we do not"
+    },
+    {
+      "start": 530.959,
+      "end": 535.1199999999999,
+      "text": "want LM to hallucinate if it does not"
+    },
+    {
+      "start": 533.36,
+      "end": 536.8000000000001,
+      "text": "know some kind of answers it is just"
+    },
+    {
+      "start": 535.12,
+      "end": 539.2,
+      "text": "going to go ahead and some call some"
+    },
+    {
+      "start": 536.8,
+      "end": 543.04,
+      "text": "kind of tools external databases out"
+    },
+    {
+      "start": 539.2,
+      "end": 544.8000000000001,
+      "text": "there and it can also call this vector"
+    },
+    {
+      "start": 543.04,
+      "end": 547.279,
+      "text": "databases that is available within the"
+    },
+    {
+      "start": 544.8,
+      "end": 549.3599999999999,
+      "text": "company So here now LLM is only not"
+    },
+    {
+      "start": 547.279,
+      "end": 551.519,
+      "text": "dependent on generating the answer but"
+    },
+    {
+      "start": 549.36,
+      "end": 554.88,
+      "text": "it is also getting it is also dependent"
+    },
+    {
+      "start": 551.519,
+      "end": 557.2,
+      "text": "on asking hey do I have any tools or"
+    },
+    {
+      "start": 554.88,
+      "end": 560.88,
+      "text": "anything binded with along with me right"
+    },
+    {
+      "start": 557.2,
+      "end": 564.5600000000001,
+      "text": "and that is what it makes uh uh LLM"
+    },
+    {
+      "start": 560.88,
+      "end": 567.2,
+      "text": "hallination to probably get reduced you"
+    },
+    {
+      "start": 564.56,
+      "end": 568.8,
+      "text": "cannot remove completely"
+    },
+    {
+      "start": 567.2,
+      "end": 571.0400000000001,
+      "text": "right you cannot remove LLM"
+    },
+    {
+      "start": 568.8,
+      "end": 572.64,
+      "text": "hallucination completely let's say that"
+    },
+    {
+      "start": 571.04,
+      "end": 575.1999999999999,
+      "text": "if I have asked any kind of questions"
+    },
+    {
+      "start": 572.64,
+      "end": 577.279,
+      "text": "and from this specific tools we did not"
+    },
+    {
+      "start": 575.2,
+      "end": 579.12,
+      "text": "get any context then also so LLM will"
+    },
+    {
+      "start": 577.279,
+      "end": 580.959,
+      "text": "not keep quiet it will take this"
+    },
+    {
+      "start": 579.12,
+      "end": 584.399,
+      "text": "specific context and it will generate"
+    },
+    {
+      "start": 580.959,
+      "end": 586.4799999999999,
+      "text": "the output okay and it'll generate the"
+    },
+    {
+      "start": 584.399,
+      "end": 591.2,
+      "text": "output it will create it own output it"
+    },
+    {
+      "start": 586.48,
+      "end": 596.32,
+      "text": "will create its own output okay so we"
+    },
+    {
+      "start": 591.2,
+      "end": 599.279,
+      "text": "cannot 100% remove hallucination instead"
+    },
+    {
+      "start": 596.32,
+      "end": 602.32,
+      "text": "we can reduce it we can reduce it by uh"
+    },
+    {
+      "start": 599.279,
+      "end": 605.8389999999999,
+      "text": "let's say 20 to 30% we can reduce it to"
+    },
+    {
+      "start": 602.32,
+      "end": 609.36,
+      "text": "20 to 30% in most of the cases we may uh"
+    },
+    {
+      "start": 605.839,
+      "end": 612.48,
+      "text": "be able to improve our accuracy by 5 to"
+    },
+    {
+      "start": 609.36,
+      "end": 613.92,
+      "text": "10%. Right? So this kind of scenarios"
+    },
+    {
+      "start": 612.48,
+      "end": 616.8000000000001,
+      "text": "basically happening. So that is the"
+    },
+    {
+      "start": 613.92,
+      "end": 619.76,
+      "text": "reason now everybody is focusing in"
+    },
+    {
+      "start": 616.8,
+      "end": 621.8389999999999,
+      "text": "moving towards rag application wherein"
+    },
+    {
+      "start": 619.76,
+      "end": 625.279,
+      "text": "they are creating retrievers they are"
+    },
+    {
+      "start": 621.839,
+      "end": 627.839,
+      "text": "creating agents which will be able to do"
+    },
+    {
+      "start": 625.279,
+      "end": 629.36,
+      "text": "the task and that task whatever these"
+    },
+    {
+      "start": 627.839,
+      "end": 631.519,
+      "text": "agents or retriever are doing will"
+    },
+    {
+      "start": 629.36,
+      "end": 633.6800000000001,
+      "text": "provide the necessary context to the LLM"
+    },
+    {
+      "start": 631.519,
+      "end": 636.64,
+      "text": "to generate the output. Now LLM is only"
+    },
+    {
+      "start": 633.68,
+      "end": 638.8,
+      "text": "not generating the output based on its W"
+    },
+    {
+      "start": 636.64,
+      "end": 640.48,
+      "text": "but instead based on the response that"
+    },
+    {
+      "start": 638.8,
+      "end": 644.0,
+      "text": "it is being able to get from the tools"
+    },
+    {
+      "start": 640.48,
+      "end": 647.04,
+      "text": "or the databases. Now this is just a 5"
+    },
+    {
+      "start": 644.0,
+      "end": 649.76,
+      "text": "to 10 minutes video on making you"
+    },
+    {
+      "start": 647.04,
+      "end": 651.279,
+      "text": "understand about LLM hallucination. The"
+    },
+    {
+      "start": 649.76,
+      "end": 653.6,
+      "text": "reason why I'm making this specific"
+    },
+    {
+      "start": 651.279,
+      "end": 656.64,
+      "text": "video is that it is very simple. In the"
+    },
+    {
+      "start": 653.6,
+      "end": 659.519,
+      "text": "next video I will be focusing on rag"
+    },
+    {
+      "start": 656.64,
+      "end": 662.88,
+      "text": "applications. One of the major concern"
+    },
+    {
+      "start": 659.519,
+      "end": 665.36,
+      "text": "about LLM, it's specifically"
+    },
+    {
+      "start": 662.88,
+      "end": 667.2,
+      "text": "LLM hallucination. It's not like only"
+    },
+    {
+      "start": 665.36,
+      "end": 669.76,
+      "text": "rag is one of the way. You can also go"
+    },
+    {
+      "start": 667.2,
+      "end": 671.839,
+      "text": "ahead and use LLM fine-tuning. You can"
+    },
+    {
+      "start": 669.76,
+      "end": 674.56,
+      "text": "also go ahead and use LLM fine-tuning"
+    },
+    {
+      "start": 671.839,
+      "end": 677.6,
+      "text": "technique. But again understand this is"
+    },
+    {
+      "start": 674.56,
+      "end": 681.4399999999999,
+      "text": "a expensive process."
+    },
+    {
+      "start": 677.6,
+      "end": 683.2,
+      "text": "This is a expensive process. Okay. With"
+    },
+    {
+      "start": 681.44,
+      "end": 685.2,
+      "text": "basic prompt engineering also you'll not"
+    },
+    {
+      "start": 683.2,
+      "end": 688.72,
+      "text": "be able to do rag is one of the very"
+    },
+    {
+      "start": 685.2,
+      "end": 691.0400000000001,
+      "text": "good solution. And along on top of rag"
+    },
+    {
+      "start": 688.72,
+      "end": 693.6800000000001,
+      "text": "you can also go ahead and use human"
+    },
+    {
+      "start": 691.04,
+      "end": 696.3199999999999,
+      "text": "verification"
+    },
+    {
+      "start": 693.68,
+      "end": 698.3199999999999,
+      "text": "human verification like we can provide a"
+    },
+    {
+      "start": 696.32,
+      "end": 701.0400000000001,
+      "text": "feedback based on the answers that is"
+    },
+    {
+      "start": 698.32,
+      "end": 703.6,
+      "text": "being generated by the LLM. So yeah this"
+    },
+    {
+      "start": 701.04,
+      "end": 706.24,
+      "text": "was a simple video on understanding"
+    },
+    {
+      "start": 703.6,
+      "end": 708.399,
+      "text": "about LLM hallucination. uh as we go"
+    },
+    {
+      "start": 706.24,
+      "end": 711.04,
+      "text": "ahead we will talk about different kind"
+    },
+    {
+      "start": 708.399,
+      "end": 713.6,
+      "text": "of rags how to build rag application you"
+    },
+    {
+      "start": 711.04,
+      "end": 715.12,
+      "text": "know um how do we integrate it again"
+    },
+    {
+      "start": 713.6,
+      "end": 716.64,
+      "text": "with the help of langraph we will"
+    },
+    {
+      "start": 715.12,
+      "end": 718.16,
+      "text": "continue the playlist that we have"
+    },
+    {
+      "start": 716.64,
+      "end": 719.6,
+      "text": "already defined so yes this was it from"
+    },
+    {
+      "start": 718.16,
+      "end": 720.0,
+      "text": "my side I'll see you in the next video"
+    },
+    {
+      "start": 719.6,
+      "end": 720.0,
+      "text": "thank"
+    }
+  ]
+}

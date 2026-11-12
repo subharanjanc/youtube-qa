@@ -1,0 +1,402 @@
+[
+  {
+    "id": "9f8977a84a58c5a903167f9f98df1a1348d54b7ba212aa3a72d0933537548ea3",
+    "text": "What is my name? Enter to see. If I say what is my name, let's just wait for a while. Recall three memories. These three memories have been recalled. This shows and your name is Question. So this is basically how the memories work. This is a memory engine that works. Okay? Alright. So hey everyone, welcome back. Welcome back to another exciting video. And in this video we are going to talk about agentic memory. So in this video we will discuss what agentic memory is? How long-term memory and short-term memory work. And why this is very important. We will learn in this video what factual memory is? What semantic memory is? What episodic memory is? And one more interesting thing can we create a mini memory engine ourselves? So in this particular video I want to also show you one platform that you can actually use to build any kind of full-stack applications. Not just a memory engine using a lot of more things. So a very exciting video ahead. So with that let's start with the video. Alright. So, this is the white paper that I was talking about. So, this is about agentic memory where we will discuss what long-term memory is and what short-term memory is for context management problems. Okay? Now, coming back to the blackboard if you know like for example you have let's say an LLM model. Let's take any model from OpenAI or we can take any model from Claude. So, you have a lot of models available. And what is the biggest problem with these models",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 0.0,
+      "end_seconds": 82.96000000000001,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=0s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "7dc2fa740f9bd9c3115576c8ce0e276cca45b8a2f0f047ac43fdffe832e3e1c8",
+    "text": "is for context management problems. Okay? Now, coming back to the blackboard if you know like for example you have let's say an LLM model. Let's take any model from OpenAI or we can take any model from Claude. So, you have a lot of models available. And what is the biggest problem with these models today? That is the context window is limited. And this problem is not, I would say today this is something that is going to stay because the context window can be 1 million, 2 million, 10 million but this is always and always going to be limited and even if you have a large context window you don't want to just ingest everything into the context window right because what will happen with that you are actually giving more tokens so the cost will also increase and hallucinations will also increase. So it is very important to keep the context window limited. Now whenever you chat with an LLM you create a conversation history with it. Okay? So what is this conversation history? So let's say as a user I sent some messages. So let's say this is a chat message and then what happens? You get a response from the LLM. Right? Then again what you basically do is if I just copy this thing. Again you send it some messages and the LLM gives some response. And this particular thing goes on. So this running context which is this running chat history we usually call it a",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 65.36,
+      "end_seconds": 132.72,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=65s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "ccd9a286303134c61771e2454a5f81a94cbabb2da559b418e12fe8716f0ae469",
+    "text": "limited. Now whenever you chat with an LLM you create a conversation history with it. Okay? So what is this conversation history? So let's say as a user I sent some messages. So let's say this is a chat message and then what happens? You get a response from the LLM. Right? Then again what you basically do is if I just copy this thing. Again you send it some messages and the LLM gives some response. And this particular thing goes on. So this running context which is this running chat history we usually call it a thread. This is a thread. Right? You sent some messages. The context LLM responded. You sent it some messages again and it responded. So this is what? This is basically a running history of the context. And this is basically what? This is a sliding window context. Because your context window might be this much. Okay? So I am just taking an example. So let's say this is the context window that your LLM supports. So as your messages increase, your context window also keeps sliding. That means the earlier messages like if you had said something at the beginning will gradually move out of the context window. So this is basically how these LLMs remember what we were talking about using a sliding window context. Now here is a problem that your thread which is your running memory we call it short-term.",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 113.6,
+      "end_seconds": 182.72,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=113s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "817fbc130a5722446ccc69d63a076d6aa374733a4d99b8a7e3a91518599465b1",
+    "text": "had said something at the beginning will gradually move out of the context window. So this is basically how these LLMs remember what we were talking about using a sliding window context. Now here is a problem that your thread which is your running memory we call it short-term. शुरू में कुछ बातें की होंगी तो वो कॉन्टेक्स्ट विंडो से धीरे-धीरे धीरे-धीरे बाहर चली जाती है। सो दिस इज़ बेसिकली हाउ दीज़ एलएलएम्स रिमेंबर कि हम किस बारे में बात कर रहे थे यूजिंग अ स्लाइडिंग विंडो कॉन्टेक्स्ट। नाउ हियर इज़ अ प्रॉब्लम जो आपका थ्रेड होता है व्हिच इज़ योर रनिंग मेमोरी इसको हम कहते हैं शॉर्ट टर्म Memory. Because what is this, we call it short-term memory? Because this is something that is only lived as long as you are talking to the LLM. For example, right now you are watching this video. And whatever I am talking about in this video, you will not remember it word for word. And there is no need also that you remember this particular video word for word. If you are talking to your friend on the phone and let's say you talked for an hour, then you do not remember exactly what was discussed in that hour. That is basically a running context right that is known as short term memory. But when this video ends or when you end the call with your friend, you remember what topics we talked about. What were the important things that you should remember. What were the facts that you should remember or there were some",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 165.44,
+      "end_seconds": 249.599,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=165s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "3c07e1257556ba339f1d7b105fc5cde63a28f4e8961f9d808285a6fb44e57859",
+    "text": "term memory. But when this video ends or when you end the call with your friend, you remember what topics we talked about. What were the important things that you should remember. What were the facts that you should remember or there were some interesting things that happened, you only remember those things. For example, if your friend told you on the call that we are going to have ice cream tomorrow. Right? Now you just remember this event that tomorrow is an event that I have to go for ice cream or your friend said that he bought a new car. So this is just one extracted information that you will remember. Exact conversations you never remember. You just basically extract out the information and you just remember that like you are going to do from this video. You are just going to remember that short-term memory does something which is basically a running context you are not going to remember exactly the words that I have said you are not recording this video in your mind. So this is called short-term memory. Now when a conversation is running when you are chatting with your LLM, your short-term memory is a sliding window that is always sliding. So what do you have to do? The problem is that if you only rely on short-term memory, you are going to be losing on the facts. For example, if I said in the very first message that my name is Piyush. Okay? My name is",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 231.04,
+      "end_seconds": 312.32,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=231s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "4e858b52619a0652c701b36ac80390f8fc2dcfc14f9d1a0abb5374012353f3e0",
+    "text": "is a sliding window that is always sliding. So what do you have to do? The problem is that if you only rely on short-term memory, you are going to be losing on the facts. For example, if I said in the very first message that my name is Piyush. Okay? My name is Piyush Garg. And then I asked at the end what is my name. Now you might think that I told him my name. You told the LLM your name at the beginning. That my name is Piyush Garg. But if you ask him here what is my name? The LLM will say I don't know. Because your context window which is your short-term memory context window that has been slid over the time of messages. So it will not know your name. And this is exactly where you have to build a long-term memory engine. So what do we need here? We need a long-term memory that can do what? While you are having a conversation. While you are having a conversation. What can we do from every conversation message? Using another LLM model it can be a mini model. It can be a specialized model. Using another model what do we do from this? We extract our long-term memory. And then what can we do with it? We can store it in a store. For example, for now, let's take a simple database. So let me just say a database. Okay? So, let's take a database. Let's for a timing just to keep the thing simple. Let's say this",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 294.16,
+      "end_seconds": 376.16,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=294s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "ee4b500ffc7ba3327f798da7bb0c41f9518fa207a75277b6caac45583b9820c8",
+    "text": "We extract our long-term memory. And then what can we do with it? We can store it in a store. For example, for now, let's take a simple database. So let me just say a database. Okay? So, let's take a database. Let's for a timing just to keep the thing simple. Let's say this is our post craze DB. A SQL DB. So, what did we do? We gave it messages. We must have provided it something that I need to extract LTM memory from it. So what will this do? Let's say from the first one we extracted. Name is Piyush Garg. Okay? So this is a fact about me. So what did we do with it in our database? We stored that the name is Piyush. Let's say I must have mentioned somewhere here that my age is let's say 27. So it must have stored that user age is 27. Then I must have mentioned somewhere that my favorite color is pink. So it can store like user favorite color is pink and let's assume some of my preferences are that user prefers okay light a light mode light mode on websites so what did we do we did for each message internally we were extracting a long-term memory of facts and storing them in our database now whenever you ask a follow-up question whenever you ask a follow-up question obviously I have a sliding window right? I have a sliding",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 357.6,
+      "end_seconds": 438.639,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=357s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "264dfd7789c1319c2648aecbbce8385afbf7e0e9980d1632c5bc6c9730bcfc39",
+    "text": "internally we were extracting a long-term memory of facts and storing them in our database now whenever you ask a follow-up question whenever you ask a follow-up question obviously I have a sliding window right? I have a sliding window context. But along with the sliding window context can I always can I always and always also load the facts from my database? I can because what is this? This is just bullet points. This is just a string. So what will I do? That means my LLM call will look something like this. That I am making an LLM call. So what I can do is as a part of history. I can take message history. Okay? I can take message history here. Let's say what did I do? I took the last 10 messages. I can concatenate this particular thing. Okay I can concatenate this particular thing with my LTM store. Alright? Whatever things are stored in my LTM store. Plus whatever questions the user has asked me, so that is a user query. So, can I construct something like this and make an LLM call. Now because what I have done here? I have attached an LTM store here. The long-term memory store. Now what is going to happen is it knows facts about me. So even if I ask what is my name it won't be in our context window but it is stored in our long-term memory. That is how. And another benefit of this is that if I start a new chat",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 421.039,
+      "end_seconds": 504.8,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=421s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "34c9fc7df74eaa8edbebb4d9a063722a339b040ad08c839408cc915239d07038",
+    "text": "here? I have attached an LTM store here. The long-term memory store. Now what is going to happen is it knows facts about me. So even if I ask what is my name it won't be in our context window but it is stored in our long-term memory. That is how. And another benefit of this is that if I start a new chat I start with a fresh chat that I have never done before. And if my very first message is what is my name. What I can do is because same user is because it's same user I can also load the contacts from here. So even in a fresh chat it will know what my name is. This is known as your long-term memory. Now the only problem is that what does your long-term memory do? It also increases over time. It's a growing list. It's a growing list. So what will happen? At one point it may be that your long-term memory has also become so much. Let's say you have some facts here going on going on. That you cannot feed the entire context. Right? Right? You cannot feed the whole context of the long-term memory into your LLM. So let's say if the user asked what is my name? Technically speaking feeding these all things are unnecessary. Because the user has only asked for their name. So I should ideally be able to query partial data. Ideally this database should be smart enough to understand the semantic meaning of the query. And just return me that the user has asked for their name so I will just return this",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 485.199,
+      "end_seconds": 568.399,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=485s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "b5a731a0f35ca472ddea868a6ef8932fd00e41688d2cee2ad7301e567e8d87d3",
+    "text": "feeding these all things are unnecessary. Because the user has only asked for their name. So I should ideally be able to query partial data. Ideally this database should be smart enough to understand the semantic meaning of the query. And just return me that the user has asked for their name so I will just return this And this is exactly where that we can remove post craze and what can we do here? We can use a vector DB like a quadrant. So you can actually use a quadrant like a DB. And instead of doing an SQL query what can you do here? Whatever the user's query is. You can perform a vector search on it. So you can actually perform a vector similarity search. Okay? Let's just say search and then what can you do? You can retrieve facts based on what is really required. So what happens with this? Your even memory retrieval is also What happens? And it gets optimized. You are not loading the whole memory. You are actually doing a semantic search. So inside the LLM store what you are not going to do is you are going to do a similarity search. So similarity, you can do a similarity search here. Okay? With the user query. So whatever your user's query is, search on that. So that you only and only have the relevant context. So, this is basically how a long-term memory works. Now inside long-term memory, you also have multiple types of memories. For example, you have a fact memory, you have an episodic",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 550.0,
+      "end_seconds": 634.64,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=550s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "78de55a92b25b3c76d2abf716b0562a10c58e137be679bf39cce73b995b3b5fd",
+    "text": "user query. So whatever your user's query is, search on that. So that you only and only have the relevant context. So, this is basically how a long-term memory works. Now inside long-term memory, you also have multiple types of memories. For example, you have a fact memory, you have an episodic memory. Okay? Episodic memory and you have a semantic memory. Now what happens in these memories is that the facts, right, what are they usually? They are stored in your value pairs. And these are overridable. Okay? Overridable. For example, if I said that my age is 27, let's say 27, and if I tell it that now my age is 28 because age is something that increases every year, right at least in my case, so in that case what will happen is you have to what to do if you already have this memory and you don't want to create a new memory, right? You want to go and you want to update the existing memory to 28. So this is known as a key value overridable memory. So facts about the user we call factual memory. That it's a fact about you. What are your preferences? What do you like? What do you not like? This is known as a factual memory. Episodic memory is. This is basically the patterns about past interactions. Okay? For example, if I told it that I",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 614.0,
+      "end_seconds": 701.04,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=614s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "66944f6358e17ef9a5c6bd812c6254d814b3a3de1bbe0b60f6033c8cf5efa62f",
+    "text": "fact about you. What are your preferences? What do you like? What do you not like? This is known as a factual memory. Episodic memory is. This is basically the patterns about past interactions. Okay? For example, if I told it that I Okay? I did or maybe I can just say that I made an application yesterday. Okay yesterday and maybe I said I went to a date yesterday, something like this. So in this what is it, if you can see that there is something known as like you know this is my past historical data because here a word is coming yesterday, here a word is coming yesterday or we can say that on a you know 14th fifth I deployed let's say a server, okay something like this. So what is this? This is basically what is my episodic data. This is always a growing list. What will happen with this? It will always be a grow list. Inside this, you will never override things. So one day I told you about some preference. So this is my episodic memory. It's basically my past events at what I have been doing. So where can this come in handy that if I ask tomorrow, hey what was I doing on 14th Feb? What was I doing yesterday when did I do this? So where does this come from? It comes from episodic memory. And semantic memory is nothing, it's just a vector memory. Okay?",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 680.399,
+      "end_seconds": 765.04,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=680s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "cdab4d81d4b7f3783cebf5e9abc8724a5e46f4bd2770f835c24882793dba6f0d",
+    "text": "basically my past events at what I have been doing. So where can this come in handy that if I ask tomorrow, hey what was I doing on 14th Feb? What was I doing yesterday when did I do this? So where does this come from? It comes from episodic memory. And semantic memory is nothing, it's just a vector memory. Okay? About my general knowledge. Okay? This also always remains what? This also always remains a growing list. So this is basically three types of memory that you store inside long-term memory. And this whole memory engine, the whole memory extraction, this is also how. What happens? It happens through an LLM. Now, a complete system design comes on top of this, which we will discuss in another video. For example, you can store these memories asynchronously. Right? You can store them synchronously. You can retrieve them asynchronously. You can do synchronous retrieval. You can also do agentic retrieval. So there is something known as agentic as async retrieval. Okay? So there are many types of retrieval strategies. How to retrieve a memory and how to store a memory. And there are many concepts related to this. For example, daydreaming comes into play. Okay? And then there is something known as the dream while a dream. Yes, we can include that in daydreaming. So what happens in daydreaming? That you kind of enhance your memories while you dream. Okay? So idle",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 746.639,
+      "end_seconds": 826.639,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=746s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "b54253874ad035ff90eadfdb967e48faa72b3950a17f4b5c642ddb4c43792f8c",
+    "text": "For example, daydreaming comes into play. Okay? And then there is something known as the dream while a dream. Yes, we can include that in daydreaming. So what happens in daydreaming? That you kind of enhance your memories while you dream. Okay? So idle dreaming includes these things. So there are many patterns that we will discuss in upcoming videos. That’s how these dreaming patterns enhance your memories even more. And to even go further, there is something known as a graph memory. Okay? So usually what happens in our mind? Sometimes we link one thing to another that doesn’t have much meaning in the real world. For example, you might have seen that you have a specific kind of fragrance. If you inhale that fragrance, you remember someone. Like you link some fragrance to some place. So what is this? This is a kind of link that is unique to you. It doesn’t have much meaning. Similarly, if I say that whenever I see this AC remote, let’s just take an example that whenever I see this AC remote, there might be some memories associated with this AC remote. Okay? There might have been some funny incident at my home linked to this AC remote. So let’s say there is some kind of a family funny incident. So here we can say that there must have been a funny incident.",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 809.44,
+      "end_seconds": 892.56,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=809s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "b3589d58c1d6c0a9053cab1e3b8ebb44bfcc575e1651990bf870201f4b71cf81",
+    "text": "there might be some memories associated with this AC remote. Okay? There might have been some funny incident at my home linked to this AC remote. So let’s say there is some kind of a family funny incident. So here we can say that there must have been a funny incident. So what can we do? We can link it here like this. So it’s kind of a graph memory. So whenever the user talks about the AC remote, you might also want to get that funny incident that happened, whatever was told inside your semantic, inside your episodic memory, so you can store it in a graph DB, something like Neo4J. So this basically builds up a knowledge store and a graph where you can store links that this memory point, okay, this particular memory point, which might have actual vector embeddings in your vector store, is linked with all these memories. So it’s basically like if you are ever talking about the AC remote that is in your vector store, then along with the AC remote, I also need to load this incident. So this kind of memory is known as a graph memory. So this is basically how a high-level design of a memory works. So your agentic memory, this was a very high level, meaning in reality, these things are very complex. A lot of things go inside a memory engine. But this is a high-level design on how a memory engine works. And why do we need a memory inside AI agents? Okay? So",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 875.36,
+      "end_seconds": 959.2790000000001,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=875s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "eb9b2218d956c32e2c24662d7fde0331ded04273a0998e5f0654db574f1b6c7b",
+    "text": "memory works. So your agentic memory, this was a very high level, meaning in reality, these things are very complex. A lot of things go inside a memory engine. But this is a high-level design on how a memory engine works. And why do we need a memory inside AI agents? Okay? So this is what is happening in this entire white paper, that what is a long-term memory and a short-term memory and how these things work parallelly. Now let me show you one platform through which we can build this agentic memory engine. Not just the agentic memory engine. We can. You can build any kind of full stack applications using AI agents. So I am talking about Insforce here. So Insforce is a native cloud infrastructure platform. That means if you want to build a full stack application, you need a database, you need a vector store, you need an LLM router, you need a payment provider, you need storage, you need a hosting website. And you want the agents to automatically use all these cloud infrastructure things, then Insforce gives you that. You just have to prompt and agents will be capable of using Ins and out automatically. This is the power of Insforce. And trust me I have been using Insforce for at least six of my products and it just works like a charm. So you just have to connect it to your AI agent. And your agents can autonomously access Postgres DB authentication, cloud storage, H functions,",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 940.0,
+      "end_seconds": 1022.5600000000001,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=940s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "189fbf43c8dd04e568bcfb5d95f65a5e84c462811dafdbec6cbfc3e64fec1f56",
+    "text": "And trust me I have been using Insforce for at least six of my products and it just works like a charm. So you just have to connect it to your AI agent. And your agents can autonomously access Postgres DB authentication, cloud storage, H functions, cron jobs, real-time, vector, custom compute, sites, model gateway, messaging, payments, analytics and what not. So this is a growing list. So you just have to like your agents can control your cloud infrastructure. So, I have already signed up for it. You will get the link in the description below and I have made a free project that is a memory engine. So, now what do we need to do? Let me just build. Ah let me just go here. So, this is an empty project. And let me just do an npm init in it. So, we will do an npm init here. And I will just go with the default. Ah here we just take a type as module ah JS type. Type as module. Now what I can do is this is a command that will link our Insforce. So, let me just run this command. So, just copy paste it. And I will just say yes. Okay? So I have said yes here. Let's just wait for a while. And you can see it is doing the authentication. And we will do",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 1004.639,
+      "end_seconds": 1072.24,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=1004s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "6608ce9025e9c00982e7af9d172f5ff48faeef542fd21983a781aeb777bca965",
+    "text": "type. Type as module. Now what I can do is this is a command that will link our Insforce. So, let me just run this command. So, just copy paste it. And I will just say yes. Okay? So I have said yes here. Let's just wait for a while. And you can see it is doing the authentication. And we will do authorization here. So we have done authorization successfully. So if you can see authentication is probably done. Let me just authorize once again. Authenticated as Piyush kar exchanging done done done. And you can see link the project memory engine installing as force agent skill. So what will this do? It will automatically load the skills for you. So you can see now I have the agent dot file here. Really really nice. Okay now what I can do is if I go back to my project where is my project running? Yes. So you see my this healthy me and my project is all done. Now what can we do? We just need to come to our cursor ID. Okay? So this is the agent dot MD that I want to use. It is like automatically loadable. That's okay. If you have cloud code you can do that too. So I will be using let's say the Opus",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 1052.72,
+      "end_seconds": 1119.8400000000001,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=1052s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "3122a2616a1dbf6dc81c9fed5d735b462c9e67af39cbeae7358088361daf4a3b",
+    "text": "my project is all done. Now what can we do? We just need to come to our cursor ID. Okay? So this is the agent dot MD that I want to use. It is like automatically loadable. That's okay. If you have cloud code you can do that too. So I will be using let's say the Opus five. Okay? This is the latest model. So I will just say that I want to build a memory engine where users first logs in using Insforce authentication and then okay create a store and then a use Insforce model gateway okay to use LLM models and make a playground where users can simply chat with models okay and use Postgres okay Postgres DB on Insurge for short term memory okay short term. Memory that is a you know the conversation history and extract at LTM okay that is factual and episodic Memory and store in vector DB from inserts and show in sidebar about the memory of user which are extracted and always Include relevant memories in user query. Okay? So, this is basically what I want to do. So, we will put this in plan mode. So, I have just put this in plan mode. And let's plan this a little bit. So, I will just skip the video from here. Alright. So, you can see that it has started doing something. Scaffold holding next application. Then it is going to do a memory engine with vector extension stores. So you can see RLS, grants, triggers, HNSW indexing, match memories done, SSR done. Right? Building a",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 1102.4,
+      "end_seconds": 1237.0390000000002,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=1102s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "b46125326adc6424683ea9184eb03789ea773d27f9bc90bd68ab89eb737c6b9e",
+    "text": "skip the video from here. Alright. So, you can see that it has started doing something. Scaffold holding next application. Then it is going to do a memory engine with vector extension stores. So you can see RLS, grants, triggers, HNSW indexing, match memories done, SSR done. Right? Building a stores, open router implementation will be done. So you can see it is actually going to do all autonomously. I don't have to do anything here. So model gateway will also use this. This is the key and this is all good. Open AI http is there. That's really great. So here we will click on quick start. So, let me just see if everything is working good. Open router API key is there. Open router. Okay? This is also all good. Let's go to models. So, if you can see, we have a lot of models right here which is really amazing. And if we look at the overview here then this is also all right. And after that here you can see if I go into the database right database then you can see we have here the database it will also automatically create. Okay? Automatically this database will also be created. Which is really really really powerful and we have compute. So this we don't have to use everything. Our model is going to do all autonomously. That's the beauty. Right? So, if we go to our plan. So, this is the whole plan that was created. This is the high level design of diagram that our whole application is going to work. And if",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 1218.4,
+      "end_seconds": 1302.24,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=1218s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "db7d6942c66302d9b1463e971f1ae82360b315d842734910040f1c355f551ba2",
+    "text": "we don't have to use everything. Our model is going to do all autonomously. That's the beauty. Right? So, if we go to our plan. So, this is the whole plan that was created. This is the high level design of diagram that our whole application is going to work. And if we go down these are some of the vector embeddings and all those things that are going to be used. Okay? And let's go further down. So what is it doing now? Now it is scaffolding. So our next year's application will be being built. Oh waiting for an approval. Okay? Yes we can just give run. So this is waiting for our approval was doing. My bad. Oh we have got a lot of models too. Nice. I will just say always run. Okay. So let's just wait for a while. Now what is it doing for us? Okay it is writing all the ENV files and everything. Really really really nice. Okay? So let's make this. So I will just fast forward the video and I will just show you the exact what it has built. But you have seen the plan. And don't worry I will give you the source code with the plan also committed. So you can also build this from scratch. Alright so you can see that it has built something so let's do one thing. Let's check by running npm run dev what it has built. You can see we have a full application ready. And I haven't coded anything. Okay? It's not a very proud thing but okay.",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 1282.96,
+      "end_seconds": 1371.1999999999998,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=1282s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "49ce8cbbbd98577af8f860b9212ad15041ac482e0aa808bce5bce9a8e93377ff",
+    "text": "build this from scratch. Alright so you can see that it has built something so let's do one thing. Let's check by running npm run dev what it has built. You can see we have a full application ready. And I haven't coded anything. Okay? It's not a very proud thing but okay. Just telling you. So now if I bring this particular thing here let's see what it has built. Okay? Really looking nice with the first look. Okay? So let's create an account. So I will just give my name Piyush Garg and all the authentication is handled by Insured. And I will put my email address here. Piyushdev.com let me give a very nice looking password create. Okay so we have created our account. Oh there is a verification code. Nice. So let's do one thing. Let me just open my Gmail in the other screen. And I am just waiting here. Okay. So, I got the verification code. I will show you the verification code. Just a second. So, this is what the email looks like. Okay? So, you can see this is what the email looks like. So, our code is that is 16,5900. So, 165900 we have entered the code. It is validating my code. Okay? So, you can see, now we will create a new store here. So, I can just call it as Piyush Garg's. Let's say Piyush Garg. Description is like just for",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 1352.559,
+      "end_seconds": 1433.84,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=1352s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "8802ec3569d31ddfec77847e25ebacdeb979d027c10b7ce4d3cd453c43b2907d",
+    "text": "is 16,5900. So, 165900 we have entered the code. It is validating my code. Okay? So, you can see, now we will create a new store here. So, I can just call it as Piyush Garg's. Let's say Piyush Garg. Description is like just for testing. Okay? Okay? Or just for demo. We can also give this a system part. And I will just create a store pretty good. Okay? So if we go back here you might see some data here. If I just click on refresh you can see store authentication users are coming in. Oh there is a mem tester. Okay that's really good. So you can see this is our very cute interface. I can just say hello my name is Piyush Garg. Let's see if it works. Thinking okay it's a thinking model I’m not sure if it is okay how may assist you today extracting memory okay memory look extracting so facts about me will come in a little while username is Piyush okay and yesterday yesterday I was reading about you know how system design works okay and then I’m going to give it something that my name is Piyush. Okay? I’m 27 years old. So let's see. This will be episodic memory. And you know I’m 27 years old. Okay? Here look in the background extracting is going on. Episodic memory has come. Was reading about how system design works on this is. Great to know Piyush you are being 27 years old. Okay? Actually 26 years old. Okay? So, one",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 1416.32,
+      "end_seconds": 1520.24,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=1416s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "c2ba66bf00f0f81e466b5b55e48908808328ca54a5e9a3ba74b8ea1ccddad52a",
+    "text": "old. Okay? Here look in the background extracting is going on. Episodic memory has come. Was reading about how system design works on this is. Great to know Piyush you are being 27 years old. Okay? Actually 26 years old. Okay? So, one let's do. Entering. Facts episode extracting 27 years old. That's really great. Recall four memories. So you are 26 so now what will it do? It will update on this. If I’m if we see will it change 27 to 26 or add a new memory Okay, it has added a new memory. Let me create a new chat. A fresh chat. Okay? And we created a fresh chat. You can see all of the facts are here. And if I ask it what is my name. Let's see. What is my name? Let's just wait for a while. Recall three memories. Three memories have been recalled. It is showing this and your name is Clush. So this is basically how the memories work. This is a memory engine that works. Okay? So if you go here in the database, you can see the memories. So, you can see we have its vector. These are embeddings, kind of. And you can see the content right here. So, this is basically how your memory engine works. So, now you got the point that this is a memory engine. And this was all about this particular video and you have seen how easy it was to build an application using inserts. So all",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 1501.44,
+      "end_seconds": 1584.64,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=1501s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  },
+  {
+    "id": "bd1a21495543407ef37c896260ae86c3c9ccd5febd1965397ae159bf9cc67fcf",
+    "text": "These are embeddings, kind of. And you can see the content right here. So, this is basically how your memory engine works. So, now you got the point that this is a memory engine. And this was all about this particular video and you have seen how easy it was to build an application using inserts. So all relevant links will be found in the description below. And make sure to check out insf and this was all about this particular video. How did you like the video? Do let me know in the comments. If you liked the video, make sure to like and subscribe. See you in the next video. Until then, bye-bye and take care.",
+    "metadata": {
+      "video_id": "2zdWI2SYB9I",
+      "title": "AI Agentic Memory System Design",
+      "trainer": "Piyush Garg",
+      "channel": "Piyush Garg",
+      "topic": "Agents",
+      "start_seconds": 1565.919,
+      "end_seconds": 1598.0,
+      "url": "https://www.youtube.com/watch?v=2zdWI2SYB9I&t=1565s",
+      "language": "en",
+      "caption_type": "English translation of automatic hi captions"
+    }
+  }
+]

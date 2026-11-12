@@ -1,0 +1,32 @@
+[
+  {
+    "video_id": "BqNbzeuxTaE",
+    "title": "Azure Master Class v3 - Part 1 - Cloud and Microsoft Azure 101",
+    "channel": "John Savill's Technical Training",
+    "trainer": "John Savill",
+    "topic": "Azure",
+    "start_seconds": 0,
+    "end_seconds": 3680.0,
+    "stem": "savill_azure"
+  },
+  {
+    "video_id": "Sq8Cq7RZM2o",
+    "title": "Azure AI Foundry Overview",
+    "channel": "John Savill's Technical Training",
+    "trainer": "John Savill",
+    "topic": "Azure",
+    "start_seconds": 0,
+    "end_seconds": 5254.0,
+    "stem": "savill_azure_2"
+  },
+  {
+    "video_id": "WK2BvjOYTCQ",
+    "title": "AI-103 Develop AI Apps and Agents on Azure Study Cram",
+    "channel": "John Savill's Technical Training",
+    "trainer": "John Savill",
+    "topic": "Agents",
+    "start_seconds": 0,
+    "end_seconds": 7021.0,
+    "stem": "savill_agents"
+  }
+]

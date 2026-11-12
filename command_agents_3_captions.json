@@ -1,0 +1,1018 @@
+{
+  "video_id": "ivjZ5XJZ2bs",
+  "title": "A ReAct Agent Demo AND An Agentic RAG Demo",
+  "channel": "COMMAND",
+  "trainer": "COMMAND",
+  "topic": "Agents",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 593.0,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.359,
+      "text": "[Music]"
+    },
+    {
+      "start": 2.08,
+      "end": 8.559000000000001,
+      "text": "Okay, React agents or reason and act"
+    },
+    {
+      "start": 5.359,
+      "end": 10.8,
+      "text": "agents. Agents are quite a hot topic at"
+    },
+    {
+      "start": 8.559,
+      "end": 13.28,
+      "text": "the time of recording here in 2025 and"
+    },
+    {
+      "start": 10.8,
+      "end": 15.040000000000001,
+      "text": "rightfully so. If you learn how to use"
+    },
+    {
+      "start": 13.28,
+      "end": 17.759999999999998,
+      "text": "them, you can get incredible leverage"
+    },
+    {
+      "start": 15.04,
+      "end": 20.48,
+      "text": "for yourself and your company. They're"
+    },
+    {
+      "start": 17.76,
+      "end": 24.240000000000002,
+      "text": "definitely not overhyped, but I would"
+    },
+    {
+      "start": 20.48,
+      "end": 28.32,
+      "text": "premise they are a bit over complicated."
+    },
+    {
+      "start": 24.24,
+      "end": 31.119,
+      "text": "Here is a diagram of what an agent in a"
+    },
+    {
+      "start": 28.32,
+      "end": 34.399,
+      "text": "nutshell is. And this is an actual"
+    },
+    {
+      "start": 31.119,
+      "end": 37.12,
+      "text": "agent. A lot of AI systems that people"
+    },
+    {
+      "start": 34.399,
+      "end": 40.079,
+      "text": "call an agent are not agents. They're"
+    },
+    {
+      "start": 37.12,
+      "end": 43.04,
+      "text": "actually AI automations. And sometimes"
+    },
+    {
+      "start": 40.079,
+      "end": 46.0,
+      "text": "that's actually what you need. So the"
+    },
+    {
+      "start": 43.04,
+      "end": 48.8,
+      "text": "leverage comes from being able to issue"
+    },
+    {
+      "start": 46.0,
+      "end": 53.519999999999996,
+      "text": "a single prompt and have that single"
+    },
+    {
+      "start": 48.8,
+      "end": 55.839999999999996,
+      "text": "prompt result in multiple very dynamic"
+    },
+    {
+      "start": 53.52,
+      "end": 58.32,
+      "text": "LLM calls. And if you can control them"
+    },
+    {
+      "start": 55.84,
+      "end": 62.0,
+      "text": "and have them, you know, do exactly what"
+    },
+    {
+      "start": 58.32,
+      "end": 66.159,
+      "text": "you need, it can get incredible outputs,"
+    },
+    {
+      "start": 62.0,
+      "end": 68.0,
+      "text": "right? So, here's the prompt if you're"
+    },
+    {
+      "start": 66.159,
+      "end": 70.56,
+      "text": "interested that we're going to use for"
+    },
+    {
+      "start": 68.0,
+      "end": 72.56,
+      "text": "powering our agent. It's starting with a"
+    },
+    {
+      "start": 70.56,
+      "end": 74.479,
+      "text": "system message. For example, you're"
+    },
+    {
+      "start": 72.56,
+      "end": 77.43900000000001,
+      "text": "going to say in the system message, act"
+    },
+    {
+      "start": 74.479,
+      "end": 80.08,
+      "text": "as a lawyer or act as a programmer or"
+    },
+    {
+      "start": 77.439,
+      "end": 82.0,
+      "text": "act as a marketer, etc."
+    },
+    {
+      "start": 80.08,
+      "end": 83.92,
+      "text": "After we specify our system message in"
+    },
+    {
+      "start": 82.0,
+      "end": 87.52,
+      "text": "our prompt, the next part of our prompt"
+    },
+    {
+      "start": 83.92,
+      "end": 89.43900000000001,
+      "text": "is the message list. This is how we"
+    },
+    {
+      "start": 87.52,
+      "end": 92.79899999999999,
+      "text": "imbue some sense of memory, right? We"
+    },
+    {
+      "start": 89.439,
+      "end": 94.88,
+      "text": "put the chat history. Then we list the"
+    },
+    {
+      "start": 92.799,
+      "end": 97.92,
+      "text": "tools or if you come back to this"
+    },
+    {
+      "start": 94.88,
+      "end": 100.88,
+      "text": "diagram, the actions that the agent is"
+    },
+    {
+      "start": 97.92,
+      "end": 103.92,
+      "text": "allowed to execute, right?"
+    },
+    {
+      "start": 100.88,
+      "end": 105.03999999999999,
+      "text": "This is just a list of functions. At the"
+    },
+    {
+      "start": 103.92,
+      "end": 108.0,
+      "text": "end of the day, if you're familiar with"
+    },
+    {
+      "start": 105.04,
+      "end": 111.04,
+      "text": "programming, a tool is just a function"
+    },
+    {
+      "start": 108.0,
+      "end": 113.28,
+      "text": "that you can call. We're going to cover"
+    },
+    {
+      "start": 111.04,
+      "end": 115.92,
+      "text": "tools briefly in the next section and"
+    },
+    {
+      "start": 113.28,
+      "end": 118.96000000000001,
+      "text": "show how it's not that complicated."
+    },
+    {
+      "start": 115.92,
+      "end": 122.32000000000001,
+      "text": "After we specify the tools, we then"
+    },
+    {
+      "start": 118.96,
+      "end": 126.079,
+      "text": "provide our prompt, right? And finally,"
+    },
+    {
+      "start": 122.32,
+      "end": 128.239,
+      "text": "we give our agent a scratch pad, which"
+    },
+    {
+      "start": 126.079,
+      "end": 130.79999999999998,
+      "text": "is a place where it can write whatever"
+    },
+    {
+      "start": 128.239,
+      "end": 132.72,
+      "text": "it wants. Depending on our task, it"
+    },
+    {
+      "start": 130.8,
+      "end": 135.36,
+      "text": "might need to keep some notes of what's"
+    },
+    {
+      "start": 132.72,
+      "end": 139.35999999999999,
+      "text": "going on across all the LLM calls, for"
+    },
+    {
+      "start": 135.36,
+      "end": 142.239,
+      "text": "example, and it might write some stuff"
+    },
+    {
+      "start": 139.36,
+      "end": 144.72000000000003,
+      "text": "here, help it accomplish the goal"
+    },
+    {
+      "start": 142.239,
+      "end": 147.92000000000002,
+      "text": "implied by the prompt."
+    },
+    {
+      "start": 144.72,
+      "end": 149.76,
+      "text": "And that's it. So,"
+    },
+    {
+      "start": 147.92,
+      "end": 152.95899999999997,
+      "text": "let's"
+    },
+    {
+      "start": 149.76,
+      "end": 154.239,
+      "text": "run a little demo here. And"
+    },
+    {
+      "start": 152.959,
+      "end": 157.28,
+      "text": "don't pay too much attention to the"
+    },
+    {
+      "start": 154.239,
+      "end": 159.76,
+      "text": "prompt that we're going to issue."
+    },
+    {
+      "start": 157.28,
+      "end": 163.28,
+      "text": "Just focus on the fact that for a single"
+    },
+    {
+      "start": 159.76,
+      "end": 165.44,
+      "text": "prompt, it's resulting in multiple LLM"
+    },
+    {
+      "start": 163.28,
+      "end": 169.0,
+      "text": "calls under the hood. Here's the prompt"
+    },
+    {
+      "start": 165.44,
+      "end": 169.0,
+      "text": "we're going to use."
+    },
+    {
+      "start": 173.92,
+      "end": 181.28,
+      "text": "Pretty much what this prompt is doing is"
+    },
+    {
+      "start": 178.4,
+      "end": 185.28,
+      "text": "asking our agent to write some marketing"
+    },
+    {
+      "start": 181.28,
+      "end": 188.239,
+      "text": "copy and then pass it back into itself"
+    },
+    {
+      "start": 185.28,
+      "end": 191.44,
+      "text": "to reflect on how it could be improved"
+    },
+    {
+      "start": 188.239,
+      "end": 194.159,
+      "text": "and then pass it back into itself."
+    },
+    {
+      "start": 191.44,
+      "end": 197.04,
+      "text": "So it can implement those improvements"
+    },
+    {
+      "start": 194.159,
+      "end": 200.239,
+      "text": "and then give us the final product which"
+    },
+    {
+      "start": 197.04,
+      "end": 203.599,
+      "text": "we see here. Right? So here we have some"
+    },
+    {
+      "start": 200.239,
+      "end": 205.28,
+      "text": "marketing copy for an event."
+    },
+    {
+      "start": 203.599,
+      "end": 208.79999999999998,
+      "text": "Right,"
+    },
+    {
+      "start": 205.28,
+      "end": 212.319,
+      "text": "perfect. If we come over to Langsmith,"
+    },
+    {
+      "start": 208.8,
+      "end": 215.28,
+      "text": "which is a tool that allows us to"
+    },
+    {
+      "start": 212.319,
+      "end": 219.11999999999998,
+      "text": "check out what's going on inside"
+    },
+    {
+      "start": 215.28,
+      "end": 222.879,
+      "text": "of this little demo,"
+    },
+    {
+      "start": 219.12,
+      "end": 225.04,
+      "text": "we can see that for our single prompt,"
+    },
+    {
+      "start": 222.879,
+      "end": 228.319,
+      "text": "right,"
+    },
+    {
+      "start": 225.04,
+      "end": 232.07999999999998,
+      "text": "we had"
+    },
+    {
+      "start": 228.319,
+      "end": 236.39999999999998,
+      "text": "uh prompt that requested some marketing"
+    },
+    {
+      "start": 232.08,
+      "end": 238.48000000000002,
+      "text": "copy to be generated, right?"
+    },
+    {
+      "start": 236.4,
+      "end": 240.87900000000002,
+      "text": "After it writes the marketing copy, we"
+    },
+    {
+      "start": 238.48,
+      "end": 242.39999999999998,
+      "text": "ask it to reflect and deliberate and"
+    },
+    {
+      "start": 240.879,
+      "end": 244.48,
+      "text": "then return to us the final marketing"
+    },
+    {
+      "start": 242.4,
+      "end": 246.64000000000001,
+      "text": "copy."
+    },
+    {
+      "start": 244.48,
+      "end": 253.599,
+      "text": "So you can see for a single prompt, it"
+    },
+    {
+      "start": 246.64,
+      "end": 256.32,
+      "text": "resulted in one 2 3 4 five LLM calls."
+    },
+    {
+      "start": 253.599,
+      "end": 261.759,
+      "text": "And that's the main thing to focus on"
+    },
+    {
+      "start": 256.32,
+      "end": 263.36,
+      "text": "here. I would say the downside of agents"
+    },
+    {
+      "start": 261.759,
+      "end": 266.24,
+      "text": "despite this incredible amount of"
+    },
+    {
+      "start": 263.36,
+      "end": 268.56,
+      "text": "leverage is that it's difficult to"
+    },
+    {
+      "start": 266.24,
+      "end": 270.479,
+      "text": "control"
+    },
+    {
+      "start": 268.56,
+      "end": 272.56,
+      "text": "what each of these calls does, right?"
+    },
+    {
+      "start": 270.479,
+      "end": 275.59999999999997,
+      "text": "So, there are tricks that you can"
+    },
+    {
+      "start": 272.56,
+      "end": 277.84,
+      "text": "employ, of course, and as you get"
+    },
+    {
+      "start": 275.6,
+      "end": 281.84000000000003,
+      "text": "familiar with them, you'll learn how to"
+    },
+    {
+      "start": 277.84,
+      "end": 283.67999999999995,
+      "text": "steer them, but it's"
+    },
+    {
+      "start": 281.84,
+      "end": 285.75899999999996,
+      "text": "difficult to get them to do exactly what"
+    },
+    {
+      "start": 283.68,
+      "end": 287.84000000000003,
+      "text": "you want to do every single time. But"
+    },
+    {
+      "start": 285.759,
+      "end": 289.36,
+      "text": "anyhow, for some use cases, they're"
+    },
+    {
+      "start": 287.84,
+      "end": 293.19899999999996,
+      "text": "appropriate."
+    },
+    {
+      "start": 289.36,
+      "end": 295.44,
+      "text": "Anyhow, that's React agent. So,"
+    },
+    {
+      "start": 293.199,
+      "end": 298.479,
+      "text": "the reason why I'm focusing on this"
+    },
+    {
+      "start": 295.44,
+      "end": 301.919,
+      "text": "React agent term is the React agent"
+    },
+    {
+      "start": 298.479,
+      "end": 304.8,
+      "text": "framework is"
+    },
+    {
+      "start": 301.919,
+      "end": 307.19899999999996,
+      "text": "how you can think of most agents under"
+    },
+    {
+      "start": 304.8,
+      "end": 308.40000000000003,
+      "text": "the hood. So, there's all these agents"
+    },
+    {
+      "start": 307.199,
+      "end": 310.639,
+      "text": "out there. where everybody's building"
+    },
+    {
+      "start": 308.4,
+      "end": 312.96,
+      "text": "their own agent,"
+    },
+    {
+      "start": 310.639,
+      "end": 317.039,
+      "text": "but you can"
+    },
+    {
+      "start": 312.96,
+      "end": 319.28,
+      "text": "fit most agents that people build or"
+    },
+    {
+      "start": 317.039,
+      "end": 321.36,
+      "text": "offer to the world within this React"
+    },
+    {
+      "start": 319.28,
+      "end": 324.92999999999995,
+      "text": "framework, which"
+    },
+    {
+      "start": 321.36,
+      "end": 327.12,
+      "text": "follows this agent loop design, right?"
+    },
+    {
+      "start": 324.93,
+      "end": 331.28000000000003,
+      "text": "[Music]"
+    },
+    {
+      "start": 327.12,
+      "end": 332.639,
+      "text": "Tools. So tools are nothing more than"
+    },
+    {
+      "start": 331.28,
+      "end": 335.84,
+      "text": "functions if you're familiar with"
+    },
+    {
+      "start": 332.639,
+      "end": 338.40000000000003,
+      "text": "programming or lists of instructions."
+    },
+    {
+      "start": 335.84,
+      "end": 342.08,
+      "text": "Right? In this diagram,"
+    },
+    {
+      "start": 338.4,
+      "end": 345.35999999999996,
+      "text": "tools refer to step four, right? So the"
+    },
+    {
+      "start": 342.08,
+      "end": 348.4,
+      "text": "actions that an LLM can take are the"
+    },
+    {
+      "start": 345.36,
+      "end": 351.44,
+      "text": "tools it has available to it. The way"
+    },
+    {
+      "start": 348.4,
+      "end": 355.28,
+      "text": "this works is when we send some prompt"
+    },
+    {
+      "start": 351.44,
+      "end": 358.639,
+      "text": "to our LLM, we also include the list of"
+    },
+    {
+      "start": 355.28,
+      "end": 362.4,
+      "text": "tools it has available, right? And when"
+    },
+    {
+      "start": 358.639,
+      "end": 365.36,
+      "text": "the LLM spits out its output, the LLM"
+    },
+    {
+      "start": 362.4,
+      "end": 368.479,
+      "text": "might spit out an output that says when"
+    },
+    {
+      "start": 365.36,
+      "end": 370.88,
+      "text": "we parse it, call this tool, right? And"
+    },
+    {
+      "start": 368.479,
+      "end": 372.479,
+      "text": "we call the tool. The tool returns its"
+    },
+    {
+      "start": 370.88,
+      "end": 375.919,
+      "text": "results."
+    },
+    {
+      "start": 372.479,
+      "end": 377.919,
+      "text": "And we feed that back into the LLM"
+    },
+    {
+      "start": 375.919,
+      "end": 382.0,
+      "text": "again. And the LLM can look at the"
+    },
+    {
+      "start": 377.919,
+      "end": 385.68,
+      "text": "output of what the tool call resulted"
+    },
+    {
+      "start": 382.0,
+      "end": 388.4,
+      "text": "in. And let's say that accomplished the"
+    },
+    {
+      "start": 385.68,
+      "end": 392.88,
+      "text": "task of our prompt. When we parse the"
+    },
+    {
+      "start": 388.4,
+      "end": 396.0,
+      "text": "LLM's second output, the LLM might say"
+    },
+    {
+      "start": 392.88,
+      "end": 397.84,
+      "text": "stop, right? At which point we break out"
+    },
+    {
+      "start": 396.0,
+      "end": 401.68,
+      "text": "of the loop and return that result back"
+    },
+    {
+      "start": 397.84,
+      "end": 404.08,
+      "text": "to the caller. So that's tools, right?"
+    },
+    {
+      "start": 401.68,
+      "end": 406.319,
+      "text": "So we'll leave it there. I think I don't"
+    },
+    {
+      "start": 404.08,
+      "end": 408.56,
+      "text": "need to over complicate it, but pretty"
+    },
+    {
+      "start": 406.319,
+      "end": 410.47900000000004,
+      "text": "much what we're going to be doing in the"
+    },
+    {
+      "start": 408.56,
+      "end": 412.0,
+      "text": "final step of this video, right, the"
+    },
+    {
+      "start": 410.479,
+      "end": 414.31899999999996,
+      "text": "finale"
+    },
+    {
+      "start": 412.0,
+      "end": 417.68,
+      "text": "is we're going to be giving a React"
+    },
+    {
+      "start": 414.319,
+      "end": 421.03900000000004,
+      "text": "agent access to a retrieval with"
+    },
+    {
+      "start": 417.68,
+      "end": 424.08,
+      "text": "reranking tool, right?"
+    },
+    {
+      "start": 421.039,
+      "end": 426.479,
+      "text": "Which is going to trigger some query to"
+    },
+    {
+      "start": 424.08,
+      "end": 428.4,
+      "text": "our vector space, right? Or our vector"
+    },
+    {
+      "start": 426.479,
+      "end": 431.28,
+      "text": "database."
+    },
+    {
+      "start": 428.4,
+      "end": 433.67999999999995,
+      "text": "And the LLM is able to decide the"
+    },
+    {
+      "start": 431.28,
+      "end": 435.75899999999996,
+      "text": "queries, right? instead of us having to"
+    },
+    {
+      "start": 433.68,
+      "end": 439.36,
+      "text": "come up with them. So we can give some"
+    },
+    {
+      "start": 435.759,
+      "end": 441.599,
+      "text": "prompt to our React agent and the React"
+    },
+    {
+      "start": 439.36,
+      "end": 445.91900000000004,
+      "text": "agent can break that up into multiple"
+    },
+    {
+      "start": 441.599,
+      "end": 451.039,
+      "text": "prompts or based on our prompt issue"
+    },
+    {
+      "start": 445.919,
+      "end": 454.08,
+      "text": "multiple calls to the vector space."
+    },
+    {
+      "start": 451.039,
+      "end": 458.08,
+      "text": "We made it to the finale. It's a React"
+    },
+    {
+      "start": 454.08,
+      "end": 460.0,
+      "text": "agent that has a reranking tool"
+    },
+    {
+      "start": 458.08,
+      "end": 462.8,
+      "text": "included,"
+    },
+    {
+      "start": 460.0,
+      "end": 466.0,
+      "text": "aka this is a"
+    },
+    {
+      "start": 462.8,
+      "end": 468.56,
+      "text": "form of agentic rag."
+    },
+    {
+      "start": 466.0,
+      "end": 470.56,
+      "text": "And we're going to demo this right now."
+    },
+    {
+      "start": 468.56,
+      "end": 473.12,
+      "text": "And for context, we're going to be"
+    },
+    {
+      "start": 470.56,
+      "end": 475.199,
+      "text": "searching across a cookbook that"
+    },
+    {
+      "start": 473.12,
+      "end": 479.36,
+      "text": "consists of about 600 pages worth of"
+    },
+    {
+      "start": 475.199,
+      "end": 480.72,
+      "text": "recipes. So, let's issue a prompt like"
+    },
+    {
+      "start": 479.36,
+      "end": 483.039,
+      "text": "this."
+    },
+    {
+      "start": 480.72,
+      "end": 484.72,
+      "text": "Give me the best Italian dish that you"
+    },
+    {
+      "start": 483.039,
+      "end": 487.919,
+      "text": "know of. It should be quick and simple"
+    },
+    {
+      "start": 484.72,
+      "end": 492.40000000000003,
+      "text": "to make. Site your sources. Make sure"
+    },
+    {
+      "start": 487.919,
+      "end": 494.31899999999996,
+      "text": "that you return the complete recipe and"
+    },
+    {
+      "start": 492.4,
+      "end": 498.87899999999996,
+      "text": "refer to your knowledge base for pulling"
+    },
+    {
+      "start": 494.319,
+      "end": 502.639,
+      "text": "the recipe. Also, I'd like you to return"
+    },
+    {
+      "start": 498.879,
+      "end": 505.12,
+      "text": "the best German recipe that you have."
+    },
+    {
+      "start": 502.639,
+      "end": 509.36,
+      "text": "Same thing. Make sure it's quick and"
+    },
+    {
+      "start": 505.12,
+      "end": 511.759,
+      "text": "easy to make and site your sources and"
+    },
+    {
+      "start": 509.36,
+      "end": 514.24,
+      "text": "refer to your knowledge base for"
+    },
+    {
+      "start": 511.759,
+      "end": 516.8000000000001,
+      "text": "returning the German recipe as well."
+    },
+    {
+      "start": 514.24,
+      "end": 519.519,
+      "text": "Also, return"
+    },
+    {
+      "start": 516.8,
+      "end": 522.519,
+      "text": "an Indian dish with the same"
+    },
+    {
+      "start": 519.519,
+      "end": 522.519,
+      "text": "requirements."
+    },
+    {
+      "start": 534.56,
+      "end": 542.0799999999999,
+      "text": "Nice. If we open up the trace or this"
+    },
+    {
+      "start": 539.36,
+      "end": 545.519,
+      "text": "last call to our agentic rag agent, we"
+    },
+    {
+      "start": 542.08,
+      "end": 548.1600000000001,
+      "text": "can see that three tool calls were made."
+    },
+    {
+      "start": 545.519,
+      "end": 551.92,
+      "text": "This one"
+    },
+    {
+      "start": 548.16,
+      "end": 554.48,
+      "text": "where we searched for Italian dishes,"
+    },
+    {
+      "start": 551.92,
+      "end": 557.4399999999999,
+      "text": "this one where we searched for German"
+    },
+    {
+      "start": 554.48,
+      "end": 559.9200000000001,
+      "text": "dishes, and this one where we searched"
+    },
+    {
+      "start": 557.44,
+      "end": 561.9200000000001,
+      "text": "for Indian dishes,"
+    },
+    {
+      "start": 559.92,
+      "end": 563.4399999999999,
+      "text": "right?"
+    },
+    {
+      "start": 561.92,
+      "end": 566.399,
+      "text": "And"
+    },
+    {
+      "start": 563.44,
+      "end": 568.48,
+      "text": "we could go down the rabbit hole of"
+    },
+    {
+      "start": 566.399,
+      "end": 570.8,
+      "text": "assessing"
+    },
+    {
+      "start": 568.48,
+      "end": 573.76,
+      "text": "how accurate this was, but now we're"
+    },
+    {
+      "start": 570.8,
+      "end": 577.519,
+      "text": "getting into the realm of evals, which I"
+    },
+    {
+      "start": 573.76,
+      "end": 580.48,
+      "text": "will cover in a separate video. But"
+    },
+    {
+      "start": 577.519,
+      "end": 583.839,
+      "text": "you get the gist of it, right?"
+    },
+    {
+      "start": 580.48,
+      "end": 588.16,
+      "text": "We have our Italian dish and our German"
+    },
+    {
+      "start": 583.839,
+      "end": 590.0,
+      "text": "dish and our Indian dish, right?"
+    },
+    {
+      "start": 588.16,
+      "end": 593.0,
+      "text": "So,"
+    },
+    {
+      "start": 590.0,
+      "end": 593.0,
+      "text": "welcome to state-of-the-art reranking."
+    }
+  ]
+}

@@ -1,0 +1,6538 @@
+{
+  "video_id": "bcCFTk_uwUw",
+  "title": "Build LLM based Apps using LangChain Crash Course | Large Language Models | Chaining | Chat Models",
+  "channel": "Keerti Purswani",
+  "trainer": "Keerti Purswani",
+  "topic": "LangChain",
+  "language": "en",
+  "caption_type": "automatic",
+  "start_seconds": 0,
+  "end_seconds": 3064.0,
+  "segments": [
+    {
+      "start": 0.04,
+      "end": 4.48,
+      "text": "Lang stands for language models chain"
+    },
+    {
+      "start": 2.28,
+      "end": 7.0,
+      "text": "stands for what isn't it beautiful"
+    },
+    {
+      "start": 4.48,
+      "end": 9.16,
+      "text": "custom functions used as rebles are"
+    },
+    {
+      "start": 7.0,
+      "end": 10.719,
+      "text": "called reenable LTS there are three"
+    },
+    {
+      "start": 9.16,
+      "end": 12.36,
+      "text": "types of chaining that variable I'm"
+    },
+    {
+      "start": 10.719,
+      "end": 14.239999999999998,
+      "text": "passing to The Prompt that I'm passing"
+    },
+    {
+      "start": 12.36,
+      "end": 15.879,
+      "text": "to the llm and then I'm going to pass"
+    },
+    {
+      "start": 14.24,
+      "end": 18.6,
+      "text": "now we are ready to create our parallel"
+    },
+    {
+      "start": 15.879,
+      "end": 20.519,
+      "text": "rebles this is actually deprecated smart"
+    },
+    {
+      "start": 18.6,
+      "end": 23.119,
+      "text": "software Engineers are learning to build"
+    },
+    {
+      "start": 20.519,
+      "end": 24.598999999999997,
+      "text": "apps based on llms and congratulations"
+    },
+    {
+      "start": 23.119,
+      "end": 26.759999999999998,
+      "text": "if you're trying to do the same because"
+    },
+    {
+      "start": 24.599,
+      "end": 28.240000000000002,
+      "text": "you are in the right place now imagine"
+    },
+    {
+      "start": 26.76,
+      "end": 31.0,
+      "text": "that you have already built your app"
+    },
+    {
+      "start": 28.24,
+      "end": 33.239,
+      "text": "using openi API now let's think of some"
+    },
+    {
+      "start": 31.0,
+      "end": 35.16,
+      "text": "problems that you can run into suppose"
+    },
+    {
+      "start": 33.239,
+      "end": 38.0,
+      "text": "with time what happened was that open"
+    },
+    {
+      "start": 35.16,
+      "end": 40.07899999999999,
+      "text": "ai's API became very costly and there"
+    },
+    {
+      "start": 38.0,
+      "end": 41.8,
+      "text": "are other llms out there which actually"
+    },
+    {
+      "start": 40.079,
+      "end": 44.079,
+      "text": "started offering better Solutions at"
+    },
+    {
+      "start": 41.8,
+      "end": 47.28,
+      "text": "cheaper price so now you want to switch"
+    },
+    {
+      "start": 44.079,
+      "end": 49.239000000000004,
+      "text": "from GPT to say llama Or Gemini but now"
+    },
+    {
+      "start": 47.28,
+      "end": 50.76,
+      "text": "you will have to switch all your code"
+    },
+    {
+      "start": 49.239,
+      "end": 52.48,
+      "text": "you will have to make the calls again"
+    },
+    {
+      "start": 50.76,
+      "end": 55.12,
+      "text": "and again and it is going to be such a"
+    },
+    {
+      "start": 52.48,
+      "end": 57.718999999999994,
+      "text": "complex process another problem that can"
+    },
+    {
+      "start": 55.12,
+      "end": 59.559,
+      "text": "happen is that you have your own startup"
+    },
+    {
+      "start": 57.719,
+      "end": 61.559,
+      "text": "now you have some data that is that"
+    },
+    {
+      "start": 59.559,
+      "end": 64.439,
+      "text": "belongs to you right now if you're just"
+    },
+    {
+      "start": 61.559,
+      "end": 67.15899999999999,
+      "text": "making call to GPT GPT has no idea about"
+    },
+    {
+      "start": 64.439,
+      "end": 70.03999999999999,
+      "text": "your data right so how do you make sure"
+    },
+    {
+      "start": 67.159,
+      "end": 72.759,
+      "text": "that that data can also be read so you"
+    },
+    {
+      "start": 70.04,
+      "end": 76.04,
+      "text": "need some tool so that you know your app"
+    },
+    {
+      "start": 72.759,
+      "end": 77.88,
+      "text": "can also understand your data and also"
+    },
+    {
+      "start": 76.04,
+      "end": 80.47900000000001,
+      "text": "learn from GPT and based on this give"
+    },
+    {
+      "start": 77.88,
+      "end": 82.079,
+      "text": "you combined really good responses now"
+    },
+    {
+      "start": 80.479,
+      "end": 83.56,
+      "text": "another problem that you can run into is"
+    },
+    {
+      "start": 82.079,
+      "end": 85.55999999999999,
+      "text": "that GPT does not have latest"
+    },
+    {
+      "start": 83.56,
+      "end": 87.84,
+      "text": "information so you also want to be able"
+    },
+    {
+      "start": 85.56,
+      "end": 90.28,
+      "text": "to read latest information from the net"
+    },
+    {
+      "start": 87.84,
+      "end": 92.799,
+      "text": "so how are you going to do all of this"
+    },
+    {
+      "start": 90.28,
+      "end": 95.159,
+      "text": "exactly this is why we need a common"
+    },
+    {
+      "start": 92.799,
+      "end": 98.04,
+      "text": "framework where switching llm should be"
+    },
+    {
+      "start": 95.159,
+      "end": 99.68,
+      "text": "very easy today you using GPT tomorrow"
+    },
+    {
+      "start": 98.04,
+      "end": 102.36000000000001,
+      "text": "if you want to use llama or you want to"
+    },
+    {
+      "start": 99.68,
+      "end": 104.159,
+      "text": "use Gemini it should be very easy such"
+    },
+    {
+      "start": 102.36,
+      "end": 107.159,
+      "text": "complex processes should become very"
+    },
+    {
+      "start": 104.159,
+      "end": 109.799,
+      "text": "easy having external tools integration"
+    },
+    {
+      "start": 107.159,
+      "end": 112.07900000000001,
+      "text": "should be very very easy and this is"
+    },
+    {
+      "start": 109.799,
+      "end": 114.2,
+      "text": "exactly what Lang chain does for us so"
+    },
+    {
+      "start": 112.079,
+      "end": 117.119,
+      "text": "Lang chain is the framework that is"
+    },
+    {
+      "start": 114.2,
+      "end": 119.07900000000001,
+      "text": "going to help you build apps using llms"
+    },
+    {
+      "start": 117.119,
+      "end": 120.719,
+      "text": "so I hope you have understood why is"
+    },
+    {
+      "start": 119.079,
+      "end": 123.119,
+      "text": "Lang chain very very important for you"
+    },
+    {
+      "start": 120.719,
+      "end": 125.52,
+      "text": "to understand it is going to be"
+    },
+    {
+      "start": 123.119,
+      "end": 127.32,
+      "text": "extremely famous and you really need to"
+    },
+    {
+      "start": 125.52,
+      "end": 129.28,
+      "text": "understand this it is going to help you"
+    },
+    {
+      "start": 127.32,
+      "end": 131.35999999999999,
+      "text": "save so much of your time and it is very"
+    },
+    {
+      "start": 129.28,
+      "end": 132.92,
+      "text": "easy to understand and we have so much"
+    },
+    {
+      "start": 131.36,
+      "end": 134.4,
+      "text": "to cover in this video so let's get"
+    },
+    {
+      "start": 132.92,
+      "end": 135.95899999999997,
+      "text": "started this is the official"
+    },
+    {
+      "start": 134.4,
+      "end": 137.84,
+      "text": "documentation of Lang chain and this is"
+    },
+    {
+      "start": 135.959,
+      "end": 139.879,
+      "text": "what we'll be referring to this is about"
+    },
+    {
+      "start": 137.84,
+      "end": 142.20000000000002,
+      "text": "building a simple llm application with"
+    },
+    {
+      "start": 139.879,
+      "end": 143.879,
+      "text": "chat models and prom templates so as you"
+    },
+    {
+      "start": 142.2,
+      "end": 145.48,
+      "text": "can understand chat models and prom"
+    },
+    {
+      "start": 143.879,
+      "end": 147.2,
+      "text": "templates are very very important topics"
+    },
+    {
+      "start": 145.48,
+      "end": 149.28,
+      "text": "and we'll be focusing on them the the"
+    },
+    {
+      "start": 147.2,
+      "end": 150.92,
+      "text": "documentation over here is just amazing"
+    },
+    {
+      "start": 149.28,
+      "end": 153.2,
+      "text": "but let's get started with simple setup"
+    },
+    {
+      "start": 150.92,
+      "end": 154.92,
+      "text": "for now see the focus is going to be on"
+    },
+    {
+      "start": 153.2,
+      "end": 156.56,
+      "text": "building the app in this video so the"
+    },
+    {
+      "start": 154.92,
+      "end": 159.319,
+      "text": "setup that we are going to use is going"
+    },
+    {
+      "start": 156.56,
+      "end": 161.159,
+      "text": "to be very simple just run jupyter"
+    },
+    {
+      "start": 159.319,
+      "end": 162.79999999999998,
+      "text": "notebook and the pandas tutorial was"
+    },
+    {
+      "start": 161.159,
+      "end": 164.44,
+      "text": "also on jupyter notebooks for but for"
+    },
+    {
+      "start": 162.8,
+      "end": 166.8,
+      "text": "absolute beginers what you have to do is"
+    },
+    {
+      "start": 164.44,
+      "end": 168.959,
+      "text": "just go over here go to install the"
+    },
+    {
+      "start": 166.8,
+      "end": 170.519,
+      "text": "notebook and all you have to do is pimp"
+    },
+    {
+      "start": 168.959,
+      "end": 172.31900000000002,
+      "text": "install notebook and jupyter notebook"
+    },
+    {
+      "start": 170.519,
+      "end": 175.36,
+      "text": "and that's it focus on building the app"
+    },
+    {
+      "start": 172.319,
+      "end": 177.56,
+      "text": "for now okay now moving on to the"
+    },
+    {
+      "start": 175.36,
+      "end": 179.44000000000003,
+      "text": "documentation see the awesome part about"
+    },
+    {
+      "start": 177.56,
+      "end": 182.0,
+      "text": "this documentation is that it is not"
+    },
+    {
+      "start": 179.44,
+      "end": 184.2,
+      "text": "just book focus on open although in this"
+    },
+    {
+      "start": 182.0,
+      "end": 186.319,
+      "text": "video we'll be using openi API to build"
+    },
+    {
+      "start": 184.2,
+      "end": 188.11999999999998,
+      "text": "our application the awesome thing is"
+    },
+    {
+      "start": 186.319,
+      "end": 190.48,
+      "text": "that after this video you'll be able to"
+    },
+    {
+      "start": 188.12,
+      "end": 192.08,
+      "text": "use any llm and still be able to build"
+    },
+    {
+      "start": 190.48,
+      "end": 194.48,
+      "text": "the app that is the whole point of using"
+    },
+    {
+      "start": 192.08,
+      "end": 197.20000000000002,
+      "text": "Lang chain right so here if I select"
+    },
+    {
+      "start": 194.48,
+      "end": 200.44,
+      "text": "like Google so you can just use gini"
+    },
+    {
+      "start": 197.2,
+      "end": 202.92,
+      "text": "model similarly if I just say Nvidia you"
+    },
+    {
+      "start": 200.44,
+      "end": 205.599,
+      "text": "can use the metal Lama 3 Model so like"
+    },
+    {
+      "start": 202.92,
+      "end": 207.48,
+      "text": "this all you have to do is just say I"
+    },
+    {
+      "start": 205.599,
+      "end": 209.599,
+      "text": "want to use so and so API and you'll be"
+    },
+    {
+      "start": 207.48,
+      "end": 212.07999999999998,
+      "text": "able to go ahead with this so to be able"
+    },
+    {
+      "start": 209.599,
+      "end": 214.35999999999999,
+      "text": "to use the open AI we have to set up an"
+    },
+    {
+      "start": 212.08,
+      "end": 216.12,
+      "text": "open AI API key so this is the very"
+    },
+    {
+      "start": 214.36,
+      "end": 218.92000000000002,
+      "text": "first step in order to get started we"
+    },
+    {
+      "start": 216.12,
+      "end": 220.64000000000001,
+      "text": "have to set up the open AI API key and"
+    },
+    {
+      "start": 218.92,
+      "end": 222.67999999999998,
+      "text": "then we'll move ahead and understand it"
+    },
+    {
+      "start": 220.64,
+      "end": 224.39999999999998,
+      "text": "how can we get started so let's do this"
+    },
+    {
+      "start": 222.68,
+      "end": 226.12,
+      "text": "first before we move ahead I would just"
+    },
+    {
+      "start": 224.4,
+      "end": 227.92000000000002,
+      "text": "like to take a moment over here to share"
+    },
+    {
+      "start": 226.12,
+      "end": 229.4,
+      "text": "something with you over the last few"
+    },
+    {
+      "start": 227.92,
+      "end": 231.599,
+      "text": "months I think all of us have realized"
+    },
+    {
+      "start": 229.4,
+      "end": 233.31900000000002,
+      "text": "that m is the future and that is why"
+    },
+    {
+      "start": 231.599,
+      "end": 235.92,
+      "text": "you're watching the video it makes sense"
+    },
+    {
+      "start": 233.319,
+      "end": 237.879,
+      "text": "to read about it to study it and be"
+    },
+    {
+      "start": 235.92,
+      "end": 239.28,
+      "text": "future ready and I've been doing the"
+    },
+    {
+      "start": 237.879,
+      "end": 241.79899999999998,
+      "text": "same over the last few months I've spent"
+    },
+    {
+      "start": 239.28,
+      "end": 243.36,
+      "text": "so much time m in fact we have a product"
+    },
+    {
+      "start": 241.799,
+      "end": 245.20000000000002,
+      "text": "called tax stop which is currently live"
+    },
+    {
+      "start": 243.36,
+      "end": 247.20000000000002,
+      "text": "only for the educ cour students but we"
+    },
+    {
+      "start": 245.2,
+      "end": 250.39999999999998,
+      "text": "are integrating a lot of a stuff into it"
+    },
+    {
+      "start": 247.2,
+      "end": 253.04,
+      "text": "and I'm learning so much over there also"
+    },
+    {
+      "start": 250.4,
+      "end": 255.20000000000002,
+      "text": "we have been designing a live Hands-On"
+    },
+    {
+      "start": 253.04,
+      "end": 257.079,
+      "text": "generative AI course we have finally"
+    },
+    {
+      "start": 255.2,
+      "end": 258.519,
+      "text": "launched it it's a 7 weeks course you"
+    },
+    {
+      "start": 257.079,
+      "end": 260.84000000000003,
+      "text": "can check out the curriculum over here"
+    },
+    {
+      "start": 258.519,
+      "end": 262.759,
+      "text": "it has 10 projects some small some quite"
+    },
+    {
+      "start": 260.84,
+      "end": 264.71999999999997,
+      "text": "big projects but it is going to be"
+    },
+    {
+      "start": 262.759,
+      "end": 266.44,
+      "text": "completely live and I'm just so much"
+    },
+    {
+      "start": 264.72,
+      "end": 269.16,
+      "text": "excited for it because here you will not"
+    },
+    {
+      "start": 266.44,
+      "end": 270.84,
+      "text": "only be learning about gen VI you'll be"
+    },
+    {
+      "start": 269.16,
+      "end": 272.88000000000005,
+      "text": "building deploying and applying"
+    },
+    {
+      "start": 270.84,
+      "end": 274.52,
+      "text": "generative AI the last Hands-On course"
+    },
+    {
+      "start": 272.88,
+      "end": 276.84,
+      "text": "that we did was Hands-On high level"
+    },
+    {
+      "start": 274.52,
+      "end": 279.52,
+      "text": "system design course which we call hhld"
+    },
+    {
+      "start": 276.84,
+      "end": 281.0,
+      "text": "that was M plus devops plus hld that is"
+    },
+    {
+      "start": 279.52,
+      "end": 283.12,
+      "text": "still one of the most enrolled courses"
+    },
+    {
+      "start": 281.0,
+      "end": 284.96,
+      "text": "on edu courses I have seen so many"
+    },
+    {
+      "start": 283.12,
+      "end": 287.16,
+      "text": "students not only develop end to end"
+    },
+    {
+      "start": 284.96,
+      "end": 289.28,
+      "text": "projects skillable projects but deploy"
+    },
+    {
+      "start": 287.16,
+      "end": 290.8,
+      "text": "them and add them to their resume it was"
+    },
+    {
+      "start": 289.28,
+      "end": 292.55999999999995,
+      "text": "one of the most satisfying things that I"
+    },
+    {
+      "start": 290.8,
+      "end": 294.44,
+      "text": "have done as part of edu courses as a"
+    },
+    {
+      "start": 292.56,
+      "end": 296.08,
+      "text": "software engineer as a teacher that's"
+    },
+    {
+      "start": 294.44,
+      "end": 298.479,
+      "text": "when I decided that I want to do more"
+    },
+    {
+      "start": 296.08,
+      "end": 300.44,
+      "text": "Hands-On courses and I really excited"
+    },
+    {
+      "start": 298.479,
+      "end": 302.199,
+      "text": "for this and it's going be live so I"
+    },
+    {
+      "start": 300.44,
+      "end": 303.52,
+      "text": "hope to see you there like all the other"
+    },
+    {
+      "start": 302.199,
+      "end": 305.12,
+      "text": "courses you will get access to the"
+    },
+    {
+      "start": 303.52,
+      "end": 307.4,
+      "text": "recordings to all the future live"
+    },
+    {
+      "start": 305.12,
+      "end": 309.919,
+      "text": "batches and you will get the access to"
+    },
+    {
+      "start": 307.4,
+      "end": 311.08,
+      "text": "code notes everything you can check out"
+    },
+    {
+      "start": 309.919,
+      "end": 313.15999999999997,
+      "text": "the details you can check out the"
+    },
+    {
+      "start": 311.08,
+      "end": 315.15999999999997,
+      "text": "testimonials of all the other courses"
+    },
+    {
+      "start": 313.16,
+      "end": 316.91900000000004,
+      "text": "and I'm really excited for this but for"
+    },
+    {
+      "start": 315.16,
+      "end": 319.88000000000005,
+      "text": "now let's continue I hope to see you"
+    },
+    {
+      "start": 316.919,
+      "end": 319.88,
+      "text": "there for now let's"
+    },
+    {
+      "start": 322.08,
+      "end": 327.96,
+      "text": "continue in order to set up openi API"
+    },
+    {
+      "start": 324.919,
+      "end": 329.919,
+      "text": "key just go to platform. open.com you"
+    },
+    {
+      "start": 327.96,
+      "end": 331.75899999999996,
+      "text": "will be able to see all the documents M"
+    },
+    {
+      "start": 329.919,
+      "end": 334.52,
+      "text": "ation over here a lot of details is"
+    },
+    {
+      "start": 331.759,
+      "end": 336.84000000000003,
+      "text": "there but just go to dashboard go to API"
+    },
+    {
+      "start": 334.52,
+      "end": 338.71999999999997,
+      "text": "Keys see right now I have two secret"
+    },
+    {
+      "start": 336.84,
+      "end": 340.59999999999997,
+      "text": "Keys these are for my projects what you"
+    },
+    {
+      "start": 338.72,
+      "end": 342.16,
+      "text": "can do is create a new secret key over"
+    },
+    {
+      "start": 340.6,
+      "end": 345.16,
+      "text": "here just give some name like for"
+    },
+    {
+      "start": 342.16,
+      "end": 347.40000000000003,
+      "text": "example text project and create the"
+    },
+    {
+      "start": 345.16,
+      "end": 349.08000000000004,
+      "text": "secret key and copy it and keep it"
+    },
+    {
+      "start": 347.4,
+      "end": 350.59999999999997,
+      "text": "somewhere make sure you save it because"
+    },
+    {
+      "start": 349.08,
+      "end": 353.039,
+      "text": "you will not be able to access it later"
+    },
+    {
+      "start": 350.6,
+      "end": 354.84000000000003,
+      "text": "and we'll be needing it so I'll be using"
+    },
+    {
+      "start": 353.039,
+      "end": 356.36,
+      "text": "this one and I'm deleting the one that I"
+    },
+    {
+      "start": 354.84,
+      "end": 359.19899999999996,
+      "text": "just created this is how you can also"
+    },
+    {
+      "start": 356.36,
+      "end": 361.40000000000003,
+      "text": "delete it so what you have to do now is"
+    },
+    {
+      "start": 359.199,
+      "end": 363.08,
+      "text": "the cop copy secret key just go to the"
+    },
+    {
+      "start": 361.4,
+      "end": 366.12,
+      "text": "same folder where you'll be creating"
+    },
+    {
+      "start": 363.08,
+      "end": 371.44,
+      "text": "your notebook file create a EnV file"
+    },
+    {
+      "start": 366.12,
+      "end": 373.36,
+      "text": "over here and just write open AI API key"
+    },
+    {
+      "start": 371.44,
+      "end": 375.24,
+      "text": "and whatever key that you had saved it"
+    },
+    {
+      "start": 373.36,
+      "end": 377.8,
+      "text": "will be something like SK something"
+    },
+    {
+      "start": 375.24,
+      "end": 379.759,
+      "text": "right so just paste it over here I will"
+    },
+    {
+      "start": 377.8,
+      "end": 381.199,
+      "text": "do the same right now and after this we"
+    },
+    {
+      "start": 379.759,
+      "end": 383.44,
+      "text": "are ready to get started with writing"
+    },
+    {
+      "start": 381.199,
+      "end": 385.16,
+      "text": "our code I have pasted the secret key."
+    },
+    {
+      "start": 383.44,
+      "end": 387.08,
+      "text": "EnV file and let's finally get started"
+    },
+    {
+      "start": 385.16,
+      "end": 389.91900000000004,
+      "text": "with writing the code in our notebook"
+    },
+    {
+      "start": 387.08,
+      "end": 393.08,
+      "text": "I'm going to be doing pip install"
+    },
+    {
+      "start": 389.919,
+      "end": 394.75899999999996,
+      "text": "python. EnV so that's fine and now what"
+    },
+    {
+      "start": 393.08,
+      "end": 396.68,
+      "text": "I'm going to do is I'm going to be"
+    },
+    {
+      "start": 394.759,
+      "end": 398.56,
+      "text": "importing OS so anything whenever you"
+    },
+    {
+      "start": 396.68,
+      "end": 399.88,
+      "text": "are dealing with operating system right"
+    },
+    {
+      "start": 398.56,
+      "end": 401.84,
+      "text": "now we need to load the environment"
+    },
+    {
+      "start": 399.88,
+      "end": 404.8,
+      "text": "variables so this is just to load at"
+    },
+    {
+      "start": 401.84,
+      "end": 406.63899999999995,
+      "text": "open API key okay so just some boiler"
+    },
+    {
+      "start": 404.8,
+      "end": 410.40000000000003,
+      "text": "plate code right now I'm going to be"
+    },
+    {
+      "start": 406.639,
+      "end": 413.16,
+      "text": "importing OS and then from EnV we are"
+    },
+    {
+      "start": 410.4,
+      "end": 415.35999999999996,
+      "text": "going to be importing load. EnV so that"
+    },
+    {
+      "start": 413.16,
+      "end": 416.879,
+      "text": "we can load our environment variables so"
+    },
+    {
+      "start": 415.36,
+      "end": 420.47900000000004,
+      "text": "I've loaded the environment variables"
+    },
+    {
+      "start": 416.879,
+      "end": 423.72,
+      "text": "now and now I can get our open AP I key"
+    },
+    {
+      "start": 420.479,
+      "end": 426.75899999999996,
+      "text": "and I can read it like this so os. get"
+    },
+    {
+      "start": 423.72,
+      "end": 431.84000000000003,
+      "text": "EnV and over here we we had used the"
+    },
+    {
+      "start": 426.759,
+      "end": 434.12,
+      "text": "variable open AI API key so now that we"
+    },
+    {
+      "start": 431.84,
+      "end": 436.11999999999995,
+      "text": "have loaded our open API key we can"
+    },
+    {
+      "start": 434.12,
+      "end": 440.4,
+      "text": "finally get started with writing our"
+    },
+    {
+      "start": 436.12,
+      "end": 440.4,
+      "text": "code and let's go back to the langage"
+    },
+    {
+      "start": 443.16,
+      "end": 447.16,
+      "text": "documentation we are going to start"
+    },
+    {
+      "start": 445.039,
+      "end": 449.08,
+      "text": "interacting with our llm in our case it"
+    },
+    {
+      "start": 447.16,
+      "end": 451.56,
+      "text": "is going to be GPT and you're going to"
+    },
+    {
+      "start": 449.08,
+      "end": 453.919,
+      "text": "be Amazed by how simple Lang chain makes"
+    },
+    {
+      "start": 451.56,
+      "end": 456.68,
+      "text": "it for us just check it out so here it"
+    },
+    {
+      "start": 453.919,
+      "end": 459.31899999999996,
+      "text": "is given that from Lang chain open open"
+    },
+    {
+      "start": 456.68,
+      "end": 462.52,
+      "text": "we have to import chat openi what is"
+    },
+    {
+      "start": 459.319,
+      "end": 464.44,
+      "text": "chat open it is a chat model what is a"
+    },
+    {
+      "start": 462.52,
+      "end": 466.4,
+      "text": "chat model let's finally understand it"
+    },
+    {
+      "start": 464.44,
+      "end": 468.199,
+      "text": "let's go back to the top here it was"
+    },
+    {
+      "start": 466.4,
+      "end": 470.52,
+      "text": "mentioned that we are going to build the"
+    },
+    {
+      "start": 468.199,
+      "end": 473.28000000000003,
+      "text": "application with chat models and promt"
+    },
+    {
+      "start": 470.52,
+      "end": 474.87899999999996,
+      "text": "templates what are chat models let's"
+    },
+    {
+      "start": 473.28,
+      "end": 476.35999999999996,
+      "text": "check out this documentation using"
+    },
+    {
+      "start": 474.879,
+      "end": 480.08000000000004,
+      "text": "language models I'm just going to go"
+    },
+    {
+      "start": 476.36,
+      "end": 482.24,
+      "text": "over here here it is mentioned l are"
+    },
+    {
+      "start": 480.08,
+      "end": 484.28,
+      "text": "typically accessed through a chat model"
+    },
+    {
+      "start": 482.24,
+      "end": 486.40000000000003,
+      "text": "interface let me make it very simple to"
+    },
+    {
+      "start": 484.28,
+      "end": 490.31899999999996,
+      "text": "you basically whenever you want to"
+    },
+    {
+      "start": 486.4,
+      "end": 492.08,
+      "text": "interact with any model with any llm"
+    },
+    {
+      "start": 490.319,
+      "end": 494.0,
+      "text": "okay you're going to be accessing it"
+    },
+    {
+      "start": 492.08,
+      "end": 497.0,
+      "text": "you're going to be interacting with it"
+    },
+    {
+      "start": 494.0,
+      "end": 498.479,
+      "text": "via chat model interface so in L chain"
+    },
+    {
+      "start": 497.0,
+      "end": 501.039,
+      "text": "what they have done is they have created"
+    },
+    {
+      "start": 498.479,
+      "end": 503.96,
+      "text": "separate packages for each provider like"
+    },
+    {
+      "start": 501.039,
+      "end": 505.68,
+      "text": "for example if we we are using the openi"
+    },
+    {
+      "start": 503.96,
+      "end": 508.08,
+      "text": "provider the package is going to be Lang"
+    },
+    {
+      "start": 505.68,
+      "end": 510.639,
+      "text": "chain Dash provider so let me show it to"
+    },
+    {
+      "start": 508.08,
+      "end": 513.24,
+      "text": "you over here also so because we have"
+    },
+    {
+      "start": 510.639,
+      "end": 515.839,
+      "text": "selected openi we are going to be using"
+    },
+    {
+      "start": 513.24,
+      "end": 519.039,
+      "text": "which package Lang chain openi suppose"
+    },
+    {
+      "start": 515.839,
+      "end": 521.6400000000001,
+      "text": "it was Google then the chat model name"
+    },
+    {
+      "start": 519.039,
+      "end": 523.479,
+      "text": "is chat vertex Ai and we are importing"
+    },
+    {
+      "start": 521.64,
+      "end": 526.92,
+      "text": "from where from Lang chain Google vertex"
+    },
+    {
+      "start": 523.479,
+      "end": 528.6,
+      "text": "AI similarly if it was Nvidia then the"
+    },
+    {
+      "start": 526.92,
+      "end": 530.8389999999999,
+      "text": "chat model name would have been chat"
+    },
+    {
+      "start": 528.6,
+      "end": 533.64,
+      "text": "Nvidia importing from where from Lang"
+    },
+    {
+      "start": 530.839,
+      "end": 535.2790000000001,
+      "text": "chain Nvidia AI points right so it makes"
+    },
+    {
+      "start": 533.64,
+      "end": 537.959,
+      "text": "it so simple for us we are going to be"
+    },
+    {
+      "start": 535.279,
+      "end": 539.72,
+      "text": "using openi the chat model that we are"
+    },
+    {
+      "start": 537.959,
+      "end": 542.16,
+      "text": "using so basically this is just just a"
+    },
+    {
+      "start": 539.72,
+      "end": 544.8000000000001,
+      "text": "way of interacting with the llm with the"
+    },
+    {
+      "start": 542.16,
+      "end": 547.88,
+      "text": "GPT so we are going to be creating a"
+    },
+    {
+      "start": 544.8,
+      "end": 548.76,
+      "text": "chat model which is chat openi okay so"
+    },
+    {
+      "start": 547.88,
+      "end": 550.6,
+      "text": "that is what we are going to be"
+    },
+    {
+      "start": 548.76,
+      "end": 552.92,
+      "text": "importing let me actually just copy"
+    },
+    {
+      "start": 550.6,
+      "end": 555.16,
+      "text": "paste this also to be able to get this"
+    },
+    {
+      "start": 552.92,
+      "end": 558.12,
+      "text": "chat model we have to use any of these"
+    },
+    {
+      "start": 555.16,
+      "end": 559.92,
+      "text": "packages okay one is Lang chain openi or"
+    },
+    {
+      "start": 558.12,
+      "end": 561.88,
+      "text": "we can use the community also Lang chain"
+    },
+    {
+      "start": 559.92,
+      "end": 563.64,
+      "text": "Community it is given that the models"
+    },
+    {
+      "start": 561.88,
+      "end": 565.92,
+      "text": "are mostly contributed and supported by"
+    },
+    {
+      "start": 563.64,
+      "end": 567.64,
+      "text": "the community so we can use this as well"
+    },
+    {
+      "start": 565.92,
+      "end": 569.7199999999999,
+      "text": "and see the models are named with the"
+    },
+    {
+      "start": 567.64,
+      "end": 572.079,
+      "text": "convention that starts with chat so the"
+    },
+    {
+      "start": 569.72,
+      "end": 574.279,
+      "text": "names are like chatama chat entropic"
+    },
+    {
+      "start": 572.079,
+      "end": 575.959,
+      "text": "chat openi the documentation is just"
+    },
+    {
+      "start": 574.279,
+      "end": 577.6,
+      "text": "beautiful so if I show you this"
+    },
+    {
+      "start": 575.959,
+      "end": 579.04,
+      "text": "documentation also here they have"
+    },
+    {
+      "start": 577.6,
+      "end": 582.0400000000001,
+      "text": "mentioned all of this right so we have"
+    },
+    {
+      "start": 579.04,
+      "end": 583.8,
+      "text": "already done the API key part we just"
+    },
+    {
+      "start": 582.04,
+      "end": 585.7199999999999,
+      "text": "need to create our model and start"
+    },
+    {
+      "start": 583.8,
+      "end": 587.5999999999999,
+      "text": "invoking some messages right basically"
+    },
+    {
+      "start": 585.72,
+      "end": 589.88,
+      "text": "we are going to send some instructions"
+    },
+    {
+      "start": 587.6,
+      "end": 592.9200000000001,
+      "text": "to our llm so what do we need to do"
+    },
+    {
+      "start": 589.88,
+      "end": 595.6,
+      "text": "firstly I need to import this chat open"
+    },
+    {
+      "start": 592.92,
+      "end": 601.3199999999999,
+      "text": "first let's install the packages so I"
+    },
+    {
+      "start": 595.6,
+      "end": 601.32,
+      "text": "can uh install either L chain open"
+    },
+    {
+      "start": 602.0,
+      "end": 606.92,
+      "text": "I could also do Lang chain Community uh"
+    },
+    {
+      "start": 604.32,
+      "end": 609.9200000000001,
+      "text": "let me actually show both so Lang chain"
+    },
+    {
+      "start": 606.92,
+      "end": 612.079,
+      "text": "community and I'm going to just run this"
+    },
+    {
+      "start": 609.92,
+      "end": 614.5999999999999,
+      "text": "and now I'm going to be just pasting"
+    },
+    {
+      "start": 612.079,
+      "end": 616.56,
+      "text": "this so I'm importing chat open okay and"
+    },
+    {
+      "start": 614.6,
+      "end": 619.72,
+      "text": "we are done with this we can finally get"
+    },
+    {
+      "start": 616.56,
+      "end": 621.8389999999999,
+      "text": "started with calling our llm so I'm"
+    },
+    {
+      "start": 619.72,
+      "end": 624.24,
+      "text": "calling it llm you can call it anything"
+    },
+    {
+      "start": 621.839,
+      "end": 627.2790000000001,
+      "text": "most people call it llm you can call it"
+    },
+    {
+      "start": 624.24,
+      "end": 629.5600000000001,
+      "text": "open llm model you can call it anything"
+    },
+    {
+      "start": 627.279,
+      "end": 633.8389999999999,
+      "text": "okay so I'm calling this method chat"
+    },
+    {
+      "start": 629.56,
+      "end": 635.68,
+      "text": "open a to create our llm so open AI we"
+    },
+    {
+      "start": 633.839,
+      "end": 636.72,
+      "text": "can mention the model over here just"
+    },
+    {
+      "start": 635.68,
+      "end": 638.3599999999999,
+      "text": "like it is mentioned in the"
+    },
+    {
+      "start": 636.72,
+      "end": 640.9200000000001,
+      "text": "documentation we can mention the model"
+    },
+    {
+      "start": 638.36,
+      "end": 645.279,
+      "text": "I'm leaving it as it is for now just to"
+    },
+    {
+      "start": 640.92,
+      "end": 647.56,
+      "text": "get started and now I can invoke the"
+    },
+    {
+      "start": 645.279,
+      "end": 650.48,
+      "text": "method in work and what I'm going to do"
+    },
+    {
+      "start": 647.56,
+      "end": 652.6389999999999,
+      "text": "is I'm just going to give us give an"
+    },
+    {
+      "start": 650.48,
+      "end": 654.399,
+      "text": "instruction like how to CH jptv give"
+    },
+    {
+      "start": 652.639,
+      "end": 656.36,
+      "text": "instructions right tell me this tell me"
+    },
+    {
+      "start": 654.399,
+      "end": 660.279,
+      "text": "that just like that I'm going to give an"
+    },
+    {
+      "start": 656.36,
+      "end": 664.72,
+      "text": "instruction suggest me uh"
+    },
+    {
+      "start": 660.279,
+      "end": 666.92,
+      "text": "title of movie to watch okay so any"
+    },
+    {
+      "start": 664.72,
+      "end": 669.279,
+      "text": "movie to watch so suggest me some title"
+    },
+    {
+      "start": 666.92,
+      "end": 671.399,
+      "text": "and we are going to save the response"
+    },
+    {
+      "start": 669.279,
+      "end": 673.639,
+      "text": "over here and let's check out what"
+    },
+    {
+      "start": 671.399,
+      "end": 676.0,
+      "text": "response we are going to get and I'm"
+    },
+    {
+      "start": 673.639,
+      "end": 677.639,
+      "text": "going to just run this and here we have"
+    },
+    {
+      "start": 676.0,
+      "end": 679.76,
+      "text": "gotten a good response here in the"
+    },
+    {
+      "start": 677.639,
+      "end": 682.0790000000001,
+      "text": "content we can see there is a name that"
+    },
+    {
+      "start": 679.76,
+      "end": 687.079,
+      "text": "is present over here right so let me"
+    },
+    {
+      "start": 682.079,
+      "end": 689.959,
+      "text": "actually also just uh print response"
+    },
+    {
+      "start": 687.079,
+      "end": 693.5999999999999,
+      "text": "content so if I do that I can see the"
+    },
+    {
+      "start": 689.959,
+      "end": 696.959,
+      "text": "midnight sky if I run it again then it"
+    },
+    {
+      "start": 693.6,
+      "end": 700.36,
+      "text": "is midnight serenate okay suppose movie"
+    },
+    {
+      "start": 696.959,
+      "end": 704.6389999999999,
+      "text": "in Hindi to watch okay and let me run"
+    },
+    {
+      "start": 700.36,
+      "end": 706.839,
+      "text": "this so it is saying abbut yatra okay so"
+    },
+    {
+      "start": 704.639,
+      "end": 709.04,
+      "text": "we can watch adut yatra so"
+    },
+    {
+      "start": 706.839,
+      "end": 711.2,
+      "text": "congratulations we just interacted with"
+    },
+    {
+      "start": 709.04,
+      "end": 713.399,
+      "text": "GPT actually we gave an instruction to"
+    },
+    {
+      "start": 711.2,
+      "end": 715.0790000000001,
+      "text": "GPT and it responded us with some"
+    },
+    {
+      "start": 713.399,
+      "end": 716.68,
+      "text": "content also for those of you are"
+    },
+    {
+      "start": 715.079,
+      "end": 719.6389999999999,
+      "text": "interested just wanted to show you"
+    },
+    {
+      "start": 716.68,
+      "end": 721.7199999999999,
+      "text": "something cool see L chain has a amazing"
+    },
+    {
+      "start": 719.639,
+      "end": 723.839,
+      "text": "documentation okay so here you can check"
+    },
+    {
+      "start": 721.72,
+      "end": 726.1600000000001,
+      "text": "out all the providers that they support"
+    },
+    {
+      "start": 723.839,
+      "end": 728.2790000000001,
+      "text": "and the package names and the additional"
+    },
+    {
+      "start": 726.16,
+      "end": 730.079,
+      "text": "functionalities that they have so over"
+    },
+    {
+      "start": 728.279,
+      "end": 732.8389999999999,
+      "text": "here if you go back to the documentation"
+    },
+    {
+      "start": 730.079,
+      "end": 734.8389999999999,
+      "text": "you can see uh these chat models usually"
+    },
+    {
+      "start": 732.839,
+      "end": 736.9590000000001,
+      "text": "offer these additional capabilities so"
+    },
+    {
+      "start": 734.839,
+      "end": 738.5600000000001,
+      "text": "suppose tool call it we'll be discussing"
+    },
+    {
+      "start": 736.959,
+      "end": 740.279,
+      "text": "and seeing these in a lot of detail in"
+    },
+    {
+      "start": 738.56,
+      "end": 742.8,
+      "text": "the coming videos also but this is like"
+    },
+    {
+      "start": 740.279,
+      "end": 744.56,
+      "text": "a higher level idea we will check out"
+    },
+    {
+      "start": 742.8,
+      "end": 747.279,
+      "text": "other providers as well right so right"
+    },
+    {
+      "start": 744.56,
+      "end": 749.04,
+      "text": "now in this video we are using openi uh"
+    },
+    {
+      "start": 747.279,
+      "end": 750.639,
+      "text": "but these are the usual capabilities"
+    },
+    {
+      "start": 749.04,
+      "end": 753.0,
+      "text": "right right so tool calling meaning do"
+    },
+    {
+      "start": 750.639,
+      "end": 755.16,
+      "text": "they support external tools structured"
+    },
+    {
+      "start": 753.0,
+      "end": 757.399,
+      "text": "output meaning can they respond in a"
+    },
+    {
+      "start": 755.16,
+      "end": 759.12,
+      "text": "structured format like for example Json"
+    },
+    {
+      "start": 757.399,
+      "end": 761.24,
+      "text": "multimodality meaning do they support"
+    },
+    {
+      "start": 759.12,
+      "end": 763.88,
+      "text": "only text or do they also support images"
+    },
+    {
+      "start": 761.24,
+      "end": 765.36,
+      "text": "audio video so that is multimodality so"
+    },
+    {
+      "start": 763.88,
+      "end": 766.959,
+      "text": "like this they have mentioned that these"
+    },
+    {
+      "start": 765.36,
+      "end": 768.6,
+      "text": "are the providers these are the"
+    },
+    {
+      "start": 766.959,
+      "end": 770.399,
+      "text": "functionalities that they support if"
+    },
+    {
+      "start": 768.6,
+      "end": 772.5600000000001,
+      "text": "suppose you want to explore for example"
+    },
+    {
+      "start": 770.399,
+      "end": 774.279,
+      "text": "vertex AI so you can see okay these are"
+    },
+    {
+      "start": 772.56,
+      "end": 776.16,
+      "text": "the functionalities this is the package"
+    },
+    {
+      "start": 774.279,
+      "end": 778.36,
+      "text": "name so you can see the documentation"
+    },
+    {
+      "start": 776.16,
+      "end": 780.0,
+      "text": "and you can actually check it out right"
+    },
+    {
+      "start": 778.36,
+      "end": 781.839,
+      "text": "one more thing that I wanted to show you"
+    },
+    {
+      "start": 780.0,
+      "end": 784.44,
+      "text": "was that if you when you creating the"
+    },
+    {
+      "start": 781.839,
+      "end": 786.519,
+      "text": "model like chat open AI right you can"
+    },
+    {
+      "start": 784.44,
+      "end": 788.1990000000001,
+      "text": "obviously give a lot of configurations"
+    },
+    {
+      "start": 786.519,
+      "end": 790.44,
+      "text": "we had seen in the documentation we can"
+    },
+    {
+      "start": 788.199,
+      "end": 792.519,
+      "text": "mention the model right we can see over"
+    },
+    {
+      "start": 790.44,
+      "end": 796.1990000000001,
+      "text": "here the default model that we using is"
+    },
+    {
+      "start": 792.519,
+      "end": 797.68,
+      "text": "GPT 3.5 turbo but you can use 4o for"
+    },
+    {
+      "start": 796.199,
+      "end": 799.8389999999999,
+      "text": "mini like this you can mention which"
+    },
+    {
+      "start": 797.68,
+      "end": 801.4399999999999,
+      "text": "model you want to use another very"
+    },
+    {
+      "start": 799.839,
+      "end": 803.9200000000001,
+      "text": "common thing that usually people mention"
+    },
+    {
+      "start": 801.44,
+      "end": 805.48,
+      "text": "is temperature okay so let me actually"
+    },
+    {
+      "start": 803.92,
+      "end": 807.519,
+      "text": "show it to you so you could actually"
+    },
+    {
+      "start": 805.48,
+      "end": 810.24,
+      "text": "give it like this temperature the value"
+    },
+    {
+      "start": 807.519,
+      "end": 812.36,
+      "text": "is between 0er and one so zero means"
+    },
+    {
+      "start": 810.24,
+      "end": 814.5600000000001,
+      "text": "that you want your model to be very very"
+    },
+    {
+      "start": 812.36,
+      "end": 816.1990000000001,
+      "text": "precise okay basically you do not want"
+    },
+    {
+      "start": 814.56,
+      "end": 818.3199999999999,
+      "text": "any Randomness you do not want any"
+    },
+    {
+      "start": 816.199,
+      "end": 821.3199999999999,
+      "text": "creativity so suppose you're doing any"
+    },
+    {
+      "start": 818.32,
+      "end": 823.32,
+      "text": "summarizations or any calculations uh"
+    },
+    {
+      "start": 821.32,
+      "end": 825.519,
+      "text": "when you want a lot of precision that is"
+    },
+    {
+      "start": 823.32,
+      "end": 826.8000000000001,
+      "text": "when you give temperature equal to zero"
+    },
+    {
+      "start": 825.519,
+      "end": 828.279,
+      "text": "when you're giving the when you're"
+    },
+    {
+      "start": 826.8,
+      "end": 830.3599999999999,
+      "text": "creating the model itself you're saying"
+    },
+    {
+      "start": 828.279,
+      "end": 832.72,
+      "text": "that this is how I want my model to be"
+    },
+    {
+      "start": 830.36,
+      "end": 835.0790000000001,
+      "text": "behave suppose you want your model to be"
+    },
+    {
+      "start": 832.72,
+      "end": 838.1600000000001,
+      "text": "very very creative suppose your you know"
+    },
+    {
+      "start": 835.079,
+      "end": 840.3599999999999,
+      "text": "tasks are poetry storytelling or any"
+    },
+    {
+      "start": 838.16,
+      "end": 842.12,
+      "text": "creative task so you can give a higher"
+    },
+    {
+      "start": 840.36,
+      "end": 843.639,
+      "text": "temperature so suppose one one is the"
+    },
+    {
+      "start": 842.12,
+      "end": 846.36,
+      "text": "highest temperature so your model is"
+    },
+    {
+      "start": 843.639,
+      "end": 848.199,
+      "text": "going to be very very creative so the"
+    },
+    {
+      "start": 846.36,
+      "end": 852.0,
+      "text": "usual temperature that people give are"
+    },
+    {
+      "start": 848.199,
+      "end": 854.3599999999999,
+      "text": "like 6 7 7 is a good enough temperature"
+    },
+    {
+      "start": 852.0,
+      "end": 856.32,
+      "text": "right so that is like a medium level not"
+    },
+    {
+      "start": 854.36,
+      "end": 859.5600000000001,
+      "text": "like extremely random not very very"
+    },
+    {
+      "start": 856.32,
+      "end": 862.759,
+      "text": "precise so it basically plays around and"
+    },
+    {
+      "start": 859.56,
+      "end": 862.7589999999999,
+      "text": "gives you good"
+    },
+    {
+      "start": 865.639,
+      "end": 869.32,
+      "text": "responses coming back to the code that"
+    },
+    {
+      "start": 867.759,
+      "end": 871.0,
+      "text": "we written every time I'm running this"
+    },
+    {
+      "start": 869.32,
+      "end": 873.0790000000001,
+      "text": "you can see I'm getting a new movie I'm"
+    },
+    {
+      "start": 871.0,
+      "end": 875.8,
+      "text": "just deleting this start open AI new"
+    },
+    {
+      "start": 873.079,
+      "end": 877.6389999999999,
+      "text": "model now here what we had done was lm."
+    },
+    {
+      "start": 875.8,
+      "end": 879.24,
+      "text": "invoke we had called the method invoke"
+    },
+    {
+      "start": 877.639,
+      "end": 880.839,
+      "text": "if we look at the documentation over"
+    },
+    {
+      "start": 879.24,
+      "end": 882.92,
+      "text": "here we had called the invoke like this"
+    },
+    {
+      "start": 880.839,
+      "end": 884.72,
+      "text": "we had just passed the instruction but"
+    },
+    {
+      "start": 882.92,
+      "end": 886.04,
+      "text": "if you see over here here we are passing"
+    },
+    {
+      "start": 884.72,
+      "end": 888.12,
+      "text": "something called messages and they have"
+    },
+    {
+      "start": 886.04,
+      "end": 889.92,
+      "text": "formed some message here also there's"
+    },
+    {
+      "start": 888.12,
+      "end": 892.5600000000001,
+      "text": "something happening role content so what"
+    },
+    {
+      "start": 889.92,
+      "end": 894.399,
+      "text": "is exactly happening over here if we go"
+    },
+    {
+      "start": 892.56,
+      "end": 896.8389999999999,
+      "text": "back to the definition of chat models"
+    },
+    {
+      "start": 894.399,
+      "end": 898.759,
+      "text": "here it was written that llms are"
+    },
+    {
+      "start": 896.839,
+      "end": 901.32,
+      "text": "typically accessed through a chat model"
+    },
+    {
+      "start": 898.759,
+      "end": 903.36,
+      "text": "interace interface that takes a list of"
+    },
+    {
+      "start": 901.32,
+      "end": 905.5600000000001,
+      "text": "messages as input and returns a message"
+    },
+    {
+      "start": 903.36,
+      "end": 907.279,
+      "text": "as output so message seems something"
+    },
+    {
+      "start": 905.56,
+      "end": 909.8,
+      "text": "very important right let's check out the"
+    },
+    {
+      "start": 907.279,
+      "end": 912.079,
+      "text": "documentation of messages so if we go"
+    },
+    {
+      "start": 909.8,
+      "end": 914.68,
+      "text": "over here it is mentioned messages are"
+    },
+    {
+      "start": 912.079,
+      "end": 916.959,
+      "text": "the unit of communication in chat models"
+    },
+    {
+      "start": 914.68,
+      "end": 919.399,
+      "text": "they represent the input and output of"
+    },
+    {
+      "start": 916.959,
+      "end": 921.16,
+      "text": "chat model as well as any additional"
+    },
+    {
+      "start": 919.399,
+      "end": 924.079,
+      "text": "context or metadata that may be"
+    },
+    {
+      "start": 921.16,
+      "end": 925.68,
+      "text": "associated with a conversation and two"
+    },
+    {
+      "start": 924.079,
+      "end": 927.56,
+      "text": "very important things that you need to"
+    },
+    {
+      "start": 925.68,
+      "end": 929.5999999999999,
+      "text": "understand in a message are that every"
+    },
+    {
+      "start": 927.56,
+      "end": 932.3599999999999,
+      "text": "message is going to have a role and some"
+    },
+    {
+      "start": 929.6,
+      "end": 935.0400000000001,
+      "text": "content okay and they have given a very"
+    },
+    {
+      "start": 932.36,
+      "end": 937.5600000000001,
+      "text": "good table showing that see the possible"
+    },
+    {
+      "start": 935.04,
+      "end": 940.079,
+      "text": "roles are system user assistant and so"
+    },
+    {
+      "start": 937.56,
+      "end": 941.88,
+      "text": "on system role meaning that you're"
+    },
+    {
+      "start": 940.079,
+      "end": 943.959,
+      "text": "telling a chat model that you have to"
+    },
+    {
+      "start": 941.88,
+      "end": 945.8,
+      "text": "behave like this like for example you"
+    },
+    {
+      "start": 943.959,
+      "end": 947.8,
+      "text": "have to behave like a teacher or a"
+    },
+    {
+      "start": 945.8,
+      "end": 950.4799999999999,
+      "text": "software engineer or an expert in"
+    },
+    {
+      "start": 947.8,
+      "end": 952.959,
+      "text": "something a marketing specialist what"
+    },
+    {
+      "start": 950.48,
+      "end": 955.12,
+      "text": "role do you have to take that is the"
+    },
+    {
+      "start": 952.959,
+      "end": 956.959,
+      "text": "role that you're assigning okay user"
+    },
+    {
+      "start": 955.12,
+      "end": 958.6,
+      "text": "meaning you're giving the input okay"
+    },
+    {
+      "start": 956.959,
+      "end": 960.68,
+      "text": "assistant the output that you're getting"
+    },
+    {
+      "start": 958.6,
+      "end": 962.3190000000001,
+      "text": "the response so here you can see"
+    },
+    {
+      "start": 960.68,
+      "end": 964.399,
+      "text": "messages can be of the type system"
+    },
+    {
+      "start": 962.319,
+      "end": 966.04,
+      "text": "message for the content which should be"
+    },
+    {
+      "start": 964.399,
+      "end": 967.839,
+      "text": "passed to direct the conversation that"
+    },
+    {
+      "start": 966.04,
+      "end": 970.319,
+      "text": "you have to behave like this human"
+    },
+    {
+      "start": 967.839,
+      "end": 971.72,
+      "text": "message for the content in the input AI"
+    },
+    {
+      "start": 970.319,
+      "end": 973.4399999999999,
+      "text": "message the response and then"
+    },
+    {
+      "start": 971.72,
+      "end": 976.1990000000001,
+      "text": "multimodality for the information on"
+    },
+    {
+      "start": 973.44,
+      "end": 980.2790000000001,
+      "text": "multimodal content so this is how we can"
+    },
+    {
+      "start": 976.199,
+      "end": 982.16,
+      "text": "give the invoke also so here if we see"
+    },
+    {
+      "start": 980.279,
+      "end": 984.68,
+      "text": "let me actually just copy paste this"
+    },
+    {
+      "start": 982.16,
+      "end": 986.12,
+      "text": "entire thing and whatever was given okay"
+    },
+    {
+      "start": 984.68,
+      "end": 988.2399999999999,
+      "text": "so the whatever is given in the"
+    },
+    {
+      "start": 986.12,
+      "end": 991.759,
+      "text": "documentation I'm just copy pasting that"
+    },
+    {
+      "start": 988.24,
+      "end": 994.279,
+      "text": "and I'm inv invoking our llm okay so"
+    },
+    {
+      "start": 991.759,
+      "end": 997.839,
+      "text": "invoke and I'm going to pass this"
+    },
+    {
+      "start": 994.279,
+      "end": 999.759,
+      "text": "messages and if I run this so it said"
+    },
+    {
+      "start": 997.839,
+      "end": 1001.8000000000001,
+      "text": "can translate the following from English"
+    },
+    {
+      "start": 999.759,
+      "end": 1003.759,
+      "text": "to Italian okay we have not imported it"
+    },
+    {
+      "start": 1001.8,
+      "end": 1007.56,
+      "text": "so we have to import also Lang chain."
+    },
+    {
+      "start": 1003.759,
+      "end": 1011.279,
+      "text": "core messages uh and let me"
+    },
+    {
+      "start": 1007.56,
+      "end": 1013.88,
+      "text": "just okay and let me run this again and"
+    },
+    {
+      "start": 1011.279,
+      "end": 1016.639,
+      "text": "here we can see the content is CH okay"
+    },
+    {
+      "start": 1013.88,
+      "end": 1019.319,
+      "text": "chiao and if I run this again here we"
+    },
+    {
+      "start": 1016.639,
+      "end": 1022.279,
+      "text": "can see okay I have not put put it in"
+    },
+    {
+      "start": 1019.319,
+      "end": 1025.6789999999999,
+      "text": "the response so let me put this in the"
+    },
+    {
+      "start": 1022.279,
+      "end": 1028.4,
+      "text": "response and once I run"
+    },
+    {
+      "start": 1025.679,
+      "end": 1030.679,
+      "text": "this now it is there in the response and"
+    },
+    {
+      "start": 1028.4,
+      "end": 1033.72,
+      "text": "if I run this you can see ch right so"
+    },
+    {
+      "start": 1030.679,
+      "end": 1037.3190000000002,
+      "text": "this means that now the response is CH"
+    },
+    {
+      "start": 1033.72,
+      "end": 1039.48,
+      "text": "so if I actually run it like this okay"
+    },
+    {
+      "start": 1037.319,
+      "end": 1041.8799999999999,
+      "text": "this is how you can pass messages system"
+    },
+    {
+      "start": 1039.48,
+      "end": 1044.0,
+      "text": "message human message AI message so this"
+    },
+    {
+      "start": 1041.88,
+      "end": 1046.199,
+      "text": "is what you should understand over here"
+    },
+    {
+      "start": 1044.0,
+      "end": 1048.28,
+      "text": "also instead of messages what they have"
+    },
+    {
+      "start": 1046.199,
+      "end": 1050.24,
+      "text": "given is they have actually given the"
+    },
+    {
+      "start": 1048.28,
+      "end": 1052.799,
+      "text": "message see this is one message role"
+    },
+    {
+      "start": 1050.24,
+      "end": 1054.52,
+      "text": "user content this hello so this is one"
+    },
+    {
+      "start": 1052.799,
+      "end": 1056.9189999999999,
+      "text": "message right so like this you can give"
+    },
+    {
+      "start": 1054.52,
+      "end": 1059.24,
+      "text": "a list of messages also so here by"
+    },
+    {
+      "start": 1056.919,
+      "end": 1061.5200000000002,
+      "text": "default when we did this it was by"
+    },
+    {
+      "start": 1059.24,
+      "end": 1064.88,
+      "text": "default a human message saying hello so"
+    },
+    {
+      "start": 1061.52,
+      "end": 1064.8799999999999,
+      "text": "that is what it is taking as the"
+    },
+    {
+      "start": 1067.16,
+      "end": 1071.48,
+      "text": "input in this code that we had written"
+    },
+    {
+      "start": 1069.6,
+      "end": 1073.9189999999999,
+      "text": "we had passed this instruction suggest"
+    },
+    {
+      "start": 1071.48,
+      "end": 1076.24,
+      "text": "me a title of movie in Hindi to watch"
+    },
+    {
+      "start": 1073.919,
+      "end": 1078.0800000000002,
+      "text": "now suppose I want to do this I want my"
+    },
+    {
+      "start": 1076.24,
+      "end": 1079.76,
+      "text": "user to be able to select in which"
+    },
+    {
+      "start": 1078.08,
+      "end": 1082.1589999999999,
+      "text": "language they want to to watch the movie"
+    },
+    {
+      "start": 1079.76,
+      "end": 1084.2,
+      "text": "here I have hardcoded Hindi right now I"
+    },
+    {
+      "start": 1082.159,
+      "end": 1085.919,
+      "text": "want my user to be able to select I want"
+    },
+    {
+      "start": 1084.2,
+      "end": 1088.1200000000001,
+      "text": "to watch suppose in English Hindi"
+    },
+    {
+      "start": 1085.919,
+      "end": 1090.24,
+      "text": "Malayalam Tamil Telo French Spanish"
+    },
+    {
+      "start": 1088.12,
+      "end": 1092.76,
+      "text": "anything right so I want to take an"
+    },
+    {
+      "start": 1090.24,
+      "end": 1095.24,
+      "text": "input from the user then transform the"
+    },
+    {
+      "start": 1092.76,
+      "end": 1097.36,
+      "text": "string and then send to our llm so then"
+    },
+    {
+      "start": 1095.24,
+      "end": 1099.64,
+      "text": "I will send suggest me a title of a"
+    },
+    {
+      "start": 1097.36,
+      "end": 1102.039,
+      "text": "movie in this particular language to"
+    },
+    {
+      "start": 1099.64,
+      "end": 1103.64,
+      "text": "watch now not just language I can also"
+    },
+    {
+      "start": 1102.039,
+      "end": 1106.76,
+      "text": "take more inputs from the user like for"
+    },
+    {
+      "start": 1103.64,
+      "end": 1109.039,
+      "text": "example Jer I can take that my user"
+    },
+    {
+      "start": 1106.76,
+      "end": 1111.1589999999999,
+      "text": "wants to watch in this particular JRE it"
+    },
+    {
+      "start": 1109.039,
+      "end": 1112.919,
+      "text": "can be comedy sci-fi horror anything"
+    },
+    {
+      "start": 1111.159,
+      "end": 1114.96,
+      "text": "right so I want to be able to take"
+    },
+    {
+      "start": 1112.919,
+      "end": 1117.1200000000001,
+      "text": "inputs from the user transform it and"
+    },
+    {
+      "start": 1114.96,
+      "end": 1119.4,
+      "text": "then send to llm similarly in this"
+    },
+    {
+      "start": 1117.12,
+      "end": 1121.6399999999999,
+      "text": "example I want to be able to take the"
+    },
+    {
+      "start": 1119.4,
+      "end": 1123.48,
+      "text": "input from the user and tell translate"
+    },
+    {
+      "start": 1121.64,
+      "end": 1125.64,
+      "text": "the following from English into some"
+    },
+    {
+      "start": 1123.48,
+      "end": 1127.6,
+      "text": "other language or from some language"
+    },
+    {
+      "start": 1125.64,
+      "end": 1129.6000000000001,
+      "text": "into another language it can be from"
+    },
+    {
+      "start": 1127.6,
+      "end": 1132.1999999999998,
+      "text": "Hindi to malam it can be telu to Tamil"
+    },
+    {
+      "start": 1129.6,
+      "end": 1135.08,
+      "text": "it can be anything right so I want to be"
+    },
+    {
+      "start": 1132.2,
+      "end": 1137.44,
+      "text": "able to take from the user transform it"
+    },
+    {
+      "start": 1135.08,
+      "end": 1139.76,
+      "text": "send to the llm now let's go back to the"
+    },
+    {
+      "start": 1137.44,
+      "end": 1142.0,
+      "text": "documentation and see how it can be done"
+    },
+    {
+      "start": 1139.76,
+      "end": 1143.52,
+      "text": "so there is one more concept that we saw"
+    },
+    {
+      "start": 1142.0,
+      "end": 1145.72,
+      "text": "which is very important other than chart"
+    },
+    {
+      "start": 1143.52,
+      "end": 1147.559,
+      "text": "models and that is promt templates and"
+    },
+    {
+      "start": 1145.72,
+      "end": 1149.919,
+      "text": "it is very simple to understand okay"
+    },
+    {
+      "start": 1147.559,
+      "end": 1152.12,
+      "text": "just look over here it is constructed"
+    },
+    {
+      "start": 1149.919,
+      "end": 1154.2800000000002,
+      "text": "from the combination of user input and"
+    },
+    {
+      "start": 1152.12,
+      "end": 1157.0,
+      "text": "application logic just what I told you"
+    },
+    {
+      "start": 1154.28,
+      "end": 1159.2,
+      "text": "right so application logic usually takes"
+    },
+    {
+      "start": 1157.0,
+      "end": 1161.799,
+      "text": "the raw user input and transforms it"
+    },
+    {
+      "start": 1159.2,
+      "end": 1164.44,
+      "text": "into a list of messages ready to be"
+    },
+    {
+      "start": 1161.799,
+      "end": 1166.72,
+      "text": "passed to the language model prompt"
+    },
+    {
+      "start": 1164.44,
+      "end": 1169.679,
+      "text": "templates are a concept in Lang chain"
+    },
+    {
+      "start": 1166.72,
+      "end": 1171.919,
+      "text": "designed to assist with this transform"
+    },
+    {
+      "start": 1169.679,
+      "end": 1174.24,
+      "text": "they take in the Raw user input return"
+    },
+    {
+      "start": 1171.919,
+      "end": 1176.3200000000002,
+      "text": "the data a prompt that is ready to be"
+    },
+    {
+      "start": 1174.24,
+      "end": 1178.2,
+      "text": "passed to language model so what is"
+    },
+    {
+      "start": 1176.32,
+      "end": 1180.6399999999999,
+      "text": "going to be passed to the language model"
+    },
+    {
+      "start": 1178.2,
+      "end": 1182.4,
+      "text": "The Prompt is going to be passed so for"
+    },
+    {
+      "start": 1180.64,
+      "end": 1184.039,
+      "text": "now let's just copy paste the example"
+    },
+    {
+      "start": 1182.4,
+      "end": 1185.72,
+      "text": "that is given to us and then we will do"
+    },
+    {
+      "start": 1184.039,
+      "end": 1187.919,
+      "text": "the same thing for our movie example"
+    },
+    {
+      "start": 1185.72,
+      "end": 1189.559,
+      "text": "also so I'm just going to copy paste"
+    },
+    {
+      "start": 1187.919,
+      "end": 1192.96,
+      "text": "this and try it"
+    },
+    {
+      "start": 1189.559,
+      "end": 1195.76,
+      "text": "out okay and let's copy this part also"
+    },
+    {
+      "start": 1192.96,
+      "end": 1199.64,
+      "text": "this is where we are forming the prompt"
+    },
+    {
+      "start": 1195.76,
+      "end": 1202.559,
+      "text": "okay uh okay first let's run this"
+    },
+    {
+      "start": 1199.64,
+      "end": 1204.7990000000002,
+      "text": "okay so here what did we do we imported"
+    },
+    {
+      "start": 1202.559,
+      "end": 1207.24,
+      "text": "chat prom template from Lang chain core."
+    },
+    {
+      "start": 1204.799,
+      "end": 1210.039,
+      "text": "promps then we gave a template and let"
+    },
+    {
+      "start": 1207.24,
+      "end": 1212.44,
+      "text": "me actually run this so here we can see"
+    },
+    {
+      "start": 1210.039,
+      "end": 1215.2,
+      "text": "that we actually created one prompt okay"
+    },
+    {
+      "start": 1212.44,
+      "end": 1216.76,
+      "text": "what was there in system messages we the"
+    },
+    {
+      "start": 1215.2,
+      "end": 1219.1200000000001,
+      "text": "system message was translate the"
+    },
+    {
+      "start": 1216.76,
+      "end": 1220.76,
+      "text": "following from English to Italian see"
+    },
+    {
+      "start": 1219.12,
+      "end": 1222.6789999999999,
+      "text": "here if we had given translate the"
+    },
+    {
+      "start": 1220.76,
+      "end": 1225.6,
+      "text": "following from English into some"
+    },
+    {
+      "start": 1222.679,
+      "end": 1227.44,
+      "text": "language now where did we take the input"
+    },
+    {
+      "start": 1225.6,
+      "end": 1230.1999999999998,
+      "text": "the input was given over here see this"
+    },
+    {
+      "start": 1227.44,
+      "end": 1233.28,
+      "text": "is a dictionary where it is given that"
+    },
+    {
+      "start": 1230.2,
+      "end": 1236.799,
+      "text": "in in place of language pass Italian"
+    },
+    {
+      "start": 1233.28,
+      "end": 1239.1589999999999,
+      "text": "okay in place of the text Pass High that"
+    },
+    {
+      "start": 1236.799,
+      "end": 1241.36,
+      "text": "is why we we got the output as ch right"
+    },
+    {
+      "start": 1239.159,
+      "end": 1243.7600000000002,
+      "text": "we can pass anything suppose we want to"
+    },
+    {
+      "start": 1241.36,
+      "end": 1247.84,
+      "text": "pass it in Hindi and instead of high we"
+    },
+    {
+      "start": 1243.76,
+      "end": 1250.32,
+      "text": "want to say suppose how are you okay and"
+    },
+    {
+      "start": 1247.84,
+      "end": 1252.0,
+      "text": "let's try running this and now when I"
+    },
+    {
+      "start": 1250.32,
+      "end": 1254.3999999999999,
+      "text": "run this translate the following from"
+    },
+    {
+      "start": 1252.0,
+      "end": 1257.12,
+      "text": "English to Hindi and what is the text"
+    },
+    {
+      "start": 1254.4,
+      "end": 1260.039,
+      "text": "how are you so this is just the prompt"
+    },
+    {
+      "start": 1257.12,
+      "end": 1262.6399999999999,
+      "text": "now we can invoke the the llm by passing"
+    },
+    {
+      "start": 1260.039,
+      "end": 1265.0,
+      "text": "this prompt so now when I pass the"
+    },
+    {
+      "start": 1262.64,
+      "end": 1267.5200000000002,
+      "text": "prompt let's run"
+    },
+    {
+      "start": 1265.0,
+      "end": 1270.4,
+      "text": "it uh okay I have"
+    },
+    {
+      "start": 1267.52,
+      "end": 1272.12,
+      "text": "to okay and I can also save it in"
+    },
+    {
+      "start": 1270.4,
+      "end": 1275.4,
+      "text": "response and I can just print the"
+    },
+    {
+      "start": 1272.12,
+      "end": 1278.4799999999998,
+      "text": "content also so I have I have"
+    },
+    {
+      "start": 1275.4,
+      "end": 1281.5590000000002,
+      "text": "transformed it to now similarly suppose"
+    },
+    {
+      "start": 1278.48,
+      "end": 1283.559,
+      "text": "we want to do in Spanish that is again"
+    },
+    {
+      "start": 1281.559,
+      "end": 1286.32,
+      "text": "how are you right so Spanish how are you"
+    },
+    {
+      "start": 1283.559,
+      "end": 1289.6789999999999,
+      "text": "let's try running"
+    },
+    {
+      "start": 1286.32,
+      "end": 1291.52,
+      "text": "it so this is the Spanish of how are you"
+    },
+    {
+      "start": 1289.679,
+      "end": 1294.159,
+      "text": "okay similarly suppose if you want to"
+    },
+    {
+      "start": 1291.52,
+      "end": 1295.8799999999999,
+      "text": "see in English and Hindi only in Hindi"
+    },
+    {
+      "start": 1294.159,
+      "end": 1300.48,
+      "text": "suppose"
+    },
+    {
+      "start": 1295.88,
+      "end": 1305.44,
+      "text": "um what is your age simple okay and"
+    },
+    {
+      "start": 1300.48,
+      "end": 1308.4,
+      "text": "let's run this and we should be able to"
+    },
+    {
+      "start": 1305.44,
+      "end": 1310.799,
+      "text": "see correct so if we go and look at the"
+    },
+    {
+      "start": 1308.4,
+      "end": 1313.72,
+      "text": "documentation what did we do so far we"
+    },
+    {
+      "start": 1310.799,
+      "end": 1315.84,
+      "text": "created prompt from The Prompt template"
+    },
+    {
+      "start": 1313.72,
+      "end": 1317.799,
+      "text": "and then we passed it to the model"
+    },
+    {
+      "start": 1315.84,
+      "end": 1319.12,
+      "text": "model. invoke and then we were able to"
+    },
+    {
+      "start": 1317.799,
+      "end": 1321.44,
+      "text": "get the response right so we have"
+    },
+    {
+      "start": 1319.12,
+      "end": 1323.1999999999998,
+      "text": "followed this but see now there are many"
+    },
+    {
+      "start": 1321.44,
+      "end": 1324.88,
+      "text": "ways of creating the promt template so"
+    },
+    {
+      "start": 1323.2,
+      "end": 1328.44,
+      "text": "if we actually go to the documentation"
+    },
+    {
+      "start": 1324.88,
+      "end": 1330.24,
+      "text": "of promt template uh let me do that okay"
+    },
+    {
+      "start": 1328.44,
+      "end": 1332.44,
+      "text": "let's go to the promt templates and here"
+    },
+    {
+      "start": 1330.24,
+      "end": 1335.0,
+      "text": "you can see we can also create prompt"
+    },
+    {
+      "start": 1332.44,
+      "end": 1337.48,
+      "text": "templates from template itself so what"
+    },
+    {
+      "start": 1335.0,
+      "end": 1339.96,
+      "text": "we had done so far is we had created The"
+    },
+    {
+      "start": 1337.48,
+      "end": 1341.72,
+      "text": "Prompt template from messages so we had"
+    },
+    {
+      "start": 1339.96,
+      "end": 1343.72,
+      "text": "obviously passed messages over here"
+    },
+    {
+      "start": 1341.72,
+      "end": 1345.679,
+      "text": "system message user message and so on"
+    },
+    {
+      "start": 1343.72,
+      "end": 1348.24,
+      "text": "right we can also create it from"
+    },
+    {
+      "start": 1345.679,
+      "end": 1351.72,
+      "text": "template itself so if I actually go over"
+    },
+    {
+      "start": 1348.24,
+      "end": 1353.52,
+      "text": "here chat from template and I do dot so"
+    },
+    {
+      "start": 1351.72,
+      "end": 1355.919,
+      "text": "you will be able to see from messages"
+    },
+    {
+      "start": 1353.52,
+      "end": 1358.72,
+      "text": "from roles strings from strings from"
+    },
+    {
+      "start": 1355.919,
+      "end": 1360.44,
+      "text": "template so similarly let's try this"
+    },
+    {
+      "start": 1358.72,
+      "end": 1362.0,
+      "text": "example also and then we will try"
+    },
+    {
+      "start": 1360.44,
+      "end": 1364.2,
+      "text": "writing the code for the movie example"
+    },
+    {
+      "start": 1362.0,
+      "end": 1367.039,
+      "text": "that we took right so let me just copy"
+    },
+    {
+      "start": 1364.2,
+      "end": 1369.039,
+      "text": "paste this here when we do prompt"
+    },
+    {
+      "start": 1367.039,
+      "end": 1370.799,
+      "text": "template. invoke what are we going to"
+    },
+    {
+      "start": 1369.039,
+      "end": 1373.279,
+      "text": "get in return so let me actually run"
+    },
+    {
+      "start": 1370.799,
+      "end": 1376.799,
+      "text": "this we got a string prompt value tell"
+    },
+    {
+      "start": 1373.279,
+      "end": 1379.12,
+      "text": "me a joke about cats how did it get cats"
+    },
+    {
+      "start": 1376.799,
+      "end": 1381.279,
+      "text": "it got from this topic we had passed it"
+    },
+    {
+      "start": 1379.12,
+      "end": 1383.279,
+      "text": "in the dictionary right so this is"
+    },
+    {
+      "start": 1381.279,
+      "end": 1385.679,
+      "text": "essentially a prompt so I'm going to"
+    },
+    {
+      "start": 1383.279,
+      "end": 1390.039,
+      "text": "assign it to the prompt and then when we"
+    },
+    {
+      "start": 1385.679,
+      "end": 1393.44,
+      "text": "do llm do invoke I can pass this prompt"
+    },
+    {
+      "start": 1390.039,
+      "end": 1396.52,
+      "text": "value okay and now let me run"
+    },
+    {
+      "start": 1393.44,
+      "end": 1398.96,
+      "text": "this and you can see the output right"
+    },
+    {
+      "start": 1396.52,
+      "end": 1401.9189999999999,
+      "text": "why did the cat sit on the computer so"
+    },
+    {
+      "start": 1398.96,
+      "end": 1403.799,
+      "text": "this is a joke okay to keep an eye on"
+    },
+    {
+      "start": 1401.919,
+      "end": 1406.1200000000001,
+      "text": "the mouse okay so this is supposedly a"
+    },
+    {
+      "start": 1403.799,
+      "end": 1409.08,
+      "text": "joke if you want to see just the content"
+    },
+    {
+      "start": 1406.12,
+      "end": 1412.08,
+      "text": "you can also do this response"
+    },
+    {
+      "start": 1409.08,
+      "end": 1413.1999999999998,
+      "text": "equal to lm. inoke and then you can just"
+    },
+    {
+      "start": 1412.08,
+      "end": 1417.6789999999999,
+      "text": "do"
+    },
+    {
+      "start": 1413.2,
+      "end": 1419.279,
+      "text": "response. content okay and why was the"
+    },
+    {
+      "start": 1417.679,
+      "end": 1421.279,
+      "text": "cat sitting on the computer because it"
+    },
+    {
+      "start": 1419.279,
+      "end": 1422.96,
+      "text": "wanted to keep an eye on the mouse so"
+    },
+    {
+      "start": 1421.279,
+      "end": 1424.919,
+      "text": "you can see just the content so what did"
+    },
+    {
+      "start": 1422.96,
+      "end": 1427.6000000000001,
+      "text": "we do we created prom template from"
+    },
+    {
+      "start": 1424.919,
+      "end": 1429.96,
+      "text": "template then we got the prompt and then"
+    },
+    {
+      "start": 1427.6,
+      "end": 1431.6399999999999,
+      "text": "we passed it to the llm so this is one"
+    },
+    {
+      "start": 1429.96,
+      "end": 1433.52,
+      "text": "way of writing code now let's try for"
+    },
+    {
+      "start": 1431.64,
+      "end": 1435.8400000000001,
+      "text": "the movie example that we had taken"
+    },
+    {
+      "start": 1433.52,
+      "end": 1437.799,
+      "text": "let's get started with creating a"
+    },
+    {
+      "start": 1435.84,
+      "end": 1440.4399999999998,
+      "text": "template first so I'm going to call it"
+    },
+    {
+      "start": 1437.799,
+      "end": 1440.44,
+      "text": "movie title"
+    },
+    {
+      "start": 1441.32,
+      "end": 1449.4399999999998,
+      "text": "template and I'm going to be creating"
+    },
+    {
+      "start": 1443.799,
+      "end": 1454.08,
+      "text": "from prom template so from template and"
+    },
+    {
+      "start": 1449.44,
+      "end": 1454.0800000000002,
+      "text": "I'm going to say suggest me a movie to"
+    },
+    {
+      "start": 1455.12,
+      "end": 1458.4799999999998,
+      "text": "watch in"
+    },
+    {
+      "start": 1461.48,
+      "end": 1466.3600000000001,
+      "text": "language and of Jer"
+    },
+    {
+      "start": 1470.12,
+      "end": 1475.279,
+      "text": "and to be clear let's tell uh suggest me"
+    },
+    {
+      "start": 1472.84,
+      "end": 1477.8799999999999,
+      "text": "a title of a movie to"
+    },
+    {
+      "start": 1475.279,
+      "end": 1480.44,
+      "text": "watch okay in this language and in this"
+    },
+    {
+      "start": 1477.88,
+      "end": 1482.8400000000001,
+      "text": "Jer so this is the template now we are"
+    },
+    {
+      "start": 1480.44,
+      "end": 1484.3600000000001,
+      "text": "going to create the prompt so movie"
+    },
+    {
+      "start": 1482.84,
+      "end": 1487.36,
+      "text": "title"
+    },
+    {
+      "start": 1484.36,
+      "end": 1490.32,
+      "text": "prompt and we are going to get it from"
+    },
+    {
+      "start": 1487.36,
+      "end": 1492.4799999999998,
+      "text": "template right so movie title template"
+    },
+    {
+      "start": 1490.32,
+      "end": 1494.8799999999999,
+      "text": "and we are going to invoke it and now we"
+    },
+    {
+      "start": 1492.48,
+      "end": 1496.279,
+      "text": "have to pass the inputs that we want to"
+    },
+    {
+      "start": 1494.88,
+      "end": 1499.679,
+      "text": "give right so we have to pass it as a"
+    },
+    {
+      "start": 1496.279,
+      "end": 1502.52,
+      "text": "dictionary so I'm going to pass language"
+    },
+    {
+      "start": 1499.679,
+      "end": 1508.039,
+      "text": "as for example"
+    },
+    {
+      "start": 1502.52,
+      "end": 1508.039,
+      "text": "English and uh Jor suppose"
+    },
+    {
+      "start": 1509.88,
+      "end": 1514.7990000000002,
+      "text": "horror and then we are going to get"
+    },
+    {
+      "start": 1515.919,
+      "end": 1521.679,
+      "text": "response lm."
+    },
+    {
+      "start": 1519.12,
+      "end": 1525.799,
+      "text": "invoke and let's see the response for"
+    },
+    {
+      "start": 1521.679,
+      "end": 1530.6000000000001,
+      "text": "our movie title prompt let's run"
+    },
+    {
+      "start": 1525.799,
+      "end": 1532.96,
+      "text": "this and let's print the response on."
+    },
+    {
+      "start": 1530.6,
+      "end": 1534.8799999999999,
+      "text": "content and here we can see title of a"
+    },
+    {
+      "start": 1532.96,
+      "end": 1536.2,
+      "text": "movie if I run again we'll be able to"
+    },
+    {
+      "start": 1534.88,
+      "end": 1539.44,
+      "text": "see different"
+    },
+    {
+      "start": 1536.2,
+      "end": 1542.679,
+      "text": "different and if I suppose change the"
+    },
+    {
+      "start": 1539.44,
+      "end": 1545.64,
+      "text": "Jer to say for example"
+    },
+    {
+      "start": 1542.679,
+      "end": 1549.0,
+      "text": "comedy you can see and if I suppose"
+    },
+    {
+      "start": 1545.64,
+      "end": 1552.0,
+      "text": "change it to Hindi you will be able to"
+    },
+    {
+      "start": 1549.0,
+      "end": 1552.0,
+      "text": "see"
+    },
+    {
+      "start": 1555.279,
+      "end": 1559.72,
+      "text": "Gman now we are going to discuss the"
+    },
+    {
+      "start": 1557.559,
+      "end": 1561.6,
+      "text": "core concept of L chain probably the"
+    },
+    {
+      "start": 1559.72,
+      "end": 1563.679,
+      "text": "most important concept of Lang chain so"
+    },
+    {
+      "start": 1561.6,
+      "end": 1566.36,
+      "text": "listen carefully see from the name"
+    },
+    {
+      "start": 1563.679,
+      "end": 1569.0,
+      "text": "itself Lang stands for language models"
+    },
+    {
+      "start": 1566.36,
+      "end": 1571.799,
+      "text": "chain stands for what so in L chain we"
+    },
+    {
+      "start": 1569.0,
+      "end": 1574.48,
+      "text": "can create chains of a lot of things now"
+    },
+    {
+      "start": 1571.799,
+      "end": 1577.32,
+      "text": "chain of what what is each component or"
+    },
+    {
+      "start": 1574.48,
+      "end": 1581.039,
+      "text": "what is each step in this chain so think"
+    },
+    {
+      "start": 1577.32,
+      "end": 1583.08,
+      "text": "of any function any process any action"
+    },
+    {
+      "start": 1581.039,
+      "end": 1585.6,
+      "text": "any task that you can perform you can"
+    },
+    {
+      "start": 1583.08,
+      "end": 1588.52,
+      "text": "create a chain of that so in this chain"
+    },
+    {
+      "start": 1585.6,
+      "end": 1591.32,
+      "text": "each task or each step or each component"
+    },
+    {
+      "start": 1588.52,
+      "end": 1593.039,
+      "text": "or this function or task or action or"
+    },
+    {
+      "start": 1591.32,
+      "end": 1595.84,
+      "text": "anything that you're performing that"
+    },
+    {
+      "start": 1593.039,
+      "end": 1597.559,
+      "text": "action is called a runnable now let me"
+    },
+    {
+      "start": 1595.84,
+      "end": 1599.32,
+      "text": "explain it to you in very simple terms"
+    },
+    {
+      "start": 1597.559,
+      "end": 1602.12,
+      "text": "what did we do so far in order to create"
+    },
+    {
+      "start": 1599.32,
+      "end": 1603.9189999999999,
+      "text": "our application we created a prompt that"
+    },
+    {
+      "start": 1602.12,
+      "end": 1606.1999999999998,
+      "text": "is one task we did something right we"
+    },
+    {
+      "start": 1603.919,
+      "end": 1608.7990000000002,
+      "text": "created a prompt then we passed it to"
+    },
+    {
+      "start": 1606.2,
+      "end": 1610.6000000000001,
+      "text": "the llm that is one task that we"
+    },
+    {
+      "start": 1608.799,
+      "end": 1612.44,
+      "text": "performed then we got a response from"
+    },
+    {
+      "start": 1610.6,
+      "end": 1614.12,
+      "text": "the llm now the response at a lot of"
+    },
+    {
+      "start": 1612.44,
+      "end": 1616.52,
+      "text": "things content was one of the things"
+    },
+    {
+      "start": 1614.12,
+      "end": 1619.36,
+      "text": "that we wanted to pass and get out right"
+    },
+    {
+      "start": 1616.52,
+      "end": 1621.48,
+      "text": "so that passing is also one task one"
+    },
+    {
+      "start": 1619.36,
+      "end": 1623.1999999999998,
+      "text": "function that we are doing right so any"
+    },
+    {
+      "start": 1621.48,
+      "end": 1624.96,
+      "text": "task that you can run any function that"
+    },
+    {
+      "start": 1623.2,
+      "end": 1627.559,
+      "text": "you can call any action that you can"
+    },
+    {
+      "start": 1624.96,
+      "end": 1630.2,
+      "text": "perform can be a runable and you can"
+    },
+    {
+      "start": 1627.559,
+      "end": 1633.52,
+      "text": "chain these runnables so you can change"
+    },
+    {
+      "start": 1630.2,
+      "end": 1635.799,
+      "text": "these steps or tasks or actions okay and"
+    },
+    {
+      "start": 1633.52,
+      "end": 1637.799,
+      "text": "you will be amazed to see how beautiful"
+    },
+    {
+      "start": 1635.799,
+      "end": 1639.279,
+      "text": "and simple Lang chain makes it so right"
+    },
+    {
+      "start": 1637.799,
+      "end": 1641.36,
+      "text": "now all the code that we have written it"
+    },
+    {
+      "start": 1639.279,
+      "end": 1642.96,
+      "text": "is very very simple to just write it in"
+    },
+    {
+      "start": 1641.36,
+      "end": 1644.36,
+      "text": "form of a chain and let me show it to"
+    },
+    {
+      "start": 1642.96,
+      "end": 1646.52,
+      "text": "you we are back to the Lang chain"
+    },
+    {
+      "start": 1644.36,
+      "end": 1649.0,
+      "text": "documentation and I am at docs Concepts"
+    },
+    {
+      "start": 1646.52,
+      "end": 1651.24,
+      "text": "enables and the document ation is just"
+    },
+    {
+      "start": 1649.0,
+      "end": 1653.279,
+      "text": "awesome let's read about rebles reenable"
+    },
+    {
+      "start": 1651.24,
+      "end": 1655.48,
+      "text": "interface is the foundation for working"
+    },
+    {
+      "start": 1653.279,
+      "end": 1657.2,
+      "text": "with Lang chain components and if you go"
+    },
+    {
+      "start": 1655.48,
+      "end": 1659.3990000000001,
+      "text": "down they have given the different"
+    },
+    {
+      "start": 1657.2,
+      "end": 1661.72,
+      "text": "components that can be runnables every"
+    },
+    {
+      "start": 1659.399,
+      "end": 1663.84,
+      "text": "runnable is characterized by an input"
+    },
+    {
+      "start": 1661.72,
+      "end": 1665.72,
+      "text": "and output type so each of these"
+    },
+    {
+      "start": 1663.84,
+      "end": 1667.24,
+      "text": "components are different enables for"
+    },
+    {
+      "start": 1665.72,
+      "end": 1668.6000000000001,
+      "text": "these components these are the inputs"
+    },
+    {
+      "start": 1667.24,
+      "end": 1670.24,
+      "text": "and these are the outputs let's check"
+    },
+    {
+      "start": 1668.6,
+      "end": 1672.1589999999999,
+      "text": "them out so the prompt that we had"
+    },
+    {
+      "start": 1670.24,
+      "end": 1674.159,
+      "text": "created what did we give a dictionary"
+    },
+    {
+      "start": 1672.159,
+      "end": 1676.3990000000001,
+      "text": "that for this language like put this"
+    },
+    {
+      "start": 1674.159,
+      "end": 1678.2,
+      "text": "value in the dictionary right so like"
+    },
+    {
+      "start": 1676.399,
+      "end": 1679.7199999999998,
+      "text": "fill the variable with this value like"
+    },
+    {
+      "start": 1678.2,
+      "end": 1682.0800000000002,
+      "text": "for example we had given Hindi or"
+    },
+    {
+      "start": 1679.72,
+      "end": 1684.279,
+      "text": "English genre we had given right comedy"
+    },
+    {
+      "start": 1682.08,
+      "end": 1686.0,
+      "text": "or horror so we gave in a dictionary and"
+    },
+    {
+      "start": 1684.279,
+      "end": 1689.039,
+      "text": "what did we get as the output prompt"
+    },
+    {
+      "start": 1686.0,
+      "end": 1691.2,
+      "text": "value similarly in chat model and in llm"
+    },
+    {
+      "start": 1689.039,
+      "end": 1693.039,
+      "text": "like to talk to the llm we use chat"
+    },
+    {
+      "start": 1691.2,
+      "end": 1695.3600000000001,
+      "text": "models right so what can we give as the"
+    },
+    {
+      "start": 1693.039,
+      "end": 1697.32,
+      "text": "input a string a list of chat messages"
+    },
+    {
+      "start": 1695.36,
+      "end": 1698.76,
+      "text": "or a prompt value so when you're using"
+    },
+    {
+      "start": 1697.32,
+      "end": 1700.8799999999999,
+      "text": "chat model what are you going to get as"
+    },
+    {
+      "start": 1698.76,
+      "end": 1703.279,
+      "text": "the output chat message llm we are going"
+    },
+    {
+      "start": 1700.88,
+      "end": 1706.0800000000002,
+      "text": "to get a string then we can have output"
+    },
+    {
+      "start": 1703.279,
+      "end": 1708.279,
+      "text": "passes so the output that we got from"
+    },
+    {
+      "start": 1706.08,
+      "end": 1710.08,
+      "text": "the llm we were passing what we were are"
+    },
+    {
+      "start": 1708.279,
+      "end": 1712.2,
+      "text": "passing out content so there are"
+    },
+    {
+      "start": 1710.08,
+      "end": 1714.0,
+      "text": "different passes that we can use and we"
+    },
+    {
+      "start": 1712.2,
+      "end": 1715.3990000000001,
+      "text": "can get the output accordingly then"
+    },
+    {
+      "start": 1714.0,
+      "end": 1717.48,
+      "text": "there are retrievers there are different"
+    },
+    {
+      "start": 1715.399,
+      "end": 1719.6789999999999,
+      "text": "tools right so these are all components"
+    },
+    {
+      "start": 1717.48,
+      "end": 1722.039,
+      "text": "so you can have chains of these"
+    },
+    {
+      "start": 1719.679,
+      "end": 1723.8400000000001,
+      "text": "components these will be each task or"
+    },
+    {
+      "start": 1722.039,
+      "end": 1725.8799999999999,
+      "text": "action or process or function that you"
+    },
+    {
+      "start": 1723.84,
+      "end": 1728.32,
+      "text": "have performing right and if you go down"
+    },
+    {
+      "start": 1725.88,
+      "end": 1729.8400000000001,
+      "text": "and look at the examples this is one of"
+    },
+    {
+      "start": 1728.32,
+      "end": 1732.72,
+      "text": "the examples that they have given us"
+    },
+    {
+      "start": 1729.84,
+      "end": 1734.559,
+      "text": "okay you can create a chain of prompt"
+    },
+    {
+      "start": 1732.72,
+      "end": 1737.0,
+      "text": "then pass it to your model and then you"
+    },
+    {
+      "start": 1734.559,
+      "end": 1739.8799999999999,
+      "text": "can pass it to your output parcel so"
+    },
+    {
+      "start": 1737.0,
+      "end": 1742.0,
+      "text": "each step is ided by this pipe operator"
+    },
+    {
+      "start": 1739.88,
+      "end": 1743.5590000000002,
+      "text": "okay it is very easy to understand"
+    },
+    {
+      "start": 1742.0,
+      "end": 1745.6,
+      "text": "whatever will be the output from this"
+    },
+    {
+      "start": 1743.559,
+      "end": 1747.519,
+      "text": "prompt that will be passed to the chat"
+    },
+    {
+      "start": 1745.6,
+      "end": 1749.1999999999998,
+      "text": "model whatever will be the output from"
+    },
+    {
+      "start": 1747.519,
+      "end": 1751.1200000000001,
+      "text": "this chart model that will be passed to"
+    },
+    {
+      "start": 1749.2,
+      "end": 1753.519,
+      "text": "this output parcel I think we are ready"
+    },
+    {
+      "start": 1751.12,
+      "end": 1755.5189999999998,
+      "text": "to convert our code into this format and"
+    },
+    {
+      "start": 1753.519,
+      "end": 1757.32,
+      "text": "see if this works or not let's do this"
+    },
+    {
+      "start": 1755.519,
+      "end": 1759.0,
+      "text": "so what I'm going to do is I'm going to"
+    },
+    {
+      "start": 1757.32,
+      "end": 1763.399,
+      "text": "create a chain now and I'm going to call"
+    },
+    {
+      "start": 1759.0,
+      "end": 1765.44,
+      "text": "it movie title chain so we already have"
+    },
+    {
+      "start": 1763.399,
+      "end": 1767.0,
+      "text": "a prompt right and I just need to pass"
+    },
+    {
+      "start": 1765.44,
+      "end": 1769.96,
+      "text": "the template Actually I don't even need"
+    },
+    {
+      "start": 1767.0,
+      "end": 1773.12,
+      "text": "to invoke it so just going to take this"
+    },
+    {
+      "start": 1769.96,
+      "end": 1775.3600000000001,
+      "text": "and I'm going to pass it to the llm now"
+    },
+    {
+      "start": 1773.12,
+      "end": 1777.1589999999999,
+      "text": "I can also pass it but for now let's"
+    },
+    {
+      "start": 1775.36,
+      "end": 1779.039,
+      "text": "just have two things in the chain and"
+    },
+    {
+      "start": 1777.159,
+      "end": 1781.8400000000001,
+      "text": "let's run it and then we will also pass"
+    },
+    {
+      "start": 1779.039,
+      "end": 1783.72,
+      "text": "the output okay now you can see that I"
+    },
+    {
+      "start": 1781.84,
+      "end": 1786.36,
+      "text": "have created the chain chain is there I"
+    },
+    {
+      "start": 1783.72,
+      "end": 1788.32,
+      "text": "can invoke this chain now now you will"
+    },
+    {
+      "start": 1786.36,
+      "end": 1790.76,
+      "text": "think where will I give this input right"
+    },
+    {
+      "start": 1788.32,
+      "end": 1793.32,
+      "text": "at language and Jer is this that is when"
+    },
+    {
+      "start": 1790.76,
+      "end": 1795.399,
+      "text": "you invoke the chain you will give that"
+    },
+    {
+      "start": 1793.32,
+      "end": 1796.76,
+      "text": "this is the input that I want to go that"
+    },
+    {
+      "start": 1795.399,
+      "end": 1798.6,
+      "text": "I want to give to this particular"
+    },
+    {
+      "start": 1796.76,
+      "end": 1801.559,
+      "text": "template right so what I'm going to do"
+    },
+    {
+      "start": 1798.6,
+      "end": 1806.0,
+      "text": "is I'm going to invoke the chain and in"
+    },
+    {
+      "start": 1801.559,
+      "end": 1807.9189999999999,
+      "text": "this I'm going to pass our dictionary so"
+    },
+    {
+      "start": 1806.0,
+      "end": 1810.159,
+      "text": "this is the input that I want to be"
+    },
+    {
+      "start": 1807.919,
+      "end": 1813.279,
+      "text": "passed to my first component for now"
+    },
+    {
+      "start": 1810.159,
+      "end": 1816.0390000000002,
+      "text": "okay so let's run this and let's see the"
+    },
+    {
+      "start": 1813.279,
+      "end": 1818.64,
+      "text": "output see we got the output and we got"
+    },
+    {
+      "start": 1816.039,
+      "end": 1820.84,
+      "text": "this right now in this only I want to"
+    },
+    {
+      "start": 1818.64,
+      "end": 1823.3200000000002,
+      "text": "add another component in the chain and I"
+    },
+    {
+      "start": 1820.84,
+      "end": 1825.6,
+      "text": "want to pass this output so I'm going to"
+    },
+    {
+      "start": 1823.32,
+      "end": 1829.96,
+      "text": "add yet another component and what I can"
+    },
+    {
+      "start": 1825.6,
+      "end": 1829.9599999999998,
+      "text": "do is from Lang chain code"
+    },
+    {
+      "start": 1830.08,
+      "end": 1835.9189999999999,
+      "text": "I am going to do"
+    },
+    {
+      "start": 1833.44,
+      "end": 1839.88,
+      "text": "parsers I'm going to"
+    },
+    {
+      "start": 1835.919,
+      "end": 1842.44,
+      "text": "import St Str output parcel and I am"
+    },
+    {
+      "start": 1839.88,
+      "end": 1844.6000000000001,
+      "text": "going to add another component Str Str"
+    },
+    {
+      "start": 1842.44,
+      "end": 1849.2,
+      "text": "output parcel and I'm going to call this"
+    },
+    {
+      "start": 1844.6,
+      "end": 1850.6399999999999,
+      "text": "and now if I run it again see PTI and if"
+    },
+    {
+      "start": 1849.2,
+      "end": 1854.0800000000002,
+      "text": "I run it"
+    },
+    {
+      "start": 1850.64,
+      "end": 1858.24,
+      "text": "again isn't it beautiful right so now if"
+    },
+    {
+      "start": 1854.08,
+      "end": 1861.9189999999999,
+      "text": "I have pass English if I pass suppose uh"
+    },
+    {
+      "start": 1858.24,
+      "end": 1863.96,
+      "text": "horror I don't know why but okay"
+    },
+    {
+      "start": 1861.919,
+      "end": 1865.76,
+      "text": "haunting off a LS so this is so"
+    },
+    {
+      "start": 1863.96,
+      "end": 1867.44,
+      "text": "beautiful right so simple way of writing"
+    },
+    {
+      "start": 1865.76,
+      "end": 1868.84,
+      "text": "the code here we had to do so much we"
+    },
+    {
+      "start": 1867.44,
+      "end": 1871.72,
+      "text": "had to create the template we had to"
+    },
+    {
+      "start": 1868.84,
+      "end": 1874.279,
+      "text": "invoke then we had to do invoke this is"
+    },
+    {
+      "start": 1871.72,
+      "end": 1875.919,
+      "text": "a very simple way of writing code okay"
+    },
+    {
+      "start": 1874.279,
+      "end": 1878.24,
+      "text": "and one more thing in most of the"
+    },
+    {
+      "start": 1875.919,
+      "end": 1880.7990000000002,
+      "text": "tutorials that you will see on YouTube"
+    },
+    {
+      "start": 1878.24,
+      "end": 1884.44,
+      "text": "you will see that they are creating the"
+    },
+    {
+      "start": 1880.799,
+      "end": 1886.48,
+      "text": "uh the llm chain using this okay and you"
+    },
+    {
+      "start": 1884.44,
+      "end": 1888.159,
+      "text": "can you will see that they are importing"
+    },
+    {
+      "start": 1886.48,
+      "end": 1890.2,
+      "text": "so you will see most of those videos are"
+    },
+    {
+      "start": 1888.159,
+      "end": 1891.96,
+      "text": "like one year ago and all of that this"
+    },
+    {
+      "start": 1890.2,
+      "end": 1894.679,
+      "text": "is actually deprecated and I'll show it"
+    },
+    {
+      "start": 1891.96,
+      "end": 1896.6390000000001,
+      "text": "to you in the documentation also so just"
+    },
+    {
+      "start": 1894.679,
+      "end": 1898.6000000000001,
+      "text": "see as of today like you can think of"
+    },
+    {
+      "start": 1896.639,
+      "end": 1900.32,
+      "text": "early February 2025 this is the"
+    },
+    {
+      "start": 1898.6,
+      "end": 1902.32,
+      "text": "documentation and I think they plan to"
+    },
+    {
+      "start": 1900.32,
+      "end": 1905.24,
+      "text": "keep this uh like because this is part"
+    },
+    {
+      "start": 1902.32,
+      "end": 1907.0,
+      "text": "of LC so I think this will be continued"
+    },
+    {
+      "start": 1905.24,
+      "end": 1909.3990000000001,
+      "text": "this way of writing the code so I think"
+    },
+    {
+      "start": 1907.0,
+      "end": 1911.0,
+      "text": "this you can use but in case if there is"
+    },
+    {
+      "start": 1909.399,
+      "end": 1913.279,
+      "text": "any update I will be updating in the"
+    },
+    {
+      "start": 1911.0,
+      "end": 1914.96,
+      "text": "comments but I think this is what they"
+    },
+    {
+      "start": 1913.279,
+      "end": 1916.559,
+      "text": "are planning to keep in the future also"
+    },
+    {
+      "start": 1914.96,
+      "end": 1917.88,
+      "text": "because this is very easy to understand"
+    },
+    {
+      "start": 1916.559,
+      "end": 1919.559,
+      "text": "right you just have to add the pipe of"
+    },
+    {
+      "start": 1917.88,
+      "end": 1921.3600000000001,
+      "text": "operators just showing you in the"
+    },
+    {
+      "start": 1919.559,
+      "end": 1923.519,
+      "text": "documentation also see over here they"
+    },
+    {
+      "start": 1921.36,
+      "end": 1925.039,
+      "text": "have mentioned that this class the llm"
+    },
+    {
+      "start": 1923.519,
+      "end": 1927.639,
+      "text": "chain class is deprecated and they're"
+    },
+    {
+      "start": 1925.039,
+      "end": 1929.48,
+      "text": "telling use the pipe operator instead"
+    },
+    {
+      "start": 1927.639,
+      "end": 1931.7199999999998,
+      "text": "and if you go down also I think here it"
+    },
+    {
+      "start": 1929.48,
+      "end": 1934.3990000000001,
+      "text": "is mentioned that call is now deprecated"
+    },
+    {
+      "start": 1931.72,
+      "end": 1935.84,
+      "text": "use invoke instead right so just refer"
+    },
+    {
+      "start": 1934.399,
+      "end": 1937.559,
+      "text": "to the code that I have written by the"
+    },
+    {
+      "start": 1935.84,
+      "end": 1939.08,
+      "text": "way the link is in the description so"
+    },
+    {
+      "start": 1937.559,
+      "end": 1941.279,
+      "text": "you'll be able to refer to all of this"
+    },
+    {
+      "start": 1939.08,
+      "end": 1943.6,
+      "text": "code basically use the pipe operator"
+    },
+    {
+      "start": 1941.279,
+      "end": 1946.6,
+      "text": "save your time don't go behind llm chain"
+    },
+    {
+      "start": 1943.6,
+      "end": 1946.6,
+      "text": "class"
+    },
+    {
+      "start": 1949.0,
+      "end": 1952.039,
+      "text": "let's come back to the code that we had"
+    },
+    {
+      "start": 1950.44,
+      "end": 1954.24,
+      "text": "written and now what we are going to do"
+    },
+    {
+      "start": 1952.039,
+      "end": 1956.679,
+      "text": "is we are going to add one more step"
+    },
+    {
+      "start": 1954.24,
+      "end": 1958.36,
+      "text": "over here and till now what is the"
+    },
+    {
+      "start": 1956.679,
+      "end": 1960.3200000000002,
+      "text": "output that we got we got the title of a"
+    },
+    {
+      "start": 1958.36,
+      "end": 1962.12,
+      "text": "movie we are going to make another call"
+    },
+    {
+      "start": 1960.32,
+      "end": 1964.799,
+      "text": "to the llm and we are going to say give"
+    },
+    {
+      "start": 1962.12,
+      "end": 1966.9599999999998,
+      "text": "me summary of this particular movie you"
+    },
+    {
+      "start": 1964.799,
+      "end": 1969.639,
+      "text": "might be thinking that KY that is not"
+    },
+    {
+      "start": 1966.96,
+      "end": 1971.08,
+      "text": "required in whatever uh template that we"
+    },
+    {
+      "start": 1969.639,
+      "end": 1972.9189999999999,
+      "text": "had given whatever instruction we had"
+    },
+    {
+      "start": 1971.08,
+      "end": 1974.559,
+      "text": "given over here itself you can just say"
+    },
+    {
+      "start": 1972.919,
+      "end": 1976.96,
+      "text": "ke give me the title and then give me"
+    },
+    {
+      "start": 1974.559,
+      "end": 1979.2,
+      "text": "summary also over here and you're right"
+    },
+    {
+      "start": 1976.96,
+      "end": 1981.32,
+      "text": "while it is true that I am giving you a"
+    },
+    {
+      "start": 1979.2,
+      "end": 1983.3990000000001,
+      "text": "simplified example right now let me also"
+    },
+    {
+      "start": 1981.32,
+      "end": 1985.799,
+      "text": "make you think that why would we want to"
+    },
+    {
+      "start": 1983.399,
+      "end": 1988.559,
+      "text": "add more and more steps see sometimes it"
+    },
+    {
+      "start": 1985.799,
+      "end": 1990.639,
+      "text": "might happen that uh for one particular"
+    },
+    {
+      "start": 1988.559,
+      "end": 1992.559,
+      "text": "task like for example for getting the"
+    },
+    {
+      "start": 1990.639,
+      "end": 1995.6,
+      "text": "title of a movie I want to use a"
+    },
+    {
+      "start": 1992.559,
+      "end": 1997.6,
+      "text": "particular llm suppose I myself have"
+    },
+    {
+      "start": 1995.6,
+      "end": 2000.0,
+      "text": "some database and from there itself I"
+    },
+    {
+      "start": 1997.6,
+      "end": 2002.24,
+      "text": "want to get a title but to generate the"
+    },
+    {
+      "start": 2000.0,
+      "end": 2004.6,
+      "text": "summary maybe I want to use another llm"
+    },
+    {
+      "start": 2002.24,
+      "end": 2007.039,
+      "text": "maybe in order to save some cost or"
+    },
+    {
+      "start": 2004.6,
+      "end": 2008.8799999999999,
+      "text": "maybe I want to use my own llm right so"
+    },
+    {
+      "start": 2007.039,
+      "end": 2010.48,
+      "text": "there can be multip reasons why I want"
+    },
+    {
+      "start": 2008.88,
+      "end": 2013.72,
+      "text": "to make different calls to different"
+    },
+    {
+      "start": 2010.48,
+      "end": 2017.2,
+      "text": "llms also having different steps in the"
+    },
+    {
+      "start": 2013.72,
+      "end": 2020.6000000000001,
+      "text": "chain makes it easier to debug makes it"
+    },
+    {
+      "start": 2017.2,
+      "end": 2023.24,
+      "text": "easier to uh log makes it more flexible"
+    },
+    {
+      "start": 2020.6,
+      "end": 2025.08,
+      "text": "you can understand right yes our basic"
+    },
+    {
+      "start": 2023.24,
+      "end": 2027.1200000000001,
+      "text": "uh software engineering principle also"
+    },
+    {
+      "start": 2025.08,
+      "end": 2029.1589999999999,
+      "text": "come into picture over here we want to"
+    },
+    {
+      "start": 2027.12,
+      "end": 2030.76,
+      "text": "keep our chain as flexible as possible"
+    },
+    {
+      "start": 2029.159,
+      "end": 2032.7990000000002,
+      "text": "so actually let's get back to writing"
+    },
+    {
+      "start": 2030.76,
+      "end": 2034.399,
+      "text": "the code what I'm going to do now is"
+    },
+    {
+      "start": 2032.799,
+      "end": 2036.9189999999999,
+      "text": "create another prompt and I'm going to"
+    },
+    {
+      "start": 2034.399,
+      "end": 2038.8799999999999,
+      "text": "call it movie summary prompt okay and"
+    },
+    {
+      "start": 2036.919,
+      "end": 2040.8400000000001,
+      "text": "this is going to be similar to the movie"
+    },
+    {
+      "start": 2038.88,
+      "end": 2043.1200000000001,
+      "text": "title prompt and what I'm what I'm going"
+    },
+    {
+      "start": 2040.84,
+      "end": 2046.1999999999998,
+      "text": "to do is just like how we did prompt"
+    },
+    {
+      "start": 2043.12,
+      "end": 2048.96,
+      "text": "template right so prompt template and"
+    },
+    {
+      "start": 2046.2,
+      "end": 2052.96,
+      "text": "from template we are going to do and we"
+    },
+    {
+      "start": 2048.96,
+      "end": 2055.119,
+      "text": "are going to give uh give me suppose"
+    },
+    {
+      "start": 2052.96,
+      "end": 2056.119,
+      "text": "let's make it very specific two three"
+    },
+    {
+      "start": 2055.119,
+      "end": 2058.28,
+      "text": "line"
+    },
+    {
+      "start": 2056.119,
+      "end": 2063.48,
+      "text": "summary of the"
+    },
+    {
+      "start": 2058.28,
+      "end": 2063.48,
+      "text": "movie and let's give the variable movie"
+    },
+    {
+      "start": 2063.76,
+      "end": 2069.159,
+      "text": "title so we have this prompt now now I"
+    },
+    {
+      "start": 2066.8,
+      "end": 2071.3990000000003,
+      "text": "want to create another chain with this"
+    },
+    {
+      "start": 2069.159,
+      "end": 2074.639,
+      "text": "new step right so I'm going to create a"
+    },
+    {
+      "start": 2071.399,
+      "end": 2076.6389999999997,
+      "text": "compost chain and what I need to do is"
+    },
+    {
+      "start": 2074.639,
+      "end": 2079.28,
+      "text": "first I need to call the movie title"
+    },
+    {
+      "start": 2076.639,
+      "end": 2081.28,
+      "text": "only right the movie title chain so I"
+    },
+    {
+      "start": 2079.28,
+      "end": 2082.599,
+      "text": "need to invoke the movie title chain and"
+    },
+    {
+      "start": 2081.28,
+      "end": 2084.48,
+      "text": "then from that I'm going to get the"
+    },
+    {
+      "start": 2082.599,
+      "end": 2087.32,
+      "text": "output that I'm going to pass to the"
+    },
+    {
+      "start": 2084.48,
+      "end": 2091.399,
+      "text": "movie summary prompt right so I'm going"
+    },
+    {
+      "start": 2087.32,
+      "end": 2094.8790000000004,
+      "text": "to call movie title chain I'm going to"
+    },
+    {
+      "start": 2091.399,
+      "end": 2097.88,
+      "text": "pass it whatever is the output to the"
+    },
+    {
+      "start": 2094.879,
+      "end": 2100.5989999999997,
+      "text": "movie summary prompt whatever is the out"
+    },
+    {
+      "start": 2097.88,
+      "end": 2102.48,
+      "text": "put I am going to pass to the llm"
+    },
+    {
+      "start": 2100.599,
+      "end": 2105.92,
+      "text": "whatever is the output I am going to"
+    },
+    {
+      "start": 2102.48,
+      "end": 2108.32,
+      "text": "pass to the output parcel correct now"
+    },
+    {
+      "start": 2105.92,
+      "end": 2110.92,
+      "text": "this movie title chain okay whatever is"
+    },
+    {
+      "start": 2108.32,
+      "end": 2113.4,
+      "text": "the output I need to save it in this"
+    },
+    {
+      "start": 2110.92,
+      "end": 2115.44,
+      "text": "particular variable right movie title so"
+    },
+    {
+      "start": 2113.4,
+      "end": 2119.2000000000003,
+      "text": "what I'm going to do over here is I'm"
+    },
+    {
+      "start": 2115.44,
+      "end": 2121.92,
+      "text": "going to put it in a dictionary that for"
+    },
+    {
+      "start": 2119.2,
+      "end": 2124.2,
+      "text": "this movie title you will get the output"
+    },
+    {
+      "start": 2121.92,
+      "end": 2126.28,
+      "text": "from this chain and this chain"
+    },
+    {
+      "start": 2124.2,
+      "end": 2127.96,
+      "text": "internally is doing what it is seeing"
+    },
+    {
+      "start": 2126.28,
+      "end": 2130.119,
+      "text": "okay this is the template I'm going to"
+    },
+    {
+      "start": 2127.96,
+      "end": 2132.76,
+      "text": "call the llm and I'm going to pass it it"
+    },
+    {
+      "start": 2130.119,
+      "end": 2135.2400000000002,
+      "text": "is going to pass and get me out the"
+    },
+    {
+      "start": 2132.76,
+      "end": 2137.2400000000002,
+      "text": "movie title I'm going to save it in this"
+    },
+    {
+      "start": 2135.24,
+      "end": 2139.4399999999996,
+      "text": "particular variable and that variable"
+    },
+    {
+      "start": 2137.24,
+      "end": 2141.3999999999996,
+      "text": "I'm passing to The Prompt uh the summary"
+    },
+    {
+      "start": 2139.44,
+      "end": 2143.28,
+      "text": "prompt that I'm passing to the llm and"
+    },
+    {
+      "start": 2141.4,
+      "end": 2145.96,
+      "text": "then I'm going to pass it so let's run"
+    },
+    {
+      "start": 2143.28,
+      "end": 2149.119,
+      "text": "it and see okay I have created the chain"
+    },
+    {
+      "start": 2145.96,
+      "end": 2151.7200000000003,
+      "text": "now I need to I need to call it right"
+    },
+    {
+      "start": 2149.119,
+      "end": 2154.44,
+      "text": "obviously so invoke and now when I"
+    },
+    {
+      "start": 2151.72,
+      "end": 2157.0789999999997,
+      "text": "invoke this this is where I am going to"
+    },
+    {
+      "start": 2154.44,
+      "end": 2159.92,
+      "text": "give the language and the journal so"
+    },
+    {
+      "start": 2157.079,
+      "end": 2163.079,
+      "text": "this is the input that I'm giving to the"
+    },
+    {
+      "start": 2159.92,
+      "end": 2164.8,
+      "text": "first uh to the first component of this"
+    },
+    {
+      "start": 2163.079,
+      "end": 2167.44,
+      "text": "chain which is the movie title chain"
+    },
+    {
+      "start": 2164.8,
+      "end": 2170.52,
+      "text": "right so let me actually pass it and"
+    },
+    {
+      "start": 2167.44,
+      "end": 2173.52,
+      "text": "let's run it okay I added one extra"
+    },
+    {
+      "start": 2170.52,
+      "end": 2176.96,
+      "text": "braces and let me run it"
+    },
+    {
+      "start": 2173.52,
+      "end": 2178.4,
+      "text": "now so after inheriting an old mansion a"
+    },
+    {
+      "start": 2176.96,
+      "end": 2181.04,
+      "text": "young something something right so we"
+    },
+    {
+      "start": 2178.4,
+      "end": 2182.7200000000003,
+      "text": "did not get the movie title over here"
+    },
+    {
+      "start": 2181.04,
+      "end": 2185.44,
+      "text": "why not because I'm not printing the"
+    },
+    {
+      "start": 2182.72,
+      "end": 2188.4399999999996,
+      "text": "title what I did was I just caught the"
+    },
+    {
+      "start": 2185.44,
+      "end": 2188.44,
+      "text": "summary"
+    },
+    {
+      "start": 2191.079,
+      "end": 2194.44,
+      "text": "in order to print the title also there"
+    },
+    {
+      "start": 2192.839,
+      "end": 2196.16,
+      "text": "are obviously many ways but I want to"
+    },
+    {
+      "start": 2194.44,
+      "end": 2198.16,
+      "text": "introduce One More Concept and let me"
+    },
+    {
+      "start": 2196.16,
+      "end": 2200.44,
+      "text": "actually show it to you so if we see how"
+    },
+    {
+      "start": 2198.16,
+      "end": 2202.0,
+      "text": "to run custom functions so right now"
+    },
+    {
+      "start": 2200.44,
+      "end": 2204.04,
+      "text": "what we are doing is we are just"
+    },
+    {
+      "start": 2202.0,
+      "end": 2206.599,
+      "text": "creating the prompt and then passing it"
+    },
+    {
+      "start": 2204.04,
+      "end": 2208.8,
+      "text": "to llm parer and all of that what if I"
+    },
+    {
+      "start": 2206.599,
+      "end": 2210.6800000000003,
+      "text": "want to write my own custom function in"
+    },
+    {
+      "start": 2208.8,
+      "end": 2212.0,
+      "text": "between as a step like in our example"
+    },
+    {
+      "start": 2210.68,
+      "end": 2213.9199999999996,
+      "text": "what we are going to do is write a"
+    },
+    {
+      "start": 2212.0,
+      "end": 2216.04,
+      "text": "function to print the title so I just"
+    },
+    {
+      "start": 2213.92,
+      "end": 2218.52,
+      "text": "want to introduce how to do that right"
+    },
+    {
+      "start": 2216.04,
+      "end": 2220.839,
+      "text": "so here you can see so you can use"
+    },
+    {
+      "start": 2218.52,
+      "end": 2222.48,
+      "text": "arbitrary functions as runnables this is"
+    },
+    {
+      "start": 2220.839,
+      "end": 2224.68,
+      "text": "useful for formatting when you need"
+    },
+    {
+      "start": 2222.48,
+      "end": 2227.04,
+      "text": "functionality not provided by other Lang"
+    },
+    {
+      "start": 2224.68,
+      "end": 2230.0789999999997,
+      "text": "chain components and custom functions"
+    },
+    {
+      "start": 2227.04,
+      "end": 2232.56,
+      "text": "used at r as rebles are called reenable"
+    },
+    {
+      "start": 2230.079,
+      "end": 2234.52,
+      "text": "lambdas so for custom functions we are"
+    },
+    {
+      "start": 2232.56,
+      "end": 2237.16,
+      "text": "going to use something called runnable"
+    },
+    {
+      "start": 2234.52,
+      "end": 2238.56,
+      "text": "Lambda okay now before going through the"
+    },
+    {
+      "start": 2237.16,
+      "end": 2240.68,
+      "text": "documentation let me actually make it"
+    },
+    {
+      "start": 2238.56,
+      "end": 2242.2799999999997,
+      "text": "very simple to you and write it myself"
+    },
+    {
+      "start": 2240.68,
+      "end": 2244.359,
+      "text": "so what we are going to do is first we"
+    },
+    {
+      "start": 2242.28,
+      "end": 2246.079,
+      "text": "need to obviously import reenable Lambda"
+    },
+    {
+      "start": 2244.359,
+      "end": 2248.68,
+      "text": "so I'm going to just copy paste this"
+    },
+    {
+      "start": 2246.079,
+      "end": 2251.5600000000004,
+      "text": "from the documentation and let's go back"
+    },
+    {
+      "start": 2248.68,
+      "end": 2254.44,
+      "text": "and over here so in this chain only"
+    },
+    {
+      "start": 2251.56,
+      "end": 2256.56,
+      "text": "first I am going to import it and here"
+    },
+    {
+      "start": 2254.44,
+      "end": 2258.48,
+      "text": "before like sending to The Prompt for"
+    },
+    {
+      "start": 2256.56,
+      "end": 2260.88,
+      "text": "the movie summary prompt I'm going to"
+    },
+    {
+      "start": 2258.48,
+      "end": 2265.839,
+      "text": "add another step okay and I'm going to"
+    },
+    {
+      "start": 2260.88,
+      "end": 2268.7200000000003,
+      "text": "call it as uh print title step okay"
+    },
+    {
+      "start": 2265.839,
+      "end": 2270.7999999999997,
+      "text": "print title step and we are going to"
+    },
+    {
+      "start": 2268.72,
+      "end": 2273.3999999999996,
+      "text": "write our own custom runnable Lambda"
+    },
+    {
+      "start": 2270.8,
+      "end": 2277.28,
+      "text": "over here and for this I'm just going to"
+    },
+    {
+      "start": 2273.4,
+      "end": 2279.359,
+      "text": "do uh runable Lambda and what I'm going"
+    },
+    {
+      "start": 2277.28,
+      "end": 2282.079,
+      "text": "to to pass over here is so I'm going to"
+    },
+    {
+      "start": 2279.359,
+      "end": 2284.7999999999997,
+      "text": "write a Lambda function and whatever X"
+    },
+    {
+      "start": 2282.079,
+      "end": 2287.8390000000004,
+      "text": "is the input right now I'm just going to"
+    },
+    {
+      "start": 2284.8,
+      "end": 2289.599,
+      "text": "print the X at as it is okay if you"
+    },
+    {
+      "start": 2287.839,
+      "end": 2291.92,
+      "text": "notice over here the input that I am"
+    },
+    {
+      "start": 2289.599,
+      "end": 2293.76,
+      "text": "giving is this dictionary okay why I had"
+    },
+    {
+      "start": 2291.92,
+      "end": 2295.56,
+      "text": "created this dictionary because prompt"
+    },
+    {
+      "start": 2293.76,
+      "end": 2297.48,
+      "text": "expects a dictionary that is why I"
+    },
+    {
+      "start": 2295.56,
+      "end": 2301.48,
+      "text": "created the dictionary so if I actually"
+    },
+    {
+      "start": 2297.48,
+      "end": 2304.119,
+      "text": "run this now let's do that and if I do"
+    },
+    {
+      "start": 2301.48,
+      "end": 2306.16,
+      "text": "this you can see that I got this as the"
+    },
+    {
+      "start": 2304.119,
+      "end": 2308.52,
+      "text": "output movie title Haunting of something"
+    },
+    {
+      "start": 2306.16,
+      "end": 2310.64,
+      "text": "and then the summary of it right so"
+    },
+    {
+      "start": 2308.52,
+      "end": 2313.24,
+      "text": "instead of getting the dictionary if I"
+    },
+    {
+      "start": 2310.64,
+      "end": 2315.96,
+      "text": "want to print just the movie title I can"
+    },
+    {
+      "start": 2313.24,
+      "end": 2317.52,
+      "text": "do this okay right now I created the"
+    },
+    {
+      "start": 2315.96,
+      "end": 2319.599,
+      "text": "dictionary because I wanted to pass to"
+    },
+    {
+      "start": 2317.52,
+      "end": 2323.24,
+      "text": "The Prompt but okay I'm just simplifying"
+    },
+    {
+      "start": 2319.599,
+      "end": 2325.04,
+      "text": "it for you for now and if I run this"
+    },
+    {
+      "start": 2323.24,
+      "end": 2327.0,
+      "text": "here you can see the title a nightmare"
+    },
+    {
+      "start": 2325.04,
+      "end": 2329.72,
+      "text": "in the wordss and then the description"
+    },
+    {
+      "start": 2327.0,
+      "end": 2331.0,
+      "text": "the summary of it right now it is not"
+    },
+    {
+      "start": 2329.72,
+      "end": 2333.7999999999997,
+      "text": "necessary that I have to write it"
+    },
+    {
+      "start": 2331.0,
+      "end": 2337.24,
+      "text": "separately by the way if I just comment"
+    },
+    {
+      "start": 2333.8,
+      "end": 2339.1600000000003,
+      "text": "this out and I copy paste the step over"
+    },
+    {
+      "start": 2337.24,
+      "end": 2340.9599999999996,
+      "text": "here this will also work but this is"
+    },
+    {
+      "start": 2339.16,
+      "end": 2343.2,
+      "text": "obviously not a very nice way of writing"
+    },
+    {
+      "start": 2340.96,
+      "end": 2344.96,
+      "text": "code right so you can create a separate"
+    },
+    {
+      "start": 2343.2,
+      "end": 2347.0,
+      "text": "function all together okay so you can"
+    },
+    {
+      "start": 2344.96,
+      "end": 2348.68,
+      "text": "see again the title and then this so"
+    },
+    {
+      "start": 2347.0,
+      "end": 2351.52,
+      "text": "there are many ways of writing this code"
+    },
+    {
+      "start": 2348.68,
+      "end": 2353.2799999999997,
+      "text": "let me actually undo and uh so that it"
+    },
+    {
+      "start": 2351.52,
+      "end": 2354.7599999999998,
+      "text": "will be there in the code let's look at"
+    },
+    {
+      "start": 2353.28,
+      "end": 2356.44,
+      "text": "one more example that's given in the"
+    },
+    {
+      "start": 2354.76,
+      "end": 2357.6800000000003,
+      "text": "documentation to be absolutely sure that"
+    },
+    {
+      "start": 2356.44,
+      "end": 2359.76,
+      "text": "you are understanding what's happening"
+    },
+    {
+      "start": 2357.68,
+      "end": 2361.7599999999998,
+      "text": "over here so here they have created a"
+    },
+    {
+      "start": 2359.76,
+      "end": 2364.079,
+      "text": "prompt and the input that they giving to"
+    },
+    {
+      "start": 2361.76,
+      "end": 2365.6400000000003,
+      "text": "the promp that the topic is Bears okay"
+    },
+    {
+      "start": 2364.079,
+      "end": 2367.8390000000004,
+      "text": "so this is the dictionary input that"
+    },
+    {
+      "start": 2365.64,
+      "end": 2370.0,
+      "text": "they giving tell me a story about so the"
+    },
+    {
+      "start": 2367.839,
+      "end": 2372.119,
+      "text": "topic is Bears right now they created"
+    },
+    {
+      "start": 2370.0,
+      "end": 2374.24,
+      "text": "the model and in this so they created"
+    },
+    {
+      "start": 2372.119,
+      "end": 2376.319,
+      "text": "The Prompt passed it to the model and"
+    },
+    {
+      "start": 2374.24,
+      "end": 2378.359,
+      "text": "then whatever was the output they got"
+    },
+    {
+      "start": 2376.319,
+      "end": 2381.4,
+      "text": "the content so the content would be just"
+    },
+    {
+      "start": 2378.359,
+      "end": 2383.44,
+      "text": "the joke and then uh sorry tell me the"
+    },
+    {
+      "start": 2381.4,
+      "end": 2385.319,
+      "text": "story right so it would be the story and"
+    },
+    {
+      "start": 2383.44,
+      "end": 2387.28,
+      "text": "then you're slicing the first five"
+    },
+    {
+      "start": 2385.319,
+      "end": 2388.88,
+      "text": "letters out of it right so the story"
+    },
+    {
+      "start": 2387.28,
+      "end": 2390.6400000000003,
+      "text": "must be starting something from Once"
+    },
+    {
+      "start": 2388.88,
+      "end": 2392.88,
+      "text": "Upon a Time or something like that so"
+    },
+    {
+      "start": 2390.64,
+      "end": 2395.2,
+      "text": "when you slice it down you get only once"
+    },
+    {
+      "start": 2392.88,
+      "end": 2396.92,
+      "text": "as the output right so this is how you"
+    },
+    {
+      "start": 2395.2,
+      "end": 2399.319,
+      "text": "can actually play around with it you can"
+    },
+    {
+      "start": 2396.92,
+      "end": 2401.0,
+      "text": "write your own custom lambdas here they"
+    },
+    {
+      "start": 2399.319,
+      "end": 2402.8,
+      "text": "they have actually mentioned that when"
+    },
+    {
+      "start": 2401.0,
+      "end": 2405.0,
+      "text": "writing a custom functions in Chains"
+    },
+    {
+      "start": 2402.8,
+      "end": 2407.599,
+      "text": "with the pipe operator you can omit the"
+    },
+    {
+      "start": 2405.0,
+      "end": 2410.04,
+      "text": "runable Lambda or chain Constructor and"
+    },
+    {
+      "start": 2407.599,
+      "end": 2411.4,
+      "text": "rely on coercion right so you can"
+    },
+    {
+      "start": 2410.04,
+      "end": 2413.0,
+      "text": "actually check out the examples over"
+    },
+    {
+      "start": 2411.4,
+      "end": 2414.839,
+      "text": "here and you can try writing different"
+    },
+    {
+      "start": 2413.0,
+      "end": 2416.16,
+      "text": "different uh examples you can play"
+    },
+    {
+      "start": 2414.839,
+      "end": 2419.24,
+      "text": "around with it write your own custom"
+    },
+    {
+      "start": 2416.16,
+      "end": 2419.24,
+      "text": "functions it will be a lot of"
+    },
+    {
+      "start": 2421.68,
+      "end": 2426.52,
+      "text": "fun let's talk about chaining a bit more"
+    },
+    {
+      "start": 2424.56,
+      "end": 2427.72,
+      "text": "see there are three types of chaining"
+    },
+    {
+      "start": 2426.52,
+      "end": 2429.92,
+      "text": "let's talk about the the kind of"
+    },
+    {
+      "start": 2427.72,
+      "end": 2432.319,
+      "text": "chaining that we already saw so what did"
+    },
+    {
+      "start": 2429.92,
+      "end": 2433.839,
+      "text": "we see one task happened and after that"
+    },
+    {
+      "start": 2432.319,
+      "end": 2435.52,
+      "text": "task finished another task happened"
+    },
+    {
+      "start": 2433.839,
+      "end": 2437.7999999999997,
+      "text": "after that task finished another task"
+    },
+    {
+      "start": 2435.52,
+      "end": 2440.16,
+      "text": "happened so these tasks happened in"
+    },
+    {
+      "start": 2437.8,
+      "end": 2442.119,
+      "text": "sequence so that is why this type of"
+    },
+    {
+      "start": 2440.16,
+      "end": 2444.72,
+      "text": "chaining is called sequential chaining"
+    },
+    {
+      "start": 2442.119,
+      "end": 2446.4,
+      "text": "or extended chaining now you can imagine"
+    },
+    {
+      "start": 2444.72,
+      "end": 2448.0,
+      "text": "that if I am talking about sequential"
+    },
+    {
+      "start": 2446.4,
+      "end": 2450.4,
+      "text": "chaining what would be the other type of"
+    },
+    {
+      "start": 2448.0,
+      "end": 2452.48,
+      "text": "chaining that I can perform the task in"
+    },
+    {
+      "start": 2450.4,
+      "end": 2454.7200000000003,
+      "text": "pattern at the same time I can perform"
+    },
+    {
+      "start": 2452.48,
+      "end": 2456.72,
+      "text": "the task concurrently so this type of"
+    },
+    {
+      "start": 2454.72,
+      "end": 2458.56,
+      "text": "chaining is called parallel chaining I'm"
+    },
+    {
+      "start": 2456.72,
+      "end": 2459.9599999999996,
+      "text": "sure you can think of so many examples"
+    },
+    {
+      "start": 2458.56,
+      "end": 2461.4,
+      "text": "let's consider the example that we are"
+    },
+    {
+      "start": 2459.96,
+      "end": 2463.599,
+      "text": "only seeing and we will write the code"
+    },
+    {
+      "start": 2461.4,
+      "end": 2466.28,
+      "text": "for this also suppose I have the movie"
+    },
+    {
+      "start": 2463.599,
+      "end": 2467.6400000000003,
+      "text": "summary now now I want to translate and"
+    },
+    {
+      "start": 2466.28,
+      "end": 2469.079,
+      "text": "see this movie summary in other"
+    },
+    {
+      "start": 2467.64,
+      "end": 2470.48,
+      "text": "languages so suppose I have it in"
+    },
+    {
+      "start": 2469.079,
+      "end": 2473.28,
+      "text": "English I want to translate it to"
+    },
+    {
+      "start": 2470.48,
+      "end": 2475.319,
+      "text": "Malayalam Hindi telu Tamil Spanish"
+    },
+    {
+      "start": 2473.28,
+      "end": 2477.3190000000004,
+      "text": "French whatever right so these"
+    },
+    {
+      "start": 2475.319,
+      "end": 2479.319,
+      "text": "translations can happen at the same time"
+    },
+    {
+      "start": 2477.319,
+      "end": 2481.2799999999997,
+      "text": "they can happen parall I don't need to"
+    },
+    {
+      "start": 2479.319,
+      "end": 2483.2,
+      "text": "wait okay you will translate first to"
+    },
+    {
+      "start": 2481.28,
+      "end": 2486.28,
+      "text": "Hindi and then to Spanish or then to"
+    },
+    {
+      "start": 2483.2,
+      "end": 2488.4399999999996,
+      "text": "French no right I can do these parall so"
+    },
+    {
+      "start": 2486.28,
+      "end": 2490.6400000000003,
+      "text": "the second type of is called parallel"
+    },
+    {
+      "start": 2488.44,
+      "end": 2492.28,
+      "text": "chaining the third type of chaining is"
+    },
+    {
+      "start": 2490.64,
+      "end": 2494.0,
+      "text": "called conditional chaining and from the"
+    },
+    {
+      "start": 2492.28,
+      "end": 2496.0400000000004,
+      "text": "name itself you can understand that"
+    },
+    {
+      "start": 2494.0,
+      "end": 2498.04,
+      "text": "based on some condition some tasks will"
+    },
+    {
+      "start": 2496.04,
+      "end": 2500.04,
+      "text": "happen and some tasks will not happen so"
+    },
+    {
+      "start": 2498.04,
+      "end": 2502.16,
+      "text": "that conditions will decide which task"
+    },
+    {
+      "start": 2500.04,
+      "end": 2503.7599999999998,
+      "text": "to do and which task to not to do so in"
+    },
+    {
+      "start": 2502.16,
+      "end": 2505.8799999999997,
+      "text": "short there are three types of chaining"
+    },
+    {
+      "start": 2503.76,
+      "end": 2509.2400000000002,
+      "text": "sequential or extended chaining parallel"
+    },
+    {
+      "start": 2505.88,
+      "end": 2509.2400000000002,
+      "text": "chaining and conditional"
+    },
+    {
+      "start": 2511.72,
+      "end": 2516.16,
+      "text": "chaining so the code that we had written"
+    },
+    {
+      "start": 2514.079,
+      "end": 2517.7200000000003,
+      "text": "was using the pipe operator but we can"
+    },
+    {
+      "start": 2516.16,
+      "end": 2518.96,
+      "text": "also use something called runable"
+    },
+    {
+      "start": 2517.72,
+      "end": 2520.5989999999997,
+      "text": "sequence so if we go to the"
+    },
+    {
+      "start": 2518.96,
+      "end": 2523.16,
+      "text": "documentation you can see that all we"
+    },
+    {
+      "start": 2520.599,
+      "end": 2525.1600000000003,
+      "text": "have to do is write runable sequence and"
+    },
+    {
+      "start": 2523.16,
+      "end": 2527.64,
+      "text": "then just give what all task we have to"
+    },
+    {
+      "start": 2525.16,
+      "end": 2529.319,
+      "text": "perform so over here in this code only"
+    },
+    {
+      "start": 2527.64,
+      "end": 2531.319,
+      "text": "let's try writing the same thing using"
+    },
+    {
+      "start": 2529.319,
+      "end": 2534.839,
+      "text": "runnable sequence so what I'm going to"
+    },
+    {
+      "start": 2531.319,
+      "end": 2536.88,
+      "text": "do here just how we imported uh runnable"
+    },
+    {
+      "start": 2534.839,
+      "end": 2538.48,
+      "text": "Lambda we are going to be importing"
+    },
+    {
+      "start": 2536.88,
+      "end": 2541.6800000000003,
+      "text": "runnable"
+    },
+    {
+      "start": 2538.48,
+      "end": 2544.359,
+      "text": "sequence and then we are going to create"
+    },
+    {
+      "start": 2541.68,
+      "end": 2546.8799999999997,
+      "text": "the compos chain using the runnable"
+    },
+    {
+      "start": 2544.359,
+      "end": 2548.5989999999997,
+      "text": "sequence okay and here we just have to"
+    },
+    {
+      "start": 2546.88,
+      "end": 2551.079,
+      "text": "pass pass all the task that we have to"
+    },
+    {
+      "start": 2548.599,
+      "end": 2553.2000000000003,
+      "text": "perform and instead of the pipe operator"
+    },
+    {
+      "start": 2551.079,
+      "end": 2555.6400000000003,
+      "text": "all you have to do is pass commas that's"
+    },
+    {
+      "start": 2553.2,
+      "end": 2557.96,
+      "text": "it so instead of the pipe operators I'm"
+    },
+    {
+      "start": 2555.64,
+      "end": 2559.4,
+      "text": "going to pass comma so just different"
+    },
+    {
+      "start": 2557.96,
+      "end": 2561.48,
+      "text": "ways of writing code I'm just showing"
+    },
+    {
+      "start": 2559.4,
+      "end": 2563.1600000000003,
+      "text": "you because the other two ways are very"
+    },
+    {
+      "start": 2561.48,
+      "end": 2564.72,
+      "text": "similar to runable sequence so you"
+    },
+    {
+      "start": 2563.16,
+      "end": 2566.2,
+      "text": "should know these types right so I'm"
+    },
+    {
+      "start": 2564.72,
+      "end": 2567.24,
+      "text": "just going to run this and I'm going to"
+    },
+    {
+      "start": 2566.2,
+      "end": 2569.9199999999996,
+      "text": "call it"
+    },
+    {
+      "start": 2567.24,
+      "end": 2572.52,
+      "text": "again and let's see The Haunting shadows"
+    },
+    {
+      "start": 2569.92,
+      "end": 2576.88,
+      "text": "and the uh summary is also s so this is"
+    },
+    {
+      "start": 2572.52,
+      "end": 2576.88,
+      "text": "how you can actually write this"
+    },
+    {
+      "start": 2579.119,
+      "end": 2582.92,
+      "text": "coming to invoking runnables in parallel"
+    },
+    {
+      "start": 2581.319,
+      "end": 2584.599,
+      "text": "we can use something called runnable"
+    },
+    {
+      "start": 2582.92,
+      "end": 2586.92,
+      "text": "parallel and here in the diagram also"
+    },
+    {
+      "start": 2584.599,
+      "end": 2589.0,
+      "text": "they have shown that the same input is"
+    },
+    {
+      "start": 2586.92,
+      "end": 2590.88,
+      "text": "given to multiple branches and then they"
+    },
+    {
+      "start": 2589.0,
+      "end": 2592.96,
+      "text": "combine later okay and if you want to"
+    },
+    {
+      "start": 2590.88,
+      "end": 2595.6400000000003,
+      "text": "see the code example you can just click"
+    },
+    {
+      "start": 2592.96,
+      "end": 2597.76,
+      "text": "on this and we can see the examples over"
+    },
+    {
+      "start": 2595.64,
+      "end": 2599.5989999999997,
+      "text": "here so we can just call runable"
+    },
+    {
+      "start": 2597.76,
+      "end": 2601.559,
+      "text": "parallel let's see this example this is"
+    },
+    {
+      "start": 2599.599,
+      "end": 2604.2000000000003,
+      "text": "very nice so here they have created Two"
+    },
+    {
+      "start": 2601.559,
+      "end": 2606.48,
+      "text": "Chains joke chain and po chain so this"
+    },
+    {
+      "start": 2604.2,
+      "end": 2608.319,
+      "text": "is just going to tell a joke about topic"
+    },
+    {
+      "start": 2606.48,
+      "end": 2610.72,
+      "text": "and this is going to write a poem about"
+    },
+    {
+      "start": 2608.319,
+      "end": 2612.92,
+      "text": "topic you can see that the input is same"
+    },
+    {
+      "start": 2610.72,
+      "end": 2615.24,
+      "text": "in both topic right so here they are"
+    },
+    {
+      "start": 2612.92,
+      "end": 2617.119,
+      "text": "doing I think do stream runable do"
+    },
+    {
+      "start": 2615.24,
+      "end": 2618.72,
+      "text": "stream you can do runable do invoke and"
+    },
+    {
+      "start": 2617.119,
+      "end": 2621.119,
+      "text": "you can give the common topic so the"
+    },
+    {
+      "start": 2618.72,
+      "end": 2622.5589999999997,
+      "text": "topic over here is bear and these two"
+    },
+    {
+      "start": 2621.119,
+      "end": 2624.079,
+      "text": "chains you're going to pass in the"
+    },
+    {
+      "start": 2622.559,
+      "end": 2626.48,
+      "text": "runable panel and you will be able to"
+    },
+    {
+      "start": 2624.079,
+      "end": 2628.119,
+      "text": "run them so here also let's come back to"
+    },
+    {
+      "start": 2626.48,
+      "end": 2629.8,
+      "text": "the example and I'm going to be"
+    },
+    {
+      "start": 2628.119,
+      "end": 2633.319,
+      "text": "importing just how we had imported"
+    },
+    {
+      "start": 2629.8,
+      "end": 2635.7200000000003,
+      "text": "sequence and Lambda so I'm importing a"
+    },
+    {
+      "start": 2633.319,
+      "end": 2637.44,
+      "text": "runnable parel and now I need to create"
+    },
+    {
+      "start": 2635.72,
+      "end": 2639.64,
+      "text": "two chains that I'm going to be in"
+    },
+    {
+      "start": 2637.44,
+      "end": 2641.8,
+      "text": "parall for example let's do translate to"
+    },
+    {
+      "start": 2639.64,
+      "end": 2644.7599999999998,
+      "text": "Hindi and translate to Spanish so let me"
+    },
+    {
+      "start": 2641.8,
+      "end": 2647.7200000000003,
+      "text": "just create the two chains translate to"
+    },
+    {
+      "start": 2644.76,
+      "end": 2649.96,
+      "text": "Hindi chain and I'm first going to"
+    },
+    {
+      "start": 2647.72,
+      "end": 2652.9199999999996,
+      "text": "create the prompt so actually let's"
+    },
+    {
+      "start": 2649.96,
+      "end": 2656.839,
+      "text": "create the prompt first and I'm going to"
+    },
+    {
+      "start": 2652.92,
+      "end": 2660.559,
+      "text": "do chat from template and from"
+    },
+    {
+      "start": 2656.839,
+      "end": 2663.7999999999997,
+      "text": "template and I'm just going to write"
+    },
+    {
+      "start": 2660.559,
+      "end": 2663.8,
+      "text": "translate the"
+    },
+    {
+      "start": 2665.599,
+      "end": 2669.04,
+      "text": "summary to"
+    },
+    {
+      "start": 2669.8,
+      "end": 2675.079,
+      "text": "Hindi similarly translate Spanish"
+    },
+    {
+      "start": 2679.92,
+      "end": 2684.76,
+      "text": "okay now we have both the prompts and"
+    },
+    {
+      "start": 2682.68,
+      "end": 2687.0789999999997,
+      "text": "now we are going to chain these right so"
+    },
+    {
+      "start": 2684.76,
+      "end": 2690.92,
+      "text": "if I actually just call this as chain"
+    },
+    {
+      "start": 2687.079,
+      "end": 2693.2400000000002,
+      "text": "itself and I'm going to chain it over"
+    },
+    {
+      "start": 2690.92,
+      "end": 2696.319,
+      "text": "here so this is the prompt and I'm going"
+    },
+    {
+      "start": 2693.24,
+      "end": 2699.0789999999997,
+      "text": "to pass it to the llm and I am going to"
+    },
+    {
+      "start": 2696.319,
+      "end": 2701.64,
+      "text": "also pass it right so I'll have the"
+    },
+    {
+      "start": 2699.079,
+      "end": 2705.119,
+      "text": "output similarly I'm going to pass this"
+    },
+    {
+      "start": 2701.64,
+      "end": 2707.44,
+      "text": "to the llm and pass this to the output"
+    },
+    {
+      "start": 2705.119,
+      "end": 2709.4,
+      "text": "parel now we are ready to create our"
+    },
+    {
+      "start": 2707.44,
+      "end": 2712.76,
+      "text": "parallel reenable so I'm going to call"
+    },
+    {
+      "start": 2709.4,
+      "end": 2715.4,
+      "text": "it parallel reenable or let's call it"
+    },
+    {
+      "start": 2712.76,
+      "end": 2717.44,
+      "text": "translate reenable so that it is clear"
+    },
+    {
+      "start": 2715.4,
+      "end": 2720.2400000000002,
+      "text": "that what we are trying to do and here"
+    },
+    {
+      "start": 2717.44,
+      "end": 2722.359,
+      "text": "I'm going to do reenable parallel and"
+    },
+    {
+      "start": 2720.24,
+      "end": 2727.359,
+      "text": "I'm going to pass these two okay so"
+    },
+    {
+      "start": 2722.359,
+      "end": 2730.319,
+      "text": "suppose I am saying Hindi Translate and"
+    },
+    {
+      "start": 2727.359,
+      "end": 2732.48,
+      "text": "I'm going to put translate in the chain"
+    },
+    {
+      "start": 2730.319,
+      "end": 2734.8,
+      "text": "over here and similarly I'm going to say"
+    },
+    {
+      "start": 2732.48,
+      "end": 2738.2400000000002,
+      "text": "Spanish"
+    },
+    {
+      "start": 2734.8,
+      "end": 2741.119,
+      "text": "translate and I'm going to put translate"
+    },
+    {
+      "start": 2738.24,
+      "end": 2743.16,
+      "text": "Spanish over here so I've created the"
+    },
+    {
+      "start": 2741.119,
+      "end": 2746.359,
+      "text": "parallel and now we just need"
+    },
+    {
+      "start": 2743.16,
+      "end": 2749.0789999999997,
+      "text": "to uh invoke it this should be called"
+    },
+    {
+      "start": 2746.359,
+      "end": 2752.2799999999997,
+      "text": "translate miss the S over here so"
+    },
+    {
+      "start": 2749.079,
+      "end": 2754.88,
+      "text": "translate enable do invoke and what do I"
+    },
+    {
+      "start": 2752.28,
+      "end": 2757.2000000000003,
+      "text": "need to pass I need to pass the output"
+    },
+    {
+      "start": 2754.88,
+      "end": 2759.52,
+      "text": "from this as summary okay so it is"
+    },
+    {
+      "start": 2757.2,
+      "end": 2761.319,
+      "text": "expecting summary as the input so I'm"
+    },
+    {
+      "start": 2759.52,
+      "end": 2764.2,
+      "text": "going to pass it in the dictionary so"
+    },
+    {
+      "start": 2761.319,
+      "end": 2766.5589999999997,
+      "text": "I'm going to do summary and from where"
+    },
+    {
+      "start": 2764.2,
+      "end": 2769.7999999999997,
+      "text": "will I get it whatever output I got from"
+    },
+    {
+      "start": 2766.559,
+      "end": 2773.6800000000003,
+      "text": "over here right so I'm going to uh call"
+    },
+    {
+      "start": 2769.8,
+      "end": 2776.319,
+      "text": "this as summary and I'm going to put it"
+    },
+    {
+      "start": 2773.68,
+      "end": 2779.04,
+      "text": "over here and now we can run this and"
+    },
+    {
+      "start": 2776.319,
+      "end": 2780.839,
+      "text": "see uh we will have to run this again to"
+    },
+    {
+      "start": 2779.04,
+      "end": 2784.839,
+      "text": "get the"
+    },
+    {
+      "start": 2780.839,
+      "end": 2787.2799999999997,
+      "text": "summary and we have it and now let's run"
+    },
+    {
+      "start": 2784.839,
+      "end": 2788.68,
+      "text": "this"
+    },
+    {
+      "start": 2787.28,
+      "end": 2790.3590000000004,
+      "text": "by the way if you're wondering why I did"
+    },
+    {
+      "start": 2788.68,
+      "end": 2792.1189999999997,
+      "text": "not print the summary because I am not"
+    },
+    {
+      "start": 2790.359,
+      "end": 2794.72,
+      "text": "printing I'm just assigning the value so"
+    },
+    {
+      "start": 2792.119,
+      "end": 2797.119,
+      "text": "if I write here print summary it is"
+    },
+    {
+      "start": 2794.72,
+      "end": 2798.5589999999997,
+      "text": "going to print it so let me just run it"
+    },
+    {
+      "start": 2797.119,
+      "end": 2801.2400000000002,
+      "text": "so that it is completely clear because"
+    },
+    {
+      "start": 2798.559,
+      "end": 2802.48,
+      "text": "as I it it is not printing right and now"
+    },
+    {
+      "start": 2801.24,
+      "end": 2804.4399999999996,
+      "text": "here you can see I have the Hindi"
+    },
+    {
+      "start": 2802.48,
+      "end": 2806.44,
+      "text": "translate and the Spanish translate and"
+    },
+    {
+      "start": 2804.44,
+      "end": 2810.599,
+      "text": "if you want me to print just that we can"
+    },
+    {
+      "start": 2806.44,
+      "end": 2814.48,
+      "text": "also do that as well so here in this uh"
+    },
+    {
+      "start": 2810.599,
+      "end": 2817.96,
+      "text": "suppose let's do translated"
+    },
+    {
+      "start": 2814.48,
+      "end": 2822.359,
+      "text": "summary and over here I'm going to print"
+    },
+    {
+      "start": 2817.96,
+      "end": 2822.359,
+      "text": "translated Sam Hindi the"
+    },
+    {
+      "start": 2822.8,
+      "end": 2827.7200000000003,
+      "text": "translate and the Spanish"
+    },
+    {
+      "start": 2831.16,
+      "end": 2836.68,
+      "text": "translate and let me also write that"
+    },
+    {
+      "start": 2833.8,
+      "end": 2839.88,
+      "text": "what we are printing so that it is"
+    },
+    {
+      "start": 2836.68,
+      "end": 2842.7599999999998,
+      "text": "clear so Hindi"
+    },
+    {
+      "start": 2839.88,
+      "end": 2847.319,
+      "text": "summary"
+    },
+    {
+      "start": 2842.76,
+      "end": 2847.3190000000004,
+      "text": "and Spanish some"
+    },
+    {
+      "start": 2847.68,
+      "end": 2851.839,
+      "text": "and let me run"
+    },
+    {
+      "start": 2849.4,
+      "end": 2853.96,
+      "text": "this and now you can see this is the"
+    },
+    {
+      "start": 2851.839,
+      "end": 2856.52,
+      "text": "Hindi summary and this is the Spanish"
+    },
+    {
+      "start": 2853.96,
+      "end": 2856.52,
+      "text": "summary"
+    },
+    {
+      "start": 2859.079,
+      "end": 2862.599,
+      "text": "awesome coming to the third type of"
+    },
+    {
+      "start": 2861.24,
+      "end": 2865.16,
+      "text": "chaining which is called conditional"
+    },
+    {
+      "start": 2862.599,
+      "end": 2866.88,
+      "text": "chaining now imagine if I tell you that"
+    },
+    {
+      "start": 2865.16,
+      "end": 2868.24,
+      "text": "based on whatever we have learned so far"
+    },
+    {
+      "start": 2866.88,
+      "end": 2870.2400000000002,
+      "text": "you can actually achieve conditional"
+    },
+    {
+      "start": 2868.24,
+      "end": 2872.04,
+      "text": "chaining think of it we learned"
+    },
+    {
+      "start": 2870.24,
+      "end": 2873.2799999999997,
+      "text": "something called reenable Lambda let me"
+    },
+    {
+      "start": 2872.04,
+      "end": 2874.7599999999998,
+      "text": "know in the comments how many of you"
+    },
+    {
+      "start": 2873.28,
+      "end": 2877.3190000000004,
+      "text": "could actually think about reenable"
+    },
+    {
+      "start": 2874.76,
+      "end": 2879.44,
+      "text": "lambdas over here if not all the time"
+    },
+    {
+      "start": 2877.319,
+      "end": 2882.16,
+      "text": "stamps are there okay so the video is"
+    },
+    {
+      "start": 2879.44,
+      "end": 2883.7200000000003,
+      "text": "divided properly just uh revise and"
+    },
+    {
+      "start": 2882.16,
+      "end": 2885.319,
+      "text": "practice all of this try writing the"
+    },
+    {
+      "start": 2883.72,
+      "end": 2887.5589999999997,
+      "text": "code yourself and you will understand"
+    },
+    {
+      "start": 2885.319,
+      "end": 2889.24,
+      "text": "these things okay the basic concept is"
+    },
+    {
+      "start": 2887.559,
+      "end": 2891.4,
+      "text": "that we can write our own function our"
+    },
+    {
+      "start": 2889.24,
+      "end": 2893.72,
+      "text": "own logic in runable Lambda right so"
+    },
+    {
+      "start": 2891.4,
+      "end": 2895.64,
+      "text": "what we can do is pass in some uh"
+    },
+    {
+      "start": 2893.72,
+      "end": 2897.9599999999996,
+      "text": "variable some input to the runable"
+    },
+    {
+      "start": 2895.64,
+      "end": 2900.7999999999997,
+      "text": "Lambda and have logic that if this is"
+    },
+    {
+      "start": 2897.96,
+      "end": 2902.44,
+      "text": "the variable or based on some logic I"
+    },
+    {
+      "start": 2900.8,
+      "end": 2904.88,
+      "text": "want to call this Branch or I want to"
+    },
+    {
+      "start": 2902.44,
+      "end": 2906.92,
+      "text": "call this Branch invoke this or do this"
+    },
+    {
+      "start": 2904.88,
+      "end": 2908.48,
+      "text": "right and coming to the documentation"
+    },
+    {
+      "start": 2906.92,
+      "end": 2910.119,
+      "text": "that is what they have also mentioned"
+    },
+    {
+      "start": 2908.48,
+      "end": 2911.839,
+      "text": "firstly what is routing routing allows"
+    },
+    {
+      "start": 2910.119,
+      "end": 2913.52,
+      "text": "you to create non-deterministic chains"
+    },
+    {
+      "start": 2911.839,
+      "end": 2916.16,
+      "text": "where the output of a previous steps"
+    },
+    {
+      "start": 2913.52,
+      "end": 2918.599,
+      "text": "defines the next step and there are two"
+    },
+    {
+      "start": 2916.16,
+      "end": 2921.0789999999997,
+      "text": "ways to perform routing the first is"
+    },
+    {
+      "start": 2918.599,
+      "end": 2923.28,
+      "text": "conditionally return runnables from"
+    },
+    {
+      "start": 2921.079,
+      "end": 2924.92,
+      "text": "runable Lambda and this is what they're"
+    },
+    {
+      "start": 2923.28,
+      "end": 2927.0400000000004,
+      "text": "actually recommending there's one more"
+    },
+    {
+      "start": 2924.92,
+      "end": 2929.44,
+      "text": "way using runable Branch but this is"
+    },
+    {
+      "start": 2927.04,
+      "end": 2932.319,
+      "text": "Legacy so what they have also given the"
+    },
+    {
+      "start": 2929.44,
+      "end": 2934.2400000000002,
+      "text": "example that just write your own runable"
+    },
+    {
+      "start": 2932.319,
+      "end": 2936.44,
+      "text": "Lambda suppose here there is some info"
+    },
+    {
+      "start": 2934.24,
+      "end": 2938.5589999999997,
+      "text": "and you can have something like if else"
+    },
+    {
+      "start": 2936.44,
+      "end": 2940.76,
+      "text": "if this this is the info just convert it"
+    },
+    {
+      "start": 2938.559,
+      "end": 2942.28,
+      "text": "to lower and then use this chain"
+    },
+    {
+      "start": 2940.76,
+      "end": 2944.2400000000002,
+      "text": "otherwise use this chain right so they"
+    },
+    {
+      "start": 2942.28,
+      "end": 2945.799,
+      "text": "are taking the input and if it is"
+    },
+    {
+      "start": 2944.24,
+      "end": 2947.16,
+      "text": "anthropic they are calling the anthropic"
+    },
+    {
+      "start": 2945.799,
+      "end": 2949.44,
+      "text": "chain otherwise they're calling the Lang"
+    },
+    {
+      "start": 2947.16,
+      "end": 2952.319,
+      "text": "chain chain right so like this you can"
+    },
+    {
+      "start": 2949.44,
+      "end": 2954.4,
+      "text": "have your own functions and so because"
+    },
+    {
+      "start": 2952.319,
+      "end": 2955.88,
+      "text": "we have already done runable Lambda I am"
+    },
+    {
+      "start": 2954.4,
+      "end": 2957.559,
+      "text": "not going to be writing the code again"
+    },
+    {
+      "start": 2955.88,
+      "end": 2958.839,
+      "text": "for this I hope you have understood let"
+    },
+    {
+      "start": 2957.559,
+      "end": 2961.0,
+      "text": "me know in the comments if you still"
+    },
+    {
+      "start": 2958.839,
+      "end": 2962.92,
+      "text": "have any issue and they have actually WR"
+    },
+    {
+      "start": 2961.0,
+      "end": 2965.44,
+      "text": "it in the documentation that this is a"
+    },
+    {
+      "start": 2962.92,
+      "end": 2966.88,
+      "text": "special type of runable but it does not"
+    },
+    {
+      "start": 2965.44,
+      "end": 2968.88,
+      "text": "offer anything that you cannot not"
+    },
+    {
+      "start": 2966.88,
+      "end": 2971.04,
+      "text": "achieve from a custom function as"
+    },
+    {
+      "start": 2968.88,
+      "end": 2973.44,
+      "text": "described above so we recommend using a"
+    },
+    {
+      "start": 2971.04,
+      "end": 2975.2,
+      "text": "custom function instead so that is why I"
+    },
+    {
+      "start": 2973.44,
+      "end": 2976.839,
+      "text": "also don't recommend because it is given"
+    },
+    {
+      "start": 2975.2,
+      "end": 2978.96,
+      "text": "in the documentation don't use renable"
+    },
+    {
+      "start": 2976.839,
+      "end": 2981.0,
+      "text": "Branch uh just write your own custom"
+    },
+    {
+      "start": 2978.96,
+      "end": 2982.839,
+      "text": "functions this brings us to the end of"
+    },
+    {
+      "start": 2981.0,
+      "end": 2984.88,
+      "text": "the video I hope you like the content a"
+    },
+    {
+      "start": 2982.839,
+      "end": 2987.119,
+      "text": "lot of effort goes behind every single"
+    },
+    {
+      "start": 2984.88,
+      "end": 2989.2000000000003,
+      "text": "video see now there are two more topics"
+    },
+    {
+      "start": 2987.119,
+      "end": 2990.76,
+      "text": "that are remaining in Lang chain one is"
+    },
+    {
+      "start": 2989.2,
+      "end": 2992.68,
+      "text": "creating rags and the other one is"
+    },
+    {
+      "start": 2990.76,
+      "end": 2995.28,
+      "text": "Agents so I want to create dedicated"
+    },
+    {
+      "start": 2992.68,
+      "end": 2997.0,
+      "text": "videos on both of them how to build them"
+    },
+    {
+      "start": 2995.28,
+      "end": 2999.0400000000004,
+      "text": "uh the details about them what are there"
+    },
+    {
+      "start": 2997.0,
+      "end": 3000.76,
+      "text": "for beginners right all the videos in"
+    },
+    {
+      "start": 2999.04,
+      "end": 3002.4,
+      "text": "the machine learning playlist right now"
+    },
+    {
+      "start": 3000.76,
+      "end": 3003.8390000000004,
+      "text": "are actually very beginner friendly I'm"
+    },
+    {
+      "start": 3002.4,
+      "end": 3005.1600000000003,
+      "text": "literally going to the documentation"
+    },
+    {
+      "start": 3003.839,
+      "end": 3007.4,
+      "text": "telling you this is how you can get"
+    },
+    {
+      "start": 3005.16,
+      "end": 3008.8799999999997,
+      "text": "started and I'm showing you everything"
+    },
+    {
+      "start": 3007.4,
+      "end": 3010.839,
+      "text": "right I'm telling you reasoning behind"
+    },
+    {
+      "start": 3008.88,
+      "end": 3012.319,
+      "text": "every single thing and I know that there"
+    },
+    {
+      "start": 3010.839,
+      "end": 3014.52,
+      "text": "are still so many software Engineers who"
+    },
+    {
+      "start": 3012.319,
+      "end": 3016.359,
+      "text": "are not accepted that this is the future"
+    },
+    {
+      "start": 3014.52,
+      "end": 3017.92,
+      "text": "they should be upskilling right now so"
+    },
+    {
+      "start": 3016.359,
+      "end": 3019.88,
+      "text": "you have no idea how much it will mean"
+    },
+    {
+      "start": 3017.92,
+      "end": 3021.359,
+      "text": "to me if you can just share it on"
+    },
+    {
+      "start": 3019.88,
+      "end": 3023.04,
+      "text": "comment share it with one of your"
+    },
+    {
+      "start": 3021.359,
+      "end": 3025.48,
+      "text": "friends it will really help me reach"
+    },
+    {
+      "start": 3023.04,
+      "end": 3027.24,
+      "text": "more people because I genuinely truly"
+    },
+    {
+      "start": 3025.48,
+      "end": 3028.76,
+      "text": "believe that these videos deserve to"
+    },
+    {
+      "start": 3027.24,
+      "end": 3030.68,
+      "text": "reach more people and if you also think"
+    },
+    {
+      "start": 3028.76,
+      "end": 3032.8390000000004,
+      "text": "so help me reach more people so I'll be"
+    },
+    {
+      "start": 3030.68,
+      "end": 3035.0789999999997,
+      "text": "motivated more and I will be able to"
+    },
+    {
+      "start": 3032.839,
+      "end": 3037.16,
+      "text": "deliver more and more content right I"
+    },
+    {
+      "start": 3035.079,
+      "end": 3039.4,
+      "text": "want to create a lot of free content but"
+    },
+    {
+      "start": 3037.16,
+      "end": 3041.5589999999997,
+      "text": "I really need your support so please do"
+    },
+    {
+      "start": 3039.4,
+      "end": 3043.359,
+      "text": "help me out and see you next time all"
+    },
+    {
+      "start": 3041.559,
+      "end": 3044.8390000000004,
+      "text": "the best please try out writing the code"
+    },
+    {
+      "start": 3043.359,
+      "end": 3049.319,
+      "text": "yourself and let me know if you have any"
+    },
+    {
+      "start": 3044.839,
+      "end": 3049.319,
+      "text": "doubts see you next time bye"
+    },
+    {
+      "start": 3051.54,
+      "end": 3055.719,
+      "text": "[Music]"
+    }
+  ]
+}

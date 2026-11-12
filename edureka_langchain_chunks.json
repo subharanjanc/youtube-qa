@@ -1,0 +1,226 @@
+[
+  {
+    "id": "82b9321941f2b4d8d9160527ed22903a138cb60368e703b7124aa0cbb62ba73c",
+    "text": "[Music] hello everyone and welcome back to another exciting video by Eda in today's video we will dive deep into Lang chain and Innovative framework that makes building robust AI applications a breeze whether you are a beginner or an experienced developer Lang chain simplifies the use of large language models by seamlessly integrating them into complex workflows so without any further delay let's walk through our agenda for this video but before we begin please like share and subscribe remember to hit the Bell icon to stay updated on the latest content on the urea YouTube channel also check out our generative AI course Masters program the link to which is in the description box below now let's Dive Right In and explore agenda and how it is revolutionary the AI development landscape so here's what we will cover today first we will understand what L chain is and why it's a such a game changer for AI development next we will explore the LM application life cycle and learn how langin facilitates its implementation we will then discuss apis their role in enabling seamless communication between systems and how they power llm models finally we will showcase a practical langon project an SQL query fetcher that demonstrates Its Real World applications with detailed code explanation so this project will",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 0.43,
+      "end_seconds": 93.6,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=0s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "08ab463573870053979d840ef70552382a5f0906d83043bb29b76fc28ac6f524",
+    "text": "communication between systems and how they power llm models finally we will showcase a practical langon project an SQL query fetcher that demonstrates Its Real World applications with detailed code explanation so this project will guide you through how it uses SQL queries effectively so stick around for an engaging session so let's get started now let us understand what langin is and why it is a valuable tool for building AI applications you must be aware of popular applications such as GPT and Gemini these applications utilize apis and GPD uses openi API while Gemini operates through the Gemini API to process prompts they leverage models like GPT 3.5 GPT 4 palm and Gemini 1 additionally these are other Advanced models such as llama Gemini kire Cloud version one Falcon pal gp4 and GPT 3.5 L chain is a framework designed to help developers build flexible and Powerful AI driven applications by integrating and utilizing these diverse models effectively but why exactly do we need L chain you must be thinking if langin is this important then why do we need langin so let's break down this question using some real world examples so imagine simply asking an llm a prompt and getting an answer that's easy but what happens when the complexity increases for example let's say you're working",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 76.88,
+      "end_seconds": 173.92000000000002,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=76s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0f60a83f9fb071acc17f5bf673bd6aca038b3728b092d01c7fb956d722c768bd",
+    "text": "let's break down this question using some real world examples so imagine simply asking an llm a prompt and getting an answer that's easy but what happens when the complexity increases for example let's say you're working with data from SQL databases CSV files PDFs or Google analytics and you need the model to write code perform searches or send EMA emails handling such intricate workflows manually can get overwhelming this is where lton steps in it simplifies the process by offering components like document loaders text Splitters Vector databases prompt templates and tools so these helps you assemble tasks such as document summarization question and answer systems or even Advanced workflows like Google searches or customer support automation let's visualize this process with a diagram here's how it works so first you load a document like a CSV file using a document loader then use a text splitter to divide it into a smaller chunks and then store those chunks into a vector database and add a prompt template to guide the model and finally use a llm like a gp4 or Lama to perform task like searching the web or automating workflows and L chain also offers chains that will help you assemble components to achieve single task such as summarization and an agenda to figure out what each component must",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 155.92,
+      "end_seconds": 245.439,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=155s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "528fbaf738091c47ba1ca955957c3436548a7e4ddb59ccbf0a9285dd4237a31c",
+    "text": "perform task like searching the web or automating workflows and L chain also offers chains that will help you assemble components to achieve single task such as summarization and an agenda to figure out what each component must do like password customer services Etc now that we understand Lang Chain's core components now let's explore how it streamlines the llm application life cycle so it typically involves three key stages first is the development where you build and test your application then productionize the system is fine-tuned for a real world use and finally deployment where the final product is launched for users so lankton simplifies this life cycle allowing you to focus on Building without worrying about the underlying complexity now let's take a step back and understand the role of apis in powering these llm applications and how Langton effectively integrates them in all these applications and models one thing is common that is they use API so now let's discuss apis apis act as an intermediaries that enable different systems to communicate with each other for example they allow apps like like swiggy or blinket to display your delivery driver's location in real time so now let's look at the steps to explain apis and API keys so apps like zipo swiggy and blinkit use apis to show",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 227.519,
+      "end_seconds": 315.40000000000003,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=227s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "c55ae20421d916ed015193084d68ac44fac260131b20e29fd3e78387a4113fb4",
+    "text": "like like swiggy or blinket to display your delivery driver's location in real time so now let's look at the steps to explain apis and API keys so apps like zipo swiggy and blinkit use apis to show the location of your delivery driver so this apps don't communicate directly with Google Maps but follow a ler process involving servers and security mechanism first the app send a request to Google Maps API then the API forward the request to Google servers then the servers validate the request with the system so once approved the response follows back through the servers apis and finally to the app so previously apps like swiggy allowed login using phone numbers now they use API for login via platforms like Google or Facebook so this demonstrates the versatility of a apis in enabling seamless user interactions to prevent misuse apis require API Keys which are unique identifi Fires for secure access so this givs authenticate request and ensure that only authorized users can interact with the apis next security systems closely monitor API uses to detect and prevent misuse this ensures that apis remain safe and functional for their intended purpose and this steps simplify the explanation of how apis and API Keys work in real world applications so this is how langin leverages apis to connect",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 299.52,
+      "end_seconds": 389.56,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=299s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "40dc10b540dd9d8ff5a3a1ee959bfe2b4580fc7ab9e94f2d0331f876b153e25a",
+    "text": "prevent misuse this ensures that apis remain safe and functional for their intended purpose and this steps simplify the explanation of how apis and API Keys work in real world applications so this is how langin leverages apis to connect your llm applications with external tool tools making them versatile and secure now that we understand the role of API so let's explore some real world applications of L chain so what can you build with Lang chain here are few applications first application we have is customer support So customer support for your shopping websites to interact with customers next conversational chat Bots for helping you study content generation tools for blogs or social media we also have question answering systems for knowledge basis and then document summarizes for legal or academic content Langton simplifies AI development by integrating llms with various data sources and tools its applications are vast from chatbots to document summarization so let's examine a practical example to see langin in action all right in today's data driven World understanding and effectively using SQL queries is crucial for managing and analyzing large data sets however beginers and even experienced users often need help with complex SQL queries their syntax and how they work this creates a barrier to efficiently interacting with databases and limits their potential to solve real world",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 371.84,
+      "end_seconds": 465.68,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=371s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "1e17948f35ed613e48a0378b72d0fadbe5390c483d9a6d203831217ba86b2bf5",
+    "text": "however beginers and even experienced users often need help with complex SQL queries their syntax and how they work this creates a barrier to efficiently interacting with databases and limits their potential to solve real world problems to address this challenge we propose a SQL query fetcher application that leverages the Gemini AI Python and streamlit to simplify SQL learning and usage the application allows users to input or select a query generates the SQL syntax and provides a detailed explanation of its components and functionality this tool Bridges the gap between technical understanding and real world database operations empowering users with an initiative and interactive SQL learning experience let's jump right into the code so the first step is setting up your dependencies here we import stream LD for the user interface and then Google generative AI for using Gemini so first import stream lit as SD and next import Google do generative AI as gen AI so to get this API you have to go to the Google Gemini API key and here click on get a Gemini API key in Google AI studio and then once you scroll there is a button on the left called create API now click on it and select your model model here and let's copy it and now let's go back to our vs code editor and paste it",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 448.8,
+      "end_seconds": 551.04,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=448s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "511a0b805737c70db4e54302e171787645a60825017c506cbecd5c52bdb14f8a",
+    "text": "a button on the left called create API now click on it and select your model model here and let's copy it and now let's go back to our vs code editor and paste it here so to paste let's type Google uncore API uncore key and inside the double code let's paste it and now let's type gen AI do configure and inside the bracket let's keep it as API key equal to and give it as Google aior key now let's type model equal to gen AI do generative model and inside the bracket let's keep it as Gemini Pro so we use the Google Gemini API to generate SQL queries dynamically so make sure to configure your API key securely now let's display the stream L layout code now let's set up the app's user interface so we use stream LD to create an interactive page where users can input plain English queries and get SQL code in return so we write STD dot set underscore page underscore config and inside the bracket let's give it as page uncore title and inside the double codes let's give a title as a a SQL query generator and give a comma and let's type it as page uncore icon equal to and inside the double code let's keep it as",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 533.88,
+      "end_seconds": 647.839,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=533s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "48d4761e82ac582a849cbe0e1397fd8b89dbe59026a9bedb9f4d2fd93006e530",
+    "text": "title and inside the double codes let's give a title as a a SQL query generator and give a comma and let's type it as page uncore icon equal to and inside the double code let's keep it as robot now let's put some images so I'm using edureka image and SQL logo and also to make them Center we will type it as column 1 comma column 2 comma column 3 equal to SD do columns and inside the bracket let's keep it as 1 comma 2 comma 1 next let us type with column 2 colon and let's type it as STD do image and inside the bracket let's give the image address and then width is equal to 200 now let us add another image so let's copy the same and give the other image address our layout includes a title logo and text input box to keep the interface simple and initiative so here's where the magic happens so when a user clicks the generate SQL query button we format their input into a prompt for the Gemini model to generate SQL code so let's create template by writing template equal to and inside the triple codes let's type it as create a SQL query snip it using the below text next let us also give text input",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 624.48,
+      "end_seconds": 731.88,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=624s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "8dbf9df82babc8588486c0f194b004575eaecb5b37b071e6cedeedead4edf59d",
+    "text": "model to generate SQL code so let's create template by writing template equal to and inside the triple codes let's type it as create a SQL query snip it using the below text next let us also give text input and we'll also type I just want a SQL query now let's type the response so typee response equal to model. generate generate uncore content and let's keep it as template. format and inside the bracket let's give text input equal to textor input and next let's type the SQL query so give sqlquery equal to response do text Dot so let's give the strip function do L strip function do R strip function so the AI generates the SQL query and we clean up the output for display so once the SQL query is ready we take it a step further by generating a sample expected output and a clear explanation of the query now let's type the logic for showing explanation and output so let's type St do markdown and inside the bracket we will give HTML TX so first diff style is equal to we will align find the text in Center so text align Center and next let's give H1 tag and inside H1 tag we will write SQL query generator and let's close the H1 tag",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 705.279,
+      "end_seconds": 829.48,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=705s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "dd0e16c9ae52a4f7a541dcae58dac142491b3c1e8cf59ad669902cd321e3ca51",
+    "text": "equal to we will align find the text in Center so text align Center and next let's give H1 tag and inside H1 tag we will write SQL query generator and let's close the H1 tag next let's open H3 tag and write I can generate SQL queries for you and let's close the H3 tag and inside the H4 tag let's type it as with explanation as well now close the H4 tag and let's open the paragraph tag which is the P tag and inside the P tag let's type it as this tool allows you to generate SQL queries based on your data now let us close the ptag also close the div tag now to make the markdown visible let us type unsave underscore allow uncore HTML equal to true now let's write text input equal to st. text uncore area and inside the bracket let's give it as enter your query here in plain English now let us give a submit button so for that let us type submit uncore button equal to St do button button and inside the bracket let us give generate SQL query now if submit button colon write it with st do spinner and inside the bracket let's keep generating SQL query and then let's create a template and inside the trible codes",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 806.959,
+      "end_seconds": 922.9590000000001,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=806s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "3eecf4753fae380a8921b14e5f8474bca98727a5532f39e822ba810ee077af13",
+    "text": "us give generate SQL query now if submit button colon write it with st do spinner and inside the bracket let's keep generating SQL query and then let's create a template and inside the trible codes let's type it as create a SQL queries snippit using the below text now using the about template we will write three more templates for SQL query which are text input and then SQL query which will include expected output and also explanation output now to merge all the templates together we will make a container so we will write with std. container so it's a function and let us also write it as STD do success and inside the bracket let us give it as SQL query generated successfully also we will give here is your query below next st. code and inside the bracket let us give sqlquery and comma language equal to SQL now let us give once again St do Suess and inside this let us keep it as expected output of this query will be and now let us keep it as STD do markdown and inside the bracket e output once again SD do success and inside this let us keep it as explanation of this SQL query next let us give St do markdown and inside this function let us keep it",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 901.639,
+      "end_seconds": 1024.919,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=901s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "0c68a7124b2cedf91f1b82b846f2177de6b288c1fa90db6a2d97f8021413fe5b",
+    "text": "markdown and inside the bracket e output once again SD do success and inside this let us keep it as explanation of this SQL query next let us give St do markdown and inside this function let us keep it as explanation so over here this shows a green success message indicating the SQL query was generated successfully and next the show SQL query this displays the SQL query is a formatted code blog highlighting it as a SQL next is the display expected output so this provides a success message for the queries expected output followed by St markdown e output which displays the expected output in markdown format and followed by st. markdown e output which displays the expected output in the markdown format so now this line of code introduce an explanation and st. markdown explanation displays that it is in markdown format for clarity so this makes the tool valuable for both learning and debugging SQL so now let's see it in action so open the terminal and let us type stream lit run and give your file name now as you can see the screen your SQL query generator is ready to go now let's test it so for that here I will input a prompt asking for a query which is give me the query for create",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 1004.16,
+      "end_seconds": 1101.159,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=1004s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  },
+  {
+    "id": "5cb1d3ae460a31412fa1149d91ad7dd14ddb1643121f4744a3e228f7f59b0aea",
+    "text": "now as you can see the screen your SQL query generator is ready to go now let's test it so for that here I will input a prompt asking for a query which is give me the query for create table now let's click on generate SQL query and as you can see it's running so let's wait for it to generate so as you can see on the screen the app generates a SQL query expected output and even a plain English explanation in seconds so how cool is that right and that's it our SQL query generator powered by L chain Gemini API and stream late is complete so this project is perfect for simplifying SQL learning and enhancing productivity with this we have come to an end to this video on what is Lang chain and if you enjoyed listening to this video please be kind enough to like it and you can comment on any any of your doubts or queries and we will reply to them at the earliest also do look up for more videos and playlist and also subscribe to the edua YouTube channel to learn more and happy learning",
+    "metadata": {
+      "video_id": "V6ddMAUCOys",
+      "title": "What is LangChain? | How LangChain is Changing the Way We Use APIs | LangChain Explained | Edureka",
+      "trainer": "Edureka",
+      "channel": "edureka!",
+      "topic": "LangChain",
+      "start_seconds": 1083.48,
+      "end_seconds": 1154.28,
+      "url": "https://www.youtube.com/watch?v=V6ddMAUCOys&t=1083s",
+      "language": "en",
+      "caption_type": "automatic"
+    }
+  }
+]
